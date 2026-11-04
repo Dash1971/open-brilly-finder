@@ -1,6 +1,6 @@
 # Open Brilly Finder
 
-Open research, code, models and labeled chess data for **Chess.com-style Brilliant move classification**. This project grew out of Mute Chess. The aim is to find more good piece sacrifices while keeping undeserved Brilliant awards rare, without changing classification according to player rating.
+Open research, code, models and labeled chess data for **Chess.com-style Brilliant move classification**. This project grew out of [Mute Chess](https://github.com/Dash1971/mute-chess). The aim is to find more good piece sacrifices while keeping undeserved Brilliant awards rare, without changing classification according to player rating.
 
 **Current recommendation: retain the production Mute Selective model.** Its published independent tests found **112 of 200 Chess.com Brilliants (56%)**, with **3 wrong awards** among 200 ordinary controls. The newer half of that test found **57 of 100 (57%)**. The deployed model has not been replaced by the experiments in this repository.
 
