@@ -1,0 +1,43 @@
+{
+  "updated_at_utc": "2026-11-03T22:20:55.833664+00:00",
+  "scope": "User-authorized identical capacity experiment with warning-level resource exception. Complete; no promotion.",
+  "duration_seconds": 216.36915220785886,
+  "peak_rss_bytes": 160595968,
+  "nested_candidate": {
+    "TP": 444,
+    "FN": 473,
+    "FP": 9,
+    "TN": 2468,
+    "hard_negative_n": 2477,
+    "easy_error_FP": 0,
+    "easy_error_TN": 330
+  },
+  "nested_reference": {
+    "TP": 436,
+    "FN": 481,
+    "FP": 6,
+    "TN": 2471,
+    "hard_negative_n": 2477,
+    "easy_error_FP": 0,
+    "easy_error_TN": 330
+  },
+  "selected": {
+    "config": 0,
+    "profile": "baseline",
+    "depth": 6,
+    "minleaf": 8,
+    "mtry": 12,
+    "cost": 1,
+    "cutoff": 0.8333333333333334,
+    "TP": 451,
+    "FN": 466,
+    "FP": 6,
+    "TN": 2471,
+    "hard_negative_n": 2477,
+    "easy_error_FP": 0,
+    "easy_error_TN": 330
+  },
+  "model_same_as_prior_weight_search": true,
+  "no_repeated_reserved_replay": "Byte-identical candidate already has descriptive replay38/71Brilliants,0/494hardordinary. Not an independent test.",
+  "next": "One fixed shallow-tree sequential-reweighting experiment being prepared by Astra; no engine/browser/production change. Strict normal-memory resource guard restored."
+}

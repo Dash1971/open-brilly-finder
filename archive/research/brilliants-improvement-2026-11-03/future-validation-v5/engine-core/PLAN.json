@@ -1,0 +1,68 @@
+{
+  "prepared_at": "2026-11-03T10:43:01.409803+00:00",
+  "scope": "Frozen fresh-test core only. No S lookback warmup, no fitting or partial metrics.",
+  "metadata": {
+    "quantity_completion_authorized": true,
+    "tuning_authorized": false,
+    "root_core_freeze_sha256": "99bcffb5a77209f13e61bd0c495625950da6950c028ab9b64a5a1b8eea6a3394"
+  },
+  "root_core_freeze_path": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/future-validation-v5/CORE-FREEZE.json",
+  "primary_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/future-validation-v5/primary-moves.json",
+  "primary_sha256": "d900c8c6ebd94a95a53d96c214dc4d9df7e3d9859a0dd165c058975bdc35a7a9",
+  "db_path": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/future-validation-v5/corpus.sqlite3",
+  "db_sha256": "2b7c376d5d7521fd6472fadf8f47d264ac683a8bc7d31e7756043ebf5835b55e",
+  "engine": {
+    "path": "/opt/homebrew/bin/stockfish",
+    "sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+    "nodes_per_position": 300000,
+    "threads_per_worker": 1,
+    "hash_mb_per_worker": 64,
+    "multipv": "min(2, legal roots)",
+    "workers": 4
+  },
+  "cases": 200,
+  "snapshots": 581,
+  "partitions": [
+    {
+      "worker": 0,
+      "file": "partition-0.json",
+      "sha256": "a979794749491960de0d41ae72538cd4d1088a5793d06a8c30dc58f7ef0091ec",
+      "cases": 47,
+      "games": 25,
+      "snapshots": 137
+    },
+    {
+      "worker": 1,
+      "file": "partition-1.json",
+      "sha256": "279d989dde3f2e42d600421db53133449e547efbe6bebe5da8bc5a86fd4c3ccc",
+      "cases": 58,
+      "games": 30,
+      "snapshots": 169
+    },
+    {
+      "worker": 2,
+      "file": "partition-2.json",
+      "sha256": "f237bc6437c9fffae894e7654284d27add765d69a01208cffd079aff89406b17",
+      "cases": 47,
+      "games": 26,
+      "snapshots": 138
+    },
+    {
+      "worker": 3,
+      "file": "partition-3.json",
+      "sha256": "27fc2287811fe234c82dbfde2c565f00941b79c6d206e3a7e8ff179b72dd5900",
+      "cases": 48,
+      "games": 25,
+      "snapshots": 137
+    }
+  ],
+  "wall_safeguard_seconds_per_worker": 600,
+  "automatic_retries": false,
+  "cache_policy": "Fresh process per partition; clear hash/new UCI game per whole game; chronological full-PGN positions.",
+  "script_hashes": {
+    "analysis.py": "253044be89fb308195a0d26a7a2a71ec22982f43669c14724c3c2ef9fc363f89",
+    "prepare.py": "21b555b8c5ef7707c9c570f8a14605f6a69f25049345b81e435ad0420b1b7fc2",
+    "merge.py": "610d4f0747c813434d8c3104b3498de55e4624579efdb932384634f2a8cf4fa2",
+    "replay-forest.py": "025d64c542e2c5bdc8ffbda94b25be3e0c9cbf352ade8187fd4e96de23c1c518"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "policy": "Full PGN stack; explicit Clear Hash plus distinct UCI game session at each game boundary. No cache shared between games or reused across worker runs.",
+  "sources": {
+    "uci.cpp": {
+      "url": "https://raw.githubusercontent.com/official-stockfish/Stockfish/sf_18/src/uci.cpp",
+      "sha256": "403ced924a8b671a3726c5b37377f29f093403f269c6f221ec90fff33f4a0653",
+      "ucinewgame_routes_to_search_clear": true,
+      "search_clear_resets_TT_and_threads": null
+    },
+    "engine.cpp": {
+      "url": "https://raw.githubusercontent.com/official-stockfish/Stockfish/sf_18/src/engine.cpp",
+      "sha256": "1ebecfb9975a3f485358d7cb6b1b3ab1b33f7bcd42d39e04e504b762e32c4e75",
+      "ucinewgame_routes_to_search_clear": null,
+      "search_clear_resets_TT_and_threads": true
+    },
+    "python_chess_engine": {
+      "sha256": "40a1407749ea43b4ed3174f0603e0316a9c971b8943113fbea5be47c82bde22b",
+      "distinct_game_object_triggers_ucinewgame": true,
+      "full_move_stack_sent": true
+    }
+  }
+}

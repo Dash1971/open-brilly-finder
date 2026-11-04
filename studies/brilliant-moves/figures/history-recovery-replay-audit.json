@@ -1,0 +1,62 @@
+{
+  "source_sha256": "0d802d1ebcb50e5c77b9edb74fd54aeccaaf7a2215d97fb2a90097e5fe910297",
+  "plotted_counts": [
+    {
+      "sample": "all400",
+      "classifier": "selective",
+      "panel": "positive",
+      "count": 112,
+      "denominator": 200
+    },
+    {
+      "sample": "all400",
+      "classifier": "ec_direct",
+      "panel": "positive",
+      "count": 53,
+      "denominator": 200
+    },
+    {
+      "sample": "all400",
+      "classifier": "selective",
+      "panel": "negative",
+      "count": 3,
+      "denominator": 200
+    },
+    {
+      "sample": "all400",
+      "classifier": "ec_direct",
+      "panel": "negative",
+      "count": 3,
+      "denominator": 200
+    },
+    {
+      "sample": "new200",
+      "classifier": "selective",
+      "panel": "positive",
+      "count": 57,
+      "denominator": 100
+    },
+    {
+      "sample": "new200",
+      "classifier": "ec_direct",
+      "panel": "positive",
+      "count": 27,
+      "denominator": 100
+    },
+    {
+      "sample": "new200",
+      "classifier": "selective",
+      "panel": "negative",
+      "count": 2,
+      "denominator": 100
+    },
+    {
+      "sample": "new200",
+      "classifier": "ec_direct",
+      "panel": "negative",
+      "count": 1,
+      "denominator": 100
+    }
+  ],
+  "scope": "Two independent fixed-model tests; no training-fit, History Rule, native or panel results pooled."
+}

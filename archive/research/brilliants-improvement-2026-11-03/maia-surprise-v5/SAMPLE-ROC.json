@@ -1,0 +1,519 @@
+{
+  "scope": "Post-inference descriptive matched20 sampleROC only; allcasesunblindeddevelopment. No classifierthreshold/model fit and no operatingpoint selected.",
+  "model_mode": "legacy_frontend_single_board64x12_NOT_native79M_or_historymodel",
+  "model_sha256": "405bf76c15727dad8728b352c06a8f3c1b80fb2760e8d666b32485c63d75b856",
+  "plan_sha256": "6b0e30cb61b4e2869cbc964f7185dcfc0d2c6a98f5578097e9dea3244eed67ff",
+  "policy_results_sha256": "ee02f4f3a1b6e311091d159f4f0071f4a792a0e06bfa9f8fa5b024b09fd81476",
+  "fixed_self_opponent_elo": [
+    1600,
+    1600
+  ],
+  "label_join": "Primaryfreshlabels joined only after20fixedinferences; not passed toscoring.",
+  "surprise_direction_prespecified": "Higher -ln(legal-normalizedplayedmoveprobability) predictsBrilliant.",
+  "sample_AUC_surprisal_high_for_Brilliant": 0.58,
+  "groups": {
+    "true_brilliant10": {
+      "played_move_probability": {
+        "median": 0.18721713844211935,
+        "min": 0.00473683925002935,
+        "max": 0.5632507909235842
+      },
+      "legal_rank": {
+        "median": 2.5,
+        "min": 1,
+        "max": 15
+      },
+      "entropy_nats": {
+        "median": 1.3510292446983752,
+        "min": 0.6447429448889165,
+        "max": 2.328937078942411
+      },
+      "surprisal_nats": {
+        "median": 1.7073008059205348,
+        "min": 0.5740302954566827,
+        "max": 5.352385190590076
+      }
+    },
+    "false_awards10": {
+      "played_move_probability": {
+        "median": 0.18851448647287466,
+        "min": 0.0189956050017322,
+        "max": 0.6600642434403785
+      },
+      "legal_rank": {
+        "median": 2.0,
+        "min": 1,
+        "max": 7
+      },
+      "entropy_nats": {
+        "median": 1.469434132778746,
+        "min": 0.59135771304936,
+        "max": 2.155132914141774
+      },
+      "surprisal_nats": {
+        "median": 1.6738764594485822,
+        "min": 0.41541811015272667,
+        "max": 3.9635476422716045
+      }
+    }
+  },
+  "whole_tie_ROC": [
+    {
+      "surprisal_threshold": "greater_than_maximum",
+      "TP": 0,
+      "FP": 0,
+      "TPR": 0,
+      "FPR": 0
+    },
+    {
+      "surprisal_threshold": 5.352385190590076,
+      "TP": 1,
+      "FP": 0,
+      "TPR": 0.1,
+      "FPR": 0.0
+    },
+    {
+      "surprisal_threshold": 5.331522639630904,
+      "TP": 2,
+      "FP": 0,
+      "TPR": 0.2,
+      "FPR": 0.0
+    },
+    {
+      "surprisal_threshold": 3.9635476422716045,
+      "TP": 2,
+      "FP": 1,
+      "TPR": 0.2,
+      "FPR": 0.1
+    },
+    {
+      "surprisal_threshold": 3.790386232062386,
+      "TP": 3,
+      "FP": 1,
+      "TPR": 0.3,
+      "FPR": 0.1
+    },
+    {
+      "surprisal_threshold": 2.962697568435493,
+      "TP": 3,
+      "FP": 2,
+      "TPR": 0.3,
+      "FPR": 0.2
+    },
+    {
+      "surprisal_threshold": 2.749432663593197,
+      "TP": 4,
+      "FP": 2,
+      "TPR": 0.4,
+      "FPR": 0.2
+    },
+    {
+      "surprisal_threshold": 2.0484661207263417,
+      "TP": 4,
+      "FP": 3,
+      "TPR": 0.4,
+      "FPR": 0.3
+    },
+    {
+      "surprisal_threshold": 1.9608888837238387,
+      "TP": 5,
+      "FP": 3,
+      "TPR": 0.5,
+      "FPR": 0.3
+    },
+    {
+      "surprisal_threshold": 1.9554878154995925,
+      "TP": 5,
+      "FP": 4,
+      "TPR": 0.5,
+      "FPR": 0.4
+    },
+    {
+      "surprisal_threshold": 1.776885115856072,
+      "TP": 5,
+      "FP": 5,
+      "TPR": 0.5,
+      "FPR": 0.5
+    },
+    {
+      "surprisal_threshold": 1.5708678030410927,
+      "TP": 5,
+      "FP": 6,
+      "TPR": 0.5,
+      "FPR": 0.6
+    },
+    {
+      "surprisal_threshold": 1.453712728117231,
+      "TP": 6,
+      "FP": 6,
+      "TPR": 0.6,
+      "FPR": 0.6
+    },
+    {
+      "surprisal_threshold": 1.335216116268121,
+      "TP": 7,
+      "FP": 6,
+      "TPR": 0.7,
+      "FPR": 0.6
+    },
+    {
+      "surprisal_threshold": 1.2168422191869073,
+      "TP": 8,
+      "FP": 6,
+      "TPR": 0.8,
+      "FPR": 0.6
+    },
+    {
+      "surprisal_threshold": 1.2092206303353075,
+      "TP": 8,
+      "FP": 7,
+      "TPR": 0.8,
+      "FPR": 0.7
+    },
+    {
+      "surprisal_threshold": 0.9929882334542204,
+      "TP": 8,
+      "FP": 8,
+      "TPR": 0.8,
+      "FPR": 0.8
+    },
+    {
+      "surprisal_threshold": 0.9777303579123181,
+      "TP": 8,
+      "FP": 9,
+      "TPR": 0.8,
+      "FPR": 0.9
+    },
+    {
+      "surprisal_threshold": 0.7387554451620646,
+      "TP": 9,
+      "FP": 9,
+      "TPR": 0.9,
+      "FPR": 0.9
+    },
+    {
+      "surprisal_threshold": 0.5740302954566827,
+      "TP": 10,
+      "FP": 9,
+      "TPR": 1.0,
+      "FPR": 0.9
+    },
+    {
+      "surprisal_threshold": 0.41541811015272667,
+      "TP": 10,
+      "FP": 10,
+      "TPR": 1.0,
+      "FPR": 1.0
+    }
+  ],
+  "rows": [
+    {
+      "key": "169827191694:67",
+      "game_id": "169827191694",
+      "ply": 67,
+      "san": "Rh1",
+      "uci": "f1h1",
+      "played_move_probability": 0.6600642434403785,
+      "legal_rank": 1,
+      "legal_count": 39,
+      "entropy_nats": 1.0408594231611008,
+      "surprisal_nats": 0.41541811015272667,
+      "inference_ms": 146,
+      "token_sha256": "b9d6d7ebed909ba358425231a29c1ba277c4cd8d31e82dd00b7b4c5cec48e84d",
+      "truth_brilliant_POST_INFERENCE_ONLY": false
+    },
+    {
+      "key": "185032708726:33",
+      "game_id": "185032708726",
+      "ply": 33,
+      "san": "Bxd5",
+      "uci": "f3d5",
+      "played_move_probability": 0.1407332697939629,
+      "legal_rank": 3,
+      "legal_count": 38,
+      "entropy_nats": 2.328937078942411,
+      "surprisal_nats": 1.9608888837238387,
+      "inference_ms": 89,
+      "token_sha256": "1e219e40a466930d409ceea77681d840c0eee6df1617d01fcf14af92c2032470",
+      "truth_brilliant_POST_INFERENCE_ONLY": true
+    },
+    {
+      "key": "173084454389:59",
+      "game_id": "173084454389",
+      "ply": 59,
+      "san": "Bc5",
+      "uci": "a7c5",
+      "played_move_probability": 0.3761638881144492,
+      "legal_rank": 1,
+      "legal_count": 46,
+      "entropy_nats": 1.738160220407416,
+      "surprisal_nats": 0.9777303579123181,
+      "inference_ms": 89,
+      "token_sha256": "8ae5316984a57da76736dd507f82f28b8c0cefaa3cfef82a0414a65e15270174",
+      "truth_brilliant_POST_INFERENCE_ONLY": false
+    },
+    {
+      "key": "174490497572:26",
+      "game_id": "174490497572",
+      "ply": 26,
+      "san": "Nxb4",
+      "uci": "d5b4",
+      "played_move_probability": 0.00473683925002935,
+      "legal_rank": 6,
+      "legal_count": 43,
+      "entropy_nats": 0.6447429448889165,
+      "surprisal_nats": 5.352385190590076,
+      "inference_ms": 90,
+      "token_sha256": "9bebf99781de878a77fc33c046063036ad575a8c984b57ec6cd033f2f6d369e5",
+      "truth_brilliant_POST_INFERENCE_ONLY": true
+    },
+    {
+      "key": "174425603426:123",
+      "game_id": "174425603426",
+      "ply": 123,
+      "san": "Rxh2",
+      "uci": "h8h2",
+      "played_move_probability": 0.16916425451576528,
+      "legal_rank": 2,
+      "legal_count": 22,
+      "entropy_nats": 0.59135771304936,
+      "surprisal_nats": 1.776885115856072,
+      "inference_ms": 91,
+      "token_sha256": "a78a6a53dc2283923f4aaf0181b5630bd136c964da43400dcb164d6ee46fdbcf",
+      "truth_brilliant_POST_INFERENCE_ONLY": false
+    },
+    {
+      "key": "171487603906:78",
+      "game_id": "171487603906",
+      "ply": 78,
+      "san": "Rxf2+",
+      "uci": "c2f2",
+      "played_move_probability": 0.06396414009997459,
+      "legal_rank": 4,
+      "legal_count": 41,
+      "entropy_nats": 1.8696834881232496,
+      "surprisal_nats": 2.749432663593197,
+      "inference_ms": 80,
+      "token_sha256": "4ebcdc514c25ec91f2175dc9600cce2cb13d463c17228f99f52d9fcac809f9fc",
+      "truth_brilliant_POST_INFERENCE_ONLY": true
+    },
+    {
+      "key": "175936156661:48",
+      "game_id": "175936156661",
+      "ply": 48,
+      "san": "gxf4",
+      "uci": "g5f4",
+      "played_move_probability": 0.05167932046788393,
+      "legal_rank": 3,
+      "legal_count": 36,
+      "entropy_nats": 0.9435793194307027,
+      "surprisal_nats": 2.962697568435493,
+      "inference_ms": 81,
+      "token_sha256": "42378223704dc09f67ccf83067ff248722e42018fb4c5cab76b672e8b09c91ae",
+      "truth_brilliant_POST_INFERENCE_ONLY": false
+    },
+    {
+      "key": "184777814198:66",
+      "game_id": "184777814198",
+      "ply": 66,
+      "san": "b3",
+      "uci": "b4b3",
+      "played_move_probability": 0.23370100709027583,
+      "legal_rank": 2,
+      "legal_count": 21,
+      "entropy_nats": 1.2070477761711238,
+      "surprisal_nats": 1.453712728117231,
+      "inference_ms": 76,
+      "token_sha256": "2f1a09e77dd104ad0b60711fdea79e7d12dbe9fb82fecc8daaa75acd71faa646",
+      "truth_brilliant_POST_INFERENCE_ONLY": true
+    },
+    {
+      "key": "178360672165:63",
+      "game_id": "178360672165",
+      "ply": 63,
+      "san": "Nxh6+",
+      "uci": "f7h6",
+      "played_move_probability": 0.20786471842998405,
+      "legal_rank": 2,
+      "legal_count": 42,
+      "entropy_nats": 1.978355766925685,
+      "surprisal_nats": 1.5708678030410927,
+      "inference_ms": 79,
+      "token_sha256": "81f37c45ef9027b16ac5e274e4656b36101c992853cd69483ffc0862c8cb7b96",
+      "truth_brilliant_POST_INFERENCE_ONLY": false
+    },
+    {
+      "key": "184512046868:24",
+      "game_id": "184512046868",
+      "ply": 24,
+      "san": "Nd4",
+      "uci": "c6d4",
+      "played_move_probability": 0.0048366998517466115,
+      "legal_rank": 15,
+      "legal_count": 43,
+      "entropy_nats": 2.311825835029221,
+      "surprisal_nats": 5.331522639630904,
+      "inference_ms": 82,
+      "token_sha256": "14cf641a91302438c18cf0c098a67b4fa3f3c3a831e9b68a70d34460341c5e83",
+      "truth_brilliant_POST_INFERENCE_ONLY": true
+    },
+    {
+      "key": "184481267900:67",
+      "game_id": "184481267900",
+      "ply": 67,
+      "san": "Qb5",
+      "uci": "d3b5",
+      "played_move_probability": 0.37046799047617135,
+      "legal_rank": 1,
+      "legal_count": 39,
+      "entropy_nats": 1.6105242371857227,
+      "surprisal_nats": 0.9929882334542204,
+      "inference_ms": 80,
+      "token_sha256": "971287356ab2f7aebaaf5866cf1b8c0aaac9cf0b21785efc980b39ec79af9133",
+      "truth_brilliant_POST_INFERENCE_ONLY": false
+    },
+    {
+      "key": "172590636870:45",
+      "game_id": "172590636870",
+      "ply": 45,
+      "san": "Bf6",
+      "uci": "g5f6",
+      "played_move_probability": 0.5632507909235842,
+      "legal_rank": 1,
+      "legal_count": 38,
+      "entropy_nats": 1.148856608785798,
+      "surprisal_nats": 0.5740302954566827,
+      "inference_ms": 80,
+      "token_sha256": "5ea1bcb4b444224fd5777cd55cc22039431a1ff1829eb4c641ed99b9eea5a207",
+      "truth_brilliant_POST_INFERENCE_ONLY": true
+    },
+    {
+      "key": "184514610842:73",
+      "game_id": "184514610842",
+      "ply": 73,
+      "san": "Re1",
+      "uci": "a1e1",
+      "played_move_probability": 0.0189956050017322,
+      "legal_rank": 7,
+      "legal_count": 42,
+      "entropy_nats": 2.155132914141774,
+      "surprisal_nats": 3.9635476422716045,
+      "inference_ms": 79,
+      "token_sha256": "308df23c1732d325569ae9632208b5a9babf673a703a83b7fc25a1b7347d261b",
+      "truth_brilliant_POST_INFERENCE_ONLY": false
+    },
+    {
+      "key": "184131911424:66",
+      "game_id": "184131911424",
+      "ply": 66,
+      "san": "Raf8",
+      "uci": "a8f8",
+      "played_move_probability": 0.022586876390352874,
+      "legal_rank": 4,
+      "legal_count": 31,
+      "entropy_nats": 1.0418594787906363,
+      "surprisal_nats": 3.790386232062386,
+      "inference_ms": 84,
+      "token_sha256": "5e55aa28006d4b1a32ce5bf6117d7f543e1cc8d4d2ac9271a37880e9769487df",
+      "truth_brilliant_POST_INFERENCE_ONLY": true
+    },
+    {
+      "key": "185228493400:24",
+      "game_id": "185228493400",
+      "ply": 24,
+      "san": "dxc4",
+      "uci": "d5c4",
+      "played_move_probability": 0.1289325189084907,
+      "legal_rank": 3,
+      "legal_count": 35,
+      "entropy_nats": 1.4625479528303713,
+      "surprisal_nats": 2.0484661207263417,
+      "inference_ms": 80,
+      "token_sha256": "4de0ca79be719a79e553e62d76bed29667714053e4cf402d01aad0eb18a415b1",
+      "truth_brilliant_POST_INFERENCE_ONLY": false
+    },
+    {
+      "key": "184623232028:38",
+      "game_id": "184623232028",
+      "ply": 38,
+      "san": "hxg4",
+      "uci": "h5g4",
+      "played_move_probability": 0.26310130883834554,
+      "legal_rank": 2,
+      "legal_count": 52,
+      "entropy_nats": 1.4950107132256265,
+      "surprisal_nats": 1.335216116268121,
+      "inference_ms": 86,
+      "token_sha256": "01d1e6034588c9a99b8cb51f1727d056dd656b62af3a3191e90dec0020fe2e1b",
+      "truth_brilliant_POST_INFERENCE_ONLY": true
+    },
+    {
+      "key": "186393990159:71",
+      "game_id": "186393990159",
+      "ply": 71,
+      "san": "Qg6+",
+      "uci": "e4g6",
+      "played_move_probability": 0.29842977593216086,
+      "legal_rank": 2,
+      "legal_count": 41,
+      "entropy_nats": 1.4763203127271205,
+      "surprisal_nats": 1.2092206303353075,
+      "inference_ms": 80,
+      "token_sha256": "0be69f399a12d2601f7f5bffffcc5aa80dff3242e1717552ef83ffe08f7c04a4",
+      "truth_brilliant_POST_INFERENCE_ONLY": false
+    },
+    {
+      "key": "184430392420:37",
+      "game_id": "184430392420",
+      "ply": 37,
+      "san": "Rxh7+",
+      "uci": "h5h7",
+      "played_move_probability": 0.29616391258673225,
+      "legal_rank": 1,
+      "legal_count": 57,
+      "entropy_nats": 2.10685325008572,
+      "surprisal_nats": 1.2168422191869073,
+      "inference_ms": 79,
+      "token_sha256": "176006eaa48920152660fc7d27ffd4f82f591f7dca7902fdbb23ddf834c071d0",
+      "truth_brilliant_POST_INFERENCE_ONLY": true
+    },
+    {
+      "key": "187780686673:36",
+      "game_id": "187780686673",
+      "ply": 36,
+      "san": "Qh4",
+      "uci": "d8h4",
+      "played_move_probability": 0.14149543618909427,
+      "legal_rank": 2,
+      "legal_count": 45,
+      "entropy_nats": 1.177352849701789,
+      "surprisal_nats": 1.9554878154995925,
+      "inference_ms": 82,
+      "token_sha256": "e6fdfc09d55918b83dc2ccae7e49e50240e4f4722163a15b73133865a789759a",
+      "truth_brilliant_POST_INFERENCE_ONLY": false
+    },
+    {
+      "key": "169827191694:65",
+      "game_id": "169827191694",
+      "ply": 65,
+      "san": "h6",
+      "uci": "h5h6",
+      "played_move_probability": 0.4777080796110462,
+      "legal_rank": 1,
+      "legal_count": 33,
+      "entropy_nats": 1.1781074026848892,
+      "surprisal_nats": 0.7387554451620646,
+      "inference_ms": 79,
+      "token_sha256": "3b6a392def5f4791afea5990da31669218feab52628ae3941bec2e71b905d189",
+      "truth_brilliant_POST_INFERENCE_ONLY": true
+    }
+  ],
+  "elapsed_ms": 2556,
+  "peak_rss_kib": 715920,
+  "cautions": [
+    "Legacyfrontend64x12singleboardmodel, notnative79M orhistorymodel.",
+    "Smallmatcheddevelopmentpanel selectedforv4errors, notpopulationfrequencies orprospectivevalidation.",
+    "Legalpolicyprobability ishumanmove likelihood, notprobabilityofChesscomBrilliantlabel.",
+    "No classifier ordecisionthreshold chosen fromthisROC."
+  ]
+}

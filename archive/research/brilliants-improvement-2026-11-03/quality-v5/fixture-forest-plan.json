@@ -1,0 +1,71 @@
+{
+  "scope": "Exactly two already-known outside-benchmark pawn-combination fixtures; not fresh or included in benchmark totals.",
+  "frozen_before_search_at": "2026-11-03T10:11:19.444375+00:00",
+  "script_sha256": "fd91f2cc9659badcc2bc8a1664f1b9381e2b18904154b3232f62a6c9de8f3e54",
+  "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+  "nodes": 300000,
+  "Threads": 1,
+  "Hash_MB": 64,
+  "maximum_positions": 6,
+  "forest_sha256": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+  "cases": [
+    {
+      "definition": {
+        "id": "pawn-win-excellent",
+        "title": "An offer that finishes a pawn up",
+        "label": "Excellent",
+        "game_id": "186311900336",
+        "ply": 28,
+        "fen_before": "r2r2k1/pp1nppbp/1qn3p1/4P3/5Pb1/P2B1N2/1P4PP/RNB1QR1K b - - 4 14",
+        "moves": [
+          "Ndxe5",
+          "Nxe5",
+          "Nxe5",
+          "fxe5",
+          "Rxd3"
+        ],
+        "captions": [
+          "Black takes a pawn and offers a knight.",
+          "White takes that knight.",
+          "Black\u2019s second knight recaptures.",
+          "A pawn takes the second knight.",
+          "The rook takes a bishop on another square."
+        ],
+        "conclusion": "Two knights for a knight and bishop. Black gains one pawn.",
+        "source": "https://www.chess.com/analysis/game/live/186311900336/review?move=27",
+        "outside_primary_600": true
+      },
+      "pgn_sha256": "7201c1ab8d22009fee0c604abea6ef739c553825e3901a764e504179f274d6b0",
+      "pgn_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-600-2026-11-03/original-pgn/nelsi-2026-10.pgn"
+    },
+    {
+      "definition": {
+        "id": "pawn-win-brilliant",
+        "title": "A similar exchange receives Brilliant",
+        "label": "Brilliant",
+        "game_id": "186305472636",
+        "ply": 18,
+        "fen_before": "r2qk2r/pb1nbppp/1p1p1n2/2pPp1B1/2P1P3/2NB1P2/PP2N1PP/R2QK2R b KQkq - 4 9",
+        "moves": [
+          "Nxd5",
+          "Nxd5",
+          "Bxd5",
+          "cxd5",
+          "Bxg5"
+        ],
+        "captions": [
+          "Black takes a pawn and offers a knight.",
+          "White takes that knight.",
+          "A bishop recaptures the white knight.",
+          "A pawn takes that bishop.",
+          "The other bishop takes a bishop elsewhere."
+        ],
+        "conclusion": "A knight and bishop for a knight and bishop. One pawn gained.",
+        "source": "https://www.chess.com/analysis/game/live/186305472636/review?move=17",
+        "outside_primary_600": true
+      },
+      "pgn_sha256": "45776303e209d2339d4b26e4ca7fbd9f49bbfc987755b4a275948aee81c824df",
+      "pgn_source": "pilot corpus game 186305472636"
+    }
+  ]
+}

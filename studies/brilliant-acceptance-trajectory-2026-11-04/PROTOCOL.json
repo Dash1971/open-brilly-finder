@@ -1,0 +1,55 @@
+{
+  "created_at_utc": "2026-11-04T02:11:57.232068+00:00",
+  "scope": "One fixed seven-feature acceptance-trajectory bundle ablation using saved lines. No engines, collection, app changes, ratings, deployment or general tooling. Same grouped evaluation.",
+  "source_sha256": {
+    "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/fit.py": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f",
+    "research/brilliant-standard-learners-2026-11-04/PREDICTIONS.json": "ae845d2fd687262f2c41cbdaa2054d85c1f3eb48120a602d30a8a4b8a4dc4a82",
+    "research/brilliant-conditional-gap-2026-11-04/PREDICTIONS.json": "d3d7003453449e9dab43258561be1a9bb9ea00260dfd7e13cf3516c91647a8e0",
+    "research/brilliant-conditional-gap-2026-11-04/RESULTS.json": "bcc14a6980e0419b6d12fc188f8865eb39acd7313bd1510df7061252248e488b",
+    "research/brilliant-matched-sacrifices-2026-11-04/MATCHED-CASES.json": "e6d482a5447099854fc3235e4d65dcdd6d0a9c7109275c2081847973cba93553"
+  },
+  "feature_protocol": "FEATURE-PROTOCOL.json, separately frozen before extraction; feature hashes frozen before evaluation",
+  "added_features": [
+    "material_debt6_cp",
+    "material_debt12_cp",
+    "recovered_by12",
+    "first_recovery_ply",
+    "acceptance_mate_outcome",
+    "terminal_draw_by12",
+    "initial_debt_cp"
+  ],
+  "feature_policy": "Opponent-best acceptance per window, same selection as prior gap; chosen best-response line; original-mover material and score; truncated observations remain missing; no eligibility changes. Seven values plus missing indicators.",
+  "evaluation": {
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "fold_salts_and_seeds": "Identical to standard-learner experiment",
+    "learners": [
+      "custom64tree depth6 leaf8distinctmoves mtry12 cost5split rawleaf groupbootstrap",
+      "sklearnRF128tree depth6 leaf16rows mtry12 unweightedclasses rowbootstrap"
+    ],
+    "arms": [
+      "custom_fixed",
+      "custom_retuned",
+      "custom_trajectory",
+      "standard_rf",
+      "standard_rf_trajectory"
+    ],
+    "threshold_rule": "Max innerOOF TP with FP<=fixedoriginal reference FP AND wrong-award fraction<=fixedoriginal reference. Same exact-score threshold selection/ties as previous study.",
+    "selection": "Same inner selection: maximum true positives then fewer false positives; ties prefer custom_fixed, custom_retuned, standard_rf, custom_trajectory, standard_rf_trajectory. No outer-label selection.",
+    "control": "Original150 columns unchanged; append seven trajectory values and seven missing flags. Same hyperparameters, rows, weights, guards, group folds and seeds. mtry remains12 (sqrt150 and sqrt164 round down to12). No conditional-gap feature in this isolated bundle ablation; previous gap study remains a historical comparison.",
+    "primary_reporting": "Pooled nested held-out counts for each arm, paired differences and selected procedure. No posthoc winner or threshold sweep.",
+    "sensitivity": "Report scores on outer TEST rows excluding every pilot whole group. Training folds may include pilot groups when legal. This is a non-pilot-case breakdown, not new independent validation.",
+    "subgroup": "Report eligible ec_sacrifice=false positives/negatives separately.",
+    "final_calibration": "Same separate5fold final calibration; train/freeze one selected fullfit. No replay on already-seen654 in this experiment; leave fresh validation for later.",
+    "limits": {
+      "fit_wall_seconds": 600,
+      "rss_bytes": 536870912,
+      "threads": 1,
+      "max_fits": 101,
+      "parameter_sweeps": 0
+    }
+  },
+  "interpretation": "Development evidence on repeatedly used corpus.48label-informed pilot examples generated feature hypothesis; nonpilot breakdown does not erase adaptive-study bias. No deployment claim.",
+  "stop": "No outcome-dependent retries, cutoffs or model sweeps. No repeated654benchmark replay."
+}

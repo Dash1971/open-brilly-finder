@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "input_histories_replayed": 3724,
+  "supplemental_searches_replayed": 855,
+  "supplemental_pvs_replayed": 1415,
+  "checks": [
+    "frozen input/adapters/driver/evaluator hashes",
+    "same original game-position-alias groups and fold assignments",
+    "all six arms pooled/fold accounting",
+    "unknowns separate from FN/TN",
+    "recovered/newwrong identities and hypothetical union counts",
+    "exact fullhistory and restricted root scope for supplemental evidence",
+    "source and supplemental PV legality and required depth"
+  ],
+  "outputs_sha256": {
+    "RESULTS.json": "61fa9c318ffa4c63fecacc2753c6f853befe5719dd22c9d04704735b758007c5",
+    "PAIRED-CASES.json": "e94d6c728d4bc184e66317f70c94bc83bbbea335d943bab5ae8d9a46b4ab647b",
+    "WINTR-PREDICTIONS.jsonl": "cddb487f3482fff0a490069812eb91c5b762a1af446169521f881b6f8991c2c2",
+    "KNIGHTS-PREDICTIONS.jsonl": "ca454bda198398a4ad988e963e4fa6fb46c44a7e7df160454912eda0cd3c71b1",
+    "KNIGHTS-ENGINE-EVIDENCE.jsonl": "4f7fde0d000025fddd8f83040ed64657f94ec574a048fa2c32a1541efd839371"
+  },
+  "caveat": "Source snapshots contain no ratings. Hard_ordinary subgroup follows a source cohort flag which can include positive labels; do not interpret that subgroup as exclusively negative cases."
+}

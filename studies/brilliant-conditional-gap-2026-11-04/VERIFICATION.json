@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "checks": [
+    "allinput/script/protocol/model/evidencehashes",
+    "1320eligiblecases covered without label selection",
+    "1481branches exactly1419new+62cached",
+    "featurecoverage/missingness recomputed",
+    "3724unique predictions",
+    "wholegame/alias/beforeposition fold integrity",
+    "priorouter/finalfold identity",
+    "bothoriginal learner scores and3original arm decisions reproduced",
+    "pooled and per-fold confusion counts recomputed",
+    "nonpilot-test breakdown recomputed",
+    "no ineligible awards",
+    "runtime/RSS limits",
+    "final selection/model consistency"
+  ],
+  "artifact_sha256": {
+    "PROTOCOL.json": "ca1f75d2e5961a81d038fa7ac8d63fb6ef6d1d1dbf64e9e30278fd4e8f60be35",
+    "extract.py": "5eadf345dfdb9362370779bf6b6b021e5517a860c2e925032eb4b0826fc23e84",
+    "evaluate.py": "9490248fadefb3b9b65e9670cec5d1cadfbdeaab8d0e037f0088c16e1ba26de5",
+    "verify.py": "50a5933510845e370b947c59c52c4f2e7e37f71602fa6a64ef0202b0d1b19a4b",
+    "EXTRACTION.json": "b46c42fea595aa63c7bfe9d60700ee84ebee4fbe487e8280bbead07639700062",
+    "GAP-FEATURES.json": "fa84e03661767c40c722ee561cb86de4f0d3d0656184b2dc70c0dd9faa34a394",
+    "EVALUATION-FREEZE.json": "02fae5b9a9fc130d09ff799d5beb9db1de2db0c4266b03d5b0918587917a8e1b",
+    "RESULTS.json": "bcc14a6980e0419b6d12fc188f8865eb39acd7313bd1510df7061252248e488b",
+    "PREDICTIONS.json": "d3d7003453449e9dab43258561be1a9bb9ea00260dfd7e13cf3516c91647a8e0",
+    "MODEL-FREEZE.json": "2f76f219637ef3db6bb4f790ea91e5060366444a2ea698e9b46c22919ecb208d",
+    "REPORT.txt": "51e3cf10d8b89eeabb07f115e6e4771be863e5430b0a49d4fc6da4c1fa1e3849"
+  }
+}

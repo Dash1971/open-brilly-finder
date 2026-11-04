@@ -1,0 +1,29 @@
+{
+  "prepared_at_utc": "2026-11-03T16:40:29.882935+00:00",
+  "scope": "One bounded offline preparation pass; root assigns collectors. No browser, engine, model outputs or database access.",
+  "games": 130,
+  "source_kind": "archive_static_offer",
+  "source_accounts": {
+    "nelsi": 25,
+    "KNVB": 25,
+    "GothamChess": 40,
+    "Hikaru": 40
+  },
+  "prior_reviewed_or_assigned_games_excluded": 892,
+  "overlap_with_prior": 0,
+  "pairwise_queue_overlap": 0,
+  "static_offer_v3": "Unchanged pre-label predicate and control selection; anchors and all current labels unknown.",
+  "split": "Unchanged sha256 mute-overnight-2026-11-03-v1 game hash;99 training and31 assessment.",
+  "files_sha256": {
+    "queue-A-archive-wave3.json": "9b4e5217e3661d8c4585003ee3650f785ce6b43a0a6dd2cbfd7941921cc64b3d",
+    "queue-B-archive-wave1.json": "7a7ae58b85389e2a0981d6104db7b4eacefa133f839f5acfa2087a996092bc7f",
+    "control-offers-A-archive-wave3.json": "0bac91ccbb7b46e364c739e6cdbd202b376e0311287f5ab5b2fa399adda215de",
+    "control-offers-B-archive-wave1.json": "0597fee96f3d756caefe46d28e0f8720cf469f3ddd0eb1177306d787d671993e",
+    "archive-next130-screen-candidates.json": "01e26e28854b2992148f3e8d0d3f1a263aa6f4e6ee55f05ff00ca4ce368080a6",
+    "control-offers-archive-next130-candidates.json": "2d7c0f6396e311f4def33f7eb82b9e842c6794ee6e4d91c5084496f111a86d8a",
+    "prepare-archive-next130.py": "5887297deb66ba57a1eaaaf025003c82a60e530bb977a014ceccb1ddacbdb05b",
+    "ASSESSMENT-POSITION-EXCLUSIONS.json": "3ef1ea61beb684b1500fb0c50e800937965868e089690c48fa7256796da64c2a",
+    "EXCLUSIONS-FIRST-WAVE.json": "4fa03e7b250b00a5103302f5674d7e09cd49d6081a698567b24f5d3c0149ad5d"
+  },
+  "assignment_status": "Root only; not sent to collectors."
+}

@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "checks": [
+    "frozen source, protocol, evaluator, rule and selected model hashes",
+    "independent rule recomputation on all3724cases",
+    "whole group/game/alias/position fold integrity",
+    "original outer/final model scores and awards exactly reproduced",
+    "all awards recomputed from frozen operating points and rule",
+    "inner activation and wrong-award constraints",
+    "pooled/per-fold/nonpilot confusion counts",
+    "runtime/RSS/fit limits",
+    "same-model baseline-only selector counterfactual"
+  ],
+  "same_model_baseline_only_selector": {
+    "fold_arms": {
+      "0": "custom_retuned",
+      "1": "standard_rf",
+      "2": "standard_rf",
+      "3": "custom_retuned",
+      "4": "custom_retuned"
+    },
+    "TP": 456,
+    "FP": 5,
+    "TN": 2802,
+    "FN": 461
+  },
+  "artifact_sha256": {
+    "rule.py": "12caac7b54c69a2be25e157799a9af80db2d3f28e8407e493bb5383b83bbaa7d",
+    "evaluate.py": "326d21489c173d00f63f57c565ec6193738f48c70265e929fc7f4f8997551754",
+    "PROTOCOL.json": "6feb06c82adef6d80c2b5592f1229e6c57904f93e8de65b6eced3b05819e1e57",
+    "EVALUATION-FREEZE.json": "9e1269ef2755e05f89d64aa76e033983a10014decb81d52b3ed61289f8970d0b",
+    "RESULTS.json": "4ad5889d3fcb31283551db79356dc8c4b573c7d5d39670d422981d52c87cebe6",
+    "PREDICTIONS.json": "28e2da60bec2b78ad27b90798e887d12fcb7c8ea076290525e704b52d610b68b",
+    "DIAGNOSTICS.json": "5451f47119bd98894391b3a84f6aa5f23d9222deece6627595f94d91b361149f",
+    "verify.py": "6d960a85c52b9f20776b600fd920a3059fc5c21f3e132d894808baba51b7706e"
+  }
+}

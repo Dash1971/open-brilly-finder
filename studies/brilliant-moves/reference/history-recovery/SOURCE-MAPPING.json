@@ -1,0 +1,54 @@
+{
+  "scope": "Publication path/dependency normalization only; private frozen originals unchanged. No classifier heuristic edits. No new engine evidence or labels.",
+  "source_mapping": [
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/quiet-recovery-v6/candidate.py",
+      "source_sha256": "d87bf86b8da910950ca1da5c7ea753e2e96059dc0d8c93f16882a06012308a06",
+      "public_artifact": "reference/history-recovery/candidate.py",
+      "public_sha256": "d87bf86b8da910950ca1da5c7ea753e2e96059dc0d8c93f16882a06012308a06",
+      "changes": "None"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/quiet-recovery-v6/probe.py",
+      "source_sha256": "ccba09c903188490be3a1568a6174ed678b12edb080ab2db379cbc0a3302555a",
+      "public_artifact": "reference/history-recovery/probe.py",
+      "public_sha256": "20b5b02418b6a251759d1848256336c673fe209bd8a98af9a8df5b417b445088",
+      "changes": "Remove private dependency path; import installed python-chess normally. Resolve public study directory from reference/history-recovery. Algorithm unchanged."
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/quiet-recovery-v6/CANDIDATE-PLAN.json",
+      "source_sha256": "1d95afbf290345ae9eeefa611f3286f07dfed8ab5da60d2aef202866d89b703f",
+      "public_artifact": "data/history-recovery-plan.json",
+      "public_sha256": "6f3d47487a438a56aaed0d8d109e55f74b4ab71fdba8bdc77938b85f7f3c9107",
+      "changes": "JSON formatting only"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/quiet-recovery-v6/candidate-results.json",
+      "source_sha256": "25c4233991d09cdc48c2a2b679b4214c0eafe8009839285654e249307bb5c598",
+      "public_artifact": "data/history-recovery-results.json",
+      "public_sha256": "f9fcbd1e9fdf1bdda11c700cabac239a4751ef88a5a16704b62587373d808d46",
+      "changes": "Join all1048existingS decisions; allcurrentroles retrospective development, priorroles archived; sourcecandidatecertificates preserved"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/quiet-recovery-v6/INDEPENDENT-AUDIT.json",
+      "source_sha256": "5db5a9c936de440a23261551c065cc0c9e8e28bccd45f07facdf8c75a2c75de0",
+      "public_artifact": "data/history-recovery-audit.json",
+      "public_sha256": "5db5a9c936de440a23261551c065cc0c9e8e28bccd45f07facdf8c75a2c75de0",
+      "changes": "JSON formatting only"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/quiet-recovery-v6/CANDIDATE-PLAN.json",
+      "source_sha256": "1d95afbf290345ae9eeefa611f3286f07dfed8ab5da60d2aef202866d89b703f",
+      "public_artifact": "reference/history-recovery/CANDIDATE-PLAN.json",
+      "public_sha256": "1d95afbf290345ae9eeefa611f3286f07dfed8ab5da60d2aef202866d89b703f",
+      "changes": "None; exact frozen plan beside candidate.py for its ROOT-relative hash receipt."
+    }
+  ],
+  "original_S_evidence_unchanged": [
+    "data/development-sequence-results.json",
+    "data/test-sequence-results.json",
+    "moves.json",
+    "moves.csv"
+  ],
+  "protocol": "python-chess1.11.2; standalone candidate.py/probe.py are bounded study reference code, not native production API."
+}

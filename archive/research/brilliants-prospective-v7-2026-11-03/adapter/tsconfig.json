@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "baseUrl": "..",
+    "paths": {
+      "lib/*": [
+        "sources/native/ui/lib/src/*"
+      ],
+      "chessops/*": [
+        "sources/dependencies/chessops/dist/esm/*.js"
+      ],
+      "@badrap/result": [
+        "sources/dependencies/badrap-result/dist/node-cjs/index.esm.mjs"
+      ]
+    }
+  }
+}

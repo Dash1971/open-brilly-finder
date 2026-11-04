@@ -1,0 +1,234 @@
+Why the forest scores 429 eligible Brilliants too low
+November 4, 2026
+
+MAIN FINDING
+
+There are two substantial failure patterns, not one missing sacrifice test.
+The forest strongly favors the En Croissant material-simulation definition of
+sacrifice. Among moves that satisfy it, the forest is much more successful on
+captures that offer the moved piece than on quiet moves, stationary-piece
+offers, and converted-material/endgame positions. The missed Brilliants often
+look like ordinary moves under these summaries.
+
+We found a concrete encoding gap and several kinds of information discarded
+from the saved tactical lines. We have NOT established that a new descriptor
+will distinguish Chess.com's labels reliably. Matched ordinary moves retain
+real forks, promotions, king attacks and mating punishments. These contradictory
+examples are preserved rather than explained away.
+
+No award rule, cutoff, model choice, feature input, or deployed classifier was
+changed. No new engine searches, labels, or learner experiment were performed.
+Original fold forests were reconstructed solely to inspect their fixed paths.
+
+WHAT WAS AUDITED
+
+The target is exactly the429 eligible, below-cutoff positives from the previous
+custom_retuned grouped evaluation, not the445 misses under the fixed5/6 cutoff.
+All3,724 original held-out scores were reproduced EXACTLY, maximum error0, using
+the original five outer training splits, seeds, settings and input values.
+Both window scores and every traversed decision path are archived.
+
+The score is the average training-label fraction in reached tree leaves, with
+the lower of two engine-window scores used for awards. It is not a calibrated
+probability that Chess.com will award Brilliant. Original split construction
+penalizes negatives5x, but leaf scores use raw bootstrap-window proportions.
+Path contributions telescope from each root's raw fraction to its reached leaf;
+they describe associations in those fixed paths, not causal effects of changing
+one feature. Correlated features can divide the same underlying association.
+
+1. TWO DIFFERENT MISS POPULATIONS
+
+En Croissant sacrifice feature  Eligible Brilliants  Found   Missed
+True                                      690       445      245
+False                                     191         7      184
+
+That is64.5% found in the first subgroup versus3.7% in the second. The feature
+is learned input, not a hard veto, but it behaves as strong evidence. Its
+correlated ec_material_before/after/margin measurements provide additional
+paths for the same broad material proxy to influence the score.
+
+For the184 EC-false misses, the largest negative mean path associations are
+ec_material_margin, ec_sacrifice and ec_material_after. These are not three
+independent chess discoveries. They describe different measurements of a
+similar sacrifice calculation. Simply turning one flag on would create a
+different input distribution and is not a tested or recommended repair.
+
+For the245 EC-true misses, that sacrifice evidence is already positive. Their
+negative path associations instead commonly involve offered_piece_moved,
+improvement over the preceding own move, immediate capture/material credit,
+and converted_material_or_endgame. This group already has a recognized offer;
+the forest lacks sufficiently reliable separation from ordinary tactics.
+
+Within EC-true cases, current-window descriptive proportions are:
+
+Property                         Found445    Missed245   Hard ordinary77
+Offered piece itself moved       415(93.3%)  126(51.4%)    40(51.9%)
+Move is a capture                371(83.4%)  112(45.7%)    35(45.5%)
+Converted-material/endgame flag    13(2.9%)    76(31.0%)    44(57.1%)
+
+The first two properties are almost equally common in misses and ordinary
+controls. Their rarity in the detected-Brilliant group reveals a learned
+preference for a narrow kind of sacrifice, but does not make a quiet-move or
+stationary-offer exception safe. These are associations and overlapping groups.
+
+2. THIS IS MOSTLY NOT WINDOW INSTABILITY OR A TINY CUTOFF SHORTFALL
+
+418/429 misses score below their saved cutoff in BOTH windows. Only11 have one
+window above it. The median missed score is0.6785, compared with0.9181 for
+detected Brilliants and0.4455 for the226 explicit hard ordinary controls.
+Median missed score is0.6039 with EC false and0.7329 with EC true.
+
+38 misses lie within0.025 of their cutoff;119 are0.025–0.10 below;272 are more
+than0.10 below. These descriptive bins were fixed before matching. There is no
+cutoff sweep or recommendation to lower a threshold.
+
+The reached leaves are mixed: their mean ordinary fraction is34.2% for misses,
+9.0% for detected Brilliants and55.2% for the explicit ordinary control pool.
+This partly restates how a forest score is calculated. It explains the mechanism
+of low scores, not why the underlying labels differ. Misses reach leaves with
+about53 distinct training groups on average, so there is no evidence that they
+all rest on only one or two training games. Whether the mixture reflects missing
+inputs, inadequate decision structure, sampling, or a combination remains open.
+
+3. COMPARISON WITH ORDINARY MOVES
+
+Each of429 misses was matched to a saved eligible hard ordinary move in the SAME
+outer fold and a DIFFERENT game/position group. The primary pool contains226
+explicit hard-ordinary negatives. All193 eligible legacy negatives are retained
+in a separate comparison; two eligible easy-error negatives are not used as
+ordinary tactical controls. This is not a performance evaluation or exclusion
+from the earlier accuracy calculation.
+
+Matching favors the same EC flag, capture/check status, whether the offered
+piece moved, and offered minor/rook/queen categories. It then compares all75
+existing feature values over both windows using fixed normalized distances,
+equally weighted across six feature families. Neither forest score nor truth
+is used in that distance. Scores/labels do define the diagnostic pools.
+
+272 misses have controls satisfying those exact semantic anchors. For157,
+no such control exists in the same-fold pool; their closest fallback is flagged
+and is NOT claimed to be a close tactical analogue. All429 remain included.
+The primary matching uses134 distinct controls, up to16 reuses; comparisons
+are correlated and cannot support independent-pair significance claims.
+
+The missed Brilliant scores higher than its primary ordinary control in325/429
+comparisons, including194/272 exact-anchor comparisons. Thus the forest often
+already sees a difference, but not enough to meet the conservative cutoff.
+The median pair shares23.4% of the128 corresponding tree/window leaf paths
+(27.3% among exact-anchor pairs). No pair shares every leaf. These are not
+identical model representations or proof of irreducible label ambiguity.
+
+We inspected a prespecified12-pair panel, two per EC flag x score-shortfall
+stratum, with24 distinct groups. The two EC-false near-cutoff pairs have no exact
+anchor controls and are poor comparisons; their limitations remain explicit.
+For all24 cases,208 saved after-position and acceptance PVs were legally
+replayed. No future played continuation was used as a predictor.
+
+Selected concrete examples from the panel:
+
+* Brilliant ...Nxf4 and ordinary ...Nxe4 both recover a knight through pawn
+  forks. Nxf4 Rxf4 e5 forks a rook and bishop immediately. Nxe4 Nxe4 Qe7
+  prepares ...d5, forking two knights after an e-file pin. Their forest scores
+  are.813 and.642. Target pieces, pin and move order are real distinctions,
+  but a generic fork flag would describe both. The label difference remains
+  unexplained by this example alone.
+
+* Brilliant ...Ba6 leaves a rook offered: Nxd4 exd4 forks queen and rook.
+  Ordinary Bd3 also leaves a rook offered but uses ...Bxd4 Nxd4, a direct
+  exchange recovery. The missed Brilliant scores lower (.507 versus.610).
+  The causal link from vacating/capturing one piece to attacking two other
+  pieces is absent from the scalar offer/material description.
+
+* Brilliant ...Nf6 uses fxe4 Bc5, pinning the queen against the king, followed
+  by Qxc5 Nxe4+ and Nxc5 to recover the queen. The ordinary ...Ng4 instead
+  punishes gxh3 with Qh2#. The ordinary has the immediate mate. This is a
+  direct counterexample to treating the more spectacular acceptance outcome
+  as sufficient evidence for Brilliant.
+
+* Brilliant Bg2 and ordinary Bh6 score almost identically (.762 versus.759).
+  The ordinary acceptance continuation includes a promotion with check and
+  eventual queen recovery. Ordinary Qg5 in another pair also has a forcing
+  king attack. These are substantive sacrifices/tactics, not empty threats.
+
+All12 comparisons, including endgame composition differences and unresolved
+reverse examples, are in PANEL-AUDIT.txt. They expose missing descriptions,
+not a discovered Chess.com decision rule.
+
+4. A CONCRETE ENCODING GAP
+
+The existing feature named mating_acceptance means:
+    NOT ec_sacrifice AND a bounded immediate-mate acceptance witness.
+It does not mean "an acceptance permits mate" for every position.
+
+A legal replay audit of saved acceptance responses for all1,302 eligible cases
+found immediate checkmate witnesses for61 misses,37 found Brilliants and22
+ordinary moves. Of these, the mating_acceptance feature is false for:
+    22 missed Brilliants,31 found Brilliants,11 ordinary moves.
+Every one of these64 false-flag witnesses has EC true, explaining the masking.
+Thus genuine saved information is not expressed independently to the forest.
+The11 ordinary examples also show why adding an award exception would be wrong.
+The scalar's masking is deliberate existing semantics, not a new extraction bug.
+
+The helper also returns false on proof-budget exhaustion, rather than a separate
+unknown value. That is a source-level limitation; this audit did not establish
+that exhaustion caused any of the429 misses. Saved PVs are incomplete: lack of
+a witness in the audit is not proof that no acceptance permits mate.
+
+5. WHAT INFORMATION IS LOST, AND WHAT IS STILL UNPROVEN
+
+The current representation has counts, flags, material totals, minimum/maximum
+debts and gains, and a few root evaluations. It does not retain:
+
+  - Which offered piece/capture enables which particular recovery or threat.
+  - The target pieces/squares of a pin, fork, opened file or king attack, and
+    the move order connecting the sacrifice to that compensation.
+  - Side-specific material composition, beyond totals/phase and moved/offered
+    role flags. Queenless exchanges and queen attacks can match those summaries.
+  - Independent known/unknown outcomes for some conditional probes, including
+    the masked mating witness above.
+
+This information is visible in saved lines/boards; some could be represented
+without new engine searches. But its usefulness for predicting the LABEL is not
+yet established. The earlier response-gap and6/12-ply material-trajectory
+experiments already failed the desired overall tradeoff. The ordinary examples
+here have rich compensation too. A list of more tactical motifs is therefore
+not justified as an award rule.
+
+The best-supported direction for a future information experiment is a faithful
+description linking an offer to its compensation and board context, rather than
+assuming that more material debt, mate, or tactical uniqueness implies Brilliant.
+The cleanest small encoding issue is to distinguish an actual mating witness
+from EC masking and unknown proof status. Neither proposal has been tested here;
+the masking issue alone covers only22 of the429 misses and cannot explain the
+whole deficit. We have not separated limited tree capacity from feature limits
+or insufficient training contrasts, and we have not measured a matching ceiling.
+
+REPRODUCIBILITY AND LIMITS
+
+Original forest reconstruction uses five deterministic outer fits/320 trees.
+The first reconstruction attained exact parity but stopped on a count assertion:
+it used the fixed-cutoff445 miss count where the requested selected-cutoff cohort
+was429. The original script/protocol/stop record are preserved. One explicitly
+authorized correction changed the diagnostic cohort mask, not the tree training
+definition or thresholds, and reran the same five fits to serialize the trees.
+Across both attempts there were10 reconstruction fits/640 trees; no new model
+candidate or hyperparameter choice. The successful run took about9 seconds.
+
+An independent read-only check recomputed all1,287 match choices across the three
+control pools, all429 shared-leaf fractions, cohort/group restrictions, panel
+selection, score summaries and recorded hashes. No discrepancies were found.
+Path contributions sum back to the window score within5.56e-16.
+
+This is repeatedly studied, enriched research data. Existing labels have mixed
+historical provenance; the explicit-ordinary panel improves control clarity but
+does not make it a fresh test. No rating inputs or analysis were used. No source
+classifier, existing model, original data, prior study result, or deployment was
+modified. No accuracy improvement is claimed.
+
+FILES
+FOREST-TRACE.json / OUTER-TREES.json: exact fixed paths and reconstructed models.
+MATCHES.json: all429 targets and ordinary/legacy/found-Brilliant comparisons.
+PANEL.json / PANEL-EVIDENCE.json / PANEL-AUDIT.txt: fixed examples and saved lines.
+SUMMARY.json / FEATURE-PATTERNS.json: score, path and subgroup descriptions.
+MATE-ENCODING-AUDIT.json: legal mate witnesses and original feature values.
+RECONSTRUCTION-PROTOCOL.json / MATCH-PROTOCOL.json / VERIFICATION.json: provenance.

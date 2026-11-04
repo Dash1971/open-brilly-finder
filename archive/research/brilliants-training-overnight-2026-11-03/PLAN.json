@@ -1,0 +1,134 @@
+{
+  "authorized_at_utc": "2026-11-03T14:55:39Z",
+  "deadline_utc": "2026-11-03T23:55:39Z",
+  "deadline_japan": "2026-11-04 08:55:39 JST",
+  "objective": "Collect as many verified Chess.com move labels as possible within nine hours, for future selective-model training. Prioritize real Brilliants and difficult non-Brilliant material tactics; preserve a separate unseen-game assessment partition.",
+  "scope": "Maximize verified collection before deadline. If collection finishes early, train/test a candidate on a separate experimental RESEARCH branch; never modify app model, Mute Dev PR or release. No merge/deploy or general tooling expansion.",
+  "collection_strategy": "Validate whole-reviewed-game PGN export explicit annotation NAGs against visible Game Review labels before scaling. Missing annotations remain UNKNOWN, never inferred negative. Preserve every captured label with source/time/settings and original PGN.",
+  "resource_policy": "ONE research browser tab total for remainder: sole collector OR metadata. Actual fresh MEMORY-STATE level1 required; engine/fit require all tabs closed. No two-tab retries.",
+  "split_rule": "For new gameID only, sha256(mute-overnight-2026-11-03-v1: + gameID) mod5 ==0 => reserved assessment, otherwise training. Exclude all previously reviewed games and normalized positions from assessment. Assign before observing own classifier output/labels; never replace based on desired predictions.",
+  "target": "No fixed quota; maximum verified unique labels before deadline. Distinguish Brilliant, explicit non-Brilliant, unknown and duplicate counts, plus games/accounts and training/assessment split.",
+  "current_status": "Repeated memory pressure with one browser collector: source collection is held; all research tabs closed. Finalizing saved evidence and the one authorized experimental fit/test, without more recovery loops.",
+  "experimental_training_authorized": true,
+  "export_method_verified": {
+    "game": "174838537627",
+    "known_method_game_excluded_from_new_counts": true,
+    "export": "method-check/hansen-174838537627-analysis-export.pgn",
+    "visible_label_and_exactboard_checks": "method-check/visible-label-checks.json",
+    "explicit_chesscom_nags": {
+      "3": "Brilliant",
+      "1": "Great",
+      "2": "Mistake",
+      "4": "Blunder",
+      "6": "Inaccuracy",
+      "9": "Miss"
+    },
+    "no_annotation": "UNKNOWN; do not infer negative",
+    "method_only_labels": 17,
+    "caution": "Many exported error labels are easy negatives that fail model soundness gates. Prioritize Brilliant/Great and explicit near-best hard controls rather than reporting raw volume as useful training volume."
+  },
+  "automation_id": "overnight-brilliant-training-data-collection",
+  "resource_amendments": [
+    {
+      "recorded_at_utc": "2026-11-03T15:42:38.125549+00:00",
+      "authorized_by": "Root task coordinator relaying owner capacity authorization",
+      "scope": "One lightweight gallery tab in addition to two review tabs; at most 300 rendered cards.",
+      "conditions": "Only while macOS memory pressure is 1 and reported free memory is at least 35%. Close metadata gallery first if either condition fails.",
+      "reason": "Reopening at 100 cards resets pagination and prevents reaching unused nominations.",
+      "selection": "Deterministic gallery order or game hash; no classifier predictions."
+    },
+    {
+      "recorded_at_utc": "2026-11-03T15:50:12.799595+00:00",
+      "authorized_by": "Root coordinator after pressure-2 resource stop and recovery to 1",
+      "phase_policy": "No engine/browser concurrency. Engine phase: all research browser tabs closed. Collection phase: at most two research browser tabs total. Two review collectors normally; one A metadata gallery is allowed only after A closes its exhausted queue, alongside B one review tab.",
+      "gallery_cap": 300,
+      "gallery_conditions": "Memory pressure 1 and free memory at least 35%; close gallery first otherwise.",
+      "recovery": "Root owns one identical frozen batch02 recovery attempt in a separate output; original partial preserved. No script, profile or cap changes."
+    },
+    {
+      "recorded_at_utc": "2026-11-03T18:00:37.238316+00:00",
+      "scope": "After second actual pressure2 spike, one research browser tab total for remainder. One collector OR metadata; engine/fit require all research tabs closed. No further two-tab retries or tooling expansion.",
+      "guard": "Fresh MEMORY-STATE.json level1/normaltrue age\u226415sec before every game/audit; otherwise checkpoint/close."
+    }
+  ],
+  "current_phase_receipt": {
+    "at_utc": "2026-11-03T21:26:03.598612+00:00",
+    "phase": "All browser collection held after repeat single-tab resource warning; STOP_IMPORT requested before final partial training batch.",
+    "max_research_tabs": 0
+  },
+  "sampling_amendments": [
+    {
+      "recorded_at_utc": "2026-11-03T15:59:01.721766+00:00",
+      "sampling_version": "static_offer_v3",
+      "authorized_by": "Root coordinator before unstarted B wave4 and future A games",
+      "scope": "Future games only; prior completed controls remain unchanged.",
+      "selection": "Prefer up to four unannotated raw legal-offer positions, nearest historical nomination then captures. If fewer offers exist, fill up to two controls using the previous deterministic control rule.",
+      "labels": "Every selected control requires an explicit visible UI label. Retain any Brilliant response, disagreement or shortfall; never force a negative class.",
+      "limits": "Static unchanged isMuteSacrifice only; no engine, model scores, current labels or threshold tuning in selection. Unscanned predicates remain unknown.",
+      "evaluation": "Training and assessment candidates/baseline use the same selected cases; reserved challenge sampling must be reported.",
+      "initial_sidecar": "control-offers-B-wave4.json",
+      "source_script": "adapter/screen-control-offers.mts"
+    },
+    {
+      "recorded_at_utc": "2026-11-03T16:08:30.038026+00:00",
+      "source_kind": "archive_static_offer",
+      "authorized_by": "Root before any current labels for the archive stratum",
+      "frame": "Official cached full PGNs for Nelsi and KNVB, excluding all prior reviewed and assigned games.",
+      "selection": "Fixed SHA256 game rank, first 15 candidates per account screened without labels; first 10 per account with at least one static legal offer.",
+      "partition": "Original pre-label 20% whole-game assessment hash, unchanged.",
+      "anchor": "First static legal offer, explicitly unknown current label; gallery_targets is empty.",
+      "controls": "static_offer_v3, same explicit UI confirmation and retention rules as gallery games.",
+      "queue": "queue-A-archive-wave1.json",
+      "queue_sha256": "9d16a3738c53b5ae874cdc0e790b25a41e112694724b0b6d1e20abd71bec2fcd",
+      "strata": "game_strata table and COUNTS.json keep archive and historical-gallery nominations separate."
+    }
+  ],
+  "data_integrity_amendments": [
+    {
+      "recorded_at_utc": "2026-11-03T16:09:36.961935+00:00",
+      "authorized_by": "Root before any reserved model scoring",
+      "scope": "Target-level assessment exclusion only. Original whole-game split and all raw labels remain unchanged.",
+      "rule": "Reserved target before/after canonical first-four FENs must not match old reviewed full-game positions or ANY before/after position in a new training full PGN.",
+      "reason": "Avoid identical-position leakage through training engine context even if that training ply has no explicit label.",
+      "prediction_use": "None. No replacements, predictions, threshold fitting or whole-game opening exclusions.",
+      "training_batches": "Unchanged; previous frozen batches are preserved byte for byte.",
+      "importer_sha256": "3c994d71b1f1c5c8cc3b1b790f4911824a57648c2f052f0cf1912ffb0302ef90"
+    }
+  ],
+  "bounded_import_worker": {
+    "recorded_at_utc": "2026-11-03T16:13:44.451947+00:00",
+    "pid": 52372,
+    "exec_session_id": 38764,
+    "command": "python3 research/brilliants-training-overnight-2026-11-03/import-worker.py",
+    "worker_sha256": "3146971644865905371760ad973f021d98f988e8048ea87db41b269c5f6b7e5e",
+    "checkpoint": "IMPORT-WORKER-STATE.json",
+    "log": "import-worker.log",
+    "stop_flag": "STOP_IMPORT",
+    "stop_at_utc": "2026-11-03T23:57:39+00:00",
+    "sole_writer": "The worker is now the only dataset.sqlite3 writer. Do not invoke importer manually until stopped.",
+    "commands_run_by_worker": [
+      "python3 import-verified.py",
+      "python3 prepare-engine-batch.py --batch <next two-digit number> --min-games 20"
+    ],
+    "scope": "Checks completion-marker changes every 30 seconds; imports legal verified saved evidence and freezes immutable training-only batches. No browser, engine, model fitting, publication or app work."
+  },
+  "engine_phase_policy": {
+    "max_browser_tabs": 1,
+    "engine_browser_concurrency": false,
+    "analysis_interval_minutes": 45,
+    "last_completed_analysis_utc": "2026-11-03T21:06:58Z",
+    "next_planned_analysis_utc": "2026-11-03T21:51:58Z",
+    "pause": "Ask both collectors to finish current game, checkpoint, close owned tabs and explicitly confirm; only then run frozen unprocessed training batches sequentially, up to10minutes, then resume collectors."
+  },
+  "optional_experiment_plan": "EXPERIMENT-PLAN.json",
+  "experimental_worktree": "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03",
+  "experimental_branch": "codex/brilliant-training-overnight-2026-11-03",
+  "candidate_trigger": "When useful verified training data/features are substantial and at least45minutes remain, root may freeze one candidate and run paired sealed evaluation in an analysis phase. Preserve collection priority, current baseline and old results. If unable to finish within budget, report data only; no blind fitting or test contamination.",
+  "status": "bounded_study_complete_no_model_promotion",
+  "finished_at_utc": "2026-11-03T22:46:47.872800+00:00",
+  "collection_status": "closed_memory_hold_no_resume",
+  "next_planned_analysis_utc": null,
+  "automation_deleted": true,
+  "temporary_workers_stopped": true,
+  "further_research_requires_new_bounded_scope": "Analyze currently unsaved acceptance replies, matched genuine/ordinary examples; unproven hypothesis."
+}

@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-04T04:46:25.991685+00:00",
+  "scope": "One-feature correction only; preserve original algorithm and remove EC masking. No new rule, evaluation gate, threshold, missing indicator, search depth or broader mate definition.",
+  "input_path": "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json",
+  "source_sha256": {
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/root/frozen-v4/noSweatClassify.ts": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/root/frozen-v4/noSweatCore.ts": "3fa48e3c50e7361a244c0ebb58543315b6a5f208c0c0e1979ae18fca40366a40",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/root/frozen-v4/package.json": "a90fc33418afa2b9cbf4768524b021135b965ecdf993457505bfae3ac44a8428",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/root/frozen-v4/node_modules/chessops/package.json": "be321be1778ab6b6e498ea5010a10101ab1be25e9b2e79050f0365bbde5b29dc",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/root/frozen-v4/node_modules/tsx/package.json": "ab5f14c4251638844ade3905d3cfc52fc1c833644694d655a05f6d0ca746b83c"
+  },
+  "script_sha256": "e4999a2af04665ee5de068ac9044f3132d3d8b55c2100628e41dda1bb2816764",
+  "definition": "corrected mating_acceptance=hasMatingAcceptance(beforeFEN,afterFEN), without !ec_sacrifice. Invoke for all3724cases irrespective label, eligibility, score or cohort. Existing proof budget512 and false-on-exhaustion semantics remain.",
+  "parity": "For every case require old flag === (!ec_sacrifice && corrected), both windows agree. Only ECtrue false->true changes possible.",
+  "output": "FEATURES.json plainkey->boolean forbothwindows. EXTRACTION.json counts,changes,feature/source hashes and originalmasked parity. No labels used for extraction.",
+  "limits": "180seconds total loop, zeroenginequeries, one extraction run, no outcome-driven retries.",
+  "node": "/private/tmp/node-v24.22.1-darwin-arm64/bin/node",
+  "loader": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/root/frozen-v4/node_modules/tsx/dist/loader.mjs"
+}

@@ -1,0 +1,29 @@
+{
+  "updated_at_utc": "2026-11-03T05:15:50.915539+00:00",
+  "priority": "User upgraded/restarted Codex and explicitly resumed collection. ONE collector; recycle owned tab after bounded batches; no concurrent engine.",
+  "data": {
+    "validated_primary": 107,
+    "brilliant": 54,
+    "non_brilliant": 53,
+    "remaining_total": 193,
+    "all_original_318_retained": true
+  },
+  "browser": "Chrome connection was restored and verified. Newly opened owned research tab245638155 was then closed for memory cleanup. Browser inventory now contains only userNewTab245638154; do not close it. No current research tabs or active collectors.",
+  "current_resources": {
+    "system_pressure": "normal(level1)",
+    "swap_used_MB": 5469.38,
+    "Codex_main_renderer_physical_footprint": "3.1GB",
+    "Chrome_large_renderers_in_screenshot": "no longer present"
+  },
+  "monitor_correction": "RSS understated compressed/swapped process memory. Use physical footprint summaries and sustained swap rate, rather than RSS alone, for future capacity decisions.",
+  "resumption": "The300additionalmove objective remains incomplete. RecoverexactpendingKNVBcontrolfromroot-collector-resume.json. UseONEcollector, shortcalls andboundedtablifetime, noengineconcurrent. Do not reopen research while memory mitigation remains the active user priority.",
+  "editorial": "EDITORIAL.json remains authoritative: unified combined research report, no collection chronology, lateststableECdirectbaseline, honestheldoutresults.",
+  "app_PR": "231 remains draft, no merge/deployment authorized.",
+  "resumed_at_utc": "2026-11-03T05:22:43.457331+00:00",
+  "restart_baseline": {
+    "pressure": 1,
+    "swap_used_MB": 780.69,
+    "swapin_MiB_s": 0,
+    "swapout_MiB_s": 0
+  }
+}

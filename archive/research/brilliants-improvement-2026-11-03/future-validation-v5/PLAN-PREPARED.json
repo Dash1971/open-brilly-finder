@@ -1,0 +1,48 @@
+{
+  "study_id": "brilliants-future-validation-v5-200-2026-11-03",
+  "frozen_at_utc": "2026-11-03T10:09:01.208591+00:00",
+  "status": "Preparation only; no freshlabels before parentreviewofFINALQUEUE",
+  "quantity": {
+    "primary_total": 200,
+    "future_current_brilliant": 100,
+    "future_explicit_non_brilliant": 100,
+    "per_account_per_class": 20,
+    "accounts": [
+      "nelsi",
+      "hansen",
+      "KNVB",
+      "GothamChess",
+      "Hikaru"
+    ]
+  },
+  "selection": {
+    "partitions": "All200 are futureassessment of fixed source; previous848 nowunblindeddevelopment.",
+    "seed": "mute-future-validation-v5-v1",
+    "positives": "Retaineligibleoriginal73drafttargets; fillperaccount20 fromexpandedhistoricalpool inpredeclaredcategory-round-robin/hash order, usingdataavailability+identityonly. Replaceonlytargetswithnoeligiblecontrolbeforereview withnextfrozenreserve. Onepositive/game; preserveallhistoricalandlaterfreshlabeldisagreements.",
+    "controls": "Same-player cachedorPGN-derived moves: pinnedraw-v2legaloffers, quietattacked+defendednonpawnpieces, recapture/exchange, othercapture, otherquiet; nearesttargetply thenply/UCI. Onefirstcandidate+max3reserves initially; everyfreshoutcome retained.",
+    "exclusions": "All465knownreviewed/regressiongames and38214canonicalbefore/afterpositions. No currentlabels innewgamesyet.",
+    "replacement": "Beforefreshlabels, PGN/namespace/SAN/FEN/controlavailability only. Duringcollection: historicaltargetcurrentnon-Brilliant stayssecondary; nextunusedfrozeneligiblepositive reserve. ControlBrilliant stayssecondary; nextfrozencontrol. No classifier-result-drivenreplacements oraccountquotashifts."
+  },
+  "baseline_sources": {
+    "primary": "Fixedforest64/depth6/min8/cost5 meanRAWp>=5/6 bothcompletewindows+originalguards",
+    "S": "Frozen sequencecomparatorkingcastlingaddendumSHA16faa288afc2e18716cdc7135efa8275712cd3b12624e4f696f33f25f6b3fe29",
+    "EC": "DirectrawEC lateststable-equivalentpinned6f2d, unchanged",
+    "engine": "SF18ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374/300k/Threads1/Hash64MB;standalonenotnativeSF19validated"
+  },
+  "source_freezes": {
+    "astra/v5/fresh-extractor/FREEZE.json": {
+      "sha256": "29202a0df6cb45d9c64d81edda4e1ea411c5528775366d16d41701f30d9179a4"
+    },
+    "astra/v5/sequence-reference/source-freeze.json": {
+      "sha256": "15312b1499cd2fffae75e189a79ed13708f52bf5740c4a71bc5aee674b0b7b4c"
+    },
+    "astra/v5/sequence-reference/source-freeze-castling-addendum.json": {
+      "sha256": "3d6f12ac32686b9ef3e07ef940dad51d4216163160c7309830b6b51a157d2df5"
+    },
+    "astra/v5/sequence-reference/PROSPECTIVE-CONTRACT.md": {
+      "sha256": "25dfda60e95feb13bf3486bb12196fe40b37ed7d6f7df60f9903c8086130eaca"
+    }
+  },
+  "reporting": "Researchassessment ofbadgeprecisionanddetection, notclaim90%goalachieved; no threshold/modelretuningfromthis200. All848previousmovesexcludedastrainingdata.",
+  "fresh_label_collection_authorized_now": false
+}

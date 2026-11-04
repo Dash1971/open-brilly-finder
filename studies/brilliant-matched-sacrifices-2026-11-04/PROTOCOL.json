@@ -1,0 +1,206 @@
+{
+  "scope": "Diagnostic matched case-control study; not classifier validation or representative prevalence. No fitting or app changes.",
+  "input_sha256": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+  "script_sha256": "07f10e2fa35c1442b828430acbf091573dc834800cedb58e310f3c89ca212696",
+  "population": {
+    "missed_fresh_eligible_ec_false_positives": 51,
+    "fresh_eligible_ec_false_hard_ordinary": 149
+  },
+  "matching": {
+    "exact": [
+      "move_capture",
+      "offered_piece_moved",
+      "offered minor/rook/queen types"
+    ],
+    "scaled_numeric": {
+      "after_mapped_score": 300,
+      "physical_debt3_max": 300,
+      "physical_debt3_min": 300,
+      "offer_exchange_gain_max": 300,
+      "capture_promotion_credit": 300,
+      "prior_offer_gain_same_square_max": 300,
+      "phase": 12,
+      "best_second_gap_pp": 20,
+      "raw_material_before": 600
+    },
+    "boolean": [
+      "move_check",
+      "move_in_check",
+      "converted_material_or_endgame",
+      "avoidability",
+      "checked_continuation"
+    ],
+    "distance": "Mean capped numeric absolute difference plus boolean disagreements; None mismatch=1",
+    "selection": "Greedy nearest cross-label pairs, deterministic key ties, each whole-game/position group used once; first24pairs. No new search outcome used."
+  },
+  "pairs": [
+    {
+      "pair": 1,
+      "distance": 0.030600031411624148,
+      "positive": "166122402690:37",
+      "ordinary": "173774757032:28"
+    },
+    {
+      "pair": 2,
+      "distance": 0.04106528843493517,
+      "positive": "173661079138:26",
+      "ordinary": "147329069640:16"
+    },
+    {
+      "pair": 3,
+      "distance": 0.04444042095418653,
+      "positive": "184653480432:30",
+      "ordinary": "173765223182:58"
+    },
+    {
+      "pair": 4,
+      "distance": 0.07646037519837678,
+      "positive": "173184879010:62",
+      "ordinary": "166897350472:18"
+    },
+    {
+      "pair": 5,
+      "distance": 0.0837409746952407,
+      "positive": "167122315622:53",
+      "ordinary": "172804595924:41"
+    },
+    {
+      "pair": 6,
+      "distance": 0.08898804806955023,
+      "positive": "173532009624:45",
+      "ordinary": "166699653212:39"
+    },
+    {
+      "pair": 7,
+      "distance": 0.09400825842930956,
+      "positive": "168415989030:55",
+      "ordinary": "172312827850:23"
+    },
+    {
+      "pair": 8,
+      "distance": 0.09590160043446734,
+      "positive": "185229374468:26",
+      "ordinary": "184300109262:14"
+    },
+    {
+      "pair": 9,
+      "distance": 0.09857734127566768,
+      "positive": "171472107788:38",
+      "ordinary": "166578129186:33"
+    },
+    {
+      "pair": 10,
+      "distance": 0.0991257797941518,
+      "positive": "170661862908:40",
+      "ordinary": "184277876260:54"
+    },
+    {
+      "pair": 11,
+      "distance": 0.10173889508743839,
+      "positive": "167735024286:72",
+      "ordinary": "172828071536:75"
+    },
+    {
+      "pair": 12,
+      "distance": 0.11055390839877112,
+      "positive": "172534191020:19",
+      "ordinary": "172399142014:58"
+    },
+    {
+      "pair": 13,
+      "distance": 0.11232251145280489,
+      "positive": "184185752754:59",
+      "ordinary": "173625605676:68"
+    },
+    {
+      "pair": 14,
+      "distance": 0.11830332263089961,
+      "positive": "168815996146:51",
+      "ordinary": "174474699682:54"
+    },
+    {
+      "pair": 15,
+      "distance": 0.12419666363278258,
+      "positive": "172914653473:86",
+      "ordinary": "184330910250:75"
+    },
+    {
+      "pair": 16,
+      "distance": 0.13062392531721453,
+      "positive": "181991300863:49",
+      "ordinary": "171805090202:89"
+    },
+    {
+      "pair": 17,
+      "distance": 0.1437066554018974,
+      "positive": "172256931994:52",
+      "ordinary": "170804505058:23"
+    },
+    {
+      "pair": 18,
+      "distance": 0.14920367547785965,
+      "positive": "166981885820:34",
+      "ordinary": "169295732472:39"
+    },
+    {
+      "pair": 19,
+      "distance": 0.15854934829154613,
+      "positive": "173720481882:31",
+      "ordinary": "166508569726:24"
+    },
+    {
+      "pair": 20,
+      "distance": 0.15911282425339437,
+      "positive": "171728787528:43",
+      "ordinary": "182338102719:54"
+    },
+    {
+      "pair": 21,
+      "distance": 0.16095238095238093,
+      "positive": "183973291902:40",
+      "ordinary": "171615877812:32"
+    },
+    {
+      "pair": 22,
+      "distance": 0.16705680582228039,
+      "positive": "167744579866:37",
+      "ordinary": "167245993920:25"
+    },
+    {
+      "pair": 23,
+      "distance": 0.16986481034828568,
+      "positive": "173851185684:34",
+      "ordinary": "167275575688:60"
+    },
+    {
+      "pair": 24,
+      "distance": 0.17839668495063446,
+      "positive": "173628147512:111",
+      "ordinary": "169084959468:69"
+    }
+  ],
+  "cases_sha256": "e6d482a5447099854fc3235e4d65dcdd6d0a9c7109275c2081847973cba93553",
+  "games_sha256": "2ec968779a8a126947bb807a30469a6a86871e2d65bd0eafd375712f927c0d95",
+  "new_search_plan": {
+    "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+    "question": "What happens if each qualifying offer is accepted, including branches absent from saved top2?",
+    "positions": "After each accepting capture, full PGN history retained; same bounded SEE qualification as savedPV experiment.",
+    "nodes_per_search": 300000,
+    "threads": 1,
+    "hash_mb": 64,
+    "multipv": 2,
+    "max_cases": 48,
+    "max_offers_per_case": 4,
+    "max_searches": 192,
+    "wall_seconds": 300,
+    "observations": [
+      "acceptance evaluation vs saved best defense (different searches; noisy)",
+      "compensation best/second response gap",
+      "material trajectory through12plies including acceptance",
+      "material recovery ply",
+      "checks and promotions",
+      "mate/stalemate terminals"
+    ],
+    "interpretation": "Exploratory evidence only; exact features may be summarized after review, with counterexamples. No rule fitting or award claims."
+  }
+}

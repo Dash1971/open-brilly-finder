@@ -1,0 +1,3584 @@
+{
+  "scope": "Same frozen 200 new moves, 100 Chess.com Brilliants and 100 explicit non-Brilliants; unchanged selective model and threshold. No report or PR edits.",
+  "counts": {
+    "selective": {
+      "TP": 57,
+      "TN": 98,
+      "FN": 43,
+      "FP": 2,
+      "agreement_percent": 77.5,
+      "awarded_badges": 59
+    },
+    "history_with_guard": {
+      "TP": 78,
+      "FP": 13,
+      "TN": 87,
+      "FN": 22,
+      "agreement_percent": 82.5,
+      "awarded_badges": 91
+    },
+    "en_croissant": {
+      "FN": 73,
+      "TN": 99,
+      "TP": 27,
+      "FP": 1,
+      "agreement_percent": 63.0,
+      "awarded_badges": 28
+    }
+  },
+  "by_account": {
+    "nelsi": {
+      "selective": {
+        "TP": 14,
+        "TN": 20,
+        "FN": 6
+      },
+      "history_with_guard": {
+        "TP": 16,
+        "FP": 3,
+        "TN": 17,
+        "FN": 4
+      },
+      "en_croissant": {
+        "FN": 14,
+        "TN": 20,
+        "TP": 6
+      }
+    },
+    "hansen": {
+      "selective": {
+        "TN": 19,
+        "FN": 8,
+        "TP": 12,
+        "FP": 1
+      },
+      "history_with_guard": {
+        "TN": 18,
+        "FN": 3,
+        "TP": 17,
+        "FP": 2
+      },
+      "en_croissant": {
+        "TN": 20,
+        "FN": 16,
+        "TP": 4
+      }
+    },
+    "GothamChess": {
+      "selective": {
+        "TP": 13,
+        "TN": 20,
+        "FN": 7
+      },
+      "history_with_guard": {
+        "TP": 15,
+        "TN": 17,
+        "FN": 5,
+        "FP": 3
+      },
+      "en_croissant": {
+        "FN": 15,
+        "TN": 19,
+        "TP": 5,
+        "FP": 1
+      }
+    },
+    "KNVB": {
+      "selective": {
+        "TP": 9,
+        "TN": 19,
+        "FN": 11,
+        "FP": 1
+      },
+      "history_with_guard": {
+        "TP": 13,
+        "TN": 17,
+        "FN": 7,
+        "FP": 3
+      },
+      "en_croissant": {
+        "FN": 13,
+        "TN": 20,
+        "TP": 7
+      }
+    },
+    "Hikaru": {
+      "selective": {
+        "TN": 20,
+        "FN": 11,
+        "TP": 9
+      },
+      "history_with_guard": {
+        "TN": 18,
+        "TP": 17,
+        "FP": 2,
+        "FN": 3
+      },
+      "en_croissant": {
+        "TN": 20,
+        "FN": 15,
+        "TP": 5
+      }
+    }
+  },
+  "selective_false_awards": [
+    {
+      "key": "174838537627:25",
+      "san": "Bxf6",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/174838537627/review?move=24",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8696614336870466,
+        "previous": 0.86290603074995
+      }
+    },
+    {
+      "key": "185390631380:22",
+      "san": "Bxg2+",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/185390631380/review?move=21",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9421499871183016,
+        "previous": 0.9433336992395136
+      }
+    }
+  ],
+  "feature_status_counts": {
+    "current": {
+      "physical_unknown": 0,
+      "avoidability_unknown": 1,
+      "stalemate_probe_unknown": 0,
+      "attribution_unknown": 0,
+      "ineligible": 62
+    },
+    "previous": {
+      "physical_unknown": 0,
+      "avoidability_unknown": 1,
+      "stalemate_probe_unknown": 0,
+      "attribution_unknown": 0,
+      "ineligible": 64
+    }
+  },
+  "rows": [
+    {
+      "key": "167098915246:46",
+      "san": "Bxf2",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/167098915246/review?move=45",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8928731444492798,
+        "previous": 0.8935456122063175
+      }
+    },
+    {
+      "key": "167098915246:48",
+      "san": "Ne3+",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "excellent",
+      "source": "https://www.chess.com/analysis/game/live/167098915246/review?move=47",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5934874237405595,
+        "previous": 0.6000299387793918
+      }
+    },
+    {
+      "key": "167228312438:21",
+      "san": "Bd5",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/167228312438/review?move=20",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9077112993365037,
+        "previous": 0.9077112993365037
+      }
+    },
+    {
+      "key": "167228312438:27",
+      "san": "O-O",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/167228312438/review?move=26",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7063396569072571,
+        "previous": 0.697505152956423
+      }
+    },
+    {
+      "key": "167233861330:28",
+      "san": "Ne4",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "??",
+      "source": "https://www.chess.com/analysis/game/live/167233861330/review?move=27",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4667289178378445,
+        "previous": 0.4710676455164159
+      }
+    },
+    {
+      "key": "167233861330:30",
+      "san": "Bxa3",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/167233861330/review?move=29",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9721324616770473,
+        "previous": 0.9721324616770473
+      }
+    },
+    {
+      "key": "167252269040:40",
+      "san": "Nxg3",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/167252269040/review?move=39",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.962762830322788,
+        "previous": 0.962762830322788
+      }
+    },
+    {
+      "key": "167252269040:44",
+      "san": "Rdg8",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "good",
+      "source": "https://www.chess.com/analysis/game/live/167252269040/review?move=43",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7572405592685079,
+        "previous": 0.7572405592685079
+      }
+    },
+    {
+      "key": "167254631190:38",
+      "san": "Nf3+",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/167254631190/review?move=37",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9038071169647601,
+        "previous": 0.9038071169647601
+      }
+    },
+    {
+      "key": "167278581068:26",
+      "san": "Ne4",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "?!",
+      "source": "https://www.chess.com/analysis/game/live/167278581068/review?move=25",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4259458768959682,
+        "previous": 0.4172294234169786
+      }
+    },
+    {
+      "key": "167306626524:24",
+      "san": "Rxe2+",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/167306626524/review?move=23",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8737434269101975,
+        "previous": 0.8649295705484388
+      }
+    },
+    {
+      "key": "167319180912:47",
+      "san": "Be3",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/167319180912/review?move=46",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4519002095649781,
+        "previous": 0.4354424316735614
+      }
+    },
+    {
+      "key": "167355954300:35",
+      "san": "Rad1",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/167355954300/review?move=34",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7329637308053052,
+        "previous": 0.7205087936874931
+      }
+    },
+    {
+      "key": "167355954300:41",
+      "san": "Rxf7",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/167355954300/review?move=40",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9833761607443072,
+        "previous": 0.9841808817743501
+      }
+    },
+    {
+      "key": "167356800482:54",
+      "san": "Nc2+",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/167356800482/review?move=53",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4896413989557639,
+        "previous": 0.4896413989557639
+      }
+    },
+    {
+      "key": "167361991950:25",
+      "san": "Rxd7",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/167361991950/review?move=24",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9568276805151072,
+        "previous": 0.9606916271098346
+      }
+    },
+    {
+      "key": "167361991950:29",
+      "san": "Qxb5+",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/167361991950/review?move=28",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6952709086038076,
+        "previous": 0.6993608772111135
+      }
+    },
+    {
+      "key": "167506051256:19",
+      "san": "Nxd5",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/167506051256/review?move=18",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9004102047337065,
+        "previous": 0.9030352853246766
+      }
+    },
+    {
+      "key": "167506051256:25",
+      "san": "Be3",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/167506051256/review?move=24",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.40019506681866523,
+        "previous": 0.39956119257931433
+      }
+    },
+    {
+      "key": "167507462372:18",
+      "san": "h4",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "?!",
+      "source": "https://www.chess.com/analysis/game/live/167507462372/review?move=17",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7234368980425842,
+        "previous": 0.7397728845427174
+      }
+    },
+    {
+      "key": "167507462372:42",
+      "san": "Nf3+",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/167507462372/review?move=41",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8207325036245706,
+        "previous": 0.8207325036245706
+      }
+    },
+    {
+      "key": "167742451240:23",
+      "san": "Bxb5",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/167742451240/review?move=22",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6267616411424545,
+        "previous": 0.635912723294312
+      }
+    },
+    {
+      "key": "167742451240:61",
+      "san": "Ba3",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/167742451240/review?move=60",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9074740143577491,
+        "previous": 0.8967672047200184
+      }
+    },
+    {
+      "key": "168326742496:30",
+      "san": "Qg4",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "?!",
+      "source": "https://www.chess.com/analysis/game/live/168326742496/review?move=29",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.41732261131756976,
+        "previous": 0.4121966231752773
+      }
+    },
+    {
+      "key": "168326742496:36",
+      "san": "Nxe5",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/168326742496/review?move=35",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8272462294084734,
+        "previous": 0.8330723091268905
+      }
+    },
+    {
+      "key": "168480316884:56",
+      "san": "Rdd2",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/168480316884/review?move=55",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4620960894694919,
+        "previous": 0.4654852802907479
+      }
+    },
+    {
+      "key": "168480316884:58",
+      "san": "Nh5",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/168480316884/review?move=57",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5944959967389758,
+        "previous": 0.5944959967389758
+      }
+    },
+    {
+      "key": "168482409142:20",
+      "san": "Qh4",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "?",
+      "source": "https://www.chess.com/analysis/game/live/168482409142/review?move=19",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6036021686127147,
+        "previous": 0.63255434537044
+      }
+    },
+    {
+      "key": "168663718338:45",
+      "san": "Nxf7",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/168663718338/review?move=44",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9229334970668083,
+        "previous": 0.9340447600054145
+      }
+    },
+    {
+      "key": "168663718338:51",
+      "san": "Rxd4",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "?",
+      "source": "https://www.chess.com/analysis/game/live/168663718338/review?move=50",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8789745603737337,
+        "previous": 0.8909017434467854
+      }
+    },
+    {
+      "key": "169327851790:39",
+      "san": "Nd4",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/169327851790/review?move=38",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.403115080516642,
+        "previous": 0.398978288489225
+      }
+    },
+    {
+      "key": "169327851790:49",
+      "san": "Rxc7",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/169327851790/review?move=48",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9672425377096475,
+        "previous": 0.9669477263888928
+      }
+    },
+    {
+      "key": "169812769348:53",
+      "san": "Rxd7",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/169812769348/review?move=52",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8675592350020961,
+        "previous": 0.8687429471233082
+      }
+    },
+    {
+      "key": "169812769348:55",
+      "san": "Nf6+",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/169812769348/review?move=54",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.45105684941982305,
+        "previous": 0.43143588878323746
+      }
+    },
+    {
+      "key": "169826548970:53",
+      "san": "Rxf6",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/169826548970/review?move=52",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9778726121336998,
+        "previous": 0.9819625807410057
+      }
+    },
+    {
+      "key": "169826548970:95",
+      "san": "Qxe5+",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "??",
+      "source": "https://www.chess.com/analysis/game/live/169826548970/review?move=94",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8184435330686535,
+        "previous": 0.8102533875262029
+      }
+    },
+    {
+      "key": "169920135104:25",
+      "san": "Bd2",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/169920135104/review?move=24",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.3663372214661088,
+        "previous": 0.3734118742438866
+      }
+    },
+    {
+      "key": "169920135104:37",
+      "san": "Rxd5",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/169920135104/review?move=36",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.872158446519403,
+        "previous": 0.8719319972440407
+      }
+    },
+    {
+      "key": "170160675662:77",
+      "san": "Bxf6",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "excellent",
+      "source": "https://www.chess.com/analysis/game/live/170160675662/review?move=76",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6211761471623122,
+        "previous": 0.6211761471623122
+      }
+    },
+    {
+      "key": "170343395502:38",
+      "san": "Rg5",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "miss",
+      "source": "https://www.chess.com/analysis/game/live/170343395502/review?move=37",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.43686296658325924,
+        "previous": 0.4265536818908992
+      }
+    },
+    {
+      "key": "170343395502:42",
+      "san": "Bxh3",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/170343395502/review?move=41",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9695174957897286,
+        "previous": 0.9602329623856832
+      }
+    },
+    {
+      "key": "170344121098:53",
+      "san": "Rxc5",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "excellent",
+      "source": "https://www.chess.com/analysis/game/live/170344121098/review?move=52",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8030956042021223,
+        "previous": 0.7992980632583976
+      }
+    },
+    {
+      "key": "170989736786:49",
+      "san": "Rxd7",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/170989736786/review?move=48",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9037283096010607,
+        "previous": 0.9101930787633153
+      }
+    },
+    {
+      "key": "170989736786:85",
+      "san": "a7",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "excellent",
+      "source": "https://www.chess.com/analysis/game/live/170989736786/review?move=84",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4401245905059201,
+        "previous": 0.4401245905059201
+      }
+    },
+    {
+      "key": "171310222833:113",
+      "san": "exf5",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/171310222833/review?move=112",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9007745358298962,
+        "previous": 0.8965429192241695
+      }
+    },
+    {
+      "key": "171310222833:129",
+      "san": "Rc6+",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/171310222833/review?move=128",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.37928827337442617,
+        "previous": 0.3611863844422074
+      }
+    },
+    {
+      "key": "171576795808:85",
+      "san": "Bd4",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/171576795808/review?move=84",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5128653892916908,
+        "previous": 0.487654617188669
+      }
+    },
+    {
+      "key": "171576795808:89",
+      "san": "Bxg7",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "excellent",
+      "source": "https://www.chess.com/analysis/game/live/171576795808/review?move=88",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6555150379009579,
+        "previous": 0.6602025386392761
+      }
+    },
+    {
+      "key": "171577923416:90",
+      "san": "Ne1+",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "good",
+      "source": "https://www.chess.com/analysis/game/live/171577923416/review?move=89",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4783316504347776,
+        "previous": 0.47993218763048
+      }
+    },
+    {
+      "key": "171581229570:41",
+      "san": "exf5",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/171581229570/review?move=40",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9341174051845749,
+        "previous": 0.9262283414994638
+      }
+    },
+    {
+      "key": "171581229570:43",
+      "san": "Nxg6+",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "?",
+      "source": "https://www.chess.com/analysis/game/live/171581229570/review?move=42",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5996859589370699,
+        "previous": 0.5794342043845777
+      }
+    },
+    {
+      "key": "171590600328:43",
+      "san": "Nf2",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "excellent",
+      "source": "https://www.chess.com/analysis/game/live/171590600328/review?move=42",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4147786159829679,
+        "previous": 0.40929795340858216
+      }
+    },
+    {
+      "key": "171590600328:49",
+      "san": "Rxf5",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/171590600328/review?move=48",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8745550170958037,
+        "previous": 0.8823203573123363
+      }
+    },
+    {
+      "key": "171591208572:46",
+      "san": "Rxf2",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/171591208572/review?move=45",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.939289651338472,
+        "previous": 0.9590315147333269
+      }
+    },
+    {
+      "key": "171591208572:48",
+      "san": "Be3",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/171591208572/review?move=47",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.34735075761766304,
+        "previous": 0.35218583083250776
+      }
+    },
+    {
+      "key": "171630171078:18",
+      "san": "Nxg4",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/171630171078/review?move=17",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9289587878055829,
+        "previous": 0.9252385497103449
+      }
+    },
+    {
+      "key": "171630171078:36",
+      "san": "Qd8",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "?",
+      "source": "https://www.chess.com/analysis/game/live/171630171078/review?move=35",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7134084062889683,
+        "previous": 0.7134084062889683
+      }
+    },
+    {
+      "key": "171633615330:36",
+      "san": "Nf4",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/171633615330/review?move=35",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9603522267154431,
+        "previous": 0.9505740009089915
+      }
+    },
+    {
+      "key": "171633615330:38",
+      "san": "h5",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/171633615330/review?move=37",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.3679661621072444,
+        "previous": 0.37089478486470306
+      }
+    },
+    {
+      "key": "171728174946:36",
+      "san": "Qe5",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "?!",
+      "source": "https://www.chess.com/analysis/game/live/171728174946/review?move=35",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4291182061801476,
+        "previous": 0.42714030026429783
+      }
+    },
+    {
+      "key": "171728174946:44",
+      "san": "Rxc3",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/171728174946/review?move=43",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9574165684095499,
+        "previous": 0.9560070324742257
+      }
+    },
+    {
+      "key": "171799048140:24",
+      "san": "Nxd4",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/171799048140/review?move=23",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6450139857808559,
+        "previous": 0.6508385827147439
+      }
+    },
+    {
+      "key": "171800366956:30",
+      "san": "Ne4",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "?!",
+      "source": "https://www.chess.com/analysis/game/live/171800366956/review?move=29",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.35653614298664543,
+        "previous": 0.3636343103145406
+      }
+    },
+    {
+      "key": "171800366956:38",
+      "san": "Nxf2",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/171800366956/review?move=37",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8588391602674496,
+        "previous": 0.8584224936007829
+      }
+    },
+    {
+      "key": "171846994304:52",
+      "san": "Nbxc3",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/171846994304/review?move=51",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8867519236252724,
+        "previous": 0.8942226232482543
+      }
+    },
+    {
+      "key": "171846994304:78",
+      "san": "Rd7",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/171846994304/review?move=77",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.41654795357918,
+        "previous": 0.4148118424680689
+      }
+    },
+    {
+      "key": "171891549142:54",
+      "san": "Re8",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/171891549142/review?move=53",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4001846555241872,
+        "previous": 0.4001846555241872
+      }
+    },
+    {
+      "key": "171891549142:56",
+      "san": "Nxg3",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/171891549142/review?move=55",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8346504907312088,
+        "previous": 0.843808397135056
+      }
+    },
+    {
+      "key": "172399290714:56",
+      "san": "Re2",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "good",
+      "source": "https://www.chess.com/analysis/game/live/172399290714/review?move=55",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.444707625198797,
+        "previous": 0.4328361111974067
+      }
+    },
+    {
+      "key": "172399290714:60",
+      "san": "Qxf1+",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/172399290714/review?move=59",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9623038738150025,
+        "previous": 0.9623038738150025
+      }
+    },
+    {
+      "key": "172529537332:58",
+      "san": "Nxc4",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/172529537332/review?move=57",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8526188480254884,
+        "previous": 0.8531311431074555
+      }
+    },
+    {
+      "key": "172529537332:72",
+      "san": "Kb7",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "excellent",
+      "source": "https://www.chess.com/analysis/game/live/172529537332/review?move=71",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.3798165244075784,
+        "previous": 0.3651621071627983
+      }
+    },
+    {
+      "key": "172631256346:45",
+      "san": "Nxe6",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/172631256346/review?move=44",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9838887801039489,
+        "previous": 0.9805993064197384
+      }
+    },
+    {
+      "key": "172631256346:49",
+      "san": "Ne3",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/172631256346/review?move=48",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.7730146204437792,
+        "previous": 0.8000378580993995
+      }
+    },
+    {
+      "key": "172660857451:40",
+      "san": "hxg6",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/172660857451/review?move=39",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5246762554256328,
+        "previous": 0.5142496155918003
+      }
+    },
+    {
+      "key": "172660857451:44",
+      "san": "Bxd3",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/172660857451/review?move=43",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9355077782533195,
+        "previous": 0.9419225903846705
+      }
+    },
+    {
+      "key": "172661452319:52",
+      "san": "Bxf2+",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/172661452319/review?move=51",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.940479961116475,
+        "previous": 0.931104961116475
+      }
+    },
+    {
+      "key": "172661452319:76",
+      "san": "Nxb5",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/172661452319/review?move=75",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4460141101114407,
+        "previous": 0.434653899178248
+      }
+    },
+    {
+      "key": "172682678568:29",
+      "san": "Nxg5",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/172682678568/review?move=28",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9421226264775953,
+        "previous": 0.9197731332309357
+      }
+    },
+    {
+      "key": "172682678568:73",
+      "san": "Kf1",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/172682678568/review?move=72",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.42471563182809857,
+        "previous": 0.4219285689424095
+      }
+    },
+    {
+      "key": "172951964820:38",
+      "san": "Rhe8",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/172951964820/review?move=37",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8569374185480346,
+        "previous": 0.8680453508418744
+      }
+    },
+    {
+      "key": "172951964820:44",
+      "san": "Ne7",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "excellent",
+      "source": "https://www.chess.com/analysis/game/live/172951964820/review?move=43",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.35165443331275126,
+        "previous": 0.3543004759549324
+      }
+    },
+    {
+      "key": "173201596136:48",
+      "san": "Rad8",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/173201596136/review?move=47",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5075615844941574,
+        "previous": 0.5082528981058175
+      }
+    },
+    {
+      "key": "173201596136:54",
+      "san": "Qxh2+",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/173201596136/review?move=53",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9736835237500253,
+        "previous": 0.9736835237500253
+      }
+    },
+    {
+      "key": "173264572533:39",
+      "san": "Nc3",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/173264572533/review?move=38",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.41457698947255217,
+        "previous": 0.40887276031240555
+      }
+    },
+    {
+      "key": "173264572533:51",
+      "san": "Rxe6",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/173264572533/review?move=50",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9343530183623877,
+        "previous": 0.9333935533618172
+      }
+    },
+    {
+      "key": "173266974169:66",
+      "san": "Rxd5",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/173266974169/review?move=65",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7692404716345105,
+        "previous": 0.782568219679012
+      }
+    },
+    {
+      "key": "173266974169:84",
+      "san": "Qe5",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/173266974169/review?move=83",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5775363524182828,
+        "previous": 0.5962424703615669
+      }
+    },
+    {
+      "key": "173267573553:89",
+      "san": "Rc5",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/173267573553/review?move=88",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.8683298716643528,
+        "previous": 0.8739469014074209
+      }
+    },
+    {
+      "key": "173321309412:32",
+      "san": "Qxe5",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/173321309412/review?move=31",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6669619746161846,
+        "previous": 0.6818606642182663
+      }
+    },
+    {
+      "key": "173321309412:34",
+      "san": "Nc5",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/173321309412/review?move=33",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.38392939564503703,
+        "previous": 0.38392939564503703
+      }
+    },
+    {
+      "key": "173327247048:112",
+      "san": "Rf6",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "?",
+      "source": "https://www.chess.com/analysis/game/live/173327247048/review?move=111",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8206020534203801,
+        "previous": 0.8085170441314234
+      }
+    },
+    {
+      "key": "173337244590:53",
+      "san": "Nc3",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/173337244590/review?move=52",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.38492185097517323,
+        "previous": 0.39717935209675925
+      }
+    },
+    {
+      "key": "173337244590:57",
+      "san": "Nxe4",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/173337244590/review?move=56",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9577886202632179,
+        "previous": 0.9588997313743289
+      }
+    },
+    {
+      "key": "173414561738:43",
+      "san": "Bxc6",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/173414561738/review?move=42",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9265249218157471,
+        "previous": 0.9283631571098647
+      }
+    },
+    {
+      "key": "173414561738:51",
+      "san": "Bxa7+",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/173414561738/review?move=50",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.712033519683593,
+        "previous": 0.7069075315413005
+      }
+    },
+    {
+      "key": "173605580880:65",
+      "san": "Kf2",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "??",
+      "source": "https://www.chess.com/analysis/game/live/173605580880/review?move=64",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.3410537002477396,
+        "previous": 0.32966977167631106
+      }
+    },
+    {
+      "key": "173730924436:40",
+      "san": "Ng4",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "miss",
+      "source": "https://www.chess.com/analysis/game/live/173730924436/review?move=39",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7574947901722197,
+        "previous": 0.7761864200564035
+      }
+    },
+    {
+      "key": "173730924436:42",
+      "san": "Bc3",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/173730924436/review?move=41",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6669483456839288,
+        "previous": 0.6637897938586916
+      }
+    },
+    {
+      "key": "173756570216:57",
+      "san": "Bxg6",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/173756570216/review?move=56",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8168898832708655,
+        "previous": 0.8431215074516676
+      }
+    },
+    {
+      "key": "173756570216:59",
+      "san": "Bxf7",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/173756570216/review?move=58",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7561230372235364,
+        "previous": 0.7651622175617416
+      }
+    },
+    {
+      "key": "173765478164:59",
+      "san": "Rbc7",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/173765478164/review?move=58",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8020415913417446,
+        "previous": 0.7686726475079234
+      }
+    },
+    {
+      "key": "173765478164:85",
+      "san": "Bxd3",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "miss",
+      "source": "https://www.chess.com/analysis/game/live/173765478164/review?move=84",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5564019006581308,
+        "previous": 0.5640756430523036
+      }
+    },
+    {
+      "key": "173807912828:45",
+      "san": "Bxg6",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/173807912828/review?move=44",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9827959920795032,
+        "previous": 0.9827959920795032
+      }
+    },
+    {
+      "key": "173807912828:47",
+      "san": "Kf2",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/173807912828/review?move=46",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.2924066114780103,
+        "previous": 0.2924066114780103
+      }
+    },
+    {
+      "key": "174125352081:33",
+      "san": "Nxc7",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/174125352081/review?move=32",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5163488361167071,
+        "previous": 0.5137204923990831
+      }
+    },
+    {
+      "key": "174125352081:49",
+      "san": "axb6",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174125352081/review?move=48",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8921369617047211,
+        "previous": 0.8834850205055381
+      }
+    },
+    {
+      "key": "174184614814:36",
+      "san": "dxc4",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "excellent",
+      "source": "https://www.chess.com/analysis/game/live/174184614814/review?move=35",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5543352837785794,
+        "previous": 0.5778568255374907
+      }
+    },
+    {
+      "key": "174184614814:54",
+      "san": "Nxd4",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174184614814/review?move=53",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5853492453023399,
+        "previous": 0.5660721551458171
+      }
+    },
+    {
+      "key": "174197969894:35",
+      "san": "Qh2",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174197969894/review?move=34",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5668921618343773,
+        "previous": 0.5555027902644933
+      }
+    },
+    {
+      "key": "174197969894:37",
+      "san": "gxh6",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/174197969894/review?move=36",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6373327998999346,
+        "previous": 0.650282828529825
+      }
+    },
+    {
+      "key": "174200260228:52",
+      "san": "Bxh4",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/174200260228/review?move=51",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.499159050783392,
+        "previous": 0.5114358364976778
+      }
+    },
+    {
+      "key": "174284626578:35",
+      "san": "Nd6",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "?!",
+      "source": "https://www.chess.com/analysis/game/live/174284626578/review?move=34",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.44784898629366154,
+        "previous": 0.4302448429192283
+      }
+    },
+    {
+      "key": "174284626578:43",
+      "san": "Rxd4",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174284626578/review?move=42",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9340632185736241,
+        "previous": 0.9371146891618594
+      }
+    },
+    {
+      "key": "174305177140:41",
+      "san": "Nxb7",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "?",
+      "source": "https://www.chess.com/analysis/game/live/174305177140/review?move=40",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9028265624885193,
+        "previous": 0.9086030776400346
+      }
+    },
+    {
+      "key": "174305177140:53",
+      "san": "Nxc6",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174305177140/review?move=52",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.654708374016718,
+        "previous": 0.6706860323539667
+      }
+    },
+    {
+      "key": "174345053230:26",
+      "san": "Ne4",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "good",
+      "source": "https://www.chess.com/analysis/game/live/174345053230/review?move=25",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4172944097726633,
+        "previous": 0.4135064555316109
+      }
+    },
+    {
+      "key": "174345053230:46",
+      "san": "Rxg2+",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174345053230/review?move=45",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.951239058529435,
+        "previous": 0.9517598918627683
+      }
+    },
+    {
+      "key": "174423030272:25",
+      "san": "Bxh7+",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174423030272/review?move=24",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9339047572337961,
+        "previous": 0.9374607777457697
+      }
+    },
+    {
+      "key": "174423030272:29",
+      "san": "Ne4",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/174423030272/review?move=28",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6246838969263975,
+        "previous": 0.6166396070499474
+      }
+    },
+    {
+      "key": "174488228896:37",
+      "san": "Qd4",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/174488228896/review?move=36",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.3235678226462235,
+        "previous": 0.3265586544887995
+      }
+    },
+    {
+      "key": "174488228896:85",
+      "san": "a6",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174488228896/review?move=84",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.8177626720940228,
+        "previous": 0.8387555732219144
+      }
+    },
+    {
+      "key": "174488969104:44",
+      "san": "Qe2",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174488969104/review?move=43",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.8611953158605113,
+        "previous": 0.8545563881307985
+      }
+    },
+    {
+      "key": "174488969104:48",
+      "san": "Qxc2",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "good",
+      "source": "https://www.chess.com/analysis/game/live/174488969104/review?move=47",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5755893994017331,
+        "previous": 0.5761908378937967
+      }
+    },
+    {
+      "key": "174494073612:47",
+      "san": "Be1",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "good",
+      "source": "https://www.chess.com/analysis/game/live/174494073612/review?move=46",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4561043429578406,
+        "previous": 0.4616913887167882
+      }
+    },
+    {
+      "key": "174494073612:57",
+      "san": "Qd3",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174494073612/review?move=56",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8228994753430287,
+        "previous": 0.8130784496427468
+      }
+    },
+    {
+      "key": "174539777424:44",
+      "san": "Nf4",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/174539777424/review?move=43",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5156445514082432,
+        "previous": 0.5510441679442215
+      }
+    },
+    {
+      "key": "174539777424:54",
+      "san": "Rg3",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174539777424/review?move=53",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7607832211393947,
+        "previous": 0.760540711000957
+      }
+    },
+    {
+      "key": "174541196042:58",
+      "san": "Ne5",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174541196042/review?move=57",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8163639999912014,
+        "previous": 0.8232429631641787
+      }
+    },
+    {
+      "key": "174541196042:62",
+      "san": "Rxb2",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/174541196042/review?move=61",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.569276410575062,
+        "previous": 0.569276410575062
+      }
+    },
+    {
+      "key": "174816939623:51",
+      "san": "Re8",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174816939623/review?move=50",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8407350894188916,
+        "previous": 0.8506407028370278
+      }
+    },
+    {
+      "key": "174816939623:77",
+      "san": "Rf7+",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/174816939623/review?move=76",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.37803807997458694,
+        "previous": 0.3606650760920407
+      }
+    },
+    {
+      "key": "174838537627:25",
+      "san": "Bxf6",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/174838537627/review?move=24",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8696614336870466,
+        "previous": 0.86290603074995
+      }
+    },
+    {
+      "key": "174838537627:49",
+      "san": "Re7",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174838537627/review?move=48",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8321046158650927,
+        "previous": 0.8321046158650927
+      }
+    },
+    {
+      "key": "174936338093:56",
+      "san": "Ba6",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/174936338093/review?move=55",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5064511317253556,
+        "previous": 0.5229318346403703
+      }
+    },
+    {
+      "key": "174936338093:58",
+      "san": "Qb4",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "good",
+      "source": "https://www.chess.com/analysis/game/live/174936338093/review?move=57",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.3539011932751109,
+        "previous": 0.365760404815132
+      }
+    },
+    {
+      "key": "175080115573:49",
+      "san": "Rxg6+",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/175080115573/review?move=48",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8593171925239185,
+        "previous": 0.8621581016148276
+      }
+    },
+    {
+      "key": "175080115573:51",
+      "san": "Qxg6+",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/175080115573/review?move=50",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5890685441729177,
+        "previous": 0.5890685441729177
+      }
+    },
+    {
+      "key": "176114357797:41",
+      "san": "b3",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/176114357797/review?move=40",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7894292262192941,
+        "previous": 0.7824286134741961
+      }
+    },
+    {
+      "key": "176114357797:45",
+      "san": "Ra4",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "excellent",
+      "source": "https://www.chess.com/analysis/game/live/176114357797/review?move=44",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.40873488375931355,
+        "previous": 0.3963334707858582
+      }
+    },
+    {
+      "key": "178546672149:61",
+      "san": "Nd5",
+      "account": "hansen",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/178546672149/review?move=60",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.3861141158781851,
+        "previous": 0.38171766979975374
+      }
+    },
+    {
+      "key": "178546672149:65",
+      "san": "Ne4",
+      "account": "hansen",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/178546672149/review?move=64",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8402948544741263,
+        "previous": 0.8299622718382915
+      }
+    },
+    {
+      "key": "182335102231:48",
+      "san": "Rxf1+",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "good",
+      "source": "https://www.chess.com/analysis/game/live/182335102231/review?move=47",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6297945638960164,
+        "previous": 0.633363699169989
+      }
+    },
+    {
+      "key": "182336902375:15",
+      "san": "Ne5",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/182336902375/review?move=14",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7181960709172753,
+        "previous": 0.6993066258371838
+      }
+    },
+    {
+      "key": "182336902375:17",
+      "san": "Qxh5",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/182336902375/review?move=16",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8066403941846043,
+        "previous": 0.8054919902146472
+      }
+    },
+    {
+      "key": "182337501797:48",
+      "san": "Bxd4",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/182337501797/review?move=47",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9822241583767534,
+        "previous": 0.9885020463604395
+      }
+    },
+    {
+      "key": "182337501797:50",
+      "san": "Rcd8",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "??",
+      "source": "https://www.chess.com/analysis/game/live/182337501797/review?move=49",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5550611787869565,
+        "previous": 0.5390311317838882
+      }
+    },
+    {
+      "key": "183544111465:77",
+      "san": "Rh7",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "good",
+      "source": "https://www.chess.com/analysis/game/live/183544111465/review?move=76",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4320861424696464,
+        "previous": 0.4344725906568758
+      }
+    },
+    {
+      "key": "183544111465:87",
+      "san": "Rxf7+",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/183544111465/review?move=86",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9348770783407647,
+        "previous": 0.9348770783407647
+      }
+    },
+    {
+      "key": "183544710855:45",
+      "san": "Bc5",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "excellent",
+      "source": "https://www.chess.com/analysis/game/live/183544710855/review?move=44",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4631489377037208,
+        "previous": 0.46401699325927637
+      }
+    },
+    {
+      "key": "183544710855:59",
+      "san": "Rxd7",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/183544710855/review?move=58",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9755652992314953,
+        "previous": 0.9755652992314953
+      }
+    },
+    {
+      "key": "183547111965:40",
+      "san": "Ng3+",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/183547111965/review?move=39",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9686897527763915,
+        "previous": 0.9714733050299665
+      }
+    },
+    {
+      "key": "183547111965:84",
+      "san": "Rh1",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/183547111965/review?move=83",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4236218904221343,
+        "previous": 0.45337888732335885
+      }
+    },
+    {
+      "key": "183971910487:29",
+      "san": "dxc4",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/183971910487/review?move=28",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5572439768843583,
+        "previous": 0.5422732525109947
+      }
+    },
+    {
+      "key": "183971910487:61",
+      "san": "Nf5+",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/183971910487/review?move=60",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9483688539409943,
+        "previous": 0.9440039340106678
+      }
+    },
+    {
+      "key": "183988431552:63",
+      "san": "hxg6",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/183988431552/review?move=62",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.8983062646656307,
+        "previous": 0.9042696415370615
+      }
+    },
+    {
+      "key": "183988431552:65",
+      "san": "Bg4",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "?",
+      "source": "https://www.chess.com/analysis/game/live/183988431552/review?move=64",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.40643810143885334,
+        "previous": 0.41608177095847704
+      }
+    },
+    {
+      "key": "184033320878:26",
+      "san": "Nd4",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "?",
+      "source": "https://www.chess.com/analysis/game/live/184033320878/review?move=25",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4305248595012922,
+        "previous": 0.4345336978851306
+      }
+    },
+    {
+      "key": "184033320878:80",
+      "san": "Rxf6",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/184033320878/review?move=79",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.965269422665864,
+        "previous": 0.9679868139702119
+      }
+    },
+    {
+      "key": "184040871044:64",
+      "san": "Rxc3",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/184040871044/review?move=63",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7385101061866812,
+        "previous": 0.7430174788690592
+      }
+    },
+    {
+      "key": "184073619038:105",
+      "san": "Bxa6",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/184073619038/review?move=104",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9473178148468321,
+        "previous": 0.9461604074394246
+      }
+    },
+    {
+      "key": "184148911187:67",
+      "san": "e5",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/184148911187/review?move=66",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.37051265458999055,
+        "previous": 0.38780281437603853
+      }
+    },
+    {
+      "key": "184148911187:79",
+      "san": "Rxe3",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/184148911187/review?move=78",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.600686659575657,
+        "previous": 0.6239471398319404
+      }
+    },
+    {
+      "key": "184150111435:35",
+      "san": "Qc1",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/184150111435/review?move=34",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4481143670257408,
+        "previous": 0.43525302534372057
+      }
+    },
+    {
+      "key": "184150111435:37",
+      "san": "exd6",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/184150111435/review?move=36",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5891220785815249,
+        "previous": 0.5957415370024929
+      }
+    },
+    {
+      "key": "184151911979:27",
+      "san": "Ng5",
+      "account": "Hikaru",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/184151911979/review?move=26",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5459627723653868,
+        "previous": 0.5390131176148297
+      }
+    },
+    {
+      "key": "184151911979:65",
+      "san": "Rb1",
+      "account": "Hikaru",
+      "truth": false,
+      "chesscom_label": "?",
+      "source": "https://www.chess.com/analysis/game/live/184151911979/review?move=64",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4273767263828158,
+        "previous": 0.4273767263828158
+      }
+    },
+    {
+      "key": "184320204306:35",
+      "san": "Nxb5",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/184320204306/review?move=34",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.633911113467638,
+        "previous": 0.6256651913100152
+      }
+    },
+    {
+      "key": "184320204306:119",
+      "san": "Kxd5",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "excellent",
+      "source": "https://www.chess.com/analysis/game/live/184320204306/review?move=118",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.525876722433534,
+        "previous": 0.515852964097058
+      }
+    },
+    {
+      "key": "184430760992:51",
+      "san": "axb6",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/184430760992/review?move=50",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9220196229960833,
+        "previous": 0.9285577557115526
+      }
+    },
+    {
+      "key": "184430760992:53",
+      "san": "b7",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/184430760992/review?move=52",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4933099193367975,
+        "previous": 0.4933099193367975
+      }
+    },
+    {
+      "key": "184560058962:36",
+      "san": "Nc4",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/184560058962/review?move=35",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.44173772557544083,
+        "previous": 0.42261589210274675
+      }
+    },
+    {
+      "key": "184560058962:60",
+      "san": "Qg2",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/184560058962/review?move=59",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7998892877570052,
+        "previous": 0.7912574720255611
+      }
+    },
+    {
+      "key": "184618926746:37",
+      "san": "Rh1",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/184618926746/review?move=36",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.4490131302968371,
+        "previous": 0.4491116456113759
+      }
+    },
+    {
+      "key": "184618926746:49",
+      "san": "Kg2",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/184618926746/review?move=48",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.3749536224877898,
+        "previous": 0.36969197474523585
+      }
+    },
+    {
+      "key": "184623167340:45",
+      "san": "Nf4",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/184623167340/review?move=44",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.46337628139959885,
+        "previous": 0.4563685024296418
+      }
+    },
+    {
+      "key": "184623167340:53",
+      "san": "Rxc6",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/184623167340/review?move=52",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.791898332045001,
+        "previous": 0.7945352138489147
+      }
+    },
+    {
+      "key": "185034957494:19",
+      "san": "Nxe5",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/185034957494/review?move=18",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.57074727051365,
+        "previous": 0.5779491890106957
+      }
+    },
+    {
+      "key": "185034957494:115",
+      "san": "hxg6",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "excellent",
+      "source": "https://www.chess.com/analysis/game/live/185034957494/review?move=114",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6066981211107093,
+        "previous": 0.6050091028920859
+      }
+    },
+    {
+      "key": "185227768792:58",
+      "san": "Nxg4",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/185227768792/review?move=57",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9830650973334829,
+        "previous": 0.9889490474222703
+      }
+    },
+    {
+      "key": "185227768792:60",
+      "san": "Rf5",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "miss",
+      "source": "https://www.chess.com/analysis/game/live/185227768792/review?move=59",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6369836450140933,
+        "previous": 0.6363826834756318
+      }
+    },
+    {
+      "key": "185230032238:59",
+      "san": "e6",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/185230032238/review?move=58",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.7938821609280192,
+        "previous": 0.7938821609280192
+      }
+    },
+    {
+      "key": "185230032238:61",
+      "san": "dxe6",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/185230032238/review?move=60",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5980025832538463,
+        "previous": 0.604597520860199
+      }
+    },
+    {
+      "key": "185390631380:20",
+      "san": "Ng4",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/185390631380/review?move=19",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6304753145193746,
+        "previous": 0.6304753145193746
+      }
+    },
+    {
+      "key": "185390631380:22",
+      "san": "Bxg2+",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/185390631380/review?move=21",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.9421499871183016,
+        "previous": 0.9433336992395136
+      }
+    },
+    {
+      "key": "185498594944:39",
+      "san": "Rh8+",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/185498594944/review?move=38",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.522102121855197,
+        "previous": 0.5321057467025718
+      }
+    },
+    {
+      "key": "185648115110:48",
+      "san": "e5",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "??",
+      "source": "https://www.chess.com/analysis/game/live/185648115110/review?move=47",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.42423015910142525,
+        "previous": 0.4320411090022189
+      }
+    },
+    {
+      "key": "185648115110:82",
+      "san": "Rxd5",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/185648115110/review?move=81",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.8458071317199418,
+        "previous": 0.8458071317199418
+      }
+    },
+    {
+      "key": "185659273098:40",
+      "san": "Rd6",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "??",
+      "source": "https://www.chess.com/analysis/game/live/185659273098/review?move=39",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8411882443917313,
+        "previous": 0.8064242414962114
+      }
+    },
+    {
+      "key": "185659273098:42",
+      "san": "Nd7",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/185659273098/review?move=41",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.6396711563438335,
+        "previous": 0.6259220901687805
+      }
+    },
+    {
+      "key": "185781800200:81",
+      "san": "Rdxg2",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/185781800200/review?move=80",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.915945117954265,
+        "previous": 0.915945117954265
+      }
+    },
+    {
+      "key": "185781800200:83",
+      "san": "Qxg2",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "best",
+      "source": "https://www.chess.com/analysis/game/live/185781800200/review?move=82",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5552818787614336,
+        "previous": 0.5501558906191412
+      }
+    },
+    {
+      "key": "185782160484:50",
+      "san": "Nb3",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/185782160484/review?move=49",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.5231119232801432,
+        "previous": 0.5324083896010371
+      }
+    },
+    {
+      "key": "185782160484:92",
+      "san": "Kc6",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "!",
+      "source": "https://www.chess.com/analysis/game/live/185782160484/review?move=91",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.39236366564531955,
+        "previous": 0.39236366564531955
+      }
+    },
+    {
+      "key": "185782373684:49",
+      "san": "Qe3",
+      "account": "KNVB",
+      "truth": false,
+      "chesscom_label": "?!",
+      "source": "https://www.chess.com/analysis/game/live/185782373684/review?move=48",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.35559775383295095,
+        "previous": 0.358737705986061
+      }
+    },
+    {
+      "key": "185782373684:51",
+      "san": "Rexe6",
+      "account": "KNVB",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/185782373684/review?move=50",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.8065342731360138,
+        "previous": 0.8077636576030032
+      }
+    },
+    {
+      "key": "186436257870:31",
+      "san": "Rxd5",
+      "account": "nelsi",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/186436257870/review?move=30",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7448870616897606,
+        "previous": 0.7846472118495338
+      }
+    },
+    {
+      "key": "186436257870:33",
+      "san": "Qxg5",
+      "account": "nelsi",
+      "truth": false,
+      "chesscom_label": "miss",
+      "source": "https://www.chess.com/analysis/game/live/186436257870/review?move=32",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": false,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.6521145875805916,
+        "previous": 0.6521145875805916
+      }
+    },
+    {
+      "key": "186445470518:60",
+      "san": "Qxf1+",
+      "account": "GothamChess",
+      "truth": true,
+      "chesscom_label": "!!",
+      "source": "https://www.chess.com/analysis/game/live/186445470518/review?move=59",
+      "decisions": {
+        "selective": true,
+        "history_with_guard": true,
+        "en_croissant": true
+      },
+      "window_scores": {
+        "current": 0.9765767252178386,
+        "previous": 0.9765767252178386
+      }
+    },
+    {
+      "key": "186445470518:70",
+      "san": "Rxd4",
+      "account": "GothamChess",
+      "truth": false,
+      "chesscom_label": "excellent",
+      "source": "https://www.chess.com/analysis/game/live/186445470518/review?move=69",
+      "decisions": {
+        "selective": false,
+        "history_with_guard": true,
+        "en_croissant": false
+      },
+      "window_scores": {
+        "current": 0.7643681411588289,
+        "previous": 0.7601827218345946
+      }
+    }
+  ],
+  "input_sha256": {
+    "selective-replay/RUN-FREEZE.json": "4dc9f492928dd0d18f6a737fc10381532cb835ccf6e2aee3283ab032a627f3c4",
+    "selective-replay/predictions.json": "d5d94e466317201b2c8359165dee47863e0c6b5a7b13f9df4a34d788d2d286ce",
+    "root-frozen-final200queue.json": "aeec043aa16b97000b4a8bc4d2f32b092e49c28a243f3b12f09bdfbf1054ca94",
+    "primary-results.json": "1c0c56b5a3e1388dbca392d75e38c76bb81a08e80d14eddd99b2e18b99d987f4"
+  }
+}

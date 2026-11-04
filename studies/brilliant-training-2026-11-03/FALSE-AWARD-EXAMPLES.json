@@ -1,0 +1,52 @@
+[
+  {
+    "game_id": "172807512668",
+    "ply": 91,
+    "san": "Nxc3",
+    "uci": "d1c3",
+    "label": "great",
+    "negative_bucket": "hard_ordinary",
+    "source_account": "KNVB",
+    "key": "172807512668:91",
+    "truth": false,
+    "baseline": true,
+    "candidate": false,
+    "en_croissant": true,
+    "review_url": "https://www.chess.com/analysis/game/live/172807512668/review?move=90",
+    "fen_before": "8/6pp/5p2/8/8/1Ppk2P1/P6P/3N2K1 w - - 4 46",
+    "fen_after": "8/6pp/5p2/8/8/1PNk2P1/P6P/6K1 b - - 0 46",
+    "baseline_scores": {
+      "current": 0.8901625251211124,
+      "previous": 0.8886783699632207
+    },
+    "candidate_scores": {
+      "current": 0.7987942474086899,
+      "previous": 0.79307465118045
+    }
+  },
+  {
+    "game_id": "173806851620",
+    "ply": 134,
+    "san": "Nxd4",
+    "uci": "b3d4",
+    "label": "best",
+    "negative_bucket": "hard_ordinary",
+    "source_account": "KNVB",
+    "key": "173806851620:134",
+    "truth": false,
+    "baseline": true,
+    "candidate": false,
+    "en_croissant": false,
+    "review_url": "https://www.chess.com/analysis/game/live/173806851620/review?move=133",
+    "fen_before": "8/8/8/k2N4/3P4/1n2K3/8/8 b - - 2 67",
+    "fen_after": "8/8/8/k2N4/3n4/4K3/8/8 w - - 0 68",
+    "baseline_scores": {
+      "current": 0.8621148067421467,
+      "previous": 0.8621148067421467
+    },
+    "candidate_scores": {
+      "current": 0.7976577758886977,
+      "previous": 0.7976577758886977
+    }
+  }
+]

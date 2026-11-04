@@ -1,0 +1,1843 @@
+{
+  "engine": {
+    "name": "Stockfish 18",
+    "author": "the Stockfish developers (see AUTHORS file)"
+  },
+  "method": "SF18 one thread, 64MB hash, 300k and 1.5m nodes per position; unchanged EC TS oracle; Python translation of pinned capture/material reference; no app confidence-policy replay",
+  "samples": [
+    {
+      "player": "Juwen",
+      "opponent": "KaterynaLagno",
+      "game": "119215241095",
+      "ply": 37,
+      "additional_brilliant_plies": [
+        39,
+        53
+      ],
+      "chesscom": "!!",
+      "fresh_review_by_ply": {
+        "37": {
+          "label": "?!",
+          "cp_white": 79
+        },
+        "39": {
+          "label": "?!",
+          "cp_white": 48
+        }
+      },
+      "moves": "1. Nf3 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. O-O O-O 6. b3 b6 7. Bb2 Bb7 8. cxd5 Nxd5 9. d4 Nd7 10. Nbd2 c5 11. e4 N5f6 12. e5 Nd5 13. Nc4 cxd4 14. Qxd4 Nc5 15. Rad1 Rc8 16. Qg4 Rc7 17. h4 h6 18. Nd6 Ba6 19. Rxd5 exd5 20. Nf5 Ne6 21. Re1 Rd7 22. N3d4 Bc5 23. Nxh6+ Kh8 24. Nhf5 g6 25. Nd6 Bxd4 26. Bxd4 Bb7 27. Nxf7+ Rdxf7 28. Qxe6 Kh7 29. Qg4 Rf5 30. e6 Qe7 31. f4 Bc8 32. Qe2 Re8 33. Bh3 Rff8 34. h5 Kh6 35. hxg6 Kxg6 36. Qg4+ Kh6 37. Re2 Rg8 38. Qf5 Ref8 39. Qe5 Rxg3+ 40. Kh2 Qh4 0-1",
+      "source": "Safari gallery lists all three plies as brilliant; fresh Game Review disagrees on 19.Rxd5 and 20.Nf5, 2026-11-02",
+      "chesscom_cp_white": null,
+      "san": "Rxd5",
+      "fen_before": "3q1rk1/p1r1bpp1/bp1Np2p/2nnP3/6QP/1P3NP1/PB3PB1/3R1RK1 w - - 2 19",
+      "fen_after": "3q1rk1/p1r1bpp1/bp1Np2p/2nRP3/6QP/1P3NP1/PB3PB1/5RK1 b - - 0 19",
+      "material_before": 0,
+      "material_after_mover": -200,
+      "ec_sacrifice": true,
+      "runs": [
+        {
+          "nodes_per_position": 300000,
+          "depth_before": 13,
+          "depth_after": 15,
+          "best": "Nd4",
+          "second": "Rfe1",
+          "best_cp_mover": 80,
+          "second_cp_mover": 70,
+          "after_cp_mover": 31,
+          "best_second_wc_gap": 0.903,
+          "wc_loss": 4.461,
+          "ec_label": "!?",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 89
+            },
+            "prev": {
+              "type": "cp",
+              "value": 80
+            },
+            "next": {
+              "type": "cp",
+              "value": 31
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 80
+                  }
+                },
+                "sanMoves": [
+                  "f3d4",
+                  "a6f1",
+                  "d4f5",
+                  "g7g6",
+                  "g2d5",
+                  "g8h7",
+                  "f5e7",
+                  "d8e7",
+                  "d5e4",
+                  "c5e4",
+                  "d6e4",
+                  "f1a6",
+                  "e4f6",
+                  "h7g7"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 70
+                  }
+                },
+                "sanMoves": [
+                  "f1e1",
+                  "c5d3",
+                  "f3d4",
+                  "d3e5",
+                  "e1e5",
+                  "d5f6",
+                  "d6f7",
+                  "f6g4",
+                  "f7d8",
+                  "f8d8",
+                  "e5e6",
+                  "e7c5",
+                  "g2f3",
+                  "h6h5",
+                  "b3b4",
+                  "c5b4",
+                  "d4c6",
+                  "d8d1",
+                  "f3d1",
+                  "b4c5",
+                  "d1b3",
+                  "g8h8",
+                  "b2d4",
+                  "c5d4",
+                  "c6d4"
+                ]
+              }
+            ],
+            "is_sacrifice": true,
+            "move": "d1d5"
+          }
+        },
+        {
+          "nodes_per_position": 1500000,
+          "depth_before": 18,
+          "depth_after": 20,
+          "best": "Nd4",
+          "second": "Rxd5",
+          "best_cp_mover": 92,
+          "second_cp_mover": 40,
+          "after_cp_mover": 0,
+          "best_second_wc_gap": 4.713,
+          "wc_loss": 8.389,
+          "ec_label": "?!",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 82
+            },
+            "prev": {
+              "type": "cp",
+              "value": 92
+            },
+            "next": {
+              "type": "cp",
+              "value": 0
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 92
+                  }
+                },
+                "sanMoves": [
+                  "f3d4",
+                  "a6f1",
+                  "d4f5",
+                  "e7g5",
+                  "g2f1",
+                  "e6f5",
+                  "d6f5",
+                  "g7g6",
+                  "f5d6",
+                  "d5e3",
+                  "f2e3",
+                  "g5e3",
+                  "g1h1",
+                  "h6h5"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 40
+                  }
+                },
+                "sanMoves": [
+                  "d1d5",
+                  "a6f1",
+                  "g2f1",
+                  "e6d5",
+                  "d6f5",
+                  "g7g6",
+                  "f5h6",
+                  "g8h7",
+                  "h6f5",
+                  "c5e4",
+                  "g4f4",
+                  "g6f5",
+                  "f4f5",
+                  "h7g8",
+                  "f5g4",
+                  "g8h8",
+                  "g4h5",
+                  "h8g8",
+                  "f1h3",
+                  "f8e8",
+                  "h3f5",
+                  "e7c5",
+                  "f3g5",
+                  "e4g5",
+                  "h4g5",
+                  "e8e6",
+                  "h5h7",
+                  "g8f8"
+                ]
+              }
+            ],
+            "is_sacrifice": true,
+            "move": "d1d5"
+          }
+        }
+      ]
+    },
+    {
+      "player": "Juwen",
+      "opponent": "KaterynaLagno",
+      "game": "119215241095",
+      "ply": 39,
+      "additional_brilliant_plies": [
+        39,
+        53
+      ],
+      "chesscom": "!!",
+      "fresh_review_by_ply": {
+        "37": {
+          "label": "?!",
+          "cp_white": 79
+        },
+        "39": {
+          "label": "?!",
+          "cp_white": 48
+        }
+      },
+      "moves": "1. Nf3 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. O-O O-O 6. b3 b6 7. Bb2 Bb7 8. cxd5 Nxd5 9. d4 Nd7 10. Nbd2 c5 11. e4 N5f6 12. e5 Nd5 13. Nc4 cxd4 14. Qxd4 Nc5 15. Rad1 Rc8 16. Qg4 Rc7 17. h4 h6 18. Nd6 Ba6 19. Rxd5 exd5 20. Nf5 Ne6 21. Re1 Rd7 22. N3d4 Bc5 23. Nxh6+ Kh8 24. Nhf5 g6 25. Nd6 Bxd4 26. Bxd4 Bb7 27. Nxf7+ Rdxf7 28. Qxe6 Kh7 29. Qg4 Rf5 30. e6 Qe7 31. f4 Bc8 32. Qe2 Re8 33. Bh3 Rff8 34. h5 Kh6 35. hxg6 Kxg6 36. Qg4+ Kh6 37. Re2 Rg8 38. Qf5 Ref8 39. Qe5 Rxg3+ 40. Kh2 Qh4 0-1",
+      "source": "Safari gallery lists all three plies as brilliant; fresh Game Review disagrees on 19.Rxd5 and 20.Nf5, 2026-11-02",
+      "chesscom_cp_white": null,
+      "san": "Nf5",
+      "fen_before": "3q1rk1/p1r1bpp1/bp1N3p/2npP3/6QP/1P3NP1/PB3PB1/5RK1 w - - 0 20",
+      "fen_after": "3q1rk1/p1r1bpp1/bp5p/2npPN2/6QP/1P3NP1/PB3PB1/5RK1 b - - 1 20",
+      "material_before": -200,
+      "material_after_mover": -110,
+      "ec_sacrifice": false,
+      "runs": [
+        {
+          "nodes_per_position": 300000,
+          "depth_before": 15,
+          "depth_after": 17,
+          "best": "Nf5",
+          "second": "Re1",
+          "best_cp_mover": 114,
+          "second_cp_mover": 69,
+          "after_cp_mover": 115,
+          "best_second_wc_gap": 4.025,
+          "wc_loss": -0.088,
+          "ec_label": "",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 42
+            },
+            "prev": {
+              "type": "cp",
+              "value": 114
+            },
+            "next": {
+              "type": "cp",
+              "value": 115
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 114
+                  }
+                },
+                "sanMoves": [
+                  "d6f5",
+                  "g7g6",
+                  "e5e6",
+                  "c5e6",
+                  "f5h6",
+                  "g8h7",
+                  "h6f7",
+                  "f8f7",
+                  "g4e6",
+                  "f7f8",
+                  "f1d1",
+                  "e7f6",
+                  "f3g5",
+                  "f6g5",
+                  "h4g5",
+                  "d8g5",
+                  "d1d5",
+                  "c7c1",
+                  "b2c1",
+                  "g5c1",
+                  "g1h2",
+                  "f8f2"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 69
+                  }
+                },
+                "sanMoves": [
+                  "f1e1",
+                  "h6h5",
+                  "g4h5",
+                  "c5d3",
+                  "f3g5",
+                  "e7g5",
+                  "h4g5",
+                  "d3e1",
+                  "g5g6",
+                  "f7g6",
+                  "g2d5",
+                  "f8f7",
+                  "h5g6",
+                  "e1f3",
+                  "g1h1",
+                  "d8g5",
+                  "d5f7",
+                  "g8f8",
+                  "g6g5",
+                  "f3g5"
+                ]
+              }
+            ],
+            "is_sacrifice": false,
+            "move": "d6f5"
+          }
+        },
+        {
+          "nodes_per_position": 1500000,
+          "depth_before": 18,
+          "depth_after": 20,
+          "best": "Re1",
+          "second": "Nf5",
+          "best_cp_mover": 92,
+          "second_cp_mover": 68,
+          "after_cp_mover": 54,
+          "best_second_wc_gap": 2.162,
+          "wc_loss": 3.434,
+          "ec_label": "",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 63
+            },
+            "prev": {
+              "type": "cp",
+              "value": 92
+            },
+            "next": {
+              "type": "cp",
+              "value": 54
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 92
+                  }
+                },
+                "sanMoves": [
+                  "f1e1",
+                  "h6h5",
+                  "g4h5",
+                  "c5d3",
+                  "f3g5",
+                  "e7g5",
+                  "h4g5",
+                  "d3e1",
+                  "g5g6",
+                  "f7g6",
+                  "g2d5",
+                  "f8f7",
+                  "h5g6",
+                  "e1f3",
+                  "g1h1",
+                  "d8f8",
+                  "d5e4",
+                  "f3g5",
+                  "g6g5",
+                  "f7f2",
+                  "e4d5",
+                  "f2f7",
+                  "b2a3"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 68
+                  }
+                },
+                "sanMoves": [
+                  "d6f5",
+                  "g7g6",
+                  "e5e6",
+                  "c5e6",
+                  "f5h6",
+                  "g8h7",
+                  "h6f7",
+                  "f8f7",
+                  "g4e6",
+                  "e7f6",
+                  "f3g5",
+                  "f6g5",
+                  "h4g5",
+                  "d8c8",
+                  "e6e5",
+                  "f7f5",
+                  "e5d4",
+                  "a6f1",
+                  "d4h4",
+                  "h7g8",
+                  "h4h8",
+                  "g8f7",
+                  "h8g7",
+                  "f7e8",
+                  "g7g6",
+                  "c7f7"
+                ]
+              }
+            ],
+            "is_sacrifice": false,
+            "move": "d6f5"
+          }
+        }
+      ]
+    },
+    {
+      "player": "Juwen",
+      "opponent": "KaterynaLagno",
+      "game": "119215241095",
+      "ply": 53,
+      "additional_brilliant_plies": [
+        39,
+        53
+      ],
+      "chesscom": "!!",
+      "fresh_review_by_ply": {
+        "37": {
+          "label": "?!",
+          "cp_white": 79
+        },
+        "39": {
+          "label": "?!",
+          "cp_white": 48
+        }
+      },
+      "moves": "1. Nf3 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. O-O O-O 6. b3 b6 7. Bb2 Bb7 8. cxd5 Nxd5 9. d4 Nd7 10. Nbd2 c5 11. e4 N5f6 12. e5 Nd5 13. Nc4 cxd4 14. Qxd4 Nc5 15. Rad1 Rc8 16. Qg4 Rc7 17. h4 h6 18. Nd6 Ba6 19. Rxd5 exd5 20. Nf5 Ne6 21. Re1 Rd7 22. N3d4 Bc5 23. Nxh6+ Kh8 24. Nhf5 g6 25. Nd6 Bxd4 26. Bxd4 Bb7 27. Nxf7+ Rdxf7 28. Qxe6 Kh7 29. Qg4 Rf5 30. e6 Qe7 31. f4 Bc8 32. Qe2 Re8 33. Bh3 Rff8 34. h5 Kh6 35. hxg6 Kxg6 36. Qg4+ Kh6 37. Re2 Rg8 38. Qf5 Ref8 39. Qe5 Rxg3+ 40. Kh2 Qh4 0-1",
+      "source": "Safari gallery lists all three plies as brilliant; fresh Game Review disagrees on 19.Rxd5 and 20.Nf5, 2026-11-02",
+      "chesscom_cp_white": null,
+      "san": "Nxf7+",
+      "fen_before": "3q1r1k/pb1r1p2/1p1Nn1p1/3pP3/3B2QP/1P4P1/P4PB1/4R1K1 w - - 1 27",
+      "fen_after": "3q1r1k/pb1r1N2/1p2n1p1/3pP3/3B2QP/1P4P1/P4PB1/4R1K1 b - - 0 27",
+      "material_before": -20,
+      "material_after_mover": -20,
+      "ec_sacrifice": false,
+      "runs": [
+        {
+          "nodes_per_position": 300000,
+          "depth_before": 16,
+          "depth_after": 14,
+          "best": "Nxf7+",
+          "second": "Bb2",
+          "best_cp_mover": 375,
+          "second_cp_mover": 254,
+          "after_cp_mover": 389,
+          "best_second_wc_gap": 8.098,
+          "wc_loss": -0.815,
+          "ec_label": "",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 131
+            },
+            "prev": {
+              "type": "cp",
+              "value": 375
+            },
+            "next": {
+              "type": "cp",
+              "value": 389
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 375
+                  }
+                },
+                "sanMoves": [
+                  "d6f7",
+                  "d7f7",
+                  "g4e6",
+                  "h8h7",
+                  "e6g4",
+                  "f7f5",
+                  "e5e6",
+                  "f8e8",
+                  "g2h3",
+                  "b7c8",
+                  "g4d1",
+                  "e8e6",
+                  "h3f5",
+                  "e6e1",
+                  "d1e1",
+                  "h7h6"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 254
+                  }
+                },
+                "sanMoves": [
+                  "d4b2",
+                  "h8h7",
+                  "b2a3",
+                  "b7a8",
+                  "f2f4",
+                  "f8g8",
+                  "d6f7",
+                  "d7f7",
+                  "g4e6",
+                  "f7c7"
+                ]
+              }
+            ],
+            "is_sacrifice": false,
+            "move": "d6f7"
+          }
+        },
+        {
+          "nodes_per_position": 1500000,
+          "depth_before": 19,
+          "depth_after": 15,
+          "best": "Nxf7+",
+          "second": "Be3",
+          "best_cp_mover": 420,
+          "second_cp_mover": 284,
+          "after_cp_mover": 446,
+          "best_second_wc_gap": 8.445,
+          "wc_loss": -1.343,
+          "ec_label": "",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 153
+            },
+            "prev": {
+              "type": "cp",
+              "value": 420
+            },
+            "next": {
+              "type": "cp",
+              "value": 446
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 420
+                  }
+                },
+                "sanMoves": [
+                  "d6f7",
+                  "d7f7",
+                  "g4e6",
+                  "h8h7",
+                  "e6g4",
+                  "f7f5",
+                  "e5e6",
+                  "f8e8",
+                  "d4b2",
+                  "d8e7",
+                  "g4d4",
+                  "e8f8",
+                  "e1e2",
+                  "b7a6",
+                  "e2c2",
+                  "f8g8",
+                  "d4g4"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 284
+                  }
+                },
+                "sanMoves": [
+                  "d4e3",
+                  "d7c7",
+                  "e3h6",
+                  "f8g8",
+                  "d6f7",
+                  "c7f7",
+                  "g4e6",
+                  "d8e7",
+                  "e6g4",
+                  "h8h7",
+                  "h6g5",
+                  "e7c5",
+                  "g4e2",
+                  "g8e8",
+                  "e5e6",
+                  "d5d4",
+                  "e6f7",
+                  "e8e2",
+                  "e1e2",
+                  "b7g2",
+                  "e2e8",
+                  "g2f3",
+                  "f7f8r"
+                ]
+              }
+            ],
+            "is_sacrifice": false,
+            "move": "d6f7"
+          }
+        }
+      ]
+    },
+    {
+      "player": "hansen",
+      "opponent": "Fedor_AntipovSPB",
+      "game": "183990510823",
+      "ply": 61,
+      "additional_brilliant_plies": [
+        67
+      ],
+      "chesscom": "!!",
+      "chesscom_cp_white": 421,
+      "moves": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nge7 5. O-O Ng6 6. c3 d5 7. d3 Be7 8. Re1 O-O 9. Nbd2 b5 10. Bc2 Be6 11. Nf1 f5 12. exd5 Bxd5 13. a4 Rb8 14. axb5 axb5 15. Ra6 Qc8 16. Ra1 Qd7 17. Ne3 Be6 18. d4 exd4 19. cxd4 Nb4 20. Bb3 Nf4 21. Nxf5 Rxf5 22. Bxf4 Bxb3 23. Qxb3+ Nd5 24. Bg3 Kh8 25. Ne5 Qe6 26. h3 Rd8 27. Qxb5 Qf6 28. Ra6 Qf8 29. Qc4 Nb4 30. Re6 Bd6 31. Nd7 Qf7 32. Bxd6 cxd6 33. Qxb4 Qxd7 34. Rxd6 Qc7 35. Rxd8+ Qxd8 36. Re5 Rf4 37. Qb5 Rf8 38. d5 Qf6 39. Re2 Qd4 40. g3 Qd1+ 41. Kg2 Qd4 42. b3 h6 43. Qc4 Qb6 44. Rd2 Qd6 45. Qe4 Rd8 46. h4 Qf6 47. b4 Qb6 48. Rd4 Qd6 49. Qf4 Qb6 50. Qe4 Qd6 51. b5 Qb6 52. Qd3 Qc6 53. dxc6 Rf8 54. Rd8 Rg8 55. Qd5 Rxd8 56. Qxd8+ Kh7 57. h5 g6 58. Qe7+ Kg8 59. hxg6 1-0",
+      "source": "Safari gallery (31.Nd7 and 34.Rxd6) and Game Review (31.Nd7), 2026-11-02",
+      "san": "Nd7",
+      "fen_before": "3r1q1k/2p3pp/3bR3/4Nr2/1nQP4/6BP/1P3PP1/4R1K1 w - - 7 31",
+      "fen_after": "3r1q1k/2pN2pp/3bR3/5r2/1nQP4/6BP/1P3PP1/4R1K1 b - - 8 31",
+      "material_before": 180,
+      "material_after_mover": 90,
+      "ec_sacrifice": false,
+      "runs": [
+        {
+          "nodes_per_position": 300000,
+          "depth_before": 18,
+          "depth_after": 19,
+          "best": "Bh4",
+          "second": "Nd7",
+          "best_cp_mover": 420,
+          "second_cp_mover": 395,
+          "after_cp_mover": 408,
+          "best_second_wc_gap": 1.373,
+          "wc_loss": 0.649,
+          "ec_label": "",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 371
+            },
+            "prev": {
+              "type": "cp",
+              "value": 420
+            },
+            "next": {
+              "type": "cp",
+              "value": 408
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 420
+                  }
+                },
+                "sanMoves": [
+                  "g3h4",
+                  "d8a8",
+                  "g2g4",
+                  "f5f4",
+                  "h4g3",
+                  "g7g6",
+                  "g1g2",
+                  "h8g7",
+                  "g3f4",
+                  "f8f4",
+                  "e6d6",
+                  "c7d6",
+                  "c4b4",
+                  "d6e5",
+                  "b4e7",
+                  "g7g8",
+                  "e1e5"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 395
+                  }
+                },
+                "sanMoves": [
+                  "e5d7",
+                  "f8f7",
+                  "g3d6",
+                  "c7d6",
+                  "c4b4",
+                  "f7d7",
+                  "b4d6",
+                  "h8g8",
+                  "d6b4",
+                  "f5d5",
+                  "e6e7",
+                  "d7c6",
+                  "e1e4",
+                  "h7h6",
+                  "b2b3",
+                  "c6c1",
+                  "g1h2"
+                ]
+              }
+            ],
+            "is_sacrifice": false,
+            "move": "e5d7"
+          }
+        },
+        {
+          "nodes_per_position": 1500000,
+          "depth_before": 18,
+          "depth_after": 21,
+          "best": "Nd7",
+          "second": "Bh4",
+          "best_cp_mover": 426,
+          "second_cp_mover": 394,
+          "after_cp_mover": 457,
+          "best_second_wc_gap": 1.747,
+          "wc_loss": -1.568,
+          "ec_label": "",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 426
+            },
+            "prev": {
+              "type": "cp",
+              "value": 426
+            },
+            "next": {
+              "type": "cp",
+              "value": 457
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 426
+                  }
+                },
+                "sanMoves": [
+                  "e5d7",
+                  "d8d7",
+                  "e6e8",
+                  "d6g3",
+                  "f2g3",
+                  "b4d5",
+                  "g3g4",
+                  "f5f7",
+                  "e1e5",
+                  "d5f6",
+                  "e8f8",
+                  "f7f8",
+                  "g4g5",
+                  "f6h5",
+                  "c4b5",
+                  "d7f7",
+                  "e5e4"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 394
+                  }
+                },
+                "sanMoves": [
+                  "g3h4",
+                  "d8a8",
+                  "h4g3",
+                  "f8g8",
+                  "d4d5",
+                  "a8d8",
+                  "c4h4",
+                  "d6e5",
+                  "e1e5",
+                  "f5e5",
+                  "g3e5",
+                  "b4d3",
+                  "h4c4",
+                  "d3e5",
+                  "e6e5",
+                  "g8f8",
+                  "c4e4"
+                ]
+              }
+            ],
+            "is_sacrifice": false,
+            "move": "e5d7"
+          }
+        }
+      ]
+    },
+    {
+      "player": "hansen",
+      "opponent": "Fedor_AntipovSPB",
+      "game": "183990510823",
+      "ply": 67,
+      "additional_brilliant_plies": [
+        67
+      ],
+      "chesscom": "!!",
+      "chesscom_cp_white": null,
+      "moves": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nge7 5. O-O Ng6 6. c3 d5 7. d3 Be7 8. Re1 O-O 9. Nbd2 b5 10. Bc2 Be6 11. Nf1 f5 12. exd5 Bxd5 13. a4 Rb8 14. axb5 axb5 15. Ra6 Qc8 16. Ra1 Qd7 17. Ne3 Be6 18. d4 exd4 19. cxd4 Nb4 20. Bb3 Nf4 21. Nxf5 Rxf5 22. Bxf4 Bxb3 23. Qxb3+ Nd5 24. Bg3 Kh8 25. Ne5 Qe6 26. h3 Rd8 27. Qxb5 Qf6 28. Ra6 Qf8 29. Qc4 Nb4 30. Re6 Bd6 31. Nd7 Qf7 32. Bxd6 cxd6 33. Qxb4 Qxd7 34. Rxd6 Qc7 35. Rxd8+ Qxd8 36. Re5 Rf4 37. Qb5 Rf8 38. d5 Qf6 39. Re2 Qd4 40. g3 Qd1+ 41. Kg2 Qd4 42. b3 h6 43. Qc4 Qb6 44. Rd2 Qd6 45. Qe4 Rd8 46. h4 Qf6 47. b4 Qb6 48. Rd4 Qd6 49. Qf4 Qb6 50. Qe4 Qd6 51. b5 Qb6 52. Qd3 Qc6 53. dxc6 Rf8 54. Rd8 Rg8 55. Qd5 Rxd8 56. Qxd8+ Kh7 57. h5 g6 58. Qe7+ Kg8 59. hxg6 1-0",
+      "source": "Safari gallery (31.Nd7 and 34.Rxd6) and Game Review (31.Nd7), 2026-11-02",
+      "san": "Rxd6",
+      "fen_before": "3r3k/3q2pp/3pR3/5r2/1Q1P4/7P/1P3PP1/4R1K1 w - - 0 34",
+      "fen_after": "3r3k/3q2pp/3R4/5r2/1Q1P4/7P/1P3PP1/4R1K1 b - - 0 34",
+      "material_before": 180,
+      "material_after_mover": -230,
+      "ec_sacrifice": true,
+      "runs": [
+        {
+          "nodes_per_position": 300000,
+          "depth_before": 13,
+          "depth_after": 17,
+          "best": "d5",
+          "second": "Re7",
+          "best_cp_mover": 364,
+          "second_cp_mover": 334,
+          "after_cp_mover": 473,
+          "best_second_wc_gap": 1.875,
+          "wc_loss": -5.836,
+          "ec_label": "!?",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 338
+            },
+            "prev": {
+              "type": "cp",
+              "value": 364
+            },
+            "next": {
+              "type": "cp",
+              "value": 473
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 364
+                  }
+                },
+                "sanMoves": [
+                  "d4d5",
+                  "d7a7",
+                  "e6e8",
+                  "f5f8",
+                  "e8f8",
+                  "d8f8",
+                  "e1e2",
+                  "a7b8",
+                  "b4d4",
+                  "b8c7",
+                  "g1h2",
+                  "f8f7"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 334
+                  }
+                },
+                "sanMoves": [
+                  "e6e7",
+                  "d7c6",
+                  "b4c3",
+                  "c6b5",
+                  "b2b4",
+                  "d8g8",
+                  "e7e6",
+                  "f5d5",
+                  "f2f3",
+                  "h7h6",
+                  "e6e7"
+                ]
+              }
+            ],
+            "is_sacrifice": true,
+            "move": "e6d6"
+          }
+        },
+        {
+          "nodes_per_position": 1500000,
+          "depth_before": 20,
+          "depth_after": 19,
+          "best": "Rxd6",
+          "second": "Qxd6",
+          "best_cp_mover": 480,
+          "second_cp_mover": 384,
+          "after_cp_mover": 486,
+          "best_second_wc_gap": 4.975,
+          "wc_loss": -0.273,
+          "ec_label": "!?",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 456
+            },
+            "prev": {
+              "type": "cp",
+              "value": 480
+            },
+            "next": {
+              "type": "cp",
+              "value": 486
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 480
+                  }
+                },
+                "sanMoves": [
+                  "e6d6",
+                  "d7c7",
+                  "d6d8",
+                  "c7d8",
+                  "e1e5",
+                  "f5f6",
+                  "b4e1",
+                  "f6f8",
+                  "b2b4",
+                  "h8g8",
+                  "e1e4",
+                  "d8a8",
+                  "d4d5",
+                  "a8b8",
+                  "f2f4",
+                  "b8d6",
+                  "e5e8",
+                  "h7h6",
+                  "e8f8",
+                  "g8f8",
+                  "g1h2"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 384
+                  }
+                },
+                "sanMoves": [
+                  "b4d6",
+                  "h7h6",
+                  "d6d7",
+                  "d8d7",
+                  "e1d1",
+                  "f5b5",
+                  "e6e8",
+                  "h8h7",
+                  "d1d2",
+                  "h7g6",
+                  "g1f1",
+                  "g6f7",
+                  "e8e2",
+                  "b5b4",
+                  "d4d5",
+                  "b4b5",
+                  "f1e1"
+                ]
+              }
+            ],
+            "is_sacrifice": true,
+            "move": "e6d6"
+          }
+        }
+      ]
+    },
+    {
+      "player": "hansen",
+      "opponent": "Achuvettan",
+      "game": "184007910437",
+      "ply": 57,
+      "chesscom": "!!",
+      "chesscom_cp_white": 640,
+      "moves": "1. e4 d5 2. exd5 Nf6 3. Bb5+ Nbd7 4. d4 a6 5. Be2 Nxd5 6. Nf3 e6 7. c4 N5f6 8. O-O Be7 9. Nc3 O-O 10. h3 c6 11. Bf4 b5 12. b3 Bb7 13. c5 Re8 14. Bd3 Nf8 15. Re1 Ng6 16. Bh2 Nd5 17. Nxd5 Qxd5 18. a4 Red8 19. Qc2 Bf6 20. Bd6 Qh5 21. Be4 Ne7 22. axb5 axb5 23. Rxa8 Rxa8 24. Bxe7 Bxe7 25. Ne5 Bf6 26. Bxc6 Bxc6 27. Nxc6 Qd5 28. Qe4 Ra1 29. Rxa1 1-0",
+      "source": "Safari gallery and Game Review, 2026-11-02",
+      "san": "Rxa1",
+      "fen_before": "6k1/5ppp/2N1pb2/1pPq4/3PQ3/1P5P/5PP1/r3R1K1 w - - 3 29",
+      "fen_after": "6k1/5ppp/2N1pb2/1pPq4/3PQ3/1P5P/5PP1/R5K1 b - - 0 29",
+      "material_before": 590,
+      "material_after_mover": -410,
+      "ec_sacrifice": true,
+      "runs": [
+        {
+          "nodes_per_position": 300000,
+          "depth_before": 17,
+          "depth_after": 15,
+          "best": "Rxa1",
+          "second": "Nb8",
+          "best_cp_mover": 711,
+          "second_cp_mover": -244,
+          "after_cp_mover": 770,
+          "best_second_wc_gap": 64.263,
+          "wc_loss": -1.254,
+          "ec_label": "!!",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 82
+            },
+            "prev": {
+              "type": "cp",
+              "value": 711
+            },
+            "next": {
+              "type": "cp",
+              "value": 770
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 711
+                  }
+                },
+                "sanMoves": [
+                  "e1a1",
+                  "d5c5",
+                  "a1a8",
+                  "c5f8",
+                  "a8f8",
+                  "g8f8",
+                  "g2g4",
+                  "g7g6",
+                  "g1g2",
+                  "f8g7",
+                  "c6e5",
+                  "h7h5",
+                  "e4b7",
+                  "f6e5",
+                  "d4e5",
+                  "h5g4",
+                  "h3g4"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": -244
+                  }
+                },
+                "sanMoves": [
+                  "c6b8",
+                  "f6d4",
+                  "e4e2",
+                  "a1e1",
+                  "e2e1",
+                  "d4c5",
+                  "e1c3",
+                  "d5d1",
+                  "g1h2",
+                  "c5f2"
+                ]
+              }
+            ],
+            "is_sacrifice": true,
+            "move": "e1a1"
+          }
+        },
+        {
+          "nodes_per_position": 1500000,
+          "depth_before": 21,
+          "depth_after": 19,
+          "best": "Rxa1",
+          "second": "Ne5",
+          "best_cp_mover": 785,
+          "second_cp_mover": -371,
+          "after_cp_mover": 821,
+          "best_second_wc_gap": 74.411,
+          "wc_loss": -0.623,
+          "ec_label": "!!",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 80
+            },
+            "prev": {
+              "type": "cp",
+              "value": 785
+            },
+            "next": {
+              "type": "cp",
+              "value": 821
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 785
+                  }
+                },
+                "sanMoves": [
+                  "e1a1",
+                  "g7g5",
+                  "e4d5",
+                  "e6d5",
+                  "a1a8",
+                  "g8g7",
+                  "g1f1",
+                  "g7g6",
+                  "f1e2",
+                  "g6f5",
+                  "a8a7",
+                  "f5e6",
+                  "g2g4",
+                  "h7h6",
+                  "e2d3",
+                  "h6h5",
+                  "g4h5",
+                  "g5g4",
+                  "h3g4",
+                  "f6h4",
+                  "f2f4",
+                  "f7f5",
+                  "g4g5",
+                  "h4e1"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": -371
+                  }
+                },
+                "sanMoves": [
+                  "c6e5",
+                  "d5e4",
+                  "e1a1",
+                  "f6e5",
+                  "d4e5",
+                  "g7g5",
+                  "a1c1",
+                  "e4f4",
+                  "c1d1",
+                  "f4e5",
+                  "c5c6",
+                  "e5c7",
+                  "d1c1",
+                  "f7f6",
+                  "b3b4",
+                  "h7h5",
+                  "c1c5",
+                  "h5h4",
+                  "g2g4"
+                ]
+              }
+            ],
+            "is_sacrifice": true,
+            "move": "e1a1"
+          }
+        }
+      ]
+    },
+    {
+      "player": "nelsi",
+      "opponent": "penetrators666",
+      "game": "186399008010",
+      "ply": 37,
+      "chesscom": "!!",
+      "chesscom_cp_white": 208,
+      "moves": "1. e4 e6 2. d4 d6 3. Nc3 Nf6 4. f4 Be7 5. Nf3 b6 6. e5 Nd5 7. Nxd5 exd5 8. Bd3 Bg4 9. O-O Nc6 10. h3 Bxf3 11. Qxf3 Qd7 12. Qxd5 O-O 13. Bb5 Nb4 14. Qxa8 Qxb5 15. Qe4 d5 16. a4 Qa6 17. Qf5 g6 18. Qg4 Nxc2 19. f5 Nxa1 20. f6 Qxa4 21. fxe7 Re8 22. Qf4 Rxe7 23. Qf6 Qe8 24. Bh6 Nb3 25. Qg7# 1-0",
+      "source": "Safari gallery and Game Review, 2026-11-02",
+      "san": "f5",
+      "fen_before": "5rk1/p1p1bp1p/qp4p1/3pP3/P2P1PQ1/7P/1Pn3P1/R1B2RK1 w - - 0 19",
+      "fen_after": "5rk1/p1p1bp1p/qp4p1/3pPP2/P2P2Q1/7P/1Pn3P1/R1B2RK1 b - - 0 19",
+      "material_before": 110,
+      "material_after_mover": -300,
+      "ec_sacrifice": true,
+      "runs": [
+        {
+          "nodes_per_position": 300000,
+          "depth_before": 15,
+          "depth_after": 17,
+          "best": "f5",
+          "second": "Qd7",
+          "best_cp_mover": 165,
+          "second_cp_mover": 113,
+          "after_cp_mover": 204,
+          "best_second_wc_gap": 4.484,
+          "wc_loss": -3.205,
+          "ec_label": "!?",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 164
+            },
+            "prev": {
+              "type": "cp",
+              "value": 165
+            },
+            "next": {
+              "type": "cp",
+              "value": 204
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 165
+                  }
+                },
+                "sanMoves": [
+                  "f4f5",
+                  "c2a1",
+                  "f5g6",
+                  "h7g6",
+                  "g4d7",
+                  "a1b3",
+                  "c1h6",
+                  "e7g5",
+                  "h6g5",
+                  "a6e2",
+                  "d7d5",
+                  "b3d2",
+                  "g5d2",
+                  "e2d2",
+                  "d5e4",
+                  "f8e8",
+                  "g1h2",
+                  "c7c5",
+                  "e5e6",
+                  "e8e6",
+                  "e4a8",
+                  "g8g7",
+                  "a8a7",
+                  "e6f6",
+                  "f1f6"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 113
+                  }
+                },
+                "sanMoves": [
+                  "g4d7",
+                  "e7h4",
+                  "d7g4",
+                  "a6c4",
+                  "a1b1",
+                  "h4e7",
+                  "b2b3",
+                  "c4d4",
+                  "g1h1",
+                  "d4e4",
+                  "f4f5",
+                  "e4e5",
+                  "c1f4",
+                  "e5e4",
+                  "b1c1",
+                  "c2e3",
+                  "f4e3",
+                  "e4e3",
+                  "f5g6"
+                ]
+              }
+            ],
+            "is_sacrifice": true,
+            "move": "f4f5"
+          }
+        },
+        {
+          "nodes_per_position": 1500000,
+          "depth_before": 19,
+          "depth_after": 21,
+          "best": "f5",
+          "second": "Qd7",
+          "best_cp_mover": 211,
+          "second_cp_mover": 90,
+          "after_cp_mover": 235,
+          "best_second_wc_gap": 10.292,
+          "wc_loss": -1.875,
+          "ec_label": "!!",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 214
+            },
+            "prev": {
+              "type": "cp",
+              "value": 211
+            },
+            "next": {
+              "type": "cp",
+              "value": 235
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 211
+                  }
+                },
+                "sanMoves": [
+                  "f4f5",
+                  "h7h5",
+                  "g4d1",
+                  "c2a1",
+                  "c1h6",
+                  "f8c8",
+                  "d1f3",
+                  "b6b5",
+                  "e5e6",
+                  "a1c2",
+                  "e6f7",
+                  "g8h7",
+                  "f7f8r",
+                  "e7f8",
+                  "h6f8",
+                  "c2d4",
+                  "f3e3",
+                  "h7g8",
+                  "f8c5",
+                  "d4f5",
+                  "f1f5",
+                  "g6f5",
+                  "e3g5",
+                  "g8f7",
+                  "g5f5",
+                  "f7g8",
+                  "f5d5"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 90
+                  }
+                },
+                "sanMoves": [
+                  "g4d7",
+                  "e7h4",
+                  "d7g4",
+                  "f7f5",
+                  "g4h4",
+                  "c2a1",
+                  "f1f3",
+                  "a6e2",
+                  "h4e7",
+                  "e2d1",
+                  "g1h2",
+                  "d1c1",
+                  "e7e6",
+                  "g8g7",
+                  "e6d5",
+                  "a1c2",
+                  "e5e6",
+                  "c2e3"
+                ]
+              }
+            ],
+            "is_sacrifice": true,
+            "move": "f4f5"
+          }
+        }
+      ]
+    },
+    {
+      "player": "Juwen",
+      "opponent": "powerofapoint",
+      "game": "172016241890",
+      "ply": 37,
+      "chesscom": "!!",
+      "chesscom_cp_white": 62,
+      "moves": "1. Nf3 Nf6 2. g3 g6 3. Bg2 Bg7 4. O-O O-O 5. c4 c6 6. b3 d5 7. Bb2 Re8 8. d3 Nbd7 9. Nc3 e5 10. cxd5 Nxd5 11. Nd2 e4 12. Rc1 e3 13. Nde4 exf2+ 14. Rxf2 Ne3 15. Qd2 Nxg2 16. Kxg2 Ne5 17. Nd1 Ng4 18. Bxg7 Rxe4 19. Bb2 Nxf2 20. Nxf2 Re6 21. Qc3 f6 22. Ne4 Qd5 23. Rf1 Rxe4 24. dxe4 Qxe4+ 25. Kg1 Bh3 26. Rf2 Rd8 0-1",
+      "source": "Safari gallery and Game Review, 2026-11-02",
+      "san": "Bb2",
+      "fen_before": "r1bq2k1/pp3pBp/2p3p1/8/4r1n1/1P1P2P1/P2QPRKP/2RN4 w - - 0 19",
+      "fen_after": "r1bq2k1/pp3p1p/2p3p1/8/4r1n1/1P1P2P1/PB1QPRKP/2RN4 b - - 1 19",
+      "material_before": -90,
+      "material_after_mover": -200,
+      "ec_sacrifice": true,
+      "runs": [
+        {
+          "nodes_per_position": 300000,
+          "depth_before": 15,
+          "depth_after": 17,
+          "best": "Ba1",
+          "second": "Bb2",
+          "best_cp_mover": 110,
+          "second_cp_mover": 95,
+          "after_cp_mover": 109,
+          "best_second_wc_gap": 1.333,
+          "wc_loss": 0.088,
+          "ec_label": "!?",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": 1
+            },
+            "prev": {
+              "type": "cp",
+              "value": 110
+            },
+            "next": {
+              "type": "cp",
+              "value": 109
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 110
+                  }
+                },
+                "sanMoves": [
+                  "g7a1",
+                  "g4f2",
+                  "d1f2",
+                  "e4e8",
+                  "d2h6",
+                  "f7f6",
+                  "f2e4",
+                  "e8e4",
+                  "d3e4",
+                  "c8g4",
+                  "c1f1",
+                  "g4e2",
+                  "f1f6",
+                  "d8d7",
+                  "a1c3",
+                  "d7e7",
+                  "h6e3",
+                  "e2a6",
+                  "e3d4"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 95
+                  }
+                },
+                "sanMoves": [
+                  "g7b2",
+                  "g4f2",
+                  "d1f2",
+                  "e4e8",
+                  "d2h6",
+                  "f7f6",
+                  "f2e4",
+                  "e8e4",
+                  "d3e4",
+                  "c8g4",
+                  "c1f1",
+                  "d8e7",
+                  "b2f6",
+                  "e7d7",
+                  "f6a1",
+                  "g4e2"
+                ]
+              }
+            ],
+            "is_sacrifice": true,
+            "move": "g7b2"
+          }
+        },
+        {
+          "nodes_per_position": 1500000,
+          "depth_before": 19,
+          "depth_after": 21,
+          "best": "Bb2",
+          "second": "Ba1",
+          "best_cp_mover": 115,
+          "second_cp_mover": 106,
+          "after_cp_mover": 93,
+          "best_second_wc_gap": 0.795,
+          "wc_loss": 1.952,
+          "ec_label": "!?",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": -5
+            },
+            "prev": {
+              "type": "cp",
+              "value": 115
+            },
+            "next": {
+              "type": "cp",
+              "value": 93
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 115
+                  }
+                },
+                "sanMoves": [
+                  "g7b2",
+                  "g4f2",
+                  "d1f2",
+                  "e4e8",
+                  "d2h6",
+                  "f7f6",
+                  "f2e4",
+                  "e8f8",
+                  "h6h4",
+                  "c8f5",
+                  "e4f6",
+                  "f8f6",
+                  "b2f6",
+                  "d8d5",
+                  "g2g1",
+                  "d5e6",
+                  "e2e4",
+                  "f5h3",
+                  "f6a1",
+                  "a8f8",
+                  "h4g5",
+                  "h3g4"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 106
+                  }
+                },
+                "sanMoves": [
+                  "g7a1",
+                  "g4f2",
+                  "d1f2",
+                  "e4e8",
+                  "d2h6",
+                  "f7f6",
+                  "f2e4",
+                  "e8f8",
+                  "h6h4",
+                  "c8f5",
+                  "e4f6",
+                  "f8f6",
+                  "h4f6",
+                  "d8f6",
+                  "a1f6",
+                  "f5g4",
+                  "c1c2",
+                  "g4d7"
+                ]
+              }
+            ],
+            "is_sacrifice": true,
+            "move": "g7b2"
+          }
+        }
+      ]
+    },
+    {
+      "player": "KNVB",
+      "opponent": "Cirky",
+      "game": "186066291740",
+      "ply": 21,
+      "chesscom": "!!",
+      "chesscom_cp_white": 86,
+      "moves": "1. d4 Nf6 2. Bf4 e6 3. e3 d5 4. Nf3 c5 5. Nbd2 Nc6 6. c3 cxd4 7. exd4 Nh5 8. Be3 Bd6 9. g3 O-O 10. Bd3 Bd7 11. Bxh7+ Kxh7 12. Ng5+ Kg6 13. Ndf3 f5 14. Nh4+ Kf6 15. Qxh5 Qe8 16. Nh7+ Ke7 17. Bg5+ Rf6 18. Nxf6 gxf6 19. Qh7+ Qf7 20. Ng6+ Ke8 21. Qh8+ Bf8 22. Nxf8 Qxf8 23. Qxf8+ Kxf8 24. Bxf6 Kf7 25. Be5 Nxe5 26. dxe5 b5 27. h4 Kg6 28. Kd2 Kh5 29. f3 Rc8 30. Rag1 a5 31. g4+ fxg4 32. fxg4+ Kh6 33. h5 Rf8 34. g5+ Kh7 35. g6+ Kh6 36. g7 Rg8 37. Rg6+ Kh7 38. Rhg1 Be8 39. R6g5 Kh6 40. b4 axb4 41. cxb4 Bxh5 42. Ke3 Bf7 43. R5g3 Bh5 44. Kd4 Rc8 45. Rh1 Rc4+ 46. Ke3 Re4+ 47. Kf2 *",
+      "source": "Safari gallery and Game Review, 2026-11-02",
+      "san": "Bxh7+",
+      "fen_before": "r2q1rk1/pp1b1ppp/2nbp3/3p3n/3P4/2PBBNP1/PP1N1P1P/R2QK2R w KQ - 3 11",
+      "fen_after": "r2q1rk1/pp1b1ppB/2nbp3/3p3n/3P4/2P1BNP1/PP1N1P1P/R2QK2R b KQ - 0 11",
+      "material_before": 0,
+      "material_after_mover": -210,
+      "ec_sacrifice": true,
+      "runs": [
+        {
+          "nodes_per_position": 300000,
+          "depth_before": 15,
+          "depth_after": 16,
+          "best": "Bxh7+",
+          "second": "Ne5",
+          "best_cp_mover": 125,
+          "second_cp_mover": 44,
+          "after_cp_mover": 130,
+          "best_second_wc_gap": 7.266,
+          "wc_loss": -0.436,
+          "ec_label": "!?",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": -13
+            },
+            "prev": {
+              "type": "cp",
+              "value": 125
+            },
+            "next": {
+              "type": "cp",
+              "value": 130
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 125
+                  }
+                },
+                "sanMoves": [
+                  "d3h7",
+                  "g8h7",
+                  "f3g5",
+                  "h7g6",
+                  "d2f3",
+                  "g6f6",
+                  "f3e5",
+                  "g7g6",
+                  "g3g4",
+                  "c6e5",
+                  "d4e5",
+                  "d6e5",
+                  "g5h7",
+                  "f6g7",
+                  "h7f8",
+                  "d7b5"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 44
+                  }
+                },
+                "sanMoves": [
+                  "f3e5",
+                  "h5f6",
+                  "e3f4",
+                  "d7e8",
+                  "e1g1",
+                  "d6e5",
+                  "d4e5",
+                  "f6d7",
+                  "d1e2",
+                  "h7h6",
+                  "d3c2",
+                  "f7f5",
+                  "d2b3",
+                  "a7a5"
+                ]
+              }
+            ],
+            "is_sacrifice": true,
+            "move": "d3h7"
+          }
+        },
+        {
+          "nodes_per_position": 1500000,
+          "depth_before": 19,
+          "depth_after": 20,
+          "best": "Bxh7+",
+          "second": "Ne5",
+          "best_cp_mover": 115,
+          "second_cp_mover": 68,
+          "after_cp_mover": 98,
+          "best_second_wc_gap": 4.204,
+          "wc_loss": 1.506,
+          "ec_label": "!?",
+          "oracle_input": {
+            "prevprev": {
+              "type": "cp",
+              "value": -3
+            },
+            "prev": {
+              "type": "cp",
+              "value": 115
+            },
+            "next": {
+              "type": "cp",
+              "value": 98
+            },
+            "color": "white",
+            "prevMoves": [
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 115
+                  }
+                },
+                "sanMoves": [
+                  "d3h7",
+                  "g8h7",
+                  "f3g5",
+                  "h7g6",
+                  "d2f3",
+                  "g6f6",
+                  "f3e5",
+                  "g7g6",
+                  "g3g4",
+                  "f6g7",
+                  "g4h5",
+                  "c6e5",
+                  "d4e5",
+                  "d6e5",
+                  "d1d2",
+                  "d5d4",
+                  "c3d4",
+                  "e5c7",
+                  "h5g6",
+                  "f7g6",
+                  "h2h4",
+                  "d8f6",
+                  "h4h5",
+                  "f6f5",
+                  "h5g6",
+                  "f8h8",
+                  "h1h7",
+                  "h8h7",
+                  "g6h7",
+                  "c7a5"
+                ]
+              },
+              {
+                "score": {
+                  "value": {
+                    "type": "cp",
+                    "value": 68
+                  }
+                },
+                "sanMoves": [
+                  "f3e5",
+                  "h5f6",
+                  "e3f4",
+                  "d7e8",
+                  "d1e2",
+                  "a7a5",
+                  "e1g1",
+                  "a5a4",
+                  "a2a3",
+                  "d6e5",
+                  "d4e5",
+                  "f6d7",
+                  "f1e1",
+                  "f7f6"
+                ]
+              }
+            ],
+            "is_sacrifice": true,
+            "move": "d3h7"
+          }
+        }
+      ]
+    }
+  ],
+  "source_pins": {
+    "mobile_maia_preview": "8563954429c2fb53ce0fe0e16c73c5d8a73ccfe0",
+    "ec_reference": "v0.15.0 6f2d2628f0fbe11cb62a7dd2f9c102bb52907d53",
+    "mute_source_snapshot": "analysis-player-name-release-2026-11-02/release-maina16f55f89f9c/source/deploy/lila/patches/lila-nostr-maia.patch"
+  },
+  "limitations": [
+    "Nine positive gallery examples from six games; not a random sample or a measurement of precision/recall.",
+    "Five examples confirmed brilliant in fresh Game Review; two historical gallery examples instead shown as inaccuracies; two further examples have gallery evidence only.",
+    "SF18 local search evidence is not Chess.com engine evidence, nor a full Mobile Maia/Mute Chess application pipeline replay.",
+    "The material calculation is a Python translation of the pinned reference; annotation decisions use the unchanged TypeScript oracle.",
+    "Three-position windows are searched forward with complete exact same-depth MultiPV results; hash is cleared before each budget comparison. Application prior-iteration/confirmation withholding is not replayed.",
+    "No player-rating curve, hidden sacrifice definition, or exact Chess.com thresholds can be recovered from this sample."
+  ]
+}

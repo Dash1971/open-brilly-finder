@@ -1,0 +1,942 @@
+{
+  "run_at_utc": "2026-11-03T00:49:44.486482+00:00",
+  "scope": "Retrospective exploratory gate screen on the completed pilot; no held-out validation claim.",
+  "no_collection_engine_or_rule_changes": true,
+  "source_classifier_commit": "b3585f2c5b818bb8dfabb7fc4e3ed37cab848c12",
+  "input_hashes": {
+    "comparison-rules.json": "ff575a3dc12ed10f7b140ee74a1a6bbb3e7c856053caefd2f5818372a248e38e",
+    "analysis-baseline.json": "639b026025007bbcb7c9e4f0c4955a76f5da23edb27f19709b316c03f6e14a20"
+  },
+  "algorithm": "Retain a specific legal nonpawn offer acceptance with same-square exchange gain > credit+100; force it, then perform all-square capture-only material negamax from the mover. Require at least one such acceptance to leave >100 physical material units below RAW pre-move balance.",
+  "alpha_beta_root_bounds": [
+    -10000,
+    10000
+  ],
+  "material_units": {
+    "1": 90,
+    "2": 300,
+    "3": 300,
+    "4": 500,
+    "5": 1000,
+    "6": 0
+  },
+  "checkmate_scoring": "Physical material only; no mate bonus or -10000 terminal sentinel.",
+  "stopping_semantics": "Either side may stand pat; quiet moves/check responses not searched. Legal captures only.",
+  "rows": [
+    {
+      "game_id": "183990510823",
+      "ply": 53,
+      "san": "Qxb5",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 90,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "183990510823",
+      "ply": 61,
+      "san": "Nd7",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 180,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Rxd7",
+          "uci": "d8d7",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": 90,
+          "loss_from_raw_premove_material": 90
+        }
+      ],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "184403311373",
+      "ply": 45,
+      "san": "Rad1",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "?!",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 0,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "184403311373",
+      "ply": 59,
+      "san": "Qxe4",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 0,
+      "immediate_capture_promotion_credit": 500,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "dxe4",
+          "uci": "d5e4",
+          "same_square_gain": 910,
+          "capture_only_outcome_mover": 410,
+          "loss_from_raw_premove_material": -410
+        }
+      ],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "184407510567",
+      "ply": 32,
+      "san": "Rxc4",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 0,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "184407510567",
+      "ply": 44,
+      "san": "Rxh4",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": 90,
+      "immediate_capture_promotion_credit": 300,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Nxh4",
+          "uci": "f3h4",
+          "same_square_gain": 500,
+          "capture_only_outcome_mover": -110,
+          "loss_from_raw_premove_material": 200
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "184408711263",
+      "ply": 72,
+      "san": "Rxf6",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "?",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 90,
+      "immediate_capture_promotion_credit": 300,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Bxf6",
+          "uci": "b2f6",
+          "same_square_gain": 500,
+          "capture_only_outcome_mover": -110,
+          "loss_from_raw_premove_material": 200
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "184408711263",
+      "ply": 78,
+      "san": "Rf4",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": -110,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Rxc6",
+          "uci": "d6c6",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": -410,
+          "loss_from_raw_premove_material": 300
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "186059216760",
+      "ply": 47,
+      "san": "Nf3",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 90,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Rxf3",
+          "uci": "f8f3",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": 290,
+          "loss_from_raw_premove_material": -200
+        }
+      ],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186059216760",
+      "ply": 49,
+      "san": "Qxg7+",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 90,
+      "immediate_capture_promotion_credit": 1000,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186059865466",
+      "ply": 29,
+      "san": "Nxd7",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "!",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 0,
+      "immediate_capture_promotion_credit": 1000,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186059865466",
+      "ply": 61,
+      "san": "Rxb2",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": 700,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Rxc2",
+          "uci": "c8c2",
+          "same_square_gain": 500,
+          "capture_only_outcome_mover": 290,
+          "loss_from_raw_premove_material": 410
+        },
+        {
+          "san": "Bxb2",
+          "uci": "g7b2",
+          "same_square_gain": 200,
+          "capture_only_outcome_mover": 590,
+          "loss_from_raw_premove_material": 110
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "186066219416",
+      "ply": 42,
+      "san": "Rxe4",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": -310,
+      "immediate_capture_promotion_credit": 300,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Qxe4",
+          "uci": "d3e4",
+          "same_square_gain": 500,
+          "capture_only_outcome_mover": -510,
+          "loss_from_raw_premove_material": 200
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "186066219416",
+      "ply": 80,
+      "san": "bxc5",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 180,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186066679548",
+      "ply": 97,
+      "san": "axb6",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 90,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186066679548",
+      "ply": 103,
+      "san": "Bxd5+",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!?",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": 180,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Bxd5",
+          "uci": "f7d5",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": -30,
+          "loss_from_raw_premove_material": 210
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "186298545248",
+      "ply": 29,
+      "san": "Qxf5",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": -300,
+      "immediate_capture_promotion_credit": 300,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186298545248",
+      "ply": 33,
+      "san": "Bxh6",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": 0,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "gxh6",
+          "uci": "g7h6",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": -210,
+          "loss_from_raw_premove_material": 210
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "186305472636",
+      "ply": 18,
+      "san": "Nxd5",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 0,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Nxd5",
+          "uci": "c3d5",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": 90,
+          "loss_from_raw_premove_material": -90
+        },
+        {
+          "san": "exd5",
+          "uci": "e4d5",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": 90,
+          "loss_from_raw_premove_material": -90
+        },
+        {
+          "san": "cxd5",
+          "uci": "c4d5",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": 90,
+          "loss_from_raw_premove_material": -90
+        }
+      ],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186305472636",
+      "ply": 20,
+      "san": "Nxe7",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": -210,
+      "immediate_capture_promotion_credit": 300,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186305620178",
+      "ply": 17,
+      "san": "Nc3",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "?!",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 0,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186305620178",
+      "ply": 37,
+      "san": "Qxc6",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": 90,
+      "immediate_capture_promotion_credit": 300,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Qxc6",
+          "uci": "d7c6",
+          "same_square_gain": 1000,
+          "capture_only_outcome_mover": -610,
+          "loss_from_raw_premove_material": 700
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "186336144138",
+      "ply": 12,
+      "san": "cxd5",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": -90,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186336144138",
+      "ply": 56,
+      "san": "Qf3",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": -300,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Qxc8",
+          "uci": "d7c8",
+          "same_square_gain": 500,
+          "capture_only_outcome_mover": -800,
+          "loss_from_raw_premove_material": 500
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "186383126550",
+      "ply": 3,
+      "san": "Na3",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "?",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 0,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186383126550",
+      "ply": 51,
+      "san": "Bxg6",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": 0,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "fxg6",
+          "uci": "f7g6",
+          "same_square_gain": 210,
+          "capture_only_outcome_mover": -120,
+          "loss_from_raw_premove_material": 120
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "186405804254",
+      "ply": 13,
+      "san": "Qxg7",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": -90,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186405804254",
+      "ply": 15,
+      "san": "Bh6",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 0,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Nxh6",
+          "uci": "g8h6",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": 700,
+          "loss_from_raw_premove_material": -700
+        },
+        {
+          "san": "Qxh6",
+          "uci": "f6h6",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": 200,
+          "loss_from_raw_premove_material": -200
+        }
+      ],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186405804254",
+      "ply": 51,
+      "san": "Qxd6+",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "?!",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": 410,
+      "immediate_capture_promotion_credit": 300,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Qxd6",
+          "uci": "h2d6",
+          "same_square_gain": 500,
+          "capture_only_outcome_mover": 210,
+          "loss_from_raw_premove_material": 200
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "186405804254",
+      "ply": 53,
+      "san": "Rxd6",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": -290,
+      "immediate_capture_promotion_credit": 1000,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186409700648",
+      "ply": 74,
+      "san": "Nxg4",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": -180,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Qxg4",
+          "uci": "e6g4",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": -300,
+          "loss_from_raw_premove_material": 120
+        },
+        {
+          "san": "Bxg4",
+          "uci": "d1g4",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": -300,
+          "loss_from_raw_premove_material": 120
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "186409700648",
+      "ply": 76,
+      "san": "Rxf2+",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": -390,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186423523498",
+      "ply": 47,
+      "san": "Rxa6",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 0,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "186423523498",
+      "ply": 57,
+      "san": "Rxf6",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": 90,
+      "immediate_capture_promotion_credit": 300,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "gxf6",
+          "uci": "g7f6",
+          "same_square_gain": 500,
+          "capture_only_outcome_mover": -110,
+          "loss_from_raw_premove_material": 200
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "187780087431",
+      "ply": 24,
+      "san": "f6",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "?",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 600,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "187780087431",
+      "ply": 34,
+      "san": "Bxd5",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": 510,
+      "immediate_capture_promotion_credit": 300,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Rxc6",
+          "uci": "c3c6",
+          "same_square_gain": 500,
+          "capture_only_outcome_mover": 310,
+          "loss_from_raw_premove_material": 200
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "187784287701",
+      "ply": 61,
+      "san": "Qf8",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": -90,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Qxh5",
+          "uci": "g6h5",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": -390,
+          "loss_from_raw_premove_material": 300
+        }
+      ],
+      "necessary_material_gate_passes": true
+    },
+    {
+      "game_id": "187784287701",
+      "ply": 65,
+      "san": "Rg7#",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": -390,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "187784887471",
+      "ply": 113,
+      "san": "Kxa2",
+      "fresh_binary_label": "non_brilliant",
+      "current_v2_symbol": "",
+      "existing_ec_material_sacrifice": false,
+      "legal_piece_offer": false,
+      "offer_AND_ec_material_gate": false,
+      "raw_premove_material_mover": 0,
+      "immediate_capture_promotion_credit": 500,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "game_id": "187784887471",
+      "ply": 117,
+      "san": "Rg8+",
+      "fresh_binary_label": "brilliant",
+      "current_v2_symbol": "!!",
+      "existing_ec_material_sacrifice": true,
+      "legal_piece_offer": true,
+      "offer_AND_ec_material_gate": true,
+      "raw_premove_material_mover": -410,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Kxg8",
+          "uci": "g7g8",
+          "same_square_gain": 500,
+          "capture_only_outcome_mover": -910,
+          "loss_from_raw_premove_material": 500
+        }
+      ],
+      "necessary_material_gate_passes": true
+    }
+  ],
+  "separate_known_controls": [
+    {
+      "name": "L1lChap-nelsi 14...Ndxe5",
+      "label_provenance": "owner_expected_not_brilliant",
+      "fresh_chesscom_label": "unknown",
+      "raw_premove_material_mover": 0,
+      "immediate_capture_promotion_credit": 90,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Nxe5",
+          "uci": "f3e5",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": 90,
+          "loss_from_raw_premove_material": -90
+        },
+        {
+          "san": "fxe5",
+          "uci": "f4e5",
+          "same_square_gain": 300,
+          "capture_only_outcome_mover": 90,
+          "loss_from_raw_premove_material": -90
+        }
+      ],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "name": "41.Qf5+",
+      "label_provenance": "owner_expected_not_brilliant",
+      "fresh_chesscom_label": "unknown",
+      "raw_premove_material_mover": 180,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "name": "17...Bf5",
+      "label_provenance": "owner_expected_not_brilliant",
+      "fresh_chesscom_label": "unknown",
+      "raw_premove_material_mover": 90,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [],
+      "necessary_material_gate_passes": false
+    },
+    {
+      "name": "Ju Wenjun 19.Bb2",
+      "label_provenance": "previously used known positive",
+      "raw_premove_material_mover": 0,
+      "immediate_capture_promotion_credit": 0,
+      "qualifying_legal_acceptances": [
+        {
+          "san": "Nxf2",
+          "uci": "g4f2",
+          "same_square_gain": 200,
+          "capture_only_outcome_mover": -200,
+          "loss_from_raw_premove_material": 200
+        }
+      ],
+      "necessary_material_gate_passes": true
+    }
+  ],
+  "AND_gate_loses_current_fresh_positives": [
+    {
+      "game_id": "183990510823",
+      "ply": 61,
+      "san": "Nd7"
+    },
+    {
+      "game_id": "186059216760",
+      "ply": 47,
+      "san": "Nf3"
+    },
+    {
+      "game_id": "186305472636",
+      "ply": 18,
+      "san": "Nxd5"
+    },
+    {
+      "game_id": "186405804254",
+      "ply": 15,
+      "san": "Bh6"
+    }
+  ],
+  "counterfactual_gate_loses_current_fresh_positives": [
+    {
+      "game_id": "183990510823",
+      "ply": 61,
+      "san": "Nd7"
+    },
+    {
+      "game_id": "186059216760",
+      "ply": 47,
+      "san": "Nf3"
+    },
+    {
+      "game_id": "186305472636",
+      "ply": 18,
+      "san": "Nxd5"
+    },
+    {
+      "game_id": "186405804254",
+      "ply": 15,
+      "san": "Bh6"
+    }
+  ],
+  "gotham_legal_recoup_counterexample": {
+    "game_id": "186305472636",
+    "ply": 18,
+    "fresh_chesscom_label": "Brilliant",
+    "conditional_line": "9...Nxd5 10.Nxd5 Bxd5 11.cxd5 Bxg5",
+    "not_claimed_as_played_game_continuation": true,
+    "verified_steps": [
+      {
+        "san": "Nxd5",
+        "uci": "f6d5",
+        "captured_piece": "P",
+        "black_minus_white_material": 90
+      },
+      {
+        "san": "Nxd5",
+        "uci": "c3d5",
+        "captured_piece": "n",
+        "black_minus_white_material": -210
+      },
+      {
+        "san": "Bxd5",
+        "uci": "b7d5",
+        "captured_piece": "N",
+        "black_minus_white_material": 90
+      },
+      {
+        "san": "cxd5",
+        "uci": "c4d5",
+        "captured_piece": "b",
+        "black_minus_white_material": -210
+      },
+      {
+        "san": "Bxg5",
+        "uci": "e7g5",
+        "captured_piece": "B",
+        "black_minus_white_material": 90
+      }
+    ]
+  },
+  "qsearch_calls": 393,
+  "same_square_see_calls": 206,
+  "elapsed_seconds": 0.014222791884094477,
+  "limitations": [
+    "Necessary-gate screen, not full modified-policy evaluation.",
+    "These pilot examples were inspected retrospectively; future candidate tuning would consume them as development data.",
+    "Capture-only material minimax is not complete chess search or an account of human perception.",
+    "Root bounds are finite; all observed material values remained strictly inside them."
+  ]
+}

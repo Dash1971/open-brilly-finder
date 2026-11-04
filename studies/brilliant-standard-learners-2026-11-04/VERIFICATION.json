@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "checks": [
+    "source/protocol/model hash consistency",
+    "selected full model identical to original expanded model",
+    "all3724unique predictions",
+    "whole-group fold identity",
+    "independent confusion-count recomputation",
+    "per-fold totals match pooled counts",
+    "no ineligible awards",
+    "retuned and fixed negative decisions identical",
+    "secondary replay totals",
+    "runtime and memory limits"
+  ],
+  "files": {
+    "PROTOCOL.json": "fdba522d996fa023fa1c2633f72ee300f367c00c3b4ed22e7228c1719726878e",
+    "experiment.py": "0c9b361880d65d43a11443a84d438917866084c77b6edd7af021fbc4b76e3814",
+    "RESULTS.json": "6857dfa78361ccd260d53e60878deb7366cf296f52ad6f02dca3b240eaff65f0",
+    "PREDICTIONS.json": "ae845d2fd687262f2c41cbdaa2054d85c1f3eb48120a602d30a8a4b8a4dc4a82",
+    "MODEL-FREEZE.json": "77010a4c88fff3e913fee6df609eb071d16abeada79deb87180227f3e728dd75",
+    "selected-model.json": "e153a3d151a8803d13fc85ba857c9297541a5d45b627f776ea56f1a249002332",
+    "SEEN-BENCHMARK-PREDICTIONS.json": "0b3471270900c5d324d1ab81ca0cde294a6869c695119fad2301592807cf4499",
+    "REPORT.txt": "b8c925cdd480038f17e5877c0a6b000e5939d6852cbea35bd65f69d2f22912ba"
+  }
+}

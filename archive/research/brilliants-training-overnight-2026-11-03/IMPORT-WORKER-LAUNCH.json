@@ -1,0 +1,20 @@
+{
+  "recorded_at_utc": "2026-11-03T16:13:44.451947+00:00",
+  "pid": 52372,
+  "exec_session_id": "see root tool call; update after launch",
+  "command": "python3 research/brilliants-training-overnight-2026-11-03/import-worker.py",
+  "worker_sha256": "3146971644865905371760ad973f021d98f988e8048ea87db41b269c5f6b7e5e",
+  "checkpoint": "IMPORT-WORKER-STATE.json",
+  "log": "import-worker.log",
+  "stop_flag": "STOP_IMPORT",
+  "stop_at_utc": "2026-11-03T23:57:39+00:00",
+  "sole_writer": "The worker is now the only dataset.sqlite3 writer. Do not invoke importer manually until stopped.",
+  "commands_run_by_worker": [
+    "python3 import-verified.py",
+    "python3 prepare-engine-batch.py --batch <next two-digit number> --min-games 20"
+  ],
+  "scope": "Checks completion-marker changes every 30 seconds; imports legal verified saved evidence and freezes immutable training-only batches. No browser, engine, model fitting, publication or app work.",
+  "previous_launch_preserved_pid": 50477,
+  "previous_launch_stop_note": "Process ended after preparing subagent completed; all raw captures remained saved. Same unchanged worker restarted under active parent, no data repair or tooling redesign.",
+  "owner": "active root turn"
+}

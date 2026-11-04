@@ -1,0 +1,308 @@
+{
+  "generated_at_utc": "2026-11-03T06:52:28.945909+00:00",
+  "scope": "Read-only cached-data audit. No new pages, labels, PGNs, engines or candidate scoring collected. Candidates remain historically labeled only; no validation selection is frozen.",
+  "known_primary_games": 299,
+  "fresh_reviewed_games": 320,
+  "excluded_numeric_game_ids": 325,
+  "additional_excluded_games_beyond_primary": 26,
+  "observed_fresh_move_keys": 684,
+  "sampled_or_explicit_development_fens": 1931,
+  "conservative_all_positions_from_reviewed_games_fens": 25904,
+  "unique_cached_candidate_moves": 558,
+  "unique_cached_candidate_games": 510,
+  "status_counts": {
+    "excluded_reviewed_or_development_game": 359,
+    "eligible_cached_position_checked": 167,
+    "pending_pgn_and_position_checks": 28,
+    "excluded_sampled_development_position": 1,
+    "excluded_duplicate_candidate_position_move": 3
+  },
+  "eligible_cached_moves": 167,
+  "eligible_cached_games": 158,
+  "candidate_position_move_duplicate_groups": [
+    [
+      {
+        "account": "KNVB",
+        "game_id": "180017464974",
+        "ply": 18
+      },
+      {
+        "account": "KNVB",
+        "game_id": "185277391724",
+        "ply": 18
+      }
+    ],
+    [
+      {
+        "account": "KNVB",
+        "game_id": "185389952322",
+        "ply": 21
+      },
+      {
+        "account": "KNVB",
+        "game_id": "185388991304",
+        "ply": 21
+      }
+    ],
+    [
+      {
+        "account": "KNVB",
+        "game_id": "184919753448",
+        "ply": 53
+      },
+      {
+        "account": "KNVB",
+        "game_id": "184919753448",
+        "ply": 49
+      }
+    ]
+  ],
+  "per_account": {
+    "nelsi": {
+      "cached_candidate_moves": 103,
+      "cached_candidate_games": 89,
+      "excluded_reviewed_game_moves": 103,
+      "pgn_pending_moves": 0,
+      "position_overlap_moves": 0,
+      "eligible_moves": 0,
+      "eligible_games": 0,
+      "eligible_category_game_memberships": {
+        "Queen Sacrifice": 0,
+        "Rook Sacrifice": 0,
+        "Bishop Sacrifice": 0,
+        "Knight Sacrifice": 0
+      },
+      "remaining_raw_category_memberships": {
+        "Queen Sacrifice": 0,
+        "Rook Sacrifice": 0,
+        "Bishop Sacrifice": 0,
+        "Knight Sacrifice": 0
+      }
+    },
+    "hansen": {
+      "cached_candidate_moves": 112,
+      "cached_candidate_games": 102,
+      "excluded_reviewed_game_moves": 68,
+      "pgn_pending_moves": 3,
+      "position_overlap_moves": 0,
+      "eligible_moves": 41,
+      "eligible_games": 39,
+      "eligible_category_game_memberships": {
+        "Queen Sacrifice": 0,
+        "Rook Sacrifice": 0,
+        "Bishop Sacrifice": 14,
+        "Knight Sacrifice": 26
+      },
+      "remaining_raw_category_memberships": {
+        "Queen Sacrifice": 3,
+        "Rook Sacrifice": 0,
+        "Bishop Sacrifice": 14,
+        "Knight Sacrifice": 27
+      }
+    },
+    "KNVB": {
+      "cached_candidate_moves": 137,
+      "cached_candidate_games": 127,
+      "excluded_reviewed_game_moves": 35,
+      "pgn_pending_moves": 4,
+      "position_overlap_moves": 1,
+      "eligible_moves": 94,
+      "eligible_games": 87,
+      "eligible_category_game_memberships": {
+        "Queen Sacrifice": 11,
+        "Rook Sacrifice": 28,
+        "Bishop Sacrifice": 25,
+        "Knight Sacrifice": 27
+      },
+      "remaining_raw_category_memberships": {
+        "Queen Sacrifice": 15,
+        "Rook Sacrifice": 28,
+        "Bishop Sacrifice": 28,
+        "Knight Sacrifice": 31
+      }
+    },
+    "GothamChess": {
+      "cached_candidate_moves": 96,
+      "cached_candidate_games": 91,
+      "excluded_reviewed_game_moves": 52,
+      "pgn_pending_moves": 12,
+      "position_overlap_moves": 0,
+      "eligible_moves": 32,
+      "eligible_games": 32,
+      "eligible_category_game_memberships": {
+        "Queen Sacrifice": 6,
+        "Rook Sacrifice": 9,
+        "Bishop Sacrifice": 6,
+        "Knight Sacrifice": 11
+      },
+      "remaining_raw_category_memberships": {
+        "Queen Sacrifice": 14,
+        "Rook Sacrifice": 9,
+        "Bishop Sacrifice": 10,
+        "Knight Sacrifice": 11
+      }
+    },
+    "Hikaru": {
+      "cached_candidate_moves": 110,
+      "cached_candidate_games": 101,
+      "excluded_reviewed_game_moves": 101,
+      "pgn_pending_moves": 9,
+      "position_overlap_moves": 0,
+      "eligible_moves": 0,
+      "eligible_games": 0,
+      "eligible_category_game_memberships": {
+        "Queen Sacrifice": 0,
+        "Rook Sacrifice": 0,
+        "Bishop Sacrifice": 0,
+        "Knight Sacrifice": 0
+      },
+      "remaining_raw_category_memberships": {
+        "Queen Sacrifice": 4,
+        "Rook Sacrifice": 0,
+        "Bishop Sacrifice": 5,
+        "Knight Sacrifice": 0
+      }
+    }
+  },
+  "maximum_20_per_account_5_per_category": {
+    "matched_total": 50,
+    "by_account": {
+      "hansen": 10,
+      "KNVB": 20,
+      "GothamChess": 20
+    },
+    "by_account_category": {
+      "nelsi": {},
+      "hansen": {
+        "Bishop Sacrifice": 5,
+        "Knight Sacrifice": 5
+      },
+      "KNVB": {
+        "Queen Sacrifice": 5,
+        "Knight Sacrifice": 5,
+        "Rook Sacrifice": 5,
+        "Bishop Sacrifice": 5
+      },
+      "GothamChess": {
+        "Queen Sacrifice": 5,
+        "Rook Sacrifice": 5,
+        "Bishop Sacrifice": 5,
+        "Knight Sacrifice": 5
+      },
+      "Hikaru": {}
+    }
+  },
+  "maximum_20_per_account_any_category": {
+    "matched_total": 60,
+    "by_account": {
+      "hansen": 20,
+      "KNVB": 20,
+      "GothamChess": 20
+    },
+    "by_account_category": {
+      "nelsi": {},
+      "hansen": {
+        "any": 20
+      },
+      "KNVB": {
+        "any": 20
+      },
+      "GothamChess": {
+        "any": 20
+      },
+      "Hikaru": {}
+    }
+  },
+  "source_row_counts": {
+    "research/brilliants-600-2026-11-03/evidence/nelsi-gallery-verified.json": 157,
+    "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json": 144,
+    "research/brilliants-600-2026-11-03/evidence/hikaru-gallery-candidates.json": 134,
+    "research/brilliants-600-2026-11-03/evidence/hansen-gallery-candidates.json": 24,
+    "research/brilliants-600-2026-11-03/evidence/hansen-gallery-rook-sacrifice.json": 26,
+    "research/brilliants-600-2026-11-03/evidence/hansen-gallery-bishop-sacrifice.json": 25,
+    "research/brilliants-600-2026-11-03/evidence/hansen-gallery-knight-sacrifice.json": 37,
+    "research/brilliants-600-2026-11-03/evidence/knvb-gallery-queen-sacrifice.json": 24,
+    "research/brilliants-600-2026-11-03/evidence/knvb-gallery-rook-sacrifice.json": 37,
+    "research/brilliants-600-2026-11-03/evidence/knvb-gallery-bishop-sacrifice.json": 37,
+    "research/brilliants-600-2026-11-03/evidence/knvb-gallery-knight-sacrifice.json": 39,
+    "research/brilliants-additional-300-2026-11-03/gothamchess-candidate-pool.json": 69,
+    "research/brilliants-additional-300-2026-11-03/hansen-candidate-pool.json": 72,
+    "research/brilliants-additional-300-2026-11-03/hikaru-candidate-pool.json": 30,
+    "research/brilliants-additional-300-2026-11-03/knvb-candidate-pool.json": 128,
+    "research/brilliants-additional-300-2026-11-03/nelsi-candidate-pool.json": 30,
+    "research/brilliants-additional-300-2026-11-03/gothamchess-ui-queue.json": 33,
+    "research/brilliants-additional-300-2026-11-03/hansen-ui-queue.json": 31,
+    "research/brilliants-additional-300-2026-11-03/hikaru-ui-queue.json": 30,
+    "research/brilliants-additional-300-2026-11-03/knvb-ui-queue.json": 30,
+    "research/brilliants-additional-300-2026-11-03/nelsi-ui-queue.json": 30
+  },
+  "source_sha256": {
+    "research/brilliants-pilot-2026-11-03/observations-export.json": "19b3a5a3b7d6f67eb5926e3015e90f9ef58d4e39ad5818cbf6e3cffdaf3d9359",
+    "research/brilliants-pilot-2026-11-03/evidence/reviews-01.json": "b83430168fabe5ba215cb584a34673d72a277584dca4a256a297f5ca8583afe9",
+    "research/brilliants-pilot-2026-11-03/evidence/reviews-02.json": "ead0cd93c53c7b59e56087f534daeece70824fee0b93da9ed07382f669971ca7",
+    "research/brilliants-pilot-2026-11-03/analysis-baseline.json": "639b026025007bbcb7c9e4f0c4955a76f5da23edb27f19709b316c03f6e14a20",
+    "research/brilliants-pilot-2026-11-03/comparison-rules.json": "ff575a3dc12ed10f7b140ee74a1a6bbb3e7c856053caefd2f5818372a248e38e",
+    "research/brilliants-600-2026-11-03/observations-export.json": "fb7178f33902ab096dfeabac254c466a1e2fe5970797b567d8e257d22761712c",
+    "research/brilliants-600-2026-11-03/evidence/gothamchess-reviews-01.json": "552f45aa429ccfca7a9f5d0c1ed1a1527272d883b642518865aadd3a915f9e8d",
+    "research/brilliants-600-2026-11-03/evidence/hansen-reviews-01.json": "7e65040f382286d39ecb63417cd9e6ba9a653bef81e9f21f06e49296813840a0",
+    "research/brilliants-600-2026-11-03/evidence/hikaru-reviews-01.json": "64227ee34eb3f3f0cbf50ce8b69207c28ed6286933e617b75eb686721744bf80",
+    "research/brilliants-600-2026-11-03/evidence/nelsi-reviews-01.json": "c9e7b652d3998aeb2b7ea48ee25130fca7a9db2ce868f92169b6ecae253e95ff",
+    "research/brilliants-600-2026-11-03/exclude-games.json": "ae2b308ca585d7b5bff3e7c36804e59fb993dcf9efc2597990b9cc836277f458",
+    "research/brilliants-600-2026-11-03/known-regression-fens.json": "e786f258b9621b56e0f379adbe2314141f0217cab2af841231efc023e2827e5b",
+    "research/brilliants-600-2026-11-03/analysis-baseline.json": "20dba2ea651d13f3196351f8b45c9bc8cb731912fd695cacfced081e252bf330",
+    "research/brilliants-600-2026-11-03/comparison-rules.json": "f1558a24eaeab04f4b0da8557ae5b22c026bd3e562fe3c7bc5312589b930903a",
+    "research/brilliants-additional-300-2026-11-03/observations-export.json": "9465bdff100021fbbcb7a83457585c3e5e20569f92022b6831d2c86205679cb6",
+    "research/brilliants-additional-300-2026-11-03/evidence/gothamchess-reviews-01.json": "cd6d190782cd048b513c0ddc8f3ac41b781cd99fc9dcd75255e088c746963936",
+    "research/brilliants-additional-300-2026-11-03/evidence/hansen-reviews-01.json": "62d80087a1132b0f0086b29d9859641bf578b157c37fecadf542216c7b37638d",
+    "research/brilliants-additional-300-2026-11-03/evidence/hikaru-reviews-01.json": "359e0cdc42cfbb02798a8496defdb7685765d0aafe57e257a0e6121a00835a68",
+    "research/brilliants-additional-300-2026-11-03/evidence/knvb-reviews-01.json": "a53c4053be62f0ebedcf96bc5d4bc1aadfcf6330779088a41f032793a784cdb9",
+    "research/brilliants-additional-300-2026-11-03/evidence/nelsi-reviews-01.json": "e5293c06cf09119a86bcbecaa74a71666f178176c31fbcccce30ef0055008ba5",
+    "research/brilliants-additional-300-2026-11-03/exclude-games.json": "227bdc590ffd6e624e855730b9bd6aadd55f35d3426b894786866e9068bd6bd2",
+    "research/brilliants-additional-300-2026-11-03/known-regression-fens.json": "2fc534fe0db842a0359f7a8309ad6a656900ed11671e1642a0ef76c6e97e21a8",
+    "research/brilliants-additional-300-2026-11-03/analysis-baseline.json": "1e63fd3a19782dcbc172835e1eea0996b006882fb85da149b088d326880798d4",
+    "research/brilliants-unified-2026-11-03/observations-export.json": "5bb2e4a1496827fb2a89641d0c83a34734569bb80de9b381eb0b2a6bd2aa28d9",
+    "research/brilliants-unified-2026-11-03/analysis-baseline.json": "b3a210af63a1fbd63ac75756ed9d58b34491cba05d471aa3d309763ac91b3a51",
+    "research/brilliants-unified-2026-11-03/primary-moves.json": "711bd1155ddb58d4317d12638f673bf283e41c9a4938de252958a479c6464657",
+    "research/brilliants-2026-11-02/results.json": "f462b560f21a26e90effe68d19e684b52bbf60899e2ec65c980171cd4c70780b",
+    "research/brilliants-improvement-2026-11-03/PLAN.json": "1f858cd0313912a121473c69e5be52a701bdfbcf829f837c6e3505245f7e8933",
+    "research/brilliants-improvement-2026-11-03/astra/all-618-mate-history-features.json": "66ef9eb56ec7ac861accd313de477cc8ad94aa813e81e910316681b8ab82e3fe",
+    "research/brilliants-improvement-2026-11-03/astra/error-features.json": "5af51c111b773755f5423004e37e63b46d6c04cef48e06a071f5c4b7ffa83ee3",
+    "research/brilliants-improvement-2026-11-03/missed/baseline-v3/package.json": "89c47db7851f89caec72da4f215ebc21cf1e294aeef3b45d2583562d846ab035",
+    "research/brilliants-improvement-2026-11-03/missed/confirmation-history.json": "d917df5619ea5189592ffd5088761d7f9706cef379c3db5c3ad9dc2ab1e1f576",
+    "research/brilliants-improvement-2026-11-03/missed/miss-features-initial.json": "f0f5e2e61ffafcfb69b5fa9ab61a3eeec2fcec0c482db8e1572bcb2e5bac98fd",
+    "research/brilliants-improvement-2026-11-03/missed/quality-root-score-diagnostic.json": "8b7aebbf56f0e74058fd3d8b5e7aed2e5ee72c4467d845091a4efb36f022ab27",
+    "research/brilliants-improvement-2026-11-03/missed/safe-alternative-experiments.json": "61bdc01bfd7e25b044177997081b8a78b072355dcd133a5af4e35ebe9c0886bc",
+    "research/brilliants-improvement-2026-11-03/missed/safe600_within50best/experiment-provenance.json": "31d2e7e9f19c4f6bd97c7f0ddeeee83469939131b790d03ed6f7bd881ebe538d",
+    "research/brilliants-improvement-2026-11-03/missed/safe600_within50best/package.json": "89c47db7851f89caec72da4f215ebc21cf1e294aeef3b45d2583562d846ab035",
+    "research/brilliants-improvement-2026-11-03/missed/safe800/experiment-provenance.json": "e8cc3a3dfbbf548eded86a3eea70713bd0297ccd4b7ec1636967034e7b79e915",
+    "research/brilliants-improvement-2026-11-03/missed/safe800/package.json": "89c47db7851f89caec72da4f215ebc21cf1e294aeef3b45d2583562d846ab035",
+    "research/brilliants-improvement-2026-11-03/missed/safe900/experiment-provenance.json": "be8224500dd1003fab1e0dc65f2364c9935b45e6bbb044a7b590a20fc5396176",
+    "research/brilliants-improvement-2026-11-03/missed/safe900/package.json": "89c47db7851f89caec72da4f215ebc21cf1e294aeef3b45d2583562d846ab035",
+    "research/brilliants-improvement-2026-11-03/root/candidate-source/package.json": "a90fc33418afa2b9cbf4768524b021135b965ecdf993457505bfae3ac44a8428",
+    "research/brilliants-improvement-2026-11-03/root/concrete-offer-experiments.json": "16681a8f4e3eca049a573314c34c37f516a2673a1f678151630920b5855ec471",
+    "research/brilliants-improvement-2026-11-03/root/safe-veto-features.json": "1d3d299a34e4fee7e7798231165fec024b3fbbc01e5ba2eecef0e21f6e6180c7",
+    "research/brilliants-600-2026-11-03/evidence/nelsi-gallery-verified.json": "d08ac390144c66799f434c688873bac0ebc9b8ed38fdf358303bbae9277c6b8a",
+    "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json": "b59f945b75f97b854f1ad487ed05058a8a670e225a433435e93d68941760a499",
+    "research/brilliants-600-2026-11-03/evidence/hikaru-gallery-candidates.json": "df6f89d65c8524a677d55ba0f9570505578fdc89f06f92c22377058d513d301e",
+    "research/brilliants-600-2026-11-03/evidence/hansen-gallery-candidates.json": "6b6b8b5960079791ebd61dee2235974eb3fd035370d17bb492f7982e740f1e24",
+    "research/brilliants-600-2026-11-03/evidence/hansen-gallery-rook-sacrifice.json": "f050a2f116dd6c7f1bff2444952afd4604af084226702946b495cfd36262e58c",
+    "research/brilliants-600-2026-11-03/evidence/hansen-gallery-bishop-sacrifice.json": "f55e030a2eda5408bb2bf793775fe51b22f02a96e07bd09fb255065da544fd8f",
+    "research/brilliants-600-2026-11-03/evidence/hansen-gallery-knight-sacrifice.json": "a91ea46ff4a34f8dfeb22a487355666109d1f2ce4c6318953692dab602c42bdc",
+    "research/brilliants-600-2026-11-03/evidence/knvb-gallery-queen-sacrifice.json": "e8925361f34f21a712f0b9c6e4b2be7d6123445e4832bf842708bf65118cfa46",
+    "research/brilliants-600-2026-11-03/evidence/knvb-gallery-rook-sacrifice.json": "5cd688fb33003be3aa81381b27f7c41d9c9239d5d2d44e88464dac25efd8da1b",
+    "research/brilliants-600-2026-11-03/evidence/knvb-gallery-bishop-sacrifice.json": "05e641d2314fc693d0698e8056ca5e052fd7064b1687bf82e34bfff078971858",
+    "research/brilliants-600-2026-11-03/evidence/knvb-gallery-knight-sacrifice.json": "523c3ba482724a7a992a2bae99bfa260580f71eb6df706932783039021c602d8",
+    "research/brilliants-additional-300-2026-11-03/gothamchess-candidate-pool.json": "a6cef7f75296a8c5802441c5aebb48b300de1ac615105b0acf47e61bae871a68",
+    "research/brilliants-additional-300-2026-11-03/hansen-candidate-pool.json": "21facbd5e24817f6c34c621356e6278df2c9e56b140ff6936cfc22ac67348001",
+    "research/brilliants-additional-300-2026-11-03/hikaru-candidate-pool.json": "f1defaf8a9ee1973559a05a14fd4c2d51e9e3a0e720864cb0b5b4739cfa661fe",
+    "research/brilliants-additional-300-2026-11-03/knvb-candidate-pool.json": "d80a464a1e8e12f4c0ccdad00670de52e1120a6df61c3373f7a2969944ff09e3",
+    "research/brilliants-additional-300-2026-11-03/nelsi-candidate-pool.json": "dca61264495b36843517a17de0d9967afb095441ff915a2b579f7a9a2afe2d07",
+    "research/brilliants-additional-300-2026-11-03/gothamchess-ui-queue.json": "60f70fcf885bd7b00ed45d9a82efdd694fcf5401f14f3a168cf56bb02922d93a",
+    "research/brilliants-additional-300-2026-11-03/hansen-ui-queue.json": "3265bc4b3251e5cf4f0d0a9c5c9c63fcdeb41dcbaef52bdb93563dce89d2dc48",
+    "research/brilliants-additional-300-2026-11-03/hikaru-ui-queue.json": "ef70534c4425f282c207f3f16ecd747332e66b3121a1208c8806f8f4ad364438",
+    "research/brilliants-additional-300-2026-11-03/knvb-ui-queue.json": "61cbc7d8e243b7570706f73d85677eb4827fc083fab6f7a902206738ce2341f1",
+    "research/brilliants-additional-300-2026-11-03/nelsi-ui-queue.json": "f4c17593454d5c3c70ffb52a8a9a6020eb3383773b1d33219358899b8a34c7d2"
+  },
+  "exclusion_fen_normalization": "First four saved standard-chess FEN fields. Candidate sampled before AND after must be disjoint. Do not require entire new-game history disjoint: every game shares opening prefixes.",
+  "freeze_requirement": "Rebuild exclusions after candidate development, before selecting and fresh-reviewing validation; include all newly inspected development games/positions."
+}

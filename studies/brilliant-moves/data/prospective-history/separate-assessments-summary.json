@@ -1,0 +1,48 @@
+{
+  "scope": "Separate native and panel assessments; never pooled with primary 200 or combined 1,248.",
+  "native": {
+    "profile": "Headless Node-hosted actual SF19 smallnet Balanced whole-game path; not browser UI or device validation.",
+    "games": 10,
+    "classified_moves": 884,
+    "requests": 902,
+    "primary_labeled_moves": 19,
+    "primary_counts": {
+      "v7": {
+        "TP": 7,
+        "FN": 2,
+        "FP": 2,
+        "TN": 8
+      },
+      "v6": {
+        "TP": 7,
+        "FN": 2,
+        "FP": 2,
+        "TN": 8
+      },
+      "ec_direct": {
+        "TP": 0,
+        "FN": 9,
+        "FP": 0,
+        "TN": 10
+      }
+    },
+    "all_predicted_brilliant_audit": {
+      "awards": 13,
+      "matching_Brilliant": 9,
+      "extra_awards": 4,
+      "selection": "Prediction-selected audit; not natural prevalence and not pooled with primary results."
+    },
+    "v7_v6_changed_symbols": 0,
+    "source_full_native_result_sha256": "23f33e96191e29f568d3f3e02a68ae6f8fad58c93b4fac03afd40d549cd4570d",
+    "full_native_output_published": false,
+    "audit": "NATIVE10-AUDIT.json"
+  },
+  "guard_panel": {
+    "source_games_scanned": 500,
+    "board_candidates": 12,
+    "actual_veto_activations": 0,
+    "fresh_current_labels_collected": 0,
+    "direct_guard_validation": "Inconclusive: no actual veto activation.",
+    "freeze": "PANEL-ACTIVATIONS-FREEZE.json"
+  }
+}

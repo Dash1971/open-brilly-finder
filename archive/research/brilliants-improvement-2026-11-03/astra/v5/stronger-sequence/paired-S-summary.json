@@ -1,0 +1,230 @@
+{
+  "scope": "Exact pairedS300k\u2192uniform1.5m sensitivity on all848development; no rule changes, mixed budget origins or validation claims.",
+  "counts": {
+    "true_added": 5,
+    "false_removed": 2,
+    "true_removed": 4,
+    "false_added": 1
+  },
+  "summaries": {
+    "old618": {
+      "baseline": {
+        "TP": 246,
+        "FP": 10,
+        "FN": 63,
+        "TN": 299
+      },
+      "stronger": {
+        "TP": 247,
+        "FP": 10,
+        "FN": 62,
+        "TN": 299
+      }
+    },
+    "historical200": {
+      "baseline": {
+        "TP": 74,
+        "FP": 6,
+        "FN": 26,
+        "TN": 94
+      },
+      "stronger": {
+        "TP": 74,
+        "FP": 5,
+        "FN": 26,
+        "TN": 95
+      }
+    },
+    "core818": {
+      "baseline": {
+        "TP": 320,
+        "FP": 16,
+        "FN": 89,
+        "TN": 393
+      },
+      "stronger": {
+        "TP": 321,
+        "FP": 15,
+        "FN": 88,
+        "TN": 394
+      }
+    },
+    "panel30": {
+      "baseline": {
+        "TP": 2,
+        "FP": 3,
+        "FN": 2,
+        "TN": 23
+      },
+      "stronger": {
+        "TP": 2,
+        "FP": 3,
+        "FN": 2,
+        "TN": 23
+      }
+    },
+    "all848": {
+      "baseline": {
+        "TP": 322,
+        "FP": 19,
+        "FN": 91,
+        "TN": 416
+      },
+      "stronger": {
+        "TP": 323,
+        "FP": 18,
+        "FN": 90,
+        "TN": 417
+      }
+    }
+  },
+  "changes": [
+    {
+      "key": "174185738360:43",
+      "san": "Bxg6",
+      "truth": true,
+      "baseline_awarded": false,
+      "stronger_awarded": true,
+      "cohort": "historical200",
+      "baseline_A": "?!",
+      "stronger_A": "!!",
+      "baseline_veto": false,
+      "stronger_veto": false
+    },
+    {
+      "key": "174425603426:123",
+      "san": "Rxh2",
+      "truth": false,
+      "baseline_awarded": true,
+      "stronger_awarded": false,
+      "cohort": "historical200",
+      "baseline_A": "!!",
+      "stronger_A": "!?",
+      "baseline_veto": false,
+      "stronger_veto": false
+    },
+    {
+      "key": "174472144890:52",
+      "san": "dxc6",
+      "truth": true,
+      "baseline_awarded": true,
+      "stronger_awarded": false,
+      "cohort": "historical200",
+      "baseline_A": "!!",
+      "stronger_A": "?!",
+      "baseline_veto": false,
+      "stronger_veto": false
+    },
+    {
+      "key": "178706873269:78",
+      "san": "Rxa1",
+      "truth": true,
+      "baseline_awarded": true,
+      "stronger_awarded": false,
+      "cohort": "old618",
+      "baseline_A": "!!",
+      "stronger_A": "!?",
+      "baseline_veto": false,
+      "stronger_veto": false
+    },
+    {
+      "key": "178708673761:88",
+      "san": "Qd1+",
+      "truth": true,
+      "baseline_awarded": true,
+      "stronger_awarded": false,
+      "cohort": "old618",
+      "baseline_A": "!!",
+      "stronger_A": "!?",
+      "baseline_veto": false,
+      "stronger_veto": false
+    },
+    {
+      "key": "183800911053:48",
+      "san": "Rxe4",
+      "truth": false,
+      "baseline_awarded": true,
+      "stronger_awarded": false,
+      "cohort": "old618",
+      "baseline_A": "!!",
+      "stronger_A": "?!",
+      "baseline_veto": false,
+      "stronger_veto": false
+    },
+    {
+      "key": "184634890030:37",
+      "san": "Qxh7+",
+      "truth": true,
+      "baseline_awarded": false,
+      "stronger_awarded": true,
+      "cohort": "old618",
+      "baseline_A": "",
+      "stronger_A": "!!",
+      "baseline_veto": false,
+      "stronger_veto": false
+    },
+    {
+      "key": "185897727454:25",
+      "san": "Bxh7+",
+      "truth": true,
+      "baseline_awarded": false,
+      "stronger_awarded": true,
+      "cohort": "old618",
+      "baseline_A": "?",
+      "stronger_A": "!!",
+      "baseline_veto": false,
+      "stronger_veto": false
+    },
+    {
+      "key": "185931745402:93",
+      "san": "Rb8",
+      "truth": true,
+      "baseline_awarded": true,
+      "stronger_awarded": false,
+      "cohort": "old618",
+      "baseline_A": "!!",
+      "stronger_A": "",
+      "baseline_veto": false,
+      "stronger_veto": false
+    },
+    {
+      "key": "186007180386:89",
+      "san": "b6",
+      "truth": true,
+      "baseline_awarded": false,
+      "stronger_awarded": true,
+      "cohort": "old618",
+      "baseline_A": "",
+      "stronger_A": "!!",
+      "baseline_veto": false,
+      "stronger_veto": false
+    },
+    {
+      "key": "186398857750:45",
+      "san": "hxg6",
+      "truth": false,
+      "baseline_awarded": false,
+      "stronger_awarded": true,
+      "cohort": "old618",
+      "baseline_A": "?!",
+      "stronger_A": "!!",
+      "baseline_veto": false,
+      "stronger_veto": false
+    },
+    {
+      "key": "187171696319:55",
+      "san": "c5",
+      "truth": true,
+      "baseline_awarded": false,
+      "stronger_awarded": true,
+      "cohort": "old618",
+      "baseline_A": "?!",
+      "stronger_A": "!!",
+      "baseline_veto": false,
+      "stronger_veto": false
+    }
+  ],
+  "missing_relevant_prior_windows": 0,
+  "supplemental_windows": 16,
+  "frozen_rule_hashes_unchanged": true
+}

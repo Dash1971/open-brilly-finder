@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-11-03T06:39:26.386020+00:00",
+  "scope": "Bounded classifier improvement research; no general tooling, Mobile Maia change, merge or deployment.",
+  "development_moves": 618,
+  "development_source_commit": "2e027086392e0cd92bdf3cb6edca4df0555e98f5",
+  "all_existing_labels_now_development": true,
+  "objectives": [
+    "Recover sound creative offers lost by blanket EC material guard",
+    "Reduce inherited/routine material false awards without a blanket novelty veto",
+    "Preserve Ndxe5/Qf5+/Bf5 regressions, EC mode, imported glyphs and complete-window safeguards"
+  ],
+  "candidate_budget": {
+    "principled_hypotheses": 6,
+    "no_position_player_or_game_whitelists": true,
+    "no_rating_threshold_fitted_to_five_accounts": true,
+    "no_classifier_change_on_new_validation": true
+  },
+  "baseline": {
+    "v3_TP": 220,
+    "v3_FP": 16,
+    "v2_TP": 273,
+    "v2_FP": 77
+  },
+  "selection_preference": "Seek Pareto improvement on v3 (more TP with no more FP), then least missed Brilliants+3*extra awards subject to ordinary-pawn regression rejection and transparent rule/compute costs. Do not select from new validation results.",
+  "planned_fresh_validation": {
+    "positive": 100,
+    "negative": 100,
+    "accounts": 5,
+    "candidate_frozen_before_new_labels": true,
+    "exclude_all_reviewed_games_and_sampled_positions": true,
+    "no_batch_size_claim_from_raw_gallery_entries": true
+  },
+  "resource_limits": {
+    "heavy_engine_jobs": 1,
+    "browser_collectors_initial": 1,
+    "fresh_browser_tab_per_game": true,
+    "close_tab_after_saved_capture": true,
+    "never_concurrent_browser_and_engine_heavy_jobs": true,
+    "increase_to_two_collectors_only_normal_memory_pressure": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "updated_at": "2026-11-03T21:17:52.816359+00:00",
+  "newly_imported_games": [
+    "166180997254"
+  ],
+  "games": 422,
+  "game_split_counts": {
+    "assessment": 89,
+    "training": 333
+  },
+  "source_strata_game_counts": {
+    "archive_static_offer": 60,
+    "gallery_nomination": 362
+  },
+  "source_strata_label_counts": {
+    "archive_static_offer": 1465,
+    "gallery_nomination": 8991
+  },
+  "explicit_unique_game_ply_labels": 10456,
+  "unambiguous_unique_game_ply_labels": 10456,
+  "brilliant": 390,
+  "hard_ordinary_negatives": 2351,
+  "easy_error_negatives": 7669,
+  "other_explicit_negatives": 46,
+  "conflicting_game_ply_labels": 0,
+  "label_counts": {
+    "best": 656,
+    "blunder": 567,
+    "book": 9,
+    "brilliant": 390,
+    "excellent": 160,
+    "forced": 37,
+    "good": 81,
+    "great": 1454,
+    "inaccuracy": 3148,
+    "miss": 1168,
+    "mistake": 2786
+  },
+  "dataset_use_counts": {
+    "assessment": 2105,
+    "exclude_assessment_known_position": 55,
+    "exclude_assessment_training_overlap": 6,
+    "exclude_assessment_training_position": 8,
+    "training": 8282
+  },
+  "individual_rendered_board_verified_labels": 3212,
+  "observations": 12709,
+  "unknown_unannotated_positions": 24508,
+  "duplicate_position_move_labels": 63,
+  "quarantines": [],
+  "scope": "Explicit export NAGs use validated method mapping; every Brilliant must have its own UI board check. Unannotated positions are unknown. No model eligibility/experimental usefulness has been computed.",
+  "database": "dataset.sqlite3"
+}

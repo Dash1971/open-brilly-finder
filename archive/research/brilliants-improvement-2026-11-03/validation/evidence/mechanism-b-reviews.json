@@ -1,0 +1,1410 @@
+[
+  {
+    "account": "hansen",
+    "game_id": "175077115525",
+    "ply": 50,
+    "san": "Nb4",
+    "uci": "c6b4",
+    "fen_before": "2r1r1k1/2q2ppp/2n1n3/pQ4P1/N2pp2P/P3P3/1PPB1P2/2KR3R b - - 1 25",
+    "fen_after": "2r1r1k1/2q2ppp/4n3/pQ4P1/Nn1pp2P/P3P3/1PPB1P2/2KR3R w - - 2 26",
+    "previous_own_after_fen": "2r1r1k1/2q2ppp/2n1n3/p5P1/N2pp2P/P2QP3/1PPB1P2/2KR3R w - - 0 25",
+    "source_link": "https://www.chess.com/analysis/game/live/175077115525/review?move=49",
+    "pgn_sha256": "63d91e4224c8d77303abc837f5e98d102c2e5ec444b4910ce0babad5788f0901",
+    "category": "mating_acceptance",
+    "selection_hash": "d2d0394606f5610f67aa7f494ec81a6cae2064de075f035c149d7dc3b2c9d732",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 19,
+        "credit": 0,
+        "offers": [
+          {
+            "square": "b4",
+            "role": "knight",
+            "color": "black",
+            "exchange_gain": 300
+          }
+        ]
+      },
+      "mating_acceptance": {
+        "status": "witness",
+        "probes": 10,
+        "acceptance_net": 300,
+        "credit": 0,
+        "line": [
+          "a3b4",
+          "c7c2"
+        ],
+        "line_san_ascii": [
+          "axb4",
+          "Qxc2#"
+        ]
+      },
+      "structural_context": {
+        "phase": 20,
+        "mover_material_before": -90,
+        "converted_or_endgame": false,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "witness",
+        "probes": 44,
+        "initial_material": -90,
+        "credit": 0,
+        "acceptance_net": 300,
+        "accepted_square": "b4",
+        "line": [
+          "a3b4",
+          "a5b4",
+          "b5b4",
+          "d4e3",
+          "b4e4",
+          "c7c2",
+          "e4c2",
+          "e3d2",
+          "c1d2",
+          "c8c2"
+        ],
+        "material_trajectory": [
+          -90,
+          -390,
+          -300,
+          -390,
+          -300,
+          -390,
+          -300,
+          -1300,
+          -1000,
+          -1090,
+          -90
+        ],
+        "restored_material": -90,
+        "recoup_square": "c2",
+        "line_san_ascii": [
+          "axb4",
+          "axb4",
+          "Qxb4",
+          "dxe3",
+          "Qxe4",
+          "Qxc2+",
+          "Qxc2",
+          "exd2+",
+          "Kxd2",
+          "Rxc2+"
+        ]
+      }
+    },
+    "slot": "mating_acceptance:1",
+    "mover_color": "black",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "The knight was sacrificed. A brilliant move!",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "-3.35",
+    "displayed_label_text": "is brilliant",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/175077115525/review?move=49",
+    "observed_query_move": "49",
+    "review_board_pieces": [
+      "piece bk square-78",
+      "piece bn square-24",
+      "piece bn square-56",
+      "piece bp square-15",
+      "piece bp square-44",
+      "piece bp square-54",
+      "piece bp square-67",
+      "piece bp square-77",
+      "piece bp square-87",
+      "piece bq square-37",
+      "piece br square-38",
+      "piece br square-58",
+      "piece wb square-42",
+      "piece wk square-31",
+      "piece wn square-14",
+      "piece wp square-13",
+      "piece wp square-22",
+      "piece wp square-32",
+      "piece wp square-53",
+      "piece wp square-62",
+      "piece wp square-75",
+      "piece wp square-84",
+      "piece wq square-25",
+      "piece wr square-41",
+      "piece wr square-81"
+    ],
+    "label": "brilliant",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:47:34.694Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  },
+  {
+    "account": "KNVB",
+    "game_id": "185589465930",
+    "ply": 70,
+    "san": "Rxf1+",
+    "uci": "d1f1",
+    "fen_before": "6k1/p7/bp3pp1/2p4p/5B1P/3r4/P1R2PP1/3r1NK1 b - - 3 35",
+    "fen_after": "6k1/p7/bp3pp1/2p4p/5B1P/3r4/P1R2PP1/5rK1 w - - 0 36",
+    "previous_own_after_fen": "6k1/p7/bp3pp1/2p4p/5B1P/3r4/P4PP1/2Rr1NK1 w - - 2 35",
+    "source_link": "https://www.chess.com/analysis/game/live/185589465930/review?move=69",
+    "pgn_sha256": "8a726a46edd71ffcbcd3af059688624696b8ae7d40f48d7bcfde1f632e043411",
+    "category": "mating_acceptance",
+    "selection_hash": "d81b02d2ca7d7607c1bfc4469c0bca02cf7db3eb0823a69f4232fe334260ebb5",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 4,
+        "credit": 300,
+        "offers": [
+          {
+            "square": "f1",
+            "role": "rook",
+            "color": "black",
+            "exchange_gain": 500
+          }
+        ]
+      },
+      "mating_acceptance": {
+        "status": "witness",
+        "probes": 11,
+        "acceptance_net": 500,
+        "credit": 300,
+        "line": [
+          "g1f1",
+          "d3d1"
+        ],
+        "line_san_ascii": [
+          "Kxf1",
+          "Rd1#"
+        ]
+      },
+      "structural_context": {
+        "phase": 9,
+        "mover_material_before": 380,
+        "converted_or_endgame": true,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "complete_no_witness",
+        "probes": 2
+      }
+    },
+    "slot": "mating_acceptance:0",
+    "mover_color": "black",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "Okay, that’s the strongest option.",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "-5.82",
+    "displayed_label_text": "is best",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/185589465930/review?move=69",
+    "observed_query_move": "69",
+    "review_board_pieces": [
+      "piece bb square-16",
+      "piece bk square-78",
+      "piece bp square-17",
+      "piece bp square-26",
+      "piece bp square-35",
+      "piece bp square-66",
+      "piece bp square-76",
+      "piece bp square-85",
+      "piece br square-43",
+      "piece br square-61",
+      "piece wb square-64",
+      "piece wk square-71",
+      "piece wp square-12",
+      "piece wp square-62",
+      "piece wp square-72",
+      "piece wp square-84",
+      "piece wr square-32"
+    ],
+    "label": "best",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:47:42.961Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  },
+  {
+    "account": "KNVB",
+    "game_id": "185024811272",
+    "ply": 78,
+    "san": "Kh5",
+    "uci": "g6h5",
+    "fen_before": "r7/5p2/3R2k1/1PpP1pp1/2r5/4P1Pp/5P1P/2R3K1 b - - 0 39",
+    "fen_after": "r7/5p2/3R4/1PpP1ppk/2r5/4P1Pp/5P1P/2R3K1 w - - 1 40",
+    "previous_own_after_fen": "r7/5p2/1R1p2k1/1PpP1pp1/2r5/4P1Pp/5P1P/2R3K1 w - - 0 39",
+    "source_link": "https://www.chess.com/analysis/game/live/185024811272/review?move=77",
+    "pgn_sha256": "0e7bad82e27fb60170e280e305754ce9dde791fbbbefded44da5a8fb6b3eb032",
+    "category": "unchanged_offer_while_in_check",
+    "selection_hash": "3177853ee340f03e3154ca77f77066b1c64dcca1e2139b74671ada4062ac2cb7",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 3,
+        "credit": 0,
+        "offers": [
+          {
+            "square": "c4",
+            "role": "rook",
+            "color": "black",
+            "exchange_gain": 500
+          }
+        ]
+      },
+      "checked_continuation": {
+        "status": "witness",
+        "probes": 2,
+        "offers": [
+          {
+            "square": "c4",
+            "role": "rook",
+            "color": "black",
+            "exchange_gain": 500,
+            "previous_exchange_gain": 500
+          }
+        ]
+      },
+      "structural_context": {
+        "phase": 8,
+        "mover_material_before": -90,
+        "converted_or_endgame": true,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "complete_no_witness",
+        "probes": 2
+      }
+    },
+    "slot": "unchanged_offer_while_in_check:3",
+    "mover_color": "black",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "This steps away from the checking rook.",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "0.00",
+    "displayed_label_text": "is good",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/185024811272/review?move=77",
+    "observed_query_move": "77",
+    "review_board_pieces": [
+      "piece bk square-85",
+      "piece bp square-35",
+      "piece bp square-65",
+      "piece bp square-67",
+      "piece bp square-75",
+      "piece bp square-83",
+      "piece br square-18",
+      "piece br square-34",
+      "piece wk square-71",
+      "piece wp square-25",
+      "piece wp square-45",
+      "piece wp square-53",
+      "piece wp square-62",
+      "piece wp square-73",
+      "piece wp square-82",
+      "piece wr square-31",
+      "piece wr square-46"
+    ],
+    "label": "good",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:48:14.430Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  },
+  {
+    "account": "KNVB",
+    "game_id": "184421756440",
+    "ply": 89,
+    "san": "Ke2",
+    "uci": "f2e2",
+    "fen_before": "Q7/5pk1/1R4p1/4Pn1p/2p1bP1P/2P2rP1/R4K2/8 w - - 1 45",
+    "fen_after": "Q7/5pk1/1R4p1/4Pn1p/2p1bP1P/2P2rP1/R3K3/8 b - - 2 45",
+    "previous_own_after_fen": "Q7/5pk1/1R4p1/4Pn1p/2p1bP1P/2Pr2P1/R4K2/8 b - - 0 44",
+    "source_link": "https://www.chess.com/analysis/game/live/184421756440/review?move=88",
+    "pgn_sha256": "8f89d18563f18ea153c220b1bed257ef2d0c2b22ba1159c6ddc09e7a2cdb9ad5",
+    "category": "unchanged_offer_while_in_check",
+    "selection_hash": "49534783299b94b92bf8e1a38cffb9117f2bf1f71ae4762ce0ebf6bf60c93dcd",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 5,
+        "credit": 0,
+        "offers": [
+          {
+            "square": "a8",
+            "role": "queen",
+            "color": "white",
+            "exchange_gain": 700
+          }
+        ]
+      },
+      "checked_continuation": {
+        "status": "witness",
+        "probes": 3,
+        "offers": [
+          {
+            "square": "a8",
+            "role": "queen",
+            "color": "white",
+            "exchange_gain": 700,
+            "previous_exchange_gain": 700
+          }
+        ]
+      },
+      "structural_context": {
+        "phase": 12,
+        "mover_material_before": 990,
+        "converted_or_endgame": true,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "complete_no_witness",
+        "probes": 82
+      }
+    },
+    "slot": "unchanged_offer_while_in_check:2",
+    "mover_color": "white",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "This steps away from the checking rook.",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "+1.13",
+    "displayed_label_text": "is good",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/184421756440/review?move=88",
+    "observed_query_move": "88",
+    "review_board_pieces": [
+      "piece bb square-54",
+      "piece bk square-77",
+      "piece bn square-65",
+      "piece bp square-34",
+      "piece bp square-67",
+      "piece bp square-76",
+      "piece bp square-85",
+      "piece br square-63",
+      "piece wk square-52",
+      "piece wp square-33",
+      "piece wp square-55",
+      "piece wp square-64",
+      "piece wp square-73",
+      "piece wp square-84",
+      "piece wq square-18",
+      "piece wr square-12",
+      "piece wr square-26"
+    ],
+    "label": "good",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:48:22.497Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  },
+  {
+    "account": "KNVB",
+    "game_id": "185271666966",
+    "ply": 41,
+    "san": "gxf3",
+    "uci": "g2f3",
+    "fen_before": "brr5/p1Q2pkp/4p1p1/3n4/4N3/1PPB1nP1/P4PP1/3R1RK1 w - - 0 21",
+    "fen_after": "brr5/p1Q2pkp/4p1p1/3n4/4N3/1PPB1PP1/P4P2/3R1RK1 b - - 0 21",
+    "previous_own_after_fen": "brr5/p1Q2pkp/4p1p1/3nn3/4N3/1PPB1NP1/P4PP1/3R1RK1 b - - 0 20",
+    "source_link": "https://www.chess.com/analysis/game/live/185271666966/review?move=40",
+    "pgn_sha256": "b54cf4c3ef0fca05c5bd33b8ab219f303482d48898493a21c9098821c98d95ad",
+    "category": "unchanged_offer_while_in_check",
+    "selection_hash": "58b5fb31500720cb8cbd4468ff5440860ea729901cc89c0bb4f8a3cc2a480a28",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 7,
+        "credit": 300,
+        "offers": [
+          {
+            "square": "c7",
+            "role": "queen",
+            "color": "white",
+            "exchange_gain": 1000
+          }
+        ]
+      },
+      "checked_continuation": {
+        "status": "witness",
+        "probes": 3,
+        "offers": [
+          {
+            "square": "c7",
+            "role": "queen",
+            "color": "white",
+            "exchange_gain": 1000,
+            "previous_exchange_gain": 1000
+          }
+        ]
+      },
+      "structural_context": {
+        "phase": 17,
+        "mover_material_before": 790,
+        "converted_or_endgame": true,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "complete_no_witness",
+        "probes": 4
+      }
+    },
+    "slot": "unchanged_offer_while_in_check:1",
+    "mover_color": "white",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "This maintains the balance in material with a good trade.",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "+0.64",
+    "displayed_label_text": "is best",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/185271666966/review?move=40",
+    "observed_query_move": "40",
+    "review_board_pieces": [
+      "piece bb square-18",
+      "piece bk square-77",
+      "piece bn square-45",
+      "piece bp square-17",
+      "piece bp square-56",
+      "piece bp square-67",
+      "piece bp square-76",
+      "piece bp square-87",
+      "piece br square-28",
+      "piece br square-38",
+      "piece wb square-43",
+      "piece wk square-71",
+      "piece wn square-54",
+      "piece wp square-12",
+      "piece wp square-23",
+      "piece wp square-33",
+      "piece wp square-62",
+      "piece wp square-63",
+      "piece wp square-73",
+      "piece wq square-37",
+      "piece wr square-41",
+      "piece wr square-61"
+    ],
+    "label": "best",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:48:40.694Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  },
+  {
+    "account": "KNVB",
+    "game_id": "185034014222",
+    "ply": 88,
+    "san": "Kd7",
+    "uci": "e7d7",
+    "fen_before": "8/pp2k3/r2P1r2/4K1B1/8/1P6/8/3R4 b - - 0 44",
+    "fen_after": "8/pp1k4/r2P1r2/4K1B1/8/1P6/8/3R4 w - - 1 45",
+    "previous_own_after_fen": "8/pp2k3/r4r2/3PK1B1/8/1P6/8/3R4 w - - 0 44",
+    "source_link": "https://www.chess.com/analysis/game/live/185034014222/review?move=87",
+    "pgn_sha256": "c08a6b5e18d82e19baf59f92f970f47b98b11b5db57b0e9af52c9a0ed028b09c",
+    "category": "phase_winning_context",
+    "selection_hash": "25c9c6dee037c4dd2f42c2f1d7472c3e64852ad089c36ead1e709305a73e22ac",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 4,
+        "credit": 0,
+        "offers": [
+          {
+            "square": "f6",
+            "role": "rook",
+            "color": "black",
+            "exchange_gain": 500
+          }
+        ]
+      },
+      "structural_context": {
+        "phase": 7,
+        "mover_material_before": 200,
+        "converted_or_endgame": true,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "complete_no_witness",
+        "probes": 9
+      }
+    },
+    "slot": "phase_winning_context:7",
+    "mover_color": "black",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "This evades the check from the pawn.",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "+4.20",
+    "displayed_label_text": "is best",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/185034014222/review?move=87",
+    "observed_query_move": "87",
+    "review_board_pieces": [
+      "piece bk square-47",
+      "piece bp square-17",
+      "piece bp square-27",
+      "piece br square-16",
+      "piece br square-66",
+      "piece wb square-75",
+      "piece wk square-55",
+      "piece wp square-23",
+      "piece wp square-46",
+      "piece wr square-41"
+    ],
+    "label": "best",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:48:50.544Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  },
+  {
+    "account": "KNVB",
+    "game_id": "184425176912",
+    "ply": 147,
+    "san": "Re2",
+    "uci": "e6e2",
+    "fen_before": "3K4/8/4R3/8/1p4kP/1P3p2/8/8 w - - 0 74",
+    "fen_after": "3K4/8/8/8/1p4kP/1P3p2/4R3/8 b - - 1 74",
+    "previous_own_after_fen": "3K4/8/4R3/8/1p4QP/1P3p1k/8/8 b - - 1 73",
+    "source_link": "https://www.chess.com/analysis/game/live/184425176912/review?move=146",
+    "pgn_sha256": "df06c102643f96206b7efc237468d4764778eedd8150b31f1bfd548b8e57ce07",
+    "category": "phase_winning_context",
+    "selection_hash": "4c40b9301e6626ab5a030d99162d5e81acddc77edbb2ca00b81c8f1e7802efb5",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 2,
+        "credit": 0,
+        "offers": [
+          {
+            "square": "e2",
+            "role": "rook",
+            "color": "white",
+            "exchange_gain": 500
+          }
+        ]
+      },
+      "structural_context": {
+        "phase": 2,
+        "mover_material_before": 500,
+        "converted_or_endgame": true,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "complete_no_witness",
+        "probes": 2
+      }
+    },
+    "slot": "phase_winning_context:1",
+    "mover_color": "white",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "This leaves the rook hanging and available to be taken immediately.",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "-6.89",
+    "displayed_label_text": "is a blunder",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/184425176912/review?move=146",
+    "observed_query_move": "146",
+    "review_board_pieces": [
+      "piece bk square-74",
+      "piece bp square-24",
+      "piece bp square-63",
+      "piece wk square-48",
+      "piece wp square-23",
+      "piece wp square-84",
+      "piece wr square-52"
+    ],
+    "label": "blunder",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:49:15.522Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  },
+  {
+    "account": "KNVB",
+    "game_id": "185385983632",
+    "ply": 121,
+    "san": "Rxe3",
+    "uci": "h3e3",
+    "fen_before": "2N5/8/8/p7/P2Ppk2/1P2n2R/8/4K3 w - - 2 61",
+    "fen_after": "2N5/8/8/p7/P2Ppk2/1P2R3/8/4K3 b - - 0 61",
+    "previous_own_after_fen": "2N5/8/8/p7/P2Pp3/1P2nk1R/8/4K3 b - - 1 60",
+    "source_link": "https://www.chess.com/analysis/game/live/185385983632/review?move=120",
+    "pgn_sha256": "17402695f276e561e65cd0fa032a4081f73176b70e37b1e7f164fe623627e032",
+    "category": "phase_winning_context",
+    "selection_hash": "62f25a67268c45becf443c80d499e0c978909b61b27cb265ba1cebc1836c0063",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 3,
+        "credit": 300,
+        "offers": [
+          {
+            "square": "e3",
+            "role": "rook",
+            "color": "white",
+            "exchange_gain": 500
+          }
+        ]
+      },
+      "structural_context": {
+        "phase": 4,
+        "mover_material_before": 590,
+        "converted_or_endgame": true,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "complete_no_witness",
+        "probes": 2
+      }
+    },
+    "slot": "phase_winning_context:5",
+    "mover_color": "white",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "Blockading the passed pawn halts progress and buys White some time.",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "+7.05",
+    "displayed_label_text": "is best",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/185385983632/review?move=120",
+    "observed_query_move": "120",
+    "review_board_pieces": [
+      "piece bk square-64",
+      "piece bp square-15",
+      "piece bp square-54",
+      "piece wk square-51",
+      "piece wn square-38",
+      "piece wp square-14",
+      "piece wp square-23",
+      "piece wp square-44",
+      "piece wr square-53"
+    ],
+    "label": "best",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:49:28.834Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  },
+  {
+    "account": "KNVB",
+    "game_id": "185032114750",
+    "ply": 159,
+    "san": "Re6",
+    "uci": "e4e6",
+    "fen_before": "8/8/8/2k2K2/3NRP2/8/r7/8 w - - 43 80",
+    "fen_after": "8/8/4R3/2k2K2/3N1P2/8/r7/8 b - - 44 80",
+    "previous_own_after_fen": "8/8/1k6/5K2/3NRP2/8/r7/8 b - - 42 79",
+    "source_link": "https://www.chess.com/analysis/game/live/185032114750/review?move=158",
+    "pgn_sha256": "a9484e43b37ddd71fa6dd084336e6caa7eeee5b927f7b85ca3b05de6d88c526c",
+    "category": "phase_winning_context",
+    "selection_hash": "6d736111ce08d51175eba2cfd8f35315758b98baebd97fc16e6aeb66a05fa286",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 3,
+        "credit": 0,
+        "offers": [
+          {
+            "square": "d4",
+            "role": "knight",
+            "color": "white",
+            "exchange_gain": 300
+          }
+        ]
+      },
+      "structural_context": {
+        "phase": 5,
+        "mover_material_before": 390,
+        "converted_or_endgame": true,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "complete_no_witness",
+        "probes": 2
+      }
+    },
+    "slot": "phase_winning_context:2",
+    "mover_color": "white",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "This loses a knight, but the position is still winning.",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "+3.97",
+    "displayed_label_text": "is good",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/185032114750/review?move=158",
+    "observed_query_move": "158",
+    "review_board_pieces": [
+      "piece bk square-35",
+      "piece br square-12",
+      "piece wk square-65",
+      "piece wn square-44",
+      "piece wp square-64",
+      "piece wr square-56"
+    ],
+    "label": "good",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:49:47.428Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  },
+  {
+    "account": "KNVB",
+    "game_id": "185647995148",
+    "ply": 114,
+    "san": "Ke1",
+    "uci": "d2e1",
+    "fen_before": "8/5p2/4p3/3p4/2R5/pb3K2/3kr3/5B2 b - - 0 57",
+    "fen_after": "8/5p2/4p3/3p4/2R5/pb3K2/4r3/4kB2 w - - 1 58",
+    "previous_own_after_fen": "8/5p2/4p3/2Rp4/2p5/pb3K2/3kr3/5B2 w - - 2 57",
+    "source_link": "https://www.chess.com/analysis/game/live/185647995148/review?move=113",
+    "pgn_sha256": "390730e785cd6b9e5ecad2b499d8e74d9bbd83d163e1050a7c6bcc6306db138b",
+    "category": "phase_winning_context",
+    "selection_hash": "7064dca5fa4168fb2f6ba7de3a4af0ccaa62c1a2eb955b4992b51a0fc83eedcc",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 3,
+        "credit": 0,
+        "offers": [
+          {
+            "square": "e2",
+            "role": "rook",
+            "color": "black",
+            "exchange_gain": 500
+          }
+        ]
+      },
+      "structural_context": {
+        "phase": 6,
+        "mover_material_before": 360,
+        "converted_or_endgame": true,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "witness",
+        "probes": 2,
+        "initial_material": 360,
+        "credit": 0,
+        "acceptance_net": 500,
+        "accepted_square": "e2",
+        "line": [
+          "f1e2",
+          "b3c4"
+        ],
+        "material_trajectory": [
+          360,
+          -140,
+          360
+        ],
+        "restored_material": 360,
+        "recoup_square": "c4",
+        "line_san_ascii": [
+          "Bxe2",
+          "Bxc4"
+        ]
+      }
+    },
+    "slot": "phase_winning_context:0",
+    "mover_color": "black",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "One of the best moves, very strong!",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "-6.22",
+    "displayed_label_text": "is excellent",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/185647995148/review?move=113",
+    "observed_query_move": "113",
+    "review_board_pieces": [
+      "piece bb square-23",
+      "piece bk square-51",
+      "piece bp square-13",
+      "piece bp square-45",
+      "piece bp square-56",
+      "piece bp square-67",
+      "piece br square-52",
+      "piece wb square-61",
+      "piece wk square-63",
+      "piece wr square-34"
+    ],
+    "label": "excellent",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:49:55.740Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  },
+  {
+    "account": "KNVB",
+    "game_id": "174472504480",
+    "ply": 49,
+    "san": "Rh8+",
+    "uci": "h3h8",
+    "fen_before": "2r2rk1/1b1nq1p1/pp2p3/3pN3/3P4/4QP1R/PP4PP/4R1K1 w - - 2 25",
+    "fen_after": "2r2rkR/1b1nq1p1/pp2p3/3pN3/3P4/4QP2/PP4PP/4R1K1 b - - 3 25",
+    "previous_own_after_fen": "2r2r2/1b1nq1pk/pp2p3/3pN3/3P4/4QP1R/PP4PP/4R1K1 b - - 1 24",
+    "source_link": "https://www.chess.com/analysis/game/live/174472504480/review?move=48",
+    "pgn_sha256": "bdec6ca5d7f4995a5396d45e67deaa0933be15e1ecd2ddc61cc2a2c96157f1d5",
+    "category": "cross_square_material_recoup",
+    "selection_hash": "0ee6568ac6cc20b5023e9e727c1043fd18bb5ece4628be44e4ab5d81671d1402",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 5,
+        "credit": 0,
+        "offers": [
+          {
+            "square": "h8",
+            "role": "rook",
+            "color": "white",
+            "exchange_gain": 500
+          }
+        ]
+      },
+      "structural_context": {
+        "phase": 19,
+        "mover_material_before": -210,
+        "converted_or_endgame": false,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "witness",
+        "probes": 9,
+        "initial_material": -210,
+        "credit": 0,
+        "acceptance_net": 500,
+        "accepted_square": "h8",
+        "line": [
+          "g8h8",
+          "e5d7",
+          "e7d7",
+          "e3e6",
+          "d7e6",
+          "e1e6",
+          "f8f3",
+          "g2f3"
+        ],
+        "material_trajectory": [
+          -210,
+          -710,
+          -410,
+          -710,
+          -620,
+          -1620,
+          -620,
+          -710,
+          -210
+        ],
+        "restored_material": -210,
+        "recoup_square": "f3",
+        "line_san_ascii": [
+          "Kxh8",
+          "Nxd7",
+          "Qxd7",
+          "Qxe6",
+          "Qxe6",
+          "Rxe6",
+          "Rxf3",
+          "gxf3"
+        ]
+      }
+    },
+    "slot": "cross_square_material_recoup:6",
+    "mover_color": "white",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "The piece is sacrificed with style, because any capture allows a powerful fork.",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "+5.39",
+    "displayed_label_text": "is brilliant",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/174472504480/review?move=48",
+    "observed_query_move": "48",
+    "review_board_pieces": [
+      "piece bb square-27",
+      "piece bk square-78",
+      "piece bn square-47",
+      "piece bp square-16",
+      "piece bp square-26",
+      "piece bp square-45",
+      "piece bp square-56",
+      "piece bp square-77",
+      "piece bq square-57",
+      "piece br square-38",
+      "piece br square-68",
+      "piece wk square-71",
+      "piece wn square-55",
+      "piece wp square-12",
+      "piece wp square-22",
+      "piece wp square-44",
+      "piece wp square-63",
+      "piece wp square-72",
+      "piece wp square-82",
+      "piece wq square-53",
+      "piece wr square-51",
+      "piece wr square-88"
+    ],
+    "label": "brilliant",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:50:10.300Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  },
+  {
+    "account": "hansen",
+    "game_id": "171640204264",
+    "ply": 47,
+    "san": "Bf4",
+    "uci": "d2f4",
+    "fen_before": "1k1r1b1r/ppq1Ppp1/2p2Pb1/3n2Pp/7P/7B/PPPBQ3/2KR1R2 w - - 0 24",
+    "fen_after": "1k1r1b1r/ppq1Ppp1/2p2Pb1/3n2Pp/5B1P/7B/PPP1Q3/2KR1R2 b - - 1 24",
+    "previous_own_after_fen": "1k1r1b1r/ppq1Ppp1/1np2Pb1/3N2Pp/7P/7B/PPPBQ3/2KR1R2 b - - 0 23",
+    "source_link": "https://www.chess.com/analysis/game/live/171640204264/review?move=46",
+    "pgn_sha256": "eeb312819a641852ec579b4cd9dd24e569ed8365ecefe313653440d09ad9c97f",
+    "category": "cross_square_material_recoup",
+    "selection_hash": "1171c6c87ab505d0a960522736cdd4a0b40aa6f7ff1545032e8bfdf93201dcd3",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 11,
+        "credit": 0,
+        "offers": [
+          {
+            "square": "f4",
+            "role": "bishop",
+            "color": "white",
+            "exchange_gain": 300
+          }
+        ]
+      },
+      "structural_context": {
+        "phase": 21,
+        "mover_material_before": -210,
+        "converted_or_endgame": false,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "witness",
+        "probes": 7,
+        "initial_material": -210,
+        "credit": 0,
+        "acceptance_net": 300,
+        "accepted_square": "f4",
+        "line": [
+          "d5f4",
+          "d1d8"
+        ],
+        "material_trajectory": [
+          -210,
+          -510,
+          -10
+        ],
+        "restored_material": -10,
+        "recoup_square": "d8",
+        "line_san_ascii": [
+          "Nxf4",
+          "Rxd8+"
+        ]
+      }
+    },
+    "slot": "cross_square_material_recoup:5",
+    "mover_color": "white",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "This threatens to deliver a back-rank mate.",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "+5.99",
+    "displayed_label_text": "is best",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/171640204264/review?move=46",
+    "observed_query_move": "46",
+    "review_board_pieces": [
+      "piece bb square-68",
+      "piece bb square-76",
+      "piece bk square-28",
+      "piece bn square-45",
+      "piece bp square-17",
+      "piece bp square-27",
+      "piece bp square-36",
+      "piece bp square-67",
+      "piece bp square-77",
+      "piece bp square-85",
+      "piece bq square-37",
+      "piece br square-48",
+      "piece br square-88",
+      "piece wb square-64",
+      "piece wb square-83",
+      "piece wk square-31",
+      "piece wp square-12",
+      "piece wp square-22",
+      "piece wp square-32",
+      "piece wp square-57",
+      "piece wp square-66",
+      "piece wp square-75",
+      "piece wp square-84",
+      "piece wq square-52",
+      "piece wr square-41",
+      "piece wr square-61"
+    ],
+    "label": "best",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:50:17.416Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  },
+  {
+    "account": "hansen",
+    "game_id": "169822854094",
+    "ply": 71,
+    "san": "Bxg7+",
+    "uci": "c3g7",
+    "fen_before": "3n1k2/2Q1b1p1/7p/2P5/1P3P2/2B1P2P/5qPK/8 w - - 3 36",
+    "fen_after": "3n1k2/2Q1b1B1/7p/2P5/1P3P2/4P2P/5qPK/8 b - - 0 36",
+    "previous_own_after_fen": "3n1k2/2Q1b1p1/7p/2P5/1P3P2/2B1P2P/6PK/5q2 b - - 2 35",
+    "source_link": "https://www.chess.com/analysis/game/live/169822854094/review?move=70",
+    "pgn_sha256": "e325e44ccf783225d03ec761875f07fd1e852756c970549f44145167deaa814f",
+    "category": "cross_square_material_recoup",
+    "selection_hash": "13571a69e4f1a53588914c59086209cbdaafcb0e75f88d9eabf68b7cf51d4232",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 3,
+        "credit": 90,
+        "offers": [
+          {
+            "square": "g7",
+            "role": "bishop",
+            "color": "white",
+            "exchange_gain": 300
+          }
+        ]
+      },
+      "structural_context": {
+        "phase": 11,
+        "mover_material_before": 60,
+        "converted_or_endgame": false,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "witness",
+        "probes": 2,
+        "initial_material": 60,
+        "credit": 90,
+        "acceptance_net": 300,
+        "accepted_square": "g7",
+        "line": [
+          "f8g7",
+          "c7d8"
+        ],
+        "material_trajectory": [
+          150,
+          -150,
+          150
+        ],
+        "restored_material": 150,
+        "recoup_square": "d8",
+        "line_san_ascii": [
+          "Kxg7",
+          "Qxd8"
+        ]
+      }
+    },
+    "slot": "cross_square_material_recoup:3",
+    "mover_color": "white",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "This causes Black to be overloaded, having to defend too many pieces at once.",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "+3.78",
+    "displayed_label_text": "is best",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/169822854094/review?move=70",
+    "observed_query_move": "70",
+    "review_board_pieces": [
+      "piece bb square-57",
+      "piece bk square-68",
+      "piece bn square-48",
+      "piece bp square-86",
+      "piece bq square-62",
+      "piece wb square-77",
+      "piece wk square-82",
+      "piece wp square-24",
+      "piece wp square-35",
+      "piece wp square-53",
+      "piece wp square-64",
+      "piece wp square-72",
+      "piece wp square-83",
+      "piece wq square-37"
+    ],
+    "label": "best",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:50:35.718Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  },
+  {
+    "account": "hansen",
+    "game_id": "169812573512",
+    "ply": 56,
+    "san": "Rxc6",
+    "uci": "c8c6",
+    "fen_before": "2rrb1k1/3nbpp1/pqN1p2p/1p2P3/4Q3/2N3PP/1PP3BK/1R2R3 b - - 4 28",
+    "fen_after": "3rb1k1/3nbpp1/pqr1p2p/1p2P3/4Q3/2N3PP/1PP3BK/1R2R3 w - - 0 29",
+    "previous_own_after_fen": "2rrb1k1/3nbpp1/pq2p2p/1p2P3/3NQ3/2N3PP/1PP3BK/1R2R3 w - - 3 28",
+    "source_link": "https://www.chess.com/analysis/game/live/169812573512/review?move=55",
+    "pgn_sha256": "b4740dca55a3ad75e973aa6663a7cd22c1149e9297f153dd766391738aba81d2",
+    "category": "cross_square_material_recoup",
+    "selection_hash": "194082fef39c534d1f4856dd26766cf81fa3314cec3756d831d92d905dcfbbf7",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 9,
+        "credit": 300,
+        "offers": [
+          {
+            "square": "c6",
+            "role": "rook",
+            "color": "black",
+            "exchange_gain": 500
+          }
+        ]
+      },
+      "structural_context": {
+        "phase": 22,
+        "mover_material_before": 90,
+        "converted_or_endgame": false,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "witness",
+        "probes": 6,
+        "initial_material": 90,
+        "credit": 300,
+        "acceptance_net": 500,
+        "accepted_square": "c6",
+        "line": [
+          "e4c6",
+          "d7e5",
+          "c3b5",
+          "a6b5"
+        ],
+        "material_trajectory": [
+          390,
+          -110,
+          -20,
+          -110,
+          190
+        ],
+        "restored_material": 190,
+        "recoup_square": "b5",
+        "line_san_ascii": [
+          "Qxc6",
+          "Nxe5",
+          "Nxb5",
+          "axb5"
+        ]
+      }
+    },
+    "slot": "cross_square_material_recoup:1",
+    "mover_color": "black",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "Capturing while sacrificing the rook was the right idea!",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "-0.91",
+    "displayed_label_text": "is brilliant",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/169812573512/review?move=55",
+    "observed_query_move": "55",
+    "review_board_pieces": [
+      "piece bb square-57",
+      "piece bb square-58",
+      "piece bk square-78",
+      "piece bn square-47",
+      "piece bp square-16",
+      "piece bp square-25",
+      "piece bp square-56",
+      "piece bp square-67",
+      "piece bp square-77",
+      "piece bp square-86",
+      "piece bq square-26",
+      "piece br square-36",
+      "piece br square-48",
+      "piece wb square-72",
+      "piece wk square-82",
+      "piece wn square-33",
+      "piece wp square-22",
+      "piece wp square-32",
+      "piece wp square-55",
+      "piece wp square-73",
+      "piece wp square-83",
+      "piece wq square-54",
+      "piece wr square-21",
+      "piece wr square-51"
+    ],
+    "label": "brilliant",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:50:46.683Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  },
+  {
+    "account": "nelsi",
+    "game_id": "171116352392",
+    "ply": 25,
+    "san": "Nd5",
+    "uci": "c3d5",
+    "fen_before": "r1b4r/3nbkpp/p1p2n2/q3p1B1/Pp1PP3/2N2N2/1PPQ2PP/R4RK1 w - - 0 13",
+    "fen_after": "r1b4r/3nbkpp/p1p2n2/q2Np1B1/Pp1PP3/5N2/1PPQ2PP/R4RK1 b - - 1 13",
+    "previous_own_after_fen": "r1b4r/3nbkpp/p1p2n2/qp2p1B1/P2PP3/2N2N2/1PPQ2PP/R4RK1 b - - 1 12",
+    "source_link": "https://www.chess.com/analysis/game/live/171116352392/review?move=24",
+    "pgn_sha256": "c5166357c1a238f6be401aff97615a0c6685a4a43d94bb46324dcab9b9275816",
+    "category": "cross_square_material_recoup",
+    "selection_hash": "1a98fe3e3fd7fe1e2afac98b59fc4e4ae1f1310c507d4244bb736e4615bab2e9",
+    "features": {
+      "raw_offer": {
+        "status": "complete",
+        "probes": 18,
+        "credit": 0,
+        "offers": [
+          {
+            "square": "d5",
+            "role": "knight",
+            "color": "white",
+            "exchange_gain": 300
+          }
+        ]
+      },
+      "structural_context": {
+        "phase": 23,
+        "mover_material_before": -210,
+        "converted_or_endgame": false,
+        "actual_winning_safe_alternative": "unknown_no_engine"
+      },
+      "cross_square_material_recoup": {
+        "status": "witness",
+        "probes": 11,
+        "initial_material": -210,
+        "credit": 0,
+        "acceptance_net": 300,
+        "accepted_square": "d5",
+        "line": [
+          "c6d5",
+          "d2b4",
+          "a5a4",
+          "a1a4"
+        ],
+        "material_trajectory": [
+          -210,
+          -510,
+          -420,
+          -510,
+          490
+        ],
+        "restored_material": 490,
+        "recoup_square": "a4",
+        "line_san_ascii": [
+          "cxd5",
+          "Qxb4",
+          "Qxa4",
+          "Rxa4"
+        ]
+      }
+    },
+    "slot": "cross_square_material_recoup:0",
+    "mover_color": "white",
+    "label_status": "unknown_not_yet_reviewed",
+    "pgn_and_witness_legally_validated": true,
+    "coach_explanation": "This gives away a free pawn.",
+    "coach_pending_hidden_characters": 0,
+    "displayed_evaluation": "-2.21",
+    "displayed_label_text": "is a mistake",
+    "observed_page_url": "https://www.chess.com/analysis/game/live/171116352392/review?move=24",
+    "observed_query_move": "24",
+    "review_board_pieces": [
+      "piece bb square-38",
+      "piece bb square-57",
+      "piece bk square-67",
+      "piece bn square-47",
+      "piece bn square-66",
+      "piece bp square-16",
+      "piece bp square-24",
+      "piece bp square-36",
+      "piece bp square-55",
+      "piece bp square-77",
+      "piece bp square-87",
+      "piece bq square-15",
+      "piece br square-18",
+      "piece br square-88",
+      "piece wb square-75",
+      "piece wk square-71",
+      "piece wn square-45",
+      "piece wn square-63",
+      "piece wp square-14",
+      "piece wp square-22",
+      "piece wp square-32",
+      "piece wp square-44",
+      "piece wp square-54",
+      "piece wp square-72",
+      "piece wp square-82",
+      "piece wq square-42",
+      "piece wr square-11",
+      "piece wr square-61"
+    ],
+    "label": "mistake",
+    "source_type": "fresh_review",
+    "captured_at": "2026-11-03T07:51:01.129Z",
+    "categories": [],
+    "selected": true,
+    "sample_role": "mechanism_panel",
+    "coach_extraction": "Visible DOM innerText only; hidden spans inspected only for pending character count, never copied.",
+    "coach_completeness": "verified_visible_complete",
+    "review_configuration": "Current Chrome Game Review display; no deeper rerun requested; settings unknown unless separately observed."
+  }
+]

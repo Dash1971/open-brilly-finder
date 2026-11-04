@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-11-03T17:23:42.805870+00:00",
+  "source_sha256": "20a818d829db28414ae6e9dca7fed03c54f5a62dc5921c736db3a93918ac9f55",
+  "syntax": "PASS",
+  "synthetic": {
+    "self_test": "PASS",
+    "reserved_data_read": false,
+    "engines_or_models_run": false
+  },
+  "missing_root_go_exit_code": 2,
+  "missing_root_go_blocked_before_any_reserved_data_read": true,
+  "scope": "Only syntax, synthetic pure selection/duplicate/split guards, and missing-GO rejection; no reserved-data execution."
+}

@@ -1,0 +1,597 @@
+{
+  "completed": true,
+  "generated_at_utc": "2026-11-03T06:06:05.237999+00:00",
+  "combined": {
+    "n": 618,
+    "positive_n": 309,
+    "negative_n": 309,
+    "games": 299,
+    "policies": {
+      "ec_raw": {
+        "TP": 84,
+        "FN": 225,
+        "FP": 6,
+        "TN": 303,
+        "agreement": 0.6262135922330098,
+        "brilliant_detection": 0.27184466019417475,
+        "false_award_rate": 0.019417475728155338,
+        "precision_in_selected_sample": 0.9333333333333333
+      },
+      "ec_confirmed": {
+        "TP": 81,
+        "FN": 228,
+        "FP": 6,
+        "TN": 303,
+        "agreement": 0.6213592233009708,
+        "brilliant_detection": 0.2621359223300971,
+        "false_award_rate": 0.019417475728155338,
+        "precision_in_selected_sample": 0.9310344827586207
+      },
+      "mute_v2": {
+        "TP": 273,
+        "FN": 36,
+        "FP": 77,
+        "TN": 232,
+        "agreement": 0.8171521035598706,
+        "brilliant_detection": 0.883495145631068,
+        "false_award_rate": 0.24919093851132687,
+        "precision_in_selected_sample": 0.78
+      },
+      "mute_v3": {
+        "TP": 220,
+        "FN": 89,
+        "FP": 16,
+        "TN": 293,
+        "agreement": 0.8300970873786407,
+        "brilliant_detection": 0.7119741100323624,
+        "false_award_rate": 0.05177993527508091,
+        "precision_in_selected_sample": 0.9322033898305084
+      }
+    }
+  },
+  "development": {
+    "n": 517,
+    "positive_n": 258,
+    "negative_n": 259,
+    "games": 251,
+    "policies": {
+      "ec_raw": {
+        "TP": 69,
+        "FN": 189,
+        "FP": 6,
+        "TN": 253,
+        "agreement": 0.6228239845261122,
+        "brilliant_detection": 0.26744186046511625,
+        "false_award_rate": 0.023166023166023165,
+        "precision_in_selected_sample": 0.92
+      },
+      "ec_confirmed": {
+        "TP": 67,
+        "FN": 191,
+        "FP": 6,
+        "TN": 253,
+        "agreement": 0.6189555125725339,
+        "brilliant_detection": 0.2596899224806202,
+        "false_award_rate": 0.023166023166023165,
+        "precision_in_selected_sample": 0.9178082191780822
+      },
+      "mute_v2": {
+        "TP": 229,
+        "FN": 29,
+        "FP": 66,
+        "TN": 193,
+        "agreement": 0.816247582205029,
+        "brilliant_detection": 0.8875968992248062,
+        "false_award_rate": 0.2548262548262548,
+        "precision_in_selected_sample": 0.7762711864406779
+      },
+      "mute_v3": {
+        "TP": 189,
+        "FN": 69,
+        "FP": 12,
+        "TN": 247,
+        "agreement": 0.8433268858800773,
+        "brilliant_detection": 0.7325581395348837,
+        "false_award_rate": 0.04633204633204633,
+        "precision_in_selected_sample": 0.9402985074626866
+      }
+    }
+  },
+  "validation": {
+    "n": 101,
+    "positive_n": 51,
+    "negative_n": 50,
+    "games": 48,
+    "policies": {
+      "ec_raw": {
+        "TP": 15,
+        "FN": 36,
+        "FP": 0,
+        "TN": 50,
+        "agreement": 0.6435643564356436,
+        "brilliant_detection": 0.29411764705882354,
+        "false_award_rate": 0.0,
+        "precision_in_selected_sample": 1.0
+      },
+      "ec_confirmed": {
+        "TP": 14,
+        "FN": 37,
+        "FP": 0,
+        "TN": 50,
+        "agreement": 0.6336633663366337,
+        "brilliant_detection": 0.27450980392156865,
+        "false_award_rate": 0.0,
+        "precision_in_selected_sample": 1.0
+      },
+      "mute_v2": {
+        "TP": 44,
+        "FN": 7,
+        "FP": 11,
+        "TN": 39,
+        "agreement": 0.8217821782178217,
+        "brilliant_detection": 0.8627450980392157,
+        "false_award_rate": 0.22,
+        "precision_in_selected_sample": 0.8
+      },
+      "mute_v3": {
+        "TP": 31,
+        "FN": 20,
+        "FP": 4,
+        "TN": 46,
+        "agreement": 0.7623762376237624,
+        "brilliant_detection": 0.6078431372549019,
+        "false_award_rate": 0.08,
+        "precision_in_selected_sample": 0.8857142857142857
+      }
+    }
+  },
+  "reserved_assigned": {
+    "n": 101,
+    "positive_n": 51,
+    "negative_n": 50,
+    "games": 48,
+    "policies": {
+      "ec_raw": {
+        "TP": 15,
+        "FN": 36,
+        "FP": 0,
+        "TN": 50,
+        "agreement": 0.6435643564356436,
+        "brilliant_detection": 0.29411764705882354,
+        "false_award_rate": 0.0,
+        "precision_in_selected_sample": 1.0
+      },
+      "ec_confirmed": {
+        "TP": 14,
+        "FN": 37,
+        "FP": 0,
+        "TN": 50,
+        "agreement": 0.6336633663366337,
+        "brilliant_detection": 0.27450980392156865,
+        "false_award_rate": 0.0,
+        "precision_in_selected_sample": 1.0
+      },
+      "mute_v2": {
+        "TP": 44,
+        "FN": 7,
+        "FP": 11,
+        "TN": 39,
+        "agreement": 0.8217821782178217,
+        "brilliant_detection": 0.8627450980392157,
+        "false_award_rate": 0.22,
+        "precision_in_selected_sample": 0.8
+      },
+      "mute_v3": {
+        "TP": 31,
+        "FN": 20,
+        "FP": 4,
+        "TN": 46,
+        "agreement": 0.7623762376237624,
+        "brilliant_detection": 0.6078431372549019,
+        "false_award_rate": 0.08,
+        "precision_in_selected_sample": 0.8857142857142857
+      }
+    }
+  },
+  "prospective": {
+    "n": 300,
+    "positive_n": 150,
+    "negative_n": 150,
+    "games": 146,
+    "policies": {
+      "ec_raw": {
+        "TP": 39,
+        "FN": 111,
+        "FP": 4,
+        "TN": 146,
+        "agreement": 0.6166666666666667,
+        "brilliant_detection": 0.26,
+        "false_award_rate": 0.02666666666666667,
+        "precision_in_selected_sample": 0.9069767441860465
+      },
+      "ec_confirmed": {
+        "TP": 37,
+        "FN": 113,
+        "FP": 4,
+        "TN": 146,
+        "agreement": 0.61,
+        "brilliant_detection": 0.24666666666666667,
+        "false_award_rate": 0.02666666666666667,
+        "precision_in_selected_sample": 0.9024390243902439
+      },
+      "mute_v2": {
+        "TP": 130,
+        "FN": 20,
+        "FP": 35,
+        "TN": 115,
+        "agreement": 0.8166666666666667,
+        "brilliant_detection": 0.8666666666666667,
+        "false_award_rate": 0.23333333333333334,
+        "precision_in_selected_sample": 0.7878787878787878
+      },
+      "mute_v3": {
+        "TP": 103,
+        "FN": 47,
+        "FP": 10,
+        "TN": 140,
+        "agreement": 0.81,
+        "brilliant_detection": 0.6866666666666666,
+        "false_award_rate": 0.06666666666666667,
+        "precision_in_selected_sample": 0.911504424778761
+      }
+    }
+  },
+  "by_account": {
+    "GothamChess": {
+      "n": 80,
+      "positive_n": 40,
+      "negative_n": 40,
+      "games": 44,
+      "policies": {
+        "ec_raw": {
+          "TP": 9,
+          "FN": 31,
+          "FP": 1,
+          "TN": 39,
+          "agreement": 0.6,
+          "brilliant_detection": 0.225,
+          "false_award_rate": 0.025,
+          "precision_in_selected_sample": 0.9
+        },
+        "ec_confirmed": {
+          "TP": 8,
+          "FN": 32,
+          "FP": 1,
+          "TN": 39,
+          "agreement": 0.5875,
+          "brilliant_detection": 0.2,
+          "false_award_rate": 0.025,
+          "precision_in_selected_sample": 0.8888888888888888
+        },
+        "mute_v2": {
+          "TP": 34,
+          "FN": 6,
+          "FP": 10,
+          "TN": 30,
+          "agreement": 0.8,
+          "brilliant_detection": 0.85,
+          "false_award_rate": 0.25,
+          "precision_in_selected_sample": 0.7727272727272727
+        },
+        "mute_v3": {
+          "TP": 28,
+          "FN": 12,
+          "FP": 5,
+          "TN": 35,
+          "agreement": 0.7875,
+          "brilliant_detection": 0.7,
+          "false_award_rate": 0.125,
+          "precision_in_selected_sample": 0.8484848484848485
+        }
+      }
+    },
+    "Hikaru": {
+      "n": 180,
+      "positive_n": 90,
+      "negative_n": 90,
+      "games": 88,
+      "policies": {
+        "ec_raw": {
+          "TP": 28,
+          "FN": 62,
+          "FP": 2,
+          "TN": 88,
+          "agreement": 0.6444444444444445,
+          "brilliant_detection": 0.3111111111111111,
+          "false_award_rate": 0.022222222222222223,
+          "precision_in_selected_sample": 0.9333333333333333
+        },
+        "ec_confirmed": {
+          "TP": 27,
+          "FN": 63,
+          "FP": 2,
+          "TN": 88,
+          "agreement": 0.6388888888888888,
+          "brilliant_detection": 0.3,
+          "false_award_rate": 0.022222222222222223,
+          "precision_in_selected_sample": 0.9310344827586207
+        },
+        "mute_v2": {
+          "TP": 83,
+          "FN": 7,
+          "FP": 24,
+          "TN": 66,
+          "agreement": 0.8277777777777777,
+          "brilliant_detection": 0.9222222222222223,
+          "false_award_rate": 0.26666666666666666,
+          "precision_in_selected_sample": 0.7757009345794392
+        },
+        "mute_v3": {
+          "TP": 65,
+          "FN": 25,
+          "FP": 5,
+          "TN": 85,
+          "agreement": 0.8333333333333334,
+          "brilliant_detection": 0.7222222222222222,
+          "false_award_rate": 0.05555555555555555,
+          "precision_in_selected_sample": 0.9285714285714286
+        }
+      }
+    },
+    "KNVB": {
+      "n": 60,
+      "positive_n": 30,
+      "negative_n": 30,
+      "games": 28,
+      "policies": {
+        "ec_raw": {
+          "TP": 7,
+          "FN": 23,
+          "FP": 0,
+          "TN": 30,
+          "agreement": 0.6166666666666667,
+          "brilliant_detection": 0.23333333333333334,
+          "false_award_rate": 0.0,
+          "precision_in_selected_sample": 1.0
+        },
+        "ec_confirmed": {
+          "TP": 7,
+          "FN": 23,
+          "FP": 0,
+          "TN": 30,
+          "agreement": 0.6166666666666667,
+          "brilliant_detection": 0.23333333333333334,
+          "false_award_rate": 0.0,
+          "precision_in_selected_sample": 1.0
+        },
+        "mute_v2": {
+          "TP": 24,
+          "FN": 6,
+          "FP": 8,
+          "TN": 22,
+          "agreement": 0.7666666666666667,
+          "brilliant_detection": 0.8,
+          "false_award_rate": 0.26666666666666666,
+          "precision_in_selected_sample": 0.75
+        },
+        "mute_v3": {
+          "TP": 20,
+          "FN": 10,
+          "FP": 2,
+          "TN": 28,
+          "agreement": 0.8,
+          "brilliant_detection": 0.6666666666666666,
+          "false_award_rate": 0.06666666666666667,
+          "precision_in_selected_sample": 0.9090909090909091
+        }
+      }
+    },
+    "hansen": {
+      "n": 118,
+      "positive_n": 59,
+      "negative_n": 59,
+      "games": 55,
+      "policies": {
+        "ec_raw": {
+          "TP": 22,
+          "FN": 37,
+          "FP": 1,
+          "TN": 58,
+          "agreement": 0.6779661016949152,
+          "brilliant_detection": 0.3728813559322034,
+          "false_award_rate": 0.01694915254237288,
+          "precision_in_selected_sample": 0.9565217391304348
+        },
+        "ec_confirmed": {
+          "TP": 21,
+          "FN": 38,
+          "FP": 1,
+          "TN": 58,
+          "agreement": 0.6694915254237288,
+          "brilliant_detection": 0.3559322033898305,
+          "false_award_rate": 0.01694915254237288,
+          "precision_in_selected_sample": 0.9545454545454546
+        },
+        "mute_v2": {
+          "TP": 52,
+          "FN": 7,
+          "FP": 18,
+          "TN": 41,
+          "agreement": 0.788135593220339,
+          "brilliant_detection": 0.8813559322033898,
+          "false_award_rate": 0.3050847457627119,
+          "precision_in_selected_sample": 0.7428571428571429
+        },
+        "mute_v3": {
+          "TP": 42,
+          "FN": 17,
+          "FP": 3,
+          "TN": 56,
+          "agreement": 0.8305084745762712,
+          "brilliant_detection": 0.711864406779661,
+          "false_award_rate": 0.05084745762711865,
+          "precision_in_selected_sample": 0.9333333333333333
+        }
+      }
+    },
+    "nelsi": {
+      "n": 180,
+      "positive_n": 90,
+      "negative_n": 90,
+      "games": 84,
+      "policies": {
+        "ec_raw": {
+          "TP": 18,
+          "FN": 72,
+          "FP": 2,
+          "TN": 88,
+          "agreement": 0.5888888888888889,
+          "brilliant_detection": 0.2,
+          "false_award_rate": 0.022222222222222223,
+          "precision_in_selected_sample": 0.9
+        },
+        "ec_confirmed": {
+          "TP": 18,
+          "FN": 72,
+          "FP": 2,
+          "TN": 88,
+          "agreement": 0.5888888888888889,
+          "brilliant_detection": 0.2,
+          "false_award_rate": 0.022222222222222223,
+          "precision_in_selected_sample": 0.9
+        },
+        "mute_v2": {
+          "TP": 80,
+          "FN": 10,
+          "FP": 17,
+          "TN": 73,
+          "agreement": 0.85,
+          "brilliant_detection": 0.8888888888888888,
+          "false_award_rate": 0.18888888888888888,
+          "precision_in_selected_sample": 0.8247422680412371
+        },
+        "mute_v3": {
+          "TP": 65,
+          "FN": 25,
+          "FP": 1,
+          "TN": 89,
+          "agreement": 0.8555555555555555,
+          "brilliant_detection": 0.7222222222222222,
+          "false_award_rate": 0.011111111111111112,
+          "precision_in_selected_sample": 0.9848484848484849
+        }
+      }
+    }
+  },
+  "audit": {
+    "board_corrobated": 611,
+    "board_missing": 7,
+    "coach_text": {
+      "partial_or_unverified": 396,
+      "verified_visible_complete": 218,
+      "absent": 4
+    },
+    "repeated_before_position_groups": [
+      [
+        {
+          "game_id": "186371786706",
+          "ply": 13,
+          "split": "development"
+        },
+        {
+          "game_id": "186371637568",
+          "ply": 13,
+          "split": "development"
+        }
+      ],
+      [
+        {
+          "game_id": "186065215864",
+          "ply": 17,
+          "split": "development"
+        },
+        {
+          "game_id": "186064974534",
+          "ply": 17,
+          "split": "development"
+        }
+      ],
+      [
+        {
+          "game_id": "186065215864",
+          "ply": 21,
+          "split": "development"
+        },
+        {
+          "game_id": "186064974534",
+          "ply": 21,
+          "split": "development"
+        }
+      ],
+      [
+        {
+          "game_id": "186377472342",
+          "ply": 15,
+          "split": "development"
+        },
+        {
+          "game_id": "186399227824",
+          "ply": 15,
+          "split": "development"
+        },
+        {
+          "game_id": "186065349458",
+          "ply": 15,
+          "split": "development"
+        }
+      ],
+      [
+        {
+          "game_id": "186405562696",
+          "ply": 17,
+          "split": "development"
+        },
+        {
+          "game_id": "186405183098",
+          "ply": 17,
+          "split": "development"
+        }
+      ],
+      [
+        {
+          "game_id": "186399227824",
+          "ply": 23,
+          "split": "development"
+        },
+        {
+          "game_id": "186065349458",
+          "ply": 23,
+          "split": "development"
+        }
+      ]
+    ],
+    "validation_overlap_excluded_games": [],
+    "material_source_parity_differences": 0,
+    "source_label_conflicts": 0,
+    "book_controls": 4,
+    "negative_raw_offer": {
+      "True": {
+        "n": 163,
+        "false_awards": {
+          "ec_raw": 6,
+          "mute_v2": 77,
+          "mute_v3": 16
+        }
+      },
+      "False": {
+        "n": 146,
+        "false_awards": {
+          "ec_raw": 0,
+          "mute_v2": 0,
+          "mute_v3": 0
+        }
+      }
+    }
+  },
+  "interpretation": "Conditional agreement on a balanced,enriched challenge set; no ordinary-game prevalence,error-frequency,enjoyment or all-open-source-project claim."
+}

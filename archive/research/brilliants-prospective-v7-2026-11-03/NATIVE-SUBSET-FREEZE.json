@@ -1,0 +1,102 @@
+{
+  "frozen_at_utc": "2026-11-03T12:59:38.494923+00:00",
+  "queue_sha256": "c4586980b9bdbed2476e16d8c753ef2fbfdb23905bc436d5b23d0a42144900bb",
+  "source_freeze_sha256": "0f52334e2b730acf58a44785aa09b4bc8dbd3c8fd68ca57b4206a4efb300e9a8",
+  "adapter_freeze_sha256": "348be630ab83301a263dbd50cc1808b2c07acca158c13f196fb4be17d19308a1",
+  "selection": "First2peraccount bySHA256(queueHash:account:gameID), before anyfreshlabels. Fullgame nativeflow, not selected move only.",
+  "games": [
+    {
+      "account": "nelsi",
+      "game_id": "167098915246",
+      "nominee_ply": 46,
+      "pgn_sha256": "25a524c3832e5184a20fc87eb24cf44d070fd839ea20604aee94526489be778b",
+      "selection_hash": "013883e659a48050e1364e7a18edfe0d48ad8d40b83040c4313a9a9e75335b8f",
+      "label_status": "ALLcurrentlabelsUNKNOWN"
+    },
+    {
+      "account": "nelsi",
+      "game_id": "169920135104",
+      "nominee_ply": 37,
+      "pgn_sha256": "6104ebc8e96bf8f911eb47a80c4dae6b509cf87465618c1f6162d74998b84a2d",
+      "selection_hash": "15577ce270f8bc5321633df224aa77ea432ad347312150d144aacd2558437cb9",
+      "label_status": "ALLcurrentlabelsUNKNOWN"
+    },
+    {
+      "account": "hansen",
+      "game_id": "176114357797",
+      "nominee_ply": 41,
+      "pgn_sha256": "95a1d3e66b44cc7dc8ffe9c501d347a3401fe38a684780516c1f6e944d342481",
+      "selection_hash": "1fd7467b4a2109d3b7a06b73d416e8424ae64df37188891a072e4169b9ac0428",
+      "label_status": "ALLcurrentlabelsUNKNOWN"
+    },
+    {
+      "account": "hansen",
+      "game_id": "172660857451",
+      "nominee_ply": 44,
+      "pgn_sha256": "813bc84fa4030850a6f80e74272b13f0e6f772656a0d45d694c64511af569626",
+      "selection_hash": "29e331d23c30961897f0c176ede8f804daa243adf282456a3e0663b173381239",
+      "label_status": "ALLcurrentlabelsUNKNOWN"
+    },
+    {
+      "account": "KNVB",
+      "game_id": "185390631380",
+      "nominee_ply": 20,
+      "pgn_sha256": "9830aea54d3c4f6d4fb5836afa864e89c5d2b54e6a507ce14b69a1a933722e46",
+      "selection_hash": "048ccf0db6071c3350fe6d17de658ce625a2254f3fd4e4fdc16389250e444d8d",
+      "label_status": "ALLcurrentlabelsUNKNOWN"
+    },
+    {
+      "account": "KNVB",
+      "game_id": "184320204306",
+      "nominee_ply": 35,
+      "pgn_sha256": "9893d34e42a3a34c5849fb271705dde6ffc118c93a5f563214f7e754e88dfedc",
+      "selection_hash": "0c6208b2ef96f6510c7b0600610e81f5b663d6f67629fc85b2f1a2043322504c",
+      "label_status": "ALLcurrentlabelsUNKNOWN"
+    },
+    {
+      "account": "GothamChess",
+      "game_id": "173414561738",
+      "nominee_ply": 43,
+      "pgn_sha256": "1d775ff16a607fd456ffaf94694ff53fce7fd179b866c6c96b5e4bcfcfa80f79",
+      "selection_hash": "133e6b47434166363992a1b0d2b7734c1f7de33f3abc560ef59a3b51aeec06d8",
+      "label_status": "ALLcurrentlabelsUNKNOWN"
+    },
+    {
+      "account": "GothamChess",
+      "game_id": "173605580880",
+      "nominee_ply": 23,
+      "pgn_sha256": "5867feeb478c746e918e09a76ea0c332e0dabf8c14cbaec0580744f0240c1a7d",
+      "selection_hash": "2b29fb06b29384e244074a506351eedf6ab672c009cf4ff8f992f0d8e0c3596d",
+      "label_status": "ALLcurrentlabelsUNKNOWN"
+    },
+    {
+      "account": "Hikaru",
+      "game_id": "174541196042",
+      "nominee_ply": 58,
+      "pgn_sha256": "cb85cf6eec88b519ab2a73ad0d41dd080e33eba524786e9aeea000eba4a0e5dc",
+      "selection_hash": "02b54bc632720afa5193c7738b202edc42c6cbaa86cf133b3261978f9c92fbec",
+      "label_status": "ALLcurrentlabelsUNKNOWN"
+    },
+    {
+      "account": "Hikaru",
+      "game_id": "184151911979",
+      "nominee_ply": 27,
+      "pgn_sha256": "fa73f739be6b2008505107e8980ca00c4dff8f58178cb92b1a408f257fce8563",
+      "selection_hash": "09f61dbb0fc77f8bba9ef73e0975ec9e248b1c736a3d61ed902376c2b1c0bd4a",
+      "label_status": "ALLcurrentlabelsUNKNOWN"
+    }
+  ],
+  "profile": {
+    "engine": "Stockfish19smallnet",
+    "hash_mb": 16,
+    "threads": 1,
+    "depth": 14,
+    "movetime_ms": 1000,
+    "position_command": "FEN only",
+    "full_game_order": true,
+    "confirmation_allowance": 6,
+    "position_search_cap": 1500,
+    "engine_time_cap_ms": 1500000,
+    "games_cap": 10
+  }
+}

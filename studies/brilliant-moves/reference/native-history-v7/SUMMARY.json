@@ -1,0 +1,38 @@
+{
+  "policy": "mute-brilliant-v7",
+  "source_sha256": {
+    "ui/analyse/src/noSweatClassify.ts": "79b2b94717e83d0b01bb32a834f4efa93498342cfb7bcb1ba068e9dcbefe898b",
+    "ui/analyse/src/noSweatHistoryOffer.ts": "11998e94330999e001a9e1aa683047c24563880cb1ebb4ad6ec019d813365785",
+    "ui/analyse/src/noSweatHistoryProof.ts": "eaad6d0f9235b64f11946aee137570efa7e60a9170c8af8c45b9f2d9a6df6f33",
+    "ui/analyse/src/noSweatRecoveryProof.ts": "f9dc9ddf2126b5210dbc1d595c9c81b8561290e7e6a6b85e808a4f7f3fd5fca6",
+    "ui/analyse/src/noSweatFullReview.ts": "8e297163ed8bbb5afc73fc80834fcece79ebb364f39feb5eda0645f9d2807dc5",
+    "ui/analyse/src/analyse.nosweatWorker.ts": "57bd6d1a599a611f3421404d4987d59d22415b174369c4470ac9e7f3a67eb7a7",
+    "ui/analyse/src/util.ts": "896c7ebf060c017e41c7ad769dc56a6fa6f0387fb0d1d713c59918d4a4f88f91",
+    "ui/analyse/tsconfig.json": "076004900c5c64f91890bfc6bac234b1e646a59cafd890fd84e7ad11ff5c9333",
+    "ui/analyse/tests/noSweatHistory.test.ts": "54fa303d474f0227d4c3c1cf117aae889250f3c97bb9acc923971a37f09709f3",
+    "ui/analyse/tests/noSweatRecovery.test.ts": "fbb10f24827d16510f7458465a2a613df196ea705b4addee40af5a61229e9309",
+    "ui/analyse/tests/fixtures/noSweat/brilliant-v6.json": "b90f89dc77c3d0402028d9788b7c29b154f75fa3eebee488cd50532bca52907b",
+    "ui/analyse/tests/fixtures/noSweat/brilliant-v7.json": "bc4b8ea81dae90f6c95f310a02ce6c86daa4ab7028810efdeb6358cee91443ad",
+    "ui/analyse/tests/noSweatBrilliants.test.ts": "bc3cfd59af94871105490913e7468e9001d99325167859863c43c0c42f9b525d",
+    "ui/analyse/tests/noSweatMuteBrilliants.test.ts": "d2f337e571e483c8d8e66348914797a565f5787ebea215a3d8563e5f6f98100e",
+    "ui/analyse/tests/noSweatFullGame.test.ts": "e2f1bba746e413cb0ad646b587179bdcfacd9c7c54ab212cfe9537d92dd9b8e8"
+  },
+  "frozen_python_sha256": {
+    "CANDIDATE-PLAN.json": "1d95afbf290345ae9eeefa611f3286f07dfed8ab5da60d2aef202866d89b703f",
+    "candidate.py": "d87bf86b8da910950ca1da5c7ea753e2e96059dc0d8c93f16882a06012308a06",
+    "probe.py": "ccba09c903188490be3a1568a6174ed678b12edb080ab2db379cbc0a3302555a"
+  },
+  "cases": 1048,
+  "decision_differences": 0,
+  "guard_diagnostic_and_certificate_differences": 0,
+  "ec_full_result_differences": 0,
+  "all1048_now_development": true,
+  "TP": 400,
+  "FP": 22,
+  "removed_false": 2,
+  "lost_true": 0,
+  "proof_unknown": 0,
+  "focused_tests_passed": 57,
+  "isolated_recovery_module_typecheck": "passed",
+  "native_SF19_timed_domain": "unvalidated"
+}

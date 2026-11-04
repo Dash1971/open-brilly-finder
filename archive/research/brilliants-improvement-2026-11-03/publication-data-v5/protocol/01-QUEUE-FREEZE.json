@@ -1,0 +1,130 @@
+{
+  "frozen_at_utc": "2026-11-03T10:21:03.327987+00:00",
+  "all_current_labels_unknown": true,
+  "fresh_review_observations": 0,
+  "targets": 100,
+  "future_fresh_class_target": {
+    "brilliant": 100,
+    "explicit_nonbrilliant": 100
+  },
+  "accounts": {
+    "nelsi": {
+      "targets": 20,
+      "positive_reserves": 10,
+      "frozen_primary_control_candidates": 80,
+      "each_target_has_primary_plus3_control_reserves": true,
+      "gallery_board_present": 10,
+      "categories": {
+        "All Types": 17,
+        "Bishop Sacrifice": 3
+      }
+    },
+    "hansen": {
+      "targets": 20,
+      "positive_reserves": 4,
+      "frozen_primary_control_candidates": 80,
+      "each_target_has_primary_plus3_control_reserves": true,
+      "gallery_board_present": 7,
+      "categories": {
+        "Bishop Sacrifice": 9,
+        "Knight Sacrifice": 8,
+        "Queen Sacrifice": 3
+      }
+    },
+    "KNVB": {
+      "targets": 20,
+      "positive_reserves": 28,
+      "frozen_primary_control_candidates": 80,
+      "each_target_has_primary_plus3_control_reserves": true,
+      "gallery_board_present": 6,
+      "categories": {
+        "Queen Sacrifice": 4,
+        "Rook Sacrifice": 6,
+        "Bishop Sacrifice": 5,
+        "Knight Sacrifice": 5
+      }
+    },
+    "GothamChess": {
+      "targets": 20,
+      "positive_reserves": 16,
+      "frozen_primary_control_candidates": 80,
+      "each_target_has_primary_plus3_control_reserves": true,
+      "gallery_board_present": 3,
+      "categories": {
+        "Rook Sacrifice": 2,
+        "Knight Sacrifice": 11,
+        "Queen Sacrifice": 7
+      }
+    },
+    "Hikaru": {
+      "targets": 20,
+      "positive_reserves": 8,
+      "frozen_primary_control_candidates": 80,
+      "each_target_has_primary_plus3_control_reserves": true,
+      "gallery_board_present": 5,
+      "categories": {
+        "All Types": 19,
+        "Queen Sacrifice": 1
+      }
+    }
+  },
+  "source_model_executable_sha256": {
+    "research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/extractor.py": "3a37512d8faa97250d2408c01463f515cb6737568d4620b2faa69b267c85b6c4",
+    "research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/feature_kernel.py": "8d77d2f482b57f492a4f307c447df1b96befb74e81a0accb7d5f33a886446d14",
+    "research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/avoidability_kernel.py": "d5b4101f989e26c8d1e958fbcf6049b0ea750217cdd9d3f171af12bbd4aa726e",
+    "research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/context.mts": "fb3dfb6cb4da23d39fe1acbe7a12d77d6861a6b2357a53f9bb420dcb043e050a",
+    "research/brilliants-improvement-2026-11-03/learning-v5/physical_kernel.py": "ec877d176ff59972992ef29569a338c5ab39fa9fb03bb679503e0721a13d1918",
+    "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/forest-full.json": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+    "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/PROTOCOL.json": "8073938391ac975e6957e5b98ea3aafb8c139c16cb2238cbbab21c32e1df82bd",
+    "research/brilliants-improvement-2026-11-03/root/frozen-v4/noSweatClassify.ts": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301",
+    "research/brilliants-improvement-2026-11-03/root/frozen-v4/noSweatCore.ts": "3fa48e3c50e7361a244c0ebb58543315b6a5f208c0c0e1979ae18fca40366a40",
+    "research/brilliants-improvement-2026-11-03/root/frozen-v4/core.ts": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a",
+    "mute-chess-research/studies/brilliant-moves-2026-11-03/material-features.py": "82c3b23efddadf69d8b68ea123abdec7fd2a7d2902080620ff785719aa61f9be",
+    "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/temporalProof.ts": "16faa288afc2e18716cdc7135efa8275712cd3b12624e4f696f33f25f6b3fe29",
+    "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/replay.mts": "57c238853d588eb31c1e79d1341845bb02b1d66f7eceb8412f58ebc1586586d7",
+    "research/brilliants-improvement-2026-11-03/astra/v5/variants/variantA.ts": "bdc7b52881c7cfe26a3ad6d6483805a4e58a2e6ca1181e5b0e5dd2c3f382ce3b",
+    "research/brilliants-improvement-2026-11-03/astra/v5/variants/offerProofs.ts": "d1d887daa2163e9ec79145414a4bfa8669af66ccabc62a98dcec8bb012a0ecaa"
+  },
+  "file_sha256": {
+    "PLAN.json": "6e722653d10e4092f5e70a1927f1d68310c704befc574f78d5e15bc624fcd946",
+    "PLAN-PREPARED.json": "b0b102343294ac44e411380b3df3c36488fbbe3b6df5209db12bd01ae461d376",
+    "FINALQUEUE.json": "b20729ae72052c19683f732f01daad696a5af6fdd29acc4b223867615051e74e",
+    "exclude-games.json": "2d209ad510519885ed8a673040f817582c2c49f041133ee7d5bcbff3cf30e0d1",
+    "known-regression-fens.json": "206c9d7e7d13f47fefb1d574536b93b17b10bbed8bca9a6cc787d12fc4fb3cf4",
+    "historical-pool-snapshot.json": "73a9edfdf661b329409888c410e42e20583dd7ad8917530650a6ac239afcf3e5",
+    "PRELABEL-TARGET-SELECTION.json": "a1af5f6e312b3a4f436fea87756c8215b71f88e04fa369adb0d815e39910b63c",
+    "corpus.py": "7d1d6c9318ab344e919151f4d4dfc12012e4f159780a1f4a02c84932bb52d387",
+    "prepare_metadata.py": "3e0aec2aeac5b2c0f8f0a180fd659b29c7e3b0dc34f6e38a631c08b64d2395aa",
+    "prepare_controls.py": "5c91d6f90b49ad40996c7bcf8c2fdd0fbcd466e4ca60f325a994df90ad97ca49",
+    "select_queue.py": "de28618b5195208361b88f197ca63510de319dd2e995b69f6201ef73353f00e2",
+    "prepare-controls.mts": "f5e1eceb0059bb9227cafedd95636f988ab3c51298f06be5e46accd2cc1da54e",
+    "finalize_queue.py": "4a81388a0707e9ca718a374b31fd710af50932487644f91039b2182e99a93671",
+    "PUBLIC-ARCHIVE-RESOLUTION.json": "8a85ec79d00e05b9c2d495270a0f20e39e4b3b76e58a78f0265e24f9701cea79",
+    "METADATA-RESOLUTION-SNAPSHOT.json": "2932812f0ef208a8c8923d2b1b1c4109df9518a10dd092ca27c78bac453845d8",
+    "nelsi-ui-queue.json": "67d9ead5efc1ac8d48ba6507a1604e07e1059fb63d840c119c867d42e4e773da",
+    "hansen-ui-queue.json": "73931d7dd626e2aff395bd7ef900ebb73a19830d8d9744a0c1ee9af9c69a9597",
+    "knvb-ui-queue.json": "4399bf0fba43f2d0e1236ceac3f625e6cf6d0b6d931bf6302b692d90eea45139",
+    "gothamchess-ui-queue.json": "5c536352589a3fb20ceaf695e494f1d0b12c43c97a5023f13c7a70ac81e94097",
+    "hikaru-ui-queue.json": "74a4f6da76a6a093d0ed55d191f040e8733caa3849c5b553de52dff4ee11a7dd"
+  },
+  "source_freeze_artifact_sha256": {
+    "astra/v5/fresh-extractor/FREEZE.json": {
+      "sha256": "29202a0df6cb45d9c64d81edda4e1ea411c5528775366d16d41701f30d9179a4"
+    },
+    "astra/v5/sequence-reference/source-freeze.json": {
+      "sha256": "15312b1499cd2fffae75e189a79ed13708f52bf5740c4a71bc5aee674b0b7b4c"
+    },
+    "astra/v5/sequence-reference/source-freeze-castling-addendum.json": {
+      "sha256": "3d6f12ac32686b9ef3e07ef940dad51d4216163160c7309830b6b51a157d2df5"
+    },
+    "astra/v5/sequence-reference/PROSPECTIVE-CONTRACT.md": {
+      "sha256": "25dfda60e95feb13bf3486bb12196fe40b37ed7d6f7df60f9903c8086130eaca"
+    }
+  },
+  "all465reviewed_games_excluded": true,
+  "all38214knowncanonicalpositions_excluded": true,
+  "unresolved_or_rejected_historical_cards_retained": "ELIGIBLE-PGN-POOL.json; allsourcecardsretainedhistorical-pool-snapshot.json, no currentoutcomes used toexclude.",
+  "initial_draft_target_replacements": [],
+  "database_games": 173,
+  "notes": "Primary200keys finalizedonlyafterexplicitfreshUIverification/classquotas, usingfixedorders. No enginebeforecollectioncompletion; Scachecleanandseparateaftercore."
+}

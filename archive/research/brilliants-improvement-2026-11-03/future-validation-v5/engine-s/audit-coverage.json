@@ -1,0 +1,4375 @@
+{
+  "scope": "Fresh frozen200 at300k structural-origin coverage. Selection uses unchanged frozen baseline-A predictions and PGN/board structure only, not observed labels. Quiet means no capture/promotion/check. One earlier confirmed v4 award must cover ALL current offered pieces with continuous unchanged raw liability and no physical-piece movement for1–3ownturns. Baseline v4 predictions are used for origins, not recursively suppressed outputs.",
+  "source_sha256": {
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/future-validation-v5/engine-core/analysis-core.json": "40ba351e58422b043608cfc55e2479be23b6400b09953826719ac559ea72c6c9"
+  },
+  "rows": [
+    {
+      "key": "1006812690:46",
+      "san": "Bg5",
+      "current": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "snapshot_ids": [
+          "1006812690:44",
+          "1006812690:45",
+          "1006812690:46"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "1006812690:48",
+      "san": "Nxf4",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "1006812690:46",
+          "1006812690:47",
+          "1006812690:48"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167232570202:23",
+      "san": "Bxh6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "167232570202:21",
+          "167232570202:22",
+          "167232570202:23"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167318775570:24",
+      "san": "Bxh3",
+      "current": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "snapshot_ids": [
+          "167318775570:22",
+          "167318775570:23",
+          "167318775570:24"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167318775570:32",
+      "san": "Bg5",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "167318775570:30",
+          "167318775570:31",
+          "167318775570:32"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 30,
+          "san": "Nxg4",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 28,
+          "san": "Nfg4",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 26,
+          "san": "Qxh3",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "g5",
+          "role": "bishop",
+          "color": "black",
+          "gain": 300
+        }
+      ]
+    },
+    {
+      "key": "167735813618:71",
+      "san": "Bxe3",
+      "current": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "snapshot_ids": [
+          "167735813618:69",
+          "167735813618:70",
+          "167735813618:71"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167735813618:89",
+      "san": "Kf1",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "167735813618:87",
+          "167735813618:88",
+          "167735813618:89"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167741829524:31",
+      "san": "Bf4",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "167741829524:29",
+          "167741829524:30",
+          "167741829524:31"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167741829524:33",
+      "san": "Bxh7+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "167741829524:31",
+          "167741829524:32",
+          "167741829524:33"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167741909692:53",
+      "san": "Nf3",
+      "current": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "snapshot_ids": [
+          "167741909692:51",
+          "167741909692:52",
+          "167741909692:53"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167741909692:59",
+      "san": "Qh6+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "167741909692:57",
+          "167741909692:58",
+          "167741909692:59"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167742086130:58",
+      "san": "Qxf4",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "167742086130:56",
+          "167742086130:57",
+          "167742086130:58"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167742086130:64",
+      "san": "Bd6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "167742086130:62",
+          "167742086130:63",
+          "167742086130:64"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167744883950:69",
+      "san": "Bf6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "167744883950:67",
+          "167744883950:68",
+          "167744883950:69"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167744883950:83",
+      "san": "Qf8+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "167744883950:81",
+          "167744883950:82",
+          "167744883950:83"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167746069278:24",
+      "san": "Bxh2+",
+      "current": {
+        "symbol": "",
+        "provisional": "!!",
+        "withheld": true,
+        "snapshot_ids": [
+          "167746069278:22",
+          "167746069278:23",
+          "167746069278:24"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167746069278:40",
+      "san": "Ng4",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "167746069278:38",
+          "167746069278:39",
+          "167746069278:40"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 38,
+          "san": "Bd7",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 36,
+          "san": "e5",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 34,
+          "san": "Nf6",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "d7",
+          "role": "bishop",
+          "color": "black",
+          "gain": 300
+        }
+      ]
+    },
+    {
+      "key": "167746953578:81",
+      "san": "Be6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "167746953578:79",
+          "167746953578:80",
+          "167746953578:81"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "167746953578:85",
+      "san": "Bh4",
+      "current": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "snapshot_ids": [
+          "167746953578:83",
+          "167746953578:84",
+          "167746953578:85"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "168156242980:23",
+      "san": "d5",
+      "current": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "snapshot_ids": [
+          "168156242980:21",
+          "168156242980:22",
+          "168156242980:23"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "168788226486:52",
+      "san": "Qf7",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "168788226486:50",
+          "168788226486:51",
+          "168788226486:52"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 50,
+          "san": "Nd2",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 48,
+          "san": "Rbd8",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 46,
+          "san": "f6",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "d6",
+          "role": "knight",
+          "color": "black",
+          "gain": 300
+        }
+      ]
+    },
+    {
+      "key": "168788226486:58",
+      "san": "N2e4+",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "168788226486:56",
+          "168788226486:57",
+          "168788226486:58"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "168957905206:41",
+      "san": "Rac1",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "168957905206:39",
+          "168957905206:40",
+          "168957905206:41"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "168957905206:57",
+      "san": "Bxg7",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "168957905206:55",
+          "168957905206:56",
+          "168957905206:57"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "169921610506:21",
+      "san": "Bxh7+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "169921610506:19",
+          "169921610506:20",
+          "169921610506:21"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "169921610506:31",
+      "san": "Be7",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "169921610506:29",
+          "169921610506:30",
+          "169921610506:31"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "170815444900:33",
+      "san": "h5",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "170815444900:31",
+          "170815444900:32",
+          "170815444900:33"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 31,
+          "san": "h4",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 29,
+          "san": "Qg2",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 27,
+          "san": "f4",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "g5",
+          "role": "bishop",
+          "color": "white",
+          "gain": 300
+        }
+      ]
+    },
+    {
+      "key": "171114861008:34",
+      "san": "Nxe5",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "171114861008:32",
+          "171114861008:33",
+          "171114861008:34"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171114861008:40",
+      "san": "Bg6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "171114861008:38",
+          "171114861008:39",
+          "171114861008:40"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171121352102:24",
+      "san": "h4",
+      "current": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "snapshot_ids": [
+          "171121352102:22",
+          "171121352102:23",
+          "171121352102:24"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171121352102:52",
+      "san": "Rxb2",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "171121352102:50",
+          "171121352102:51",
+          "171121352102:52"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171486761466:21",
+      "san": "Rxf5",
+      "current": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "snapshot_ids": [
+          "171486761466:19",
+          "171486761466:20",
+          "171486761466:21"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171486761466:61",
+      "san": "Qf3",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "171486761466:59",
+          "171486761466:60",
+          "171486761466:61"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 59,
+          "san": "Rxg7+",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 57,
+          "san": "e6",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 55,
+          "san": "Rg4",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "f5",
+          "role": "bishop",
+          "color": "white",
+          "gain": 210
+        }
+      ]
+    },
+    {
+      "key": "171488501692:34",
+      "san": "Nxc4",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "171488501692:32",
+          "171488501692:33",
+          "171488501692:34"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171488501692:36",
+      "san": "hxg6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "171488501692:34",
+          "171488501692:35",
+          "171488501692:36"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171610444110:21",
+      "san": "Nb5",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "171610444110:19",
+          "171610444110:20",
+          "171610444110:21"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 19,
+          "san": "Nxd4",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 17,
+          "san": "b4",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 15,
+          "san": "O-O",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "a1",
+          "role": "rook",
+          "color": "white",
+          "gain": 500
+        }
+      ]
+    },
+    {
+      "key": "171610444110:37",
+      "san": "Rxe6+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "171610444110:35",
+          "171610444110:36",
+          "171610444110:37"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171611649712:31",
+      "san": "Nxf7",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "171611649712:29",
+          "171611649712:30",
+          "171611649712:31"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171611649712:37",
+      "san": "Nd6+",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "171611649712:35",
+          "171611649712:36",
+          "171611649712:37"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171635413720:43",
+      "san": "Nh6+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "171635413720:41",
+          "171635413720:42",
+          "171635413720:43"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171635413720:59",
+      "san": "Nxg6+",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "171635413720:57",
+          "171635413720:58",
+          "171635413720:59"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171727211094:59",
+      "san": "Nxg6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "171727211094:57",
+          "171727211094:58",
+          "171727211094:59"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171727211094:69",
+      "san": "Rxe6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "171727211094:67",
+          "171727211094:68",
+          "171727211094:69"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171727306254:54",
+      "san": "Nxf2",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "171727306254:52",
+          "171727306254:53",
+          "171727306254:54"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171727306254:58",
+      "san": "Nxe3",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "171727306254:56",
+          "171727306254:57",
+          "171727306254:58"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "171891388774:7",
+      "san": "Bc4",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "171891388774:5",
+          "171891388774:6",
+          "171891388774:7"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 5,
+          "san": "Qf3",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 3,
+          "san": "Nc3",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 1,
+          "san": "e4",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "c3",
+          "role": "knight",
+          "color": "white",
+          "gain": 210
+        }
+      ]
+    },
+    {
+      "key": "171891388774:9",
+      "san": "e5",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "171891388774:7",
+          "171891388774:8",
+          "171891388774:9"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172153199036:40",
+      "san": "Rxf3",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "172153199036:38",
+          "172153199036:39",
+          "172153199036:40"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172153199036:54",
+      "san": "Nb4+",
+      "current": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "snapshot_ids": [
+          "172153199036:52",
+          "172153199036:53",
+          "172153199036:54"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172253295412:17",
+      "san": "Nxe6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "172253295412:15",
+          "172253295412:16",
+          "172253295412:17"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172253295412:29",
+      "san": "Qe6+",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "172253295412:27",
+          "172253295412:28",
+          "172253295412:29"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172260433072:40",
+      "san": "Nxe3",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "172260433072:38",
+          "172260433072:39",
+          "172260433072:40"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172260433072:58",
+      "san": "Bd5",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "172260433072:56",
+          "172260433072:57",
+          "172260433072:58"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172376177350:43",
+      "san": "Nd3",
+      "current": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "snapshot_ids": [
+          "172376177350:41",
+          "172376177350:42",
+          "172376177350:43"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172376177350:53",
+      "san": "Ne4",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "172376177350:51",
+          "172376177350:52",
+          "172376177350:53"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 51,
+          "san": "Nb4",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 49,
+          "san": "Qd1",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 47,
+          "san": "Rc1",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "e4",
+          "role": "knight",
+          "color": "white",
+          "gain": 300
+        }
+      ]
+    },
+    {
+      "key": "172450756938:60",
+      "san": "Nxg4",
+      "current": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "snapshot_ids": [
+          "172450756938:58",
+          "172450756938:59",
+          "172450756938:60"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172450756938:70",
+      "san": "Qh1+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "172450756938:68",
+          "172450756938:69",
+          "172450756938:70"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172455502166:50",
+      "san": "Ng4",
+      "current": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "snapshot_ids": [
+          "172455502166:48",
+          "172455502166:49",
+          "172455502166:50"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172455502166:64",
+      "san": "Qe1",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "172455502166:62",
+          "172455502166:63",
+          "172455502166:64"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 62,
+          "san": "Qc3",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 60,
+          "san": "Re8",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 58,
+          "san": "Rfe6",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "e1",
+          "role": "queen",
+          "color": "black",
+          "gain": 500
+        }
+      ]
+    },
+    {
+      "key": "172657252323:56",
+      "san": "Qd6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "172657252323:54",
+          "172657252323:55",
+          "172657252323:56"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 54,
+          "san": "Rf7",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 52,
+          "san": "Raf8",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 50,
+          "san": "Rg8",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "g8",
+          "role": "rook",
+          "color": "black",
+          "gain": 200
+        }
+      ]
+    },
+    {
+      "key": "172657252323:58",
+      "san": "Bxg2+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "172657252323:56",
+          "172657252323:57",
+          "172657252323:58"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172658453657:24",
+      "san": "Nb4",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "172658453657:22",
+          "172658453657:23",
+          "172658453657:24"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 22,
+          "san": "Na6",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 20,
+          "san": "Bg4",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 18,
+          "san": "exf4",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "g4",
+          "role": "bishop",
+          "color": "black",
+          "gain": 210
+        }
+      ]
+    },
+    {
+      "key": "172658453657:44",
+      "san": "Qxa2",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "172658453657:42",
+          "172658453657:43",
+          "172658453657:44"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172662051055:71",
+      "san": "Bxb7+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "172662051055:69",
+          "172662051055:70",
+          "172662051055:71"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172662051055:73",
+      "san": "Rxd7+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "172662051055:71",
+          "172662051055:72",
+          "172662051055:73"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172827462484:105",
+      "san": "Qf8+",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "172827462484:103",
+          "172827462484:104",
+          "172827462484:105"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "172827462484:93",
+      "san": "Nxf6+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "172827462484:91",
+          "172827462484:92",
+          "172827462484:93"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173050435284:37",
+      "san": "Bxh6",
+      "current": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "snapshot_ids": [
+          "173050435284:35",
+          "173050435284:36",
+          "173050435284:37"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173050435284:49",
+      "san": "Qg2",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "173050435284:47",
+          "173050435284:48",
+          "173050435284:49"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 47,
+          "san": "Rdg1",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 45,
+          "san": "Bd3",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 43,
+          "san": "gxf5",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "e3",
+          "role": "bishop",
+          "color": "white",
+          "gain": 300
+        }
+      ]
+    },
+    {
+      "key": "173235710516:21",
+      "san": "Qxd5",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "173235710516:19",
+          "173235710516:20",
+          "173235710516:21"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173235710516:27",
+      "san": "Nb6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "173235710516:25",
+          "173235710516:26",
+          "173235710516:27"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173422249992:41",
+      "san": "Nxg6",
+      "current": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "snapshot_ids": [
+          "173422249992:39",
+          "173422249992:40",
+          "173422249992:41"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173422249992:55",
+      "san": "Rg1",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "173422249992:53",
+          "173422249992:54",
+          "173422249992:55"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173434013720:56",
+      "san": "Qxe4",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "173434013720:54",
+          "173434013720:55",
+          "173434013720:56"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173434013720:62",
+      "san": "Ra1",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "173434013720:60",
+          "173434013720:61",
+          "173434013720:62"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173476659474:20",
+      "san": "Nxd4",
+      "current": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "snapshot_ids": [
+          "173476659474:18",
+          "173476659474:19",
+          "173476659474:20"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173476659474:26",
+      "san": "Bc6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "173476659474:24",
+          "173476659474:25",
+          "173476659474:26"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 24,
+          "san": "Bd7",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 22,
+          "san": "Qxd4",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 20,
+          "san": "Nxd4",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "d4",
+          "role": "queen",
+          "color": "black",
+          "gain": 1000
+        }
+      ]
+    },
+    {
+      "key": "173487325950:50",
+      "san": "Qd2+",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "173487325950:48",
+          "173487325950:49",
+          "173487325950:50"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173487325950:52",
+      "san": "Bxe3",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "173487325950:50",
+          "173487325950:51",
+          "173487325950:52"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173516572419:38",
+      "san": "Nxd4",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "173516572419:36",
+          "173516572419:37",
+          "173516572419:38"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173516572419:48",
+      "san": "Bd5",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "173516572419:46",
+          "173516572419:47",
+          "173516572419:48"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173517772799:30",
+      "san": "hxg5",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "173517772799:28",
+          "173517772799:29",
+          "173517772799:30"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173517772799:80",
+      "san": "Nxg3",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "173517772799:78",
+          "173517772799:79",
+          "173517772799:80"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173659942236:81",
+      "san": "Qxg8+",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "173659942236:79",
+          "173659942236:80",
+          "173659942236:81"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173659942236:87",
+      "san": "Bd4",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "173659942236:85",
+          "173659942236:86",
+          "173659942236:87"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173664541242:34",
+      "san": "Rac8",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "173664541242:32",
+          "173664541242:33",
+          "173664541242:34"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173664541242:44",
+      "san": "Qxc5",
+      "current": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "snapshot_ids": [
+          "173664541242:42",
+          "173664541242:43",
+          "173664541242:44"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173716013666:43",
+      "san": "Nd7+",
+      "current": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "snapshot_ids": [
+          "173716013666:41",
+          "173716013666:42",
+          "173716013666:43"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173716013666:51",
+      "san": "Nf6+",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "173716013666:49",
+          "173716013666:50",
+          "173716013666:51"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173719918770:71",
+      "san": "fxg6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "173719918770:69",
+          "173719918770:70",
+          "173719918770:71"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173820532932:19",
+      "san": "Ngf3",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "173820532932:17",
+          "173820532932:18",
+          "173820532932:19"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173820532932:35",
+      "san": "Ng5",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "173820532932:33",
+          "173820532932:34",
+          "173820532932:35"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 33,
+          "san": "Rg3",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 31,
+          "san": "Rh3",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 29,
+          "san": "h4",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "g5",
+          "role": "knight",
+          "color": "white",
+          "gain": 210
+        }
+      ]
+    },
+    {
+      "key": "173948558416:60",
+      "san": "Ne4",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "173948558416:58",
+          "173948558416:59",
+          "173948558416:60"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "173948558416:62",
+      "san": "Qxf2+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "173948558416:60",
+          "173948558416:61",
+          "173948558416:62"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "174394647488:42",
+      "san": "Kb8",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "174394647488:40",
+          "174394647488:41",
+          "174394647488:42"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 40,
+          "san": "Nxb2",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 38,
+          "san": "Nxc4",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 36,
+          "san": "Ne5",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "e8",
+          "role": "rook",
+          "color": "black",
+          "gain": 200
+        }
+      ]
+    },
+    {
+      "key": "174394647488:46",
+      "san": "Bh6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "174394647488:44",
+          "174394647488:45",
+          "174394647488:46"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "174427252006:64",
+      "san": "Rd1",
+      "current": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "snapshot_ids": [
+          "174427252006:62",
+          "174427252006:63",
+          "174427252006:64"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "174427252006:66",
+      "san": "bxc3",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "174427252006:64",
+          "174427252006:65",
+          "174427252006:66"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "174471378706:147",
+      "san": "Rg8",
+      "current": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "snapshot_ids": [
+          "174471378706:145",
+          "174471378706:146",
+          "174471378706:147"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "174471378706:45",
+      "san": "Bxd5",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "174471378706:43",
+          "174471378706:44",
+          "174471378706:45"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "174487934530:27",
+      "san": "Nxg6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "174487934530:25",
+          "174487934530:26",
+          "174487934530:27"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "174487934530:87",
+      "san": "Rxe2+",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "174487934530:85",
+          "174487934530:86",
+          "174487934530:87"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "174521237632:40",
+      "san": "Rxd5",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "174521237632:38",
+          "174521237632:39",
+          "174521237632:40"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "174521237632:58",
+      "san": "Ne6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "174521237632:56",
+          "174521237632:57",
+          "174521237632:58"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "178354672033:41",
+      "san": "Nh6+",
+      "current": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "snapshot_ids": [
+          "178354672033:39",
+          "178354672033:40",
+          "178354672033:41"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "178354672033:43",
+      "san": "Nxf7",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "178354672033:41",
+          "178354672033:42",
+          "178354672033:43"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "178355872183:55",
+      "san": "Bxg6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "178355872183:53",
+          "178355872183:54",
+          "178355872183:55"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "178355872183:65",
+      "san": "Rxh7",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "178355872183:63",
+          "178355872183:64",
+          "178355872183:65"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "178708671947:26",
+      "san": "d5",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "178708671947:24",
+          "178708671947:25",
+          "178708671947:26"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 24,
+          "san": "Nxd4",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 22,
+          "san": "Nc6",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 20,
+          "san": "Bd7",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "f6",
+          "role": "knight",
+          "color": "black",
+          "gain": 210
+        }
+      ]
+    },
+    {
+      "key": "178708671947:50",
+      "san": "Qb2",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "178708671947:48",
+          "178708671947:49",
+          "178708671947:50"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "180018600334:43",
+      "san": "Nc4",
+      "current": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "snapshot_ids": [
+          "180018600334:41",
+          "180018600334:42",
+          "180018600334:43"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "180018600334:53",
+      "san": "Bd2",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "180018600334:51",
+          "180018600334:52",
+          "180018600334:53"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "180026338306:25",
+      "san": "Nd5",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "180026338306:23",
+          "180026338306:24",
+          "180026338306:25"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "180026338306:45",
+      "san": "Ne5",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "180026338306:43",
+          "180026338306:44",
+          "180026338306:45"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 43,
+          "san": "Qe2",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 41,
+          "san": "Rae1",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 39,
+          "san": "Qh5",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "e5",
+          "role": "knight",
+          "color": "white",
+          "gain": 210
+        }
+      ]
+    },
+    {
+      "key": "182334502199:57",
+      "san": "Qxd1",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "182334502199:55",
+          "182334502199:56",
+          "182334502199:57"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "182335701261:21",
+      "san": "Bxe6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "182335701261:19",
+          "182335701261:20",
+          "182335701261:21"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184182682508:53",
+      "san": "Rxc3",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184182682508:51",
+          "184182682508:52",
+          "184182682508:53"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184182682508:55",
+      "san": "Ne5",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184182682508:53",
+          "184182682508:54",
+          "184182682508:55"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184239087562:72",
+      "san": "Ne4",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184239087562:70",
+          "184239087562:71",
+          "184239087562:72"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184273349468:30",
+      "san": "Bxf6",
+      "current": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184273349468:28",
+          "184273349468:29",
+          "184273349468:30"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184274391024:32",
+      "san": "Qh6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184274391024:30",
+          "184274391024:31",
+          "184274391024:32"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184274391024:34",
+      "san": "Bxh3",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184274391024:32",
+          "184274391024:33",
+          "184274391024:34"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184278270138:48",
+      "san": "Ne3",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184278270138:46",
+          "184278270138:47",
+          "184278270138:48"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184377073250:38",
+      "san": "Rc4",
+      "current": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "snapshot_ids": [
+          "184377073250:36",
+          "184377073250:37",
+          "184377073250:38"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184377073250:48",
+      "san": "Ng3+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184377073250:46",
+          "184377073250:47",
+          "184377073250:48"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184380420058:51",
+      "san": "Qe4",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184380420058:49",
+          "184380420058:50",
+          "184380420058:51"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184380420058:57",
+      "san": "Rxg7+",
+      "current": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184380420058:55",
+          "184380420058:56",
+          "184380420058:57"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184429023318:28",
+      "san": "Nxf2",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184429023318:26",
+          "184429023318:27",
+          "184429023318:28"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184429023318:36",
+      "san": "Nef2",
+      "current": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "snapshot_ids": [
+          "184429023318:34",
+          "184429023318:35",
+          "184429023318:36"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184472674494:30",
+      "san": "Ng6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184472674494:28",
+          "184472674494:29",
+          "184472674494:30"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 28,
+          "san": "Rxf5",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 26,
+          "san": "f5",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 24,
+          "san": "e5",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "f5",
+          "role": "rook",
+          "color": "black",
+          "gain": 500
+        },
+        {
+          "square": "h5",
+          "role": "bishop",
+          "color": "black",
+          "gain": 210
+        }
+      ]
+    },
+    {
+      "key": "184472674494:32",
+      "san": "Nf4",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184472674494:30",
+          "184472674494:31",
+          "184472674494:32"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184472811812:49",
+      "san": "Rxh6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184472811812:47",
+          "184472811812:48",
+          "184472811812:49"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184472811812:53",
+      "san": "Rxf8+",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184472811812:51",
+          "184472811812:52",
+          "184472811812:53"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184480624878:24",
+      "san": "Qd7",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184480624878:22",
+          "184480624878:23",
+          "184480624878:24"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184480624878:26",
+      "san": "Nxg3+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184480624878:24",
+          "184480624878:25",
+          "184480624878:26"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184481651976:26",
+      "san": "Be7",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184481651976:24",
+          "184481651976:25",
+          "184481651976:26"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184481651976:34",
+      "san": "Nxd4",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184481651976:32",
+          "184481651976:33",
+          "184481651976:34"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184560137788:13",
+      "san": "Bxf7+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184560137788:11",
+          "184560137788:12",
+          "184560137788:13"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184560137788:27",
+      "san": "Ne2",
+      "current": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184560137788:25",
+          "184560137788:26",
+          "184560137788:27"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184615644672:102",
+      "san": "Bxa5",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184615644672:100",
+          "184615644672:101",
+          "184615644672:102"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184615644672:94",
+      "san": "Nc4",
+      "current": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "snapshot_ids": [
+          "184615644672:92",
+          "184615644672:93",
+          "184615644672:94"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184618094830:105",
+      "san": "d6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184618094830:103",
+          "184618094830:104",
+          "184618094830:105"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 103,
+          "san": "d5",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 101,
+          "san": "Bxb4",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 99,
+          "san": "Bd6",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "b5",
+          "role": "knight",
+          "color": "white",
+          "gain": 300
+        }
+      ]
+    },
+    {
+      "key": "184618094830:127",
+      "san": "Ke1",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184618094830:125",
+          "184618094830:126",
+          "184618094830:127"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184710314858:40",
+      "san": "Rxc6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184710314858:38",
+          "184710314858:39",
+          "184710314858:40"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184710314858:52",
+      "san": "Rc8",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184710314858:50",
+          "184710314858:51",
+          "184710314858:52"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 50,
+          "san": "Ng6",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 48,
+          "san": "Ne7",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 46,
+          "san": "gxf5",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "a5",
+          "role": "queen",
+          "color": "black",
+          "gain": 1000
+        },
+        {
+          "square": "d6",
+          "role": "bishop",
+          "color": "black",
+          "gain": 300
+        },
+        {
+          "square": "c8",
+          "role": "rook",
+          "color": "black",
+          "gain": 500
+        }
+      ]
+    },
+    {
+      "key": "184731606382:47",
+      "san": "Bxh6",
+      "current": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184731606382:45",
+          "184731606382:46",
+          "184731606382:47"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184731606382:63",
+      "san": "Rd5",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184731606382:61",
+          "184731606382:62",
+          "184731606382:63"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 61,
+          "san": "Bxd1",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 59,
+          "san": "dxe4",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 57,
+          "san": "Bc2",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "d5",
+          "role": "rook",
+          "color": "white",
+          "gain": 200
+        }
+      ]
+    },
+    {
+      "key": "184737589644:37",
+      "san": "Rxf7",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184737589644:35",
+          "184737589644:36",
+          "184737589644:37"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184737589644:43",
+      "san": "Rxb6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184737589644:41",
+          "184737589644:42",
+          "184737589644:43"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184756110863:20",
+      "san": "Nd4",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184756110863:18",
+          "184756110863:19",
+          "184756110863:20"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 18,
+          "san": "Re8",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 16,
+          "san": "Nxd5",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 14,
+          "san": "d5",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "d4",
+          "role": "knight",
+          "color": "black",
+          "gain": 210
+        }
+      ]
+    },
+    {
+      "key": "184756110863:22",
+      "san": "Bg4",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184756110863:20",
+          "184756110863:21",
+          "184756110863:22"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 20,
+          "san": "Nd4",
+          "structural": true,
+          "pieces": [
+            {
+              "square": "d4",
+              "gain": 210,
+              "priorCredit": 0,
+              "unmoved": true,
+              "continuous": true
+            }
+          ],
+          "prediction": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "snapshot_ids": [
+              "184756110863:18",
+              "184756110863:19",
+              "184756110863:20"
+            ]
+          }
+        },
+        {
+          "ply": 18,
+          "san": "Re8",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 16,
+          "san": "Nxd5",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": true,
+      "offers": [
+        {
+          "square": "d4",
+          "role": "knight",
+          "color": "black",
+          "gain": 210
+        }
+      ]
+    },
+    {
+      "key": "184757910813:44",
+      "san": "Qb5",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184757910813:42",
+          "184757910813:43",
+          "184757910813:44"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184757910813:46",
+      "san": "Qe2",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184757910813:44",
+          "184757910813:45",
+          "184757910813:46"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 44,
+          "san": "Qb5",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 42,
+          "san": "Rb3",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 40,
+          "san": "Rc8",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "b3",
+          "role": "rook",
+          "color": "black",
+          "gain": 500
+        }
+      ]
+    },
+    {
+      "key": "184775179950:62",
+      "san": "Rxe8",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184775179950:60",
+          "184775179950:61",
+          "184775179950:62"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184775179950:64",
+      "san": "Re1+",
+      "current": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184775179950:62",
+          "184775179950:63",
+          "184775179950:64"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184980636738:88",
+      "san": "Nb6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "184980636738:86",
+          "184980636738:87",
+          "184980636738:88"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "184980636738:94",
+      "san": "Nxc3",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "184980636738:92",
+          "184980636738:93",
+          "184980636738:94"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185010511207:44",
+      "san": "Qxe2",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185010511207:42",
+          "185010511207:43",
+          "185010511207:44"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185010511207:50",
+      "san": "e3",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185010511207:48",
+          "185010511207:49",
+          "185010511207:50"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185024676458:56",
+      "san": "Bxc3",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "185024676458:54",
+          "185024676458:55",
+          "185024676458:56"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185024676458:78",
+      "san": "Qa2+",
+      "current": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "snapshot_ids": [
+          "185024676458:76",
+          "185024676458:77",
+          "185024676458:78"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185031691156:23",
+      "san": "Na3",
+      "current": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "snapshot_ids": [
+          "185031691156:21",
+          "185031691156:22",
+          "185031691156:23"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185031691156:37",
+      "san": "Nxe6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "185031691156:35",
+          "185031691156:36",
+          "185031691156:37"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185033501800:115",
+      "san": "Nxe4",
+      "current": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "snapshot_ids": [
+          "185033501800:113",
+          "185033501800:114",
+          "185033501800:115"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185033501800:57",
+      "san": "Nb4",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185033501800:55",
+          "185033501800:56",
+          "185033501800:57"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185227199376:63",
+      "san": "Qg2",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185227199376:61",
+          "185227199376:62",
+          "185227199376:63"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185227199376:65",
+      "san": "Rxf3",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "185227199376:63",
+          "185227199376:64",
+          "185227199376:65"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185277391724:18",
+      "san": "Bxh3",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "185277391724:16",
+          "185277391724:17",
+          "185277391724:18"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185277391724:28",
+      "san": "Ng4",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185277391724:26",
+          "185277391724:27",
+          "185277391724:28"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185332292302:106",
+      "san": "Nxa2",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "185332292302:104",
+          "185332292302:105",
+          "185332292302:106"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185332292302:118",
+      "san": "Ke2",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185332292302:116",
+          "185332292302:117",
+          "185332292302:118"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185363189957:24",
+      "san": "Kxg7",
+      "current": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "snapshot_ids": [
+          "185363189957:22",
+          "185363189957:23",
+          "185363189957:24"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185363189957:34",
+      "san": "Nxb4",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185363189957:32",
+          "185363189957:33",
+          "185363189957:34"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185388991304:17",
+      "san": "Ne5",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185388991304:15",
+          "185388991304:16",
+          "185388991304:17"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185388991304:21",
+      "san": "Qh5",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "185388991304:19",
+          "185388991304:20",
+          "185388991304:21"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 19,
+          "san": "f4",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 17,
+          "san": "Ne5",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 15,
+          "san": "Bxd6",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "e5",
+          "role": "knight",
+          "color": "white",
+          "gain": 210
+        }
+      ]
+    },
+    {
+      "key": "185640611734:65",
+      "san": "Qd4",
+      "current": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "snapshot_ids": [
+          "185640611734:63",
+          "185640611734:64",
+          "185640611734:65"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185640611734:69",
+      "san": "Rxe4",
+      "current": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "snapshot_ids": [
+          "185640611734:67",
+          "185640611734:68",
+          "185640611734:69"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185659472924:65",
+      "san": "Kh1",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185659472924:63",
+          "185659472924:64",
+          "185659472924:65"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185659472924:85",
+      "san": "Rf8+",
+      "current": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "snapshot_ids": [
+          "185659472924:83",
+          "185659472924:84",
+          "185659472924:85"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185663696126:72",
+      "san": "Rf6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185663696126:70",
+          "185663696126:71",
+          "185663696126:72"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185663696126:76",
+      "san": "Nf2+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "185663696126:74",
+          "185663696126:75",
+          "185663696126:76"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185699365144:181",
+      "san": "Kd3",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185699365144:179",
+          "185699365144:180",
+          "185699365144:181"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185703992543:36",
+      "san": "Ne4",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "185703992543:34",
+          "185703992543:35",
+          "185703992543:36"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 34,
+          "san": "Qxc2",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 32,
+          "san": "Qf5",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 30,
+          "san": "Kb8",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "d8",
+          "role": "rook",
+          "color": "black",
+          "gain": 200
+        }
+      ]
+    },
+    {
+      "key": "185728395618:46",
+      "san": "Rxf2+",
+      "current": {
+        "symbol": "",
+        "provisional": "!",
+        "withheld": true,
+        "snapshot_ids": [
+          "185728395618:44",
+          "185728395618:45",
+          "185728395618:46"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185728395618:52",
+      "san": "Rf8",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185728395618:50",
+          "185728395618:51",
+          "185728395618:52"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185745214488:35",
+      "san": "Bf3",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185745214488:33",
+          "185745214488:34",
+          "185745214488:35"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185745214488:71",
+      "san": "Re8+",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185745214488:69",
+          "185745214488:70",
+          "185745214488:71"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185785803250:79",
+      "san": "Rxc6",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "185785803250:77",
+          "185785803250:78",
+          "185785803250:79"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185785803250:85",
+      "san": "Rc6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185785803250:83",
+          "185785803250:84",
+          "185785803250:85"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185961990851:36",
+      "san": "Bxf5",
+      "current": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "snapshot_ids": [
+          "185961990851:34",
+          "185961990851:35",
+          "185961990851:36"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185961990851:38",
+      "san": "Nf3",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "185961990851:36",
+          "185961990851:37",
+          "185961990851:38"
+        ]
+      },
+      "eligibleQuiet": true,
+      "structuralUnknown": false,
+      "priors": [
+        {
+          "ply": 36,
+          "san": "Bxf5",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 34,
+          "san": "Qg3",
+          "structural": false,
+          "pieces": []
+        },
+        {
+          "ply": 32,
+          "san": "Nxh2",
+          "structural": false,
+          "pieces": []
+        }
+      ],
+      "suppress": false,
+      "offers": [
+        {
+          "square": "f3",
+          "role": "knight",
+          "color": "black",
+          "gain": 300
+        }
+      ]
+    },
+    {
+      "key": "185963189457:61",
+      "san": "Ng5",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "185963189457:59",
+          "185963189457:60",
+          "185963189457:61"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "185963189457:67",
+      "san": "Rfxf7",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "185963189457:65",
+          "185963189457:66",
+          "185963189457:67"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "186014552162:42",
+      "san": "Rh2+",
+      "current": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "snapshot_ids": [
+          "186014552162:40",
+          "186014552162:41",
+          "186014552162:42"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "186014552162:54",
+      "san": "Rd3",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "186014552162:52",
+          "186014552162:53",
+          "186014552162:54"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "186570389967:18",
+      "san": "Ne4",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "186570389967:16",
+          "186570389967:17",
+          "186570389967:18"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "186570389967:52",
+      "san": "Rxd3",
+      "current": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "snapshot_ids": [
+          "186570389967:50",
+          "186570389967:51",
+          "186570389967:52"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "187172297075:31",
+      "san": "Be3",
+      "current": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "snapshot_ids": [
+          "187172297075:29",
+          "187172297075:30",
+          "187172297075:31"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "187172297075:43",
+      "san": "Rxf6",
+      "current": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "snapshot_ids": [
+          "187172297075:41",
+          "187172297075:42",
+          "187172297075:43"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    },
+    {
+      "key": "187176497301:63",
+      "san": "Bxe6",
+      "current": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "snapshot_ids": [
+          "187176497301:61",
+          "187176497301:62",
+          "187176497301:63"
+        ]
+      },
+      "eligibleQuiet": false,
+      "structuralUnknown": false,
+      "priors": [],
+      "suppress": false
+    }
+  ],
+  "needed_snapshot_ids": [],
+  "matched20": []
+}

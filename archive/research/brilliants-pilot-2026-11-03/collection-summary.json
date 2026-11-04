@@ -1,0 +1,380 @@
+{
+  "generated_at": "2026-11-03T00:32:28.456182+00:00",
+  "scope": "45-minute feasibility pilot; no rule tuning or application deployment",
+  "timing": {
+    "started_at": "2026-11-03T00:02:02+00:00",
+    "last_capture_at": "2026-11-03T00:29:55.221000+00:00",
+    "collection_elapsed_seconds": 1673.221,
+    "collection_elapsed_minutes": 27.887,
+    "summary_elapsed_seconds": 1826.456182,
+    "hard_deadline": "2026-11-03T00:47:02+00:00",
+    "cap_minutes": 45,
+    "collection_finished_before_cap": true
+  },
+  "actual_counts": {
+    "games": 19,
+    "derived_positions": 1924,
+    "unique_observed_moves": 40,
+    "observations": 60,
+    "gallery_positive_observations": 20,
+    "fresh_review_observations": 40,
+    "fresh_brilliant": 19,
+    "fresh_non_brilliant": 21,
+    "preselected_control_moves": 20,
+    "preselected_controls_confirmed_non_brilliant": 20,
+    "gallery_target_fresh_non_brilliant": 1
+  },
+  "downloads": {
+    "initiated_public_requests": 9,
+    "monthly_pgn_requests": 6,
+    "archive_list_requests": 3,
+    "body_bytes_total": 7049852,
+    "monthly_pgn_body_bytes": 7024763,
+    "archive_list_body_bytes": 25089,
+    "redirect_or_transport_retry_requests_not_measured": true,
+    "sequential_requests": true,
+    "cookie_or_auth_headers_published": false,
+    "local_raw_metadata_records_with_sensitive_headers": 9
+  },
+  "metadata_completeness": {
+    "fresh_coach_present": 33,
+    "fresh_coach_missing": 7,
+    "fresh_displayed_evaluation_missing": 0,
+    "gallery_category_memberships_observed": 20,
+    "category_nonmembership_unverified": true,
+    "full_review_settings_not_captured": true,
+    "absolute_ply_verified_against_gallery_boards": 20
+  },
+  "throughput_at_collection_finish": {
+    "unique_moves_per_minute": 1.434,
+    "observations_per_minute": 2.152,
+    "note": "Includes preparation and archive acquisition; not a guaranteed scaling rate."
+  },
+  "negative_taxonomy": {
+    "basis": "Descriptive only: legal PGN capture/recapture/terminal facts and explicit observed coach text. Tags overlap; this is not a balanced category sample, independent sacrifice evaluation, or proof of safe winning alternatives.",
+    "counts": {
+      "capture": 16,
+      "captures_queen": 3,
+      "captures_pawn": 8,
+      "immediate_same_square_recapture": 3,
+      "coach_identifies_mating_continuation": 1,
+      "captures_rook": 2,
+      "quiet_move": 5,
+      "quiet_mistake_or_blunder": 4,
+      "coach_identifies_free_pawn": 2,
+      "captures_knight": 1,
+      "coach_identifies_rook_giveaway": 1,
+      "captures_bishop": 2,
+      "terminal_checkmate": 1
+    },
+    "examples": [
+      {
+        "game_id": "186059865466",
+        "ply": 29,
+        "account": "KNVB",
+        "san": "Nxd7",
+        "fresh_label": "best",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_queen"
+        ]
+      },
+      {
+        "game_id": "186066219416",
+        "ply": 80,
+        "account": "KNVB",
+        "san": "bxc5",
+        "fresh_label": "excellent",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_pawn"
+        ]
+      },
+      {
+        "game_id": "186066679548",
+        "ply": 97,
+        "account": "KNVB",
+        "san": "axb6",
+        "fresh_label": "best",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_pawn"
+        ]
+      },
+      {
+        "game_id": "186059216760",
+        "ply": 49,
+        "account": "KNVB",
+        "san": "Qxg7+",
+        "fresh_label": "excellent",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_queen"
+        ]
+      },
+      {
+        "game_id": "186405804254",
+        "ply": 53,
+        "account": "nelsi",
+        "san": "Rxd6",
+        "fresh_label": "best",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_queen",
+          "immediate_same_square_recapture"
+        ]
+      },
+      {
+        "game_id": "186423523498",
+        "ply": 47,
+        "account": "nelsi",
+        "san": "Rxa6",
+        "fresh_label": "best",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_pawn"
+        ]
+      },
+      {
+        "game_id": "186405804254",
+        "ply": 13,
+        "account": "nelsi",
+        "san": "Qxg7",
+        "fresh_label": "best",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_pawn"
+        ]
+      },
+      {
+        "game_id": "186409700648",
+        "ply": 76,
+        "account": "nelsi",
+        "san": "Rxf2+",
+        "fresh_label": "best",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_pawn",
+          "coach_identifies_mating_continuation"
+        ]
+      },
+      {
+        "game_id": "184403311373",
+        "ply": 59,
+        "account": "hansen",
+        "san": "Qxe4",
+        "fresh_label": "best",
+        "role": "gallery_target_disagreement",
+        "tags": [
+          "capture",
+          "captures_rook"
+        ]
+      },
+      {
+        "game_id": "184403311373",
+        "ply": 45,
+        "account": "hansen",
+        "san": "Rad1",
+        "fresh_label": "?",
+        "role": "preselected_control",
+        "tags": [
+          "quiet_move",
+          "quiet_mistake_or_blunder"
+        ]
+      },
+      {
+        "game_id": "184407510567",
+        "ply": 32,
+        "account": "hansen",
+        "san": "Rxc4",
+        "fresh_label": "best",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_pawn",
+          "coach_identifies_free_pawn"
+        ]
+      },
+      {
+        "game_id": "184408711263",
+        "ply": 72,
+        "account": "hansen",
+        "san": "Rxf6",
+        "fresh_label": "?",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_knight",
+          "coach_identifies_rook_giveaway"
+        ]
+      },
+      {
+        "game_id": "183990510823",
+        "ply": 53,
+        "account": "hansen",
+        "san": "Qxb5",
+        "fresh_label": "best",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_pawn",
+          "coach_identifies_free_pawn"
+        ]
+      },
+      {
+        "game_id": "186305620178",
+        "ply": 17,
+        "account": "GothamChess",
+        "san": "Nc3",
+        "fresh_label": "?",
+        "role": "preselected_control",
+        "tags": [
+          "quiet_move",
+          "quiet_mistake_or_blunder"
+        ]
+      },
+      {
+        "game_id": "186336144138",
+        "ply": 12,
+        "account": "GothamChess",
+        "san": "cxd5",
+        "fresh_label": "best",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_pawn"
+        ]
+      },
+      {
+        "game_id": "186383126550",
+        "ply": 3,
+        "account": "GothamChess",
+        "san": "Na3",
+        "fresh_label": "?",
+        "role": "preselected_control",
+        "tags": [
+          "quiet_move",
+          "quiet_mistake_or_blunder"
+        ]
+      },
+      {
+        "game_id": "186305472636",
+        "ply": 20,
+        "account": "GothamChess",
+        "san": "Nxe7",
+        "fresh_label": "best",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_bishop",
+          "immediate_same_square_recapture"
+        ]
+      },
+      {
+        "game_id": "187780087431",
+        "ply": 24,
+        "account": "Hikaru",
+        "san": "f6",
+        "fresh_label": "??",
+        "role": "preselected_control",
+        "tags": [
+          "quiet_move",
+          "quiet_mistake_or_blunder"
+        ]
+      },
+      {
+        "game_id": "187784887471",
+        "ply": 113,
+        "account": "Hikaru",
+        "san": "Kxa2",
+        "fresh_label": "best",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_rook"
+        ]
+      },
+      {
+        "game_id": "186298545248",
+        "ply": 29,
+        "account": "Hikaru",
+        "san": "Qxf5",
+        "fresh_label": "best",
+        "role": "preselected_control",
+        "tags": [
+          "capture",
+          "captures_bishop",
+          "immediate_same_square_recapture"
+        ]
+      },
+      {
+        "game_id": "187784287701",
+        "ply": 65,
+        "account": "Hikaru",
+        "san": "Rg7#",
+        "fresh_label": "best",
+        "role": "preselected_control",
+        "tags": [
+          "quiet_move",
+          "terminal_checkmate"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "games": 19,
+    "positions": 1924,
+    "observations": 60,
+    "indexing_mismatches": [],
+    "gallery_board_placements_checked": 20,
+    "source_move_indices_checked": 60,
+    "observations_waiting_for_pgn": [],
+    "gallery_fresh_disagreements": [
+      {
+        "game_id": "184403311373",
+        "ply": 59,
+        "statuses": "gallery_brilliant,fresh_confirmed_non_brilliant"
+      }
+    ],
+    "label_counts": [
+      {
+        "label_status": "fresh_confirmed_brilliant",
+        "n": 19
+      },
+      {
+        "label_status": "fresh_confirmed_non_brilliant",
+        "n": 21
+      },
+      {
+        "label_status": "gallery_brilliant",
+        "n": 20
+      }
+    ],
+    "split_counts": [
+      {
+        "split": "development",
+        "n": 12
+      },
+      {
+        "split": "game_holdout",
+        "n": 3
+      },
+      {
+        "split": "player_holdout",
+        "n": 4
+      }
+    ]
+  },
+  "cost": {
+    "model_token_usage": "Not exposed to this study script; no token or currency estimate invented.",
+    "network_transfer": "Recorded response-body bytes; HTTP/TLS overhead not measured."
+  }
+}

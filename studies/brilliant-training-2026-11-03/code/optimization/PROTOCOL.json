@@ -1,0 +1,48 @@
+{
+  "created_at_utc": "2026-11-03T21:56:15.218355+00:00",
+  "scope": "Separate one-run training-only optimization; original model and first expanded results preserved; no654seenassessment reads or selection; no app changes",
+  "input_path": "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json",
+  "input_sha256": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+  "kernel_sha256": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f",
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "final_selection_folds": 5,
+  "costs": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "cutoffs": [
+    0.5,
+    0.6,
+    0.7,
+    0.75,
+    0.8,
+    0.8333333333333334,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "trees": 64,
+  "depth": 6,
+  "minimum_distinct_moves_per_leaf": 8,
+  "features_per_split": 12,
+  "predictors": 150,
+  "seed": 20261103,
+  "grouping": "Existing whole-game/identical-before union components; both windows linked; deterministic salted SHA256 group sort then round-robin folds; common bootstrap RNG across costs",
+  "selection": "MaxTP with FP<=min(referenceFP,floor(.005*N_non_easy_negatives)),TP>=referenceTP,TP>0. Ties fewerFP/highercutoff/highercost. If none feasible select cost5/cutoff5/6 reference and explicit no qualifying improvement.",
+  "reference": "Cost5/cutoff5/6 retrained on same folds, no deployed-model training leakage",
+  "guards": "Both-window eligibility+confidence+physicalUnknown abstention for all forest predictions. Easy-error negatives separate; legacy_mixed treated as hard.",
+  "final_selection": "Independent fixed5fold OOF on all frozen training only; not chosen using outer results. Fullfit once at selectedcost, separate threshold config.",
+  "limits": {
+    "wall_seconds": 300,
+    "cpu_seconds": 300,
+    "rss_bytes": 536870912,
+    "memory_pressure_required": 1,
+    "processes": 1,
+    "no_partial_winner": true,
+    "no_automatic_retry": true
+  },
+  "start": "Root GO hashes input/script/protocol; browser tabs closed; no active stockfish; no fit before GO"
+}

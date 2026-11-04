@@ -1,0 +1,44 @@
+{
+  "scope": "Original public full-game/review PGNs, explicit labels, and factual UI evidence. No unannotated move is a negative. Raw source evidence is preserved in the local study.",
+  "created_at_utc": "2026-11-03T21:37:05.132929+00:00",
+  "games": 422,
+  "labeled_moves": 10456,
+  "observations": 12709,
+  "source_accounts": [
+    {
+      "source_account": "GothamChess",
+      "games": 74
+    },
+    {
+      "source_account": "Hikaru",
+      "games": 90
+    },
+    {
+      "source_account": "KNVB",
+      "games": 90
+    },
+    {
+      "source_account": "hansen",
+      "games": 97
+    },
+    {
+      "source_account": "nelsi",
+      "games": 71
+    }
+  ],
+  "source_database_sha256": "e05eee752319e135e549065861f4da33fed58cb745b69a9979b8e13b05b3ed6c",
+  "files": {
+    "games.jsonl.gz": {
+      "sha256": "48816451275fd8964316d8f693e95d1b71d7f1a45ffc3c6ff106dbb886a90a18",
+      "bytes": 488533
+    },
+    "labels.csv.gz": {
+      "sha256": "a3cf4f7df7ee01169697074d2c5cf9b44cbbb707b97658d54d667fabe0ed44c9",
+      "bytes": 848862
+    },
+    "evidence.jsonl.gz": {
+      "sha256": "bd78e0969dfd0a533895336f36867f744a0af5f60bef2c02acbd3b7768c35748",
+      "bytes": 335513
+    }
+  }
+}

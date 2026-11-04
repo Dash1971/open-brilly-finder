@@ -1,0 +1,43 @@
+WintrChess frozen adapter — 2026-11-04
+
+Pinned upstream: WintrCat/wintrchess-lib
+Commit: 0a63a69a544105e218b11f7459815bf195707776
+Package: wintrchess 1.2.11, AGPL-3.0-only.
+
+This study-specific wrapper invokes the actual upstream classify() function. It does not translate or modify the policy. The source checkout must have the exact commit and no tracked edits. esbuild 0.28.2 bundles the source entrypoints with all classification functions, opening map, legal board routines, and the upstream classification fixtures. No upstream dependencies that perform engine or network work are invoked by classify().
+
+Runtime: /private/tmp/node-v24.22.1-darwin-arm64/bin/node
+Temporary upstream checkout: /private/tmp/mute-brilliant-repo-review/wintrchess-lib
+Temporary dependencies/bundle: /private/tmp/mute-brilliant-repo-review/wintr-runtime
+Builder: /private/tmp/mute-bot-activity-source/lila-adapter/node_modules/esbuild/lib/main.js
+Dependencies match upstream pnpm-lock versions: chessops 0.15.0; es-toolkit 1.45.1; @badrap/result 0.3.1. These minimal packages were obtained from npm registry release archives, without package lifecycle scripts. The normal npm executable in the preexisting Node bundle was incomplete, so no npm installation succeeded or altered the checkout. Dependency source and bundle hashes are included in the execution receipt.
+
+Input JSONL: one row per saved move, with key, fen_before, fen_after, uci, and windows.current/windows.previous. Each window supplies before/after/prior snapshots {depth,lines:[{cp,mate,moves:[uci...]}]}; prior may be null. Optional per-line depth and index/multipv are accepted. Scores are White POV, as required by upstream. The original snapshots' order supplies index when no explicit rank exists. Every PV move and selected move is legally replayed, contextualized with upstream code, and the after board is checked against the saved FEN. No original Mute gates are applied.
+
+The opponent's preceding win-probability loss is calculated from prior and before top scores using upstream getWinPercentLoss() with the opponent perspective. If unavailable, upstream permits it to be omitted. A missing prior only makes the binary result unknown if its Miss gate could override an otherwise Brilliant output: the current win-probability loss is at least 0.07. Non-Brilliant remains a known negative for the Brilliant task even if its exact non-Brilliant category could change with prior data. prior_missing records this limitation. No labels, groups, baseline awards, or fitted thresholds are read by the adapter.
+
+All source defaults and ordering are retained, including:
+- bundled opening-board lookup (no external opening search needed);
+- forced classification checks the AFTER-position legal move count;
+- original Miss, quality, importance, hanging, danger-level, trapped and critical rules;
+- source's independently selected top/second-top engine line logic and default thresholds;
+- no added minimum depth, Mute quality guard, or replacement mate handling.
+These choices reproduce the library even where its source behavior may be restrictive or surprising.
+
+The source requires a first PV move before and after. Terminal after positions with empty PV, absent snapshots/scores/depth, illegal supplied PVs, or other input failures are explicitly unavailable rather than fabricated ordinary classifications. Upstream computations are captured in per-window diagnostics.
+
+Main comparable award combines windows without tuning: false if either known window rejects; true if both award Brilliant; null otherwise. Per-window raw results are retained separately, so the extra conjunction is transparent. The group allocation belongs to parent analysis; this classifier has no training or threshold selection.
+
+Verification completed before any full labeled-data run:
+- all 16 upstream classification fixtures match expected categories;
+- all 16 fixtures match after conversion to raw UCI lines and back;
+- all 16 pass through the actual study wrapper and match upstream when prior is omitted;
+- White-versus-Black score sign behavior checked.
+Self-test receipt: /private/tmp/mute-brilliant-repo-review/wintr-runtime/self-test.json
+Bundled source SHA256: f3f330c01cc934f612595131a92403ef74af54a10cc89408550a3ee0df9ee8fc
+
+Commands:
+node wintr-adapter.mjs --self-test receipt.json
+node wintr-adapter.mjs --run INPUTS.jsonl WINTR-PREDICTIONS.jsonl
+
+The run refuses to overwrite an existing output. It checks a 300-second execution cap between cases, writes per-case results once, and writes an output receipt with input/output/adapter/bundle/source hashes only on completion. No engine queries, fitting, threshold sweep, retries, or deployment are included. Runtime for all fixtures including wrapper and bundle build was under one second; 300 seconds is the prespecified full-run cap, not a promise of completion.

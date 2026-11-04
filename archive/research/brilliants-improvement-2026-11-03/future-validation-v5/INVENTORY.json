@@ -1,0 +1,455 @@
+{
+  "status": "STOPPED_AT_INVENTORY_CACHED_SOURCE_INSUFFICIENT",
+  "created_at_utc": "2026-11-03T09:48:19.681525+00:00",
+  "goal": "100futureBrilliant+100explicitnon,20/account/class; no currentlabels collected or assumed.",
+  "exclusions": {
+    "current439": 439,
+    "prior325": 325,
+    "all_known_review_game_union": 465,
+    "known_canonical_positions": 38214
+  },
+  "accounts": {
+    "nelsi": {
+      "validated_eligible_moves": 17,
+      "validated_eligible_unique_games": 17,
+      "categories": {
+        "Queen Sacrifice": {
+          "moves": 0,
+          "unique_games": 0
+        },
+        "Rook Sacrifice": {
+          "moves": 0,
+          "unique_games": 0
+        },
+        "Bishop Sacrifice": {
+          "moves": 0,
+          "unique_games": 0
+        },
+        "Knight Sacrifice": {
+          "moves": 0,
+          "unique_games": 0
+        },
+        "All Types": {
+          "moves": 17,
+          "unique_games": 17
+        }
+      },
+      "draft_target_games": 17,
+      "target_shortfall_to20": 3,
+      "draft_reserve_games": 0,
+      "targets_with_primary_control": 17,
+      "targets_with_three_control_reserves": 17,
+      "pending_game_position_cards": [],
+      "pending_unique_games": 0,
+      "all_unexcluded_cached_card_unique_games_upper_bound": 17,
+      "rejected": []
+    },
+    "hansen": {
+      "validated_eligible_moves": 10,
+      "validated_eligible_unique_games": 10,
+      "categories": {
+        "Queen Sacrifice": {
+          "moves": 0,
+          "unique_games": 0
+        },
+        "Rook Sacrifice": {
+          "moves": 0,
+          "unique_games": 0
+        },
+        "Bishop Sacrifice": {
+          "moves": 2,
+          "unique_games": 2
+        },
+        "Knight Sacrifice": {
+          "moves": 8,
+          "unique_games": 8
+        },
+        "All Types": {
+          "moves": 0,
+          "unique_games": 0
+        }
+      },
+      "draft_target_games": 10,
+      "target_shortfall_to20": 10,
+      "draft_reserve_games": 0,
+      "targets_with_primary_control": 10,
+      "targets_with_three_control_reserves": 10,
+      "pending_game_position_cards": [
+        {
+          "game_id": "167741909692",
+          "ply": 59,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/hansen-gallery-candidates.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "167742086130",
+          "ply": 58,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/hansen-gallery-candidates.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "167744883950",
+          "ply": 83,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/hansen-gallery-candidates.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        }
+      ],
+      "pending_unique_games": 3,
+      "all_unexcluded_cached_card_unique_games_upper_bound": 13,
+      "rejected": []
+    },
+    "KNVB": {
+      "validated_eligible_moves": 53,
+      "validated_eligible_unique_games": 50,
+      "categories": {
+        "Queen Sacrifice": {
+          "moves": 4,
+          "unique_games": 4
+        },
+        "Rook Sacrifice": {
+          "moves": 14,
+          "unique_games": 14
+        },
+        "Bishop Sacrifice": {
+          "moves": 20,
+          "unique_games": 19
+        },
+        "Knight Sacrifice": {
+          "moves": 15,
+          "unique_games": 15
+        },
+        "All Types": {
+          "moves": 0,
+          "unique_games": 0
+        }
+      },
+      "draft_target_games": 20,
+      "target_shortfall_to20": 0,
+      "draft_reserve_games": 28,
+      "targets_with_primary_control": 18,
+      "targets_with_three_control_reserves": 18,
+      "pending_game_position_cards": [
+        {
+          "game_id": "172951964820",
+          "ply": 38,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/knvb-gallery-queen-sacrifice.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173201596136",
+          "ply": 54,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/knvb-gallery-queen-sacrifice.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173321309412",
+          "ply": 32,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/knvb-gallery-queen-sacrifice.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173327247048",
+          "ply": 72,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/knvb-gallery-queen-sacrifice.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        }
+      ],
+      "pending_unique_games": 4,
+      "all_unexcluded_cached_card_unique_games_upper_bound": 55,
+      "rejected": [
+        {
+          "game_id": "185391161422",
+          "ply": 27,
+          "reason": "reviewed_development_before_or_after_position_overlap"
+        }
+      ]
+    },
+    "GothamChess": {
+      "validated_eligible_moves": 7,
+      "validated_eligible_unique_games": 7,
+      "categories": {
+        "Queen Sacrifice": {
+          "moves": 0,
+          "unique_games": 0
+        },
+        "Rook Sacrifice": {
+          "moves": 2,
+          "unique_games": 2
+        },
+        "Bishop Sacrifice": {
+          "moves": 0,
+          "unique_games": 0
+        },
+        "Knight Sacrifice": {
+          "moves": 5,
+          "unique_games": 5
+        },
+        "All Types": {
+          "moves": 0,
+          "unique_games": 0
+        }
+      },
+      "draft_target_games": 7,
+      "target_shortfall_to20": 13,
+      "draft_reserve_games": 0,
+      "targets_with_primary_control": 7,
+      "targets_with_three_control_reserves": 7,
+      "pending_game_position_cards": [
+        {
+          "game_id": "172399290714",
+          "ply": 60,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "172450756938",
+          "ply": 70,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "172455502166",
+          "ply": 64,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173235710516",
+          "ply": 21,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173414561738",
+          "ply": 43,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173434013720",
+          "ply": 56,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173476659474",
+          "ply": 26,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173476659474",
+          "ply": 36,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173487325950",
+          "ply": 52,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173664541242",
+          "ply": 44,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173756570216",
+          "ply": 57,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173807912828",
+          "ply": 45,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        }
+      ],
+      "pending_unique_games": 11,
+      "all_unexcluded_cached_card_unique_games_upper_bound": 18,
+      "rejected": []
+    },
+    "Hikaru": {
+      "validated_eligible_moves": 21,
+      "validated_eligible_unique_games": 19,
+      "categories": {
+        "Queen Sacrifice": {
+          "moves": 0,
+          "unique_games": 0
+        },
+        "Rook Sacrifice": {
+          "moves": 0,
+          "unique_games": 0
+        },
+        "Bishop Sacrifice": {
+          "moves": 0,
+          "unique_games": 0
+        },
+        "Knight Sacrifice": {
+          "moves": 0,
+          "unique_games": 0
+        },
+        "All Types": {
+          "moves": 21,
+          "unique_games": 19
+        }
+      },
+      "draft_target_games": 19,
+      "target_shortfall_to20": 1,
+      "draft_reserve_games": 0,
+      "targets_with_primary_control": 19,
+      "targets_with_three_control_reserves": 19,
+      "pending_game_position_cards": [
+        {
+          "game_id": "173659942236",
+          "ply": 81,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/hikaru-gallery-candidates.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173719918770",
+          "ply": 71,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/hikaru-gallery-candidates.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173730924436",
+          "ply": 42,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/hikaru-gallery-candidates.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "173765478164",
+          "ply": 59,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/hikaru-gallery-candidates.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "182334502199",
+          "ply": 57,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/hikaru-gallery-candidates.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "182335102231",
+          "ply": 32,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/hikaru-gallery-candidates.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "182335701261",
+          "ply": 21,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/hikaru-gallery-candidates.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "182336902375",
+          "ply": 15,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/hikaru-gallery-candidates.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        },
+        {
+          "game_id": "182337501797",
+          "ply": 48,
+          "reason": "No validated game/position in existing SQLite caches; monthlyarchives not rescanned because card-count ceiling is already insufficient.",
+          "sources": [
+            "research/brilliants-600-2026-11-03/evidence/hikaru-gallery-candidates.json",
+            "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+          ]
+        }
+      ],
+      "pending_unique_games": 9,
+      "all_unexcluded_cached_card_unique_games_upper_bound": 28,
+      "rejected": []
+    }
+  },
+  "total_draft_positive_targets": 73,
+  "total_target_shortfall_to100": 27,
+  "no_new_services_downloads_browser_engine_or_database_framework": true,
+  "monthly_archives_not_rescanned": "No candidate-card source can be conjured from PGNs; at least one account is below20 even under unvalidated-card upper bound. Per instruction, stop inventory without expanded preparation.",
+  "no_control_or_target_is_a_confirmed_new_label": true
+}

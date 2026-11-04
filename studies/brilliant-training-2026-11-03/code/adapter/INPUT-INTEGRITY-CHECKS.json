@@ -1,0 +1,25 @@
+{
+  "created_at_utc": "2026-11-03T16:44:36.025475+00:00",
+  "scope": "Exact bounded input-integrity fixes; no engines, fitting, reserved inputs, or scoring",
+  "checks": [
+    "embedded valid",
+    "missing embedded game rejected",
+    "duplicate embedded game rejected",
+    "prepare-training.py valid",
+    "prepare-training.py missing",
+    "prepare-training.py duplicate",
+    "evaluate-reserved.py valid",
+    "evaluate-reserved.py missing",
+    "evaluate-reserved.py duplicate",
+    "collector duplicate features rejected",
+    "alias and quarantine games excluded"
+  ],
+  "passed": true,
+  "script_sha256": {
+    "prepare-training.py": "b316124a508927c6eb0738d05c0e0fef5c99c8c142b70886d78ab3b8cc2da8f6",
+    "fit-one.py": "ddc97aeb7eb4525b9e5674e1ea4d3e86e880885841d3ed13ee4c26c12a000be4",
+    "run-assessment-batch.py": "1a302ea342845140a1e95de1089a5eb22d3fd205369de0a7086a8dc392d7c5db",
+    "evaluate-reserved.py": "8b58d096e1614a0797cf892dd436fea2e0a1af0c8c471b449129504252ed430a"
+  },
+  "live_training_runner_modified": false
+}

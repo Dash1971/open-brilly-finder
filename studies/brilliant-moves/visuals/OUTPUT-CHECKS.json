@@ -1,0 +1,40 @@
+{
+  "scope": "Native board illustrations only; benchmark data, results, source freeze, policy code and statistical charts unchanged.",
+  "preexisting_files_changed": [
+    "METHODS.md",
+    "PUBLICATION-MANIFEST.json",
+    "REPORT.md"
+  ],
+  "preexisting_files_unchanged": 62,
+  "all_statistical_and_classifier_input_hashes_unchanged": true,
+  "local_markdown_targets_exist": true,
+  "native_piece_source_hashes_match": true,
+  "native_moss_board_source_hash_matches": true,
+  "no_executables_archives_local_paths_symlinks_or_raster_caches": true,
+  "cases": [
+    {
+      "id": "quiet-offer-bg2",
+      "legal_plies": 3,
+      "final_fen": "k3r3/1pq2p1p/p2r4/2b1n3/3N3Q/2P1B1P1/P4PBP/1R4K1 b - - 0 28",
+      "gif_frames": 25,
+      "native_flat_colors_exact": true,
+      "final_gif_png_mean_channel_error": 0.0914
+    },
+    {
+      "id": "pawn-win-excellent",
+      "legal_plies": 5,
+      "final_fen": "r5k1/pp2ppbp/1q4p1/4P3/6b1/P2r4/1P4PP/RNB1QR1K w - - 0 17",
+      "gif_frames": 41,
+      "native_flat_colors_exact": true,
+      "final_gif_png_mean_channel_error": 0.0969
+    },
+    {
+      "id": "pawn-win-brilliant",
+      "legal_plies": 5,
+      "final_fen": "r2qk2r/p2n1ppp/1p1p4/2pPp1b1/4P3/3B1P2/PP2N1PP/R2QK2R w KQkq - 0 12",
+      "gif_frames": 41,
+      "native_flat_colors_exact": true,
+      "final_gif_png_mean_channel_error": 0.1011
+    }
+  ]
+}

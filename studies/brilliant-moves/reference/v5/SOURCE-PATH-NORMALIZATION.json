@@ -1,0 +1,225 @@
+{
+  "scope": "Only path/dependency resolution changes; original model, numeric code, guards and proofcaps unchanged. Original frozen hashes map to published bytes below.",
+  "files": [
+    {
+      "source": "research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/extractor.py",
+      "destination": "studies/brilliant-moves/reference/v5/astra/v5/fresh-extractor/extractor.py",
+      "source_sha256": "3a37512d8faa97250d2408c01463f515cb6737568d4620b2faa69b267c85b6c4",
+      "published_sha256": "38dc1a9a5a483bb06390c5516275380719585274f8c71aba39377c36da70a4da",
+      "path_only_adaptations": [
+        {
+          "from": "import io,json,math,subprocess,sys",
+          "to": "import io,json,math,subprocess,sys,os,shutil"
+        },
+        {
+          "from": "NODE='<temporary-dependencies>/node'",
+          "to": "NODE=os.environ.get('MUTE_RESEARCH_NODE') or shutil.which('node') or 'node'"
+        },
+        {
+          "from": "LOADER=IMPROVE/'root/frozen-v4/node_modules/tsx/dist/loader.mjs'",
+          "to": "LOADER=Path(os.environ.get('MUTE_RESEARCH_TSX_LOADER',str(IMPROVE/'node_modules/tsx/dist/loader.mjs')))"
+        }
+      ],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/feature_kernel.py",
+      "destination": "studies/brilliant-moves/reference/v5/astra/v5/fresh-extractor/feature_kernel.py",
+      "source_sha256": "8d77d2f482b57f492a4f307c447df1b96befb74e81a0accb7d5f33a886446d14",
+      "published_sha256": "50f17ac91637990ac2e2c0e9b1d5da901096a98ffc1fc74bfc5bb4e6b02f9835",
+      "path_only_adaptations": [
+        {
+          "from": "sys.path[:0]=['<temporary-dependencies>/python-chess','<temporary-dependencies>/plotting']\n",
+          "to": ""
+        }
+      ],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/avoidability_kernel.py",
+      "destination": "studies/brilliant-moves/reference/v5/astra/v5/fresh-extractor/avoidability_kernel.py",
+      "source_sha256": "d5b4101f989e26c8d1e958fbcf6049b0ea750217cdd9d3f171af12bbd4aa726e",
+      "published_sha256": "aea6e1b256ad096a515d08d041e3c4d18f027b09b15717dd06c04d122aea90fc",
+      "path_only_adaptations": [
+        {
+          "from": "sys.path.insert(0,'<temporary-dependencies>/python-chess')\n",
+          "to": ""
+        }
+      ],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/context.mts",
+      "destination": "studies/brilliant-moves/reference/v5/astra/v5/fresh-extractor/context.mts",
+      "source_sha256": "fb3dfb6cb4da23d39fe1acbe7a12d77d6861a6b2357a53f9bb420dcb043e050a",
+      "published_sha256": "fb3dfb6cb4da23d39fe1acbe7a12d77d6861a6b2357a53f9bb420dcb043e050a",
+      "path_only_adaptations": [],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/CONTRACT.md",
+      "destination": "studies/brilliant-moves/reference/v5/astra/v5/fresh-extractor/CONTRACT.md",
+      "source_sha256": "012e7b680a035c6f31f8dafe5389d62c3962e9d430f988a2226fbd0588d7178a",
+      "published_sha256": "012e7b680a035c6f31f8dafe5389d62c3962e9d430f988a2226fbd0588d7178a",
+      "path_only_adaptations": [],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/temporalProof.ts",
+      "destination": "studies/brilliant-moves/reference/v5/astra/v5/sequence-reference/temporalProof.ts",
+      "source_sha256": "16faa288afc2e18716cdc7135efa8275712cd3b12624e4f696f33f25f6b3fe29",
+      "published_sha256": "16faa288afc2e18716cdc7135efa8275712cd3b12624e4f696f33f25f6b3fe29",
+      "path_only_adaptations": [],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/PROSPECTIVE-CONTRACT.md",
+      "destination": "studies/brilliant-moves/reference/v5/astra/v5/sequence-reference/PROSPECTIVE-CONTRACT.md",
+      "source_sha256": "25dfda60e95feb13bf3486bb12196fe40b37ed7d6f7df60f9903c8086130eaca",
+      "published_sha256": "25dfda60e95feb13bf3486bb12196fe40b37ed7d6f7df60f9903c8086130eaca",
+      "path_only_adaptations": [],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/astra/v5/variants/variantA.ts",
+      "destination": "studies/brilliant-moves/reference/v5/astra/v5/variants/variantA.ts",
+      "source_sha256": "bdc7b52881c7cfe26a3ad6d6483805a4e58a2e6ca1181e5b0e5dd2c3f382ce3b",
+      "published_sha256": "bdc7b52881c7cfe26a3ad6d6483805a4e58a2e6ca1181e5b0e5dd2c3f382ce3b",
+      "path_only_adaptations": [],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/astra/v5/variants/offerProofs.ts",
+      "destination": "studies/brilliant-moves/reference/v5/astra/v5/variants/offerProofs.ts",
+      "source_sha256": "d1d887daa2163e9ec79145414a4bfa8669af66ccabc62a98dcec8bb012a0ecaa",
+      "published_sha256": "d1d887daa2163e9ec79145414a4bfa8669af66ccabc62a98dcec8bb012a0ecaa",
+      "path_only_adaptations": [],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/root/frozen-v4/noSweatClassify.ts",
+      "destination": "studies/brilliant-moves/reference/v5/root/frozen-v4/noSweatClassify.ts",
+      "source_sha256": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301",
+      "published_sha256": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301",
+      "path_only_adaptations": [],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/root/frozen-v4/noSweatCore.ts",
+      "destination": "studies/brilliant-moves/reference/v5/root/frozen-v4/noSweatCore.ts",
+      "source_sha256": "3fa48e3c50e7361a244c0ebb58543315b6a5f208c0c0e1979ae18fca40366a40",
+      "published_sha256": "3fa48e3c50e7361a244c0ebb58543315b6a5f208c0c0e1979ae18fca40366a40",
+      "path_only_adaptations": [],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/root/frozen-v4/core.ts",
+      "destination": "studies/brilliant-moves/reference/v5/root/frozen-v4/core.ts",
+      "source_sha256": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a",
+      "published_sha256": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a",
+      "path_only_adaptations": [],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/learning-v5/physical_kernel.py",
+      "destination": "studies/brilliant-moves/reference/v5/learning-v5/physical_kernel.py",
+      "source_sha256": "ec877d176ff59972992ef29569a338c5ab39fa9fb03bb679503e0721a13d1918",
+      "published_sha256": "045e3085beff4f1ee4b7fb031834f2e49bb927d3b4d0ced4c0c97c130142844d",
+      "path_only_adaptations": [
+        {
+          "from": "WORKSPACE=Path(__file__).resolve().parents[3]",
+          "to": "WORKSPACE=Path(__file__).resolve().parents[1]"
+        },
+        {
+          "from": "WORKSPACE/'mute-chess-research/studies/brilliant-moves-2026-11-03/material-features.py'",
+          "to": "WORKSPACE/'physical-reference/material-features.py'"
+        },
+        {
+          "from": "sys.path.insert(0,'<temporary-dependencies>/python-chess')\n",
+          "to": ""
+        }
+      ],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/learning-v5/FEATURE-DEFINITIONS.json",
+      "destination": "studies/brilliant-moves/reference/v5/learning-v5/FEATURE-DEFINITIONS.json",
+      "source_sha256": "a72eb72a3447ff7e47f331dc87458bb4a378e7ec00031a0ed379f93d02088c69",
+      "published_sha256": "a72eb72a3447ff7e47f331dc87458bb4a378e7ec00031a0ed379f93d02088c69",
+      "path_only_adaptations": [],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/forest-full.json",
+      "destination": "studies/brilliant-moves/reference/v5/learning-v5/forest-diagnostic/forest-full.json",
+      "source_sha256": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+      "published_sha256": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+      "path_only_adaptations": [],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/PROTOCOL.json",
+      "destination": "studies/brilliant-moves/reference/v5/learning-v5/forest-diagnostic/PROTOCOL.json",
+      "source_sha256": "8073938391ac975e6957e5b98ea3aafb8c139c16cb2238cbbab21c32e1df82bd",
+      "published_sha256": "8073938391ac975e6957e5b98ea3aafb8c139c16cb2238cbbab21c32e1df82bd",
+      "path_only_adaptations": [],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/fit.py",
+      "destination": "studies/brilliant-moves/reference/v5/learning-v5/forest-diagnostic/fit.py",
+      "source_sha256": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f",
+      "published_sha256": "18e00738f3d1cd8a552e4754c5030fd8cda52dad323e3d9a7921d99e5a8ed2e7",
+      "path_only_adaptations": [
+        {
+          "from": "sys.path.insert(0,'<temporary-dependencies>/plotting')\n",
+          "to": ""
+        }
+      ],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/MODEL-AUDIT.json",
+      "destination": "studies/brilliant-moves/reference/v5/learning-v5/forest-diagnostic/MODEL-AUDIT.json",
+      "source_sha256": "5d7ecaf12a2abd7019b543bb10fbb2f77d2e909211c17b68a967696f6b14594a",
+      "published_sha256": "5d7ecaf12a2abd7019b543bb10fbb2f77d2e909211c17b68a967696f6b14594a",
+      "path_only_adaptations": [],
+      "algorithm_changes": false
+    },
+    {
+      "source": "mute-chess-research/studies/brilliant-moves-2026-11-03/material-features.py",
+      "source_sha256": "82c3b23efddadf69d8b68ea123abdec7fd2a7d2902080620ff785719aa61f9be",
+      "destination": "studies/brilliant-moves/reference/v5/physical-reference/material-features.py",
+      "published_sha256": "c8fe76abe12a4514397e7b7add2902edd7d55ca72f30cfca89edb205775d7995",
+      "path_only_adaptations": [
+        {
+          "from": "sys.path.insert(0, '<temporary-dependencies>/python-chess')",
+          "to": "Installed python-chess from active Python environment"
+        }
+      ],
+      "algorithm_changes": false,
+      "original_file_untouched": true
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/FREEZE.json",
+      "source_sha256": "29202a0df6cb45d9c64d81edda4e1ea411c5528775366d16d41701f30d9179a4",
+      "destination": "studies/brilliant-moves/reference/v5/astra/v5/fresh-extractor/FREEZE.json",
+      "published_sha256": "8f87b341a097d22c1e9af2e2c84ea58d9fb43dfd797fd9265b26c7feff678bf6",
+      "path_only_adaptations": [
+        "Workspace prefix removed from provenance strings; original hashes retained and mapped here."
+      ],
+      "algorithm_changes": false
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/source-freeze-castling-addendum.json",
+      "source_sha256": "3d6f12ac32686b9ef3e07ef940dad51d4216163160c7309830b6b51a157d2df5",
+      "destination": "studies/brilliant-moves/reference/v5/astra/v5/sequence-reference/source-freeze-castling-addendum.json",
+      "published_sha256": "648965fc4737bd2ef84734f26e05bb1c7859fb5c5c9b0298d5163043cbdeafa1",
+      "path_only_adaptations": [
+        "Workspace prefix removed from provenance strings; original hashes retained and mapped here."
+      ],
+      "algorithm_changes": false
+    }
+  ],
+  "mapping_literal_note": "Machine-specific path literals are represented symbolically; original and published file SHA-256 values remain unchanged. Source algorithm bytes and normalization behavior are not changed by this display-only mapping redaction."
+}

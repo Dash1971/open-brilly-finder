@@ -1,0 +1,65 @@
+{
+  "at_utc": "2026-11-03T09:38:09.164Z",
+  "input_names": [
+    "tokens",
+    "elo_self",
+    "elo_oppo"
+  ],
+  "output_names": [
+    "logits_move",
+    "logits_value"
+  ],
+  "input_metadata": [
+    {
+      "name": "tokens",
+      "isTensor": true,
+      "type": "float32",
+      "shape": [
+        "unk__0",
+        64,
+        12
+      ]
+    },
+    {
+      "name": "elo_self",
+      "isTensor": true,
+      "type": "float32",
+      "shape": [
+        "batch_size"
+      ]
+    },
+    {
+      "name": "elo_oppo",
+      "isTensor": true,
+      "type": "float32",
+      "shape": [
+        "batch_size"
+      ]
+    }
+  ],
+  "output_metadata": [
+    {
+      "name": "logits_move",
+      "isTensor": true,
+      "type": "float32",
+      "shape": [
+        "batch_size",
+        4352
+      ]
+    },
+    {
+      "name": "logits_value",
+      "isTensor": true,
+      "type": "float32",
+      "shape": [
+        "batch_size",
+        3
+      ]
+    }
+  ],
+  "runtime_version": "1.30.0",
+  "wasm_numThreads": 1,
+  "network_disabled": true,
+  "resident_bytes": 490405888,
+  "peak_rss_kib": 478912
+}

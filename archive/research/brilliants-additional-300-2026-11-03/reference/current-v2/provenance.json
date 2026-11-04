@@ -1,0 +1,33 @@
+{
+  "repository": "https://github.com/Dash1971/mute-chess",
+  "commit": "b3585f2c5b818bb8dfabb7fc4e3ed37cab848c12",
+  "patch_git_blob": "addef7a02c1e6807e72910dcffca5cfaf7f4c5aa",
+  "patch_sha256": "b53a1783c8c18e38af80ed467b013699b18f68a155e37a0b841f94b7d4ccb306",
+  "policy": "mute-chess-brilliant-v2",
+  "files": [
+    {
+      "native_path": "ui/analyse/src/noSweatClassify.ts",
+      "local_file": "noSweatClassify.ts",
+      "sha256": "43d249f76465b1d0966e486a2877a0887d8d1ed629f9e4aafaca67e3ce020234",
+      "git_blob": "dd1b0bf68705c75702298cd108e414a44bc6be35"
+    },
+    {
+      "native_path": "ui/lib/src/nosweat/core.ts",
+      "local_file": "core.ts",
+      "sha256": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a",
+      "git_blob": "4b6b4bef2fd6443223f1d45e820b80080fb9da2a"
+    }
+  ],
+  "adaptation": "Only noSweatCore import-path shim; copied rule and core bodies unmodified. Existing installed native node_modules reused by symlink, no new package framework. A private type:module package marker selects ESM for source replay; no dependencies/scripts/package framework are added.",
+  "license": "GPL-3.0 for En Croissant-derived classifier; preserve existing attribution/source provenance.",
+  "independent_ec_oracle": {
+    "file": "../ec-score.ts",
+    "sha256": "3a623bc787e7d84e1026904cc94e05984d77766593403bc4dc5bf63f600e5e1b",
+    "upstream_repository": "https://github.com/franciscoBSalgueiro/en-croissant",
+    "upstream_commit": "6f2d2628f0fbe11cb62a7dd2f9c102bb52907d53",
+    "upstream_path": "src/utils/score.ts",
+    "local_reference_source_pin": "Mobile Maia preview 8563954429c2fb53ce0fe0e16c73c5d8a73ccfe0 tool/hardening/classification/reference/score.ts",
+    "adaptation": "Existing pinned standalone oracle copied without edits; formatting/import-free adaptation is documented in its header."
+  },
+  "runtime_setup": "Node24+tsx and chessops0.15.1. Replace current-v2/node_modules symlink with any compatible existing dependency directory. No application source checkout is required by these copied rule/core modules."
+}

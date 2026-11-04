@@ -1,0 +1,27 @@
+{
+  "frozen_at_utc": "2026-11-04T05:37:25.348385+00:00",
+  "extract_script_sha256": "8568a57a5ad4e3c248818bcafdedc04a3c5c82189c6c5d1a8d28e36a57e92e6e",
+  "input_sha256": {
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-conditional-gap-2026-11-04/ENGINE-EVIDENCE.jsonl": "d81a5cb5cc2883bd28291286763a4a4762b69297b2b1d0cf3983ace248e74aee"
+  },
+  "chess_dependency_sha256": {
+    "/private/tmp/brilly-research-deps/chess/__init__.py": "1fde6a8e932508d14b31f6a584497b49c2969fc3c7cdc675347f819f0d667a5b"
+  },
+  "python_version": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "scope": "Study-local saved evidence extraction only. No new engine searches, model fits, or labels. Both-window eligible + confidence sufficient + physical known, expected 1302 of training3724. Only guard fields, identifiers and source FEN/move fields accessed.",
+  "caps": {
+    "seconds": 600,
+    "memory_bytes": 536870912
+  },
+  "definitions": {
+    "horizon": "First six RESPONSE plies after opponent acceptance; acceptance itself excluded. Entire saved PV nevertheless checked legal. Material measured against original before-played board with pawn90 knight300 bishop300 rook500 queen1000. Delta6 null if shorter even terminal.",
+    "coverage": "Every saved qualifying offer branch; both snapshot windows and every saved top-two response PV. No-offer roots explicit. Missing windows/roots unknown. Node-cap mapping unknown propagated, never zero. Count zero means no observed witness in saved scope, not absence of causal effect.",
+    "identity": "Stable IDs initialized to color and afterplayed square. Movement and promotion retain IDs; en passant removes captured pawn on true square; standard castling relocates rook ID. Exact acceptor ID may be captured after moving. Chess960 unhandled and asserts.",
+    "geometry": "All attacks and forks are geometric, including pinned attackers. Acceptance new slider enemy-nonpawn/king relation compared with actual afterplayed attack relation. Relation retained only if sole path blocker was acceptor origin and now empty, or target is acceptor newly occupying destination. Record previously attacked square and acceptor origin attack separately. No hypothetical turn flips.",
+    "immediate_reply": "Slider path occupancy comparison with afterplayed; sole between blocker must equal now empty acceptor origin. Destination occupancy records offered friendly victim replaced by enemy acceptor, including where ray already existed. Neither is proof of legal/forced counterfactual or exhaustive causal explanation.",
+    "fork_pin": "For each original-mover response inside six plies, moved piece attacking at least two enemy nonpawn/king targets immediately afterward. Exact acceptor ID marked. Absolute pin geometric slider-single-enemy-blocker-king relations newly appearing against immediately prior actual board. No claim forced win.",
+    "history": "Source training FENs contain no original move history. Full PV local legality and local checkmate/stalemate/insufficient material checked; repetition and historical draw conditions unavailable. No exhaustive continuation or forced-outcome claims.",
+    "summary": "Per case/window existential observed relations plus response counts. True if any witness; null without witness where missing/truncated evidence prevents six-ply coverage. No offers is explicit candidate root absence; geometric non-observation never establishes irrelevance. Branch count retained to avoid weighting cases by branches."
+  }
+}

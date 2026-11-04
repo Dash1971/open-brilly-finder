@@ -1,0 +1,1128 @@
+{
+  "scope": "Matched20 unblinded development diagnostic, labels joined only after scoring. No classification rule or fitted threshold from these branches.",
+  "status": "complete",
+  "engine_positions": 39,
+  "recorded_search_seconds": 8.947826916817576,
+  "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+  "options": {
+    "Threads": 1,
+    "Hash": 64,
+    "requested_nodes": 300000,
+    "accepted_MultiPV": 2,
+    "restricted_before_MultiPV": 1,
+    "PV_export_max_plies": 20
+  },
+  "coverage": {
+    "cases": 20,
+    "accepted_branches": 21,
+    "all_qualifying_acceptances_searched": true,
+    "restricted_before_searches": 18,
+    "no_nonoffer_roots": 2,
+    "truncated_acceptance_cases": 0,
+    "unknown_search_cases": 0
+  },
+  "group_descriptors": {
+    "matched_true10": {
+      "n": 10,
+      "no_nonoffering_legal_root": 0,
+      "any_acceptance_searched_winning_mate": 3,
+      "any_PV_restores_material": 7,
+      "any_PV_queen_capture": 4,
+      "any_PV_promotion": 1,
+      "restricted_nonoffer_at_existing600_boundary": 0,
+      "restricted_escape_within_existing5pp_of_saved_before": 5
+    },
+    "false_awards10": {
+      "n": 10,
+      "no_nonoffering_legal_root": 2,
+      "any_acceptance_searched_winning_mate": 4,
+      "any_PV_restores_material": 5,
+      "any_PV_queen_capture": 3,
+      "any_PV_promotion": 1,
+      "restricted_nonoffer_at_existing600_boundary": 1,
+      "restricted_escape_within_existing5pp_of_saved_before": 4
+    }
+  },
+  "cautions": [
+    "Conditional acceptance/PV is not forced acceptance or a physical refund proof against all replies.",
+    "Twenty-ply exported PV has quiet moves and selected engine responses; refund absence on this PV is unknown, not proof of no compensation.",
+    "Restricted escape search and cached unrestricted before search have distinct search history and depth; their score difference is a diagnostic, not a same-root quality certificate.",
+    "The2cases without a nonoffering legal root are an interesting descriptor in this matched sample, not a validated general veto.",
+    "Mating-acceptance and PV-material-recovery descriptors overlap true and false awards."
+  ],
+  "source_sha256": {
+    "prepare.mts": "175e0db9491b00c4c08991936f9f5aa4eeb7b48730890606ee69698c701065cd",
+    "analyze.py": "696a462f9b11d0cfb2de1902a9c2b080e9e977b7f5c9c59cf6811d6690698b2c",
+    "branch-input.json": "c611b45e2e46b972bde610fcd3ffd24e801ea7411ca779b09b699808e2177d64",
+    "acceptance-results.json": "658c000560363cbcc6b65ecbb818a4eddc692b1ee5e10ab86ec090406740a0f0"
+  },
+  "selection_sha256": "b44bb4f94c9f2052f23c4d311816f5613fac128c5e8b73f5851e3be0e184a225",
+  "rows": [
+    {
+      "key": "169827191694:67",
+      "san": "Rh1",
+      "truth_brilliant_for_posthoc_summary_only": false,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 2,
+      "baseline_before": {
+        "cp_mover": null,
+        "mate_mover": 9,
+        "normalized_mover": 1000
+      },
+      "baseline_after": {
+        "cp_mover": null,
+        "mate_mover": 8,
+        "normalized_mover": 1000
+      },
+      "best_nonoffer": {
+        "cp_mover": 742,
+        "mate_mover": null,
+        "normalized_mover": 742
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 3.6552814761653707,
+      "accepted_branches": [
+        {
+          "uci": "e4d3",
+          "san": "exd3",
+          "victim": "bishop",
+          "acceptance_net": 210,
+          "after_acceptance_normalized": 1000,
+          "cp_mover": null,
+          "mate_mover": 6,
+          "mover_restores_material_within20_PV": true,
+          "queen_capture_in_PV": true,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Rxh6+",
+            "gxh6",
+            "Qf6+",
+            "Kh7",
+            "Rh1",
+            "dxc2+",
+            "Kxc2",
+            "Rc6",
+            "Rxh6+",
+            "Kg8",
+            "Rh8#"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "185032708726:33",
+      "san": "Bxd5",
+      "truth_brilliant_for_posthoc_summary_only": true,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 32,
+      "baseline_before": {
+        "cp_mover": 218,
+        "mate_mover": null,
+        "normalized_mover": 218
+      },
+      "baseline_after": {
+        "cp_mover": 205,
+        "mate_mover": null,
+        "normalized_mover": 205
+      },
+      "best_nonoffer": {
+        "cp_mover": 129,
+        "mate_mover": null,
+        "normalized_mover": 129
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 7.398659583220628,
+      "accepted_branches": [
+        {
+          "uci": "e6d5",
+          "san": "exd5",
+          "victim": "bishop",
+          "acceptance_net": 210,
+          "after_acceptance_normalized": 546,
+          "cp_mover": 546,
+          "mate_mover": null,
+          "mover_restores_material_within20_PV": true,
+          "queen_capture_in_PV": true,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Nxd5+",
+            "Ke6",
+            "Nhf4+",
+            "Bxf4",
+            "Nxf6",
+            "Kxf6",
+            "gxf4",
+            "Be6",
+            "d5",
+            "Rd8",
+            "dxe6",
+            "Rxd1+",
+            "Rxd1",
+            "Nd8"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "173084454389:59",
+      "san": "Bc5",
+      "truth_brilliant_for_posthoc_summary_only": false,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 1,
+      "baseline_before": {
+        "cp_mover": 755,
+        "mate_mover": null,
+        "normalized_mover": 755
+      },
+      "baseline_after": {
+        "cp_mover": 630,
+        "mate_mover": null,
+        "normalized_mover": 630
+      },
+      "best_nonoffer": {
+        "cp_mover": -334,
+        "mate_mover": null,
+        "normalized_mover": -334
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 71.5369960659257,
+      "accepted_branches": [
+        {
+          "uci": "g7f6",
+          "san": "Bxf6",
+          "victim": "knight",
+          "acceptance_net": 300,
+          "after_acceptance_normalized": 1000,
+          "cp_mover": null,
+          "mate_mover": 1,
+          "mover_restores_material_within20_PV": false,
+          "queen_capture_in_PV": false,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": false,
+          "pv_san": [
+            "Rb8#"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "174490497572:26",
+      "san": "Nxb4",
+      "truth_brilliant_for_posthoc_summary_only": true,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 3,
+      "baseline_before": {
+        "cp_mover": 19,
+        "mate_mover": null,
+        "normalized_mover": 19
+      },
+      "baseline_after": {
+        "cp_mover": 71,
+        "mate_mover": null,
+        "normalized_mover": 71
+      },
+      "best_nonoffer": {
+        "cp_mover": 21,
+        "mate_mover": null,
+        "normalized_mover": 21
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": -0.18385441563173543,
+      "accepted_branches": [
+        {
+          "uci": "c3b4",
+          "san": "cxb4",
+          "victim": "knight",
+          "acceptance_net": 210,
+          "after_acceptance_normalized": 77,
+          "cp_mover": 77,
+          "mate_mover": null,
+          "mover_restores_material_within20_PV": true,
+          "queen_capture_in_PV": false,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Rxd1+",
+            "Bxd1",
+            "Bd4",
+            "Nc3",
+            "Bxc3",
+            "Rb1",
+            "a6",
+            "Rb3",
+            "Bd4",
+            "Bc2",
+            "g6",
+            "Bf4",
+            "Rd8",
+            "Kf1",
+            "b5",
+            "g4",
+            "fxg4",
+            "Bxe5",
+            "Bxe5",
+            "hxg4"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "174425603426:123",
+      "san": "Rxh2",
+      "truth_brilliant_for_posthoc_summary_only": false,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 19,
+      "baseline_before": {
+        "cp_mover": 569,
+        "mate_mover": null,
+        "normalized_mover": 569
+      },
+      "baseline_after": {
+        "cp_mover": 598,
+        "mate_mover": null,
+        "normalized_mover": 598
+      },
+      "best_nonoffer": {
+        "cp_mover": 560,
+        "mate_mover": null,
+        "normalized_mover": 560
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 0.32753314047360504,
+      "accepted_branches": [
+        {
+          "uci": "g3h2",
+          "san": "Kxh2",
+          "victim": "rook",
+          "acceptance_net": 500,
+          "after_acceptance_normalized": 562,
+          "cp_mover": 562,
+          "mate_mover": null,
+          "mover_restores_material_within20_PV": true,
+          "queen_capture_in_PV": false,
+          "promotion_in_PV": true,
+          "cross_square_mover_capture_in_PV": false,
+          "pv_san": [
+            "d7",
+            "Bxf3",
+            "d8=Q",
+            "Kh3",
+            "g5",
+            "Bxe4",
+            "Qb6",
+            "Kg3",
+            "g6",
+            "f3",
+            "Qg1+",
+            "Kf4"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "171487603906:78",
+      "san": "Rxf2+",
+      "truth_brilliant_for_posthoc_summary_only": true,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 8,
+      "baseline_before": {
+        "cp_mover": 490,
+        "mate_mover": null,
+        "normalized_mover": 490
+      },
+      "baseline_after": {
+        "cp_mover": 482,
+        "mate_mover": null,
+        "normalized_mover": 482
+      },
+      "best_nonoffer": {
+        "cp_mover": 246,
+        "mate_mover": null,
+        "normalized_mover": 246
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 14.652352085968118,
+      "accepted_branches": [
+        {
+          "uci": "f4f2",
+          "san": "Qxf2",
+          "victim": "rook",
+          "acceptance_net": 500,
+          "after_acceptance_normalized": 480,
+          "cp_mover": 480,
+          "mate_mover": null,
+          "mover_restores_material_within20_PV": true,
+          "queen_capture_in_PV": true,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Rc2",
+            "Qxc2",
+            "Qxc2+",
+            "Kg1",
+            "Qxa2",
+            "Rb5",
+            "Qa1+",
+            "Kg2",
+            "Qb2+",
+            "Kh3",
+            "h5",
+            "Bf3"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "175936156661:48",
+      "san": "gxf4",
+      "truth_brilliant_for_posthoc_summary_only": false,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 5,
+      "baseline_before": {
+        "cp_mover": 466,
+        "mate_mover": null,
+        "normalized_mover": 466
+      },
+      "baseline_after": {
+        "cp_mover": 488,
+        "mate_mover": null,
+        "normalized_mover": 488
+      },
+      "best_nonoffer": {
+        "cp_mover": 436,
+        "mate_mover": null,
+        "normalized_mover": 436
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 1.4823494587320596,
+      "accepted_branches": [
+        {
+          "uci": "e7d8",
+          "san": "Bxd8",
+          "victim": "rook",
+          "acceptance_net": 500,
+          "after_acceptance_normalized": 467,
+          "cp_mover": 467,
+          "mate_mover": null,
+          "mover_restores_material_within20_PV": true,
+          "queen_capture_in_PV": false,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Bd5",
+            "Kg2",
+            "Bxc3",
+            "Kf2",
+            "Bxf3",
+            "Kxf3",
+            "fxg3",
+            "hxg3",
+            "Bxd2",
+            "Ke4",
+            "Be1",
+            "Kxd3",
+            "Bxg3",
+            "Bf6",
+            "Kf8",
+            "Ke4",
+            "Ke8"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "184777814198:66",
+      "san": "b3",
+      "truth_brilliant_for_posthoc_summary_only": true,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 6,
+      "baseline_before": {
+        "cp_mover": 628,
+        "mate_mover": null,
+        "normalized_mover": 628
+      },
+      "baseline_after": {
+        "cp_mover": 648,
+        "mate_mover": null,
+        "normalized_mover": 648
+      },
+      "best_nonoffer": {
+        "cp_mover": 497,
+        "mate_mover": null,
+        "normalized_mover": 497
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 4.813341711165691,
+      "accepted_branches": [
+        {
+          "uci": "c5f8",
+          "san": "Bxf8",
+          "victim": "rook",
+          "acceptance_net": 200,
+          "after_acceptance_normalized": 617,
+          "cp_mover": 617,
+          "mate_mover": null,
+          "mover_restores_material_within20_PV": true,
+          "queen_capture_in_PV": false,
+          "promotion_in_PV": true,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "c2",
+            "Rc1",
+            "Kxf8",
+            "Kg2",
+            "b2",
+            "Rxc2",
+            "b1=Q",
+            "Rc3",
+            "Qb5",
+            "h4",
+            "Qa5",
+            "Rc4",
+            "Qd5+",
+            "Kh2",
+            "Qxd3",
+            "Rc1",
+            "Ke8",
+            "Ra1",
+            "Qc2",
+            "Kg1"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "178360672165:63",
+      "san": "Nxh6+",
+      "truth_brilliant_for_posthoc_summary_only": false,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 0,
+      "baseline_before": {
+        "cp_mover": -31,
+        "mate_mover": null,
+        "normalized_mover": -31
+      },
+      "baseline_after": {
+        "cp_mover": -44,
+        "mate_mover": null,
+        "normalized_mover": -44
+      },
+      "best_nonoffer": {
+        "cp_mover": null,
+        "mate_mover": null,
+        "normalized_mover": null
+      },
+      "best_nonoffer_status": "no_nonoffering_legal_root",
+      "restricted_escape_loss_pp_vs_saved_before": null,
+      "accepted_branches": [
+        {
+          "uci": "g7h6",
+          "san": "gxh6",
+          "victim": "knight",
+          "acceptance_net": 210,
+          "after_acceptance_normalized": 7,
+          "cp_mover": 7,
+          "mate_mover": null,
+          "mover_restores_material_within20_PV": false,
+          "queen_capture_in_PV": false,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Rf6",
+            "Re6",
+            "Rf1",
+            "Qe8",
+            "Bxh6",
+            "Rh7",
+            "Bf4",
+            "Nxf4",
+            "Nxf4"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "184512046868:24",
+      "san": "Nd4",
+      "truth_brilliant_for_posthoc_summary_only": true,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 29,
+      "baseline_before": {
+        "cp_mover": 41,
+        "mate_mover": null,
+        "normalized_mover": 41
+      },
+      "baseline_after": {
+        "cp_mover": 39,
+        "mate_mover": null,
+        "normalized_mover": 39
+      },
+      "best_nonoffer": {
+        "cp_mover": 31,
+        "mate_mover": null,
+        "normalized_mover": 31
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 0.9164626992685214,
+      "accepted_branches": [
+        {
+          "uci": "e3d4",
+          "san": "exd4",
+          "victim": "knight",
+          "acceptance_net": 210,
+          "after_acceptance_normalized": 39,
+          "cp_mover": 39,
+          "mate_mover": null,
+          "mover_restores_material_within20_PV": true,
+          "queen_capture_in_PV": false,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "exd4",
+            "Qc1",
+            "Re8",
+            "Kf1",
+            "c5",
+            "h3",
+            "h5",
+            "Bf3",
+            "Bh6",
+            "g4",
+            "Bd3+",
+            "Kg2",
+            "Be2",
+            "Qc2",
+            "Qg5",
+            "Nf1",
+            "Bxf3+",
+            "Kxf3",
+            "f5",
+            "Kg2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "184481267900:67",
+      "san": "Qb5",
+      "truth_brilliant_for_posthoc_summary_only": false,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 0,
+      "baseline_before": {
+        "cp_mover": 263,
+        "mate_mover": null,
+        "normalized_mover": 263
+      },
+      "baseline_after": {
+        "cp_mover": 270,
+        "mate_mover": null,
+        "normalized_mover": 270
+      },
+      "best_nonoffer": {
+        "cp_mover": null,
+        "mate_mover": null,
+        "normalized_mover": null
+      },
+      "best_nonoffer_status": "no_nonoffering_legal_root",
+      "restricted_escape_loss_pp_vs_saved_before": null,
+      "accepted_branches": [
+        {
+          "uci": "b2a4",
+          "san": "Nxa4",
+          "victim": "rook",
+          "acceptance_net": 200,
+          "after_acceptance_normalized": 253,
+          "cp_mover": 253,
+          "mate_mover": null,
+          "mover_restores_material_within20_PV": false,
+          "queen_capture_in_PV": false,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Qxa4",
+            "Rc8",
+            "Qc2",
+            "Kh7",
+            "Qd3",
+            "Bf8",
+            "Nxf5",
+            "Qg6",
+            "Bd2",
+            "Ra8"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "172590636870:45",
+      "san": "Bf6",
+      "truth_brilliant_for_posthoc_summary_only": true,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 5,
+      "baseline_before": {
+        "cp_mover": null,
+        "mate_mover": 4,
+        "normalized_mover": 1000
+      },
+      "baseline_after": {
+        "cp_mover": null,
+        "mate_mover": 3,
+        "normalized_mover": 1000
+      },
+      "best_nonoffer": {
+        "cp_mover": 597,
+        "mate_mover": null,
+        "normalized_mover": 597
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 7.535952427114793,
+      "accepted_branches": [
+        {
+          "uci": "b7h1",
+          "san": "Bxh1",
+          "victim": "rook",
+          "acceptance_net": 200,
+          "after_acceptance_normalized": 1000,
+          "cp_mover": null,
+          "mate_mover": 1,
+          "mover_restores_material_within20_PV": false,
+          "queen_capture_in_PV": false,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": false,
+          "pv_san": [
+            "Qh8#"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "184514610842:73",
+      "san": "Re1",
+      "truth_brilliant_for_posthoc_summary_only": false,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 4,
+      "baseline_before": {
+        "cp_mover": 601,
+        "mate_mover": null,
+        "normalized_mover": 601
+      },
+      "baseline_after": {
+        "cp_mover": 587,
+        "mate_mover": null,
+        "normalized_mover": 587
+      },
+      "best_nonoffer": {
+        "cp_mover": 454,
+        "mate_mover": null,
+        "normalized_mover": 454
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 5.960705003481294,
+      "accepted_branches": [
+        {
+          "uci": "f8h6",
+          "san": "Qxh6",
+          "victim": "knight",
+          "acceptance_net": 300,
+          "after_acceptance_normalized": 752,
+          "cp_mover": 752,
+          "mate_mover": null,
+          "mover_restores_material_within20_PV": true,
+          "queen_capture_in_PV": true,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Nxf7+",
+            "Rxf7",
+            "Qxh6+",
+            "Rh7",
+            "Qf4",
+            "e5",
+            "dxe5",
+            "Rf8",
+            "e6",
+            "Rxh5",
+            "f7",
+            "d4",
+            "Qf6+",
+            "Kh7",
+            "Rg3",
+            "d3"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "184131911424:66",
+      "san": "Raf8",
+      "truth_brilliant_for_posthoc_summary_only": true,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 3,
+      "baseline_before": {
+        "cp_mover": 92,
+        "mate_mover": null,
+        "normalized_mover": 92
+      },
+      "baseline_after": {
+        "cp_mover": 89,
+        "mate_mover": null,
+        "normalized_mover": 89
+      },
+      "best_nonoffer": {
+        "cp_mover": 61,
+        "mate_mover": null,
+        "normalized_mover": 61
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 2.797033965708046,
+      "accepted_branches": [
+        {
+          "uci": "a3b4",
+          "san": "axb4",
+          "victim": "knight",
+          "acceptance_net": 300,
+          "after_acceptance_normalized": 88,
+          "cp_mover": 88,
+          "mate_mover": null,
+          "mover_restores_material_within20_PV": true,
+          "queen_capture_in_PV": false,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Rxf2+",
+            "Kg1",
+            "Rxb2",
+            "Rxa7",
+            "Rf7",
+            "Ra8",
+            "Rff2",
+            "Rg6+",
+            "Kf5",
+            "Rxd6",
+            "Rg2+",
+            "Kh1",
+            "Rh2+",
+            "Kg1"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "185228493400:24",
+      "san": "dxc4",
+      "truth_brilliant_for_posthoc_summary_only": false,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 3,
+      "baseline_before": {
+        "cp_mover": 412,
+        "mate_mover": null,
+        "normalized_mover": 412
+      },
+      "baseline_after": {
+        "cp_mover": 426,
+        "mate_mover": null,
+        "normalized_mover": 426
+      },
+      "best_nonoffer": {
+        "cp_mover": 331,
+        "mate_mover": null,
+        "normalized_mover": 331
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 4.82520405258731,
+      "accepted_branches": [
+        {
+          "uci": "e3g5",
+          "san": "Bxg5",
+          "victim": "knight",
+          "acceptance_net": 300,
+          "after_acceptance_normalized": 536,
+          "cp_mover": 536,
+          "mate_mover": null,
+          "mover_restores_material_within20_PV": true,
+          "queen_capture_in_PV": true,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Qxd4",
+            "Rb1",
+            "cxd3",
+            "O-O",
+            "O-O",
+            "Bf4",
+            "dxc2",
+            "Rb5",
+            "Qe4",
+            "Rxb7",
+            "Qg6",
+            "Qxg6",
+            "fxg6"
+          ]
+        },
+        {
+          "uci": "h5g5",
+          "san": "Qxg5",
+          "victim": "knight",
+          "acceptance_net": 300,
+          "after_acceptance_normalized": 505,
+          "cp_mover": 505,
+          "mate_mover": null,
+          "mover_restores_material_within20_PV": true,
+          "queen_capture_in_PV": true,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Qxg5",
+            "Bxg5",
+            "cxd3",
+            "c3",
+            "O-O",
+            "f3",
+            "Bc4",
+            "Kf2",
+            "Rae8",
+            "Rhe1",
+            "b6",
+            "h4",
+            "f6",
+            "Be3",
+            "fxe5"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "184623232028:38",
+      "san": "hxg4",
+      "truth_brilliant_for_posthoc_summary_only": true,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 8,
+      "baseline_before": {
+        "cp_mover": 283,
+        "mate_mover": null,
+        "normalized_mover": 283
+      },
+      "baseline_after": {
+        "cp_mover": 239,
+        "mate_mover": null,
+        "normalized_mover": 239
+      },
+      "best_nonoffer": {
+        "cp_mover": 296,
+        "mate_mover": null,
+        "normalized_mover": 296
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": -0.9120833125883507,
+      "accepted_branches": [
+        {
+          "uci": "c1c6",
+          "san": "Rxc6",
+          "victim": "knight",
+          "acceptance_net": 300,
+          "after_acceptance_normalized": 508,
+          "cp_mover": 508,
+          "mate_mover": null,
+          "mover_restores_material_within20_PV": true,
+          "queen_capture_in_PV": true,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Nf3+",
+            "Kg2",
+            "Rxh2+",
+            "Qxh2",
+            "Nxh2",
+            "Rfc1",
+            "Qf3+",
+            "Kxh2",
+            "g3+",
+            "Kg1",
+            "Qxe3",
+            "R6c2",
+            "f5",
+            "exf6",
+            "Bxf6",
+            "Kh1",
+            "gxf2",
+            "Rc8+",
+            "Rxc8",
+            "Rxc8+"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "186393990159:71",
+      "san": "Qg6+",
+      "truth_brilliant_for_posthoc_summary_only": false,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 2,
+      "baseline_before": {
+        "cp_mover": null,
+        "mate_mover": 2,
+        "normalized_mover": 1000
+      },
+      "baseline_after": {
+        "cp_mover": null,
+        "mate_mover": 1,
+        "normalized_mover": 1000
+      },
+      "best_nonoffer": {
+        "cp_mover": 237,
+        "mate_mover": null,
+        "normalized_mover": 237
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 27.015001256235138,
+      "accepted_branches": [
+        {
+          "uci": "g7f8",
+          "san": "Kxf8",
+          "victim": "rook",
+          "acceptance_net": 500,
+          "after_acceptance_normalized": 1000,
+          "cp_mover": null,
+          "mate_mover": 1,
+          "mover_restores_material_within20_PV": false,
+          "queen_capture_in_PV": false,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": false,
+          "pv_san": [
+            "Qg8#"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "184430392420:37",
+      "san": "Rxh7+",
+      "truth_brilliant_for_posthoc_summary_only": true,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 2,
+      "baseline_before": {
+        "cp_mover": null,
+        "mate_mover": 3,
+        "normalized_mover": 1000
+      },
+      "baseline_after": {
+        "cp_mover": null,
+        "mate_mover": 2,
+        "normalized_mover": 1000
+      },
+      "best_nonoffer": {
+        "cp_mover": 491,
+        "mate_mover": null,
+        "normalized_mover": 491
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 11.633940272040121,
+      "accepted_branches": [
+        {
+          "uci": "h8h7",
+          "san": "Kxh7",
+          "victim": "rook",
+          "acceptance_net": 500,
+          "after_acceptance_normalized": 1000,
+          "cp_mover": null,
+          "mate_mover": 2,
+          "mover_restores_material_within20_PV": false,
+          "queen_capture_in_PV": true,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Qh1+",
+            "Qxh1",
+            "Rxh1#"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "187780686673:36",
+      "san": "Qh4",
+      "truth_brilliant_for_posthoc_summary_only": false,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 2,
+      "baseline_before": {
+        "cp_mover": 149,
+        "mate_mover": null,
+        "normalized_mover": 149
+      },
+      "baseline_after": {
+        "cp_mover": 149,
+        "mate_mover": null,
+        "normalized_mover": 149
+      },
+      "best_nonoffer": {
+        "cp_mover": 8,
+        "mate_mover": null,
+        "normalized_mover": 8
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 12.645403604115444,
+      "accepted_branches": [
+        {
+          "uci": "b7a8",
+          "san": "Bxa8",
+          "victim": "rook",
+          "acceptance_net": 200,
+          "after_acceptance_normalized": 1000,
+          "cp_mover": null,
+          "mate_mover": 1,
+          "mover_restores_material_within20_PV": false,
+          "queen_capture_in_PV": false,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Qxh2#"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "169827191694:65",
+      "san": "h6",
+      "truth_brilliant_for_posthoc_summary_only": true,
+      "accepted_coverage_complete": true,
+      "nonoffering_root_count": 2,
+      "baseline_before": {
+        "cp_mover": 775,
+        "mate_mover": null,
+        "normalized_mover": 775
+      },
+      "baseline_after": {
+        "cp_mover": 981,
+        "mate_mover": null,
+        "normalized_mover": 981
+      },
+      "best_nonoffer": {
+        "cp_mover": 478,
+        "mate_mover": null,
+        "normalized_mover": 478
+      },
+      "best_nonoffer_status": "complete",
+      "restricted_escape_loss_pp_vs_saved_before": 9.229114314956774,
+      "accepted_branches": [
+        {
+          "uci": "e4d3",
+          "san": "exd3",
+          "victim": "bishop",
+          "acceptance_net": 210,
+          "after_acceptance_normalized": 1000,
+          "cp_mover": null,
+          "mate_mover": 1,
+          "mover_restores_material_within20_PV": false,
+          "queen_capture_in_PV": false,
+          "promotion_in_PV": false,
+          "cross_square_mover_capture_in_PV": true,
+          "pv_san": [
+            "Qxg7#"
+          ]
+        }
+      ]
+    }
+  ]
+}

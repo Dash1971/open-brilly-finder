@@ -1,0 +1,83 @@
+[
+  {
+    "id": "routine-hxg6",
+    "title": "A knight is recovered elsewhere",
+    "subtitle": "nelsi \u00b7 18...hxg6 \u00b7 Chess.com: Best",
+    "fen_before": "r4rk1/1p2ppbp/p2p2P1/q2P4/2n5/7Q/PP2B1PP/R1B2RK1 b - - 0 18",
+    "moves": [
+      "hxg6",
+      "Bxc4",
+      "Qc5+",
+      "Kh1",
+      "Qxc4"
+    ],
+    "orientation": "black",
+    "captions": [
+      "18...hxg6 takes a pawn; the knight on c4 stays available.",
+      "If White takes the knight with Bxc4...",
+      "...Qc5+ repositions the queen with check.",
+      "Kh1 is one legal defense; the proof covers all four.",
+      "...Qxc4 recovers a bishop. Black finishes a pawn ahead."
+    ],
+    "line_label": "After the first move, this is one conditional legal continuation.",
+    "initial_caption": "Position before hxg6.",
+    "source": "https://www.chess.com/analysis/game/live/171488501692/review?move=35",
+    "observed_target_label": "best",
+    "target_only_classified": true,
+    "all_moves_legal": true,
+    "game_id": "171488501692",
+    "ply": 36,
+    "evaluation_role": "Retrospective refinement illustration, not new unseen validation.",
+    "original_S_award": true,
+    "refined_history_award": false,
+    "states_after_legal_plies": [
+      "r4rk1/1p2ppb1/p2p2p1/q2P4/2n5/7Q/PP2B1PP/R1B2RK1 w - - 0 19",
+      "r4rk1/1p2ppb1/p2p2p1/q2P4/2B5/7Q/PP4PP/R1B2RK1 b - - 0 19",
+      "r4rk1/1p2ppb1/p2p2p1/2qP4/2B5/7Q/PP4PP/R1B2RK1 w - - 1 20",
+      "r4rk1/1p2ppb1/p2p2p1/2qP4/2B5/7Q/PP4PP/R1B2R1K b - - 2 20",
+      "r4rk1/1p2ppb1/p2p2p1/3P4/2q5/7Q/PP4PP/R1B2R1K w - - 0 21"
+    ]
+  },
+  {
+    "id": "routine-hxg5",
+    "title": "A rook offer leads to another trade",
+    "subtitle": "hansen \u00b7 15...hxg5 \u00b7 Chess.com: Best",
+    "fen_before": "r1b2rk1/p1q2pp1/1p1bp2p/n5N1/3P4/2P1B1P1/P1Q2PBP/R4RK1 b - - 1 15",
+    "moves": [
+      "hxg5",
+      "Bxa8",
+      "Ba6",
+      "Bg2",
+      "Bxf1",
+      "Rxf1"
+    ],
+    "orientation": "black",
+    "captions": [
+      "15...hxg5 takes a knight; the rook on a8 stays available.",
+      "If White takes that rook with Bxa8...",
+      "...Ba6 creates a threat against the rook on f1.",
+      "Bg2 is one legal reply; the proof covers all 43.",
+      "...Bxf1 takes a rook on another square.",
+      "Rxf1 completes this conditional exchange; material is level."
+    ],
+    "line_label": "After the first move, this is one conditional legal continuation.",
+    "initial_caption": "Position before hxg5.",
+    "source": "https://www.chess.com/analysis/game/live/173517772799/review?move=29",
+    "observed_target_label": "best",
+    "target_only_classified": true,
+    "all_moves_legal": true,
+    "game_id": "173517772799",
+    "ply": 30,
+    "evaluation_role": "Retrospective refinement illustration, not new unseen validation.",
+    "original_S_award": true,
+    "refined_history_award": false,
+    "states_after_legal_plies": [
+      "r1b2rk1/p1q2pp1/1p1bp3/n5p1/3P4/2P1B1P1/P1Q2PBP/R4RK1 w - - 0 16",
+      "B1b2rk1/p1q2pp1/1p1bp3/n5p1/3P4/2P1B1P1/P1Q2P1P/R4RK1 b - - 0 16",
+      "B4rk1/p1q2pp1/bp1bp3/n5p1/3P4/2P1B1P1/P1Q2P1P/R4RK1 w - - 1 17",
+      "5rk1/p1q2pp1/bp1bp3/n5p1/3P4/2P1B1P1/P1Q2PBP/R4RK1 b - - 2 17",
+      "5rk1/p1q2pp1/1p1bp3/n5p1/3P4/2P1B1P1/P1Q2PBP/R4bK1 w - - 0 18",
+      "5rk1/p1q2pp1/1p1bp3/n5p1/3P4/2P1B1P1/P1Q2PBP/5RK1 b - - 0 18"
+    ]
+  }
+]

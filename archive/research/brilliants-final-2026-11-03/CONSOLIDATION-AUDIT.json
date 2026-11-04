@@ -1,0 +1,85 @@
+{
+  "completed_at_utc": "2026-11-03T08:28:21.894270+00:00",
+  "counts": {
+    "games": 439,
+    "positions": 38408,
+    "observations": 1446
+  },
+  "core_moves": 818,
+  "panel_moves": 30,
+  "total_moves": 848,
+  "core_class_counts": {
+    "true": 409,
+    "false": 409
+  },
+  "panel_class_counts": {
+    "false": 26,
+    "true": 4
+  },
+  "historical_v4_core_splits": {
+    "development": 618,
+    "validation": 200
+  },
+  "future_v5_all848_unblinded_development": true,
+  "full_PGN_history_retained": true,
+  "all38408_positions_legally_replayed": true,
+  "all848_primary_observation_identities_checked": true,
+  "primary_rendered_board_present": 841,
+  "primary_rendered_board_missing": 7,
+  "coach_text_present": 844,
+  "coach_completeness_raw_flags": {
+    "missing_explicit_flag": 128,
+    "partial_or_unverified": 328,
+    "verified_visible_complete": 392
+  },
+  "no_http_auth_cookie_header_fields_in_observation_raw": true,
+  "analyses": {
+    "analysis-baseline.json": {
+      "targets": 818,
+      "snapshots": 2355,
+      "status": "complete",
+      "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+      "nodes_per_position": 300000,
+      "threads": 1,
+      "hash_mb": 64,
+      "snapshot_elapsed_seconds_sum": 1032.745358,
+      "rejected_identity_rows": 0
+    },
+    "analysis-stronger.json": {
+      "targets": 90,
+      "snapshots": 267,
+      "status": "complete",
+      "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+      "nodes_per_position": 1500000,
+      "threads": 1,
+      "hash_mb": 64,
+      "snapshot_elapsed_seconds_sum": 277.972099,
+      "rejected_identity_rows": 0
+    },
+    "analysis-panel.json": {
+      "targets": 30,
+      "snapshots": 90,
+      "status": "complete",
+      "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+      "nodes_per_position": 300000,
+      "threads": 1,
+      "hash_mb": 64,
+      "snapshot_elapsed_seconds_sum": 17.807887,
+      "rejected_identity_rows": 0
+    }
+  },
+  "sha256": {
+    "corpus.sqlite3": "c9095e767410db0e3dc225c2b2d35f826dab34255199477f5b7950089d8f42d3",
+    "primary-moves.json": "505a8ffde14269f7782af1404d12b6407a4d5b298f3bedc2edaea7d1e7a456ea",
+    "panel-moves.json": "c7794a2441bd6adcb570bd2c2bd185e7e5d50dbb36f36a3b80c12cf7ba932b70",
+    "selected-games.pgn": "c8182949595bd579b524e3fa1397d6183198fef5508398569741cecb9a4bbfa3",
+    "public-pgn-provenance.json": "04f0b3a872b09950513d09d727b0cb147cbb8b46673ff48dcd3d5ad975b8fdac",
+    "observations-export.json": "c4b3652c6efc697e2c62519f628978492fcfc2e479283fe498950c73fff90443",
+    "analysis-baseline.json": "d8833860a3f7f5aec1c7817c3203a10af500044e885efc364e9d03626fc3655b",
+    "analysis-stronger.json": "ac8ee4144a1cf1404ccac1037919abeb806da0c8f8bc0c15fb3f36657a669bb6",
+    "analysis-panel.json": "682e50dd4083787f643ef990df12e6bed34407dfdeee83c8688497dbc44d06f2",
+    "analysis.py": "4249766f0b63a9a32054be40b862c740faaa06f5e38cb854ca2017f9ff15594e",
+    "consolidate.py": "abb634821aaa13f7995d76d2b4b400be8c3ca67591839954594dd67a76ee47dc",
+    "manifest.json": "fedf0e30edf3f0981d13fa0edcf05c45208a77e15d53268073f03af3fa42acd5"
+  }
+}

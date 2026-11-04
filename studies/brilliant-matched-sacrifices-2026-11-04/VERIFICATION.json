@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "full_saved_probe_pv_lines_legality_checked": 248,
+  "checks": [
+    "48distinctgroups",
+    "input/script/protocol hashes",
+    "fullPGN before/after identity checked during preparation and probing",
+    "all62capture positions and full engine PVs legal",
+    "source labels explicitly Brilliant or Good/Excellent/Best/Great",
+    "subagent51vs149audit independently reproduced",
+    "no classifier fit or award settings changed"
+  ],
+  "artifact_sha256": {
+    "PROTOCOL.json": "3d15296f131d0024f5bd0c4e77873e5c093ad432fccb969d334556a9a374ca30",
+    "MATCHED-CASES.json": "e6d482a5447099854fc3235e4d65dcdd6d0a9c7109275c2081847973cba93553",
+    "MATCHED-GAMES.json": "2ec968779a8a126947bb807a30469a6a86871e2d65bd0eafd375712f927c0d95",
+    "PROBES.json": "2c7b0b4cc49d81c3008a56f7a77659198d51c11f61ec21ef2ab3fc82b43197b8",
+    "CASE-SUMMARIES.json": "a665e75eb5bbb4d53340b85d3357bccfdf9b8141ebef1a559beac1961044424d",
+    "FINDINGS.json": "ec9156b456b637ad33103b6133d24978bfedbea47c88980e1a61c7a902c604fa",
+    "prepare.py": "07f10e2fa35c1442b828430acbf091573dc834800cedb58e310f3c89ca212696",
+    "probe.py": "c2fac31db2c25a17c214fb5e33625656a208e5db048ac707616830e1b510d3a5",
+    "summarize.py": "bd1ea1eb944a5c556cad83d076eb05af1a901d03f5d78fef5c0c3e7376c6a24c",
+    "REPORT.txt": "a771474dcf52208900260f4a046cc40ff4c7c0fe31e86e062c5ca46ffa460171",
+    "PAIRS.txt": "ca0ff0e689454623548c4bb4bda26e2e7b156b3b2e15ce064cc3f1947031b559"
+  }
+}

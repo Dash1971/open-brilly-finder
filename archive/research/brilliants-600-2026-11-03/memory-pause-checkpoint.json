@@ -1,0 +1,66 @@
+{
+  "captured_at": "2026-11-03T02:09:20.113507+00:00",
+  "parent_requested_memory_pause": true,
+  "archive_fetches_or_control_generation_running": false,
+  "own_checkpoint_pid": 53380,
+  "checkpoint_peak_rss_bytes": 61046784,
+  "progress": {
+    "per_account": {
+      "nelsi": {
+        "fresh_brilliant": 60,
+        "fresh_non_brilliant": 60
+      },
+      "hansen": {
+        "fresh_brilliant": 29,
+        "fresh_non_brilliant": 29
+      },
+      "KNVB": {
+        "fresh_brilliant": 0,
+        "fresh_non_brilliant": 0
+      },
+      "GothamChess": {
+        "fresh_brilliant": 10,
+        "fresh_non_brilliant": 10
+      },
+      "Hikaru": {
+        "fresh_brilliant": 60,
+        "fresh_non_brilliant": 60
+      }
+    },
+    "primary_unique_moves": 318,
+    "primary_fresh_brilliant": 159,
+    "primary_fresh_non_brilliant": 159,
+    "primary_moves_with_captured_board_identity": 311,
+    "primary_moves_with_board_missing": 7,
+    "pending_identity_or_pgn": [],
+    "reserve_or_conflicting_moves": [],
+    "target_complete": false
+  },
+  "quality": {
+    "identity_mismatches": [],
+    "fresh_binary_conflicts": [],
+    "pending_pgNs": [],
+    "selected_known_fen_hits": [],
+    "coach_quality": {
+      "text_present": 319,
+      "ends_with_sentence_punctuation": 116,
+      "has_explicit_capture_status": 191,
+      "explicitly_recorded_visible_complete": 0,
+      "note": "Nonempty text and terminal punctuation do not prove completeness. Legacy typewriter-animation captures may be partial; raw text and capture timestamps are unchanged."
+    }
+  },
+  "operation": "Small SQLite/evidence checkpoint and export only; all archive downloads/control-bank generators already finished. No collection or analysis worker owned by this agent remains running.",
+  "recorded_at": "2026-11-03T02:16:17.259627+00:00",
+  "collection_paused": true,
+  "pending_choice": "Continue to 600 using one browser collector/no concurrent engine, or finish with 318",
+  "pressure_before": 2,
+  "pressure_after_closing_research_tabs": 1,
+  "swap_used_mb_before": 14897.12,
+  "swap_used_mb_after": 14753.12,
+  "chrome_rss_gib_before": 2.24,
+  "chrome_rss_gib_after": 1.67,
+  "codex_app_rss_gib_before": 3.72,
+  "codex_app_rss_gib_after": 3.41,
+  "engine_jobs_running": false,
+  "publication_status": "New600study remains local; final report unfinished/unpublished"
+}

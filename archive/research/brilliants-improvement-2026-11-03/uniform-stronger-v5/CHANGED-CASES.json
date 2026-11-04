@@ -1,0 +1,383 @@
+{
+  "ec_direct": {
+    "counts": {
+      "true_award_lost": 2,
+      "true_award_recovered": 6,
+      "false_award_removed": 1
+    },
+    "changes": [
+      {
+        "key": "178704473409:83",
+        "san": "Bxg6",
+        "truth": true,
+        "kind": "true_award_lost",
+        "cohort": "old618"
+      },
+      {
+        "key": "178708072359:57",
+        "san": "Rxb2",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "180949672051:80",
+        "san": "Nxf3",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "184420224234:79",
+        "san": "f7",
+        "truth": false,
+        "kind": "false_award_removed",
+        "cohort": "old618"
+      },
+      {
+        "key": "186071905656:18",
+        "san": "Nxd4",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "186164630500:55",
+        "san": "Qe2",
+        "truth": true,
+        "kind": "true_award_lost",
+        "cohort": "old618"
+      },
+      {
+        "key": "186367835010:17",
+        "san": "Rxd6",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "186567991235:53",
+        "san": "Bg2",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "186568589277:32",
+        "san": "Ncxa4",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      }
+    ]
+  },
+  "ec_confirmed": {
+    "counts": {
+      "true_award_recovered": 8,
+      "false_award_removed": 1,
+      "true_award_lost": 1
+    },
+    "changes": [
+      {
+        "key": "180949672051:80",
+        "san": "Nxf3",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "184272623262:48",
+        "san": "Rxg3+",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "recent200"
+      },
+      {
+        "key": "184420224234:79",
+        "san": "f7",
+        "truth": false,
+        "kind": "false_award_removed",
+        "cohort": "old618"
+      },
+      {
+        "key": "185393402186:58",
+        "san": "Bxh3",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "185744987064:76",
+        "san": "Nxe6",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "186071905656:18",
+        "san": "Nxd4",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "186164630500:55",
+        "san": "Qe2",
+        "truth": true,
+        "kind": "true_award_lost",
+        "cohort": "old618"
+      },
+      {
+        "key": "186367835010:17",
+        "san": "Rxd6",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "186567991235:53",
+        "san": "Bg2",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "186568589277:32",
+        "san": "Ncxa4",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      }
+    ]
+  },
+  "v4": {
+    "counts": {
+      "false_award_added": 3,
+      "false_award_removed": 3,
+      "true_award_recovered": 5,
+      "true_award_lost": 4
+    },
+    "changes": [
+      {
+        "key": "172590636870:37",
+        "san": "Bg5",
+        "truth": false,
+        "kind": "false_award_added",
+        "cohort": "recent200"
+      },
+      {
+        "key": "173084454389:59",
+        "san": "Bc5",
+        "truth": false,
+        "kind": "false_award_removed",
+        "cohort": "recent200"
+      },
+      {
+        "key": "174185738360:43",
+        "san": "Bxg6",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "recent200"
+      },
+      {
+        "key": "174425603426:123",
+        "san": "Rxh2",
+        "truth": false,
+        "kind": "false_award_removed",
+        "cohort": "recent200"
+      },
+      {
+        "key": "174472144890:52",
+        "san": "dxc6",
+        "truth": true,
+        "kind": "true_award_lost",
+        "cohort": "recent200"
+      },
+      {
+        "key": "178706873269:78",
+        "san": "Rxa1",
+        "truth": true,
+        "kind": "true_award_lost",
+        "cohort": "old618"
+      },
+      {
+        "key": "178708673761:88",
+        "san": "Qd1+",
+        "truth": true,
+        "kind": "true_award_lost",
+        "cohort": "old618"
+      },
+      {
+        "key": "183800911053:48",
+        "san": "Rxe4",
+        "truth": false,
+        "kind": "false_award_removed",
+        "cohort": "old618"
+      },
+      {
+        "key": "184634890030:37",
+        "san": "Qxh7+",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "185774962202:37",
+        "san": "Qg6",
+        "truth": false,
+        "kind": "false_award_added",
+        "cohort": "old618"
+      },
+      {
+        "key": "185897727454:25",
+        "san": "Bxh7+",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "185931745402:93",
+        "san": "Rb8",
+        "truth": true,
+        "kind": "true_award_lost",
+        "cohort": "old618"
+      },
+      {
+        "key": "186007180386:89",
+        "san": "b6",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "186398857750:45",
+        "san": "hxg6",
+        "truth": false,
+        "kind": "false_award_added",
+        "cohort": "old618"
+      },
+      {
+        "key": "187171696319:55",
+        "san": "c5",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      }
+    ]
+  },
+  "A": {
+    "counts": {
+      "false_award_added": 3,
+      "false_award_removed": 3,
+      "true_award_recovered": 5,
+      "true_award_lost": 4
+    },
+    "changes": [
+      {
+        "key": "172590636870:37",
+        "san": "Bg5",
+        "truth": false,
+        "kind": "false_award_added",
+        "cohort": "recent200"
+      },
+      {
+        "key": "173084454389:59",
+        "san": "Bc5",
+        "truth": false,
+        "kind": "false_award_removed",
+        "cohort": "recent200"
+      },
+      {
+        "key": "174185738360:43",
+        "san": "Bxg6",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "recent200"
+      },
+      {
+        "key": "174425603426:123",
+        "san": "Rxh2",
+        "truth": false,
+        "kind": "false_award_removed",
+        "cohort": "recent200"
+      },
+      {
+        "key": "174472144890:52",
+        "san": "dxc6",
+        "truth": true,
+        "kind": "true_award_lost",
+        "cohort": "recent200"
+      },
+      {
+        "key": "178706873269:78",
+        "san": "Rxa1",
+        "truth": true,
+        "kind": "true_award_lost",
+        "cohort": "old618"
+      },
+      {
+        "key": "178708673761:88",
+        "san": "Qd1+",
+        "truth": true,
+        "kind": "true_award_lost",
+        "cohort": "old618"
+      },
+      {
+        "key": "183800911053:48",
+        "san": "Rxe4",
+        "truth": false,
+        "kind": "false_award_removed",
+        "cohort": "old618"
+      },
+      {
+        "key": "184634890030:37",
+        "san": "Qxh7+",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "185774962202:37",
+        "san": "Qg6",
+        "truth": false,
+        "kind": "false_award_added",
+        "cohort": "old618"
+      },
+      {
+        "key": "185897727454:25",
+        "san": "Bxh7+",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "185931745402:93",
+        "san": "Rb8",
+        "truth": true,
+        "kind": "true_award_lost",
+        "cohort": "old618"
+      },
+      {
+        "key": "186007180386:89",
+        "san": "b6",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      },
+      {
+        "key": "186398857750:45",
+        "san": "hxg6",
+        "truth": false,
+        "kind": "false_award_added",
+        "cohort": "old618"
+      },
+      {
+        "key": "187171696319:55",
+        "san": "c5",
+        "truth": true,
+        "kind": "true_award_recovered",
+        "cohort": "old618"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "frozen_at": "2026-11-04T05:49:35.385772+00:00",
+  "scope": "Fixed two-feature extraction only. No newenginequeries, labels, originalfeature/gate edits, parameter sweeps or deployment.",
+  "script_sha256": "17e62dfe91bb3d876aebfbb4ad5374e370eb818c547937b126cc39eb6a80ac4e",
+  "input_sha256": {
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-conditional-gap-2026-11-04/ENGINE-EVIDENCE.jsonl": "d81a5cb5cc2883bd28291286763a4a4762b69297b2b1d0cf3983ace248e74aee",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-compensation-links-2026-11-04/COMPARISON.json": "8c1e45e13451d9e4579d16e29785a054a01d15acd5f260ff9cfd9798820474ef"
+  },
+  "dependency_sha256": {
+    "/private/tmp/brilly-research-deps/chess/__init__.py": "1fde6a8e932508d14b31f6a584497b49c2969fc3c7cdc675347f819f0d667a5b"
+  },
+  "selection": "For each window independently take best(first)saved response peracceptance, then choose opponent-best acceptance by minimum moveroutcome (losingmate, finitecp, winningmate; fastestloss/longestwin), ucitie. Ifanybranchhasmissingwindow/score/reply, featuresnull.",
+  "features": {
+    "acceptor_fork": "After the first legal reply, the moved piece geometrically attacks at leasttwo enemy nonpawn/king targets including the surviving accepting piece atitsacceptance destination. No filtering pinned attackers; preserve prior diagnostic semantics.",
+    "reply_check": "That same first legal reply gives check."
+  },
+  "coverage": "All1320 cases with at leastone eligibletrainingwindow have savedacceptance evidence; remaining2404cases retainnull, neverfillunknownfalse. All3724casekeys included.",
+  "parity": "Exactlymatch previous relationship descriptors and selectedbranch inall2604windowsof1302fullyeligiblecases. Extract18additional singleeligiblewindow cases fromoriginalsaved evidence bysame recipe.",
+  "bounds": "180seconds extraction, zeroenginesearches, nooutcome-driven retries.",
+  "evaluation_note": "Existing150columns unchanged; append check andfork plusmissingflags. Check-onlycontrol planned toseparate checkinformation fromforkrelation. No previous failed feature/gate modifications."
+}

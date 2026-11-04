@@ -1,0 +1,16 @@
+{
+  "created_at_utc": "2026-11-03T21:56:39.504254+00:00",
+  "scope": "AST syntax and pure synthetic split/selection guard checks only; no model fit or assessment inputs",
+  "passed": true,
+  "checks": [
+    "label-blind deterministic balanced group folds; duplicate groups stay linked",
+    "referenceFP cap binds; maximizeTP then highercutoff tie",
+    "zero-award model never qualifies; explicit reference fallback",
+    "referenceTP floor enforced",
+    "0.5percent integerFP budget enforced",
+    "highercost last tie breaker",
+    "outer/inner synthetic training group isolation"
+  ],
+  "script_sha256": "cfb4d839b8256b7b58017d5bfb2d8f0ae42ca106e5b20e6da45665daaf0b0d83",
+  "protocol_sha256": "5f1ed40b28b34667d017af9241cef36f57298a6889e9610b6192a8cca1af1a6b"
+}

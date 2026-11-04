@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {repeatContinuation} from './temporalProof.ts';
+import {isSacrifice,hasMatingAcceptance} from '../variants/variantA.ts';
+const dir='/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/';
+const result=JSON.parse(readFileSync(dir+'results.json','utf8'));const get=(k:string)=>result.rows.find((r:any)=>r.key===k);
+for(const k of ['186064974534:21','186065215864:21','185769255732:61','186567991235:53'])assert.equal(get(k).awarded,true,k);
+for(const k of ['173084454389:59','169827191694:67'])assert.equal(get(k).proof.veto,true,k);
+assert.equal(get('186064974534:21').proof.origins[0].details[0].kind,'new-safe-checking-fork');
+assert.equal(get('185769255732:61').proof.origins[0].details[0].kind,'new-acceptance-mate');
+const nd=JSON.parse(readFileSync(dir+'../variants/capture-regression.json','utf8'));
+assert.equal(isSacrifice(nd.fen_before,nd.fen_after),false);assert.equal(hasMatingAcceptance(nd.fen_before,nd.fen_after),false);
+assert.equal(repeatContinuation({ply:28,before:nd.fen_before,after:nd.fen_after,uci:nd.uci,confirmedBaseAward:false},[]).veto,false);
+assert.equal(result.rows.filter((r:any)=>r.proof.veto&&r.truth).length,0);
+assert.equal(result.rows.filter((r:any)=>r.proof.veto&&!r.truth).length,8);
+assert.equal(result.rows.filter((r:any)=>r.proof.status==='unknown').length,0);
+console.log(JSON.stringify({focusedChecks:'Nb5, Qh6, Bc5, Rh1, Bg2, Ndxe5 passed',noTrueAwardsLost:true,falseAwardsRemovedFromA:8,maxProofNodes:Math.max(...result.rows.map((r:any)=>r.proof.nodes))}));

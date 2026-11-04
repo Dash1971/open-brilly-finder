@@ -1,0 +1,755 @@
+{
+  "scope": "Local SF18 reproduction of deployed classifier; not captured browser SF19 internal evidence. Two fixed search budgets; no model tuning.",
+  "game_url": "https://mutechess.org/game/tjxdTRho",
+  "played_uci": "f3e5",
+  "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+  "threads": 1,
+  "hash_mb": 64,
+  "multipv": 2,
+  "full_history": true,
+  "profiles": [
+    {
+      "budget": 300000,
+      "input": {
+        "positions": [
+          "rn1qkbnr/pp2pppp/2p5/8/2B1N1b1/5N2/PPPP1PPP/R1BQK2R b KQkq - 2 5",
+          "rn1qkb1r/pp2pppp/2p2n2/8/2B1N1b1/5N2/PPPP1PPP/R1BQK2R w KQkq - 3 6",
+          "rn1qkb1r/pp2pppp/2p2n2/4N3/2B1N1b1/8/PPPP1PPP/R1BQK2R b KQkq - 4 6"
+        ],
+        "reviews": [
+          {
+            "current": {
+              "depth": 15,
+              "lines": [
+                {
+                  "cp": 40,
+                  "moves": [
+                    "e7e6",
+                    "h2h3",
+                    "g4h5",
+                    "e1g1",
+                    "b8d7",
+                    "d2d4",
+                    "g8f6",
+                    "e4f6",
+                    "d7f6",
+                    "g2g4",
+                    "h5g6",
+                    "d1e2",
+                    "f8d6",
+                    "f3e5",
+                    "d6c7",
+                    "c1f4",
+                    "e8g8",
+                    "c2c3",
+                    "f6d5"
+                  ]
+                },
+                {
+                  "cp": 93,
+                  "moves": [
+                    "g4f3",
+                    "d1f3",
+                    "e7e6",
+                    "e1g1",
+                    "b8d7",
+                    "d2d4",
+                    "h7h6",
+                    "f3h3",
+                    "d7b6",
+                    "c4b3",
+                    "d8d4",
+                    "f1e1",
+                    "g8f6",
+                    "e4g5",
+                    "b6d5",
+                    "g5e6",
+                    "f7e6",
+                    "h3e6",
+                    "f8e7"
+                  ]
+                }
+              ],
+              "reported_nodes": 254029
+            },
+            "previous": {
+              "depth": 14,
+              "lines": [
+                {
+                  "cp": 38,
+                  "moves": [
+                    "e7e6",
+                    "h2h3",
+                    "g4h5",
+                    "e1g1",
+                    "b8d7",
+                    "f1e1",
+                    "g8f6",
+                    "e4g3",
+                    "h5g6",
+                    "d2d4",
+                    "f8e7",
+                    "g3e2",
+                    "f6d5",
+                    "e2f4",
+                    "d5f4",
+                    "c1f4",
+                    "e8g8",
+                    "d1e2"
+                  ]
+                },
+                {
+                  "cp": 89,
+                  "moves": [
+                    "g4f3",
+                    "d1f3",
+                    "e7e6",
+                    "f3b3",
+                    "d8c7",
+                    "d2d4",
+                    "f8e7",
+                    "g2g3",
+                    "g8f6",
+                    "c1f4"
+                  ]
+                }
+              ],
+              "reported_nodes": 161860
+            },
+            "terminal": false,
+            "quality": "frozen-test-sf18-300000",
+            "elapsed_seconds": 0.388687,
+            "fen": "rn1qkbnr/pp2pppp/2p5/8/2B1N1b1/5N2/PPPP1PPP/R1BQK2R b KQkq - 2 5",
+            "ply": 9
+          },
+          {
+            "current": {
+              "depth": 19,
+              "lines": [
+                {
+                  "cp": 295,
+                  "moves": [
+                    "f3e5",
+                    "d8d4",
+                    "c4f7",
+                    "e8d8",
+                    "e5g4",
+                    "d4e4",
+                    "g4e3",
+                    "e7e5",
+                    "e1g1",
+                    "b8d7",
+                    "d2d3",
+                    "e4h4",
+                    "f7e6",
+                    "d8c7",
+                    "g2g3",
+                    "h4h5",
+                    "d1h5",
+                    "f6h5",
+                    "e6f7"
+                  ]
+                },
+                {
+                  "cp": 141,
+                  "moves": [
+                    "c4f7",
+                    "e8f7",
+                    "f3e5",
+                    "f7g8",
+                    "e4f6",
+                    "e7f6",
+                    "e5g4",
+                    "h7h5",
+                    "g4e3",
+                    "c6c5",
+                    "e1g1",
+                    "b8c6",
+                    "h2h3",
+                    "d8d4",
+                    "a2a4",
+                    "g7g6"
+                  ]
+                }
+              ],
+              "reported_nodes": 300212
+            },
+            "previous": {
+              "depth": 18,
+              "lines": [
+                {
+                  "cp": 295,
+                  "moves": [
+                    "f3e5",
+                    "d8d4",
+                    "c4f7",
+                    "e8d8",
+                    "e5g4",
+                    "d4e4",
+                    "g4e3",
+                    "e7e5",
+                    "e1g1",
+                    "b8d7",
+                    "d2d3",
+                    "e4h4",
+                    "f7e6",
+                    "d8c7",
+                    "g2g3",
+                    "h4h5",
+                    "d1h5",
+                    "f6h5",
+                    "e6f7"
+                  ]
+                },
+                {
+                  "cp": 141,
+                  "moves": [
+                    "c4f7",
+                    "e8f7",
+                    "f3e5",
+                    "f7g8",
+                    "e4f6",
+                    "e7f6",
+                    "e5g4",
+                    "h7h5",
+                    "g4e3",
+                    "c6c5",
+                    "e1g1",
+                    "b8c6",
+                    "h2h3",
+                    "d8d4",
+                    "a2a4",
+                    "g7g6"
+                  ]
+                }
+              ],
+              "reported_nodes": 215450
+            },
+            "terminal": false,
+            "quality": "frozen-test-sf18-300000",
+            "elapsed_seconds": 0.399031,
+            "fen": "rn1qkb1r/pp2pppp/2p2n2/8/2B1N1b1/5N2/PPPP1PPP/R1BQK2R w KQkq - 3 6",
+            "ply": 10
+          },
+          {
+            "current": {
+              "depth": 18,
+              "lines": [
+                {
+                  "cp": 275,
+                  "moves": [
+                    "d8d4",
+                    "c4f7",
+                    "e8d8",
+                    "e5g4",
+                    "d4e4",
+                    "g4e3",
+                    "e7e5",
+                    "e1g1",
+                    "b8d7",
+                    "d2d3",
+                    "e4h4",
+                    "c1d2",
+                    "d8c7",
+                    "e3f5",
+                    "h4g4",
+                    "d1g4",
+                    "f6g4",
+                    "h2h3",
+                    "g4f6",
+                    "a1e1",
+                    "f6d5",
+                    "f5h4",
+                    "f8d6",
+                    "h4f3",
+                    "h8f8",
+                    "f3g5"
+                  ]
+                },
+                {
+                  "cp": 321,
+                  "moves": [
+                    "d8d5",
+                    "c4d5",
+                    "g4d1",
+                    "d5f7",
+                    "e8d8",
+                    "e4f6",
+                    "e7f6",
+                    "e5c6",
+                    "b8c6",
+                    "e1d1",
+                    "f8c5",
+                    "c2c3",
+                    "c5f2",
+                    "d2d4",
+                    "d8e7",
+                    "f7h5",
+                    "a8d8",
+                    "h1f1",
+                    "g7g6",
+                    "f1f2",
+                    "g6h5"
+                  ]
+                }
+              ],
+              "reported_nodes": 300292
+            },
+            "previous": {
+              "depth": 17,
+              "lines": [
+                {
+                  "cp": 275,
+                  "moves": [
+                    "d8d4",
+                    "c4f7",
+                    "e8d8",
+                    "e5g4",
+                    "d4e4",
+                    "g4e3",
+                    "e7e5",
+                    "e1g1",
+                    "b8d7",
+                    "d2d3",
+                    "e4h4",
+                    "c1d2",
+                    "d8c7",
+                    "e3f5",
+                    "h4g4",
+                    "d1g4",
+                    "f6g4",
+                    "h2h3",
+                    "g4f6",
+                    "a1e1",
+                    "f6d5",
+                    "f5h4",
+                    "f8d6",
+                    "h4f3",
+                    "h8f8",
+                    "f3g5"
+                  ]
+                },
+                {
+                  "cp": 321,
+                  "moves": [
+                    "d8d5",
+                    "c4d5",
+                    "g4d1",
+                    "d5f7",
+                    "e8d8",
+                    "e4f6",
+                    "e7f6",
+                    "e5c6",
+                    "b8c6",
+                    "e1d1",
+                    "f8c5",
+                    "c2c3",
+                    "c5f2",
+                    "d2d4",
+                    "d8e7",
+                    "f7h5",
+                    "a8d8",
+                    "h1f1",
+                    "g7g6",
+                    "f1f2",
+                    "g6h5"
+                  ]
+                }
+              ],
+              "reported_nodes": 257288
+            },
+            "terminal": false,
+            "quality": "frozen-test-sf18-300000",
+            "elapsed_seconds": 0.397288,
+            "fen": "rn1qkb1r/pp2pppp/2p2n2/4N3/2B1N1b1/8/PPPP1PPP/R1BQK2R b KQkq - 4 6",
+            "ply": 11
+          }
+        ],
+        "move": "f3e5"
+      }
+    },
+    {
+      "budget": 3000000,
+      "input": {
+        "positions": [
+          "rn1qkbnr/pp2pppp/2p5/8/2B1N1b1/5N2/PPPP1PPP/R1BQK2R b KQkq - 2 5",
+          "rn1qkb1r/pp2pppp/2p2n2/8/2B1N1b1/5N2/PPPP1PPP/R1BQK2R w KQkq - 3 6",
+          "rn1qkb1r/pp2pppp/2p2n2/4N3/2B1N1b1/8/PPPP1PPP/R1BQK2R b KQkq - 4 6"
+        ],
+        "reviews": [
+          {
+            "current": {
+              "depth": 21,
+              "lines": [
+                {
+                  "cp": 31,
+                  "moves": [
+                    "e7e6",
+                    "h2h3",
+                    "g4h5",
+                    "e4g3",
+                    "h5f3",
+                    "d1f3",
+                    "b8d7",
+                    "c4e2",
+                    "g8f6",
+                    "d2d4",
+                    "f8d6",
+                    "e1g1",
+                    "e8g8",
+                    "a2a4",
+                    "a7a5",
+                    "e2d3",
+                    "f8e8",
+                    "b2b3",
+                    "f6d5",
+                    "g3e4",
+                    "d6e7",
+                    "c1b2",
+                    "d5b4",
+                    "a1d1"
+                  ]
+                },
+                {
+                  "cp": 80,
+                  "moves": [
+                    "g4f3",
+                    "d1f3",
+                    "e7e6",
+                    "e1g1",
+                    "b8d7",
+                    "f3g3",
+                    "d7f6",
+                    "d2d3",
+                    "h7h5",
+                    "f1e1",
+                    "f6e4",
+                    "d3e4",
+                    "h5h4",
+                    "g3h3",
+                    "f8e7",
+                    "c1f4",
+                    "d8a5"
+                  ]
+                }
+              ],
+              "reported_nodes": 2426375
+            },
+            "previous": {
+              "depth": 20,
+              "lines": [
+                {
+                  "cp": 32,
+                  "moves": [
+                    "e7e6",
+                    "h2h3",
+                    "g4h5",
+                    "e1g1",
+                    "b8d7",
+                    "f1e1",
+                    "h5f3",
+                    "d1f3",
+                    "d7e5",
+                    "f3e2",
+                    "e5c4",
+                    "e2c4",
+                    "f8e7",
+                    "b2b3",
+                    "g8f6",
+                    "c1b2",
+                    "d8d5",
+                    "d2d3",
+                    "e8g8",
+                    "e4f6",
+                    "e7f6",
+                    "b2f6"
+                  ]
+                },
+                {
+                  "cp": 80,
+                  "moves": [
+                    "g4f3",
+                    "d1f3",
+                    "e7e6",
+                    "f3b3",
+                    "d8c7",
+                    "d2d4",
+                    "f8e7",
+                    "e4g5",
+                    "e7g5",
+                    "c1g5",
+                    "h7h6",
+                    "b3h3",
+                    "b8d7",
+                    "e1g1",
+                    "d7f6",
+                    "a1e1",
+                    "g8e7",
+                    "c2c3",
+                    "f6d5",
+                    "f2f4",
+                    "e8g8",
+                    "c4d5",
+                    "c6d5",
+                    "g5e7",
+                    "c7e7"
+                  ]
+                }
+              ],
+              "reported_nodes": 1406137
+            },
+            "terminal": false,
+            "quality": "frozen-test-sf18-3000000",
+            "elapsed_seconds": 3.905469,
+            "fen": "rn1qkbnr/pp2pppp/2p5/8/2B1N1b1/5N2/PPPP1PPP/R1BQK2R b KQkq - 2 5",
+            "ply": 9
+          },
+          {
+            "current": {
+              "depth": 22,
+              "lines": [
+                {
+                  "cp": 293,
+                  "moves": [
+                    "f3e5",
+                    "d8d4",
+                    "c4f7",
+                    "e8d8",
+                    "e5g4",
+                    "d4e4",
+                    "g4e3",
+                    "f6d5",
+                    "e1g1",
+                    "d5e3",
+                    "f2e3",
+                    "e7e5",
+                    "d2d3",
+                    "e4h4",
+                    "c1d2",
+                    "f8d6",
+                    "d2a5",
+                    "b7b6",
+                    "a5e1",
+                    "h4a4"
+                  ]
+                },
+                {
+                  "cp": 141,
+                  "moves": [
+                    "c4f7",
+                    "e8f7",
+                    "f3e5",
+                    "f7g8",
+                    "e4f6",
+                    "e7f6",
+                    "e5g4",
+                    "h7h5",
+                    "g4e3",
+                    "c6c5",
+                    "e1g1",
+                    "d8d7",
+                    "b2b3",
+                    "b8c6",
+                    "c1b2",
+                    "a8d8",
+                    "d1e2",
+                    "c6d4",
+                    "e2d3",
+                    "d4c6",
+                    "d3d7"
+                  ]
+                }
+              ],
+              "reported_nodes": 3000286
+            },
+            "previous": {
+              "depth": 21,
+              "lines": [
+                {
+                  "cp": 293,
+                  "moves": [
+                    "f3e5",
+                    "d8d4",
+                    "c4f7",
+                    "e8d8",
+                    "e5g4",
+                    "d4e4",
+                    "g4e3",
+                    "f6d5",
+                    "e1g1",
+                    "d5e3",
+                    "f2e3",
+                    "e7e5",
+                    "d2d3",
+                    "e4h4",
+                    "c1d2",
+                    "f8d6",
+                    "d2a5",
+                    "b7b6",
+                    "a5e1",
+                    "h4a4"
+                  ]
+                },
+                {
+                  "cp": 141,
+                  "moves": [
+                    "c4f7",
+                    "e8f7",
+                    "f3e5",
+                    "f7g8",
+                    "e4f6",
+                    "e7f6",
+                    "e5g4",
+                    "h7h5",
+                    "g4e3",
+                    "c6c5",
+                    "e1g1",
+                    "d8d7",
+                    "b2b3",
+                    "b8c6",
+                    "c1b2",
+                    "a8d8",
+                    "d1e2",
+                    "c6d4",
+                    "e2d3",
+                    "d4c6",
+                    "d3d7"
+                  ]
+                }
+              ],
+              "reported_nodes": 2611589
+            },
+            "terminal": false,
+            "quality": "frozen-test-sf18-3000000",
+            "elapsed_seconds": 3.83648,
+            "fen": "rn1qkb1r/pp2pppp/2p2n2/8/2B1N1b1/5N2/PPPP1PPP/R1BQK2R w KQkq - 3 6",
+            "ply": 10
+          },
+          {
+            "current": {
+              "depth": 23,
+              "lines": [
+                {
+                  "cp": 294,
+                  "moves": [
+                    "d8d4",
+                    "c4f7",
+                    "e8d8",
+                    "e5g4",
+                    "d4e4",
+                    "g4e3",
+                    "f6d5",
+                    "e1g1",
+                    "d5e3",
+                    "f2e3",
+                    "e7e5",
+                    "d2d3",
+                    "e4h4",
+                    "d3d4",
+                    "b8d7",
+                    "f7e6",
+                    "e5e4",
+                    "f1f4",
+                    "h4g5",
+                    "d4d5",
+                    "g5g6",
+                    "f4f5"
+                  ]
+                },
+                {
+                  "cp": 340,
+                  "moves": [
+                    "d8d5",
+                    "c4d5",
+                    "g4d1",
+                    "d5f7",
+                    "e8d8",
+                    "e1d1",
+                    "f6e4",
+                    "f7e6",
+                    "d8e8",
+                    "h1f1",
+                    "e4d6",
+                    "d2d4",
+                    "g7g6",
+                    "c2c3",
+                    "b8a6",
+                    "e6d7",
+                    "e8d8",
+                    "d7h3",
+                    "f8g7"
+                  ]
+                }
+              ],
+              "reported_nodes": 3000021
+            },
+            "previous": {
+              "depth": 22,
+              "lines": [
+                {
+                  "cp": 294,
+                  "moves": [
+                    "d8d4",
+                    "c4f7",
+                    "e8d8",
+                    "e5g4",
+                    "d4e4",
+                    "g4e3",
+                    "f6d5",
+                    "e1g1",
+                    "d5e3",
+                    "f2e3",
+                    "e7e5",
+                    "d2d3",
+                    "e4h4",
+                    "d3d4",
+                    "b8d7",
+                    "f7e6",
+                    "e5e4",
+                    "f1f4",
+                    "h4g5",
+                    "d4d5",
+                    "g5g6",
+                    "f4f5"
+                  ]
+                },
+                {
+                  "cp": 340,
+                  "moves": [
+                    "d8d5",
+                    "c4d5",
+                    "g4d1",
+                    "d5f7",
+                    "e8d8",
+                    "e1d1",
+                    "f6e4",
+                    "f7e6",
+                    "d8e8",
+                    "h1f1",
+                    "e4d6",
+                    "d2d4",
+                    "g7g6",
+                    "c2c3",
+                    "b8a6",
+                    "e6d7",
+                    "e8d8",
+                    "d7h3",
+                    "f8g7"
+                  ]
+                }
+              ],
+              "reported_nodes": 1855960
+            },
+            "terminal": false,
+            "quality": "frozen-test-sf18-3000000",
+            "elapsed_seconds": 3.757405,
+            "fen": "rn1qkb1r/pp2pppp/2p2n2/4N3/2B1N1b1/8/PPPP1PPP/R1BQK2R b KQkq - 4 6",
+            "ply": 11
+          }
+        ],
+        "move": "f3e5"
+      }
+    }
+  ],
+  "elapsed_seconds": 12.958592708222568
+}

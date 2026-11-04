@@ -1,0 +1,109 @@
+{
+  "study_id": "brilliant-moves-v5-private-staging",
+  "staged_at_utc": "2026-11-03T10:54:35.879647+00:00",
+  "publication_status": "private_parent_review_required",
+  "predictions_included": false,
+  "roles": {
+    "development": {
+      "moves": 848,
+      "games": 439,
+      "brilliant": 413,
+      "explicit_non_brilliant": 435
+    },
+    "test": {
+      "moves": 200,
+      "games": 106,
+      "brilliant": 100,
+      "explicit_non_brilliant": 100
+    }
+  },
+  "role_note": "All848 prior core/panel labels are training/development. Historical split names are archive metadata only; the frozen200 form the new prospective test.",
+  "counts": {
+    "games": 545,
+    "positions": 47118,
+    "observations": 1781,
+    "labeled_moves": 1048
+  },
+  "observation_source_counts": {
+    "fresh_review": 1131,
+    "gallery": 650
+  },
+  "new_fresh_observations": 210,
+  "new_secondary_fresh_observations": 10,
+  "new_secondary_observation_ids": [
+    "c4a6c8cc0f4663b75a6162290602bc6430266999f23f11dce22e8b6e6c7cdc53",
+    "ae076b19cca57337897525844b9bbf7b5bf55c4458f5148dccd739da464c46c3",
+    "f6fcf5acb95d94bce7680dd70da57509eeda8ebdb0590eb3aa7e6de12e84392f",
+    "3585e876efa151e24d7d89246039e7e7964382e227e8cc0b1d8c2c4e58a8cca3",
+    "becba9cf98c96b30188f10bf7bbd6c65681d25c3f1c171a4fb682907cd0d76ed",
+    "d63ffb18f7fe04b4a1fc7191063191c62c28d02896d4c65fae9fbdd92d6d4ea6",
+    "a31ae8a753687c594c0062b76d9b6d20c0b517e816fbc0abf7840815aeb25757",
+    "a7524d5ce9e4efd6dce8328493c4c4fba68365d74a3c1051cf3e29836ee3b9ed",
+    "2bedd2a29a168342bb2ba0d38118c01860dbbe2ed83e3f581867a138ac4c9b82",
+    "6436b9a34ce4560717cf89ef471aef7bbd7dc6896b193d2039295aa7f20a08b4"
+  ],
+  "secondary_note": "All raw gallery/current observations and revisions for included games are retained. Gallery labels are separate from explicit fresh-review labels; absence is not negative.",
+  "identity_validation": {
+    "full_pgn_positions_legally_replayed": 47118,
+    "all1048_exact_game_ply_SAN_UCI_FEN_and_fresh_labels_match": true,
+    "rendered_board_proofs": 1041,
+    "development_rendered_board_proofs": 841,
+    "test_rendered_board_proofs": 200,
+    "without_rendered_board_proof": [
+      "live:171711505152:69",
+      "live:171711505152:59",
+      "live:178708673761:88",
+      "live:178708673761:96",
+      "live:178966671357:44",
+      "live:178966671357:38",
+      "live:180781671395:89"
+    ],
+    "missing_note": "Seven retained development records have exact PGN/SAN/ply identity but no captured rendered-board proof. Do not describe all1048 as board verified."
+  },
+  "inputs": [
+    {
+      "artifact": "research/brilliants-final-2026-11-03/primary-moves.json",
+      "sha256": "505a8ffde14269f7782af1404d12b6407a4d5b298f3bedc2edaea7d1e7a456ea"
+    },
+    {
+      "artifact": "research/brilliants-final-2026-11-03/panel-moves.json",
+      "sha256": "c7794a2441bd6adcb570bd2c2bd185e7e5d50dbb36f36a3b80c12cf7ba932b70"
+    },
+    {
+      "artifact": "research/brilliants-improvement-2026-11-03/future-validation-v5/primary-moves.json",
+      "sha256": "d900c8c6ebd94a95a53d96c214dc4d9df7e3d9859a0dd165c058975bdc35a7a9"
+    }
+  ],
+  "source_database_sha256": {
+    "research/brilliants-final-2026-11-03/corpus.sqlite3": "c9095e767410db0e3dc225c2b2d35f826dab34255199477f5b7950089d8f42d3",
+    "research/brilliants-improvement-2026-11-03/future-validation-v5/corpus.sqlite3": "2b7c376d5d7521fd6472fadf8f47d264ac683a8bc7d31e7756043ebf5835b55e"
+  },
+  "candidate_and_exclusion_provenance": "source-hash-audit.json and protocol/; effective S castling addendum supersedes the initial executable hash.",
+  "privacy": {
+    "raw_http_headers_included": false,
+    "cookies_or_auth_material_included": false,
+    "private_absolute_paths_included": false,
+    "raw_observation_json_preserved_exactly": true
+  },
+  "artifact_scope": "Selected545games only; full PGNs once per game. Source corpora unchanged. No monthly archives, engine binaries, node_modules, predictions, or scores.",
+  "artifact_sha256": {
+    "moves.json": "dd0d254d306af9cfe46adf6c1454b0c723ba976704ecd01c831b979a0fd77545",
+    "pgn-provenance.json": "a765a052d06e7fa5a15f895241f0e67fd9ccfc2c80101ee32ea9350c64e0ed0d",
+    "source-hash-audit.json": "3cbe9089ade2045682ed1d344e22e52fce67e9b2fe5a903adebbc3ba0e41f226",
+    "selected-games.pgn": "6902c52b7223726afabb42d25e8712e22cd197de8f9937be755ea4b33ffc67f5",
+    "corpus.sqlite3": "6a493fc88d0611c5e8ad02a89568de42332f145a8e8a892ffb814e9166653953",
+    "observations-export.json": "285c24e619cd104a439fe82496748b591844c56fb34ce14107eac005ead5bc35",
+    "moves.csv": "078b3ee544809bbb038e286832f30bbc5ced6bc6ea3d25449d80f26814e6e843",
+    "archival-game-metadata.json": "99f3c5b3dad7d5838b952df528730a262acec95d0fbb0def51f9e87ee889ede1",
+    "protocol/05-gallery-reserve-activations.json": "e6109696645c719843069f3eba27e461f3db1ae9ca195e4b768336e7c0ada369",
+    "protocol/02-CORE-FREEZE.json": "99bcffb5a77209f13e61bd0c495625950da6950c028ab9b64a5a1b8eea6a3394",
+    "protocol/00-PLAN.json": "6e722653d10e4092f5e70a1927f1d68310c704befc574f78d5e15bc624fcd946",
+    "protocol/04-known-regression-fens.json": "206c9d7e7d13f47fefb1d574536b93b17b10bbed8bca9a6cc787d12fc4fb3cf4",
+    "protocol/09-CANDIDATE-FREEZE.json": "f2323f846cfbb84b66fc85fc988c34da2452cd0cad8de38a596b08f2cb7dd445",
+    "protocol/03-exclude-games.json": "2d209ad510519885ed8a673040f817582c2c49f041133ee7d5bcbff3cf30e0d1",
+    "protocol/07-source-freeze.json": "643c03c6432f043c0a1f345ade1930f338ac1a79b12f6435a84a20270cb0521f",
+    "protocol/06-FREEZE.json": "8f87b341a097d22c1e9af2e2c84ea58d9fb43dfd797fd9265b26c7feff678bf6",
+    "protocol/01-QUEUE-FREEZE.json": "3fa68a35d68e7d731720093fc31d9546e6455ba26bb1b6cf7e539357b5cc3fd6",
+    "protocol/08-source-freeze-castling-addendum.json": "648965fc4737bd2ef84734f26e05bb1c7859fb5c5c9b0298d5163043cbdeafa1"
+  }
+}

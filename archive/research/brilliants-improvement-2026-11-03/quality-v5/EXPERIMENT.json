@@ -1,0 +1,26 @@
+{
+  "scope": "All818 core moves are now unblinded development. No prospective validation claim.",
+  "hypothesis": "Quality for !! compares best and played move in the same completed MultiPV root/depth, repeated over the complete decision window. Two fixed missing-root policies: existing child fallback, or unknown/fail-closed.",
+  "source_baseline_sha256": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301",
+  "unchanged": [
+    "after-position floor",
+    "raw offer, material/mate corroboration, checked history, phase/safe alternative gates",
+    "full current/previous confidence window",
+    "EC mode",
+    "native accuracy/cpLoss",
+    "fallback original labels when no Brilliant award"
+  ],
+  "changed": [
+    "Only Mute !! eligibility: same-root quality; allow its explicit override of original child-score poor labels when all Brilliant gates pass."
+  ],
+  "variants": {
+    "same_root_fallback": {
+      "missing_root": "Use unchanged cross-position quality independently in each window.",
+      "source_sha256": "ee6157c662456a77bccca68f53375b6b91da893ba94a5a59a5eedf9f5fda5aef"
+    },
+    "same_root_strict": {
+      "missing_root": "Cannot establish Brilliant eligibility in that window; no confidence shortcut.",
+      "source_sha256": "bb5460ce4523074bdabf945ab938f398130c1838e55c45f72076220b5714686a"
+    }
+  }
+}

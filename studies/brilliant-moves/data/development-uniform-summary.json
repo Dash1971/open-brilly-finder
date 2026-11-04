@@ -1,0 +1,512 @@
+{
+  "scope": "All848development. Uniform stronger budget is a full-corpus sensitivity check, not new validation. Direct EC current annotation and EC confirmed/shared-window outputs are separate; Mute v4/A are full-window confirmed.",
+  "summaries": {
+    "baseline": {
+      "all848": {
+        "ec_direct": {
+          "TP": 113,
+          "FN": 300,
+          "FP": 7,
+          "TN": 428,
+          "n": 848,
+          "agreement": 0.6379716981132075,
+          "recall": 0.2736077481840194,
+          "false_award_rate": 0.016091954022988506,
+          "sample_precision": 0.9416666666666667
+        },
+        "ec_confirmed": {
+          "TP": 109,
+          "FN": 304,
+          "FP": 7,
+          "TN": 428,
+          "n": 848,
+          "agreement": 0.6332547169811321,
+          "recall": 0.2639225181598063,
+          "false_award_rate": 0.016091954022988506,
+          "sample_precision": 0.9396551724137931
+        },
+        "v4": {
+          "TP": 322,
+          "FN": 91,
+          "FP": 28,
+          "TN": 407,
+          "n": 848,
+          "agreement": 0.8596698113207547,
+          "recall": 0.7796610169491526,
+          "false_award_rate": 0.06436781609195402,
+          "sample_precision": 0.92
+        },
+        "A": {
+          "TP": 322,
+          "FN": 91,
+          "FP": 27,
+          "TN": 408,
+          "n": 848,
+          "agreement": 0.8608490566037735,
+          "recall": 0.7796610169491526,
+          "false_award_rate": 0.06206896551724138,
+          "sample_precision": 0.9226361031518625
+        }
+      },
+      "core818": {
+        "ec_direct": {
+          "TP": 112,
+          "FN": 297,
+          "FP": 7,
+          "TN": 402,
+          "n": 818,
+          "agreement": 0.628361858190709,
+          "recall": 0.27383863080684595,
+          "false_award_rate": 0.017114914425427872,
+          "sample_precision": 0.9411764705882353
+        },
+        "ec_confirmed": {
+          "TP": 108,
+          "FN": 301,
+          "FP": 7,
+          "TN": 402,
+          "n": 818,
+          "agreement": 0.6234718826405868,
+          "recall": 0.26405867970660146,
+          "false_award_rate": 0.017114914425427872,
+          "sample_precision": 0.9391304347826087
+        },
+        "v4": {
+          "TP": 320,
+          "FN": 89,
+          "FP": 25,
+          "TN": 384,
+          "n": 818,
+          "agreement": 0.8606356968215159,
+          "recall": 0.78239608801956,
+          "false_award_rate": 0.061124694376528114,
+          "sample_precision": 0.927536231884058
+        },
+        "A": {
+          "TP": 320,
+          "FN": 89,
+          "FP": 24,
+          "TN": 385,
+          "n": 818,
+          "agreement": 0.8618581907090465,
+          "recall": 0.78239608801956,
+          "false_award_rate": 0.05867970660146699,
+          "sample_precision": 0.9302325581395349
+        }
+      },
+      "old618": {
+        "ec_direct": {
+          "TP": 84,
+          "FN": 225,
+          "FP": 6,
+          "TN": 303,
+          "n": 618,
+          "agreement": 0.6262135922330098,
+          "recall": 0.27184466019417475,
+          "false_award_rate": 0.019417475728155338,
+          "sample_precision": 0.9333333333333333
+        },
+        "ec_confirmed": {
+          "TP": 81,
+          "FN": 228,
+          "FP": 6,
+          "TN": 303,
+          "n": 618,
+          "agreement": 0.6213592233009708,
+          "recall": 0.2621359223300971,
+          "false_award_rate": 0.019417475728155338,
+          "sample_precision": 0.9310344827586207
+        },
+        "v4": {
+          "TP": 246,
+          "FN": 63,
+          "FP": 15,
+          "TN": 294,
+          "n": 618,
+          "agreement": 0.8737864077669902,
+          "recall": 0.7961165048543689,
+          "false_award_rate": 0.04854368932038835,
+          "sample_precision": 0.9425287356321839
+        },
+        "A": {
+          "TP": 246,
+          "FN": 63,
+          "FP": 15,
+          "TN": 294,
+          "n": 618,
+          "agreement": 0.8737864077669902,
+          "recall": 0.7961165048543689,
+          "false_award_rate": 0.04854368932038835,
+          "sample_precision": 0.9425287356321839
+        }
+      },
+      "recent200": {
+        "ec_direct": {
+          "TP": 28,
+          "FN": 72,
+          "FP": 1,
+          "TN": 99,
+          "n": 200,
+          "agreement": 0.635,
+          "recall": 0.28,
+          "false_award_rate": 0.01,
+          "sample_precision": 0.9655172413793104
+        },
+        "ec_confirmed": {
+          "TP": 27,
+          "FN": 73,
+          "FP": 1,
+          "TN": 99,
+          "n": 200,
+          "agreement": 0.63,
+          "recall": 0.27,
+          "false_award_rate": 0.01,
+          "sample_precision": 0.9642857142857143
+        },
+        "v4": {
+          "TP": 74,
+          "FN": 26,
+          "FP": 10,
+          "TN": 90,
+          "n": 200,
+          "agreement": 0.82,
+          "recall": 0.74,
+          "false_award_rate": 0.1,
+          "sample_precision": 0.8809523809523809
+        },
+        "A": {
+          "TP": 74,
+          "FN": 26,
+          "FP": 9,
+          "TN": 91,
+          "n": 200,
+          "agreement": 0.825,
+          "recall": 0.74,
+          "false_award_rate": 0.09,
+          "sample_precision": 0.891566265060241
+        }
+      },
+      "panel30": {
+        "ec_direct": {
+          "TP": 1,
+          "FN": 3,
+          "FP": 0,
+          "TN": 26,
+          "n": 30,
+          "agreement": 0.9,
+          "recall": 0.25,
+          "false_award_rate": 0,
+          "sample_precision": 1
+        },
+        "ec_confirmed": {
+          "TP": 1,
+          "FN": 3,
+          "FP": 0,
+          "TN": 26,
+          "n": 30,
+          "agreement": 0.9,
+          "recall": 0.25,
+          "false_award_rate": 0,
+          "sample_precision": 1
+        },
+        "v4": {
+          "TP": 2,
+          "FN": 2,
+          "FP": 3,
+          "TN": 23,
+          "n": 30,
+          "agreement": 0.8333333333333334,
+          "recall": 0.5,
+          "false_award_rate": 0.11538461538461539,
+          "sample_precision": 0.4
+        },
+        "A": {
+          "TP": 2,
+          "FN": 2,
+          "FP": 3,
+          "TN": 23,
+          "n": 30,
+          "agreement": 0.8333333333333334,
+          "recall": 0.5,
+          "false_award_rate": 0.11538461538461539,
+          "sample_precision": 0.4
+        }
+      }
+    },
+    "uniform": {
+      "all848": {
+        "ec_direct": {
+          "TP": 117,
+          "FN": 296,
+          "FP": 6,
+          "TN": 429,
+          "n": 848,
+          "agreement": 0.6438679245283019,
+          "recall": 0.28329297820823246,
+          "false_award_rate": 0.013793103448275862,
+          "sample_precision": 0.9512195121951219
+        },
+        "ec_confirmed": {
+          "TP": 116,
+          "FN": 297,
+          "FP": 6,
+          "TN": 429,
+          "n": 848,
+          "agreement": 0.6426886792452831,
+          "recall": 0.28087167070217917,
+          "false_award_rate": 0.013793103448275862,
+          "sample_precision": 0.9508196721311475
+        },
+        "v4": {
+          "TP": 323,
+          "FN": 90,
+          "FP": 28,
+          "TN": 407,
+          "n": 848,
+          "agreement": 0.8608490566037735,
+          "recall": 0.7820823244552058,
+          "false_award_rate": 0.06436781609195402,
+          "sample_precision": 0.9202279202279202
+        },
+        "A": {
+          "TP": 323,
+          "FN": 90,
+          "FP": 27,
+          "TN": 408,
+          "n": 848,
+          "agreement": 0.8620283018867925,
+          "recall": 0.7820823244552058,
+          "false_award_rate": 0.06206896551724138,
+          "sample_precision": 0.9228571428571428
+        }
+      },
+      "core818": {
+        "ec_direct": {
+          "TP": 116,
+          "FN": 293,
+          "FP": 6,
+          "TN": 403,
+          "n": 818,
+          "agreement": 0.6344743276283619,
+          "recall": 0.28361858190709044,
+          "false_award_rate": 0.014669926650366748,
+          "sample_precision": 0.9508196721311475
+        },
+        "ec_confirmed": {
+          "TP": 115,
+          "FN": 294,
+          "FP": 6,
+          "TN": 403,
+          "n": 818,
+          "agreement": 0.6332518337408313,
+          "recall": 0.28117359413202936,
+          "false_award_rate": 0.014669926650366748,
+          "sample_precision": 0.9504132231404959
+        },
+        "v4": {
+          "TP": 321,
+          "FN": 88,
+          "FP": 25,
+          "TN": 384,
+          "n": 818,
+          "agreement": 0.8618581907090465,
+          "recall": 0.784841075794621,
+          "false_award_rate": 0.061124694376528114,
+          "sample_precision": 0.9277456647398844
+        },
+        "A": {
+          "TP": 321,
+          "FN": 88,
+          "FP": 24,
+          "TN": 385,
+          "n": 818,
+          "agreement": 0.863080684596577,
+          "recall": 0.784841075794621,
+          "false_award_rate": 0.05867970660146699,
+          "sample_precision": 0.9304347826086956
+        }
+      },
+      "old618": {
+        "ec_direct": {
+          "TP": 88,
+          "FN": 221,
+          "FP": 5,
+          "TN": 304,
+          "n": 618,
+          "agreement": 0.6343042071197411,
+          "recall": 0.284789644012945,
+          "false_award_rate": 0.016181229773462782,
+          "sample_precision": 0.946236559139785
+        },
+        "ec_confirmed": {
+          "TP": 87,
+          "FN": 222,
+          "FP": 5,
+          "TN": 304,
+          "n": 618,
+          "agreement": 0.6326860841423948,
+          "recall": 0.2815533980582524,
+          "false_award_rate": 0.016181229773462782,
+          "sample_precision": 0.9456521739130435
+        },
+        "v4": {
+          "TP": 247,
+          "FN": 62,
+          "FP": 16,
+          "TN": 293,
+          "n": 618,
+          "agreement": 0.8737864077669902,
+          "recall": 0.7993527508090615,
+          "false_award_rate": 0.05177993527508091,
+          "sample_precision": 0.9391634980988594
+        },
+        "A": {
+          "TP": 247,
+          "FN": 62,
+          "FP": 16,
+          "TN": 293,
+          "n": 618,
+          "agreement": 0.8737864077669902,
+          "recall": 0.7993527508090615,
+          "false_award_rate": 0.05177993527508091,
+          "sample_precision": 0.9391634980988594
+        }
+      },
+      "recent200": {
+        "ec_direct": {
+          "TP": 28,
+          "FN": 72,
+          "FP": 1,
+          "TN": 99,
+          "n": 200,
+          "agreement": 0.635,
+          "recall": 0.28,
+          "false_award_rate": 0.01,
+          "sample_precision": 0.9655172413793104
+        },
+        "ec_confirmed": {
+          "TP": 28,
+          "FN": 72,
+          "FP": 1,
+          "TN": 99,
+          "n": 200,
+          "agreement": 0.635,
+          "recall": 0.28,
+          "false_award_rate": 0.01,
+          "sample_precision": 0.9655172413793104
+        },
+        "v4": {
+          "TP": 74,
+          "FN": 26,
+          "FP": 9,
+          "TN": 91,
+          "n": 200,
+          "agreement": 0.825,
+          "recall": 0.74,
+          "false_award_rate": 0.09,
+          "sample_precision": 0.891566265060241
+        },
+        "A": {
+          "TP": 74,
+          "FN": 26,
+          "FP": 8,
+          "TN": 92,
+          "n": 200,
+          "agreement": 0.83,
+          "recall": 0.74,
+          "false_award_rate": 0.08,
+          "sample_precision": 0.9024390243902439
+        }
+      },
+      "panel30": {
+        "ec_direct": {
+          "TP": 1,
+          "FN": 3,
+          "FP": 0,
+          "TN": 26,
+          "n": 30,
+          "agreement": 0.9,
+          "recall": 0.25,
+          "false_award_rate": 0,
+          "sample_precision": 1
+        },
+        "ec_confirmed": {
+          "TP": 1,
+          "FN": 3,
+          "FP": 0,
+          "TN": 26,
+          "n": 30,
+          "agreement": 0.9,
+          "recall": 0.25,
+          "false_award_rate": 0,
+          "sample_precision": 1
+        },
+        "v4": {
+          "TP": 2,
+          "FN": 2,
+          "FP": 3,
+          "TN": 23,
+          "n": 30,
+          "agreement": 0.8333333333333334,
+          "recall": 0.5,
+          "false_award_rate": 0.11538461538461539,
+          "sample_precision": 0.4
+        },
+        "A": {
+          "TP": 2,
+          "FN": 2,
+          "FP": 3,
+          "TN": 23,
+          "n": 30,
+          "agreement": 0.8333333333333334,
+          "recall": 0.5,
+          "false_award_rate": 0.11538461538461539,
+          "sample_precision": 0.4
+        }
+      }
+    }
+  },
+  "paired_change_counts": {
+    "ec_direct": {
+      "true_award_lost": 2,
+      "true_award_recovered": 6,
+      "false_award_removed": 1
+    },
+    "ec_confirmed": {
+      "true_award_recovered": 8,
+      "false_award_removed": 1,
+      "true_award_lost": 1
+    },
+    "v4": {
+      "false_award_added": 3,
+      "false_award_removed": 3,
+      "true_award_recovered": 5,
+      "true_award_lost": 4
+    },
+    "A": {
+      "false_award_added": 3,
+      "false_award_removed": 3,
+      "true_award_recovered": 5,
+      "true_award_lost": 4
+    }
+  },
+  "audit": {
+    "scope": "Full848development sensitivity; no fresh labels, no independently validated candidate.",
+    "all848_identical_case_keys_and_labels": true,
+    "uniform1500000_requested_nodes": true,
+    "exact2445_unique_usable_snapshots": true,
+    "retained_original_windows": 1769,
+    "new_tail_windows": 676,
+    "all_merged_snapshot_value_blocks_byte_identical_to_source": true,
+    "baseline_targeted_engine_windows_substituted": 0,
+    "full_PGN_history_and_source_snapshot_identities_checked": true,
+    "source_classifier_hashes_verified_before_replay": true,
+    "nonterminal_snapshots_without_actual_prior_completed_iteration": [],
+    "partial_game_TT_restarts": 3,
+    "recorded_search_seconds_including_interrupted_attempts": 5173.422952,
+    "elapsed_between_first_start_and_last_completion_seconds": 1482.407722,
+    "all_workers_below_final1600_second_allowance": true,
+    "no_completed_search_reruns": true,
+    "no_extra_core_retries_planned": true
+  }
+}

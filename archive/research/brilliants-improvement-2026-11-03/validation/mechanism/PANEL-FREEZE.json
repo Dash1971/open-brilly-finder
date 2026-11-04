@@ -1,0 +1,48 @@
+{
+  "frozen_at_utc": "2026-11-03T07:45:16.028245+00:00",
+  "candidate_source_sha256": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301",
+  "counts": {
+    "mating_acceptance": 5,
+    "unchanged_offer_while_in_check": 5,
+    "phase_winning_context": 10,
+    "cross_square_material_recoup": 10
+  },
+  "total": 30,
+  "unique_games": 30,
+  "shortfall": {
+    "mating_acceptance": 5,
+    "unchanged_offer_while_in_check": 5,
+    "total": 10
+  },
+  "no_current_labels_read": true,
+  "no_engine_used": true,
+  "coordination": {
+    "root_no_selected_games_probed": true,
+    "validation_collector_no_selected_games_probed": true,
+    "root_approved_30_and_shortfall": true,
+    "core_replacements_restricted_to_first8_reserves_per_account": true
+  },
+  "validation": {
+    "all_selected_pgn_identities_valid": true,
+    "all_saved_conditional_lines_legal": true,
+    "old_games_excluded": 325,
+    "old_canonical_positions_excluded": 25904,
+    "core_games_excluded": 100,
+    "protected_reserve_games_excluded": 40,
+    "gallery_candidate_before_after_positions_excluded": 482,
+    "one_case_per_game": true,
+    "observations_tables_read": false,
+    "current_label_evidence_files_read": false
+  },
+  "sha256": {
+    "selection-input.json": "19e292c95826322e1bfa819e368a739a28f8b91ce8e5d8a17261007c00de2471",
+    "select-panel.mts": "e7da3adf3bf621beaab3c49c8b2568b4676c812ea37430c366876ef30da5ee7b",
+    "validate-panel.py": "fa84c67671e4393d060e3d857fb35dda7fb9f7b9d9f6ee3a3cbeecbf9a1312d9",
+    "candidate-descriptors.json": "02f41654badbf164af01a00c8cc8f6db3390996388e198c4a0caf2394696b167",
+    "panel-queue.json": "be502938c815a23926b43b04fc788784810310594e19899df938dac7a15c9590",
+    "panel-half-a.json": "f076230d46e62e8c1e8cf0338817cfc97d05e7ac587cb32733792829cf970a1e",
+    "panel-half-b.json": "e5457ed29de3633918a70503232e6614d3e159309e5fc255ed690e5b481c0277",
+    "SELECTION.md": "5296c16579713f251992d7e7998a0a9009d675fa360b8d3f8b6f6bd826a19bba"
+  },
+  "identity_sha256": "a701252f1b938c1dca7d40d56764ba6754a23bc8a3163f86bf7f29fff903118f"
+}

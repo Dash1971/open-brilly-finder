@@ -1,0 +1,430 @@
+{
+  "staged_at_utc": "2026-11-03T11:17:13.600950+00:00",
+  "scope": "Approved1048moves/545games data staging; no recomputation, training, source edits, commit or push.",
+  "roles": {
+    "development": {
+      "moves": 848,
+      "games": 439,
+      "brilliant": 413,
+      "explicit_non_brilliant": 435
+    },
+    "test": {
+      "moves": 200,
+      "games": 106,
+      "brilliant": 100,
+      "explicit_non_brilliant": 100
+    }
+  },
+  "board_proofs": {
+    "verified": 1041,
+    "missing": 7
+  },
+  "source_mapping": [
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/corpus.sqlite3",
+      "source_sha256": "6a493fc88d0611c5e8ad02a89568de42332f145a8e8a892ffb814e9166653953",
+      "public_artifact": "corpus.sqlite3",
+      "public_sha256": "6a493fc88d0611c5e8ad02a89568de42332f145a8e8a892ffb814e9166653953",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/selected-games.pgn",
+      "source_sha256": "6902c52b7223726afabb42d25e8712e22cd197de8f9937be755ea4b33ffc67f5",
+      "public_artifact": "selected-games.pgn",
+      "public_sha256": "6902c52b7223726afabb42d25e8712e22cd197de8f9937be755ea4b33ffc67f5",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/observations-export.json",
+      "source_sha256": "285c24e619cd104a439fe82496748b591844c56fb34ce14107eac005ead5bc35",
+      "public_artifact": "observations-export.json",
+      "public_sha256": "285c24e619cd104a439fe82496748b591844c56fb34ce14107eac005ead5bc35",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/pgn-provenance.json",
+      "source_sha256": "a765a052d06e7fa5a15f895241f0e67fd9ccfc2c80101ee32ea9350c64e0ed0d",
+      "public_artifact": "data/pgn-provenance.json",
+      "public_sha256": "a765a052d06e7fa5a15f895241f0e67fd9ccfc2c80101ee32ea9350c64e0ed0d",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/archival-game-metadata.json",
+      "source_sha256": "99f3c5b3dad7d5838b952df528730a262acec95d0fbb0def51f9e87ee889ede1",
+      "public_artifact": "data/archival-game-metadata.json",
+      "public_sha256": "99f3c5b3dad7d5838b952df528730a262acec95d0fbb0def51f9e87ee889ede1",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/source-hash-audit.json",
+      "source_sha256": "3cbe9089ade2045682ed1d344e22e52fce67e9b2fe5a903adebbc3ba0e41f226",
+      "public_artifact": "data/source-hash-audit.json",
+      "public_sha256": "3cbe9089ade2045682ed1d344e22e52fce67e9b2fe5a903adebbc3ba0e41f226",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/protocol/00-PLAN.json",
+      "source_sha256": "6e722653d10e4092f5e70a1927f1d68310c704befc574f78d5e15bc624fcd946",
+      "public_artifact": "data/protocol/00-PLAN.json",
+      "public_sha256": "6e722653d10e4092f5e70a1927f1d68310c704befc574f78d5e15bc624fcd946",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/protocol/01-QUEUE-FREEZE.json",
+      "source_sha256": "3fa68a35d68e7d731720093fc31d9546e6455ba26bb1b6cf7e539357b5cc3fd6",
+      "public_artifact": "data/protocol/01-QUEUE-FREEZE.json",
+      "public_sha256": "3fa68a35d68e7d731720093fc31d9546e6455ba26bb1b6cf7e539357b5cc3fd6",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/protocol/02-CORE-FREEZE.json",
+      "source_sha256": "99bcffb5a77209f13e61bd0c495625950da6950c028ab9b64a5a1b8eea6a3394",
+      "public_artifact": "data/protocol/02-CORE-FREEZE.json",
+      "public_sha256": "99bcffb5a77209f13e61bd0c495625950da6950c028ab9b64a5a1b8eea6a3394",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/protocol/03-exclude-games.json",
+      "source_sha256": "2d209ad510519885ed8a673040f817582c2c49f041133ee7d5bcbff3cf30e0d1",
+      "public_artifact": "data/protocol/03-exclude-games.json",
+      "public_sha256": "2d209ad510519885ed8a673040f817582c2c49f041133ee7d5bcbff3cf30e0d1",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/protocol/04-known-regression-fens.json",
+      "source_sha256": "206c9d7e7d13f47fefb1d574536b93b17b10bbed8bca9a6cc787d12fc4fb3cf4",
+      "public_artifact": "data/protocol/04-known-regression-fens.json",
+      "public_sha256": "206c9d7e7d13f47fefb1d574536b93b17b10bbed8bca9a6cc787d12fc4fb3cf4",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/protocol/05-gallery-reserve-activations.json",
+      "source_sha256": "e6109696645c719843069f3eba27e461f3db1ae9ca195e4b768336e7c0ada369",
+      "public_artifact": "data/protocol/05-gallery-reserve-activations.json",
+      "public_sha256": "e6109696645c719843069f3eba27e461f3db1ae9ca195e4b768336e7c0ada369",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/protocol/06-FREEZE.json",
+      "source_sha256": "8f87b341a097d22c1e9af2e2c84ea58d9fb43dfd797fd9265b26c7feff678bf6",
+      "public_artifact": "data/protocol/06-FREEZE.json",
+      "public_sha256": "8f87b341a097d22c1e9af2e2c84ea58d9fb43dfd797fd9265b26c7feff678bf6",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/protocol/07-source-freeze.json",
+      "source_sha256": "643c03c6432f043c0a1f345ade1930f338ac1a79b12f6435a84a20270cb0521f",
+      "public_artifact": "data/protocol/07-source-freeze.json",
+      "public_sha256": "643c03c6432f043c0a1f345ade1930f338ac1a79b12f6435a84a20270cb0521f",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/protocol/08-source-freeze-castling-addendum.json",
+      "source_sha256": "648965fc4737bd2ef84734f26e05bb1c7859fb5c5c9b0298d5163043cbdeafa1",
+      "public_artifact": "data/protocol/08-source-freeze-castling-addendum.json",
+      "public_sha256": "648965fc4737bd2ef84734f26e05bb1c7859fb5c5c9b0298d5163043cbdeafa1",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/publication-data-v5/protocol/09-CANDIDATE-FREEZE.json",
+      "source_sha256": "f2323f846cfbb84b66fc85fc988c34da2452cd0cad8de38a596b08f2cb7dd445",
+      "public_artifact": "data/protocol/09-CANDIDATE-FREEZE.json",
+      "public_sha256": "f2323f846cfbb84b66fc85fc988c34da2452cd0cad8de38a596b08f2cb7dd445",
+      "normalization": "byte-identical"
+    },
+    {
+      "source_artifact": "research/brilliants-final-2026-11-03/analysis-baseline.json",
+      "source_sha256": "d8833860a3f7f5aec1c7817c3203a10af500044e885efc364e9d03626fc3655b",
+      "public_artifact": "data/development-baseline.json",
+      "public_sha256": "580d10fd8a156a8c88779bd0076df077902f921dabcd96715c721bdcded03446",
+      "normalization": "local paths only"
+    },
+    {
+      "source_artifact": "research/brilliants-final-2026-11-03/analysis-panel.json",
+      "source_sha256": "682e50dd4083787f643ef990df12e6bed34407dfdeee83c8688497dbc44d06f2",
+      "public_artifact": "data/development-panel.json",
+      "public_sha256": "66e2a0070117e67b4c7eb02b16455193a4bbad28db177645fe48fce93692264a",
+      "normalization": "local paths only"
+    },
+    {
+      "source_artifact": "research/brilliants-final-2026-11-03/analysis-stronger.json",
+      "source_sha256": "ac8ee4144a1cf1404ccac1037919abeb806da0c8f8bc0c15fb3f36657a669bb6",
+      "public_artifact": "data/development-stronger.json",
+      "public_sha256": "5dd5bc4917f88972187cd015556952330b66669ae41998faf672c1b23693d224",
+      "normalization": "local paths only"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/future-validation-v5/engine-core/analysis-core.json",
+      "source_sha256": "40ba351e58422b043608cfc55e2479be23b6400b09953826719ac559ea72c6c9",
+      "public_artifact": "data/test-baseline.json",
+      "public_sha256": "40ba351e58422b043608cfc55e2479be23b6400b09953826719ac559ea72c6c9",
+      "normalization": "local paths only"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/future-validation-v5/engine-core/fresh-results.json",
+      "source_sha256": "6bfe2daa741d22c85f106d90ef8abd39f309e5bbec1a3ef4376b3a7ea34a37b7",
+      "public_artifact": "data/test-results.json",
+      "public_sha256": "b9331d2bf57edb71e9fa2e4044ce4e27bcbce9bd452c528dc2c21bec6a12b36f",
+      "normalization": "local paths only"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/future-validation-v5/engine-s/results.json",
+      "source_sha256": "4a77067559a11058fed0fce70bba176f9bab6878dece90bedb7d72229b52aa07",
+      "public_artifact": "data/test-sequence-results.json",
+      "public_sha256": "9e9ec9a14b00e6df1eb819657ca0da6e956b5c5ca12093c3f3b658abc05bd005",
+      "normalization": "local paths only"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/results.json",
+      "source_sha256": "b9e35e318fcff3f9dfbcd86e7f47a746bc0667db01585d73fa6c54a5764720c4",
+      "public_artifact": "data/development-sequence-results.json",
+      "public_sha256": "44ae99237207214c86a1851ceb24776cf815669eeec03c99911a93dcb8bd2720",
+      "normalization": "local paths only"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/predictions.json",
+      "source_sha256": "e7e9c2f60510cf1d59030a4c081a644f54cd9e18b3f1d683dc0e3d924bc5eb54",
+      "public_artifact": "data/development-forest-predictions.json",
+      "public_sha256": "e7e9c2f60510cf1d59030a4c081a644f54cd9e18b3f1d683dc0e3d924bc5eb54",
+      "normalization": "local paths only"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/future-validation-v5/engine-core/forest-predictions.json",
+      "source_sha256": "b7b8b071a48f2e3adc5c3dbeb87704e44114719ea4e8ef0a01b4dff219523336",
+      "public_artifact": "data/test-forest-predictions.json",
+      "public_sha256": "3e5d83cb402baac1739223f596a41eca262a585b38ec007bd081dc275f08fb39",
+      "normalization": "local paths only"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/uniform-stronger-v5/SUMMARY.json",
+      "source_sha256": "354673d197932de01ef352a9de324310fe80b98a468ef8a944fdf4587a405b05",
+      "public_artifact": "data/development-uniform-summary.json",
+      "public_sha256": "354673d197932de01ef352a9de324310fe80b98a468ef8a944fdf4587a405b05",
+      "normalization": "local paths only"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/uniform-stronger-v5/baseline-results.json",
+      "source_sha256": "0ec164cbc04c48599ca483bc167e72270a47b0fa20f889dafaf2439df84b6c0b",
+      "public_artifact": "data/development-baseline-results.json",
+      "public_sha256": "89f81da347702198e87f4fbf7e59edce516cd109ec52813fab46272ce22e71cc",
+      "normalization": "local paths only"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/RESULTS.json",
+      "source_sha256": "0c7f8e12a3727517ca00864e5c211a7ac42ee6f87fbb6f732b9e5bf9f9ab698d",
+      "public_artifact": "data/development-forest-summary.json",
+      "public_sha256": "0c7f8e12a3727517ca00864e5c211a7ac42ee6f87fbb6f732b9e5bf9f9ab698d",
+      "normalization": "local paths only"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/future-validation-v5/CORE-FREEZE.json",
+      "source_sha256": "99bcffb5a77209f13e61bd0c495625950da6950c028ab9b64a5a1b8eea6a3394",
+      "public_artifact": "data/protocol/CORE-FREEZE.json",
+      "public_sha256": "99bcffb5a77209f13e61bd0c495625950da6950c028ab9b64a5a1b8eea6a3394",
+      "normalization": "local paths only"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/future-validation-v5/engine-core/FINAL-AUDIT.json",
+      "source_sha256": "96b5bdee3fc643370057e04d6bf543616868c5976fb3334614a38ae06b89670e",
+      "public_artifact": "data/protocol/FINAL-AUDIT.json",
+      "public_sha256": "96b5bdee3fc643370057e04d6bf543616868c5976fb3334614a38ae06b89670e",
+      "normalization": "local paths only"
+    }
+  ],
+  "path_normalizations": [
+    {
+      "original_value_sha256": "65d761e1c95d0b48a7f53c9e47ade4baeb9cf11e67eff0674310c760e8ae4d93",
+      "replacement": "local-runtime-path-omitted/stockfish"
+    },
+    {
+      "original_value_sha256": "65d761e1c95d0b48a7f53c9e47ade4baeb9cf11e67eff0674310c760e8ae4d93",
+      "replacement": "local-runtime-path-omitted/stockfish"
+    },
+    {
+      "original_value_sha256": "65d761e1c95d0b48a7f53c9e47ade4baeb9cf11e67eff0674310c760e8ae4d93",
+      "replacement": "local-runtime-path-omitted/stockfish"
+    },
+    {
+      "original_value_sha256": "b9ac8d05dfbcd181790f6c02a0fdecd71cad286f8d40d906475bf84b51f8c2ea",
+      "replacement": "research/brilliants-improvement-2026-11-03/future-validation-v5/engine-core/analysis-core.json"
+    },
+    {
+      "original_value_sha256": "c1dab7bd3f72f3744cc5e625caa1f081080f4f8c21fb51a62f745bd34be3d688",
+      "replacement": "research/brilliants-improvement-2026-11-03/future-validation-v5/engine-core/primary-moves.json"
+    },
+    {
+      "original_value_sha256": "6ce36929c3ebfc3dae484e8c3e7c02397c797b1cc6a11543cdfcca66dacabde9",
+      "replacement": "research/brilliants-improvement-2026-11-03/future-validation-v5/engine-core/forest-predictions.json"
+    },
+    {
+      "original_value_sha256": "9763d5bf816bdcb41f56db48704d16a7bae0b809ec70d6c63c38d2ebe4668ff7",
+      "replacement": "research/brilliants-improvement-2026-11-03/future-validation-v5/engine-core/rule-predictions.json"
+    },
+    {
+      "original_value_sha256": "060bfe9a54fe2e8b930d9e1f5cbd9224064dcabc53888e028eb21c2c9bf369f9",
+      "replacement": "research/brilliants-improvement-2026-11-03/future-validation-v5/engine-s/results.json"
+    },
+    {
+      "original_value_sha256": "8990426770fc5f0ef7ba1bf55823a51551b2fc934eb58df7b0a3013e1b0e9002",
+      "replacement": "research/brilliants-improvement-2026-11-03/future-validation-v5/CORE-FREEZE.json"
+    },
+    {
+      "original_value_sha256": "ac2d0cd6517dec97d6cf8f7b00ebb3949fca373fb20879aa86db7d23ad96f5a5",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/temporalProof.ts"
+    },
+    {
+      "original_value_sha256": "8dadf027dea35c9d627f24066d6fe836ef4e3ee0564e9580fe9e4c136a3bef8f",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/replay.mts"
+    },
+    {
+      "original_value_sha256": "bc060c2c6fa7f658cfcaa9f4e026a67480cf4ef1fa0eb7fe1debbb997bd08483",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/../variants/variantA.ts"
+    },
+    {
+      "original_value_sha256": "0dc5f5be32ffeeb6fa67f61b435acf9fb51460594de7b6996be73d870b566299",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/../variants/offerProofs.ts"
+    },
+    {
+      "original_value_sha256": "5d9c20895b4105a07847be3057bc04c40d488e357809feaafc13413cf77593ad",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/../../../root/frozen-v4/core.ts"
+    },
+    {
+      "original_value_sha256": "b9ac8d05dfbcd181790f6c02a0fdecd71cad286f8d40d906475bf84b51f8c2ea",
+      "replacement": "research/brilliants-improvement-2026-11-03/future-validation-v5/engine-core/analysis-core.json"
+    },
+    {
+      "original_value_sha256": "24690d027356decf547def151997d9f6bcd8ed8078840aa08f990d9575c52105",
+      "replacement": "research/brilliants-improvement-2026-11-03/future-validation-v5/engine-s/prior-snapshots.json"
+    },
+    {
+      "original_value_sha256": "ac2d0cd6517dec97d6cf8f7b00ebb3949fca373fb20879aa86db7d23ad96f5a5",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/temporalProof.ts"
+    },
+    {
+      "original_value_sha256": "8dadf027dea35c9d627f24066d6fe836ef4e3ee0564e9580fe9e4c136a3bef8f",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/replay.mts"
+    },
+    {
+      "original_value_sha256": "bc060c2c6fa7f658cfcaa9f4e026a67480cf4ef1fa0eb7fe1debbb997bd08483",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/../variants/variantA.ts"
+    },
+    {
+      "original_value_sha256": "0dc5f5be32ffeeb6fa67f61b435acf9fb51460594de7b6996be73d870b566299",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/../variants/offerProofs.ts"
+    },
+    {
+      "original_value_sha256": "5d9c20895b4105a07847be3057bc04c40d488e357809feaafc13413cf77593ad",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/../../../root/frozen-v4/core.ts"
+    },
+    {
+      "original_value_sha256": "a1fdc8a1dd0e0bcac11b1605adf13ef0716655e7c19cc28d8adc176e5f5b90c1",
+      "replacement": "research/brilliants-final-2026-11-03/analysis-baseline.json"
+    },
+    {
+      "original_value_sha256": "2b4faf2839d37477b839b08258d958e7729d57ce6e0e11b3d3f8970a628d4bc8",
+      "replacement": "research/brilliants-final-2026-11-03/analysis-panel.json"
+    },
+    {
+      "original_value_sha256": "78230d56473dd6e988399c6a603fa182e5b5dcb68e61d08236997532b0da18d7",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/repeat-award/six-snapshots.json"
+    },
+    {
+      "original_value_sha256": "98dfe4d862dfa57d880de4f569448e8a988709d0886d4a07f209bbb769c08bab",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/repeat-award/completion-snapshots.json"
+    },
+    {
+      "original_value_sha256": "97271e7e8c4097b77d57504b857f917e8b5f9e56abc96ad9323611aad41b0e7d",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/extractor.py"
+    },
+    {
+      "original_value_sha256": "f0deb6296c5eed1fc9e55fdf308828e3991b5b6a8f7894ed0ce27a1fa63d9782",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/feature_kernel.py"
+    },
+    {
+      "original_value_sha256": "9e0acd7a6aaf7399f068f3541eb23f2f0173575b6f938f2ac45cbce0726bb67b",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/avoidability_kernel.py"
+    },
+    {
+      "original_value_sha256": "a0c8a40c5629a01980789d6cfb3738e9b0c407816dee957f376f6665af49f961",
+      "replacement": "research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/context.mts"
+    },
+    {
+      "original_value_sha256": "ec5cff939f7111d922f5621d05ce26added7132c4868913beee15a07e7e77c63",
+      "replacement": "research/brilliants-improvement-2026-11-03/learning-v5/physical_kernel.py"
+    },
+    {
+      "original_value_sha256": "498418578e44d5af5899bc76de924ac8bc1f76b0f42308798c3603ac3cb8d87d",
+      "replacement": "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/forest-full.json"
+    },
+    {
+      "original_value_sha256": "4df6db5c580e82202949824beaadb01352bc1915a814a9bbc5746118b6b2e910",
+      "replacement": "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/PROTOCOL.json"
+    },
+    {
+      "original_value_sha256": "61ea88ef5da9ca61972a677361c77ade9a78516c1b47e58e9f0e479f8875b2f1",
+      "replacement": "research/brilliants-improvement-2026-11-03/root/frozen-v4/noSweatClassify.ts"
+    },
+    {
+      "original_value_sha256": "f05da09f9e4a3ba11c93000eae8e6657c6755d2b1924d312612b5f1b1fb82203",
+      "replacement": "research/brilliants-improvement-2026-11-03/root/frozen-v4/noSweatCore.ts"
+    },
+    {
+      "original_value_sha256": "57daa35c4198cb6f53ded2f9942c39fe3a734b59e94e8706a02d52ffa9811481",
+      "replacement": "research/brilliants-improvement-2026-11-03/root/frozen-v4/core.ts"
+    },
+    {
+      "original_value_sha256": "522ec7975f36f27719c7fa99f9eae93356b8b295756965f751ba6cb6ebdcdceb",
+      "replacement": "mute-chess-research/studies/brilliant-moves-2026-11-03/material-features.py"
+    },
+    {
+      "original_value_sha256": "a1fdc8a1dd0e0bcac11b1605adf13ef0716655e7c19cc28d8adc176e5f5b90c1",
+      "replacement": "research/brilliants-final-2026-11-03/analysis-baseline.json"
+    },
+    {
+      "original_value_sha256": "2b4faf2839d37477b839b08258d958e7729d57ce6e0e11b3d3f8970a628d4bc8",
+      "replacement": "research/brilliants-final-2026-11-03/analysis-panel.json"
+    }
+  ],
+  "secondary_observations": "All included games raw observation rows retained. New210fresh captures comprise200primary+10secondary.",
+  "database_note": "SQLite retains identity/evidence tables without prediction columns. Prediction joins are in moves.json/CSV only; raw source evidence is byte-identical.",
+  "historical_splits": "Only archive metadata; all848former examples are now development. Current test200 remains separate.",
+  "old618_archive": "Original published dataset remains recoverable in Git commit c6969d1; no duplicated full archive.",
+  "no_binaries_dependencies_http_headers_or_monthly_archives": true,
+  "data_file_sha256": {
+    "data/test-results.json": "b9331d2bf57edb71e9fa2e4044ce4e27bcbce9bd452c528dc2c21bec6a12b36f",
+    "data/development-stronger.json": "5dd5bc4917f88972187cd015556952330b66669ae41998faf672c1b23693d224",
+    "data/development-forest-predictions.json": "e7e9c2f60510cf1d59030a4c081a644f54cd9e18b3f1d683dc0e3d924bc5eb54",
+    "data/development-sequence-results.json": "44ae99237207214c86a1851ceb24776cf815669eeec03c99911a93dcb8bd2720",
+    "data/development-uniform-summary.json": "354673d197932de01ef352a9de324310fe80b98a468ef8a944fdf4587a405b05",
+    "data/development-baseline.json": "580d10fd8a156a8c88779bd0076df077902f921dabcd96715c721bdcded03446",
+    "data/test-forest-predictions.json": "3e5d83cb402baac1739223f596a41eca262a585b38ec007bd081dc275f08fb39",
+    "data/pgn-provenance.json": "a765a052d06e7fa5a15f895241f0e67fd9ccfc2c80101ee32ea9350c64e0ed0d",
+    "data/test-baseline.json": "40ba351e58422b043608cfc55e2479be23b6400b09953826719ac559ea72c6c9",
+    "data/source-hash-audit.json": "3cbe9089ade2045682ed1d344e22e52fce67e9b2fe5a903adebbc3ba0e41f226",
+    "data/development-baseline-results.json": "89f81da347702198e87f4fbf7e59edce516cd109ec52813fab46272ce22e71cc",
+    "data/development-forest-summary.json": "0c7f8e12a3727517ca00864e5c211a7ac42ee6f87fbb6f732b9e5bf9f9ab698d",
+    "data/development-panel.json": "66e2a0070117e67b4c7eb02b16455193a4bbad28db177645fe48fce93692264a",
+    "data/archival-game-metadata.json": "99f3c5b3dad7d5838b952df528730a262acec95d0fbb0def51f9e87ee889ede1",
+    "data/test-sequence-results.json": "9e9ec9a14b00e6df1eb819657ca0da6e956b5c5ca12093c3f3b658abc05bd005",
+    "data/protocol/05-gallery-reserve-activations.json": "e6109696645c719843069f3eba27e461f3db1ae9ca195e4b768336e7c0ada369",
+    "data/protocol/02-CORE-FREEZE.json": "99bcffb5a77209f13e61bd0c495625950da6950c028ab9b64a5a1b8eea6a3394",
+    "data/protocol/00-PLAN.json": "6e722653d10e4092f5e70a1927f1d68310c704befc574f78d5e15bc624fcd946",
+    "data/protocol/04-known-regression-fens.json": "206c9d7e7d13f47fefb1d574536b93b17b10bbed8bca9a6cc787d12fc4fb3cf4",
+    "data/protocol/09-CANDIDATE-FREEZE.json": "f2323f846cfbb84b66fc85fc988c34da2452cd0cad8de38a596b08f2cb7dd445",
+    "data/protocol/CORE-FREEZE.json": "99bcffb5a77209f13e61bd0c495625950da6950c028ab9b64a5a1b8eea6a3394",
+    "data/protocol/03-exclude-games.json": "2d209ad510519885ed8a673040f817582c2c49f041133ee7d5bcbff3cf30e0d1",
+    "data/protocol/07-source-freeze.json": "643c03c6432f043c0a1f345ade1930f338ac1a79b12f6435a84a20270cb0521f",
+    "data/protocol/06-FREEZE.json": "8f87b341a097d22c1e9af2e2c84ea58d9fb43dfd797fd9265b26c7feff678bf6",
+    "data/protocol/01-QUEUE-FREEZE.json": "3fa68a35d68e7d731720093fc31d9546e6455ba26bb1b6cf7e539357b5cc3fd6",
+    "data/protocol/08-source-freeze-castling-addendum.json": "648965fc4737bd2ef84734f26e05bb1c7859fb5c5c9b0298d5163043cbdeafa1",
+    "data/protocol/FINAL-AUDIT.json": "96b5bdee3fc643370057e04d6bf543616868c5976fb3334614a38ae06b89670e"
+  },
+  "public_csv_format_only_normalization": {
+    "artifact": "moves.csv",
+    "before_public_sha256": "0bb5af551bfe38820204325b0a7e3291cb38e60efba45ef6659c4f838e2ce874",
+    "published_sha256": "e674fe6c1537fe2631e3819fc43094013b92ab64c4e2a3e32859de703945f384",
+    "change": "CRLF to LF only",
+    "parsed_DictReader_rows_identical": 1048,
+    "private_frozen_source_unchanged": true
+  }
+}

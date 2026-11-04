@@ -1,0 +1,354 @@
+Completed frozen96searches:48cases, before/after at3Mnodes; one thread, Hash64, MultiPV2, full history, fresh hash.
+Elapsed 295.9s; no retries.
+Local Stockfish18 diagnostic; not Chess.com review settings or a reproduction of its awards. No ratings or classifiers used.
+Raw snapshots retained. Cp shifts compare saved300k searches to new3M search; search noise and deeper horizons both contribute.
+Counts:
+{
+  "all": {
+    "n": 48,
+    "before_shift_gt50cp": 6,
+    "before_shift_gt100cp": 3,
+    "after_shift_gt50cp": 5,
+    "after_shift_gt100cp": 2,
+    "loss_gt5pp": 2,
+    "cross_search_increase_gt5pp": 0,
+    "played_not_top2": 6,
+    "played_top1": 32,
+    "played_top2": 10
+  },
+  "Brilliant": {
+    "n": 24,
+    "before_shift_gt50cp": 5,
+    "before_shift_gt100cp": 3,
+    "after_shift_gt50cp": 3,
+    "after_shift_gt100cp": 2,
+    "loss_gt5pp": 0,
+    "cross_search_increase_gt5pp": 0,
+    "played_not_top2": 1,
+    "played_top1": 17,
+    "played_top2": 6
+  },
+  "ordinary": {
+    "n": 24,
+    "before_shift_gt50cp": 1,
+    "before_shift_gt100cp": 0,
+    "after_shift_gt50cp": 2,
+    "after_shift_gt100cp": 0,
+    "loss_gt5pp": 2,
+    "cross_search_increase_gt5pp": 0,
+    "played_not_top2": 5,
+    "played_top1": 15,
+    "played_top2": 4
+  }
+}
+Stable matched under frozen descriptive criterion: [1, 7, 8, 9, 14, 15, 19, 23]
+Pair contrasts:
+[
+  {
+    "pair": 1,
+    "distance": 0.030600031411624148,
+    "positive": "166122402690:37",
+    "ordinary": "173774757032:28",
+    "after_cp_gap_positive_minus_ordinary": 61,
+    "loss_pp_positive_minus_ordinary": -2.6418641857007614,
+    "positive_rank": 1,
+    "ordinary_rank": null,
+    "stable_matched_descriptive": true
+  },
+  {
+    "pair": 2,
+    "distance": 0.04106528843493517,
+    "positive": "173661079138:26",
+    "ordinary": "147329069640:16",
+    "after_cp_gap_positive_minus_ordinary": 114,
+    "loss_pp_positive_minus_ordinary": 1.3631130754102259,
+    "positive_rank": 1,
+    "ordinary_rank": 2,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 3,
+    "distance": 0.04444042095418653,
+    "positive": "184653480432:30",
+    "ordinary": "173765223182:58",
+    "after_cp_gap_positive_minus_ordinary": 129,
+    "loss_pp_positive_minus_ordinary": -2.218343191418384,
+    "positive_rank": 1,
+    "ordinary_rank": null,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 4,
+    "distance": 0.07646037519837678,
+    "positive": "173184879010:62",
+    "ordinary": "166897350472:18",
+    "after_cp_gap_positive_minus_ordinary": -29,
+    "loss_pp_positive_minus_ordinary": -3.0329114942730087,
+    "positive_rank": 2,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 5,
+    "distance": 0.0837409746952407,
+    "positive": "167122315622:53",
+    "ordinary": "172804595924:41",
+    "after_cp_gap_positive_minus_ordinary": 239,
+    "loss_pp_positive_minus_ordinary": 2.9518505356264484,
+    "positive_rank": 2,
+    "ordinary_rank": 2,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 6,
+    "distance": 0.08898804806955023,
+    "positive": "173532009624:45",
+    "ordinary": "166699653212:39",
+    "after_cp_gap_positive_minus_ordinary": -40,
+    "loss_pp_positive_minus_ordinary": -5.523687422556193,
+    "positive_rank": 1,
+    "ordinary_rank": null,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 7,
+    "distance": 0.09400825842930956,
+    "positive": "168415989030:55",
+    "ordinary": "172312827850:23",
+    "after_cp_gap_positive_minus_ordinary": 78,
+    "loss_pp_positive_minus_ordinary": 1.8045728447447686,
+    "positive_rank": 1,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": true
+  },
+  {
+    "pair": 8,
+    "distance": 0.09590160043446734,
+    "positive": "185229374468:26",
+    "ordinary": "184300109262:14",
+    "after_cp_gap_positive_minus_ordinary": 19,
+    "loss_pp_positive_minus_ordinary": -1.1032758230469213,
+    "positive_rank": 1,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": true
+  },
+  {
+    "pair": 9,
+    "distance": 0.09857734127566768,
+    "positive": "171472107788:38",
+    "ordinary": "166578129186:33",
+    "after_cp_gap_positive_minus_ordinary": -92,
+    "loss_pp_positive_minus_ordinary": 0.9007164775921979,
+    "positive_rank": null,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": true
+  },
+  {
+    "pair": 10,
+    "distance": 0.0991257797941518,
+    "positive": "170661862908:40",
+    "ordinary": "184277876260:54",
+    "after_cp_gap_positive_minus_ordinary": 674,
+    "loss_pp_positive_minus_ordinary": 5.234562851927272,
+    "positive_rank": 2,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 11,
+    "distance": 0.10173889508743839,
+    "positive": "167735024286:72",
+    "ordinary": "172828071536:75",
+    "after_cp_gap_positive_minus_ordinary": null,
+    "loss_pp_positive_minus_ordinary": -3.6552814761653707,
+    "positive_rank": 1,
+    "ordinary_rank": 2,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 12,
+    "distance": 0.11055390839877112,
+    "positive": "172534191020:19",
+    "ordinary": "172399142014:58",
+    "after_cp_gap_positive_minus_ordinary": -176,
+    "loss_pp_positive_minus_ordinary": -0.5551465266884676,
+    "positive_rank": 1,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 13,
+    "distance": 0.11232251145280489,
+    "positive": "184185752754:59",
+    "ordinary": "173625605676:68",
+    "after_cp_gap_positive_minus_ordinary": 674,
+    "loss_pp_positive_minus_ordinary": 1.9796614140486426,
+    "positive_rank": 2,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 14,
+    "distance": 0.11830332263089961,
+    "positive": "168815996146:51",
+    "ordinary": "174474699682:54",
+    "after_cp_gap_positive_minus_ordinary": 9,
+    "loss_pp_positive_minus_ordinary": 2.6177450842402976,
+    "positive_rank": 2,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": true
+  },
+  {
+    "pair": 15,
+    "distance": 0.12419666363278258,
+    "positive": "172914653473:86",
+    "ordinary": "184330910250:75",
+    "after_cp_gap_positive_minus_ordinary": 86,
+    "loss_pp_positive_minus_ordinary": 2.9882104412291,
+    "positive_rank": 1,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": true
+  },
+  {
+    "pair": 16,
+    "distance": 0.13062392531721453,
+    "positive": "181991300863:49",
+    "ordinary": "171805090202:89",
+    "after_cp_gap_positive_minus_ordinary": 130,
+    "loss_pp_positive_minus_ordinary": 1.1377211133860214,
+    "positive_rank": 1,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 17,
+    "distance": 0.1437066554018974,
+    "positive": "172256931994:52",
+    "ordinary": "170804505058:23",
+    "after_cp_gap_positive_minus_ordinary": 218,
+    "loss_pp_positive_minus_ordinary": -1.666624969022152,
+    "positive_rank": 1,
+    "ordinary_rank": null,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 18,
+    "distance": 0.14920367547785965,
+    "positive": "166981885820:34",
+    "ordinary": "169295732472:39",
+    "after_cp_gap_positive_minus_ordinary": 197,
+    "loss_pp_positive_minus_ordinary": -2.854108854702119,
+    "positive_rank": 1,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 19,
+    "distance": 0.15854934829154613,
+    "positive": "173720481882:31",
+    "ordinary": "166508569726:24",
+    "after_cp_gap_positive_minus_ordinary": -73,
+    "loss_pp_positive_minus_ordinary": -0.5415435191581679,
+    "positive_rank": 1,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": true
+  },
+  {
+    "pair": 20,
+    "distance": 0.15911282425339437,
+    "positive": "171728787528:43",
+    "ordinary": "182338102719:54",
+    "after_cp_gap_positive_minus_ordinary": -43,
+    "loss_pp_positive_minus_ordinary": -0.8642116130383926,
+    "positive_rank": 1,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 21,
+    "distance": 0.16095238095238093,
+    "positive": "183973291902:40",
+    "ordinary": "171615877812:32",
+    "after_cp_gap_positive_minus_ordinary": -148,
+    "loss_pp_positive_minus_ordinary": -0.36580075358155284,
+    "positive_rank": 1,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 22,
+    "distance": 0.16705680582228039,
+    "positive": "167744579866:37",
+    "ordinary": "167245993920:25",
+    "after_cp_gap_positive_minus_ordinary": 631,
+    "loss_pp_positive_minus_ordinary": -5.417480222173346,
+    "positive_rank": 2,
+    "ordinary_rank": null,
+    "stable_matched_descriptive": false
+  },
+  {
+    "pair": 23,
+    "distance": 0.16986481034828568,
+    "positive": "173851185684:34",
+    "ordinary": "167275575688:60",
+    "after_cp_gap_positive_minus_ordinary": 5,
+    "loss_pp_positive_minus_ordinary": -0.7391494379766925,
+    "positive_rank": 1,
+    "ordinary_rank": 1,
+    "stable_matched_descriptive": true
+  },
+  {
+    "pair": 24,
+    "distance": 0.17839668495063446,
+    "positive": "173628147512:111",
+    "ordinary": "169084959468:69",
+    "after_cp_gap_positive_minus_ordinary": -166,
+    "loss_pp_positive_minus_ordinary": -3.957976357395779,
+    "positive_rank": 1,
+    "ordinary_rank": 2,
+    "stable_matched_descriptive": false
+  }
+]
+Quality notes: cross-position loss can be negative due to independently searched positions. Same-search root loss and top2 rank help distinguish this; absence from top2 gives no exact played-root evaluation. Alternate is best other root, not a verified safe alternative. No award/classification threshold is inferred.
+
+Additional descriptive counts (no inference of award cutoffs):
+{
+  "raw_cp_comparable": {
+    "before": 46,
+    "after": 47
+  },
+  "either_stage_shift": {
+    "50": 9,
+    "100": 4
+  },
+  "context": {
+    "Brilliant": {
+      "after_mapped_min": -11,
+      "after_below_zero": 2,
+      "after_below_minus200": 0,
+      "after_above200": 14,
+      "other_root_above200_unverified_safe": 11,
+      "loss_pp_median": 0.055608791023892934,
+      "loss_pp_max": 3.8217973258621214
+    },
+    "ordinary": {
+      "after_mapped_min": -91,
+      "after_below_zero": 7,
+      "after_below_minus200": 0,
+      "after_above200": 10,
+      "other_root_above200_unverified_safe": 7,
+      "loss_pp_median": 0.7876432703164369,
+      "loss_pp_max": 5.466981148303262
+    }
+  }
+}
+The frozen stable-matched criterion is only an explicit descriptive subset, not a statement that other pairs are invalid or no longer useful. In particular it excludes mate/rawcp-incomparable cases and differences in initial position advantage.
+No case is below -200cp in the deeper after-position, so that particular losing-position cutoff cannot explain this panel locally. Other-root advantages are not verified safe alternatives; acceptance/material analysis is required to call them safe.
+
+Selected exploratory pair interpretations:
+Pair2: BrilliantNxe5 before+80/after+73cp, rank1, loss0.63pp; ordinaryNxe5 -49/-41cp, rank2, -0.73pp. Initial advantage difference survives deeper search; no award cutoff established.
+Pair10: BrilliantNd3 +764/+648cp, after shift+112cp; ordinaryNe3 -53/-26cp, after shift+51cp. Large advantage contrast remains.
+Pair11: BrilliantQh3 +1088cp to mate12 (before shift+385cp); ordinaryQh6 mate14 to+742cp. Mate/horizon instability makes rawcp comparisons incomplete; mappedloss0/3.66pp.
+Pair15: BrilliantRxb3+ +445/+375cp, before shift+105cp, loss3.82pp; ordinaryRxe5 +301/+289cp, loss0.83pp; bothrank1.
+Residual counterexamples: pair8 BrilliantNxe4 after-11cp vs ordinaryNxg3-30cp, bothrank1, tiny losses. Pair1 BrilliantBxh6-10cp versus ordinaryNxb4-71cp; slightly negative values are not clearly losing positions. Ordinary remains strong andrank1 in pair4 Nb4+422cp (otherroot+383cp) against BrilliantBd4+393cp; pair20 ordinaryRxf4+ +715cp versus BrilliantRxe5+672cp (bothrank1; otherroots+440/+400cp); pair23 ordinaryhxg5+304cp versus BrilliantNxe5+309cp (bothrank1; losses1.14/0.40pp).
+Strongest supported interpretation: deeper search changes some evaluations and exposes a few quality concerns, but many opposite-label positions retain similar evaluations and best-move status. It does not yield a universal evaluation divider, and this diagnostic does not establish which hidden Chess.com settings caused any award. Already-existing root-loss/alternative/gap features should not be proposed as novel evidence.

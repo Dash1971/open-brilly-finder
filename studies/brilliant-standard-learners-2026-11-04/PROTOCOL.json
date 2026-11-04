@@ -1,0 +1,51 @@
+{
+  "created_at_utc": "2026-11-04T00:55:28.401216+00:00",
+  "scope": "One prespecified saved-feature learner comparison; development evidence only, not fresh blind validation. No new labels, searches, features, app changes, or deployment.",
+  "input_sha256": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+  "kernel_sha256": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f",
+  "script_sha256": "0c9b361880d65d43a11443a84d438917866084c77b6edd7af021fbc4b76e3814",
+  "reference": "Exact custom 64-tree depth6/leaf8 distinct moves/mtry12/group bootstrap/cost5 split/raw leaf trainer, retrained on each fold. Fixed threshold5/6. Never evaluate deployed848 model on expanded training it has seen.",
+  "standard_rf": {
+    "implementation": "sklearn1.7.2 RandomForestClassifier",
+    "n_estimators": 128,
+    "max_depth": 6,
+    "min_samples_leaf": 16,
+    "max_features": 12,
+    "bootstrap": true,
+    "class_weight": null,
+    "n_jobs": 1
+  },
+  "hist_boost": {
+    "implementation": "sklearn1.7.2 HistGradientBoostingClassifier",
+    "max_iter": 200,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 16,
+    "l2_regularization": 1,
+    "early_stopping": false,
+    "class_weight": null
+  },
+  "fairness": "Same75features+75missing flags, eligible window rows, equal total initial move weight, 2window minimum score, confidence/physical gates. Standard RF bootstraps window rows rather than whole groups; validation remains grouped.16unique training rows per RF leaf implies >=8moves, but is not identical to custom group-bootstrap distinct-move constraint. Standard learners use native missing routing and unweighted classes; thresholds handle award selectivity. Learner package comparison, not bitwise algorithm ablation.",
+  "splits": "Reuse deterministic 5outer/3inner whole-game+canonical-before groups and seeds from original optimization. Both windows and aliases stay grouped.",
+  "threshold_selection": "On inner OOF only, maximizeTP subject to FP(all negatives, including easy)<=fixed-referenceFP AND false-discovery fraction<=fixed reference. Ties fewerFP then higher cutoff. Thresholds are unique observed min-window scores, ties kept together. Empty awards allowed if no feasible nonempty point.",
+  "arms": [
+    "custom_fixed",
+    "custom_retuned",
+    "standard_rf",
+    "hist_boost"
+  ],
+  "primary_procedure": "Choose max innerTP then fewerFP from4arms, tie order fixed custom,retuned custom,standardRF,histboost. Fixed reference fallback. Outer fold labels never select learner/cutoff. Report all arm outcomes and selected-procedure result including failures.",
+  "final_selection": "Separate5fold calibration on all training, same final salts/seeds as prior optimization; choose with same rule, fit one chosen model and freeze before already-seen654 replay. No candidate revisions after results.",
+  "checks": "Input/kernel/script hashes; game/alias/position group integrity; original reference outer TP/FP parity and saved final OOF score parity<1e-12; no train-test group overlap; finite predictions; replay excludes training games.",
+  "uncertainty": "2000 paired group bootstrap draws conditional on fixed OOF predictions. Report recall and FP count difference intervals; no claim they include model fitting or accumulated research selection uncertainty.",
+  "limits": {
+    "wall_seconds": 600,
+    "rss_bytes": 536870912,
+    "threads": 1,
+    "max_fits": 76,
+    "hyperparameter_sweeps": 0,
+    "no_automatic_retry": true
+  },
+  "environment": "/private/tmp/brilliant-learner-2026-11-04-venv/bin/python (scikit-learn1.7.2; NumPy2.5.4; SciPy1.18.1)",
+  "reproduce": "/private/tmp/brilliant-learner-2026-11-04-venv/bin/python -u research/brilliant-standard-learners-2026-11-04/experiment.py (script refuses existing completed/stopped run)"
+}

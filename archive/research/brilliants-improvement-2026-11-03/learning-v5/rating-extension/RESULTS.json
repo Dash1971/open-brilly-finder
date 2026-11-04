@@ -1,0 +1,2053 @@
+{
+  "scope": "848already-unblindeddevelopment cases. Fixed grouped CV and leave-one-account-out diagnostics; no independent-validation, causal rating-effect or beginner-curve claim.",
+  "model": {
+    "maximum_depth": 4,
+    "minimum_leaf_distinct_cases": 15,
+    "negative_cost": 5,
+    "operating_points": [
+      "weighted_cost5_default",
+      "RAW_unweighted_positive_leaf_fraction>=0.98"
+    ]
+  },
+  "feature_sets": {
+    "original75": "Original75semantic predictors and their explicit missing indicators.",
+    "plus_rating": "Add only actual mover PGN rating as one continuous field and its explicit missing indicator. No opponent rating, account feature, date, time control or extra interactions."
+  },
+  "metrics": {
+    "original75": {
+      "group_cv": {
+        "default_cost5": {
+          "partitions": {
+            "all848": {
+              "n": 848,
+              "TP": 288,
+              "FN": 125,
+              "FP": 23,
+              "TN": 412,
+              "agreement": 0.8254716981132075,
+              "recall": 0.6973365617433414,
+              "false_award_rate": 0.052873563218390804,
+              "sample_precision": 0.9260450160771704,
+              "FN_plus5FP": 240
+            },
+            "core818": {
+              "n": 818,
+              "TP": 286,
+              "FN": 123,
+              "FP": 21,
+              "TN": 388,
+              "agreement": 0.823960880195599,
+              "recall": 0.6992665036674817,
+              "false_award_rate": 0.05134474327628362,
+              "sample_precision": 0.9315960912052117,
+              "FN_plus5FP": 228
+            },
+            "panel30": {
+              "n": 30,
+              "TP": 2,
+              "FN": 2,
+              "FP": 2,
+              "TN": 24,
+              "agreement": 0.8666666666666667,
+              "recall": 0.5,
+              "false_award_rate": 0.07692307692307693,
+              "sample_precision": 0.5,
+              "FN_plus5FP": 12
+            }
+          },
+          "by_account": {
+            "nelsi": {
+              "all848": {
+                "n": 223,
+                "TP": 73,
+                "FN": 37,
+                "FP": 7,
+                "TN": 106,
+                "agreement": 0.8026905829596412,
+                "recall": 0.6636363636363637,
+                "false_award_rate": 0.061946902654867256,
+                "sample_precision": 0.9125,
+                "FN_plus5FP": 72
+              },
+              "core818": {
+                "n": 220,
+                "TP": 73,
+                "FN": 37,
+                "FP": 6,
+                "TN": 104,
+                "agreement": 0.8045454545454546,
+                "recall": 0.6636363636363637,
+                "false_award_rate": 0.05454545454545454,
+                "sample_precision": 0.9240506329113924,
+                "FN_plus5FP": 67
+              },
+              "panel30": {
+                "n": 3,
+                "TP": 0,
+                "FN": 0,
+                "FP": 1,
+                "TN": 2,
+                "agreement": 0.6666666666666666,
+                "recall": null,
+                "false_award_rate": 0.3333333333333333,
+                "sample_precision": 0.0,
+                "FN_plus5FP": 5
+              }
+            },
+            "hansen": {
+              "all848": {
+                "n": 164,
+                "TP": 66,
+                "FN": 15,
+                "FP": 7,
+                "TN": 76,
+                "agreement": 0.8658536585365854,
+                "recall": 0.8148148148148148,
+                "false_award_rate": 0.08433734939759036,
+                "sample_precision": 0.9041095890410958,
+                "FN_plus5FP": 50
+              },
+              "core818": {
+                "n": 158,
+                "TP": 65,
+                "FN": 14,
+                "FP": 7,
+                "TN": 72,
+                "agreement": 0.8670886075949367,
+                "recall": 0.8227848101265823,
+                "false_award_rate": 0.08860759493670886,
+                "sample_precision": 0.9027777777777778,
+                "FN_plus5FP": 49
+              },
+              "panel30": {
+                "n": 6,
+                "TP": 1,
+                "FN": 1,
+                "FP": 0,
+                "TN": 4,
+                "agreement": 0.8333333333333334,
+                "recall": 0.5,
+                "false_award_rate": 0.0,
+                "sample_precision": 1.0,
+                "FN_plus5FP": 1
+              }
+            },
+            "KNVB": {
+              "all848": {
+                "n": 117,
+                "TP": 36,
+                "FN": 16,
+                "FP": 3,
+                "TN": 62,
+                "agreement": 0.8376068376068376,
+                "recall": 0.6923076923076923,
+                "false_award_rate": 0.046153846153846156,
+                "sample_precision": 0.9230769230769231,
+                "FN_plus5FP": 31
+              },
+              "core818": {
+                "n": 100,
+                "TP": 35,
+                "FN": 15,
+                "FP": 2,
+                "TN": 48,
+                "agreement": 0.83,
+                "recall": 0.7,
+                "false_award_rate": 0.04,
+                "sample_precision": 0.9459459459459459,
+                "FN_plus5FP": 25
+              },
+              "panel30": {
+                "n": 17,
+                "TP": 1,
+                "FN": 1,
+                "FP": 1,
+                "TN": 14,
+                "agreement": 0.8823529411764706,
+                "recall": 0.5,
+                "false_award_rate": 0.06666666666666667,
+                "sample_precision": 0.5,
+                "FN_plus5FP": 6
+              }
+            },
+            "GothamChess": {
+              "all848": {
+                "n": 122,
+                "TP": 37,
+                "FN": 23,
+                "FP": 0,
+                "TN": 62,
+                "agreement": 0.8114754098360656,
+                "recall": 0.6166666666666667,
+                "false_award_rate": 0.0,
+                "sample_precision": 1.0,
+                "FN_plus5FP": 23
+              },
+              "core818": {
+                "n": 120,
+                "TP": 37,
+                "FN": 23,
+                "FP": 0,
+                "TN": 60,
+                "agreement": 0.8083333333333333,
+                "recall": 0.6166666666666667,
+                "false_award_rate": 0.0,
+                "sample_precision": 1.0,
+                "FN_plus5FP": 23
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 2,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            },
+            "Hikaru": {
+              "all848": {
+                "n": 222,
+                "TP": 76,
+                "FN": 34,
+                "FP": 6,
+                "TN": 106,
+                "agreement": 0.8198198198198198,
+                "recall": 0.6909090909090909,
+                "false_award_rate": 0.05357142857142857,
+                "sample_precision": 0.926829268292683,
+                "FN_plus5FP": 64
+              },
+              "core818": {
+                "n": 220,
+                "TP": 76,
+                "FN": 34,
+                "FP": 6,
+                "TN": 104,
+                "agreement": 0.8181818181818182,
+                "recall": 0.6909090909090909,
+                "false_award_rate": 0.05454545454545454,
+                "sample_precision": 0.926829268292683,
+                "FN_plus5FP": 64
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 2,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            }
+          }
+        },
+        "strict98": {
+          "partitions": {
+            "all848": {
+              "n": 848,
+              "TP": 205,
+              "FN": 208,
+              "FP": 7,
+              "TN": 428,
+              "agreement": 0.7464622641509434,
+              "recall": 0.4963680387409201,
+              "false_award_rate": 0.016091954022988506,
+              "sample_precision": 0.9669811320754716,
+              "FN_plus5FP": 243
+            },
+            "core818": {
+              "n": 818,
+              "TP": 205,
+              "FN": 204,
+              "FP": 7,
+              "TN": 402,
+              "agreement": 0.7420537897310513,
+              "recall": 0.5012224938875306,
+              "false_award_rate": 0.017114914425427872,
+              "sample_precision": 0.9669811320754716,
+              "FN_plus5FP": 239
+            },
+            "panel30": {
+              "n": 30,
+              "TP": 0,
+              "FN": 4,
+              "FP": 0,
+              "TN": 26,
+              "agreement": 0.8666666666666667,
+              "recall": 0.0,
+              "false_award_rate": 0.0,
+              "sample_precision": null,
+              "FN_plus5FP": 4
+            }
+          },
+          "by_account": {
+            "nelsi": {
+              "all848": {
+                "n": 223,
+                "TP": 52,
+                "FN": 58,
+                "FP": 2,
+                "TN": 111,
+                "agreement": 0.7309417040358744,
+                "recall": 0.4727272727272727,
+                "false_award_rate": 0.017699115044247787,
+                "sample_precision": 0.9629629629629629,
+                "FN_plus5FP": 68
+              },
+              "core818": {
+                "n": 220,
+                "TP": 52,
+                "FN": 58,
+                "FP": 2,
+                "TN": 108,
+                "agreement": 0.7272727272727273,
+                "recall": 0.4727272727272727,
+                "false_award_rate": 0.01818181818181818,
+                "sample_precision": 0.9629629629629629,
+                "FN_plus5FP": 68
+              },
+              "panel30": {
+                "n": 3,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 3,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            },
+            "hansen": {
+              "all848": {
+                "n": 164,
+                "TP": 48,
+                "FN": 33,
+                "FP": 2,
+                "TN": 81,
+                "agreement": 0.7865853658536586,
+                "recall": 0.5925925925925926,
+                "false_award_rate": 0.024096385542168676,
+                "sample_precision": 0.96,
+                "FN_plus5FP": 43
+              },
+              "core818": {
+                "n": 158,
+                "TP": 48,
+                "FN": 31,
+                "FP": 2,
+                "TN": 77,
+                "agreement": 0.7911392405063291,
+                "recall": 0.6075949367088608,
+                "false_award_rate": 0.02531645569620253,
+                "sample_precision": 0.96,
+                "FN_plus5FP": 41
+              },
+              "panel30": {
+                "n": 6,
+                "TP": 0,
+                "FN": 2,
+                "FP": 0,
+                "TN": 4,
+                "agreement": 0.6666666666666666,
+                "recall": 0.0,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 2
+              }
+            },
+            "KNVB": {
+              "all848": {
+                "n": 117,
+                "TP": 20,
+                "FN": 32,
+                "FP": 2,
+                "TN": 63,
+                "agreement": 0.7094017094017094,
+                "recall": 0.38461538461538464,
+                "false_award_rate": 0.03076923076923077,
+                "sample_precision": 0.9090909090909091,
+                "FN_plus5FP": 42
+              },
+              "core818": {
+                "n": 100,
+                "TP": 20,
+                "FN": 30,
+                "FP": 2,
+                "TN": 48,
+                "agreement": 0.68,
+                "recall": 0.4,
+                "false_award_rate": 0.04,
+                "sample_precision": 0.9090909090909091,
+                "FN_plus5FP": 40
+              },
+              "panel30": {
+                "n": 17,
+                "TP": 0,
+                "FN": 2,
+                "FP": 0,
+                "TN": 15,
+                "agreement": 0.8823529411764706,
+                "recall": 0.0,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 2
+              }
+            },
+            "GothamChess": {
+              "all848": {
+                "n": 122,
+                "TP": 27,
+                "FN": 33,
+                "FP": 0,
+                "TN": 62,
+                "agreement": 0.7295081967213115,
+                "recall": 0.45,
+                "false_award_rate": 0.0,
+                "sample_precision": 1.0,
+                "FN_plus5FP": 33
+              },
+              "core818": {
+                "n": 120,
+                "TP": 27,
+                "FN": 33,
+                "FP": 0,
+                "TN": 60,
+                "agreement": 0.725,
+                "recall": 0.45,
+                "false_award_rate": 0.0,
+                "sample_precision": 1.0,
+                "FN_plus5FP": 33
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 2,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            },
+            "Hikaru": {
+              "all848": {
+                "n": 222,
+                "TP": 58,
+                "FN": 52,
+                "FP": 1,
+                "TN": 111,
+                "agreement": 0.7612612612612613,
+                "recall": 0.5272727272727272,
+                "false_award_rate": 0.008928571428571428,
+                "sample_precision": 0.9830508474576272,
+                "FN_plus5FP": 57
+              },
+              "core818": {
+                "n": 220,
+                "TP": 58,
+                "FN": 52,
+                "FP": 1,
+                "TN": 109,
+                "agreement": 0.759090909090909,
+                "recall": 0.5272727272727272,
+                "false_award_rate": 0.00909090909090909,
+                "sample_precision": 0.9830508474576272,
+                "FN_plus5FP": 57
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 2,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            }
+          }
+        }
+      },
+      "leave_one_account_out": {
+        "default_cost5": {
+          "partitions": {
+            "all848": {
+              "n": 848,
+              "TP": 309,
+              "FN": 104,
+              "FP": 25,
+              "TN": 410,
+              "agreement": 0.847877358490566,
+              "recall": 0.7481840193704601,
+              "false_award_rate": 0.05747126436781609,
+              "sample_precision": 0.9251497005988024,
+              "FN_plus5FP": 229
+            },
+            "core818": {
+              "n": 818,
+              "TP": 309,
+              "FN": 100,
+              "FP": 22,
+              "TN": 387,
+              "agreement": 0.8508557457212714,
+              "recall": 0.7555012224938875,
+              "false_award_rate": 0.05378973105134474,
+              "sample_precision": 0.9335347432024169,
+              "FN_plus5FP": 210
+            },
+            "panel30": {
+              "n": 30,
+              "TP": 0,
+              "FN": 4,
+              "FP": 3,
+              "TN": 23,
+              "agreement": 0.7666666666666667,
+              "recall": 0.0,
+              "false_award_rate": 0.11538461538461539,
+              "sample_precision": 0.0,
+              "FN_plus5FP": 19
+            }
+          },
+          "by_account": {
+            "nelsi": {
+              "all848": {
+                "n": 223,
+                "TP": 71,
+                "FN": 39,
+                "FP": 5,
+                "TN": 108,
+                "agreement": 0.8026905829596412,
+                "recall": 0.6454545454545455,
+                "false_award_rate": 0.04424778761061947,
+                "sample_precision": 0.9342105263157895,
+                "FN_plus5FP": 64
+              },
+              "core818": {
+                "n": 220,
+                "TP": 71,
+                "FN": 39,
+                "FP": 4,
+                "TN": 106,
+                "agreement": 0.8045454545454546,
+                "recall": 0.6454545454545455,
+                "false_award_rate": 0.03636363636363636,
+                "sample_precision": 0.9466666666666667,
+                "FN_plus5FP": 59
+              },
+              "panel30": {
+                "n": 3,
+                "TP": 0,
+                "FN": 0,
+                "FP": 1,
+                "TN": 2,
+                "agreement": 0.6666666666666666,
+                "recall": null,
+                "false_award_rate": 0.3333333333333333,
+                "sample_precision": 0.0,
+                "FN_plus5FP": 5
+              }
+            },
+            "hansen": {
+              "all848": {
+                "n": 164,
+                "TP": 61,
+                "FN": 20,
+                "FP": 5,
+                "TN": 78,
+                "agreement": 0.8475609756097561,
+                "recall": 0.7530864197530864,
+                "false_award_rate": 0.060240963855421686,
+                "sample_precision": 0.9242424242424242,
+                "FN_plus5FP": 45
+              },
+              "core818": {
+                "n": 158,
+                "TP": 61,
+                "FN": 18,
+                "FP": 5,
+                "TN": 74,
+                "agreement": 0.8544303797468354,
+                "recall": 0.7721518987341772,
+                "false_award_rate": 0.06329113924050633,
+                "sample_precision": 0.9242424242424242,
+                "FN_plus5FP": 43
+              },
+              "panel30": {
+                "n": 6,
+                "TP": 0,
+                "FN": 2,
+                "FP": 0,
+                "TN": 4,
+                "agreement": 0.6666666666666666,
+                "recall": 0.0,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 2
+              }
+            },
+            "KNVB": {
+              "all848": {
+                "n": 117,
+                "TP": 40,
+                "FN": 12,
+                "FP": 5,
+                "TN": 60,
+                "agreement": 0.8547008547008547,
+                "recall": 0.7692307692307693,
+                "false_award_rate": 0.07692307692307693,
+                "sample_precision": 0.8888888888888888,
+                "FN_plus5FP": 37
+              },
+              "core818": {
+                "n": 100,
+                "TP": 40,
+                "FN": 10,
+                "FP": 4,
+                "TN": 46,
+                "agreement": 0.86,
+                "recall": 0.8,
+                "false_award_rate": 0.08,
+                "sample_precision": 0.9090909090909091,
+                "FN_plus5FP": 30
+              },
+              "panel30": {
+                "n": 17,
+                "TP": 0,
+                "FN": 2,
+                "FP": 1,
+                "TN": 14,
+                "agreement": 0.8235294117647058,
+                "recall": 0.0,
+                "false_award_rate": 0.06666666666666667,
+                "sample_precision": 0.0,
+                "FN_plus5FP": 7
+              }
+            },
+            "GothamChess": {
+              "all848": {
+                "n": 122,
+                "TP": 50,
+                "FN": 10,
+                "FP": 2,
+                "TN": 60,
+                "agreement": 0.9016393442622951,
+                "recall": 0.8333333333333334,
+                "false_award_rate": 0.03225806451612903,
+                "sample_precision": 0.9615384615384616,
+                "FN_plus5FP": 20
+              },
+              "core818": {
+                "n": 120,
+                "TP": 50,
+                "FN": 10,
+                "FP": 1,
+                "TN": 59,
+                "agreement": 0.9083333333333333,
+                "recall": 0.8333333333333334,
+                "false_award_rate": 0.016666666666666666,
+                "sample_precision": 0.9803921568627451,
+                "FN_plus5FP": 15
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 1,
+                "TN": 1,
+                "agreement": 0.5,
+                "recall": null,
+                "false_award_rate": 0.5,
+                "sample_precision": 0.0,
+                "FN_plus5FP": 5
+              }
+            },
+            "Hikaru": {
+              "all848": {
+                "n": 222,
+                "TP": 87,
+                "FN": 23,
+                "FP": 8,
+                "TN": 104,
+                "agreement": 0.8603603603603603,
+                "recall": 0.7909090909090909,
+                "false_award_rate": 0.07142857142857142,
+                "sample_precision": 0.9157894736842105,
+                "FN_plus5FP": 63
+              },
+              "core818": {
+                "n": 220,
+                "TP": 87,
+                "FN": 23,
+                "FP": 8,
+                "TN": 102,
+                "agreement": 0.8590909090909091,
+                "recall": 0.7909090909090909,
+                "false_award_rate": 0.07272727272727272,
+                "sample_precision": 0.9157894736842105,
+                "FN_plus5FP": 63
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 2,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            }
+          }
+        },
+        "strict98": {
+          "partitions": {
+            "all848": {
+              "n": 848,
+              "TP": 212,
+              "FN": 201,
+              "FP": 7,
+              "TN": 428,
+              "agreement": 0.7547169811320755,
+              "recall": 0.513317191283293,
+              "false_award_rate": 0.016091954022988506,
+              "sample_precision": 0.9680365296803652,
+              "FN_plus5FP": 236
+            },
+            "core818": {
+              "n": 818,
+              "TP": 212,
+              "FN": 197,
+              "FP": 7,
+              "TN": 402,
+              "agreement": 0.7506112469437652,
+              "recall": 0.5183374083129584,
+              "false_award_rate": 0.017114914425427872,
+              "sample_precision": 0.9680365296803652,
+              "FN_plus5FP": 232
+            },
+            "panel30": {
+              "n": 30,
+              "TP": 0,
+              "FN": 4,
+              "FP": 0,
+              "TN": 26,
+              "agreement": 0.8666666666666667,
+              "recall": 0.0,
+              "false_award_rate": 0.0,
+              "sample_precision": null,
+              "FN_plus5FP": 4
+            }
+          },
+          "by_account": {
+            "nelsi": {
+              "all848": {
+                "n": 223,
+                "TP": 51,
+                "FN": 59,
+                "FP": 2,
+                "TN": 111,
+                "agreement": 0.726457399103139,
+                "recall": 0.4636363636363636,
+                "false_award_rate": 0.017699115044247787,
+                "sample_precision": 0.9622641509433962,
+                "FN_plus5FP": 69
+              },
+              "core818": {
+                "n": 220,
+                "TP": 51,
+                "FN": 59,
+                "FP": 2,
+                "TN": 108,
+                "agreement": 0.7227272727272728,
+                "recall": 0.4636363636363636,
+                "false_award_rate": 0.01818181818181818,
+                "sample_precision": 0.9622641509433962,
+                "FN_plus5FP": 69
+              },
+              "panel30": {
+                "n": 3,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 3,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            },
+            "hansen": {
+              "all848": {
+                "n": 164,
+                "TP": 54,
+                "FN": 27,
+                "FP": 2,
+                "TN": 81,
+                "agreement": 0.823170731707317,
+                "recall": 0.6666666666666666,
+                "false_award_rate": 0.024096385542168676,
+                "sample_precision": 0.9642857142857143,
+                "FN_plus5FP": 37
+              },
+              "core818": {
+                "n": 158,
+                "TP": 54,
+                "FN": 25,
+                "FP": 2,
+                "TN": 77,
+                "agreement": 0.8291139240506329,
+                "recall": 0.6835443037974683,
+                "false_award_rate": 0.02531645569620253,
+                "sample_precision": 0.9642857142857143,
+                "FN_plus5FP": 35
+              },
+              "panel30": {
+                "n": 6,
+                "TP": 0,
+                "FN": 2,
+                "FP": 0,
+                "TN": 4,
+                "agreement": 0.6666666666666666,
+                "recall": 0.0,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 2
+              }
+            },
+            "KNVB": {
+              "all848": {
+                "n": 117,
+                "TP": 21,
+                "FN": 31,
+                "FP": 1,
+                "TN": 64,
+                "agreement": 0.7264957264957265,
+                "recall": 0.40384615384615385,
+                "false_award_rate": 0.015384615384615385,
+                "sample_precision": 0.9545454545454546,
+                "FN_plus5FP": 36
+              },
+              "core818": {
+                "n": 100,
+                "TP": 21,
+                "FN": 29,
+                "FP": 1,
+                "TN": 49,
+                "agreement": 0.7,
+                "recall": 0.42,
+                "false_award_rate": 0.02,
+                "sample_precision": 0.9545454545454546,
+                "FN_plus5FP": 34
+              },
+              "panel30": {
+                "n": 17,
+                "TP": 0,
+                "FN": 2,
+                "FP": 0,
+                "TN": 15,
+                "agreement": 0.8823529411764706,
+                "recall": 0.0,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 2
+              }
+            },
+            "GothamChess": {
+              "all848": {
+                "n": 122,
+                "TP": 36,
+                "FN": 24,
+                "FP": 0,
+                "TN": 62,
+                "agreement": 0.8032786885245902,
+                "recall": 0.6,
+                "false_award_rate": 0.0,
+                "sample_precision": 1.0,
+                "FN_plus5FP": 24
+              },
+              "core818": {
+                "n": 120,
+                "TP": 36,
+                "FN": 24,
+                "FP": 0,
+                "TN": 60,
+                "agreement": 0.8,
+                "recall": 0.6,
+                "false_award_rate": 0.0,
+                "sample_precision": 1.0,
+                "FN_plus5FP": 24
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 2,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            },
+            "Hikaru": {
+              "all848": {
+                "n": 222,
+                "TP": 50,
+                "FN": 60,
+                "FP": 2,
+                "TN": 110,
+                "agreement": 0.7207207207207207,
+                "recall": 0.45454545454545453,
+                "false_award_rate": 0.017857142857142856,
+                "sample_precision": 0.9615384615384616,
+                "FN_plus5FP": 70
+              },
+              "core818": {
+                "n": 220,
+                "TP": 50,
+                "FN": 60,
+                "FP": 2,
+                "TN": 108,
+                "agreement": 0.7181818181818181,
+                "recall": 0.45454545454545453,
+                "false_award_rate": 0.01818181818181818,
+                "sample_precision": 0.9615384615384616,
+                "FN_plus5FP": 70
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 2,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "plus_rating": {
+      "group_cv": {
+        "default_cost5": {
+          "partitions": {
+            "all848": {
+              "n": 848,
+              "TP": 288,
+              "FN": 125,
+              "FP": 23,
+              "TN": 412,
+              "agreement": 0.8254716981132075,
+              "recall": 0.6973365617433414,
+              "false_award_rate": 0.052873563218390804,
+              "sample_precision": 0.9260450160771704,
+              "FN_plus5FP": 240
+            },
+            "core818": {
+              "n": 818,
+              "TP": 286,
+              "FN": 123,
+              "FP": 21,
+              "TN": 388,
+              "agreement": 0.823960880195599,
+              "recall": 0.6992665036674817,
+              "false_award_rate": 0.05134474327628362,
+              "sample_precision": 0.9315960912052117,
+              "FN_plus5FP": 228
+            },
+            "panel30": {
+              "n": 30,
+              "TP": 2,
+              "FN": 2,
+              "FP": 2,
+              "TN": 24,
+              "agreement": 0.8666666666666667,
+              "recall": 0.5,
+              "false_award_rate": 0.07692307692307693,
+              "sample_precision": 0.5,
+              "FN_plus5FP": 12
+            }
+          },
+          "by_account": {
+            "nelsi": {
+              "all848": {
+                "n": 223,
+                "TP": 73,
+                "FN": 37,
+                "FP": 7,
+                "TN": 106,
+                "agreement": 0.8026905829596412,
+                "recall": 0.6636363636363637,
+                "false_award_rate": 0.061946902654867256,
+                "sample_precision": 0.9125,
+                "FN_plus5FP": 72
+              },
+              "core818": {
+                "n": 220,
+                "TP": 73,
+                "FN": 37,
+                "FP": 6,
+                "TN": 104,
+                "agreement": 0.8045454545454546,
+                "recall": 0.6636363636363637,
+                "false_award_rate": 0.05454545454545454,
+                "sample_precision": 0.9240506329113924,
+                "FN_plus5FP": 67
+              },
+              "panel30": {
+                "n": 3,
+                "TP": 0,
+                "FN": 0,
+                "FP": 1,
+                "TN": 2,
+                "agreement": 0.6666666666666666,
+                "recall": null,
+                "false_award_rate": 0.3333333333333333,
+                "sample_precision": 0.0,
+                "FN_plus5FP": 5
+              }
+            },
+            "hansen": {
+              "all848": {
+                "n": 164,
+                "TP": 66,
+                "FN": 15,
+                "FP": 7,
+                "TN": 76,
+                "agreement": 0.8658536585365854,
+                "recall": 0.8148148148148148,
+                "false_award_rate": 0.08433734939759036,
+                "sample_precision": 0.9041095890410958,
+                "FN_plus5FP": 50
+              },
+              "core818": {
+                "n": 158,
+                "TP": 65,
+                "FN": 14,
+                "FP": 7,
+                "TN": 72,
+                "agreement": 0.8670886075949367,
+                "recall": 0.8227848101265823,
+                "false_award_rate": 0.08860759493670886,
+                "sample_precision": 0.9027777777777778,
+                "FN_plus5FP": 49
+              },
+              "panel30": {
+                "n": 6,
+                "TP": 1,
+                "FN": 1,
+                "FP": 0,
+                "TN": 4,
+                "agreement": 0.8333333333333334,
+                "recall": 0.5,
+                "false_award_rate": 0.0,
+                "sample_precision": 1.0,
+                "FN_plus5FP": 1
+              }
+            },
+            "KNVB": {
+              "all848": {
+                "n": 117,
+                "TP": 36,
+                "FN": 16,
+                "FP": 3,
+                "TN": 62,
+                "agreement": 0.8376068376068376,
+                "recall": 0.6923076923076923,
+                "false_award_rate": 0.046153846153846156,
+                "sample_precision": 0.9230769230769231,
+                "FN_plus5FP": 31
+              },
+              "core818": {
+                "n": 100,
+                "TP": 35,
+                "FN": 15,
+                "FP": 2,
+                "TN": 48,
+                "agreement": 0.83,
+                "recall": 0.7,
+                "false_award_rate": 0.04,
+                "sample_precision": 0.9459459459459459,
+                "FN_plus5FP": 25
+              },
+              "panel30": {
+                "n": 17,
+                "TP": 1,
+                "FN": 1,
+                "FP": 1,
+                "TN": 14,
+                "agreement": 0.8823529411764706,
+                "recall": 0.5,
+                "false_award_rate": 0.06666666666666667,
+                "sample_precision": 0.5,
+                "FN_plus5FP": 6
+              }
+            },
+            "GothamChess": {
+              "all848": {
+                "n": 122,
+                "TP": 37,
+                "FN": 23,
+                "FP": 0,
+                "TN": 62,
+                "agreement": 0.8114754098360656,
+                "recall": 0.6166666666666667,
+                "false_award_rate": 0.0,
+                "sample_precision": 1.0,
+                "FN_plus5FP": 23
+              },
+              "core818": {
+                "n": 120,
+                "TP": 37,
+                "FN": 23,
+                "FP": 0,
+                "TN": 60,
+                "agreement": 0.8083333333333333,
+                "recall": 0.6166666666666667,
+                "false_award_rate": 0.0,
+                "sample_precision": 1.0,
+                "FN_plus5FP": 23
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 2,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            },
+            "Hikaru": {
+              "all848": {
+                "n": 222,
+                "TP": 76,
+                "FN": 34,
+                "FP": 6,
+                "TN": 106,
+                "agreement": 0.8198198198198198,
+                "recall": 0.6909090909090909,
+                "false_award_rate": 0.05357142857142857,
+                "sample_precision": 0.926829268292683,
+                "FN_plus5FP": 64
+              },
+              "core818": {
+                "n": 220,
+                "TP": 76,
+                "FN": 34,
+                "FP": 6,
+                "TN": 104,
+                "agreement": 0.8181818181818182,
+                "recall": 0.6909090909090909,
+                "false_award_rate": 0.05454545454545454,
+                "sample_precision": 0.926829268292683,
+                "FN_plus5FP": 64
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 2,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            }
+          }
+        },
+        "strict98": {
+          "partitions": {
+            "all848": {
+              "n": 848,
+              "TP": 205,
+              "FN": 208,
+              "FP": 7,
+              "TN": 428,
+              "agreement": 0.7464622641509434,
+              "recall": 0.4963680387409201,
+              "false_award_rate": 0.016091954022988506,
+              "sample_precision": 0.9669811320754716,
+              "FN_plus5FP": 243
+            },
+            "core818": {
+              "n": 818,
+              "TP": 205,
+              "FN": 204,
+              "FP": 7,
+              "TN": 402,
+              "agreement": 0.7420537897310513,
+              "recall": 0.5012224938875306,
+              "false_award_rate": 0.017114914425427872,
+              "sample_precision": 0.9669811320754716,
+              "FN_plus5FP": 239
+            },
+            "panel30": {
+              "n": 30,
+              "TP": 0,
+              "FN": 4,
+              "FP": 0,
+              "TN": 26,
+              "agreement": 0.8666666666666667,
+              "recall": 0.0,
+              "false_award_rate": 0.0,
+              "sample_precision": null,
+              "FN_plus5FP": 4
+            }
+          },
+          "by_account": {
+            "nelsi": {
+              "all848": {
+                "n": 223,
+                "TP": 52,
+                "FN": 58,
+                "FP": 2,
+                "TN": 111,
+                "agreement": 0.7309417040358744,
+                "recall": 0.4727272727272727,
+                "false_award_rate": 0.017699115044247787,
+                "sample_precision": 0.9629629629629629,
+                "FN_plus5FP": 68
+              },
+              "core818": {
+                "n": 220,
+                "TP": 52,
+                "FN": 58,
+                "FP": 2,
+                "TN": 108,
+                "agreement": 0.7272727272727273,
+                "recall": 0.4727272727272727,
+                "false_award_rate": 0.01818181818181818,
+                "sample_precision": 0.9629629629629629,
+                "FN_plus5FP": 68
+              },
+              "panel30": {
+                "n": 3,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 3,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            },
+            "hansen": {
+              "all848": {
+                "n": 164,
+                "TP": 48,
+                "FN": 33,
+                "FP": 2,
+                "TN": 81,
+                "agreement": 0.7865853658536586,
+                "recall": 0.5925925925925926,
+                "false_award_rate": 0.024096385542168676,
+                "sample_precision": 0.96,
+                "FN_plus5FP": 43
+              },
+              "core818": {
+                "n": 158,
+                "TP": 48,
+                "FN": 31,
+                "FP": 2,
+                "TN": 77,
+                "agreement": 0.7911392405063291,
+                "recall": 0.6075949367088608,
+                "false_award_rate": 0.02531645569620253,
+                "sample_precision": 0.96,
+                "FN_plus5FP": 41
+              },
+              "panel30": {
+                "n": 6,
+                "TP": 0,
+                "FN": 2,
+                "FP": 0,
+                "TN": 4,
+                "agreement": 0.6666666666666666,
+                "recall": 0.0,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 2
+              }
+            },
+            "KNVB": {
+              "all848": {
+                "n": 117,
+                "TP": 20,
+                "FN": 32,
+                "FP": 2,
+                "TN": 63,
+                "agreement": 0.7094017094017094,
+                "recall": 0.38461538461538464,
+                "false_award_rate": 0.03076923076923077,
+                "sample_precision": 0.9090909090909091,
+                "FN_plus5FP": 42
+              },
+              "core818": {
+                "n": 100,
+                "TP": 20,
+                "FN": 30,
+                "FP": 2,
+                "TN": 48,
+                "agreement": 0.68,
+                "recall": 0.4,
+                "false_award_rate": 0.04,
+                "sample_precision": 0.9090909090909091,
+                "FN_plus5FP": 40
+              },
+              "panel30": {
+                "n": 17,
+                "TP": 0,
+                "FN": 2,
+                "FP": 0,
+                "TN": 15,
+                "agreement": 0.8823529411764706,
+                "recall": 0.0,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 2
+              }
+            },
+            "GothamChess": {
+              "all848": {
+                "n": 122,
+                "TP": 27,
+                "FN": 33,
+                "FP": 0,
+                "TN": 62,
+                "agreement": 0.7295081967213115,
+                "recall": 0.45,
+                "false_award_rate": 0.0,
+                "sample_precision": 1.0,
+                "FN_plus5FP": 33
+              },
+              "core818": {
+                "n": 120,
+                "TP": 27,
+                "FN": 33,
+                "FP": 0,
+                "TN": 60,
+                "agreement": 0.725,
+                "recall": 0.45,
+                "false_award_rate": 0.0,
+                "sample_precision": 1.0,
+                "FN_plus5FP": 33
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 2,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            },
+            "Hikaru": {
+              "all848": {
+                "n": 222,
+                "TP": 58,
+                "FN": 52,
+                "FP": 1,
+                "TN": 111,
+                "agreement": 0.7612612612612613,
+                "recall": 0.5272727272727272,
+                "false_award_rate": 0.008928571428571428,
+                "sample_precision": 0.9830508474576272,
+                "FN_plus5FP": 57
+              },
+              "core818": {
+                "n": 220,
+                "TP": 58,
+                "FN": 52,
+                "FP": 1,
+                "TN": 109,
+                "agreement": 0.759090909090909,
+                "recall": 0.5272727272727272,
+                "false_award_rate": 0.00909090909090909,
+                "sample_precision": 0.9830508474576272,
+                "FN_plus5FP": 57
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 2,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            }
+          }
+        }
+      },
+      "leave_one_account_out": {
+        "default_cost5": {
+          "partitions": {
+            "all848": {
+              "n": 848,
+              "TP": 309,
+              "FN": 104,
+              "FP": 25,
+              "TN": 410,
+              "agreement": 0.847877358490566,
+              "recall": 0.7481840193704601,
+              "false_award_rate": 0.05747126436781609,
+              "sample_precision": 0.9251497005988024,
+              "FN_plus5FP": 229
+            },
+            "core818": {
+              "n": 818,
+              "TP": 309,
+              "FN": 100,
+              "FP": 22,
+              "TN": 387,
+              "agreement": 0.8508557457212714,
+              "recall": 0.7555012224938875,
+              "false_award_rate": 0.05378973105134474,
+              "sample_precision": 0.9335347432024169,
+              "FN_plus5FP": 210
+            },
+            "panel30": {
+              "n": 30,
+              "TP": 0,
+              "FN": 4,
+              "FP": 3,
+              "TN": 23,
+              "agreement": 0.7666666666666667,
+              "recall": 0.0,
+              "false_award_rate": 0.11538461538461539,
+              "sample_precision": 0.0,
+              "FN_plus5FP": 19
+            }
+          },
+          "by_account": {
+            "nelsi": {
+              "all848": {
+                "n": 223,
+                "TP": 71,
+                "FN": 39,
+                "FP": 5,
+                "TN": 108,
+                "agreement": 0.8026905829596412,
+                "recall": 0.6454545454545455,
+                "false_award_rate": 0.04424778761061947,
+                "sample_precision": 0.9342105263157895,
+                "FN_plus5FP": 64
+              },
+              "core818": {
+                "n": 220,
+                "TP": 71,
+                "FN": 39,
+                "FP": 4,
+                "TN": 106,
+                "agreement": 0.8045454545454546,
+                "recall": 0.6454545454545455,
+                "false_award_rate": 0.03636363636363636,
+                "sample_precision": 0.9466666666666667,
+                "FN_plus5FP": 59
+              },
+              "panel30": {
+                "n": 3,
+                "TP": 0,
+                "FN": 0,
+                "FP": 1,
+                "TN": 2,
+                "agreement": 0.6666666666666666,
+                "recall": null,
+                "false_award_rate": 0.3333333333333333,
+                "sample_precision": 0.0,
+                "FN_plus5FP": 5
+              }
+            },
+            "hansen": {
+              "all848": {
+                "n": 164,
+                "TP": 61,
+                "FN": 20,
+                "FP": 5,
+                "TN": 78,
+                "agreement": 0.8475609756097561,
+                "recall": 0.7530864197530864,
+                "false_award_rate": 0.060240963855421686,
+                "sample_precision": 0.9242424242424242,
+                "FN_plus5FP": 45
+              },
+              "core818": {
+                "n": 158,
+                "TP": 61,
+                "FN": 18,
+                "FP": 5,
+                "TN": 74,
+                "agreement": 0.8544303797468354,
+                "recall": 0.7721518987341772,
+                "false_award_rate": 0.06329113924050633,
+                "sample_precision": 0.9242424242424242,
+                "FN_plus5FP": 43
+              },
+              "panel30": {
+                "n": 6,
+                "TP": 0,
+                "FN": 2,
+                "FP": 0,
+                "TN": 4,
+                "agreement": 0.6666666666666666,
+                "recall": 0.0,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 2
+              }
+            },
+            "KNVB": {
+              "all848": {
+                "n": 117,
+                "TP": 40,
+                "FN": 12,
+                "FP": 5,
+                "TN": 60,
+                "agreement": 0.8547008547008547,
+                "recall": 0.7692307692307693,
+                "false_award_rate": 0.07692307692307693,
+                "sample_precision": 0.8888888888888888,
+                "FN_plus5FP": 37
+              },
+              "core818": {
+                "n": 100,
+                "TP": 40,
+                "FN": 10,
+                "FP": 4,
+                "TN": 46,
+                "agreement": 0.86,
+                "recall": 0.8,
+                "false_award_rate": 0.08,
+                "sample_precision": 0.9090909090909091,
+                "FN_plus5FP": 30
+              },
+              "panel30": {
+                "n": 17,
+                "TP": 0,
+                "FN": 2,
+                "FP": 1,
+                "TN": 14,
+                "agreement": 0.8235294117647058,
+                "recall": 0.0,
+                "false_award_rate": 0.06666666666666667,
+                "sample_precision": 0.0,
+                "FN_plus5FP": 7
+              }
+            },
+            "GothamChess": {
+              "all848": {
+                "n": 122,
+                "TP": 50,
+                "FN": 10,
+                "FP": 2,
+                "TN": 60,
+                "agreement": 0.9016393442622951,
+                "recall": 0.8333333333333334,
+                "false_award_rate": 0.03225806451612903,
+                "sample_precision": 0.9615384615384616,
+                "FN_plus5FP": 20
+              },
+              "core818": {
+                "n": 120,
+                "TP": 50,
+                "FN": 10,
+                "FP": 1,
+                "TN": 59,
+                "agreement": 0.9083333333333333,
+                "recall": 0.8333333333333334,
+                "false_award_rate": 0.016666666666666666,
+                "sample_precision": 0.9803921568627451,
+                "FN_plus5FP": 15
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 1,
+                "TN": 1,
+                "agreement": 0.5,
+                "recall": null,
+                "false_award_rate": 0.5,
+                "sample_precision": 0.0,
+                "FN_plus5FP": 5
+              }
+            },
+            "Hikaru": {
+              "all848": {
+                "n": 222,
+                "TP": 87,
+                "FN": 23,
+                "FP": 8,
+                "TN": 104,
+                "agreement": 0.8603603603603603,
+                "recall": 0.7909090909090909,
+                "false_award_rate": 0.07142857142857142,
+                "sample_precision": 0.9157894736842105,
+                "FN_plus5FP": 63
+              },
+              "core818": {
+                "n": 220,
+                "TP": 87,
+                "FN": 23,
+                "FP": 8,
+                "TN": 102,
+                "agreement": 0.8590909090909091,
+                "recall": 0.7909090909090909,
+                "false_award_rate": 0.07272727272727272,
+                "sample_precision": 0.9157894736842105,
+                "FN_plus5FP": 63
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 2,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            }
+          }
+        },
+        "strict98": {
+          "partitions": {
+            "all848": {
+              "n": 848,
+              "TP": 212,
+              "FN": 201,
+              "FP": 7,
+              "TN": 428,
+              "agreement": 0.7547169811320755,
+              "recall": 0.513317191283293,
+              "false_award_rate": 0.016091954022988506,
+              "sample_precision": 0.9680365296803652,
+              "FN_plus5FP": 236
+            },
+            "core818": {
+              "n": 818,
+              "TP": 212,
+              "FN": 197,
+              "FP": 7,
+              "TN": 402,
+              "agreement": 0.7506112469437652,
+              "recall": 0.5183374083129584,
+              "false_award_rate": 0.017114914425427872,
+              "sample_precision": 0.9680365296803652,
+              "FN_plus5FP": 232
+            },
+            "panel30": {
+              "n": 30,
+              "TP": 0,
+              "FN": 4,
+              "FP": 0,
+              "TN": 26,
+              "agreement": 0.8666666666666667,
+              "recall": 0.0,
+              "false_award_rate": 0.0,
+              "sample_precision": null,
+              "FN_plus5FP": 4
+            }
+          },
+          "by_account": {
+            "nelsi": {
+              "all848": {
+                "n": 223,
+                "TP": 51,
+                "FN": 59,
+                "FP": 2,
+                "TN": 111,
+                "agreement": 0.726457399103139,
+                "recall": 0.4636363636363636,
+                "false_award_rate": 0.017699115044247787,
+                "sample_precision": 0.9622641509433962,
+                "FN_plus5FP": 69
+              },
+              "core818": {
+                "n": 220,
+                "TP": 51,
+                "FN": 59,
+                "FP": 2,
+                "TN": 108,
+                "agreement": 0.7227272727272728,
+                "recall": 0.4636363636363636,
+                "false_award_rate": 0.01818181818181818,
+                "sample_precision": 0.9622641509433962,
+                "FN_plus5FP": 69
+              },
+              "panel30": {
+                "n": 3,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 3,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            },
+            "hansen": {
+              "all848": {
+                "n": 164,
+                "TP": 54,
+                "FN": 27,
+                "FP": 2,
+                "TN": 81,
+                "agreement": 0.823170731707317,
+                "recall": 0.6666666666666666,
+                "false_award_rate": 0.024096385542168676,
+                "sample_precision": 0.9642857142857143,
+                "FN_plus5FP": 37
+              },
+              "core818": {
+                "n": 158,
+                "TP": 54,
+                "FN": 25,
+                "FP": 2,
+                "TN": 77,
+                "agreement": 0.8291139240506329,
+                "recall": 0.6835443037974683,
+                "false_award_rate": 0.02531645569620253,
+                "sample_precision": 0.9642857142857143,
+                "FN_plus5FP": 35
+              },
+              "panel30": {
+                "n": 6,
+                "TP": 0,
+                "FN": 2,
+                "FP": 0,
+                "TN": 4,
+                "agreement": 0.6666666666666666,
+                "recall": 0.0,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 2
+              }
+            },
+            "KNVB": {
+              "all848": {
+                "n": 117,
+                "TP": 21,
+                "FN": 31,
+                "FP": 1,
+                "TN": 64,
+                "agreement": 0.7264957264957265,
+                "recall": 0.40384615384615385,
+                "false_award_rate": 0.015384615384615385,
+                "sample_precision": 0.9545454545454546,
+                "FN_plus5FP": 36
+              },
+              "core818": {
+                "n": 100,
+                "TP": 21,
+                "FN": 29,
+                "FP": 1,
+                "TN": 49,
+                "agreement": 0.7,
+                "recall": 0.42,
+                "false_award_rate": 0.02,
+                "sample_precision": 0.9545454545454546,
+                "FN_plus5FP": 34
+              },
+              "panel30": {
+                "n": 17,
+                "TP": 0,
+                "FN": 2,
+                "FP": 0,
+                "TN": 15,
+                "agreement": 0.8823529411764706,
+                "recall": 0.0,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 2
+              }
+            },
+            "GothamChess": {
+              "all848": {
+                "n": 122,
+                "TP": 36,
+                "FN": 24,
+                "FP": 0,
+                "TN": 62,
+                "agreement": 0.8032786885245902,
+                "recall": 0.6,
+                "false_award_rate": 0.0,
+                "sample_precision": 1.0,
+                "FN_plus5FP": 24
+              },
+              "core818": {
+                "n": 120,
+                "TP": 36,
+                "FN": 24,
+                "FP": 0,
+                "TN": 60,
+                "agreement": 0.8,
+                "recall": 0.6,
+                "false_award_rate": 0.0,
+                "sample_precision": 1.0,
+                "FN_plus5FP": 24
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 2,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            },
+            "Hikaru": {
+              "all848": {
+                "n": 222,
+                "TP": 50,
+                "FN": 60,
+                "FP": 2,
+                "TN": 110,
+                "agreement": 0.7207207207207207,
+                "recall": 0.45454545454545453,
+                "false_award_rate": 0.017857142857142856,
+                "sample_precision": 0.9615384615384616,
+                "FN_plus5FP": 70
+              },
+              "core818": {
+                "n": 220,
+                "TP": 50,
+                "FN": 60,
+                "FP": 2,
+                "TN": 108,
+                "agreement": 0.7181818181818181,
+                "recall": 0.45454545454545453,
+                "false_award_rate": 0.01818181818181818,
+                "sample_precision": 0.9615384615384616,
+                "FN_plus5FP": 70
+              },
+              "panel30": {
+                "n": 2,
+                "TP": 0,
+                "FN": 0,
+                "FP": 0,
+                "TN": 2,
+                "agreement": 1.0,
+                "recall": null,
+                "false_award_rate": 0.0,
+                "sample_precision": null,
+                "FN_plus5FP": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "full_rating_resubstitution_NOT_validation": {
+    "default_cost5": {
+      "n": 848,
+      "TP": 333,
+      "FN": 80,
+      "FP": 15,
+      "TN": 420,
+      "agreement": 0.8879716981132075,
+      "recall": 0.8062953995157385,
+      "false_award_rate": 0.034482758620689655,
+      "sample_precision": 0.9568965517241379,
+      "FN_plus5FP": 155
+    },
+    "strict98": {
+      "n": 848,
+      "TP": 247,
+      "FN": 166,
+      "FP": 2,
+      "TN": 433,
+      "agreement": 0.8018867924528302,
+      "recall": 0.5980629539951574,
+      "false_award_rate": 0.004597701149425287,
+      "sample_precision": 0.9919678714859438,
+      "FN_plus5FP": 176
+    }
+  },
+  "new_training_runs": 16,
+  "grouped_original75_reused_without_refit": true,
+  "training_audit": [
+    {
+      "feature_set": "original75",
+      "scheme": "leave_one_account_out",
+      "held_out": "nelsi",
+      "train_eligible_window_rows": 794,
+      "train_distinct_cases": 399,
+      "test_cases": 223,
+      "train_test_group_overlap": 0
+    },
+    {
+      "feature_set": "original75",
+      "scheme": "leave_one_account_out",
+      "held_out": "hansen",
+      "train_eligible_window_rows": 838,
+      "train_distinct_cases": 421,
+      "test_cases": 164,
+      "train_test_group_overlap": 0
+    },
+    {
+      "feature_set": "original75",
+      "scheme": "leave_one_account_out",
+      "held_out": "KNVB",
+      "train_eligible_window_rows": 911,
+      "train_distinct_cases": 457,
+      "test_cases": 117,
+      "train_test_group_overlap": 0
+    },
+    {
+      "feature_set": "original75",
+      "scheme": "leave_one_account_out",
+      "held_out": "GothamChess",
+      "train_eligible_window_rows": 916,
+      "train_distinct_cases": 460,
+      "test_cases": 122,
+      "train_test_group_overlap": 0
+    },
+    {
+      "feature_set": "original75",
+      "scheme": "leave_one_account_out",
+      "held_out": "Hikaru",
+      "train_eligible_window_rows": 785,
+      "train_distinct_cases": 395,
+      "test_cases": 222,
+      "train_test_group_overlap": 0
+    },
+    {
+      "feature_set": "plus_rating",
+      "scheme": "group_cv",
+      "held_out": "0",
+      "train_eligible_window_rows": 846,
+      "train_distinct_cases": 425,
+      "test_cases": 178,
+      "train_test_group_overlap": 0
+    },
+    {
+      "feature_set": "plus_rating",
+      "scheme": "group_cv",
+      "held_out": "1",
+      "train_eligible_window_rows": 829,
+      "train_distinct_cases": 416,
+      "test_cases": 186,
+      "train_test_group_overlap": 0
+    },
+    {
+      "feature_set": "plus_rating",
+      "scheme": "group_cv",
+      "held_out": "2",
+      "train_eligible_window_rows": 825,
+      "train_distinct_cases": 414,
+      "test_cases": 198,
+      "train_test_group_overlap": 0
+    },
+    {
+      "feature_set": "plus_rating",
+      "scheme": "group_cv",
+      "held_out": "3",
+      "train_eligible_window_rows": 891,
+      "train_distinct_cases": 448,
+      "test_cases": 136,
+      "train_test_group_overlap": 0
+    },
+    {
+      "feature_set": "plus_rating",
+      "scheme": "group_cv",
+      "held_out": "4",
+      "train_eligible_window_rows": 853,
+      "train_distinct_cases": 429,
+      "test_cases": 150,
+      "train_test_group_overlap": 0
+    },
+    {
+      "feature_set": "plus_rating",
+      "scheme": "leave_one_account_out",
+      "held_out": "nelsi",
+      "train_eligible_window_rows": 794,
+      "train_distinct_cases": 399,
+      "test_cases": 223,
+      "train_test_group_overlap": 0
+    },
+    {
+      "feature_set": "plus_rating",
+      "scheme": "leave_one_account_out",
+      "held_out": "hansen",
+      "train_eligible_window_rows": 838,
+      "train_distinct_cases": 421,
+      "test_cases": 164,
+      "train_test_group_overlap": 0
+    },
+    {
+      "feature_set": "plus_rating",
+      "scheme": "leave_one_account_out",
+      "held_out": "KNVB",
+      "train_eligible_window_rows": 911,
+      "train_distinct_cases": 457,
+      "test_cases": 117,
+      "train_test_group_overlap": 0
+    },
+    {
+      "feature_set": "plus_rating",
+      "scheme": "leave_one_account_out",
+      "held_out": "GothamChess",
+      "train_eligible_window_rows": 916,
+      "train_distinct_cases": 460,
+      "test_cases": 122,
+      "train_test_group_overlap": 0
+    },
+    {
+      "feature_set": "plus_rating",
+      "scheme": "leave_one_account_out",
+      "held_out": "Hikaru",
+      "train_eligible_window_rows": 785,
+      "train_distinct_cases": 395,
+      "test_cases": 222,
+      "train_test_group_overlap": 0
+    }
+  ],
+  "elapsed_seconds": 1.049,
+  "peak_rss_bytes": 89391104
+}

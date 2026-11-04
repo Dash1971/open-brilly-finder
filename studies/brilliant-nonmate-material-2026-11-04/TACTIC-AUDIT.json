@@ -1,0 +1,23 @@
+{
+  "scope": "Post-evaluation read-only interpretation; no parameter changes",
+  "brilliant_counterexample": {
+    "key": "185741429132:55",
+    "move": "Ng6+",
+    "acceptance": "Rxg6",
+    "mate_reply": "Rxe8#",
+    "finite_alternative": "Qxd6+ Re7 Qxc7",
+    "gain_at12_cp": 1000,
+    "evaluation_mover_cp": 835,
+    "interpretation": "Both mating and a queen-winning material continuation exist; this true Brilliant is vetoed by the refinement."
+  },
+  "ordinary_counterexample": {
+    "key": "173266974169:84",
+    "move": "Qe5",
+    "acceptance": "Bxc2",
+    "mate_reply": "Qxh2#",
+    "finite_alternative": "Qxg5",
+    "gain_at12_cp": 680,
+    "evaluation_white_cp": -503,
+    "interpretation": "A queen capture after the rook offer gives a material-winning alternative; Chess.com ordinary label remains the ground truth."
+  }
+}

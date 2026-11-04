@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "complete": true,
+    "queries": true,
+    "cases": true,
+    "source_hash_unchanged": true,
+    "probe_hash_unchanged": true,
+    "engine_hash_unchanged": true,
+    "protocol_hash_unchanged": true,
+    "trace_hash_matches": true,
+    "ledger_inputs_match": true,
+    "dependency_hashes_unchanged": true,
+    "all_qualifiers_known": true,
+    "all_query_windows_present": true,
+    "groups_preserved": true
+  },
+  "legally_replayed_lines": 287,
+  "no_immediate_offer_rootsets_empty": 7,
+  "artifact_hashes": {
+    "PROTOCOL.json": "1454ef77db0ea36f89af5d6edd33c9630b0657d657f74f0e9ed060b72c36ff72",
+    "probe.py": "420eb05d80989919ff67bfbc190703d1170e2410681698f6107bf7adc5d7dc18",
+    "CHOICES.json": "3202533f22174f39c846c7ea349ad6677ab74f5a6f1f17f64944ae15665cf627",
+    "trace.py": "25bd2742fd09ce2553866bc8c937b8986b0cd6b66fd4f53f44918904e6c624b6",
+    "MATERIAL-LEDGERS.json": "5079f17aaa65dc3f0529e1f77567d8a8660ac266e17dca8b4bd932ad52bdc75a",
+    "REPORT.txt": "99872a7ed942e5e7e074ebf07a0184181f235e2d23e549263a76d11860bba675"
+  },
+  "scope": "Diagnostic only; no rule, forest, threshold or app changes; not an evaluation trial."
+}

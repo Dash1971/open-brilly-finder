@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "checks": [
+    "all source/script/protocol/feature/model hashes",
+    "1320 eligible cases and1481 saved branches; no new searches",
+    "all seven feature coverage, horizons, terminal and recovery definitions recomputed",
+    "all3724unique predictions and original folds",
+    "whole game/aliases/position fold integrity",
+    "baseline outer/final scores and awards exactly reproduced",
+    "inner threshold wrong-award count and fraction constraints",
+    "pooled/per-fold/nonpilot confusion counts recomputed",
+    "no ineligible awards",
+    "runtime/RSS limits",
+    "final training-only selection/model consistency"
+  ],
+  "artifact_sha256": {
+    "PROTOCOL.json": "61c0d45dfe4e84a9fadfc1f5289515ab39f2c746f911f4018b92a57e1d24c922",
+    "FEATURE-PROTOCOL.json": "ab797bdeb360453f521dc4a51138b5b7bebd44b52c7358277d27a459e2083d84",
+    "extract.py": "733719981ec99330bfce6d95b7d80bab70c4ad7827f08afab32fe5254df83775",
+    "evaluate.py": "95b8d882ec1afb132067a40bef3c67df783e1a1f086ac5bb7b19972910a1f4e1",
+    "verify.py": "db5b4001521a0b60ba8f050fbf4cbeb0893ecd1a5bcdf593e92e8819992753c3",
+    "EXTRACTION.json": "6d71b3e1c114d7c674482415a88ebdccbbfad027fc2422ef90672556d9080546",
+    "TRAJECTORY-FEATURES.json": "601c6fe6c20a24d6835865b6a57e5bc274654a244c7d11d79c13bee4bd0a7706",
+    "EVALUATION-FREEZE.json": "fcb97fe5a99ca2bd2e8f26cfec52b306ebdf0386cea2fce37c1f16eb08a5b176",
+    "RESULTS.json": "1cdd3090c719447b4d14fbf7b39bddd4536b13d889f61634c84340d830fc2109",
+    "PREDICTIONS.json": "78b0fe1991488c09f54c9331b7f90cdfa9d44239c8c3ad91251e87ee5c8f77e4",
+    "MODEL-FREEZE.json": "3d2b1ac418fa7425240d9107cdab5810a1eacabd1cb83812668b3483b627b31a"
+  }
+}

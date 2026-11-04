@@ -1,0 +1,70 @@
+{
+  "hansen": {
+    "targets": 20,
+    "reserves": 19,
+    "eligible_moves": 41,
+    "categories": {
+      "Bishop Sacrifice": 10,
+      "Knight Sacrifice": 10
+    },
+    "missing_games": [],
+    "rejected": []
+  },
+  "KNVB": {
+    "targets": 20,
+    "reserves": 67,
+    "eligible_moves": 94,
+    "categories": {
+      "Queen Sacrifice": 5,
+      "Rook Sacrifice": 5,
+      "Bishop Sacrifice": 5,
+      "Knight Sacrifice": 5
+    },
+    "missing_games": [],
+    "rejected": []
+  },
+  "GothamChess": {
+    "targets": 20,
+    "reserves": 12,
+    "eligible_moves": 32,
+    "categories": {
+      "Queen Sacrifice": 5,
+      "Rook Sacrifice": 5,
+      "Bishop Sacrifice": 5,
+      "Knight Sacrifice": 5
+    },
+    "missing_games": [],
+    "rejected": []
+  },
+  "nelsi": {
+    "targets": 20,
+    "reserves": 21,
+    "eligible_moves": 47,
+    "categories": {
+      "All Types": 20
+    },
+    "missing_games": [
+      "186436257870",
+      "186438780844"
+    ],
+    "rejected": [
+      {
+        "key": [
+          "171118868402",
+          15
+        ],
+        "reason": "development_FEN_overlap"
+      }
+    ]
+  },
+  "Hikaru": {
+    "targets": 20,
+    "reserves": 22,
+    "eligible_moves": 44,
+    "categories": {
+      "All Types": 20
+    },
+    "missing_games": [],
+    "rejected": []
+  }
+}

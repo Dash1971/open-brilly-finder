@@ -1,0 +1,96 @@
+{
+  "audit_created_at_utc": "2026-11-03T14:09:58.793244+00:00",
+  "audit_scope": "Receipt of completed read-only audits; no new engine searches, classifier replay, tuning, or label collection.",
+  "source_freeze_sha256": "0f52334e2b730acf58a44785aa09b4bc8dbd3c8fd68ca57b4206a4efb300e9a8",
+  "adapter_freeze_sha256": "348be630ab83301a263dbd50cc1808b2c07acca158c13f196fb4be17d19308a1",
+  "frozen_primary_queue_sha256": "aeec043aa16b97000b4a8bc4d2f32b092e49c28a243f3b12f09bdfbf1054ca94",
+  "fresh_observations_sha256": "be459e8d565c74d001e24ca37eaf4d5b09aa9360bf1728f1110fb78ac58fbe15",
+  "result_sha256": "1c0c56b5a3e1388dbca392d75e38c76bb81a08e80d14eddd99b2e18b99d987f4",
+  "root_summary_sha256": "313aa097fbd3d82f2530f9bc1e5d65a6ffdf8200395067e4350c9ea8e10e5164",
+  "core_sha256": "b4a062c9ac2bc1657cf9d1901f3540932d1b6076217ef3de82147c120ab81b56",
+  "supplement_sha256": "e1521c3330cdf16ec0ee88b69cfec6d353d329535491f2fe537d38426c8a0809",
+  "exact_frozen_key_set_match": true,
+  "unique_moves": 200,
+  "class_counts": {
+    "positive": 100,
+    "negative": 100
+  },
+  "counts": {
+    "v7": {
+      "TP": 78,
+      "FN": 22,
+      "FP": 13,
+      "TN": 87
+    },
+    "v6": {
+      "TP": 78,
+      "FN": 22,
+      "FP": 13,
+      "TN": 87
+    },
+    "ec_direct": {
+      "TP": 27,
+      "FN": 73,
+      "FP": 1,
+      "TN": 99
+    },
+    "ec_confirmed": {
+      "TP": 25,
+      "FN": 75,
+      "FP": 1,
+      "TN": 99
+    }
+  },
+  "complete_core_cases": 200,
+  "core_snapshots": 573,
+  "supplement_snapshots": 150,
+  "overlapping_bank_snapshots": 0,
+  "nonterminal_missing_previous_iteration": 0,
+  "temporal_eligible_quiet_awards": 27,
+  "quiet_awards_with_missing_origin_windows": [],
+  "history_unknown": 0,
+  "recovery_unknown": 0,
+  "withheld": [
+    {
+      "key": "167742451240:61",
+      "provisional": "!!",
+      "final_symbol": ""
+    },
+    {
+      "key": "168480316884:56",
+      "provisional": "!",
+      "final_symbol": ""
+    },
+    {
+      "key": "171891549142:56",
+      "provisional": "!!",
+      "final_symbol": ""
+    },
+    {
+      "key": "173264572533:51",
+      "provisional": "!!",
+      "final_symbol": ""
+    },
+    {
+      "key": "184148911187:67",
+      "provisional": "!",
+      "final_symbol": ""
+    }
+  ],
+  "v7_v6_changed_symbols": 0,
+  "removed_false_awards": 0,
+  "lost_correct_awards": 0,
+  "v7_metrics": {
+    "agreement": 0.825,
+    "recall": 0.78,
+    "sample_badge_precision": 0.8571428571428571,
+    "hard_negative_false_award_rate": 0.13
+  },
+  "interpretation": [
+    "No observed improvement over v6; zero guard-panel activations among twelve structurally selected candidates from the frozen500-game pool makes guard effectiveness inconclusive.",
+    "Earlier90% agreement and <=2 false awards per100 hard negatives goals were not met.",
+    "V7 recognizes51 more confirmed Brilliant moves than direct EC but produces12 more false awards; neither dominates both objectives.",
+    "Balanced gallery/neighbor sampling and within-game clustering prohibit population precision or naive independent-trial generalization claims.",
+    "Five withheld classifications are nonawards; complete engine evidence does not imply confirmed classification."
+  ]
+}

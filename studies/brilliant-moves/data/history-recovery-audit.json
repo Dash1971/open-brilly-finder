@@ -1,0 +1,538 @@
+{
+  "scope": "Independent legality, exhaustive-response-set and separately implemented recursive exchange certificate verification; all1048 now development for refined guard.",
+  "verified_from_saved_result_and_full_PGNs": true,
+  "base_S_counts": {
+    "TP": 400,
+    "FN": 113,
+    "TN": 511,
+    "FP": 24
+  },
+  "refined_retrospective_counts": {
+    "TP": 400,
+    "FN": 113,
+    "TN": 513,
+    "FP": 22
+  },
+  "unchanged_true_awards": 400,
+  "true_changes": 0,
+  "false_changes": 2,
+  "changed_keys": [
+    "171488501692:36",
+    "173517772799:30"
+  ],
+  "saved_unknown_cases": 0,
+  "agreement_fraction": "913/1048",
+  "agreement": 0.8711832061068703,
+  "prior200_after_refinement_is_not_untouched_validation": true,
+  "certificates": [
+    {
+      "key": "171488501692:36",
+      "san": "hxg6",
+      "branches": [
+        {
+          "acceptance": "Bxc4",
+          "acceptance_uci": "e2c4",
+          "exchange_gain": 300,
+          "capture_credit": 90,
+          "response": "Qc5+",
+          "all_legal_defenses": 4,
+          "witnesses": [
+            {
+              "defense": "Kh1",
+              "defense_uci": "g1h1",
+              "recovery": "Qxc4",
+              "recovery_uci": "c5c4",
+              "physical_balance": 90,
+              "recapture_liability": 0,
+              "secured_balance": 90,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Qe3",
+              "defense_uci": "h3e3",
+              "recovery": "Qxc4",
+              "recovery_uci": "c5c4",
+              "physical_balance": 90,
+              "recapture_liability": 0,
+              "secured_balance": 90,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Rf2",
+              "defense_uci": "f1f2",
+              "recovery": "Qxc4",
+              "recovery_uci": "c5c4",
+              "physical_balance": 90,
+              "recapture_liability": 0,
+              "secured_balance": 90,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Be3",
+              "defense_uci": "c1e3",
+              "recovery": "Qxc4",
+              "recovery_uci": "c5c4",
+              "physical_balance": 90,
+              "recapture_liability": 0,
+              "secured_balance": 90,
+              "minimum_required": -100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "173517772799:30",
+      "san": "hxg5",
+      "branches": [
+        {
+          "acceptance": "Bxa8",
+          "acceptance_uci": "g2a8",
+          "exchange_gain": 500,
+          "capture_credit": 300,
+          "response": "Ba6",
+          "all_legal_defenses": 43,
+          "witnesses": [
+            {
+              "defense": "Bb7",
+              "defense_uci": "a8b7",
+              "recovery": "Qxb7",
+              "recovery_uci": "c7b7",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Bc6",
+              "defense_uci": "a8c6",
+              "recovery": "Qxc6",
+              "recovery_uci": "c7c6",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Bd5",
+              "defense_uci": "a8d5",
+              "recovery": "Bxf1",
+              "recovery_uci": "a6f1",
+              "physical_balance": 300,
+              "recapture_liability": 300,
+              "secured_balance": 0,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Be4",
+              "defense_uci": "a8e4",
+              "recovery": "Bxf1",
+              "recovery_uci": "a6f1",
+              "physical_balance": 300,
+              "recapture_liability": 300,
+              "secured_balance": 0,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Bf3",
+              "defense_uci": "a8f3",
+              "recovery": "Bxf1",
+              "recovery_uci": "a6f1",
+              "physical_balance": 300,
+              "recapture_liability": 300,
+              "secured_balance": 0,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Bg2",
+              "defense_uci": "a8g2",
+              "recovery": "Bxf1",
+              "recovery_uci": "a6f1",
+              "physical_balance": 300,
+              "recapture_liability": 300,
+              "secured_balance": 0,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Bh1",
+              "defense_uci": "a8h1",
+              "recovery": "Bxf1",
+              "recovery_uci": "a6f1",
+              "physical_balance": 300,
+              "recapture_liability": 300,
+              "secured_balance": 0,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Bxg5",
+              "defense_uci": "e3g5",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 10,
+              "recapture_liability": 0,
+              "secured_balance": 10,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Bf4",
+              "defense_uci": "e3f4",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Bd2",
+              "defense_uci": "e3d2",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Bc1",
+              "defense_uci": "e3c1",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Qh7+",
+              "defense_uci": "c2h7",
+              "recovery": "Kxh7",
+              "recovery_uci": "g8h7",
+              "physical_balance": 800,
+              "recapture_liability": 0,
+              "secured_balance": 800,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Qg6",
+              "defense_uci": "c2g6",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Qf5",
+              "defense_uci": "c2f5",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Qe4",
+              "defense_uci": "c2e4",
+              "recovery": "Bxf1",
+              "recovery_uci": "a6f1",
+              "physical_balance": 300,
+              "recapture_liability": 300,
+              "secured_balance": 0,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Qa4",
+              "defense_uci": "c2a4",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Qd3",
+              "defense_uci": "c2d3",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Qb3",
+              "defense_uci": "c2b3",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Qe2",
+              "defense_uci": "c2e2",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Qd2",
+              "defense_uci": "c2d2",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Qb2",
+              "defense_uci": "c2b2",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Qd1",
+              "defense_uci": "c2d1",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Qc1",
+              "defense_uci": "c2c1",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Qb1",
+              "defense_uci": "c2b1",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Kg2",
+              "defense_uci": "g1g2",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Kh1",
+              "defense_uci": "g1h1",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Rfe1",
+              "defense_uci": "f1e1",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Rfd1",
+              "defense_uci": "f1d1",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Rfc1",
+              "defense_uci": "f1c1",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Rfb1",
+              "defense_uci": "f1b1",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Rae1",
+              "defense_uci": "a1e1",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Rad1",
+              "defense_uci": "a1d1",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Rac1",
+              "defense_uci": "a1c1",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "Rab1",
+              "defense_uci": "a1b1",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "d5",
+              "defense_uci": "d4d5",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "g4",
+              "defense_uci": "g3g4",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "c4",
+              "defense_uci": "c3c4",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "h3",
+              "defense_uci": "h2h3",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "f3",
+              "defense_uci": "f2f3",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "a3",
+              "defense_uci": "a2a3",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "h4",
+              "defense_uci": "h2h4",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "f4",
+              "defense_uci": "f2f4",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            },
+            {
+              "defense": "a4",
+              "defense_uci": "a2a4",
+              "recovery": "Rxa8",
+              "recovery_uci": "f8a8",
+              "physical_balance": 100,
+              "recapture_liability": 0,
+              "secured_balance": 100,
+              "minimum_required": -100
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checked_source_sha256": {
+    "candidate.py": "d87bf86b8da910950ca1da5c7ea753e2e96059dc0d8c93f16882a06012308a06",
+    "probe.py": "ccba09c903188490be3a1568a6174ed678b12edb080ab2db379cbc0a3302555a",
+    "CANDIDATE-PLAN.json": "1d95afbf290345ae9eeefa611f3286f07dfed8ab5da60d2aef202866d89b703f"
+  },
+  "read_only_actual_candidate_replay_matching_decisions_and_statuses": 424,
+  "independent_certificate_checker_does_not_import_candidate_or_probe": true
+}

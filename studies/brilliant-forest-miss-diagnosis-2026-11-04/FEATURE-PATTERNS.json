@@ -1,0 +1,45 @@
+{
+  "scope": "Descriptive current-window flags within ECtrue; associations, not new award criteria or causal effects.",
+  "input_sha256": {
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-forest-miss-diagnosis-2026-11-04/FOREST-TRACE.json": "300b9e95b2408d67120e25a4ece7659dc334fe68c93a2d85afe8d7e9b95caa2a"
+  },
+  "groups": {
+    "ec_true_miss": {
+      "n": 245,
+      "true_counts": {
+        "offered_piece_moved": 126,
+        "move_capture": 112,
+        "converted_material_or_endgame": 76,
+        "mating_acceptance": 0,
+        "prior_history_missing": 0,
+        "attribution_unknown": 0,
+        "avoidability_unknown": 6
+      }
+    },
+    "ec_true_found": {
+      "n": 445,
+      "true_counts": {
+        "offered_piece_moved": 415,
+        "move_capture": 371,
+        "converted_material_or_endgame": 13,
+        "mating_acceptance": 0,
+        "prior_history_missing": 0,
+        "attribution_unknown": 0,
+        "avoidability_unknown": 6
+      }
+    },
+    "ec_true_hard_ordinary": {
+      "n": 77,
+      "true_counts": {
+        "offered_piece_moved": 40,
+        "move_capture": 35,
+        "converted_material_or_endgame": 44,
+        "mating_acceptance": 0,
+        "prior_history_missing": 0,
+        "attribution_unknown": 0,
+        "avoidability_unknown": 2
+      }
+    }
+  }
+}

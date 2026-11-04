@@ -1,0 +1,828 @@
+{
+  "scope": "Exact run snapshots and saved engine outputs; original paths retained for audit. Study-specific scripts, not an installed general-purpose package.",
+  "files": [
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/EC-DIRECT-CHECKS.json",
+      "saved": "code/adapter/EC-DIRECT-CHECKS.json",
+      "sha256": "f8ca3ff0baddd18a0b7eaf85345ab42465374ca3da6c5fb4eb43b57661f45633"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/INPUT-INTEGRITY-CHECKS.json",
+      "saved": "code/adapter/INPUT-INTEGRITY-CHECKS.json",
+      "sha256": "ea9f26efedb341c1f9cd3ac2952721f52fbd3787dfc7af0c51afee200849970f"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/capacity-tree.py",
+      "saved": "code/adapter/capacity-tree.py",
+      "sha256": "4aefb35307853d707f5aac869bac8ce3e0db9706ec92017316341778643d3ae2"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/evaluate-reserved.py",
+      "saved": "code/adapter/evaluate-reserved.py",
+      "sha256": "b3e4f8659933ca940328bcf4150ce6ecca0376bf9a7ca3772d5ffa9cd53f17b9"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/fit-one.py",
+      "saved": "code/adapter/fit-one.py",
+      "sha256": "ddc97aeb7eb4525b9e5674e1ea4d3e86e880885841d3ed13ee4c26c12a000be4"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/optimize-boosting.py",
+      "saved": "code/adapter/optimize-boosting.py",
+      "sha256": "e6d837b7ce28bf5242308ce8be26070394925c958907ce74afa0a772c1a65c3e"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/optimize-capacity-warning.py",
+      "saved": "code/adapter/optimize-capacity-warning.py",
+      "sha256": "f0428fabb53332f7039498c156b74f449669e1b3a44bd86ba369677d891713aa"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/optimize-capacity.py",
+      "saved": "code/adapter/optimize-capacity.py",
+      "sha256": "2668875b837d22bd625cc6a1e4fec91df21ed5dd61b1da83dc0ba8b201faa70b"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/optimize-training.py",
+      "saved": "code/adapter/optimize-training.py",
+      "sha256": "cfb4d839b8256b7b58017d5bfb2d8f0ae42ca106e5b20e6da45665daaf0b0d83"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/prepare-training.py",
+      "saved": "code/adapter/prepare-training.py",
+      "sha256": "b316124a508927c6eb0738d05c0e0fef5c99c8c142b70886d78ab3b8cc2da8f6"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/run-assessment-batch.py",
+      "saved": "code/adapter/run-assessment-batch.py",
+      "sha256": "1a302ea342845140a1e95de1089a5eb22d3fd205369de0a7086a8dc392d7c5db"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/run-training-batch.py",
+      "saved": "code/adapter/run-training-batch.py",
+      "sha256": "15f854a005ea9120acc647f1f82867e426640854ebfa6b3e02d231cff7e406d4"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/screen-control-offers.mts",
+      "saved": "code/adapter/screen-control-offers.mts",
+      "sha256": "8c0231c8ee8208f84d2fc5d3dad2df9ee7765f8325edcd03add4d9a86bc7fde3"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/FREEZE.json",
+      "saved": "code/EXTRACTOR-FREEZE.json",
+      "sha256": "29202a0df6cb45d9c64d81edda4e1ea411c5528775366d16d41701f30d9179a4"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/extractor.py",
+      "saved": "code/source-snapshots/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/extractor.py",
+      "sha256": "3a37512d8faa97250d2408c01463f515cb6737568d4620b2faa69b267c85b6c4"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/feature_kernel.py",
+      "saved": "code/source-snapshots/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/feature_kernel.py",
+      "sha256": "8d77d2f482b57f492a4f307c447df1b96befb74e81a0accb7d5f33a886446d14"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/avoidability_kernel.py",
+      "saved": "code/source-snapshots/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/avoidability_kernel.py",
+      "sha256": "d5b4101f989e26c8d1e958fbcf6049b0ea750217cdd9d3f171af12bbd4aa726e"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/context.mts",
+      "saved": "code/source-snapshots/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/context.mts",
+      "sha256": "fb3dfb6cb4da23d39fe1acbe7a12d77d6861a6b2357a53f9bb420dcb043e050a"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/learning-v5/physical_kernel.py",
+      "saved": "code/source-snapshots/research/brilliants-improvement-2026-11-03/learning-v5/physical_kernel.py",
+      "sha256": "ec877d176ff59972992ef29569a338c5ab39fa9fb03bb679503e0721a13d1918"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/forest-full.json",
+      "saved": "code/source-snapshots/research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/forest-full.json",
+      "sha256": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/PROTOCOL.json",
+      "saved": "code/source-snapshots/research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/PROTOCOL.json",
+      "sha256": "8073938391ac975e6957e5b98ea3aafb8c139c16cb2238cbbab21c32e1df82bd"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/root/frozen-v4/noSweatClassify.ts",
+      "saved": "code/source-snapshots/research/brilliants-improvement-2026-11-03/root/frozen-v4/noSweatClassify.ts",
+      "sha256": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/root/frozen-v4/noSweatCore.ts",
+      "saved": "code/source-snapshots/research/brilliants-improvement-2026-11-03/root/frozen-v4/noSweatCore.ts",
+      "sha256": "3fa48e3c50e7361a244c0ebb58543315b6a5f208c0c0e1979ae18fca40366a40"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/root/frozen-v4/core.ts",
+      "saved": "code/source-snapshots/research/brilliants-improvement-2026-11-03/root/frozen-v4/core.ts",
+      "sha256": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research/studies/brilliant-moves-2026-11-03/material-features.py",
+      "saved": "code/source-snapshots/mute-chess-research/studies/brilliant-moves-2026-11-03/material-features.py",
+      "sha256": "82c3b23efddadf69d8b68ea123abdec7fd2a7d2902080620ff785719aa61f9be"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/fit.py",
+      "saved": "code/source-snapshots/forest-fit.py",
+      "sha256": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/boosting-optimization/ROOT-GO.json",
+      "saved": "code/boosting-optimization/ROOT-GO.json",
+      "sha256": "b1329bde489329d68c5af9c8c40535c04a797c2020316eff851792c86949dad7"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/boosting-optimization/PREP-CHECKS.json",
+      "saved": "code/boosting-optimization/PREP-CHECKS.json",
+      "sha256": "552cadfacf7bb5dcd045a57758f846fb2b14d37ebc603d953088cbd03175ff27"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/boosting-optimization/PROTOCOL.json",
+      "saved": "code/boosting-optimization/PROTOCOL.json",
+      "sha256": "bdfa73b6b3a220feea11519da4c154e80e48615ec4c1c69307ef76f1f994352a"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/optimization/ROOT-GO.json",
+      "saved": "code/optimization/ROOT-GO.json",
+      "sha256": "37927463fc4c6f2d0fafa43b798423657464db04175fd30c46ff07425686d0fd"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/optimization/PREP-CHECKS.json",
+      "saved": "code/optimization/PREP-CHECKS.json",
+      "sha256": "beb533c50515a3dac061712aede4e38d03eae628c4ab6142dee12756b09ba2fb"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/optimization/PROTOCOL.json",
+      "saved": "code/optimization/PROTOCOL.json",
+      "sha256": "5f1ed40b28b34667d017af9241cef36f57298a6889e9610b6192a8cca1af1a6b"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/raw-capacity-optimization/PROTOCOL-WARNING-ALLOWED.json",
+      "saved": "code/capacity-protocols/PROTOCOL-WARNING-ALLOWED.json",
+      "sha256": "3b3672feac563891dae6e2b22645a9f578211b5fcdf191f23bd2c0028c8f87b6"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/raw-capacity-optimization/ROOT-GO-WARNING-ALLOWED.json",
+      "saved": "code/capacity-protocols/ROOT-GO-WARNING-ALLOWED.json",
+      "sha256": "1cbb836d879dd577cbbfb5fd75b4f06c2e47a887e295ba5bc5fc9900dc8b9e43"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/raw-capacity-optimization/ROOT-GO.json",
+      "saved": "code/capacity-protocols/ROOT-GO.json",
+      "sha256": "fde0e9f6da068a7f07409b6cc4f8dd473e5254add3f92a4b0db93c741cd97c22"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/raw-capacity-optimization/PREP-CHECKS.json",
+      "saved": "code/capacity-protocols/PREP-CHECKS.json",
+      "sha256": "a4f27b5664cd95e7b2ce5dc889ab688927db8f8be9399a115e62fcc25edb5a45"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/raw-capacity-optimization/PROTOCOL.json",
+      "saved": "code/capacity-protocols/PROTOCOL.json",
+      "sha256": "8a903f2ca54eee38fc01a9b1e8818a2764f6d03c75efa913f3e531b2068dc4db"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-01/analysis.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-01/analysis.json.gz",
+      "uncompressed_sha256": "b8bfe769ca7d03a1eee33bb9290b5449b2717c344982ef4c4cfea7d555706ace",
+      "sha256": "d0cec984b1763ed9a26e8156f5e4945b1321cd78772de490cbd3c35f411c2d61"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-01/features.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-01/features.json.gz",
+      "uncompressed_sha256": "d152bfba7a3967fc50adce81c20577bb4372ceb43390ce84a0341b26ea428091",
+      "sha256": "9c64df8bd50e5838741887675e89f8a8861f2d9e89faffdcc2e07a8c7baf6a06"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-01/SUMMARY.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-01/SUMMARY.json.gz",
+      "uncompressed_sha256": "21002fc226cf7d966e9b4a135be3ac3c79778d7db6f6bf2401a2b13884a3a77c",
+      "sha256": "cf3fd399eae98f08ddf552be05a84f51dcf0ee3b2ea70a96f4e598f147a50cd1"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-01/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-01/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "f5004ab13ea6c82023c16b55d5f1d0b3b2cf03b5e8f8ae16a280ee6928190219",
+      "sha256": "76d9a7ce649a1876374a3127ce6b51f083896f0876be5e7b836cb29f01fcde65"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-02/analysis.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-02/analysis.json.gz",
+      "uncompressed_sha256": "9343de7c76804cdfc64822201b597b07ba83d0291f0daef1c4f35ea884072821",
+      "sha256": "a0da389b644ca0197d30a0fdaf92503c3cbc3ff4a93066e4fd26304ef7c2295e"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-02/features.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-02/features.json.gz",
+      "uncompressed_sha256": "849957767cc675827a9df742e793a667c6c35104dfed70d2eafff9ba9545dd71",
+      "sha256": "765ca6e4f358b4053996c5688aa84cf2b76128b832ad5fce95201729fa20e682"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-02/SUMMARY.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-02/SUMMARY.json.gz",
+      "uncompressed_sha256": "4f8cefa4d585f5ab776f36114be67ac5297767a962cfe0482982504dd0abc215",
+      "sha256": "65255b502220e442839d7511ad8e9c1fef3ff82fa460966adbc7ce68051eb115"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-02/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-02/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "faa35fe6973dec8e29950d6c952044a98c6d25465a4f1a8ca4fccc827daf5705",
+      "sha256": "cab1b99cf903063dcb8e5ddb66bba2dc71645e1eb42797e5e166fc1e0cdbf047"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-03/analysis.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-03/analysis.json.gz",
+      "uncompressed_sha256": "426de8cd6eafe6e4a6133b9ae94efb5996994774e41661752d857f4e518d9dce",
+      "sha256": "3f3bb7e31759540b6bd3ef74df819fa3394eecbf7e7098860d7314d66c817bbf"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-03/features.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-03/features.json.gz",
+      "uncompressed_sha256": "9b47fc25747d5f590c0a0feec8947aa336af90e38adc2d2623a10defcde3cb53",
+      "sha256": "e2733651444cc9654685e4c2715e031c9c0e6f7501f9e1b11b4d96295e0e98fe"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-03/SUMMARY.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-03/SUMMARY.json.gz",
+      "uncompressed_sha256": "8760e14547d14e4235fb60607b889b63c3b295acc698fa757dfb7f23052c74e3",
+      "sha256": "ac90f13dc2c6535e385f25234a9adf80bcae99a330abc5d00b5011c50daebc1b"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-03/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-03/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "3744c600d1434104e2d8ced738fb76b85abd6425b6ec3c422692078fe67c38c0",
+      "sha256": "3ee4098bc55ca6f9dbf48a1b62984903439650b95f02d1c422a0cc919192b6fc"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-04/analysis.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-04/analysis.json.gz",
+      "uncompressed_sha256": "114067d8609e75e23fdd07b3732a4fe214392a224261c7f7f9491442bc148ccb",
+      "sha256": "3d6a4e3a232843e41b596fce2509dae9e821d5ed053e11756f0df89b02917819"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-04/features.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-04/features.json.gz",
+      "uncompressed_sha256": "9166eae64b075fec43d3caf983972b0bf16f4d38b00a1827fc812c73bf9dc488",
+      "sha256": "810de84ae55765c703e0e6a25dea90c4e79370fd42e916c864bd80d86a9bba35"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-04/SUMMARY.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-04/SUMMARY.json.gz",
+      "uncompressed_sha256": "87e1a01ec93433a81ab1cdd07db04b218c14a8bf6756c7261adaedee7050f6e1",
+      "sha256": "674b80b2691134abca49f3ff56636dfdd5e97e3bdf7b35b802e2b7a0054f8342"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-04/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-04/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "07d0287d0a41a14ec0e9a164ca811c038570558b85b8a5836bbdad4c7fd9b824",
+      "sha256": "d8194074dd6664530bba2115273b34f4fc5a79f8a90522a544bf30730ffa1cc0"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-05/analysis.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-05/analysis.json.gz",
+      "uncompressed_sha256": "9bc9ceef99c999866ab54f6201b8deb476222e34edebfe81aff3476b747fce08",
+      "sha256": "c1c06d37f5d8a061d1a81473cde0fbb92044157487de76ecb3b88ec16218b71c"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-05/features.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-05/features.json.gz",
+      "uncompressed_sha256": "f7f8de9c1d2095116ac64c8b22869c1e0b3c40b331c0acc800e13746c579ec21",
+      "sha256": "e315eb4de279d490338e73032e84f3110ff628dcc0a980af85415899ffe1bab4"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-05/SUMMARY.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-05/SUMMARY.json.gz",
+      "uncompressed_sha256": "eab0e5be27c635cd0f5be3ef534d50e4043942304976e45dd161dcb90f2f69e5",
+      "sha256": "bffad228d04ed502b0afde9d1235cd140b293e69d5c205eec21c4fced58df005"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/assessment-batches/assessment-05/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/assessment-batches/assessment-05/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "83668a07e0b11b87c3aa0ec067265b689c37aaed046ece639a6b932919280889",
+      "sha256": "ab657e4fa8e1e261d3bb0c85b61ac278e65ad58a84dc3dad48bb8e742a4bc0b1"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-01/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-01/analysis.json.gz",
+      "uncompressed_sha256": "a71a246e0330185e756aec0f2bc86d0ea847ebe7b98270aca7f9528d3ea3bc2d",
+      "sha256": "0005de55e7956ff6eae7e5b12f9ce6c4cf84c046ef532e4d180ea0844fc73a59"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-01/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-01/features.json.gz",
+      "uncompressed_sha256": "ec337c5af338de4f057dd963885663574f5ec5d973dc937be95a8e400c6eb9ba",
+      "sha256": "7b026d085dcecf9ecbe67de878329f07f73f1348ffeece44cfe9e00798de61c4"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-01/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-01/SUMMARY.json.gz",
+      "uncompressed_sha256": "641cd6f9c9313af39ebb1de658a77f37b7e3c9980eb45ab717d5f988f9c25fce",
+      "sha256": "88a87001bd54b6b42b30495b000bb06e9278ccc83838b4c20bb8d1b1092823ad"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-01/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-01/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "e4ab3e01f59e628aba05354d284a0696abc4012e3e5aa0d14b310376944b03d3",
+      "sha256": "ae3c59c5f8d155666e0ad11e46928e7ac9698d8c02287b6f3b18b99f26ecb6bc"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-02-recovery-1/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-02-recovery-1/analysis.json.gz",
+      "uncompressed_sha256": "d78ed551af679a3d6e7be40e722f4bde626ac990b288782b2b7944a92d1bca3f",
+      "sha256": "972f4ed9d2830996ba475378ce1c7dd752c77e6b98fde6d9e569a181bee852d4"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-02-recovery-1/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-02-recovery-1/features.json.gz",
+      "uncompressed_sha256": "28940ea65552d22c81b169d79e0cb72fdf2f1580b9813764e9ab1d76c82a5b6c",
+      "sha256": "7bee50c6e0ca8e60f8a56cf89271a0b9d976cf3d2ce4b22794a46db5f62c399f"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-02-recovery-1/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-02-recovery-1/SUMMARY.json.gz",
+      "uncompressed_sha256": "e7686a79ab699c5cd5607c04f414d488ce8654150e7ad85a4b1c262c8d4024d0",
+      "sha256": "79e0ea57c6ad0de03106b395b2faf384413081927777e4a997fa7f9acf8104fb"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-02-recovery-1/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-02-recovery-1/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "d31036647c6014e1338fd9f9172553c45147cd1aa484fff40eac070aacd8fbb7",
+      "sha256": "611f46c6234fa4f9f8497aa5eeeb02df638bee1f217f268bac1f6c047d160343"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-03/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-03/analysis.json.gz",
+      "uncompressed_sha256": "8548c2cd4311a9334fda4270c77694fdd1b92821e9a6a17a70f3a7f12a2a0a95",
+      "sha256": "2892d296303c7f5ddc1774ea3cc1ab2a75cb50906e1c0987518747ea54dcc150"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-03/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-03/features.json.gz",
+      "uncompressed_sha256": "60c27f6a974a7d99b5c5a6ac9479a52d3878c3cc936fc6e54a1b9da439ce02c7",
+      "sha256": "5b0ccb8c02c8d85fcc5d431528af7b4434f1966e9deb6b80403619c4db042b5c"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-03/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-03/SUMMARY.json.gz",
+      "uncompressed_sha256": "2cc273e3d71b531c73fc63a6f62deaace595e6253778ec9f1bb0e68ba55f7bd5",
+      "sha256": "8e710f9fdf4e4deec6c62f23f812b784379a7aeeaaf5d4460ae9c3b137d930a2"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-03/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-03/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "64cab1975da0b04e4ce8f1f30c1f59f0f6a33ca6126a3418076d688d310b4a54",
+      "sha256": "9eb61cfd1d306b5d90c77f3befc99deb475a5622e5b956730d0b937dca558dbe"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-04/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-04/analysis.json.gz",
+      "uncompressed_sha256": "75a954be8c95543520dcb81920dd28204f8e393e74fab361532cd85b47e42210",
+      "sha256": "817fac2c31c25ee701437fed6176122d750d8991d3462a34b1fe49f21a45115a"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-04/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-04/features.json.gz",
+      "uncompressed_sha256": "6bfd60b5e9329f86596b664858a26af7273b04a1761cfbafb492d9428cb1daee",
+      "sha256": "651b6e45a86b648aaed402e1a72d62d103920552e8a1245cde8eef88d05bdf45"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-04/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-04/SUMMARY.json.gz",
+      "uncompressed_sha256": "a01af0c3dcd38194ae8377412e442aee77967ebcee66858ad8c2e89196a0b871",
+      "sha256": "c9b8ed1e0bd103d4d9ac561fdccb8a0cd8d598943855aae0f26821d25c5ce0d0"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-04/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-04/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "817d0f80bcc9ba407c825560442749a1c722723e742f9beb4b7450b2ab863e4a",
+      "sha256": "d24255b67722f428365f96b9fb971b419eadffe68131fcfa383a03382863d523"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-05/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-05/analysis.json.gz",
+      "uncompressed_sha256": "13f413c829b66a64542e8ee5eab1d8476cfddb325a4941aac0bcadf3a1509563",
+      "sha256": "34ee6c70622a21dc78aa53d2a1408844eb3ad3c1b49f5dc3c85c0102d09efa90"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-05/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-05/features.json.gz",
+      "uncompressed_sha256": "74a5544f72eacf17847b1fd1c93aa37a5ce459520e6c60564127e44ea1539fac",
+      "sha256": "7621ae602206fd65c1e7ce59d28585c1975f531dafd07f8df99f3755ae40254f"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-05/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-05/SUMMARY.json.gz",
+      "uncompressed_sha256": "d949f230f85868ee271b664f6c6fee800527056ab71ea46edf3a3b4096d27357",
+      "sha256": "236588a8b257ae9e32952dccbf15a6ed5adf5e2f532afcd5041b35a1cffbb8c1"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-05/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-05/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "2445e294725d086769e7b18df428675163ea384e272cfe70eb284c5d8c017f0a",
+      "sha256": "79950b4e368a1baa87c81beabc902986edd787724659d1db1d55391ef9ea9317"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-06/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-06/analysis.json.gz",
+      "uncompressed_sha256": "351e97b75f0c647e8103e329cb95e8e9b8c28efc0d926ad6af86d9a9fc63850c",
+      "sha256": "637dcd2936eb4e9ded9d860a1f8cef4b204601c3c0df2c4fde86968d4154ef78"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-06/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-06/features.json.gz",
+      "uncompressed_sha256": "1dc293ef00f9d6a13d1af6be80dd0e337872c00ca615fa94c1d116e1398e03f6",
+      "sha256": "225d7eaea02f5edc5f906281966691cebe5247ecdce632b4cef0af77d106f8f3"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-06/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-06/SUMMARY.json.gz",
+      "uncompressed_sha256": "2fc4c875530541328c49214bc8b63c0aa52543cb353a2ac29880f0e82e7f244f",
+      "sha256": "cad0a10fc030bef691dd7a21ed221399eb8aa6970c69401e7ed50a0fd31fde6d"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-06/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-06/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "d5d244b55f9ec3a71453ed6b12a53b91603bed87ea203c6e47b9dc837f9f0f51",
+      "sha256": "d008ad7e7e2644b71b80d4e549731eac050cc698bf48a46fea5cc1782e1c29f0"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-07/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-07/analysis.json.gz",
+      "uncompressed_sha256": "db9a8890805b41d3ea769f1d729d5d17ca9a86e4e490661d324534d4bb09c1d1",
+      "sha256": "b234c4f002e08cab4e26998f2e68cac70c8e694a8b17ccab53c5d9c76aec855b"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-07/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-07/features.json.gz",
+      "uncompressed_sha256": "da2e15f224fd8109002c02bef72edc29e4f992e18e0f918fc3aedb298cec7169",
+      "sha256": "1c10d568c2c029132a7660a8153be6bc556368dd590174d857f805e1dd2daf93"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-07/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-07/SUMMARY.json.gz",
+      "uncompressed_sha256": "57f60301895976f322d97a56c137554485c71f9c203016103aa91e292568d97a",
+      "sha256": "949b0f2c0e97c7121603fada280f8993b1609f741e87f797dd2cc5854ea0b287"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-07/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-07/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "e47591d468ae1d69a9bf64734d028978e649a26242c00c1be5000276f0945e87",
+      "sha256": "5637ddd780253df165b39e382d5eb6b708f8ca941193c319099dee5741d8ca59"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-08/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-08/analysis.json.gz",
+      "uncompressed_sha256": "53b6b643f0ba81efedd7f861387005f2c9a4a69526526611cc39017d526844f3",
+      "sha256": "0fd234cc162a778bb15f3f10b017bccb6373f1d5099beea2285127c1417dece8"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-08/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-08/features.json.gz",
+      "uncompressed_sha256": "a6fba2ae1f7c93fb8c68e5f4ab4227ea1b7529472855b60d8439e47404dd13a2",
+      "sha256": "0fb05dc8d8f5716549a72891a43d36551ad3d9d7dec04106d8bc6c7441e205de"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-08/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-08/SUMMARY.json.gz",
+      "uncompressed_sha256": "ebc2fb67a0b254746c057f17bab64afd8751aebedbc1b0d3458490ae660fe36a",
+      "sha256": "d3c53fb777ccab1ce083bcb696b544166aab2c4d115b7709feaf2a00d8d97a1f"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-08/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-08/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "ba16f968f1452cdcb1d7068c8abb6aad0f5f59f8ffdfd44119730aa1e5881ea8",
+      "sha256": "171d63aa703d56c49327d222c9910d6fa87d3bcff1a81ddde02859795ddb2e55"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-09/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-09/analysis.json.gz",
+      "uncompressed_sha256": "8406ed1e65d38b12994a64a2d9458b3eb171706aba551ead3d88565dcf9bb625",
+      "sha256": "ffde560f25ff5a3cd6fae2f2fb46c4703fe40356f1fc7d1c5df0616c29ac53f7"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-09/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-09/features.json.gz",
+      "uncompressed_sha256": "38de61e7580d89bb1e5e164296a1421aff75a74e118161e8c780d6cd91a400d5",
+      "sha256": "be6f80a3a628c7aaf12d6da401a42a10140287d55f99cd7285a7902af7be9482"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-09/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-09/SUMMARY.json.gz",
+      "uncompressed_sha256": "b9962cab8d6ff6928b7dda270e178288f8514f0b20daea54ed1185197a0e53c7",
+      "sha256": "b0d268c43be7bb74afb43089ea28673e0d9550d79c629c2515a0752a8d122a1d"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-09/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-09/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "1640aacc171edf6a954380d23968bb901a0901b2e1d621d92e44568d76c6aa21",
+      "sha256": "54cbf69d3e3bf77356fb0b909487ddf535ff11e33c1dc15201f064bf439e2a60"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-10/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-10/analysis.json.gz",
+      "uncompressed_sha256": "9122b3550c6ed30220c4d9c1057f95ddeb5c02cfe110157edb70d26d0451500e",
+      "sha256": "48c3b61bfaa7fe5401130669581973b1573603c88c0df88e58e5769e9ffebc7b"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-10/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-10/features.json.gz",
+      "uncompressed_sha256": "0aeca4107a2f7946c5b2d5e6dfb8e146bee1b02b599a7626e111ed0a3819f017",
+      "sha256": "639704ea217d5d6cdec6059564968a70dede4a833104328d4407cb669a4b8985"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-10/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-10/SUMMARY.json.gz",
+      "uncompressed_sha256": "fcc4f9c2ab801df83a42a9c1d70b26f1cd2bc747768e96c04fcb5aff17080104",
+      "sha256": "3032bf0415703170a14c4d3c351250de9e78630607f428c113572ace52cf9fac"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-10/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-10/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "af4dde960f5627503a18f8e8ae33158d802d0dc8c36aca079472162aee8465d2",
+      "sha256": "57e223ad7359a1b00376e03fe942b46f523ba4366b59817d75954d7b2376e9cc"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-11/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-11/analysis.json.gz",
+      "uncompressed_sha256": "1621ba90b1f5230be677fc3917d8f8abb2cbc9b5feaae4196b04ccd5668becc6",
+      "sha256": "2b9a46c0d5c00d398238ce6267998b664d4c8695fa1cc06183a2470469e733c5"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-11/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-11/features.json.gz",
+      "uncompressed_sha256": "f0f29f585002a55ee2d6bf86a356dbde3bbb358475b1dcbf8ccb0c6a4402f90b",
+      "sha256": "61f8114e672c705ef4c0280e75a259db28ab0129d36b013f16449d6b21c9615c"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-11/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-11/SUMMARY.json.gz",
+      "uncompressed_sha256": "406225e930cd8f0867bb6808d07d3d9721404cb706870eff1cb454d5a48f7347",
+      "sha256": "eb13291bf40ebb784513978cfa82a478bcc3e66bceee7bd4fc9a03b68ceb1551"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-11/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-11/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "a8564ac8955cac1d30ed9dbf5ad7b816f8fcf875422469b14c4ca27e24797563",
+      "sha256": "8ab98ee5fb40883f18a72633e9b3bdcecd6a3cb9e43b4dcad4854966dc598e57"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-12/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-12/analysis.json.gz",
+      "uncompressed_sha256": "ee887926e2cfa0ba99bb960e99d6117f6794bc676400b5ad06203171e0419a01",
+      "sha256": "d4679152db2b5f604c6de3d18c23da07e1e6360cbc320852c2e6fe0fc7a8629e"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-12/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-12/features.json.gz",
+      "uncompressed_sha256": "110bb8f224cef761cabd08d86d2cb2a934b52c973f5419041f089e8dc3947a3e",
+      "sha256": "18bbbe86054def0f0cdb99a98a30f5375277f6486b2448a8e6fd9e5635de633d"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-12/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-12/SUMMARY.json.gz",
+      "uncompressed_sha256": "de867e91f8d6bda22c35059d1932b04cd4e18b3e5d42f236ba5d33b53f4c2c67",
+      "sha256": "8f68bbc86b55050e87e0e9580a072110ce77e78a7e6a95a6a42482b2fabe989d"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-12/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-12/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "9ccdc0cd6a5876c8ec218c66018a507ee95fb31b91cb989d551fb0f86ac3d827",
+      "sha256": "b104cfd9c5917b8c85c5abd7be50a955c6f085df143d7779e8de593d8d86de90"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-13/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-13/analysis.json.gz",
+      "uncompressed_sha256": "f3af7cf6528fcb99fc1afb870ffdc7f550c063ec5fcd2816b2f5a65df3b738f2",
+      "sha256": "143cf87c40e09c11302c74dfff51e2f888c15f2ddd077bf328daa05c1c234036"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-13/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-13/features.json.gz",
+      "uncompressed_sha256": "1e3cafea024fd5915d3241960318c0afae577eda0cab30ffc0316ffd530bf2f7",
+      "sha256": "2eee866b17b9cb4a5cbeed605e03d8ba1cc731d2dde376762c5ea39ed653513f"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-13/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-13/SUMMARY.json.gz",
+      "uncompressed_sha256": "f878a941950917cc9fb016651175665bcc5247e7128e2d9d119bcd2426a2a06b",
+      "sha256": "effc890b6652c00fc5267cf71c8a69a0da7e2849df5ef2e2c96960117f18367d"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-13/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-13/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "1c2008d6dcc336f586f8ebf341fa2ddc76b4b8fbe2fd79ced3a32bfe1ebc6c2a",
+      "sha256": "bcf15d11f6b5928a7377fa64a6557e9f5cd86e71ec9dd245fa6b8a9b67ab4224"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-14/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-14/analysis.json.gz",
+      "uncompressed_sha256": "09ac547b4a2b71bb84c83a197a3115dd4991b1ae568b4dee4949ea9e063e7371",
+      "sha256": "de060c396f8f275dccbfa98c97cced648c9e484e919a713766261f8c97d79186"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-14/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-14/features.json.gz",
+      "uncompressed_sha256": "e7ab7b074f0871b1f953a818d73e585644059ae9d29a34f6c0eb439d6f01ab04",
+      "sha256": "d39ed8004add158dcfef421a54f8a85c62fbfce789373f039c6174efdc282c48"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-14/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-14/SUMMARY.json.gz",
+      "uncompressed_sha256": "f081d69909facd379c282af282a55757ef38f34a7ec6208088803d402e6e59cb",
+      "sha256": "0bea5177b36b943eaee511a7609ae52cb933cbc34dc39b1b6ac83db0e961d8ec"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-14/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-14/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "dfd616b8ed8fb9d80c8ec7f598fadc283eded93a42a21691401c4a1ef3135ea2",
+      "sha256": "d8349b25e7ccd0a9b4e5ba26472096d1bf7e3c4386b590a5b94c036433534bfc"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-15/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-15/analysis.json.gz",
+      "uncompressed_sha256": "8474db4158d3c43945608b5bc1a5bffc15405fc2b949fa3c62b30f7f89dd48f5",
+      "sha256": "26047a1375d4dde141652351019388a45defa347562a659c0621038b1be736de"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-15/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-15/features.json.gz",
+      "uncompressed_sha256": "3f24e0b0713bae193383c6e659701a00f750d1dd03d719a568c9ae811431fd86",
+      "sha256": "061d368fcf152426b05f3348ffb24b87f2df67ecd6771374e49cba796ee1e0d0"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-15/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-15/SUMMARY.json.gz",
+      "uncompressed_sha256": "6042d339fcfa9f85c156662af666210d2d08376d7892a937bdcbd15242817ee2",
+      "sha256": "6ba482a85dcdd409c4069c8e7aa2d0184fafd4d6fefa2b79b8e8d278b21a6f65"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-15/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-15/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "da7c51f54b1d0bfdeea86875b513827de0a21c57c5aa92d6c3a41dfbcd383e41",
+      "sha256": "a39ac2ed9bbc490f55ea3dbb0cbff8dc1f99474211e26d342882446269b710ce"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-16/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-16/analysis.json.gz",
+      "uncompressed_sha256": "f2bce84c7c7865225826e849a2ee4d6a0eb6db62a9f1308838543e9a264ddae8",
+      "sha256": "54d4c1371e4efe45b85ff0b42cf9cf28fb1f052402c8e1063123c504fed6dcb1"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-16/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-16/features.json.gz",
+      "uncompressed_sha256": "d398343493ff24aab7a96e3c9c7d6fd90da11d9037d8715b710176c78cf3d8d0",
+      "sha256": "31c98188d126dbcc9a9457a4854a7b7639ccaa8b01ea1e7ef2933e6afbd0f308"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-16/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-16/SUMMARY.json.gz",
+      "uncompressed_sha256": "3ec6ea618ae2002010ffa4f9e2b1c0b2480a6e887f228876fa012ebcdf5f4cfc",
+      "sha256": "49204d772d0001c0c590792f331a43a6caf256d3e150c2407aa445d30ecc22cf"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-16/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-16/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "6a637489d4de566022c34d67b07dc33241f4a535ff5fc39f66be32950aa5b747",
+      "sha256": "61c9476e4916673c3f8a7b1fddf64fdff3c6ea42c8dcea68f703132141d188db"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-17/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-17/analysis.json.gz",
+      "uncompressed_sha256": "30c6f4b2c5c9a91b0035679cf4ffe96ff5be7b59433e8d18c640faf6917b89c3",
+      "sha256": "076c41915281b61942117eea2be71bebed3eaf96ab76843fe23a2735e8e6b23f"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-17/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-17/features.json.gz",
+      "uncompressed_sha256": "2e20746f507949aae70aa5fcfd04ae947cf08e27b1521b6845f26aa57a45e4da",
+      "sha256": "076cb3d656663e627bf00af22cc9e2e5e110ea544ea51c1992846ffdeabb529b"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-17/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-17/SUMMARY.json.gz",
+      "uncompressed_sha256": "7294e74deb0fb9488d10640c9129d558f081736a5d5f8cab6706294711b4e389",
+      "sha256": "f6b5803a5369facbe6859566bee7f5f7badbce726c47329e89151c51227ff159"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-17/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-17/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "e724bec71211933c320627377e8385668e0e431884c9324d7244ef4e34ba34ac",
+      "sha256": "db36fc6a2297992ebd6f6ae8470c0b4f9c198ed3517193a27b4ea2dc5d15c99b"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-18/analysis.json",
+      "saved": "data/engine-evidence/engine-batches/batch-18/analysis.json.gz",
+      "uncompressed_sha256": "c2d3052d9f3b605d1bf881636228dae9428ed8c2c45327c109397b5ba9486744",
+      "sha256": "51d61df648faa0210c8e85f2dbc6f4e145ea383908c852fdc579c92176472977"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-18/features.json",
+      "saved": "data/engine-evidence/engine-batches/batch-18/features.json.gz",
+      "uncompressed_sha256": "795dc4f5802bb1200559c445ca76ddaf6d625b54ad2fa3140f9fdb821581516d",
+      "sha256": "890f2d201ed44d552dad0b9c52b92c4e6fa2ef483261c8e0a646882aaa587cbb"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-18/SUMMARY.json",
+      "saved": "data/engine-evidence/engine-batches/batch-18/SUMMARY.json.gz",
+      "uncompressed_sha256": "97140d1c10763d56d4d758e1501bb2243db03993b3096d4be6bc613659f7af6a",
+      "sha256": "713af19e76da01e8daaceddfa496926828d748bcac0b8a8b7cf798a38297258a"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-18/INPUT-FREEZE.json",
+      "saved": "data/engine-evidence/engine-batches/batch-18/INPUT-FREEZE.json.gz",
+      "uncompressed_sha256": "2a14fc4fe5da010d6eaacdcb8c55f9a05388bf99623ad2a71a814250438ca06c",
+      "sha256": "af45fb213531ed2ebcbd3c9702864e6b6099b3b78d0ed860c322070a7425584e"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/boosting-optimization/check-synthetic.py",
+      "saved": "code/boosting-optimization/check-synthetic.py",
+      "sha256": "00d1ae358bd0adbeb35472a156c186406f6470f59c75415be70bb67ee53635f0"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/optimize-pv.py",
+      "saved": "code/adapter/optimize-pv.py",
+      "sha256": "4d118504e3d6b00514f23305afbe19b3abf3e65f1cc42eb6aea9106b19427118"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/adapter/augment-pv.py",
+      "saved": "code/adapter/augment-pv.py",
+      "sha256": "843624f079947e1ce3f8d8db789b2ba125cfd6a94f9019aeb432bcb2673cfd03"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/pv-trajectory-experiment/ROOT-GO.json",
+      "saved": "code/pv-trajectory-experiment/ROOT-GO.json",
+      "sha256": "178d29f4d877ab2cee2ee3f0294802cf23f206a4a9643358dd78a00565d95c24"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/pv-trajectory-experiment/SCHEMA-FREEZE.json",
+      "saved": "code/pv-trajectory-experiment/SCHEMA-FREEZE.json",
+      "sha256": "be46ae5b8a1c7de7034c195dcc39be0380466d286ab7653d2206fad97f2ece73"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/pv-trajectory-experiment/SCHEMA-FREEZE.initial.json",
+      "saved": "code/pv-trajectory-experiment/SCHEMA-FREEZE.initial.json",
+      "sha256": "a80ad8d88741947ef909379dc1a57ba58b6a620e7bb7eedc99d45d6ba7086509"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/pv-trajectory-experiment/PREP-CHECKS.json",
+      "saved": "code/pv-trajectory-experiment/PREP-CHECKS.json",
+      "sha256": "f6daf67427e8ee72428051bdf264866ec9fb93ad624a8defb6169b2cc833227f"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/pv-trajectory-experiment/PROTOCOL.json",
+      "saved": "code/pv-trajectory-experiment/PROTOCOL.json",
+      "sha256": "a30a7e678304f6375d3926e16577263b8f3d19019616697c587c3f29a3494530"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/pv-trajectory-experiment/check-synthetic.py",
+      "saved": "code/pv-trajectory-experiment/check-synthetic.py",
+      "sha256": "af9167d432eac82ee027ccecdf9ad219805b81d2a2938b1fff08a74ae8c3c213"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/pv-trajectory-experiment/source-pack/after-snapshots.jsonl.gz",
+      "saved": "pv-trajectory-experiment/source-pack/after-snapshots.jsonl.gz",
+      "sha256": "5d22309176794a81ac6294164c8166f9e202f90d90fcece814ad86d533baa1ad"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/pv-trajectory-experiment/source-pack/MANIFEST.json",
+      "saved": "pv-trajectory-experiment/source-pack/MANIFEST.json",
+      "sha256": "73d3aa29074a05404368cf2670e41127db26dd5152aff581c67bd85153fe7ff5"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/pv-trajectory-experiment/source-pack/games.jsonl.gz",
+      "saved": "pv-trajectory-experiment/source-pack/games.jsonl.gz",
+      "sha256": "c2e396b22fe33e1701c0cc5509a5b3419f6c35d1b356c27dbaf05568d5e8c24a"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/pv-trajectory-experiment/augmentation/training-augmented.json",
+      "saved": "pv-trajectory-experiment/inputs/training-augmented.json.gz",
+      "sha256": "1f676928ea9cea9d181e97707d9c305dc475d13bc530a58f4cc8c9e57479d160",
+      "uncompressed_sha256": "7b9b7aca785274c3802848442fb874bf8d3fa006677cf28a878c1bc1e612c3fe"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/pv-trajectory-experiment/augmentation/COVERAGE.json",
+      "saved": "pv-trajectory-experiment/inputs/COVERAGE.json",
+      "sha256": "1e685169cd102b557d39d9aef8145db9b20cc6052f0c2f492af6d94036ab203d"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/pv-trajectory-experiment/augmentation/SOURCE-MAP.json",
+      "saved": "pv-trajectory-experiment/inputs/SOURCE-MAP.json",
+      "sha256": "3bcf797167fedda770bb2ff15c02a57250d485e494afc8bdeaaade197b24e1d6"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/pv-trajectory-experiment/augmentation/FREEZE.json",
+      "saved": "pv-trajectory-experiment/inputs/FREEZE.json",
+      "sha256": "47c01312f2809b22181577fa70f0cf13e20f104cf683892adc881a9c7ae605b3"
+    },
+    {
+      "source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/TRAINING-CHESS-CONTEXT-10.json",
+      "saved": "data/TRAINING-CHESS-CONTEXT-10.json",
+      "sha256": "f1408906c60d1a385f42afbae57a446d467408ca79b8508a65943355ea120c5a"
+    }
+  ]
+}

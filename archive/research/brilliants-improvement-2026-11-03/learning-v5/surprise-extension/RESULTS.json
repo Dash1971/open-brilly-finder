@@ -1,0 +1,216 @@
+{
+  "scope": "All848 unblinded development. One authorized depth4 shallow-surprise feature extension; unchanged folds/guards, no winner selection or independent-test claim.",
+  "training_cases": 848,
+  "window_rows": 1696,
+  "features": 170,
+  "folds": 5,
+  "minimum_leaf_distinct_cases": 15,
+  "negative_weight": 5,
+  "strict_operating_point": "RAW unweighted leaf fraction >=0.98, not weighted/calibrated probability.",
+  "baseline_v4_descriptive": {
+    "n": 848,
+    "TP": 322,
+    "FN": 91,
+    "FP": 28,
+    "TN": 407,
+    "agreement": 0.8596698113207547,
+    "recall": 0.7796610169491526,
+    "false_award_rate": 0.06436781609195402,
+    "sample_precision": 0.92,
+    "FN_plus5FP": 231
+  },
+  "hard_eligibility_ceiling": {
+    "n": 848,
+    "TP": 394,
+    "FN": 19,
+    "FP": 134,
+    "TN": 301,
+    "agreement": 0.8195754716981132,
+    "recall": 0.9539951573849879,
+    "false_award_rate": 0.3080459770114943,
+    "sample_precision": 0.7462121212121212,
+    "FN_plus5FP": 689
+  },
+  "results": {
+    "depth4": {
+      "default_cost5": {
+        "grouped_cv": {
+          "n": 848,
+          "TP": 293,
+          "FN": 120,
+          "FP": 23,
+          "TN": 412,
+          "agreement": 0.8313679245283019,
+          "recall": 0.7094430992736077,
+          "false_award_rate": 0.052873563218390804,
+          "sample_precision": 0.9272151898734177,
+          "FN_plus5FP": 235
+        },
+        "folds": {
+          "0": {
+            "n": 178,
+            "TP": 61,
+            "FN": 26,
+            "FP": 5,
+            "TN": 86,
+            "agreement": 0.8258426966292135,
+            "recall": 0.7011494252873564,
+            "false_award_rate": 0.054945054945054944,
+            "sample_precision": 0.9242424242424242,
+            "FN_plus5FP": 51
+          },
+          "1": {
+            "n": 186,
+            "TP": 65,
+            "FN": 24,
+            "FP": 8,
+            "TN": 89,
+            "agreement": 0.8279569892473119,
+            "recall": 0.7303370786516854,
+            "false_award_rate": 0.08247422680412371,
+            "sample_precision": 0.8904109589041096,
+            "FN_plus5FP": 64
+          },
+          "2": {
+            "n": 198,
+            "TP": 62,
+            "FN": 37,
+            "FP": 2,
+            "TN": 97,
+            "agreement": 0.803030303030303,
+            "recall": 0.6262626262626263,
+            "false_award_rate": 0.020202020202020204,
+            "sample_precision": 0.96875,
+            "FN_plus5FP": 47
+          },
+          "3": {
+            "n": 136,
+            "TP": 53,
+            "FN": 14,
+            "FP": 3,
+            "TN": 66,
+            "agreement": 0.875,
+            "recall": 0.7910447761194029,
+            "false_award_rate": 0.043478260869565216,
+            "sample_precision": 0.9464285714285714,
+            "FN_plus5FP": 29
+          },
+          "4": {
+            "n": 150,
+            "TP": 52,
+            "FN": 19,
+            "FP": 5,
+            "TN": 74,
+            "agreement": 0.84,
+            "recall": 0.7323943661971831,
+            "false_award_rate": 0.06329113924050633,
+            "sample_precision": 0.9122807017543859,
+            "FN_plus5FP": 44
+          }
+        },
+        "full_fit_resubstitution_only": {
+          "n": 848,
+          "TP": 333,
+          "FN": 80,
+          "FP": 15,
+          "TN": 420,
+          "agreement": 0.8879716981132075,
+          "recall": 0.8062953995157385,
+          "false_award_rate": 0.034482758620689655,
+          "sample_precision": 0.9568965517241379,
+          "FN_plus5FP": 155
+        }
+      },
+      "strict98": {
+        "grouped_cv": {
+          "n": 848,
+          "TP": 209,
+          "FN": 204,
+          "FP": 7,
+          "TN": 428,
+          "agreement": 0.7511792452830188,
+          "recall": 0.5060532687651331,
+          "false_award_rate": 0.016091954022988506,
+          "sample_precision": 0.9675925925925926,
+          "FN_plus5FP": 239
+        },
+        "folds": {
+          "0": {
+            "n": 178,
+            "TP": 36,
+            "FN": 51,
+            "FP": 1,
+            "TN": 90,
+            "agreement": 0.7078651685393258,
+            "recall": 0.41379310344827586,
+            "false_award_rate": 0.01098901098901099,
+            "sample_precision": 0.972972972972973,
+            "FN_plus5FP": 56
+          },
+          "1": {
+            "n": 186,
+            "TP": 42,
+            "FN": 47,
+            "FP": 2,
+            "TN": 95,
+            "agreement": 0.7365591397849462,
+            "recall": 0.47191011235955055,
+            "false_award_rate": 0.020618556701030927,
+            "sample_precision": 0.9545454545454546,
+            "FN_plus5FP": 57
+          },
+          "2": {
+            "n": 198,
+            "TP": 50,
+            "FN": 49,
+            "FP": 1,
+            "TN": 98,
+            "agreement": 0.7474747474747475,
+            "recall": 0.5050505050505051,
+            "false_award_rate": 0.010101010101010102,
+            "sample_precision": 0.9803921568627451,
+            "FN_plus5FP": 54
+          },
+          "3": {
+            "n": 136,
+            "TP": 44,
+            "FN": 23,
+            "FP": 2,
+            "TN": 67,
+            "agreement": 0.8161764705882353,
+            "recall": 0.6567164179104478,
+            "false_award_rate": 0.028985507246376812,
+            "sample_precision": 0.9565217391304348,
+            "FN_plus5FP": 33
+          },
+          "4": {
+            "n": 150,
+            "TP": 37,
+            "FN": 34,
+            "FP": 1,
+            "TN": 78,
+            "agreement": 0.7666666666666667,
+            "recall": 0.5211267605633803,
+            "false_award_rate": 0.012658227848101266,
+            "sample_precision": 0.9736842105263158,
+            "FN_plus5FP": 39
+          }
+        },
+        "full_fit_resubstitution_only": {
+          "n": 848,
+          "TP": 247,
+          "FN": 166,
+          "FP": 2,
+          "TN": 433,
+          "agreement": 0.8018867924528302,
+          "recall": 0.5980629539951574,
+          "false_award_rate": 0.004597701149425287,
+          "sample_precision": 0.9919678714859438,
+          "FN_plus5FP": 176
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 0.464,
+  "peak_rss_bytes": 77643776
+}

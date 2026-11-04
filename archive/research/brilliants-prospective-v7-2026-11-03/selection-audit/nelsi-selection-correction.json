@@ -1,0 +1,30 @@
+{
+  "reason": "Restore frozen control priority: one negative from each ORIGINAL target game regardless nominated-positive label. Collector incorrectly captured two reserve-game controls; preserved as secondary. No observed label, board, SAN, score, coach, URL or capture timestamp changed. Original capture snapshot retained.",
+  "frozen_selection_unchanged": true,
+  "classifier_metrics_or_engines_seen": false,
+  "corrected_at": "2026-11-03T13:21:46.394Z",
+  "corrections": [
+    {
+      "key": "167306626524:26",
+      "before": {
+        "selected": true,
+        "sample_role": "negative_control"
+      },
+      "after": {
+        "selected": false,
+        "sample_role": "secondary_reserve_control"
+      }
+    },
+    {
+      "key": "167319180912:35",
+      "before": {
+        "selected": true,
+        "sample_role": "negative_control"
+      },
+      "after": {
+        "selected": false,
+        "sample_role": "secondary_reserve_control"
+      }
+    }
+  ]
+}

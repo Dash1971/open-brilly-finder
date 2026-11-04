@@ -1,0 +1,138 @@
+{
+  "status": "pass",
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "dependencies": "Python standard library only; no model fitting, engine or network requests",
+  "checks": [
+    "saved external counts and unknown accounting",
+    "same 3,724 cases, 917 positives, 2,807 negatives, 972 groups and five folds",
+    "all original held-out forest scores match exactly",
+    "fixed cutoff reproduces 436/6 and selected cutoffs reproduce 452/6",
+    "original 848-case saved-feature inference",
+    "experimental 3,724-case saved-feature inference",
+    "identical output when invoked from another working directory"
+  ],
+  "elapsed_seconds": 2.4927867082878947,
+  "commands": [
+    {
+      "command": "python3 tools/reproduce_results.py",
+      "exit_code": 0,
+      "stdout_sha256": "dc047b273f13b66c2ed954d5224691855a233704a89d46171ad810a995456520"
+    },
+    {
+      "command": "python3 tools/reproduce_results.py --verify-forest",
+      "exit_code": 0,
+      "stdout_sha256": "1cea44475e4a92c557caa5d33273cfe4d6c7bc3369ae80037186e38b67f0afb7"
+    },
+    {
+      "command": "python3 tools/infer_saved_features.py --case-key 183200302081:135",
+      "exit_code": 0,
+      "stdout_sha256": "59fc34e086b77d9815f3c663ca71c0a61665ea9d6d7cdf73e3c5ea1ecdf59c7d"
+    },
+    {
+      "command": "python3 tools/infer_saved_features.py --model experimental3724 --case-key 183200302081:135",
+      "exit_code": 0,
+      "stdout_sha256": "0bd68f2cf7295ac4a9cccef44e68a825dd3b6dabcaeffd1d44029b999cccf02c"
+    }
+  ],
+  "model_inference_results": [
+    {
+      "window_scores": {
+        "current": 0.8371574159854581,
+        "previous": 0.8405901811369733
+      },
+      "minimum_window_score": 0.8371574159854581,
+      "threshold": 0.8333333333333334,
+      "gates": {
+        "both_windows_eligible": true,
+        "confidence_sufficient": true,
+        "physical_evidence_known": true
+      },
+      "award": true,
+      "model": "original848",
+      "model_sha256": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+      "scope": "Original 848-case full-fit forest; saved-feature inference, not a held-out estimate",
+      "case_key": "183200302081:135",
+      "caveat": "Requires precomputed features and eligibility/confidence gates. This is not a FEN-to-Brilliant classifier."
+    },
+    {
+      "window_scores": {
+        "current": 0.881215971353044,
+        "previous": 0.881215971353044
+      },
+      "minimum_window_score": 0.881215971353044,
+      "threshold": 0.8143062085223279,
+      "gates": {
+        "both_windows_eligible": true,
+        "confidence_sufficient": true,
+        "physical_evidence_known": true
+      },
+      "award": true,
+      "model": "experimental3724",
+      "model_sha256": "e153a3d151a8803d13fc85ba857c9297541a5d45b627f776ea56f1a249002332",
+      "scope": "Experimental 3,724-case full-fit model; not a promoted release or held-out estimate",
+      "case_key": "183200302081:135",
+      "caveat": "Requires precomputed features and eligibility/confidence gates. This is not a FEN-to-Brilliant classifier."
+    }
+  ],
+  "metrics": {
+    "forest": {
+      "TP": 452,
+      "FP": 6,
+      "FN_known": 465,
+      "TN_known": 2801,
+      "unresolved_positive": 0,
+      "unresolved_negative": 0,
+      "confirmed_recall": 0.49291166848418755,
+      "wrong_share_of_confirmed_awards": 0.013100436681222707
+    },
+    "wintr_both": {
+      "TP": 287,
+      "FP": 20,
+      "FN_known": 630,
+      "TN_known": 2782,
+      "unresolved_positive": 0,
+      "unresolved_negative": 5,
+      "confirmed_recall": 0.31297709923664124,
+      "wrong_share_of_confirmed_awards": 0.06514657980456026
+    },
+    "knights_both": {
+      "TP": 590,
+      "FP": 142,
+      "FN_known": 293,
+      "TN_known": 2643,
+      "unresolved_positive": 34,
+      "unresolved_negative": 22,
+      "confirmed_recall": 0.64340239912759,
+      "wrong_share_of_confirmed_awards": 0.19398907103825136
+    }
+  },
+  "recomputed_held_out_forest": {
+    "max_score_difference": 0.0,
+    "custom_retuned": {
+      "TP": 452,
+      "FP": 6,
+      "FN_known": 465,
+      "TN_known": 2801,
+      "unresolved_positive": 0,
+      "unresolved_negative": 0,
+      "confirmed_recall": 0.49291166848418755,
+      "wrong_share_of_confirmed_awards": 0.013100436681222707
+    },
+    "custom_fixed": {
+      "TP": 436,
+      "FP": 6,
+      "FN_known": 481,
+      "TN_known": 2801,
+      "unresolved_positive": 0,
+      "unresolved_negative": 0,
+      "confirmed_recall": 0.47546346782988,
+      "wrong_share_of_confirmed_awards": 0.013574660633484163
+    },
+    "scope": "Each case uses its archived held-out fold model and its inner-selected fold cutoff. No model is retrained."
+  },
+  "tool_sha256": {
+    "forest.py": "f0b32bbfa165a813a9574c0cf122881ee625ff2f48726e965915b655d6211185",
+    "infer_saved_features.py": "1765ace516d865b0c26b8e0d622cdab5d5033000f4807d9f7518c425f2628547",
+    "reproduce_results.py": "95165774ee2ff30d86cb0f3de78b894ba1954a262813b991d56a66d38cf10e7e"
+  }
+}

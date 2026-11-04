@@ -1,0 +1,47 @@
+{
+  "checks": {
+    "extract_script_frozen": true,
+    "extraction_protocol_frozen": true,
+    "source_inputs_unchanged": true,
+    "chess_dependency_unchanged": true,
+    "relations_hash_consistent": true,
+    "case_count1302": true,
+    "saved_pv_legality_counts": true,
+    "compare_script_frozen": true,
+    "comparison_protocol_frozen": true,
+    "comparison_inputs_unchanged": true,
+    "cohorts": true,
+    "known_exact_pairs272": true,
+    "robustness_inputs_unchanged": true,
+    "fork_pair_counts": true
+  },
+  "independent_review": {
+    "scope": "Read-only code/branch-ranking/count/geometry review; no new fits or searches.",
+    "case_window_selections_verified": 2604,
+    "acceptance_selection_disagreements": 0,
+    "response_score_inversions": 0,
+    "known_exact_pairs": 272,
+    "distinct_ordinary_controls": 107,
+    "panel_pairs_geometrically_checked": [
+      3,
+      7,
+      10,
+      11,
+      12
+    ],
+    "outcome": "No metric/selection error. Prior pair7 prose pawn-fork description corrected in CORRECTIONS.txt."
+  },
+  "limits": "Geometric/witnessed relations only; false is no witness, not impossibility. Known reused labels and controls, not performance validation.",
+  "artifact_sha256": {
+    "RELATIONS.json": "9a0ebd302d66943f02f05718302484f93d9fc5d13771f54ec177a63a6ad84354",
+    "CORRECTIONS.txt": "dae4c9da21518b06ba09dd2c8981b678c50953b057527bfa3ee64039cd59d723",
+    "ROBUSTNESS.json": "d41971c6699fc085666eab504e7d63a7f9863ff9143c5b234f24505e37510e9c",
+    "COMPARISON-PROTOCOL.json": "1abfe4dd1bb5f084a7acadc5ad1061aad39eecbcd1fa5f17841302cf64c72bd6",
+    "COMPARISON.json": "8c1e45e13451d9e4579d16e29785a054a01d15acd5f260ff9cfd9798820474ef",
+    "REPORT.txt": "5216d1f14a2a2f65aa3e3e0fba134a394e0c419a24b434a56d54c981af85e100",
+    "EXTRACTION.json": "a7d77f728796a847d0e80d9ca8f4860c377a4725285ce19452c7c1ab517d04e2",
+    "extract.py": "8568a57a5ad4e3c248818bcafdedc04a3c5c82189c6c5d1a8d28e36a57e92e6e",
+    "compare.py": "7dd5e775552ed670f3ccf84205f3cd95630999610c4af653f87fc68c409625bd",
+    "EXTRACTION-PROTOCOL.json": "5e49fb8b92372124be14fd6f118ff79da396897d961e2d4612fb5b3632fd1c28"
+  }
+}

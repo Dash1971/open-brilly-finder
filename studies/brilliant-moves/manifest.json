@@ -1,0 +1,98 @@
+{
+  "study_id": "brilliant-moves-v5-private-staging",
+  "staged_at_utc": "2026-11-03T10:54:35.879647+00:00",
+  "publication_status": "public_staging_root_review_no_commit_or_push",
+  "predictions_included": true,
+  "roles": {
+    "development": {
+      "moves": 848,
+      "games": 439,
+      "brilliant": 413,
+      "explicit_non_brilliant": 435
+    },
+    "test": {
+      "moves": 200,
+      "games": 106,
+      "brilliant": 100,
+      "explicit_non_brilliant": 100
+    }
+  },
+  "role_note": "All848 prior core/panel labels are training/development. Historical split names are archive metadata only; the frozen200 form the new prospective test.",
+  "counts": {
+    "games": 545,
+    "positions": 47118,
+    "observations": 1781,
+    "labeled_moves": 1048
+  },
+  "observation_source_counts": {
+    "fresh_review": 1131,
+    "gallery": 650
+  },
+  "new_fresh_observations": 210,
+  "new_secondary_fresh_observations": 10,
+  "new_secondary_observation_ids": [
+    "c4a6c8cc0f4663b75a6162290602bc6430266999f23f11dce22e8b6e6c7cdc53",
+    "ae076b19cca57337897525844b9bbf7b5bf55c4458f5148dccd739da464c46c3",
+    "f6fcf5acb95d94bce7680dd70da57509eeda8ebdb0590eb3aa7e6de12e84392f",
+    "3585e876efa151e24d7d89246039e7e7964382e227e8cc0b1d8c2c4e58a8cca3",
+    "becba9cf98c96b30188f10bf7bbd6c65681d25c3f1c171a4fb682907cd0d76ed",
+    "d63ffb18f7fe04b4a1fc7191063191c62c28d02896d4c65fae9fbdd92d6d4ea6",
+    "a31ae8a753687c594c0062b76d9b6d20c0b517e816fbc0abf7840815aeb25757",
+    "a7524d5ce9e4efd6dce8328493c4c4fba68365d74a3c1051cf3e29836ee3b9ed",
+    "2bedd2a29a168342bb2ba0d38118c01860dbbe2ed83e3f581867a138ac4c9b82",
+    "6436b9a34ce4560717cf89ef471aef7bbd7dc6896b193d2039295aa7f20a08b4"
+  ],
+  "secondary_note": "All raw gallery/current observations and revisions for included games are retained. Gallery labels are separate from explicit fresh-review labels; absence is not negative.",
+  "identity_validation": {
+    "full_pgn_positions_legally_replayed": 47118,
+    "all1048_exact_game_ply_SAN_UCI_FEN_and_fresh_labels_match": true,
+    "rendered_board_proofs": 1041,
+    "development_rendered_board_proofs": 841,
+    "test_rendered_board_proofs": 200,
+    "without_rendered_board_proof": [
+      "live:171711505152:69",
+      "live:171711505152:59",
+      "live:178708673761:88",
+      "live:178708673761:96",
+      "live:178966671357:44",
+      "live:178966671357:38",
+      "live:180781671395:89"
+    ],
+    "missing_note": "Seven retained development records have exact PGN/SAN/ply identity but no captured rendered-board proof. Do not describe all1048 as board verified."
+  },
+  "inputs": [
+    {
+      "artifact": "research/brilliants-final-2026-11-03/primary-moves.json",
+      "sha256": "505a8ffde14269f7782af1404d12b6407a4d5b298f3bedc2edaea7d1e7a456ea"
+    },
+    {
+      "artifact": "research/brilliants-final-2026-11-03/panel-moves.json",
+      "sha256": "c7794a2441bd6adcb570bd2c2bd185e7e5d50dbb36f36a3b80c12cf7ba932b70"
+    },
+    {
+      "artifact": "research/brilliants-improvement-2026-11-03/future-validation-v5/primary-moves.json",
+      "sha256": "d900c8c6ebd94a95a53d96c214dc4d9df7e3d9859a0dd165c058975bdc35a7a9"
+    }
+  ],
+  "source_database_sha256": {
+    "research/brilliants-final-2026-11-03/corpus.sqlite3": "c9095e767410db0e3dc225c2b2d35f826dab34255199477f5b7950089d8f42d3",
+    "research/brilliants-improvement-2026-11-03/future-validation-v5/corpus.sqlite3": "2b7c376d5d7521fd6472fadf8f47d264ac683a8bc7d31e7756043ebf5835b55e"
+  },
+  "candidate_and_exclusion_provenance": "source-hash-audit.json and protocol/; effective S castling addendum supersedes the initial executable hash.",
+  "privacy": {
+    "raw_http_headers_included": false,
+    "cookies_or_auth_material_included": false,
+    "private_absolute_paths_included": false,
+    "raw_observation_json_preserved_exactly": true
+  },
+  "artifact_scope": "Selected545games only; full PGNs once per game. Raw source corpora unchanged. Frozen predictions joined only in moves.json/CSV, with development/test roles separate. No monthly archives, engine binaries, node_modules, or raw HTTP metadata.",
+  "prediction_roles": "Full frozen model on848 development = training resubstitution; development OOF separate. Frozen200 = prospective test. Never pool train and test headline metrics.",
+  "ec_direct_note": "Direct raw En Croissant symbol from frozen matched baseline; shared-window confirmation is a separate comparator.",
+  "files": {
+    "moves.json": "af0ba7723707045d90cd9f32c760e0076e7ea071e5ebae52b199d0413100cd12",
+    "moves.csv": "e674fe6c1537fe2631e3819fc43094013b92ab64c4e2a3e32859de703945f384",
+    "corpus.sqlite3": "6a493fc88d0611c5e8ad02a89568de42332f145a8e8a892ffb814e9166653953",
+    "selected-games.pgn": "6902c52b7223726afabb42d25e8712e22cd197de8f9937be755ea4b33ffc67f5",
+    "observations-export.json": "285c24e619cd104a439fe82496748b591844c56fb34ce14107eac005ead5bc35"
+  }
+}

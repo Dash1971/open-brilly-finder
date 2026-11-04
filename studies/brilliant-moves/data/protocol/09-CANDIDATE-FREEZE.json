@@ -1,0 +1,60 @@
+{
+  "frozen_at_utc": "2026-11-03T07:20:41.336184+00:00",
+  "policy": "mute-chess-brilliant-v4",
+  "all618_existing_cases_used_only_as_development": true,
+  "candidate_files": [
+    {
+      "path": "root/frozen-v4/core.ts",
+      "sha256": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a"
+    },
+    {
+      "path": "root/frozen-v4/noSweatClassify.ts",
+      "sha256": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301"
+    },
+    {
+      "path": "root/frozen-v4/noSweatCore.ts",
+      "sha256": "3fa48e3c50e7361a244c0ebb58543315b6a5f208c0c0e1979ae18fca40366a40"
+    },
+    {
+      "path": "root/frozen-v4/package.json",
+      "sha256": "a90fc33418afa2b9cbf4768524b021135b965ecdf993457505bfae3ac44a8428"
+    }
+  ],
+  "development_metrics": {
+    "v3": {
+      "TP": 220,
+      "FN": 89,
+      "FP": 16,
+      "TN": 293
+    },
+    "v4": {
+      "TP": 246,
+      "FN": 63,
+      "FP": 15,
+      "TN": 294
+    }
+  },
+  "mechanisms": [
+    "Retain600cp safe-alternative veto for phase<=8 or raw mover material lead>=300; otherwise allow multiple winning middlegame options",
+    "Existing EC/mate corroboration also accepts exact legal mate-in-one after a currently qualifying profitable piece capture",
+    "Veto a proven checked continuation when all qualifying offers stay unmoved and have unchanged raw legal exchange gain after preceding own move"
+  ],
+  "new_proof_limits": "Each of the two added board probes has its own512position cap. Existing EC/raw-offer work is not capped by these limits. No new engine searches.",
+  "missing_history_or_exhaustion": "No history continuation veto without a completed proof; no mating-acceptance escape without a completed legal witness.",
+  "constants_selected_before_new_validation": true,
+  "fresh_current_review_labels_seen": 0,
+  "validation_policy": "No candidate tuning using new labels; report fresh results even if worse. A failed candidate does not silently become a new candidate on the same test.",
+  "review": "Independent Astra TypeScript/Python feature parity:618,zero mismatches; no critical semantic issues.",
+  "sources": [
+    {
+      "url": "https://www.chess.com/article/view/how-to-play-a-brilliant-move",
+      "use": "Published distinction between endgame necessity and multiple middlegame options; no claim that our phase/material cutoffs are Chess.com thresholds."
+    },
+    {
+      "url": "https://support.chess.com/en/articles/8572705-how-are-moves-classified-what-is-a-blunder-or-brilliant-etc",
+      "use": "Published sound piece-sacrifice and competitive-position criteria."
+    }
+  ],
+  "initial_semantic_freeze_at_utc": "2026-11-03T06:59:06.771482+00:00",
+  "format_only_revision": "Split two multi-variable const declarations for existing type-aware lint before any fresh current-review labels. No heuristic change; full618 replay identical."
+}

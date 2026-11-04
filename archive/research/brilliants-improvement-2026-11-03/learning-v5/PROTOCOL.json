@@ -1,0 +1,45 @@
+{
+  "scope": "All848unblindeddevelopment cases; grouped cross-validation is diagnostic, not a new untouched test. No app or public research edits.",
+  "frozen_at_utc": "2026-11-03T08:42:43.498525+00:00",
+  "models": [
+    {
+      "maximum_depth": 3,
+      "minimum_leaf_distinct_cases": 15,
+      "negative_class_weight": 5
+    },
+    {
+      "maximum_depth": 4,
+      "minimum_leaf_distinct_cases": 15,
+      "negative_class_weight": 5
+    }
+  ],
+  "training_runs": "Exactly two prespecified configurations, each five CV training folds plus one full-data descriptive fit; no configuration selection or other parameter search.",
+  "grouping": "Union cases by whole game or identical normalized four-field before-position; assign whole union to SHA256(mute-semantic-tree-v5-v1|sorted-case-keys)%5. Both windows stay together.",
+  "window_training": "Eligible complete current/prior windows, with equal total weight per case; negative cases cost5, positive cases cost1. At least15distinct cases in every leaf.",
+  "final_award": "Both window trees positive, both original raw-offer/two-root/quality<=5/after-floor>=-100 eligibility masks and existing confidence compatibility pass.",
+  "missing": "Null is never zero. Add explicit missing indicators; numeric missing values take the documented left branch. Unknown proof states remain explicit.",
+  "forbidden_predictors": [
+    "game_id",
+    "ply",
+    "account",
+    "date",
+    "rating",
+    "cohort",
+    "split",
+    "gallery_category",
+    "coach_text",
+    "FEN_bits_or_square_occupancy",
+    "SAN_or_UCI_strings"
+  ],
+  "physical_panel_extension": {
+    "cases": 30,
+    "same_kernel_as": "../astra/v5/physical_probe.py",
+    "kernel_source_sha256": "ff311b93b0c7d89ea2560aac97e47bc23487716061d8daa82fd479f3c59baa49",
+    "cap_per_case": ".25seconds/10000physicalnodes; inherited100000/1second same-square cap per acceptance",
+    "purpose": "Avoid a feature-missing flag that trivially identifies panel membership."
+  },
+  "operating_points": {
+    "default": "Positive weighted leaf support exceeds negative support, with fixed5cost on negative cases.",
+    "strict98": "Raw/unweighted positive window fraction>=0.98; prespecified by parent before first fit. Not calibrated population precision."
+  }
+}

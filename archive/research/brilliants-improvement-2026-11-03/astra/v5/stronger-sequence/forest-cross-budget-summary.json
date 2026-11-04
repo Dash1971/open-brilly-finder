@@ -1,0 +1,368 @@
+{
+  "scope": "Paired development-only cross-budget sensitivity, SF18same engine300k\u21921.5m. Unchanged FULL-DATA forest, extractor, threshold. Baseline247TP0FP is training resubstitution, NOT OOF223TP2FP; stronger result is NOT validation.",
+  "matrices": {
+    "baseline_full_fit": {
+      "TP": 247,
+      "FP": 0,
+      "FN": 166,
+      "TN": 435
+    },
+    "stronger_full_fit": {
+      "TP": 240,
+      "FP": 1,
+      "FN": 173,
+      "TN": 434
+    }
+  },
+  "cases_with_changed_inputs": 846,
+  "input_changes_per_feature": {
+    "before_depth": 1630,
+    "after_depth": 1568,
+    "prior_depth": 1648,
+    "best_cp": 1508,
+    "best_mapped_score": 1492,
+    "after_cp": 1491,
+    "after_mapped_score": 1485,
+    "prior_cp": 1562,
+    "prior_mapped_score": 1556,
+    "played_root_cp": 1218,
+    "played_root_mapped_score": 1209,
+    "mapped_loss_pp": 1542,
+    "best_second_gap_pp": 1603,
+    "after_minus_prior_cp": 1604,
+    "best_minus_prior_cp": 1587,
+    "same_root_loss_pp": 345,
+    "same_root_rank": 216,
+    "played_root_missing": 81,
+    "safe_alternative_best_cp": 129,
+    "after_mate": 23,
+    "winning_safe_alternatives": 44,
+    "prior_mate": 27,
+    "best_mate": 30,
+    "played_root_mate": 17
+  },
+  "missingness_changes_per_feature": {
+    "best_cp": 18,
+    "after_cp": 17,
+    "prior_cp": 17,
+    "played_root_cp": 95,
+    "played_root_mapped_score": 81,
+    "same_root_loss_pp": 81,
+    "same_root_rank": 81,
+    "safe_alternative_best_cp": 39,
+    "after_mate": 17,
+    "prior_mate": 17,
+    "best_mate": 18,
+    "played_root_mate": 14
+  },
+  "physical_unknown": 0,
+  "elapsed_seconds": 17.23313829069957,
+  "peak_rss_bytes": 113000448,
+  "paired_award_changes": {
+    "true_removed": 13,
+    "true_added": 6,
+    "false_added": 1
+  },
+  "changed_awards": [
+    {
+      "key": "165819580262:69",
+      "san": "Qxd5",
+      "truth": true,
+      "baseline_award": true,
+      "stronger_award": false,
+      "baseline_scores": {
+        "current": 0.8410975232123246,
+        "previous": 0.841837737621952
+      },
+      "stronger_scores": {
+        "current": 0.8256591474305742,
+        "previous": 0.8247332215046482
+      }
+    },
+    {
+      "key": "172524892402:40",
+      "san": "Rxg3",
+      "truth": true,
+      "baseline_award": true,
+      "stronger_award": false,
+      "baseline_scores": {
+        "current": 0.8377106303608473,
+        "previous": 0.846293562647237
+      },
+      "stronger_scores": {
+        "current": 0.7569252725543884,
+        "previous": 0.7570699484803143
+      }
+    },
+    {
+      "key": "174185738360:43",
+      "san": "Bxg6",
+      "truth": true,
+      "baseline_award": false,
+      "stronger_award": true,
+      "baseline_scores": {
+        "current": 0.8848804066958376,
+        "previous": 0.8631010492377837
+      },
+      "stronger_scores": {
+        "current": 0.8749755058156758,
+        "previous": 0.888444148905723
+      }
+    },
+    {
+      "key": "178360672165:63",
+      "san": "Nxh6+",
+      "truth": false,
+      "baseline_award": false,
+      "stronger_award": true,
+      "baseline_scores": {
+        "current": 0.8127558561855966,
+        "previous": 0.8249882932777557
+      },
+      "stronger_scores": {
+        "current": 0.8463498471899088,
+        "previous": 0.8424206728103667
+      }
+    },
+    {
+      "key": "178708673761:88",
+      "san": "Qd1+",
+      "truth": true,
+      "baseline_award": true,
+      "stronger_award": false,
+      "baseline_scores": {
+        "current": 0.8341392408307661,
+        "previous": 0.8418252226121425
+      },
+      "stronger_scores": {
+        "current": 0.8256434472374942,
+        "previous": 0.8502205698330202
+      }
+    },
+    {
+      "key": "180781671395:83",
+      "san": "Qxf8+",
+      "truth": true,
+      "baseline_award": true,
+      "stronger_award": false,
+      "baseline_scores": {
+        "current": 0.8471472518289122,
+        "previous": 0.8570780991678476
+      },
+      "stronger_scores": {
+        "current": 0.8143560426806052,
+        "previous": 0.8143560426806052
+      }
+    },
+    {
+      "key": "184622116468:55",
+      "san": "Bxg7",
+      "truth": true,
+      "baseline_award": true,
+      "stronger_award": false,
+      "baseline_scores": {
+        "current": 0.8371960493811879,
+        "previous": 0.8430084305862389
+      },
+      "stronger_scores": {
+        "current": 0.8441792573332132,
+        "previous": 0.8277423908321344
+      }
+    },
+    {
+      "key": "184634890030:37",
+      "san": "Qxh7+",
+      "truth": true,
+      "baseline_award": false,
+      "stronger_award": true,
+      "baseline_scores": {
+        "current": 0.955064820772817,
+        "previous": 0.966682071571996
+      },
+      "stronger_scores": {
+        "current": 0.9633512294680745,
+        "previous": 0.9655133991948994
+      }
+    },
+    {
+      "key": "184926599842:61",
+      "san": "Qxf7+",
+      "truth": true,
+      "baseline_award": true,
+      "stronger_award": false,
+      "baseline_scores": {
+        "current": 0.8611883582618645,
+        "previous": 0.8552925809321154
+      },
+      "stronger_scores": {
+        "current": 0.8211584372124533,
+        "previous": 0.8211584372124533
+      }
+    },
+    {
+      "key": "185136515226:72",
+      "san": "Be2+",
+      "truth": true,
+      "baseline_award": true,
+      "stronger_award": false,
+      "baseline_scores": {
+        "current": 0.8607645860068994,
+        "previous": 0.8695987348317245
+      },
+      "stronger_scores": {
+        "current": 0.7897966013106307,
+        "previous": 0.815174891077968
+      }
+    },
+    {
+      "key": "185166937414:36",
+      "san": "Rxa2",
+      "truth": true,
+      "baseline_award": true,
+      "stronger_award": false,
+      "baseline_scores": {
+        "current": 0.8459427019281163,
+        "previous": 0.845865892465955
+      },
+      "stronger_scores": {
+        "current": 0.8196388851593108,
+        "previous": 0.8176857601593108
+      }
+    },
+    {
+      "key": "185214494356:53",
+      "san": "Rf8",
+      "truth": true,
+      "baseline_award": false,
+      "stronger_award": true,
+      "baseline_scores": {
+        "current": 0.8321409574851032,
+        "previous": 0.8329456785151462
+      },
+      "stronger_scores": {
+        "current": 0.8432402786498836,
+        "previous": 0.8432402786498836
+      }
+    },
+    {
+      "key": "185702381036:62",
+      "san": "Ngxh4+",
+      "truth": true,
+      "baseline_award": true,
+      "stronger_award": false,
+      "baseline_scores": {
+        "current": 0.8703505777748094,
+        "previous": 0.8703505777748094
+      },
+      "stronger_scores": {
+        "current": 0.8350274671303262,
+        "previous": 0.8031234771789278
+      }
+    },
+    {
+      "key": "185758898568:55",
+      "san": "Nxf7",
+      "truth": true,
+      "baseline_award": true,
+      "stronger_award": false,
+      "baseline_scores": {
+        "current": 0.8356152189120774,
+        "previous": 0.8441591713676678
+      },
+      "stronger_scores": {
+        "current": 0.819823803600599,
+        "previous": 0.8154271296182106
+      }
+    },
+    {
+      "key": "185897727454:25",
+      "san": "Bxh7+",
+      "truth": true,
+      "baseline_award": false,
+      "stronger_award": true,
+      "baseline_scores": {
+        "current": 0.971164262121406,
+        "previous": 0.9707933170326057
+      },
+      "stronger_scores": {
+        "current": 0.9696412632298728,
+        "previous": 0.9696412632298728
+      }
+    },
+    {
+      "key": "185931745402:93",
+      "san": "Rb8",
+      "truth": true,
+      "baseline_award": true,
+      "stronger_award": false,
+      "baseline_scores": {
+        "current": 0.8997558161694895,
+        "previous": 0.9155136574069098
+      },
+      "stronger_scores": {
+        "current": 0.8833108507615377,
+        "previous": 0.8694798316428898
+      }
+    },
+    {
+      "key": "186006374302:60",
+      "san": "Rhf8",
+      "truth": true,
+      "baseline_award": false,
+      "stronger_award": true,
+      "baseline_scores": {
+        "current": 0.8201293706748034,
+        "previous": 0.8025089850753881
+      },
+      "stronger_scores": {
+        "current": 0.8572469573226942,
+        "previous": 0.8385380888321161
+      }
+    },
+    {
+      "key": "186051372886:40",
+      "san": "Nhxf4",
+      "truth": true,
+      "baseline_award": true,
+      "stronger_award": false,
+      "baseline_scores": {
+        "current": 0.8530459205042545,
+        "previous": 0.8589313371709212
+      },
+      "stronger_scores": {
+        "current": 0.8365099134014636,
+        "previous": 0.8315042073864544
+      }
+    },
+    {
+      "key": "186104649580:53",
+      "san": "Qf2",
+      "truth": true,
+      "baseline_award": true,
+      "stronger_award": false,
+      "baseline_scores": {
+        "current": 0.8778417078275773,
+        "previous": 0.8731753364290795
+      },
+      "stronger_scores": {
+        "current": 0.8710601245654992,
+        "previous": 0.8263611778971266
+      }
+    },
+    {
+      "key": "186567991235:53",
+      "san": "Bg2",
+      "truth": true,
+      "baseline_award": false,
+      "stronger_award": true,
+      "baseline_scores": {
+        "current": 0.8231212714341756,
+        "previous": 0.8691067098300751
+      },
+      "stronger_scores": {
+        "current": 0.846211867448064,
+        "previous": 0.8693424146898477
+      }
+    }
+  ]
+}

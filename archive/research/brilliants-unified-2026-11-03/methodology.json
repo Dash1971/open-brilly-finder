@@ -1,0 +1,55 @@
+{
+  "study_id": "brilliants-additional-300-2026-11-03",
+  "scope": "300 additional explicit labels,150 perclass, planned before newlabels; original318studyretainedseparately.",
+  "selection_plan": "PLAN.json",
+  "selection_plan_sha256": "030457b4439bb7c56c9d3b97877b837cb21692b30bb0fadf83cdb8e89b54abcf",
+  "owner_regression_controls": [
+    {
+      "name": "L1lChap-nelsi 14...Ndxe5",
+      "game_id": "186311900336",
+      "expected_ply_if_standard_start": 28,
+      "uci": "d7e5",
+      "fen_before": "r2r2k1/pp1nppbp/1qn3p1/4P3/5Pb1/P2B1N2/1P4PP/RNB1QR1K b - - 4 14",
+      "line": "14...Ndxe5 15.Nxe5 Nxe5 16.fxe5 Rxd3",
+      "owner_expected": "not_brilliant",
+      "chesscom_label": "excellent",
+      "mechanism": "same-square loss on e5 is recouped on d3; two knights for knight+bishop plus pawn",
+      "ec_material_mover_before": 90,
+      "ec_material_mover_after": 90,
+      "source": "https://github.com/Dash1971/mute-chess/issues/229",
+      "split": "known_development",
+      "new_evidence_status": "Separate post-pilot browser review reported by parent; outside new600 and pilot metrics"
+    },
+    {
+      "name": "41.Qf5+",
+      "game_id": null,
+      "expected_ply_if_standard_start": 81,
+      "uci": "d5f5",
+      "fen_before": "6r1/p1P3pk/1q1B1b1p/3Q4/8/7P/P4PP1/2R3K1 w - - 9 41",
+      "fen_after": "6r1/p1P3pk/1q1B1b1p/5Q2/8/7P/P4PP1/2R3K1 b - - 10 41",
+      "owner_expected": "not_brilliant",
+      "chesscom_label": "unknown_until_captured",
+      "mechanism": "EC material probe treats deferred optional promotion gain as sacrifice; no legal immediate nonpawn capture after check",
+      "source": "https://github.com/Dash1971/mute-chess/issues/227",
+      "split": "known_development"
+    },
+    {
+      "name": "17...Bf5",
+      "game_id": null,
+      "expected_ply_if_standard_start": 34,
+      "uci": "g4f5",
+      "fen_before": "r5k1/pp2ppbp/1q4p1/4P3/4Q1b1/P2r4/1P4PP/RNB2R1K b - - 1 17",
+      "owner_expected": "not_brilliant",
+      "chesscom_label": "unknown_until_captured",
+      "mechanism": "defended tactic; capture-only probe misses quiet Rd1+",
+      "source": "https://github.com/Dash1971/mute-chess/pull/228",
+      "split": "known_development"
+    }
+  ],
+  "baseline_sources": {
+    "v2": "b3585f2c5b818bb8dfabb7fc4e3ed37cab848c12",
+    "v3": "ac298a0d69ab51808857b089063348f2adac1101",
+    "EC": "6f2d2628f0fbe11cb62a7dd2f9c102bb52907d53"
+  },
+  "rule_bodies": "Unchanged copied EC,v2 andv3 rules. Any newrulemayuseonlydiscoverybeforefreezeandreservedvalidation."
+}

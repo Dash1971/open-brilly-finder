@@ -1,0 +1,32 @@
+Acceptance-trajectory experiment — 2026-11-04
+
+Result: this fixed bundle did not find more Brilliants without increasing wrong awards in the same grouped evaluation. Do not promote it on this evidence. Production unchanged; ratings excluded; no new engine searches or data collection.
+
+Protocol: same3,724cases /917positives /2,807negatives /972groups; five outer folds, three inner folds, identical group mapping, seeds, guards, learner parameters and initial weights. Both original learners reproduce prior outer and final scores exactly. Thresholds maximize inner-fold TP subject to both FP count and wrong-award fraction no worse than the fixed original custom reference. This training constraint does not guarantee the same result on outer held-out games.
+
+Seven fixed values were appended to the original75 predictors, with seven missing flags, leaving original150 columns intact: material debt at6 and12plies; recovered by12; first own-reply recovery ply; signed mate outcome; actual terminal draw by12; initial material debt. The conditional response-gap feature was not included in this isolated bundle test. Material is relative to before the played move; acceptance is ply1. Values are pawn90, minor300, rook500, queen1000. Opponent-best accepting branch and its best response line are selected independently per complete current/previous search window, exactly as the prior gap study. No label, rating or future played continuation selects features.
+
+Extraction used1,481 saved branches for1,320 any-window-eligible cases. All2,640 acceptance selections/depths match previous evidence; all48 pilot traces agree. Full PGN history retained for actual automatic draws. Among selected windows,134 lines truncate before12 and10 before6: unknown horizons remain missing.474 actual terminal windows extend the terminal board;26 mate scores do not reach a terminal inside12 but keep the mate-outcome signal. No unsupported capture branch is invented.
+
+Pooled outer-held-out results (wrong percentage = wrong / all awards):
+custom_fixed: 436/917 found (47.55% recall); 6 wrong; 1.36% of awards wrong.
+custom_retuned: 452/917 found (49.29% recall); 6 wrong; 1.31% of awards wrong.
+custom_trajectory: 408/917 found (44.49% recall); 6 wrong; 1.45% of awards wrong.
+standard_rf: 473/917 found (51.58% recall); 7 wrong; 1.46% of awards wrong.
+standard_rf_trajectory: 472/917 found (51.47% recall); 8 wrong; 1.67% of awards wrong.
+selected_procedure: 476/917 found (51.91% recall); 9 wrong; 1.86% of awards wrong.
+
+Paired effect: custom bundle gains13 true /loses57 true, swaps1 wrong for1 removed: net -44TP /0FP. Standard forest gains26 true /loses27, adds4 wrong /removes3: net -1TP /+1FP. The standard forest recall-difference descriptive95% group-bootstrap interval is -1.75 to+1.41 percentage points; FP difference interval -4 to+6. Custom recall difference interval -6.57 to-3.06pp. These intervals condition on existing fitted OOF predictions and do not include refitting or repeated-research uncertainty.
+
+Hard eligible sacrifice subgroup (ec_sacrifice=false):191 positives /286 negatives. Custom7->8TP; standard forest8->11TP; all0FP. All three extra standard-forest finds come from older cohorts, outside the48 pilot groups. In the fresh hard subgroup54 positives /150 negatives (149 hard ordinary plus1 easy error), standard forest stays4TP/0FP; custom3->4TP/0FP. DIAGNOSTICS.json lists the changed cases. This is weak, localized development evidence, not a new validated subgroup rule.
+
+Outside all48 pilot groups,3,320cases /859positives: custom438->394TP at6FP; standard forest457->457TP with7->8FP. Removing explored cases from reported outer-test rows does not remove their possible training contribution or adaptive-research bias.
+
+Historical comparison only: the prior gap-only standard forest found477 with7 wrong under these same folds. No new gap fit or outcome-dependent combined-feature sweep was run.
+
+The predefined training-only final calibration selected the augmented standard forest at threshold0.8190082881057112, with496TP/7FP calibration predictions. Those are selection data, not the outer-held-out result. The nested selection procedure found476TP/9FP on held-out folds, and therefore also failed the requested wrong-award criterion. The experimental full fit is archived as selected-model.joblib; its selection is not evidence for deployment. No already-seen654 benchmark replay, deployment, or post-hoc cutoff adjustment was performed.
+
+Interpretation: this particular bundle and unchanged learner setup failed the overall objective. It does not prove that material trajectory contains no useful information, but the newest hard cases did not improve for the standard learner. The attractive rook-pair example did not generalize into a reliable aggregate gain. Avoid broadening to more features or deploying a hybrid based on this subgroup after seeing outcomes; that would require a separately specified experiment and fresh validation.
+
+Validation:11 focused artifact/count checks passed, including source/protocol/model hashes, feature horizon/missingness consistency, group/game/alias/position isolation, exact baseline parity, inner operating-point constraints, confusion counts, no ineligible awards, and final-selection consistency. 101 fits in68.2s; peakRSS 282.5MiB.
+Extraction metadata note: additional consistency checks completed after fitting was frozen. Exact pre-fit extraction receipt bytes were recovered and matched to their pre-fit hash in EXTRACTION-AT-FREEZE.json. Only checks_sha256 changed in the later EXTRACTION.json; features, coverage, diagnostics and protocol were identical. See EXTRACTION-VERIFICATION-ADDENDUM.json.

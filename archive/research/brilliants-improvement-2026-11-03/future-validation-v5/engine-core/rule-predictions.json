@@ -1,0 +1,6217 @@
+{
+  "scope": "Frozen fresh-test predictions; no classifier tuning, no partial metrics.",
+  "core_sha256": "40ba351e58422b043608cfc55e2479be23b6400b09953826719ac559ea72c6c9",
+  "source_freeze": {
+    "frozen_at_utc": "2026-11-03T09:44:24.942515+00:00",
+    "source_hashes": {
+      "../root/frozen-v4/noSweatCore.ts": "3fa48e3c50e7361a244c0ebb58543315b6a5f208c0c0e1979ae18fca40366a40",
+      "../root/frozen-v4/noSweatClassify.ts": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301",
+      "../root/frozen-v4/core.ts": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a",
+      "../astra/v5/variants/variantA.ts": "bdc7b52881c7cfe26a3ad6d6483805a4e58a2e6ca1181e5b0e5dd2c3f382ce3b",
+      "../astra/v5/variants/offerProofs.ts": "d1d887daa2163e9ec79145414a4bfa8669af66ccabc62a98dcec8bb012a0ecaa"
+    },
+    "no_alternative_rule_tuning": true
+  },
+  "rows": [
+    {
+      "key": "1006812690:46",
+      "game_id": "1006812690",
+      "ply": 46,
+      "san": "Bg5",
+      "v4": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "1006812690:48",
+      "game_id": "1006812690",
+      "ply": 48,
+      "san": "Nxf4",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167232570202:23",
+      "game_id": "167232570202",
+      "ply": 23,
+      "san": "Bxh6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 95.70532847377837,
+        "cpLoss": 15,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 95.70532847377837,
+        "cpLoss": 15,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 95.70532847377837,
+        "cpLoss": 15,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167318775570:24",
+      "game_id": "167318775570",
+      "ply": 24,
+      "san": "Bxh3",
+      "v4": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 99.53090959148423,
+        "cpLoss": 4,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 99.53090959148423,
+        "cpLoss": 4,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 99.53090959148423,
+        "cpLoss": 4,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167318775570:32",
+      "game_id": "167318775570",
+      "ply": 32,
+      "san": "Bg5",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167735813618:71",
+      "game_id": "167735813618",
+      "ply": 71,
+      "san": "Bxe3",
+      "v4": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167735813618:89",
+      "game_id": "167735813618",
+      "ply": 89,
+      "san": "Kf1",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167741829524:31",
+      "game_id": "167741829524",
+      "ply": 31,
+      "san": "Bf4",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167741829524:33",
+      "game_id": "167741829524",
+      "ply": 33,
+      "san": "Bxh7+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.63367343363315,
+        "cpLoss": 6,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.63367343363315,
+        "cpLoss": 6,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 98.63367343363315,
+        "cpLoss": 6,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167741909692:53",
+      "game_id": "167741909692",
+      "ply": 53,
+      "san": "Nf3",
+      "v4": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 25.36914812806154,
+        "cpLoss": 585,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 25.36914812806154,
+        "cpLoss": 585,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "??",
+      "ec_confirmed": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 25.36914812806154,
+        "cpLoss": 585,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167741909692:59",
+      "game_id": "167741909692",
+      "ply": 59,
+      "san": "Qh6+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167742086130:58",
+      "game_id": "167742086130",
+      "ply": 58,
+      "san": "Qxf4",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167742086130:64",
+      "game_id": "167742086130",
+      "ply": 64,
+      "san": "Bd6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 2,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 2,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 2,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167744883950:69",
+      "game_id": "167744883950",
+      "ply": 69,
+      "san": "Bf6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167744883950:83",
+      "game_id": "167744883950",
+      "ply": 83,
+      "san": "Qf8+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167746069278:24",
+      "game_id": "167746069278",
+      "ply": 24,
+      "san": "Bxh2+",
+      "v4": {
+        "symbol": "",
+        "provisional": "!!",
+        "withheld": true,
+        "accuracy": 81.46707159291847,
+        "cpLoss": 53,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "!!",
+        "withheld": true,
+        "accuracy": 81.46707159291847,
+        "cpLoss": 53,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 81.46707159291847,
+        "cpLoss": 53,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167746069278:40",
+      "game_id": "167746069278",
+      "ply": 40,
+      "san": "Ng4",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167746953578:81",
+      "game_id": "167746953578",
+      "ply": 81,
+      "san": "Be6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "167746953578:85",
+      "game_id": "167746953578",
+      "ply": 85,
+      "san": "Bh4",
+      "v4": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 74.62960110974092,
+        "cpLoss": 167,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 74.62960110974092,
+        "cpLoss": 167,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?!",
+      "ec_confirmed": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 74.62960110974092,
+        "cpLoss": 167,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "168156242980:23",
+      "game_id": "168156242980",
+      "ply": 23,
+      "san": "d5",
+      "v4": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 49.16872092044147,
+        "cpLoss": 176,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 49.16872092044147,
+        "cpLoss": 176,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?",
+      "ec_confirmed": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 49.16872092044147,
+        "cpLoss": 176,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "168788226486:52",
+      "game_id": "168788226486",
+      "ply": 52,
+      "san": "Qf7",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "168788226486:58",
+      "game_id": "168788226486",
+      "ply": 58,
+      "san": "N2e4+",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "168957905206:41",
+      "game_id": "168957905206",
+      "ply": 41,
+      "san": "Rac1",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 93.1489165214217,
+        "cpLoss": 22,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 93.1489165214217,
+        "cpLoss": 22,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 93.1489165214217,
+        "cpLoss": 22,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "168957905206:57",
+      "game_id": "168957905206",
+      "ply": 57,
+      "san": "Bxg7",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "169921610506:21",
+      "game_id": "169921610506",
+      "ply": 21,
+      "san": "Bxh7+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "169921610506:31",
+      "game_id": "169921610506",
+      "ply": 31,
+      "san": "Be7",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 92.95096284973614,
+        "cpLoss": 21,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 92.95096284973614,
+        "cpLoss": 21,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 92.95096284973614,
+        "cpLoss": 21,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "170815444900:33",
+      "game_id": "170815444900",
+      "ply": 33,
+      "san": "h5",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 93.43637555463049,
+        "cpLoss": 19,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 93.43637555463049,
+        "cpLoss": 19,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 93.43637555463049,
+        "cpLoss": 19,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171114861008:34",
+      "game_id": "171114861008",
+      "ply": 34,
+      "san": "Nxe5",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 97.09725776511269,
+        "cpLoss": 10,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 97.09725776511269,
+        "cpLoss": 10,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 97.09725776511269,
+        "cpLoss": 10,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171114861008:40",
+      "game_id": "171114861008",
+      "ply": 40,
+      "san": "Bg6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 85.59812178197836,
+        "cpLoss": 43,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 85.59812178197836,
+        "cpLoss": 43,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 85.59812178197836,
+        "cpLoss": 43,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171121352102:24",
+      "game_id": "171121352102",
+      "ply": 24,
+      "san": "h4",
+      "v4": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 54.30206257819345,
+        "cpLoss": 163,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 54.30206257819345,
+        "cpLoss": 163,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?",
+      "ec_confirmed": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 54.30206257819345,
+        "cpLoss": 163,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171121352102:52",
+      "game_id": "171121352102",
+      "ply": 52,
+      "san": "Rxb2",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171486761466:21",
+      "game_id": "171486761466",
+      "ply": 21,
+      "san": "Rxf5",
+      "v4": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 33.9806143977187,
+        "cpLoss": 269,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 33.9806143977187,
+        "cpLoss": 269,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "??",
+      "ec_confirmed": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 33.9806143977187,
+        "cpLoss": 269,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171486761466:61",
+      "game_id": "171486761466",
+      "ply": 61,
+      "san": "Qf3",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 90.6272320530925,
+        "cpLoss": 62,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 90.6272320530925,
+        "cpLoss": 62,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 90.6272320530925,
+        "cpLoss": 62,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171488501692:34",
+      "game_id": "171488501692",
+      "ply": 34,
+      "san": "Nxc4",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171488501692:36",
+      "game_id": "171488501692",
+      "ply": 36,
+      "san": "hxg6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 99.8530215778511,
+        "cpLoss": 3,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 99.8530215778511,
+        "cpLoss": 3,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 99.8530215778511,
+        "cpLoss": 3,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171610444110:21",
+      "game_id": "171610444110",
+      "ply": 21,
+      "san": "Nb5",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171610444110:37",
+      "game_id": "171610444110",
+      "ply": 37,
+      "san": "Rxe6+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171611649712:31",
+      "game_id": "171611649712",
+      "ply": 31,
+      "san": "Nxf7",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171611649712:37",
+      "game_id": "171611649712",
+      "ply": 37,
+      "san": "Nd6+",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171635413720:43",
+      "game_id": "171635413720",
+      "ply": 43,
+      "san": "Nh6+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171635413720:59",
+      "game_id": "171635413720",
+      "ply": 59,
+      "san": "Nxg6+",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171727211094:59",
+      "game_id": "171727211094",
+      "ply": 59,
+      "san": "Nxg6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171727211094:69",
+      "game_id": "171727211094",
+      "ply": 69,
+      "san": "Rxe6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171727306254:54",
+      "game_id": "171727306254",
+      "ply": 54,
+      "san": "Nxf2",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171727306254:58",
+      "game_id": "171727306254",
+      "ply": 58,
+      "san": "Nxe3",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171891388774:7",
+      "game_id": "171891388774",
+      "ply": 7,
+      "san": "Bc4",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "171891388774:9",
+      "game_id": "171891388774",
+      "ply": 9,
+      "san": "e5",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172153199036:40",
+      "game_id": "172153199036",
+      "ply": 40,
+      "san": "Rxf3",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172153199036:54",
+      "game_id": "172153199036",
+      "ply": 54,
+      "san": "Nb4+",
+      "v4": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 29.046135604462194,
+        "cpLoss": 326,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 29.046135604462194,
+        "cpLoss": 326,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "??",
+      "ec_confirmed": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 29.046135604462194,
+        "cpLoss": 326,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172253295412:17",
+      "game_id": "172253295412",
+      "ply": 17,
+      "san": "Nxe6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 2,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 2,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 2,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172253295412:29",
+      "game_id": "172253295412",
+      "ply": 29,
+      "san": "Qe6+",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172260433072:40",
+      "game_id": "172260433072",
+      "ply": 40,
+      "san": "Nxe3",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172260433072:58",
+      "game_id": "172260433072",
+      "ply": 58,
+      "san": "Bd5",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172376177350:43",
+      "game_id": "172376177350",
+      "ply": 43,
+      "san": "Nd3",
+      "v4": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 77.97502537683829,
+        "cpLoss": 66,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 77.97502537683829,
+        "cpLoss": 66,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?!",
+      "ec_confirmed": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 77.97502537683829,
+        "cpLoss": 66,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172376177350:53",
+      "game_id": "172376177350",
+      "ply": 53,
+      "san": "Ne4",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 85.63646700895904,
+        "cpLoss": 78,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 85.63646700895904,
+        "cpLoss": 78,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 85.63646700895904,
+        "cpLoss": 78,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172450756938:60",
+      "game_id": "172450756938",
+      "ply": 60,
+      "san": "Nxg4",
+      "v4": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 64.8843135088284,
+        "cpLoss": 115,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 64.8843135088284,
+        "cpLoss": 115,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?!",
+      "ec_confirmed": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 64.8843135088284,
+        "cpLoss": 115,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172450756938:70",
+      "game_id": "172450756938",
+      "ply": 70,
+      "san": "Qh1+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172455502166:50",
+      "game_id": "172455502166",
+      "ply": 50,
+      "san": "Ng4",
+      "v4": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 50.38910877321544,
+        "cpLoss": 174,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 50.38910877321544,
+        "cpLoss": 174,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?",
+      "ec_confirmed": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 50.38910877321544,
+        "cpLoss": 174,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172455502166:64",
+      "game_id": "172455502166",
+      "ply": 64,
+      "san": "Qe1",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 87.37060687419618,
+        "cpLoss": 41,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 87.37060687419618,
+        "cpLoss": 41,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 87.37060687419618,
+        "cpLoss": 41,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172657252323:56",
+      "game_id": "172657252323",
+      "ply": 56,
+      "san": "Qd6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172657252323:58",
+      "game_id": "172657252323",
+      "ply": 58,
+      "san": "Bxg2+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172658453657:24",
+      "game_id": "172658453657",
+      "ply": 24,
+      "san": "Nb4",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 96.01768231892957,
+        "cpLoss": 13,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 96.01768231892957,
+        "cpLoss": 13,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 96.01768231892957,
+        "cpLoss": 13,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172658453657:44",
+      "game_id": "172658453657",
+      "ply": 44,
+      "san": "Qxa2",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 92.97999033500325,
+        "cpLoss": 25,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 92.97999033500325,
+        "cpLoss": 25,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 92.97999033500325,
+        "cpLoss": 25,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172662051055:71",
+      "game_id": "172662051055",
+      "ply": 71,
+      "san": "Bxb7+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172662051055:73",
+      "game_id": "172662051055",
+      "ply": 73,
+      "san": "Rxd7+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172827462484:105",
+      "game_id": "172827462484",
+      "ply": 105,
+      "san": "Qf8+",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "172827462484:93",
+      "game_id": "172827462484",
+      "ply": 93,
+      "san": "Nxf6+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173050435284:37",
+      "game_id": "173050435284",
+      "ply": 37,
+      "san": "Bxh6",
+      "v4": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 47.16410772314501,
+        "cpLoss": 204,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 47.16410772314501,
+        "cpLoss": 204,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?",
+      "ec_confirmed": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 47.16410772314501,
+        "cpLoss": 204,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173050435284:49",
+      "game_id": "173050435284",
+      "ply": 49,
+      "san": "Qg2",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173235710516:21",
+      "game_id": "173235710516",
+      "ply": 21,
+      "san": "Qxd5",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173235710516:27",
+      "game_id": "173235710516",
+      "ply": 27,
+      "san": "Nb6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 95.10212657567347,
+        "cpLoss": 22,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 95.10212657567347,
+        "cpLoss": 22,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 95.10212657567347,
+        "cpLoss": 22,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173422249992:41",
+      "game_id": "173422249992",
+      "ply": 41,
+      "san": "Nxg6",
+      "v4": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173422249992:55",
+      "game_id": "173422249992",
+      "ply": 55,
+      "san": "Rg1",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.31663460446579,
+        "cpLoss": 12,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.31663460446579,
+        "cpLoss": 12,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.31663460446579,
+        "cpLoss": 12,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173434013720:56",
+      "game_id": "173434013720",
+      "ply": 56,
+      "san": "Qxe4",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173434013720:62",
+      "game_id": "173434013720",
+      "ply": 62,
+      "san": "Ra1",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.33342607003047,
+        "cpLoss": 90,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.33342607003047,
+        "cpLoss": 90,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.33342607003047,
+        "cpLoss": 90,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173476659474:20",
+      "game_id": "173476659474",
+      "ply": 20,
+      "san": "Nxd4",
+      "v4": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 99.85525998806554,
+        "cpLoss": 3,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 99.85525998806554,
+        "cpLoss": 3,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 99.85525998806554,
+        "cpLoss": 3,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173476659474:26",
+      "game_id": "173476659474",
+      "ply": 26,
+      "san": "Bc6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173487325950:50",
+      "game_id": "173487325950",
+      "ply": 50,
+      "san": "Qd2+",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173487325950:52",
+      "game_id": "173487325950",
+      "ply": 52,
+      "san": "Bxe3",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 99.50744124144103,
+        "cpLoss": 12,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 99.50744124144103,
+        "cpLoss": 12,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 99.50744124144103,
+        "cpLoss": 12,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173516572419:38",
+      "game_id": "173516572419",
+      "ply": 38,
+      "san": "Nxd4",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173516572419:48",
+      "game_id": "173516572419",
+      "ply": 48,
+      "san": "Bd5",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 91.48530361546268,
+        "cpLoss": 55,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 91.48530361546268,
+        "cpLoss": 55,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 91.48530361546268,
+        "cpLoss": 55,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173517772799:30",
+      "game_id": "173517772799",
+      "ply": 30,
+      "san": "hxg5",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173517772799:80",
+      "game_id": "173517772799",
+      "ply": 80,
+      "san": "Nxg3",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 97.17736234101567,
+        "cpLoss": 16,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 97.17736234101567,
+        "cpLoss": 16,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 97.17736234101567,
+        "cpLoss": 16,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173659942236:81",
+      "game_id": "173659942236",
+      "ply": 81,
+      "san": "Qxg8+",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173659942236:87",
+      "game_id": "173659942236",
+      "ply": 87,
+      "san": "Bd4",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173664541242:34",
+      "game_id": "173664541242",
+      "ply": 34,
+      "san": "Rac8",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 87.24735000113245,
+        "cpLoss": 36,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 87.24735000113245,
+        "cpLoss": 36,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 87.24735000113245,
+        "cpLoss": 36,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173664541242:44",
+      "game_id": "173664541242",
+      "ply": 44,
+      "san": "Qxc5",
+      "v4": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173716013666:43",
+      "game_id": "173716013666",
+      "ply": 43,
+      "san": "Nd7+",
+      "v4": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 80.61246436180728,
+        "cpLoss": 122,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 80.61246436180728,
+        "cpLoss": 122,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?!",
+      "ec_confirmed": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 80.61246436180728,
+        "cpLoss": 122,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173716013666:51",
+      "game_id": "173716013666",
+      "ply": 51,
+      "san": "Nf6+",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173719918770:71",
+      "game_id": "173719918770",
+      "ply": 71,
+      "san": "fxg6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.33978912556482,
+        "cpLoss": 74,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.33978912556482,
+        "cpLoss": 74,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.33978912556482,
+        "cpLoss": 74,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173820532932:19",
+      "game_id": "173820532932",
+      "ply": 19,
+      "san": "Ngf3",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 91.60158917541987,
+        "cpLoss": 24,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 91.60158917541987,
+        "cpLoss": 24,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 91.60158917541987,
+        "cpLoss": 24,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173820532932:35",
+      "game_id": "173820532932",
+      "ply": 35,
+      "san": "Ng5",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 94.45039475360802,
+        "cpLoss": 26,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 94.45039475360802,
+        "cpLoss": 26,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 94.45039475360802,
+        "cpLoss": 26,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173948558416:60",
+      "game_id": "173948558416",
+      "ply": 60,
+      "san": "Ne4",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 90.87665574064548,
+        "cpLoss": 43,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 90.87665574064548,
+        "cpLoss": 43,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 90.87665574064548,
+        "cpLoss": 43,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "173948558416:62",
+      "game_id": "173948558416",
+      "ply": 62,
+      "san": "Qxf2+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 84.35948196305495,
+        "cpLoss": 81,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 84.35948196305495,
+        "cpLoss": 81,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 84.35948196305495,
+        "cpLoss": 81,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "174394647488:42",
+      "game_id": "174394647488",
+      "ply": 42,
+      "san": "Kb8",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "174394647488:46",
+      "game_id": "174394647488",
+      "ply": 46,
+      "san": "Bh6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "174427252006:64",
+      "game_id": "174427252006",
+      "ply": 64,
+      "san": "Rd1",
+      "v4": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 99.85109948657505,
+        "cpLoss": 8,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 99.85109948657505,
+        "cpLoss": 8,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 99.85109948657505,
+        "cpLoss": 8,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "174427252006:66",
+      "game_id": "174427252006",
+      "ply": 66,
+      "san": "bxc3",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 5,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 5,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 5,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "174471378706:147",
+      "game_id": "174471378706",
+      "ply": 147,
+      "san": "Rg8",
+      "v4": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 67.27961327885924,
+        "cpLoss": 447,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 67.27961327885924,
+        "cpLoss": 447,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?!",
+      "ec_confirmed": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 67.27961327885924,
+        "cpLoss": 447,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "174471378706:45",
+      "game_id": "174471378706",
+      "ply": 45,
+      "san": "Bxd5",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "174487934530:27",
+      "game_id": "174487934530",
+      "ply": 27,
+      "san": "Nxg6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 97.1471305974285,
+        "cpLoss": 10,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 97.1471305974285,
+        "cpLoss": 10,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 97.1471305974285,
+        "cpLoss": 10,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "174487934530:87",
+      "game_id": "174487934530",
+      "ply": 87,
+      "san": "Rxe2+",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 3,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 3,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 3,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "174521237632:40",
+      "game_id": "174521237632",
+      "ply": 40,
+      "san": "Rxd5",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "174521237632:58",
+      "game_id": "174521237632",
+      "ply": 58,
+      "san": "Ne6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 98.68076713954707,
+        "cpLoss": 12,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 98.68076713954707,
+        "cpLoss": 12,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 98.68076713954707,
+        "cpLoss": 12,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "178354672033:41",
+      "game_id": "178354672033",
+      "ply": 41,
+      "san": "Nh6+",
+      "v4": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 80.75126538759021,
+        "cpLoss": 73,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 80.75126538759021,
+        "cpLoss": 73,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?!",
+      "ec_confirmed": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 80.75126538759021,
+        "cpLoss": 73,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "178354672033:43",
+      "game_id": "178354672033",
+      "ply": 43,
+      "san": "Nxf7",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "178355872183:55",
+      "game_id": "178355872183",
+      "ply": 55,
+      "san": "Bxg6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "178355872183:65",
+      "game_id": "178355872183",
+      "ply": 65,
+      "san": "Rxh7",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "178708671947:26",
+      "game_id": "178708671947",
+      "ply": 26,
+      "san": "d5",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 96.20211691742539,
+        "cpLoss": 12,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 96.20211691742539,
+        "cpLoss": 12,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 96.20211691742539,
+        "cpLoss": 12,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "178708671947:50",
+      "game_id": "178708671947",
+      "ply": 50,
+      "san": "Qb2",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 86.81724279974088,
+        "cpLoss": 40,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 86.81724279974088,
+        "cpLoss": 40,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 86.81724279974088,
+        "cpLoss": 40,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "180018600334:43",
+      "game_id": "180018600334",
+      "ply": 43,
+      "san": "Nc4",
+      "v4": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 66.3411672210971,
+        "cpLoss": 105,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 66.3411672210971,
+        "cpLoss": 105,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?!",
+      "ec_confirmed": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 66.3411672210971,
+        "cpLoss": 105,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "180018600334:53",
+      "game_id": "180018600334",
+      "ply": 53,
+      "san": "Bd2",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.36232110877638,
+        "cpLoss": 4,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.36232110877638,
+        "cpLoss": 4,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.36232110877638,
+        "cpLoss": 4,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "180026338306:25",
+      "game_id": "180026338306",
+      "ply": 25,
+      "san": "Nd5",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 90.66592703779314,
+        "cpLoss": 28,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 90.66592703779314,
+        "cpLoss": 28,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 90.66592703779314,
+        "cpLoss": 28,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "180026338306:45",
+      "game_id": "180026338306",
+      "ply": 45,
+      "san": "Ne5",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "182334502199:57",
+      "game_id": "182334502199",
+      "ply": 57,
+      "san": "Qxd1",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "182335701261:21",
+      "game_id": "182335701261",
+      "ply": 21,
+      "san": "Bxe6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 96.65429304965268,
+        "cpLoss": 14,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 96.65429304965268,
+        "cpLoss": 14,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 96.65429304965268,
+        "cpLoss": 14,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184182682508:53",
+      "game_id": "184182682508",
+      "ply": 53,
+      "san": "Rxc3",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184182682508:55",
+      "game_id": "184182682508",
+      "ply": 55,
+      "san": "Ne5",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184239087562:72",
+      "game_id": "184239087562",
+      "ply": 72,
+      "san": "Ne4",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184273349468:30",
+      "game_id": "184273349468",
+      "ply": 30,
+      "san": "Bxf6",
+      "v4": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184274391024:32",
+      "game_id": "184274391024",
+      "ply": 32,
+      "san": "Qh6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184274391024:34",
+      "game_id": "184274391024",
+      "ply": 34,
+      "san": "Bxh3",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 89.37722701970742,
+        "cpLoss": 30,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 89.37722701970742,
+        "cpLoss": 30,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 89.37722701970742,
+        "cpLoss": 30,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184278270138:48",
+      "game_id": "184278270138",
+      "ply": 48,
+      "san": "Ne3",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 95.4070211450669,
+        "cpLoss": 17,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 95.4070211450669,
+        "cpLoss": 17,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 95.4070211450669,
+        "cpLoss": 17,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184377073250:38",
+      "game_id": "184377073250",
+      "ply": 38,
+      "san": "Rc4",
+      "v4": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 86.46130252369514,
+        "cpLoss": 39,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 86.46130252369514,
+        "cpLoss": 39,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 86.46130252369514,
+        "cpLoss": 39,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184377073250:48",
+      "game_id": "184377073250",
+      "ply": 48,
+      "san": "Ng3+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184380420058:51",
+      "game_id": "184380420058",
+      "ply": 51,
+      "san": "Qe4",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 90.80961365667339,
+        "cpLoss": 26,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 90.80961365667339,
+        "cpLoss": 26,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 90.80961365667339,
+        "cpLoss": 26,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184380420058:57",
+      "game_id": "184380420058",
+      "ply": 57,
+      "san": "Rxg7+",
+      "v4": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184429023318:28",
+      "game_id": "184429023318",
+      "ply": 28,
+      "san": "Nxf2",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 92.28717872972062,
+        "cpLoss": 30,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 92.28717872972062,
+        "cpLoss": 30,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 92.28717872972062,
+        "cpLoss": 30,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184429023318:36",
+      "game_id": "184429023318",
+      "ply": 36,
+      "san": "Nef2",
+      "v4": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 40.471647126532844,
+        "cpLoss": 250,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 40.471647126532844,
+        "cpLoss": 250,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "??",
+      "ec_confirmed": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 40.471647126532844,
+        "cpLoss": 250,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184472674494:30",
+      "game_id": "184472674494",
+      "ply": 30,
+      "san": "Ng6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 91.83322155021186,
+        "cpLoss": 24,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 91.83322155021186,
+        "cpLoss": 24,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 91.83322155021186,
+        "cpLoss": 24,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184472674494:32",
+      "game_id": "184472674494",
+      "ply": 32,
+      "san": "Nf4",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184472811812:49",
+      "game_id": "184472811812",
+      "ply": 49,
+      "san": "Rxh6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184472811812:53",
+      "game_id": "184472811812",
+      "ply": 53,
+      "san": "Rxf8+",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184480624878:24",
+      "game_id": "184480624878",
+      "ply": 24,
+      "san": "Qd7",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 97.4999229935764,
+        "cpLoss": 9,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 97.4999229935764,
+        "cpLoss": 9,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 97.4999229935764,
+        "cpLoss": 9,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184480624878:26",
+      "game_id": "184480624878",
+      "ply": 26,
+      "san": "Nxg3+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184481651976:26",
+      "game_id": "184481651976",
+      "ply": 26,
+      "san": "Be7",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 98.55331873764872,
+        "cpLoss": 6,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 98.55331873764872,
+        "cpLoss": 6,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 98.55331873764872,
+        "cpLoss": 6,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184481651976:34",
+      "game_id": "184481651976",
+      "ply": 34,
+      "san": "Nxd4",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.37756720443097,
+        "cpLoss": 4,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.37756720443097,
+        "cpLoss": 4,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.37756720443097,
+        "cpLoss": 4,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184560137788:13",
+      "game_id": "184560137788",
+      "ply": 13,
+      "san": "Bxf7+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 99.58996835870086,
+        "cpLoss": 4,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 99.58996835870086,
+        "cpLoss": 4,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 99.58996835870086,
+        "cpLoss": 4,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184560137788:27",
+      "game_id": "184560137788",
+      "ply": 27,
+      "san": "Ne2",
+      "v4": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 68.26763473089224,
+        "cpLoss": 118,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 68.26763473089224,
+        "cpLoss": 118,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?!",
+      "ec_confirmed": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 68.26763473089224,
+        "cpLoss": 118,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184615644672:102",
+      "game_id": "184615644672",
+      "ply": 102,
+      "san": "Bxa5",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.15774411670769,
+        "cpLoss": 7,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.15774411670769,
+        "cpLoss": 7,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.15774411670769,
+        "cpLoss": 7,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184615644672:94",
+      "game_id": "184615644672",
+      "ply": 94,
+      "san": "Nc4",
+      "v4": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 51.314108483468054,
+        "cpLoss": 172,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 51.314108483468054,
+        "cpLoss": 172,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?",
+      "ec_confirmed": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 51.314108483468054,
+        "cpLoss": 172,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184618094830:105",
+      "game_id": "184618094830",
+      "ply": 105,
+      "san": "d6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184618094830:127",
+      "game_id": "184618094830",
+      "ply": 127,
+      "san": "Ke1",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.66027221268452,
+        "cpLoss": 28,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.66027221268452,
+        "cpLoss": 28,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.66027221268452,
+        "cpLoss": 28,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184710314858:40",
+      "game_id": "184710314858",
+      "ply": 40,
+      "san": "Rxc6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 88.46645071915916,
+        "cpLoss": 48,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 88.46645071915916,
+        "cpLoss": 48,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 88.46645071915916,
+        "cpLoss": 48,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184710314858:52",
+      "game_id": "184710314858",
+      "ply": 52,
+      "san": "Rc8",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.48106273081177,
+        "cpLoss": 10,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.48106273081177,
+        "cpLoss": 10,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 98.48106273081177,
+        "cpLoss": 10,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184731606382:47",
+      "game_id": "184731606382",
+      "ply": 47,
+      "san": "Bxh6",
+      "v4": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 79.31877775679664,
+        "cpLoss": 61,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 79.31877775679664,
+        "cpLoss": 61,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?!",
+      "ec_confirmed": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 79.31877775679664,
+        "cpLoss": 61,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184731606382:63",
+      "game_id": "184731606382",
+      "ply": 63,
+      "san": "Rd5",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184737589644:37",
+      "game_id": "184737589644",
+      "ply": 37,
+      "san": "Rxf7",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 88.74837927258899,
+        "cpLoss": 35,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 88.74837927258899,
+        "cpLoss": 35,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 88.74837927258899,
+        "cpLoss": 35,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184737589644:43",
+      "game_id": "184737589644",
+      "ply": 43,
+      "san": "Rxb6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 95.52758984159225,
+        "cpLoss": 16,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 95.52758984159225,
+        "cpLoss": 16,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 95.52758984159225,
+        "cpLoss": 16,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184756110863:20",
+      "game_id": "184756110863",
+      "ply": 20,
+      "san": "Nd4",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184756110863:22",
+      "game_id": "184756110863",
+      "ply": 22,
+      "san": "Bg4",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 85.9906234476911,
+        "cpLoss": 43,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 85.9906234476911,
+        "cpLoss": 43,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 85.9906234476911,
+        "cpLoss": 43,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184757910813:44",
+      "game_id": "184757910813",
+      "ply": 44,
+      "san": "Qb5",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 84.70481821580165,
+        "cpLoss": 44,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 84.70481821580165,
+        "cpLoss": 44,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 84.70481821580165,
+        "cpLoss": 44,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184757910813:46",
+      "game_id": "184757910813",
+      "ply": 46,
+      "san": "Qe2",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 96.26187854336175,
+        "cpLoss": 12,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 96.26187854336175,
+        "cpLoss": 12,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 96.26187854336175,
+        "cpLoss": 12,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184775179950:62",
+      "game_id": "184775179950",
+      "ply": 62,
+      "san": "Rxe8",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 94.99164395831718,
+        "cpLoss": 15,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 94.99164395831718,
+        "cpLoss": 15,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 94.99164395831718,
+        "cpLoss": 15,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184775179950:64",
+      "game_id": "184775179950",
+      "ply": 64,
+      "san": "Re1+",
+      "v4": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184980636738:88",
+      "game_id": "184980636738",
+      "ply": 88,
+      "san": "Nb6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 87.63117298065818,
+        "cpLoss": 36,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 87.63117298065818,
+        "cpLoss": 36,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 87.63117298065818,
+        "cpLoss": 36,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "184980636738:94",
+      "game_id": "184980636738",
+      "ply": 94,
+      "san": "Nxc3",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185010511207:44",
+      "game_id": "185010511207",
+      "ply": 44,
+      "san": "Qxe2",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 97.3528185758888,
+        "cpLoss": 9,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 97.3528185758888,
+        "cpLoss": 9,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 97.3528185758888,
+        "cpLoss": 9,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185010511207:50",
+      "game_id": "185010511207",
+      "ply": 50,
+      "san": "e3",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185024676458:56",
+      "game_id": "185024676458",
+      "ply": 56,
+      "san": "Bxc3",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 87.26611277335495,
+        "cpLoss": 108,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 87.26611277335495,
+        "cpLoss": 108,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 87.26611277335495,
+        "cpLoss": 108,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185024676458:78",
+      "game_id": "185024676458",
+      "ply": 78,
+      "san": "Qa2+",
+      "v4": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 0.07800258159905304,
+        "cpLoss": 1608,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 0.07800258159905304,
+        "cpLoss": 1608,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "??",
+      "ec_confirmed": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 0.07800258159905304,
+        "cpLoss": 1608,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185031691156:23",
+      "game_id": "185031691156",
+      "ply": 23,
+      "san": "Na3",
+      "v4": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 65.12935541333316,
+        "cpLoss": 108,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 65.12935541333316,
+        "cpLoss": 108,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?!",
+      "ec_confirmed": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 65.12935541333316,
+        "cpLoss": 108,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185031691156:37",
+      "game_id": "185031691156",
+      "ply": 37,
+      "san": "Nxe6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185033501800:115",
+      "game_id": "185033501800",
+      "ply": 115,
+      "san": "Nxe4",
+      "v4": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 83.08808537421142,
+        "cpLoss": 139,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 83.08808537421142,
+        "cpLoss": 139,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 83.08808537421142,
+        "cpLoss": 139,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185033501800:57",
+      "game_id": "185033501800",
+      "ply": 57,
+      "san": "Nb4",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.05120731345986,
+        "cpLoss": 5,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.05120731345986,
+        "cpLoss": 5,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.05120731345986,
+        "cpLoss": 5,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185227199376:63",
+      "game_id": "185227199376",
+      "ply": 63,
+      "san": "Qg2",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 86.91380170374063,
+        "cpLoss": 42,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 86.91380170374063,
+        "cpLoss": 42,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 86.91380170374063,
+        "cpLoss": 42,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185227199376:65",
+      "game_id": "185227199376",
+      "ply": 65,
+      "san": "Rxf3",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 95.83156690983728,
+        "cpLoss": 13,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 95.83156690983728,
+        "cpLoss": 13,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 95.83156690983728,
+        "cpLoss": 13,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185277391724:18",
+      "game_id": "185277391724",
+      "ply": 18,
+      "san": "Bxh3",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!!",
+      "ec_confirmed": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185277391724:28",
+      "game_id": "185277391724",
+      "ply": 28,
+      "san": "Ng4",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185332292302:106",
+      "game_id": "185332292302",
+      "ply": 106,
+      "san": "Nxa2",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.95326594290125,
+        "cpLoss": 5,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.95326594290125,
+        "cpLoss": 5,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 98.95326594290125,
+        "cpLoss": 5,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185332292302:118",
+      "game_id": "185332292302",
+      "ply": 118,
+      "san": "Ke2",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185363189957:24",
+      "game_id": "185363189957",
+      "ply": 24,
+      "san": "Kxg7",
+      "v4": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 62.549051162471756,
+        "cpLoss": 122,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 62.549051162471756,
+        "cpLoss": 122,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?",
+      "ec_confirmed": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 62.549051162471756,
+        "cpLoss": 122,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185363189957:34",
+      "game_id": "185363189957",
+      "ply": 34,
+      "san": "Nxb4",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185388991304:17",
+      "game_id": "185388991304",
+      "ply": 17,
+      "san": "Ne5",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185388991304:21",
+      "game_id": "185388991304",
+      "ply": 21,
+      "san": "Qh5",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.32858527383907,
+        "cpLoss": 7,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.32858527383907,
+        "cpLoss": 7,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 98.32858527383907,
+        "cpLoss": 7,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185640611734:65",
+      "game_id": "185640611734",
+      "ply": 65,
+      "san": "Qd4",
+      "v4": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 49.741411762068495,
+        "cpLoss": 178,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 49.741411762068495,
+        "cpLoss": 178,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?",
+      "ec_confirmed": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 49.741411762068495,
+        "cpLoss": 178,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185640611734:69",
+      "game_id": "185640611734",
+      "ply": 69,
+      "san": "Rxe4",
+      "v4": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185659472924:65",
+      "game_id": "185659472924",
+      "ply": 65,
+      "san": "Kh1",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185659472924:85",
+      "game_id": "185659472924",
+      "ply": 85,
+      "san": "Rf8+",
+      "v4": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185663696126:72",
+      "game_id": "185663696126",
+      "ply": 72,
+      "san": "Rf6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185663696126:76",
+      "game_id": "185663696126",
+      "ply": 76,
+      "san": "Nf2+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.1018132400915,
+        "cpLoss": 13,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.1018132400915,
+        "cpLoss": 13,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 98.1018132400915,
+        "cpLoss": 13,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185699365144:181",
+      "game_id": "185699365144",
+      "ply": 181,
+      "san": "Kd3",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 95.0040141299881,
+        "cpLoss": 34,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 95.0040141299881,
+        "cpLoss": 34,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 95.0040141299881,
+        "cpLoss": 34,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185703992543:36",
+      "game_id": "185703992543",
+      "ply": 36,
+      "san": "Ne4",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 95.34657757171435,
+        "cpLoss": 29,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 95.34657757171435,
+        "cpLoss": 29,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 95.34657757171435,
+        "cpLoss": 29,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185728395618:46",
+      "game_id": "185728395618",
+      "ply": 46,
+      "san": "Rxf2+",
+      "v4": {
+        "symbol": "",
+        "provisional": "!",
+        "withheld": true,
+        "accuracy": 91.4971789513939,
+        "cpLoss": 26,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "!",
+        "withheld": true,
+        "accuracy": 91.4971789513939,
+        "cpLoss": 26,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "!",
+        "withheld": true,
+        "accuracy": 91.4971789513939,
+        "cpLoss": 26,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185728395618:52",
+      "game_id": "185728395618",
+      "ply": 52,
+      "san": "Rf8",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185745214488:35",
+      "game_id": "185745214488",
+      "ply": 35,
+      "san": "Bf3",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 91.56063434222143,
+        "cpLoss": 24,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 91.56063434222143,
+        "cpLoss": 24,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 91.56063434222143,
+        "cpLoss": 24,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185745214488:71",
+      "game_id": "185745214488",
+      "ply": 71,
+      "san": "Re8+",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185785803250:79",
+      "game_id": "185785803250",
+      "ply": 79,
+      "san": "Rxc6",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185785803250:85",
+      "game_id": "185785803250",
+      "ply": 85,
+      "san": "Rc6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.51561029263763,
+        "cpLoss": 72,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.51561029263763,
+        "cpLoss": 72,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.51561029263763,
+        "cpLoss": 72,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185961990851:36",
+      "game_id": "185961990851",
+      "ply": 36,
+      "san": "Bxf5",
+      "v4": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185961990851:38",
+      "game_id": "185961990851",
+      "ply": 38,
+      "san": "Nf3",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185963189457:61",
+      "game_id": "185963189457",
+      "ply": 61,
+      "san": "Ng5",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "185963189457:67",
+      "game_id": "185963189457",
+      "ply": 67,
+      "san": "Rfxf7",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "186014552162:42",
+      "game_id": "186014552162",
+      "ply": 42,
+      "san": "Rh2+",
+      "v4": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!?",
+      "ec_confirmed": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "186014552162:54",
+      "game_id": "186014552162",
+      "ply": 54,
+      "san": "Rd3",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.11112092542234,
+        "cpLoss": 52,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.11112092542234,
+        "cpLoss": 52,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.11112092542234,
+        "cpLoss": 52,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "186570389967:18",
+      "game_id": "186570389967",
+      "ply": 18,
+      "san": "Ne4",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 92.31289392128637,
+        "cpLoss": 22,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 92.31289392128637,
+        "cpLoss": 22,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 92.31289392128637,
+        "cpLoss": 22,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "186570389967:52",
+      "game_id": "186570389967",
+      "ply": 52,
+      "san": "Rxd3",
+      "v4": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "!",
+      "ec_confirmed": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "187172297075:31",
+      "game_id": "187172297075",
+      "ply": 31,
+      "san": "Be3",
+      "v4": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 67.07862612880723,
+        "cpLoss": 100,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 67.07862612880723,
+        "cpLoss": 100,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?!",
+      "ec_confirmed": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 67.07862612880723,
+        "cpLoss": 100,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "187172297075:43",
+      "game_id": "187172297075",
+      "ply": 43,
+      "san": "Rxf6",
+      "v4": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 2,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 2,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "",
+      "ec_confirmed": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 2,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    },
+    {
+      "key": "187176497301:63",
+      "game_id": "187176497301",
+      "ply": 63,
+      "san": "Bxe6",
+      "v4": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 68.97598188484783,
+        "cpLoss": 107,
+        "version": "mute-chess-brilliant-v4"
+      },
+      "A": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 68.97598188484783,
+        "cpLoss": 107,
+        "version": "private-v5-attributable-mate-A"
+      },
+      "ec_direct_symbol": "?!",
+      "ec_confirmed": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 68.97598188484783,
+        "cpLoss": 107,
+        "version": "ec015-mobilemaia-window-v2"
+      }
+    }
+  ]
+}

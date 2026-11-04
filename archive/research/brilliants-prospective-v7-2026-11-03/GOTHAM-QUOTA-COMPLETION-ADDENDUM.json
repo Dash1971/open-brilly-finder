@@ -1,0 +1,61 @@
+{
+  "frozen_at_utc": "2026-11-03T13:36:17.010265+00:00",
+  "scope": "Explicitly authorized ONE positive-only quota-completion deviation; not a silent sampling change.",
+  "reason": "OriginalGotham20nominees+onefrozenreserve produced19currentBrilliants and20explicitnegatives, with2historical/current disagreements.",
+  "new_current_labels_or_engine_model_metrics_seen": false,
+  "fixed_rules_unchanged": true,
+  "original_negative_controls_unchanged": 20,
+  "no_new_controls": true,
+  "original_games_excluded": 730,
+  "old_known_positions": 46194,
+  "with_original_nominee_and_control_positions": 47783,
+  "new_gallery_cards": 77,
+  "unexcluded_gallery_games": 11,
+  "PGN_valid_novel_candidates": 11,
+  "frozen_positive_candidates": 10,
+  "candidate_cap": 10,
+  "selection": "Original categoryroundrobin and SHA256(mute-prospective-v7|account|category|gameID|ply); onegame/novelpositions. Four-controlavailability criterion intentionally omitted because this batch adds no controls.",
+  "chosen_keys": [
+    "185498594944:39",
+    "185110686296:37",
+    "184185752754:59",
+    "184300109262:14",
+    "184885061372:52",
+    "184403800890:58",
+    "184419532228:55",
+    "184352742056:71",
+    "184653480432:30",
+    "184114414350:34"
+  ],
+  "rejected": [],
+  "unselected_eligible_keys": [
+    "184420545054:60"
+  ],
+  "original_sha256": {
+    "FINALQUEUE.json": "c4586980b9bdbed2476e16d8c753ef2fbfdb23905bc436d5b23d0a42144900bb",
+    "QUEUE-FREEZE.json": "6ac5b29d0eccba0f0e955947f26170ed5e5e772369800cbd88ffd859435c14d6",
+    "exclude-games.json": "3b241c8ef136d69e4d3250ecaa58b88f7299a98115c5d02b7701032efb0df679",
+    "FREEZE.json": "0f52334e2b730acf58a44785aa09b4bc8dbd3c8fd68ca57b4206a4efb300e9a8",
+    "ADAPTER-FREEZE.json": "348be630ab83301a263dbd50cc1808b2c07acca158c13f196fb4be17d19308a1",
+    "PANEL-PGN-POOL-FREEZE.json": "4886ec8d28327dc9ec373738b06c7fc0e7b398cbe5a848344c0ea39ad0986e24",
+    "corpus.sqlite3": "cafe2a3e589f0d045c3402d2f8b17887b322557b9ad9780155422a291657293b"
+  },
+  "raw_gallery_sha256": "f6e94789db2145bbcc1dbd7b05642b60afe6129bf649f521bda7da3bb55ca983",
+  "cached_monthly_sha256": {
+    "research/brilliants-pilot-2026-11-03/original-pgn/gothamchess-2026-10.pgn": "3c44dee7a40942371c851968ec0f31d796784177a129108ce338948bba4434c7",
+    "research/brilliants-600-2026-11-03/original-pgn/gothamchess-2026-09.pgn": "7591e98217bd60b311f8cc74cba5c881edfffcfd99ccd2fc8295c4c0c73890fd",
+    "research/brilliants-600-2026-11-03/original-pgn/hansen-2026-05.pgn": "1e36551e75e6a32d0555bdd5f5086b1312f5c427e44eb90a388b622126d2c7ce"
+  },
+  "output_sha256": {
+    "gothamchess-positive-topup-queue.json": "25e946590e75190c22ac691666ae0b458ffe5e0e5e3f14bf575052356fdb4c6b",
+    "gothamchess-positive-topup-pgn.json": "e0fb93ceb9c4427b52ab5434be39904819e78413315bda2ab185f7c6df85f969",
+    "gothamchess-positive-topup-exclusions.json": "f8b8bfa7bd3bf7c82dee2e7c2d1a4d588ae6a15d0e140ddbe8b207129c93f0db"
+  },
+  "panel_overlap": [
+    "184885061372"
+  ],
+  "panel_v2_artifact": "PANEL-PGN-POOL-FREEZE.v2.json",
+  "panel_v2_sha256": "2b6d9f078324a324e21a54509bcddd5c5f46a1bb9e845a81ddf548d08f3c8ed6",
+  "database_mutated": false,
+  "awaiting_root_metadata_audit_before_current_label_GO": true
+}

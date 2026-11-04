@@ -1,0 +1,293 @@
+{
+  "frozen_at_utc": "2026-11-03T12:41:17.783454+00:00",
+  "scope": "Source freeze before new labels. Sources immutable through prospective selection, collection and paired evaluation; no retuning. Engine measurement plan requires root approval before any run.",
+  "app_commit": "4a1c0b4ececdbc6c1fe09fffa581f52d92bb89d3",
+  "app_patch_sha256": "63aeb766167c4fb2178a6a1da0e1f52b6925651dc68ae4b29d97f77f61958251",
+  "native_upstream_commit": "b551752d2a0e7a63459d9812825d95a633a98737",
+  "policies": {
+    "primary": "mute-brilliant-v7",
+    "paired_history_reference": "mute-brilliant-v6",
+    "external_peer": "direct unchanged EC annotation/material; confirmation-wrapped EC reported separately"
+  },
+  "native_source_patch_verification": {
+    "ui/analyse/src/noSweatClassify.ts": "byte-equal committed added-file hunk",
+    "ui/analyse/src/noSweatHistoryOffer.ts": "byte-equal committed added-file hunk",
+    "ui/analyse/src/noSweatHistoryProof.ts": "byte-equal committed added-file hunk",
+    "ui/analyse/src/noSweatRecoveryProof.ts": "byte-equal committed added-file hunk",
+    "ui/analyse/src/noSweatCore.ts": "byte-equal committed added-file hunk",
+    "ui/analyse/src/noSweatSnapshots.ts": "byte-equal committed added-file hunk",
+    "ui/analyse/src/noSweatFish.ts": "byte-equal committed added-file hunk",
+    "ui/analyse/src/noSweatFullReview.ts": "byte-equal committed added-file hunk",
+    "ui/analyse/src/noSweatClassifierClient.ts": "byte-equal committed added-file hunk",
+    "ui/analyse/src/analyse.nosweatWorker.ts": "byte-equal committed added-file hunk",
+    "ui/lib/src/nosweat/core.ts": "byte-equal committed added-file hunk",
+    "ui/lib/src/nosweat/reviewQuality.ts": "byte-equal committed added-file hunk"
+  },
+  "files": {
+    "sources/native/ui/analyse/src/noSweatClassify.ts": {
+      "sha256": "79b2b94717e83d0b01bb32a834f4efa93498342cfb7bcb1ba068e9dcbefe898b",
+      "bytes": 18891,
+      "origin": "<temporary>/mute-precision-native/ui/analyse/src/noSweatClassify.ts"
+    },
+    "sources/native/ui/analyse/src/noSweatHistoryOffer.ts": {
+      "sha256": "11998e94330999e001a9e1aa683047c24563880cb1ebb4ad6ec019d813365785",
+      "bytes": 3910,
+      "origin": "<temporary>/mute-precision-native/ui/analyse/src/noSweatHistoryOffer.ts"
+    },
+    "sources/native/ui/analyse/src/noSweatHistoryProof.ts": {
+      "sha256": "eaad6d0f9235b64f11946aee137570efa7e60a9170c8af8c45b9f2d9a6df6f33",
+      "bytes": 8192,
+      "origin": "<temporary>/mute-precision-native/ui/analyse/src/noSweatHistoryProof.ts"
+    },
+    "sources/native/ui/analyse/src/noSweatRecoveryProof.ts": {
+      "sha256": "f9dc9ddf2126b5210dbc1d595c9c81b8561290e7e6a6b85e808a4f7f3fd5fca6",
+      "bytes": 7806,
+      "origin": "<temporary>/mute-precision-native/ui/analyse/src/noSweatRecoveryProof.ts"
+    },
+    "sources/native/ui/analyse/src/noSweatCore.ts": {
+      "sha256": "7dd54eb1eb00aecd92887a5a32b8f81812e100f87398de20991f07505439c2ad",
+      "bytes": 34,
+      "origin": "<temporary>/mute-precision-native/ui/analyse/src/noSweatCore.ts"
+    },
+    "sources/native/ui/analyse/src/noSweatSnapshots.ts": {
+      "sha256": "083a510f3c94a0d1eeacdb44d2f618e72ca4d57befacf2e4d6a341d54c5cfb40",
+      "bytes": 2131,
+      "origin": "<temporary>/mute-precision-native/ui/analyse/src/noSweatSnapshots.ts"
+    },
+    "sources/native/ui/analyse/src/noSweatFish.ts": {
+      "sha256": "1336ab8bf2b580734dbd44f1f6a37d5f5fa32f648b16cea5d79d6a0fb1c3e67c",
+      "bytes": 8206,
+      "origin": "<temporary>/mute-precision-native/ui/analyse/src/noSweatFish.ts"
+    },
+    "sources/native/ui/analyse/src/noSweatFullReview.ts": {
+      "sha256": "8e297163ed8bbb5afc73fc80834fcece79ebb364f39feb5eda0645f9d2807dc5",
+      "bytes": 6494,
+      "origin": "<temporary>/mute-precision-native/ui/analyse/src/noSweatFullReview.ts"
+    },
+    "sources/native/ui/analyse/src/noSweatClassifierClient.ts": {
+      "sha256": "781b40b2d0282b1bbd036049533fe41abf4c9539b85d39c6a550a636d221c6d5",
+      "bytes": 2025,
+      "origin": "<temporary>/mute-precision-native/ui/analyse/src/noSweatClassifierClient.ts"
+    },
+    "sources/native/ui/analyse/src/analyse.nosweatWorker.ts": {
+      "sha256": "57bd6d1a599a611f3421404d4987d59d22415b174369c4470ac9e7f3a67eb7a7",
+      "bytes": 794,
+      "origin": "<temporary>/mute-precision-native/ui/analyse/src/analyse.nosweatWorker.ts"
+    },
+    "sources/native/ui/lib/src/nosweat/core.ts": {
+      "sha256": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a",
+      "bytes": 4281,
+      "origin": "<temporary>/mute-precision-native/ui/lib/src/nosweat/core.ts"
+    },
+    "sources/native/ui/lib/src/nosweat/reviewQuality.ts": {
+      "sha256": "a8077a2894752982a4ce32f3f0c0db227cd5f4f69e3d44f8931d59aac1e98522",
+      "bytes": 443,
+      "origin": "<temporary>/mute-precision-native/ui/lib/src/nosweat/reviewQuality.ts"
+    },
+    "sources/native/ui/lib/src/ceval/engines/stockfishWebEngine.ts": {
+      "sha256": "27de463cf1ddbf239aa05f2f777cfdc993390eedc1a4c95f6a84b5d355d06fed",
+      "bytes": 3703,
+      "origin": "<temporary>/mute-precision-native/ui/lib/src/ceval/engines/stockfishWebEngine.ts"
+    },
+    "sources/native/ui/lib/src/ceval/util.ts": {
+      "sha256": "04aa1afe3d662581cc2cd3c47cf909562b004cb10078b2cafb14f5b5608ce6d0",
+      "bytes": 2667,
+      "origin": "<temporary>/mute-precision-native/ui/lib/src/ceval/util.ts"
+    },
+    "sources/native/ui/analyse/src/local/localAnalysisEngine.ts": {
+      "sha256": "30a9e1e5a95dd63c38cc8cc9f0f04771b8c12f82645782947063d488c0056acb",
+      "bytes": 11710,
+      "origin": "<temporary>/mute-precision-native/ui/analyse/src/local/localAnalysisEngine.ts"
+    },
+    "sources/app/analysis/reference/score.ts": {
+      "sha256": "3a623bc787e7d84e1026904cc94e05984d77766593403bc4dc5bf63f600e5e1b",
+      "bytes": 2947,
+      "origin": "<workspace>/brilliant-precision-2026-11-03/analysis/reference/score.ts"
+    },
+    "sources/app/analysis/reference/material.rs": {
+      "sha256": "8d52ed11698ced7b75ad247556aee02e0ffbac08688997e164c3b8df7054dc5b",
+      "bytes": 2425,
+      "origin": "<workspace>/brilliant-precision-2026-11-03/analysis/reference/material.rs"
+    },
+    "sources/app/LICENSE": {
+      "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+      "bytes": 34523,
+      "origin": "<workspace>/brilliant-precision-2026-11-03/LICENSE"
+    },
+    "sources/dependencies/chessops/package.json": {
+      "sha256": "be321be1778ab6b6e498ea5010a10101ab1be25e9b2e79050f0365bbde5b29dc",
+      "bytes": 1729,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/package.json"
+    },
+    "sources/dependencies/chessops/dist/esm/attacks.js": {
+      "sha256": "d2769e8e46af668b706d0f7b710337d1d80246648bd6afc6eb7eeef5085e2886",
+      "bytes": 5211,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/attacks.js"
+    },
+    "sources/dependencies/chessops/dist/esm/board.js": {
+      "sha256": "4da5f7ddfcd680567cd72b86b3b48ac77194507a94d33f8483d79da26bac7b2a",
+      "bytes": 4373,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/board.js"
+    },
+    "sources/dependencies/chessops/dist/esm/chess.js": {
+      "sha256": "ca4ffca6df899e06465a397fc983c3fa55c755c35f6febe071fe5896ade67132",
+      "bytes": 24598,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/chess.js"
+    },
+    "sources/dependencies/chessops/dist/esm/compat.js": {
+      "sha256": "883722ed669a9b7d9a3a1792f028acf5b5b9b44a60568645d42cc72f6cedf455",
+      "bytes": 2783,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/compat.js"
+    },
+    "sources/dependencies/chessops/dist/esm/debug.js": {
+      "sha256": "00127220dd3886dce3565a5a01fe16a85c6f60a58df17fd0d92a1c3ccf99a649",
+      "bytes": 3361,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/debug.js"
+    },
+    "sources/dependencies/chessops/dist/esm/fen.js": {
+      "sha256": "0c01422cf28c8faef8121961a7075c1e103462710a20e61ff2a915f92942ed84",
+      "bytes": 11674,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/fen.js"
+    },
+    "sources/dependencies/chessops/dist/esm/index.js": {
+      "sha256": "8107327e23f63ce65e2bbc0cc8abb444eef08fbc099970127c486e1eff93c885",
+      "bytes": 1001,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/index.js"
+    },
+    "sources/dependencies/chessops/dist/esm/pgn.js": {
+      "sha256": "7521e312c8d950e07533dfcbc2285f87aba5c94a6ded0cad7f69f59dfcd70e3f",
+      "bytes": 26688,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/pgn.js"
+    },
+    "sources/dependencies/chessops/dist/esm/san.js": {
+      "sha256": "bf3c8452745c168b8479df0032f500e867d039b164c2b5380b39ecb9230f9539",
+      "bytes": 6802,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/san.js"
+    },
+    "sources/dependencies/chessops/dist/esm/setup.js": {
+      "sha256": "59581828957569f915fae2320add6f55fc46d2359905e2ed80bda8836957168a",
+      "bytes": 4842,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/setup.js"
+    },
+    "sources/dependencies/chessops/dist/esm/squareSet.js": {
+      "sha256": "838c400af128d051b693ce2f1424dfd79f446e6362bca9e93bfa546080d249c9",
+      "bytes": 6128,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/squareSet.js"
+    },
+    "sources/dependencies/chessops/dist/esm/transform.js": {
+      "sha256": "504c7928ace61a8e62ba71df2cc5ee88a90b6a3edd165b7ef8a7fe9f8e0c16ac",
+      "bytes": 2616,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/transform.js"
+    },
+    "sources/dependencies/chessops/dist/esm/types.js": {
+      "sha256": "0d1bf5b70d49015ad4649731f0277a26a262f566fac970e92135cc8a2e052e0c",
+      "bytes": 628,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/types.js"
+    },
+    "sources/dependencies/chessops/dist/esm/util.js": {
+      "sha256": "e454a8e6e7a2954d6b260b394332fc35742042507c1d48c6b6e072baa6a3f365",
+      "bytes": 3018,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/util.js"
+    },
+    "sources/dependencies/chessops/dist/esm/variant.js": {
+      "sha256": "215fb7fc95df8f992a9c03a6361873c622b3ede3fb869757f0c0891cd99b25a5",
+      "bytes": 33283,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/dist/esm/variant.js"
+    },
+    "sources/dependencies/chessops/LICENSE.txt": {
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "bytes": 35147,
+      "origin": "<temporary>/mute-precision-native/node_modules/chessops/LICENSE.txt"
+    },
+    "sources/native-assets/sf_19_smallnet.js": {
+      "sha256": "114751d6f0c1e98dfedb9eb1928ac86fb763bab2b5282f24e2d7865156abac2e",
+      "bytes": 28643,
+      "origin": "<temporary>/mute-native-ui-check/public/npm/stockfish-web/sf_19_smallnet.js"
+    },
+    "sources/native-assets/sf_19_smallnet.wasm": {
+      "sha256": "7e6629d0e1226a0d20c9c2c71c69dd3dccbe260a25f0053d3e5e4e5acea77fbc",
+      "bytes": 516671,
+      "origin": "<temporary>/mute-native-ui-check/public/npm/stockfish-web/sf_19_smallnet.wasm"
+    },
+    "sources/native-assets/nn-61e7af4bb97d.nnue.lfs-pointer": {
+      "sha256": "da6afa2128986e0d54cf0c5a1be1c88a3a8f44b15580de266e3b8eceb954e143",
+      "bytes": 132,
+      "origin": "<temporary>/mute-history-v7-roundtrip-20261103/public/lifat/nnue/nn-61e7af4bb97d.nnue"
+    },
+    "sources/research-reference/CANDIDATE-PLAN.json": {
+      "sha256": "1d95afbf290345ae9eeefa611f3286f07dfed8ab5da60d2aef202866d89b703f",
+      "bytes": 1727,
+      "origin": "<workspace>/research/brilliants-improvement-2026-11-03/quiet-recovery-v6/CANDIDATE-PLAN.json"
+    },
+    "sources/research-reference/candidate.py": {
+      "sha256": "d87bf86b8da910950ca1da5c7ea753e2e96059dc0d8c93f16882a06012308a06",
+      "bytes": 3262,
+      "origin": "<workspace>/research/brilliants-improvement-2026-11-03/quiet-recovery-v6/candidate.py"
+    },
+    "sources/research-reference/probe.py": {
+      "sha256": "ccba09c903188490be3a1568a6174ed678b12edb080ab2db379cbc0a3302555a",
+      "bytes": 4305,
+      "origin": "<workspace>/research/brilliants-improvement-2026-11-03/quiet-recovery-v6/probe.py"
+    },
+    "sources/dependencies/badrap-result/LICENSE": {
+      "sha256": "277b8788944a31c695bd302ffe7da6ff4b96ba3bc14f829e3a4b8fbd8f1992e0",
+      "bytes": 1066,
+      "origin": "Pinned existing native dependency or asset; ASSET-RECEIPT.json records NNUE source."
+    },
+    "sources/dependencies/badrap-result/dist/node-cjs/index.d.ts": {
+      "sha256": "d4feb92f592533eb93af021c53a852cdd74ea086f882361e7e2bb25d3715d733",
+      "bytes": 9028,
+      "origin": "Pinned existing native dependency or asset; ASSET-RECEIPT.json records NNUE source."
+    },
+    "sources/dependencies/badrap-result/dist/node-cjs/index.esm.d.mts": {
+      "sha256": "97e1818573679b5d3d697406abd3e5f1e9cd00da1f2783ab236912180462f5be",
+      "bytes": 28,
+      "origin": "Pinned existing native dependency or asset; ASSET-RECEIPT.json records NNUE source."
+    },
+    "sources/dependencies/badrap-result/dist/node-cjs/index.esm.mjs": {
+      "sha256": "5fcadd6a2490d99ca60ef31a632ed7885fff6f568b996cfc5349200b15fc2709",
+      "bytes": 66,
+      "origin": "Pinned existing native dependency or asset; ASSET-RECEIPT.json records NNUE source."
+    },
+    "sources/dependencies/badrap-result/dist/node-cjs/index.esm.mjs.map": {
+      "sha256": "e951ac2137144eea3707431804ae1792208b59db8573356deaa9c3abcc9d1299",
+      "bytes": 134,
+      "origin": "Pinned existing native dependency or asset; ASSET-RECEIPT.json records NNUE source."
+    },
+    "sources/dependencies/badrap-result/dist/node-cjs/index.js": {
+      "sha256": "c7c0916a78f75b5ea19d22b94e698eae1c6c701e93c554605409d40f80a5a13f",
+      "bytes": 2014,
+      "origin": "Pinned existing native dependency or asset; ASSET-RECEIPT.json records NNUE source."
+    },
+    "sources/dependencies/badrap-result/dist/node-cjs/index.js.map": {
+      "sha256": "4dfabd73e887af8c4f3c527ce874bfd9173560e3bf4b6c75f7addcd901eaea8f",
+      "bytes": 2720,
+      "origin": "Pinned existing native dependency or asset; ASSET-RECEIPT.json records NNUE source."
+    },
+    "sources/dependencies/badrap-result/package.json": {
+      "sha256": "b1292a46628749db6cba3ae8910ca561fb85e1e229b8da8f40a98dc002f35acb",
+      "bytes": 2058,
+      "origin": "Pinned existing native dependency or asset; ASSET-RECEIPT.json records NNUE source."
+    },
+    "sources/native/ui/lib/src/nosweat/moveClasses.ts": {
+      "sha256": "d4d5125e32964485d49a42243225745ef347910a66bce9e5c9fd4d374ab2cdef",
+      "bytes": 414,
+      "origin": "Pinned existing native dependency or asset; ASSET-RECEIPT.json records NNUE source."
+    },
+    "sources/native-assets/nn-61e7af4bb97d.nnue": {
+      "sha256": "61e7af4bb97d51eeeb25d322916f86513b5cd3a827ce189c98c6e31946f99e5b",
+      "bytes": 1166381,
+      "origin": "Pinned existing native dependency or asset; ASSET-RECEIPT.json records NNUE source."
+    }
+  },
+  "native_asset_gap": {
+    "filename": "nn-61e7af4bb97d.nnue",
+    "payload_available": true,
+    "expected_sha256": "61e7af4bb97d51eeeb25d322916f86513b5cd3a827ce189c98c6e31946f99e5b",
+    "expected_bytes": 1166381,
+    "receipt": "ASSET-RECEIPT.json"
+  },
+  "source_check_requirement": "Before labels and again before scoring, recompute every archived file hash and verify classifier source hashes against this manifest. Any source change invalidates this assessment; record a new prospective protocol rather than updating the predictor.",
+  "finalized_before_new_labels_utc": "2026-11-03T12:49:06.047931+00:00",
+  "initial_manifest_preserved": "SOURCE-FREEZE.initial.json"
+}

@@ -1,0 +1,65 @@
+External brilliant-classifier review — 2026-11-04
+
+Decision
+
+There are useful comparison candidates, but no demonstrated solution to Mute's target of high Chess.com Brilliant recall with fewer than 1% wrong awards. None of the inspected repositories supplies a convincing independent Chess.com precision/recall benchmark. The next useful step would be a bounded comparison of fixed external classifiers on Mute's labeled cases, before another feature experiment. This review did not execute those classifiers, fit a model, change data, or alter production.
+
+The attachment was used as a source list, not as instructions to implement its suggestions. All five primary repositories were inspected at commits recorded in SOURCES.json. Two bounded subagent source reviews covered Wintr and Knight's Eye/Felix; the main review covered Chess-Review, Brilliant-Chess and comparisons with Mute's frozen extraction code.
+
+What is already present in Mute
+
+The saved 75 predictors already include offer attribution from history, prior offer gains, avoidability, captured-material credit, safe alternatives and a branching three-ply physical-material search. These broad ideas must not be advertised as new discoveries from the external projects. Current source files were compared byte-for-byte with the training study's frozen snapshots: feature_kernel.py, avoidability_kernel.py and physical_kernel.py all match.
+
+The earlier forest diagnosis found 191 eligible Chess.com Brilliants with ec_sacrifice=false, of which only 7 were found and 184 missed. Thus an independently designed sacrifice detector is worth comparing as evidence. This does not mean setting EC true on those cases is valid, or that an external detector will recognize them safely. The current information and learned reliance on the EC measurements are separate questions.
+
+1. Knight's Eye: highest priority for a substantive independent comparison
+
+Source: https://github.com/knights-eye-chess/move-classifier/blob/c8183a6da88f3b5a2450dab35353dedd1d8d7a62/src/chess-analysis/knights-eye-policy-runtime.js
+
+Its most distinctive reviewed mechanism is a voluntary declined-recapture witness for a restricted class of offers. After the opponent accepts, an equal recapture may restore material. The detector enumerates those recaptures and forcing alternatives that retain a material deficit, then requests a common post-acceptance restricted-root engine comparison. A qualifying declining continuation must remain sound and close enough in evaluation to the best recapture. All relevant roots must be covered within a 16-root cap. This describes a choice between recovering material and pursuing compensation; it does not infer sacrifice solely from the engine's first PV.
+
+Mute has compared material trajectories and root alternatives, but those are not the same intervention at the post-acceptance decision point. This is a specific hypothesis to inspect, not established additional predictive value. Knight's Eye also settles immediate recoveries through legal local exchanges and uses history/material-thread baselines; those substantially overlap existing Mute concepts, with differences in exact semantics.
+
+Evidence quality: a documented 25-fixture real-engine qualification, with 17 mandatory Brilliant entries and additional optional/allowed labels, tests its reviewed policy oracle and repeatability. It is not an independently verified Chess.com benchmark. Inspect docs/research/corpus-acquisition-budget.md and tests/brilliant-corpus.test.mjs at the pinned commit. Its decision code is rating-independent. First-party code is MIT.
+
+2. WintrChess library: useful counter-threat comparison; not a drop-in solution
+
+Source: https://github.com/WintrCat/wintrchess-lib/blob/0a63a69a544105e218b11f7459815bf195707776/src/classify/lib/classifications/brilliant-move.ts
+
+Its danger-level exclusion considers every legal accepting capture of every hanging piece. It asks whether each acceptance allows mate in one or leaves any opponent piece immediately vulnerable to sufficient legal exchange loss. That victim need not be the accepting piece. If every acceptance has that immediate punishment, its policy rejects Brilliant. This differs both in scope and direction from rewarding an accepting-piece fork. The potentially useful information is how all acceptance branches expose other victims, including the material value and identity of those victims. The external rule itself is not evidence that Chess.com uses this distinction.
+
+The implementation has substantial limitations. important-move.ts rejects a move played in check, queen promotions, and post-move evaluations at or above the +700cp winning-probability threshold; winning mate maps above that threshold too. It therefore excludes some categories we specifically want to recognize. It uses legal least-attacker exchange sequences rather than engine acceptance searches. The inspected tests contain 16 classification fixtures, six expected Brilliant; no independent Chess.com benchmark was found. README says this library is not yet the live website's implementation. AGPL-3.0-only.
+
+3. Chess-Review: useful accounting reference, mostly overlapping strategy
+
+Source: https://github.com/T-Julsgaard/Chess-Review/blob/3bdb9f854d658c9cfa87e5aae3fe4fb12cc25236/analysis.js#L1140-L1271
+Policy: https://github.com/T-Julsgaard/Chess-Review/blob/3bdb9f854d658c9cfa87e5aae3fe4fb12cc25236/tools/calibration/BRILLIANT_MOVES.md
+
+Its legal exchange accounting credits the played capture, handles pins/x-rays/promotions, compares before/after offers and history, checks avoidability, and searches cross-square material recovery. These broadly resemble Mute's existing inputs.
+
+One concrete implementation distinction merits audit: at the recovery horizon Chess-Review finishes local exchanges, rather than valuing a just-captured defended piece at face value. Mute's frozen physical search returns the current material at depth zero. Also, Chess-Review's same-square exchange can stop only when some other legal move exists; Mute's attribution/avoidability exchange helpers always initialize a zero-gain stop option. These are source-observed measurement differences, not demonstrated causes of any missed label. Finishing an exchange can fix a misleading material measurement without necessarily improving Chess.com agreement.
+
+Chess-Review explicitly defines its own policy and thresholds. Its Brilliant regression fixtures use synthetic evaluation inputs; they validate rules, not engine-confirmed Chess.com fidelity. A generic category benchmark utility expects externally supplied independent human reviews; the utility is not itself a published Chess.com result. GPL-3.0; classifier ancestry is credited to Brilliant-Chess. The prose is detailed and useful, but detail is not performance evidence.
+
+4. Felix chess-game-review: little beyond our current approach
+
+Source: https://github.com/FelixYUFENGSU/chess-game-review/blob/01cce2957d936cab3da9ccf4af97dc1dd31e1b80/lib/chess/classify.ts#L116-L146
+SEE: https://github.com/FelixYUFENGSU/chess-game-review/blob/01cce2957d936cab3da9ccf4af97dc1dd31e1b80/lib/chess/tactics.ts#L21-L56
+
+Requires exact top move and a moved nonpawn/nonking piece with a sufficiently negative destination exchange, plus evaluation and move-number gates. Its simplified exchange calculation omits pins, x-rays and discoveries. It cannot represent many stationary-piece offers or smaller exchange sacrifices. No labeled agreement benchmark was found. No tracked LICENSE/package license declaration was found in the inspected commit. Low priority for further Mute investigation.
+
+5. Brilliant-Chess: useful ancestry, weaker evidence model
+
+Source: https://github.com/wdeloo/Brilliant-Chess/blob/56e8c48696d3df874f4f1e0f26cb47bedff3231c/src/engine/stockfish.ts
+
+Uses attacker/defender patterns and a could-be-saved test to identify offers. Its non-mating Brilliant path also depends on preceding move categories, while separate branches handle starting/maintaining mate. These are author-defined rules rather than an established Chess.com algorithm. Chess-Review evolved from this classifier, so the two are not independent corroboration. No convincing target-agreement benchmark was found. MIT.
+
+Interpretation and proposed next decision
+
+The review does not support abandoning the learned approach or replacing it with any listed repository. It does support pausing speculative motif additions and making an external-baseline comparison. Knight's Eye is the first substantive candidate; Wintr's board evidence provides a contrasting, relatively inexpensive detector. Chess-Review is especially useful for measurement/accounting comparisons. Do not union their awards with Mute: any extra true labels must be assessed alongside extra wrong labels.
+
+A bounded follow-up should freeze versions and settings, preserve the current game/position grouping and labels, and run the external policy as-is where its evidence contract can be satisfied. Report missing/unsupported evidence separately; do not silently substitute incompatible cached engine lines or count unknowns as successful negatives. Additional engine requests required by Knight's Eye need a fixed budget. Compare standalone outputs and disagreement categories before fitting anything: Mute-only, external-only and common correct/wrong awards, including the EC-false misses and matched ordinary tactics. Keep the contradictory mating examples.
+
+If an external detector contributes useful correct cases with controlled errors, test that evidence in the same grouped learner procedure; final confirmation needs fresh labeled games. If it only repeats our failures, do not add its rules merely because another project uses them. This is a proposed next experiment, not work performed in this review. No general benchmark framework or production integration was built.
+
+We have not measured a 50% matching ceiling, nor found evidence that 90% recall at <1% wrong awards is attainable. Our failures reject particular representations and policies. The empirical question is whether a different detector supplies information that distinguishes our real misses from real ordinary controls.

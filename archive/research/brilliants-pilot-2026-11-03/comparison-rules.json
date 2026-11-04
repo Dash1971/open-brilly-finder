@@ -1,0 +1,3370 @@
+{
+  "completed_at": "2026-11-03T00:31:35.915Z",
+  "deadline": "2026-11-03T00:47:02.000Z",
+  "source_provenance": {
+    "repository": "https://github.com/Dash1971/mute-chess",
+    "commit": "b3585f2c5b818bb8dfabb7fc4e3ed37cab848c12",
+    "patch_git_blob": "addef7a02c1e6807e72910dcffca5cfaf7f4c5aa",
+    "patch_sha256": "b53a1783c8c18e38af80ed467b013699b18f68a155e37a0b841f94b7d4ccb306",
+    "policy": "mute-chess-brilliant-v2",
+    "files": [
+      {
+        "native_path": "ui/analyse/src/noSweatClassify.ts",
+        "local_file": "noSweatClassify.ts",
+        "sha256": "43d249f76465b1d0966e486a2877a0887d8d1ed629f9e4aafaca67e3ce020234",
+        "git_blob": "dd1b0bf68705c75702298cd108e414a44bc6be35"
+      },
+      {
+        "native_path": "ui/lib/src/nosweat/core.ts",
+        "local_file": "core.ts",
+        "sha256": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a",
+        "git_blob": "4b6b4bef2fd6443223f1d45e820b80080fb9da2a"
+      }
+    ],
+    "adaptation": "Only noSweatCore import-path shim; copied rule and core bodies unmodified. Existing installed native node_modules reused by symlink, no new package framework. A private type:module package marker selects ESM for source replay; no dependencies/scripts/package framework are added.",
+    "license": "GPL-3.0 for En Croissant-derived classifier; preserve existing attribution/source provenance.",
+    "independent_ec_oracle": {
+      "file": "../ec-score.ts",
+      "sha256": "3a623bc787e7d84e1026904cc94e05984d77766593403bc4dc5bf63f600e5e1b",
+      "upstream_repository": "https://github.com/franciscoBSalgueiro/en-croissant",
+      "upstream_commit": "6f2d2628f0fbe11cb62a7dd2f9c102bb52907d53",
+      "upstream_path": "src/utils/score.ts",
+      "local_reference_source_pin": "Mobile Maia preview 8563954429c2fb53ce0fe0e16c73c5d8a73ccfe0 tool/hardening/classification/reference/score.ts",
+      "adaptation": "Existing pinned standalone oracle copied without edits; formatting/import-free adaptation is documented in its header."
+    },
+    "runtime_setup": "Node24+tsx and chessops0.15.1. Replace current-v2/node_modules symlink with any compatible existing dependency directory. No application source checkout is required by these copied rule/core modules."
+  },
+  "baseline_file": "research/brilliants-pilot-2026-11-03/analysis-baseline.json",
+  "stronger_file": "research/brilliants-pilot-2026-11-03/analysis-stronger.json",
+  "independent_ec_oracle_sha256": "3a623bc787e7d84e1026904cc94e05984d77766593403bc4dc5bf63f600e5e1b",
+  "observations_with_usable_PGN": 40,
+  "rows": [
+    {
+      "game_id": "183990510823",
+      "ply": 53,
+      "san": "Qxb5",
+      "uci": "b3b5",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "dc7f82e12139f149addf6cfdfcc8c6bae563825697f7abc19e32fd011334da47",
+          "source_type": "fresh_review",
+          "label": "best",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "hansen",
+          "captured_at": "2026-11-03T00:24:18.966Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": -0.7874243172225164,
+        "after_cp_mover": 331,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "b3c2",
+            "cp_mover": 281,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "183990510823",
+      "ply": 61,
+      "san": "Nd7",
+      "uci": "e5d7",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "1dbc9b63a155e359f95f52bf18a45d65b8a4de764abc70cc8636beb37800a467",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "hansen",
+          "captured_at": "2026-11-03T00:08:18.069Z",
+          "categories": [
+            "Knight Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "cd92cc7ae8ba5b771000fe373f22ec1737f4c2145e99fbc3ecce44acae9b983c",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "hansen",
+          "captured_at": "2026-11-03T00:24:18.490Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 94.53687631726928,
+        "cpLoss": 27,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 94.53687631726928,
+        "cpLoss": 27,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 1.4858668415520526,
+        "after_cp_mover": 393,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "g3h4",
+            "cp_mover": 420,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "184403311373",
+      "ply": 45,
+      "san": "Rad1",
+      "uci": "a1d1",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "3b5efe47dae65ef29480bcecc9183ef08b726e5ca759a0339f63f888a205d02b",
+          "source_type": "fresh_review",
+          "label": "?",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "hansen",
+          "captured_at": "2026-11-03T00:21:45.453Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "?!",
+      "ec": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 68.64061633997271,
+        "cpLoss": 99,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 68.64061633997271,
+        "cpLoss": 99,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 8.644509366193546,
+        "after_cp_mover": 73,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "f1h3",
+            "cp_mover": 172,
+            "piece_offer": false
+          },
+          {
+            "move": "a1b1",
+            "cp_mover": 144,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "184403311373",
+      "ply": 59,
+      "san": "Qxe4",
+      "uci": "e3e4",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "bf84c5b37a63c9e7aa4e70c43e254e8a7f314a49498d9010ec360b9ea4e310d7",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "hansen",
+          "captured_at": "2026-11-03T00:08:12.068Z",
+          "categories": [
+            "Queen Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "7d8a4d4320cba94a50ff83f54827086a253784243354c5d5f164c98cd1b7dc6a",
+          "source_type": "fresh_review",
+          "label": "best",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "hansen",
+          "captured_at": "2026-11-03T00:21:45.010Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!",
+      "ec": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": -10.508357383136754,
+        "after_cp_mover": 474,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "f1g2",
+            "cp_mover": -338,
+            "piece_offer": true
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": {
+        "ec": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 100,
+          "cpLoss": 0,
+          "version": "ec015-mobilemaia-window-v2"
+        },
+        "mute_v2": {
+          "symbol": "!!",
+          "provisional": "!!",
+          "withheld": false,
+          "accuracy": 100,
+          "cpLoss": 0,
+          "version": "mute-chess-brilliant-v2"
+        },
+        "gates": {
+          "mapped_loss_pp": -7.234662748400865,
+          "after_cp_mover": 493,
+          "played_piece_offer": true,
+          "evaluated_alternatives": [
+            {
+              "move": "f1g2",
+              "cp_mover": -335,
+              "piece_offer": true
+            }
+          ],
+          "routine_winning_safe_alternatives": []
+        }
+      },
+      "independent_stronger_confirmation": {
+        "ec": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 100,
+          "cpLoss": 0,
+          "version": "ec015-mobilemaia-window-v2"
+        },
+        "mute_v2": {
+          "symbol": "!!",
+          "provisional": "!!",
+          "withheld": false,
+          "accuracy": 100,
+          "cpLoss": 0,
+          "version": "mute-chess-brilliant-v2"
+        }
+      }
+    },
+    {
+      "game_id": "184407510567",
+      "ply": 32,
+      "san": "Rxc4",
+      "uci": "c8c4",
+      "split": "game_holdout",
+      "observations": [
+        {
+          "observation_id": "4c2edabef0ad7dd96e0db31220903895629c8acc74dad69dd8352b697465eea8",
+          "source_type": "fresh_review",
+          "label": "best",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "hansen",
+          "captured_at": "2026-11-03T00:22:25.673Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": -1.456254207207948,
+        "after_cp_mover": 155,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "f8e8",
+            "cp_mover": 77,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "184407510567",
+      "ply": 44,
+      "san": "Rxh4",
+      "uci": "c4h4",
+      "split": "game_holdout",
+      "observations": [
+        {
+          "observation_id": "ef40abe044abf00a069ba4519fe67d06d5071595f09a234d1a0ab3092496e222",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "hansen",
+          "captured_at": "2026-11-03T00:08:13.963Z",
+          "categories": [
+            "Rook Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "963a43b07c7b3e32e9b0a3f9fcbaf6e02a3dc806f76928d1fc520a78e0def534",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "hansen",
+          "captured_at": "2026-11-03T00:22:25.246Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!?",
+      "ec": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 93.43879217687306,
+        "cpLoss": 19,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 93.43879217687306,
+        "cpLoss": 19,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 1.7481565452204535,
+        "after_cp_mover": -20,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "f6g4",
+            "cp_mover": -1,
+            "piece_offer": true
+          },
+          {
+            "move": "f6e4",
+            "cp_mover": -3,
+            "piece_offer": true
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "184408711263",
+      "ply": 72,
+      "san": "Rxf6",
+      "uci": "d6f6",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "1735f76ed6b0bdcb8e56e2642e88433e1bb76345c2c99548728a46f9ef954e2d",
+          "source_type": "fresh_review",
+          "label": "?",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "hansen",
+          "captured_at": "2026-11-03T00:23:03.021Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "?",
+      "ec": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 62.535166076601854,
+        "cpLoss": 119,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 62.535166076601854,
+        "cpLoss": 119,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 10.715525073220952,
+        "after_cp_mover": 14,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "g8f7",
+            "cp_mover": 133,
+            "piece_offer": true
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "184408711263",
+      "ply": 78,
+      "san": "Rf4",
+      "uci": "e4f4",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "cf256613bd45583a11e4525daf86ece79f723d2ac4cc84bc7d3f9aad098556a4",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "hansen",
+          "captured_at": "2026-11-03T00:08:16.237Z",
+          "categories": [
+            "Bishop Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "6f13f41c38f30c97abf2358e1a38429d798709fdc8991e7a9139bd484922b5a6",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "hansen",
+          "captured_at": "2026-11-03T00:23:02.534Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!?",
+      "ec": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": -1.910931106504961,
+        "after_cp_mover": 628,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "e4b4",
+            "cp_mover": 480,
+            "piece_offer": true
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186059216760",
+      "ply": 47,
+      "san": "Nf3",
+      "uci": "d2f3",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "b37c529a3ca20e578dff6e32866671e5ce55d4f699feded6c968beff96f20fc1",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "KNVB",
+          "captured_at": "2026-11-03T00:07:51.383Z",
+          "categories": [
+            "Knight Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "ac73ed0d262819a66f09f4e99f72c3b521f2b2e2ea9d8b319464725a5cb5c30e",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "KNVB",
+          "captured_at": "2026-11-03T00:17:22.856Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": -0.07191056960843412,
+        "after_cp_mover": 276,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "f2f4",
+            "cp_mover": 275,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186059216760",
+      "ply": 49,
+      "san": "Qxg7+",
+      "uci": "e5g7",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "2d9799082093c28855f30ce272cdef929fa26aa69aa62d223d3183d0067b7920",
+          "source_type": "fresh_review",
+          "label": "excellent",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "KNVB",
+          "captured_at": "2026-11-03T00:17:23.123Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 92.98156034219576,
+        "cpLoss": 26,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 92.98156034219576,
+        "cpLoss": 26,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 1.8582609927949392,
+        "after_cp_mover": 266,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "f1e1",
+            "cp_mover": 292,
+            "piece_offer": false
+          },
+          {
+            "move": "a2a3",
+            "cp_mover": 284,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186059865466",
+      "ply": 29,
+      "san": "Nxd7",
+      "uci": "e5d7",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "5af6158cf4b74d58cd539316062a725361c7a0bba47016d203b3b35786f65149",
+          "source_type": "fresh_review",
+          "label": "best",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "KNVB",
+          "captured_at": "2026-11-03T00:14:14.295Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "!",
+      "ec": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 99.69953271646025,
+        "cpLoss": 7,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 99.69953271646025,
+        "cpLoss": 7,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0.29133265670195385,
+        "after_cp_mover": 513,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "f2f4",
+            "cp_mover": -36,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186059865466",
+      "ply": 61,
+      "san": "Rxb2",
+      "uci": "b1b2",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "94d910039224cc0dade40f35ae2db8a20674a31bb5b8f0557fee2101849144be",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "KNVB",
+          "captured_at": "2026-11-03T00:07:46.448Z",
+          "categories": [
+            "Queen Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "b84f17069c1a07a7b138de676ca07eeda798ddea727a3bc211de26c3eafb6d51",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "KNVB",
+          "captured_at": "2026-11-03T00:14:14.116Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!?",
+      "ec": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 97.03730983769223,
+        "cpLoss": 22,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 97.03730983769223,
+        "cpLoss": 22,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0.8995554568784172,
+        "after_cp_mover": 512,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "c2d2",
+            "cp_mover": 504,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186066219416",
+      "ply": 42,
+      "san": "Rxe4",
+      "uci": "e8e4",
+      "split": "game_holdout",
+      "observations": [
+        {
+          "observation_id": "eda934564e7a1999e8fbe540b95da3e48202de785d6e8c352809264e14e94e80",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "KNVB",
+          "captured_at": "2026-11-03T00:07:47.986Z",
+          "categories": [
+            "Rook Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "4c0ed35745239567632573afbf98e1083a56201175b6e5e13e847f31b362bbbf",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "KNVB",
+          "captured_at": "2026-11-03T00:16:06.989Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!!",
+      "ec": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 97.25412913512017,
+        "cpLoss": 14,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 97.25412913512017,
+        "cpLoss": 14,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0.8494130422738522,
+        "after_cp_mover": 356,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "e8e7",
+            "cp_mover": -110,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186066219416",
+      "ply": 80,
+      "san": "bxc5",
+      "uci": "b6c5",
+      "split": "game_holdout",
+      "observations": [
+        {
+          "observation_id": "9492007ea0bdcd9265d381e58055a3de7200d5f42fa6f437a65e60ab6d8bb4da",
+          "source_type": "fresh_review",
+          "label": "excellent",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "KNVB",
+          "captured_at": "2026-11-03T00:16:07.188Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": -0.2436393942316215,
+        "after_cp_mover": 459,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "d6c5",
+            "cp_mover": 429,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186066679548",
+      "ply": 97,
+      "san": "axb6",
+      "uci": "a5b6",
+      "split": "game_holdout",
+      "observations": [
+        {
+          "observation_id": "bce484d2b352fee126a91aacadd8a08516b666cf0a0106812af3b4b47f274359",
+          "source_type": "fresh_review",
+          "label": "best",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "KNVB",
+          "captured_at": "2026-11-03T00:16:52.219Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": -0.42005834791291363,
+        "after_cp_mover": 584,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "a5a6",
+            "cp_mover": 572,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186066679548",
+      "ply": 103,
+      "san": "Bxd5+",
+      "uci": "f3d5",
+      "split": "game_holdout",
+      "observations": [
+        {
+          "observation_id": "2d9757a13c0f48e286bbff41a4a9dbfd5b6682465c448b72127f3be4c701c09e",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "KNVB",
+          "captured_at": "2026-11-03T00:07:49.717Z",
+          "categories": [
+            "Bishop Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "72b3c5fae83ba07e16ac1f73a72a68362a1eb9551494fde24a219a2d767b6f72",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "KNVB",
+          "captured_at": "2026-11-03T00:16:52.063Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!?",
+      "ec": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": -0.1755730826144628,
+        "after_cp_mover": 771,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "b6b7",
+            "cp_mover": 675,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": [
+          {
+            "move": "b6b7",
+            "cp_mover": 675,
+            "piece_offer": false
+          }
+        ]
+      },
+      "stronger_window_decision": {
+        "ec": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 100,
+          "cpLoss": 0,
+          "version": "ec015-mobilemaia-window-v2"
+        },
+        "mute_v2": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 100,
+          "cpLoss": 0,
+          "version": "mute-chess-brilliant-v2"
+        },
+        "gates": {
+          "mapped_loss_pp": -0.6270483554181823,
+          "after_cp_mover": 904,
+          "played_piece_offer": true,
+          "evaluated_alternatives": [
+            {
+              "move": "b6b7",
+              "cp_mover": 846,
+              "piece_offer": false
+            }
+          ],
+          "routine_winning_safe_alternatives": [
+            {
+              "move": "b6b7",
+              "cp_mover": 846,
+              "piece_offer": false
+            }
+          ]
+        }
+      },
+      "independent_stronger_confirmation": {
+        "ec": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 100,
+          "cpLoss": 0,
+          "version": "ec015-mobilemaia-window-v2"
+        },
+        "mute_v2": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 100,
+          "cpLoss": 0,
+          "version": "mute-chess-brilliant-v2"
+        }
+      }
+    },
+    {
+      "game_id": "186298545248",
+      "ply": 29,
+      "san": "Qxf5",
+      "uci": "f3f5",
+      "split": "player_holdout",
+      "observations": [
+        {
+          "observation_id": "83631c4ecc8e0aa66fa454b9976d603b539df261a429a24c6def21bdc8ce145c",
+          "source_type": "fresh_review",
+          "label": "best",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "Hikaru",
+          "captured_at": "2026-11-03T00:29:45.373Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.37286267127044,
+        "cpLoss": 4,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.37286267127044,
+        "cpLoss": 4,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0.36510389617090055,
+        "after_cp_mover": 48,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "e4f5",
+            "cp_mover": -79,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186298545248",
+      "ply": 33,
+      "san": "Bxh6",
+      "uci": "c1h6",
+      "split": "player_holdout",
+      "observations": [
+        {
+          "observation_id": "fe1e445407f252be7860e10e4c160575185f8477d1941e593b0289a61567a853",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "Hikaru",
+          "captured_at": "2026-11-03T00:08:51.212Z",
+          "categories": [
+            "Bishop Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "decff1118786f03b6882ace76e1350757fdedc8721b3fb8f4aca1ae91763a7b3",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "Hikaru",
+          "captured_at": "2026-11-03T00:29:45.045Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!?",
+      "ec": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": -0.1702357698765269,
+        "after_cp_mover": 154,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "c1e3",
+            "cp_mover": 40,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186305472636",
+      "ply": 18,
+      "san": "Nxd5",
+      "uci": "f6d5",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "652fb6f1b9a451cf10e69be7f6743f24900408c6ad3b5078982c231695cded22",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "GothamChess",
+          "captured_at": "2026-11-03T00:08:32.260Z",
+          "categories": [
+            "Knight Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "f79daa7f1eef4cd40a8238b03a14a37fa287b9c3771e585b46d81dc00c8ccd39",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "GothamChess",
+          "captured_at": "2026-11-03T00:28:08.847Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!",
+      "ec": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 99.79743954340687,
+        "cpLoss": 3,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 99.79743954340687,
+        "cpLoss": 3,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0.26926862716395306,
+        "after_cp_mover": 85,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "b6b5",
+            "cp_mover": -84,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186305472636",
+      "ply": 20,
+      "san": "Nxe7",
+      "uci": "d5e7",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "307b543ebef8006f16e96a78712e98917e18b05ef5f7c37a49cbc7d4c68caf8d",
+          "source_type": "fresh_review",
+          "label": "best",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "GothamChess",
+          "captured_at": "2026-11-03T00:28:09.201Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 97.43446701327322,
+        "cpLoss": 9,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 97.43446701327322,
+        "cpLoss": 9,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0.8077906829027413,
+        "after_cp_mover": 82,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "d5c3",
+            "cp_mover": 75,
+            "piece_offer": true
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186305620178",
+      "ply": 17,
+      "san": "Nc3",
+      "uci": "b1c3",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "96caa405b4a8d6ad67859a5b50be6301afbf189c9e8e0231e76022825623f7ae",
+          "source_type": "fresh_review",
+          "label": "?",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "GothamChess",
+          "captured_at": "2026-11-03T00:25:58.528Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "?!",
+      "ec": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 78.65952323474173,
+        "cpLoss": 62,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 78.65952323474173,
+        "cpLoss": 62,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 5.605033614223103,
+        "after_cp_mover": -102,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "f1d1",
+            "cp_mover": -40,
+            "piece_offer": false
+          },
+          {
+            "move": "c2c4",
+            "cp_mover": -68,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186305620178",
+      "ply": 37,
+      "san": "Qxc6",
+      "uci": "a6c6",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "45444cb16f32456876fa11a9e11499f9b5ed9c0684435f6e569b0eb4346bbdef",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "GothamChess",
+          "captured_at": "2026-11-03T00:08:26.338Z",
+          "categories": [
+            "Queen Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "41bf313dbb9b3a9a9ac06c1d63475a3325554ec6b2b680184f8a7fb4d724371d",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "GothamChess",
+          "captured_at": "2026-11-03T00:25:58.062Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!?",
+      "ec": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0.061259306126970614,
+        "after_cp_mover": 358,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "c4b5",
+            "cp_mover": 267,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186336144138",
+      "ply": 12,
+      "san": "cxd5",
+      "uci": "c6d5",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "2d5d37678cb8512b6ff55507bcb7c8f5e7593ca97a5d97c7953350f15ce0db83",
+          "source_type": "fresh_review",
+          "label": "best",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "GothamChess",
+          "captured_at": "2026-11-03T00:26:50.575Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0.09154210139583796,
+        "after_cp_mover": 40,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "g8f6",
+            "cp_mover": 41,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186336144138",
+      "ply": 56,
+      "san": "Qf3",
+      "uci": "e2f3",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "6d9c58f60040d3256394ab99f0dba532c4257c0b8a6730fe598e57008063289d",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "GothamChess",
+          "captured_at": "2026-11-03T00:08:28.302Z",
+          "categories": [
+            "Rook Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "05ab98f7b2f31053c9081e5f424f57af36df73c9f462fb2c7a84c436be38f061",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "GothamChess",
+          "captured_at": "2026-11-03T00:26:50.154Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!!",
+      "ec": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0,
+        "after_cp_mover": 1000,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "c8c6",
+            "cp_mover": 0,
+            "piece_offer": true
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186383126550",
+      "ply": 3,
+      "san": "Na3",
+      "uci": "b1a3",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "aec504db9e845f93f3dfe253948205bdd3d5f3e8064dcd0fc411715ea541121c",
+          "source_type": "fresh_review",
+          "label": "?",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "GothamChess",
+          "captured_at": "2026-11-03T00:27:46.035Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "?",
+      "ec": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 63.88154450920011,
+        "cpLoss": 112,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 63.88154450920011,
+        "cpLoss": 112,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 10.242503798189048,
+        "after_cp_mover": -86,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "d2d4",
+            "cp_mover": 26,
+            "piece_offer": false
+          },
+          {
+            "move": "d2d3",
+            "cp_mover": -20,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186383126550",
+      "ply": 51,
+      "san": "Bxg6",
+      "uci": "e4g6",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "32ef001ab270342b4a8806673c1c26ffc9018d78e8f52446a682ce6f534ee2b1",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "GothamChess",
+          "captured_at": "2026-11-03T00:08:30.338Z",
+          "categories": [
+            "Bishop Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "2edd56d0b9422cd0dd1417951635ab1ee7e31c06f66ba493ff3dd96917b641a1",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "GothamChess",
+          "captured_at": "2026-11-03T00:27:45.559Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!!",
+      "ec": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": -1.2237737520243357,
+        "after_cp_mover": 131,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "g4e2",
+            "cp_mover": -1,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186405804254",
+      "ply": 13,
+      "san": "Qxg7",
+      "uci": "d4g7",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "4452e99fa6a3daf7493907a9cec8a0159637f9854c65dfb678492f864103bb3d",
+          "source_type": "fresh_review",
+          "label": "best",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "nelsi",
+          "captured_at": "2026-11-03T00:20:17.114Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "!",
+      "ec": {
+        "symbol": "",
+        "provisional": "!",
+        "withheld": true,
+        "accuracy": 86.25788570237155,
+        "cpLoss": 39,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "",
+        "provisional": "!",
+        "withheld": true,
+        "accuracy": 86.25788570237155,
+        "cpLoss": 39,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 3.541451177541248,
+        "after_cp_mover": 43,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "d4d1",
+            "cp_mover": -102,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186405804254",
+      "ply": 15,
+      "san": "Bh6",
+      "uci": "c1h6",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "06f0c221319a89f713198c6acae2cbfc2d11c5f6288c4ba806382af890cf8589",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "nelsi",
+          "captured_at": "2026-11-03T00:08:03.957Z",
+          "categories": [
+            "Bishop Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "4dba0bebf60977c0576b0ff5d3fecba4c5866c58aafc2b75b34479692f4792c0",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "nelsi",
+          "captured_at": "2026-11-03T00:20:16.967Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0.08943317339900148,
+        "after_cp_mover": 92,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "g7f6",
+            "cp_mover": 14,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186405804254",
+      "ply": 51,
+      "san": "Qxd6+",
+      "uci": "d4d6",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "9f636e3b433bea7b2db2137066fa6d11aebc1ba33ada243cf126e763d6bf72d3",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "nelsi",
+          "captured_at": "2026-11-03T00:08:00.595Z",
+          "categories": [
+            "Queen Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "f258ebc119e7aa0adfb7c9d22a0bcae5acf616f37e23647b463d22a5237bd3d3",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "nelsi",
+          "captured_at": "2026-11-03T00:17:45.318Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "?!",
+      "ec": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 65.26751004946712,
+        "cpLoss": 247,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 65.26751004946712,
+        "cpLoss": 247,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 9.765541418570777,
+        "after_cp_mover": 416,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "c3e4",
+            "cp_mover": 663,
+            "piece_offer": false
+          },
+          {
+            "move": "g1g3",
+            "cp_mover": 662,
+            "piece_offer": true
+          }
+        ],
+        "routine_winning_safe_alternatives": [
+          {
+            "move": "c3e4",
+            "cp_mover": 663,
+            "piece_offer": false
+          }
+        ]
+      },
+      "stronger_window_decision": {
+        "ec": {
+          "symbol": "?",
+          "provisional": "?",
+          "withheld": false,
+          "accuracy": 63.05574669081561,
+          "cpLoss": 261,
+          "version": "ec015-mobilemaia-window-v2"
+        },
+        "mute_v2": {
+          "symbol": "?",
+          "provisional": "?",
+          "withheld": false,
+          "accuracy": 63.05574669081561,
+          "cpLoss": 261,
+          "version": "mute-chess-brilliant-v2"
+        },
+        "gates": {
+          "mapped_loss_pp": 10.531473251165806,
+          "after_cp_mover": 402,
+          "played_piece_offer": true,
+          "evaluated_alternatives": [
+            {
+              "move": "c3e4",
+              "cp_mover": 663,
+              "piece_offer": false
+            },
+            {
+              "move": "g1g3",
+              "cp_mover": 663,
+              "piece_offer": true
+            }
+          ],
+          "routine_winning_safe_alternatives": [
+            {
+              "move": "c3e4",
+              "cp_mover": 663,
+              "piece_offer": false
+            }
+          ]
+        }
+      },
+      "independent_stronger_confirmation": {
+        "ec": {
+          "symbol": "?!",
+          "provisional": "?!",
+          "withheld": false,
+          "accuracy": 65.26751004946712,
+          "cpLoss": 247,
+          "version": "ec015-mobilemaia-window-v2"
+        },
+        "mute_v2": {
+          "symbol": "?!",
+          "provisional": "?!",
+          "withheld": false,
+          "accuracy": 65.26751004946712,
+          "cpLoss": 247,
+          "version": "mute-chess-brilliant-v2"
+        }
+      }
+    },
+    {
+      "game_id": "186405804254",
+      "ply": 53,
+      "san": "Rxd6",
+      "uci": "d1d6",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "daf40e3b64d04a92f5e670e5bfd5653534739f7816af28f3c8ef0d6d3fe5a250",
+          "source_type": "fresh_review",
+          "label": "best",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "nelsi",
+          "captured_at": "2026-11-03T00:17:45.462Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0,
+        "after_cp_mover": 409,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "g1g3",
+            "cp_mover": -187,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186409700648",
+      "ply": 74,
+      "san": "Nxg4",
+      "uci": "f6g4",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "59f550867a51e061f3e8fb49ede830474dd04f968b383777035c5e4829d095aa",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "nelsi",
+          "captured_at": "2026-11-03T00:08:05.766Z",
+          "categories": [
+            "Knight Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "466cda7cf6cf9be021fb6541544fb458a80dd9e95339b02a41bf72c8fb4fa24a",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "nelsi",
+          "captured_at": "2026-11-03T00:21:23.195Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!!",
+      "ec": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": -1.2924476398174818,
+        "after_cp_mover": 783,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "f6h5",
+            "cp_mover": -124,
+            "piece_offer": true
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186409700648",
+      "ply": 76,
+      "san": "Rxf2+",
+      "uci": "f8f2",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "5153f19c35aab20b7366c5826e2a5324f8507ce7e9f8215264400d7290768c84",
+          "source_type": "fresh_review",
+          "label": "best",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "nelsi",
+          "captured_at": "2026-11-03T00:21:23.716Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0,
+        "after_cp_mover": 1000,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "h4f2",
+            "cp_mover": 0,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186423523498",
+      "ply": 47,
+      "san": "Rxa6",
+      "uci": "a1a6",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "2b18b3288cfcae63f89d5c252bac2e2d5105458fd4bd3573141fab252c8647fa",
+          "source_type": "fresh_review",
+          "label": "best",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "nelsi",
+          "captured_at": "2026-11-03T00:19:34.933Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": -0.591216693943494,
+        "after_cp_mover": 164,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "c3c4",
+            "cp_mover": 119,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "186423523498",
+      "ply": 57,
+      "san": "Rxf6",
+      "uci": "a6f6",
+      "split": "development",
+      "observations": [
+        {
+          "observation_id": "65701d3addebc45ad8ad278565d590473e3421784e7c7d75df3020f97fb425eb",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "nelsi",
+          "captured_at": "2026-11-03T00:08:02.266Z",
+          "categories": [
+            "Rook Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "ff407db0f888542e5ec844e4791c3f5370412f0c7565836f8ab75fa08cc7f9c2",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "nelsi",
+          "captured_at": "2026-11-03T00:19:34.765Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!?",
+      "ec": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 94.16305663264868,
+        "cpLoss": 24,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 94.16305663264868,
+        "cpLoss": 24,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 1.574821986428077,
+        "after_cp_mover": 313,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "d5d6",
+            "cp_mover": 337,
+            "piece_offer": false
+          },
+          {
+            "move": "a6b6",
+            "cp_mover": 316,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "187780087431",
+      "ply": 24,
+      "san": "f6",
+      "uci": "f7f6",
+      "split": "player_holdout",
+      "observations": [
+        {
+          "observation_id": "7f152f2236acaacf48970d51e0fa119ba2899fb4acad42c9ea24e7452e37c31d",
+          "source_type": "fresh_review",
+          "label": "??",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "Hikaru",
+          "captured_at": "2026-11-03T00:28:41.797Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "?",
+      "ec": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 51.72297510235763,
+        "cpLoss": 192,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 51.72297510235763,
+        "cpLoss": 192,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 14.915123600379353,
+        "after_cp_mover": 127,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "d7d6",
+            "cp_mover": 319,
+            "piece_offer": false
+          },
+          {
+            "move": "f8g7",
+            "cp_mover": 244,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "187780087431",
+      "ply": 34,
+      "san": "Bxd5",
+      "uci": "e6d5",
+      "split": "player_holdout",
+      "observations": [
+        {
+          "observation_id": "4c65f0246cda8dcd31b07bb3740bc686cd2a65b35e86c666912de00784b4b938",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "Hikaru",
+          "captured_at": "2026-11-03T00:08:47.297Z",
+          "categories": [
+            "Queen Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "8fda96f6d106f7c3976652e1d3409f01f275f1a7d305189fcd169f8b71843233",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "Hikaru",
+          "captured_at": "2026-11-03T00:28:41.405Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!!",
+      "ec": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": -1.14579844497392,
+        "after_cp_mover": 399,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "c6c3",
+            "cp_mover": 22,
+            "piece_offer": true
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "187784287701",
+      "ply": 61,
+      "san": "Qf8",
+      "uci": "f3f8",
+      "split": "player_holdout",
+      "observations": [
+        {
+          "observation_id": "6d2fff4d996f823fc4d8c8ec307abbf6c52f39f56546863a57314e14d6f5f9a8",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "Hikaru",
+          "captured_at": "2026-11-03T00:08:53.127Z",
+          "categories": [
+            "Knight Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "cc6a343f5e11ae3e96c8a38cf25328611344a57e88486077c3cd2dad46c05190",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "Hikaru",
+          "captured_at": "2026-11-03T00:29:54.873Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!?",
+      "ec": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": -1.0457755185181554,
+        "after_cp_mover": 438,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "c4b5",
+            "cp_mover": 309,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "187784287701",
+      "ply": 65,
+      "san": "Rg7#",
+      "uci": "f7g7",
+      "split": "player_holdout",
+      "observations": [
+        {
+          "observation_id": "5602684a3dbc2c47b864e9baa524a0139107de10941746cd593dad830da437b8",
+          "source_type": "fresh_review",
+          "label": "best",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "Hikaru",
+          "captured_at": "2026-11-03T00:29:55.221Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0,
+        "after_cp_mover": 1000,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "f8g7",
+            "cp_mover": 1000,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": [
+          {
+            "move": "f8g7",
+            "cp_mover": 1000,
+            "piece_offer": false
+          }
+        ]
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "187784887471",
+      "ply": 113,
+      "san": "Kxa2",
+      "uci": "b1a2",
+      "split": "player_holdout",
+      "observations": [
+        {
+          "observation_id": "71bea9db7218036eda19762156f06275cac9e5a654511a2cde4feddedf4e109c",
+          "source_type": "fresh_review",
+          "label": "best",
+          "label_status": "fresh_confirmed_non_brilliant",
+          "account": "Hikaru",
+          "captured_at": "2026-11-03T00:29:35.395Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "non_brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": false,
+      "mute_piece_offer": false,
+      "ec_raw_unchanged_oracle": "",
+      "ec": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0,
+        "after_cp_mover": 0,
+        "played_piece_offer": false,
+        "evaluated_alternatives": [
+          {
+            "move": "a8g8",
+            "cp_mover": 0,
+            "piece_offer": true
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    },
+    {
+      "game_id": "187784887471",
+      "ply": 117,
+      "san": "Rg8+",
+      "uci": "a8g8",
+      "split": "player_holdout",
+      "observations": [
+        {
+          "observation_id": "1a7a42b7ccdc979bcecf132a76f56a00f5d3f81945dfc1e4488ddc556ff3d222",
+          "source_type": "gallery",
+          "label": "!!",
+          "label_status": "gallery_brilliant",
+          "account": "Hikaru",
+          "captured_at": "2026-11-03T00:08:49.324Z",
+          "categories": [
+            "Rook Sacrifice"
+          ],
+          "negative_category": null
+        },
+        {
+          "observation_id": "95f6ba1e1c2dbb759bec2d521de5a7ef119fc75506c0a92faa65fbc04af92e28",
+          "source_type": "fresh_review",
+          "label": "!!",
+          "label_status": "fresh_confirmed_brilliant",
+          "account": "Hikaru",
+          "captured_at": "2026-11-03T00:29:34.974Z",
+          "categories": [],
+          "negative_category": null
+        }
+      ],
+      "primary_fresh_binary_label": "brilliant",
+      "fresh_binary_disagreement": false,
+      "ec_sacrifice": true,
+      "mute_piece_offer": true,
+      "ec_raw_unchanged_oracle": "!!",
+      "ec": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "ec015-mobilemaia-window-v2"
+      },
+      "mute_v2": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "mute-chess-brilliant-v2"
+      },
+      "baseline_gates": {
+        "mapped_loss_pp": 0,
+        "after_cp_mover": 0,
+        "played_piece_offer": true,
+        "evaluated_alternatives": [
+          {
+            "move": "a8b8",
+            "cp_mover": -240,
+            "piece_offer": false
+          }
+        ],
+        "routine_winning_safe_alternatives": []
+      },
+      "stronger_window_decision": null,
+      "independent_stronger_confirmation": {
+        "ec": {
+          "status": "independent_window_incomplete"
+        },
+        "mute_v2": {
+          "status": "independent_window_incomplete"
+        }
+      }
+    }
+  ],
+  "summaries": {
+    "ec": {
+      "all_fresh": {
+        "TP": 6,
+        "FN": 13,
+        "FP": 0,
+        "TN": 21,
+        "withheld_positive": 0,
+        "withheld_negative": 1,
+        "positive_n": 19,
+        "negative_n": 21,
+        "brilliant_detection_rate": 0.3157894736842105,
+        "false_positive_rate": 0
+      },
+      "development": {
+        "TP": 3,
+        "FN": 9,
+        "FP": 0,
+        "TN": 14,
+        "withheld_positive": 0,
+        "withheld_negative": 1,
+        "positive_n": 12,
+        "negative_n": 14,
+        "brilliant_detection_rate": 0.25,
+        "false_positive_rate": 0
+      },
+      "game_holdout": {
+        "TP": 1,
+        "FN": 2,
+        "FP": 0,
+        "TN": 3,
+        "withheld_positive": 0,
+        "withheld_negative": 0,
+        "positive_n": 3,
+        "negative_n": 3,
+        "brilliant_detection_rate": 0.3333333333333333,
+        "false_positive_rate": 0
+      },
+      "player_holdout": {
+        "TP": 2,
+        "FN": 2,
+        "FP": 0,
+        "TN": 4,
+        "withheld_positive": 0,
+        "withheld_negative": 0,
+        "positive_n": 4,
+        "negative_n": 4,
+        "brilliant_detection_rate": 0.5,
+        "false_positive_rate": 0
+      },
+      "raw_eligibility_all_fresh": {
+        "TP": 6,
+        "FN": 13,
+        "FP": 0,
+        "TN": 21,
+        "withheld_positive": 0,
+        "withheld_negative": 0,
+        "positive_n": 19,
+        "negative_n": 21,
+        "brilliant_detection_rate": 0.3157894736842105,
+        "false_positive_rate": 0
+      },
+      "by_account": {
+        "nelsi": {
+          "TP": 1,
+          "FN": 3,
+          "FP": 0,
+          "TN": 4,
+          "withheld_positive": 0,
+          "withheld_negative": 1,
+          "positive_n": 4,
+          "negative_n": 4,
+          "brilliant_detection_rate": 0.25,
+          "false_positive_rate": 0
+        },
+        "hansen": {
+          "TP": 0,
+          "FN": 3,
+          "FP": 0,
+          "TN": 5,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 3,
+          "negative_n": 5,
+          "brilliant_detection_rate": 0,
+          "false_positive_rate": 0
+        },
+        "KNVB": {
+          "TP": 1,
+          "FN": 3,
+          "FP": 0,
+          "TN": 4,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 4,
+          "negative_n": 4,
+          "brilliant_detection_rate": 0.25,
+          "false_positive_rate": 0
+        },
+        "GothamChess": {
+          "TP": 2,
+          "FN": 2,
+          "FP": 0,
+          "TN": 4,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 4,
+          "negative_n": 4,
+          "brilliant_detection_rate": 0.5,
+          "false_positive_rate": 0
+        },
+        "Hikaru": {
+          "TP": 2,
+          "FN": 2,
+          "FP": 0,
+          "TN": 4,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 4,
+          "negative_n": 4,
+          "brilliant_detection_rate": 0.5,
+          "false_positive_rate": 0
+        }
+      },
+      "by_observed_category": {
+        "gallery:Knight Sacrifice": {
+          "TP": 1,
+          "FN": 4,
+          "FP": 0,
+          "TN": 0,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 5,
+          "negative_n": 0,
+          "brilliant_detection_rate": 0.2,
+          "false_positive_rate": null
+        },
+        "gallery:Queen Sacrifice": {
+          "TP": 1,
+          "FN": 3,
+          "FP": 0,
+          "TN": 1,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 4,
+          "negative_n": 1,
+          "brilliant_detection_rate": 0.25,
+          "false_positive_rate": 0
+        },
+        "gallery:Rook Sacrifice": {
+          "TP": 3,
+          "FN": 2,
+          "FP": 0,
+          "TN": 0,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 5,
+          "negative_n": 0,
+          "brilliant_detection_rate": 0.6,
+          "false_positive_rate": null
+        },
+        "gallery:Bishop Sacrifice": {
+          "TP": 1,
+          "FN": 4,
+          "FP": 0,
+          "TN": 0,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 5,
+          "negative_n": 0,
+          "brilliant_detection_rate": 0.2,
+          "false_positive_rate": null
+        }
+      }
+    },
+    "mute_v2": {
+      "all_fresh": {
+        "TP": 17,
+        "FN": 2,
+        "FP": 1,
+        "TN": 20,
+        "withheld_positive": 0,
+        "withheld_negative": 1,
+        "positive_n": 19,
+        "negative_n": 21,
+        "brilliant_detection_rate": 0.8947368421052632,
+        "false_positive_rate": 0.047619047619047616
+      },
+      "development": {
+        "TP": 11,
+        "FN": 1,
+        "FP": 1,
+        "TN": 13,
+        "withheld_positive": 0,
+        "withheld_negative": 1,
+        "positive_n": 12,
+        "negative_n": 14,
+        "brilliant_detection_rate": 0.9166666666666666,
+        "false_positive_rate": 0.07142857142857142
+      },
+      "game_holdout": {
+        "TP": 2,
+        "FN": 1,
+        "FP": 0,
+        "TN": 3,
+        "withheld_positive": 0,
+        "withheld_negative": 0,
+        "positive_n": 3,
+        "negative_n": 3,
+        "brilliant_detection_rate": 0.6666666666666666,
+        "false_positive_rate": 0
+      },
+      "player_holdout": {
+        "TP": 4,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "withheld_positive": 0,
+        "withheld_negative": 0,
+        "positive_n": 4,
+        "negative_n": 4,
+        "brilliant_detection_rate": 1,
+        "false_positive_rate": 0
+      },
+      "raw_eligibility_all_fresh": {
+        "TP": 17,
+        "FN": 2,
+        "FP": 1,
+        "TN": 20,
+        "withheld_positive": 0,
+        "withheld_negative": 0,
+        "positive_n": 19,
+        "negative_n": 21,
+        "brilliant_detection_rate": 0.8947368421052632,
+        "false_positive_rate": 0.047619047619047616
+      },
+      "by_account": {
+        "nelsi": {
+          "TP": 3,
+          "FN": 1,
+          "FP": 0,
+          "TN": 4,
+          "withheld_positive": 0,
+          "withheld_negative": 1,
+          "positive_n": 4,
+          "negative_n": 4,
+          "brilliant_detection_rate": 0.75,
+          "false_positive_rate": 0
+        },
+        "hansen": {
+          "TP": 3,
+          "FN": 0,
+          "FP": 1,
+          "TN": 4,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 3,
+          "negative_n": 5,
+          "brilliant_detection_rate": 1,
+          "false_positive_rate": 0.2
+        },
+        "KNVB": {
+          "TP": 3,
+          "FN": 1,
+          "FP": 0,
+          "TN": 4,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 4,
+          "negative_n": 4,
+          "brilliant_detection_rate": 0.75,
+          "false_positive_rate": 0
+        },
+        "GothamChess": {
+          "TP": 4,
+          "FN": 0,
+          "FP": 0,
+          "TN": 4,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 4,
+          "negative_n": 4,
+          "brilliant_detection_rate": 1,
+          "false_positive_rate": 0
+        },
+        "Hikaru": {
+          "TP": 4,
+          "FN": 0,
+          "FP": 0,
+          "TN": 4,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 4,
+          "negative_n": 4,
+          "brilliant_detection_rate": 1,
+          "false_positive_rate": 0
+        }
+      },
+      "by_observed_category": {
+        "gallery:Knight Sacrifice": {
+          "TP": 5,
+          "FN": 0,
+          "FP": 0,
+          "TN": 0,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 5,
+          "negative_n": 0,
+          "brilliant_detection_rate": 1,
+          "false_positive_rate": null
+        },
+        "gallery:Queen Sacrifice": {
+          "TP": 3,
+          "FN": 1,
+          "FP": 1,
+          "TN": 0,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 4,
+          "negative_n": 1,
+          "brilliant_detection_rate": 0.75,
+          "false_positive_rate": 1
+        },
+        "gallery:Rook Sacrifice": {
+          "TP": 5,
+          "FN": 0,
+          "FP": 0,
+          "TN": 0,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 5,
+          "negative_n": 0,
+          "brilliant_detection_rate": 1,
+          "false_positive_rate": null
+        },
+        "gallery:Bishop Sacrifice": {
+          "TP": 4,
+          "FN": 1,
+          "FP": 0,
+          "TN": 0,
+          "withheld_positive": 0,
+          "withheld_negative": 0,
+          "positive_n": 5,
+          "negative_n": 0,
+          "brilliant_detection_rate": 0.8,
+          "false_positive_rate": null
+        }
+      }
+    }
+  },
+  "python_vs_typescript_material_differences": [],
+  "owner_controls_separate_from_chesscom_labels": [
+    {
+      "name": "L1lChap-nelsi 14...Ndxe5",
+      "game_id": "186311900336",
+      "expected_ply_if_standard_start": 28,
+      "uci": "d7e5",
+      "fen_before": "r2r2k1/pp1nppbp/1qn3p1/4P3/5Pb1/P2B1N2/1P4PP/RNB1QR1K b - - 4 14",
+      "line": "14...Ndxe5 15.Nxe5 Nxe5 16.fxe5 Rxd3",
+      "owner_expected": "not_brilliant",
+      "chesscom_label": "unknown_until_captured",
+      "mechanism": "same-square loss on e5 is recouped on d3; two knights for knight+bishop plus pawn",
+      "ec_material_mover_before": 90,
+      "ec_material_mover_after": 90,
+      "source": "https://github.com/Dash1971/mute-chess/issues/229",
+      "split": "known_development",
+      "derived_fen_after": "r2r2k1/pp2ppbp/1qn3p1/4n3/5Pb1/P2B1N2/1P4PP/RNB1QR1K w - - 0 15",
+      "actual_ec_sacrifice": false,
+      "actual_mute_v2_piece_offer": true,
+      "not_in_fresh_label_metrics": true
+    },
+    {
+      "name": "41.Qf5+",
+      "game_id": null,
+      "expected_ply_if_standard_start": 81,
+      "uci": "d5f5",
+      "fen_before": "6r1/p1P3pk/1q1B1b1p/3Q4/8/7P/P4PP1/2R3K1 w - - 9 41",
+      "fen_after": "6r1/p1P3pk/1q1B1b1p/5Q2/8/7P/P4PP1/2R3K1 b - - 10 41",
+      "owner_expected": "not_brilliant",
+      "chesscom_label": "unknown_until_captured",
+      "mechanism": "EC material probe treats deferred optional promotion gain as sacrifice; no legal immediate nonpawn capture after check",
+      "source": "https://github.com/Dash1971/mute-chess/issues/227",
+      "split": "known_development",
+      "derived_fen_after": "6r1/p1P3pk/1q1B1b1p/5Q2/8/7P/P4PP1/2R3K1 b - - 10 41",
+      "actual_ec_sacrifice": true,
+      "actual_mute_v2_piece_offer": false,
+      "not_in_fresh_label_metrics": true
+    },
+    {
+      "name": "17...Bf5",
+      "game_id": null,
+      "expected_ply_if_standard_start": 34,
+      "uci": "g4f5",
+      "fen_before": "r5k1/pp2ppbp/1q4p1/4P3/4Q1b1/P2r4/1P4PP/RNB2R1K b - - 1 17",
+      "owner_expected": "not_brilliant",
+      "chesscom_label": "unknown_until_captured",
+      "mechanism": "defended tactic; capture-only probe misses quiet Rd1+",
+      "source": "https://github.com/Dash1971/mute-chess/pull/228",
+      "split": "known_development",
+      "derived_fen_after": "r5k1/pp2ppbp/1q4p1/4Pb2/4Q3/P2r4/1P4PP/RNB2R1K w - - 2 18",
+      "actual_ec_sacrifice": true,
+      "actual_mute_v2_piece_offer": false,
+      "not_in_fresh_label_metrics": true
+    }
+  ],
+  "limitations": [
+    "Selected pilot examples; no rule tuning or generalization claim.",
+    "Primary metrics require explicit fresh-review labels; gallery-only rows are excluded.",
+    "Eligibility and confirmation-aware awards are separate. Withheld means no award, with counts retained.",
+    "Prior snapshots are actual completed iterations; independent stronger windows are used only when supplied and nonshallower.",
+    "Local SF18 evidence does not reproduce Chess.com engine or deployed browser search budgets."
+  ]
+}

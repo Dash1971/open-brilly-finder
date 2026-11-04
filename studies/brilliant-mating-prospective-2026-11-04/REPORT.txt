@@ -1,0 +1,64 @@
+Frozen mating-offer candidate — prospective test, 2026-11-04
+
+VERDICT: FAIL the requested no-additional-wrong-awards criterion. The fixed exception adds4correct Brilliant awards and8wrong Brilliant awards among12new-award targets. Chess.com labels the8disagreements as6Great and2Best. Do not deploy this candidate. No forest refit, cutoff adjustment, rule change, rating feature, or application/deployment change occurred.
+
+FROZEN CANDIDATE
+Exact fullfit custom research forest SHA256 e153a3d151a8803d13fc85ba857c9297541a5d45b627f776ea56f1a249002332, threshold0.8143062085223279, original two-window eligibility/confidence/physical-known guards. Baseline forest award OR prior fixed sound-mating-offer rule AND nonmating-material proxy0in BOTH windows. Unknown evidence abstains. This is the candidate selected in brilliant-nonmate-material-2026-11-04, not the older848-case deployed forest. CANDIDATE-FREEZE.json and copied forest/rule/extractor were frozen before new positions were mined; RUN-FREEZE.json pins the bounded sampling/inference scripts and sources. Nothing was fitted to these fresh labels.
+
+FRESHNESS AND SAMPLING
+92existing public monthly PGN files contain14,536unique gameIDs. Conservative exclusion manifest removes1,441previously studied/reviewed/reserved IDs and114,156normalized before/after/context positions. All3,724trainingcases+aliases, earlier654targets and the known Ne5 game positions were explicitly checked as excluded. This leaves13,097potentially fresh games before position screening. Fresh means previously unexamined by this research, not necessarily recently played.
+
+A prespecified deterministic label-blind scan of4,000games found275qualifying structural mating-offer moves, after scanning369,068played moves. Every accepted raw candidate has a legal nonpawn capture whose acceptance allows immediate mate. Target before/after positions cannot overlap the exclusion set; entire previously studied games are excluded. The original frozen rule handles sacrifice attribution later. Mining used no Chess.com labels or rating features.
+
+All275candidates completed fixedSF18/300k-node analysis and exact75-feature extraction.846position/acceptance searches in234.3seconds; original fullPGN histories and complete current/previous engine iterations retained.25positions received baseline forest awards; the exception added13newawards in the scored pool. These25baseline awards were not part of the targeted label sample, and their accuracy is NOT estimated here.
+
+The review queue was frozen BEFORE reading any new Chess.com labels:12new-award targets in deterministic order, plus12nearby nonawarded controls, one target pergame. The13thnewaward was left unreviewed under the predefined12targetcap. Controls prioritized base-rule matches vetoed or unresolved by the material check, then matched categorical offer/move features and evaluation/gap/prior-score distance. No case was replaced or added after observing its label. All24queuedcases were resolved.
+
+EXTERNAL LABELS
+Chess.com Game Review, Torch Human/Fast, settings inspected and unchanged. Each original public game opened at its exact gameID and targetply; its visible move-level label was recorded and archived as full accessibility text plus screenshot. All label timestamps follow PRELABEL-FREEZE.json. No PGN import fallback was needed. Chess.com naturally displays player information; ratings were not model predictors or selection features.
+
+PAIRED RESULT
+On the12new-award targets:
+- Baseline awards none, by target selection.
+- Candidate awards all12:4Brilliant,6Great,2Best according to Chess.com.
+- Increment:4true positives,8false positives.8/12incremental awards are wrong in this targeted sample.
+
+The12nonawarded controls contain7Chess.comBrilliants and5non-Brilliants (3Best,1Great,1Miss). Both baseline and candidate decline all12, by control selection. In particular the material-veto controls include a real Brilliant Nxf4, confirming that a material-winning alternative is not an absolute separator.
+
+For accounting only, across this targeted24case sample:baseline TP0/FP0/FN11/TN13;candidate TP4/FP8/FN7/TN5. Baseline zero awards is a consequence of deliberately sampling extra awards and nearby rejected moves, not evidence of poor global baseline recall. These counts do NOT estimate the full forest's overall recall, precision, or population false-positive rate. They directly test the incremental rule on unseen game groups. No new cross-validation folds were needed because every game was external to training and the model remained fixed.
+
+INTERPRETATION
+The previous reused-data gain of3true/0wrong did not generalize to this fresh sample. A sound offer that allows mate, with no observed material-winning finite alternative in savedMultiPV2, still occurs in moves Chess.com calls Great or Best. Conversely, the candidate misses several true Brilliant mating offers. The Ne5 example remains a verified Brilliant, but the broader exception is not reliable enough for the user's Chess.com-matching goal.
+
+The material measure is a limited saved-line proxy: absence of a qualifying finite material-win witness among two saved responses does not prove such an alternative cannot exist. This test does not establish which internal Chess.com criterion explains each disagreement. Do not fix the eight cases with another posthoc threshold or exception and call the same set fresh validation. Preserve this failed candidate and its counterexamples; the next useful investigation is compare the four correct awards, eight false awards and rejected true Brilliants before specifying another candidate and independently validating it.
+
+VALIDATION
+Eight focused prospective integrity checks pass: immutable candidate/model/source/prelabel hashes; game/position exclusions; every structural mate witness legally replayed; all fixedforest scores/guards/exception decisions independently recomputed; no existing award removed; whole-game/target uniqueness; queue integrity/limits; all24queuedcases retained and verified. Additional label-evidence checks confirm exactSAN/gameID/ply, postfreeze timestamps, archived24screenshots/fulltexts, and no unresolved/replacedcases. Screenshot filenames were corrected from.png to.jpg to match the browser's actual JPEG bytes; image content and labels were unchanged.
+
+All artifacts remain under research/brilliant-mating-prospective-2026-11-04. Production unchanged.
+
+CASE LIST (queue order; new award / nearby control; Chess.com label)
+173487499542:32 Bh3 | new_award | Great | https://www.chess.com/analysis/game/live/173487499542/review?move=31
+167315486838:54 Qe6 | new_award | Great | https://www.chess.com/analysis/game/live/167315486838/review?move=53
+179135871509:66 Qf6 | new_award | Best | https://www.chess.com/analysis/game/live/179135871509/review?move=65
+166826414194:56 Bxg3 | new_award | Brilliant | https://www.chess.com/analysis/game/live/166826414194/review?move=55
+173510361166:31 Qh5 | new_award | Brilliant | https://www.chess.com/analysis/game/live/173510361166/review?move=30
+169151816360:29 Qxg4 | new_award | Brilliant | https://www.chess.com/analysis/game/live/169151816360/review?move=28
+184007310619:65 Rxf2 | new_award | Great | https://www.chess.com/analysis/game/live/184007310619/review?move=64
+174182921870:70 Rd8 | new_award | Brilliant | https://www.chess.com/analysis/game/live/174182921870/review?move=69
+147424650238:25 Qh5 | new_award | Best | https://www.chess.com/analysis/game/live/147424650238/review?move=24
+171360742446:77 Qf7 | new_award | Great | https://www.chess.com/analysis/game/live/171360742446/review?move=76
+171609570218:62 Qf6 | new_award | Great | https://www.chess.com/analysis/game/live/171609570218/review?move=61
+173700284016:22 Ba6 | new_award | Great | https://www.chess.com/analysis/game/live/173700284016/review?move=21
+166040940184:76 Kh7 | near_control | Best | https://www.chess.com/analysis/game/live/166040940184/review?move=75
+169433595406:52 Nxf4 | near_control | Brilliant | https://www.chess.com/analysis/game/live/169433595406/review?move=51
+147305190108:37 Qxg6 | near_control | Best | https://www.chess.com/analysis/game/live/147305190108/review?move=36
+145479440308:17 Nxe5 | near_control | Brilliant | https://www.chess.com/analysis/game/live/145479440308/review?move=16
+172807397646:46 h3 | near_control | Brilliant | https://www.chess.com/analysis/game/live/172807397646/review?move=45
+148103018608:20 Qxe3 | near_control | Brilliant | https://www.chess.com/analysis/game/live/148103018608/review?move=19
+165253726570:24 Nxd4 | near_control | Miss | https://www.chess.com/analysis/game/live/165253726570/review?move=23
+168956462236:46 Ng4 | near_control | Brilliant | https://www.chess.com/analysis/game/live/168956462236/review?move=45
+175075912845:47 Be5 | near_control | Best | https://www.chess.com/analysis/game/live/175075912845/review?move=46
+186402450088:78 Kg7 | near_control | Great | https://www.chess.com/analysis/game/live/186402450088/review?move=77
+145360060432:40 d3 | near_control | Brilliant | https://www.chess.com/analysis/game/live/145360060432/review?move=39
+165547173668:60 Nb8 | near_control | Brilliant | https://www.chess.com/analysis/game/live/165547173668/review?move=59

@@ -1,0 +1,41 @@
+{
+  "scope": "Forensic reconstruction only of the exact five original custom outer forests. No new candidate, tuning, inner/full fit, thresholds, labels, evaluation selection, application changes, or deployment. Interpret paths only after all 3724 saved minimum-window outer scores match within 1e-12.",
+  "script_sha256": "a94518fc9d040a568066bb2d2f9a7bd9da59cf323e7c52ca56783dcbac14900e",
+  "inputs": [
+    {
+      "path": "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json",
+      "sha256": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09"
+    },
+    {
+      "path": "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/fit.py",
+      "sha256": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f"
+    },
+    {
+      "path": "research/brilliant-standard-learners-2026-11-04/experiment.py",
+      "sha256": "0c9b361880d65d43a11443a84d438917866084c77b6edd7af021fbc4b76e3814"
+    },
+    {
+      "path": "research/brilliant-standard-learners-2026-11-04/PROTOCOL.json",
+      "sha256": "fdba522d996fa023fa1c2633f72ee300f367c00c3b4ed22e7228c1719726878e"
+    },
+    {
+      "path": "research/brilliant-standard-learners-2026-11-04/PREDICTIONS.json",
+      "sha256": "ae845d2fd687262f2c41cbdaa2054d85c1f3eb48120a602d30a8a4b8a4dc4a82"
+    }
+  ],
+  "training_path": "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json",
+  "kernel_path": "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/fit.py",
+  "tree_ast_sha256": "a3f12136fa08a6149ce6bc6b49ac71f80e04c0e1ce152e37647c80ec48268a12",
+  "numpy_version": "2.5.4",
+  "environment": "/private/tmp/brilliant-learner-2026-11-04-venv/bin/python",
+  "exact_fit": "experiment.py custom fit using outer fold salt mute-optimization-v1-outer, same sorted group order, eligible-row weights 1/eligible_windows_per_move and split class cost5; 64 whole-group bootstrap trees each seeded SeedSequence([20261103,20,fold,tree_number]); exact original Tree AST.",
+  "limits": {
+    "max_fits": 5,
+    "max_trees": 320,
+    "wall_seconds": 180,
+    "peak_rss_bytes": 536870912,
+    "threads": 1,
+    "no_automatic_retry": true
+  },
+  "trace_definition": "Each traversed split contributes child.raw_p-parent.support.raw_p, summed by base feature including missing indicator, averaged across 64 trees; add average root raw_p for exact score identity. Raw p is unweighted bootstrap-window positive proportion. Current is limiting on score ties. Summaries are path associations, not causal influence."
+}

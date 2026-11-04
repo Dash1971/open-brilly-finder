@@ -1,0 +1,198 @@
+{
+  "scope": "Descriptive robustness and confounding checks only; no new criterion, fitting or thresholds.",
+  "input_sha256": {
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-compensation-links-2026-11-04/COMPARISON.json": "8c1e45e13451d9e4579d16e29785a054a01d15acd5f260ff9cfd9798820474ef",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-compensation-links-2026-11-04/RELATIONS.json": "9a0ebd302d66943f02f05718302484f93d9fc5d13771f54ec177a63a6ad84354"
+  },
+  "exact_anchor_pair_occurrences": 272,
+  "metrics": {
+    "immediate_fork_targets_acceptor": {
+      "current": {
+        "miss": {
+          "occurrences": 21,
+          "distinct_moves": 21,
+          "distinct_groups": 20
+        },
+        "ordinary": {
+          "occurrences": 7,
+          "distinct_moves": 4,
+          "distinct_groups": 4
+        }
+      },
+      "previous": {
+        "miss": {
+          "occurrences": 21,
+          "distinct_moves": 21,
+          "distinct_groups": 20
+        },
+        "ordinary": {
+          "occurrences": 7,
+          "distinct_moves": 4,
+          "distinct_groups": 4
+        }
+      },
+      "window_disagreements_all1302": 3
+    },
+    "immediate_recapture_then_fork": {
+      "current": {
+        "miss": {
+          "occurrences": 7,
+          "distinct_moves": 7,
+          "distinct_groups": 7
+        },
+        "ordinary": {
+          "occurrences": 2,
+          "distinct_moves": 2,
+          "distinct_groups": 2
+        }
+      },
+      "previous": {
+        "miss": {
+          "occurrences": 6,
+          "distinct_moves": 6,
+          "distinct_groups": 6
+        },
+        "ordinary": {
+          "occurrences": 2,
+          "distinct_moves": 2,
+          "distinct_groups": 2
+        }
+      },
+      "window_disagreements_all1302": 1
+    },
+    "acceptance_clears_first_reply_slider_path": {
+      "current": {
+        "miss": {
+          "occurrences": 29,
+          "distinct_moves": 29,
+          "distinct_groups": 29
+        },
+        "ordinary": {
+          "occurrences": 27,
+          "distinct_moves": 11,
+          "distinct_groups": 11
+        }
+      },
+      "previous": {
+        "miss": {
+          "occurrences": 30,
+          "distinct_moves": 30,
+          "distinct_groups": 30
+        },
+        "ordinary": {
+          "occurrences": 27,
+          "distinct_moves": 11,
+          "distinct_groups": 11
+        }
+      },
+      "window_disagreements_all1302": 3
+    },
+    "cleared_path_then_capture_other": {
+      "current": {
+        "miss": {
+          "occurrences": 25,
+          "distinct_moves": 25,
+          "distinct_groups": 25
+        },
+        "ordinary": {
+          "occurrences": 27,
+          "distinct_moves": 11,
+          "distinct_groups": 11
+        }
+      },
+      "previous": {
+        "miss": {
+          "occurrences": 26,
+          "distinct_moves": 26,
+          "distinct_groups": 26
+        },
+        "ordinary": {
+          "occurrences": 27,
+          "distinct_moves": 11,
+          "distinct_groups": 11
+        }
+      },
+      "window_disagreements_all1302": 2
+    },
+    "new_absolute_pin_acceptor_by6": {
+      "current": {
+        "miss": {
+          "occurrences": 4,
+          "distinct_moves": 4,
+          "distinct_groups": 4
+        },
+        "ordinary": {
+          "occurrences": 2,
+          "distinct_moves": 2,
+          "distinct_groups": 2
+        }
+      },
+      "previous": {
+        "miss": {
+          "occurrences": 4,
+          "distinct_moves": 4,
+          "distinct_groups": 4
+        },
+        "ordinary": {
+          "occurrences": 2,
+          "distinct_moves": 2,
+          "distinct_groups": 2
+        }
+      },
+      "window_disagreements_all1302": 0
+    }
+  },
+  "immediate_fork_acceptor_overlap": {
+    "miss": {
+      "unique_flagged_cases": 21,
+      "first_reply_checks": 19,
+      "immediate_terminal_mates": 0,
+      "forking_roles": {
+        "knight": 8,
+        "queen": 9,
+        "bishop": 2,
+        "pawn": 1,
+        "rook": 1
+      },
+      "keys": [
+        "166508569726:70",
+        "166897350472:32",
+        "166897350472:34",
+        "167254288368:47",
+        "168412150706:66",
+        "168788226486:52",
+        "169812769348:53",
+        "170817108950:89",
+        "171640557466:50",
+        "173088055961:68",
+        "173628147512:111",
+        "174199475408:60",
+        "174305177140:53",
+        "178706873269:80",
+        "178708672901:43",
+        "183799110991:36",
+        "184481651976:34",
+        "184514610842:59",
+        "184980636738:94",
+        "186032403160:59",
+        "186566789489:55"
+      ]
+    },
+    "ordinary": {
+      "unique_flagged_cases": 4,
+      "first_reply_checks": 3,
+      "immediate_terminal_mates": 0,
+      "forking_roles": {
+        "queen": 1,
+        "rook": 2,
+        "pawn": 1
+      },
+      "keys": [
+        "168772277524:48",
+        "171306023703:39",
+        "173391055464:72",
+        "184277876260:142"
+      ]
+    }
+  }
+}

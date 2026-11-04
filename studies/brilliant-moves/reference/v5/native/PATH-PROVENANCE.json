@@ -1,0 +1,59 @@
+{
+  "source_module_sha256": "10ac40a04d29492e85d09ddfbd0ac5c8ab32f64a8dce28cb6d78cd1cecbfb499",
+  "source_classifier_sha256": "be222880d7158a6ae3604bd482cb1e218d69c59ee815ea0a0c6ad34e4f1b18c9",
+  "files": [
+    {
+      "source": "mute-chess/ui/analyse/src/noSweatBrilliantForest.ts",
+      "source_sha256": "10ac40a04d29492e85d09ddfbd0ac5c8ab32f64a8dce28cb6d78cd1cecbfb499",
+      "published": "reference/v5/native/noSweatBrilliantForest.ts",
+      "published_sha256": "10ac40a04d29492e85d09ddfbd0ac5c8ab32f64a8dce28cb6d78cd1cecbfb499",
+      "changed": false
+    },
+    {
+      "source": "mute-chess/ui/analyse/src/noSweatBrilliantForestModel.json",
+      "source_sha256": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+      "published": "reference/v5/native/noSweatBrilliantForestModel.json",
+      "published_sha256": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+      "changed": false
+    },
+    {
+      "source": "mute-chess/ui/analyse/src/noSweatClassify.ts",
+      "source_sha256": "be222880d7158a6ae3604bd482cb1e218d69c59ee815ea0a0c6ad34e4f1b18c9",
+      "published": "reference/v5/native/noSweatClassify.ts",
+      "published_sha256": "be222880d7158a6ae3604bd482cb1e218d69c59ee815ea0a0c6ad34e4f1b18c9",
+      "changed": false
+    },
+    {
+      "source": "mute-chess/analysis/forest-port/SUMMARY.json",
+      "source_sha256": "2d340c163b28da204d3f0ae341b2ce15ceb165efcc365a3534564b564a27b98f",
+      "published": "reference/v5/native/SUMMARY.json",
+      "published_sha256": "2d340c163b28da204d3f0ae341b2ce15ceb165efcc365a3534564b564a27b98f",
+      "adaptation": "Only workspace prefixes in provenance strings normalized."
+    },
+    {
+      "source": "mute-chess/analysis/forest-port/parity.json",
+      "source_sha256": "d5a77db7e47ac9f574b1de6bb2eeb5981e7b09f0d4b3c0b10cead57e010a8f2e",
+      "published": "reference/v5/native/parity.json",
+      "published_sha256": "d5a77db7e47ac9f574b1de6bb2eeb5981e7b09f0d4b3c0b10cead57e010a8f2e",
+      "adaptation": "Only workspace prefixes in provenance strings normalized."
+    },
+    {
+      "source": "mute-chess/analysis/forest-port/contract.json",
+      "source_sha256": "129e9301065dec6746a5c0d6f7dfd7f68c58a413c8aa84ecc0e72a73254d34e6",
+      "published": "reference/v5/native/contract.json",
+      "published_sha256": "129e9301065dec6746a5c0d6f7dfd7f68c58a413c8aa84ecc0e72a73254d34e6",
+      "adaptation": "Only workspace prefixes in provenance strings normalized."
+    },
+    {
+      "source": "mute-chess/analysis/forest-port/RESULTS.md",
+      "source_sha256": "076f3deab2369a5364fae73096efa2e097345c7bfc1e6d9901334d393bdd46a3",
+      "published": "reference/v5/native/RESULTS.md",
+      "published_sha256": "076f3deab2369a5364fae73096efa2e097345c7bfc1e6d9901334d393bdd46a3",
+      "adaptation": "Only workspace prefixes in provenance strings normalized."
+    }
+  ],
+  "shim": "Native lib/nosweat/core is the byte-identical core.ts included here; only noSweatCore module resolution differs.",
+  "source_core_sha256": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a",
+  "source_model_sha256": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+  "scope": "Readable native reference+parity, not SF19/variable-budget validation. Additional physicalUnknown hard-withhold guard had no effect on1048recorded cases."
+}

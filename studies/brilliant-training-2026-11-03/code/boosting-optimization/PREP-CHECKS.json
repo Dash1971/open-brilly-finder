@@ -1,0 +1,21 @@
+{
+  "created_at_utc": "2026-11-03T22:22:39.330537+00:00",
+  "scope": "Tiny synthetic arithmetic and trees only; no real training optimization or seen654 access",
+  "passed": true,
+  "checks": [
+    "signed update increases misclassifiedpositive weight; exact manual alpha/update",
+    "misclassifiednegative weight increases with correct sign",
+    "errorhalf rejects and terminates without update",
+    "zeroerror finiteclipped alpha accepted then terminate",
+    "zeroensemble finitezero score abstains",
+    "weightedmajority tie negative",
+    "unchangedRF bitwise originalkernel parity",
+    "synthetictraining votes equal JSONserialized inference/window decision",
+    "physicalunknown and confidence guard inference",
+    "originalforest schema fallback inference parity",
+    "actualgroup guard rejects alias-group leakage"
+  ],
+  "script_sha256": "e6d837b7ce28bf5242308ce8be26070394925c958907ce74afa0a772c1a65c3e",
+  "protocol_sha256": "bdfa73b6b3a220feea11519da4c154e80e48615ec4c1c69307ef76f1f994352a",
+  "test_sha256": "00d1ae358bd0adbeb35472a156c186406f6470f59c75415be70bb67ee53635f0"
+}

@@ -1,0 +1,2242 @@
+{
+  "frozen_at_utc": "2026-11-03T13:53:30.199Z",
+  "scope": "Board-only recovery candidates, not actual v7 activations; root placeholders are not engine scores",
+  "pool_sha256": "2b6d9f078324a324e21a54509bcddd5c5f46a1bb9e845a81ddf548d08f3c8ed6",
+  "script_sha256": "505648e444069244a228294e260538fbb8350f070682d9e089d3ce5de08b06ed",
+  "pool_games": 500,
+  "scanned_plies": 44075,
+  "eligible_capture_positions": 7930,
+  "known_position_exclusions_sha256": "f8b8bfa7bd3bf7c82dee2e7c2d1a4d588ae6a15d0e140ddbe8b207129c93f0db",
+  "excluded_positions": 303,
+  "selected_count": 12,
+  "cap": 300,
+  "targets": [
+    {
+      "game_id": "169826734294",
+      "account": "hansen",
+      "ply": 43,
+      "san": "Nxd5",
+      "uci": "f6d5",
+      "fen_before": "r4r2/pb2qpk1/1p2nNp1/3p3p/6N1/6P1/PP3PBP/2RQR1K1 w - - 0 22",
+      "fen_after": "r4r2/pb2qpk1/1p2n1p1/3N3p/6N1/6P1/PP3PBP/2RQR1K1 b - - 0 22",
+      "pgn_sha256": "870a59781993d9eadae0726be6fde8ce5219e1886fdbc1d763446178dbd467d9",
+      "ordering_hash": "01bdd6a544645270ecce865132081bc5b3df2c98119a37f719daca5498dbac33",
+      "source_link": "https://api.chess.com/pub/player/hansen/games/2026/06/pgn",
+      "board_prefilter": {
+        "veto": true,
+        "status": "complete",
+        "nodes": 786,
+        "acceptances": [
+          {
+            "acceptance": "hxg4",
+            "cost": 210,
+            "response": {
+              "quiet": "Rc7",
+              "all_legal_replies": 41,
+              "witnesses": [
+                {
+                  "reply": "Rh8",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Rg8",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Rfe8",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Rfd8",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Rfc8",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Rfb8",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Rae8",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Rad8",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Rac8",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Rab8",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Kh8",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Kg8",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Kh7",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Kh6",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Qe8",
+                  "recoup": [
+                    "Rxb7"
+                  ]
+                },
+                {
+                  "reply": "Qd8",
+                  "recoup": [
+                    "Rxb7"
+                  ]
+                },
+                {
+                  "reply": "Qd7",
+                  "recoup": [
+                    "Rxd7"
+                  ]
+                },
+                {
+                  "reply": "Qxc7",
+                  "recoup": [
+                    "Nxc7"
+                  ]
+                },
+                {
+                  "reply": "Qf6",
+                  "recoup": [
+                    "Rxb7"
+                  ]
+                },
+                {
+                  "reply": "Qd6",
+                  "recoup": [
+                    "Rxb7"
+                  ]
+                },
+                {
+                  "reply": "Qg5",
+                  "recoup": [
+                    "Rxb7"
+                  ]
+                },
+                {
+                  "reply": "Qc5",
+                  "recoup": [
+                    "Rxb7"
+                  ]
+                },
+                {
+                  "reply": "Qh4",
+                  "recoup": [
+                    "Rxb7"
+                  ]
+                },
+                {
+                  "reply": "Qb4",
+                  "recoup": [
+                    "Rxb7"
+                  ]
+                },
+                {
+                  "reply": "Qa3",
+                  "recoup": [
+                    "Rxb7"
+                  ]
+                },
+                {
+                  "reply": "Bc8",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Bc6",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Ba6",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Bxd5",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "Nd8",
+                  "recoup": [
+                    "Rcxe7"
+                  ]
+                },
+                {
+                  "reply": "Nxc7",
+                  "recoup": [
+                    "Nxe7"
+                  ]
+                },
+                {
+                  "reply": "Ng5",
+                  "recoup": [
+                    "Rcxe7"
+                  ]
+                },
+                {
+                  "reply": "Nc5",
+                  "recoup": [
+                    "Rcxe7"
+                  ]
+                },
+                {
+                  "reply": "Nf4",
+                  "recoup": [
+                    "Rcxe7"
+                  ]
+                },
+                {
+                  "reply": "Nd4",
+                  "recoup": [
+                    "Rcxe7"
+                  ]
+                },
+                {
+                  "reply": "f6",
+                  "recoup": [
+                    "Nxe7"
+                  ]
+                },
+                {
+                  "reply": "a6",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "g5",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "b5",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                },
+                {
+                  "reply": "f5",
+                  "recoup": [
+                    "Nxe7"
+                  ]
+                },
+                {
+                  "reply": "a5",
+                  "recoup": [
+                    "Rxe7"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "best_reply_roots": [
+          "h5g4",
+          "h5g4"
+        ],
+        "existing_acceptances": [
+          "h5g4"
+        ]
+      }
+    },
+    {
+      "game_id": "166960550940",
+      "account": "nelsi",
+      "ply": 47,
+      "san": "Qxg5",
+      "uci": "h4g5",
+      "fen_before": "r4rk1/2q2ppp/p7/1p2p1bn/2pRP2Q/2N4P/PP3PP1/4R1K1 w - - 0 24",
+      "fen_after": "r4rk1/2q2ppp/p7/1p2p1Qn/2pRP3/2N4P/PP3PP1/4R1K1 b - - 0 24",
+      "pgn_sha256": "013a60c7d8a81d94aef8f367a48b146bea88e89bbf5c60a74654c3428ac4467b",
+      "ordering_hash": "02553adce00870f83b36a7e47a8079450f6f49b020852680429eebb90577502e",
+      "source_link": "https://api.chess.com/pub/player/nelsi/games/2026/04/pgn",
+      "board_prefilter": {
+        "veto": true,
+        "status": "complete",
+        "nodes": 837,
+        "acceptances": [
+          {
+            "acceptance": "exd4",
+            "cost": 500,
+            "response": {
+              "quiet": "Nd5",
+              "all_legal_replies": 37,
+              "witnesses": [
+                {
+                  "reply": "Kh8",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Rfe8",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Rfd8",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Rfc8",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Rfb8",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Rae8",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Rad8",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Rac8",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Rab8",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Ra7",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Qd8",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Qc8",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Qb8",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Qe7",
+                  "recoup": [
+                    "Qxe7"
+                  ]
+                },
+                {
+                  "reply": "Qd7",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Qb7",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Qa7",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Qd6",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Qc6",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Qb6",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Qe5",
+                  "recoup": [
+                    "Qxe5"
+                  ]
+                },
+                {
+                  "reply": "Qc5",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Qa5",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Qf4",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Qg3",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "Qh2+",
+                  "recoup": [
+                    "Kxh2"
+                  ]
+                },
+                {
+                  "reply": "Nf6",
+                  "recoup": [
+                    "Nxc7"
+                  ]
+                },
+                {
+                  "reply": "Nf4",
+                  "recoup": [
+                    "Qxf4"
+                  ]
+                },
+                {
+                  "reply": "Ng3",
+                  "recoup": [
+                    "Qxg3"
+                  ]
+                },
+                {
+                  "reply": "h6",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "g6",
+                  "recoup": [
+                    "Nxc7"
+                  ]
+                },
+                {
+                  "reply": "f6",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "a5",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "b4",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "d3",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "c3",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                },
+                {
+                  "reply": "f5",
+                  "recoup": [
+                    "Qxh5"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "best_reply_roots": [
+          "e5d4",
+          "e5d4"
+        ],
+        "existing_acceptances": [
+          "e5d4"
+        ]
+      }
+    },
+    {
+      "game_id": "173360313884",
+      "account": "GothamChess",
+      "ply": 79,
+      "san": "Nxe5",
+      "uci": "f3e5",
+      "fen_before": "5r2/pp6/1k2B2p/4n2P/3pPp2/3P1Np1/2P2n2/2K4R w - - 0 40",
+      "fen_after": "5r2/pp6/1k2B2p/4N2P/3pPp2/3P2p1/2P2n2/2K4R b - - 0 40",
+      "pgn_sha256": "e56e063198034ea17b5084d269f499a1e8f348d99b23c6d51ece8833cc44f272",
+      "ordering_hash": "0349c81f3a393df652a20dcdea9f08d634d3c7b12e8b5150b275633eaf676f3c",
+      "source_link": "https://api.chess.com/pub/player/GothamChess/games/2026/08/pgn",
+      "board_prefilter": {
+        "veto": true,
+        "status": "complete",
+        "nodes": 22,
+        "acceptances": [
+          {
+            "acceptance": "Nxh1",
+            "cost": 500,
+            "response": {
+              "quiet": "Nd7+",
+              "all_legal_replies": 5,
+              "witnesses": [
+                {
+                  "reply": "Kc7",
+                  "recoup": [
+                    "Nxf8"
+                  ]
+                },
+                {
+                  "reply": "Kc6",
+                  "recoup": [
+                    "Nxf8"
+                  ]
+                },
+                {
+                  "reply": "Ka6",
+                  "recoup": [
+                    "Nxf8"
+                  ]
+                },
+                {
+                  "reply": "Kb5",
+                  "recoup": [
+                    "Nxf8"
+                  ]
+                },
+                {
+                  "reply": "Ka5",
+                  "recoup": [
+                    "Nxf8"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "best_reply_roots": [
+          "f2h1",
+          "f2h1"
+        ],
+        "existing_acceptances": [
+          "f2h1"
+        ]
+      }
+    },
+    {
+      "game_id": "185625232942",
+      "account": "Hikaru",
+      "ply": 52,
+      "san": "Nxf2",
+      "uci": "d3f2",
+      "fen_before": "r1b1r1k1/1p3p2/1qpp2p1/4b3/1PP1P3/2NnBK1P/2N2RB1/1R1Q4 b - - 4 26",
+      "fen_after": "r1b1r1k1/1p3p2/1qpp2p1/4b3/1PP1P3/2N1BK1P/2N2nB1/1R1Q4 w - - 0 27",
+      "pgn_sha256": "cfddc55b5c2076822884989f00f27831cc2322edae59dc89b0c3d0c6037c6b25",
+      "ordering_hash": "038c4622039568c0a005abb7e5703fbf903c9ca6a859168ae31c89843ae4c11a",
+      "source_link": "https://api.chess.com/pub/player/Hikaru/games/2026/10/pgn",
+      "board_prefilter": {
+        "veto": true,
+        "status": "complete",
+        "nodes": 44,
+        "acceptances": [
+          {
+            "acceptance": "Bxb6",
+            "cost": 1000,
+            "response": {
+              "quiet": "Bg4+",
+              "all_legal_replies": 3,
+              "witnesses": [
+                {
+                  "reply": "Ke3",
+                  "recoup": [
+                    "Bxd1"
+                  ]
+                },
+                {
+                  "reply": "Kxf2",
+                  "recoup": [
+                    "Bxd1"
+                  ]
+                },
+                {
+                  "reply": "hxg4",
+                  "recoup": [
+                    "Nxd1"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "best_reply_roots": [
+          "e3b6",
+          "e3b6"
+        ],
+        "existing_acceptances": [
+          "e3b6"
+        ]
+      }
+    },
+    {
+      "game_id": "168157376858",
+      "account": "nelsi",
+      "ply": 23,
+      "san": "cxd5",
+      "uci": "c4d5",
+      "fen_before": "r1bqk2r/pp6/2npp2p/3p1p1n/2PP2p1/3BPN2/PP1N1PPP/R2Q1RK1 w kq - 0 12",
+      "fen_after": "r1bqk2r/pp6/2npp2p/3P1p1n/3P2p1/3BPN2/PP1N1PPP/R2Q1RK1 b kq - 0 12",
+      "pgn_sha256": "3c8385dc30abb8b99a4666e6b92be952215aa4c887a11c8194fde58413ba6626",
+      "ordering_hash": "04c26ff30dd646b7003139026f56617c8347ca0afe069209922a12373a977c44",
+      "source_link": "https://api.chess.com/pub/player/nelsi/games/2026/05/pgn",
+      "board_prefilter": {
+        "veto": true,
+        "status": "complete",
+        "nodes": 2417,
+        "acceptances": [
+          {
+            "acceptance": "gxf3",
+            "cost": 210,
+            "response": {
+              "quiet": "g4",
+              "all_legal_replies": 36,
+              "witnesses": [
+                {
+                  "reply": "Rg8",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Rf8",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Rh7",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Kf8",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Kf7",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Ke7",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Kd7",
+                  "recoup": [
+                    "gxh5"
+                  ]
+                },
+                {
+                  "reply": "Qe7",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Qd7",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Qc7",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Qf6",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Qb6",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Qg5",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Qa5",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Qh4",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Bd7",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Rb8",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Nb8",
+                  "recoup": [
+                    "gxh5"
+                  ]
+                },
+                {
+                  "reply": "Ne7",
+                  "recoup": [
+                    "gxh5"
+                  ]
+                },
+                {
+                  "reply": "Ne5",
+                  "recoup": [
+                    "gxh5"
+                  ]
+                },
+                {
+                  "reply": "Na5",
+                  "recoup": [
+                    "gxh5"
+                  ]
+                },
+                {
+                  "reply": "Nxd4",
+                  "recoup": [
+                    "gxh5"
+                  ]
+                },
+                {
+                  "reply": "Nb4",
+                  "recoup": [
+                    "gxh5"
+                  ]
+                },
+                {
+                  "reply": "Ng7",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Nf6",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Nf4",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "Ng3",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "O-O",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "exd5",
+                  "recoup": [
+                    "gxh5"
+                  ]
+                },
+                {
+                  "reply": "fxg4",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "b6",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "a6",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "e5",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "f4",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "b5",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                },
+                {
+                  "reply": "a5",
+                  "recoup": [
+                    "dxc6"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "best_reply_roots": [
+          "g4f3",
+          "g4f3"
+        ],
+        "existing_acceptances": [
+          "g4f3"
+        ]
+      }
+    },
+    {
+      "game_id": "164819749860",
+      "account": "nelsi",
+      "ply": 48,
+      "san": "bxc4",
+      "uci": "b5c4",
+      "fen_before": "1r3r1k/5qpp/4bp2/Rp2p3/1nPpP3/1Q1P2N1/1PN2PPP/4R1K1 b - - 0 24",
+      "fen_after": "1r3r1k/5qpp/4bp2/R3p3/1nppP3/1Q1P2N1/1PN2PPP/4R1K1 w - - 0 25",
+      "pgn_sha256": "8fdeb67b43a557960da73ec82f9dab2e572b3dc61329c6e3f47b5d43dd141b0c",
+      "ordering_hash": "07355c62e29624d32dcd708f24c1269d3155b8e8b371636e6eba3f85e851e350",
+      "source_link": "https://api.chess.com/pub/player/nelsi/games/2026/02/pgn",
+      "board_prefilter": {
+        "veto": true,
+        "status": "complete",
+        "nodes": 2604,
+        "acceptances": [
+          {
+            "acceptance": "Nxb4",
+            "cost": 300,
+            "response": {
+              "quiet": "Qb7",
+              "all_legal_replies": 42,
+              "witnesses": [
+                {
+                  "reply": "Ra8",
+                  "recoup": [
+                    "Rxa8"
+                  ]
+                },
+                {
+                  "reply": "Ra7",
+                  "recoup": [
+                    "Qxa7"
+                  ]
+                },
+                {
+                  "reply": "Ra6",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Rxe5",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Rd5",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Rc5",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Rb5",
+                  "recoup": [
+                    "Qxb5"
+                  ]
+                },
+                {
+                  "reply": "Ra4",
+                  "recoup": [
+                    "cxb3"
+                  ]
+                },
+                {
+                  "reply": "Ra3",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Ra2",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Raa1",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Nc6",
+                  "recoup": [
+                    "Qxc6"
+                  ]
+                },
+                {
+                  "reply": "Na6",
+                  "recoup": [
+                    "Qxb3"
+                  ]
+                },
+                {
+                  "reply": "Nd5",
+                  "recoup": [
+                    "Qxb3"
+                  ]
+                },
+                {
+                  "reply": "Nc2",
+                  "recoup": [
+                    "Qxb3"
+                  ]
+                },
+                {
+                  "reply": "Na2",
+                  "recoup": [
+                    "Qxb3"
+                  ]
+                },
+                {
+                  "reply": "Nh5",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Nf5",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Ne2",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Nh1",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Nf1",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Qxc4",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Qa4",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Qc3",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Qa3",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Qc2",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Qa2",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Qd1",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Kh1",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Kf1",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Re3",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Re2",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Rf1",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Rd1",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Rc1",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Rb1",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "Rea1",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "dxc4",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "h3",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "f3",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "h4",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                },
+                {
+                  "reply": "f4",
+                  "recoup": [
+                    "Qxb4"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "best_reply_roots": [
+          "c2b4",
+          "c2b4"
+        ],
+        "existing_acceptances": [
+          "c2b4"
+        ]
+      }
+    },
+    {
+      "game_id": "174425861494",
+      "account": "KNVB",
+      "ply": 67,
+      "san": "Nxa5",
+      "uci": "c4a5",
+      "fen_before": "1r1r1bk1/1q3pp1/3pp2p/p1n4N/2N1b3/1P4PP/P4PBK/Q1R1R3 w - - 2 34",
+      "fen_after": "1r1r1bk1/1q3pp1/3pp2p/N1n4N/4b3/1P4PP/P4PBK/Q1R1R3 b - - 0 34",
+      "pgn_sha256": "7532ef8060118c6737870829cf98879d1567ccec214c2b7d66e812ad66fd168c",
+      "ordering_hash": "0738eb7a129d5ed7e97ad56d42e5f38ffa8e3ac0b1773a966953f9c416dedfed",
+      "source_link": "https://api.chess.com/pub/player/KNVB/games/2026/09/pgn",
+      "board_prefilter": {
+        "veto": true,
+        "status": "complete",
+        "nodes": 16,
+        "acceptances": [
+          {
+            "acceptance": "Bxg2",
+            "cost": 300,
+            "response": {
+              "quiet": "Nf6+",
+              "all_legal_replies": 2,
+              "witnesses": [
+                {
+                  "reply": "Kh8",
+                  "recoup": [
+                    "Nxb7"
+                  ]
+                },
+                {
+                  "reply": "gxf6",
+                  "recoup": [
+                    "Nxb7"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "best_reply_roots": [
+          "e4g2",
+          "e4g2"
+        ],
+        "existing_acceptances": [
+          "e4g2"
+        ]
+      }
+    },
+    {
+      "game_id": "163100822037",
+      "account": "nelsi",
+      "ply": 22,
+      "san": "fxg2",
+      "uci": "f3g2",
+      "fen_before": "r3kb1r/ppp2ppp/5n2/4n3/6b1/1NNP1p1P/PPP3P1/R1B1KB1R b KQkq - 0 11",
+      "fen_after": "r3kb1r/ppp2ppp/5n2/4n3/6b1/1NNP3P/PPP3p1/R1B1KB1R w KQkq - 0 12",
+      "pgn_sha256": "d127b0e85c26e1d92fc01aa857d2949637c453e2312ddf773716b00e4945dfa3",
+      "ordering_hash": "079be71a8b21efeb5285d4ecfca6cf258b13326e321808cdbd5bdb64d534ecbe",
+      "source_link": "https://api.chess.com/pub/player/nelsi/games/2026/01/pgn",
+      "board_prefilter": {
+        "veto": true,
+        "status": "complete",
+        "nodes": 21,
+        "acceptances": [
+          {
+            "acceptance": "hxg4",
+            "cost": 210,
+            "response": {
+              "quiet": "Nf3+",
+              "all_legal_replies": 3,
+              "witnesses": [
+                {
+                  "reply": "Kf2",
+                  "recoup": [
+                    "gxh1=Q"
+                  ]
+                },
+                {
+                  "reply": "Ke2",
+                  "recoup": [
+                    "gxh1=Q"
+                  ]
+                },
+                {
+                  "reply": "Kd1",
+                  "recoup": [
+                    "gxh1=Q"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "best_reply_roots": [
+          "h3g4",
+          "h3g4"
+        ],
+        "existing_acceptances": [
+          "h3g4"
+        ]
+      }
+    },
+    {
+      "game_id": "174382550788",
+      "account": "Hikaru",
+      "ply": 18,
+      "san": "Bxb2",
+      "uci": "g7b2",
+      "fen_before": "rnbq1rk1/pp2ppbp/1n4p1/2P5/4P3/3BB3/PP2NPPP/RN1Q1RK1 b - - 0 9",
+      "fen_after": "rnbq1rk1/pp2pp1p/1n4p1/2P5/4P3/3BB3/Pb2NPPP/RN1Q1RK1 w - - 0 10",
+      "pgn_sha256": "59ba089f92391c5bf44ca8e7499bd5b722c894dc4e97d1b1d126251c1edc9700",
+      "ordering_hash": "08f0aa91d599619c349f57b9097f68d454acd04b2278e3ede14daabff3f2f447",
+      "source_link": "https://api.chess.com/pub/player/Hikaru/games/2026/09/pgn",
+      "board_prefilter": {
+        "veto": true,
+        "status": "complete",
+        "nodes": 286,
+        "acceptances": [
+          {
+            "acceptance": "cxb6",
+            "cost": 210,
+            "response": {
+              "quiet": "a5",
+              "all_legal_replies": 36,
+              "witnesses": [
+                {
+                  "reply": "Bh6",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Bg5",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Bc5",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Bf4",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Bd4",
+                  "recoup": [
+                    "Bxd4"
+                  ]
+                },
+                {
+                  "reply": "Bd2",
+                  "recoup": [
+                    "Qxd3"
+                  ]
+                },
+                {
+                  "reply": "Bc1",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Ba6",
+                  "recoup": [
+                    "Nxa6"
+                  ]
+                },
+                {
+                  "reply": "Bb5",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Bc4",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Bc2",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Nf4",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Nd4",
+                  "recoup": [
+                    "Bxd4"
+                  ]
+                },
+                {
+                  "reply": "Ng3",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Nec3",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Nc1",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Kh1",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Re1",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Qa4",
+                  "recoup": [
+                    "Qxd3"
+                  ]
+                },
+                {
+                  "reply": "Qb3",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Qd2",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Qc2",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Qe1",
+                  "recoup": [
+                    "Qxd3"
+                  ]
+                },
+                {
+                  "reply": "Qc1",
+                  "recoup": [
+                    "Qxd3"
+                  ]
+                },
+                {
+                  "reply": "Nbc3",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "Na3",
+                  "recoup": [
+                    "Bxa3"
+                  ]
+                },
+                {
+                  "reply": "Nd2",
+                  "recoup": [
+                    "Qxd3"
+                  ]
+                },
+                {
+                  "reply": "e5",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "h3",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "g3",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "f3",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "a3",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "h4",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "g4",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "f4",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                },
+                {
+                  "reply": "a4",
+                  "recoup": [
+                    "Bxa1"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "best_reply_roots": [
+          "c5b6",
+          "c5b6"
+        ],
+        "existing_acceptances": [
+          "c5b6"
+        ]
+      }
+    },
+    {
+      "game_id": "185747491454",
+      "account": "GothamChess",
+      "ply": 26,
+      "san": "Bxe5",
+      "uci": "d6e5",
+      "fen_before": "r3k2r/2q2ppp/p2bpn2/1p1pP3/5Qb1/2N3PP/PP2PPB1/R1B2RK1 b kq - 0 13",
+      "fen_after": "r3k2r/2q2ppp/p3pn2/1p1pb3/5Qb1/2N3PP/PP2PPB1/R1B2RK1 w kq - 0 14",
+      "pgn_sha256": "6512878928d7ecab05c63faac78b29e6d8d195ab3ab14eb5187fe9fd3944afc3",
+      "ordering_hash": "0ab034e10a97bad88509067f1dbdd80b009fb0967790e6535aeb732b2480f68b",
+      "source_link": "https://api.chess.com/pub/player/GothamChess/games/2026/10/pgn",
+      "board_prefilter": {
+        "veto": true,
+        "status": "complete",
+        "nodes": 1189,
+        "acceptances": [
+          {
+            "acceptance": "hxg4",
+            "cost": 300,
+            "response": {
+              "quiet": "d4",
+              "all_legal_replies": 39,
+              "witnesses": [
+                {
+                  "reply": "Qh6",
+                  "recoup": [
+                    "gxh6"
+                  ]
+                },
+                {
+                  "reply": "Qxf6",
+                  "recoup": [
+                    "Bxf6"
+                  ]
+                },
+                {
+                  "reply": "Qg5",
+                  "recoup": [
+                    "dxc3"
+                  ]
+                },
+                {
+                  "reply": "Qf5",
+                  "recoup": [
+                    "exf5"
+                  ]
+                },
+                {
+                  "reply": "Qxe5",
+                  "recoup": [
+                    "Qxe5"
+                  ]
+                },
+                {
+                  "reply": "Qe4",
+                  "recoup": [
+                    "Nxe4"
+                  ]
+                },
+                {
+                  "reply": "Qxd4",
+                  "recoup": [
+                    "Bxd4"
+                  ]
+                },
+                {
+                  "reply": "Qf3",
+                  "recoup": [
+                    "dxc3"
+                  ]
+                },
+                {
+                  "reply": "Qe3",
+                  "recoup": [
+                    "dxe3"
+                  ]
+                },
+                {
+                  "reply": "Qd2",
+                  "recoup": [
+                    "dxc3"
+                  ]
+                },
+                {
+                  "reply": "Nd5",
+                  "recoup": [
+                    "Nxd5"
+                  ]
+                },
+                {
+                  "reply": "Nxb5",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Ne4",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Na4",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Nd1",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Nb1",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Bxa8",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Bb7",
+                  "recoup": [
+                    "Qxb7"
+                  ]
+                },
+                {
+                  "reply": "Bc6+",
+                  "recoup": [
+                    "Qxc6"
+                  ]
+                },
+                {
+                  "reply": "Bd5",
+                  "recoup": [
+                    "Nxd5"
+                  ]
+                },
+                {
+                  "reply": "Be4",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Bh3",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Bf3",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Bh1",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Kh2",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Kh1",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Re1",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Rd1",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Be3",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Bd2",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "Rb1",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "g5",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "f3",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "e3",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "b3",
+                  "recoup": [
+                    "Qxc3"
+                  ]
+                },
+                {
+                  "reply": "a3",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "e4",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                },
+                {
+                  "reply": "b4",
+                  "recoup": [
+                    "Qxc3"
+                  ]
+                },
+                {
+                  "reply": "a4",
+                  "recoup": [
+                    "Bxf4"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "best_reply_roots": [
+          "h3g4",
+          "h3g4"
+        ],
+        "existing_acceptances": [
+          "h3g4"
+        ]
+      }
+    },
+    {
+      "game_id": "185244226180",
+      "account": "GothamChess",
+      "ply": 70,
+      "san": "Bxd4",
+      "uci": "f6d4",
+      "fen_before": "r1r2k2/5p2/1n2pbp1/PP1n3p/3P4/1R1B2P1/R2B1PK1/8 b - - 5 35",
+      "fen_after": "r1r2k2/5p2/1n2p1p1/PP1n3p/3b4/1R1B2P1/R2B1PK1/8 w - - 0 36",
+      "pgn_sha256": "d24027d4cb94e62820f09f20d7fe9bc9de78765c2c11efcc0e67d5470c406e16",
+      "ordering_hash": "0c2edadb190c39af58e635ba44ca21a9d7f5f61ef8ad5ba61c0b02448a221ad4",
+      "source_link": "https://api.chess.com/pub/player/GothamChess/games/2026/10/pgn",
+      "board_prefilter": {
+        "veto": true,
+        "status": "complete",
+        "nodes": 30,
+        "acceptances": [
+          {
+            "acceptance": "axb6",
+            "cost": 210,
+            "response": {
+              "quiet": "Ne3+",
+              "all_legal_replies": 7,
+              "witnesses": [
+                {
+                  "reply": "Kh3",
+                  "recoup": [
+                    "Rxa2"
+                  ]
+                },
+                {
+                  "reply": "Kf3",
+                  "recoup": [
+                    "Rxa2"
+                  ]
+                },
+                {
+                  "reply": "Kh2",
+                  "recoup": [
+                    "Rxa2"
+                  ]
+                },
+                {
+                  "reply": "Kh1",
+                  "recoup": [
+                    "Rxa2"
+                  ]
+                },
+                {
+                  "reply": "Kg1",
+                  "recoup": [
+                    "Rxa2"
+                  ]
+                },
+                {
+                  "reply": "Bxe3",
+                  "recoup": [
+                    "Rxa2"
+                  ]
+                },
+                {
+                  "reply": "fxe3",
+                  "recoup": [
+                    "Rxa2"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "best_reply_roots": [
+          "a5b6",
+          "a5b6"
+        ],
+        "existing_acceptances": [
+          "a5b6"
+        ]
+      }
+    },
+    {
+      "game_id": "146231965542",
+      "account": "nelsi",
+      "ply": 26,
+      "san": "exf6",
+      "uci": "e7f6",
+      "fen_before": "r4rk1/1pq1ppbp/p1p2Pp1/6B1/Q7/2N2b2/PPP2PPP/R3R1K1 b - - 0 13",
+      "fen_after": "r4rk1/1pq2pbp/p1p2pp1/6B1/Q7/2N2b2/PPP2PPP/R3R1K1 w - - 0 14",
+      "pgn_sha256": "14713b76e006d13af2690831083eaea558142b3fabc479ee4d10e7f01b23c558",
+      "ordering_hash": "0cc92b2219c054510f0898b262b5d53f9471d1da7d1fd6774eeb5c3296dbdffa",
+      "source_link": "https://api.chess.com/pub/player/nelsi/games/2025/12/pgn",
+      "board_prefilter": {
+        "veto": true,
+        "status": "complete",
+        "nodes": 232,
+        "acceptances": [
+          {
+            "acceptance": "gxf3",
+            "cost": 300,
+            "response": {
+              "quiet": "b5",
+              "all_legal_replies": 48,
+              "witnesses": [
+                {
+                  "reply": "Bh6",
+                  "recoup": [
+                    "Bxh6"
+                  ]
+                },
+                {
+                  "reply": "Bxf6",
+                  "recoup": [
+                    "Bxf6"
+                  ]
+                },
+                {
+                  "reply": "Bh4",
+                  "recoup": [
+                    "bxa4"
+                  ]
+                },
+                {
+                  "reply": "Bf4",
+                  "recoup": [
+                    "bxa4"
+                  ]
+                },
+                {
+                  "reply": "Be3",
+                  "recoup": [
+                    "bxa4"
+                  ]
+                },
+                {
+                  "reply": "Bd2",
+                  "recoup": [
+                    "bxa4"
+                  ]
+                },
+                {
+                  "reply": "Bc1",
+                  "recoup": [
+                    "bxa4"
+                  ]
+                },
+                {
+                  "reply": "Qxa6",
+                  "recoup": [
+                    "Rxa6"
+                  ]
+                },
+                {
+                  "reply": "Qxb5",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Qa5",
+                  "recoup": [
+                    "Qxa5"
+                  ]
+                },
+                {
+                  "reply": "Qh4",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Qg4",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Qf4",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Qe4",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Qd4",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Qc4",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Qb4",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Qb3",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Qa3",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Nd5",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Nxb5",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Ne4",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Ne2",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Nd1",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Nb1",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Kg2",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Kh1",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Kf1",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Re8",
+                  "recoup": [
+                    "Rfxe8"
+                  ]
+                },
+                {
+                  "reply": "Re7",
+                  "recoup": [
+                    "Qxe7"
+                  ]
+                },
+                {
+                  "reply": "Re6",
+                  "recoup": [
+                    "fxe6"
+                  ]
+                },
+                {
+                  "reply": "Re5",
+                  "recoup": [
+                    "Qxe5"
+                  ]
+                },
+                {
+                  "reply": "Re4",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Re3",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Re2",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Rf1",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Red1",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Rec1",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Reb1",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Rad1",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Rac1",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "Rab1",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "f4",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "h3",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "b3",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "a3",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "h4",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                },
+                {
+                  "reply": "b4",
+                  "recoup": [
+                    "fxg5"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "best_reply_roots": [
+          "g2f3",
+          "g2f3"
+        ],
+        "existing_acceptances": [
+          "g2f3"
+        ]
+      }
+    }
+  ],
+  "unknowns": []
+}

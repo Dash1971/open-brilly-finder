@@ -1,0 +1,46 @@
+{
+  "frozen_at_utc": "2026-11-03T01:21:57.417961+00:00",
+  "stage": "Before full600collection and before any new-study engine comparison",
+  "no_engine_evidence_present": true,
+  "collection_progress_at_freeze": {
+    "per_account": {
+      "nelsi": {
+        "fresh_brilliant": 5,
+        "fresh_non_brilliant": 5
+      },
+      "hansen": {
+        "fresh_brilliant": 4,
+        "fresh_non_brilliant": 4
+      },
+      "KNVB": {
+        "fresh_brilliant": 0,
+        "fresh_non_brilliant": 0
+      },
+      "GothamChess": {
+        "fresh_brilliant": 0,
+        "fresh_non_brilliant": 0
+      },
+      "Hikaru": {
+        "fresh_brilliant": 25,
+        "fresh_non_brilliant": 25
+      }
+    },
+    "primary_unique_moves": 68,
+    "primary_fresh_brilliant": 34,
+    "primary_fresh_non_brilliant": 34,
+    "primary_moves_with_captured_board_identity": 61,
+    "primary_moves_with_board_missing": 7,
+    "pending_identity_or_pgn": [],
+    "reserve_or_conflicting_moves": [],
+    "target_complete": false
+  },
+  "sha256": {
+    "methodology.json": "83592642ad0348fae728c0b51eb1cc582787c25ff5f6025f1d03cf48da49dbc6",
+    "analysis.py": "efc193184bd6a13070bc6358417e9ce9af755001c085c418c1db8fea4c67e63b",
+    "replay.mts": "672b78df66a9d027f914f1fd3b23e44f2ef113d26047bb9175cc8bb5d441fcb4",
+    "exclude-games.json": "ae2b308ca585d7b5bff3e7c36804e59fb993dcf9efc2597990b9cc836277f458",
+    "reference/current-v2/noSweatClassify.ts": "43d249f76465b1d0966e486a2877a0887d8d1ed629f9e4aafaca67e3ce020234",
+    "reference/current-v2/core.ts": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a",
+    "reference/ec-score.ts": "3a623bc787e7d84e1026904cc94e05984d77766593403bc4dc5bf63f600e5e1b"
+  }
+}

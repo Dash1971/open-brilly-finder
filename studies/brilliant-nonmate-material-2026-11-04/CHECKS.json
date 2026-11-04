@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "assertions": {
+    "source_positions": 1320,
+    "legal_full_saved_pvs": 532
+  },
+  "coverage": {
+    "current": {
+      "None": 3604,
+      "0": 101,
+      "1": 19
+    },
+    "previous": {
+      "None": 3606,
+      "0": 102,
+      "1": 16
+    }
+  },
+  "reasons": {
+    "current": {
+      "no_saved_offer_evidence": 2404,
+      "not_applicable": 1199,
+      "no_saved_material_win_witness": 101,
+      "material_win_witness": 19,
+      "unknown_coverage": 1
+    },
+    "previous": {
+      "no_saved_offer_evidence": 2404,
+      "not_applicable": 1199,
+      "no_saved_material_win_witness": 102,
+      "material_win_witness": 16,
+      "unknown_coverage": 3
+    }
+  },
+  "scope": "No labels, ratings, prediction files, or model outcomes accessed. Full saved PV legality checked; actual original PGN history retained."
+}

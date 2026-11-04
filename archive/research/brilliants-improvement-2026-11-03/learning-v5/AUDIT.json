@@ -1,0 +1,27 @@
+{
+  "no_forbidden_identity_or_cohort_predictors": true,
+  "cases": 848,
+  "unique_keys": 848,
+  "games": 439,
+  "positive": 413,
+  "negative": 435,
+  "eligible_window_rows": 1061,
+  "grouping": {
+    "components": 434,
+    "game_ids": 439,
+    "normalized_before_positions": 841,
+    "fold_cases": {
+      "0": 178,
+      "2": 198,
+      "3": 136,
+      "1": 186,
+      "4": 150
+    }
+  },
+  "all_case_windows_same_fold": true,
+  "all_leaves_at_least15_distinct_moves": true,
+  "split_uses_only_declared_semantic_features": true,
+  "two_tree_presets_only": true,
+  "no_additional_fit_after_results_seen": true,
+  "predictions_maintain_both_window_and_quality_guards": true
+}

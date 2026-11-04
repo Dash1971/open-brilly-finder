@@ -1,0 +1,18 @@
+{
+  "created_at_utc": "2026-11-03T22:08:10.841665+00:00",
+  "scope": "Synthetic arrays only. No training/assessment model run, engine, UI, or result read",
+  "passed": true,
+  "checks": [
+    "Baseline bitwise tree/prediction parity cost1",
+    "Baseline bitwise tree/prediction parity cost3",
+    "Baseline bitwise tree/prediction parity cost5",
+    "Richer synthetic depth8/minleaf4 bounds",
+    "Equal outcome/cost/cutoff prefers simpler capacity",
+    "No trivialzero candidate; reference fallback",
+    "Groupfold order invariant"
+  ],
+  "script_sha256": "2668875b837d22bd625cc6a1e4fec91df21ed5dd61b1da83dc0ba8b201faa70b",
+  "capacity_source_sha256": "4aefb35307853d707f5aac869bac8ce3e0db9706ec92017316341778643d3ae2",
+  "kernel_sha256": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f",
+  "protocol_sha256": "8a903f2ca54eee38fc01a9b1e8818a2764f6d03c75efa913f3e531b2068dc4db"
+}

@@ -1,0 +1,156 @@
+Mute Chess: missed sacrifices versus similar ordinary offers
+November 4, 2026 (Japan)
+
+Conclusion
+
+This investigation rejects several tempting shortcuts and identifies one modest
+new feature hypothesis. It does NOT establish an improved classifier.
+
+The additional question worth testing is: after the opponent accepts the offer,
+how much worse is the player's second-best continuation than the best one?
+That measures dependence on a precise compensating reply, rather than merely
+detecting a material offer or recovery. Our current75features include a best/
+second-best gap BEFORE the played move, but not this conditional response gap.
+
+The matched evidence is suggestive, not decisive. The conditional gap was larger
+for the Brilliant in16of20pairs with finite comparable evaluations, versus4in
+the other direction. Four pairs involved forced mates and were not forced into
+centipawn arithmetic. The preceding complete engine iteration gave the same
+16/4split; those iterations are correlated, not independent replications.
+
+There is substantial overlap: median gaps were365cp for Brilliants and288cp for
+ordinary moves; a300cp cutoff would include11Brilliants and10ordinary controls.
+Thus a simple large-gap rule is NOT supported. This is an input to test together
+with existing context, not a new standalone award gate.
+
+What was compared
+
+The broad saved-data audit examined51missed Brilliants and149explicit hard-
+ordinary moves from the fresh corpus. All passed current eligibility checks and
+had ec_sacrifice=false. All ordinary labels were Great, Best, Excellent or Good;
+missing labels and easy errors were excluded. Legacy mixed-label cases were
+excluded from this diagnostic to keep provenance straightforward.
+
+From that pool,24closest available cross-label pairs were selected using existing
+features only. Each of48cases belonged to a different whole-game/position group.
+Matching required the same capture/noncapture category, whether the moved piece
+was offered, and offered minor/rook/queen categories. It also compared evaluation,
+material, phase, history, and other existing measurements. Minor-piece matching
+does not require bishop versus knight identity. Matching is approximate, not a
+claim that positions are identical. The greedy nearest-pair sample favors cases
+with close available controls and is not representative of play or all misses.
+
+Existing saved lines omitted every accepting reply for11of24Brilliants and7of24
+ordinary cases. A bounded probe analyzed all62qualifying accepting captures from
+the48positions, adding27branches absent from the saved top-two continuations.
+This used the same pinned Stockfish18,300,000nodes per requested position,
+one thread,64MiB hash, up to2complete same-depth roots, and full PGN history.
+Hash was cleared before each conditional search. All searches finished in17.3s.
+No new labels were collected and no classifier was fit or deployed.
+
+For case-level comparisons, the opponent's best accepting capture was used:
+the capture with the lowest resulting evaluation for the player making the
+candidate move. Branch choice did not depend on the Brilliant/ordinary label.
+All branches, including alternatives, remain in PROBES.json.
+
+What did not distinguish the labels
+
+In the matched24vs24sample:
+                                       Brilliant       Ordinary
+Recover material on first reply        18/24           19/24
+Acceptance permits forced mate          3/24            3/24
+Material deficit>100 after6plies,
+  excluding forced-mate cases            2/24            2/24
+Median material debt at6plies           -90             -90
+
+Positive debt means material invested relative to just before the played move;
+negative debt means net material gained. The6/12ply horizons include acceptance.
+First-reply recovery can be followed by further losses; it is not an end-state
+claim. Terminal mate outcomes remain separately identified. One ordinary12ply
+endpoint was unknown because its saved conditional PV ended early.
+
+The broader saved-PV audit independently reinforces the recovery counterexample:
+acceptance lines existed for33/51missed positives and78/149ordinary controls;
+24of33positives and54of78ordinary moves recovered material within6plies on at
+least one saved acceptance line. No saved acceptance means unknown consequences,
+not no compensation.
+
+Concrete cases
+
+Pair2: two Nxe5 moves expose a knight, and acceptance allows ...Bxd1, winning the
+opponent's queen. The Brilliant case (173661079138:26) was played by Hikaru3373;
+the Best case (147329069640:16) by nelsi2598. The acceptance lines start:
+  Brilliant: Nxe5 Bxd1 Nxd1 Kf8
+  Best:      Nxe5 Bxd1 Rxd1 Qe7
+These are different positions. The shared motif and immediate recovery do not
+settle the label; the ordinary case even has the larger conditional gap.
+
+Pair10: Nd3 (170661862908:40), labeled Brilliant, and Ne3 (184277876260:54),
+labeled Great, both allow QxN Qxg2#. Their overall evaluations and player
+ratings differ. Forced mate if the offer is accepted is insufficient by itself.
+
+Pair15: Rxb3+ (172914653473:86), Brilliant, and Rxe5 (184330910250:75), Great,
+both have110of existing3ply physical-debt evidence. The new conditional lines:
+  Brilliant: Kxb3 Nxe3 Bb7 a5 Ba6 Nf5
+  Great:     dxe5 Rxd5 c4 Rc5 b3 cxb3
+The first retains110at6plies; the second retains20. Longer trajectories help
+describe the difference, but lasting debt does not separate the full sample.
+The new Great continuation differs from its old saved best line, illustrating
+why a horizon-based recoup feature can change with the chosen engine line.
+
+Pair23: Nxe5 (173851185684:34), Brilliant, leaves a rook available to Nxb6.
+The original top-two lines declined the offer. The new acceptance line starts
+Nxb6 axb6 c5 bxc5 and remains favorable to the mover. Its ordinary matched
+hxg5 (167275575688:60) also offers a rook and supports a favorable continuation.
+The ordinary offer was already present in prior history; that warning is already
+in the existing features. Neither accepting-capture desirability nor history
+should be turned into an unconditional shortcut.
+
+Interpretation and next bounded test
+
+Some controls contain real tactical sacrifices too. Detecting a sacrifice is
+therefore not enough to reproduce the target's award boundary. The findings do
+not justify reclassifying controls as mislabeled or discarding inconvenient
+positive labels.
+
+The next feature experiment should add conditional best/second-response evidence
+to the same original inputs and compare it under the same grouped evaluation
+and wrong-award constraints. Report the ec_sacrifice=false subgroup separately.
+The newly examined48cases are development examples and cannot provide fresh
+validation for a rule inspired by them. Compute any added features symmetrically
+for positives and negatives using a predeclared search budget and missing-value
+policy. Do not select cases for extraction using target labels.
+
+If that adds no useful held-out recall, the evidence would favor examining
+target-label conditions and engine/rating context before more acceptance-feature
+engineering. Several same-motif pairs remain unexplained. The saved labels were
+not re-reviewed in Chess.com during this task, and actual review settings were
+not experimentally controlled. Rating also remains an unmatched contextual
+variable: positives had lower ratings in13pairs and higher in11, so a simple
+lower-rating explanation does not account for this panel.
+
+Important limits
+
+This is an exploratory matched case-control investigation. Its percentages are
+not estimates of recall, precision, or deployment error. Multiple descriptive
+features were examined after selection; the conditional-gap finding needs a
+separate evaluation. Larger conditional gaps might reflect tactical necessity
+without matching Chess.com's specific label rule. Acceptance-vs-original-score
+differences compare different engine searches and must not be read as exact.
+Engine PVs show analyzed continuations, not a proof covering every defense.
+
+Artifacts
+
+PROTOCOL.json: frozen matching definition, pairs and bounded search plan.
+MATCHED-CASES.json: labels/provenance, existing features, saved lines and offers.
+MATCHED-GAMES.json: complete source PGNs for the48cases.
+PROBES.json: all62conditional searches and material traces.
+CASE-SUMMARIES.json: opponent-best acceptance summaries for every case.
+FINDINGS.json: exact counts, paired contrasts, stability and missingness.
+PAIRS.txt: readable side-by-side case index and conditional continuations.
+VERIFICATION.json: hashes, legality/provenance and independent count checks.
+prepare.py, probe.py, summarize.py: bounded one-study source; no general tooling.
+
+The smaller subagent audited existing PV features and reviewed saved pair lines.
+Its broad51vs149counts were independently reproduced. All248full probe PVs
+(current and previous iterations) passed legal-move replay checks.

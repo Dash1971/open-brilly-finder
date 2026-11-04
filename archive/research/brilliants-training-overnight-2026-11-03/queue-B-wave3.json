@@ -1,0 +1,24 @@
+{
+  "prepared_at": "2026-11-03T15:41:32.594756+00:00",
+  "wave": 3,
+  "scope": "New visible gallery nominations resolved against existing official PGN caches. No current review labels or model outputs used.",
+  "collector": "pilot_corpus",
+  "split_rule": "sha256('mute-overnight-2026-11-03-v1:'+gameID) mod5==0 assessment",
+  "assessment_position_exclusions": "ASSESSMENT-POSITION-EXCLUSIONS.json",
+  "source_receipts": [
+    {
+      "source": "research/brilliants-pilot-2026-11-03/original-pgn/knvb-2026-10.pgn",
+      "sha256": "9ca2a71bc72cf8901de846ccac86f0eff8963fdaa4e94cc19dbbd1021a6fe647",
+      "PGNs_reused": 6
+    }
+  ],
+  "rejections": [],
+  "games": [],
+  "counts": {
+    "games": 0,
+    "nominees": 0,
+    "positions": 0,
+    "training_games": 0,
+    "assessment_games": 0
+  }
+}

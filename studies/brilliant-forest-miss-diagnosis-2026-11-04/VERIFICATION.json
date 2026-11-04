@@ -1,0 +1,56 @@
+{
+  "checks": {
+    "original_input_hashes_unchanged": true,
+    "reconstruction_script_hash": true,
+    "reconstruction_protocol_hash": true,
+    "all3724_scores_exact": true,
+    "target429": true,
+    "match_inputs_and_script_unchanged": true,
+    "panel24_distinct_groups": true,
+    "legal_panel_replays208": true,
+    "saved_evidence_hashes_unchanged": true,
+    "summary_inputs_and_script": true,
+    "encoding_audit_inputs": true,
+    "pattern_inputs": true,
+    "both_windows_fail418": true
+  },
+  "independent_review": {
+    "method": "Separate read-only recomputation from original training and frozen reconstructed forests, without fitting.",
+    "match_choices_recomputed": 1287,
+    "shared_leaf_pairs_recomputed": 429,
+    "items": [
+      "429 custom_retuned cohort",
+      "226 eligible hardordinary controls",
+      "samefold and differentgroups",
+      "exactanchors and deterministic nearest choices",
+      "12panel pairs24distinctgroups",
+      "forest index actualfold",
+      "rerouted window scores",
+      "score quantiles/contribution/leaf means",
+      "source/script/protocol hashes"
+    ],
+    "result": "No discrepancies."
+  },
+  "reconstruction_scope": "Two exact reconstruction attempts,10fits640trees total; first stopped on diagnostic445vs429 assertion after scoreparity; correction and originalattempt preserved. No new candidate, tuning or engine calls.",
+  "artifact_sha256": {
+    "FEATURE-PATTERNS.json": "86e78a34106f3727baad82b35036b9c7271ba4f588c62f405a3f41e12be5b0ec",
+    "SUMMARY.json": "d98ee28d2f812cf93ad000f217c199249a687b35e20856a855776bedf6e1113a",
+    "panel_evidence.py": "fd2f49bbc65076fc9d526fd4f11ec3edd4c1f216811e71cb7f79d7fb7c70359b",
+    "RECONSTRUCTION-PROTOCOL.json": "588a5bd436a0c3e8ef1b324e763bd399c9fa2452df786dee23080d1a7ceec711",
+    "RECONSTRUCTION-PROTOCOL.attempt1.json": "0be8a7a1fbd50b6739a933cd6b66547af5ca30005b2c4bc178966d334d2a53c4",
+    "OUTER-TREES.json": "637905965da034e4f7bbf574a7bf7d8dfad8dda6797f532b2bc5caf902a9d470",
+    "PANEL.json": "80ff3232ccbde94c33d92d6c2bfefd0f0698219e39b51a545c8e56e2985e3710",
+    "reconstruct.attempt1.py": "a94518fc9d040a568066bb2d2f9a7bd9da59cf323e7c52ca56783dcbac14900e",
+    "PANEL-AUDIT.txt": "e113330c6d9d5bba32e102b49a220251e244054273eed4c6a929ae88dc501e19",
+    "MATCH-PROTOCOL.json": "419d739a0eb05e01dd06b0d46455ecfc1422b9397bf6533a9f0eae1c4a6a69c5",
+    "summarize.py": "a56f73bf5dc128375e5288f570600610c2bd197d1a556cedd6863ababe08a98f",
+    "RECONSTRUCTION-STOPPED.json": "d5ca432fda607dc5c9f78ae1a4d3f8abf2925c441d5ea21ca28938eab439df9a",
+    "FOREST-TRACE.json": "300b9e95b2408d67120e25a4ece7659dc334fe68c93a2d85afe8d7e9b95caa2a",
+    "PANEL-EVIDENCE.json": "6695b4e8428336d4bc87e2026dd1ce072916c00fb8e119a1bb2bdd6f19631fb0",
+    "REPORT.txt": "abd675d90bc919d8e6334629b37a7069e6de38d920714a76b05feab6cae92c1c",
+    "MATE-ENCODING-AUDIT.json": "48bacd908e88d8519c51907b8a735662ee87fd148c54b26010dd354ef3b7e967",
+    "reconstruct.py": "a997610036eec7ce027d16b358c61198414a266eb07903708f3424a000b4a271",
+    "MATCHES.json": "c465643efed4ec4d89a0c4b5b59eac89c2bcb22a9cb45b39881b7e9ea9a8fcbd",
+    "match.py": "502431fee2a95878cf0b15f51fcf417be4469a1931b66c39fab48e2f4b40da1b"
+  }
+}

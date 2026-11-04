@@ -1,0 +1,173 @@
+SAVED-LINE TACTICAL AUDIT OF THE FIXED 12-PAIR PANEL
+
+Scope: PANEL-EVIDENCE.json, its FENs, inventories, current/previous saved
+continuations, and listed acceptance branches only. No engine run, rule change,
+refit, or later game continuation used as a predictor. The source reports 208
+legally replayed lines. Scores quoted below are WHITE-oriented centipawns;
+positive is good for White even when Black made the candidate move. Forest scores
+are descriptive held-out scores, not chess evaluations or award probabilities.
+
+The two EC-false near pairs (1-2) have no exact-anchor ordinary candidates and
+have distances about .269. They are poor tactical controls. Pairs 3-12 match the
+prespecified semantic anchors, not full positions or feature vectors. They can
+expose information lost in summaries; they cannot establish why a label differs.
+
+PAIR | MOVES AND FOREST SCORES (Brilliant miss / explicit ordinary) | SAVED TACTICAL EVIDENCE AND LIMIT
+
+1 | Black Qf1+ .818 / Black Ng4+ .780; distance .269, NOT exact.
+  Qf1+ places the moved queen on f1: Rxf1 Rxf1# is a forced short mating
+  mechanism, with the f8 rook delivering mate. Ng4+ instead moves the e5 knight
+  off the c7-g3 diagonal, uncovering a queen check against Kg3 while offering
+  the unmoved Qc7: Nxc7 Bf2#. Its best saved defensive line also mates
+  (Kh4 Qd8+ Ne7+ Qxe7+ Kh5 Qg5#). Both have mating tactics, but moved/offered
+  piece, accepting move, mate distance, material treatment and alternatives
+  differ. This pair cannot diagnose the low score as a label contradiction.
+
+2 | White Rxg7+ .828 / Black Nxd5 .515; distance .269, NOT exact.
+  Rxg7+ Bxg7 Qxg7# is another immediate mating acceptance. The ordinary
+  Nxd5 offers a knight to either Nxd5 or exd5; ...Qxc5 takes White's bishop
+  (with check after Nxd5), and the exd5 branch continues ...Qxc5 gxf6 Qxb4.
+  The latter is a material/queen counterattack with finite evaluation, not
+  a matched short-mate sacrifice. No exact near EC-false ordinary existed.
+
+3 | White Bxg6 .798 / White Bxd5 .568; exact anchors, distance .064.
+  Bxg6 attacks the castled king's pawn cover. Accepting with ...fxg6 opens
+  the f-file and permits Qxg6+ Rg7 Qxe6+ Qf7 Rxf7 Rxf7 g6, saved at +703.
+  White can sustain an attack/passed g-pawn; declining with ...Qb7 instead
+  yields the slower Be4/Qh7+/g6/g7 plan. Ordinary Bxd5 Bxd5 vacates the
+  c-file so Rxc8 takes Black's queen, ...Rbxc8 Qxd4 then continues a material
+  liquidation (+315). Different compensation attribution is visible, but
+  both are calculable acceptance tactics. Numeric debt/gap differences are
+  already encoded; the motifs alone are not a proven award boundary.
+
+4 | White Bxg6 .796 / White Bxc5 .563; exact anchors, distance .068.
+  Bxg6 hxg6 Qxg6+ Kh8 opens the h-pawn shield and gives queen access to g6;
+  O-O develops the rook into the attack. Saved play includes Qh6+/exf6 and
+  eventual Qxf6 trades (+402 acceptance PV). Ordinary Bxc5 Nxc5 vacates
+  the d-file: Rxd8+ Rxd8 Ba2 takes the queen and continues a material trade
+  (+253). Attacking exposure versus opened-file liquidation is a concrete
+  difference, not evidence that only the former deserves Brilliant.
+
+5 | Black Nxe4 .452 / Black Nxg3 .429; exact anchors, distance .037.
+  Nxe4 has two materially different acceptances. Bxe4 removes Bd3 from the
+  d-file: ...Qxd1 Rxd1 Rxe4 restores material. Rxe4 instead allows ...Rxe4
+  and a different liquidation. Nxg3 offers two knights: hxg3 permits
+  ...Qxh1, fxe5 permits ...Qxd4, and Qxe5 permits ...Nxh1+. The control's
+  branch graph is at least as tactically rich. Both post-move main scores
+  are near equality (+16/+44 White). The saved lines give no clean chess
+  rationale for awarding only Nxe4; unresolved label distinction.
+
+6 | Black Nxf4 .475 / White Nxf7 .539; exact anchors, distance .040.
+  In the queenless Brilliant position, Bxf4 allows ...Bxe5 Bxe5+ Rxe5;
+  Black recovers White's Ne5 and trades bishops. Best defense is instead
+  Nxd7+ Rxd7, a countercapture with check, near equality (+7 White).
+  Ordinary Nxf7 accepts ...Kxf7 or ...Rxf7; Bxd5(+ when the king captured)
+  then removes Nd5, with queen checks and activity in the king-capture line.
+  Both depend on an intermediate recovery rather than simply losing the
+  offered knight. The large composition difference (queens absent/present)
+  and resulting tempo structure are real; neither establishes the label.
+
+7 | Black Nxf4 .813 / Black Nxe4 .642; exact anchors, distance .032.
+  Nxf4 Rxf4 e5 is an immediate pawn fork of Rf4 and Bd4. After Rff1 exd4
+  Nxd4 the material is restored and play is roughly level (-5 White in the
+  acceptance PV). Another saved choice is ...Nxd3 Qxd3 e5, changing the
+  order of recovery. Ordinary Nxe4 Nxe4 Qe7 pins Ne4 on the e-file before
+  ...d5 attacks both Ne4 and Nd4; the acceptance PV is +57 White.
+  Both use a pawn fork to recover a knight investment. Rook/bishop versus
+  two-knight targets and immediate versus prepared fork are lost in scalar
+  summaries. This is a close counterexample to any generic fork criterion.
+
+8 | White Bxd6 .803 / Black Bxc6 .645; exact anchors, distance .063.
+  Bxd6 exd6 Rf4 targets Bf6 with Rxf6+; the saved acceptance line gives
+  White +72, but Black's best post-move line is Rc1+ Ke2 Rc2+ Kf1 (0),
+  declining the bishop and retaining checks. Ordinary Bxc6 dxc6 Rxc6 gives
+  up a bishop for the c6/d5 pawns and active rook play (+57 White, slightly
+  unfavorable for the Black mover). These are very different endgames:
+  2R+B versus 2R+B, compared with R+B versus N+B. Attack on a remaining
+  bishop and the option to keep checking differ from pawn liquidation.
+  The converted-material flag and phase already capture part, not all, of
+  this difference; no new cutoff follows from it.
+
+9 | White Bg2 .762 / White Bh6 .759; exact anchors, distance .043.
+  Bg2 permits ...Bxb1 Rxb1 Rb6 Qxh7 Ng6 Rxb6 Bxb6: an exchange investment
+  with continued piece activity, saved +53 White in the acceptance PV.
+  Ordinary Bh6 has the more forcing acceptance story: ...Bxe7 dxe7 Ra8
+  e8=Q+ Rxe8 Qf7, followed by Bg5/Bf6+ and recovery of Black's queen
+  (+635 White). Its best defense instead declines with ...Qxd6 (+159).
+  The ordinary is not devoid of sacrificial compensation or forcing play.
+  This reverse example blocks a simple 'promotion/mating threat means
+  Brilliant' explanation; the two forest scores are nearly identical.
+
+10 | Black Nf6 .747 / Black Ng4 .685; exact anchors, distance .070.
+  Both leave an already offered bishop. Nf6 fxe4 Bc5 pins White's
+  Qd4 against Kf2: Qxc5 Nxe4+ Ke1 Nxc5, winning back the queen after a knight
+  check (-335 White). Ordinary Ng4 gxh3 Qh2# is immediate mate. The ordinary
+  main defense declines with f4 and is strongly winning for Black (-480).
+  Thus acceptance mate is not sufficient to explain the award. Its current
+  mating_acceptance and physical_mate_leaf flags are nevertheless false:
+  their route-specific definitions must be understood before interpreting
+  those booleans as 'no acceptance line mates'. This is a representation
+  caution, not a demonstrated extraction bug.
+
+11 | Black Ba6 .507 / White Bd3 .610; exact anchors, distance .044.
+  Ba6 attacks Rd3 while leaving Rd4 available. Nxd4 exd4 creates a pawn
+  fork of Qe3 and Rc3; saved Rc7 Qxc7 gives Black -436 White. Choosing
+  ...Rxd4 instead is +308 White, so recovery choice matters greatly.
+  Ordinary Bd3 leaves Rd4 to ...Bxd4 but recaptures Nxd4, restoring the
+  bishop for an exchange, +155 White. Its best defense uses ...Ncxb2/
+  ...Naxb2 counterplay instead. Both have a preexisting rook offer; one
+  uses an indirect pawn fork and the other direct recapture. This difference
+  is a possible attribution descriptor, not an established label criterion.
+
+12 | White Bc4 .727 / White Qg5 .792; exact anchors, distance .055.
+  Bc4 leaves Nc3 to ...dxc3, but Qxf7+ Kd7 dxc3 Kc7 Bf4+ begins a king
+  hunt (+292); Bxf7+ is also a saved strong alternative (+279). Black's
+  best ...e6 instead declines and keeps the game near equal (+15).
+  Ordinary Qg5 leaves Na4 to ...Bxa4 and obtains Nxh5+ Kh7 Nf6+ Kg7 f4,
+  also a forcing attack (+118). Both offer an unmoved knight and exploit
+  checks; opening f7 access versus h-file/knight invasion differs. The
+  ordinary's score is higher. No simple 'quiet move plus king attack'
+  account resolves their labels.
+
+WHAT IS PRESENT IN SAVED LINES BUT COMPRESSED OUT OF THE 75 FEATURES
+
+* Branch topology: which acceptance forces which reply, whether recovery is
+  direct or delayed, whether the opponent can decline with checks, and whether
+  different acceptances need different mechanisms. Counts/minima/maxima do not
+  retain target identity or move order (pairs 5, 7, 8, 11).
+* Compensation attribution: opening a queen's capture file, exposing a king,
+  forking a queen and rook, regaining a knight, creating promotion threats, or
+  exchanging into a particular material composition can share similar debt and
+  evaluation summaries. The actual target squares, attacker roles and lines
+  of force are recoverable here, but not represented explicitly by the scalar
+  features (3-4, 6-12).
+* Reply-quality distribution: a forced mating reply and an equalizing best
+  defense can coexist with a spectacular acceptance punishment; pair 9's
+  ordinary and pair 10's ordinary are especially clear. The source's root-gap,
+  safe-alternative and mating booleans retain some related information; they
+  do not reproduce the complete conditional tree. Two saved candidate lines
+  are not an exhaustive legal-reply distribution either.
+* Composition: phase/material totals omit which side owns the surviving
+  bishops, knights and rooks and how those pieces support the mechanism.
+  Pair 6 and pair 8 are visibly different tactical settings despite anchor
+  matches. This is a hypothesis about representation, not proof that richer
+  composition would generalize or explain the labels.
+
+LIMITS AND NEXT INFORMATION NEEDED BEFORE A NEW RULE
+
+This selected panel diagnoses neither all 429 misses nor a causal source of the
+forest scores. Generic material and gap extensions have already failed; these
+examples do not justify another such extension or a new motif OR-list. Several
+ordinary controls have equally concrete, sometimes more forcing, compensation.
+The saved evidence supports describing missing mechanism/branch structure, not
+claiming the external award criterion has been found.
+
+Before any new rule, distinguish the source helper semantics from literal
+chess meanings (notably pair 10's mating flags), preserve which side and target
+receive each intermediate gain, and account for the ordinary reverse examples
+5/7/9/10/12. Also retain the control-quality failure for 1-2. The unresolved
+information is why the external labels differ when both moves have credible
+sacrifice mechanisms, and whether any proposed descriptor separates those labels
+outside this fixed descriptive panel. Neither can be resolved by the existence
+of a colorful saved line alone. Actual later gameplay is not evidence of a
+pre-move prediction feature.

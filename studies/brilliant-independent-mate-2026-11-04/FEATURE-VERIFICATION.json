@@ -1,0 +1,15 @@
+{
+  "scope": "Independent check against archived legal witnesses; no model or feature edits.",
+  "changed_counts": {
+    "eligible_missed": 22,
+    "eligible_found": 31,
+    "eligible_ordinary": 11,
+    "ineligible_positive": 1,
+    "ineligible_negative": 2
+  },
+  "all_eligible_changed_have_legal_archived_mate": true,
+  "verified_eligible_changed": 64,
+  "masked_original_parity": 3724,
+  "feature_sha256": "f26d2aae7c4d1a5bd8b7eb0ea0bbf2082b914eacddfa7e65292d2f685346a0a7",
+  "caveat": "Missing-witness absence is not tested; existing bounded helper semantics unchanged."
+}

@@ -1,0 +1,70 @@
+{
+  "study_id": "brilliants-additional-300-2026-11-03",
+  "frozen_at_utc": "2026-11-03T04:24:26.193432+00:00",
+  "purpose": "Understand Brilliant boundaries and validate better Mute classification with300 additional labeled moves.",
+  "quantity": {
+    "total": 300,
+    "current_brilliant": 150,
+    "explicit_non_brilliant": 150,
+    "target_per_account_per_class": 30,
+    "accounts": [
+      "nelsi",
+      "hansen",
+      "KNVB",
+      "GothamChess",
+      "Hikaru"
+    ],
+    "quota_fallback": "Aim30/class/account. If an account exhausts eligible unseen-game reserves, fill remaining class slots in fixed order KNVB,GothamChess,Hikaru,nelsi,hansen. Preserve every rejected/reclassified candidate as secondary evidence; do not replace based on local classifier predictions."
+  },
+  "selection": {
+    "positives": "Existing visible one-year sacrifice-gallery candidate order, exclude every prior explicitly reviewed game and known development/regression position; round-robin sacrifice categories where available. No more than one chosen positive for the same before-position+move across different games.",
+    "negative_controls": "Explicitly selected same-player moves in those new games. Prefer raw-v2 apparent legal offers, then quiet attacked/defended pieces, then recapture/exchanges, other captures and other quiet moves; nearest ply first, then ply. Missinggallerymembership is unknown, not negative. A control displaying Brilliant is secondary and systematically replaced.",
+    "historical_vs_current": "Gallery labels kept separate from observed current review displays; changed labels retained secondary.",
+    "partitions": "Whole-game SHA256(\"mute-extra300:\"+gameID) integer modulo3==0 reserved validation; remainder discovery. The rule author receives discovery data only until candidate source is frozen. Collectors necessarily see all visible labels.",
+    "known_positions": "Exclude normalized first4FENfields from earlier study primary and known-regression-fens; record any repeated positions and cross-partition overlap.",
+    "tuning": "Existing v2,v3,EC frozen before new labels. No application changes; any new candidate chosen on discovery only must be source-frozen before reserved-game scoring."
+  },
+  "evidence": {
+    "required": [
+      "numeric_game_id",
+      "one_based_ply",
+      "visible_SAN",
+      "visible_classification",
+      "capture_timestamp",
+      "source_link",
+      "full_PGN",
+      "derived_before_after_FEN"
+    ],
+    "additional": [
+      "rendered_board_piece_classes",
+      "displayed_evaluation",
+      "visible_coach_text_with_completeness_flag",
+      "ratings_dates_clocks",
+      "offer_category"
+    ],
+    "coach": "Read visible innerText only. Wait for hidden typewriter spans to disappear with a bound; otherwise retain partial_or_unverified. Never fill missing explanations."
+  },
+  "resources": {
+    "initial_collectors": 2,
+    "maximum_collectors": 3,
+    "tabs_per_collector": 1,
+    "engine_during_collection": false,
+    "scale_up": "At system pressure1/normal with adequate free memory and no sustained swap growth, addthirdcollector.",
+    "scale_down": "Pressure2/warning: no new navigations, checkpoint and reduce toone; pressure4/critical: checkpoint/close ownedresearchtabs. Nevercloseuser tabs or restartapp.",
+    "checkpoint": "Persist every observed move; monitor pressure/swap/process RSS at collector batch boundaries."
+  },
+  "exclusions_sha256": "227bdc590ffd6e624e855730b9bd6aadd55f35d3426b894786866e9068bd6bd2",
+  "baseline_sources": {
+    "v2": "b3585f2c5b818bb8dfabb7fc4e3ed37cab848c12",
+    "v3": "ac298a0d69ab51808857b089063348f2adac1101",
+    "EC": "6f2d2628f0fbe11cb62a7dd2f9c102bb52907d53"
+  },
+  "engine_plan_after_collection": {
+    "engine": "sameSF18binaryas318study",
+    "threads": 1,
+    "hash_MB": 64,
+    "baseline_nodes": 300000,
+    "windows": "preceding,before,after, actual prior complete iterations; same policy and source parity checks.",
+    "stronger": "Atmost30frozenhash-selecteddisagreements at1500000nodes, before reporting any stronger changes; do not mix them into baseline."
+  }
+}

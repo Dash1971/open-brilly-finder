@@ -1,0 +1,87 @@
+{
+  "created_at_utc": "2026-11-03T22:07:40.283184+00:00",
+  "scope": "Separate bounded raw-capacity optimization; original fixed kernel/model and prior optimization preserved. Never read seen654 or old results.",
+  "input_path": "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json",
+  "input_sha256": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+  "kernel_sha256": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f",
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "final_selection_folds": 5,
+  "cutoffs": [
+    0.5,
+    0.6,
+    0.7,
+    0.75,
+    0.8,
+    0.8333333333333334,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "trees": 64,
+  "predictors": 150,
+  "seed": 20261103,
+  "grouping": "Existing whole-game/identical-before union components; both windows linked; deterministic salted SHA256 group sort then round-robin folds; common bootstrap RNG across costs",
+  "selection": "MaxTP with FP<=min(referenceFP,floor(.005*N_non_easy_negatives)),TP>=referenceTP,TP>0. Ties fewerFP/highercutoff/highercost. If none feasible select cost5/cutoff5/6 reference and explicit no qualifying improvement.",
+  "reference": "Cost5/cutoff5/6 retrained on same folds, no deployed-model training leakage",
+  "guards": "Both-window eligibility+confidence+physicalUnknown abstention for all forest predictions. Easy-error negatives separate; legacy_mixed treated as hard.",
+  "final_selection": "Independent fixed5fold OOF on all frozen training only; not chosen using outer results. Fullfit once at selectedcost, separate threshold config.",
+  "limits": {
+    "wall_seconds": 600,
+    "cpu_seconds": 600,
+    "rss_bytes": 536870912,
+    "memory_pressure_required": [
+      1,
+      2
+    ],
+    "processes": 1,
+    "no_partial_winner": true,
+    "no_automatic_retry": true,
+    "critical_or_unknown_pressure_aborts": true
+  },
+  "start": "Root GO hashes input/script/protocol; browser tabs closed; no active stockfish; no fit before GO",
+  "capacity_source_sha256": "4aefb35307853d707f5aac869bac8ce3e0db9706ec92017316341778643d3ae2",
+  "configs": [
+    {
+      "profile": "baseline",
+      "depth": 6,
+      "minleaf": 8,
+      "mtry": 12,
+      "cost": 1
+    },
+    {
+      "profile": "baseline",
+      "depth": 6,
+      "minleaf": 8,
+      "mtry": 12,
+      "cost": 3
+    },
+    {
+      "profile": "richer",
+      "depth": 8,
+      "minleaf": 4,
+      "mtry": 24,
+      "cost": 1
+    },
+    {
+      "profile": "richer",
+      "depth": 8,
+      "minleaf": 4,
+      "mtry": 24,
+      "cost": 3
+    },
+    {
+      "profile": "baseline",
+      "depth": 6,
+      "minleaf": 8,
+      "mtry": 12,
+      "cost": 5
+    }
+  ],
+  "capacity_tie": "After TP/fewerFP/highercutoff/highercost, prefer lowerdepth/higherminleaf/lowermtry",
+  "resource_authorization": {
+    "at_utc": "2026-11-03T22:15:33.183550+00:00",
+    "user_answer": "Allow the bounded run",
+    "scope": "One identical capacity experiment; only resource warning policy changes. Same512MiB/600second caps and all ML settings."
+  }
+}

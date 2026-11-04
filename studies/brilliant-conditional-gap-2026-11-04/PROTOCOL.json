@@ -1,0 +1,67 @@
+{
+  "created_at_utc": "2026-11-04T01:26:23.534928+00:00",
+  "scope": "One conditional-response-gap feature experiment; same training cases, grouped evaluation, guards, original learners and costs. No collection, live-site writes, or general tooling.",
+  "source_sha256": {
+    "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/pv-trajectory-experiment/source-pack/after-snapshots.jsonl.gz": "5d22309176794a81ac6294164c8166f9e202f90d90fcece814ad86d533baa1ad",
+    "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/pv-trajectory-experiment/source-pack/games.jsonl.gz": "c2e396b22fe33e1701c0cc5509a5b3419f6c35d1b356c27dbaf05568d5e8c24a",
+    "research/brilliants-training-overnight-2026-11-03/adapter/augment-pv.py": "843624f079947e1ce3f8d8db789b2ba125cfd6a94f9019aeb432bcb2673cfd03",
+    "research/brilliants-prospective-v7-2026-11-03/adapter/sf18-collect.py": "c3b923604b99481100d6da620cdf11689494b579520e7f8186235bc856cfc1bd",
+    "research/brilliant-matched-sacrifices-2026-11-04/PROBES.json": "2c7b0b4cc49d81c3008a56f7a77659198d51c11f61ec21ef2ab3fc82b43197b8",
+    "research/brilliant-matched-sacrifices-2026-11-04/MATCHED-CASES.json": "e6d482a5447099854fc3235e4d65dcdd6d0a9c7109275c2081847973cba93553",
+    "research/brilliant-standard-learners-2026-11-04/experiment.py": "0c9b361880d65d43a11443a84d438917866084c77b6edd7af021fbc4b76e3814",
+    "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/fit.py": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f"
+  },
+  "extract_script_sha256": "5eadf345dfdb9362370779bf6b6b021e5517a860c2e925032eb4b0826fc23e84",
+  "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+  "feature": "conditional_response_gap_cp, plus its missing indicator. Original150columns stay unchanged; these2columns are appended.",
+  "qualification": "Same bounded512node legal-capture/SEE method as pilot; search every qualifying accepting capture on any-window-eligible cases, irrespective of truth, cohort, model score, or ec_sacrifice.",
+  "branch_choice": "Per current/previous complete iteration, opponent-best acceptance minimizes mover evaluation; losing mate before finite cp before winning mate, shorter losses/longer wins preferred by opponent; UCI tie break.",
+  "gap": "Best minus second response cp, normalized to mover. Missing if chosen accepting branch lacks2finite-cp root scores, any acceptance lacks complete corresponding window, or offer mapping unknown. Mate is never converted into cp; no added gate.",
+  "extraction": {
+    "cases": 1320,
+    "total_accepting_branches": 1481,
+    "cached_pilot_branches": 62,
+    "new_branches": 1419,
+    "nodes": 300000,
+    "threads": 1,
+    "hash_mb": 64,
+    "max_offers_per_case": 4,
+    "wall_cap_seconds": 900,
+    "clear_hash": "eachsearch",
+    "history": "fullPGN",
+    "engine_processes": 1
+  },
+  "evaluation": {
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "fold_salts_and_seeds": "Identical to standard-learner experiment",
+    "learners": [
+      "custom64tree depth6 leaf8distinctmoves mtry12 cost5split rawleaf groupbootstrap",
+      "sklearnRF128tree depth6 leaf16rows mtry12 unweightedclasses rowbootstrap"
+    ],
+    "arms": [
+      "custom_fixed_original",
+      "custom_retuned_original",
+      "custom_retuned_plus_gap",
+      "standard_rf_original",
+      "standard_rf_plus_gap"
+    ],
+    "threshold_rule": "Max innerOOF TP with FP<=fixedoriginal reference FP AND wrong-award fraction<=fixedoriginal reference. Same exact-score threshold selection/ties as previous study.",
+    "selection": "Choose among arms by max innerTP then fewerFP; ties prefer original customfixed, original customretuned, originalRF, gapcustom, gapRF. Fixed reference fallback. Outer results never choose cutoff or learner.",
+    "control": "Each original/augmented learner pair has same hyperparameters, training rows, initial weights, guards, fold membership and seed. Custom mtry sqrt(150)=sqrt(152)=12.",
+    "primary_reporting": "Pooled nested held-out counts for each arm, paired differences and selected procedure. No posthoc winner or threshold sweep.",
+    "sensitivity": "Report scores on outer TEST rows excluding every pilot whole group. Training folds may include pilot groups when legal. This is a non-pilot-case breakdown, not new independent validation.",
+    "subgroup": "Report eligible ec_sacrifice=false positives/negatives separately.",
+    "final_calibration": "Same separate5fold final calibration; train/freeze one selected fullfit. No replay on already-seen654 in this experiment; leave fresh validation for later.",
+    "limits": {
+      "fit_wall_seconds": 600,
+      "rss_bytes": 536870912,
+      "threads": 1,
+      "max_fits": 101,
+      "parameter_sweeps": 0
+    }
+  },
+  "interpretation": "Development evidence on repeatedly used corpus.48label-informed pilot examples generated feature hypothesis; nonpilot breakdown does not erase adaptive-study bias. No deployment claim.",
+  "stop": "No outcome-dependent retries or expanded search/model sweep."
+}

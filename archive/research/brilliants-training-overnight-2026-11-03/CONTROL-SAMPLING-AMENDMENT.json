@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-11-03T15:59:01.721766+00:00",
+  "sampling_version": "static_offer_v3",
+  "authorized_by": "Root coordinator before unstarted B wave4 and future A games",
+  "scope": "Future games only; prior completed controls remain unchanged.",
+  "selection": "Prefer up to four unannotated raw legal-offer positions, nearest historical nomination then captures. If fewer offers exist, fill up to two controls using the previous deterministic control rule.",
+  "labels": "Every selected control requires an explicit visible UI label. Retain any Brilliant response, disagreement or shortfall; never force a negative class.",
+  "limits": "Static unchanged isMuteSacrifice only; no engine, model scores, current labels or threshold tuning in selection. Unscanned predicates remain unknown.",
+  "evaluation": "Training and assessment candidates/baseline use the same selected cases; reserved challenge sampling must be reported.",
+  "initial_sidecar": "control-offers-B-wave4.json",
+  "source_script": "adapter/screen-control-offers.mts"
+}

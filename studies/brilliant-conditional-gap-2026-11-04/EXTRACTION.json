@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "protocol_sha256": "ca1f75d2e5961a81d038fa7ac8d63fb6ef6d1d1dbf64e9e30278fd4e8f60be35",
+  "input_sha256": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+  "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+  "requested_cases": 1320,
+  "completed_cases": 1320,
+  "new_searches": 1419,
+  "cached_searches": 62,
+  "offer_mapping_unknown": 0,
+  "coverage": {
+    "current": {
+      "known": 1070,
+      "mate_score": 248,
+      "fewer_than_two_responses": 2
+    },
+    "previous": {
+      "known": 1070,
+      "mate_score": 248,
+      "fewer_than_two_responses": 2
+    }
+  },
+  "raw_evidence": "ENGINE-EVIDENCE.jsonl",
+  "engine_id": {
+    "name": "Stockfish 18",
+    "author": "the Stockfish developers (see AUTHORS file)"
+  },
+  "elapsed_seconds": 341.0270855408162,
+  "feature_sha256": "fa84e03661767c40c722ee561cb86de4f0d3d0656184b2dc70c0dd9faa34a394",
+  "recorded_new_search_seconds": 337.78763957647607,
+  "evidence_sha256": "d81a5cb5cc2883bd28291286763a4a4762b69297b2b1d0cf3983ace248e74aee"
+}

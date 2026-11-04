@@ -1,0 +1,337 @@
+{
+  "existing_methods_reused": [
+    "validation/corpus.py observed_board/game identity helpers",
+    "validation/prepare.py position/account/namespace/FENchecks/category-roundrobinmethod",
+    "validation/PLAN.json exclusions and controlselection hierarchy",
+    "validation/control-candidates-v2-* unchanged pinned predicate descriptors"
+  ],
+  "sources": {
+    "mute-chess-research/studies/brilliant-moves/corpus.sqlite3": {
+      "sha256": "47bf1d99b96cfd2290487eed5e115ba350ed6f6488fc09ee17e36a16792c03df",
+      "bytes": 9211904
+    },
+    "research/brilliants-600-2026-11-03/corpus.sqlite3": {
+      "sha256": "df4b81fcfe0673ce7e8e42e41fc9d38d0d45d5e81938e60523898072a8b0bbe8",
+      "bytes": 8118272
+    },
+    "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-candidates.json": {
+      "sha256": "bd5920bdf5c27606444c681ae1e14cdfe1cdc5bb6125a0b644da90f966e09482",
+      "bytes": 100490
+    },
+    "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-eligible.json": {
+      "sha256": "8f1130ab439a5f82af10c29e9f66e6c83bd1510c88b635f99292dda3ad4dcb36",
+      "bytes": 117425
+    },
+    "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-selected.json": {
+      "sha256": "99d4804e2030a594e1a2ba1e914f40348ed71f9035605260cea02f43326cf427",
+      "bytes": 85364
+    },
+    "research/brilliants-600-2026-11-03/evidence/gothamchess-gallery-verified.json": {
+      "sha256": "b59f945b75f97b854f1ad487ed05058a8a670e225a433435e93d68941760a499",
+      "bytes": 99017
+    },
+    "research/brilliants-600-2026-11-03/evidence/gothamchess-reviews-01.json": {
+      "sha256": "552f45aa429ccfca7a9f5d0c1ed1a1527272d883b642518865aadd3a915f9e8d",
+      "bytes": 53193
+    },
+    "research/brilliants-600-2026-11-03/evidence/hansen-gallery-bishop-sacrifice.json": {
+      "sha256": "f55e030a2eda5408bb2bf793775fe51b22f02a96e07bd09fb255065da544fd8f",
+      "bytes": 23815
+    },
+    "research/brilliants-600-2026-11-03/evidence/hansen-gallery-candidates.json": {
+      "sha256": "6b6b8b5960079791ebd61dee2235974eb3fd035370d17bb492f7982e740f1e24",
+      "bytes": 16582
+    },
+    "research/brilliants-600-2026-11-03/evidence/hansen-gallery-knight-sacrifice.json": {
+      "sha256": "a91ea46ff4a34f8dfeb22a487355666109d1f2ce4c6318953692dab602c42bdc",
+      "bytes": 34434
+    },
+    "research/brilliants-600-2026-11-03/evidence/hansen-gallery-rook-sacrifice.json": {
+      "sha256": "f050a2f116dd6c7f1bff2444952afd4604af084226702946b495cfd36262e58c",
+      "bytes": 26804
+    },
+    "research/brilliants-600-2026-11-03/evidence/hansen-reviews-01.json": {
+      "sha256": "7e65040f382286d39ecb63417cd9e6ba9a653bef81e9f21f06e49296813840a0",
+      "bytes": 127797
+    },
+    "research/brilliants-600-2026-11-03/evidence/hikaru-gallery-candidates.json": {
+      "sha256": "df6f89d65c8524a677d55ba0f9570505578fdc89f06f92c22377058d513d301e",
+      "bytes": 99412
+    },
+    "research/brilliants-600-2026-11-03/evidence/hikaru-gallery-eligible.json": {
+      "sha256": "00812c27a6261580ad6de65fc9e069e21ea253567765ddc7d5d25606d8497c0d",
+      "bytes": 76176
+    },
+    "research/brilliants-600-2026-11-03/evidence/hikaru-gallery-selected.json": {
+      "sha256": "f56f88c2574b2e64d65a498e227b715cd263d5072fc9c388536ac09a79667820",
+      "bytes": 58480
+    },
+    "research/brilliants-600-2026-11-03/evidence/hikaru-gallery.json": {
+      "sha256": "904a03cdfe4809a4072e8a54d46f67f2c476d329ab1d1ea9f50eccb2d3116184",
+      "bytes": 32281
+    },
+    "research/brilliants-600-2026-11-03/evidence/hikaru-reviews-01.json": {
+      "sha256": "64227ee34eb3f3f0cbf50ce8b69207c28ed6286933e617b75eb686721744bf80",
+      "bytes": 268095
+    },
+    "research/brilliants-600-2026-11-03/evidence/knvb-gallery-bishop-sacrifice.json": {
+      "sha256": "05e641d2314fc693d0698e8056ca5e052fd7064b1687bf82e34bfff078971858",
+      "bytes": 33143
+    },
+    "research/brilliants-600-2026-11-03/evidence/knvb-gallery-knight-sacrifice.json": {
+      "sha256": "523c3ba482724a7a992a2bae99bfa260580f71eb6df706932783039021c602d8",
+      "bytes": 35129
+    },
+    "research/brilliants-600-2026-11-03/evidence/knvb-gallery-queen-sacrifice.json": {
+      "sha256": "e8925361f34f21a712f0b9c6e4b2be7d6123445e4832bf842708bf65118cfa46",
+      "bytes": 19513
+    },
+    "research/brilliants-600-2026-11-03/evidence/knvb-gallery-rook-sacrifice.json": {
+      "sha256": "5cd688fb33003be3aa81381b27f7c41d9c9239d5d2d44e88464dac25efd8da1b",
+      "bytes": 31734
+    },
+    "research/brilliants-600-2026-11-03/evidence/nelsi-gallery-candidates.json": {
+      "sha256": "f4a84dc89f3c4758c611e8171d329f277eb2ef6e7aa5e311a6db06a3b5a7fc74",
+      "bytes": 116560
+    },
+    "research/brilliants-600-2026-11-03/evidence/nelsi-gallery-eligible.json": {
+      "sha256": "987e5888bef951805cf4bfab1f404a2581cbd67aec8ff323da3e46f4345116ef",
+      "bytes": 121560
+    },
+    "research/brilliants-600-2026-11-03/evidence/nelsi-gallery-selected-superseded-unverified.json": {
+      "sha256": "a5cdfac48e3e4e404e102586575ab70b2ba948aebf5d23ae2852a1cb2822da13",
+      "bytes": 93243
+    },
+    "research/brilliants-600-2026-11-03/evidence/nelsi-gallery-selected.json": {
+      "sha256": "03611e9569e6bbcd715b7b0f0682985bf251002d21ac950c927299d91ee924d9",
+      "bytes": 85228
+    },
+    "research/brilliants-600-2026-11-03/evidence/nelsi-gallery-verified.json": {
+      "sha256": "d08ac390144c66799f434c688873bac0ebc9b8ed38fdf358303bbae9277c6b8a",
+      "bytes": 107697
+    },
+    "research/brilliants-600-2026-11-03/evidence/nelsi-reviews-01.json": {
+      "sha256": "c9e7b652d3998aeb2b7ea48ee25130fca7a9db2ce868f92169b6ecae253e95ff",
+      "bytes": 303812
+    },
+    "research/brilliants-600-2026-11-03/gothamchess-ui-checkpoint.json": {
+      "sha256": "65f54b7f660500b95a390291a7f399ff943a9560ca193c6bfcf4c0c65298de7d",
+      "bytes": 1128
+    },
+    "research/brilliants-600-2026-11-03/memory-pause-checkpoint.json": {
+      "sha256": "013ccc4c760aa265cb8379f3694f44877ecb7c914b0225ee731e5961441bf8ad",
+      "bytes": 2352
+    },
+    "research/brilliants-600-2026-11-03/nelsi-ui-checkpoint.json": {
+      "sha256": "fe8d1d54c29d13b95608cb4ee8354481e3040f628185b437635bd69ed563ac13",
+      "bytes": 109176
+    },
+    "research/brilliants-additional-300-2026-11-03/browser-block-checkpoint.json": {
+      "sha256": "ce47ac2ce1985da2a7caae51cb6aa1cc4d8957fc9f1267622302cd386f85c67c",
+      "bytes": 2574
+    },
+    "research/brilliants-additional-300-2026-11-03/corpus.sqlite3": {
+      "sha256": "a464a9446de423b37c929fdaf3ca71d279a351954e3ddbb5b0b137ebf38bdbe2",
+      "bytes": 8511488
+    },
+    "research/brilliants-additional-300-2026-11-03/evidence/gothamchess-gallery-selected.json": {
+      "sha256": "ebba70a19d32f8c2a1928c68f2f7383bdb5dfe22a447ebcea3ec4bb919fe44b0",
+      "bytes": 60951
+    },
+    "research/brilliants-additional-300-2026-11-03/evidence/gothamchess-reviews-01.json": {
+      "sha256": "cd6d190782cd048b513c0ddc8f3ac41b781cd99fc9dcd75255e088c746963936",
+      "bytes": 175362
+    },
+    "research/brilliants-additional-300-2026-11-03/evidence/hansen-gallery-selected.json": {
+      "sha256": "6f6f4c2e4af4bd239e191ec416ab13bfdff8402309f0e115d9c7cc01f352276e",
+      "bytes": 38502
+    },
+    "research/brilliants-additional-300-2026-11-03/evidence/hansen-reviews-01.json": {
+      "sha256": "62d80087a1132b0f0086b29d9859641bf578b157c37fecadf542216c7b37638d",
+      "bytes": 148460
+    },
+    "research/brilliants-additional-300-2026-11-03/evidence/hikaru-gallery-selected.json": {
+      "sha256": "b63cad6975c60b8efcb83ac54c63f55f7303ab709c735ba1ac9f1fb69aa55510",
+      "bytes": 33463
+    },
+    "research/brilliants-additional-300-2026-11-03/evidence/hikaru-reviews-01.json": {
+      "sha256": "359e0cdc42cfbb02798a8496defdb7685765d0aafe57e257a0e6121a00835a68",
+      "bytes": 155233
+    },
+    "research/brilliants-additional-300-2026-11-03/evidence/knvb-gallery-selected.json": {
+      "sha256": "e1043f0120456dc59d01448204ed8ff9b389055b6f5b984d5d8fc9b8b8446536",
+      "bytes": 34863
+    },
+    "research/brilliants-additional-300-2026-11-03/evidence/knvb-reviews-01.json": {
+      "sha256": "a53c4053be62f0ebedcf96bc5d4bc1aadfcf6330779088a41f032793a784cdb9",
+      "bytes": 135294
+    },
+    "research/brilliants-additional-300-2026-11-03/evidence/nelsi-gallery-selected.json": {
+      "sha256": "6004ce2e8cef25d68ee360406087f54ae56eb7ceee504d4e9340554c15b9d9ae",
+      "bytes": 43296
+    },
+    "research/brilliants-additional-300-2026-11-03/evidence/nelsi-reviews-01.json": {
+      "sha256": "e5293c06cf09119a86bcbecaa74a71666f178176c31fbcccce30ef0055008ba5",
+      "bytes": 154651
+    },
+    "research/brilliants-additional-300-2026-11-03/nelsi-ui-checkpoint.json": {
+      "sha256": "a3788a13a8bc6cd266460a522bc0464d9e9f2356fb793514db8b94c5684d33bc",
+      "bytes": 246
+    },
+    "research/brilliants-final-2026-11-03/corpus.sqlite3": {
+      "sha256": "c9095e767410db0e3dc225c2b2d35f826dab34255199477f5b7950089d8f42d3",
+      "bytes": 14045184
+    },
+    "research/brilliants-improvement-2026-11-03/validation/PLAN.json": {
+      "sha256": "b6871f395b8b4ccb7e4dfce00aeab7357f7bbb5768932449222ddecc43b118c3",
+      "bytes": 7418
+    },
+    "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json": {
+      "sha256": "0554dc9bd99d75f5c3cb288796ab191f16dc407458d7983a0ddac9f8bdc0a400",
+      "bytes": 366196
+    },
+    "research/brilliants-improvement-2026-11-03/validation/control-candidates-v2-gothamchess.json": {
+      "sha256": "6ebe5f29c43794430b57cad0591e82d57f3ce7efbefcbadc6425ea512951faf8",
+      "bytes": 1144136
+    },
+    "research/brilliants-improvement-2026-11-03/validation/control-candidates-v2-hansen.json": {
+      "sha256": "da4c03dd8bb2a1f1f5658db8dd762fc28e64cbe0ed3a38ecad483f3a6049cfd1",
+      "bytes": 1370426
+    },
+    "research/brilliants-improvement-2026-11-03/validation/control-candidates-v2-hikaru.json": {
+      "sha256": "d67af543b2056ca136843a29e735760ee9514d61e6ef6b29dddb0ec7b314aa71",
+      "bytes": 1295544
+    },
+    "research/brilliants-improvement-2026-11-03/validation/control-candidates-v2-knvb.json": {
+      "sha256": "537578a0b3b5774672bc72e828a70b6b99a1626c8e899e925ec0562143404101",
+      "bytes": 4032138
+    },
+    "research/brilliants-improvement-2026-11-03/validation/control-candidates-v2-nelsi.json": {
+      "sha256": "c8c6d345c728547349324336a70561e0712651235c3c495d9810fedf26909101",
+      "bytes": 1439240
+    },
+    "research/brilliants-improvement-2026-11-03/validation/corpus.py": {
+      "sha256": "5ca879a4b5a1dfaf471ea468d0832ec4e6217cb8c0d4537880440a130d6453aa",
+      "bytes": 34451
+    },
+    "research/brilliants-improvement-2026-11-03/validation/corpus.sqlite3": {
+      "sha256": "029499198a4ed56d7a1e05ea0d63f5c7e89c475cc343485a50d752baf5ab5b0f",
+      "bytes": 6692864
+    },
+    "research/brilliants-improvement-2026-11-03/validation/evidence/gothamchess-fresh-review.json": {
+      "sha256": "fe0d8de10fc55bd0f3d3a7b707d40b3920a1601b591ec768741cd6b42821d46b",
+      "bytes": 145361
+    },
+    "research/brilliants-improvement-2026-11-03/validation/evidence/gothamchess-gallery-selected.json": {
+      "sha256": "5bb01ef92bc78e6b1e1e708e5ba9bb32bf026c2706d2d5efadab6c7a5f144411",
+      "bytes": 39209
+    },
+    "research/brilliants-improvement-2026-11-03/validation/evidence/hansen-fresh.json": {
+      "sha256": "3eb687d83d248c94a4d9551633c1f0dbae3f576c9611bf54cb57f4a9f6c121d2",
+      "bytes": 115280
+    },
+    "research/brilliants-improvement-2026-11-03/validation/evidence/hansen-gallery-selected.json": {
+      "sha256": "ff30bbcdf6e0bc5d06b0e7d706eadf43f43d8386200f795e602cd5694ff93f15",
+      "bytes": 28554
+    },
+    "research/brilliants-improvement-2026-11-03/validation/evidence/hikaru-fresh-review.json": {
+      "sha256": "61b73ac1fa2d7843f642e83d4f71f05e54a13bac1932fd912b4e1eb543b4db46",
+      "bytes": 113411
+    },
+    "research/brilliants-improvement-2026-11-03/validation/evidence/hikaru-gallery-selected.json": {
+      "sha256": "ba29cdb46cbcb8040e3328cc26ae3c14d20c70b8da6cafc2f61e3827ef5385a2",
+      "bytes": 23869
+    },
+    "research/brilliants-improvement-2026-11-03/validation/evidence/hikaru-gallery-topup.json": {
+      "sha256": "952792752c958f207c5a7b8b703f254d7ec88f2c487b0405d76b83b1bcc2c9e4",
+      "bytes": 114799
+    },
+    "research/brilliants-improvement-2026-11-03/validation/evidence/knvb-fresh-review.json": {
+      "sha256": "1c8a5e19907a201f29ea46f5093460d3726b3bb9b9b25503d8689c68bb7977da",
+      "bytes": 124813
+    },
+    "research/brilliants-improvement-2026-11-03/validation/evidence/knvb-gallery-selected.json": {
+      "sha256": "b55f4fccf9b9bcb8b8e8b5adab4e2460579ae7e67e5171c5ce8b9eca862337e8",
+      "bytes": 26652
+    },
+    "research/brilliants-improvement-2026-11-03/validation/evidence/mechanism-a-reviews.json": {
+      "sha256": "53f43c046d5fec981463f137448be3bc2c07a48587aaaf63093024fec8755c5c",
+      "bytes": 51800
+    },
+    "research/brilliants-improvement-2026-11-03/validation/evidence/mechanism-b-reviews.json": {
+      "sha256": "b17e8f09ec073f4a2a6e48914d565e4998321a853e9d7e5cb1f10f1d7af1e0dc",
+      "bytes": 46938
+    },
+    "research/brilliants-improvement-2026-11-03/validation/evidence/nelsi-fresh-review.json": {
+      "sha256": "277b9a5bdd2af0a99b057ff86947bc5f5cb33ee2f7724206a3ca9ca7413a89bb",
+      "bytes": 112275
+    },
+    "research/brilliants-improvement-2026-11-03/validation/evidence/nelsi-gallery-selected.json": {
+      "sha256": "03a0942c2024ad3e33538dd01f962296301ffc294abc4a98c5f1023358ef4966",
+      "bytes": 25563
+    },
+    "research/brilliants-improvement-2026-11-03/validation/evidence/nelsi-gallery-topup.json": {
+      "sha256": "a7a6b94f50f288904632a41eac081a634aed9086a108da4bc8b0534bf9a3f631",
+      "bytes": 120017
+    },
+    "research/brilliants-improvement-2026-11-03/validation/exclude-games.json": {
+      "sha256": "f3a85cbb271faec3e0b4c07f7cadeb89de180d98fcba57ccb313636517f1ebbc",
+      "bytes": 6610
+    },
+    "research/brilliants-improvement-2026-11-03/validation/gothamchess-candidate-pool.json": {
+      "sha256": "756a65b15860be29cd0cf4c22e05a284b837c23771597b00cbaad19f719b28e8",
+      "bytes": 59067
+    },
+    "research/brilliants-improvement-2026-11-03/validation/hansen-candidate-pool.json": {
+      "sha256": "4328020b220990455b728b2bb1818158725f038b54cd97f6b4bf8ea621ad04fe",
+      "bytes": 59512
+    },
+    "research/brilliants-improvement-2026-11-03/validation/hikaru-candidate-pool.json": {
+      "sha256": "77026f1252cd4a60f602921e4abe02add74ab2419417ff201276b30cac13f453",
+      "bytes": 52456
+    },
+    "research/brilliants-improvement-2026-11-03/validation/known-regression-fens.json": {
+      "sha256": "38432572526f36bda27abf099fa43500ef20b07c96263473ecba4e4fb80c3b39",
+      "bytes": 2524382
+    },
+    "research/brilliants-improvement-2026-11-03/validation/knvb-candidate-pool.json": {
+      "sha256": "0739cb8742200df6de4ffed5048d70106867a521525048632ad579d9a0e6a6c5",
+      "bytes": 127571
+    },
+    "research/brilliants-improvement-2026-11-03/validation/nelsi-candidate-pool.json": {
+      "sha256": "4b6dbe53bf2d8a33ceac1b8f146f617ad98153eae098d846a84edd97cca80f4d",
+      "bytes": 61045
+    },
+    "research/brilliants-improvement-2026-11-03/validation/prepare.py": {
+      "sha256": "8b4573ab9bfb5ea4b285caf9c56f75269ef4b68ec0f99cd26159e76dcd1d6c8f",
+      "bytes": 9029
+    },
+    "research/brilliants-pilot-2026-11-03/corpus.sqlite3": {
+      "sha256": "aee61f923f302889fb6c6f97147167085f25f61ce751e5d4a7fd20c64c058f61",
+      "bytes": 548864
+    },
+    "research/brilliants-pilot-2026-11-03/evidence/gallery.json": {
+      "sha256": "4483476d08890cf086e29e19b34cc296e23b787c85949afd67ea622e662a6b6b",
+      "bytes": 13248
+    },
+    "research/brilliants-pilot-2026-11-03/evidence/reviews-01.json": {
+      "sha256": "b83430168fabe5ba215cb584a34673d72a277584dca4a256a297f5ca8583afe9",
+      "bytes": 11918
+    },
+    "research/brilliants-pilot-2026-11-03/evidence/reviews-02.json": {
+      "sha256": "ead0cd93c53c7b59e56087f534daeece70824fee0b93da9ed07382f669971ca7",
+      "bytes": 15324
+    },
+    "research/brilliants-unified-2026-11-03/corpus.sqlite3": {
+      "sha256": "47bf1d99b96cfd2290487eed5e115ba350ed6f6488fc09ee17e36a16792c03df",
+      "bytes": 9211904
+    }
+  },
+  "script_sha256": "c03ffccde73e80b913aeb09ca0ab0d72888d3bd72db038eb90c89f5ef90a2091",
+  "output_sha256": {
+    "exclude-games.json": "2d209ad510519885ed8a673040f817582c2c49f041133ee7d5bcbff3cf30e0d1",
+    "known-position-exclusions.json": "be1ca2db8c80b608a4f48e4e29635874444829b814c801ba5863f5f9a57c4b07",
+    "QUEUEDRAFT.json": "ae3ad63f72372d16b8dc7ba6fe2f55b21d4ce5ee55a28672c2ebdfad23bf5307",
+    "INVENTORY.json": "aa5f64f2f1849f29966df45ab154819305edfd8c7701dfc8b44171980f11b073"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "scope": "Experimental only; not application-compatible release artifact",
+  "selected": {
+    "kind": "custom",
+    "arm": "custom_material_gated",
+    "threshold": 0.8143062085223279,
+    "mating_enabled": true,
+    "inner_rule_added_TP": 3,
+    "inner_rule_added_FP": 0,
+    "TP": 489,
+    "FN": 428,
+    "FP": 7,
+    "TN": 2800,
+    "recall": 0.5332606324972737,
+    "precision": 0.9858870967741935,
+    "wrong_fraction_of_awards": 0.014112903225806451,
+    "easy_error_FP": 0
+  },
+  "model_sha256": "e153a3d151a8803d13fc85ba857c9297541a5d45b627f776ea56f1a249002332",
+  "script_sha256": "f1dc43154aafe9127dbf8040c2d5ac91db58e15892b70062191cdc07b6b21d2c",
+  "protocol_sha256": "2589ed973e17d895bbdbaa592f320f7f862a1168cda436bb7e975383c456e8ab",
+  "input_sha256": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09"
+}

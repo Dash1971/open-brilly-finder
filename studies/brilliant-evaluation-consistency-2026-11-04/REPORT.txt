@@ -1,0 +1,165 @@
+Saved-miss audit and fixed-forest evaluation-consistency test
+November 4, 2026
+
+RESULT
+
+The tested consistency change does not meet the objective. It recovers four
+Brilliants, loses two correct awards, and adds two wrong awards. Keep the
+existing policy. No application change, deployment, forest refit, feature
+change, or threshold adjustment was made.
+
+Primary comparison: same saved game/position-group-held-out predictions
+
+Policy                         Correct/917  Recall  Wrong  Wrong/awards
+Original, selected cutoffs       452        49.29%    6       1.31%
+Consistent quality comparison    454        49.51%    8       1.73%
+
+Predeclared fixed5/6 control:
+Original                         436        47.55%    6       1.36%
+Consistent quality comparison    438        47.76%    7       1.57%
+
+Both fail the requirement to increase correct awards without increasing wrong
+awards or their fraction. We did not select the more favorable control, tune
+the cutoff, or try a second rule after seeing the results.
+
+These are the saved research forests from the previous grouped comparison,
+not a fresh estimate of the deployed848-example model's performance. For each
+outer fold, both arms reuse exactly the same saved forest scores and original
+cutoff. No full-data-trained forest is scored on its own training examples.
+
+WHERE THE MISSES OCCUR
+
+The original primary policy misses465 of917 saved Chess.com Brilliants:
+
+  429 pass every eligibility check but score below the forest cutoff.
+   26 fail an eligibility check AND score below the forest cutoff.
+   10 score high enough but fail an eligibility check.
+
+The36 misses with gate failures consist of31 quality failures and5 cases with
+no qualifying raw offer. None fail confidence, physical-known, resulting-score
+floor, or two-root checks. All10 above-cutoff gate-blocked misses are quality
+failures. The other21 quality failures also have low forest scores; all5
+raw-offer failures have low scores.
+
+Thus even an oracle that recovered all above-cutoff gate-blocked positives
+would add at most10 Brilliants with these scores/cutoffs unchanged, taking
+452/917 to462/917 (50.38%). That is a diagnostic upper bound on gate-only
+recovery, not a proposed rule or attainable error-free result. Correcting the
+evaluation features fed into the forest, or retraining it, is outside this
+bound and outside this experiment.
+
+The429 eligible score misses include245 for which the En Croissant sacrifice
+feature is true and184 for which it is false. Their corresponding correct
+awards are445 and7. The larger problem is not confined to the mating-offer
+examples studied recently.
+
+All2,807 negatives were included. Originally421 pass the guards (six receive
+wrong awards), while2,386 fail at least one. Overlapping negative gate failures:
+raw offer1,988; quality418; after-floor607; fewer than two roots3. We did not
+test the substitution only on known Brilliants or omit ordinary tactics.
+
+WHAT THE TEST CHANGED
+
+Original quality compares the best score before the move with the best score
+from an independent search after the move. Different searches/depths can
+disagree about the same move.
+
+The candidate uses the best and played-move scores from the SAME before-position
+search instead. It retains the existing five-percentage-point tolerance and
+score mapping. This substitution applies only when the played root and its
+score are present in BOTH complete saved windows. Otherwise the entire pair
+retains the original quality policy. Both windows must pass.
+
+All75 forest inputs, missing indicators, saved minimum-of-two-window scores,
+cutoffs, raw-offer requirement, after-score floor, two-root requirement,
+confidence check, and physical-unknown abstention remain unchanged. In
+particular, the forest still sees the original loss features. This deliberately
+isolates the external quality check; it does not correct every evaluation-based
+measurement in the classifier.
+
+Same-root pairs are available for836/917 positives and2,206/2,807 negatives.
+The81 positive and601 negative missing pairs retain the original policy.
+After all unchanged guards, eligibility changes are:
+  Positives: seven admitted, six removed.
+  Negatives: seven admitted, two removed.
+The forest score then rejects some of these changes, yielding the award counts
+above. All10 high-scoring quality-blocked positives have complete root pairs:
+four become eligible; the other six still exceed the same-root loss limit.
+
+CHANGED PRIMARY DECISIONS
+
+Recovered Brilliants:
+  184634890030:37 Qxh7+
+  173264572533:51 Rxe6
+  167742451240:61 Ba3
+  185897727454:25 Bxh7+
+All four rank first in both saved before-position windows, so same-root loss
+is zero. Bxh7+ is the clearest depth discrepancy: before depths17/16 and child
+depths7/6; the played/root score is+5.90 versus child+3.01. The old mapped loss
+is14.59 points. The other three recoveries primarily involve previous-window
+disagreement. This is evidence of search-context inconsistency, not proof that
+the before score is always the more accurate chess evaluation.
+
+Lost Brilliants:
+  172376177350:53 Ne4
+  167306626524:24 Rxe2+
+Both rank second. Their same-root losses are7.19 and6.14 points, whereas their
+original independent-after losses are3.70 and3.27. A consistent comparison can
+therefore reject genuine Chess.com Brilliants as well as recover them.
+
+New wrong awards:
+  186398857750:45 hxg6
+  168663718338:51 Rxd4
+Both rank second. Their same-root losses fall below five while the original
+comparison fails in at least one window. Their forest scores exceed the frozen
+primary cutoffs, admitting two non-Brilliant moves. hxg6 remains below5/6,
+explaining why the fixed-cutoff control adds only one wrong award.
+
+No previously wrong award was removed. The changed positions and every old/new
+window value, score, cutoff, guard reason, and fold are in PREDICTIONS.json.
+
+EVALUATION AND VERIFICATION
+
+Same3,724 cases,917 positives,2,807 negatives,972 game/position groups. Exact
+prior five outer folds and three-inner-fold-selected cutoffs; aliases, repeated
+canonical positions, whole games, and both windows retain their groups.
+No new selection was performed, so the inner fits do not need to be rerun.
+Original primary and fixed-control predictions reproduce exactly on all rows.
+Protocol and script/input hashes were frozen before computing candidate awards.
+There were zero new engine searches and zero model fits.
+
+An independent read-only recomputation, without importing evaluate.py, verified
+all3,724 rows' scores, gates, thresholds, awards, grouping and provenance. It
+also checked the miss partitions and all eight changed primary decisions.
+
+The conditional paired whole-group bootstrap95% interval for recall change is
+approximately -0.32 to+0.77 percentage points; the wrong-count change interval
+is0 to+5. These intervals condition on frozen predictions and do not include
+model refitting or repeated-research uncertainty. The point result already
+fails the stated criterion; the intervals do not establish equal future errors.
+
+LIMITS AND IMPLICATION
+
+The saved dataset is enriched and repeatedly studied. Group isolation prevents
+original training/test overlap within each fit, but does not turn this reused
+research dataset into an untouched prospective test or a live-site precision
+estimate. The old fitting procedure used eligible training rows; admitting
+previously ineligible cases changes that selection. The fixed OOF scores still
+provide the intended controlled comparison, but not validation of a newly
+trained system under the revised policy.
+
+This test uses saved search strength. Same-search measurements can still be
+shallow or wrong. Deeper consistent searches and replacing evaluation inputs
+were not tested, and this result does not rule out their value. It does show
+that the proposed gate-only repair, as frozen, is insufficient and increases
+wrong awards. Evaluation-gate errors explain only a small portion of the
+current missed-positive count at the existing forest scores.
+
+The next substantial recall improvement must address the forest's score
+decisions or the information supplied to it, rather than relying on admission
+checks alone. That is an implication of the audit, not authorization or evidence
+for another feature, threshold change, or deployment. No follow-on experiment
+has been started.
+
+Artifacts: PROTOCOL.json, evaluate.py, RESULTS.json, PREDICTIONS.json,
+VERIFICATION.json. Prior studies and model artifacts remain unchanged.

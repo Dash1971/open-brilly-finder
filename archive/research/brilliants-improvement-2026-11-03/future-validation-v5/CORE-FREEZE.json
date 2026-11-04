@@ -1,0 +1,59 @@
+{
+  "frozen_at_utc": "2026-11-03T10:42:42.909710+00:00",
+  "scope": "One frozen200-case untouched-game assessment; all848 former moves are training/development. No engine/model outcomes examined before this freeze. No tuning or source changes authorized from test outcomes.",
+  "cases": 200,
+  "brilliant": 100,
+  "explicit_non_brilliant": 100,
+  "games": 106,
+  "per_account": {
+    "nelsi": {
+      "fresh_brilliant": 20,
+      "fresh_non_brilliant": 20
+    },
+    "hansen": {
+      "fresh_brilliant": 20,
+      "fresh_non_brilliant": 20
+    },
+    "KNVB": {
+      "fresh_brilliant": 20,
+      "fresh_non_brilliant": 20
+    },
+    "GothamChess": {
+      "fresh_brilliant": 20,
+      "fresh_non_brilliant": 20
+    },
+    "Hikaru": {
+      "fresh_brilliant": 20,
+      "fresh_non_brilliant": 20
+    }
+  },
+  "verified_rendered_boards": 200,
+  "secondary_fresh_observations": 10,
+  "gallery_current_disagreements": 6,
+  "source_freeze_match": true,
+  "queue_freeze_match": true,
+  "no_old_game_or_position_overlap": true,
+  "files_sha256": {
+    "primary-moves.json": "d900c8c6ebd94a95a53d96c214dc4d9df7e3d9859a0dd165c058975bdc35a7a9",
+    "corpus.sqlite3": "2b7c376d5d7521fd6472fadf8f47d264ac683a8bc7d31e7756043ebf5835b55e",
+    "PLAN.json": "6e722653d10e4092f5e70a1927f1d68310c704befc574f78d5e15bc624fcd946",
+    "QUEUE-FREEZE.json": "3fa68a35d68e7d731720093fc31d9546e6455ba26bb1b6cf7e539357b5cc3fd6",
+    "FINALQUEUE.json": "b20729ae72052c19683f732f01daad696a5af6fdd29acc4b223867615051e74e",
+    "gallery-reserve-activations.json": "e6109696645c719843069f3eba27e461f3db1ae9ca195e4b768336e7c0ada369",
+    "evidence/gothamchess-fresh-review.json": "fd2e9eb038f16f2bf62f75ece67316d73a5627a080e9500025fdbecf174eb85c",
+    "evidence/hansen-fresh-review.json": "f5596ec77edab35e193265f8a57f741c06f485d71eac6ad88164c5740722d1a2",
+    "evidence/hikaru-fresh-review.json": "251b8a9126474080ac192da80f9ae177fdb5ca42bc8333f7d8d854dd2158a64a",
+    "evidence/knvb-fresh-review.json": "71347dad5fa07fab11d43ea5111d87554809e9352e9cbb6d20c02151f11d4a6d",
+    "evidence/nelsi-fresh-review.json": "8bd832eb77cb5af80428ed63383bfed91d5871c9daf84bca3b60d618ee026da1"
+  },
+  "working_targets_announced_before_collection": {
+    "false_awards_per100_explicit_controls_maximum": 2,
+    "overall_balanced_agreement_minimum": 0.9,
+    "recognition_reported_separately": true
+  },
+  "analysis_authorization": {
+    "core": "GO: all200keys, unique p-2/p-1/p windows, SF18/300000requestednodes/Threads1/Hash64, fullPGNhistory, fourwholegamepartitions, no extra S lookbacks in core.",
+    "S_supplement": "GO only after complete core engine handoff; same300k separatebank, complete structural-origin coverage at most1200missing positions, never replace core.",
+    "scoring": "GO after complete core. Frozen forest5/6, S, A/v4 and EC direct/shared-window; no partial outcome peeking or fitting."
+  }
+}

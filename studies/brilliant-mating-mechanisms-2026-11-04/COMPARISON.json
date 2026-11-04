@@ -1,0 +1,910 @@
+{
+  "scope": "19case diagnostic comparison only. No fitted model, new rules, thresholds, changed labels or retrospective performance re-evaluation. Ratings excluded.",
+  "case_counts": {
+    "wrong_award": 8,
+    "correct_award": 4,
+    "missed_brilliant": 7
+  },
+  "cases": [
+    {
+      "key": "173487499542:32",
+      "san": "Bh3",
+      "group": "wrong_award",
+      "chesscom_label": "Great",
+      "source_url": "https://www.chess.com/analysis/game/live/173487499542/review?move=31",
+      "forest_min_score": 0.5268289059782496,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [],
+        "previous": []
+      },
+      "material_features": {
+        "current": {
+          "nonmate_material_win": 0
+        },
+        "previous": {
+          "nonmate_material_win": 0
+        }
+      },
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": 0.34149477390043614,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 22.383874379572852,
+        "prior_cp": -71,
+        "before_depth": 19,
+        "after_depth": 16
+      },
+      "mate_witnesses": {
+        "Nxa8": [
+          "Qxg2#"
+        ],
+        "Nxe8": [
+          "Qxg2#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "167315486838:54",
+      "san": "Qe6",
+      "group": "wrong_award",
+      "chesscom_label": "Great",
+      "source_url": "https://www.chess.com/analysis/game/live/167315486838/review?move=53",
+      "forest_min_score": 0.475256596886534,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [],
+        "previous": []
+      },
+      "material_features": {
+        "current": {
+          "nonmate_material_win": 0
+        },
+        "previous": {
+          "nonmate_material_win": 0
+        }
+      },
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": 0.8243011187386458,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 46.865440068313355,
+        "prior_cp": -753,
+        "before_depth": 14,
+        "after_depth": 15
+      },
+      "mate_witnesses": {
+        "Rxg7": [
+          "Qxh3#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "179135871509:66",
+      "san": "Qf6",
+      "group": "wrong_award",
+      "chesscom_label": "Best",
+      "source_url": "https://www.chess.com/analysis/game/live/179135871509/review?move=65",
+      "forest_min_score": 0.3623045538729305,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [],
+        "previous": []
+      },
+      "material_features": {
+        "current": {
+          "nonmate_material_win": 0
+        },
+        "previous": {
+          "nonmate_material_win": 0
+        }
+      },
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": 2.2933667189066256,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 17.702365711205672,
+        "prior_cp": 109,
+        "before_depth": 18,
+        "after_depth": 16
+      },
+      "mate_witnesses": {
+        "Rxg5": [
+          "Qxb2#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "166826414194:56",
+      "san": "Bxg3",
+      "group": "correct_award",
+      "chesscom_label": "Brilliant",
+      "source_url": "https://www.chess.com/analysis/game/live/166826414194/review?move=55",
+      "forest_min_score": 0.6391853856139701,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [],
+        "previous": []
+      },
+      "material_features": {
+        "current": {
+          "nonmate_material_win": 0
+        },
+        "previous": {
+          "nonmate_material_win": 0
+        }
+      },
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": 1.8040286645552825,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 48.424096332333534,
+        "prior_cp": -252,
+        "before_depth": 18,
+        "after_depth": 16
+      },
+      "mate_witnesses": {
+        "Qxd7": [
+          "Rxf1#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "173510361166:31",
+      "san": "Qh5",
+      "group": "correct_award",
+      "chesscom_label": "Brilliant",
+      "source_url": "https://www.chess.com/analysis/game/live/173510361166/review?move=30",
+      "forest_min_score": 0.6580268402109837,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [],
+        "previous": []
+      },
+      "material_features": {
+        "current": {
+          "nonmate_material_win": 0
+        },
+        "previous": {
+          "nonmate_material_win": 0
+        }
+      },
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": 0,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 24.336616715245412,
+        "prior_cp": 304,
+        "before_depth": 20,
+        "after_depth": 245
+      },
+      "mate_witnesses": {
+        "Bxg5": [
+          "Qxf7#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "169151816360:29",
+      "san": "Qxg4",
+      "group": "correct_award",
+      "chesscom_label": "Brilliant",
+      "source_url": "https://www.chess.com/analysis/game/live/169151816360/review?move=28",
+      "forest_min_score": 0.7328875569585326,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [],
+        "previous": []
+      },
+      "material_features": {
+        "current": {
+          "nonmate_material_win": 0
+        },
+        "previous": {
+          "nonmate_material_win": 0
+        }
+      },
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": -0.3368020599098571,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 13.463004085172095,
+        "prior_cp": 217,
+        "before_depth": 18,
+        "after_depth": 16
+      },
+      "mate_witnesses": {
+        "Bxg4": [
+          "Ne7#",
+          "Nxf6#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "184007310619:65",
+      "san": "Rxf2",
+      "group": "wrong_award",
+      "chesscom_label": "Great",
+      "source_url": "https://www.chess.com/analysis/game/live/184007310619/review?move=64",
+      "forest_min_score": 0.7428684849521181,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [],
+        "previous": []
+      },
+      "material_features": {
+        "current": {
+          "nonmate_material_win": 0
+        },
+        "previous": {
+          "nonmate_material_win": 0
+        }
+      },
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": -0.544231779169202,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 53.318153619309975,
+        "prior_cp": null,
+        "before_depth": 16,
+        "after_depth": 16
+      },
+      "mate_witnesses": {
+        "Rxf2": [
+          "Qxg7#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "174182921870:70",
+      "san": "Rd8",
+      "group": "correct_award",
+      "chesscom_label": "Brilliant",
+      "source_url": "https://www.chess.com/analysis/game/live/174182921870/review?move=69",
+      "forest_min_score": 0.7712990917135671,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [],
+        "previous": []
+      },
+      "material_features": {
+        "current": {
+          "nonmate_material_win": 0
+        },
+        "previous": {
+          "nonmate_material_win": 0
+        }
+      },
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": 0.23213434500163999,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 33.97129809128244,
+        "prior_cp": 393,
+        "before_depth": 18,
+        "after_depth": 16
+      },
+      "mate_witnesses": {
+        "Qxd8": [
+          "Qxg2#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "147424650238:25",
+      "san": "Qh5",
+      "group": "wrong_award",
+      "chesscom_label": "Best",
+      "source_url": "https://www.chess.com/analysis/game/live/147424650238/review?move=24",
+      "forest_min_score": 0.5966294516853946,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [],
+        "previous": []
+      },
+      "material_features": {
+        "current": {
+          "nonmate_material_win": 0
+        },
+        "previous": {
+          "nonmate_material_win": 0
+        }
+      },
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": 0,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 16.08452286537063,
+        "prior_cp": 391,
+        "before_depth": 19,
+        "after_depth": 88
+      },
+      "mate_witnesses": {
+        "dxe4": [
+          "Qf7#",
+          "Qg6#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "171360742446:77",
+      "san": "Qf7",
+      "group": "wrong_award",
+      "chesscom_label": "Great",
+      "source_url": "https://www.chess.com/analysis/game/live/171360742446/review?move=76",
+      "forest_min_score": 0.7325343824552782,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [],
+        "previous": []
+      },
+      "material_features": {
+        "current": {
+          "nonmate_material_win": 0
+        },
+        "previous": {
+          "nonmate_material_win": 0
+        }
+      },
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": 0,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 74.2065401109956,
+        "prior_cp": -254,
+        "before_depth": 19,
+        "after_depth": 245
+      },
+      "mate_witnesses": {
+        "Bxg2": [
+          "Qg7#",
+          "Qxh7#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "171609570218:62",
+      "san": "Qf6",
+      "group": "wrong_award",
+      "chesscom_label": "Great",
+      "source_url": "https://www.chess.com/analysis/game/live/171609570218/review?move=61",
+      "forest_min_score": 0.49675730493973336,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [],
+        "previous": []
+      },
+      "material_features": {
+        "current": {
+          "nonmate_material_win": 0
+        },
+        "previous": {
+          "nonmate_material_win": 0
+        }
+      },
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": -0.8024532282062893,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 31.48799992251959,
+        "prior_cp": 66,
+        "before_depth": 19,
+        "after_depth": 15
+      },
+      "mate_witnesses": {
+        "Nxg7": [
+          "Qxf2#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "173700284016:22",
+      "san": "Ba6",
+      "group": "wrong_award",
+      "chesscom_label": "Great",
+      "source_url": "https://www.chess.com/analysis/game/live/173700284016/review?move=21",
+      "forest_min_score": 0.6336096453403277,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [],
+        "previous": []
+      },
+      "material_features": {
+        "current": {
+          "nonmate_material_win": 0
+        },
+        "previous": {
+          "nonmate_material_win": 0
+        }
+      },
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": -0.363865698005867,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 30.99880493505394,
+        "prior_cp": -304,
+        "before_depth": 18,
+        "after_depth": 17
+      },
+      "mate_witnesses": {
+        "Qxa6": [
+          "Qd1#"
+        ],
+        "Bxa8": [
+          "Qd1#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "169433595406:52",
+      "san": "Nxf4",
+      "group": "missed_brilliant",
+      "chesscom_label": "Brilliant",
+      "source_url": "https://www.chess.com/analysis/game/live/169433595406/review?move=51",
+      "forest_min_score": 0.6399968796743326,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [],
+        "previous": []
+      },
+      "material_features": {
+        "current": {
+          "nonmate_material_win": 1
+        },
+        "previous": {
+          "nonmate_material_win": 1
+        }
+      },
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": -1.0233349704061823,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 43.241622494867705,
+        "prior_cp": -450,
+        "before_depth": 17,
+        "after_depth": 17
+      },
+      "mate_witnesses": {
+        "Rxd8": [
+          "Qxg2#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "145479440308:17",
+      "san": "Nxe5",
+      "group": "missed_brilliant",
+      "chesscom_label": "Brilliant",
+      "source_url": "https://www.chess.com/analysis/game/live/145479440308/review?move=16",
+      "forest_min_score": 0.6535230749163732,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [
+          "gap_above10",
+          "improvement_above5"
+        ],
+        "previous": [
+          "gap_above10",
+          "improvement_above5"
+        ]
+      },
+      "material_features": null,
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": -0.9878603214815129,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 2.995690868213167,
+        "prior_cp": 44,
+        "before_depth": 14,
+        "after_depth": 15
+      },
+      "mate_witnesses": {
+        "Bxd1": [
+          "Bxf7#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "172807397646:46",
+      "san": "h3",
+      "group": "missed_brilliant",
+      "chesscom_label": "Brilliant",
+      "source_url": "https://www.chess.com/analysis/game/live/172807397646/review?move=45",
+      "forest_min_score": 0.5269516657971105,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [
+          "gap_above10"
+        ],
+        "previous": [
+          "gap_above10"
+        ]
+      },
+      "material_features": null,
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": 0,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 5.800603970850176,
+        "prior_cp": 606,
+        "before_depth": 18,
+        "after_depth": 35
+      },
+      "mate_witnesses": {
+        "dxe5": [
+          "Qxg2#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "148103018608:20",
+      "san": "Qxe3",
+      "group": "missed_brilliant",
+      "chesscom_label": "Brilliant",
+      "source_url": "https://www.chess.com/analysis/game/live/148103018608/review?move=19",
+      "forest_min_score": 0.9520144471055072,
+      "eligible": {
+        "current": false,
+        "previous": false
+      },
+      "base_rule_failures": {
+        "current": [
+          "eligible",
+          "ec_false",
+          "mating_acceptance",
+          "gap_above10"
+        ],
+        "previous": [
+          "eligible",
+          "ec_false",
+          "mating_acceptance",
+          "gap_above10"
+        ]
+      },
+      "material_features": null,
+      "features_current": {
+        "ec_sacrifice": true,
+        "mating_acceptance": false,
+        "mapped_loss_pp": 8.434062728108685,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 5.155468784128203,
+        "prior_cp": 2,
+        "before_depth": 16,
+        "after_depth": 14
+      },
+      "mate_witnesses": {
+        "fxe3": [
+          "Bg3#"
+        ]
+      },
+      "deeper_search": {
+        "current": {
+          "original_before_after_loss_pp_signed": 8.434062728108685,
+          "original_best_san": "Qxe3",
+          "original_played_rank_in_top2": 1,
+          "before_after_loss_pp_signed": 0.0,
+          "before_after_loss_pp_clipped": 0,
+          "best_san": "Qxe3",
+          "played_rank_in_top2": 1,
+          "before_best_vs_forced_loss_pp_signed": 0.7171163836963927
+        },
+        "previous": {
+          "original_before_after_loss_pp_signed": 5.264738347656191,
+          "original_best_san": "Qxe3",
+          "original_played_rank_in_top2": 1,
+          "before_after_loss_pp_signed": 0.0,
+          "before_after_loss_pp_clipped": 0,
+          "best_san": "Qxe3",
+          "played_rank_in_top2": 1,
+          "before_best_vs_forced_loss_pp_signed": 0.7171163836963927
+        }
+      }
+    },
+    {
+      "key": "168956462236:46",
+      "san": "Ng4",
+      "group": "missed_brilliant",
+      "chesscom_label": "Brilliant",
+      "source_url": "https://www.chess.com/analysis/game/live/168956462236/review?move=45",
+      "forest_min_score": 0.7220235157036692,
+      "eligible": {
+        "current": false,
+        "previous": false
+      },
+      "base_rule_failures": {
+        "current": [
+          "eligible",
+          "ec_false",
+          "mating_acceptance",
+          "played_rank1",
+          "gap_above10"
+        ],
+        "previous": [
+          "eligible",
+          "ec_false",
+          "mating_acceptance",
+          "played_rank1",
+          "gap_above10"
+        ]
+      },
+      "material_features": null,
+      "features_current": {
+        "ec_sacrifice": true,
+        "mating_acceptance": false,
+        "mapped_loss_pp": 9.723517302907737,
+        "same_root_loss_pp": null,
+        "same_root_rank": null,
+        "best_second_gap_pp": 4.513645296263903,
+        "prior_cp": 359,
+        "before_depth": 18,
+        "after_depth": 14
+      },
+      "mate_witnesses": {
+        "hxg4": [
+          "Qe1#"
+        ]
+      },
+      "deeper_search": {
+        "current": {
+          "original_before_after_loss_pp_signed": 9.723517302907737,
+          "original_best_san": "Qh5",
+          "original_played_rank_in_top2": null,
+          "before_after_loss_pp_signed": 9.034374769363325,
+          "before_after_loss_pp_clipped": 9.034374769363325,
+          "best_san": "Qh5",
+          "played_rank_in_top2": null,
+          "before_best_vs_forced_loss_pp_signed": 9.286070512220832
+        },
+        "previous": {
+          "original_before_after_loss_pp_signed": 10.601362366277144,
+          "original_best_san": "Qh5",
+          "original_played_rank_in_top2": null,
+          "before_after_loss_pp_signed": 9.034374769363325,
+          "before_after_loss_pp_clipped": 9.034374769363325,
+          "best_san": "Qh5",
+          "played_rank_in_top2": null,
+          "before_best_vs_forced_loss_pp_signed": 9.286070512220832
+        }
+      }
+    },
+    {
+      "key": "145360060432:40",
+      "san": "d3",
+      "group": "missed_brilliant",
+      "chesscom_label": "Brilliant",
+      "source_url": "https://www.chess.com/analysis/game/live/145360060432/review?move=39",
+      "forest_min_score": 0.7990070166691767,
+      "eligible": {
+        "current": true,
+        "previous": true
+      },
+      "base_rule_failures": {
+        "current": [
+          "ec_false",
+          "mating_acceptance"
+        ],
+        "previous": [
+          "ec_false",
+          "mating_acceptance"
+        ]
+      },
+      "material_features": null,
+      "features_current": {
+        "ec_sacrifice": true,
+        "mating_acceptance": false,
+        "mapped_loss_pp": -0.4002224900105489,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "best_second_gap_pp": 10.66414175847757,
+        "prior_cp": 200,
+        "before_depth": 17,
+        "after_depth": 14
+      },
+      "mate_witnesses": {
+        "fxe5": [
+          "Qd4#"
+        ]
+      },
+      "deeper_search": null
+    },
+    {
+      "key": "165547173668:60",
+      "san": "Nb8",
+      "group": "missed_brilliant",
+      "chesscom_label": "Brilliant",
+      "source_url": "https://www.chess.com/analysis/game/live/165547173668/review?move=59",
+      "forest_min_score": 0.7051547915817975,
+      "eligible": {
+        "current": false,
+        "previous": false
+      },
+      "base_rule_failures": {
+        "current": [
+          "eligible",
+          "played_rank1",
+          "gap_above10"
+        ],
+        "previous": [
+          "eligible",
+          "played_rank1",
+          "gap_above10"
+        ]
+      },
+      "material_features": null,
+      "features_current": {
+        "ec_sacrifice": false,
+        "mating_acceptance": true,
+        "mapped_loss_pp": 7.277090257688698,
+        "same_root_loss_pp": 4.896135569909177,
+        "same_root_rank": 2,
+        "best_second_gap_pp": 4.896135569909177,
+        "prior_cp": -14,
+        "before_depth": 17,
+        "after_depth": 15
+      },
+      "mate_witnesses": {
+        "Qxb8": [
+          "Qd1#"
+        ]
+      },
+      "deeper_search": {
+        "current": {
+          "original_before_after_loss_pp_signed": 7.277090257688698,
+          "original_best_san": "Nb6",
+          "original_played_rank_in_top2": 2,
+          "before_after_loss_pp_signed": 7.518738817841026,
+          "before_after_loss_pp_clipped": 7.518738817841026,
+          "best_san": "Nb6",
+          "played_rank_in_top2": 2,
+          "before_best_vs_forced_loss_pp_signed": 3.908254968770308
+        },
+        "previous": {
+          "original_before_after_loss_pp_signed": 6.687592793695856,
+          "original_best_san": "Nb6",
+          "original_played_rank_in_top2": 2,
+          "before_after_loss_pp_signed": 8.401086617234398,
+          "before_after_loss_pp_clipped": 8.401086617234398,
+          "best_san": "Nb6",
+          "played_rank_in_top2": 2,
+          "before_best_vs_forced_loss_pp_signed": 3.908254968770308
+        }
+      }
+    }
+  ],
+  "chesscom_display_evaluations": {
+    "scope": "Visible GameReview card evaluations before/after; not private classification internals",
+    "engine": "Torch Human",
+    "strength": "Fast",
+    "settings_unchanged": true,
+    "rows": [
+      {
+        "key": "168956462236:46",
+        "san": "Ng4",
+        "mover": "black",
+        "before_white_cp": -570,
+        "after_white_cp": -442,
+        "label": "Brilliant",
+        "url": "https://www.chess.com/analysis/game/live/168956462236/review?move=45",
+        "existing_logistic_loss_from_displayed_scores_pp": 5.496104580358988
+      },
+      {
+        "key": "165547173668:60",
+        "san": "Nb8",
+        "mover": "black",
+        "before_white_cp": -381,
+        "after_white_cp": -295,
+        "label": "Brilliant",
+        "url": "https://www.chess.com/analysis/game/live/165547173668/review?move=59",
+        "existing_logistic_loss_from_displayed_scores_pp": 5.497126466427986
+      },
+      {
+        "key": "148103018608:20",
+        "san": "Qxe3",
+        "mover": "black",
+        "before_white_cp": -369,
+        "after_white_cp": -369,
+        "label": "Brilliant",
+        "url": "https://www.chess.com/analysis/game/live/148103018608/review?move=19",
+        "existing_logistic_loss_from_displayed_scores_pp": 0.0
+      }
+    ]
+  },
+  "official_definition_source": "https://support.chess.com/en/articles/8572705-how-are-moves-classified-what-is-a-blunder-or-brilliant-etc",
+  "interpretation_limits": [
+    "Labels and savedlegalchessmechanisms are observed; Chess.com internal sacrifice criterion is not exposed.",
+    "Finite material proxy0 is no saved witness, not proof no viable nonmate route exists.",
+    "Current/previous are successive search iterations, not independent engine replications.",
+    "New3Msearches are diagnostic; no oldprospective verdict or model classification has been replaced."
+  ]
+}

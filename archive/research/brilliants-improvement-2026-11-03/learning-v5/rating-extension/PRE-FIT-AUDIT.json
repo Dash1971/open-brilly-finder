@@ -1,0 +1,151 @@
+{
+  "account_is_not_predictor": true,
+  "core_balanced_within_every_account": true,
+  "panel_class_imbalance_retained_and_reported_separately": true,
+  "source_hashes": {
+    "analysis-baseline.json": "d8833860a3f7f5aec1c7817c3203a10af500044e885efc364e9d03626fc3655b",
+    "analysis-panel.json": "682e50dd4083787f643ef990df12e6bed34407dfdeee83c8688497dbc44d06f2"
+  },
+  "accounts": {
+    "nelsi": {
+      "classes": {
+        "all848": {
+          "n": 223,
+          "Brilliant": 110,
+          "non_Brilliant": 113
+        },
+        "core818": {
+          "n": 220,
+          "Brilliant": 110,
+          "non_Brilliant": 110
+        },
+        "panel30": {
+          "n": 3,
+          "Brilliant": 0,
+          "non_Brilliant": 3
+        }
+      },
+      "rating_min": 2423.0,
+      "rating_max": 2747.0,
+      "missing_rating": 0,
+      "LOAO_training_cases_after_group_purge": 625,
+      "LOAO_extra_cases_purged_for_shared_group": 0,
+      "LOAO_training_rating_min": 1591.0,
+      "LOAO_training_rating_max": 3500.0,
+      "held_out_ratings_outside_training_range": 0,
+      "held_out_known_ratings": 223
+    },
+    "hansen": {
+      "classes": {
+        "all848": {
+          "n": 164,
+          "Brilliant": 81,
+          "non_Brilliant": 83
+        },
+        "core818": {
+          "n": 158,
+          "Brilliant": 79,
+          "non_Brilliant": 79
+        },
+        "panel30": {
+          "n": 6,
+          "Brilliant": 2,
+          "non_Brilliant": 4
+        }
+      },
+      "rating_min": 2536.0,
+      "rating_max": 3174.0,
+      "missing_rating": 0,
+      "LOAO_training_cases_after_group_purge": 684,
+      "LOAO_extra_cases_purged_for_shared_group": 0,
+      "LOAO_training_rating_min": 1591.0,
+      "LOAO_training_rating_max": 3500.0,
+      "held_out_ratings_outside_training_range": 0,
+      "held_out_known_ratings": 164
+    },
+    "KNVB": {
+      "classes": {
+        "all848": {
+          "n": 117,
+          "Brilliant": 52,
+          "non_Brilliant": 65
+        },
+        "core818": {
+          "n": 100,
+          "Brilliant": 50,
+          "non_Brilliant": 50
+        },
+        "panel30": {
+          "n": 17,
+          "Brilliant": 2,
+          "non_Brilliant": 15
+        }
+      },
+      "rating_min": 2924.0,
+      "rating_max": 3178.0,
+      "missing_rating": 0,
+      "LOAO_training_cases_after_group_purge": 731,
+      "LOAO_extra_cases_purged_for_shared_group": 0,
+      "LOAO_training_rating_min": 1591.0,
+      "LOAO_training_rating_max": 3500.0,
+      "held_out_ratings_outside_training_range": 0,
+      "held_out_known_ratings": 117
+    },
+    "GothamChess": {
+      "classes": {
+        "all848": {
+          "n": 122,
+          "Brilliant": 60,
+          "non_Brilliant": 62
+        },
+        "core818": {
+          "n": 120,
+          "Brilliant": 60,
+          "non_Brilliant": 60
+        },
+        "panel30": {
+          "n": 2,
+          "Brilliant": 0,
+          "non_Brilliant": 2
+        }
+      },
+      "rating_min": 1591.0,
+      "rating_max": 3044.0,
+      "missing_rating": 0,
+      "LOAO_training_cases_after_group_purge": 726,
+      "LOAO_extra_cases_purged_for_shared_group": 0,
+      "LOAO_training_rating_min": 2423.0,
+      "LOAO_training_rating_max": 3500.0,
+      "held_out_ratings_outside_training_range": 2,
+      "held_out_known_ratings": 122
+    },
+    "Hikaru": {
+      "classes": {
+        "all848": {
+          "n": 222,
+          "Brilliant": 110,
+          "non_Brilliant": 112
+        },
+        "core818": {
+          "n": 220,
+          "Brilliant": 110,
+          "non_Brilliant": 110
+        },
+        "panel30": {
+          "n": 2,
+          "Brilliant": 0,
+          "non_Brilliant": 2
+        }
+      },
+      "rating_min": 3332.0,
+      "rating_max": 3500.0,
+      "missing_rating": 0,
+      "LOAO_training_cases_after_group_purge": 626,
+      "LOAO_extra_cases_purged_for_shared_group": 0,
+      "LOAO_training_rating_min": 1591.0,
+      "LOAO_training_rating_max": 3178.0,
+      "held_out_ratings_outside_training_range": 222,
+      "held_out_known_ratings": 222
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "account_class_quotas": {
+    "nelsi": {
+      "fresh_brilliant": 30,
+      "fresh_non_brilliant": 30
+    },
+    "hansen": {
+      "fresh_brilliant": 30,
+      "fresh_non_brilliant": 30
+    },
+    "KNVB": {
+      "fresh_brilliant": 30,
+      "fresh_non_brilliant": 30
+    },
+    "GothamChess": {
+      "fresh_brilliant": 30,
+      "fresh_non_brilliant": 30
+    },
+    "Hikaru": {
+      "fresh_brilliant": 30,
+      "fresh_non_brilliant": 30
+    }
+  },
+  "fallback_policy": "Aim30/class/account. If an account exhausts eligible unseen-game reserves, fill remaining class slots in fixed order KNVB,GothamChess,Hikaru,nelsi,hansen. Preserve every rejected/reclassified candidate as secondary evidence; do not replace based on local classifier predictions.",
+  "amendments": []
+}

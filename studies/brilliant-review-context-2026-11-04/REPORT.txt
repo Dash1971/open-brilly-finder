@@ -1,0 +1,105 @@
+Matched tactics: evaluation and review-context investigation, 2026-11-04
+
+Conclusion
+Evaluation context explains some apparent similarities, but neither deeper local
+search nor the tested Chess.com review settings removes the central Brilliant /
+ordinary distinction. The remaining question is the definition and attribution
+of a qualifying sacrifice. This is a diagnostic study, not an accuracy test.
+Ratings were excluded from analysis and proposed classification rules. No Mute
+code, model, training data, deployment, or existing experiment was changed.
+
+Saved evidence
+The fixed sample is 24 matched pairs / 48 distinct game-position groups. At the
+exact target plies, 43 cases have visible-review evidence and 32 have explicit
+review-export NAG evidence; 27 have both and all27 agree. Saved Chess.com settings
+are absent. Local before/after depths are Stockfish evidence, not review settings.
+Only12 cases retain a displayed Chess.com evaluation. With white-perspective
+scores normalized to the original mover, their mean absolute difference from the
+saved local after_cp is39.75cp; signed mean difference is-22.75cp. This small subset
+cannot establish whole-corpus engine agreement. See PROVENANCE.json.
+
+Live spot-check
+Eight cases from pairs2,10,11,15 were reopened. All8 retained their saved binary
+Brilliant/non-Brilliant labels. Current selected preferences were Game Review:
+Torch Human / Fast. Separate Analysis preferences were Stockfish19 /5sec /3lines /
+2threads, with Cloud Stockfish18. These current preferences do not establish the
+historical review engine or strength used when the corpus was collected.
+
+With explicit user approval, four cases were then reviewed under Torch Human /
+Deep and Stockfish / Fast. Visible progress and changed evaluations support that
+new settings affected results; internal engine versions/cache details were not
+exposed. All4 retained their Brilliant/non-Brilliant status across all3 profiles.
+The ordinary Nxe5 changed exact ordinary label from Best to Excellent under SF.
+Original preferences were restored and visibly verified, including screenshot.
+
+Post-move scores below are in pawns, from the player making the move's perspective:
+Case                         Label       Torch/Fast   Torch/Deep   SF/Fast
+173661079138:26 Nxe5          Brilliant     +0.56        +0.61        +0.69
+147329069640:16 Nxe5          ordinary      -0.38        -0.26        -0.49
+172914653473:86 Rxb3+         Brilliant     +2.80        +4.01        +2.27
+184330910250:75 Rxe5          Great         +2.80        +3.01        +2.65
+
+The Nxe5 pair's advantage difference survives settings changes. It is compatible
+with a position-quality condition, but does not identify a cutoff. The rook pair
+starts at exactly the same displayed score and retains different labels across
+settings. Overall evaluation alone therefore does not explain that pair.
+Live observations, prior-position scores, URLs and restoration are in LIVE-REVIEW.json.
+
+Tenfold local search
+Frozen 96 searches: before and after each of48 targets, full PGN history, pinned
+Stockfish18,3Mnodes versus saved300k, Threads1,Hash64,MultiPV2, clear hash each
+search, complete same-depth root windows. Completed in295.9s. No retry or fitting.
+Six before-position and five after-position scores shifted more than50cp among
+raw-cp-comparable positions (46 before /47 after); mate transitions are separate.
+Nine unique cases shifted >50cp at either stage; four >100cp. Only2 ordinary moves
+crossed5pp loss in the project's probability mapping; no Brilliant did. This is
+not Chess.com's expected-points model. Cross-position search scores can disagree
+with same-search root scores; those are preserved separately.
+
+Eight pairs still meet the frozen descriptive closeness criterion: after-score
+shifts <=50cp for both, losses <=5pp, and pair score gap <=100cp. Examples:
+- Pair8: BrilliantNxe4 -11cp, ordinaryNxg3 -30cp; both best roots.
+- Pair20: BrilliantRxe5 +672cp, ordinaryRxf4+ +715cp; both best roots.
+  (This pair exceeds the separate <=50cp stability condition, but remains close.)
+- Pair23: BrilliantNxe5 +309cp, ordinaryhxg5 +304cp; both best roots.
+- Pair15: BrilliantRxb3+ +375cp, ordinaryRxe5 +289cp; both best roots.
+  Best other roots score+80cp and-20cp respectively: both sacrifices matter.
+Other BEFORE roots above+200cp occur for11 Brilliant and7 ordinary cases; these
+roots were not freshly checked for material safety. A generic 'another winning
+move exists' veto is not justified by this study.
+
+The winning queen-move pair11 has mate/horizon instability: Qh3 becomes mate12
+after the move, while Qh6 has a before-position mate14 alternative but a finite
+after-position score. Neither should be reduced to a precise cp cutoff.
+Raw evidence, protocol, counts and independent score-sign/arithmetic verification
+are in DEPTH-RESULTS.json, DEPTH-PROTOCOL.json and VERIFICATION.json.
+
+Implication and smallest next experiment
+Keep the existing learner/evaluation foundation. Standardize and record review
+engine/strength for future labels; keep historical setting provenance unknown.
+Do not expect blanket depth increases to resolve the hard sacrifice labels.
+
+One concrete clue survives in pair15's already-saved acceptance branches. With
+project material values, Rxb3+ Kxb3 Nxe3 leaves110cp of material debt at6plies and
+200cp at12. Rxe5 dxe5 Rxd5 followed by pawn exchanges leaves20cp at6 and12plies.
+The earlier3-ply physical feature assigns110cp to both. This illustrates how
+settled material cost can differ when the initial tactic and evaluation match.
+It is a hypothesis, not an inferred Chess.com rule: many Brilliant moves recover
+material immediately, and earlier broad trajectory counts overlapped heavily.
+
+A bounded next ablation could add a small fixed bundle from the acceptance lines
+already saved for the conditional-gap experiment: material debt after exchanges,
+recoup timing, and terminal/mate status, together with existing features. Reuse
+the exact grouped evaluation and threshold-selection constraint on wrong awards;
+report the hard missed-sacrifice subgroup separately. Do not tune cutoffs to these
+48 explored cases. This would test whether the clue generalizes at low extraction
+cost, not assume that it does. No such learner experiment was run in this study.
+
+Public reference context
+Chess.com says Brilliant requires a good sacrifice, best/nearly-best play, an
+acceptable resulting position, and not already being completely winning without
+finding the move. Exact proprietary thresholds are not public in these sources:
+https://support.chess.com/en/articles/8572705-how-are-moves-classified-what-is-a-blunder-or-brilliant-etc
+Chess.com also says review strength and quick-vs-server review can change labels:
+https://support.chess.com/en/articles/11845102-why-did-my-move-classification-change-in-game-review
+Neither source proves a cause for a particular matched case.

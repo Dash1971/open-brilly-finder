@@ -1,0 +1,974 @@
+{
+  "status": "frozen_before_panel_current_labels",
+  "frozen_at_utc": "2026-11-03T07:45:16.028245+00:00",
+  "collector": "validation_collector",
+  "source": "panel-queue.json",
+  "primary_role": "mechanism_panel_all_explicit_labels",
+  "no_class_quota": true,
+  "no_label_or_classifier_replacements": true,
+  "targets": [
+    {
+      "account": "GothamChess",
+      "game_id": "174489761192",
+      "ply": 63,
+      "san": "Qf7",
+      "uci": "g7f7",
+      "fen_before": "r1k1r3/pq2p1QR/4NN2/2pPp3/1p6/1P6/P1b3P1/4K3 w - - 2 32",
+      "fen_after": "r1k1r3/pq2pQ1R/4NN2/2pPp3/1p6/1P6/P1b3P1/4K3 b - - 3 32",
+      "previous_own_after_fen": "r2kr3/pq2p1QR/4NN2/2pPp3/1p6/1P6/P1b3P1/4K3 b - - 1 31",
+      "source_link": "https://www.chess.com/analysis/game/live/174489761192/review?move=62",
+      "pgn_sha256": "199a8a8f2067e9778117f0a0b3008ce05d942a298bb152ad692b152f369ead11",
+      "category": "mating_acceptance",
+      "selection_hash": "17f0613df031e53b0f6ac10898b0b04f2d8b7a715fc8b094b7e4452da1112922",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 9,
+          "credit": 0,
+          "offers": [
+            {
+              "square": "f6",
+              "role": "knight",
+              "color": "white",
+              "exchange_gain": 210
+            },
+            {
+              "square": "h7",
+              "role": "rook",
+              "color": "white",
+              "exchange_gain": 200
+            }
+          ]
+        },
+        "mating_acceptance": {
+          "status": "witness",
+          "probes": 28,
+          "acceptance_net": 200,
+          "credit": 0,
+          "line": [
+            "c2h7",
+            "f7e8"
+          ],
+          "line_san_ascii": [
+            "Bxh7",
+            "Qxe8#"
+          ]
+        },
+        "structural_context": {
+          "phase": 17,
+          "mover_material_before": -290,
+          "converted_or_endgame": false,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "witness",
+          "probes": 6,
+          "initial_material": -290,
+          "credit": 0,
+          "acceptance_net": 200,
+          "accepted_square": "h7",
+          "line": [
+            "c2h7",
+            "e6c5",
+            "b7d5",
+            "f6d5"
+          ],
+          "material_trajectory": [
+            -290,
+            -790,
+            -700,
+            -790,
+            210
+          ],
+          "restored_material": 210,
+          "recoup_square": "d5",
+          "line_san_ascii": [
+            "Bxh7",
+            "Nxc5",
+            "Qxd5",
+            "Nxd5"
+          ]
+        }
+      },
+      "slot": "mating_acceptance:4",
+      "mover_color": "white",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    },
+    {
+      "account": "nelsi",
+      "game_id": "186064587272",
+      "ply": 36,
+      "san": "Rg8",
+      "uci": "h8g8",
+      "fen_before": "r3k2r/1p3p1p/p3ppq1/8/3n4/4B2P/PP4B1/R3QRK1 b kq - 1 18",
+      "fen_after": "r3k1r1/1p3p1p/p3ppq1/8/3n4/4B2P/PP4B1/R3QRK1 w q - 2 19",
+      "previous_own_after_fen": "r3k2r/1p3p1p/p3ppq1/8/3n4/7P/PP4B1/R1B1QRK1 w kq - 0 18",
+      "source_link": "https://www.chess.com/analysis/game/live/186064587272/review?move=35",
+      "pgn_sha256": "1e349bbe6daf1949bd9875ce1372e0aec476237a9c2aa0fd86c066437e152274",
+      "category": "mating_acceptance",
+      "selection_hash": "48d253267c7db64c6fde13f0afd56669128083a1ad5be82db50e49b5fefeb7de",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 5,
+          "credit": 0,
+          "offers": [
+            {
+              "square": "d4",
+              "role": "knight",
+              "color": "black",
+              "exchange_gain": 300
+            }
+          ]
+        },
+        "mating_acceptance": {
+          "status": "witness",
+          "probes": 21,
+          "acceptance_net": 300,
+          "credit": 0,
+          "line": [
+            "e3d4",
+            "g6g2"
+          ],
+          "line_san_ascii": [
+            "Bxd4",
+            "Qxg2#"
+          ]
+        },
+        "structural_context": {
+          "phase": 19,
+          "mover_material_before": -30,
+          "converted_or_endgame": false,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "witness",
+          "probes": 2,
+          "initial_material": -30,
+          "credit": 0,
+          "acceptance_net": 300,
+          "accepted_square": "d4",
+          "line": [
+            "e3d4",
+            "g6g2"
+          ],
+          "material_trajectory": [
+            -30,
+            -330,
+            -30
+          ],
+          "restored_material": -30,
+          "recoup_square": "g2",
+          "line_san_ascii": [
+            "Bxd4",
+            "Qxg2#"
+          ]
+        }
+      },
+      "slot": "mating_acceptance:3",
+      "mover_color": "black",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    },
+    {
+      "account": "KNVB",
+      "game_id": "185708191425",
+      "ply": 101,
+      "san": "Kh2",
+      "uci": "h1h2",
+      "fen_before": "5R2/5Qbk/6pp/2p1N3/2P2p2/7P/6P1/4q2K w - - 7 51",
+      "fen_after": "5R2/5Qbk/6pp/2p1N3/2P2p2/7P/6PK/4q3 b - - 8 51",
+      "previous_own_after_fen": "5R2/5Qbk/6pp/2p1N3/2P2p2/6qP/6P1/7K b - - 6 50",
+      "source_link": "https://www.chess.com/analysis/game/live/185708191425/review?move=100",
+      "pgn_sha256": "6d59932f7e19e0b1060b082b438a300d155e60ee6fe8da01adb777c16fcd5652",
+      "category": "mating_acceptance",
+      "selection_hash": "9aaa95f140b682e9f1571624d0ffcab5e40e860e3a0d1d3f28a26f350b7479b9",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 4,
+          "credit": 0,
+          "offers": [
+            {
+              "square": "e5",
+              "role": "knight",
+              "color": "white",
+              "exchange_gain": 300
+            }
+          ]
+        },
+        "mating_acceptance": {
+          "status": "witness",
+          "probes": 15,
+          "acceptance_net": 300,
+          "credit": 0,
+          "line": [
+            "e1e5",
+            "f7g8"
+          ],
+          "line_san_ascii": [
+            "Qxe5",
+            "Qg8#"
+          ]
+        },
+        "structural_context": {
+          "phase": 12,
+          "mover_material_before": 410,
+          "converted_or_endgame": true,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "witness",
+          "probes": 10,
+          "initial_material": 410,
+          "credit": 0,
+          "acceptance_net": 300,
+          "accepted_square": "e5",
+          "line": [
+            "e1e5",
+            "f7g7"
+          ],
+          "material_trajectory": [
+            410,
+            110,
+            410
+          ],
+          "restored_material": 410,
+          "recoup_square": "g7",
+          "line_san_ascii": [
+            "Qxe5",
+            "Qxg7+"
+          ]
+        }
+      },
+      "slot": "mating_acceptance:2",
+      "mover_color": "white",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    },
+    {
+      "account": "GothamChess",
+      "game_id": "184509540676",
+      "ply": 60,
+      "san": "Kd8",
+      "uci": "c8d8",
+      "fen_before": "2k2r2/1p2R1b1/2p4p/1nN3p1/6B1/6P1/3r1P2/2R3K1 b - - 3 30",
+      "fen_after": "3k1r2/1p2R1b1/2p4p/1nN3p1/6B1/6P1/3r1P2/2R3K1 w - - 4 31",
+      "previous_own_after_fen": "2k2r2/1p2R1b1/2p4p/1nN3pB/8/6P1/3r1P2/2R3K1 w - - 2 30",
+      "source_link": "https://www.chess.com/analysis/game/live/184509540676/review?move=59",
+      "pgn_sha256": "7cd69d500edf29389fef1f22a21eff7f9ea567543506d5e5bafcfc82c184220d",
+      "category": "unchanged_offer_while_in_check",
+      "selection_hash": "0d3abf69c03d46f7bde6d7a3acbb0e0037f4bbfa65ab2dd13390e253b504e953",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 5,
+          "credit": 0,
+          "offers": [
+            {
+              "square": "g7",
+              "role": "bishop",
+              "color": "black",
+              "exchange_gain": 300
+            }
+          ]
+        },
+        "checked_continuation": {
+          "status": "witness",
+          "probes": 2,
+          "offers": [
+            {
+              "square": "g7",
+              "role": "bishop",
+              "color": "black",
+              "exchange_gain": 300,
+              "previous_exchange_gain": 300
+            }
+          ]
+        },
+        "structural_context": {
+          "phase": 12,
+          "mover_material_before": 180,
+          "converted_or_endgame": false,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "witness",
+          "probes": 6,
+          "initial_material": 180,
+          "credit": 0,
+          "acceptance_net": 300,
+          "accepted_square": "g7",
+          "line": [
+            "e7g7",
+            "d2f2",
+            "g7g5",
+            "h6g5"
+          ],
+          "material_trajectory": [
+            180,
+            -120,
+            -30,
+            -120,
+            380
+          ],
+          "restored_material": 380,
+          "recoup_square": "g5",
+          "line_san_ascii": [
+            "Rxg7",
+            "Rdxf2",
+            "Rxg5",
+            "hxg5"
+          ]
+        }
+      },
+      "slot": "unchanged_offer_while_in_check:4",
+      "mover_color": "black",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    },
+    {
+      "account": "KNVB",
+      "game_id": "185032764594",
+      "ply": 110,
+      "san": "Kg5",
+      "uci": "f5g5",
+      "fen_before": "8/p7/1p3R2/5k2/2N5/r1BP1K2/2n5/8 b - - 8 55",
+      "fen_after": "8/p7/1p3R2/6k1/2N5/r1BP1K2/2n5/8 w - - 9 56",
+      "previous_own_after_fen": "8/p7/1p1R4/5k2/2N5/r1BP1K2/2n5/8 w - - 7 55",
+      "source_link": "https://www.chess.com/analysis/game/live/185032764594/review?move=109",
+      "pgn_sha256": "971432ea8805902372451250178becc0fb6518dab0c578c99652f55ad7a7f652",
+      "category": "unchanged_offer_while_in_check",
+      "selection_hash": "29d1d4236dc50faa5f9febea683ba2f88938ae5328c567bb4c07a20fa0e98516",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 4,
+          "credit": 0,
+          "offers": [
+            {
+              "square": "a3",
+              "role": "rook",
+              "color": "black",
+              "exchange_gain": 200
+            }
+          ]
+        },
+        "checked_continuation": {
+          "status": "witness",
+          "probes": 3,
+          "offers": [
+            {
+              "square": "a3",
+              "role": "rook",
+              "color": "black",
+              "exchange_gain": 200,
+              "previous_exchange_gain": 200
+            }
+          ]
+        },
+        "structural_context": {
+          "phase": 7,
+          "mover_material_before": -210,
+          "converted_or_endgame": true,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "witness",
+          "probes": 5,
+          "initial_material": -210,
+          "credit": 0,
+          "acceptance_net": 200,
+          "accepted_square": "a3",
+          "line": [
+            "c4a3",
+            "c2a3",
+            "f6b6",
+            "a7b6"
+          ],
+          "material_trajectory": [
+            -210,
+            -710,
+            -410,
+            -500,
+            0
+          ],
+          "restored_material": 0,
+          "recoup_square": "b6",
+          "line_san_ascii": [
+            "Nxa3",
+            "Nxa3",
+            "Rxb6",
+            "axb6"
+          ]
+        }
+      },
+      "slot": "unchanged_offer_while_in_check:0",
+      "mover_color": "black",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    },
+    {
+      "account": "Hikaru",
+      "game_id": "185616389013",
+      "ply": 102,
+      "san": "Rxf4+",
+      "uci": "f6f4",
+      "fen_before": "8/6pk/1p3r2/8/1P3N2/5Kp1/4P3/8 b - - 1 51",
+      "fen_after": "8/6pk/1p6/8/1P3r2/5Kp1/4P3/8 w - - 0 52",
+      "previous_own_after_fen": "8/6pk/1p3r2/8/1P3N2/4K1p1/4P3/8 w - - 0 51",
+      "source_link": "https://www.chess.com/analysis/game/live/185616389013/review?move=101",
+      "pgn_sha256": "de7a1e236d9770e094713d54257d8d10f7eb079494e38aab6b6b90429aacfad3",
+      "category": "phase_winning_context",
+      "selection_hash": "0849c0b4beb90972c00e13a66ebe12158a08b6667ba56ca2b3973922e5e7b4e9",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 2,
+          "credit": 300,
+          "offers": [
+            {
+              "square": "f4",
+              "role": "rook",
+              "color": "black",
+              "exchange_gain": 500
+            }
+          ]
+        },
+        "structural_context": {
+          "phase": 3,
+          "mover_material_before": 290,
+          "converted_or_endgame": true,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "complete_no_witness",
+          "probes": 2
+        }
+      },
+      "slot": "phase_winning_context:6",
+      "mover_color": "black",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    },
+    {
+      "account": "KNVB",
+      "game_id": "185699923166",
+      "ply": 122,
+      "san": "Qgf2",
+      "uci": "g1f2",
+      "fen_before": "8/8/8/5R2/K7/8/8/4qkq1 b - - 1 61",
+      "fen_after": "8/8/8/5R2/K7/8/5q2/4qk2 w - - 2 62",
+      "previous_own_after_fen": "8/8/8/1R6/K7/8/8/4qkq1 w - - 0 61",
+      "source_link": "https://www.chess.com/analysis/game/live/185699923166/review?move=121",
+      "pgn_sha256": "e8056bb83360a0b1c7efdc3fa47771a2aabced8d7cd974dac7cf451a1f71a5ee",
+      "category": "phase_winning_context",
+      "selection_hash": "09e8370144d70b75fa231c566002bf5dd24589aa664e484bee87d209ebb1d48e",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 5,
+          "credit": 0,
+          "offers": [
+            {
+              "square": "f2",
+              "role": "queen",
+              "color": "black",
+              "exchange_gain": 500
+            }
+          ]
+        },
+        "structural_context": {
+          "phase": 10,
+          "mover_material_before": 1500,
+          "converted_or_endgame": true,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "complete_no_witness",
+          "probes": 6
+        }
+      },
+      "slot": "phase_winning_context:9",
+      "mover_color": "black",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    },
+    {
+      "account": "hansen",
+      "game_id": "169812983748",
+      "ply": 103,
+      "san": "Rxa4",
+      "uci": "a6a4",
+      "fen_before": "8/6R1/R3b2p/4k3/nP4P1/5P2/r5PK/8 w - - 1 52",
+      "fen_after": "8/6R1/4b2p/4k3/RP4P1/5P2/r5PK/8 b - - 0 52",
+      "previous_own_after_fen": "8/6R1/R3b2p/4k3/nP4P1/r4P2/6PK/8 b - - 0 51",
+      "source_link": "https://www.chess.com/analysis/game/live/169812983748/review?move=102",
+      "pgn_sha256": "04a7469d6e7ca7e96b97fe1f774606e271b66f6d9662d693a194bf63aa73ed87",
+      "category": "phase_winning_context",
+      "selection_hash": "0c77cb66c7f1e568e3bafaced2efee7d07d7abcb65644e51b213fad7c067c733",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 3,
+          "credit": 300,
+          "offers": [
+            {
+              "square": "a4",
+              "role": "rook",
+              "color": "white",
+              "exchange_gain": 500
+            }
+          ]
+        },
+        "structural_context": {
+          "phase": 8,
+          "mover_material_before": 170,
+          "converted_or_endgame": true,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "complete_no_witness",
+          "probes": 2
+        }
+      },
+      "slot": "phase_winning_context:4",
+      "mover_color": "white",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    },
+    {
+      "account": "KNVB",
+      "game_id": "185780066982",
+      "ply": 112,
+      "san": "Kf4",
+      "uci": "g3f4",
+      "fen_before": "8/8/1p6/2p5/2P5/2KR1qk1/8/8 b - - 2 56",
+      "fen_after": "8/8/1p6/2p5/2P2k2/2KR1q2/8/8 w - - 3 57",
+      "previous_own_after_fen": "8/3R4/1p6/2p5/2P5/2K2qk1/8/8 w - - 1 56",
+      "source_link": "https://www.chess.com/analysis/game/live/185780066982/review?move=111",
+      "pgn_sha256": "9b5a4f5908d11b464ea55398a18855d268e14848b16db345e3427f583f5602a9",
+      "category": "phase_winning_context",
+      "selection_hash": "0e536572122d1c312d9c6ac5446af0a00d7693827eb14754fefc6338fcb83427",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 3,
+          "credit": 0,
+          "offers": [
+            {
+              "square": "f3",
+              "role": "queen",
+              "color": "black",
+              "exchange_gain": 500
+            }
+          ]
+        },
+        "structural_context": {
+          "phase": 6,
+          "mover_material_before": 590,
+          "converted_or_endgame": true,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "complete_no_witness",
+          "probes": 4
+        }
+      },
+      "slot": "phase_winning_context:8",
+      "mover_color": "black",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    },
+    {
+      "account": "KNVB",
+      "game_id": "185718748608",
+      "ply": 128,
+      "san": "Ka4",
+      "uci": "a5a4",
+      "fen_before": "8/8/4bK2/k4p2/5Ppp/1p6/1r6/8 b - - 15 64",
+      "fen_after": "8/8/4bK2/5p2/k4Ppp/1p6/1r6/8 w - - 16 65",
+      "previous_own_after_fen": "8/8/4b3/k4pK1/5Ppp/1p6/1r6/8 w - - 14 64",
+      "source_link": "https://www.chess.com/analysis/game/live/185718748608/review?move=127",
+      "pgn_sha256": "28bbead4e0898241cd1f631679a1a97f6810e28aa98af9242d1b9c16661331d6",
+      "category": "phase_winning_context",
+      "selection_hash": "10136c5b9f8adf382dfd2d7d6f8b81d3414d34108130fff226d438009944b096",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 3,
+          "credit": 0,
+          "offers": [
+            {
+              "square": "e6",
+              "role": "bishop",
+              "color": "black",
+              "exchange_gain": 300
+            }
+          ]
+        },
+        "structural_context": {
+          "phase": 3,
+          "mover_material_before": 1070,
+          "converted_or_endgame": true,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "complete_no_witness",
+          "probes": 2
+        }
+      },
+      "slot": "phase_winning_context:3",
+      "mover_color": "black",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    },
+    {
+      "account": "KNVB",
+      "game_id": "185708790503",
+      "ply": 40,
+      "san": "Nxe5",
+      "uci": "c6e5",
+      "fen_before": "r4rk1/p2qbp2/1pn1p1p1/1Q1pP1Pp/5P2/1N2B3/PP5P/2R2RK1 b - - 5 20",
+      "fen_after": "r4rk1/p2qbp2/1p2p1p1/1Q1pn1Pp/5P2/1N2B3/PP5P/2R2RK1 w - - 0 21",
+      "previous_own_after_fen": "r4rk1/p2qbp2/1pn1p1p1/3pP1Pp/5P2/1N1QB3/PP5P/2R2RK1 w - - 4 20",
+      "source_link": "https://www.chess.com/analysis/game/live/185708790503/review?move=39",
+      "pgn_sha256": "d06775ff16993bc64aa3f339264cf5c8825d870b9007094fa2e2f67367f216cf",
+      "category": "cross_square_material_recoup",
+      "selection_hash": "047814381125949929f126975f14776f5c2218a7e2cf4127c3a841459faf2c89",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 8,
+          "credit": 90,
+          "offers": [
+            {
+              "square": "e5",
+              "role": "knight",
+              "color": "black",
+              "exchange_gain": 300
+            }
+          ]
+        },
+        "structural_context": {
+          "phase": 20,
+          "mover_material_before": 90,
+          "converted_or_endgame": false,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "witness",
+          "probes": 4,
+          "initial_material": 90,
+          "credit": 90,
+          "acceptance_net": 300,
+          "accepted_square": "e5",
+          "line": [
+            "f4e5",
+            "d7b5"
+          ],
+          "material_trajectory": [
+            180,
+            -120,
+            880
+          ],
+          "restored_material": 880,
+          "recoup_square": "b5",
+          "line_san_ascii": [
+            "fxe5",
+            "Qxb5"
+          ]
+        }
+      },
+      "slot": "cross_square_material_recoup:9",
+      "mover_color": "black",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    },
+    {
+      "account": "KNVB",
+      "game_id": "184927317156",
+      "ply": 36,
+      "san": "Bxh3",
+      "uci": "c8h3",
+      "fen_before": "r1b2rk1/ppp3p1/3p3p/4n3/3QPp2/5BqP/PPP1K1P1/R1B3R1 b - - 0 18",
+      "fen_after": "r4rk1/ppp3p1/3p3p/4n3/3QPp2/5Bqb/PPP1K1P1/R1B3R1 w - - 0 19",
+      "previous_own_after_fen": "r1b2rk1/ppp3p1/3p3p/4n3/3bPp2/5BqP/PPP1K1P1/R1BQ2R1 w - - 0 18",
+      "source_link": "https://www.chess.com/analysis/game/live/184927317156/review?move=35",
+      "pgn_sha256": "a107210b4cf8055d9f4f2c73d3b86b262c240a39a3c5987654851558633fdcbd",
+      "category": "cross_square_material_recoup",
+      "selection_hash": "06b055381902b537cfdc12dbee630dff885fedceaf60e87c73feea403370ade3",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 9,
+          "credit": 90,
+          "offers": [
+            {
+              "square": "h3",
+              "role": "bishop",
+              "color": "black",
+              "exchange_gain": 210
+            }
+          ]
+        },
+        "structural_context": {
+          "phase": 20,
+          "mover_material_before": 90,
+          "converted_or_endgame": false,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "witness",
+          "probes": 5,
+          "initial_material": 90,
+          "credit": 90,
+          "acceptance_net": 210,
+          "accepted_square": "h3",
+          "line": [
+            "g2h3",
+            "e5f3"
+          ],
+          "material_trajectory": [
+            180,
+            -120,
+            180
+          ],
+          "restored_material": 180,
+          "recoup_square": "f3",
+          "line_san_ascii": [
+            "gxh3",
+            "Nxf3"
+          ]
+        }
+      },
+      "slot": "cross_square_material_recoup:4",
+      "mover_color": "black",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    },
+    {
+      "account": "nelsi",
+      "game_id": "184433064586",
+      "ply": 28,
+      "san": "Nh3+",
+      "uci": "f2h3",
+      "fen_before": "2krr3/ppp2ppp/2n5/3q4/Q1BP2b1/2P1BN2/P4nPP/R1R3K1 b - - 1 14",
+      "fen_after": "2krr3/ppp2ppp/2n5/3q4/Q1BP2b1/2P1BN1n/P5PP/R1R3K1 w - - 2 15",
+      "previous_own_after_fen": "2krr3/ppp2ppp/2n5/3q4/Q2P2b1/2P1BN2/P3BnPP/R1R3K1 w - - 0 14",
+      "source_link": "https://www.chess.com/analysis/game/live/184433064586/review?move=27",
+      "pgn_sha256": "e86c78eca69329641adc4e1c8bb2d380c1e77945b24437d5f5f73b7df4ecee83",
+      "category": "cross_square_material_recoup",
+      "selection_hash": "09c1203140bbf03efaf4aaac977c487f9e57b03c63130a3f5a5d3a9a4c4e7838",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 8,
+          "credit": 0,
+          "offers": [
+            {
+              "square": "h3",
+              "role": "knight",
+              "color": "black",
+              "exchange_gain": 210
+            }
+          ]
+        },
+        "structural_context": {
+          "phase": 22,
+          "mover_material_before": 90,
+          "converted_or_endgame": false,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "witness",
+          "probes": 5,
+          "initial_material": 90,
+          "credit": 0,
+          "acceptance_net": 210,
+          "accepted_square": "h3",
+          "line": [
+            "g2h3",
+            "c6d4",
+            "a4a7",
+            "d4f3"
+          ],
+          "material_trajectory": [
+            90,
+            -210,
+            -120,
+            -210,
+            90
+          ],
+          "restored_material": 90,
+          "recoup_square": "f3",
+          "line_san_ascii": [
+            "gxh3",
+            "Nxd4",
+            "Qxa7",
+            "Nxf3+"
+          ]
+        }
+      },
+      "slot": "cross_square_material_recoup:8",
+      "mover_color": "black",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    },
+    {
+      "account": "hansen",
+      "game_id": "169827688548",
+      "ply": 29,
+      "san": "f3",
+      "uci": "f2f3",
+      "fen_before": "B4rk1/2q2pbp/p2p1pp1/1p2n3/3NP1b1/2N5/PPP2PPP/R2QR1K1 w - - 1 15",
+      "fen_after": "B4rk1/2q2pbp/p2p1pp1/1p2n3/3NP1b1/2N2P2/PPP3PP/R2QR1K1 b - - 0 15",
+      "previous_own_after_fen": "B1b2rk1/2q2pbp/p2p1pp1/1p2n3/3NP3/2N5/PPP2PPP/R2QR1K1 b - - 0 14",
+      "source_link": "https://www.chess.com/analysis/game/live/169827688548/review?move=28",
+      "pgn_sha256": "5fd87e094c4a6f6e595d2a211f43c1cfca18350789cac91f1603613a7e2c5b07",
+      "category": "cross_square_material_recoup",
+      "selection_hash": "0b6dc473dc59b21d0ce7a6628fb04845ba5a6a5cf3a1b0389e3cbf01e6c6a15b",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 9,
+          "credit": 0,
+          "offers": [
+            {
+              "square": "a8",
+              "role": "bishop",
+              "color": "white",
+              "exchange_gain": 300
+            }
+          ]
+        },
+        "structural_context": {
+          "phase": 20,
+          "mover_material_before": 500,
+          "converted_or_endgame": true,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "witness",
+          "probes": 12,
+          "initial_material": 500,
+          "credit": 0,
+          "acceptance_net": 300,
+          "accepted_square": "a8",
+          "line": [
+            "f8a8",
+            "c3b5",
+            "a6b5",
+            "d4b5",
+            "a8a2",
+            "a1a2",
+            "c7c2",
+            "b5d6",
+            "c2b2",
+            "a2b2"
+          ],
+          "material_trajectory": [
+            500,
+            200,
+            290,
+            -10,
+            80,
+            -10,
+            490,
+            400,
+            490,
+            400,
+            1400
+          ],
+          "restored_material": 1400,
+          "recoup_square": "b2",
+          "line_san_ascii": [
+            "Rxa8",
+            "Ncxb5",
+            "axb5",
+            "Nxb5",
+            "Rxa2",
+            "Rxa2",
+            "Qxc2",
+            "Nxd6",
+            "Qxb2",
+            "Rxb2"
+          ]
+        }
+      },
+      "slot": "cross_square_material_recoup:2",
+      "mover_color": "white",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    },
+    {
+      "account": "Hikaru",
+      "game_id": "186571589459",
+      "ply": 59,
+      "san": "c4",
+      "uci": "c3c4",
+      "fen_before": "r1Q5/6kp/3b1npN/2pq4/8/2P4P/1P3PP1/2B1R1K1 w - - 7 30",
+      "fen_after": "r1Q5/6kp/3b1npN/2pq4/2P5/7P/1P3PP1/2B1R1K1 b - - 0 30",
+      "previous_own_after_fen": "2Q5/6kp/3b1npN/2pq4/8/2P4P/1P3PP1/r1B1R1K1 b - - 6 29",
+      "source_link": "https://www.chess.com/analysis/game/live/186571589459/review?move=58",
+      "pgn_sha256": "3555e11f8cb350faf4166447fc6e2c7c0d4ec37305a1bd9a0dfb7ca780398d0c",
+      "category": "cross_square_material_recoup",
+      "selection_hash": "0d253251229a34d80dea9f921badee2485fbfbf529ac9dc7f486f6d1f7c9e39d",
+      "features": {
+        "raw_offer": {
+          "status": "complete",
+          "probes": 5,
+          "credit": 0,
+          "offers": [
+            {
+              "square": "c8",
+              "role": "queen",
+              "color": "white",
+              "exchange_gain": 1000
+            }
+          ]
+        },
+        "structural_context": {
+          "phase": 16,
+          "mover_material_before": 180,
+          "converted_or_endgame": false,
+          "actual_winning_safe_alternative": "unknown_no_engine"
+        },
+        "cross_square_material_recoup": {
+          "status": "witness",
+          "probes": 2,
+          "initial_material": 180,
+          "credit": 0,
+          "acceptance_net": 1000,
+          "accepted_square": "c8",
+          "line": [
+            "a8c8",
+            "c4d5"
+          ],
+          "material_trajectory": [
+            180,
+            -820,
+            180
+          ],
+          "restored_material": 180,
+          "recoup_square": "d5",
+          "line_san_ascii": [
+            "Rxc8",
+            "cxd5"
+          ]
+        }
+      },
+      "slot": "cross_square_material_recoup:7",
+      "mover_color": "white",
+      "label_status": "unknown_not_yet_reviewed",
+      "pgn_and_witness_legally_validated": true
+    }
+  ],
+  "counts": {
+    "mating_acceptance": 3,
+    "unchanged_offer_while_in_check": 2,
+    "phase_winning_context": 5,
+    "cross_square_material_recoup": 5
+  }
+}

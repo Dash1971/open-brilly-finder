@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-11-03T06:57:09.163961+00:00",
+  "scope": "All618unblindedcasesaredevelopment. This bounded diagnostic and three prespecified experiments are exploratory; no new validation, app change or publication.",
+  "source_v3_commit": "ac298a0d69ab51808857b089063348f2adac1101",
+  "source_sha256": {
+    "analysis-baseline.json": "b3a210af63a1fbd63ac75756ed9d58b34491cba05d471aa3d309763ac91b3a51",
+    "comparison-v2.json": "5cf66913568a6d3677ec8beb716fe9e19708ced8e251482e0aab4e48874f7cb4",
+    "comparison-v3.json": "21e8f4c45b80d718878f3c8af0ae7991aaa47840ce27caa8429d361a86fdc8ae"
+  },
+  "misses": {
+    "total": 89,
+    "also_missed_by_v2": 36,
+    "guard_lost_v2_awards": 53,
+    "disjoint_causes": {
+      "material_guard_only": 53,
+      "safe_winning_alternative_only": 22,
+      "quality_loss_only": 7,
+      "quality_and_safe_alternative": 5,
+      "confirmation_only": 2
+    },
+    "overlapping_gate_counts": {
+      "material_guard": 53,
+      "safe_winning_alternative": 27,
+      "quality_loss_gt5pp": 12,
+      "confirmation": 2,
+      "missing_piece_offer": 0,
+      "after_score_below_minus100": 0,
+      "less_than_two_roots": 0
+    },
+    "safe_only_explicit_winning_mates": 11,
+    "safe_only_mates_with_safe_mating_alternative": 6,
+    "safe_only_mates_with_safe_cp_alternative": 5
+  },
+  "baseline_metrics": {
+    "TP": 220,
+    "FP": 16,
+    "FN": 89,
+    "TN": 293
+  },
+  "prespecified_safe_veto_variants": {
+    "safe800": {
+      "metrics": {
+        "TP": 232,
+        "FN": 77,
+        "FP": 18,
+        "TN": 291,
+        "withheld_positive": 2,
+        "withheld_negative": 0,
+        "positive_n": 309,
+        "negative_n": 309,
+        "agreement": 0.8462783171521036,
+        "detection": 0.7508090614886731,
+        "false_award_rate": 0.05825242718446602
+      },
+      "delta": {
+        "recovered_observed_brilliants": 12,
+        "lost_observed_brilliants": 0,
+        "new_false_awards": 2,
+        "removed_false_awards": 0
+      }
+    },
+    "safe900": {
+      "metrics": {
+        "TP": 235,
+        "FN": 74,
+        "FP": 18,
+        "TN": 291,
+        "withheld_positive": 2,
+        "withheld_negative": 0,
+        "positive_n": 309,
+        "negative_n": 309,
+        "agreement": 0.8511326860841424,
+        "detection": 0.7605177993527508,
+        "false_award_rate": 0.05825242718446602
+      },
+      "delta": {
+        "recovered_observed_brilliants": 15,
+        "lost_observed_brilliants": 0,
+        "new_false_awards": 2,
+        "removed_false_awards": 0
+      }
+    },
+    "safe600_within50best": {
+      "metrics": {
+        "TP": 226,
+        "FN": 83,
+        "FP": 17,
+        "TN": 292,
+        "withheld_positive": 2,
+        "withheld_negative": 0,
+        "positive_n": 309,
+        "negative_n": 309,
+        "agreement": 0.8381877022653722,
+        "detection": 0.7313915857605178,
+        "false_award_rate": 0.05501618122977346
+      },
+      "delta": {
+        "recovered_observed_brilliants": 6,
+        "lost_observed_brilliants": 0,
+        "new_false_awards": 1,
+        "removed_false_awards": 0
+      }
+    }
+  },
+  "exact_full_window_baseline_parity": {
+    "tested": 618,
+    "full_symbol_or_withheld_differences": []
+  },
+  "counterexamples": [
+    {
+      "key": "175081315049:80",
+      "san": "a3",
+      "observed": "Best",
+      "phase": 4,
+      "physical_material_before_mover": 360,
+      "new_false_award_in": [
+        "safe800",
+        "safe900",
+        "safe600_within50best"
+      ]
+    },
+    {
+      "key": "185135318612:42",
+      "san": "Rxd3",
+      "observed": "Excellent",
+      "phase": 19,
+      "physical_material_before_mover": 380,
+      "new_false_award_in": [
+        "safe800",
+        "safe900"
+      ]
+    }
+  ],
+  "quality_descriptor_caution": "The before-root-versus-after-score discrepancy signature isolates Bxh7+ at185897727454:25 but also non-Brilliant hxg6 at186398857750:45; not an evaluated extra candidate.",
+  "known_regressions": "Qf5+andBf5stilllackrawlegaloffer; Ndxe5stillfailsmaterialcorroboration for nonmate evidence. No full saved confirmation windows exist for these outside618, so no new full-window regression pass is claimed.",
+  "resources": {
+    "replay_elapsed_ms": 5441,
+    "max_rss_kib": 171040,
+    "engine_runs": 0,
+    "browser_calls": 0,
+    "additional_candidate_tests_after_prespecified_three": 0
+  }
+}

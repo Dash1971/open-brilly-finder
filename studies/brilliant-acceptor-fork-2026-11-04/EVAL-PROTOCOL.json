@@ -1,0 +1,140 @@
+{
+  "scope": "One prespecified paired feature experiment on repeatedly used development data: append accepting-piece fork and reply-check with missing indicators, plus check-only control, to all 75 unchanged original features. Original masked mating_acceptance is unchanged. No app/model changes, engine queries, new labels, full fit, model selection procedure, classifier tuning or sweep.",
+  "source_sha256": {
+    "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/fit.py": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f",
+    "research/brilliant-standard-learners-2026-11-04/PREDICTIONS.json": "ae845d2fd687262f2c41cbdaa2054d85c1f3eb48120a602d30a8a4b8a4dc4a82",
+    "research/brilliant-forest-miss-diagnosis-2026-11-04/PANEL.json": "80ff3232ccbde94c33d92d6c2bfefd0f0698219e39b51a545c8e56e2985e3710",
+    "research/brilliant-acceptor-fork-2026-11-04/EXTRACTION-PROTOCOL.json": "a33e3d63f764237d8021d510c28a69e7fb25b6d699d13b6a46f20be9b8ea137a",
+    "research/brilliant-acceptor-fork-2026-11-04/extract.py": "17e62dfe91bb3d876aebfbb4ad5374e370eb818c547937b126cc39eb6a80ac4e",
+    "research/brilliant-acceptor-fork-2026-11-04/FEATURE-EVIDENCE.json": "2af8d1f56ce5bf4b6730b712f90103b06992a8a9a13320833c3f3a2f5d641add"
+  },
+  "script_sha256": "1cec83fee013a7728c9d623370887bec0cd3c8ddf329aee29f60d2cae1d484e3",
+  "feature_sha256": "1b9f171b4ced3f8f30ad3148005426285b4ef0d6dbbc528c9c9a4f910432974b",
+  "extraction_sha256": "fc47be9830de707250b79e76a0b2058597259b829d882810ed287b1529b22889",
+  "control": "Original150 columns in identical order (75 original values+75 original missing indicators). Both check-only and bundle use same154column names/order: original150 +acceptor_fork,reply_check +two missing indicators. Check-only replaces acceptor_fork with constantfalse whereverknown, preservingnullwhereunknown; bundle uses actualfork. This isolates fork information while matching feature-index randomization and missingness. No gate,row,weight changes; min of bothwindow scores.",
+  "counts": {
+    "cases": 3724,
+    "positive": 917,
+    "groups": 972
+  },
+  "learners": {
+    "custom": "Original Tree AST;64 trees,max depth6,>=8 distinct moves per leaf,mtry=isqrt(150/154)=12;whole-group bootstrap;negative split cost5;raw UNWEIGHTED bootstrap-window leaf positive proportions;exact original seed streams. Weights affect split cost only.",
+    "standard_rf": {
+      "implementation": "sklearn1.7.2 RandomForestClassifier",
+      "n_estimators": 128,
+      "max_depth": 6,
+      "min_samples_leaf": 16,
+      "max_features": 12,
+      "bootstrap": true,
+      "class_weight": null,
+      "n_jobs": 1,
+      "sample_weight": "Same per-move initial equal total eligible-window weight; unweighted classes"
+    }
+  },
+  "kinds": [
+    "custom_original",
+    "custom_check",
+    "custom_fork_check",
+    "standard_rf_original",
+    "standard_rf_check",
+    "standard_rf_fork_check"
+  ],
+  "arms": [
+    "custom_fixed",
+    "custom_retuned",
+    "custom_check",
+    "custom_fork_check",
+    "custom_fork_check_fixed",
+    "standard_rf",
+    "standard_rf_check",
+    "standard_rf_fork_check"
+  ],
+  "primary": "custom_fork_check versus custom_retuned: more true positives without extra false positives on pooled outer OOF. Fork-added-value contrast is custom_fork_check versus predefined check-only custom_check. Report negative outcome equally.",
+  "secondary": "RF bundle versus original RF and RF bundle versus check-only RF; custom bundle fixed5/6 versus original fixed5/6; no pooled outer-label cutoff or winner selection.",
+  "folds": {
+    "outer": 5,
+    "inner": 3,
+    "outer_salt": "mute-optimization-v1-outer",
+    "inner_salt": "mute-optimization-v1-inner-{outer_fold}",
+    "mapping": "Sorted unique groups by(sha256(salt+colon+group),group), index modulo fold count",
+    "seed_prefix": 20261103,
+    "inner_seed": [
+      10,
+      "outer_fold",
+      "inner_fold"
+    ],
+    "outer_seed": [
+      20,
+      "outer_fold"
+    ],
+    "custom_tree_seed": "SeedSequence([20261103,*seed,tree_number])",
+    "rf_seed": "SeedSequence([20261103,*seed]).generate_state(1)[0]"
+  },
+  "threshold_selection": "Each arm chooses cutoff independently using only inner OOF labels. Reference is original custom at5/6. Maximize true positives subject BOTH to FPcount<=reference FPcount and wrong fraction<=reference wrong fraction (cross product). Exact unique observed min-window scores; keep ties together. Tie: fewerFP, then higher cutoff. Empty awards if no feasible nonempty point. No outer labels used. Fixed bundle control uses5/6.",
+  "verification": "All group/alias/canonical-position integrity assertions; no train/test group overlap. Original150 columns byte-for-value identical including masked mating_acceptance, all75 feature values, all75 missing indicators. Original custom and RF outer scores match saved standard-learners<=1e-12 on all3724cases, original custom_fixed/custom_retuned/RF awards exact; finite scores. Source, feature, extraction and evaluator hashes verified before first fit.",
+  "reporting": "All3724 outer OOF scores+awards, five fold inner cutoffs and metrics, pooled and fold metrics, gained/lost correct/wrong keys, eligibleECtrue/false strata, original429 eligible positive misses from originalcustom_retuned, feature availability and known-both metrics. Hypothesis-panel24group exclusion applies to outer-test descriptive reporting only, without removing these groups from training. EC/miss/panel breakdowns are descriptive, not independent validation; all429miss labels were already diagnosed.",
+  "uncertainty": {
+    "method": "Paired whole-group bootstrap conditional on fixed outer OOF predictions",
+    "draws": 2000,
+    "seed": 20261104,
+    "groups_per_draw": 972,
+    "interval": "2.5%,97.5% percentile for TP,recall,FP differences",
+    "caveat": "Excludes refitting uncertainty and repeated-research selection bias",
+    "contrasts": [
+      "custom_bundle_vs_original",
+      "custom_bundle_vs_check_only",
+      "standard_rf_bundle_vs_original",
+      "standard_rf_bundle_vs_check_only",
+      "bundle_fixed_vs_original_fixed"
+    ]
+  },
+  "limits": {
+    "wall_seconds": 600,
+    "rss_bytes": 536870912,
+    "threads": 1,
+    "fits": 120,
+    "fit_formula": "5outer*(3inner+1outer)*6kinds",
+    "automatic_retry": false
+  },
+  "environment": "/private/tmp/brilliant-learner-2026-11-04-venv/bin/python",
+  "reproduce": "/private/tmp/brilliant-learner-2026-11-04-venv/bin/python -u research/brilliant-acceptor-fork-2026-11-04/evaluate.py",
+  "status": "frozen_before_first_fit",
+  "hypothesis_panel": {
+    "source": "research/brilliant-forest-miss-diagnosis-2026-11-04/PANEL.json",
+    "pairs": 12,
+    "groups": [
+      "166180997254",
+      "166711204672",
+      "166753669376",
+      "166852801086",
+      "167740722268",
+      "167744579866",
+      "171615877812",
+      "171891388774",
+      "172312827850",
+      "172399142014",
+      "172914653473",
+      "173144661204",
+      "174150357168",
+      "174936338093",
+      "180017464974",
+      "183799110991",
+      "184013424022",
+      "184167702446",
+      "184300109262",
+      "185229374468",
+      "185704342352",
+      "186041863638",
+      "186052437796",
+      "186567991235"
+    ],
+    "scope": "Exclude groups only from descriptive outer-test reporting; never remove from fitting folds. Same already-examined hypothesis panel, not fresh validation."
+  },
+  "added_features": [
+    "acceptor_fork",
+    "reply_check"
+  ],
+  "pre_fit_refinement": "Before freezing or any fit, check-only control matched bundle154column width/names/order and fork missingness, with fork known values constantfalse, to avoid feature-count/random-column-index confounding. No outcomes used.",
+  "frozen_at_utc": "2026-11-04T05:50:50.278745+00:00"
+}

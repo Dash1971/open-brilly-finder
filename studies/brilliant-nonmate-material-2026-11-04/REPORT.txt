@@ -1,0 +1,43 @@
+Nonmating material-gain experiment — 2026-11-04
+
+Result: Chess.com VERIFIED6.Ne5 as Brilliant. The refined fixed mating-offer treatment adds3correct awards and0wrong awards to either unchanged research forest in the same grouped evaluation. The broader automatic model/rule selector adds9correct and2wrong relative to its fair baseline-only selector, so that selector fails the requested constraint. This is a small development gain on reused data, not a production-precision guarantee. No application or deployment changes; ratings remain excluded.
+
+CHESS.COM VERIFICATION
+Exact PGN from https://mutechess.org/game/tjxdTRho imported into Chess.com with White Dash, Black Indigo Flint, Result1-0, TimeControl900+10; no Elo headers. Review visibly states "Ne5 is brilliant", shows Brilliant! on the board and +3.16 evaluation. Game Review settings inspected: Torch Human /Fast (~1second). No preferences changed. Verified review URL:
+https://www.chess.com/analysis/game/pgn/5W9D6ST6r2/review?move=10
+CHESSCOM-NE5.json records provenance; CHESSCOM-NE5.png archives visible evidence. This verifies this imported review configuration, not every possible review setting. Ne5 stays outside all training and evaluation counts; normalized before-position does not occur in the dataset.
+
+FIXED EXPERIMENT
+Prior experiment's narrowly defined mating-offer rule stays unchanged except for one material-gain veto. For every qualifying capture that allows an actual legal mate-in-one response, inspect every saved response PV in both current and previous windows. A finite favorable engine-score PV (not a mate score) witnesses a material gain when original mover's material balance at12plies exceeds the pretarget-move balance by at least300cp. Acceptance counts as ply1. Material values match prior study:pawn90,minor300,rook500,queen1000. A checkmate observed anywhere in the saved PV excludes that line as a nonmating witness; terminal draws do not provide material-win witnesses. Missing complete windows or favorable finite PVs truncated before12 remain unknown. Any witness suffices to veto; without a witness, unknown coverage prevents the exception from passing. The prior rule passes only with value0 in BOTH windows.
+
+This is a sampled finite-response material-gain proxy. MultiPV2 does not enumerate all legal responses, a finite score does not prove there is no later forced mate, and a12ply material observation is not a minimax guarantee of permanent material gain. Therefore value0 means no witness among the adequately observed saved candidates, not proof that mate is the only way to win. The rule can also reject true Brilliants that offer both mating and material-winning continuations. No global ban on materially winning tactics is proposed.
+
+Feature protocol/script frozen before extraction. A subagent implemented extraction without reading labels or model outcomes. Evaluation script/protocol separately frozen before feature outcomes were inspected. All3724casekeys represented;1320 saved-evidence positions and532 full PVs replayed legally with original game history. Current feature coverage:101zero,19one,3604unknown/notapplicable; previous102zero,16one,3606unknown/notapplicable. Most unknowns are nonapplicable rather than attempted but unresolved mating cases. Existing baseline eligibility/features remain unchanged.
+
+GROUPED RESULTS
+Same3724cases /917positive /2807negative /972groups; same5outer and3inner folds, seeds/salts, learner hyperparameters, guards, weights and threshold rule. Original baseline outer/final predictions reproduced exactly. No new training-case engines. Separate Ne5 diagnostic used2fixed300k-node SF18 accepting-branch searches, excluded from fits. No already-seen654benchmark replay or post-outcome cutoff adjustment.
+
+Forest held fixed:
+Custom baseline452/917found,6wrong;49.29%recall,1.31%ofawardswrong.
+Custom +refinement455/917found,6wrong;49.62%,1.30%.
+Standard RF baseline473/917found,7wrong;51.58%,1.46%.
+Standard RF +refinement476/917found,7wrong;51.91%,1.45%.
+Each adds3true awards, loses0true, adds0wrong, removes0wrong. The always-on diagnostic and inner-training-qualified arms coincide: qualifying activation required>=1addedtrue and ZEROaddedwrong in innerOOF predictions, then applied only to heldout groups. These are expanded research models; they are not direct production measurements of the older848-case deployed model.
+
+The automatic family/rule selector is a separate result:465true/7wrong versus456/5for the fair same-base-model-only selector. It switches fold0 from custom to standard RF; model-family switching introduces the extra wrong awards. Its net+9true/+2wrong fails the requested constraint. Do not substitute its result for the fixed-family treatment. Final all-data training-only calibration chooses custom+refined rule, threshold0.8143062085223279,489true/7wrong in calibration. Calibration numbers are not heldout validation and the archived full fit is research only.
+
+WHAT THE FEATURE DISTINGUISHES
+Previous narrow rule matched9labelled cases:8Brilliant and1ordinary. Refinement vetoes2of these: ordinary42...Qe5 and Brilliant Ng6+. Seven remain, all labelled Brilliant;4were already found by each baseline, leaving3newfinds. Newfinds:Rc8 (184710314858:52),Rf8 (185214494356:53),Qh3 (167735024286:72). One is from a newer batch cohort, two are older. Qh3 belongs to an earlier label-informed pilot group. Outside all48pilot groups, each fixed forest gains2true/0wrong. Fresh hard subgroup54positives/150negatives:custom3->4true andRF4->5true,0wrong throughout.
+
+Qe5 directly exposes a rook while threatening mate. Accepting it allows both immediate mate and a queen-winning alternative. Refinement removes this known false award but also declines one genuine Brilliant with an independently favorable material continuation. It is therefore an imperfect signal rather than a definition of Brilliant. Among the wider eligible ec=false cases with matching two-window states, state0 has37positive/6negative and state1has4positive/4negative; these descriptive enriched-sample counts do not define a usable standalone rule. Mixed-window states and unknowns are not silently folded into the known counts.
+
+NE5 DIAGNOSTIC
+The exact new feature is0 in both saved accepting-branch windows. After6...Bxd1, best response is7.Bxf7#; the second saved response has White cp-269/current,-250/previous and does not supply a favorable material-win witness. After6...Nxe4, best is alsoBxf7#; the finite alternative has positivecp but material gain0 at12plies, so it also does not trigger the veto. Both original-position profiles300k and3M satisfy the prior and refined rule when paired with the fixed300k accepting probes. The selected experimental policy awards Ne5; the original research forest alone remains below cutoff. This is a local SF18 diagnostic, not captured live browser SF19 internal evidence. Production classification remains unchanged.
+
+LIMITS AND NEXT DIRECTION
+The rule was motivated by a previously observed ordinary counterexample, and the same corpus has been examined repeatedly. Keeping grouped folds prevents game/position overlap during fitting but cannot remove that research-level adaptation. Only3newlabelled awards support the incremental gain; a conditional group-bootstrap recall-delta interval spans0to0.76percentage points. Its0FPdelta interval is mechanically0because no new negative is awarded in these fixed predictions; it is NOT a population guarantee of zero false positives.
+
+Keep the current forest fixed and retain this exact treatment as a candidate for fresh, independently labelled mating-offer controls. Fresh validation should include alternatives that win material, multiple accepting captures, short/truncated alternatives, and genuine Brilliant material-recovery combinations. Do not keep changing the rule around each known case or deploy solely on this reused-data gain. The measured recall remains roughly50%, with wrong-award fraction above1%; this is an incremental correction, not a solution to the90%recall aspiration.
+
+VALIDATION
+13focused checks passed: frozen source/protocol/model hashes; original rule and refined-mask recomputation; game/group/alias/position fold integrity; exact baseline parity; awards/inner constraints; pooled/fold/nonpilot counts; resource limits; fair selector counterfactual; feature hashes; all532saved-PV legality/material arithmetic; conservative missingness; separateNe5diagnostic.51fits in35.5seconds,253.5MiBpeakRSS. No further feature or threshold variants were tried.

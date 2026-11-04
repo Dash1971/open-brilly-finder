@@ -1,0 +1,26 @@
+{
+  "status": "frozen_before_extraction",
+  "frozen_at_utc": "2026-11-04T02:47:21.685701+00:00",
+  "extract_script_sha256": "baf3523c8b8fc7055e0085771255476537c57c18f0506b4b028dadb09c16b3e1",
+  "source_sha256": {
+    "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/pv-trajectory-experiment/source-pack/after-snapshots.jsonl.gz": "5d22309176794a81ac6294164c8166f9e202f90d90fcece814ad86d533baa1ad",
+    "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/pv-trajectory-experiment/source-pack/games.jsonl.gz": "c2e396b22fe33e1701c0cc5509a5b3419f6c35d1b356c27dbaf05568d5e8c24a",
+    "research/brilliant-conditional-gap-2026-11-04/ENGINE-EVIDENCE.jsonl": "d81a5cb5cc2883bd28291286763a4a4762b69297b2b1d0cf3983ace248e74aee"
+  },
+  "rule": "For each raw qualifying saved capture, legally prove mover immediate mate-in-one exists after acceptance. Across all such captures and all saved response lines per window, veto=1 if any finite mover-positive cp line with no actual saved-PV mate or terminal draw has material gain >=300 at ply12 versus original pre-target balance. Acceptance is ply1. Pawn90 knight/bishop300 rook500 queen1000. Otherwise null if any missing complete window or favorable finite line truncated before12; else0. No mating capture =>null/not_applicable. Missing evidence =>null/no_saved_offer_evidence. At least min(2,legal response count) distinct saved roots for complete coverage. Known witnesses override unknowns. Finite mate-score alternatives never witness. Entire saved PV legality checked against full original PGN history. Automatic draws use claim_draw=False. All3724 keys; no labels, model files, or engines.",
+  "limitation": "Saved MultiPV2 finite material-gain proxy; does not prove no eventual mate or exhaustive legal-response coverage.",
+  "output_schema": "{key:{current:{nonmate_material_win:0|1|null},previous:{nonmate_material_win:0|1|null}}}",
+  "primary": "Single fixed refinement only, no threshold/horizon tuning. Parent evaluates separately.",
+  "hit_trace_keys": [
+    "172291845278:66",
+    "184710314858:52",
+    "185214494356:53",
+    "169962611516:55",
+    "171270665964:60",
+    "185741429132:55",
+    "173266974169:84",
+    "167735024286:72",
+    "184069349690:45"
+  ]
+}

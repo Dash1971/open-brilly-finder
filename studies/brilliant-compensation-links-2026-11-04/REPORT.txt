@@ -1,0 +1,213 @@
+Representing the connection between a sacrifice and its compensation
+November 4, 2026
+
+FINDING
+
+There is useful chess information missing from the current scalar features:
+which particular piece accepts an offer, where it moves, and how that change
+participates in the compensating continuation. We can record those connections
+from saved legal lines without another engine search.
+
+Some narrow relations look worth investigating as learned inputs. The most
+interesting here is acceptance relocating a piece into the very next fork-shaped
+attack. Generic path clearance and direct recapture overlap heavily between
+Brilliants and ordinary moves. No classifier was fitted and no accuracy gain is
+established. These descriptions do not yet recover Chess.com's award boundary.
+
+THE REPRESENTATION
+
+Keep a small record per acceptance branch, rather than reducing different offers
+and recoveries immediately to a single maximum gain or minimum material debt:
+
+  Candidate move and offered piece
+       -> accepting piece, origin, destination
+       -> exact occupancy/attack changes caused by that capture
+       -> legal saved response(s), checks, captures, pins and fork targets
+       -> witnessed material/mating outcome and remaining uncertainty.
+
+Piece identity persists when the acceptor moves again or is later captured.
+The record distinguishes capturing that acceptor from recovering material by
+taking some OTHER piece. It also distinguishes a recapture that creates a new
+attack from a simple recapture ending an exchange.
+
+Five concepts must remain separate:
+  1. Acceptance vacates a blocker on the saved reply's path.
+  2. Acceptance replaces our offered piece with an enemy piece on that square,
+     allowing a saved recapture or relocating a target into an attack.
+  3. The response creates a new attack, pin or fork involving that target.
+  4. The candidate move already created the threat; acceptance merely allows
+     the saved continuation. The capture did not create the threat's geometry.
+  5. No connection is witnessed within the saved line. That is unresolved,
+     not proof that the offer is irrelevant.
+
+We compare geometry on actual legal board states. We do not flip the side to
+move to invent an illegal counterfactual. A geometric attack is not necessarily
+a legal winning capture; a saved principal variation is not proof that every
+defense loses. Root-created threats are manually verified in the panel, while
+the automatic prototype concentrates on acceptance and response relations.
+
+CONCRETE EXAMPLES
+
+1. Accepting piece becomes a fork target: missed Brilliant ...Nxf4
+   Case183799110991:36, panel7.
+   ...Nxf4 Rxf4 ...e5.
+   The knight offer brings White's rook from f1 to f4. Black's pawn move e6-e5
+   attacks that exact accepting rook on f4 and the bishop on d4. The saved line
+   continues Rff1 exd4 Nxd4. This is a precise connection from the offer to
+   compensation; "knight offered" plus "material recovered" loses that link.
+
+   Its ordinary control167744579866:12 has ...Nxe4 Nxe4 ...Qe7. The accepting
+   knight moves c3-e4; Qd8-e7 pins it to Ke1, then ...d5 attacks it. This is
+   real compensation too, but a different relationship. Earlier prose called
+   ...d5 a fork of two knights; board replay disproves that description.
+   See CORRECTIONS.txt. The distinction does not by itself explain the label.
+
+2. Recapture becomes the attack: missed Brilliant ...Ba6
+   Case174936338093:56, panel11.
+   The move leaves an already offered rook on d4. Nxd4 replaces that rook with
+   the accepting knight from e2. Black's e5xd4 then captures the acceptor and
+   forks White's rook on c3 and queen on e3. The chain is:
+       rook offer -> knight on d4 -> pawn captures on d4 -> attacks Rc3/Qe3.
+   The acceptor is already gone when the fork exists; a feature asking only
+   whether the acceptor is attacked would miss this second mechanism.
+
+   Ordinary Bd3 (172914653473:53) also leaves Rd4 offered, but ...Bxd4 Nxd4
+   is a direct recapture with no corresponding fork from Nd4. Both regain
+   material, and the current numerical summaries obscure the difference.
+
+3. Path clearance also belongs to ordinary tactics
+   Ordinary Bxd5 (166753669376:43), panel3, allows ...Bc4xd5. The bishop
+   vacates c4, the sole blocker between Rc1 and Qc8. Rxc8 then captures the
+   queen. This is an especially clear occupancy certificate, yet the label
+   is ordinary. Detecting a causal-looking connection is not sufficient.
+
+   The paired Brilliant Bxg6 (166180997254:61) allows ...f7xg6 Qxg6+.
+   Acceptance replaces the friendly bishop on g6 with an enemy pawn and
+   clears f7; later ...Qf7 is met by Rxf7 on the opened f-file. But Qxg6+
+   was already legal in the ORIGINAL position before Bxg6. Comparing only
+   after-offer and after-acceptance positions would miss this earlier access.
+
+4. Mate does not imply acceptance created the attack
+   Ordinary ...Ng4 (180017464974:20), panel10, permits gxh3 Qh2#.
+   The queen's e5-f4-g3-h2 ray is already clear after ...Ng4, and Ng4 already
+   supports h2. Taking Bh3 does not open that ray or create the knight support.
+   It permits a real mate using already-present geometry.
+
+   Paired Brilliant ...Nf6 (186052437796:18) uses fxe4 Bc5, pinning Qd4 to
+   Kf2; Qxc5 Nxe4+ then captures the acceptor and forks king/queen, followed
+   by Nxc5. This more extended connection is represented, but the ordinary
+   move's simpler mate remains a valid contradictory example.
+
+WHAT WAS MEASURED
+
+Using the existing saved evidence, we extracted relations for all1,302 cases
+that pass the original eligibility/quality/confidence/physical checks. This
+includes429 missed Brilliants,452 detected Brilliants and421 ordinary/negative
+cases. Extraction does not use labels or classifier scores.
+
+The evidence covers1,461 qualifying acceptance branches, both saved analysis
+windows and up to two response PVs per branch. All5,836 full PVs were legally
+replayed, totaling85,945 moves. Relations are recorded through the first six
+response plies after acceptance, while full-PV legality is checked. Castling,
+en passant, promotion and later movement of the acceptor preserve identity.
+
+For case-level comparisons we select the opponent's best saved acceptance,
+using the mover's least favorable evaluated outcome, and the best saved reply
+to that acceptance. Mate outcomes retain mate ordering rather than being turned
+into arbitrary centipawns. All other branches remain in RELATIONS.json. This
+avoids choosing the most spectacular line or weighting a case more heavily
+just because it has more accepting captures.
+
+We reuse the prior429 ordinary matches, including their157 flagged weak
+fallbacks. The primary comparison is the272 pairs with matching basic semantic
+anchors (EC status, capture/check status, moved/offered-piece categories).
+Those272 pairs use107 distinct ordinary moves; controls are reused, so pair
+occurrences are correlated. Full boards are not identical.
+
+Selected current-window observations in those272 comparisons:
+
+Relation                                      Miss   Ordinary   Both
+Immediate attack forks acceptor+another target  21       7         1
+Immediate recapture then geometric fork          7       2         0
+Acceptance clears immediate slider-reply path   29      27         9
+Cleared path then capture of a different piece  25      27         8
+New absolute pin of accepting piece within6      4       2         0
+
+Miss/ordinary columns include the Both column. These are descriptive relation
+occurrences, NOT correct/wrong awards from a proposed rule.
+
+The21 immediate-acceptor-fork misses are21 moves in20 groups. The seven
+ordinary occurrences are only four distinct moves/groups. Counts remain21/7
+in the preceding analysis window. None is a literal immediate terminal mate,
+but19/21 missed cases and3/4 unique ordinary cases use a checking reply.
+The difference may partly reflect checking tempo rather than target identity
+alone. That possible confound has not been isolated by a learner experiment.
+
+The ordinary fork cases are retained explicitly:
+  168772277524:48,171306023703:39,173391055464:72,184277876260:142.
+They include queen, rook and pawn attacks involving the acceptor; they are not
+invalid examples or silently discarded exceptions.
+
+Across the broader, unmatched case pools, the same immediate-acceptor-fork
+relation is observed in38/429 misses and6/226 explicit hard ordinary controls.
+These pools differ in composition; they must not be read as precision/recall.
+Only a minority of misses have this particular relation. Path clearance and
+direct recapture remain common on both sides, reinforcing why generic scalar
+extensions have struggled.
+
+WHAT THIS ADDS BEYOND THE CURRENT FEATURES
+
+The existing75 measurements record offered roles, counts, aggregate exchange
+gains/debts, quality and some historical attribution. They do not preserve the
+acceptor's identity and location through the reply, the exact target pair of a
+fork, which blocker was removed, or the sequence connecting one gain to another.
+Two branches can therefore have similar totals but very different mechanisms.
+
+The prototype demonstrates that these descriptions can be recovered precisely
+and reproducibly from saved lines. It does NOT demonstrate predictive value
+beyond the current inputs. A relational learned-input experiment would need to
+compare them with the existing features under grouped evaluation, include the
+ordinary counterexamples, and then face fresh validation. We have not fitted
+such a model or selected an award cutoff here.
+
+Of the relations examined, participation of the accepting piece in the immediate
+compensating attack is the most concrete candidate for that future test. It
+should be considered with reply check status, target roles and the relation's
+known/unknown status. The broader branch record is useful for retaining evidence;
+we should not assume every recorded relation must become a model input.
+
+LIMITS AND VERIFICATION
+
+Geometric forks include attacks on the king and attacks by pinned pieces;
+neither target is guaranteed to be won. Pins are absolute geometric lines
+against the king, not a full evaluation of relative pins. Absence means no
+witness in the saved prefix, not proof of no compensation. In the current
+response set,19 lines end nonterminal before six plies and262 terminate earlier;
+their coverage is recorded. Immediate-reply metrics have an actual first reply
+for every selected case, so the main21/7 observation is not a six-ply truncation
+artifact.
+
+FEN-only input lacks earlier repetition history. Local legality, checkmate,
+stalemate and insufficient material can be checked; a complete historical draw
+claim cannot. Saved engine branches do not cover all legal replies, all possible
+acceptances under other definitions, or all realistic alternatives to the root.
+Root-created versus already-existing threats were inspected manually in selected
+examples and are not exhaustively extracted by this prototype.
+
+Definitions/scripts/input hashes were frozen before extraction/comparison.
+An independent review checked all2,604 case/window acceptance selections and
+response score ordering, the main pair counts and geometric certificates in
+five panel pairs. No branch-ranking or metric errors were found. It did correct
+the earlier prose error about the ordinary pawn fork, preserved separately.
+
+No new engine searches, model fits, rules, cutoffs, labels, ratings, app changes
+or deployment. This is diagnostic work on enriched, repeatedly studied data,
+not independent validation or a claim about matching Chess.com's private logic.
+
+FILES
+RELATIONS.json: all branches, identities, geometric certificates and limitations.
+EXTRACTION-PROTOCOL.json / extract.py / EXTRACTION.json: extraction provenance.
+COMPARISON-PROTOCOL.json / compare.py / COMPARISON.json: fixed descriptive study.
+ROBUSTNESS.json: preceding-window counts, reused controls and checking overlap.
+CORRECTIONS.txt: precise correction to earlier pair7 explanation.
+VERIFICATION.json: artifact hashes and independent review receipt.

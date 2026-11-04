@@ -1,0 +1,14 @@
+import { readFileSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import * as c from '/private/tmp/mute-precision-native/ui/analyse/src/noSweatClassify.ts';
+import { evaluateBrilliantForest } from '/private/tmp/mute-precision-native/ui/analyse/src/noSweatBrilliantForest.ts';
+const here=new URL('./',import.meta.url),data=JSON.parse(readFileSync(new URL('SNAPSHOTS.json',here),'utf8'));
+const path='/private/tmp/mute-precision-native/ui/analyse/src/';
+const hashes=Object.fromEntries(['noSweatClassify.ts','noSweatCore.ts','noSweatBrilliantForest.ts','noSweatBrilliantForestModel.json'].map(n=>[n,createHash('sha256').update(readFileSync(path+n)).digest('hex')]));
+if(hashes['noSweatBrilliantForestModel.json']!=='44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7')throw Error('Unexpected deployed model');
+const cache=new Map<string,number>();
+const material=(f:string)=>{if(!cache.has(f))cache.set(f,c.naiveMaterial(f));return cache.get(f)!;};
+const helpers={rawOffer:c.isMuteSacrifice,ecMaterial:material,isSacrifice:(b:string,a:string)=>c.isSacrifice(b,a,material),matingAcceptance:c.hasMatingAcceptance,checkedContinuation:c.continuedOfferWhileInCheck,phaseRelevant:c.convertedMaterialOrEndgame,normalized:c.normalized,winChance:c.winChance};
+const rows=data.profiles.map((p:any)=>{const input=p.input;return {budget:p.budget,forest:evaluateBrilliantForest(input,helpers),classification:c.classify({...input,policy:'mute-brilliant-v5'},material),enCroissant:c.classify({...input,policy:'en-croissant'},material),material_values:input.positions.map(material)};});
+writeFileSync(new URL('DIAGNOSTICS.json',here),JSON.stringify({scope:data.scope,hashes,threshold:5/6,rows},null,2)+'\n');
+console.log(JSON.stringify(rows.map((r:any)=>({budget:r.budget,score:r.forest.windowScores,eligible:[r.forest.windows.current.eligible,r.forest.windows.previous.eligible],diagnostics:r.forest.diagnostics,classification:r.classification,enCroissant:r.enCroissant,material:r.material_values,current:r.forest.windows.current.features})),null,2));

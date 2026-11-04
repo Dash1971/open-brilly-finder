@@ -1,0 +1,118 @@
+{
+  "prepared_at": "2026-11-03T15:44:58.323312+00:00",
+  "wave": 4,
+  "scope": "New visible gallery nominations resolved against existing official PGN caches. No current review labels or model outputs used.",
+  "collector": "root",
+  "split_rule": "sha256('mute-overnight-2026-11-03-v1:'+gameID) mod5==0 assessment",
+  "assessment_position_exclusions": "ASSESSMENT-POSITION-EXCLUSIONS.json",
+  "source_receipts": [
+    {
+      "source": "research/brilliants-improvement-2026-11-03/future-validation-v5/original-pgn/hansen-2026-04.pgn",
+      "sha256": "09ae1652c4024b9c61cee3d9fcffaee798969f03dca3dd6e58b4c84559b0cca1",
+      "PGNs_reused": 42
+    },
+    {
+      "source": "research/brilliants-improvement-2026-11-03/future-validation-v5/original-pgn/hansen-2026-05.pgn",
+      "sha256": "1e36551e75e6a32d0555bdd5f5086b1312f5c427e44eb90a388b622126d2c7ce",
+      "PGNs_reused": 18
+    }
+  ],
+  "rejections": [
+    {
+      "game_id": "166704041056",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166703963442",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166687034182",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166686790312",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166686339728",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166686078646",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166685845548",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166578129186",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166577613800",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166577558528",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166526239276",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166525896264",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166525600316",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166525370442",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166524903834",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166524818174",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166523254262",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166509652758",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166508663274",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166508569726",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166508077994",
+      "reason": "not_in_existing_cached_PGNs"
+    },
+    {
+      "game_id": "166505827190",
+      "reason": "not_in_existing_cached_PGNs"
+    }
+  ],
+  "games": [],
+  "counts": {
+    "games": 0,
+    "nominees": 0,
+    "positions": 0,
+    "training_games": 0,
+    "assessment_games": 0
+  }
+}

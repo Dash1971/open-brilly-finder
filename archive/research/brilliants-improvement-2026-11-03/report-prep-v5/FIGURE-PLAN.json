@@ -1,0 +1,263 @@
+{
+  "status": "PRIVATE REVIEW: completed frozen fresh-test results; standard chart and native successful-move animation rendered and visually inspected. No public/git/app writes.",
+  "prepared_at_utc": "2026-11-03T10:33:09.847144+00:00",
+  "study_roles": {
+    "total_moves": 1048,
+    "total_games": 545,
+    "development_moves": 848,
+    "development_games": 439,
+    "development_brilliant": 413,
+    "development_non_brilliant": 435,
+    "fresh_moves": 200,
+    "fresh_games": 106,
+    "fresh_brilliant": 100,
+    "fresh_non_brilliant": 100,
+    "five_accounts_each_class": 20,
+    "secondary_not_in_metrics": 10
+  },
+  "primary_frozen_model": {
+    "name": "precision-first fixed forest",
+    "file": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/forest-full.json",
+    "sha256": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+    "trees": 64,
+    "threshold_per_window": "5/6 RAW mean leaf fraction",
+    "extractor_freeze_file": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/FREEZE.json",
+    "extractor_freeze_sha256": "29202a0df6cb45d9c64d81edda4e1ea411c5528775366d16d41701f30d9179a4"
+  },
+  "S_freeze": {
+    "file": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/source-freeze-castling-addendum.json",
+    "sha256": "3d6f12ac32686b9ef3e07ef940dad51d4216163160c7309830b6b51a157d2df5",
+    "temporal_source_sha256": "16faa288afc2e18716cdc7135efa8275712cd3b12624e4f696f33f25f6b3fe29"
+  },
+  "style": {
+    "language": "American English",
+    "board": "Native Mute Moss/Cburnett assets only",
+    "light_square": "#C7CFBA",
+    "dark_square": "#668478",
+    "last_move": "rgb(217 178 95 /42%)",
+    "piece_credit": "Colin M. L. Burnett, GPL-2.0-or-later; original SVGs/full license/provenance accompany public assets",
+    "new_frameworks_dependencies_AI_art": false
+  },
+  "figures": [
+    {
+      "id": "fresh-test-results",
+      "status": "Rendered PNG/SVG from completed fixed-test summary; visually inspected",
+      "priority": 1,
+      "planned_publication_files": [
+        "figures/fresh-test-results.png",
+        "figures/fresh-test-results.svg"
+      ],
+      "input": "../future-validation-v5/engine-core/fresh-results.json",
+      "design": "Two clearly separated panels: observed Brilliants recognized/missed and explicit non-Brilliant controls with/without extra awards; show n/denominator on every row. Forest, history rule, EC direct. Mint/graphite visual style; no overall-accuracy/precision ambiguity.",
+      "no_target_or_development_substitution": true,
+      "input_sha256": "6bfe2daa741d22c85f106d90ef8abd39f309e5bbec1a3ef4376b3a7ea34a37b7",
+      "assets": [
+        {
+          "draft_reference": "figures/fresh-test-results.png",
+          "publication_reference": "figures/fresh-test-results.png",
+          "source_file": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/report-prep-v5/figures/fresh-test-results.png",
+          "sha256": "b51e7204e9b8e9e209c2a6a3ffb17eed77155330a730132a45bd9b01d5921710",
+          "bytes": 75941
+        },
+        {
+          "draft_reference": "figures/fresh-test-results.svg",
+          "publication_reference": "figures/fresh-test-results.svg",
+          "source_file": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/report-prep-v5/figures/fresh-test-results.svg",
+          "sha256": "47e739339482b3956b63d2580811d0c615751bb8d881d1a6a5ec9763619c6b22",
+          "bytes": 13580
+        }
+      ]
+    },
+    {
+      "id": "fresh-bxh7",
+      "status": "Rendered GIF/PNG/SVG with existing native renderer; legalPGNstates and representative frames visually inspected",
+      "assets": [
+        {
+          "draft_reference": "figures/fresh-bxh7.gif",
+          "publication_reference": "visuals/outputs/fresh-bxh7.gif",
+          "source_file": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/report-prep-v5/figures/fresh-bxh7.gif",
+          "sha256": "223cb8913e87ec6dbe78e6c6d058cef0f0c35fb7408cc10c18dead0f290f27dd",
+          "bytes": 831173
+        },
+        {
+          "draft_reference": "figures/fresh-bxh7.png",
+          "publication_reference": "visuals/outputs/fresh-bxh7.png",
+          "source_file": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/report-prep-v5/figures/fresh-bxh7.png",
+          "sha256": "82cc590d25af55a12f7df895bae004092e12f0c3b1c016db720e585ce2e29b99",
+          "bytes": 78419
+        },
+        {
+          "draft_reference": "figures/fresh-bxh7.svg",
+          "publication_reference": "visuals/outputs/fresh-bxh7.svg",
+          "source_file": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/report-prep-v5/figures/fresh-bxh7.svg",
+          "sha256": "0b83c9c03d2265b9b9d1cb7df794bb26113727731ac1df0e870153b839669309",
+          "bytes": 15353
+        }
+      ],
+      "game_id": "167741829524",
+      "ply": 33,
+      "target_san": "Bxh7+",
+      "observed_label": "Brilliant",
+      "forest_award": true,
+      "role": "One recognized fresh-test move, included in55TP",
+      "moves": [
+        "Bxh7+",
+        "Kxh7"
+      ],
+      "actual_PGN_moves": true,
+      "not_claimed_forced": true,
+      "no_compensation_or_mate_claim": true,
+      "identity_receipt": "illustration-proof.json",
+      "frame_QA": "figures/fresh-bxh7-contact-sheet.png"
+    },
+    {
+      "id": "quiet-offer-bg2",
+      "status": "Ready existing native GIF/PNG/SVG",
+      "asset": {
+        "draft_reference": "../visuals/outputs/quiet-offer-bg2.gif",
+        "publication_reference": "visuals/outputs/quiet-offer-bg2.gif",
+        "source_file": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/visuals/outputs/quiet-offer-bg2.gif",
+        "sha256": "bd4d50e7719f7b2c5ec29d98a447b22d6e20ffac13e01667b4c7e6982b53ffd6",
+        "bytes": 1201432
+      },
+      "move_sequence": [
+        "Bg2",
+        "Bxb1",
+        "Rxb1"
+      ],
+      "classification_applies_only_to": "27.Bg2",
+      "reference_label": "Observed Chess.com Brilliant",
+      "following_replies": "Conditional legal illustration; not asserted forced or actual game continuation",
+      "model_behavior": "Frozen full-data forest withholds; S awards. Do not portray as a forest success.",
+      "role": "Inside848 development, not fresh-test evidence"
+    },
+    {
+      "id": "material-boundary",
+      "status": "Ready existing native comparison PNG",
+      "asset": {
+        "draft_reference": "../visuals/outputs/similar-trades-native.png",
+        "publication_reference": "visuals/outputs/similar-trades-native.png",
+        "source_file": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/visuals/outputs/similar-trades-native.png",
+        "sha256": "8dbe1d77d5b06872cc32e35bfe7cf327c733981138656e824751bd09ce3f729b",
+        "bytes": 154672
+      },
+      "cases": [
+        {
+          "move": "14...Ndxe5",
+          "observed_label": "Excellent",
+          "forest": "withheld"
+        },
+        {
+          "move": "9...Nxd5",
+          "observed_label": "Brilliant",
+          "forest": "withheld"
+        }
+      ],
+      "role": "Both supplemental references outside all benchmark totals",
+      "claim": "Similar net material does not establish identical Chess.com labels."
+    },
+    {
+      "id": "pawn-excellent-animation",
+      "status": "Ready existing native GIF",
+      "asset": {
+        "draft_reference": "../visuals/outputs/pawn-win-excellent.gif",
+        "publication_reference": "visuals/outputs/pawn-win-excellent.gif",
+        "source_file": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/visuals/outputs/pawn-win-excellent.gif",
+        "sha256": "f4bf357e01a1fef88cbefbc7c0914c52353b4e2948e8d400a37cb79bcbe2e3b3",
+        "bytes": 2049781
+      },
+      "role": "Supplemental, conditional legal variation"
+    },
+    {
+      "id": "pawn-brilliant-animation",
+      "status": "Ready existing native GIF",
+      "asset": {
+        "draft_reference": "../visuals/outputs/pawn-win-brilliant.gif",
+        "publication_reference": "visuals/outputs/pawn-win-brilliant.gif",
+        "source_file": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/visuals/outputs/pawn-win-brilliant.gif",
+        "sha256": "767cb5bea66a7dd726b43266dc7d464fbddef3b266182946e055a43783d5dba0",
+        "bytes": 2159882
+      },
+      "role": "Supplemental, conditional legal variation; forest misses its Brilliant label."
+    },
+    {
+      "id": "exact-model-flow",
+      "status": "Mermaid in README, no external rendering needed",
+      "steps": [
+        "Full legal PGN and saved SF18 current/prior windows",
+        "75 semantic values plus75 explicit missing flags",
+        "64 fixed trees score each window",
+        "Both scores>=5/6, both hard eligibility masks and provenance confidence",
+        "Award or withhold"
+      ],
+      "prohibited_reuse": "Do not reuse old five-check current-rules.png as a forest explanation; its hard gates describe an earlier rule."
+    }
+  ],
+  "publish_checks": [
+    "Completed test counts and intervals are filled; verify copied publication values against frozen fresh-results.json, preserving1048development/testroles.",
+    "Use full-data frozen forest, not fold-specific models or pooled-ranking-selected thresholds.",
+    "Keep both-window5/6 threshold, feature/proof caps, S source and ECdirect comparator unchanged.",
+    "Publish actual observed recognition, badge precision, extra-control rate and agreement as distinct metrics; undefined denominators remain undefined.",
+    "Do not call development grouped-CV or training-fit outputs fresh validation; never claim deployed/product superiority from these data.",
+    "Keep nativeSF19/variable-browser-budget domain unvalidated unless separately tested.",
+    "Retain changed labels/secondary evidence and systematic replacements; no classifier-driven exclusion.",
+    "Confirm source hashes, full PGN/SAN/ply/namespace/FEN identities, no development game/position overlap and S prior-origin coverage.",
+    "Rewrite private ../visuals and source links to the actual allowlisted publication layout; preserve SVG source/license/provenance.",
+    "No public/git/app changes are authorized by these draft files."
+  ],
+  "not_in_main_narrative": [
+    "Collection chronology or growing-count storyline",
+    "Threshold grids/experimental variant chronology",
+    "Training247TP0FP as evidence of future precision",
+    "Stronger1.5m training-model outputs as a fresh-test estimate",
+    "A claim that the forest awards Bg2/h6 or the Brilliant Nxd5 reference",
+    "A promise of90% or99% agreement before/contrary to actual results"
+  ],
+  "primary_sources": {
+    "Chess_com_published_classification": "https://support.chess.com/en/articles/8572705-how-are-moves-classified-what-is-a-blunder-or-brilliant-etc",
+    "EC_score_pin": "https://github.com/franciscoBSalgueiro/en-croissant/blob/6f2d2628f0fbe11cb62a7dd2f9c102bb52907d53/src/utils/score.ts",
+    "EC_material_pin": "https://github.com/franciscoBSalgueiro/en-croissant/blob/6f2d2628f0fbe11cb62a7dd2f9c102bb52907d53/src-tauri/src/chess.rs",
+    "EC_stable_equivalence_record": "mute-chess-research/studies/brilliant-moves/ec-latest-stable-check.json"
+  },
+  "completed_at_utc": "2026-11-03T10:55:49.102688+00:00",
+  "actual_metrics": {
+    "forest": {
+      "TP": 55,
+      "FN": 45,
+      "FP": 1,
+      "TN": 99
+    },
+    "S": {
+      "TP": 78,
+      "FN": 22,
+      "FP": 5,
+      "TN": 95
+    },
+    "A": {
+      "TP": 78,
+      "FN": 22,
+      "FP": 6,
+      "TN": 94
+    },
+    "v4": {
+      "TP": 78,
+      "FN": 22,
+      "FP": 6,
+      "TN": 94
+    },
+    "ec_direct": {
+      "TP": 26,
+      "FN": 74,
+      "FP": 2,
+      "TN": 98
+    },
+    "ec_confirmed": {
+      "TP": 26,
+      "FN": 74,
+      "FP": 2,
+      "TN": 98
+    }
+  },
+  "visual_QA_receipt": "figures/visual-qa.json",
+  "report_words": 759
+}

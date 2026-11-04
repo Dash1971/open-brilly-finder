@@ -1,0 +1,118 @@
+{
+  "scope": "Two game-disjoint test sets for the unchanged fixed selective model; no training-fit results pooled. The model and threshold predate both tests. Policy choice follows comparison of results; this is not a new blind test of candidate selection.",
+  "recommendation": "Adopt Mute Selective: the unchanged fixed model with its original chess eligibility gates. The separate History Rule and recovery guard are comparisons, not additional required gates. App PR remains draft for Mute Dev.",
+  "model_sha256": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+  "cohorts": {
+    "all400": {
+      "moves": 400,
+      "games": 215,
+      "positive": 200,
+      "negative": 200,
+      "counts": {
+        "selective": {
+          "TP": 112,
+          "FN": 88,
+          "FP": 3,
+          "TN": 197,
+          "agreement_percent": 77.25,
+          "recognition_percent": 56.0,
+          "sample_badge_precision_percent": 97.3913043478261
+        },
+        "ec_direct": {
+          "TP": 53,
+          "FN": 147,
+          "FP": 3,
+          "TN": 197,
+          "agreement_percent": 62.5,
+          "recognition_percent": 26.5,
+          "sample_badge_precision_percent": 94.64285714285714
+        }
+      }
+    },
+    "first200": {
+      "moves": 200,
+      "games": 106,
+      "positive": 100,
+      "negative": 100,
+      "counts": {
+        "selective": {
+          "TP": 55,
+          "FN": 45,
+          "FP": 1,
+          "TN": 99,
+          "agreement_percent": 77.0,
+          "recognition_percent": 55.0,
+          "sample_badge_precision_percent": 98.21428571428571
+        },
+        "ec_direct": {
+          "TP": 26,
+          "FN": 74,
+          "FP": 2,
+          "TN": 98,
+          "agreement_percent": 62.0,
+          "recognition_percent": 26.0,
+          "sample_badge_precision_percent": 92.85714285714286
+        }
+      }
+    },
+    "new200": {
+      "moves": 200,
+      "games": 109,
+      "positive": 100,
+      "negative": 100,
+      "counts": {
+        "selective": {
+          "TP": 57,
+          "FN": 43,
+          "FP": 2,
+          "TN": 98,
+          "agreement_percent": 77.5,
+          "recognition_percent": 57.0,
+          "sample_badge_precision_percent": 96.61016949152543
+        },
+        "ec_direct": {
+          "TP": 27,
+          "FN": 73,
+          "FP": 1,
+          "TN": 99,
+          "agreement_percent": 63.0,
+          "recognition_percent": 27.0,
+          "sample_badge_precision_percent": 96.42857142857143
+        }
+      }
+    }
+  },
+  "new200_comparison": {
+    "History Rule": {
+      "TP": 78,
+      "FN": 22,
+      "FP": 13,
+      "TN": 87
+    },
+    "selective": {
+      "TP": 57,
+      "FN": 43,
+      "FP": 2,
+      "TN": 98,
+      "agreement_percent": 77.5,
+      "recognition_percent": 57.0,
+      "sample_badge_precision_percent": 96.61016949152543
+    },
+    "En Croissant": {
+      "TP": 27,
+      "FN": 73,
+      "FP": 1,
+      "TN": 99,
+      "agreement_percent": 63.0,
+      "recognition_percent": 27.0,
+      "sample_badge_precision_percent": 96.42857142857143
+    }
+  },
+  "example_outcomes": {
+    "Bg2_186567991235_53": "Selective miss of recorded Brilliant; do not portray as a hit.",
+    "hxg6_171488501692_36": false,
+    "hxg5_173517772799_30": false
+  },
+  "full_predictions": "data/selective-independent-tests.json",
+  "selected_policy": "Mute Selective"
+}

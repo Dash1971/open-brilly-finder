@@ -1,0 +1,101 @@
+{
+  "frozen_at_utc": "2026-11-03T12:45:50.142532+00:00",
+  "scope": "Prelabel prospective sampling and decision protocol; no current Game Review labels collected. Historical gallery nominations may now be gathered, with exact queues frozen before current reviews.",
+  "prepared_plan_sha256": "ee98cf4a169f00d0ff6fdee233ebb7ae683838a0e7753305f70984f63cfa3b7c",
+  "prepared_plan": {
+    "study_id": "brilliants-prospective-v7-2026-11-03",
+    "prepared_at_utc": "2026-11-03T12:44:22.026073+00:00",
+    "frozen_at_utc": null,
+    "status": "prepared_for_root_freeze_before_collection",
+    "quantity": {
+      "main_primary_moves": 200,
+      "fresh_brilliant": 100,
+      "fresh_non_brilliant": 100,
+      "per_account_per_class": 20,
+      "accounts": [
+        "nelsi",
+        "hansen",
+        "KNVB",
+        "GothamChess",
+        "Hikaru"
+      ]
+    },
+    "selection": {
+      "partitions": "One prospective test of unchanged nativev7; all1048formerexamples development; no tuning from new labels. Separate activation panel never pooled.",
+      "positive_nomination": "Historical gallery only, category roundrobin and SHA256 mute-prospective-v7 account/category/game/ply fixed order; onepositive/game; PGN+position+control availability only before freshlabels.",
+      "controls": "Sameaccount/game; exclude everyhistorical gallery candidate and allknownbefore/afterpositions; fixed nearest apparentrawlegaloffers, quietattacked-defendedpieces, exchanges/captures. Fourranked candidates perpositivegame (one plus3reserves). Labels UNKNOWN until freshUI.",
+      "reserve_policy": "Freeze orderedpositive reserves and controlcandidates before anycurrentlabels. Gallery/currentdisagreements and secondaryBrilliants retained; advancefixedorder, no modelpredictions inselection.",
+      "game_exclusions": "Observedunion571reviewed/regressiongames; neveropenedhistoricalreserves allowed; rootconfirmsnoopenedunsavedIDs.",
+      "position_exclusions": "46194canonicalfirst4before/afterFENs, including all1048 and cachedpositionsofexcludedgames."
+    },
+    "baseline_sources": {
+      "native_receipt_artifact": "mute-chess-research/studies/brilliant-moves/reference/native-history-v7/SUMMARY.json",
+      "native_receipt_sha256": "69d1a2e32b8433778a9c1f284f62ee034d96f7b14753d52554ae42e7498891fd",
+      "native_source_sha256": {
+        "ui/analyse/src/noSweatClassify.ts": "79b2b94717e83d0b01bb32a834f4efa93498342cfb7bcb1ba068e9dcbefe898b",
+        "ui/analyse/src/noSweatHistoryOffer.ts": "11998e94330999e001a9e1aa683047c24563880cb1ebb4ad6ec019d813365785",
+        "ui/analyse/src/noSweatHistoryProof.ts": "eaad6d0f9235b64f11946aee137570efa7e60a9170c8af8c45b9f2d9a6df6f33",
+        "ui/analyse/src/noSweatRecoveryProof.ts": "f9dc9ddf2126b5210dbc1d595c9c81b8561290e7e6a6b85e808a4f7f3fd5fca6",
+        "ui/analyse/src/noSweatFullReview.ts": "8e297163ed8bbb5afc73fc80834fcece79ebb364f39feb5eda0645f9d2807dc5",
+        "ui/analyse/src/analyse.nosweatWorker.ts": "57bd6d1a599a611f3421404d4987d59d22415b174369c4470ac9e7f3a67eb7a7",
+        "ui/analyse/src/util.ts": "896c7ebf060c017e41c7ad769dc56a6fa6f0387fb0d1d713c59918d4a4f88f91",
+        "ui/analyse/tsconfig.json": "076004900c5c64f91890bfc6bac234b1e646a59cafd890fd84e7ad11ff5c9333",
+        "ui/analyse/tests/noSweatHistory.test.ts": "54fa303d474f0227d4c3c1cf117aae889250f3c97bb9acc923971a37f09709f3",
+        "ui/analyse/tests/noSweatRecovery.test.ts": "fbb10f24827d16510f7458465a2a613df196ea705b4addee40af5a61229e9309",
+        "ui/analyse/tests/fixtures/noSweat/brilliant-v6.json": "b90f89dc77c3d0402028d9788b7c29b154f75fa3eebee488cd50532bca52907b",
+        "ui/analyse/tests/fixtures/noSweat/brilliant-v7.json": "bc4b8ea81dae90f6c95f310a02ce6c86daa4ab7028810efdeb6358cee91443ad",
+        "ui/analyse/tests/noSweatBrilliants.test.ts": "bc3cfd59af94871105490913e7468e9001d99325167859863c43c0c42f9b525d",
+        "ui/analyse/tests/noSweatMuteBrilliants.test.ts": "d2f337e571e483c8d8e66348914797a565f5787ebea215a3d8563e5f6f98100e",
+        "ui/analyse/tests/noSweatFullGame.test.ts": "e2f1bba746e413cb0ad646b587179bdcfacd9c7c54ab212cfe9537d92dd9b8e8"
+      },
+      "existing_study_sha256": "af0ba7723707045d90cd9f32c760e0076e7ea071e5ebae52b199d0413100cd12"
+    },
+    "engine_evidence": {
+      "engine": "Stockfish18",
+      "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+      "requested_nodes": 300000,
+      "threads": 1,
+      "hash_mb": 64,
+      "main": "Only final200explicitprimarykeys; unionof[ply-2,ply-1,ply] chronologicalpergame; fullPGN, clearhash/newgamebetweengames. Prior S windows separatelyclean after core; neverreplacecore.",
+      "authorized_now": false
+    },
+    "activation_panel": {
+      "maximum_source_games": 500,
+      "maximum_eligible_captures": 300,
+      "maximum_engine_search_seconds": 600,
+      "maximum_cases": 30,
+      "separate_from_main": true,
+      "preselection": "HashorderedunseenpublicPGNgames from fixedmonthlyarchivebytes, exclude allmainnominee/reservegames beforefinalpanel freeze; eligiblecapture: noncheck/nonpromotion/notincheck with unmovedpreexistinglegalpieceoffer. Frozenv6award/v7withhold determinedbeforecurrentCC labels.",
+      "labels": "CollectALLexplicitlabels, no positive/negativequotas oroutcomereplacements. Reportactivationrate,unknowns,shortfall and conditionalprecision only; no naturalfrequency claim.",
+      "frozen_source_required_before_engine_or_labels": true
+    },
+    "resource_policy": {
+      "browser_collectors_maximum": 1,
+      "engine_concurrent_with_browser": false,
+      "memory_context": "Parentreportedpressure2; no addedcollectors or engineuntilbrowsercollectionclosed."
+    },
+    "current_review_labels_authorized_now": false,
+    "no_general_tooling": true
+  },
+  "source_freeze_sha256": "82a20604aca86c726da2a8a8743cdbd67dbbce8efbb6c82e0a47e50bec0415bd",
+  "seed_resolution": "Use PLAN-PREPARED positive nomination seed mute-prospective-v7. Within account/category order by SHA256 seed/account/category/gameID/ply. Panel seed mute-history-guard-panel-v7-2026-11-03; no selection outcome changes.",
+  "pass_criteria": {
+    "main": "Complete200identities/sourceintegrity with no v6-recognized true Brilliant newly withheld byv7; report all paired removals/losses, not only net agreement.",
+    "panel": "First30 frozen distinct-game v6-Brilliant/v7-withheld cases reviewed with zero current Brilliant labels; no label-based replacements. A verified lost Brilliant is a failure requiring review. Fewer30within planned discovery caps is insufficient planned coverage; do not silently expand.",
+    "coverage": "No source/rule changes, currentlabel/modelresult-driven substitutions or missing required primary evidence. Report missing origin/proof unknowns explicitly. Zero observed errors does not prove zero future risk."
+  },
+  "native_secondary": {
+    "sample": "First2main games/account by SHA256 fixed nomination seed and gameID, selected before any engine outcomes;10wholegames.",
+    "scope": "Actual unchanged FullGameClassifier and SearchSnapshots, exact pinnedSF19smallnet assets; FEN-only Hash16 Threads1, chronological whole-game search, depth14/movetime1000 plus original6-search confirmation allowance. No target-window shortcut as nativeflow.",
+    "caps": "Atmost1500baseline positions and1500recordedengine seconds across10games plus originalbounded confirmation. If incomplete, preserve results and mark release-domain coverage incomplete.",
+    "adapter_freeze": "Exact adapter and engine/NNUE/WASM hashes frozen separately before currentGameReview labels or freshengine runs; synthetic-onlysmoke allowed."
+  },
+  "root_authorization": {
+    "historical_gallery_nomination_collection": true,
+    "current_GameReview_labels": false,
+    "fresh_engines": false,
+    "classifier_tuning": false,
+    "merge_or_deploy": false
+  },
+  "resource_rule": "One ephemeral browsercollector while memorypressure elevated; no concurrent engines; close pergame tab aftersaving. Addcollectoronlywith measuredstablepressure and explicit rootGO."
+}

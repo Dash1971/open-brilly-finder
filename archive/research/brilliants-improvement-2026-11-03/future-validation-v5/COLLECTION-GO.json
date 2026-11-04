@@ -1,0 +1,33 @@
+{
+  "authorized_at_utc": "2026-11-03T10:21:03Z",
+  "recorded_at_utc": "2026-11-03T10:22:00Z",
+  "authorization_timing": "Root gave conditional GO before final freeze; it became effective when the reviewed queues were frozen at 10:21:03.327987 UTC.",
+  "authority": "Root review within the owner's existing authorization for additional research and false-award reduction; no new user permission requested.",
+  "queue_freeze_sha256": "3fa68a35d68e7d731720093fc31d9546e6455ba26bb1b6cf7e539357b5cc3fd6",
+  "final_queue_sha256": "b20729ae72052c19683f732f01daad696a5af6fdd29acc4b223867615051e74e",
+  "root_checks": {
+    "target_games": 100,
+    "per_account": 20,
+    "first_control_candidates": 100,
+    "ranked_controls_per_target": 4,
+    "previously_reviewed_games_excluded": 465,
+    "known_positions_excluded": 38214,
+    "target_or_control_old_position_overlaps": 0,
+    "target_game_duplicates": 0,
+    "target_before_position_and_move_duplicates": 0,
+    "fresh_review_observations_at_review": 0,
+    "frozen_extractor_dependency_hash_mismatches": 0
+  },
+  "collectors": {
+    "astra_offer_timing": ["nelsi", "Hikaru", "KNVB"],
+    "pilot_corpus": ["hansen", "GothamChess"]
+  },
+  "constraints": [
+    "Exactly 100 current Brilliants and 100 explicitly labeled non-Brilliants; 20 of each per account.",
+    "Use only the frozen target and reserve order, never model scores for selection.",
+    "Preserve changed gallery labels and Brilliant controls as secondary observations.",
+    "At most two simultaneous research tabs; fresh GameReview tab per game, save and close immediately.",
+    "Do not modify the frozen source, model, threshold, plan or queue after collection begins.",
+    "No engine scoring or model-result inspection until all 200 primary identities and labels are fixed and verified."
+  ]
+}

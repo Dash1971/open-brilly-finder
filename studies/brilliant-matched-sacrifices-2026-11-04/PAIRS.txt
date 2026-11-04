@@ -1,0 +1,341 @@
+Matched sacrifice cases: exploratory examples, not a validation set.
+Scores and gaps are centipawns in the candidate mover perspective.
+Material debt is relative to before the target move; negative means net material gained.
+The continuation begins with the opponent accepting the offer.
+
+PAIR 1 (existing-feature distance 0.031)
+  POSITIVE: 166122402690:37 Bxh6, labeled brilliant; nelsi rating 2481
+    Game: https://www.chess.com/game/live/166122402690
+    Before position FEN: r4rk1/1p4p1/p1n1bq1p/3npp2/2B5/2P2N2/PP1B2PP/3QRR1K w - - 2 19
+    Before cp -16; after cp -15; previous offer gain 0
+    If accepted: Qxh6 Bxd5 Rad8 Bxe6+ Qxe6 Qa4 e4 Ng5 Qd5 Rd1 Qb5 Qxb5
+    Value cp -18 / mate None; response gap cp 260; debt6 -90; debt12 -1090; first recoup ply 2
+  ORDINARY: 173774757032:28 Nxb4, labeled good; GothamChess rating 2858
+    Game: https://www.chess.com/game/live/173774757032
+    Before position FEN: r1bqr1k1/p4ppp/n1pb1n2/3p4/1P1P4/3BBP2/NPPQN1PP/2KRR3 b - - 0 14
+    Before cp -44; after cp -81; previous offer gain 0
+    If accepted: Nxb4 Bxb4 Qxb4 Rxe3 Nc3 Rxe1 Rxe1 Qb6 Qc5 Qxc5 dxc5 Kf8
+    Value cp -73 / mate None; response gap cp 72; debt6 -590; debt12 -90; first recoup ply 2
+
+PAIR 2 (existing-feature distance 0.041)
+  POSITIVE: 173661079138:26 Nxe5, labeled brilliant; Hikaru rating 3373
+    Game: https://www.chess.com/game/live/173661079138
+    Before position FEN: r1q1k1nr/ppp1ppb1/2n3p1/4P3/6b1/2N2NP1/PPP2PB1/R1BQR1K1 b kq - 0 13
+    Before cp 82; after cp 81; previous offer gain 0
+    If accepted: Nxe5 Bxd1 Nxd1 Kf8 Nc3 Rh5 Nd3 c6 Bd2 Nf6 Rad1 Nd5
+    Value cp 295 / mate None; response gap cp 281; debt6 -490; debt12 -490; first recoup ply 2
+  ORDINARY: 147329069640:16 Nxe5, labeled best; nelsi rating 2598
+    Game: https://www.chess.com/game/live/147329069640
+    Before position FEN: r2qk1nr/ppp2ppp/2n5/4P3/1bP3b1/2N1PN2/PP1B2PP/R2QKB1R b KQkq - 2 8
+    Before cp -30; after cp -29; previous offer gain 0
+    If accepted: Nxe5 Bxd1 Rxd1 Qe7 a3 Ba5 Nf3 c6 Bd3 Nf6
+    Value cp 392 / mate None; response gap cp 783; debt6 -490; debt12 None; first recoup ply 2
+
+PAIR 3 (existing-feature distance 0.044)
+  POSITIVE: 184653480432:30 Bxc2, labeled brilliant; GothamChess rating 2918
+    Game: https://www.chess.com/game/live/184653480432
+    Before position FEN: 3r1rk1/1pp2ppp/p1q1pn2/5b2/2BP4/P1B4P/1PP1QPP1/3R1RK1 b - - 2 15
+    Before cp 85; after cp 78; previous offer gain 0
+    If accepted: Qxc2 Qxc4 Rd3 Rd5 Re1 Rfd8 Rg3 h6 Qc1 Kh7 Qd1 Kh8
+    Value cp 178 / mate None; response gap cp 606; debt6 -90; debt12 -90; first recoup ply 2
+  ORDINARY: 173765223182:58 Nxb4, labeled good; poohineedyou rating 3001
+    Game: https://www.chess.com/game/live/173765223182
+    Before position FEN: 3r1k2/1b2qpn1/p1n3pp/1p2p3/1P2N2P/P3PN2/1Q3PP1/2R2BK1 b - - 1 29
+    Before cp -32; after cp -49; previous offer gain 0
+    If accepted: axb4 Bxe4 Nxe5 h5 g3 Qb7 Be2 Kg8 Bd1 Bd5 Bb3 Bxb3
+    Value cp -28 / mate None; response gap cp 326; debt6 0; debt12 -300; first recoup ply 2
+
+PAIR 4 (existing-feature distance 0.076)
+  POSITIVE: 173184879010:62 Bd4, labeled brilliant; Hikaru rating 3398
+    Game: https://www.chess.com/game/live/173184879010
+    Before position FEN: 5rk1/p1N2pbp/1p4p1/5n2/1P3P1q/r3BQ2/5P1P/1R1R2K1 b - - 1 31
+    Before cp 364; after cp 289; previous offer gain 0
+    If accepted: Bxd4 Rxf3 Bxb6 axb6 Rd2 Rxf4 Rb3 Rg4+ Kh1 Rd4 Rxd4 Qxd4
+    Value cp 686 / mate None; response gap cp 935; debt6 -1000; debt12 -1000; first recoup ply 2
+  ORDINARY: 166897350472:18 Nb4, labeled best; nelsi rating 2565
+    Game: https://www.chess.com/game/live/166897350472
+    Before position FEN: r2qkbnr/1ppb2pp/2n5/1Q1pp3/7P/2P2N2/P3PPP1/RNB1KB1R b KQkq - 0 9
+    Before cp 448; after cp 424; previous offer gain 0
+    If accepted: cxb4 Bxb5 Bd2 Nf6 Nc3 Bc4 Nxe5 Bxb4 Rb1 Bd6 Nxc4 dxc4
+    Value cp 587 / mate None; response gap cp 558; debt6 -700; debt12 -700; first recoup ply 2
+
+PAIR 5 (existing-feature distance 0.084)
+  POSITIVE: 167122315622:53 Qc7, labeled brilliant; nelsi rating 2574
+    Game: https://www.chess.com/game/live/167122315622
+    Before position FEN: r2r4/p2n2q1/k1p5/1p5p/2NP1Q1P/3B4/PPP2PP1/4R1K1 w - - 0 27
+    Before cp 507; after cp 511; previous offer gain 0
+    If accepted: bxc4 Bxc4#
+    Value cp None / mate 1; response gap cp None; debt6 210; debt12 210; first recoup ply None
+  ORDINARY: 172804595924:41 Rb1, labeled good; KNVB rating 3101
+    Game: https://www.chess.com/game/live/172804595924
+    Before position FEN: 2r3k1/3nbppp/p7/1qPpp3/N2P1B2/P3P3/2Q2PPP/2R3K1 w - - 0 21
+    Before cp 265; after cp 236; previous offer gain 0
+    If accepted: exf4 Rxb5 axb5 Nc3 Bxc5 Nxb5 fxe3 fxe3 Rc6 g4 Nf6 dxc5
+    Value cp 393 / mate None; response gap cp 261; debt6 -200; debt12 -500; first recoup ply 2
+
+PAIR 6 (existing-feature distance 0.089)
+  POSITIVE: 173532009624:45 Bxe5, labeled brilliant; Hikaru rating 3392
+    Game: https://www.chess.com/game/live/173532009624
+    Before position FEN: 1r1r4/2qB1pbk/bpp2n1p/4p3/4P3/1P3NP1/1BPQ1P1P/3RR1K1 w - - 1 23
+    Before cp 397; after cp 384; previous offer gain 0
+    If accepted: Qxd7 Qxd7 Rxd7 Bxb8 Rxd1 Rxd1 Be2 Rd3 Bxd3 cxd3 Nd7 Bd6
+    Value cp 390 / mate None; response gap cp 271; debt6 -290; debt12 -90; first recoup ply 2
+  ORDINARY: 166699653212:39 Bxf5, labeled excellent; nelsi rating 2567
+    Game: https://www.chess.com/game/live/166699653212
+    Before position FEN: r3rnk1/pbp5/1p2Nb1Q/5p2/6q1/2NB4/PPP2RPP/3R2K1 w - - 1 20
+    Before cp 526; after cp 430; previous offer gain 0
+    If accepted: Nxe6 Bh7+ Kh8 Bd3+ Kg8 Qh7+ Kf8 Rxf6#
+    Value cp None / mate 4; response gap cp None; debt6 210; debt12 -90; first recoup ply 8
+
+PAIR 7 (existing-feature distance 0.094)
+  POSITIVE: 168415989030:55 Nxc4, labeled brilliant; hansen rating 3087
+    Game: https://www.chess.com/game/live/168415989030
+    Before position FEN: 2r1r3/1b1q2bk/p2B2p1/1pP2p1p/1QpPp3/4P2P/3N1PP1/1R1R2K1 w - - 0 28
+    Before cp 253; after cp 249; previous offer gain 0
+    If accepted: bxc4 Qxb7 Qxb7 Rxb7 a5 Rc1 a4 Rxc4 Ra8 Rc2 Kg8 Ra2
+    Value cp 291 / mate None; response gap cp 365; debt6 -90; debt12 -180; first recoup ply 2
+  ORDINARY: 172312827850:23 Nxf7, labeled great; Hikaru rating 3435
+    Game: https://www.chess.com/game/live/172312827850
+    Before position FEN: r1bq1rk1/ppp2pbp/6p1/2pnN3/8/6P1/PP2PPBP/R1BQ1RK1 w - - 0 12
+    Before cp 162; after cp 197; previous offer gain 0
+    If accepted: Kxf7 Bxd5+ Ke8 Qa4+ Bd7 Qe4+ Qe7 Bxb7 Rb8 Be3 Bd4 Bxd4
+    Value cp 162 / mate None; response gap cp 154; debt6 -90; debt12 -480; first recoup ply 2
+
+PAIR 8 (existing-feature distance 0.096)
+  POSITIVE: 185229374468:26 Nxe4, labeled brilliant; KNVB rating 3142
+    Game: https://www.chess.com/game/live/185229374468
+    Before position FEN: r1bqr1k1/pp3pp1/2p2n1p/2b5/4P3/2PB1N2/PP3PPP/R1BQR1K1 b - - 2 13
+    Before cp -15; after cp -16; previous offer gain 0
+    If accepted: Bxe4 Qxd1 Rxd1 Rxe4 Rd8+ Kh7 Be3 Bxe3 fxe3 b6 Rad1 Re7
+    Value cp -18 / mate None; response gap cp 421; debt6 -90; debt12 -90; first recoup ply 2
+  ORDINARY: 184300109262:14 Nxg3, labeled great; GothamChess rating 2907
+    Game: https://www.chess.com/game/live/184300109262
+    Before position FEN: r1b1kb1r/pppp1ppp/4p3/3Pn3/2PQnP1q/6P1/PP5P/RNB1KBNR b KQkq - 0 7
+    Before cp -57; after cp -44; previous offer gain 0
+    If accepted: hxg3 Qxh1 fxe5 b6 Nh3 Bc5 Qg4 Bb7 Nc3 O-O-O Bf4 exd5
+    Value cp 29 / mate None; response gap cp 81; debt6 10; debt12 -80; first recoup ply 2
+
+PAIR 9 (existing-feature distance 0.099)
+  POSITIVE: 171472107788:38 Bb3, labeled brilliant; LionChessClub rating 2811
+    Game: https://www.chess.com/game/live/171472107788
+    Before position FEN: 3rr1k1/1ppq1pbp/4bnp1/pP6/P2N4/2NQPP2/1B4PP/2RR2K1 b - - 6 19
+    Before cp 45; after cp 23; previous offer gain 0
+    If accepted: Nxb3 Qxd3 Rxd3 Rxd3 Nxa5 Nd5 Nxd5 Bxb2 Rc2 Rxd5 Rxb2 b6
+    Value cp 298 / mate None; response gap cp 654; debt6 -110; debt12 -110; first recoup ply 2
+  ORDINARY: 166578129186:33 Nc7, labeled great; TranJMinh rating 3001
+    Game: https://www.chess.com/game/live/166578129186
+    Before position FEN: r2q1rk1/pp4bp/2n3p1/1N1bpp2/4n2N/4B1P1/PP2PPBP/R2Q1RK1 w - - 0 17
+    Before cp 146; after cp 135; previous offer gain 0
+    If accepted: Qxc7 Qxd5+ Qf7 Bxe4 fxe4 Qxe4 Nd4 Bxd4 exd4 Qd3 Rae8 Nf3
+    Value cp 110 / mate None; response gap cp 445; debt6 -90; debt12 -90; first recoup ply 2
+
+PAIR 10 (existing-feature distance 0.099)
+  POSITIVE: 170661862908:40 Nd3, labeled brilliant; SiddharthP_0403 rating 2438
+    Game: https://www.chess.com/game/live/170661862908
+    Before position FEN: 7R/1pk2ppp/8/2bpn1qn/B3P3/5b2/PP3PPP/R4QK1 b - - 0 20
+    Before cp 610; after cp 536; previous offer gain 0
+    If accepted: Qxd3 Qxg2#
+    Value cp None / mate 1; response gap cp None; debt6 210; debt12 210; first recoup ply None
+  ORDINARY: 184277876260:54 Ne3, labeled great; KNVB rating 2962
+    Game: https://www.chess.com/game/live/184277876260
+    Before position FEN: 2k5/2p2p2/1pb1pPr1/p2qB3/2nP2P1/2P5/P1P1Q1P1/R4RK1 b - - 0 27
+    Before cp -57; after cp -77; previous offer gain 0
+    If accepted: Qxe3 Qxg2#
+    Value cp None / mate 1; response gap cp None; debt6 210; debt12 210; first recoup ply None
+
+PAIR 11 (existing-feature distance 0.102)
+  POSITIVE: 167735024286:72 Qh3, labeled brilliant; hansen rating 3049
+    Game: https://www.chess.com/game/live/167735024286
+    Before position FEN: b1qbk3/R4p2/1B1p2r1/1R2p3/4P3/2N2P2/1PP3P1/6K1 b - - 5 36
+    Before cp 703; after cp 845; previous offer gain 0
+    If accepted: Rxa8 Qxg2#
+    Value cp None / mate 1; response gap cp None; debt6 210; debt12 210; first recoup ply None
+  ORDINARY: 172828071536:75 Qh6, labeled good; Hikaru rating 3453
+    Game: https://www.chess.com/game/live/172828071536
+    Before position FEN: 3R1bk1/p4p1p/5Pp1/4p3/P3P3/q1N1Q3/1r1NK1PP/8 w - - 10 38
+    Before cp 1081; after cp 747; previous offer gain 0
+    If accepted: Qxc3 Rxf8#
+    Value cp None / mate 1; response gap cp None; debt6 0; debt12 0; first recoup ply 2
+
+PAIR 12 (existing-feature distance 0.111)
+  POSITIVE: 172534191020:19 Nxe5, labeled brilliant; Hikaru rating 3443
+    Game: https://www.chess.com/game/live/172534191020
+    Before position FEN: r1bqr1k1/pppn1pbp/5np1/4p3/2P5/1P2PN2/PB2BPPP/RN1Q1RK1 w - - 0 10
+    Before cp 89; after cp 89; previous offer gain 0
+    If accepted: Nxe5 Qxd8 Rxd8 Bxe5 Bf5 Bf3 c6 Nc3 Nd7 Bxg7 Kxg7 Rfd1
+    Value cp 140 / mate None; response gap cp 486; debt6 -90; debt12 -90; first recoup ply 2
+  ORDINARY: 172399142014:58 Nxd5, labeled great; Hikaru rating 3455
+    Game: https://www.chess.com/game/live/172399142014
+    Before position FEN: 1rq1rnk1/2nb2b1/p4pp1/PpBPp1Pp/1R2P2P/2NB1PN1/2K1Q3/R7 b - - 0 29
+    Before cp 273; after cp 251; previous offer gain 0
+    If accepted: exd5 Qxc5 gxf6 Qxb4 fxg7 Kxg7 Qe4 Qc5 Kb2 b4 Nd1 Qg1
+    Value cp 252 / mate None; response gap cp 252; debt6 -290; debt12 -290; first recoup ply 2
+
+PAIR 13 (existing-feature distance 0.112)
+  POSITIVE: 184185752754:59 Rb7+, labeled brilliant; GothamChess rating 2949
+    Game: https://www.chess.com/game/live/184185752754
+    Before position FEN: 8/p1k2pp1/2pq4/6P1/3pPQ2/3P1K2/P1P4r/1R6 w - - 1 30
+    Before cp 696; after cp 607; previous offer gain 0
+    If accepted: Kxb7 Qxd6 Rh3+ Kg4 Rh1 Qd7+ Kb6 Qxd4+ c5 Qxg7 Rg1+ Kf3
+    Value cp 590 / mate None; response gap cp 1020; debt6 -500; debt12 -680; first recoup ply 2
+  ORDINARY: 173625605676:68 Rc1+, labeled great; advancedrook rating 3035
+    Game: https://www.chess.com/game/live/173625605676
+    Before position FEN: 6k1/p4p2/1b4p1/1P1q3p/2rPpB2/1Q2P2P/5PP1/1R4K1 b - - 2 34
+    Before cp -66; after cp -62; previous offer gain 0
+    If accepted: Rxc1 Qxb3 Bg5 f6 Bxf6 Qxb5 Rc8+ Kf7 Be5 Qb1+ Kh2 Ke6
+    Value cp 334 / mate None; response gap cp 1011; debt6 -500; debt12 -500; first recoup ply 2
+
+PAIR 14 (existing-feature distance 0.118)
+  POSITIVE: 168815996146:51 Nxd4, labeled brilliant; nelsi rating 2452
+    Game: https://www.chess.com/game/live/168815996146
+    Before position FEN: rr4k1/3n1pp1/2p2bp1/2P1p3/1P1pP3/3P2BP/4NPP1/R4RK1 w - - 1 26
+    Before cp 109; after cp 76; previous offer gain 0
+    If accepted: exd4 Bxb8 Rxb8 Ra4 Ne5 Rd1 g5 g3 Kh7 Kg2 Be7 Kf1
+    Value cp 88 / mate None; response gap cp 272; debt6 10; debt12 10; first recoup ply 2
+  ORDINARY: 174474699682:54 Nxb2, labeled best; KNVB rating 2986
+    Game: https://www.chess.com/game/live/174474699682
+    Before position FEN: 3r4/1p2kp1p/4b3/p5p1/n1PN1p2/5P2/PP1RBKPP/8 b - - 4 27
+    Before cp 76; after cp 59; previous offer gain 0
+    If accepted: Rxb2 Rxd4 Rxb7+ Kf6 Ke1 Bxc4 Bxc4 Rxc4 Rb6+ Ke7 Rb5 Ra4
+    Value cp 86 / mate None; response gap cp 503; debt6 -90; debt12 -90; first recoup ply 2
+
+PAIR 15 (existing-feature distance 0.124)
+  POSITIVE: 172914653473:86 Rxb3+, labeled brilliant; FabianoCaruana rating 3210
+    Game: https://www.chess.com/game/live/172914653473
+    Before position FEN: 6k1/5p2/p2p2p1/1r1n2P1/2P5/1P2BB2/1K6/8 b - - 0 43
+    Before cp 340; after cp 371; previous offer gain 0
+    If accepted: Kxb3 Nxe3 Bb7 a5 Ba6 Nf5 Ka4 Nd4 Kxa5 Ne6 Kb6 Kf8
+    Value cp 303 / mate None; response gap cp 665; debt6 110; debt12 200; first recoup ply None
+  ORDINARY: 184330910250:75 Rxe5, labeled great; KNVB rating 2992
+    Game: https://www.chess.com/game/live/184330910250
+    Before position FEN: 8/5kp1/r2pR3/p1pnp3/1p5P/5PP1/PPP4K/3R4 w - - 0 38
+    Before cp 297; after cp 298; previous offer gain 0
+    If accepted: dxe5 Rxd5 c4 Rc5 b3 cxb3 cxb3 axb3 Kf6 b4 a4 b5
+    Value cp 311 / mate None; response gap cp 651; debt6 20; debt12 20; first recoup ply None
+
+PAIR 16 (existing-feature distance 0.131)
+  POSITIVE: 181991300863:49 Nxb7, labeled brilliant; Hikaru rating 3387
+    Game: https://www.chess.com/game/live/181991300863
+    Before position FEN: 1r1r2k1/pp3p1p/2nN1ppb/8/2P2P2/1P2N1Pb/P3PK1P/3RR2B w - - 1 25
+    Before cp 388; after cp 392; previous offer gain 0
+    If accepted: Rxb7 Bxc6 Rbb8 Rxd8+ Rxd8 Bg2 Be6 Bd5 Bf8 Bxe6 fxe6 Rd1
+    Value cp 391 / mate None; response gap cp 130; debt6 -90; debt12 -90; first recoup ply 2
+  ORDINARY: 171805090202:89 Nxe6, labeled great; GothamChess rating 2977
+    Game: https://www.chess.com/game/live/171805090202
+    Before position FEN: 8/kr6/1q2p3/n2pPp2/Q2P1N1P/1P6/KP2B1P1/8 w - - 11 45
+    Before cp 237; after cp 233; previous offer gain 0
+    If accepted: Qxe6 Qxa5+ Kb8 Qd8+ Ka7 h5 Qc6 Bd3 Rg7 h6 Qxh6 Qxd5
+    Value cp 306 / mate None; response gap cp 72; debt6 -90; debt12 -90; first recoup ply 2
+
+PAIR 17 (existing-feature distance 0.144)
+  POSITIVE: 172256931994:52 Nxd4, labeled brilliant; Hikaru rating 3439
+    Game: https://www.chess.com/game/live/172256931994
+    Before position FEN: 2q2rk1/1p3pb1/r3n1p1/p2pBpPp/P2P3P/2PN1P2/1PQ5/3RR1K1 b - - 7 26
+    Before cp 122; after cp 123; previous offer gain 0
+    If accepted: Bxd4 Bxd4+ Kg2 Ba7 Qb3 Qc7 Qxd5 Rd6 Qb5 Rfd8 Re8+ Rxe8
+    Value cp 120 / mate None; response gap cp 556; debt6 -90; debt12 -500; first recoup ply 2
+  ORDINARY: 170804505058:23 Bxh5, labeled good; GothamChess rating 2882
+    Game: https://www.chess.com/game/live/170804505058
+    Before position FEN: r2qk2r/1p3pp1/p1nbbn2/2p1p1Bp/P2pP2P/N2P4/1PP1BPP1/R2QK1NR w KQkq - 4 12
+    Before cp -71; after cp -80; previous offer gain 0
+    If accepted: Rxh5 Bxf6 Qa5+ Kf1 Rh7 Bg5 f6 Nc4 Qc7 Nxd6+ Qxd6 Bd2
+    Value cp -88 / mate None; response gap cp 216; debt6 -90; debt12 -90; first recoup ply 2
+
+PAIR 18 (existing-feature distance 0.149)
+  POSITIVE: 166981885820:34 Bxb3, labeled brilliant; nelsi rating 2537
+    Game: https://www.chess.com/game/live/166981885820
+    Before position FEN: r4rk1/ppp2ppp/4p3/2B1P3/8/1PN4P/1P3PP1/3bR1K1 b - - 1 17
+    Before cp 351; after cp 365; previous offer gain 0
+    If accepted: Bxf8 Kxf8 Rc1 b6 Nb5 c5 Rc3 Bd5 f4 a5 h4 a4
+    Value cp 347 / mate None; response gap cp 39; debt6 110; debt12 110; first recoup ply None
+  ORDINARY: 169295732472:39 Qxh5, labeled best; LPhoangquan rating 2812
+    Game: https://www.chess.com/game/live/169295732472
+    Before position FEN: 2krr3/ppp2p2/2p5/2P3pp/3P4/1Pn1P2P/Pq1NQPP1/R2R2K1 w - - 4 20
+    Before cp 163; after cp 187; previous offer gain 0
+    If accepted: Nxd1 Qxd1 Qa3 Nc4 Qb4 Qg4+ Kb8 Qxg5 Qc3 Rf1 Qc2 Ne5
+    Value cp 225 / mate None; response gap cp 25; debt6 110; debt12 20; first recoup ply None
+
+PAIR 19 (existing-feature distance 0.159)
+  POSITIVE: 173720481882:31 Nxf7+, labeled brilliant; Hikaru rating 3383
+    Game: https://www.chess.com/game/live/173720481882
+    Before position FEN: r2q1r1k/pb1nbppp/1p2n2N/3p4/5BQ1/6P1/PP3PBP/RN3RK1 w - - 2 16
+    Before cp 26; after cp 26; previous offer gain 0
+    If accepted: Rxf7 Qxe6 Qe8 Nc3 Nc5 Qg4 d4 Bxb7 Nxb7 Nd5 Rd8 Qh5
+    Value cp 28 / mate None; response gap cp 500; debt6 -90; debt12 -90; first recoup ply 2
+  ORDINARY: 166508569726:24 Nxe2+, labeled best; hansen rating 3149
+    Game: https://www.chess.com/game/live/166508569726
+    Before position FEN: r1bqr1k1/ppp2ppp/1n3b2/1P6/3n4/P1N2NP1/3PPPBP/R1BQ1RK1 b - - 2 12
+    Before cp 93; after cp 122; previous offer gain 0
+    If accepted: Nxe2 Bxa1 d4 Qd5 a4 Qc4 Nf4 Bf5 Be3 Bb2 Ne5 Qxa4
+    Value cp 106 / mate None; response gap cp 288; debt6 -290; debt12 -380; first recoup ply 2
+
+PAIR 20 (existing-feature distance 0.159)
+  POSITIVE: 171728787528:43 Rxe5, labeled brilliant; hansen rating 3076
+    Game: https://www.chess.com/game/live/171728787528
+    Before position FEN: rn4k1/pp2q2p/4bp2/2PpbpB1/3N4/8/PPQ2PPP/R3R1K1 w - - 2 22
+    Before cp 575; after cp 592; previous offer gain 0
+    If accepted: fxe5 Bxe7 exd4 Qd2 Nd7 Bd6 Re8 Re1 f4 Qxd4 Bf7 Rxe8+
+    Value cp 671 / mate None; response gap cp 155; debt6 -500; debt12 -1090; first recoup ply 2
+  ORDINARY: 182338102719:54 Rxf4+, labeled best; amintabatabaei rating 3220
+    Game: https://www.chess.com/game/live/182338102719
+    Before position FEN: 4rk2/pp6/1n4Q1/5rN1/3p1P1K/3q4/PP6/R1B5 b - - 1 27
+    Before cp 641; after cp 644; previous offer gain 0
+    If accepted: Bxf4 Qxg6 Kg3 Nd5 Bd2 Ne3 Rg1 Qxg5+ Kf2 Qf4+ Ke2 Qh2+
+    Value cp 609 / mate None; response gap cp 1460; debt6 -590; debt12 -890; first recoup ply 2
+
+PAIR 21 (existing-feature distance 0.161)
+  POSITIVE: 183973291902:40 Nxe5, labeled brilliant; KNVB rating 3101
+    Game: https://www.chess.com/game/live/183973291902
+    Before position FEN: rq1r2k1/1b3pp1/p1nNp2p/1p1nP3/8/P4NP1/1P2QPBP/R3R1K1 b - - 3 20
+    Before cp 41; after cp 48; previous offer gain 0
+    If accepted: Nxe5 Qxd6 a4 b4 a5 Rac8 Rec1 b3 h4 Rc7 Rxc7 Qxc7
+    Value cp 82 / mate None; response gap cp 37; debt6 -90; debt12 -90; first recoup ply 2
+  ORDINARY: 171615877812:32 Bxf6, labeled best; dr_Strange013 rating 2935
+    Game: https://www.chess.com/game/live/171615877812
+    Before position FEN: r1b1r1k1/ppp1b3/2n2P2/3p4/3P4/2P5/P1P1N1PP/R1B2RK1 b - - 0 16
+    Before cp 176; after cp 184; previous offer gain 0
+    If accepted: Rxf6 Rxe2 Bh6 Bd7 Raf1 Rae8 h4 Re1 Rxe1 Rxe1+ Kf2 Ra1
+    Value cp 171 / mate None; response gap cp 427; debt6 -90; debt12 -90; first recoup ply 2
+
+PAIR 22 (existing-feature distance 0.167)
+  POSITIVE: 167744579866:37 Nf6+, labeled brilliant; hansen rating 3068
+    Game: https://www.chess.com/game/live/167744579866
+    Before position FEN: 4kb1r/r1pq1pp1/p1bpn2p/3N2BQ/1PB5/7P/P4PP1/2R1R1K1 w k - 0 19
+    Before cp 708; after cp 702; previous offer gain 0
+    If accepted: gxf6 Bxe6 Qe7 Bxf7+ Kd8 Rxe7 Bxe7 Be3 Rb7 Rxc6 Rxb4 Rc1
+    Value cp 701 / mate None; response gap cp 226; debt6 -1090; debt12 -800; first recoup ply 2
+  ORDINARY: 167245993920:25 Ne6, labeled best; hansen rating 3088
+    Game: https://www.chess.com/game/live/167245993920
+    Before position FEN: r2q1rk1/1b1nppb1/p2p2pn/2p3Np/PpBPP2P/4BP2/1PPQN1P1/R3K2R w KQ - 4 13
+    Before cp 154; after cp 98; previous offer gain 0
+    If accepted: fxe6 Bxh6 d5 Ba2 Qb6 Qg5 cxd4 Bxg7 Kxg7 O-O-O e5 Ng3
+    Value cp 120 / mate None; response gap cp 164; debt6 0; debt12 90; first recoup ply 2
+
+PAIR 23 (existing-feature distance 0.170)
+  POSITIVE: 173851185684:34 Nxe5, labeled brilliant; GothamChess rating 3036
+    Game: https://www.chess.com/game/live/173851185684
+    Before position FEN: 3q1knr/p1p1ppbp/1rnp2p1/3NP3/Q1P2B2/6P1/PP3P1P/R4RK1 b - - 1 17
+    Before cp 290; after cp 315; previous offer gain 0
+    If accepted: Nxb6 axb6 c5 bxc5 Rab1 Bf6 b4 Nf3+ Kg2 Nd4 Rfc1 Kg7
+    Value cp 365 / mate None; response gap cp 116; debt6 20; debt12 20; first recoup ply None
+  ORDINARY: 167275575688:60 hxg5, labeled excellent; hansen rating 3031
+    Game: https://www.chess.com/game/live/167275575688
+    Before position FEN: 3r2k1/5pp1/2p2q1p/4pPP1/1b2P2P/pP3N2/P1Br4/2Q2R1K b - - 0 30
+    Before cp 275; after cp 283; previous offer gain 200
+    If accepted: Nxd2 g4 Rf2 Qxh4+ Rh2 Qg5 Qe1 Rxd2 Qg3 Bc5 Rxd2 Qxd2
+    Value cp 382 / mate None; response gap cp 19; debt6 320; debt12 20; first recoup ply None
+
+PAIR 24 (existing-feature distance 0.178)
+  POSITIVE: 173628147512:111 Nd6+, labeled brilliant; KNVB rating 3161
+    Game: https://www.chess.com/game/live/173628147512
+    Before position FEN: 6r1/1p3k2/p3qb2/Pnp1p3/2N1Pp2/1QPP1P2/2KR4/6R1 w - - 3 56
+    Before cp 499; after cp 551; previous offer gain 0
+    If accepted: Nxd6 Qxe6+ Kxe6 Rxg8 Nf7 Rh2 Bd8 Rh7 Ke7 Kb2 Bc7 Ka2
+    Value cp 503 / mate None; response gap cp 688; debt6 -200; debt12 -200; first recoup ply 2
+  ORDINARY: 169084959468:69 Nd7+, labeled best; GothamChess rating 3042
+    Game: https://www.chess.com/game/live/169084959468
+    Before position FEN: 5k1r/q4p2/2p2Np1/1p2QbP1/5R1p/PB6/KPP3P1/3r4 w - - 3 35
+    Before cp None; after cp 704; previous offer gain 0
+    If accepted: Qxd7 Qxh8+ Ke7 Qf6+ Ke8 Rxh4 Qc7 Rh7 Rd5 Bxd5 cxd5 Qh8+
+    Value cp 660 / mate None; response gap cp 636; debt6 -290; debt12 -490; first recoup ply 2
+

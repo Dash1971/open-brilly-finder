@@ -1,0 +1,159 @@
+{
+  "audit_created_at_utc": "2026-11-03T14:09:58.793244+00:00",
+  "audit_scope": "Receipt of completed read-only audits; no new engine searches, classifier replay, tuning, or label collection.",
+  "source_freeze_sha256": "0f52334e2b730acf58a44785aa09b4bc8dbd3c8fd68ca57b4206a4efb300e9a8",
+  "adapter_freeze_sha256": "348be630ab83301a263dbd50cc1808b2c07acca158c13f196fb4be17d19308a1",
+  "frozen_primary_queue_sha256": "aeec043aa16b97000b4a8bc4d2f32b092e49c28a243f3b12f09bdfbf1054ca94",
+  "fresh_observations_sha256": "be459e8d565c74d001e24ca37eaf4d5b09aa9360bf1728f1110fb78ac58fbe15",
+  "result_sha256": "23f33e96191e29f568d3f3e02a68ae6f8fad58c93b4fac03afd40d549cd4570d",
+  "native_input_sha256": "28e8c2245e81603c57847bd8a0c8173d81442ee837c7ff77cd56d94b72e7af26",
+  "status": "complete",
+  "games": 10,
+  "classified_moves": 884,
+  "baseline_positions": 894,
+  "confirmation_requests": 8,
+  "total_requests": 902,
+  "terminal_reviews": 2,
+  "nonterminal_searches": 900,
+  "nonterminal_missing_previous_iteration": 0,
+  "engine_ms": 89245.02882400015,
+  "elapsed_ms": 92163,
+  "current_depth_counts": {
+    "14": 891,
+    "16": 8,
+    "99": 2,
+    "11": 1
+  },
+  "primary_overlap": {
+    "moves": 19,
+    "counts": {
+      "v7": {
+        "TP": 7,
+        "FN": 2,
+        "FP": 2,
+        "TN": 8
+      },
+      "v6": {
+        "TP": 7,
+        "FN": 2,
+        "FP": 2,
+        "TN": 8
+      },
+      "ec_direct": {
+        "TP": 0,
+        "FN": 9,
+        "FP": 0,
+        "TN": 10
+      }
+    }
+  },
+  "secondary_overlap": {
+    "moves": 2,
+    "counts": {
+      "v7": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 1,
+        "TN": 0
+      },
+      "v6": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 1,
+        "TN": 0
+      },
+      "ec_direct": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 0,
+        "TN": 1
+      }
+    }
+  },
+  "final_withheld_moves": 0,
+  "v7_v6_changed_symbols": 0,
+  "removed_false_awards": 0,
+  "lost_correct_awards": 0,
+  "history_status": {
+    "absent": 870,
+    "ineligible": 8,
+    "complete": 6
+  },
+  "recovery_status": {
+    "absent": 871,
+    "new-moved-offer": 6,
+    "ineligible": 7
+  },
+  "awarded_moves_with_incomplete_available_history": [],
+  "confirmation_decisions": [
+    {
+      "key": "167098915246:42",
+      "searches": 3,
+      "final_symbol": "!"
+    },
+    {
+      "key": "176114357797:43",
+      "searches": 2,
+      "final_symbol": ""
+    },
+    {
+      "key": "184151911979:66",
+      "searches": 3,
+      "final_symbol": "!"
+    }
+  ],
+  "provisional_brilliant_withdrawn_by_confirmation": [
+    "176114357797:43"
+  ],
+  "native_awards": 13,
+  "awards_labeled_at_audit": 11,
+  "awards_unlabeled_at_audit": [
+    {
+      "key": "185390631380:18",
+      "uci": "c8h3",
+      "san": "Bxh3"
+    },
+    {
+      "key": "173414561738:38",
+      "uci": "g7f6",
+      "san": "Bf6"
+    }
+  ],
+  "inventory_note": "Label availability is at the original audit, before any subsequent badge verification. Corrected SAN supplied from authoritative PGN database; earlier informal inferred SAN was erroneous.",
+  "provenance_limits": [
+    "Actual archived SF19 smallnet Balanced full-game classifier flow, FEN-only Hash16 Threads1, depth14/movetime1000; confirmation depth16 with unchanged six-search allowance.",
+    "V6 and EC are paired on evidence requested by v7, not independent full-game confirmation runs.",
+    "Ten frozen games are a small selected domain diagnostic; unlabeled plies are never counted as negatives.",
+    "No v7 recovery activation; this run does not demonstrate guard benefit."
+  ],
+  "supplementary_prediction_selected_award_audit": {
+    "completed_at_utc": "2026-11-03T14:10:52.350541+00:00",
+    "original_audit_file": "NATIVE10-AUDIT.original.json",
+    "original_audit_sha256": "513b08f1b768ae5ade646e86fb3934b3e47eb80c686d3f2c1e7eef73fd48dcd1",
+    "evidence_file": "evidence/native-award-audit.json",
+    "evidence_sha256": "2f11e24ef2c615213c38d59ea2059a8c2f26085c6b787c3098db4f1e5cdb1b99",
+    "new_labels": [
+      {
+        "key": "185390631380:18",
+        "san": "Bxh3",
+        "uci": "c8h3",
+        "label": "!!",
+        "captured_at": "2026-11-03T14:09:01.432Z",
+        "game_ply_uci_fen_and_rendered_board_verified": true
+      },
+      {
+        "key": "173414561738:38",
+        "san": "Bf6",
+        "uci": "g7f6",
+        "label": "good",
+        "captured_at": "2026-11-03T14:09:55.178Z",
+        "game_ply_uci_fen_and_rendered_board_verified": true
+      }
+    ],
+    "all_native_awards_verified": 13,
+    "matching_brilliant_awards": 9,
+    "false_awards": 4,
+    "unlabeled_awards_remaining": 0,
+    "scope": "Prediction-selected verification of every native award in the frozen10 games. Separate from primary19-move overlap and original secondary2. Not an unbiased population precision estimate; primary counts unchanged."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "scope": "Collector B Nelsi/Hikaru/KNVB only, fresh labels from frozen queue; no classifier outputs or engine jobs accessed during collection. Root owns gallery activation/import and final200 freeze.",
+  "completed_at_utc": "2026-11-03T10:39:27.544521+00:00",
+  "queue_sha256": "b20729ae72052c19683f732f01daad696a5af6fdd29acc4b223867615051e74e",
+  "accounts": {
+    "nelsi": {
+      "raw_records": 42,
+      "fresh_positive": 20,
+      "fresh_explicit_non_brilliant": 20,
+      "secondary": 2,
+      "secondary_roles": {
+        "gallery_review_disagreement": 2
+      },
+      "coach_completeness": {
+        "verified_visible_complete": 41,
+        "partial_or_unverified": 1
+      },
+      "games": 22,
+      "activated_positive_reserves": [
+        "167232570202:23",
+        "170815444900:33"
+      ],
+      "missing_identity_or_board": 0,
+      "duplicate_keys": 0,
+      "old848_key_overlap": 0,
+      "sha256": "8bd832eb77cb5af80428ed63383bfed91d5871c9daf84bca3b60d618ee026da1"
+    },
+    "hikaru": {
+      "raw_records": 45,
+      "fresh_positive": 20,
+      "fresh_explicit_non_brilliant": 20,
+      "secondary": 5,
+      "secondary_roles": {
+        "gallery_review_disagreement": 3,
+        "control_candidate_was_brilliant": 2
+      },
+      "coach_completeness": {
+        "verified_visible_complete": 45
+      },
+      "games": 23,
+      "activated_positive_reserves": [
+        "173719918770:71",
+        "182334502199:57",
+        "182335701261:21"
+      ],
+      "missing_identity_or_board": 0,
+      "duplicate_keys": 0,
+      "old848_key_overlap": 0,
+      "sha256": "251b8a9126474080ac192da80f9ae177fdb5ca42bc8333f7d8d854dd2158a64a"
+    },
+    "knvb": {
+      "raw_records": 41,
+      "fresh_positive": 20,
+      "fresh_explicit_non_brilliant": 20,
+      "secondary": 1,
+      "secondary_roles": {
+        "gallery_review_disagreement": 1
+      },
+      "coach_completeness": {
+        "verified_visible_complete": 41
+      },
+      "games": 21,
+      "activated_positive_reserves": [
+        "185703992543:36"
+      ],
+      "missing_identity_or_board": 0,
+      "duplicate_keys": 0,
+      "old848_key_overlap": 0,
+      "sha256": "71347dad5fa07fab11d43ea5111d87554809e9352e9cbb6d20c02151f11d4a6d"
+    }
+  },
+  "total_primary": 120,
+  "total_secondary": 8,
+  "total_raw": 128,
+  "own_open_review_tabs": 0,
+  "note": "Three early readiness timeouts were resolved by returning between game loads; every affected primary target was subsequently captured. Original errors retained, no target silently skipped. One early Nelsi coach explanation remains honestly flagged partial; no reopening requested."
+}

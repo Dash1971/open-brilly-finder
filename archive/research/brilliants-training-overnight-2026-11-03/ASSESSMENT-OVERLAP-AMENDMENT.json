@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-11-03T16:09:36.961935+00:00",
+  "authorized_by": "Root before any reserved model scoring",
+  "scope": "Target-level assessment exclusion only. Original whole-game split and all raw labels remain unchanged.",
+  "rule": "Reserved target before/after canonical first-four FENs must not match old reviewed full-game positions or ANY before/after position in a new training full PGN.",
+  "reason": "Avoid identical-position leakage through training engine context even if that training ply has no explicit label.",
+  "prediction_use": "None. No replacements, predictions, threshold fitting or whole-game opening exclusions.",
+  "training_batches": "Unchanged; previous frozen batches are preserved byte for byte.",
+  "importer_sha256": "3c994d71b1f1c5c8cc3b1b790f4911824a57648c2f052f0cf1912ffb0302ef90",
+  "counts_after_application": {
+    "assessment": 294,
+    "exclude_assessment_known_position": 11,
+    "exclude_assessment_training_overlap": 2,
+    "exclude_assessment_training_position": 0
+  },
+  "counts_at_utc": "2026-11-03T16:09:37.529131+00:00"
+}

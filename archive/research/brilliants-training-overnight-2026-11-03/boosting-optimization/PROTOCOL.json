@@ -1,0 +1,72 @@
+{
+  "created_at_utc": "2026-11-03T22:21:08.274439+00:00",
+  "scope": "Separate fixed sequential-reweighting experiment; no seen654 or old-results reads; original kernels/models unchanged",
+  "input_path": "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json",
+  "input_sha256": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+  "kernel_sha256": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f",
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "final_selection_folds": 5,
+  "cutoffs": [
+    0.5,
+    0.6,
+    0.7,
+    0.75,
+    0.8,
+    0.8333333333333334,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "trees": 64,
+  "predictors": 150,
+  "seed": 20261103,
+  "grouping": "Existing whole-game/identical-before union components; both windows linked; deterministic salted SHA256 group sort then round-robin folds; common bootstrap RNG across costs",
+  "selection": "MaxTP with FP<=min(referenceFP,floor(.005*N_non_easy_negatives)),TP>=referenceTP,TP>0. Ties fewerFP/highercutoff/highercost. If none feasible select cost5/cutoff5/6 reference and explicit no qualifying improvement.",
+  "reference": "Cost5/cutoff5/6 retrained on same folds, no deployed-model training leakage",
+  "guards": "Both-window eligibility+confidence+physicalUnknown abstention for all forest predictions. Easy-error negatives separate; legacy_mixed treated as hard.",
+  "final_selection": "Independent fixed5fold OOF on all frozen training only; not chosen using outer results. Fullfit once at selectedcost, separate threshold config.",
+  "limits": {
+    "wall_seconds": 600,
+    "cpu_seconds": 600,
+    "rss_bytes": 536870912,
+    "memory_pressure_required": 1,
+    "processes": 1,
+    "no_partial_winner": true,
+    "no_automatic_retry": true
+  },
+  "start": "Root GO hashes input/script/protocol; browser tabs closed; no active stockfish; no fit before GO",
+  "capacity_source_sha256": "4aefb35307853d707f5aac869bac8ce3e0db9706ec92017316341778643d3ae2",
+  "configs": [
+    {
+      "profile": "boosting",
+      "kind": "boosting",
+      "depth": 2,
+      "minleaf": 8,
+      "mtry": 24,
+      "cost": 1
+    },
+    {
+      "profile": "reference",
+      "kind": "forest",
+      "depth": 6,
+      "minleaf": 8,
+      "mtry": 12,
+      "cost": 5
+    }
+  ],
+  "boosting": {
+    "rounds_max": 64,
+    "shrinkage": 0.5,
+    "initial_weights": "Each eligible move total1 divided equally over its available eligible windows, normalized across training windows; initialclasscost1",
+    "resampling": "None; train only eligible windows from inner/outer training groups",
+    "weak_prediction": "Signed weighted leaf majority; ties negative. Weighted counts from unchanged Tree leaf.",
+    "error": "Weighted binary misclassification fraction. If >=.5 reject learner and terminate. If exactly0 accept clipped finite-alpha learner then terminate. Else continue to64.",
+    "alpha": "0.5(shrinkage)*0.5*ln((1-e)/e), eclipped[1e-12,1-1e-12]",
+    "weight_update": "w*=exp(-alpha*y*h), renormalize",
+    "score": "sum(alpha*positivevote)/sum(alpha); no accepted learners =>0(abstain at all gridcutoffs)",
+    "randomness": "Same fixed fold salts as prior experiments; round-specific RNG seed independent of labels; no bootstrap"
+  },
+  "ties": "TP, fewerFP, highercutoff, highercost, then lowerdepth/higherminleaf/lowermtry",
+  "inference": "score_model(model,case,cutoff) in frozen optimize-boosting.py; features/weights only, no labels. Forest fallback exports original features+trees schema unchanged; boost exports kind,features,learners(alpha,tree),score metadata. Cutoff is separate."
+}

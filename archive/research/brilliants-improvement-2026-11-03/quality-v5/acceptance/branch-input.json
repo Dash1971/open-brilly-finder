@@ -1,0 +1,4812 @@
+{
+  "generated_at": "2026-11-03T08:41:51.228Z",
+  "scope": "Twenty matched development cases. Selection supplied by parent; labels are not read or used by scoring/preparation.",
+  "source_sha256": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301",
+  "selection_sha256": "b44bb4f94c9f2052f23c4d311816f5613fac128c5e8b73f5851e3be0e184a225",
+  "baseline_analysis_sha256": "d8833860a3f7f5aec1c7817c3203a10af500044e885efc364e9d03626fc3655b",
+  "acceptance_limit": 3,
+  "acceptance_order": "UCI ascending",
+  "raw_offer_definition": "Exact frozen legal same-square exchange, credit+100 threshold; acceptance net includes promotion.",
+  "cases": [
+    {
+      "key": "169827191694:67",
+      "game_id": "169827191694",
+      "ply": 67,
+      "san": "Rh1",
+      "uci": "f1h1",
+      "fen_before": "2r1r2k/1b2PQp1/p6q/3p2p1/4p3/1NpB4/P1P5/1K1R1R2 w - - 0 34",
+      "fen_after": "2r1r2k/1b2PQp1/p6q/3p2p1/4p3/1NpB4/P1P5/1K1R3R b - - 1 34",
+      "pgn_sha256": "aa1ad5afd3fae4465ed5fbbc0c788a42e8279d6e9f67b5bed727425ba3862b76",
+      "mover": "white",
+      "raw_material_before": 30,
+      "raw_material_after": 30,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "e4d3",
+          "fen": "2r1r2k/1b2PQp1/p6q/3p2p1/8/1Npp4/P1P5/1K1R3R w - - 0 35",
+          "capturer": "pawn",
+          "victim": "bishop",
+          "offered_square": "d3",
+          "credit": 0,
+          "net_exchange_gain": 210,
+          "raw_material_after_acceptance": -270
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "d3e2",
+        "f7f8"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 27,
+          "lines": [
+            {
+              "mate": 9,
+              "moves": [
+                "f1h1",
+                "e8e7",
+                "h1h6",
+                "g7h6",
+                "f7e7",
+                "c8c7",
+                "e7d8",
+                "h8g7",
+                "d8c7",
+                "g7g6",
+                "d1f1",
+                "g6h5",
+                "d3e2",
+                "g5g4",
+                "c7g7",
+                "h5h4",
+                "g7g4"
+              ]
+            },
+            {
+              "mate": 11,
+              "moves": [
+                "d3e4",
+                "d5e4",
+                "f1h1",
+                "h6h4",
+                "h1h4",
+                "g5h4",
+                "d1h1",
+                "g7g5",
+                "f7f6",
+                "h8g8",
+                "f6g6",
+                "g8h8",
+                "g6g5",
+                "e8e7",
+                "h1h4",
+                "e7h7",
+                "g5f6",
+                "h8g8",
+                "h4g4",
+                "h7g7",
+                "f6g7"
+              ]
+            }
+          ],
+          "reported_nodes": 257965
+        },
+        "previous": {
+          "depth": 26,
+          "lines": [
+            {
+              "mate": 11,
+              "moves": [
+                "d3e4",
+                "d5e4",
+                "f1h1",
+                "h6h4",
+                "h1h4",
+                "g5h4",
+                "d1h1",
+                "g7g5",
+                "f7f6",
+                "h8g8",
+                "f6g6",
+                "g8h8",
+                "g6g5",
+                "e8e7",
+                "h1h4",
+                "e7h7",
+                "g5f6",
+                "h8g8",
+                "h4g4",
+                "h7g7",
+                "f6g7"
+              ]
+            },
+            {
+              "mate": 11,
+              "moves": [
+                "f1h1",
+                "e8e7",
+                "h1h6",
+                "g7h6",
+                "f7e7",
+                "c8c7",
+                "e7d8",
+                "h8g7",
+                "d8c7",
+                "g7g6",
+                "d1f1",
+                "g6h5",
+                "c7f7",
+                "h5h4",
+                "f7f2",
+                "h4h5",
+                "d3e2",
+                "g5g4",
+                "f2f5",
+                "h5h4",
+                "f5g4"
+              ]
+            }
+          ],
+          "reported_nodes": 200234
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.175932,
+        "game_id": "169827191694",
+        "position_ply": 66,
+        "fen": "2r1r2k/1b2PQp1/p6q/3p2p1/4p3/1NpB4/P1P5/1K1R1R2 w - - 0 34",
+        "pgn_sha256": "aa1ad5afd3fae4465ed5fbbc0c788a42e8279d6e9f67b5bed727425ba3862b76",
+        "ec_material": 30
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 32,
+          "lines": [
+            {
+              "mate": 8,
+              "moves": [
+                "e8e7",
+                "h1h6",
+                "g7h6",
+                "f7e7",
+                "c8c7",
+                "e7d8",
+                "h8g7",
+                "d8c7",
+                "g7g6",
+                "d1f1",
+                "g6h5",
+                "d3e2",
+                "g5g4",
+                "c7g7",
+                "h5h4",
+                "g7g4"
+              ]
+            },
+            {
+              "mate": 6,
+              "moves": [
+                "h6h4",
+                "h1h4",
+                "g5h4",
+                "d1g1",
+                "e8e7",
+                "f7e7",
+                "c8c7",
+                "e7c7",
+                "g7g5",
+                "g1g5",
+                "e4d3",
+                "c7g7"
+              ]
+            }
+          ],
+          "reported_nodes": 264674
+        },
+        "previous": {
+          "depth": 31,
+          "lines": [
+            {
+              "mate": 8,
+              "moves": [
+                "e8e7",
+                "h1h6",
+                "g7h6",
+                "f7e7",
+                "c8c7",
+                "e7d8",
+                "h8g7",
+                "d8c7",
+                "g7g6",
+                "d1f1",
+                "g6h5",
+                "d3e2",
+                "g5g4",
+                "c7g7",
+                "h5h4",
+                "g7g4"
+              ]
+            },
+            {
+              "mate": 6,
+              "moves": [
+                "h6h4",
+                "h1h4",
+                "g5h4",
+                "d1g1",
+                "e8e7",
+                "f7e7",
+                "c8c7",
+                "e7c7",
+                "g7g5",
+                "g1g5",
+                "e4d3",
+                "c7g7"
+              ]
+            }
+          ],
+          "reported_nodes": 169925
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.175879,
+        "game_id": "169827191694",
+        "position_ply": 67,
+        "fen": "2r1r2k/1b2PQp1/p6q/3p2p1/4p3/1NpB4/P1P5/1K1R3R b - - 1 34",
+        "pgn_sha256": "aa1ad5afd3fae4465ed5fbbc0c788a42e8279d6e9f67b5bed727425ba3862b76",
+        "ec_material": -320
+      }
+    },
+    {
+      "key": "185032708726:33",
+      "game_id": "185032708726",
+      "ply": 33,
+      "san": "Bxd5",
+      "uci": "f3d5",
+      "fen_before": "6rr/1p1bkp2/p1nbpq2/3p1p2/3P3P/P1N1PBPN/1P3P2/2RQK2R w K - 3 17",
+      "fen_after": "6rr/1p1bkp2/p1nbpq2/3B1p2/3P3P/P1N1P1PN/1P3P2/2RQK2R b K - 0 17",
+      "pgn_sha256": "984b312ba9a63b0b1d2d6d6c415d527ebf361e928e4a54a39e5dcd0f75b96bf9",
+      "mover": "white",
+      "raw_material_before": 90,
+      "raw_material_after": 180,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "e6d5",
+          "fen": "6rr/1p1bkp2/p1nb1q2/3p1p2/3P3P/P1N1P1PN/1P3P2/2RQK2R w K - 0 18",
+          "capturer": "pawn",
+          "victim": "bishop",
+          "offered_square": "d5",
+          "credit": 90,
+          "net_exchange_gain": 210,
+          "raw_material_after_acceptance": -120
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "a3a4",
+        "b2b3",
+        "b2b4",
+        "c1a1",
+        "c1b1",
+        "c1c2",
+        "c3a2",
+        "c3a4",
+        "c3b1",
+        "c3e2",
+        "d1a4",
+        "d1b3",
+        "d1c2",
+        "d1d2",
+        "d1d3",
+        "d1e2",
+        "e1d2",
+        "e1e2",
+        "e1f1",
+        "e1g1",
+        "e3e4",
+        "f3e2",
+        "f3g2",
+        "f3h5",
+        "g3g4",
+        "h1f1",
+        "h1g1",
+        "h1h2",
+        "h3f4",
+        "h3g1",
+        "h3g5",
+        "h4h5"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 16,
+          "lines": [
+            {
+              "cp": 218,
+              "moves": [
+                "f3d5",
+                "f6h6",
+                "d5c6",
+                "d7c6",
+                "d4d5",
+                "c6d7",
+                "d5e6",
+                "f7e6",
+                "h1g1",
+                "d7c6",
+                "h3g5",
+                "d6e5",
+                "d1b3",
+                "g8g5",
+                "h4g5",
+                "h6g5",
+                "c3e2",
+                "g5g7",
+                "b3b4",
+                "e5d6"
+              ]
+            },
+            {
+              "cp": 123,
+              "moves": [
+                "c3e2",
+                "e7f8",
+                "d1b3",
+                "b7b5",
+                "h3f4",
+                "f6d8",
+                "e1f1",
+                "c6a5",
+                "b3d1",
+                "a5c4"
+              ]
+            }
+          ],
+          "reported_nodes": 234214
+        },
+        "previous": {
+          "depth": 15,
+          "lines": [
+            {
+              "cp": 217,
+              "moves": [
+                "f3d5",
+                "f6h6",
+                "d5c6",
+                "d7c6",
+                "d4d5",
+                "c6e8",
+                "d5e6",
+                "f7e6",
+                "h1g1",
+                "e8h5",
+                "c3e2",
+                "h5f3"
+              ]
+            },
+            {
+              "cp": 145,
+              "moves": [
+                "e1f1",
+                "f6h6",
+                "d1d2",
+                "g8c8",
+                "b2b4",
+                "c6a7",
+                "f1g2",
+                "c8g8",
+                "h3f4"
+              ]
+            }
+          ],
+          "reported_nodes": 151980
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.394528,
+        "game_id": "185032708726",
+        "position_ply": 32,
+        "fen": "6rr/1p1bkp2/p1nbpq2/3p1p2/3P3P/P1N1PBPN/1P3P2/2RQK2R w K - 3 17",
+        "pgn_sha256": "984b312ba9a63b0b1d2d6d6c415d527ebf361e928e4a54a39e5dcd0f75b96bf9",
+        "ec_material": 90
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 16,
+          "lines": [
+            {
+              "cp": 205,
+              "moves": [
+                "f6h6",
+                "d5c6",
+                "d7c6",
+                "d4d5",
+                "c6d7",
+                "d5e6",
+                "f7e6",
+                "h1g1",
+                "g8c8",
+                "h3g5",
+                "h6f6",
+                "d1b3",
+                "b7b5",
+                "f2f4",
+                "a6a5",
+                "e1f2",
+                "a5a4",
+                "b3a2",
+                "b5b4",
+                "a3b4",
+                "d6b4",
+                "g1d1",
+                "h8d8",
+                "d1d3"
+              ]
+            },
+            {
+              "cp": 225,
+              "moves": [
+                "b7b5",
+                "d5g2",
+                "g8c8",
+                "f2f4",
+                "c6a5",
+                "e1g1",
+                "f6h6",
+                "d1e2",
+                "a5c4"
+              ]
+            }
+          ],
+          "reported_nodes": 300269
+        },
+        "previous": {
+          "depth": 15,
+          "lines": [
+            {
+              "cp": 205,
+              "moves": [
+                "f6h6",
+                "d5c6",
+                "d7c6",
+                "d4d5",
+                "c6d7",
+                "d5e6",
+                "f7e6",
+                "h1g1",
+                "g8c8",
+                "h3g5",
+                "h6f6",
+                "d1b3",
+                "b7b5",
+                "f2f4",
+                "a6a5",
+                "e1f2",
+                "a5a4",
+                "b3a2",
+                "b5b4",
+                "a3b4",
+                "d6b4",
+                "g1d1",
+                "h8d8",
+                "d1d3"
+              ]
+            },
+            {
+              "cp": 225,
+              "moves": [
+                "b7b5",
+                "d5g2",
+                "g8c8",
+                "f2f4",
+                "c6a5",
+                "e1g1",
+                "f6h6",
+                "d1e2",
+                "a5c4"
+              ]
+            }
+          ],
+          "reported_nodes": 280551
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.355741,
+        "game_id": "185032708726",
+        "position_ply": 33,
+        "fen": "6rr/1p1bkp2/p1nbpq2/3B1p2/3P3P/P1N1P1PN/1P3P2/2RQK2R b K - 0 17",
+        "pgn_sha256": "984b312ba9a63b0b1d2d6d6c415d527ebf361e928e4a54a39e5dcd0f75b96bf9",
+        "ec_material": 30
+      }
+    },
+    {
+      "key": "173084454389:59",
+      "game_id": "173084454389",
+      "ply": 59,
+      "san": "Bc5",
+      "uci": "a7c5",
+      "fen_before": "B4k2/B3R1b1/4pNp1/4n2p/2p5/6Pb/P3qP2/1R4K1 w - - 1 30",
+      "fen_after": "B4k2/4R1b1/4pNp1/2B1n2p/2p5/6Pb/P3qP2/1R4K1 b - - 2 30",
+      "pgn_sha256": "886aab635f8670909da0772938ca456dd762fcb20048d550348457b5caecf544",
+      "mover": "white",
+      "raw_material_before": -90,
+      "raw_material_after": -90,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "g7f6",
+          "fen": "B4k2/4R3/4pbp1/2B1n2p/2p5/6Pb/P3qP2/1R4K1 w - - 0 31",
+          "capturer": "bishop",
+          "victim": "knight",
+          "offered_square": "f6",
+          "credit": 0,
+          "net_exchange_gain": 300,
+          "raw_material_after_acceptance": -390
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "e7e8"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 17,
+          "lines": [
+            {
+              "cp": 755,
+              "moves": [
+                "e7c7",
+                "e2e1",
+                "b1e1",
+                "g7f6",
+                "e1b1",
+                "f8e8",
+                "b1b8",
+                "f6d8",
+                "a7c5",
+                "e5d7",
+                "a8c6",
+                "e6e5",
+                "g1h2",
+                "h3f5",
+                "c5b4",
+                "e5e4",
+                "c6d7",
+                "f5d7",
+                "c7c4"
+              ]
+            },
+            {
+              "cp": 592,
+              "moves": [
+                "a7c5",
+                "e2f2",
+                "g1f2",
+                "e5d3",
+                "f2g1",
+                "d3c5",
+                "e7c7",
+                "c5a6",
+                "f6d7",
+                "f8e7",
+                "c7c4",
+                "g7h6",
+                "g1h2",
+                "h3f5",
+                "b1b7",
+                "h6e3",
+                "d7b8",
+                "e7f6",
+                "b8a6",
+                "f5d3",
+                "c4c3",
+                "d3e4",
+                "c3e3"
+              ]
+            }
+          ],
+          "reported_nodes": 300080
+        },
+        "previous": {
+          "depth": 16,
+          "lines": [
+            {
+              "cp": 755,
+              "moves": [
+                "e7c7",
+                "e2e1",
+                "b1e1",
+                "g7f6",
+                "e1b1",
+                "f8e8",
+                "b1b8",
+                "f6d8",
+                "a7c5",
+                "e5d7",
+                "a8c6",
+                "e6e5",
+                "g1h2",
+                "h3f5",
+                "c5b4",
+                "e5e4",
+                "c6d7",
+                "f5d7",
+                "c7c4"
+              ]
+            },
+            {
+              "cp": 592,
+              "moves": [
+                "a7c5",
+                "e2f2",
+                "g1f2",
+                "e5d3",
+                "f2g1",
+                "d3c5",
+                "e7c7",
+                "c5a6",
+                "f6d7",
+                "f8e7",
+                "c7c4",
+                "g7h6",
+                "g1h2",
+                "h3f5",
+                "b1b7",
+                "h6e3",
+                "d7b8",
+                "e7f6",
+                "b8a6",
+                "f5d3",
+                "c4c3",
+                "d3e4",
+                "c3e3"
+              ]
+            }
+          ],
+          "reported_nodes": 236324
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.159098,
+        "game_id": "173084454389",
+        "position_ply": 58,
+        "fen": "B4k2/B3R1b1/4pNp1/4n2p/2p5/6Pb/P3qP2/1R4K1 w - - 1 30",
+        "pgn_sha256": "886aab635f8670909da0772938ca456dd762fcb20048d550348457b5caecf544",
+        "ec_material": -90
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": 630,
+              "moves": [
+                "e2f2",
+                "g1f2",
+                "e5d3",
+                "f2g1",
+                "d3c5",
+                "e7c7",
+                "c5b3",
+                "a2b3",
+                "h3f5",
+                "f6e4",
+                "g7e5",
+                "c7c4",
+                "f5e4",
+                "c4e4",
+                "e5g3"
+              ]
+            },
+            {
+              "cp": 726,
+              "moves": [
+                "e2f1",
+                "b1f1",
+                "e5d3",
+                "f6d7",
+                "f8g8",
+                "f1b1",
+                "d3c5",
+                "d7c5",
+                "c4c3",
+                "b1b8",
+                "g8h7",
+                "c5b3",
+                "h3f5",
+                "e7c7",
+                "c3c2"
+              ]
+            }
+          ],
+          "reported_nodes": 235648
+        },
+        "previous": {
+          "depth": 13,
+          "lines": [
+            {
+              "cp": 627,
+              "moves": [
+                "e2f2",
+                "g1f2",
+                "e5d3",
+                "f2g1",
+                "d3c5",
+                "e7c7",
+                "c5b3",
+                "a2b3",
+                "h3f5",
+                "f6e4",
+                "g7d4",
+                "g1h1",
+                "f5e4",
+                "a8e4",
+                "c4b3",
+                "e4g6",
+                "f8g8",
+                "c7d7"
+              ]
+            },
+            {
+              "cp": 720,
+              "moves": [
+                "e2f1",
+                "b1f1",
+                "g7f6",
+                "e7a7",
+                "f8g8",
+                "f1b1",
+                "e5f7",
+                "b1b8",
+                "g8g7",
+                "b8b7",
+                "g6g5",
+                "b7f7",
+                "g7g6",
+                "a8e4"
+              ]
+            }
+          ],
+          "reported_nodes": 55138
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.123598,
+        "game_id": "173084454389",
+        "position_ply": 59,
+        "fen": "B4k2/4R1b1/4pNp1/2B1n2p/2p5/6Pb/P3qP2/1R4K1 b - - 2 30",
+        "pgn_sha256": "886aab635f8670909da0772938ca456dd762fcb20048d550348457b5caecf544",
+        "ec_material": 300
+      }
+    },
+    {
+      "key": "174490497572:26",
+      "game_id": "174490497572",
+      "ply": 26,
+      "san": "Nxb4",
+      "uci": "d5b4",
+      "fen_before": "2kr3r/ppp3pp/8/2bnnp2/1P6/2P4P/P3BPP1/RNBR2K1 b - - 0 13",
+      "fen_after": "2kr3r/ppp3pp/8/2b1np2/1n6/2P4P/P3BPP1/RNBR2K1 w - - 0 14",
+      "pgn_sha256": "1b6dc88a42e4c94dee79b86ab5407a44643d1168a8ed94af02593317597999c5",
+      "mover": "black",
+      "raw_material_before": 0,
+      "raw_material_after": 90,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "c3b4",
+          "fen": "2kr3r/ppp3pp/8/2b1np2/1P6/7P/P3BPP1/RNBR2K1 b - - 0 14",
+          "capturer": "pawn",
+          "victim": "knight",
+          "offered_square": "b4",
+          "credit": 90,
+          "net_exchange_gain": 210,
+          "raw_material_after_acceptance": -210
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "c5b6",
+        "c5e7",
+        "c5f8"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 15,
+          "lines": [
+            {
+              "cp": -19,
+              "moves": [
+                "c5b6",
+                "g1f1",
+                "h8e8",
+                "a2a3",
+                "f5f4",
+                "a1a2",
+                "c7c6",
+                "d1e1",
+                "f4f3",
+                "g2f3",
+                "e8f8",
+                "c3c4",
+                "d5f4",
+                "c4c5",
+                "b6c7"
+              ]
+            },
+            {
+              "cp": -14,
+              "moves": [
+                "c5e7",
+                "a2a3",
+                "f5f4",
+                "c3c4",
+                "f4f3",
+                "g2f3",
+                "d5b6",
+                "b1d2",
+                "e5c4",
+                "d2c4",
+                "d8d1",
+                "e2d1",
+                "b6c4",
+                "f3f4",
+                "c8b8"
+              ]
+            }
+          ],
+          "reported_nodes": 268548
+        },
+        "previous": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": -17,
+              "moves": [
+                "c5b6",
+                "g1f1",
+                "h8e8",
+                "a2a3",
+                "f5f4",
+                "a1a2",
+                "c7c6",
+                "a2c2",
+                "f4f3",
+                "g2f3",
+                "e8f8",
+                "c1g5",
+                "d8d7",
+                "c3c4",
+                "d5f4",
+                "d1d7",
+                "c8d7",
+                "g5f4",
+                "f8f4",
+                "b1d2",
+                "f4d4",
+                "d2b3",
+                "d4h4",
+                "c2d2",
+                "d7c8",
+                "c4c5",
+                "b6d8"
+              ]
+            },
+            {
+              "cp": -16,
+              "moves": [
+                "c5e7",
+                "a2a3",
+                "f5f4",
+                "c3c4",
+                "f4f3",
+                "g2f3",
+                "d5b6",
+                "c4c5",
+                "d8d1",
+                "e2d1",
+                "b6d5",
+                "a1a2",
+                "h8d8",
+                "c1d2",
+                "e5d3",
+                "b1c3",
+                "d5f4",
+                "g1h2",
+                "e7f6"
+              ]
+            }
+          ],
+          "reported_nodes": 223219
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.471059,
+        "game_id": "174490497572",
+        "position_ply": 25,
+        "fen": "2kr3r/ppp3pp/8/2bnnp2/1P6/2P4P/P3BPP1/RNBR2K1 b - - 0 13",
+        "pgn_sha256": "1b6dc88a42e4c94dee79b86ab5407a44643d1168a8ed94af02593317597999c5",
+        "ec_material": 0
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": -71,
+              "moves": [
+                "d1d8",
+                "h8d8",
+                "c3b4",
+                "c5d4",
+                "b1c3",
+                "d4c3",
+                "a1b1",
+                "a7a6",
+                "b1b3",
+                "c3d4",
+                "a2a4",
+                "c7c6",
+                "g1h1"
+              ]
+            },
+            {
+              "cp": -76,
+              "moves": [
+                "c3b4",
+                "d8d1",
+                "e2d1",
+                "c5d4",
+                "b1c3",
+                "d4c3",
+                "a1b1",
+                "b7b5",
+                "c1e3",
+                "e5c4",
+                "b1b3",
+                "c4e3",
+                "f2e3",
+                "c3e5",
+                "d1f3",
+                "h8d8",
+                "b3a3",
+                "d8d2",
+                "a3a7",
+                "e5g3",
+                "a7a3"
+              ]
+            }
+          ],
+          "reported_nodes": 247810
+        },
+        "previous": {
+          "depth": 13,
+          "lines": [
+            {
+              "cp": -52,
+              "moves": [
+                "d1d8",
+                "h8d8",
+                "c3b4",
+                "c5d4",
+                "b1c3",
+                "d4c3",
+                "a1b1",
+                "a7a6",
+                "b1b3",
+                "c3d4",
+                "a2a4",
+                "c7c6",
+                "g2g4",
+                "f5g4",
+                "h3g4",
+                "b7b5",
+                "a4b5",
+                "a6b5"
+              ]
+            },
+            {
+              "cp": -77,
+              "moves": [
+                "c3b4",
+                "d8d1",
+                "e2d1",
+                "c5d4",
+                "b1c3",
+                "d4c3",
+                "a1b1",
+                "b7b5",
+                "a2a4",
+                "h8e8",
+                "d1c2",
+                "g7g6",
+                "a4b5",
+                "e5c4",
+                "c2b3"
+              ]
+            }
+          ],
+          "reported_nodes": 145242
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.312278,
+        "game_id": "174490497572",
+        "position_ply": 26,
+        "fen": "2kr3r/ppp3pp/8/2b1np2/1n6/2P4P/P3BPP1/RNBR2K1 w - - 0 14",
+        "pgn_sha256": "1b6dc88a42e4c94dee79b86ab5407a44643d1168a8ed94af02593317597999c5",
+        "ec_material": 120
+      }
+    },
+    {
+      "key": "174425603426:123",
+      "game_id": "174425603426",
+      "ply": 123,
+      "san": "Rxh2",
+      "uci": "h8h2",
+      "fen_before": "7R/8/p2P4/4p3/4PpP1/2P2Pk1/3K2bp/8 w - - 2 62",
+      "fen_after": "8/8/p2P4/4p3/4PpP1/2P2Pk1/3K2bR/8 b - - 0 62",
+      "pgn_sha256": "182bc208db76a7787b9d4ee8e3d5d00dda23fcfe9acb9b43e7b5b28478b17cfd",
+      "mover": "white",
+      "raw_material_before": 290,
+      "raw_material_after": 380,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "g3h2",
+          "fen": "8/8/p2P4/4p3/4PpP1/2P2P2/3K2bk/8 w - - 0 63",
+          "capturer": "king",
+          "victim": "rook",
+          "offered_square": "h2",
+          "credit": 90,
+          "net_exchange_gain": 500,
+          "raw_material_after_acceptance": -120
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "c3c4",
+        "d2c1",
+        "d2c2",
+        "d2d1",
+        "d2d3",
+        "d2e1",
+        "d2e2",
+        "d6d7",
+        "g4g5",
+        "h8a8",
+        "h8b8",
+        "h8c8",
+        "h8d8",
+        "h8e8",
+        "h8f8",
+        "h8g8",
+        "h8h5",
+        "h8h6",
+        "h8h7"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 13,
+          "lines": [
+            {
+              "cp": 569,
+              "moves": [
+                "h8h2",
+                "g3h2",
+                "d6d7",
+                "a6a5",
+                "g4g5",
+                "a5a4",
+                "d7d8q",
+                "a4a3",
+                "d8a5",
+                "h2g3",
+                "g5g6"
+              ]
+            },
+            {
+              "cp": 496,
+              "moves": [
+                "d6d7",
+                "g2h3",
+                "d7d8q",
+                "h2h1q",
+                "d8h4",
+                "g3f3",
+                "h4h3",
+                "h1h3",
+                "h8h3",
+                "f3e4",
+                "h3h5",
+                "a6a5",
+                "h5h1",
+                "a5a4",
+                "g4g5",
+                "e4f5",
+                "h1g1",
+                "f4f3",
+                "g5g6",
+                "f3f2",
+                "g1a1"
+              ]
+            }
+          ],
+          "reported_nodes": 56448
+        },
+        "previous": {
+          "depth": 12,
+          "lines": [
+            {
+              "cp": 561,
+              "moves": [
+                "h8h2",
+                "g3h2",
+                "d6d7",
+                "g2f3",
+                "d7d8q",
+                "h2g2",
+                "d8h4",
+                "f3e4"
+              ]
+            },
+            {
+              "cp": 490,
+              "moves": [
+                "d6d7",
+                "g2h3",
+                "d7d8q",
+                "h2h1q",
+                "d8h4",
+                "g3f3",
+                "h4h3",
+                "h1h3",
+                "h8h3",
+                "f3e4",
+                "h3h5"
+              ]
+            }
+          ],
+          "reported_nodes": 32209
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.104269,
+        "game_id": "174425603426",
+        "position_ply": 122,
+        "fen": "7R/8/p2P4/4p3/4PpP1/2P2Pk1/3K2bp/8 w - - 2 62",
+        "pgn_sha256": "182bc208db76a7787b9d4ee8e3d5d00dda23fcfe9acb9b43e7b5b28478b17cfd",
+        "ec_material": 200
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": 598,
+              "moves": [
+                "g3h2",
+                "d6d7",
+                "a6a5",
+                "g4g5",
+                "g2f3",
+                "d7d8q",
+                "f3h5",
+                "g5g6",
+                "h5g6",
+                "d8d6",
+                "g6e4",
+                "d6e5",
+                "h2g3",
+                "e5e4",
+                "f4f3",
+                "e4e5",
+                "g3h3"
+              ]
+            },
+            {
+              "cp": 599,
+              "moves": [
+                "g2f3",
+                "d6d7",
+                "g3h2",
+                "d7d8q",
+                "h2g1",
+                "d8h4",
+                "f3e4"
+              ]
+            }
+          ],
+          "reported_nodes": 300129
+        },
+        "previous": {
+          "depth": 13,
+          "lines": [
+            {
+              "cp": 598,
+              "moves": [
+                "g3h2",
+                "d6d7",
+                "a6a5",
+                "g4g5",
+                "g2f3",
+                "d7d8q",
+                "f3h5",
+                "g5g6",
+                "h5g6",
+                "d8d6",
+                "g6e4",
+                "d6e5",
+                "h2g3",
+                "e5e4",
+                "f4f3",
+                "e4e5",
+                "g3h3"
+              ]
+            },
+            {
+              "cp": 599,
+              "moves": [
+                "g2f3",
+                "d6d7",
+                "g3h2",
+                "d7d8q",
+                "h2g1",
+                "d8h4",
+                "f3e4"
+              ]
+            }
+          ],
+          "reported_nodes": 160689
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.096735,
+        "game_id": "174425603426",
+        "position_ply": 123,
+        "fen": "8/8/p2P4/4p3/4PpP1/2P2Pk1/3K2bR/8 b - - 0 62",
+        "pgn_sha256": "182bc208db76a7787b9d4ee8e3d5d00dda23fcfe9acb9b43e7b5b28478b17cfd",
+        "ec_material": 120
+      }
+    },
+    {
+      "key": "171487603906:78",
+      "game_id": "171487603906",
+      "ply": 78,
+      "san": "Rxf2+",
+      "uci": "c2f2",
+      "fen_before": "2r3k1/5p1p/1p4p1/p2R4/5QB1/1P4P1/Pqr2PKP/8 b - - 17 39",
+      "fen_after": "2r3k1/5p1p/1p4p1/p2R4/5QB1/1P4P1/Pq3rKP/8 w - - 0 40",
+      "pgn_sha256": "87d26653ff825f6955a4a30614fe1ec1aa8f4c180388726183dae4e4be009ae3",
+      "mover": "black",
+      "raw_material_before": 200,
+      "raw_material_after": 290,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "f4f2",
+          "fen": "2r3k1/5p1p/1p4p1/p2R4/6B1/1P4P1/Pq3QKP/8 b - - 0 40",
+          "capturer": "queen",
+          "victim": "rook",
+          "offered_square": "f2",
+          "credit": 90,
+          "net_exchange_gain": 500,
+          "raw_material_after_acceptance": -210
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "c8a8",
+        "c8c3",
+        "c8c5",
+        "c8c6",
+        "c8c7",
+        "c8e8",
+        "c8f8",
+        "f7f5"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 15,
+          "lines": [
+            {
+              "cp": -490,
+              "moves": [
+                "c2f2",
+                "f4f2",
+                "c8c2",
+                "f2c2",
+                "b2c2",
+                "g2g1",
+                "g8g7",
+                "g4f3",
+                "c2b1",
+                "f3d1",
+                "b1a2",
+                "d5d7",
+                "g7g8"
+              ]
+            },
+            {
+              "cp": -251,
+              "moves": [
+                "c8e8",
+                "d5d7",
+                "e8f8",
+                "d7d6",
+                "b2c3",
+                "a2a4",
+                "c3c5",
+                "d6f6",
+                "b6b5",
+                "g4d1",
+                "c5d5",
+                "d1f3",
+                "d5b3"
+              ]
+            }
+          ],
+          "reported_nodes": 300318
+        },
+        "previous": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": -490,
+              "moves": [
+                "c2f2",
+                "f4f2",
+                "c8c2",
+                "f2c2",
+                "b2c2",
+                "g2g1",
+                "g8g7",
+                "g4f3",
+                "c2b1",
+                "f3d1",
+                "b1a2",
+                "d5d7",
+                "g7g8"
+              ]
+            },
+            {
+              "cp": -251,
+              "moves": [
+                "c8e8",
+                "d5d7",
+                "e8f8",
+                "d7d6",
+                "b2c3",
+                "a2a4",
+                "c3c5",
+                "d6f6",
+                "b6b5",
+                "g4d1",
+                "c5d5",
+                "d1f3",
+                "d5b3"
+              ]
+            }
+          ],
+          "reported_nodes": 270781
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.29899,
+        "game_id": "171487603906",
+        "position_ply": 77,
+        "fen": "2r3k1/5p1p/1p4p1/p2R4/5QB1/1P4P1/Pqr2PKP/8 b - - 17 39",
+        "pgn_sha256": "87d26653ff825f6955a4a30614fe1ec1aa8f4c180388726183dae4e4be009ae3",
+        "ec_material": 200
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": -482,
+              "moves": [
+                "f4f2",
+                "c8c2",
+                "f2c2",
+                "b2c2",
+                "g2g1",
+                "g8g7",
+                "d5d7",
+                "c2b1",
+                "g4d1",
+                "b1a2",
+                "h2h4",
+                "a2b1"
+              ]
+            },
+            {
+              "cp": -825,
+              "moves": [
+                "g2g1",
+                "f2f4",
+                "g3f4",
+                "c8c1",
+                "d5d1",
+                "c1d1",
+                "g4d1",
+                "b2a1",
+                "h2h3",
+                "g8g7"
+              ]
+            }
+          ],
+          "reported_nodes": 300274
+        },
+        "previous": {
+          "depth": 13,
+          "lines": [
+            {
+              "cp": -482,
+              "moves": [
+                "f4f2",
+                "c8c2",
+                "f2c2",
+                "b2c2",
+                "g2g1",
+                "g8g7",
+                "d5d7",
+                "c2b1",
+                "g4d1",
+                "b1a2",
+                "h2h4",
+                "a2b1"
+              ]
+            },
+            {
+              "cp": -825,
+              "moves": [
+                "g2g1",
+                "f2f4",
+                "g3f4",
+                "c8c1",
+                "d5d1",
+                "c1d1",
+                "g4d1",
+                "b2a1",
+                "h2h3",
+                "g8g7"
+              ]
+            }
+          ],
+          "reported_nodes": 147996
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.300884,
+        "game_id": "171487603906",
+        "position_ply": 78,
+        "fen": "2r3k1/5p1p/1p4p1/p2R4/5QB1/1P4P1/Pq3rKP/8 w - - 0 40",
+        "pgn_sha256": "87d26653ff825f6955a4a30614fe1ec1aa8f4c180388726183dae4e4be009ae3",
+        "ec_material": 210
+      }
+    },
+    {
+      "key": "175936156661:48",
+      "game_id": "175936156661",
+      "ply": 48,
+      "san": "gxf4",
+      "uci": "g5f4",
+      "fen_before": "3r2k1/pp2Bp1p/8/4b1p1/2b2N2/2Pp1RP1/P2P3P/7K b - - 1 24",
+      "fen_after": "3r2k1/pp2Bp1p/8/4b3/2b2p2/2Pp1RP1/P2P3P/7K w - - 0 25",
+      "pgn_sha256": "9f40bca527bb59f8df21f689aa4c68b163f618b66d30775496f154aaa6120963",
+      "mover": "black",
+      "raw_material_before": 90,
+      "raw_material_after": 390,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "e7d8",
+          "fen": "3B2k1/pp3p1p/8/4b3/2b2p2/2Pp1RP1/P2P3P/7K b - - 0 25",
+          "capturer": "bishop",
+          "victim": "rook",
+          "offered_square": "d8",
+          "credit": 300,
+          "net_exchange_gain": 500,
+          "raw_material_after_acceptance": -110
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "d8a8",
+        "d8b8",
+        "d8c8",
+        "d8d7",
+        "d8e8"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 17,
+          "lines": [
+            {
+              "cp": -466,
+              "moves": [
+                "g5f4",
+                "e7d8",
+                "c4d5",
+                "h1g2",
+                "e5c3",
+                "d8g5",
+                "c3d2",
+                "g2f2",
+                "d5f3",
+                "f2f3",
+                "g8g7",
+                "g5f4",
+                "d2f4",
+                "g3f4",
+                "g7g6",
+                "h2h3"
+              ]
+            },
+            {
+              "cp": -370,
+              "moves": [
+                "d8e8",
+                "e7g5",
+                "e5c3",
+                "f3f2",
+                "e8e1",
+                "h1g2",
+                "c3d4",
+                "f2f1",
+                "e1f1",
+                "g2f1",
+                "c4a2",
+                "f4d3",
+                "a7a5",
+                "g5e3",
+                "d4e3",
+                "d2e3",
+                "a2c4",
+                "f1e2",
+                "c4d3",
+                "e2d3",
+                "g8g7"
+              ]
+            }
+          ],
+          "reported_nodes": 300219
+        },
+        "previous": {
+          "depth": 16,
+          "lines": [
+            {
+              "cp": -466,
+              "moves": [
+                "g5f4",
+                "e7d8",
+                "c4d5",
+                "h1g2",
+                "e5c3",
+                "d8g5",
+                "c3d2",
+                "g2f2",
+                "d5f3",
+                "f2f3",
+                "g8g7",
+                "g5f4",
+                "d2f4",
+                "g3f4",
+                "g7g6",
+                "h2h3"
+              ]
+            },
+            {
+              "cp": -370,
+              "moves": [
+                "d8e8",
+                "e7g5",
+                "e5c3",
+                "f3f2",
+                "e8e1",
+                "h1g2",
+                "c3d4",
+                "f2f1",
+                "e1f1",
+                "g2f1",
+                "c4a2",
+                "f4d3",
+                "a7a5",
+                "g5e3",
+                "d4e3",
+                "d2e3",
+                "a2c4",
+                "f1e2",
+                "c4d3",
+                "e2d3",
+                "g8g7"
+              ]
+            }
+          ],
+          "reported_nodes": 275667
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.188592,
+        "game_id": "175936156661",
+        "position_ply": 47,
+        "fen": "3r2k1/pp2Bp1p/8/4b1p1/2b2N2/2Pp1RP1/P2P3P/7K b - - 1 24",
+        "pgn_sha256": "9f40bca527bb59f8df21f689aa4c68b163f618b66d30775496f154aaa6120963",
+        "ec_material": 90
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 15,
+          "lines": [
+            {
+              "cp": -488,
+              "moves": [
+                "e7d8",
+                "c4d5",
+                "h1g2",
+                "e5c3",
+                "d8g5",
+                "c3d2",
+                "g2f2",
+                "d5f3",
+                "f2f3",
+                "g8g7",
+                "g5f4",
+                "d2f4",
+                "g3f4",
+                "h7h6"
+              ]
+            },
+            {
+              "cp": -541,
+              "moves": [
+                "h1g1",
+                "f4g3",
+                "h2g3",
+                "d8e8",
+                "e7f6",
+                "e5f6",
+                "f3f6",
+                "h7h5",
+                "f6d6",
+                "g8h7",
+                "d6d4",
+                "c4a2",
+                "c3c4"
+              ]
+            }
+          ],
+          "reported_nodes": 300163
+        },
+        "previous": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": -488,
+              "moves": [
+                "e7d8",
+                "c4d5",
+                "h1g2",
+                "e5c3",
+                "d8g5",
+                "c3d2",
+                "g2f2",
+                "d5f3",
+                "f2f3",
+                "g8g7",
+                "g5f4",
+                "d2f4",
+                "g3f4",
+                "h7h6"
+              ]
+            },
+            {
+              "cp": -541,
+              "moves": [
+                "h1g1",
+                "f4g3",
+                "h2g3",
+                "d8e8",
+                "e7f6",
+                "e5f6",
+                "f3f6",
+                "h7h5",
+                "f6d6",
+                "g8h7",
+                "d6d4",
+                "c4a2",
+                "c3c4"
+              ]
+            }
+          ],
+          "reported_nodes": 260082
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.146602,
+        "game_id": "175936156661",
+        "position_ply": 48,
+        "fen": "3r2k1/pp2Bp1p/8/4b3/2b2p2/2Pp1RP1/P2P3P/7K w - - 0 25",
+        "pgn_sha256": "9f40bca527bb59f8df21f689aa4c68b163f618b66d30775496f154aaa6120963",
+        "ec_material": 110
+      }
+    },
+    {
+      "key": "184777814198:66",
+      "game_id": "184777814198",
+      "ply": 66,
+      "san": "b3",
+      "uci": "b4b3",
+      "fen_before": "5rk1/2b3pp/2P2p2/2B1p3/1p6/2pP2P1/5P1P/3R2K1 b - - 1 33",
+      "fen_after": "5rk1/2b3pp/2P2p2/2B1p3/8/1ppP2P1/5P1P/3R2K1 w - - 0 34",
+      "pgn_sha256": "fa86969747a65f2a5de55f735120b5379888820ace0e495540bfffa2338b3562",
+      "mover": "black",
+      "raw_material_before": 90,
+      "raw_material_after": 90,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "c5f8",
+          "fen": "5Bk1/2b3pp/2P2p2/4p3/8/1ppP2P1/5P1P/3R2K1 b - - 0 34",
+          "capturer": "bishop",
+          "victim": "rook",
+          "offered_square": "f8",
+          "credit": 0,
+          "net_exchange_gain": 200,
+          "raw_material_after_acceptance": -410
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "f8a8",
+        "f8b8",
+        "f8c8",
+        "f8d8",
+        "f8e8",
+        "f8f7"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 17,
+          "lines": [
+            {
+              "cp": -628,
+              "moves": [
+                "b4b3",
+                "g1g2",
+                "c3c2",
+                "d1c1",
+                "b3b2",
+                "c1c2",
+                "b2b1q",
+                "c2c3",
+                "f8a8",
+                "c5a3",
+                "h7h5",
+                "c3c1",
+                "b1a2",
+                "a3b4",
+                "a2d5",
+                "g2g1",
+                "d5d3",
+                "b4c5"
+              ]
+            },
+            {
+              "cp": -547,
+              "moves": [
+                "c3c2",
+                "d1c1",
+                "b4b3",
+                "c5a3",
+                "f8a8",
+                "a3b2",
+                "a8a2",
+                "b2c3",
+                "b3b2",
+                "c3b2",
+                "a2b2",
+                "g1g2",
+                "g8f7",
+                "g2f3",
+                "f7e6",
+                "f3e2",
+                "e6d6",
+                "e2d2",
+                "c7a5",
+                "d2e2",
+                "d6c6"
+              ]
+            }
+          ],
+          "reported_nodes": 300253
+        },
+        "previous": {
+          "depth": 16,
+          "lines": [
+            {
+              "cp": -628,
+              "moves": [
+                "b4b3",
+                "g1g2",
+                "c3c2",
+                "d1c1",
+                "b3b2",
+                "c1c2",
+                "b2b1q",
+                "c2c3",
+                "f8a8",
+                "c5a3",
+                "h7h5",
+                "c3c1",
+                "b1a2",
+                "a3b4",
+                "a2d5",
+                "g2g1",
+                "d5d3",
+                "b4c5"
+              ]
+            },
+            {
+              "cp": -547,
+              "moves": [
+                "c3c2",
+                "d1c1",
+                "b4b3",
+                "c5a3",
+                "f8a8",
+                "a3b2",
+                "a8a2",
+                "b2c3",
+                "b3b2",
+                "c3b2",
+                "a2b2",
+                "g1g2",
+                "g8f7",
+                "g2f3",
+                "f7e6",
+                "f3e2",
+                "e6d6",
+                "e2d2",
+                "c7a5",
+                "d2e2",
+                "d6c6"
+              ]
+            }
+          ],
+          "reported_nodes": 246143
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.135276,
+        "game_id": "184777814198",
+        "position_ply": 65,
+        "fen": "5rk1/2b3pp/2P2p2/2B1p3/1p6/2pP2P1/5P1P/3R2K1 b - - 1 33",
+        "pgn_sha256": "fa86969747a65f2a5de55f735120b5379888820ace0e495540bfffa2338b3562",
+        "ec_material": 90
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": -648,
+              "moves": [
+                "c5f8",
+                "c3c2",
+                "d1c1",
+                "g8f8",
+                "g1g2",
+                "b3b2",
+                "c1c2",
+                "b2b1q",
+                "c2c3",
+                "b1b5",
+                "g2g1",
+                "f8e8",
+                "c3a3",
+                "b5c6",
+                "a3a7",
+                "c6c1",
+                "g1g2",
+                "e8d7",
+                "a7a6",
+                "c1c2",
+                "a6a7",
+                "c2c6",
+                "g2g1"
+              ]
+            },
+            {
+              "cp": -704,
+              "moves": [
+                "g1g2",
+                "c3c2",
+                "d1c1",
+                "b3b2",
+                "c1c2",
+                "b2b1q",
+                "c2c3",
+                "f8a8",
+                "c5a3",
+                "b1a2",
+                "a3c1",
+                "a2d5",
+                "g2f1",
+                "a8a1",
+                "f1e2",
+                "d5a2",
+                "c1d2",
+                "a2b1",
+                "c3c1",
+                "b1c1",
+                "d2c1",
+                "a1c1",
+                "e2e3",
+                "c7b6",
+                "e3e4",
+                "c1c6"
+              ]
+            }
+          ],
+          "reported_nodes": 300002
+        },
+        "previous": {
+          "depth": 13,
+          "lines": [
+            {
+              "cp": -605,
+              "moves": [
+                "g1g2",
+                "c3c2",
+                "d1c1",
+                "b3b2",
+                "c1c2",
+                "b2b1q",
+                "c2c3",
+                "f8a8",
+                "c5a3",
+                "b1a2",
+                "a3c1",
+                "a2d5",
+                "g2g1",
+                "a8a1",
+                "g3g4",
+                "h7h5",
+                "g4h5",
+                "d5a2"
+              ]
+            },
+            {
+              "cp": -621,
+              "moves": [
+                "d1c1",
+                "b3b2",
+                "c1c3",
+                "b2b1q",
+                "g1g2",
+                "f8a8",
+                "c5a3",
+                "b1b8",
+                "a3c5",
+                "a8a1",
+                "c3a3",
+                "a1a3",
+                "c5a3",
+                "h7h5"
+              ]
+            }
+          ],
+          "reported_nodes": 80192
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.114845,
+        "game_id": "184777814198",
+        "position_ply": 66,
+        "fen": "5rk1/2b3pp/2P2p2/2B1p3/8/1ppP2P1/5P1P/3R2K1 w - - 0 34",
+        "pgn_sha256": "fa86969747a65f2a5de55f735120b5379888820ace0e495540bfffa2338b3562",
+        "ec_material": 110
+      }
+    },
+    {
+      "key": "178360672165:63",
+      "game_id": "178360672165",
+      "ply": 63,
+      "san": "Nxh6+",
+      "uci": "f7h6",
+      "fen_before": "2q1r1k1/2r2Np1/6np/1p1pP2N/p1nP3b/P6P/1P3RP1/R1BQ2K1 w - - 1 32",
+      "fen_after": "2q1r1k1/2r3p1/6nN/1p1pP2N/p1nP3b/P6P/1P3RP1/R1BQ2K1 b - - 0 32",
+      "pgn_sha256": "5e646899f47daf3943385b53f0778c0e7d60593ac549c15ae8929e9f56eb534f",
+      "mover": "white",
+      "raw_material_before": 90,
+      "raw_material_after": 180,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "g7h6",
+          "fen": "2q1r1k1/2r5/6np/1p1pP2N/p1nP3b/P6P/1P3RP1/R1BQ2K1 w - - 0 33",
+          "capturer": "pawn",
+          "victim": "knight",
+          "offered_square": "h6",
+          "credit": 90,
+          "net_exchange_gain": 210,
+          "raw_material_after_acceptance": -120
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [],
+      "baseline_before": {
+        "current": {
+          "depth": 13,
+          "lines": [
+            {
+              "cp": -31,
+              "moves": [
+                "f7h6",
+                "g7h6",
+                "h5f6",
+                "h4f6",
+                "f2f6",
+                "e8e6",
+                "f6f2",
+                "g6h8",
+                "b2b3",
+                "a4b3",
+                "d1b3"
+              ]
+            },
+            {
+              "cp": -67,
+              "moves": [
+                "g2g3",
+                "c7f7",
+                "f2f7",
+                "g8f7",
+                "d1f3",
+                "f7g8",
+                "g3h4",
+                "c8e6",
+                "c1h6",
+                "g6e5",
+                "d4e5",
+                "e6h6",
+                "f3d5",
+                "g8h8",
+                "e5e6",
+                "h6e6",
+                "d5e6",
+                "e8e6",
+                "h5f4",
+                "e6e4",
+                "f4g6",
+                "h8g8"
+              ]
+            }
+          ],
+          "reported_nodes": 283055
+        },
+        "previous": {
+          "depth": 12,
+          "lines": [
+            {
+              "cp": 0,
+              "moves": [
+                "f7h6",
+                "g7h6",
+                "h5f6",
+                "h4f6",
+                "f2f6",
+                "e8e6",
+                "d1h5",
+                "c4e5",
+                "f6e6",
+                "c7c1",
+                "g1h2",
+                "c1a1",
+                "e6g6",
+                "e5g6",
+                "h5g6",
+                "g8h8",
+                "g6h6",
+                "h8g8"
+              ]
+            },
+            {
+              "cp": -63,
+              "moves": [
+                "g2g3",
+                "c7f7",
+                "f2f7",
+                "g8f7",
+                "d1f3",
+                "f7g8",
+                "g3h4",
+                "c8e6",
+                "f3g4",
+                "e6g4",
+                "h3g4",
+                "g8f8"
+              ]
+            }
+          ],
+          "reported_nodes": 77673
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.262684,
+        "game_id": "178360672165",
+        "position_ply": 62,
+        "fen": "2q1r1k1/2r2Np1/6np/1p1pP2N/p1nP3b/P6P/1P3RP1/R1BQ2K1 w - - 1 32",
+        "pgn_sha256": "5e646899f47daf3943385b53f0778c0e7d60593ac549c15ae8929e9f56eb534f",
+        "ec_material": 0
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": -44,
+              "moves": [
+                "g7h6",
+                "f2f6",
+                "e8e6",
+                "f6f1",
+                "c8e8",
+                "c1h6",
+                "g8h7",
+                "h6f4",
+                "g6f4",
+                "h5f4",
+                "e6h6",
+                "f4d5",
+                "c7g7",
+                "d1e2",
+                "e8c6",
+                "e2e4",
+                "c6g6",
+                "f1f4",
+                "g6e4",
+                "f4e4",
+                "c4d2"
+              ]
+            },
+            {
+              "cp": 157,
+              "moves": [
+                "g8h8",
+                "g2g3",
+                "g7h6",
+                "g3h4",
+                "c8h3",
+                "d1f3",
+                "h3f3",
+                "f2f3",
+                "e8g8",
+                "g1f1",
+                "g6h4",
+                "f3f2",
+                "c4a5",
+                "c1e3",
+                "a5c4",
+                "f1e2",
+                "c4e3",
+                "e2e3"
+              ]
+            }
+          ],
+          "reported_nodes": 231020
+        },
+        "previous": {
+          "depth": 13,
+          "lines": [
+            {
+              "cp": -34,
+              "moves": [
+                "g7h6",
+                "h5f6",
+                "h4f6",
+                "f2f6",
+                "e8e6",
+                "f6f2",
+                "g6h8",
+                "b2b3",
+                "c4b6",
+                "c1f4",
+                "e6g6",
+                "d1d3",
+                "c7f7",
+                "a1c1"
+              ]
+            },
+            {
+              "cp": 150,
+              "moves": [
+                "g8h8",
+                "g2g3",
+                "g7h6",
+                "g3h4",
+                "c8h3",
+                "f2h2",
+                "h3f5",
+                "h5f6",
+                "g6f4",
+                "c1f4",
+                "c7g7",
+                "g1h1",
+                "f5f4"
+              ]
+            }
+          ],
+          "reported_nodes": 47355
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.306906,
+        "game_id": "178360672165",
+        "position_ply": 63,
+        "fen": "2q1r1k1/2r3p1/6nN/1p1pP2N/p1nP3b/P6P/1P3RP1/R1BQ2K1 b - - 0 32",
+        "pgn_sha256": "5e646899f47daf3943385b53f0778c0e7d60593ac549c15ae8929e9f56eb534f",
+        "ec_material": 120
+      }
+    },
+    {
+      "key": "184512046868:24",
+      "game_id": "184512046868",
+      "ply": 24,
+      "san": "Nd4",
+      "uci": "c6d4",
+      "fen_before": "r2q1rk1/ppp2pbp/2n3p1/4pb2/2P5/1PQ1P3/PB1NBPPP/R3K2R b KQ - 3 12",
+      "fen_after": "r2q1rk1/ppp2pbp/6p1/4pb2/2Pn4/1PQ1P3/PB1NBPPP/R3K2R w KQ - 4 13",
+      "pgn_sha256": "924fa804c241029d6acc477d0e6742ac3a54e99ca9a86d69b39dfc0c3b453ee0",
+      "mover": "black",
+      "raw_material_before": 0,
+      "raw_material_after": 0,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "e3d4",
+          "fen": "r2q1rk1/ppp2pbp/6p1/4pb2/2PP4/1PQ5/PB1NBPPP/R3K2R b KQ - 0 13",
+          "capturer": "pawn",
+          "victim": "knight",
+          "offered_square": "d4",
+          "credit": 0,
+          "net_exchange_gain": 210,
+          "raw_material_after_acceptance": -300
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "a7a5",
+        "a7a6",
+        "a8b8",
+        "a8c8",
+        "b7b5",
+        "b7b6",
+        "c6b8",
+        "c6e7",
+        "d8b8",
+        "d8c8",
+        "d8d6",
+        "d8d7",
+        "d8e7",
+        "d8e8",
+        "d8f6",
+        "d8g5",
+        "d8h4",
+        "f5c8",
+        "f5d7",
+        "f5e6",
+        "f7f6",
+        "f8e8",
+        "g6g5",
+        "g7f6",
+        "g7h6",
+        "g7h8",
+        "g8h8",
+        "h7h5",
+        "h7h6"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 13,
+          "lines": [
+            {
+              "cp": -41,
+              "moves": [
+                "c6d4",
+                "e3d4",
+                "e5d4",
+                "c3c1",
+                "f8e8",
+                "e1f1",
+                "c7c5",
+                "e2f3",
+                "g7h6",
+                "c1d1",
+                "d8a5",
+                "g2g4"
+              ]
+            },
+            {
+              "cp": -26,
+              "moves": [
+                "d8e7",
+                "e1g1",
+                "f8d8",
+                "c4c5",
+                "d8d5",
+                "b3b4",
+                "a8d8",
+                "f1d1",
+                "f5d3",
+                "e2f3",
+                "d5d7",
+                "h2h3",
+                "h7h5",
+                "d2c4",
+                "d3c4",
+                "d1d7",
+                "d8d7",
+                "f3c6",
+                "b7c6",
+                "c3c4"
+              ]
+            }
+          ],
+          "reported_nodes": 163144
+        },
+        "previous": {
+          "depth": 12,
+          "lines": [
+            {
+              "cp": -33,
+              "moves": [
+                "c6d4",
+                "e3d4",
+                "e5d4",
+                "c3c1",
+                "f8e8",
+                "e1f1",
+                "c7c5",
+                "e2f3"
+              ]
+            },
+            {
+              "cp": -28,
+              "moves": [
+                "d8e7",
+                "e1g1",
+                "f8d8",
+                "c4c5",
+                "d8d5",
+                "b3b4",
+                "a8d8",
+                "f1d1",
+                "f5d3",
+                "e2f3",
+                "d5d7",
+                "h2h3",
+                "f7f5",
+                "f3c6",
+                "b7c6"
+              ]
+            }
+          ],
+          "reported_nodes": 125539
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.315055,
+        "game_id": "184512046868",
+        "position_ply": 23,
+        "fen": "r2q1rk1/ppp2pbp/2n3p1/4pb2/2P5/1PQ1P3/PB1NBPPP/R3K2R b KQ - 3 12",
+        "pgn_sha256": "924fa804c241029d6acc477d0e6742ac3a54e99ca9a86d69b39dfc0c3b453ee0",
+        "ec_material": 0
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 13,
+          "lines": [
+            {
+              "cp": -39,
+              "moves": [
+                "e3d4",
+                "e5d4",
+                "c3c1",
+                "f8e8",
+                "e1f1",
+                "c7c5",
+                "e2f3",
+                "g7h6",
+                "g2g4",
+                "f5d3",
+                "f1g2",
+                "d3e2",
+                "c1c2",
+                "d8g5",
+                "d2f1",
+                "e2f3",
+                "g2f3",
+                "f7f5",
+                "f3g2",
+                "g5g4",
+                "f1g3",
+                "f5f4",
+                "f2f3"
+              ]
+            },
+            {
+              "cp": -57,
+              "moves": [
+                "e2d1",
+                "d4e6",
+                "d1e2",
+                "e6c5",
+                "a1d1",
+                "d8e7",
+                "e1g1",
+                "a7a5",
+                "d2f3",
+                "f8e8",
+                "c3c1",
+                "a5a4"
+              ]
+            }
+          ],
+          "reported_nodes": 152830
+        },
+        "previous": {
+          "depth": 12,
+          "lines": [
+            {
+              "cp": -46,
+              "moves": [
+                "e3d4",
+                "e5d4",
+                "c3c1",
+                "f8e8",
+                "e1f1",
+                "g7h6",
+                "c1d1",
+                "d4d3",
+                "e2f3",
+                "e8e2",
+                "b2c3",
+                "d8d7",
+                "f1g1",
+                "a8e8",
+                "h2h3",
+                "c7c5",
+                "f3e2",
+                "d3e2",
+                "d1e1",
+                "d7d3",
+                "d2f3",
+                "f5e4",
+                "f3e5"
+              ]
+            },
+            {
+              "cp": -52,
+              "moves": [
+                "e2d1",
+                "d8g5",
+                "g2g4",
+                "f5g4",
+                "h1g1",
+                "f7f5",
+                "e3d4",
+                "e5d4",
+                "c3d3",
+                "a8e8",
+                "e1f1",
+                "g4h3",
+                "d3h3",
+                "g5d2"
+              ]
+            }
+          ],
+          "reported_nodes": 88231
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.349574,
+        "game_id": "184512046868",
+        "position_ply": 24,
+        "fen": "r2q1rk1/ppp2pbp/6p1/4pb2/2Pn4/1PQ1P3/PB1NBPPP/R3K2R w KQ - 4 13",
+        "pgn_sha256": "924fa804c241029d6acc477d0e6742ac3a54e99ca9a86d69b39dfc0c3b453ee0",
+        "ec_material": 210
+      }
+    },
+    {
+      "key": "184481267900:67",
+      "game_id": "184481267900",
+      "ply": 67,
+      "san": "Qb5",
+      "uci": "d3b5",
+      "fen_before": "4r2k/5qb1/7p/3pPp2/R2P1B1N/2PQ2P1/1n3P2/6K1 w - - 1 34",
+      "fen_after": "4r2k/5qb1/7p/1Q1pPp2/R2P1B1N/2P3P1/1n3P2/6K1 b - - 2 34",
+      "pgn_sha256": "ee58db0c11031af7a7a75f8698481be922783aa0fe1b4f69bb0ff563809a476d",
+      "mover": "white",
+      "raw_material_before": 180,
+      "raw_material_after": 180,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "b2a4",
+          "fen": "4r2k/5qb1/7p/1Q1pPp2/n2P1B1N/2P3P1/5P2/6K1 w - - 0 35",
+          "capturer": "knight",
+          "victim": "rook",
+          "offered_square": "a4",
+          "credit": 0,
+          "net_exchange_gain": 200,
+          "raw_material_after_acceptance": -320
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [],
+      "baseline_before": {
+        "current": {
+          "depth": 17,
+          "lines": [
+            {
+              "cp": 263,
+              "moves": [
+                "d3a6",
+                "b2a4",
+                "a6a4",
+                "h8h7",
+                "h4f5",
+                "f7g6",
+                "f5h4",
+                "g6b1",
+                "g1h2",
+                "e8b8",
+                "a4d7",
+                "b1e1",
+                "d7f5",
+                "h7h8",
+                "f4e3",
+                "b8b1",
+                "f5f3"
+              ]
+            },
+            {
+              "cp": 262,
+              "moves": [
+                "d3b5",
+                "b2a4",
+                "b5a4",
+                "e8e7",
+                "a4c2",
+                "e7a7",
+                "c2f5",
+                "f7f5",
+                "h4f5",
+                "h8h7",
+                "g1g2",
+                "a7a5",
+                "f4e3",
+                "h7g6",
+                "f5h4",
+                "g6f7",
+                "f2f4",
+                "h6h5",
+                "f4f5"
+              ]
+            }
+          ],
+          "reported_nodes": 300191
+        },
+        "previous": {
+          "depth": 16,
+          "lines": [
+            {
+              "cp": 263,
+              "moves": [
+                "d3a6",
+                "b2a4",
+                "a6a4",
+                "h8h7",
+                "h4f5",
+                "f7g6",
+                "f5h4",
+                "g6b1",
+                "g1h2",
+                "e8b8",
+                "a4d7",
+                "b1e1",
+                "d7f5",
+                "h7h8",
+                "f4e3",
+                "b8b1",
+                "f5f3"
+              ]
+            },
+            {
+              "cp": 262,
+              "moves": [
+                "d3b5",
+                "b2a4",
+                "b5a4",
+                "e8e7",
+                "a4c2",
+                "e7a7",
+                "c2f5",
+                "f7f5",
+                "h4f5",
+                "h8h7",
+                "g1g2",
+                "a7a5",
+                "f4e3",
+                "h7g6",
+                "f5h4",
+                "g6f7",
+                "f2f4",
+                "h6h5",
+                "f4f5"
+              ]
+            }
+          ],
+          "reported_nodes": 245394
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.369505,
+        "game_id": "184481267900",
+        "position_ply": 66,
+        "fen": "4r2k/5qb1/7p/3pPp2/R2P1B1N/2PQ2P1/1n3P2/6K1 w - - 1 34",
+        "pgn_sha256": "ee58db0c11031af7a7a75f8698481be922783aa0fe1b4f69bb0ff563809a476d",
+        "ec_material": 90
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 17,
+          "lines": [
+            {
+              "cp": 270,
+              "moves": [
+                "b2a4",
+                "b5a4",
+                "e8e7",
+                "a4c2",
+                "e7a7",
+                "c2f5",
+                "f7f5",
+                "h4f5",
+                "h8h7",
+                "g1g2",
+                "g7f8",
+                "g2f3",
+                "h6h5",
+                "g3g4",
+                "h5g4",
+                "f3g4",
+                "h7g6",
+                "f5e3",
+                "a7a5",
+                "g4f3"
+              ]
+            },
+            {
+              "cp": 466,
+              "moves": [
+                "b2d1",
+                "b5b3",
+                "d1f2",
+                "g1f2",
+                "g7f8",
+                "h4f3",
+                "f7h5",
+                "a4a1",
+                "h5g4",
+                "e5e6",
+                "e8e6",
+                "b3d1",
+                "f8d6",
+                "f4d6",
+                "e6d6"
+              ]
+            }
+          ],
+          "reported_nodes": 300283
+        },
+        "previous": {
+          "depth": 16,
+          "lines": [
+            {
+              "cp": 270,
+              "moves": [
+                "b2a4",
+                "b5a4",
+                "e8e7",
+                "a4c2",
+                "e7a7",
+                "c2f5",
+                "f7f5",
+                "h4f5",
+                "h8h7",
+                "g1g2",
+                "g7f8",
+                "g2f3",
+                "h6h5",
+                "g3g4",
+                "h5g4",
+                "f3g4",
+                "h7g6",
+                "f5e3",
+                "a7a5",
+                "g4f3"
+              ]
+            },
+            {
+              "cp": 466,
+              "moves": [
+                "b2d1",
+                "b5b3",
+                "d1f2",
+                "g1f2",
+                "g7f8",
+                "h4f3",
+                "f7h5",
+                "a4a1",
+                "h5g4",
+                "e5e6",
+                "e8e6",
+                "b3d1",
+                "f8d6",
+                "f4d6",
+                "e6d6"
+              ]
+            }
+          ],
+          "reported_nodes": 171736
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.27503,
+        "game_id": "184481267900",
+        "position_ply": 67,
+        "fen": "4r2k/5qb1/7p/1Q1pPp2/R2P1B1N/2P3P1/1n3P2/6K1 b - - 2 34",
+        "pgn_sha256": "ee58db0c11031af7a7a75f8698481be922783aa0fe1b4f69bb0ff563809a476d",
+        "ec_material": 20
+      }
+    },
+    {
+      "key": "172590636870:45",
+      "game_id": "172590636870",
+      "ply": 45,
+      "san": "Bf6",
+      "uci": "g5f6",
+      "fen_before": "r4rk1/1bppnp2/p5p1/4P1B1/p2N3Q/q1P5/P1P2P1P/1K1R3R w - - 2 23",
+      "fen_after": "r4rk1/1bppnp2/p4Bp1/4P3/p2N3Q/q1P5/P1P2P1P/1K1R3R b - - 3 23",
+      "pgn_sha256": "c0175b65843930153e7189b94e0cb3a500b3f52fad0155bd8e87cc0cc952bcba",
+      "mover": "white",
+      "raw_material_before": 0,
+      "raw_material_after": 0,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "b7h1",
+          "fen": "r4rk1/2ppnp2/p4Bp1/4P3/p2N3Q/q1P5/P1P2P1P/1K1R3b w - - 0 24",
+          "capturer": "bishop",
+          "victim": "rook",
+          "offered_square": "h1",
+          "credit": 0,
+          "net_exchange_gain": 200,
+          "raw_material_after_acceptance": -500
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "f2f3",
+        "g5e7",
+        "h1e1",
+        "h1f1",
+        "h1g1"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 21,
+          "lines": [
+            {
+              "mate": 4,
+              "moves": [
+                "g5f6",
+                "a3b2",
+                "b1b2",
+                "a4a3",
+                "b2c1",
+                "b7h1",
+                "h4h8"
+              ]
+            },
+            {
+              "cp": 624,
+              "moves": [
+                "g5e7",
+                "a3e7",
+                "h4e7",
+                "f8e8",
+                "e7f6",
+                "b7h1",
+                "d1h1",
+                "a8b8",
+                "b1c1",
+                "b8b6",
+                "f6h4",
+                "c7c5",
+                "d4f3",
+                "a4a3",
+                "c1d2",
+                "d7d6",
+                "h1g1",
+                "d6e5"
+              ]
+            }
+          ],
+          "reported_nodes": 248733
+        },
+        "previous": {
+          "depth": 20,
+          "lines": [
+            {
+              "mate": 4,
+              "moves": [
+                "g5f6",
+                "a3b2",
+                "b1b2",
+                "a4a3",
+                "b2c1",
+                "b7h1",
+                "h4h8"
+              ]
+            },
+            {
+              "cp": 614,
+              "moves": [
+                "g5e7",
+                "a3e7",
+                "h4e7",
+                "f8e8",
+                "e7f6",
+                "b7h1",
+                "d1h1",
+                "a8b8",
+                "b1c1",
+                "b8b6",
+                "f6h4",
+                "d7d6",
+                "e5e6",
+                "f7e6",
+                "h1g1",
+                "e8b8"
+              ]
+            }
+          ],
+          "reported_nodes": 181366
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.120945,
+        "game_id": "172590636870",
+        "position_ply": 44,
+        "fen": "r4rk1/1bppnp2/p5p1/4P1B1/p2N3Q/q1P5/P1P2P1P/1K1R3R w - - 2 23",
+        "pgn_sha256": "c0175b65843930153e7189b94e0cb3a500b3f52fad0155bd8e87cc0cc952bcba",
+        "ec_material": 210
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 245,
+          "lines": [
+            {
+              "mate": 3,
+              "moves": [
+                "a3a2",
+                "b1a2",
+                "b7d5",
+                "a2a1",
+                "g6g5",
+                "h4h8"
+              ]
+            },
+            {
+              "mate": 3,
+              "moves": [
+                "a3b2",
+                "b1b2",
+                "a4a3",
+                "b2c1",
+                "b7h1",
+                "h4h8"
+              ]
+            }
+          ],
+          "reported_nodes": 117706
+        },
+        "previous": {
+          "depth": 244,
+          "lines": [
+            {
+              "mate": 3,
+              "moves": [
+                "a3a2",
+                "b1a2",
+                "b7d5",
+                "a2a1",
+                "g6g5",
+                "h4h8"
+              ]
+            },
+            {
+              "mate": 3,
+              "moves": [
+                "a3b2",
+                "b1b2",
+                "a4a3",
+                "b2c1",
+                "b7h1",
+                "h4h8"
+              ]
+            }
+          ],
+          "reported_nodes": 117198
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.049628,
+        "game_id": "172590636870",
+        "position_ply": 45,
+        "fen": "r4rk1/1bppnp2/p4Bp1/4P3/p2N3Q/q1P5/P1P2P1P/1K1R3R b - - 3 23",
+        "pgn_sha256": "c0175b65843930153e7189b94e0cb3a500b3f52fad0155bd8e87cc0cc952bcba",
+        "ec_material": 200
+      }
+    },
+    {
+      "key": "184514610842:73",
+      "game_id": "184514610842",
+      "ply": 73,
+      "san": "Re1",
+      "uci": "a1e1",
+      "fen_before": "2r2q1k/p1r2p2/bpn1pP1N/3p2NP/1P1P1Q2/P4R2/6P1/R5K1 w - - 7 37",
+      "fen_after": "2r2q1k/p1r2p2/bpn1pP1N/3p2NP/1P1P1Q2/P4R2/6P1/4R1K1 b - - 8 37",
+      "pgn_sha256": "44bf119b850c76b87871453f11cc315dccf6f192669b0548ce00393b02db7fe2",
+      "mover": "white",
+      "raw_material_before": 90,
+      "raw_material_after": 90,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "f8h6",
+          "fen": "2r4k/p1r2p2/bpn1pP1q/3p2NP/1P1P1Q2/P4R2/6P1/4R1K1 w - - 0 38",
+          "capturer": "queen",
+          "victim": "knight",
+          "offered_square": "h6",
+          "credit": 0,
+          "net_exchange_gain": 300,
+          "raw_material_after_acceptance": -210
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "g5f7",
+        "g5h3",
+        "h6f7",
+        "h6g4"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 17,
+          "lines": [
+            {
+              "cp": 601,
+              "moves": [
+                "f3g3",
+                "c6d4",
+                "h6f7",
+                "c7f7",
+                "g5f7",
+                "f8f7",
+                "f4d4",
+                "c8c4",
+                "d4e5",
+                "f7c7",
+                "e5g5",
+                "c7h7",
+                "a1e1"
+              ]
+            },
+            {
+              "cp": 544,
+              "moves": [
+                "a1e1",
+                "c6d8",
+                "h6g4",
+                "c7c3",
+                "g4e5",
+                "c3f3",
+                "f4f3",
+                "f8g8",
+                "f3f4",
+                "c8c2",
+                "e5g6",
+                "f7g6",
+                "f6f7",
+                "d8f7",
+                "g5f7",
+                "h8g7",
+                "h5h6",
+                "g7h7",
+                "f7g5",
+                "h7h6",
+                "f4h4",
+                "h6g7",
+                "g5e6",
+                "g7f7"
+              ]
+            }
+          ],
+          "reported_nodes": 300290
+        },
+        "previous": {
+          "depth": 16,
+          "lines": [
+            {
+              "cp": 553,
+              "moves": [
+                "a1e1",
+                "c6d8",
+                "h6g4",
+                "d8c6",
+                "f3g3",
+                "a6b5",
+                "g1h2",
+                "b5a4",
+                "g5f3",
+                "a4b5",
+                "g4e5",
+                "c6e5",
+                "f3e5"
+              ]
+            },
+            {
+              "cp": 547,
+              "moves": [
+                "f3g3",
+                "c6d4",
+                "g5f7",
+                "c7f7",
+                "h6f7",
+                "f8f7",
+                "f4d4",
+                "c8g8",
+                "g3g8",
+                "h8g8",
+                "d4e5",
+                "d5d4",
+                "a1e1",
+                "a6b7",
+                "e1e2",
+                "d4d3",
+                "e2f2",
+                "g8h7",
+                "a3a4",
+                "b7d5",
+                "e5g5"
+              ]
+            }
+          ],
+          "reported_nodes": 95727
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.292604,
+        "game_id": "184514610842",
+        "position_ply": 72,
+        "fen": "2r2q1k/p1r2p2/bpn1pP1N/3p2NP/1P1P1Q2/P4R2/6P1/R5K1 w - - 7 37",
+        "pgn_sha256": "44bf119b850c76b87871453f11cc315dccf6f192669b0548ce00393b02db7fe2",
+        "ec_material": 90
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 17,
+          "lines": [
+            {
+              "cp": 587,
+              "moves": [
+                "c6d8",
+                "h6g4",
+                "d8c6",
+                "f3g3",
+                "a6b5",
+                "g5f3",
+                "b5d3",
+                "g4h6",
+                "a7a5",
+                "g3g8",
+                "f8g8",
+                "h6g8",
+                "c8g8",
+                "f4h6",
+                "d3h7"
+              ]
+            },
+            {
+              "cp": 593,
+              "moves": [
+                "c6d4",
+                "h6f7",
+                "c7f7",
+                "f4d4",
+                "a6b5",
+                "g5f7",
+                "f8f7",
+                "f3g3",
+                "c8g8",
+                "g3g8",
+                "h8g8",
+                "d4f4",
+                "g8f8",
+                "h5h6",
+                "f7g6",
+                "f4d6",
+                "f8g8",
+                "d6e6",
+                "g8h7"
+              ]
+            }
+          ],
+          "reported_nodes": 300156
+        },
+        "previous": {
+          "depth": 16,
+          "lines": [
+            {
+              "cp": 587,
+              "moves": [
+                "c6d8",
+                "h6g4",
+                "d8c6",
+                "f3g3",
+                "a6b5",
+                "g5f3",
+                "b5d3",
+                "g4h6",
+                "a7a5",
+                "g3g8",
+                "f8g8",
+                "h6g8",
+                "c8g8",
+                "f4h6",
+                "d3h7"
+              ]
+            },
+            {
+              "cp": 593,
+              "moves": [
+                "c6d4",
+                "h6f7",
+                "c7f7",
+                "f4d4",
+                "a6b5",
+                "g5f7",
+                "f8f7",
+                "f3g3",
+                "c8g8",
+                "g3g8",
+                "h8g8",
+                "d4f4",
+                "g8f8",
+                "h5h6",
+                "f7g6",
+                "f4d6",
+                "f8g8",
+                "d6e6",
+                "g8h7"
+              ]
+            }
+          ],
+          "reported_nodes": 252534
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.271402,
+        "game_id": "184514610842",
+        "position_ply": 73,
+        "fen": "2r2q1k/p1r2p2/bpn1pP1N/3p2NP/1P1P1Q2/P4R2/6P1/4R1K1 b - - 8 37",
+        "pgn_sha256": "44bf119b850c76b87871453f11cc315dccf6f192669b0548ce00393b02db7fe2",
+        "ec_material": 120
+      }
+    },
+    {
+      "key": "184131911424:66",
+      "game_id": "184131911424",
+      "ply": 66,
+      "san": "Raf8",
+      "uci": "a8f8",
+      "fen_before": "r7/pp6/3pkr2/4p3/1nP5/PP4R1/1B3PK1/R7 b - - 0 33",
+      "fen_after": "5r2/pp6/3pkr2/4p3/1nP5/PP4R1/1B3PK1/R7 w - - 1 34",
+      "pgn_sha256": "656306df414b0b1a7b81d4e78b31927cb03fe644545a79ce261935f15b608605",
+      "mover": "black",
+      "raw_material_before": 0,
+      "raw_material_after": 0,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "a3b4",
+          "fen": "5r2/pp6/3pkr2/4p3/1PP5/1P4R1/1B3PK1/R7 b - - 0 34",
+          "capturer": "pawn",
+          "victim": "knight",
+          "offered_square": "b4",
+          "credit": 0,
+          "net_exchange_gain": 300,
+          "raw_material_after_acceptance": -300
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "b4a6",
+        "b4c2",
+        "b4c6"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": -92,
+              "moves": [
+                "a8f8",
+                "a3b4",
+                "f6f2",
+                "g2g1",
+                "f2b2",
+                "a1a7",
+                "b2b1",
+                "g1g2",
+                "e5e4",
+                "a7b7",
+                "e6e5",
+                "b7b5",
+                "e5f4",
+                "b5g5",
+                "b1b2",
+                "g2g1",
+                "e4e3",
+                "g5g4",
+                "f4f5",
+                "b4b5"
+              ]
+            },
+            {
+              "cp": -55,
+              "moves": [
+                "b4c6",
+                "a1h1",
+                "a8f8",
+                "f2f3",
+                "c6a5",
+                "h1b1",
+                "f6h6",
+                "b2c1",
+                "h6h7",
+                "c1e3",
+                "f8h8",
+                "e3g1",
+                "a5c6",
+                "g3g6",
+                "e6f5"
+              ]
+            }
+          ],
+          "reported_nodes": 181320
+        },
+        "previous": {
+          "depth": 13,
+          "lines": [
+            {
+              "cp": -113,
+              "moves": [
+                "a8f8",
+                "a3b4",
+                "f6f2",
+                "g2g1",
+                "f2b2",
+                "a1a7",
+                "f8f2",
+                "a7a1",
+                "f2d2",
+                "b4b5",
+                "e5e4",
+                "a1e1",
+                "e6f5",
+                "g3g7",
+                "b7b6",
+                "g7e7",
+                "d2g2",
+                "g1h1",
+                "g2h2",
+                "h1g1"
+              ]
+            },
+            {
+              "cp": -51,
+              "moves": [
+                "b4c6",
+                "a1h1",
+                "a7a6",
+                "b2c3",
+                "c6e7",
+                "g3h3",
+                "a8f8",
+                "f2f3",
+                "e7f5"
+              ]
+            }
+          ],
+          "reported_nodes": 125023
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.283454,
+        "game_id": "184131911424",
+        "position_ply": 65,
+        "fen": "r7/pp6/3pkr2/4p3/1nP5/PP4R1/1B3PK1/R7 b - - 0 33",
+        "pgn_sha256": "656306df414b0b1a7b81d4e78b31927cb03fe644545a79ce261935f15b608605",
+        "ec_material": 0
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 15,
+          "lines": [
+            {
+              "cp": -89,
+              "moves": [
+                "a3b4",
+                "f6f2",
+                "g2g1",
+                "f2b2",
+                "a1a7",
+                "f8f7",
+                "a7a1",
+                "d6d5",
+                "c4d5",
+                "e6d5",
+                "a1d1",
+                "d5c6",
+                "d1e1",
+                "f7f5",
+                "e1e3",
+                "b7b6",
+                "g3g6",
+                "c6b5",
+                "g6d6",
+                "f5g5",
+                "g1f1"
+              ]
+            },
+            {
+              "cp": -109,
+              "moves": [
+                "a1f1",
+                "b4c2",
+                "b2c1",
+                "c2d4",
+                "c1g5",
+                "f6g6",
+                "g5e3",
+                "g6g3",
+                "f2g3",
+                "f8f1",
+                "g2f1",
+                "d4b3",
+                "f1e2",
+                "b7b6",
+                "g3g4",
+                "b3c5",
+                "e2d2",
+                "c5d7",
+                "d2d3",
+                "d7f6",
+                "g4g5",
+                "f6g4",
+                "e3d2",
+                "e6f5"
+              ]
+            }
+          ],
+          "reported_nodes": 267680
+        },
+        "previous": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": -97,
+              "moves": [
+                "a3b4",
+                "f6f2",
+                "g2g1",
+                "f2b2",
+                "a1a7",
+                "f8f7",
+                "a7a1",
+                "d6d5",
+                "c4d5",
+                "e6d5",
+                "a1d1",
+                "d5e4",
+                "d1d3",
+                "b2b1",
+                "g1g2",
+                "b1e1",
+                "b4b5",
+                "f7h7",
+                "g2f2",
+                "e1h1",
+                "g3e3",
+                "e4f5",
+                "d3d5",
+                "h1h2",
+                "f2g1"
+              ]
+            },
+            {
+              "cp": -119,
+              "moves": [
+                "a1f1",
+                "b4c2",
+                "b2c1",
+                "c2d4",
+                "c1g5",
+                "f6g6",
+                "g5e3",
+                "g6g3",
+                "f2g3",
+                "f8f1",
+                "g2f1",
+                "d4b3",
+                "f1e2",
+                "b7b6",
+                "g3g4",
+                "b3c5",
+                "e2d2",
+                "c5d7",
+                "d2c3",
+                "d7f6",
+                "g4g5",
+                "f6g4",
+                "e3d2",
+                "e6f5",
+                "a3a4"
+              ]
+            }
+          ],
+          "reported_nodes": 171903
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.269115,
+        "game_id": "184131911424",
+        "position_ply": 66,
+        "fen": "5r2/pp6/3pkr2/4p3/1nP5/PP4R1/1B3PK1/R7 w - - 1 34",
+        "pgn_sha256": "656306df414b0b1a7b81d4e78b31927cb03fe644545a79ce261935f15b608605",
+        "ec_material": 210
+      }
+    },
+    {
+      "key": "185228493400:24",
+      "game_id": "185228493400",
+      "ply": 24,
+      "san": "dxc4",
+      "uci": "d5c4",
+      "fen_before": "r2qk2r/ppp2ppp/2n1b3/3pP1nQ/2PP4/3BB1P1/P1P2P1P/R3K2R b KQkq - 2 12",
+      "fen_after": "r2qk2r/ppp2ppp/2n1b3/4P1nQ/2pP4/3BB1P1/P1P2P1P/R3K2R w KQkq - 0 13",
+      "pgn_sha256": "3d6cf2864c5f0b71d12aa83542353f000bc683fc9cc61ede8c55ff010bec9571",
+      "mover": "black",
+      "raw_material_before": 210,
+      "raw_material_after": 300,
+      "qualifying_acceptances_total": 2,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "e3g5",
+          "fen": "r2qk2r/ppp2ppp/2n1b3/4P1BQ/2pP4/3B2P1/P1P2P1P/R3K2R b KQkq - 0 13",
+          "capturer": "bishop",
+          "victim": "knight",
+          "offered_square": "g5",
+          "credit": 90,
+          "net_exchange_gain": 300,
+          "raw_material_after_acceptance": 0
+        },
+        {
+          "uci": "h5g5",
+          "fen": "r2qk2r/ppp2ppp/2n1b3/4P1Q1/2pP4/3BB1P1/P1P2P1P/R3K2R b KQkq - 0 13",
+          "capturer": "queen",
+          "victim": "knight",
+          "offered_square": "g5",
+          "credit": 90,
+          "net_exchange_gain": 300,
+          "raw_material_after_acceptance": 0
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "g5e4",
+        "g5h3",
+        "h7h6"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 18,
+          "lines": [
+            {
+              "cp": -412,
+              "moves": [
+                "d5c4",
+                "d3f1",
+                "d8d5",
+                "e3g5",
+                "d5d4",
+                "a1d1",
+                "d4e4",
+                "g5e3",
+                "e6g4",
+                "f1g2",
+                "g4d1",
+                "h5f7",
+                "e8f7",
+                "g2e4",
+                "d1g4",
+                "f2f4",
+                "h8d8",
+                "e1f2",
+                "g4e6"
+              ]
+            },
+            {
+              "cp": -360,
+              "moves": [
+                "h7h6",
+                "c4c5",
+                "d8d7",
+                "h2h3",
+                "g7g6",
+                "h5e2",
+                "e6f5",
+                "e3g5",
+                "h6g5",
+                "d3f5",
+                "g6f5",
+                "a1b1",
+                "g5g4",
+                "b1b7"
+              ]
+            }
+          ],
+          "reported_nodes": 300285
+        },
+        "previous": {
+          "depth": 17,
+          "lines": [
+            {
+              "cp": -412,
+              "moves": [
+                "d5c4",
+                "d3f1",
+                "d8d5",
+                "e3g5",
+                "d5d4",
+                "a1d1",
+                "d4e4",
+                "g5e3",
+                "e6g4",
+                "f1g2",
+                "g4d1",
+                "h5f7",
+                "e8f7",
+                "g2e4",
+                "d1g4",
+                "f2f4",
+                "h8d8",
+                "e1f2",
+                "g4e6"
+              ]
+            },
+            {
+              "cp": -360,
+              "moves": [
+                "h7h6",
+                "c4c5",
+                "d8d7",
+                "h2h3",
+                "g7g6",
+                "h5e2",
+                "e6f5",
+                "e3g5",
+                "h6g5",
+                "d3f5",
+                "g6f5",
+                "a1b1",
+                "g5g4",
+                "b1b7"
+              ]
+            }
+          ],
+          "reported_nodes": 242376
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.257384,
+        "game_id": "185228493400",
+        "position_ply": 23,
+        "fen": "r2qk2r/ppp2ppp/2n1b3/3pP1nQ/2PP4/3BB1P1/P1P2P1P/R3K2R b KQkq - 2 12",
+        "pgn_sha256": "3d6cf2864c5f0b71d12aa83542353f000bc683fc9cc61ede8c55ff010bec9571",
+        "ec_material": 210
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 17,
+          "lines": [
+            {
+              "cp": -426,
+              "moves": [
+                "d3f1",
+                "d8d5",
+                "h5g5",
+                "d5h1",
+                "e1c1",
+                "h1d5",
+                "c2c3",
+                "h8g8",
+                "f2f4",
+                "h7h6",
+                "g5h4",
+                "c6e7"
+              ]
+            },
+            {
+              "cp": -463,
+              "moves": [
+                "d3e2",
+                "d8d5",
+                "h5g5",
+                "d5h1",
+                "e2f1",
+                "h1e4",
+                "c2c3",
+                "h7h6",
+                "g5g7",
+                "e8c8",
+                "g7f6",
+                "c8b8",
+                "f1e2",
+                "e4h1",
+                "e2f1",
+                "e6h3"
+              ]
+            }
+          ],
+          "reported_nodes": 300261
+        },
+        "previous": {
+          "depth": 16,
+          "lines": [
+            {
+              "cp": -426,
+              "moves": [
+                "d3f1",
+                "d8d5",
+                "h5g5",
+                "d5h1",
+                "e1c1",
+                "h1d5",
+                "c2c3",
+                "h8g8",
+                "f2f4",
+                "h7h6",
+                "g5h4",
+                "c6e7"
+              ]
+            },
+            {
+              "cp": -463,
+              "moves": [
+                "d3e2",
+                "d8d5",
+                "h5g5",
+                "d5h1",
+                "e2f1",
+                "h1e4",
+                "c2c3",
+                "h7h6",
+                "g5g7",
+                "e8c8",
+                "g7f6",
+                "c8b8",
+                "f1e2",
+                "e4h1",
+                "e2f1",
+                "e6h3"
+              ]
+            }
+          ],
+          "reported_nodes": 184896
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.223287,
+        "game_id": "185228493400",
+        "position_ply": 24,
+        "fen": "r2qk2r/ppp2ppp/2n1b3/4P1nQ/2pP4/3BB1P1/P1P2P1P/R3K2R w KQkq - 0 13",
+        "pgn_sha256": "3d6cf2864c5f0b71d12aa83542353f000bc683fc9cc61ede8c55ff010bec9571",
+        "ec_material": -90
+      }
+    },
+    {
+      "key": "184623232028:38",
+      "game_id": "184623232028",
+      "ply": 38,
+      "san": "hxg4",
+      "uci": "h5g4",
+      "fen_before": "r3k2r/p3bpp1/1pn1p3/3pP2p/3P1PPn/1N2B1Q1/PP2qN1P/2R2RK1 b kq - 3 19",
+      "fen_after": "r3k2r/p3bpp1/1pn1p3/3pP3/3P1Ppn/1N2B1Q1/PP2qN1P/2R2RK1 w kq - 0 20",
+      "pgn_sha256": "4b171c7909de86fa500ea5033d0ec8345fe49d030682b87100a4ceb249a331d7",
+      "mover": "black",
+      "raw_material_before": 0,
+      "raw_material_after": 90,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "c1c6",
+          "fen": "r3k2r/p3bpp1/1pR1p3/3pP3/3P1Ppn/1N2B1Q1/PP2qN1P/5RK1 b kq - 0 20",
+          "capturer": "rook",
+          "victim": "knight",
+          "offered_square": "c6",
+          "credit": 90,
+          "net_exchange_gain": 300,
+          "raw_material_after_acceptance": -210
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "a8c8",
+        "c6a5",
+        "c6b4",
+        "c6b8",
+        "c6d8",
+        "e2b5",
+        "e8d7",
+        "h4f3"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 17,
+          "lines": [
+            {
+              "cp": -283,
+              "moves": [
+                "e8d7",
+                "g4h5",
+                "h8h5",
+                "f2g4",
+                "h4f5",
+                "g3f3",
+                "e2f3",
+                "f1f3",
+                "c6b4",
+                "a2a3",
+                "b4d3",
+                "c1b1",
+                "h5h4",
+                "g4f2",
+                "f5e3",
+                "f2d3",
+                "e3f5",
+                "b1c1",
+                "a8h8",
+                "f3f2",
+                "g7g5",
+                "f2g2"
+              ]
+            },
+            {
+              "cp": -262,
+              "moves": [
+                "a8c8",
+                "g3h3",
+                "h5g4",
+                "f2g4",
+                "e8d7",
+                "c1c3",
+                "e2b2",
+                "e3d2",
+                "c6d4",
+                "h3d3",
+                "c8c3",
+                "d2c3"
+              ]
+            }
+          ],
+          "reported_nodes": 231131
+        },
+        "previous": {
+          "depth": 16,
+          "lines": [
+            {
+              "cp": -271,
+              "moves": [
+                "e8d7",
+                "g4h5",
+                "e2h5",
+                "g3g4",
+                "a7a5",
+                "g4h5",
+                "h8h5"
+              ]
+            },
+            {
+              "cp": -271,
+              "moves": [
+                "a8c8",
+                "g3h3",
+                "h5g4",
+                "f2g4",
+                "e8d7",
+                "c1c3",
+                "h4f5",
+                "h3g2",
+                "e2b5"
+              ]
+            }
+          ],
+          "reported_nodes": 153318
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.377325,
+        "game_id": "184623232028",
+        "position_ply": 37,
+        "fen": "r3k2r/p3bpp1/1pn1p3/3pP2p/3P1PPn/1N2B1Q1/PP2qN1P/2R2RK1 b kq - 3 19",
+        "pgn_sha256": "4b171c7909de86fa500ea5033d0ec8345fe49d030682b87100a4ceb249a331d7",
+        "ec_material": 0
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 17,
+          "lines": [
+            {
+              "cp": -239,
+              "moves": [
+                "f2g4",
+                "e8d7",
+                "f1f2",
+                "e2b5",
+                "f4f5",
+                "h4f5",
+                "f2f5",
+                "e6f5",
+                "g3f3",
+                "f5g4",
+                "f3f5",
+                "d7e8",
+                "e5e6",
+                "b5e2",
+                "e6f7",
+                "e8f8",
+                "e3f4",
+                "a8d8",
+                "c1c6",
+                "e2e1",
+                "g1g2"
+              ]
+            },
+            {
+              "cp": -387,
+              "moves": [
+                "h2h3",
+                "g4h3",
+                "g3g4",
+                "e2g4",
+                "f2g4",
+                "e8d7",
+                "c1c3",
+                "e7b4",
+                "c3d3",
+                "h4f5",
+                "g1h2",
+                "a7a5"
+              ]
+            }
+          ],
+          "reported_nodes": 300245
+        },
+        "previous": {
+          "depth": 16,
+          "lines": [
+            {
+              "cp": -239,
+              "moves": [
+                "f2g4",
+                "e8d7",
+                "f1f2",
+                "e2b5",
+                "f4f5",
+                "h4f5",
+                "f2f5",
+                "e6f5",
+                "g3f3",
+                "f5g4",
+                "f3f5",
+                "d7e8",
+                "e5e6",
+                "b5e2",
+                "e6f7",
+                "e8f8",
+                "e3f4",
+                "a8d8",
+                "c1c6",
+                "e2e1",
+                "g1g2"
+              ]
+            },
+            {
+              "cp": -387,
+              "moves": [
+                "h2h3",
+                "g4h3",
+                "g3g4",
+                "e2g4",
+                "f2g4",
+                "e8d7",
+                "c1c3",
+                "e7b4",
+                "c3d3",
+                "h4f5",
+                "g1h2",
+                "a7a5"
+              ]
+            }
+          ],
+          "reported_nodes": 231982
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.375441,
+        "game_id": "184623232028",
+        "position_ply": 38,
+        "fen": "r3k2r/p3bpp1/1pn1p3/3pP3/3P1Ppn/1N2B1Q1/PP2qN1P/2R2RK1 w kq - 0 20",
+        "pgn_sha256": "4b171c7909de86fa500ea5033d0ec8345fe49d030682b87100a4ceb249a331d7",
+        "ec_material": 210
+      }
+    },
+    {
+      "key": "186393990159:71",
+      "game_id": "186393990159",
+      "ply": 71,
+      "san": "Qg6+",
+      "uci": "e4g6",
+      "fen_before": "5R2/1b2r1k1/2p1p2N/p1P5/1p1qQ2P/1Pb5/P1B2PP1/1K6 w - - 2 36",
+      "fen_after": "5R2/1b2r1k1/2p1p1QN/p1P5/1p1q3P/1Pb5/P1B2PP1/1K6 b - - 3 36",
+      "pgn_sha256": "332354474945ae73e42b6b2175f073c5386211d18140d45991eb1e5a829d17f3",
+      "mover": "white",
+      "raw_material_before": 180,
+      "raw_material_after": 180,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "g7f8",
+          "fen": "5k2/1b2r3/2p1p1QN/p1P5/1p1q3P/1Pb5/P1B2PP1/1K6 w - - 0 37",
+          "capturer": "king",
+          "victim": "rook",
+          "offered_square": "f8",
+          "credit": 0,
+          "net_exchange_gain": 500,
+          "raw_material_after_acceptance": -320
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "e4d4",
+        "e4f4"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 245,
+          "lines": [
+            {
+              "mate": 2,
+              "moves": [
+                "e4g6",
+                "g7f8",
+                "g6g8"
+              ]
+            },
+            {
+              "mate": 2,
+              "moves": [
+                "f8g8",
+                "g7h6",
+                "e4g6"
+              ]
+            }
+          ],
+          "reported_nodes": 26995
+        },
+        "previous": {
+          "depth": 244,
+          "lines": [
+            {
+              "mate": 2,
+              "moves": [
+                "e4g6",
+                "g7f8",
+                "g6g8"
+              ]
+            },
+            {
+              "mate": 2,
+              "moves": [
+                "f8g8",
+                "g7h6",
+                "e4g6"
+              ]
+            }
+          ],
+          "reported_nodes": 26875
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.039857,
+        "game_id": "186393990159",
+        "position_ply": 70,
+        "fen": "5R2/1b2r1k1/2p1p2N/p1P5/1p1qQ2P/1Pb5/P1B2PP1/1K6 w - - 2 36",
+        "pgn_sha256": "332354474945ae73e42b6b2175f073c5386211d18140d45991eb1e5a829d17f3",
+        "ec_material": 180
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 245,
+          "lines": [
+            {
+              "mate": 1,
+              "moves": [
+                "g7f8",
+                "g6g8"
+              ]
+            }
+          ],
+          "reported_nodes": 490
+        },
+        "previous": {
+          "depth": 244,
+          "lines": [
+            {
+              "mate": 1,
+              "moves": [
+                "g7f8",
+                "g6g8"
+              ]
+            }
+          ],
+          "reported_nodes": 488
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.019768,
+        "game_id": "186393990159",
+        "position_ply": 71,
+        "fen": "5R2/1b2r1k1/2p1p1QN/p1P5/1p1q3P/1Pb5/P1B2PP1/1K6 b - - 3 36",
+        "pgn_sha256": "332354474945ae73e42b6b2175f073c5386211d18140d45991eb1e5a829d17f3",
+        "ec_material": 320
+      }
+    },
+    {
+      "key": "184430392420:37",
+      "game_id": "184430392420",
+      "ply": 37,
+      "san": "Rxh7+",
+      "uci": "h5h7",
+      "fen_before": "r4r1k/ppp1Nppp/3p4/n6R/2BPP3/2P2q2/PP1K4/R5Q1 w - - 3 19",
+      "fen_after": "r4r1k/ppp1NppR/3p4/n7/2BPP3/2P2q2/PP1K4/R5Q1 b - - 0 19",
+      "pgn_sha256": "113e0ae74544993cf0fcd9fa8ef83301c55aceba9b2064dc6bd7ae8c5733dc06",
+      "mover": "white",
+      "raw_material_before": 120,
+      "raw_material_after": 210,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "h8h7",
+          "fen": "r4r2/ppp1Nppk/3p4/n7/2BPP3/2P2q2/PP1K4/R5Q1 w - - 0 20",
+          "capturer": "king",
+          "victim": "rook",
+          "offered_square": "h7",
+          "credit": 90,
+          "net_exchange_gain": 500,
+          "raw_material_after_acceptance": -290
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "c4e2",
+        "h5a5"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 17,
+          "lines": [
+            {
+              "mate": 3,
+              "moves": [
+                "h5h7",
+                "h8h7",
+                "g1h1",
+                "f3h1",
+                "a1h1"
+              ]
+            },
+            {
+              "cp": 503,
+              "moves": [
+                "h5a5",
+                "a8e8",
+                "e7f5",
+                "g7g6",
+                "c4d3",
+                "g6f5",
+                "a5f5",
+                "f3h3",
+                "g1f1",
+                "h3h6",
+                "d2c2",
+                "c7c6",
+                "f5f6",
+                "h6h4",
+                "f6f2",
+                "f7f5"
+              ]
+            }
+          ],
+          "reported_nodes": 116647
+        },
+        "previous": {
+          "depth": 16,
+          "lines": [
+            {
+              "mate": 3,
+              "moves": [
+                "h5h7",
+                "h8h7",
+                "g1h1",
+                "f3h1",
+                "a1h1"
+              ]
+            },
+            {
+              "cp": 498,
+              "moves": [
+                "h5a5",
+                "a8e8",
+                "e7f5",
+                "g7g6",
+                "c4d3",
+                "g6f5",
+                "a5f5",
+                "f3h3",
+                "g1f1",
+                "h3f1",
+                "d3f1",
+                "e8e4",
+                "f1d3",
+                "e4e8",
+                "a1f1"
+              ]
+            }
+          ],
+          "reported_nodes": 44136
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.290969,
+        "game_id": "184430392420",
+        "position_ply": 36,
+        "fen": "r4r1k/ppp1Nppp/3p4/n6R/2BPP3/2P2q2/PP1K4/R5Q1 w - - 3 19",
+        "pgn_sha256": "113e0ae74544993cf0fcd9fa8ef83301c55aceba9b2064dc6bd7ae8c5733dc06",
+        "ec_material": 330
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 245,
+          "lines": [
+            {
+              "mate": 2,
+              "moves": [
+                "h8h7",
+                "g1h1",
+                "f3h1",
+                "a1h1"
+              ]
+            }
+          ],
+          "reported_nodes": 13344
+        },
+        "previous": {
+          "depth": 244,
+          "lines": [
+            {
+              "mate": 2,
+              "moves": [
+                "h8h7",
+                "g1h1",
+                "f3h1",
+                "a1h1"
+              ]
+            }
+          ],
+          "reported_nodes": 13268
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.024401,
+        "game_id": "184430392420",
+        "position_ply": 37,
+        "fen": "r4r1k/ppp1NppR/3p4/n7/2BPP3/2P2q2/PP1K4/R5Q1 b - - 0 19",
+        "pgn_sha256": "113e0ae74544993cf0fcd9fa8ef83301c55aceba9b2064dc6bd7ae8c5733dc06",
+        "ec_material": 290
+      }
+    },
+    {
+      "key": "187780686673:36",
+      "game_id": "187780686673",
+      "ply": 36,
+      "san": "Qh4",
+      "uci": "d8h4",
+      "fen_before": "r2qrnk1/pBp2p1p/3p2p1/5b2/2PP2n1/BP2b3/P2N2PP/2QNRR1K b - - 2 18",
+      "fen_after": "r3rnk1/pBp2p1p/3p2p1/5b2/2PP2nq/BP2b3/P2N2PP/2QNRR1K w - - 3 19",
+      "pgn_sha256": "50b28d51d3ab296f3a5a9382e50cc322b8bea4f989f2e319c1713032d8947d4a",
+      "mover": "black",
+      "raw_material_before": 0,
+      "raw_material_after": 0,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "b7a8",
+          "fen": "B3rnk1/p1p2p1p/3p2p1/5b2/2PP2nq/BP2b3/P2N2PP/2QNRR1K b - - 0 19",
+          "capturer": "bishop",
+          "victim": "rook",
+          "offered_square": "a8",
+          "credit": 0,
+          "net_exchange_gain": 200,
+          "raw_material_after_acceptance": -500
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "a8b8",
+        "e3d2"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 16,
+          "lines": [
+            {
+              "cp": -149,
+              "moves": [
+                "d8h4",
+                "d2f3",
+                "h4e1",
+                "f3e1",
+                "e3c1",
+                "a3c1",
+                "a8b8",
+                "b7c6",
+                "f5d7",
+                "c6f3",
+                "h7h5",
+                "h2h3",
+                "g4f6",
+                "e1c2"
+              ]
+            },
+            {
+              "cp": -33,
+              "moves": [
+                "a8b8",
+                "d1e3",
+                "g4e3",
+                "b7c6",
+                "d8g5",
+                "f1f2",
+                "e3g4",
+                "f2f1",
+                "e8e1",
+                "c1e1",
+                "g4e3",
+                "f1g1",
+                "e3c2",
+                "d2f3",
+                "g5f6",
+                "e1a5"
+              ]
+            }
+          ],
+          "reported_nodes": 300174
+        },
+        "previous": {
+          "depth": 15,
+          "lines": [
+            {
+              "cp": -149,
+              "moves": [
+                "d8h4",
+                "d2f3",
+                "h4e1",
+                "f3e1",
+                "e3c1",
+                "a3c1",
+                "a8b8",
+                "b7c6",
+                "f5d7",
+                "c6f3",
+                "h7h5",
+                "h2h3",
+                "g4f6",
+                "e1c2"
+              ]
+            },
+            {
+              "cp": -33,
+              "moves": [
+                "a8b8",
+                "d1e3",
+                "g4e3",
+                "b7c6",
+                "d8g5",
+                "f1f2",
+                "e3g4",
+                "f2f1",
+                "e8e1",
+                "c1e1",
+                "g4e3",
+                "f1g1",
+                "e3c2",
+                "d2f3",
+                "g5f6",
+                "e1a5"
+              ]
+            }
+          ],
+          "reported_nodes": 132508
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.347477,
+        "game_id": "187780686673",
+        "position_ply": 35,
+        "fen": "r2qrnk1/pBp2p1p/3p2p1/5b2/2PP2n1/BP2b3/P2N2PP/2QNRR1K b - - 2 18",
+        "pgn_sha256": "50b28d51d3ab296f3a5a9382e50cc322b8bea4f989f2e319c1713032d8947d4a",
+        "ec_material": 0
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 15,
+          "lines": [
+            {
+              "cp": -149,
+              "moves": [
+                "d2f3",
+                "h4e1",
+                "f3e1",
+                "e3c1",
+                "a3c1",
+                "a8b8",
+                "b7c6",
+                "f8d7",
+                "e1f3",
+                "f5d3",
+                "f1g1",
+                "e8e7",
+                "h2h3",
+                "g4f6",
+                "d1c3",
+                "d3e4",
+                "c3e4",
+                "f6e4",
+                "h1h2",
+                "e4f6"
+              ]
+            },
+            {
+              "cp": -461,
+              "moves": [
+                "h2h3",
+                "h4g3",
+                "d2f3",
+                "e3c1",
+                "a3c1",
+                "e8e1",
+                "f1e1",
+                "a8b8",
+                "h3g4",
+                "f5g4",
+                "e1f1",
+                "b8b7",
+                "f3h2",
+                "g3h4",
+                "d1c3",
+                "f7f5",
+                "h1g1",
+                "c7c6",
+                "c3e4",
+                "f5e4"
+              ]
+            }
+          ],
+          "reported_nodes": 270791
+        },
+        "previous": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": -166,
+              "moves": [
+                "d2f3",
+                "h4e1",
+                "f3e1",
+                "e3c1",
+                "a3c1",
+                "a8b8",
+                "b7c6",
+                "f5d7",
+                "c6f3",
+                "g8g7",
+                "h1g1",
+                "f7f5",
+                "h2h4",
+                "g4f6",
+                "c1b2",
+                "h7h6",
+                "d4d5",
+                "g6g5",
+                "f3h5",
+                "e8e4",
+                "h4g5",
+                "h6g5",
+                "e1c2"
+              ]
+            },
+            {
+              "cp": -449,
+              "moves": [
+                "h2h3",
+                "h4g3",
+                "d2f3",
+                "e3c1",
+                "a3c1",
+                "e8e1",
+                "f1e1",
+                "a8b8",
+                "b7d5",
+                "g4f6",
+                "d1c3",
+                "f8e6",
+                "c1d2",
+                "b8e8",
+                "e1f1"
+              ]
+            }
+          ],
+          "reported_nodes": 93459
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.292558,
+        "game_id": "187780686673",
+        "position_ply": 36,
+        "fen": "r3rnk1/pBp2p1p/3p2p1/5b2/2PP2nq/BP2b3/P2N2PP/2QNRR1K w - - 3 19",
+        "pgn_sha256": "50b28d51d3ab296f3a5a9382e50cc322b8bea4f989f2e319c1713032d8947d4a",
+        "ec_material": -90
+      }
+    },
+    {
+      "key": "169827191694:65",
+      "game_id": "169827191694",
+      "ply": 65,
+      "san": "h6",
+      "uci": "h5h6",
+      "fen_before": "2r1r2k/1b2PQp1/pq6/3p2pP/4p3/1NpB4/P1P5/1K1R1R2 w - - 2 33",
+      "fen_after": "2r1r2k/1b2PQp1/pq5P/3p2p1/4p3/1NpB4/P1P5/1K1R1R2 b - - 0 33",
+      "pgn_sha256": "aa1ad5afd3fae4465ed5fbbc0c788a42e8279d6e9f67b5bed727425ba3862b76",
+      "mover": "white",
+      "raw_material_before": 120,
+      "raw_material_after": 120,
+      "qualifying_acceptances_total": 1,
+      "acceptance_enumeration_complete": true,
+      "acceptance_search_coverage_complete": true,
+      "selected_acceptances": [
+        {
+          "uci": "e4d3",
+          "fen": "2r1r2k/1b2PQp1/pq5P/3p2p1/8/1Npp4/P1P5/1K1R1R2 w - - 0 34",
+          "capturer": "pawn",
+          "victim": "bishop",
+          "offered_square": "d3",
+          "credit": 0,
+          "net_exchange_gain": 210,
+          "raw_material_after_acceptance": -180
+        }
+      ],
+      "unsearched_acceptances": [],
+      "nonoffering_legal_roots": [
+        "d3e2",
+        "f7f8"
+      ],
+      "baseline_before": {
+        "current": {
+          "depth": 15,
+          "lines": [
+            {
+              "cp": 775,
+              "moves": [
+                "h5h6",
+                "b6h6",
+                "f1h1",
+                "e8e7",
+                "h1h6",
+                "g7h6",
+                "f7e7",
+                "b7c6",
+                "e7f6",
+                "h8g8",
+                "d3e2",
+                "c6e8",
+                "f6e6",
+                "g8h7",
+                "b1a1",
+                "e8a4"
+              ]
+            },
+            {
+              "cp": 628,
+              "moves": [
+                "d3e4",
+                "d5e4",
+                "h5h6",
+                "g7h6",
+                "f1f6",
+                "b7d5",
+                "f7g6",
+                "e8e7",
+                "f6b6",
+                "e4e3",
+                "g6f5",
+                "e3e2",
+                "b6h6",
+                "h8g7"
+              ]
+            }
+          ],
+          "reported_nodes": 142758
+        },
+        "previous": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": 763,
+              "moves": [
+                "h5h6",
+                "b6h6",
+                "f1h1",
+                "e8e7",
+                "h1h6",
+                "g7h6",
+                "f7e7",
+                "h8g8",
+                "d3e2",
+                "c8f8",
+                "e7b7",
+                "f8f7",
+                "b7c8",
+                "f7f8",
+                "c8e6",
+                "f8f7"
+              ]
+            },
+            {
+              "cp": 564,
+              "moves": [
+                "d3e4",
+                "d5e4",
+                "h5h6",
+                "g7h6",
+                "f1f6",
+                "b7d5",
+                "f7g6",
+                "b6b3",
+                "a2b3",
+                "e8e7",
+                "g6h6",
+                "e7h7",
+                "f6f8"
+              ]
+            }
+          ],
+          "reported_nodes": 51709
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.126337,
+        "game_id": "169827191694",
+        "position_ply": 64,
+        "fen": "2r1r2k/1b2PQp1/pq6/3p2pP/4p3/1NpB4/P1P5/1K1R1R2 w - - 2 33",
+        "pgn_sha256": "aa1ad5afd3fae4465ed5fbbc0c788a42e8279d6e9f67b5bed727425ba3862b76",
+        "ec_material": 120
+      },
+      "baseline_after": {
+        "current": {
+          "depth": 19,
+          "lines": [
+            {
+              "cp": 981,
+              "moves": [
+                "g7h6",
+                "f1f6",
+                "e8e7",
+                "f7e7",
+                "e4d3",
+                "f6b6",
+                "d3c2",
+                "b1c2",
+                "b7c6",
+                "e7f6",
+                "h8h7",
+                "b6c6",
+                "c8c6",
+                "f6c6",
+                "h7g7",
+                "c6b7",
+                "g7g6",
+                "d1d5",
+                "g5g4"
+              ]
+            },
+            {
+              "cp": 1056,
+              "moves": [
+                "b6h6",
+                "f1h1",
+                "e8e7",
+                "h1h6",
+                "g7h6",
+                "f7e7",
+                "c8c7",
+                "e7d8",
+                "h8g7",
+                "d8c7",
+                "g7h8",
+                "d3e2",
+                "d5d4",
+                "c7b8",
+                "h8h7",
+                "b8b7",
+                "h7h8",
+                "b3d4",
+                "e4e3",
+                "b1a1",
+                "g5g4",
+                "d1f1",
+                "g4g3"
+              ]
+            }
+          ],
+          "reported_nodes": 300070
+        },
+        "previous": {
+          "depth": 18,
+          "lines": [
+            {
+              "cp": 981,
+              "moves": [
+                "g7h6",
+                "f1f6",
+                "e8e7",
+                "f7e7",
+                "e4d3",
+                "f6b6",
+                "d3c2",
+                "b1c2",
+                "b7c6",
+                "e7f6",
+                "h8h7",
+                "b6c6",
+                "c8c6",
+                "f6c6",
+                "h7g7",
+                "c6b7",
+                "g7g6",
+                "d1d5",
+                "g5g4"
+              ]
+            },
+            {
+              "cp": 1056,
+              "moves": [
+                "b6h6",
+                "f1h1",
+                "e8e7",
+                "h1h6",
+                "g7h6",
+                "f7e7",
+                "c8c7",
+                "e7d8",
+                "h8g7",
+                "d8c7",
+                "g7h8",
+                "d3e2",
+                "d5d4",
+                "c7b8",
+                "h8h7",
+                "b8b7",
+                "h7h8",
+                "b3d4",
+                "e4e3",
+                "b1a1",
+                "g5g4",
+                "d1f1",
+                "g4g3"
+              ]
+            }
+          ],
+          "reported_nodes": 290249
+        },
+        "terminal": false,
+        "quality": "frozen-v4-validation-sf18-300000",
+        "elapsed_seconds": 0.111186,
+        "game_id": "169827191694",
+        "position_ply": 65,
+        "fen": "2r1r2k/1b2PQp1/pq5P/3p2p1/4p3/1NpB4/P1P5/1K1R1R2 b - - 0 33",
+        "pgn_sha256": "aa1ad5afd3fae4465ed5fbbc0c788a42e8279d6e9f67b5bed727425ba3862b76",
+        "ec_material": -30
+      }
+    }
+  ]
+}

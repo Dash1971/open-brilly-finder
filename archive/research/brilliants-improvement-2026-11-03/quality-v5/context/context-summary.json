@@ -1,0 +1,1040 @@
+{
+  "scope": "All848 now unblinded development; historical recent200/panel labels are diagnostic only. One fixed600cp prior-context candidate, no grid or new evidence.",
+  "source_sha256": {
+    "baseline": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301",
+    "candidate": "fbcfdcc6a5f42f62af00395d03d927ba05e154b207e207a1075c6226d6a60788"
+  },
+  "input_sha256": {
+    "analysis-baseline.json": "d8833860a3f7f5aec1c7817c3203a10af500044e885efc364e9d03626fc3655b",
+    "analysis-panel.json": "682e50dd4083787f643ef990df12e6bed34407dfdeee83c8688497dbc44d06f2"
+  },
+  "contracts": {
+    "exact_gate_reconstruction_n": 848,
+    "reconstruction_differences": 0,
+    "ec_differences": 0,
+    "accuracy_cploss_differences": 0,
+    "other_nonbrilliant_symbol_differences": 0
+  },
+  "metrics": {
+    "all848": {
+      "baseline": {
+        "TP": 322,
+        "FN": 91,
+        "FP": 28,
+        "TN": 407,
+        "agreement": 0.8596698113207547,
+        "detection": 0.7796610169491526,
+        "false_award_rate": 0.06436781609195402
+      },
+      "prior600": {
+        "TP": 296,
+        "FN": 117,
+        "FP": 23,
+        "TN": 412,
+        "agreement": 0.8349056603773585,
+        "detection": 0.7167070217917676,
+        "false_award_rate": 0.052873563218390804
+      }
+    },
+    "core818": {
+      "baseline": {
+        "TP": 320,
+        "FN": 89,
+        "FP": 25,
+        "TN": 384,
+        "agreement": 0.8606356968215159,
+        "detection": 0.78239608801956,
+        "false_award_rate": 0.061124694376528114
+      },
+      "prior600": {
+        "TP": 294,
+        "FN": 115,
+        "FP": 21,
+        "TN": 388,
+        "agreement": 0.8337408312958435,
+        "detection": 0.7188264058679706,
+        "false_award_rate": 0.05134474327628362
+      }
+    },
+    "reference618": {
+      "baseline": {
+        "TP": 246,
+        "FN": 63,
+        "FP": 15,
+        "TN": 294,
+        "agreement": 0.8737864077669902,
+        "detection": 0.7961165048543689,
+        "false_award_rate": 0.04854368932038835
+      },
+      "prior600": {
+        "TP": 225,
+        "FN": 84,
+        "FP": 14,
+        "TN": 295,
+        "agreement": 0.8414239482200647,
+        "detection": 0.7281553398058253,
+        "false_award_rate": 0.045307443365695796
+      }
+    },
+    "recent200": {
+      "baseline": {
+        "TP": 74,
+        "FN": 26,
+        "FP": 10,
+        "TN": 90,
+        "agreement": 0.82,
+        "detection": 0.74,
+        "false_award_rate": 0.1
+      },
+      "prior600": {
+        "TP": 69,
+        "FN": 31,
+        "FP": 7,
+        "TN": 93,
+        "agreement": 0.81,
+        "detection": 0.69,
+        "false_award_rate": 0.07
+      }
+    },
+    "panel30": {
+      "baseline": {
+        "TP": 2,
+        "FN": 2,
+        "FP": 3,
+        "TN": 23,
+        "agreement": 0.8333333333333334,
+        "detection": 0.5,
+        "false_award_rate": 0.11538461538461539
+      },
+      "prior600": {
+        "TP": 2,
+        "FN": 2,
+        "FP": 2,
+        "TN": 24,
+        "agreement": 0.8666666666666667,
+        "detection": 0.5,
+        "false_award_rate": 0.07692307692307693
+      }
+    }
+  },
+  "recent26_miss_gate_breakdown": {
+    "n": 26,
+    "gate_failures": {
+      "two_roots": {
+        "current": 0,
+        "prior": 0,
+        "either": 0
+      },
+      "raw_offer": {
+        "current": 1,
+        "prior": 1,
+        "either": 1
+      },
+      "ec_or_mate_corroboration": {
+        "current": 22,
+        "prior": 22,
+        "either": 22
+      },
+      "quality": {
+        "current": 4,
+        "prior": 4,
+        "either": 4
+      },
+      "after_floor": {
+        "current": 0,
+        "prior": 0,
+        "either": 0
+      },
+      "phase_safe_alternative": {
+        "current": 1,
+        "prior": 1,
+        "either": 1
+      },
+      "checked_continuation": {
+        "current": 0,
+        "prior": 0,
+        "either": 0
+      }
+    },
+    "combined_failure_signatures": {
+      "ec_or_mate_corroboration": 20,
+      "quality": 3,
+      "phase_safe_alternative": 1,
+      "ec_or_mate_corroboration+quality": 1,
+      "ec_or_mate_corroboration+raw_offer": 1
+    },
+    "current_prior600_veto": 0,
+    "both_prior600_veto": 0,
+    "explicit_previous_winning_mate": 0,
+    "confirmation_withheld": 0
+  },
+  "recent_context_groups": {
+    "false_awards": {
+      "n": 10,
+      "normalized_score_distributions": {
+        "previous_own_after_cp_mover": {
+          "n": 10,
+          "min": -76,
+          "median": 450.5,
+          "max": 1000
+        },
+        "before_minus_previous_cp": {
+          "n": 10,
+          "min": -36,
+          "median": 19.0,
+          "max": 236
+        },
+        "after_minus_previous_cp": {
+          "n": 10,
+          "min": -120,
+          "median": 33.0,
+          "max": 250
+        }
+      },
+      "context_counts": {
+        "n": 10,
+        "gate_failures": {
+          "two_roots": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          },
+          "raw_offer": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          },
+          "ec_or_mate_corroboration": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          },
+          "quality": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          },
+          "after_floor": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          },
+          "phase_safe_alternative": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          },
+          "checked_continuation": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          }
+        },
+        "combined_failure_signatures": {
+          "none": 10
+        },
+        "current_prior600_veto": 3,
+        "both_prior600_veto": 3,
+        "explicit_previous_winning_mate": 1,
+        "confirmation_withheld": 0
+      },
+      "prior600_examples": [
+        {
+          "key": "169827191694:67",
+          "san": "Rh1",
+          "observed_labels": [
+            "best"
+          ],
+          "previous": 981,
+          "winning_mate": false,
+          "before_minus_previous": 19,
+          "after_minus_previous": 19
+        },
+        {
+          "key": "173084454389:59",
+          "san": "Bc5",
+          "observed_labels": [
+            "excellent"
+          ],
+          "previous": 750,
+          "winning_mate": false,
+          "before_minus_previous": 5,
+          "after_minus_previous": -120
+        },
+        {
+          "key": "186393990159:71",
+          "san": "Qg6+",
+          "observed_labels": [
+            "best"
+          ],
+          "previous": 1000,
+          "winning_mate": true,
+          "before_minus_previous": 0,
+          "after_minus_previous": 0
+        }
+      ]
+    },
+    "true_awards": {
+      "n": 74,
+      "normalized_score_distributions": {
+        "previous_own_after_cp_mover": {
+          "n": 74,
+          "min": -664,
+          "median": 163.0,
+          "max": 1000
+        },
+        "before_minus_previous_cp": {
+          "n": 74,
+          "min": -25,
+          "median": 78.0,
+          "max": 1023
+        },
+        "after_minus_previous_cp": {
+          "n": 74,
+          "min": -140,
+          "median": 100.5,
+          "max": 1083
+        }
+      },
+      "context_counts": {
+        "n": 74,
+        "gate_failures": {
+          "two_roots": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          },
+          "raw_offer": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          },
+          "ec_or_mate_corroboration": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          },
+          "quality": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          },
+          "after_floor": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          },
+          "phase_safe_alternative": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          },
+          "checked_continuation": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          }
+        },
+        "combined_failure_signatures": {
+          "none": 74
+        },
+        "current_prior600_veto": 5,
+        "both_prior600_veto": 5,
+        "explicit_previous_winning_mate": 3,
+        "confirmation_withheld": 0
+      },
+      "prior600_examples": [
+        {
+          "key": "172590636870:45",
+          "san": "Bf6",
+          "observed_labels": [
+            "!!"
+          ],
+          "previous": 1000,
+          "winning_mate": true,
+          "before_minus_previous": 0,
+          "after_minus_previous": 0
+        },
+        {
+          "key": "173049117092:40",
+          "san": "Be3+",
+          "observed_labels": [
+            "!!"
+          ],
+          "previous": 1000,
+          "winning_mate": true,
+          "before_minus_previous": 0,
+          "after_minus_previous": 0
+        },
+        {
+          "key": "174429457866:50",
+          "san": "Nxe2",
+          "observed_labels": [
+            "!!"
+          ],
+          "previous": 687,
+          "winning_mate": false,
+          "before_minus_previous": 20,
+          "after_minus_previous": -140
+        },
+        {
+          "key": "184430392420:37",
+          "san": "Rxh7+",
+          "observed_labels": [
+            "!!"
+          ],
+          "previous": 1000,
+          "winning_mate": true,
+          "before_minus_previous": 0,
+          "after_minus_previous": 0
+        },
+        {
+          "key": "184431785024:65",
+          "san": "Rxf7",
+          "observed_labels": [
+            "!!"
+          ],
+          "previous": 721,
+          "winning_mate": false,
+          "before_minus_previous": 227,
+          "after_minus_previous": 42
+        }
+      ]
+    },
+    "misses": {
+      "n": 26,
+      "normalized_score_distributions": {
+        "previous_own_after_cp_mover": {
+          "n": 26,
+          "min": -328,
+          "median": 178.5,
+          "max": 571
+        },
+        "before_minus_previous_cp": {
+          "n": 26,
+          "min": -19,
+          "median": 116.5,
+          "max": 716
+        },
+        "after_minus_previous_cp": {
+          "n": 26,
+          "min": -73,
+          "median": 119.0,
+          "max": 826
+        }
+      },
+      "context_counts": {
+        "n": 26,
+        "gate_failures": {
+          "two_roots": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          },
+          "raw_offer": {
+            "current": 1,
+            "prior": 1,
+            "either": 1
+          },
+          "ec_or_mate_corroboration": {
+            "current": 22,
+            "prior": 22,
+            "either": 22
+          },
+          "quality": {
+            "current": 4,
+            "prior": 4,
+            "either": 4
+          },
+          "after_floor": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          },
+          "phase_safe_alternative": {
+            "current": 1,
+            "prior": 1,
+            "either": 1
+          },
+          "checked_continuation": {
+            "current": 0,
+            "prior": 0,
+            "either": 0
+          }
+        },
+        "combined_failure_signatures": {
+          "ec_or_mate_corroboration": 20,
+          "quality": 3,
+          "phase_safe_alternative": 1,
+          "ec_or_mate_corroboration+quality": 1,
+          "ec_or_mate_corroboration+raw_offer": 1
+        },
+        "current_prior600_veto": 0,
+        "both_prior600_veto": 0,
+        "explicit_previous_winning_mate": 0,
+        "confirmation_withheld": 0
+      },
+      "prior600_examples": []
+    }
+  },
+  "score_note": "Normalized scores clamp to [-1000,1000]; winning mates map+1000, not a literal1000cp material/evaluation value. Deltas share this saturation and do not measure mate-distance improvements.",
+  "promotion_audit": {
+    "scope": "Descriptive legal promotion check, no new mechanism or candidate. All848 unblindeddevelopment.",
+    "fresh_positive_count": 100,
+    "recent_positive_played_promotions": 0,
+    "recent_positive_raw_offer_false_played_promotions": 0,
+    "recent_positive_positions_with_legal_promotion": 3,
+    "all_positive_positions_with_legal_promotion": 14,
+    "cases": [
+      {
+        "cohort": "reference618",
+        "key": "178966671357:44",
+        "san": "Qxe3",
+        "uci": "b6e3",
+        "played_promotion": false,
+        "raw_offer": true,
+        "baseline": "!!",
+        "legal_promotions": [
+          {
+            "uci": "g2g1q",
+            "san": "g1=Q",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "g2g1r",
+            "san": "g1=R",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "g2g1b",
+            "san": "g1=B",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "g2g1n",
+            "san": "g1=N",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          }
+        ]
+      },
+      {
+        "cohort": "reference618",
+        "key": "171577734842:63",
+        "san": "Qxf6+",
+        "uci": "f3f6",
+        "played_promotion": false,
+        "raw_offer": true,
+        "baseline": "!!",
+        "legal_promotions": [
+          {
+            "uci": "d7d8q",
+            "san": "d8=Q",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "d7d8r",
+            "san": "d8=R",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "d7d8b",
+            "san": "d8=B",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "d7d8n",
+            "san": "d8=N",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          }
+        ]
+      },
+      {
+        "cohort": "reference618",
+        "key": "186823589241:79",
+        "san": "Rxa7",
+        "uci": "a8a7",
+        "played_promotion": false,
+        "raw_offer": true,
+        "baseline": "!!",
+        "legal_promotions": [
+          {
+            "uci": "c7c8q",
+            "san": "c8=Q",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8r",
+            "san": "c8=R",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8b",
+            "san": "c8=B",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8n",
+            "san": "c8=N",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          }
+        ]
+      },
+      {
+        "cohort": "reference618",
+        "key": "185962589145:82",
+        "san": "Bxh6",
+        "uci": "g7h6",
+        "played_promotion": false,
+        "raw_offer": true,
+        "baseline": "!!",
+        "legal_promotions": [
+          {
+            "uci": "c2c1q",
+            "san": "c1=Q+",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c2c1r",
+            "san": "c1=R+",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c2c1b",
+            "san": "c1=B",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c2c1n",
+            "san": "c1=N",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          }
+        ]
+      },
+      {
+        "cohort": "reference618",
+        "key": "186312822844:85",
+        "san": "Qc4",
+        "uci": "f4c4",
+        "played_promotion": false,
+        "raw_offer": true,
+        "baseline": "?!",
+        "legal_promotions": [
+          {
+            "uci": "c7c8q",
+            "san": "c8=Q",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8r",
+            "san": "c8=R",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8b",
+            "san": "c8=B",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8n",
+            "san": "c8=N",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          }
+        ]
+      },
+      {
+        "cohort": "reference618",
+        "key": "184405419484:67",
+        "san": "b5",
+        "uci": "b4b5",
+        "played_promotion": false,
+        "raw_offer": true,
+        "baseline": "?!",
+        "legal_promotions": [
+          {
+            "uci": "g7g8q",
+            "san": "g8=Q",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "g7g8r",
+            "san": "g8=R",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "g7g8b",
+            "san": "g8=B",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "g7g8n",
+            "san": "g8=N",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          }
+        ]
+      },
+      {
+        "cohort": "reference618",
+        "key": "185619723108:75",
+        "san": "Rxd6+",
+        "uci": "d1d6",
+        "played_promotion": false,
+        "raw_offer": true,
+        "baseline": "?!",
+        "legal_promotions": [
+          {
+            "uci": "c7c8q",
+            "san": "c8=Q+",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8r",
+            "san": "c8=R",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8b",
+            "san": "c8=B+",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8n",
+            "san": "c8=N",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          }
+        ]
+      },
+      {
+        "cohort": "reference618",
+        "key": "165819580262:69",
+        "san": "Qxd5",
+        "uci": "c5d5",
+        "played_promotion": false,
+        "raw_offer": true,
+        "baseline": "!!",
+        "legal_promotions": [
+          {
+            "uci": "a7a8q",
+            "san": "a8=Q",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "a7a8r",
+            "san": "a8=R",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "a7a8b",
+            "san": "a8=B",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "a7a8n",
+            "san": "a8=N",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          }
+        ]
+      },
+      {
+        "cohort": "reference618",
+        "key": "178706873269:80",
+        "san": "Ba3",
+        "uci": "b4a3",
+        "played_promotion": false,
+        "raw_offer": true,
+        "baseline": "!?",
+        "legal_promotions": [
+          {
+            "uci": "c2c1q",
+            "san": "c1=Q+",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c2c1r",
+            "san": "c1=R+",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c2c1b",
+            "san": "c1=B",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c2c1n",
+            "san": "c1=N",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          }
+        ]
+      },
+      {
+        "cohort": "reference618",
+        "key": "178706873269:82",
+        "san": "Kf6",
+        "uci": "g6f6",
+        "played_promotion": false,
+        "raw_offer": true,
+        "baseline": "!?",
+        "legal_promotions": [
+          {
+            "uci": "c2c1q",
+            "san": "c1=Q",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c2c1r",
+            "san": "c1=R",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c2c1b",
+            "san": "c1=B",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c2c1n",
+            "san": "c1=N+",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          }
+        ]
+      },
+      {
+        "cohort": "reference618",
+        "key": "184926439598:75",
+        "san": "Qxa5",
+        "uci": "b4a5",
+        "played_promotion": false,
+        "raw_offer": true,
+        "baseline": "!!",
+        "legal_promotions": [
+          {
+            "uci": "c7c8q",
+            "san": "c8=Q+",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8r",
+            "san": "c8=R+",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8b",
+            "san": "c8=B",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8n",
+            "san": "c8=N",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          }
+        ]
+      },
+      {
+        "cohort": "recent200",
+        "key": "174014470836:43",
+        "san": "Qxf8+",
+        "uci": "f1f8",
+        "played_promotion": false,
+        "raw_offer": true,
+        "baseline": "!!",
+        "legal_promotions": [
+          {
+            "uci": "h7h8q",
+            "san": "h8=Q+",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "h7h8r",
+            "san": "h8=R",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "h7h8b",
+            "san": "h8=B+",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "h7h8n",
+            "san": "h8=N",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          }
+        ]
+      },
+      {
+        "cohort": "recent200",
+        "key": "174184365826:77",
+        "san": "Kxf3",
+        "uci": "g3f3",
+        "played_promotion": false,
+        "raw_offer": true,
+        "baseline": "!!",
+        "legal_promotions": [
+          {
+            "uci": "c7c8q",
+            "san": "c8=Q",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8r",
+            "san": "c8=R",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8b",
+            "san": "c8=B",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "c7c8n",
+            "san": "c8=N",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          }
+        ]
+      },
+      {
+        "cohort": "recent200",
+        "key": "174472144890:52",
+        "san": "dxc6",
+        "uci": "d7c6",
+        "played_promotion": false,
+        "raw_offer": true,
+        "baseline": "!!",
+        "legal_promotions": [
+          {
+            "uci": "a2a1q",
+            "san": "a1=Q",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "a2a1r",
+            "san": "a1=R",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "a2a1b",
+            "san": "a1=B",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          },
+          {
+            "uci": "a2a1n",
+            "san": "a1=N",
+            "stalemate": false,
+            "checkmate": false,
+            "insufficient_material": false
+          }
+        ]
+      }
+    ]
+  },
+  "elapsed_ms": 7657,
+  "max_rss_kib": 172512,
+  "conclusion": "Do not promote the prior600 veto alone: recent3FP removed but5TP lost;20EC-only misses require a replacement proof that rejects17similarly exposed negatives."
+}

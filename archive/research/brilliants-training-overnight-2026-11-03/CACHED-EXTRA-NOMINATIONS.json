@@ -1,0 +1,2082 @@
+{
+  "scope": "Existing gallery metadata only; no current labels or classifier outputs used. Excludes reviewed games and first-wave allocations.",
+  "source_files": 77,
+  "rows": [
+    {
+      "account": "KNVB",
+      "game_id": "185389952322",
+      "ply": 21,
+      "source_type": "gallery",
+      "label": "!!",
+      "categories": [
+        "Knight Sacrifice"
+      ],
+      "sampling_category": "Knight Sacrifice",
+      "source_link": "https://www.chess.com/analysis/game/live/185389952322/review?move=20",
+      "gallery_link": "https://www.chess.com/member/KNVB/stats/all-brilliant-moves/knight-sacrifice?time=365",
+      "captured_at": "2026-11-03T02:06:37.565Z",
+      "gallery_count": "271",
+      "player_text": "FM\nNikFil2013\n(3112)\n8\n7\n6\n5\n4\n3\n2\n1\na\nb\nc\nd\ne\nf\ng\nh\nGM\nKNVB\n(3027)",
+      "gallery_board_pieces": [
+        "piece bk square-78",
+        "piece br square-68",
+        "piece bb square-38",
+        "piece bn square-28",
+        "piece br square-18",
+        "piece bp square-87",
+        "piece bp square-77",
+        "piece bn square-47",
+        "piece bp square-27",
+        "piece bp square-17",
+        "piece bp square-66",
+        "piece bp square-56",
+        "piece bq square-46",
+        "piece wq square-85",
+        "piece wn square-55",
+        "piece bp square-45",
+        "piece bp square-35",
+        "piece wp square-64",
+        "piece wp square-44",
+        "piece wp square-53",
+        "piece wb square-43",
+        "piece wp square-33",
+        "piece wp square-82",
+        "piece wp square-72",
+        "piece wn square-42",
+        "piece wp square-22",
+        "piece wp square-12",
+        "piece wr square-81",
+        "piece wk square-51",
+        "piece wr square-11"
+      ],
+      "board_missing": false,
+      "selected": false,
+      "sample_role": "positive_candidate",
+      "selection_status": "reserve",
+      "overnight_metadata_sources": [
+        "research/brilliants-600-2026-11-03/evidence/knvb-gallery-knight-sacrifice.json",
+        "research/brilliants-additional-300-2026-11-03/knvb-candidate-pool.json",
+        "research/brilliants-improvement-2026-11-03/future-validation-v5/historical-pool-snapshot.json",
+        "research/brilliants-improvement-2026-11-03/future-validation-v5/knvb-candidate-pool.json",
+        "research/brilliants-improvement-2026-11-03/validation/knvb-candidate-pool.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "prior_gallery_source": "evidence/knvb-gallery-knight-sacrifice.json",
+      "gallery_capture_reused": true,
+      "san": "Qh5",
+      "uci": "d1h5",
+      "fen_before": "rnb2rk1/pp1n2pp/3qpp2/2ppN3/3P1P2/2PBP3/PP1N2PP/R2QK2R w KQ - 0 11",
+      "fen_after": "rnb2rk1/pp1n2pp/3qpp2/2ppN2Q/3P1P2/2PBP3/PP1N2PP/R3K2R b KQ - 1 11",
+      "game_type": "live",
+      "expected_game_type": "live",
+      "historical_gallery_source_link": "https://www.chess.com/analysis/game/live/185389952322/review?move=20",
+      "current_label": "unknown",
+      "historical_gallery_sources": [
+        "research/brilliants-600-2026-11-03/evidence/knvb-gallery-knight-sacrifice.json",
+        "research/brilliants-additional-300-2026-11-03/knvb-candidate-pool.json",
+        "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json",
+        "research/brilliants-improvement-2026-11-03/validation/knvb-candidate-pool.json"
+      ],
+      "pgn_sha256": "c6d39bd5a9e6a5341b613c76d2e998b37394aebd6dd58e97b8e58299c00dc356",
+      "pgn_date": "2026.10.15",
+      "board_identity_captured": true
+    },
+    {
+      "account": "KNVB",
+      "game_id": "185391161422",
+      "ply": 27,
+      "source_type": "gallery",
+      "label": "!!",
+      "categories": [
+        "Bishop Sacrifice"
+      ],
+      "sampling_category": "Bishop Sacrifice",
+      "source_link": "https://www.chess.com/analysis/game/live/185391161422?move=26",
+      "gallery_link": "https://www.chess.com/member/KNVB/stats/all-brilliant-moves/bishop-sacrifice?time=365",
+      "captured_at": "2026-11-03T02:04:39.035Z",
+      "gallery_count": "171",
+      "player_text": "GM\nMaster22-22\n(2985)\nGM\nKNVB\n(3033)",
+      "gallery_board_pieces": [],
+      "board_missing": true,
+      "selected": false,
+      "sample_role": "positive_candidate",
+      "selection_status": "reserve",
+      "overnight_metadata_sources": [
+        "research/brilliants-600-2026-11-03/evidence/knvb-gallery-bishop-sacrifice.json",
+        "research/brilliants-additional-300-2026-11-03/knvb-candidate-pool.json",
+        "research/brilliants-improvement-2026-11-03/future-validation-v5/historical-pool-snapshot.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "prior_gallery_source": "evidence/knvb-gallery-bishop-sacrifice.json",
+      "gallery_capture_reused": true,
+      "san": "Bxh7+",
+      "uci": "e4h7",
+      "fen_before": "r3qrk1/pb3ppp/1pn1p3/2b5/Q3B3/2P2NB1/PP3PPP/R3K2R w KQ - 2 14",
+      "fen_after": "r3qrk1/pb3ppB/1pn1p3/2b5/Q7/2P2NB1/PP3PPP/R3K2R b KQ - 0 14",
+      "game_type": "live",
+      "sources": [
+        "research/brilliants-600-2026-11-03/evidence/knvb-gallery-bishop-sacrifice.json",
+        "research/brilliants-additional-300-2026-11-03/knvb-candidate-pool.json"
+      ],
+      "historical_gallery_only": true,
+      "current_label": "unknown",
+      "status": "excluded_sampled_development_position",
+      "full_pgn_cached": true,
+      "expected_game_type": "live",
+      "historical_gallery_sources": [
+        "research/brilliants-600-2026-11-03/evidence/knvb-gallery-bishop-sacrifice.json",
+        "research/brilliants-additional-300-2026-11-03/knvb-candidate-pool.json",
+        "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json"
+      ]
+    },
+    {
+      "account": "KNVB",
+      "game_id": "180017464974",
+      "ply": 18,
+      "source_type": "gallery",
+      "label": "!!",
+      "categories": [
+        "Bishop Sacrifice"
+      ],
+      "sampling_category": "Bishop Sacrifice",
+      "source_link": "https://www.chess.com/analysis/game/live/180017464974/review?move=17",
+      "gallery_link": "https://www.chess.com/member/KNVB/stats/all-brilliant-moves/bishop-sacrifice?time=365",
+      "captured_at": "2026-11-03T02:04:39.035Z",
+      "gallery_count": "171",
+      "player_text": "GM\nKNVB\n(2966)\nCM\nEdgar_Karagyozyan\n(2873)",
+      "gallery_board_pieces": [],
+      "board_missing": true,
+      "selected": false,
+      "sample_role": "positive_candidate",
+      "selection_status": "reserve",
+      "overnight_metadata_sources": [
+        "research/brilliants-600-2026-11-03/evidence/knvb-gallery-bishop-sacrifice.json",
+        "research/brilliants-additional-300-2026-11-03/knvb-candidate-pool.json",
+        "research/brilliants-improvement-2026-11-03/future-validation-v5/historical-pool-snapshot.json",
+        "research/brilliants-improvement-2026-11-03/future-validation-v5/knvb-candidate-pool.json",
+        "research/brilliants-improvement-2026-11-03/validation/knvb-candidate-pool.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "prior_gallery_source": "evidence/knvb-gallery-bishop-sacrifice.json",
+      "gallery_capture_reused": true,
+      "san": "Bxh3",
+      "uci": "c8h3",
+      "fen_before": "r1b1k2r/ppp2ppp/3p1n2/2b1q3/4P3/2NB3P/PPP2PP1/R1BQ1RK1 b kq - 0 9",
+      "fen_after": "r3k2r/ppp2ppp/3p1n2/2b1q3/4P3/2NB3b/PPP2PP1/R1BQ1RK1 w kq - 0 10",
+      "game_type": "live",
+      "expected_game_type": "live",
+      "historical_gallery_source_link": "https://www.chess.com/analysis/game/live/180017464974/review?move=17",
+      "current_label": "unknown",
+      "historical_gallery_sources": [
+        "research/brilliants-600-2026-11-03/evidence/knvb-gallery-bishop-sacrifice.json",
+        "research/brilliants-additional-300-2026-11-03/knvb-candidate-pool.json",
+        "research/brilliants-improvement-2026-11-03/validation/cached-candidates-COLLECTOR-ONLY.json",
+        "research/brilliants-improvement-2026-11-03/validation/knvb-candidate-pool.json"
+      ],
+      "pgn_sha256": "26a9c35a8dc464346e02eed339b8640fb7732afbfd4208d35dd74d2e9649a320",
+      "pgn_date": "2026.09.16",
+      "board_identity_captured": false
+    },
+    {
+      "card_text": "GM\nSalem-AR\n(3117)\nGM\nHikaru\n(3434)",
+      "pieces": [
+        "piece bk square-78",
+        "piece bn square-68",
+        "piece bb square-58",
+        "piece br square-48",
+        "piece br square-18",
+        "piece bp square-87",
+        "piece bp square-77",
+        "piece bq square-57",
+        "piece bp square-27",
+        "piece bp square-17",
+        "piece wn square-66",
+        "piece bp square-56",
+        "piece bp square-36",
+        "piece wb square-75",
+        "piece bb square-15",
+        "piece wp square-44",
+        "piece wp square-34",
+        "piece wp square-73",
+        "piece wq square-63",
+        "piece wp square-82",
+        "piece wb square-72",
+        "piece wp square-62",
+        "piece wp square-22",
+        "piece wp square-12",
+        "piece wk square-71",
+        "piece wr square-51",
+        "piece wr square-41"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/184153711551?move=34",
+      "account": "Hikaru",
+      "game_id": "184153711551",
+      "game_type": "live",
+      "ply": 35,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nHikaru\n(3428)\nIM\nkingnb\n(2946)",
+      "pieces": [
+        "piece bk square-78",
+        "piece br square-68",
+        "piece bp square-87",
+        "piece bq square-47",
+        "piece bp square-27",
+        "piece bp square-17",
+        "piece bb square-66",
+        "piece bp square-56",
+        "piece bp square-85",
+        "piece wp square-55",
+        "piece bp square-45",
+        "piece wr square-54",
+        "piece wn square-63",
+        "piece wk square-82",
+        "piece wp square-72",
+        "piece wp square-62",
+        "piece wq square-42",
+        "piece wp square-22",
+        "piece wp square-12",
+        "piece br square-31"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/184153711213?move=51&flip=true",
+      "account": "Hikaru",
+      "game_id": "184153711213",
+      "game_type": "live",
+      "ply": 52,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nHikaru\n(3433)\nGM\nSina-Movahed\n(3215)",
+      "pieces": [
+        "piece bk square-68",
+        "piece bp square-67",
+        "piece bp square-86",
+        "piece wp square-66",
+        "piece bp square-56",
+        "piece wp square-85",
+        "piece bp square-75",
+        "piece wp square-55",
+        "piece bp square-45",
+        "piece wn square-25",
+        "piece wp square-74",
+        "piece wp square-44",
+        "piece bn square-34",
+        "piece wk square-43",
+        "piece bp square-13",
+        "piece wn square-82",
+        "piece bn square-52"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/184153110967?move=91&flip=true",
+      "account": "Hikaru",
+      "game_id": "184153110967",
+      "game_type": "live",
+      "ply": 92,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "IM\nSnorlax\n(2836)\nGM\nHikaru\n(3410)",
+      "pieces": [
+        "piece bp square-77",
+        "piece bk square-67",
+        "piece bn square-37",
+        "piece wp square-17",
+        "piece bp square-76",
+        "piece bp square-56",
+        "piece wp square-55",
+        "piece wp square-35",
+        "piece wn square-25",
+        "piece wp square-82",
+        "piece wk square-81"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/184020954806?move=80",
+      "account": "Hikaru",
+      "game_id": "184020954806",
+      "game_type": "live",
+      "ply": 81,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nHikaru\n(3406)\nGM\nalexrustemov\n(3014)",
+      "pieces": [
+        "piece bk square-68",
+        "piece br square-18",
+        "piece br square-87",
+        "piece bb square-77",
+        "piece bq square-67",
+        "piece bn square-57",
+        "piece bp square-47",
+        "piece bp square-37",
+        "piece bp square-17",
+        "piece bp square-26",
+        "piece wq square-84",
+        "piece wn square-64",
+        "piece wp square-34",
+        "piece bb square-63",
+        "piece wb square-53",
+        "piece wn square-33",
+        "piece wp square-82",
+        "piece wp square-62",
+        "piece wk square-42",
+        "piece wp square-22",
+        "piece wp square-12",
+        "piece wr square-71"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/180015410334?move=35&flip=true",
+      "account": "Hikaru",
+      "game_id": "180015410334",
+      "game_type": "live",
+      "ply": 36,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "CM\nChess2010kingAlex\n(2850)\nGM\nHikaru\n(3400)",
+      "pieces": [
+        "piece wr square-48",
+        "piece wp square-27",
+        "piece bk square-56",
+        "piece bb square-46",
+        "piece wn square-35",
+        "piece bp square-44",
+        "piece wk square-83",
+        "piece bp square-73",
+        "piece br square-23"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/180005648508?move=122",
+      "account": "Hikaru",
+      "game_id": "180005648508",
+      "game_type": "live",
+      "ply": 123,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nHikaru\n(3380)\nGM\nalexrustemov\n(2997)",
+      "pieces": [
+        "piece bk square-78",
+        "piece bb square-58",
+        "piece bb square-77",
+        "piece bq square-67",
+        "piece br square-27",
+        "piece bp square-36",
+        "piece wp square-26",
+        "piece br square-16",
+        "piece bp square-45",
+        "piece wp square-35",
+        "piece wp square-15",
+        "piece bp square-84",
+        "piece wp square-44",
+        "piece wr square-14",
+        "piece wn square-73",
+        "piece bp square-63",
+        "piece wp square-53",
+        "piece wq square-43",
+        "piece wp square-62",
+        "piece wr square-22",
+        "piece wk square-71"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/174494149704?move=73&flip=true",
+      "account": "Hikaru",
+      "game_id": "174494149704",
+      "game_type": "live",
+      "ply": 74,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nHikaru\n(3372)\nIM\nTopGeahr\n(2994)",
+      "pieces": [
+        "piece bp square-87",
+        "piece bk square-67",
+        "piece bp square-76",
+        "piece bp square-66",
+        "piece bp square-55",
+        "piece bp square-25",
+        "piece wp square-74",
+        "piece wp square-54",
+        "piece bp square-44",
+        "piece bn square-24",
+        "piece wp square-14",
+        "piece wp square-63",
+        "piece wn square-43",
+        "piece wp square-23",
+        "piece br square-72",
+        "piece wk square-41",
+        "piece wr square-11"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/174491761210?move=75&flip=true",
+      "account": "Hikaru",
+      "game_id": "174491761210",
+      "game_type": "live",
+      "ply": 76,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nmsolleveld\n(3171)\nGM\nHikaru\n(3416)",
+      "pieces": [
+        "piece bq square-68",
+        "piece br square-48",
+        "piece br square-18",
+        "piece bk square-77",
+        "piece bb square-47",
+        "piece bn square-37",
+        "piece bp square-27",
+        "piece bp square-66",
+        "piece wn square-46",
+        "piece bp square-36",
+        "piece wn square-75",
+        "piece wp square-65",
+        "piece wp square-35",
+        "piece wb square-34",
+        "piece wp square-24",
+        "piece bp square-14",
+        "piece wq square-53",
+        "piece wp square-13",
+        "piece wk square-71",
+        "piece wr square-41"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/183549510985?move=66",
+      "account": "Hikaru",
+      "game_id": "183549510985",
+      "game_type": "live",
+      "ply": 67,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "IM\nAswathchess\n(3067)\nGM\nHikaru\n(3415)",
+      "pieces": [
+        "piece br square-48",
+        "piece bk square-18",
+        "piece wr square-17",
+        "piece br square-86",
+        "piece bq square-56",
+        "piece wp square-16",
+        "piece bp square-75",
+        "piece bn square-55",
+        "piece wp square-25",
+        "piece bp square-54",
+        "piece wp square-44",
+        "piece bp square-83",
+        "piece wp square-73",
+        "piece wp square-53",
+        "piece wp square-82",
+        "piece wq square-32",
+        "piece wk square-71",
+        "piece wr square-61"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/183548910513?move=60",
+      "account": "Hikaru",
+      "game_id": "183548910513",
+      "game_type": "live",
+      "ply": 61,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\npenguingm1\n(3167)\nGM\nHikaru\n(3398)",
+      "pieces": [
+        "piece bk square-78",
+        "piece br square-58",
+        "piece bb square-38",
+        "piece bp square-77",
+        "piece bp square-67",
+        "piece bq square-57",
+        "piece bp square-27",
+        "piece br square-46",
+        "piece bp square-36",
+        "piece bp square-75",
+        "piece wr square-55",
+        "piece bp square-14",
+        "piece wp square-83",
+        "piece wn square-73",
+        "piece wp square-23",
+        "piece wk square-82",
+        "piece wp square-72",
+        "piece wq square-62",
+        "piece wb square-32",
+        "piece wp square-12",
+        "piece wr square-61"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/183547710951?move=56",
+      "account": "Hikaru",
+      "game_id": "183547710951",
+      "game_type": "live",
+      "ply": 57,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nHikaru\n(3395)\nFM\nTheRabbit19\n(2956)",
+      "pieces": [
+        "piece wr square-27",
+        "piece br square-17",
+        "piece wk square-54",
+        "piece bk square-33",
+        "piece bp square-22"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/183547110615?move=101&flip=true",
+      "account": "Hikaru",
+      "game_id": "183547110615",
+      "game_type": "live",
+      "ply": 102,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "IM\nBryanl106\n(3040)\n8\n7\n6\n5\n4\n3\n2\n1\na\nb\nc\nd\ne\nf\ng\nh\nGM\nHikaru\n(3365)",
+      "pieces": [
+        "piece bk square-78",
+        "piece br square-68",
+        "piece br square-18",
+        "piece bb square-77",
+        "piece bp square-67",
+        "piece bb square-47",
+        "piece bq square-37",
+        "piece bp square-27",
+        "piece bp square-17",
+        "piece bp square-86",
+        "piece bp square-76",
+        "piece bp square-36",
+        "piece bn square-85",
+        "piece wn square-65",
+        "piece wp square-54",
+        "piece wp square-14",
+        "piece wp square-83",
+        "piece wp square-73",
+        "piece wb square-53",
+        "piece wn square-33",
+        "piece wk square-82",
+        "piece wp square-62",
+        "piece wq square-52",
+        "piece wp square-22",
+        "piece wr square-41",
+        "piece wr square-11"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/183544110425?move=38",
+      "account": "Hikaru",
+      "game_id": "183544110425",
+      "game_type": "live",
+      "ply": 39,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "NM\nMatycarcamo91\n(2647)\n8\n7\n6\n5\n4\n3\n2\n1\na\nb\nc\nd\ne\nf\ng\nh\nGM\nHikaru\n(3356)",
+      "pieces": [
+        "piece bk square-78",
+        "piece br square-68",
+        "piece br square-28",
+        "piece wb square-87",
+        "piece bp square-77",
+        "piece bp square-67",
+        "piece bp square-17",
+        "piece bq square-66",
+        "piece bn square-35",
+        "piece bp square-64",
+        "piece wp square-83",
+        "piece wq square-63",
+        "piece wp square-72",
+        "piece wp square-62",
+        "piece wp square-22",
+        "piece wp square-12",
+        "piece wk square-71",
+        "piece wr square-51",
+        "piece wr square-11"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/183543510767?move=46",
+      "account": "Hikaru",
+      "game_id": "183543510767",
+      "game_type": "live",
+      "ply": 47,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nHikaru\n(3354)\n1\n2\n3\n4\n5\n6\n7\n8\nh\ng\nf\ne\nd\nc\nb\na\nGM\npenguingm1\n(3138)",
+      "pieces": [
+        "piece bk square-88",
+        "piece br square-28",
+        "piece wp square-87",
+        "piece bp square-67",
+        "piece bq square-57",
+        "piece bp square-17",
+        "piece bp square-76",
+        "piece bp square-56",
+        "piece bn square-65",
+        "piece wp square-55",
+        "piece bp square-45",
+        "piece br square-25",
+        "piece wq square-74",
+        "piece wp square-54",
+        "piece wr square-83",
+        "piece wp square-13",
+        "piece wp square-82",
+        "piece wn square-42",
+        "piece wp square-22",
+        "piece wr square-41",
+        "piece wk square-21"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/183543510367?move=53&flip=true",
+      "account": "Hikaru",
+      "game_id": "183543510367",
+      "game_type": "live",
+      "ply": 54,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nHikaru\n(3354)\n1\n2\n3\n4\n5\n6\n7\n8\nh\ng\nf\ne\nd\nc\nb\na\nGM\npenguingm1\n(3138)",
+      "pieces": [
+        "piece bk square-88",
+        "piece br square-28",
+        "piece wp square-87",
+        "piece bp square-67",
+        "piece bp square-17",
+        "piece wp square-76",
+        "piece bp square-56",
+        "piece wp square-55",
+        "piece bp square-45",
+        "piece bq square-35",
+        "piece wq square-74",
+        "piece wr square-83",
+        "piece wp square-13",
+        "piece wp square-82",
+        "piece wn square-42",
+        "piece br square-12",
+        "piece wr square-41",
+        "piece wk square-11"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/183543510367?move=59&flip=true",
+      "account": "Hikaru",
+      "game_id": "183543510367",
+      "game_type": "live",
+      "ply": 60,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nHikaru\n(3362)\nFM\npuz2010\n(3012)",
+      "pieces": [],
+      "source_link": "https://www.chess.com/analysis/game/live/174287430896?move=51&flip=true",
+      "account": "Hikaru",
+      "game_id": "174287430896",
+      "game_type": "live",
+      "ply": 52,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": true,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nHikaru\n(3366)\nGM\nsergoy\n(3132)",
+      "pieces": [],
+      "source_link": "https://www.chess.com/analysis/game/live/183370101895?move=53&flip=true",
+      "account": "Hikaru",
+      "game_id": "183370101895",
+      "game_type": "live",
+      "ply": 54,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": true,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\njefferyx\n(3253)\nGM\nHikaru\n(3389)",
+      "pieces": [],
+      "source_link": "https://www.chess.com/analysis/game/live/183200302081?move=134",
+      "account": "Hikaru",
+      "game_id": "183200302081",
+      "game_type": "live",
+      "ply": 135,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/Hikaru/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:56:46.568Z",
+      "piece_capture_missing": true,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hikaru-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nhansen\n(3079)\nGMSAMITH\n(2782)",
+      "pieces": [
+        "piece br square-18",
+        "piece bk square-87",
+        "piece bp square-67",
+        "piece bp square-86",
+        "piece bq square-66",
+        "piece bb square-46",
+        "piece bp square-26",
+        "piece wp square-65",
+        "piece bp square-55",
+        "piece bn square-35",
+        "piece wp square-84",
+        "piece bp square-44",
+        "piece bp square-14",
+        "piece wk square-83",
+        "piece br square-73",
+        "piece wq square-42",
+        "piece wp square-22",
+        "piece wp square-12",
+        "piece wr square-61",
+        "piece wb square-31",
+        "piece wr square-11"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/171728809176?move=49&flip=true",
+      "account": "hansen",
+      "game_id": "171728809176",
+      "game_type": "live",
+      "ply": 50,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GMSAMITH\n(2785)\nGM\nhansen\n(3076)",
+      "pieces": [
+        "piece bk square-78",
+        "piece bn square-28",
+        "piece br square-18",
+        "piece bp square-87",
+        "piece bq square-57",
+        "piece bp square-27",
+        "piece bp square-17",
+        "piece bp square-66",
+        "piece bb square-56",
+        "piece wb square-75",
+        "piece bp square-65",
+        "piece wr square-55",
+        "piece bp square-45",
+        "piece wp square-35",
+        "piece wn square-44",
+        "piece wp square-82",
+        "piece wp square-72",
+        "piece wp square-62",
+        "piece wq square-32",
+        "piece wp square-22",
+        "piece wp square-12",
+        "piece wk square-71",
+        "piece wr square-11"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/171728787528?move=42",
+      "account": "hansen",
+      "game_id": "171728787528",
+      "game_type": "live",
+      "ply": 43,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "NM\nDinosaurioyogurt\n(2806)\nGM\nhansen\n(3058)",
+      "pieces": [
+        "piece bk square-78",
+        "piece br square-68",
+        "piece bp square-77",
+        "piece br square-67",
+        "piece bq square-57",
+        "piece bb square-47",
+        "piece bp square-37",
+        "piece bp square-27",
+        "piece bp square-86",
+        "piece wq square-76",
+        "piece bb square-46",
+        "piece bp square-16",
+        "piece bp square-55",
+        "piece bp square-35",
+        "piece wp square-15",
+        "piece wn square-54",
+        "piece wr square-14",
+        "piece wp square-83",
+        "piece wb square-53",
+        "piece wp square-43",
+        "piece wp square-72",
+        "piece wp square-62",
+        "piece wn square-42",
+        "piece wp square-32",
+        "piece wp square-22",
+        "piece wk square-71",
+        "piece wr square-51"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/171713539698?move=36",
+      "account": "hansen",
+      "game_id": "171713539698",
+      "game_type": "live",
+      "ply": 37,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nhansen\n(3048)\nFM\nPapas_con_nuggets\n(2779)",
+      "pieces": [
+        "piece bk square-78",
+        "piece br square-68",
+        "piece bn square-77",
+        "piece bp square-67",
+        "piece bb square-57",
+        "piece bn square-47",
+        "piece bp square-76",
+        "piece bp square-56",
+        "piece bq square-16",
+        "piece bp square-85",
+        "piece wn square-75",
+        "piece wp square-55",
+        "piece bp square-45",
+        "piece wp square-84",
+        "piece wp square-44",
+        "piece bp square-14",
+        "piece wp square-73",
+        "piece wn square-63",
+        "piece br square-33",
+        "piece bp square-23",
+        "piece wp square-13",
+        "piece wk square-72",
+        "piece wp square-62",
+        "piece wp square-22",
+        "piece wr square-81",
+        "piece wq square-41",
+        "piece wr square-11"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/178550271503?move=47&flip=true",
+      "account": "hansen",
+      "game_id": "178550271503",
+      "game_type": "live",
+      "ply": 48,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nhansen\n(3114)\nFM\njethrovv\n(2782)",
+      "pieces": [
+        "piece bk square-78",
+        "piece br square-68",
+        "piece bp square-87",
+        "piece bp square-77",
+        "piece bp square-67",
+        "piece bb square-57",
+        "piece bp square-27",
+        "piece bn square-66",
+        "piece bp square-56",
+        "piece wn square-26",
+        "piece bp square-16",
+        "piece bb square-65",
+        "piece br square-44",
+        "piece bq square-24",
+        "piece wp square-14",
+        "piece wb square-63",
+        "piece wp square-53",
+        "piece wp square-23",
+        "piece wp square-82",
+        "piece wp square-72",
+        "piece wp square-62",
+        "piece wk square-71",
+        "piece wr square-61",
+        "piece wq square-51",
+        "piece wr square-11"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/171636052538?move=35&flip=true",
+      "account": "hansen",
+      "game_id": "171636052538",
+      "game_type": "live",
+      "ply": 36,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nyoungKID\n(3159)\nGM\nhansen\n(3141)",
+      "pieces": [
+        "piece bk square-78",
+        "piece br square-68",
+        "piece bb square-38",
+        "piece bn square-87",
+        "piece bp square-77",
+        "piece br square-57",
+        "piece bq square-37",
+        "piece bp square-56",
+        "piece bp square-26",
+        "piece bp square-16",
+        "piece wq square-85",
+        "piece bp square-65",
+        "piece wr square-55",
+        "piece wn square-84",
+        "piece wb square-34",
+        "piece wp square-14",
+        "piece wp square-83",
+        "piece wn square-33",
+        "piece wp square-72",
+        "piece wp square-62",
+        "piece wp square-32",
+        "piece wp square-22",
+        "piece wk square-71",
+        "piece wr square-41"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/171591768812?move=46",
+      "account": "hansen",
+      "game_id": "171591768812",
+      "game_type": "live",
+      "ply": 47,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nyoungKID\n(3188)\nGM\nhansen\n(3112)",
+      "pieces": [
+        "piece bk square-78",
+        "piece br square-68",
+        "piece bq square-58",
+        "piece br square-18",
+        "piece bp square-87",
+        "piece bb square-77",
+        "piece bp square-67",
+        "piece bp square-76",
+        "piece wr square-36",
+        "piece wb square-26",
+        "piece bp square-16",
+        "piece bp square-55",
+        "piece bn square-45",
+        "piece wp square-15",
+        "piece wp square-73",
+        "piece wn square-63",
+        "piece wp square-23",
+        "piece wp square-82",
+        "piece wb square-72",
+        "piece wp square-62",
+        "piece wp square-52",
+        "piece wk square-71",
+        "piece wr square-61",
+        "piece wq square-41"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/171591611440?move=42",
+      "account": "hansen",
+      "game_id": "171591611440",
+      "game_type": "live",
+      "ply": 43,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "CM\nMostii\n(2836)\nGM\nhansen\n(3138)",
+      "pieces": [
+        "piece bk square-78",
+        "piece br square-68",
+        "piece bp square-87",
+        "piece bp square-77",
+        "piece bp square-67",
+        "piece bq square-37",
+        "piece wr square-66",
+        "piece bp square-56",
+        "piece wp square-35",
+        "piece wb square-34",
+        "piece wp square-24",
+        "piece wq square-53",
+        "piece wp square-33",
+        "piece br square-13",
+        "piece wp square-82",
+        "piece wp square-72",
+        "piece wk square-71",
+        "piece wr square-51"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/171275505522?move=44",
+      "account": "hansen",
+      "game_id": "171275505522",
+      "game_type": "live",
+      "ply": 45,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "IM\nToivoK3\n(3086)\nGM\nhansen\n(3124)",
+      "pieces": [
+        "piece br square-78",
+        "piece bk square-87",
+        "piece wr square-37",
+        "piece bb square-27",
+        "piece bp square-86",
+        "piece bq square-66",
+        "piece bb square-46",
+        "piece bp square-16",
+        "piece bn square-75",
+        "piece bp square-65",
+        "piece wn square-55",
+        "piece bp square-45",
+        "piece bp square-15",
+        "piece wp square-64",
+        "piece wb square-44",
+        "piece wp square-83",
+        "piece wp square-23",
+        "piece wq square-72",
+        "piece wk square-71",
+        "piece wr square-31"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/176114358917?move=90",
+      "account": "hansen",
+      "game_id": "176114358917",
+      "game_type": "live",
+      "ply": 91,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "FM\nRaekwon_W\n(2919)\nGM\nhansen\n(3148)",
+      "pieces": [
+        "piece br square-68",
+        "piece bb square-77",
+        "piece bk square-67",
+        "piece bp square-76",
+        "piece bp square-65",
+        "piece wn square-64",
+        "piece wr square-54",
+        "piece wp square-83",
+        "piece bp square-33",
+        "piece wp square-23",
+        "piece wp square-72",
+        "piece bq square-42",
+        "piece wk square-81",
+        "piece wr square-61",
+        "piece wq square-51"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/169822525588?move=70",
+      "account": "hansen",
+      "game_id": "169822525588",
+      "game_type": "live",
+      "ply": 71,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nhansen\n(3165)\nGM\nAaravDenglaOfficial\n(2879)",
+      "pieces": [
+        "piece bk square-78",
+        "piece br square-68",
+        "piece bp square-77",
+        "piece bp square-67",
+        "piece bb square-57",
+        "piece bq square-37",
+        "piece bp square-27",
+        "piece bb square-36",
+        "piece wn square-26",
+        "piece bp square-16",
+        "piece bp square-85",
+        "piece wp square-65",
+        "piece bp square-55",
+        "piece wp square-15",
+        "piece bn square-64",
+        "piece wq square-73",
+        "piece br square-43",
+        "piece wp square-23",
+        "piece wp square-82",
+        "piece wp square-72",
+        "piece wb square-62",
+        "piece wp square-32",
+        "piece wk square-71",
+        "piece wr square-61",
+        "piece wr square-11"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/169820748128?move=43&flip=true",
+      "account": "hansen",
+      "game_id": "169820748128",
+      "game_type": "live",
+      "ply": 44,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "FM\nTheRabbit19\n(2991)\nGM\nhansen\n(3154)",
+      "pieces": [
+        "piece bp square-37",
+        "piece bp square-76",
+        "piece bk square-66",
+        "piece wr square-46",
+        "piece wp square-36",
+        "piece bp square-85",
+        "piece wp square-54",
+        "piece wk square-63"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/175077713453?move=84",
+      "account": "hansen",
+      "game_id": "175077713453",
+      "game_type": "live",
+      "ply": 85,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "bach12345_lfay\n(2786)\n8\n7\n6\n5\n4\n3\n2\n1\na\nb\nc\nd\ne\nf\ng\nh\nGM\nhansen\n(3090)",
+      "pieces": [
+        "piece br square-88",
+        "piece bk square-58",
+        "piece br square-18",
+        "piece bp square-77",
+        "piece bp square-67",
+        "piece bn square-57",
+        "piece wr square-47",
+        "piece bp square-27",
+        "piece bb square-76",
+        "piece bp square-36",
+        "piece bq square-26",
+        "piece bp square-85",
+        "piece wp square-75",
+        "piece bp square-55",
+        "piece bb square-35",
+        "piece bp square-15",
+        "piece wp square-84",
+        "piece wp square-54",
+        "piece wb square-34",
+        "piece wp square-14",
+        "piece wn square-73",
+        "piece wn square-63",
+        "piece wb square-53",
+        "piece wp square-62",
+        "piece wq square-52",
+        "piece wp square-32",
+        "piece wp square-22",
+        "piece wr square-61",
+        "piece wk square-31"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/168945440868?move=36",
+      "account": "hansen",
+      "game_id": "168945440868",
+      "game_type": "live",
+      "ply": 37,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "FM\nanasta10\n(2876)\nGM\nhansen\n(3085)",
+      "pieces": [],
+      "source_link": "https://www.chess.com/analysis/game/live/173266972245?move=32",
+      "account": "hansen",
+      "game_id": "173266972245",
+      "game_type": "live",
+      "ply": 33,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": true,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "GM\nhansen\n(3073)\nIM\nMeri-Arabidze\n(2721)",
+      "pieces": [],
+      "source_link": "https://www.chess.com/analysis/game/live/173266374641?move=41&flip=true",
+      "account": "hansen",
+      "game_id": "173266374641",
+      "game_type": "live",
+      "ply": 42,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/hansen/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:55:23.150Z",
+      "piece_capture_missing": true,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json",
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/hansen-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "SiddharthP_0403\n(2438)\nNM\nnelsi\n(2441)",
+      "pieces": [
+        "piece br square-88",
+        "piece bb square-68",
+        "piece br square-18",
+        "piece bp square-87",
+        "piece bp square-77",
+        "piece bp square-67",
+        "piece bk square-57",
+        "piece bp square-27",
+        "piece bq square-66",
+        "piece bp square-56",
+        "piece wr square-46",
+        "piece bp square-16",
+        "piece bn square-85",
+        "piece bn square-55",
+        "piece bb square-74",
+        "piece wp square-54",
+        "piece wb square-14",
+        "piece wn square-63",
+        "piece wb square-53",
+        "piece wn square-33",
+        "piece wp square-82",
+        "piece wp square-72",
+        "piece wp square-62",
+        "piece wq square-52",
+        "piece wp square-22",
+        "piece wp square-12",
+        "piece wk square-71",
+        "piece wr square-11"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/170661862908?move=26",
+      "account": "nelsi",
+      "game_id": "170661862908",
+      "game_type": "live",
+      "ply": 27,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/nelsi/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:52:14.322Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json",
+        "research/brilliants-prospective-v7-2026-11-03/nelsi-gallery-topup-raw.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/nelsi-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "NM\nnelsi\n(2464)\nNM\nJGroffCT\n(2457)",
+      "pieces": [
+        "piece bk square-78",
+        "piece bb square-38",
+        "piece br square-28",
+        "piece bp square-27",
+        "piece bp square-86",
+        "piece bn square-76",
+        "piece bq square-56",
+        "piece bp square-36",
+        "piece wp square-26",
+        "piece wp square-55",
+        "piece bp square-45",
+        "piece wp square-35",
+        "piece bp square-64",
+        "piece wq square-44",
+        "piece wn square-33",
+        "piece br square-82",
+        "piece wp square-52",
+        "piece wb square-22",
+        "piece wk square-81",
+        "piece wr square-71",
+        "piece wr square-61"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/170162175396?move=57&flip=true",
+      "account": "nelsi",
+      "game_id": "170162175396",
+      "game_type": "live",
+      "ply": 58,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/nelsi/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:52:14.322Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json",
+        "research/brilliants-prospective-v7-2026-11-03/nelsi-gallery-topup-raw.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/nelsi-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "Elwass2\n(2284)\nNM\nnelsi\n(2452)",
+      "pieces": [
+        "piece bk square-78",
+        "piece br square-28",
+        "piece br square-18",
+        "piece bp square-77",
+        "piece bp square-67",
+        "piece bn square-47",
+        "piece bp square-76",
+        "piece bb square-66",
+        "piece bp square-36",
+        "piece bp square-55",
+        "piece wp square-35",
+        "piece wp square-54",
+        "piece wn square-44",
+        "piece wp square-24",
+        "piece wp square-83",
+        "piece wb square-73",
+        "piece wp square-43",
+        "piece wp square-72",
+        "piece wp square-62",
+        "piece wk square-71",
+        "piece wr square-61",
+        "piece wr square-11"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/168815996146?move=50",
+      "account": "nelsi",
+      "game_id": "168815996146",
+      "game_type": "live",
+      "ply": 51,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/nelsi/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:52:14.322Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json",
+        "research/brilliants-prospective-v7-2026-11-03/nelsi-gallery-topup-raw.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/nelsi-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "NM\nnelsi\n(2449)\nrafatsobhy2025\n(2378)",
+      "pieces": [
+        "piece br square-48",
+        "piece bk square-38",
+        "piece bn square-28",
+        "piece bp square-37",
+        "piece bp square-27",
+        "piece bp square-17",
+        "piece bq square-76",
+        "piece bp square-56",
+        "piece bb square-75",
+        "piece bp square-65",
+        "piece wp square-35",
+        "piece wp square-25",
+        "piece wr square-74",
+        "piece wp square-44",
+        "piece wp square-53",
+        "piece br square-82",
+        "piece wp square-72",
+        "piece wn square-52",
+        "piece wp square-12",
+        "piece wk square-71",
+        "piece wq square-21",
+        "piece wr square-11"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/168001766902?move=47&flip=true",
+      "account": "nelsi",
+      "game_id": "168001766902",
+      "game_type": "live",
+      "ply": 48,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/nelsi/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:52:14.322Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json",
+        "research/brilliants-prospective-v7-2026-11-03/nelsi-gallery-topup-raw.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/nelsi-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "NM\nnelsi\n(2527)\n1\n2\n3\n4\n5\n6\n7\n8\nh\ng\nf\ne\nd\nc\nb\na\nMina_Nabil2006\n(2447)",
+      "pieces": [
+        "piece bk square-78",
+        "piece br square-68",
+        "piece br square-48",
+        "piece bp square-87",
+        "piece bp square-77",
+        "piece bp square-67",
+        "piece bq square-37",
+        "piece bp square-27",
+        "piece bp square-17",
+        "piece bb square-76",
+        "piece bn square-66",
+        "piece bb square-26",
+        "piece wp square-35",
+        "piece wp square-74",
+        "piece bn square-24",
+        "piece wq square-14",
+        "piece wp square-83",
+        "piece wb square-72",
+        "piece wp square-62",
+        "piece wp square-52",
+        "piece wb square-22",
+        "piece wp square-12",
+        "piece wr square-81",
+        "piece wn square-71",
+        "piece wk square-51",
+        "piece wn square-21",
+        "piece wr square-11"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/167438220042?move=25&flip=true",
+      "account": "nelsi",
+      "game_id": "167438220042",
+      "game_type": "live",
+      "ply": 26,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/nelsi/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:52:14.322Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json",
+        "research/brilliants-prospective-v7-2026-11-03/nelsi-gallery-topup-raw.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/nelsi-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "ss829107xm\n(2614)\n8\n7\n6\n5\n4\n3\n2\n1\na\nb\nc\nd\ne\nf\ng\nh\nNM\nnelsi\n(2699)",
+      "pieces": [
+        "piece bk square-78",
+        "piece br square-68",
+        "piece bq square-48",
+        "piece br square-28",
+        "piece bp square-67",
+        "piece bb square-57",
+        "piece bp square-47",
+        "piece bb square-27",
+        "piece bp square-17",
+        "piece wb square-86",
+        "piece bp square-76",
+        "piece wp square-55",
+        "piece wn square-45",
+        "piece bp square-25",
+        "piece wp square-74",
+        "piece wq square-64",
+        "piece bn square-63",
+        "piece wb square-23",
+        "piece wp square-62",
+        "piece wp square-22",
+        "piece wp square-12",
+        "piece wk square-61",
+        "piece wr square-51",
+        "piece wr square-11"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/167326528052?move=44",
+      "account": "nelsi",
+      "game_id": "167326528052",
+      "game_type": "live",
+      "ply": 45,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/nelsi/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:52:14.322Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json",
+        "research/brilliants-prospective-v7-2026-11-03/nelsi-gallery-topup-raw.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/nelsi-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "NM\nnelsi\n(2571)\nsac_boi\n(2486)",
+      "pieces": [],
+      "source_link": "https://www.chess.com/analysis/game/live/167271632746?move=23&flip=true",
+      "account": "nelsi",
+      "game_id": "167271632746",
+      "game_type": "live",
+      "ply": 24,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/nelsi/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T12:52:14.322Z",
+      "piece_capture_missing": true,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/historical-pool-snapshot.json",
+        "research/brilliants-prospective-v7-2026-11-03/nelsi-gallery-topup-raw.json"
+      ],
+      "source_artifacts": [
+        "research/brilliants-prospective-v7-2026-11-03/nelsi-gallery-topup-raw.json"
+      ],
+      "source_type": "gallery",
+      "label": "!!",
+      "selected": false
+    },
+    {
+      "card_text": "IM\nGothamChess\n(2902)\n1\n2\n3\n4\n5\n6\n7\n8\nh\ng\nf\ne\nd\nc\nb\na\nGM\nlevqcq\n(2823)",
+      "pieces": [
+        "piece br square-48",
+        "piece bk square-87",
+        "piece bb square-77",
+        "piece bp square-27",
+        "piece bp square-17",
+        "piece bp square-86",
+        "piece bp square-76",
+        "piece bn square-55",
+        "piece wp square-83",
+        "piece wp square-33",
+        "piece wq square-72",
+        "piece wr square-62",
+        "piece br square-42",
+        "piece wp square-22",
+        "piece wp square-12",
+        "piece wk square-71"
+      ],
+      "source_link": "https://www.chess.com/analysis/game/live/184420545054?move=59&flip=true",
+      "account": "GothamChess",
+      "game_id": "184420545054",
+      "game_type": "live",
+      "ply": 60,
+      "historical_gallery_label": "!!",
+      "current_label": "unknown",
+      "categories": [
+        "All Types"
+      ],
+      "gallery_url": "https://www.chess.com/member/GothamChess/stats/all-brilliant-moves?time=365",
+      "captured_at": "2026-11-03T13:31:33.520Z",
+      "piece_capture_missing": false,
+      "overnight_metadata_sources": [
+        "research/brilliants-prospective-v7-2026-11-03/gothamchess-gallery-topup-raw.json"
+      ]
+    }
+  ]
+}

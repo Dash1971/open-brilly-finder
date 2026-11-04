@@ -1,0 +1,12 @@
+{
+  "scope": "One bounded study-specific diagnostic, not a new validation sample or production rule.",
+  "question": "Can a nonchecking capture with an unmoved offered piece be withheld when every profitable acceptance has a quiet response that recovers material against every legal immediate defense?",
+  "dataset": "All 1048 previously labeled moves; apply only to existing S awards. All are now development evidence for this change.",
+  "eligibility": "Played legal capture, no check or promotion, all qualifying offers on pieces not moved by target. No lookup or label in predicate.",
+  "qualification": "Legal capture of nonpawn/nonking mover piece, same-square gain exceeds immediate target capture/promotion credit +100.",
+  "recovery": "After each qualified acceptance, find one legal noncapture/nonpromotion quiet response; for every legal reply, original mover must already be within 100 physical points of pretarget balance, or have a legal immediate capture whose material balance after maximum same-square recapture loss is within100 of baseline. Every qualified acceptance must pass. Checkmate/stalemate endpoints are not material recovery. No principal-variation or actual-game-only proof.",
+  "caps": {"shared_counted_nodes_per_target":100000,"wall_seconds_per_target":1},
+  "unknown": "No veto, explicitly report unknown; absence of proof is not evidence of no recovery.",
+  "frozen_before_diagnostic_results": true,
+  "decision": "Report removed true and false awards, both specific requested cases, concrete collateral cases, and finite-horizon limitations. No threshold sweep or identity exceptions. Adoption requires further review and a new unseen assessment."
+}

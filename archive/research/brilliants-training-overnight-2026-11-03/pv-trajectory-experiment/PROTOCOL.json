@@ -1,0 +1,72 @@
+{
+  "created_at_utc": "2026-11-03T22:37:40.073866+00:00",
+  "scope": "DEVELOPMENT ONLY: feature hypothesis selected from training errors. NestedCV evaluates a fixed procedure, not new independent validation. Never read654; no app/runtime promotion.",
+  "input_path": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/pv-trajectory-experiment/augmentation/training-augmented.json",
+  "input_sha256": "7b9b7aca785274c3802848442fb874bf8d3fa006677cf28a878c1bc1e612c3fe",
+  "kernel_sha256": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f",
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "final_selection_folds": 5,
+  "cutoffs": [
+    0.5,
+    0.6,
+    0.7,
+    0.75,
+    0.8,
+    0.8333333333333334,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "trees": 64,
+  "predictors": "Candidate92+92missing indicators; reference75+75missing indicators. No basefeature/guard changes.",
+  "seed": 20261103,
+  "grouping": "Existing whole-game/identical-before union components; both windows linked; deterministic salted SHA256 group sort then round-robin folds; common bootstrap RNG across costs",
+  "selection": "MaxTP with FP<=min(referenceFP,floor(.005*N_non_easy_negatives)),TP>=referenceTP,TP>0. Ties fewerFP/highercutoff/highercost. If none feasible select cost5/cutoff5/6 reference and explicit no qualifying improvement.",
+  "reference": "Original75+75 features only, depth6/minleaf8/mtry12,cost5/cutoff5/6 retrained on exactly same trainingfolds/bootstrap/RNG.",
+  "guards": "Both-window eligibility+confidence+physicalUnknown abstention for all forest predictions. Easy-error negatives separate; legacy_mixed treated as hard.",
+  "final_selection": "Independent fixed5fold OOF on all frozen training only; not chosen using outer results. Fullfit once at selectedcost, separate threshold config.",
+  "limits": {
+    "wall_seconds": 600,
+    "cpu_seconds": 600,
+    "rss_bytes": 536870912,
+    "memory_pressure_required": 1,
+    "processes": 1,
+    "no_partial_winner": true,
+    "no_automatic_retry": true
+  },
+  "start": "Root GO hashes input/script/protocol; browser tabs closed; no active stockfish; no fit before GO",
+  "capacity_source_sha256": "4aefb35307853d707f5aac869bac8ce3e0db9706ec92017316341778643d3ae2",
+  "configs": [
+    {
+      "profile": "reference",
+      "depth": 6,
+      "minleaf": 8,
+      "mtry": 12,
+      "cost": 5,
+      "augmented": false
+    },
+    {
+      "profile": "pvtrajectory",
+      "depth": 6,
+      "minleaf": 8,
+      "mtry": 12,
+      "cost": 1,
+      "augmented": true
+    },
+    {
+      "profile": "pvtrajectory",
+      "depth": 6,
+      "minleaf": 8,
+      "mtry": 12,
+      "cost": 5,
+      "augmented": true
+    }
+  ],
+  "capacity_tie": "Same capacity; exact TP/FP/cutoff/cost ties prefer firstlisted reference (no gratuitous addedfeatures).",
+  "schema_sha256": "be46ae5b8a1c7de7034c195dcc39be0380466d286ab7653d2206fad97f2ece73",
+  "augmentation_freeze_sha256": "47c01312f2809b22181577fa70f0cf13e20f104cf683892adc881a9c7ae605b3",
+  "advancement": "Researchadvancement requires pooledouterTP>referenceTP AND pooledouterFP<=referenceFP. Literal counts distinguish modest versus large gain. No90percentclaim, no promotion. Selector is unchanged; no threshold/parameter changes after outcomes.",
+  "inference": "score_model in frozen optimize-pv.py accepts original150 or augmented184 schema. Same64raw-leaf mean, bothwindowcutoff, eligibility/confidence/physicalUnknown. Forest model features+trees; cutoff/schema separate.",
+  "reference_calibration_arm": "Config0 (old75features,cost5) is eligible for the same ninecutoff selection grid. The comparison reference remains fixed5/6. If finalchosen augmented=False with changedcutoff, outcome is calibration-only, not PVfeature gain; researchadvancement still assessed against pooledouterfixedreference."
+}

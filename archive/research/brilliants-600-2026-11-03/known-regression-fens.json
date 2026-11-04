@@ -1,0 +1,1452 @@
+{
+  "prepared_at": "2026-11-03T01:34:49.845331+00:00",
+  "policy": "Exclude any selected new-study move whose before OR after position matches a known development/regression position after python-chess FEN normalization and comparison of first four fields; halfmove/fullmove counters do not distinguish positions. Preserve source provenance and full six-field normalized FENs. No engine or labels used to choose exclusions.",
+  "authorization": "Parent explicitly authorized known-regression FEN exclusions before further capture; 19 pilot games and six original investigation games already excluded by game ID.",
+  "pilot_unique_observed_moves": 40,
+  "original_samples": 9,
+  "canonical_positions": 102,
+  "source_sha256": {
+    "research/brilliants-pilot-2026-11-03/corpus.sqlite3": "aee61f923f302889fb6c6f97147167085f25f61ce751e5d4a7fd20c64c058f61",
+    "research/brilliants-2026-11-02/results.json": "f462b560f21a26e90effe68d19e684b52bbf60899e2ec65c980171cd4c70780b",
+    "research/brilliants-pilot-2026-11-03/methodology.json": "342d7041c768ceff6095a471c8829772311b36d240e22c252479c6b6cacd59e9"
+  },
+  "positions": [
+    {
+      "canonical_first_four": "1q1r2k1/5bpp/5R2/2PP1p2/4p3/4B1P1/1r3P1P/3RQBK1 b - -",
+      "full_fens": [
+        "1q1r2k1/5bpp/5R2/2PP1p2/4p3/4B1P1/1r3P1P/3RQBK1 b - - 0 29"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186423523498",
+          "ply": 57,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "1q1r2k1/5bpp/R4b2/2PP1p2/4p3/4B1P1/1r3P1P/3RQBK1 w - -",
+      "full_fens": [
+        "1q1r2k1/5bpp/R4b2/2PP1p2/4p3/4B1P1/1r3P1P/3RQBK1 w - - 3 29"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186423523498",
+          "ply": 57,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "1r3rk1/3q2bp/2Q1bpp1/1p1Np3/2PpP2P/6P1/PP1B1PB1/R4RK1 b - -",
+      "full_fens": [
+        "1r3rk1/3q2bp/2Q1bpp1/1p1Np3/2PpP2P/6P1/PP1B1PB1/R4RK1 b - - 0 19"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186305620178",
+          "ply": 37,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "1r3rk1/3q2bp/Q1n1bpp1/1p1Np3/2PpP2P/6P1/PP1B1PB1/R4RK1 w - -",
+      "full_fens": [
+        "1r3rk1/3q2bp/Q1n1bpp1/1p1Np3/2PpP2P/6P1/PP1B1PB1/R4RK1 w - - 1 19"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186305620178",
+          "ply": 37,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "1rb1rnk1/p1p2pp1/1p1p1b1p/7P/2P1BP2/3QP1P1/P5K1/1R3R2 b - -",
+      "full_fens": [
+        "1rb1rnk1/p1p2pp1/1p1p1b1p/7P/2P1BP2/3QP1P1/P5K1/1R3R2 b - - 0 21"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186066219416",
+          "ply": 42,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "1rb2nk1/p1p2pp1/1p1p1b1p/7P/2P1rP2/3QP1P1/P5K1/1R3R2 w - -",
+      "full_fens": [
+        "1rb2nk1/p1p2pp1/1p1p1b1p/7P/2P1rP2/3QP1P1/P5K1/1R3R2 w - - 0 22"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186066219416",
+          "ply": 42,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "2r2r1k/6bp/p7/3P1p2/6p1/8/PRQ2PPP/5RK1 b - -",
+      "full_fens": [
+        "2r2r1k/6bp/p7/3P1p2/6p1/8/PRQ2PPP/5RK1 b - - 0 31"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186059865466",
+          "ply": 61,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "2r2r1k/6bp/p7/3P1p2/6p1/8/PpQ2PPP/1R3RK1 w - -",
+      "full_fens": [
+        "2r2r1k/6bp/p7/3P1p2/6p1/8/PpQ2PPP/1R3RK1 w - - 4 31"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186059865466",
+          "ply": 61,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "2r5/p2Q4/1p2p1k1/4Ppp1/1P2p3/P3P1Pp/1B2qP1P/5RK1 b - -",
+      "full_fens": [
+        "2r5/p2Q4/1p2p1k1/4Ppp1/1P2p3/P3P1Pp/1B2qP1P/5RK1 b - - 8 28"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186336144138",
+          "ply": 56,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "2r5/p2Q4/1p2p1k1/4Ppp1/1P2p3/P3PqPp/1B3P1P/5RK1 w - -",
+      "full_fens": [
+        "2r5/p2Q4/1p2p1k1/4Ppp1/1P2p3/P3PqPp/1B3P1P/5RK1 w - - 9 29"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186336144138",
+          "ply": 56,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3q1r1k/pb1r1N2/1p2n1p1/3pP3/3B2QP/1P4P1/P4PB1/4R1K1 b - -",
+      "full_fens": [
+        "3q1r1k/pb1r1N2/1p2n1p1/3pP3/3B2QP/1P4P1/P4PB1/4R1K1 b - - 0 27"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "119215241095",
+          "ply": 53,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3q1r1k/pb1r1p2/1p1Nn1p1/3pP3/3B2QP/1P4P1/P4PB1/4R1K1 w - -",
+      "full_fens": [
+        "3q1r1k/pb1r1p2/1p1Nn1p1/3pP3/3B2QP/1P4P1/P4PB1/4R1K1 w - - 1 27"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "119215241095",
+          "ply": 53,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3q1rk1/5bpp/R2b4/5p2/3Pp3/1rP1B1P1/3Q1P1P/3R1BK1 b - -",
+      "full_fens": [
+        "3q1rk1/5bpp/R2b4/5p2/3Pp3/1rP1B1P1/3Q1P1P/3R1BK1 b - - 0 24"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186423523498",
+          "ply": 47,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3q1rk1/5bpp/p2b4/5p2/3Pp3/1rP1B1P1/3Q1P1P/R2R1BK1 w - -",
+      "full_fens": [
+        "3q1rk1/5bpp/p2b4/5p2/3Pp3/1rP1B1P1/3Q1P1P/R2R1BK1 w - - 4 24"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186423523498",
+          "ply": 47,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3q1rk1/p1r1bpp1/bp1N3p/2npP3/6QP/1P3NP1/PB3PB1/5RK1 w - -",
+      "full_fens": [
+        "3q1rk1/p1r1bpp1/bp1N3p/2npP3/6QP/1P3NP1/PB3PB1/5RK1 w - - 0 20"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "119215241095",
+          "ply": 39,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3q1rk1/p1r1bpp1/bp1Np2p/2nRP3/6QP/1P3NP1/PB3PB1/5RK1 b - -",
+      "full_fens": [
+        "3q1rk1/p1r1bpp1/bp1Np2p/2nRP3/6QP/1P3NP1/PB3PB1/5RK1 b - - 0 19"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "119215241095",
+          "ply": 37,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3q1rk1/p1r1bpp1/bp1Np2p/2nnP3/6QP/1P3NP1/PB3PB1/3R1RK1 w - -",
+      "full_fens": [
+        "3q1rk1/p1r1bpp1/bp1Np2p/2nnP3/6QP/1P3NP1/PB3PB1/3R1RK1 w - - 2 19"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "119215241095",
+          "ply": 37,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3q1rk1/p1r1bpp1/bp5p/2npPN2/6QP/1P3NP1/PB3PB1/5RK1 b - -",
+      "full_fens": [
+        "3q1rk1/p1r1bpp1/bp5p/2npPN2/6QP/1P3NP1/PB3PB1/5RK1 b - - 1 20"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "119215241095",
+          "ply": 39,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3q2k1/pp3p2/2p3Bp/2b5/6Q1/2P3P1/PP3P1P/6K1 b - -",
+      "full_fens": [
+        "3q2k1/pp3p2/2p3Bp/2b5/6Q1/2P3P1/PP3P1P/6K1 b - - 0 26"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186383126550",
+          "ply": 51,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3q2k1/pp3p2/2p3pp/2b5/4B1Q1/2P3P1/PP3P1P/6K1 w - -",
+      "full_fens": [
+        "3q2k1/pp3p2/2p3pp/2b5/4B1Q1/2P3P1/PP3P1P/6K1 w - - 0 26"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186383126550",
+          "ply": 51,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3r1q1k/2p3pp/3bR3/4Nr2/1nQP4/6BP/1P3PP1/4R1K1 w - -",
+      "full_fens": [
+        "3r1q1k/2p3pp/3bR3/4Nr2/1nQP4/6BP/1P3PP1/4R1K1 w - - 7 31"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "183990510823",
+          "ply": 61,
+          "position": "fen_before"
+        },
+        {
+          "study": "original_nine",
+          "game_id": "183990510823",
+          "ply": 61,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3r1q1k/2pN2pp/3bR3/5r2/1nQP4/6BP/1P3PP1/4R1K1 b - -",
+      "full_fens": [
+        "3r1q1k/2pN2pp/3bR3/5r2/1nQP4/6BP/1P3PP1/4R1K1 b - - 8 31"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "183990510823",
+          "ply": 61,
+          "position": "fen_after"
+        },
+        {
+          "study": "original_nine",
+          "game_id": "183990510823",
+          "ply": 61,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3r3k/2p1b1pp/4q3/1Q1nNr2/3P4/6BP/1P3PP1/R3R1K1 b - -",
+      "full_fens": [
+        "3r3k/2p1b1pp/4q3/1Q1nNr2/3P4/6BP/1P3PP1/R3R1K1 b - - 0 27"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "183990510823",
+          "ply": 53,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3r3k/2p1b1pp/4q3/1p1nNr2/3P4/1Q4BP/1P3PP1/R3R1K1 w - -",
+      "full_fens": [
+        "3r3k/2p1b1pp/4q3/1p1nNr2/3P4/1Q4BP/1P3PP1/R3R1K1 w - - 1 27"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "183990510823",
+          "ply": 53,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3r3k/3q2pp/3R4/5r2/1Q1P4/7P/1P3PP1/4R1K1 b - -",
+      "full_fens": [
+        "3r3k/3q2pp/3R4/5r2/1Q1P4/7P/1P3PP1/4R1K1 b - - 0 34"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "183990510823",
+          "ply": 67,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "3r3k/3q2pp/3pR3/5r2/1Q1P4/7P/1P3PP1/4R1K1 w - -",
+      "full_fens": [
+        "3r3k/3q2pp/3pR3/5r2/1Q1P4/7P/1P3PP1/4R1K1 w - - 0 34"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "183990510823",
+          "ply": 67,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "4b1rk/pp2nr1p/2nqpp1B/3p3Q/P1pP3N/2P3P1/2P2P1P/3RRBK1 b - -",
+      "full_fens": [
+        "4b1rk/pp2nr1p/2nqpp1B/3p3Q/P1pP3N/2P3P1/2P2P1P/3RRBK1 b - - 10 23"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "184403311373",
+          "ply": 45,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "4b1rk/pp2nr1p/2nqpp1B/3p3Q/P1pP3N/2P3P1/2P2P1P/R3RBK1 w - -",
+      "full_fens": [
+        "4b1rk/pp2nr1p/2nqpp1B/3p3Q/P1pP3N/2P3P1/2P2P1P/R3RBK1 w - - 9 23"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "184403311373",
+          "ply": 45,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "4b3/8/1P4p1/3pk2p/1P5P/2P1K1P1/8/3B4 b - -",
+      "full_fens": [
+        "4b3/8/1P4p1/3pk2p/1P5P/2P1K1P1/8/3B4 b - - 0 49"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186066679548",
+          "ply": 97,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "4b3/8/1p4p1/P2pk2p/1P5P/2P1K1P1/8/3B4 w - -",
+      "full_fens": [
+        "4b3/8/1p4p1/P2pk2p/1P5P/2P1K1P1/8/3B4 w - - 1 49"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186066679548",
+          "ply": 97,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "4r3/p1p3kP/1p1p1pp1/2P5/4PK2/8/P7/7R b - -",
+      "full_fens": [
+        "4r3/p1p3kP/1p1p1pp1/2P5/4PK2/8/P7/7R b - - 0 40"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186066219416",
+          "ply": 80,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "4r3/p1p3kP/3p1pp1/2p5/4PK2/8/P7/7R w - -",
+      "full_fens": [
+        "4r3/p1p3kP/3p1pp1/2p5/4PK2/8/P7/7R w - - 0 41"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186066219416",
+          "ply": 80,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "5Q2/p4R2/2p1r1kp/1p4pq/2P5/3P4/b1P4P/6K1 w - -",
+      "full_fens": [
+        "5Q2/p4R2/2p1r1kp/1p4pq/2P5/3P4/b1P4P/6K1 w - - 2 33"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "187784287701",
+          "ply": 65,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "5Q2/p5R1/2p1r1kp/1p4pq/2P5/3P4/b1P4P/6K1 b - -",
+      "full_fens": [
+        "5Q2/p5R1/2p1r1kp/1p4pq/2P5/3P4/b1P4P/6K1 b - - 3 33"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "187784287701",
+          "ply": 65,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "5Q2/p6k/2p1r1qp/1p4pN/2P5/3P4/b1P4P/5RK1 b - -",
+      "full_fens": [
+        "5Q2/p6k/2p1r1qp/1p4pN/2P5/3P4/b1P4P/5RK1 b - - 7 31"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "187784287701",
+          "ply": 61,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "5r1k/1p4p1/2p1Q2p/2P4P/3P2Bq/pP2R3/P4PK1/8 b - -",
+      "full_fens": [
+        "5r1k/1p4p1/2p1Q2p/2P4P/3P2Bq/pP2R3/P4PK1/8 b - - 0 38"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186409700648",
+          "ply": 76,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "5r1k/1p4p1/2p1Q2p/2P4P/3P2nq/pP2R3/P4PK1/3B4 w - -",
+      "full_fens": [
+        "5r1k/1p4p1/2p1Q2p/2P4P/3P2nq/pP2R3/P4PK1/3B4 w - - 0 38"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186409700648",
+          "ply": 74,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "5r1k/1p4p1/2p1Qn1p/2P4P/3P2Pq/pP2R3/P4PK1/3B4 b - -",
+      "full_fens": [
+        "5r1k/1p4p1/2p1Qn1p/2P4P/3P2Pq/pP2R3/P4PK1/3B4 b - - 5 37"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186409700648",
+          "ply": 74,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "5rk1/p1p1bp1p/qp4p1/3pP3/P2P1PQ1/7P/1Pn3P1/R1B2RK1 w - -",
+      "full_fens": [
+        "5rk1/p1p1bp1p/qp4p1/3pP3/P2P1PQ1/7P/1Pn3P1/R1B2RK1 w - - 0 19"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "186399008010",
+          "ply": 37,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "5rk1/p1p1bp1p/qp4p1/3pPP2/P2P2Q1/7P/1Pn3P1/R1B2RK1 b - -",
+      "full_fens": [
+        "5rk1/p1p1bp1p/qp4p1/3pPP2/P2P2Q1/7P/1Pn3P1/R1B2RK1 b - - 0 19"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "186399008010",
+          "ply": 37,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "6R1/P5k1/8/8/8/8/K7/5q2 b - -",
+      "full_fens": [
+        "6R1/P5k1/8/8/8/8/K7/5q2 b - - 1 59"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "187784887471",
+          "ply": 117,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "6k1/5ppp/2N1pb2/1pPq4/3PQ3/1P5P/5PP1/R5K1 b - -",
+      "full_fens": [
+        "6k1/5ppp/2N1pb2/1pPq4/3PQ3/1P5P/5PP1/R5K1 b - - 0 29"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "184007910437",
+          "ply": 57,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "6k1/5ppp/2N1pb2/1pPq4/3PQ3/1P5P/5PP1/r3R1K1 w - -",
+      "full_fens": [
+        "6k1/5ppp/2N1pb2/1pPq4/3PQ3/1P5P/5PP1/r3R1K1 w - - 3 29"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "184007910437",
+          "ply": 57,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "6k1/7p/2bR1Bp1/8/4r3/4b3/6RP/7K b - -",
+      "full_fens": [
+        "6k1/7p/2bR1Bp1/8/4r3/4b3/6RP/7K b - - 4 39"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "184408711263",
+          "ply": 78,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "6k1/7p/2bR1Bp1/8/5r2/4b3/6RP/7K w - -",
+      "full_fens": [
+        "6k1/7p/2bR1Bp1/8/5r2/4b3/6RP/7K w - - 5 40"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "184408711263",
+          "ply": 78,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "6k1/7p/3r1Npb/1b6/4r3/8/1B4RP/3R2K1 b - -",
+      "full_fens": [
+        "6k1/7p/3r1Npb/1b6/4r3/8/1B4RP/3R2K1 b - - 1 36"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "184408711263",
+          "ply": 72,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "6k1/7p/5rpb/1b6/4r3/8/1B4RP/3R2K1 w - -",
+      "full_fens": [
+        "6k1/7p/5rpb/1b6/4r3/8/1B4RP/3R2K1 w - - 0 37"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "184408711263",
+          "ply": 72,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "6r1/p1P3pk/1q1B1b1p/3Q4/8/7P/P4PP1/2R3K1 w - -",
+      "full_fens": [
+        "6r1/p1P3pk/1q1B1b1p/3Q4/8/7P/P4PP1/2R3K1 w - - 9 41"
+      ],
+      "sources": [
+        {
+          "study": "owner_regression",
+          "name": "41.Qf5+",
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "6r1/p1P3pk/1q1B1b1p/5Q2/8/7P/P4PP1/2R3K1 b - -",
+      "full_fens": [
+        "6r1/p1P3pk/1q1B1b1p/5Q2/8/7P/P4PP1/2R3K1 b - - 10 41"
+      ],
+      "sources": [
+        {
+          "study": "owner_regression",
+          "name": "41.Qf5+",
+          "position": "fen_after",
+          "derived_legally_from_uci": "d5f5"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "7k/1p4p1/2p1Q2p/2P4P/3P2Bq/pP2R3/P4rK1/8 w - -",
+      "full_fens": [
+        "7k/1p4p1/2p1Q2p/2P4P/3P2Bq/pP2R3/P4rK1/8 w - - 0 39"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186409700648",
+          "ply": 76,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "7k/pp1b1r1p/3q1p2/3pn3/P1p1Q3/2P3P1/2P2P1P/2BRRBK1 b - -",
+      "full_fens": [
+        "7k/pp1b1r1p/3q1p2/3pn3/P1p1Q3/2P3P1/2P2P1P/2BRRBK1 b - - 0 30"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "184403311373",
+          "ply": 59,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "7k/pp1b1r1p/3q1p2/3pn3/P1p1r3/2P1Q1P1/2P2P1P/2BRRBK1 w - -",
+      "full_fens": [
+        "7k/pp1b1r1p/3q1p2/3pn3/P1p1r3/2P1Q1P1/2P2P1P/2BRRBK1 w - - 4 30"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "184403311373",
+          "ply": 59,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "8/5b2/1Pk3p1/3B3p/1P1K3P/2P3P1/8/8 b - -",
+      "full_fens": [
+        "8/5b2/1Pk3p1/3B3p/1P1K3P/2P3P1/8/8 b - - 0 52"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186066679548",
+          "ply": 103,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "8/5b2/1Pk3p1/3p3p/1P1K3P/2P2BP1/8/8 w - -",
+      "full_fens": [
+        "8/5b2/1Pk3p1/3p3p/1P1K3P/2P2BP1/8/8 w - - 5 52"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186066679548",
+          "ply": 103,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "8/p6k/2p1r1qp/1p4pN/2P5/3P1Q2/b1P4P/5RK1 w - -",
+      "full_fens": [
+        "8/p6k/2p1r1qp/1p4pN/2P5/3P1Q2/b1P4P/5RK1 w - - 6 31"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "187784287701",
+          "ply": 61,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "R7/6k1/P7/8/8/5p2/K7/8 b - -",
+      "full_fens": [
+        "R7/6k1/P7/8/8/5p2/K7/8 b - - 0 57"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "187784887471",
+          "ply": 113,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "R7/6k1/P7/8/8/5p2/r7/1K6 w - -",
+      "full_fens": [
+        "R7/6k1/P7/8/8/5p2/r7/1K6 w - - 2 57"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "187784887471",
+          "ply": 113,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "R7/P5k1/8/8/8/8/K7/5q2 w - -",
+      "full_fens": [
+        "R7/P5k1/8/8/8/8/K7/5q2 w - - 0 59"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "187784887471",
+          "ply": 117,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "q1r2rk1/1b1nbppp/pp1ppn2/8/2PNPP2/P1N1BB2/1P4PP/1Q1R1R1K b - -",
+      "full_fens": [
+        "q1r2rk1/1b1nbppp/pp1ppn2/8/2PNPP2/P1N1BB2/1P4PP/1Q1R1R1K b - - 8 16"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "184407510567",
+          "ply": 32,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "q1r3k1/4bppp/p3pn2/1pn1P3/2r4B/P1N2N2/1P4PP/1Q1RR2K b - -",
+      "full_fens": [
+        "q1r3k1/4bppp/p3pn2/1pn1P3/2r4B/P1N2N2/1P4PP/1Q1RR2K b - - 0 22"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "184407510567",
+          "ply": 44,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "q1r3k1/4bppp/p3pn2/1pn1P3/7r/P1N2N2/1P4PP/1Q1RR2K w - -",
+      "full_fens": [
+        "q1r3k1/4bppp/p3pn2/1pn1P3/7r/P1N2N2/1P4PP/1Q1RR2K w - - 0 23"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "184407510567",
+          "ply": 44,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "q4rk1/1b1nbppp/pp1ppn2/8/2rNPP2/P1N1BB2/1P4PP/1Q1R1R1K w - -",
+      "full_fens": [
+        "q4rk1/1b1nbppp/pp1ppn2/8/2rNPP2/P1N1BB2/1P4PP/1Q1R1R1K w - - 0 17"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "184407510567",
+          "ply": 32,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1b1k1nr/pp1p1pQp/2n1pq1B/8/1b2P3/2N2N2/PP3PPP/R3KB1R b KQkq -",
+      "full_fens": [
+        "r1b1k1nr/pp1p1pQp/2n1pq1B/8/1b2P3/2N2N2/PP3PPP/R3KB1R b KQkq - 2 8"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186405804254",
+          "ply": 15,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1b1k1nr/pp1p1pQp/2n1pq2/8/1b2P3/2N2N2/PP3PPP/R1B1KB1R w KQkq -",
+      "full_fens": [
+        "r1b1k1nr/pp1p1pQp/2n1pq2/8/1b2P3/2N2N2/PP3PPP/R1B1KB1R w KQkq - 1 8"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186405804254",
+          "ply": 15,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1b1kbnr/pppp1p1p/2q5/3Nn3/4Pp2/1P6/PBPPQ1PP/R4R1K b kq -",
+      "full_fens": [
+        "r1b1kbnr/pppp1p1p/2q5/3Nn3/4Pp2/1P6/PBPPQ1PP/R4R1K b kq - 2 12"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "187780087431",
+          "ply": 24,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1b1kbnr/pppp3p/2q2p2/3Nn3/4Pp2/1P6/PBPPQ1PP/R4R1K w kq -",
+      "full_fens": [
+        "r1b1kbnr/pppp3p/2q2p2/3Nn3/4Pp2/1P6/PBPPQ1PP/R4R1K w kq - 0 13"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "187780087431",
+          "ply": 24,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1b2r1k/pp4qp/4p3/3pQ3/8/2P2N2/PP3PPP/R4RK1 b - -",
+      "full_fens": [
+        "r1b2r1k/pp4qp/4p3/3pQ3/8/2P2N2/PP3PPP/R4RK1 b - - 8 24"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186059216760",
+          "ply": 47,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1b2r1k/pp4qp/4p3/3pQ3/8/2P5/PP1N1PPP/R4RK1 w - -",
+      "full_fens": [
+        "r1b2r1k/pp4qp/4p3/3pQ3/8/2P5/PP1N1PPP/R4RK1 w - - 7 24"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186059216760",
+          "ply": 47,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1b3rk/pp4Qp/4p3/3p4/8/2P2N2/PP3PPP/R4RK1 b - -",
+      "full_fens": [
+        "r1b3rk/pp4Qp/4p3/3p4/8/2P2N2/PP3PPP/R4RK1 b - - 0 25"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186059216760",
+          "ply": 49,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1b3rk/pp4qp/4p3/3pQ3/8/2P2N2/PP3PPP/R4RK1 w - -",
+      "full_fens": [
+        "r1b3rk/pp4qp/4p3/3pQ3/8/2P2N2/PP3PPP/R4RK1 w - - 9 25"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186059216760",
+          "ply": 49,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1b5/p3kp2/1p1Qp3/1B6/8/2N5/PP3P1q/3R1KR1 b - -",
+      "full_fens": [
+        "r1b5/p3kp2/1p1Qp3/1B6/8/2N5/PP3P1q/3R1KR1 b - - 0 26"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186405804254",
+          "ply": 51,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1b5/p3kp2/1p1Rp3/1B6/8/2N5/PP3P2/5KR1 b - -",
+      "full_fens": [
+        "r1b5/p3kp2/1p1Rp3/1B6/8/2N5/PP3P2/5KR1 b - - 0 27"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186405804254",
+          "ply": 53,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1b5/p3kp2/1p1bp3/1B6/3Q4/2N5/PP3P1q/3R1KR1 w - -",
+      "full_fens": [
+        "r1b5/p3kp2/1p1bp3/1B6/3Q4/2N5/PP3P1q/3R1KR1 w - - 0 26"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186405804254",
+          "ply": 51,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1b5/p3kp2/1p1qp3/1B6/8/2N5/PP3P2/3R1KR1 w - -",
+      "full_fens": [
+        "r1b5/p3kp2/1p1qp3/1B6/8/2N5/PP3P2/3R1KR1 w - - 0 27"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186405804254",
+          "ply": 53,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1bq1rk1/pp2ppbp/2n2np1/3p4/Q4N2/2N3P1/PPP1PPBP/R1B2RK1 b - -",
+      "full_fens": [
+        "r1bq1rk1/pp2ppbp/2n2np1/3p4/Q4N2/2N3P1/PPP1PPBP/R1B2RK1 b - - 4 9"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186305620178",
+          "ply": 17,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1bq1rk1/pp2ppbp/2n2np1/3p4/Q4N2/6P1/PPP1PPBP/RNB2RK1 w - -",
+      "full_fens": [
+        "r1bq1rk1/pp2ppbp/2n2np1/3p4/Q4N2/6P1/PPP1PPBP/RNB2RK1 w - - 3 9"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186305620178",
+          "ply": 17,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1bq2k1/pp3p1p/2p3p1/8/4r1n1/1P1P2P1/PB1QPRKP/2RN4 b - -",
+      "full_fens": [
+        "r1bq2k1/pp3p1p/2p3p1/8/4r1n1/1P1P2P1/PB1QPRKP/2RN4 b - - 1 19"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "172016241890",
+          "ply": 37,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1bq2k1/pp3pBp/2p3p1/8/4r1n1/1P1P2P1/P2QPRKP/2RN4 w - -",
+      "full_fens": [
+        "r1bq2k1/pp3pBp/2p3p1/8/4r1n1/1P1P2P1/P2QPRKP/2RN4 w - - 0 19"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "172016241890",
+          "ply": 37,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1bqk1nr/pp1p1pQp/2n1p3/8/1b2P3/2N2N2/PP3PPP/R1B1KB1R b KQkq -",
+      "full_fens": [
+        "r1bqk1nr/pp1p1pQp/2n1p3/8/1b2P3/2N2N2/PP3PPP/R1B1KB1R b KQkq - 0 7"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186405804254",
+          "ply": 13,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r1bqk1nr/pp1p1ppp/2n1p3/8/1b1QP3/2N2N2/PP3PPP/R1B1KB1R w KQkq -",
+      "full_fens": [
+        "r1bqk1nr/pp1p1ppp/2n1p3/8/1b1QP3/2N2N2/PP3PPP/R1B1KB1R w KQkq - 4 7"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186405804254",
+          "ply": 13,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r2q1rk1/pp1b1ppB/2nbp3/3p3n/3P4/2P1BNP1/PP1N1P1P/R2QK2R b KQ -",
+      "full_fens": [
+        "r2q1rk1/pp1b1ppB/2nbp3/3p3n/3P4/2P1BNP1/PP1N1P1P/R2QK2R b KQ - 0 11"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "186066291740",
+          "ply": 21,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r2q1rk1/pp1b1ppp/2nbp3/3p3n/3P4/2PBBNP1/PP1N1P1P/R2QK2R w KQ -",
+      "full_fens": [
+        "r2q1rk1/pp1b1ppp/2nbp3/3p3n/3P4/2PBBNP1/PP1N1P1P/R2QK2R w KQ - 3 11"
+      ],
+      "sources": [
+        {
+          "study": "original_nine",
+          "game_id": "186066291740",
+          "ply": 21,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r2qk2r/pb1nBppp/1p1p4/2pnp3/2P1P3/2NB1P2/PP2N1PP/R2QK2R b KQkq -",
+      "full_fens": [
+        "r2qk2r/pb1nBppp/1p1p4/2pnp3/2P1P3/2NB1P2/PP2N1PP/R2QK2R b KQkq - 0 10"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186305472636",
+          "ply": 20,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r2qk2r/pb1nbppp/1p1p1n2/2pPp1B1/2P1P3/2NB1P2/PP2N1PP/R2QK2R b KQkq -",
+      "full_fens": [
+        "r2qk2r/pb1nbppp/1p1p1n2/2pPp1B1/2P1P3/2NB1P2/PP2N1PP/R2QK2R b KQkq - 4 9"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186305472636",
+          "ply": 18,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r2qk2r/pb1nbppp/1p1p4/2pnp1B1/2P1P3/2NB1P2/PP2N1PP/R2QK2R w KQkq -",
+      "full_fens": [
+        "r2qk2r/pb1nbppp/1p1p4/2pnp1B1/2P1P3/2NB1P2/PP2N1PP/R2QK2R w KQkq - 0 10"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186305472636",
+          "ply": 18,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r2qk2r/pb1nnppp/1p1p4/2p1p3/2P1P3/2NB1P2/PP2N1PP/R2QK2R w KQkq -",
+      "full_fens": [
+        "r2qk2r/pb1nnppp/1p1p4/2p1p3/2P1P3/2NB1P2/PP2N1PP/R2QK2R w KQkq - 0 11"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186305472636",
+          "ply": 20,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r2r1bk1/ppqn1pp1/2pp3B/4pQ2/P1P1P3/1PNR3P/2P2PP1/R5K1 b - -",
+      "full_fens": [
+        "r2r1bk1/ppqn1pp1/2pp3B/4pQ2/P1P1P3/1PNR3P/2P2PP1/R5K1 b - - 0 17"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186298545248",
+          "ply": 33,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r2r1bk1/ppqn1pp1/2pp3p/4pQ2/P1P1P3/1PNR3P/2P2PP1/R1B3K1 w - -",
+      "full_fens": [
+        "r2r1bk1/ppqn1pp1/2pp3p/4pQ2/P1P1P3/1PNR3P/2P2PP1/R1B3K1 w - - 3 17"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186298545248",
+          "ply": 33,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r2r2k1/pp1nppbp/1qn3p1/4P3/5Pb1/P2B1N2/1P4PP/RNB1QR1K b - -",
+      "full_fens": [
+        "r2r2k1/pp1nppbp/1qn3p1/4P3/5Pb1/P2B1N2/1P4PP/RNB1QR1K b - - 4 14"
+      ],
+      "sources": [
+        {
+          "study": "owner_regression",
+          "name": "L1lChap-nelsi 14...Ndxe5",
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r2r2k1/pp2ppbp/1qn3p1/4n3/5Pb1/P2B1N2/1P4PP/RNB1QR1K w - -",
+      "full_fens": [
+        "r2r2k1/pp2ppbp/1qn3p1/4n3/5Pb1/P2B1N2/1P4PP/RNB1QR1K w - - 0 15"
+      ],
+      "sources": [
+        {
+          "study": "owner_regression",
+          "name": "L1lChap-nelsi 14...Ndxe5",
+          "position": "fen_after",
+          "derived_legally_from_uci": "d7e5"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r2r2k1/ppq1bpp1/2pp1n1p/4pQ2/P1P1P3/1PN4P/2P2PP1/R1BR2K1 b - -",
+      "full_fens": [
+        "r2r2k1/ppq1bpp1/2pp1n1p/4pQ2/P1P1P3/1PN4P/2P2PP1/R1BR2K1 b - - 0 15"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186298545248",
+          "ply": 29,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r2r2k1/ppq1bpp1/2pp1n1p/4pb2/P1P1P3/1PN2Q1P/2P2PP1/R1BR2K1 w - -",
+      "full_fens": [
+        "r2r2k1/ppq1bpp1/2pp1n1p/4pb2/P1P1P3/1PN2Q1P/2P2PP1/R1BR2K1 w - - 0 15"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186298545248",
+          "ply": 29,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r3k1nr/ppp3bp/2qp1pn1/3b3Q/4P3/1PR5/PBPP2PP/5R1K w kq -",
+      "full_fens": [
+        "r3k1nr/ppp3bp/2qp1pn1/3b3Q/4P3/1PR5/PBPP2PP/5R1K w kq - 0 18"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "187780087431",
+          "ply": 34,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r3k1nr/ppp3bp/2qpbpn1/3N3Q/4P3/1PR5/PBPP2PP/5R1K b kq -",
+      "full_fens": [
+        "r3k1nr/ppp3bp/2qpbpn1/3N3Q/4P3/1PR5/PBPP2PP/5R1K b kq - 5 17"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "187780087431",
+          "ply": 34,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r4rk1/pp1N1pbp/2n1b1p1/3p4/3P4/2N5/PP2BPPP/R2Q1RK1 b - -",
+      "full_fens": [
+        "r4rk1/pp1N1pbp/2n1b1p1/3p4/3P4/2N5/PP2BPPP/R2Q1RK1 b - - 0 15"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186059865466",
+          "ply": 29,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r4rk1/pp1q1pbp/2n1b1p1/3pN3/3P4/2N5/PP2BPPP/R2Q1RK1 w - -",
+      "full_fens": [
+        "r4rk1/pp1q1pbp/2n1b1p1/3pN3/3P4/2N5/PP2BPPP/R2Q1RK1 w - - 2 15"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186059865466",
+          "ply": 29,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r5k1/pp2ppbp/1q4p1/4P3/4Q1b1/P2r4/1P4PP/RNB2R1K b - -",
+      "full_fens": [
+        "r5k1/pp2ppbp/1q4p1/4P3/4Q1b1/P2r4/1P4PP/RNB2R1K b - - 1 17"
+      ],
+      "sources": [
+        {
+          "study": "owner_regression",
+          "name": "17...Bf5",
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "r5k1/pp2ppbp/1q4p1/4Pb2/4Q3/P2r4/1P4PP/RNB2R1K w - -",
+      "full_fens": [
+        "r5k1/pp2ppbp/1q4p1/4Pb2/4Q3/P2r4/1P4PP/RNB2R1K w - - 2 18"
+      ],
+      "sources": [
+        {
+          "study": "owner_regression",
+          "name": "17...Bf5",
+          "position": "fen_after",
+          "derived_legally_from_uci": "g4f5"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "rnbqkbnr/pp2ppp1/2p5/3P4/3P4/6Pp/PP2PP1P/RNBQKBNR b KQkq -",
+      "full_fens": [
+        "rnbqkbnr/pp2ppp1/2p5/3P4/3P4/6Pp/PP2PP1P/RNBQKBNR b KQkq - 1 6"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186336144138",
+          "ply": 12,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "rnbqkbnr/pp2ppp1/8/3p4/3P4/6Pp/PP2PP1P/RNBQKBNR w KQkq -",
+      "full_fens": [
+        "rnbqkbnr/pp2ppp1/8/3p4/3P4/6Pp/PP2PP1P/RNBQKBNR w KQkq - 0 7"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186336144138",
+          "ply": 12,
+          "position": "fen_after"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "rnbqkbnr/pppp1ppp/8/4p3/8/2P5/PP1PPPPP/RNBQKBNR w KQkq -",
+      "full_fens": [
+        "rnbqkbnr/pppp1ppp/8/4p3/8/2P5/PP1PPPPP/RNBQKBNR w KQkq - 0 2"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186383126550",
+          "ply": 3,
+          "position": "fen_before"
+        }
+      ]
+    },
+    {
+      "canonical_first_four": "rnbqkbnr/pppp1ppp/8/4p3/8/N1P5/PP1PPPPP/R1BQKBNR b KQkq -",
+      "full_fens": [
+        "rnbqkbnr/pppp1ppp/8/4p3/8/N1P5/PP1PPPPP/R1BQKBNR b KQkq - 1 2"
+      ],
+      "sources": [
+        {
+          "study": "feasibility_pilot",
+          "game_id": "186383126550",
+          "ply": 3,
+          "position": "fen_after"
+        }
+      ]
+    }
+  ]
+}

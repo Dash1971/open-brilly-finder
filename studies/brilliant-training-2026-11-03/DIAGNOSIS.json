@@ -1,0 +1,202 @@
+{
+  "finding": "All six lost true positives pass the same chess gates. They fail because retrained forest scores fall below the unchanged5/6 cutoff. This establishes the immediate mechanism, not the causal contribution of each added dataset.",
+  "changed_true_positive_cases": [
+    {
+      "key": "169822525588:71",
+      "san": "Rxe4",
+      "source_account": "hansen",
+      "baseline_award": true,
+      "candidate_award": false,
+      "baseline_scores": {
+        "current": 0.8716807910825186,
+        "previous": 0.8716807910825186
+      },
+      "candidate_scores": {
+        "current": 0.7878523809540429,
+        "previous": 0.7824862193378812
+      },
+      "gates_pass_both": true,
+      "confidence_sufficient": true,
+      "current_facts": {
+        "phase": 17,
+        "converted_material_or_endgame": false,
+        "raw_offer": true,
+        "ec_sacrifice": true,
+        "mapped_loss_pp": 0,
+        "after_cp": 0,
+        "immediate_material_gain": 300
+      }
+    },
+    {
+      "key": "183543510767:47",
+      "san": "Bxh7+",
+      "source_account": "Hikaru",
+      "baseline_award": true,
+      "candidate_award": false,
+      "baseline_scores": {
+        "current": 0.8888034223978182,
+        "previous": 0.8913544428059815
+      },
+      "candidate_scores": {
+        "current": 0.8192881904502388,
+        "previous": 0.8191128171786883
+      },
+      "gates_pass_both": true,
+      "confidence_sufficient": true,
+      "current_facts": {
+        "phase": 18,
+        "converted_material_or_endgame": false,
+        "raw_offer": true,
+        "ec_sacrifice": true,
+        "mapped_loss_pp": 1.9316582170277101,
+        "after_cp": 3,
+        "immediate_material_gain": 90
+      }
+    },
+    {
+      "key": "167275719056:50",
+      "san": "Rxb2",
+      "source_account": "hansen",
+      "baseline_award": true,
+      "candidate_award": false,
+      "baseline_scores": {
+        "current": 0.8430662852600249,
+        "previous": 0.8430662852600249
+      },
+      "candidate_scores": {
+        "current": 0.7792990511916539,
+        "previous": 0.7819195815170709
+      },
+      "gates_pass_both": true,
+      "confidence_sufficient": true,
+      "current_facts": {
+        "phase": 22,
+        "converted_material_or_endgame": false,
+        "raw_offer": true,
+        "ec_sacrifice": true,
+        "mapped_loss_pp": 4.292056137890597,
+        "after_cp": 239,
+        "immediate_material_gain": 300
+      }
+    },
+    {
+      "key": "171443051604:66",
+      "san": "Rxd2",
+      "source_account": "GothamChess",
+      "baseline_award": false,
+      "candidate_award": true,
+      "baseline_scores": {
+        "current": 0.796768908741923,
+        "previous": 0.8367776279635046
+      },
+      "candidate_scores": {
+        "current": 0.8387454041845677,
+        "previous": 0.8476699260806586
+      },
+      "gates_pass_both": true,
+      "confidence_sufficient": true,
+      "current_facts": {
+        "phase": 10,
+        "converted_material_or_endgame": false,
+        "raw_offer": true,
+        "ec_sacrifice": true,
+        "mapped_loss_pp": 1.0377496019091836,
+        "after_cp": 505,
+        "immediate_material_gain": 300
+      }
+    },
+    {
+      "key": "174184804640:41",
+      "san": "Rh8+",
+      "source_account": "GothamChess",
+      "baseline_award": true,
+      "candidate_award": false,
+      "baseline_scores": {
+        "current": 0.8714363040476656,
+        "previous": 0.8788746843293557
+      },
+      "candidate_scores": {
+        "current": 0.8253817923094028,
+        "previous": 0.8214001012290048
+      },
+      "gates_pass_both": true,
+      "confidence_sufficient": true,
+      "current_facts": {
+        "phase": 20,
+        "converted_material_or_endgame": false,
+        "raw_offer": true,
+        "ec_sacrifice": true,
+        "mapped_loss_pp": -0.3765214363888276,
+        "after_cp": 250,
+        "immediate_material_gain": 0
+      }
+    },
+    {
+      "key": "173851954580:57",
+      "san": "cxd3",
+      "source_account": "GothamChess",
+      "baseline_award": true,
+      "candidate_award": false,
+      "baseline_scores": {
+        "current": 0.8566935103623912,
+        "previous": 0.8769681513192341
+      },
+      "candidate_scores": {
+        "current": 0.8052469884713103,
+        "previous": 0.7897834011376385
+      },
+      "gates_pass_both": true,
+      "confidence_sufficient": true,
+      "current_facts": {
+        "phase": 20,
+        "converted_material_or_endgame": false,
+        "raw_offer": true,
+        "ec_sacrifice": true,
+        "mapped_loss_pp": 0.8713258930823287,
+        "after_cp": 344,
+        "immediate_material_gain": 90
+      }
+    },
+    {
+      "key": "174235062022:126",
+      "san": "Nxf6",
+      "source_account": "KNVB",
+      "baseline_award": true,
+      "candidate_award": false,
+      "baseline_scores": {
+        "current": 0.8672192764281992,
+        "previous": 0.8672192764281992
+      },
+      "candidate_scores": {
+        "current": 0.7691495566928623,
+        "previous": 0.7691495566928623
+      },
+      "gates_pass_both": true,
+      "confidence_sufficient": true,
+      "current_facts": {
+        "phase": 2,
+        "converted_material_or_endgame": true,
+        "raw_offer": true,
+        "ec_sacrifice": true,
+        "mapped_loss_pp": 0,
+        "after_cp": 0,
+        "immediate_material_gain": 90
+      }
+    }
+  ],
+  "eligible_training_class_mix": {
+    "new": {
+      "positive": 301,
+      "negative": 232
+    },
+    "original848": {
+      "positive": 391,
+      "negative": 136
+    },
+    "former400": {
+      "positive": 197,
+      "negative": 63
+    }
+  },
+  "no_new_fit_or_parameter_change": true
+}

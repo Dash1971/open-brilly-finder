@@ -1,0 +1,3013 @@
+{
+  "frozen_at_utc": "2026-11-03T16:34:40.503696+00:00",
+  "scope": "One explicitly frozen training-only batch. No assessment PGNs, labels, scores or model outputs in selection. No fitting authorized by this file.",
+  "previous_batch_sha256": {
+    "ENGINE-BATCH-01.json": "b0062507ec3230981023ca0ccef3ef920ccf2d5a7ca8869e11dd19ce88c2a77a",
+    "ENGINE-BATCH-05.json": "128f84c8fa27c56e90deda2943d6e4d08b1a54b015a462517c290b89ef31182e",
+    "ENGINE-BATCH-04.json": "da9bf34bf247144b54f93d67326d7fb7aabca3119852faf76c27a1200c9d203f",
+    "ENGINE-BATCH-03.json": "d7df039ae7b48373c39514fcaa0354191806b8249d27fab8bb9363626e0de95f",
+    "ENGINE-BATCH-02.json": "d54f46fa5e3845be0d9b8709ca8841253cf21be3239871384016b362b4c5fdcc"
+  },
+  "selection": "Next completed training games in import order, excluding every previously frozen batch;  all verified Brilliant and hard-ordinary labels, plus one deterministic hashed error per game. Other raw errors stay in the corpus. Quarantines excluded.",
+  "split_rule": "sha256('mute-overnight-2026-11-03-v1:'+gameID) mod5!=0",
+  "plan_sha256": "935caa243b27c851db2991d0aea805e95de1ac6427071aac0e0e4a62d4f41352",
+  "database_sha256_at_freeze": "8131b2827af9baae41e80d6eccb5cb6927d7aa39f5f081316a30093a2b894ed0",
+  "database_live_path_not_an_input": true,
+  "source_files_sha256": {
+    "collector-b/167240484122.review-export.pgn": "28ee25a97c0ac817f4ead85b95a15fb9dd94e16b7c306c486fb31678f7a9e7b4",
+    "collector-b/167240484122.json": "9981784e62ee1328508703fb8dfbcd4ceba2da9ecb56696cabf05d8664720caf",
+    "collector-b/167245993920.review-export.pgn": "00f73bff8105171d03c0cfebadd3f041ea0be5e0a93bc41787012dbddb9783e8",
+    "collector-b/167245993920.json": "48398c94039a18b839f0ac59dce0baef5c092e349417aa63e1483a5653c3b24e",
+    "collector-b/167255249106.json": "559b8e63583874457a8a2e092b3dea497a958eea5505f86e4bb08ff14a2e2920",
+    "collector-b/167255249106.review-export.pgn": "770ef6d125c7a6589f4f5942a6510b12f0de5ffe7cedbe2eebda8296c453d1a2",
+    "collector-b/167740813532.review-export.pgn": "9d2045bc62f3be4de140fbe2923b3d77638056a17becc76bd7cbb4dca0f60082",
+    "collector-b/167740813532.json": "e0093e99ecdb7686b184995b4b605ffd849cc7456f4c93829595ef099e755a3c",
+    "collector-b/167742352864.review-export.pgn": "590f8037d5ceb380e6c512ef290edee13deedca183dfe0f7d327ed452948d7a1",
+    "collector-b/167742352864.json": "0c473c6799496253008fb71e5f5d59d11559bfbe7f0c92e7d40c8826d5012279",
+    "collector-b/168413663740.review-export.pgn": "73a7f92ee1b30dd3d69ca35d2b35dd0e2ebc4083abbff0429a6cac0608b22ab0",
+    "collector-b/168413663740.json": "0cdd2143204e8c06df7a1638eaebfd3f7df04bb26b8389d2d41b57d96b24efdd",
+    "collector-b/171291626363.review-export.pgn": "40e964041e39c4aef2a6a48d3b7bddf4775645618ab48093ee080fdc76f9d1bf",
+    "collector-b/171291626363.json": "17e22ea1dd2070226e9f51ccd02d7cf15015e00dfafadecbdbd7a9484e4dac25",
+    "collector-b/172915254335.review-export.pgn": "256411b1cae39499d8c36df64ec935bf140c34cc8d3c7d7d6119e4133dc64778",
+    "collector-b/172915254335.json": "4c1630949b9cb3c69ec517927e7a29ede787cc563391cd8220cf071b40f692b3",
+    "collector-a/166827147588-export.pgn": "991e492a35d15bcf8cfb39a60adf888cc95cde129f16f9039789a6e115c0a1a9",
+    "collector-a/166827147588-checks.json": "b661fa8c831b644a728a7d226ca907a33cff941f371ee6b1c0ca47c8049e22ef",
+    "collector-a/166827147588-complete.json": "5d069aab435849829d46e93661710f7bb5e0aac222a3fee7f9455f6cc07f2d63",
+    "collector-a/164292223322-export.pgn": "565ad9dbb2fa720a9a2b824e00ecf0997555391feadfbb6ad994ef747ae16377",
+    "collector-a/164292223322-checks.json": "0e3b80f8980826bdb2419d545ac8f21703628f0f97dc1f982fe61d061d348e3d",
+    "collector-a/164292223322-complete.json": "fdd043f12f520a4ac40bd6a59e3a2085cb5650ae8257c9c09f87f7bc6e002e3b",
+    "collector-b/166707582754.review-export.pgn": "520172579e82799a6b82c94b91accdb82557c97a140a2861f88e98bbea57845d",
+    "collector-b/166707582754.json": "9ba993eef76b2d02f8c5bf72f5c8b97b3d3a1831267aebc3e65c00c73cd573c9",
+    "collector-b/167741309078.review-export.pgn": "d4c87fcf0d6b223084874111dd3f86a2c1e558a32a2fa566e8a3d3a1ae6ef6c9",
+    "collector-b/167741309078.json": "0ba218aaa757226cccc8ab9b0604c2c466cd8d8cae8818c88ebf883575693cc9",
+    "collector-a/166851185648-export.pgn": "a7964cafe44e8f8c5fe222ec649c4773d45d25b6328672b9d5467e9fdd6dea14",
+    "collector-a/166851185648-checks.json": "304c0ac0cd61f22a5f0e0318f41553e3f4975b35d8357f7e9e64caa5657ffce8",
+    "collector-a/166851185648-complete.json": "3f746348dcbb4873111b589d50b9449c21316e7bb103acf1d6277d69c396c402",
+    "collector-a/173279198536-export.pgn": "bcc9e7c188d56a8ff59374d9fa02f761084e9a0ea57a29209ea0a49d4604208c",
+    "collector-a/173279198536-checks.json": "4a417e4128cbb71f27ccf84af46495440f72af8d6674209437ce97760dd9f054",
+    "collector-a/173279198536-complete.json": "78fd1ff719d2a233f0b4959bf3aab4e2ebb7ca5aa2e2ac3ca68ed1e16388c158",
+    "collector-b/168419894922.json": "0d1ec2cb12956589533c9b80ad37655e9d0f0efea450b91b37b98d6c5e003508",
+    "collector-b/168419894922.review-export.pgn": "05036fd32d0bbc8619ac3d70e484e962cfec5cc4b2ee7d17c1fa5be3d7938909",
+    "collector-b/168772277524.review-export.pgn": "178a2460d0fa812686791dcd32722c9262c64417c16f66b585ca820fd7dacf2f",
+    "collector-b/168772277524.json": "559031eafc9cc37eb7c21c6127ffb86a8596f407520d3b61862b87854c71360a",
+    "collector-b/167734662094.review-export.pgn": "3223484574bc223c02b61fe18588f6c92951dcfcd3760e2deee420118c3da905",
+    "collector-b/167734662094.json": "3a290bd2ceddbd19292777798f0bd8c852449ebdda2f9fc6ad9c518eaafc975f",
+    "collector-a/185826617862-export.pgn": "6919a3199866426bee6606773fe57443afc66984bf9b8ee17041bf877e494f0c",
+    "collector-a/185826617862-checks.json": "7a393ead21858038e04071fbd9ce2c8963627251e0c84e25aa14c2460b89544f",
+    "collector-a/185826617862-complete.json": "1e4e3c030f2689e37e67031ffcad681eb3c9b8f72bcedd74246b14ff8ff70c3e",
+    "collector-b/167256015132.review-export.pgn": "36a1ba225f1a4ecea9b28c594f7cb93534209f80b4621f9aea32ad2d350e4b2a",
+    "collector-b/167256015132.json": "fb45e0976079080979369963a7d38eb339a646eff1d7822f4f7d3bcfdf3a62a0",
+    "collector-a/167072458532-export.pgn": "877126ac4aa3c7a14e54c8ee945e4ee2d74d9f345cf1a9a0f540560e1f113ae1",
+    "collector-a/167072458532-checks.json": "1764d023d93e47a969901e614a2d714af373eef80e2f1cb053111916b6e48da3",
+    "collector-a/167072458532-complete.json": "7f28c3b98028236b670cb8e32b4a7f21a06ed185dc99ec82752fbcac540e7469"
+  },
+  "queue_sha256": {
+    "queue-A-archive-wave1.json": "9d16a3738c53b5ae874cdc0e790b25a41e112694724b0b6d1e20abd71bec2fcd",
+    "queue-A-archive-wave2.json": "3d585118adba975753fc6746f06ca5bd15cf57261654a9e097764fce5da8d56b",
+    "queue-A-wave2.json": "eabdec3cf6a85b2066d46559c2397ba5ac9ed14342e580db42d798eebccdca97",
+    "queue-A-wave3.json": "e92a7feb1ff274725790ae9f4aa40360622da396c5783184cefbae65a83cfb8f",
+    "queue-A-wave4.json": "b7ca5accad22bfc2a0faba41412b247b3d57d18cd7d679813c4e8dbbdac37b9d",
+    "queue-A-wave5-handoff.json": "bf4688fcbbb7e7e739cfa35d49c8755e80d60b562cb12afda1786bb35e2a5f21",
+    "queue-A-wave5.json": "93008f5a298c92d5fcbe13c7d47926ed469b015b8937e22591121d36f0bd989e",
+    "queue-A.json": "6b0e17268e3910d151a1628159ca245d694308f55f40f8f73726513ec90ce5a6",
+    "queue-B-wave2.json": "1a6b96a15b70ef59c99f111300a6556dbc16ce3ad7d0d0fc6dd2e07bf8c53798",
+    "queue-B-wave3.json": "bb594bdd49cb88823292d9e6ab3b9a954f8d8cacb56b2ff2cfaf6c2a09bea351",
+    "queue-B-wave4.json": "473f465e80ee770ffe0cfd2e73707b94489ab1b6263e99afda2fc1cc6ced3e18",
+    "queue-B-wave5.json": "bf4688fcbbb7e7e739cfa35d49c8755e80d60b562cb12afda1786bb35e2a5f21",
+    "queue-B.json": "8a1f97c1ec61739711654c233043512e6659869191381afb1c3dddc46057015e"
+  },
+  "parser_sha256": "ad759d7c7bdd21e512bc2c1540b2bc36a8d508592233c174192e3ff2fbb98e9e",
+  "assessment_exclusions_sha256": "3ef1ea61beb684b1500fb0c50e800937965868e089690c48fa7256796da64c2a",
+  "counts": {
+    "games": 20,
+    "targets": 144,
+    "brilliant": 17,
+    "hard_ordinary": 107,
+    "error": 20,
+    "unique_core_positions": 366
+  },
+  "games": [
+    {
+      "game_id": "167240484122",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.04.13\"]\n[Round \"-\"]\n[White \"Aswathchess\"]\n[Black \"hansen\"]\n[Result \"0-1\"]\n[CurrentPosition \"3rk3/pp3pp1/4p3/8/2p2P2/1P2Q1p1/P1PP2Pq/R1B2RK1 w - - 3 22\"]\n[Timezone \"UTC\"]\n[ECO \"B23\"]\n[ECOUrl \"https://www.chess.com/openings/Closed-Sicilian-Defense-Grand-Prix-Attack-3...e6-4.Nf3-Nge7\"]\n[UTCDate \"2026.04.13\"]\n[UTCTime \"07:12:42\"]\n[WhiteElo \"2847\"]\n[BlackElo \"3041\"]\n[TimeControl \"60\"]\n[Termination \"hansen won by checkmate\"]\n[StartTime \"07:12:42\"]\n[EndDate \"2026.04.13\"]\n[EndTime \"07:13:41\"]\n[Link \"https://www.chess.com/game/live/167240484122\"]\n\n1. e4 {[%clk 0:00:57.6]} 1... c5 {[%clk 0:00:59.2]} 2. Nc3 {[%clk 0:00:56.8]} 2... e6 {[%clk 0:00:58.6]} 3. f4 {[%clk 0:00:55.9]} 3... Nc6 {[%clk 0:00:57.9]} 4. Nf3 {[%clk 0:00:55.6]} 4... Nge7 {[%clk 0:00:57.8]} 5. e5 {[%clk 0:00:54.9]} 5... d5 {[%clk 0:00:57]} 6. exd6 {[%clk 0:00:54.2]} 6... Nf5 {[%clk 0:00:56.6]} 7. Bb5 {[%clk 0:00:52.6]} 7... Bd7 {[%clk 0:00:55.5]} 8. Bxc6 {[%clk 0:00:51.5]} 8... Bxc6 {[%clk 0:00:54.9]} 9. Ne5 {[%clk 0:00:51.2]} 9... Qxd6 {[%clk 0:00:54.4]} 10. Nxc6 {[%clk 0:00:49.4]} 10... Qxc6 {[%clk 0:00:53.2]} 11. O-O {[%clk 0:00:49.3]} 11... c4 {[%clk 0:00:52.7]} 12. Qe2 {[%clk 0:00:47.9]} 12... Rd8 {[%clk 0:00:52]} 13. b3 {[%clk 0:00:46.4]} 13... Bc5+ {[%clk 0:00:49.2]} 14. Kh1 {[%clk 0:00:45.8]} 14... h5 {[%clk 0:00:47.7]} 15. Ne4 {[%clk 0:00:43.5]} 15... h4 {[%clk 0:00:45.2]} 16. Nxc5 {[%clk 0:00:31.2]} 16... Ng3+ {[%clk 0:00:42.7]} 17. hxg3 {[%clk 0:00:30.4]} 17... hxg3+ {[%clk 0:00:42.3]} 18. Kg1 {[%clk 0:00:30.1]} 18... Qxc5+ {[%clk 0:00:41.3]} 19. Qe3 {[%clk 0:00:29.7]} 19... Rh1+ {[%clk 0:00:40.9]} 20. Kxh1 {[%clk 0:00:28.9]} 20... Qh5+ {[%clk 0:00:40.6]} 21. Kg1 {[%clk 0:00:28.8]} 21... Qh2# {[%clk 0:00:40.5]} 0-1\n",
+      "pgn_sha256": "23ad57c74488559ad12fdae902a929d93c3ace532265f897ff56cb2dd2673b88",
+      "source_account": "hansen"
+    },
+    {
+      "game_id": "167245993920",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.04.13\"]\n[Round \"-\"]\n[White \"hansen\"]\n[Black \"chess_master_8820\"]\n[Result \"1-0\"]\n[CurrentPosition \"5rnk/1b2p3/p3B1QP/8/1p6/8/1PP5/1K6 b - - 0 35\"]\n[Timezone \"UTC\"]\n[ECO \"B06\"]\n[ECOUrl \"https://www.chess.com/openings/Modern-Defense-Standard-Line...7.h4-h5-8.Nh3-Bb7-9.Ng5\"]\n[UTCDate \"2026.04.13\"]\n[UTCTime \"10:21:31\"]\n[WhiteElo \"3088\"]\n[BlackElo \"3012\"]\n[TimeControl \"180\"]\n[Termination \"hansen won - game abandoned\"]\n[StartTime \"10:21:31\"]\n[EndDate \"2026.04.13\"]\n[EndTime \"10:26:27\"]\n[Link \"https://www.chess.com/game/live/167245993920\"]\n\n1. e4 {[%clk 0:02:59.9]} 1... g6 {[%clk 0:02:59.9]} 2. d4 {[%clk 0:02:58.5]} 2... Bg7 {[%clk 0:02:59.8]} 3. Nc3 {[%clk 0:02:56.2]} 3... d6 {[%clk 0:02:57.5]} 4. Be3 {[%clk 0:02:55.5]} 4... a6 {[%clk 0:02:56.9]} 5. Qd2 {[%clk 0:02:54.4]} 5... b5 {[%clk 0:02:56.6]} 6. f3 {[%clk 0:02:53.6]} 6... Bb7 {[%clk 0:02:56.1]} 7. h4 {[%clk 0:02:52.4]} 7... h5 {[%clk 0:02:54]} 8. Nh3 {[%clk 0:02:50.9]} 8... Nd7 {[%clk 0:02:53.2]} 9. Ng5 {[%clk 0:02:49.7]} 9... c5 {[%clk 0:02:48.2]} 10. a4 {[%clk 0:02:37.7]} 10... b4 {[%clk 0:02:47.1]} 11. Bc4 {[%clk 0:02:37.1]} 11... Nh6 {[%clk 0:02:45.7]} 12. Ne2 {[%clk 0:02:28]} 12... O-O {[%clk 0:02:41.6]} 13. Ne6 {[%clk 0:02:20.9]} 13... fxe6 {[%clk 0:02:39.5]} 14. Bxh6 {[%clk 0:02:19.2]} 14... d5 {[%clk 0:02:39]} 15. Bxg7 {[%clk 0:02:14.2]} 15... Kxg7 {[%clk 0:02:36.8]} 16. Ba2 {[%clk 0:02:12.8]} 16... dxe4 {[%clk 0:02:32.1]} 17. Nf4 {[%clk 0:02:07.6]} 17... Rxf4 {[%clk 0:02:16.8]} 18. Qxf4 {[%clk 0:02:07.5]} 18... cxd4 {[%clk 0:02:15.9]} 19. Bxe6 {[%clk 0:01:59.9]} 19... Nf6 {[%clk 0:02:11.9]} 20. O-O-O {[%clk 0:01:59.2]} 20... Qa5 {[%clk 0:01:26.4]} 21. Rxd4 {[%clk 0:01:54.8]} 21... Qxa4 {[%clk 0:01:23.9]} 22. Kb1 {[%clk 0:01:54.2]} 22... exf3 {[%clk 0:01:20.1]} 23. gxf3 {[%clk 0:01:52.6]} 23... Qc6 {[%clk 0:01:19.1]} 24. Qe5 {[%clk 0:01:49.7]} 24... Qxf3 {[%clk 0:01:15.9]} 25. Rg1 {[%clk 0:01:48.6]} 25... Qf2 {[%clk 0:01:10]} 26. Rxg6+ {[%clk 0:01:41]} 26... Kf8 {[%clk 0:00:49.1]} 27. Rg8+ {[%clk 0:01:27.6]} 27... Nxg8 {[%clk 0:00:47.8]} 28. Rf4+ {[%clk 0:01:27.4]} 28... Qxf4 {[%clk 0:00:44.3]} 29. Qxf4+ {[%clk 0:01:26.8]} 29... Kg7 {[%clk 0:00:41.1]} 30. Qg5+ {[%clk 0:01:23.7]} 30... Kh7 {[%clk 0:00:40.5]} 31. Qxh5+ {[%clk 0:01:20.8]} 31... Kg7 {[%clk 0:00:38.9]} 32. Qg5+ {[%clk 0:01:18.3]} 32... Kh7 {[%clk 0:00:38.2]} 33. h5 {[%clk 0:01:06.2]} 33... Rf8 {[%clk 0:00:33.7]} 34. Qg6+ {[%clk 0:01:03.5]} 34... Kh8 {[%clk 0:00:33.1]} 35. h6 {[%clk 0:01:02.9]} 1-0\n",
+      "pgn_sha256": "a6bfdd036f418ecef9cb7246d0583b9e2b6f510e71557323e7c7e49e8f237660",
+      "source_account": "hansen"
+    },
+    {
+      "game_id": "167255249106",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.04.13\"]\n[Round \"-\"]\n[White \"hansen\"]\n[Black \"Luckyman9999999999\"]\n[Result \"1-0\"]\n[CurrentPosition \"r2r1k2/pb3Q2/1p2p2N/2pPqp2/2P5/3BP3/PP4PP/3R2K1 b - - 0 23\"]\n[Timezone \"UTC\"]\n[ECO \"C11\"]\n[ECOUrl \"https://www.chess.com/openings/French-Defense-Classical-Burn-Variation...7.Nxf6-Nxf6-8.Bd3-O-O\"]\n[UTCDate \"2026.04.13\"]\n[UTCTime \"14:25:36\"]\n[WhiteElo \"3010\"]\n[BlackElo \"2899\"]\n[TimeControl \"60\"]\n[Termination \"hansen won by checkmate\"]\n[StartTime \"14:25:36\"]\n[EndDate \"2026.04.13\"]\n[EndTime \"14:26:39\"]\n[Link \"https://www.chess.com/game/live/167255249106\"]\n\n1. e4 {[%clk 0:00:59.9]} 1... e6 {[%clk 0:00:59.6]} 2. d4 {[%clk 0:00:59.2]} 2... d5 {[%clk 0:00:59.5]} 3. Nd2 {[%clk 0:00:59.1]} 3... dxe4 {[%clk 0:00:59.1]} 4. Nxe4 {[%clk 0:00:59]} 4... Nd7 {[%clk 0:00:58.4]} 5. Nf3 {[%clk 0:00:58.5]} 5... Ngf6 {[%clk 0:00:58.3]} 6. Nxf6+ {[%clk 0:00:58.2]} 6... Nxf6 {[%clk 0:00:57.9]} 7. Bg5 {[%clk 0:00:57.9]} 7... Be7 {[%clk 0:00:57.8]} 8. Bd3 {[%clk 0:00:57.2]} 8... O-O {[%clk 0:00:57.4]} 9. O-O {[%clk 0:00:56.8]} 9... h6 {[%clk 0:00:57.1]} 10. Be3 {[%clk 0:00:55.8]} 10... b6 {[%clk 0:00:56.2]} 11. Ne5 {[%clk 0:00:54.9]} 11... Bb7 {[%clk 0:00:55.6]} 12. Qe2 {[%clk 0:00:54.6]} 12... Qc8 {[%clk 0:00:53.3]} 13. Rad1 {[%clk 0:00:53]} 13... c5 {[%clk 0:00:52.7]} 14. Ng4 {[%clk 0:00:51.6]} 14... Nd5 {[%clk 0:00:49.3]} 15. c4 {[%clk 0:00:47.4]} 15... Nxe3 {[%clk 0:00:48.5]} 16. fxe3 {[%clk 0:00:47.2]} 16... Rd8 {[%clk 0:00:44.4]} 17. Ne5 {[%clk 0:00:46.2]} 17... Bf6 {[%clk 0:00:42.7]} 18. Qh5 {[%clk 0:00:45.4]} 18... Qc7 {[%clk 0:00:39.8]} 19. Rxf6 {[%clk 0:00:43.5]} 19... gxf6 {[%clk 0:00:38.5]} 20. Ng4 {[%clk 0:00:43.4]} 20... f5 {[%clk 0:00:33.7]} 21. Nxh6+ {[%clk 0:00:37.4]} 21... Kf8 {[%clk 0:00:32.7]} 22. d5 {[%clk 0:00:36.2]} 22... Qe5 {[%clk 0:00:29.7]} 23. Qxf7# {[%clk 0:00:35.5]} 1-0\n",
+      "pgn_sha256": "12060c796723593d44750c62f9050cbd1278b7417e78258c75202a6251d2213d",
+      "source_account": "hansen"
+    },
+    {
+      "game_id": "167740813532",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.04.24\"]\n[Round \"-\"]\n[White \"hansen\"]\n[Black \"ODreamchess\"]\n[Result \"0-1\"]\n[CurrentPosition \"2r2b2/3p2k1/3Pp1P1/4Pp1P/p4P2/PnpqBN2/1PR2K2/8 w - - 1 46\"]\n[Timezone \"UTC\"]\n[ECO \"A49\"]\n[ECOUrl \"https://www.chess.com/openings/Indian-Game-East-Indian-Przepiorka-Variation-3...Bg7-4.Bg2-O-O-5.O-O\"]\n[UTCDate \"2026.04.24\"]\n[UTCTime \"02:36:26\"]\n[WhiteElo \"3002\"]\n[BlackElo \"2862\"]\n[TimeControl \"60\"]\n[Termination \"ODreamchess won on time\"]\n[StartTime \"02:36:26\"]\n[EndDate \"2026.04.24\"]\n[EndTime \"02:38:34\"]\n[Link \"https://www.chess.com/game/live/167740813532\"]\n\n1. Nf3 {[%clk 0:00:59.4]} 1... Nf6 {[%clk 0:00:59.4]} 2. d4 {[%clk 0:00:58.8]} 2... g6 {[%clk 0:00:58.9]} 3. g3 {[%clk 0:00:58.5]} 3... Bg7 {[%clk 0:00:58.4]} 4. Bg2 {[%clk 0:00:58.2]} 4... O-O {[%clk 0:00:58.3]} 5. O-O {[%clk 0:00:57.9]} 5... b6 {[%clk 0:00:57.9]} 6. Nc3 {[%clk 0:00:57.4]} 6... Bb7 {[%clk 0:00:57.5]} 7. d5 {[%clk 0:00:57.1]} 7... c6 {[%clk 0:00:57.1]} 8. e4 {[%clk 0:00:56.4]} 8... Na6 {[%clk 0:00:55.3]} 9. d6 {[%clk 0:00:53.3]} 9... e6 {[%clk 0:00:48.9]} 10. e5 {[%clk 0:00:50.8]} 10... Ne8 {[%clk 0:00:47.9]} 11. Ne4 {[%clk 0:00:49.8]} 11... f5 {[%clk 0:00:46.7]} 12. Neg5 {[%clk 0:00:45.1]} 12... h6 {[%clk 0:00:45.8]} 13. Nh3 {[%clk 0:00:44.8]} 13... c5 {[%clk 0:00:45.1]} 14. Re1 {[%clk 0:00:42.6]} 14... Rc8 {[%clk 0:00:41.4]} 15. Nh4 {[%clk 0:00:41.7]} 15... Bxg2 {[%clk 0:00:39.7]} 16. Kxg2 {[%clk 0:00:41.4]} 16... Kh7 {[%clk 0:00:38.8]} 17. f4 {[%clk 0:00:37.4]} 17... Rg8 {[%clk 0:00:37.3]} 18. Nf3 {[%clk 0:00:35.1]} 18... Bf8 {[%clk 0:00:36.6]} 19. c4 {[%clk 0:00:33.6]} 19... Nb4 {[%clk 0:00:36]} 20. a3 {[%clk 0:00:32.5]} 20... Nc6 {[%clk 0:00:35.9]} 21. Be3 {[%clk 0:00:32.4]} 21... a5 {[%clk 0:00:33.6]} 22. Qa4 {[%clk 0:00:31.8]} 22... Rb8 {[%clk 0:00:32.7]} 23. Rad1 {[%clk 0:00:30.9]} 23... Qc8 {[%clk 0:00:32.4]} 24. Kf2 {[%clk 0:00:29.9]} 24... Qb7 {[%clk 0:00:31.9]} 25. Rd2 {[%clk 0:00:29.4]} 25... Ng7 {[%clk 0:00:31.4]} 26. Qd1 {[%clk 0:00:27.8]} 26... Nh5 {[%clk 0:00:30.8]} 27. Nh4 {[%clk 0:00:27.1]} 27... Ng7 {[%clk 0:00:29.5]} 28. Rg1 {[%clk 0:00:25.4]} 28... b5 {[%clk 0:00:28.1]} 29. cxb5 {[%clk 0:00:21.5]} 29... Qxb5 {[%clk 0:00:28]} 30. g4 {[%clk 0:00:21.3]} 30... c4 {[%clk 0:00:26.6]} 31. Rc2 {[%clk 0:00:20]} 31... a4 {[%clk 0:00:23.1]} 32. Qe2 {[%clk 0:00:18.7]} 32... Na5 {[%clk 0:00:22.1]} 33. Nf3 {[%clk 0:00:15]} 33... Rc8 {[%clk 0:00:21.1]} 34. Rg3 {[%clk 0:00:13.6]} 34... Nb3 {[%clk 0:00:20.1]} 35. Nhg5+ {[%clk 0:00:12.3]} 35... hxg5 {[%clk 0:00:18.8]} 36. Nxg5+ {[%clk 0:00:12.2]} 36... Kh8 {[%clk 0:00:15.9]} 37. Rh3+ {[%clk 0:00:10.7]} 37... Nh5 {[%clk 0:00:15.4]} 38. gxh5 {[%clk 0:00:10.6]} 38... Kg7 {[%clk 0:00:14.1]} 39. hxg6 {[%clk 0:00:08.4]} 39... Rh8 {[%clk 0:00:12.2]} 40. Rxh8 {[%clk 0:00:07.7]} 40... Kxh8 {[%clk 0:00:11.5]} 41. Qh5+ {[%clk 0:00:06.7]} 41... Kg7 {[%clk 0:00:11]} 42. Qh6+ {[%clk 0:00:06.3]} 42... Kxh6 {[%clk 0:00:09.7]} 43. Nf3 {[%clk 0:00:04.2]} 43... Kg7 {[%clk 0:00:09.6]} 44. h4 {[%clk 0:00:03.1]} 44... c3 {[%clk 0:00:09.4]} 45. h5 {[%clk 0:00:02.5]} 45... Qd3 {[%clk 0:00:08.9]} 0-1\n",
+      "pgn_sha256": "0daf550d31e49e46e97dfd44670afb68580fba07ba4df78c7b53bd1c2aae6507",
+      "source_account": "hansen"
+    },
+    {
+      "game_id": "167742352864",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.04.24\"]\n[Round \"-\"]\n[White \"hansen\"]\n[Black \"ODreamchess\"]\n[Result \"1-0\"]\n[CurrentPosition \"8/p6P/5kp1/2Pp4/p6P/2P2P2/6K1/8 b - - 0 64\"]\n[Timezone \"UTC\"]\n[ECO \"D02\"]\n[ECOUrl \"https://www.chess.com/openings/Queens-Pawn-Opening-Pseudo-Catalan-Variation...4.Bg2-Bg7-5.O-O-O-O\"]\n[UTCDate \"2026.04.24\"]\n[UTCTime \"03:45:08\"]\n[WhiteElo \"3034\"]\n[BlackElo \"2829\"]\n[TimeControl \"60\"]\n[Termination \"hansen won on time\"]\n[StartTime \"03:45:08\"]\n[EndDate \"2026.04.24\"]\n[EndTime \"03:47:26\"]\n[Link \"https://www.chess.com/game/live/167742352864\"]\n\n1. Nf3 {[%clk 0:00:58.8]} 1... Nf6 {[%clk 0:00:59.9]} 2. d4 {[%clk 0:00:58.3]} 2... g6 {[%clk 0:00:59.5]} 3. g3 {[%clk 0:00:57.9]} 3... Bg7 {[%clk 0:00:59.4]} 4. Bg2 {[%clk 0:00:57.6]} 4... O-O {[%clk 0:00:59.3]} 5. O-O {[%clk 0:00:57.3]} 5... d5 {[%clk 0:00:59.2]} 6. Nc3 {[%clk 0:00:56.6]} 6... c6 {[%clk 0:00:59.1]} 7. h3 {[%clk 0:00:55.7]} 7... Bf5 {[%clk 0:00:58.3]} 8. Nh4 {[%clk 0:00:55.4]} 8... Bd7 {[%clk 0:00:57]} 9. Re1 {[%clk 0:00:54.9]} 9... Qc8 {[%clk 0:00:56.5]} 10. Kh2 {[%clk 0:00:54]} 10... Na6 {[%clk 0:00:55.4]} 11. e4 {[%clk 0:00:53.5]} 11... dxe4 {[%clk 0:00:55.3]} 12. Nxe4 {[%clk 0:00:53.4]} 12... Nxe4 {[%clk 0:00:55.2]} 13. Rxe4 {[%clk 0:00:53.3]} 13... Re8 {[%clk 0:00:53.6]} 14. c3 {[%clk 0:00:52.5]} 14... Nc7 {[%clk 0:00:53.1]} 15. Nf3 {[%clk 0:00:51.8]} 15... Nd5 {[%clk 0:00:52.6]} 16. Re1 {[%clk 0:00:50.7]} 16... Bf5 {[%clk 0:00:52.1]} 17. Ne5 {[%clk 0:00:50]} 17... Nf6 {[%clk 0:00:50.6]} 18. Qb3 {[%clk 0:00:49]} 18... Be6 {[%clk 0:00:49.6]} 19. Qc2 {[%clk 0:00:47.9]} 19... Nd7 {[%clk 0:00:49.5]} 20. Nd3 {[%clk 0:00:47]} 20... Qc7 {[%clk 0:00:48.1]} 21. Rxe6 {[%clk 0:00:45.7]} 21... fxe6 {[%clk 0:00:47.2]} 22. Qb3 {[%clk 0:00:42.5]} 22... Nf8 {[%clk 0:00:46.2]} 23. Bf4 {[%clk 0:00:41.2]} 23... Qb6 {[%clk 0:00:45.7]} 24. Qc2 {[%clk 0:00:40.5]} 24... Rad8 {[%clk 0:00:44.8]} 25. Re1 {[%clk 0:00:39.8]} 25... Kh8 {[%clk 0:00:43.9]} 26. h4 {[%clk 0:00:39]} 26... Bf6 {[%clk 0:00:43.3]} 27. a3 {[%clk 0:00:38.4]} 27... Kg7 {[%clk 0:00:42.7]} 28. Nc5 {[%clk 0:00:37.6]} 28... h5 {[%clk 0:00:36.4]} 29. Bh3 {[%clk 0:00:36.9]} 29... Rd5 {[%clk 0:00:34.5]} 30. b4 {[%clk 0:00:33.7]} 30... Rxc5 {[%clk 0:00:31.8]} 31. bxc5 {[%clk 0:00:33.2]} 31... Qa6 {[%clk 0:00:31]} 32. a4 {[%clk 0:00:32.5]} 32... Rd8 {[%clk 0:00:30.3]} 33. Bxe6 {[%clk 0:00:28.9]} 33... Nxe6 {[%clk 0:00:28.3]} 34. Rxe6 {[%clk 0:00:28.8]} 34... Kf7 {[%clk 0:00:27.9]} 35. Qb3 {[%clk 0:00:27.6]} 35... Kg7 {[%clk 0:00:23.2]} 36. Be5 {[%clk 0:00:26.9]} 36... Rd7 {[%clk 0:00:21.3]} 37. Bxf6+ {[%clk 0:00:23.2]} 37... exf6 {[%clk 0:00:21.2]} 38. Re8 {[%clk 0:00:21.7]} 38... Rf7 {[%clk 0:00:20.4]} 39. Kg2 {[%clk 0:00:19.6]} 39... Qd3 {[%clk 0:00:18.7]} 40. Rb8 {[%clk 0:00:17.3]} 40... Qe4+ {[%clk 0:00:15.2]} 41. Kh2 {[%clk 0:00:14.4]} 41... Qf3 {[%clk 0:00:14.4]} 42. Qa2 {[%clk 0:00:13.3]} 42... Re7 {[%clk 0:00:13.4]} 43. Qg8+ {[%clk 0:00:11.4]} 43... Kh6 {[%clk 0:00:12]} 44. Qh8+ {[%clk 0:00:09.7]} 44... Rh7 {[%clk 0:00:11.3]} 45. Qf8+ {[%clk 0:00:08.8]} 45... Rg7 {[%clk 0:00:10.8]} 46. Kg1 {[%clk 0:00:08.4]} 46... Qd1+ {[%clk 0:00:09.7]} 47. Kg2 {[%clk 0:00:08.1]} 47... Qd3 {[%clk 0:00:08.4]} 48. Re8 {[%clk 0:00:08]} 48... Qf5 {[%clk 0:00:07.3]} 49. Re7 {[%clk 0:00:07.3]} 49... Qd5+ {[%clk 0:00:06.6]} 50. Kh2 {[%clk 0:00:06.9]} 50... Qg8 {[%clk 0:00:06.5]} 51. Qxf6 {[%clk 0:00:06.2]} 51... Kh7 {[%clk 0:00:05.4]} 52. Re6 {[%clk 0:00:05.3]} 52... Rf7 {[%clk 0:00:04.4]} 53. Re7 {[%clk 0:00:04.3]} 53... Rxe7 {[%clk 0:00:02.7]} 54. Qxe7+ {[%clk 0:00:04.2]} 54... Qg7 {[%clk 0:00:02.5]} 55. Qe3 {[%clk 0:00:04.1]} 55... Qf6 {[%clk 0:00:01.7]} 56. Kg2 {[%clk 0:00:04]} 56... Kg7 {[%clk 0:00:01.5]} 57. Qf3 {[%clk 0:00:03.9]} 57... Kf7 {[%clk 0:00:01.4]} 58. Qxf6+ {[%clk 0:00:03.5]} 58... Kxf6 {[%clk 0:00:01.3]} 59. f3 {[%clk 0:00:03.4]} 59... Ke6 {[%clk 0:00:01.2]} 60. g4 {[%clk 0:00:03.3]} 60... b5 {[%clk 0:00:00.9]} 61. gxh5 {[%clk 0:00:03.2]} 61... bxa4 {[%clk 0:00:00.8]} 62. d5+ {[%clk 0:00:02.8]} 62... Kf6 {[%clk 0:00:00.6]} 63. h6 {[%clk 0:00:02.7]} 63... cxd5 {[%clk 0:00:00.1]} 64. h7 {[%clk 0:00:02.6]} 1-0\n",
+      "pgn_sha256": "86b1c30e4ad3750698cd974920725e5e7aa7396d87bb4eed19c684f144a122bb",
+      "source_account": "hansen"
+    },
+    {
+      "game_id": "168413663740",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.05.08\"]\n[Round \"-\"]\n[White \"likeyouuuu\"]\n[Black \"hansen\"]\n[Result \"0-1\"]\n[CurrentPosition \"6k1/5p1p/p1b1p1p1/1p6/1P6/P7/4r1q1/5K2 w - - 0 47\"]\n[Timezone \"UTC\"]\n[ECO \"E77\"]\n[ECOUrl \"https://www.chess.com/openings/Kings-Indian-Defense-Four-Pawns-Fluid-Attack-Exchange-Variation...10.O-O-Nxd4-11.Bxd4-Bc6\"]\n[UTCDate \"2026.05.08\"]\n[UTCTime \"14:37:44\"]\n[WhiteElo \"2903\"]\n[BlackElo \"3065\"]\n[TimeControl \"60\"]\n[Termination \"hansen won by checkmate\"]\n[StartTime \"14:37:44\"]\n[EndDate \"2026.05.08\"]\n[EndTime \"14:39:54\"]\n[Link \"https://www.chess.com/game/live/168413663740\"]\n\n1. e4 {[%clk 0:00:59.9]} 1... c5 {[%clk 0:00:59]} 2. c4 {[%clk 0:00:59.1]} 2... Nc6 {[%clk 0:00:58.2]} 3. Ne2 {[%clk 0:00:58.8]} 3... g6 {[%clk 0:00:57.7]} 4. d4 {[%clk 0:00:58.4]} 4... cxd4 {[%clk 0:00:57.6]} 5. Nxd4 {[%clk 0:00:58.1]} 5... Bg7 {[%clk 0:00:57.5]} 6. Be3 {[%clk 0:00:57.7]} 6... d6 {[%clk 0:00:55.5]} 7. Nc3 {[%clk 0:00:57]} 7... Nf6 {[%clk 0:00:55.2]} 8. Be2 {[%clk 0:00:56.4]} 8... O-O {[%clk 0:00:54.8]} 9. O-O {[%clk 0:00:55.7]} 9... Bd7 {[%clk 0:00:54.2]} 10. f4 {[%clk 0:00:55.1]} 10... Nxd4 {[%clk 0:00:53.7]} 11. Bxd4 {[%clk 0:00:55]} 11... Bc6 {[%clk 0:00:53.2]} 12. Bf3 {[%clk 0:00:54.5]} 12... Qa5 {[%clk 0:00:52.1]} 13. a3 {[%clk 0:00:51.5]} 13... Rac8 {[%clk 0:00:51.4]} 14. b4 {[%clk 0:00:49.7]} 14... Qc7 {[%clk 0:00:50.2]} 15. Qe2 {[%clk 0:00:49.2]} 15... a6 {[%clk 0:00:49.6]} 16. Rac1 {[%clk 0:00:47.6]} 16... Qb8 {[%clk 0:00:47.5]} 17. Rfd1 {[%clk 0:00:46.1]} 17... e6 {[%clk 0:00:44]} 18. h4 {[%clk 0:00:41.2]} 18... b5 {[%clk 0:00:41.7]} 19. c5 {[%clk 0:00:38.8]} 19... dxc5 {[%clk 0:00:40.2]} 20. Bxc5 {[%clk 0:00:38.7]} 20... Qxf4 {[%clk 0:00:38.4]} 21. Qf2 {[%clk 0:00:29.6]} 21... Rfd8 {[%clk 0:00:33.5]} 22. Be7 {[%clk 0:00:27.2]} 22... Rxd1+ {[%clk 0:00:31.3]} 23. Rxd1 {[%clk 0:00:27.1]} 23... Ng4 {[%clk 0:00:27.4]} 24. Bxg4 {[%clk 0:00:22.9]} 24... Qxg4 {[%clk 0:00:26.8]} 25. Bf6 {[%clk 0:00:21.6]} 25... Be8 {[%clk 0:00:15.6]} 26. Bxg7 {[%clk 0:00:20.2]} 26... Kxg7 {[%clk 0:00:15.5]} 27. Rf1 {[%clk 0:00:19.7]} 27... Kg8 {[%clk 0:00:12.4]} 28. Qf6 {[%clk 0:00:18.4]} 28... Qg3 {[%clk 0:00:11.9]} 29. Rf3 {[%clk 0:00:17.2]} 29... Qe1+ {[%clk 0:00:10.3]} 30. Kh2 {[%clk 0:00:16.8]} 30... Qd2 {[%clk 0:00:09.7]} 31. h5 {[%clk 0:00:15.5]} 31... Qh6 {[%clk 0:00:08.8]} 32. Rh3 {[%clk 0:00:14.7]} 32... Qg7 {[%clk 0:00:08.2]} 33. Qf3 {[%clk 0:00:13.9]} 33... Qe5+ {[%clk 0:00:07.5]} 34. Rg3 {[%clk 0:00:12.4]} 34... Rc4 {[%clk 0:00:06.9]} 35. Ne2 {[%clk 0:00:11.2]} 35... Rxe4 {[%clk 0:00:06]} 36. Nc3 {[%clk 0:00:10]} 36... Rc4 {[%clk 0:00:05.2]} 37. Ne2 {[%clk 0:00:09.5]} 37... Bc6 {[%clk 0:00:04.8]} 38. Qf2 {[%clk 0:00:08.8]} 38... Rh4+ {[%clk 0:00:04]} 39. Kg1 {[%clk 0:00:07.3]} 39... Re4 {[%clk 0:00:03.9]} 40. Rd3 {[%clk 0:00:03.8]} 40... Rxe2 {[%clk 0:00:03.2]} 41. Rd8+ {[%clk 0:00:03.7]} 41... Kg7 {[%clk 0:00:02.8]} 42. h6+ {[%clk 0:00:03.6]} 42... Kxh6 {[%clk 0:00:02.4]} 43. Qh4+ {[%clk 0:00:03.4]} 43... Kg7 {[%clk 0:00:02.3]} 44. Qg3 {[%clk 0:00:01.9]} 44... Qxg3 {[%clk 0:00:01.6]} 45. Rg8+ {[%clk 0:00:01.2]} 45... Kxg8 {[%clk 0:00:00.6]} 46. Kf1 {[%clk 0:00:01.1]} 46... Qxg2# {[%clk 0:00:00.5]} 0-1\n",
+      "pgn_sha256": "8525947385025bc8abd6c7a33561411efbb394b066861d2906c0f42558e9a62f",
+      "source_account": "hansen"
+    },
+    {
+      "game_id": "171291626363",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.04.23\"]\n[Round \"-\"]\n[White \"hansen\"]\n[Black \"annasargsyan_m\"]\n[Result \"1-0\"]\n[Tournament \"https://www.chess.com/tournament/live/second-3-0-thursday-april-23-2026-6371735\"]\n[CurrentPosition \"Q6k/8/pr2Bq1p/8/6PP/2P5/P4PK1/8 b - - 10 40\"]\n[Timezone \"UTC\"]\n[ECO \"C77\"]\n[ECOUrl \"https://www.chess.com/openings/Ruy-Lopez-Opening-Morphy-Defense-Anderssen-Variation-5...Bc5-6.O-O-d6-7.c3\"]\n[UTCDate \"2026.04.23\"]\n[UTCTime \"21:01:43\"]\n[WhiteElo \"3074\"]\n[BlackElo \"2767\"]\n[TimeControl \"180\"]\n[Termination \"hansen won by resignation\"]\n[StartTime \"21:01:43\"]\n[EndDate \"2026.04.23\"]\n[EndTime \"21:07:15\"]\n[Link \"https://www.chess.com/game/live/171291626363\"]\n\n1. e4 {[%clk 0:02:59.4]} 1... e5 {[%clk 0:02:58.2]} 2. Nf3 {[%clk 0:02:58.9]} 2... Nc6 {[%clk 0:02:57.9]} 3. Bb5 {[%clk 0:02:58.2]} 3... a6 {[%clk 0:02:56.8]} 4. Ba4 {[%clk 0:02:57.8]} 4... Nf6 {[%clk 0:02:55.6]} 5. d3 {[%clk 0:02:57.4]} 5... Bc5 {[%clk 0:02:53.7]} 6. O-O {[%clk 0:02:56.2]} 6... d6 {[%clk 0:02:51.3]} 7. c3 {[%clk 0:02:55.2]} 7... O-O {[%clk 0:02:50.1]} 8. h3 {[%clk 0:02:54.1]} 8... h6 {[%clk 0:02:48.4]} 9. Re1 {[%clk 0:02:53.5]} 9... Bd7 {[%clk 0:02:47.2]} 10. Nbd2 {[%clk 0:02:51.5]} 10... Bb6 {[%clk 0:02:45.8]} 11. Nf1 {[%clk 0:02:48.8]} 11... Ne7 {[%clk 0:02:43.7]} 12. Bb3 {[%clk 0:02:46.6]} 12... Ng6 {[%clk 0:02:42.5]} 13. Ng3 {[%clk 0:02:46]} 13... Kh8 {[%clk 0:02:34.5]} 14. d4 {[%clk 0:02:40.9]} 14... Qe7 {[%clk 0:02:33.6]} 15. Nf5 {[%clk 0:02:38.9]} 15... Qd8 {[%clk 0:02:26.1]} 16. g4 {[%clk 0:02:38.1]} 16... Nh7 {[%clk 0:02:23.3]} 17. Be3 {[%clk 0:02:33.9]} 17... Bxf5 {[%clk 0:02:10.4]} 18. exf5 {[%clk 0:02:33]} 18... Nh4 {[%clk 0:02:07.1]} 19. dxe5 {[%clk 0:02:27.9]} 19... Nxf3+ {[%clk 0:01:54.6]} 20. Qxf3 {[%clk 0:02:27]} 20... dxe5 {[%clk 0:01:53.9]} 21. Rad1 {[%clk 0:02:23.8]} 21... Qf6 {[%clk 0:01:45.6]} 22. Qxb7 {[%clk 0:02:20]} 22... Ng5 {[%clk 0:01:42.1]} 23. Qg2 {[%clk 0:02:15.1]} 23... Bxe3 {[%clk 0:01:38.6]} 24. Rxe3 {[%clk 0:02:14.1]} 24... e4 {[%clk 0:01:36.5]} 25. Qg3 {[%clk 0:01:57.8]} 25... Rad8 {[%clk 0:01:33]} 26. Qxc7 {[%clk 0:01:46.6]} 26... g6 {[%clk 0:01:17]} 27. Kg2 {[%clk 0:01:30.2]} 27... Rxd1 {[%clk 0:01:13.9]} 28. Bxd1 {[%clk 0:01:29.2]} 28... gxf5 {[%clk 0:01:13.8]} 29. Qf4 {[%clk 0:01:27.9]} 29... Rd8 {[%clk 0:01:06.9]} 30. Bb3 {[%clk 0:01:12.5]} 30... Rd2 {[%clk 0:01:05.6]} 31. Qxf5 {[%clk 0:01:08.2]} 31... Qd6 {[%clk 0:00:54.5]} 32. h4 {[%clk 0:00:53.9]} 32... Nf3 {[%clk 0:00:53.5]} 33. Rxf3 {[%clk 0:00:45.2]} 33... exf3+ {[%clk 0:00:53.4]} 34. Qxf3 {[%clk 0:00:44.9]} 34... Rxb2 {[%clk 0:00:45.2]} 35. Qxf7 {[%clk 0:00:41.5]} 35... Qd8 {[%clk 0:00:40.2]} 36. Qg6 {[%clk 0:00:29.5]} 36... Qf8 {[%clk 0:00:39.6]} 37. Bf7 {[%clk 0:00:28]} 37... Rb7 {[%clk 0:00:36.5]} 38. Be6 {[%clk 0:00:24.2]} 38... Rb6 {[%clk 0:00:33.4]} 39. Qe4 {[%clk 0:00:20.8]} 39... Qf6 {[%clk 0:00:29.2]} 40. Qa8+ {[%clk 0:00:19.6]} 1-0\n",
+      "pgn_sha256": "65c56c9a3b0613862d784a8d269dc2aebedd39eca18369739c3affe13abb132e",
+      "source_account": "hansen"
+    },
+    {
+      "game_id": "172915254335",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.05.12\"]\n[Round \"-\"]\n[White \"hansen\"]\n[Black \"vovachesss\"]\n[Result \"0-1\"]\n[Tournament \"https://www.chess.com/tournament/live/titled-tuesday-blitz-may-12-2026-6431785\"]\n[CurrentPosition \"8/P5pk/1R5p/3n1p1P/4bK2/8/8/8 w - - 3 59\"]\n[Timezone \"UTC\"]\n[ECO \"B43\"]\n[ECOUrl \"https://www.chess.com/openings/Sicilian-Defense-Kan-Knight-Variation-Wing-Attack...7.O-O-Nc6-8.Nxc6-Bxc6\"]\n[UTCDate \"2026.05.12\"]\n[UTCTime \"16:01:00\"]\n[WhiteElo \"3046\"]\n[BlackElo \"2888\"]\n[TimeControl \"300\"]\n[Termination \"vovachesss won by resignation\"]\n[StartTime \"16:01:00\"]\n[EndDate \"2026.05.12\"]\n[EndTime \"16:11:09\"]\n[Link \"https://www.chess.com/game/live/172915254335\"]\n\n1. e4 {[%clk 0:04:59.9]} 1... c5 {[%clk 0:04:57.1]} 2. Nf3 {[%clk 0:04:59.2]} 2... e6 {[%clk 0:04:55.3]} 3. d4 {[%clk 0:04:58.4]} 3... cxd4 {[%clk 0:04:55.2]} 4. Nxd4 {[%clk 0:04:58.3]} 4... a6 {[%clk 0:04:54.5]} 5. Nc3 {[%clk 0:04:57.9]} 5... b5 {[%clk 0:04:53.5]} 6. Bd3 {[%clk 0:04:56.1]} 6... Bb7 {[%clk 0:04:52.9]} 7. O-O {[%clk 0:04:55.8]} 7... Nc6 {[%clk 0:04:52.5]} 8. Nxc6 {[%clk 0:04:53.7]} 8... Bxc6 {[%clk 0:04:52.4]} 9. Qe2 {[%clk 0:04:53.4]} 9... Qb8 {[%clk 0:04:50.8]} 10. Bd2 {[%clk 0:04:52.1]} 10... Bc5 {[%clk 0:04:30.5]} 11. a4 {[%clk 0:04:45.5]} 11... b4 {[%clk 0:04:14.5]} 12. Nd5 {[%clk 0:04:43.6]} 12... a5 {[%clk 0:04:01.6]} 13. Bf4 {[%clk 0:04:02.9]} 13... Bd6 {[%clk 0:03:40.1]} 14. Bxd6 {[%clk 0:04:01.7]} 14... Qxd6 {[%clk 0:03:40]} 15. Nb6 {[%clk 0:04:01.6]} 15... Rb8 {[%clk 0:03:33.9]} 16. Nc4 {[%clk 0:04:00.7]} 16... Qc5 {[%clk 0:03:26.2]} 17. e5 {[%clk 0:03:58.2]} 17... f5 {[%clk 0:02:57.2]} 18. Nd6+ {[%clk 0:03:54.1]} 18... Ke7 {[%clk 0:02:56.3]} 19. Bb5 {[%clk 0:03:15.6]} 19... Bd5 {[%clk 0:02:46.8]} 20. c4 {[%clk 0:03:07.8]} 20... bxc3 {[%clk 0:02:45.7]} 21. bxc3 {[%clk 0:03:07.4]} 21... Nh6 {[%clk 0:02:38.5]} 22. c4 {[%clk 0:03:06.3]} 22... Ba8 {[%clk 0:02:27.2]} 23. Rad1 {[%clk 0:03:04.2]} 23... Rbd8 {[%clk 0:02:17]} 24. Rfe1 {[%clk 0:02:58.8]} 24... Nf7 {[%clk 0:01:37.1]} 25. Nxf5+ {[%clk 0:02:37.1]} 25... exf5 {[%clk 0:01:29.7]} 26. e6 {[%clk 0:02:36.3]} 26... Nd6 {[%clk 0:01:22.9]} 27. Qb2 {[%clk 0:02:06.2]} 27... Rhg8 {[%clk 0:01:15.2]} 28. exd7+ {[%clk 0:02:04.3]} 28... Ne4 {[%clk 0:01:14.4]} 29. Rd4 {[%clk 0:01:43.9]} 29... Kf7 {[%clk 0:01:12.6]} 30. Red1 {[%clk 0:01:34.7]} 30... Rgf8 {[%clk 0:01:05.6]} 31. f3 {[%clk 0:01:11.9]} 31... Ng5 {[%clk 0:01:02]} 32. Kf1 {[%clk 0:01:02.1]} 32... Ne6 {[%clk 0:01:00.4]} 33. Rd6 {[%clk 0:00:58.5]} 33... Nf4 {[%clk 0:00:47.7]} 34. Qd2 {[%clk 0:00:54.8]} 34... Ng6 {[%clk 0:00:46.1]} 35. Qxa5 {[%clk 0:00:49.5]} 35... Kg8 {[%clk 0:00:44.8]} 36. Qb6 {[%clk 0:00:46.8]} 36... Qa3 {[%clk 0:00:40.9]} 37. Qd4 {[%clk 0:00:45.8]} 37... Rf7 {[%clk 0:00:28.5]} 38. c5 {[%clk 0:00:40.5]} 38... Bxf3 {[%clk 0:00:23.1]} 39. Qd3 {[%clk 0:00:20.4]} 39... Bxg2+ {[%clk 0:00:19.8]} 40. Kg1 {[%clk 0:00:20]} 40... Qxc5+ {[%clk 0:00:19.7]} 41. Qd4 {[%clk 0:00:19.1]} 41... Qxd4+ {[%clk 0:00:18.5]} 42. R6xd4 {[%clk 0:00:19]} 42... Be4 {[%clk 0:00:18.2]} 43. Bc4 {[%clk 0:00:18.4]} 43... Kf8 {[%clk 0:00:17.1]} 44. Bxf7 {[%clk 0:00:16.8]} 44... Kxf7 {[%clk 0:00:17]} 45. a5 {[%clk 0:00:16.7]} 45... Ne5 {[%clk 0:00:15.9]} 46. Kf2 {[%clk 0:00:15.7]} 46... Nc6 {[%clk 0:00:15.4]} 47. Ra4 {[%clk 0:00:14.3]} 47... Ne5 {[%clk 0:00:14.7]} 48. a6 {[%clk 0:00:13.2]} 48... Rxd7 {[%clk 0:00:14.1]} 49. Rxd7+ {[%clk 0:00:12.2]} 49... Nxd7 {[%clk 0:00:14]} 50. a7 {[%clk 0:00:12.1]} 50... Nb6 {[%clk 0:00:13.7]} 51. Ra6 {[%clk 0:00:11.5]} 51... Na8 {[%clk 0:00:13.6]} 52. Rd6 {[%clk 0:00:10.8]} 52... Ke7 {[%clk 0:00:12.7]} 53. Ra6 {[%clk 0:00:10.5]} 53... Kf7 {[%clk 0:00:12.2]} 54. Ke3 {[%clk 0:00:10.4]} 54... h6 {[%clk 0:00:11.9]} 55. Kf4 {[%clk 0:00:10]} 55... Kg8 {[%clk 0:00:11.6]} 56. h4 {[%clk 0:00:09.2]} 56... Kh7 {[%clk 0:00:11.5]} 57. h5 {[%clk 0:00:09.1]} 57... Nc7 {[%clk 0:00:11.2]} 58. Rb6 {[%clk 0:00:08.3]} 58... Nd5+ {[%clk 0:00:10.8]} 0-1\n",
+      "pgn_sha256": "cb92705a9b4692511ebc07fa1f6a05fd5fd9bc8be96c062b0921dcbc99c11f25",
+      "source_account": "hansen"
+    },
+    {
+      "game_id": "166827147588",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.04.03\"]\n[Round \"-\"]\n[White \"I_Will_be_FM\"]\n[Black \"nelsi\"]\n[Result \"0-1\"]\n[CurrentPosition \"3Q4/p4pkp/5r2/8/8/P7/1P3K2/3R4 w - - 5 49\"]\n[Timezone \"UTC\"]\n[ECO \"B01\"]\n[ECOUrl \"https://www.chess.com/openings/Scandinavian-Defense-Modern-Portuguese-Variation-4.f3-Bf5-5.c4-e6\"]\n[UTCDate \"2026.04.03\"]\n[UTCTime \"21:36:54\"]\n[WhiteElo \"2619\"]\n[BlackElo \"2603\"]\n[TimeControl \"60\"]\n[Termination \"nelsi won on time\"]\n[StartTime \"21:36:54\"]\n[EndDate \"2026.04.03\"]\n[EndTime \"21:39:08\"]\n[Link \"https://www.chess.com/game/live/166827147588\"]\n\n1. e4 {[%clk 0:00:59.8]} 1... d5 {[%clk 0:00:58.9]} 2. exd5 {[%clk 0:00:59.3]} 2... Nf6 {[%clk 0:00:58.4]} 3. d4 {[%clk 0:00:58.5]} 3... Bg4 {[%clk 0:00:57.5]} 4. f3 {[%clk 0:00:57.6]} 4... Bf5 {[%clk 0:00:56.7]} 5. c4 {[%clk 0:00:57.5]} 5... e6 {[%clk 0:00:56.3]} 6. Nc3 {[%clk 0:00:56.6]} 6... exd5 {[%clk 0:00:52.3]} 7. Qb3 {[%clk 0:00:54.5]} 7... Nc6 {[%clk 0:00:50.8]} 8. cxd5 {[%clk 0:00:52.7]} 8... Nb4 {[%clk 0:00:47.8]} 9. Bb5+ {[%clk 0:00:49.7]} 9... c6 {[%clk 0:00:46.3]} 10. dxc6 {[%clk 0:00:49.4]} 10... bxc6 {[%clk 0:00:45.7]} 11. Bc4 {[%clk 0:00:48.5]} 11... Nc2+ {[%clk 0:00:38.7]} 12. Kf1 {[%clk 0:00:47.9]} 12... Nxa1 {[%clk 0:00:35.7]} 13. Qb7 {[%clk 0:00:41.3]} 13... Be7 {[%clk 0:00:27.7]} 14. Nge2 {[%clk 0:00:32.4]} 14... Nc2 {[%clk 0:00:25.6]} 15. Qxc6+ {[%clk 0:00:30.5]} 15... Bd7 {[%clk 0:00:24.7]} 16. Qe4 {[%clk 0:00:29.6]} 16... Nb4 {[%clk 0:00:23.2]} 17. Qb1 {[%clk 0:00:28.1]} 17... O-O {[%clk 0:00:21.7]} 18. a3 {[%clk 0:00:27.3]} 18... Nc6 {[%clk 0:00:20.6]} 19. Be3 {[%clk 0:00:26.9]} 19... Re8 {[%clk 0:00:19.5]} 20. Kf2 {[%clk 0:00:26.5]} 20... Bd6 {[%clk 0:00:19.1]} 21. Rd1 {[%clk 0:00:25.8]} 21... Rxe3 {[%clk 0:00:18.4]} 22. Kxe3 {[%clk 0:00:25]} 22... Qe7+ {[%clk 0:00:18.3]} 23. Kf2 {[%clk 0:00:24.5]} 23... Re8 {[%clk 0:00:18.2]} 24. Ne4 {[%clk 0:00:23.2]} 24... Nxe4+ {[%clk 0:00:17.2]} 25. fxe4 {[%clk 0:00:22.5]} 25... Bxh2 {[%clk 0:00:16.1]} 26. Bd5 {[%clk 0:00:20.5]} 26... Qh4+ {[%clk 0:00:15.5]} 27. g3 {[%clk 0:00:18.8]} 27... Qh3 {[%clk 0:00:13.5]} 28. Qd3 {[%clk 0:00:14.1]} 28... Bg4 {[%clk 0:00:12.2]} 29. Nf4 {[%clk 0:00:11.6]} 29... Bxg3+ {[%clk 0:00:10.1]} 30. Qxg3 {[%clk 0:00:10.6]} 30... Qxg3+ {[%clk 0:00:10]} 31. Kxg3 {[%clk 0:00:10.5]} 31... Bd7 {[%clk 0:00:08.9]} 32. Rh1 {[%clk 0:00:09.1]} 32... g5 {[%clk 0:00:08.4]} 33. Bxc6 {[%clk 0:00:08.5]} 33... gxf4+ {[%clk 0:00:07.5]} 34. Kxf4 {[%clk 0:00:08]} 34... Bxc6 {[%clk 0:00:07.4]} 35. d5 {[%clk 0:00:07.7]} 35... Bxd5 {[%clk 0:00:06.4]} 36. exd5 {[%clk 0:00:07]} 36... Rd8 {[%clk 0:00:05.7]} 37. Rd1 {[%clk 0:00:06.8]} 37... Rd6 {[%clk 0:00:04.8]} 38. Ke5 {[%clk 0:00:05.8]} 38... Rh6 {[%clk 0:00:03.8]} 39. d6 {[%clk 0:00:05.7]} 39... Rh5+ {[%clk 0:00:03.4]} 40. Kf6 {[%clk 0:00:05.1]} 40... Rh6+ {[%clk 0:00:03]} 41. Ke7 {[%clk 0:00:04.9]} 41... Rh3 {[%clk 0:00:02.4]} 42. d7 {[%clk 0:00:04.3]} 42... Re3+ {[%clk 0:00:02.3]} 43. Kf6 {[%clk 0:00:03.5]} 43... Rf3+ {[%clk 0:00:01.2]} 44. Kg5 {[%clk 0:00:03.4]} 44... Re3 {[%clk 0:00:01.1]} 45. Kh4 {[%clk 0:00:03.2]} 45... Kg7 {[%clk 0:00:01]} 46. d8=Q {[%clk 0:00:02.7]} 46... Re4+ {[%clk 0:00:00.8]} 47. Kg3 {[%clk 0:00:02.1]} 47... Re6 {[%clk 0:00:00.7]} 48. Kf2 {[%clk 0:00:02]} 48... Rf6+ {[%clk 0:00:00.1]} 0-1\n",
+      "pgn_sha256": "1283074ae5e83912a776cf1c6c15b046a71860f5de1c9d0aebf22b8dc8b072c2",
+      "source_account": "nelsi"
+    },
+    {
+      "game_id": "164292223322",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.02.05\"]\n[Round \"-\"]\n[White \"bilflynn\"]\n[Black \"nelsi\"]\n[Result \"1-0\"]\n[CurrentPosition \"8/8/1K6/8/8/8/3Q4/4Rk2 b - - 16 61\"]\n[Timezone \"UTC\"]\n[ECO \"A04\"]\n[ECOUrl \"https://www.chess.com/openings/Reti-Opening\"]\n[UTCDate \"2026.02.05\"]\n[UTCTime \"22:42:16\"]\n[WhiteElo \"2450\"]\n[BlackElo \"2421\"]\n[TimeControl \"180\"]\n[Termination \"bilflynn won by checkmate\"]\n[StartTime \"22:42:16\"]\n[EndDate \"2026.02.05\"]\n[EndTime \"22:46:52\"]\n[Link \"https://www.chess.com/game/live/164292223322\"]\n\n1. Nf3 {[%clk 0:02:59.4]} 1... e5 {[%clk 0:02:58.9]} 2. Nxe5 {[%clk 0:02:58.5]} 2... d5 {[%clk 0:02:58.2]} 3. d4 {[%clk 0:02:57.8]} 3... Nc6 {[%clk 0:02:58.1]} 4. Nxc6 {[%clk 0:02:56.7]} 4... bxc6 {[%clk 0:02:58]} 5. Bf4 {[%clk 0:02:53.9]} 5... Bg4 {[%clk 0:02:57.4]} 6. h3 {[%clk 0:02:52.1]} 6... Bh5 {[%clk 0:02:57.1]} 7. c3 {[%clk 0:02:50.2]} 7... Bd6 {[%clk 0:02:55.5]} 8. Bxd6 {[%clk 0:02:48.2]} 8... Qxd6 {[%clk 0:02:55.4]} 9. Qa4 {[%clk 0:02:46.1]} 9... Nf6 {[%clk 0:02:53.6]} 10. e3 {[%clk 0:02:44.3]} 10... O-O {[%clk 0:02:52.7]} 11. Nd2 {[%clk 0:02:43.5]} 11... Rab8 {[%clk 0:02:51.5]} 12. b4 {[%clk 0:02:37.8]} 12... Ne4 {[%clk 0:02:49.6]} 13. Nxe4 {[%clk 0:02:35.1]} 13... dxe4 {[%clk 0:02:49.5]} 14. Be2 {[%clk 0:02:32.6]} 14... Bxe2 {[%clk 0:02:47.2]} 15. Kxe2 {[%clk 0:02:32.5]} 15... f5 {[%clk 0:02:46.8]} 16. g3 {[%clk 0:02:31]} 16... f4 {[%clk 0:02:35]} 17. gxf4 {[%clk 0:02:29.8]} 17... Rxf4 {[%clk 0:02:34.8]} 18. exf4 {[%clk 0:02:27.1]} 18... Qxf4 {[%clk 0:02:34.7]} 19. Qb3+ {[%clk 0:02:26.1]} 19... Kh8 {[%clk 0:02:33.6]} 20. c4 {[%clk 0:02:25.7]} 20... Rf8 {[%clk 0:02:32.4]} 21. Qe3 {[%clk 0:02:23.9]} 21... Qd6 {[%clk 0:02:28]} 22. a3 {[%clk 0:02:19.6]} 22... Qe6 {[%clk 0:02:18.9]} 23. Rac1 {[%clk 0:01:47.4]} 23... Rf3 {[%clk 0:02:16.5]} 24. Qg5 {[%clk 0:01:47]} 24... h6 {[%clk 0:02:12.3]} 25. Qg4 {[%clk 0:01:40.2]} 25... Qf6 {[%clk 0:02:10.1]} 26. Qxe4 {[%clk 0:01:12.3]} 26... Rxf2+ {[%clk 0:02:09.3]} 27. Kd3 {[%clk 0:00:48.8]} 27... Rf3+ {[%clk 0:02:02.8]} 28. Kc2 {[%clk 0:00:46.9]} 28... Rxa3 {[%clk 0:01:59.7]} 29. Kb2 {[%clk 0:00:40.5]} 29... Rf3 {[%clk 0:01:48.5]} 30. Rce1 {[%clk 0:00:37.5]} 30... Rf2+ {[%clk 0:01:46.4]} 31. Re2 {[%clk 0:00:37]} 31... Rxe2+ {[%clk 0:01:40.3]} 32. Qxe2 {[%clk 0:00:36]} 32... Qxd4+ {[%clk 0:01:40.2]} 33. Kb3 {[%clk 0:00:33.2]} 33... c5 {[%clk 0:01:39.5]} 34. Re1 {[%clk 0:00:31.2]} 34... cxb4 {[%clk 0:01:37.2]} 35. Qe8+ {[%clk 0:00:30.3]} 35... Kh7 {[%clk 0:01:36.8]} 36. Qe4+ {[%clk 0:00:30]} 36... Qxe4 {[%clk 0:01:36.4]} 37. Rxe4 {[%clk 0:00:29.7]} 37... a5 {[%clk 0:01:36]} 38. Re7 {[%clk 0:00:28.2]} 38... c5 {[%clk 0:01:34.7]} 39. Re5 {[%clk 0:00:27.1]} 39... g5 {[%clk 0:01:32.2]} 40. Rxc5 {[%clk 0:00:24.6]} 40... Kg6 {[%clk 0:01:32.1]} 41. Rxa5 {[%clk 0:00:23.7]} 41... h5 {[%clk 0:01:31.9]} 42. Kxb4 {[%clk 0:00:21.4]} 42... g4 {[%clk 0:01:31.8]} 43. hxg4 {[%clk 0:00:20.1]} 43... hxg4 {[%clk 0:01:31.5]} 44. Ra2 {[%clk 0:00:19.7]} 44... Kf5 {[%clk 0:01:30.7]} 45. c5 {[%clk 0:00:19.2]} 45... Ke6 {[%clk 0:01:28.8]} 46. Kb5 {[%clk 0:00:18.8]} 46... g3 {[%clk 0:01:28]} 47. Kb6 {[%clk 0:00:18.3]} 47... Kd5 {[%clk 0:01:27.4]} 48. Rg2 {[%clk 0:00:17.7]} 48... Kc4 {[%clk 0:01:27.2]} 49. Rxg3 {[%clk 0:00:17.2]} 49... Kd5 {[%clk 0:01:27.1]} 50. c6 {[%clk 0:00:16.4]} 50... Ke6 {[%clk 0:01:27]} 51. c7 {[%clk 0:00:16]} 51... Kd7 {[%clk 0:01:26.9]} 52. Rg7+ {[%clk 0:00:15]} 52... Ke6 {[%clk 0:01:26.8]} 53. c8=Q+ {[%clk 0:00:14]} 53... Kf6 {[%clk 0:01:26.7]} 54. Qd7 {[%clk 0:00:11.1]} 54... Ke5 {[%clk 0:01:26.6]} 55. Re7+ {[%clk 0:00:10.4]} 55... Kf6 {[%clk 0:01:26]} 56. Qd6+ {[%clk 0:00:09.4]} 56... Kf5 {[%clk 0:01:25.9]} 57. Re5+ {[%clk 0:00:08.7]} 57... Kf4 {[%clk 0:01:25.8]} 58. Qd4+ {[%clk 0:00:08.2]} 58... Kf3 {[%clk 0:01:25.7]} 59. Re3+ {[%clk 0:00:07.8]} 59... Kf2 {[%clk 0:01:25.6]} 60. Qd2+ {[%clk 0:00:07.3]} 60... Kf1 {[%clk 0:01:25.5]} 61. Re1# {[%clk 0:00:03.4]} 1-0\n",
+      "pgn_sha256": "019230b75cbdb017a01998484df95ef3c222a46d67060bb5a6011bebf76d6cba",
+      "source_account": "nelsi"
+    },
+    {
+      "game_id": "166707582754",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.04.01\"]\n[Round \"-\"]\n[White \"hansen\"]\n[Black \"abhidabhi\"]\n[Result \"1-0\"]\n[CurrentPosition \"6k1/8/p2p1P1Q/1npP4/2P5/2P4P/q2B3K/8 b - - 0 40\"]\n[Timezone \"UTC\"]\n[ECO \"B06\"]\n[ECOUrl \"https://www.chess.com/openings/Modern-Defense-Standard-Pseudo-Austrian-Attack-4...Nd7-5.Nf3\"]\n[UTCDate \"2026.04.01\"]\n[UTCTime \"07:15:03\"]\n[WhiteElo \"3077\"]\n[BlackElo \"3048\"]\n[TimeControl \"180\"]\n[Termination \"hansen won by resignation\"]\n[StartTime \"07:15:03\"]\n[EndDate \"2026.04.01\"]\n[EndTime \"07:20:28\"]\n[Link \"https://www.chess.com/game/live/166707582754\"]\n\n1. e4 {[%clk 0:02:59.9]} 1... g6 {[%clk 0:02:58.9]} 2. d4 {[%clk 0:02:59.1]} 2... Bg7 {[%clk 0:02:58.6]} 3. Nc3 {[%clk 0:02:58.7]} 3... d6 {[%clk 0:02:58.4]} 4. f4 {[%clk 0:02:58.3]} 4... Nd7 {[%clk 0:02:55.9]} 5. Nf3 {[%clk 0:02:56.2]} 5... c5 {[%clk 0:02:55.1]} 6. d5 {[%clk 0:02:47]} 6... a6 {[%clk 0:02:49.6]} 7. a4 {[%clk 0:02:44.5]} 7... Ngf6 {[%clk 0:02:48.1]} 8. Bc4 {[%clk 0:02:41.4]} 8... O-O {[%clk 0:02:39.2]} 9. O-O {[%clk 0:02:40.7]} 9... Nb6 {[%clk 0:02:32.7]} 10. Be2 {[%clk 0:02:39.5]} 10... Bg4 {[%clk 0:02:31.5]} 11. a5 {[%clk 0:02:37.5]} 11... Bxf3 {[%clk 0:02:29.4]} 12. Bxf3 {[%clk 0:02:33.5]} 12... Nbd7 {[%clk 0:02:28.2]} 13. Kh1 {[%clk 0:02:32.8]} 13... b5 {[%clk 0:02:25.4]} 14. axb6 {[%clk 0:02:31.9]} 14... Qxb6 {[%clk 0:02:24]} 15. Be2 {[%clk 0:02:27]} 15... Ne8 {[%clk 0:02:17.2]} 16. Ra3 {[%clk 0:02:23.4]} 16... Nc7 {[%clk 0:02:12.5]} 17. Na4 {[%clk 0:02:19.4]} 17... Qa7 {[%clk 0:02:08.6]} 18. Ra2 {[%clk 0:02:06.5]} 18... Rab8 {[%clk 0:02:06.2]} 19. c3 {[%clk 0:01:57.9]} 19... Nb6 {[%clk 0:02:00.4]} 20. Nxb6 {[%clk 0:01:56.6]} 20... Qxb6 {[%clk 0:01:59.5]} 21. Bc4 {[%clk 0:01:55.8]} 21... Kh8 {[%clk 0:01:56.7]} 22. Qd3 {[%clk 0:01:53.4]} 22... e6 {[%clk 0:01:52]} 23. Bd2 {[%clk 0:01:48.5]} 23... exd5 {[%clk 0:01:50.8]} 24. exd5 {[%clk 0:01:47.6]} 24... f5 {[%clk 0:01:47.4]} 25. Re1 {[%clk 0:01:43.7]} 25... Rfe8 {[%clk 0:01:46.4]} 26. Rxe8+ {[%clk 0:01:42.1]} 26... Rxe8 {[%clk 0:01:46.3]} 27. b3 {[%clk 0:01:37.6]} 27... Nb5 {[%clk 0:01:40.6]} 28. g3 {[%clk 0:01:31.2]} 28... h5 {[%clk 0:01:35.2]} 29. h3 {[%clk 0:01:29.2]} 29... Re4 {[%clk 0:01:30.3]} 30. Kg2 {[%clk 0:01:28.5]} 30... Qb7 {[%clk 0:01:26.8]} 31. g4 {[%clk 0:01:23.6]} 31... Kh7 {[%clk 0:01:17.3]} 32. Qf3 {[%clk 0:01:19.2]} 32... Qe7 {[%clk 0:01:08.9]} 33. gxf5 {[%clk 0:01:14.2]} 33... Qe8 {[%clk 0:00:42]} 34. fxg6+ {[%clk 0:01:03.5]} 34... Qxg6+ {[%clk 0:00:39]} 35. Kh2 {[%clk 0:00:59.3]} 35... Rxc4 {[%clk 0:00:19.5]} 36. bxc4 {[%clk 0:00:57.7]} 36... Qb1 {[%clk 0:00:18.6]} 37. Qxh5+ {[%clk 0:00:55.8]} 37... Bh6 {[%clk 0:00:16.9]} 38. f5 {[%clk 0:00:46.8]} 38... Qxa2 {[%clk 0:00:12.8]} 39. Qxh6+ {[%clk 0:00:46.2]} 39... Kg8 {[%clk 0:00:11.9]} 40. f6 {[%clk 0:00:45.8]} 1-0\n",
+      "pgn_sha256": "252a0c8940a01600f7923753bbcb7aa6e47403ca15604d22e69063d6c73f1a92",
+      "source_account": "hansen"
+    },
+    {
+      "game_id": "167741309078",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.04.24\"]\n[Round \"-\"]\n[White \"hansen\"]\n[Black \"ODreamchess\"]\n[Result \"0-1\"]\n[CurrentPosition \"8/1K3kpp/1R6/2rppp2/8/7P/5PP1/8 w - - 2 42\"]\n[Timezone \"UTC\"]\n[ECO \"D11\"]\n[ECOUrl \"https://www.chess.com/openings/Slav-Defense-Modern-Quiet-Pin-Defense-5.h3-Bxf3-6.Qxf3-e6\"]\n[UTCDate \"2026.04.24\"]\n[UTCTime \"02:58:35\"]\n[WhiteElo \"3002\"]\n[BlackElo \"2862\"]\n[TimeControl \"60\"]\n[Termination \"ODreamchess won by resignation\"]\n[StartTime \"02:58:35\"]\n[EndDate \"2026.04.24\"]\n[EndTime \"03:00:24\"]\n[Link \"https://www.chess.com/game/live/167741309078\"]\n\n1. Nf3 {[%clk 0:00:59.9]} 1... c6 {[%clk 0:00:59.5]} 2. d4 {[%clk 0:00:59.4]} 2... d5 {[%clk 0:00:59.4]} 3. c4 {[%clk 0:00:59.1]} 3... Nf6 {[%clk 0:00:59.3]} 4. e3 {[%clk 0:00:58.8]} 4... Bg4 {[%clk 0:00:58.5]} 5. h3 {[%clk 0:00:58.1]} 5... Bxf3 {[%clk 0:00:58.4]} 6. Qxf3 {[%clk 0:00:58]} 6... e6 {[%clk 0:00:58.2]} 7. Qd1 {[%clk 0:00:57.6]} 7... Nbd7 {[%clk 0:00:57.8]} 8. Bd3 {[%clk 0:00:57.3]} 8... Bd6 {[%clk 0:00:57.3]} 9. Nc3 {[%clk 0:00:56.7]} 9... O-O {[%clk 0:00:56.9]} 10. O-O {[%clk 0:00:56.3]} 10... a5 {[%clk 0:00:55.4]} 11. Re1 {[%clk 0:00:55.8]} 11... Re8 {[%clk 0:00:54.5]} 12. b3 {[%clk 0:00:55.2]} 12... Bb4 {[%clk 0:00:52.1]} 13. Bd2 {[%clk 0:00:54.6]} 13... Bxc3 {[%clk 0:00:51.6]} 14. Bxc3 {[%clk 0:00:54]} 14... a4 {[%clk 0:00:51.5]} 15. bxa4 {[%clk 0:00:52.1]} 15... Nb6 {[%clk 0:00:48.9]} 16. a5 {[%clk 0:00:47.9]} 16... Nxc4 {[%clk 0:00:48.2]} 17. Bxc4 {[%clk 0:00:47.4]} 17... dxc4 {[%clk 0:00:48.1]} 18. e4 {[%clk 0:00:47.1]} 18... Rxa5 {[%clk 0:00:44.6]} 19. Bxa5 {[%clk 0:00:44.8]} 19... Qxa5 {[%clk 0:00:44.5]} 20. Qb1 {[%clk 0:00:43.9]} 20... b5 {[%clk 0:00:43.9]} 21. Rc1 {[%clk 0:00:40.9]} 21... Rd8 {[%clk 0:00:43.2]} 22. a4 {[%clk 0:00:39.6]} 22... Qb6 {[%clk 0:00:37.6]} 23. Rxc4 {[%clk 0:00:38.1]} 23... Nxe4 {[%clk 0:00:34.5]} 24. Rb4 {[%clk 0:00:32.7]} 24... Nc3 {[%clk 0:00:32.7]} 25. Qc2 {[%clk 0:00:30.9]} 25... Nd5 {[%clk 0:00:31.4]} 26. Rb2 {[%clk 0:00:28.1]} 26... b4 {[%clk 0:00:27.7]} 27. Qc5 {[%clk 0:00:25.9]} 27... Qxc5 {[%clk 0:00:25.4]} 28. dxc5 {[%clk 0:00:25.4]} 28... Ra8 {[%clk 0:00:25.3]} 29. a5 {[%clk 0:00:24.8]} 29... Ra6 {[%clk 0:00:24.9]} 30. Kf1 {[%clk 0:00:23.1]} 30... Kf8 {[%clk 0:00:24.8]} 31. Ke2 {[%clk 0:00:22.7]} 31... Ke7 {[%clk 0:00:24.6]} 32. Kd3 {[%clk 0:00:22.4]} 32... e5 {[%clk 0:00:24.2]} 33. Kc4 {[%clk 0:00:21.6]} 33... Ke6 {[%clk 0:00:23.8]} 34. Rd2 {[%clk 0:00:19.8]} 34... f5 {[%clk 0:00:22.8]} 35. Rxd5 {[%clk 0:00:15.7]} 35... cxd5+ {[%clk 0:00:22.7]} 36. Kb5 {[%clk 0:00:14.4]} 36... Ra8 {[%clk 0:00:22.6]} 37. Kc6 {[%clk 0:00:13.7]} 37... b3 {[%clk 0:00:22.1]} 38. Kb7 {[%clk 0:00:12.1]} 38... b2 {[%clk 0:00:21.4]} 39. Rb1 {[%clk 0:00:09.5]} 39... Rxa5 {[%clk 0:00:20.9]} 40. Rxb2 {[%clk 0:00:08]} 40... Rxc5 {[%clk 0:00:19.9]} 41. Rb6+ {[%clk 0:00:07.9]} 41... Kf7 {[%clk 0:00:19.4]} 0-1\n",
+      "pgn_sha256": "046475d28e11869fc4551e037de3d170f840fcc0557794019244504567de0b4c",
+      "source_account": "hansen"
+    },
+    {
+      "game_id": "166851185648",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.04.04\"]\n[Round \"-\"]\n[White \"BJJfighter123\"]\n[Black \"nelsi\"]\n[Result \"1-0\"]\n[CurrentPosition \"4r2k/1p1R1Rp1/2p4p/pr6/5P2/P1N4P/1PK3P1/8 b - - 0 31\"]\n[Timezone \"UTC\"]\n[ECO \"A40\"]\n[ECOUrl \"https://www.chess.com/openings/Englund-Gambit-2.dxe5\"]\n[UTCDate \"2026.04.04\"]\n[UTCTime \"12:55:41\"]\n[WhiteElo \"2592\"]\n[BlackElo \"2581\"]\n[TimeControl \"60\"]\n[Termination \"BJJfighter123 won by resignation\"]\n[StartTime \"12:55:41\"]\n[EndDate \"2026.04.04\"]\n[EndTime \"12:57:25\"]\n[Link \"https://www.chess.com/game/live/166851185648\"]\n\n1. d4 {[%clk 0:00:59.9]} 1... e5 {[%clk 0:00:59.8]} 2. dxe5 {[%clk 0:00:59.6]} 2... d5 {[%clk 0:00:58.9]} 3. Nf3 {[%clk 0:00:59.5]} 3... Nc6 {[%clk 0:00:58.2]} 4. Bg5 {[%clk 0:00:59]} 4... f6 {[%clk 0:00:57.6]} 5. exf6 {[%clk 0:00:58.9]} 5... Nxf6 {[%clk 0:00:57.5]} 6. Nbd2 {[%clk 0:00:57.6]} 6... Bd6 {[%clk 0:00:55.8]} 7. e3 {[%clk 0:00:57.2]} 7... O-O {[%clk 0:00:55]} 8. Bd3 {[%clk 0:00:56.9]} 8... Kh8 {[%clk 0:00:53.8]} 9. c3 {[%clk 0:00:56.3]} 9... Bg4 {[%clk 0:00:53]} 10. Qc2 {[%clk 0:00:55.4]} 10... Qe8 {[%clk 0:00:52.3]} 11. O-O-O {[%clk 0:00:54.5]} 11... Qh5 {[%clk 0:00:48.5]} 12. Bxf6 {[%clk 0:00:51.5]} 12... Rxf6 {[%clk 0:00:48.4]} 13. Rde1 {[%clk 0:00:51]} 13... Raf8 {[%clk 0:00:46.9]} 14. h3 {[%clk 0:00:48.7]} 14... Bf5 {[%clk 0:00:45.4]} 15. Bxf5 {[%clk 0:00:45.8]} 15... Qxf5 {[%clk 0:00:44.5]} 16. Qxf5 {[%clk 0:00:42.8]} 16... Rxf5 {[%clk 0:00:44.4]} 17. Nb3 {[%clk 0:00:41.4]} 17... Ne5 {[%clk 0:00:43.3]} 18. Nxe5 {[%clk 0:00:39.6]} 18... Bxe5 {[%clk 0:00:43.2]} 19. f3 {[%clk 0:00:39.2]} 19... Bg3 {[%clk 0:00:41.7]} 20. Rd1 {[%clk 0:00:37.6]} 20... c6 {[%clk 0:00:40.7]} 21. Nd2 {[%clk 0:00:35.8]} 21... Re8 {[%clk 0:00:39.8]} 22. e4 {[%clk 0:00:35.3]} 22... dxe4 {[%clk 0:00:39.1]} 23. Nxe4 {[%clk 0:00:34.8]} 23... Bf4+ {[%clk 0:00:38.5]} 24. Kc2 {[%clk 0:00:34.5]} 24... Ra5 {[%clk 0:00:31.5]} 25. a3 {[%clk 0:00:33.1]} 25... h6 {[%clk 0:00:30.8]} 26. Rd7 {[%clk 0:00:32.5]} 26... Rb5 {[%clk 0:00:29.7]} 27. Rhd1 {[%clk 0:00:31.4]} 27... a5 {[%clk 0:00:28.7]} 28. Rf7 {[%clk 0:00:30.6]} 28... Bb8 {[%clk 0:00:23.5]} 29. Rdd7 {[%clk 0:00:29.6]} 29... Be5 {[%clk 0:00:22.5]} 30. f4 {[%clk 0:00:23]} 30... Bxc3 {[%clk 0:00:16.2]} 31. Nxc3 {[%clk 0:00:21.7]} 1-0\n",
+      "pgn_sha256": "60af9b8b607899cba29a289b15f7847e3198059dcbc51695cece8682c1c74be3",
+      "source_account": "nelsi"
+    },
+    {
+      "game_id": "173279198536",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.08.20\"]\n[Round \"-\"]\n[White \"aldareee\"]\n[Black \"KNVB\"]\n[Result \"0-1\"]\n[CurrentPosition \"5k2/5p2/2pp2p1/6P1/8/8/3q4/4r1K1 w - - 10 48\"]\n[Timezone \"UTC\"]\n[ECO \"B07\"]\n[ECOUrl \"https://www.chess.com/openings/Pirc-Defense...3.Nc3-e5-4.Nge2-Nbd7\"]\n[UTCDate \"2026.08.20\"]\n[UTCTime \"17:43:48\"]\n[WhiteElo \"2786\"]\n[BlackElo \"3125\"]\n[TimeControl \"60\"]\n[Termination \"KNVB won by checkmate\"]\n[StartTime \"17:43:48\"]\n[EndDate \"2026.08.20\"]\n[EndTime \"17:45:44\"]\n[Link \"https://www.chess.com/game/live/173279198536\"]\n\n1. e4 {[%clk 0:00:59.9]} 1... d6 {[%clk 0:00:59.9]} 2. d4 {[%clk 0:00:59]} 2... Nf6 {[%clk 0:00:59.6]} 3. Nc3 {[%clk 0:00:58.6]} 3... Nbd7 {[%clk 0:00:59]} 4. Nge2 {[%clk 0:00:58.3]} 4... e5 {[%clk 0:00:58.9]} 5. h3 {[%clk 0:00:57.4]} 5... c6 {[%clk 0:00:58.6]} 6. Be3 {[%clk 0:00:56.6]} 6... Qc7 {[%clk 0:00:58.3]} 7. g4 {[%clk 0:00:56]} 7... h6 {[%clk 0:00:57.5]} 8. Bg2 {[%clk 0:00:55.6]} 8... a5 {[%clk 0:00:56.8]} 9. Qd2 {[%clk 0:00:55.1]} 9... a4 {[%clk 0:00:54.4]} 10. O-O {[%clk 0:00:53.9]} 10... b5 {[%clk 0:00:49.9]} 11. a3 {[%clk 0:00:53]} 11... Nb6 {[%clk 0:00:49.3]} 12. b3 {[%clk 0:00:50.2]} 12... Be7 {[%clk 0:00:46.3]} 13. f4 {[%clk 0:00:48.6]} 13... axb3 {[%clk 0:00:41.2]} 14. cxb3 {[%clk 0:00:47.8]} 14... O-O {[%clk 0:00:39.9]} 15. g5 {[%clk 0:00:45.8]} 15... hxg5 {[%clk 0:00:38.3]} 16. fxg5 {[%clk 0:00:44.9]} 16... Nh5 {[%clk 0:00:36]} 17. Bf3 {[%clk 0:00:44.1]} 17... Nf4 {[%clk 0:00:31.2]} 18. Nxf4 {[%clk 0:00:42.9]} 18... exf4 {[%clk 0:00:31.1]} 19. Bxf4 {[%clk 0:00:42.6]} 19... Bxh3 {[%clk 0:00:29.4]} 20. Rf2 {[%clk 0:00:42]} 20... b4 {[%clk 0:00:26.2]} 21. Ne2 {[%clk 0:00:38.2]} 21... Rxa3 {[%clk 0:00:25.1]} 22. Rc1 {[%clk 0:00:37.2]} 22... Rxb3 {[%clk 0:00:24.5]} 23. Rh2 {[%clk 0:00:35.8]} 23... Rxf3 {[%clk 0:00:23.7]} 24. d5 {[%clk 0:00:32.6]} 24... Qd7 {[%clk 0:00:20]} 25. Nd4 {[%clk 0:00:31]} 25... Qg4+ {[%clk 0:00:19]} 26. Kh1 {[%clk 0:00:29.7]} 26... Rxf4 {[%clk 0:00:18.5]} 27. Rg1 {[%clk 0:00:27.4]} 27... Qh4 {[%clk 0:00:16.5]} 28. Nf5 {[%clk 0:00:26.2]} 28... Rxf5 {[%clk 0:00:13]} 29. exf5 {[%clk 0:00:26.1]} 29... Qe4+ {[%clk 0:00:10.9]} 30. Rgg2 {[%clk 0:00:24.8]} 30... Bxg2+ {[%clk 0:00:10.5]} 31. Rxg2 {[%clk 0:00:24.4]} 31... Nxd5 {[%clk 0:00:08.7]} 32. f6 {[%clk 0:00:23.8]} 32... Nf4 {[%clk 0:00:06]} 33. fxe7 {[%clk 0:00:21.7]} 33... Qxg2+ {[%clk 0:00:05.6]} 34. Qxg2 {[%clk 0:00:21.6]} 34... Nxg2 {[%clk 0:00:05.5]} 35. Kxg2 {[%clk 0:00:21.4]} 35... Re8 {[%clk 0:00:05]} 36. Kf3 {[%clk 0:00:20.8]} 36... Rxe7 {[%clk 0:00:04.9]} 37. Kf4 {[%clk 0:00:20.7]} 37... Re5 {[%clk 0:00:04.8]} 38. Kg4 {[%clk 0:00:20.2]} 38... g6 {[%clk 0:00:04.3]} 39. Kf4 {[%clk 0:00:19.5]} 39... Kf8 {[%clk 0:00:04.2]} 40. Kg4 {[%clk 0:00:19.4]} 40... b3 {[%clk 0:00:04.1]} 41. Kf4 {[%clk 0:00:19.3]} 41... b2 {[%clk 0:00:04]} 42. Kg4 {[%clk 0:00:19.2]} 42... b1=Q {[%clk 0:00:03.9]} 43. Kh4 {[%clk 0:00:19.1]} 43... Qa1 {[%clk 0:00:03.8]} 44. Kg3 {[%clk 0:00:18.7]} 44... Qd4 {[%clk 0:00:03.7]} 45. Kh3 {[%clk 0:00:17.8]} 45... Re3+ {[%clk 0:00:03.6]} 46. Kh2 {[%clk 0:00:17.4]} 46... Qd2+ {[%clk 0:00:03.5]} 47. Kg1 {[%clk 0:00:17.1]} 47... Re1# {[%clk 0:00:03.4]} 0-1\n",
+      "pgn_sha256": "2c5798b99b1b34929a80fcbc69614f9ba77dd572b35da4a12646a77f6046851c",
+      "source_account": "KNVB"
+    },
+    {
+      "game_id": "168419894922",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.05.08\"]\n[Round \"-\"]\n[White \"Sajid0987654321\"]\n[Black \"hansen\"]\n[Result \"0-1\"]\n[CurrentPosition \"2r3k1/p1q1ppbp/b1B3p1/8/1RNp4/2n2QP1/P3PP1P/5RK1 w - - 5 19\"]\n[Timezone \"UTC\"]\n[ECO \"D73\"]\n[ECOUrl \"https://www.chess.com/openings/Neo-Grunfeld-Defense-with-3-d5...8.O-O-c5-9.Nc4-Nc6\"]\n[UTCDate \"2026.05.08\"]\n[UTCTime \"16:57:49\"]\n[WhiteElo \"2791\"]\n[BlackElo \"3085\"]\n[TimeControl \"180\"]\n[Termination \"hansen won by resignation\"]\n[StartTime \"16:57:49\"]\n[EndDate \"2026.05.08\"]\n[EndTime \"17:00:31\"]\n[Link \"https://www.chess.com/game/live/168419894922\"]\n\n1. Nf3 {[%clk 0:02:58.8]} 1... d5 {[%clk 0:02:59.4]} 2. g3 {[%clk 0:02:57.9]} 2... Nf6 {[%clk 0:02:59]} 3. Bg2 {[%clk 0:02:57.6]} 3... g6 {[%clk 0:02:58.7]} 4. O-O {[%clk 0:02:56.3]} 4... Bg7 {[%clk 0:02:54.5]} 5. d4 {[%clk 0:02:55.7]} 5... O-O {[%clk 0:02:54]} 6. c4 {[%clk 0:02:55.4]} 6... dxc4 {[%clk 0:02:53.6]} 7. Na3 {[%clk 0:02:51.4]} 7... c3 {[%clk 0:02:51.4]} 8. bxc3 {[%clk 0:02:51.3]} 8... c5 {[%clk 0:02:49.5]} 9. Nc4 {[%clk 0:02:46]} 9... Nc6 {[%clk 0:02:45.9]} 10. Nfe5 {[%clk 0:02:41.7]} 10... Nd5 {[%clk 0:02:39]} 11. Nxc6 {[%clk 0:02:25.6]} 11... bxc6 {[%clk 0:02:37]} 12. Bb2 {[%clk 0:02:21.7]} 12... Rb8 {[%clk 0:02:30.8]} 13. Rb1 {[%clk 0:02:10.8]} 13... Rxb2 {[%clk 0:02:20.3]} 14. Rxb2 {[%clk 0:02:08.3]} 14... Nxc3 {[%clk 0:02:20.2]} 15. Qd3 {[%clk 0:02:04.3]} 15... cxd4 {[%clk 0:02:18.8]} 16. Bxc6 {[%clk 0:02:01.8]} 16... Qc7 {[%clk 0:02:10.9]} 17. Qf3 {[%clk 0:01:54.6]} 17... Ba6 {[%clk 0:02:06.6]} 18. Rb4 {[%clk 0:01:42.3]} 18... Rc8 {[%clk 0:02:03.7]} 0-1\n",
+      "pgn_sha256": "4b2ce7cf0da5b96cfb936b1afbd7f3c55b07df75983e5fc89e09330758f26008",
+      "source_account": "hansen"
+    },
+    {
+      "game_id": "168772277524",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.05.16\"]\n[Round \"-\"]\n[White \"Naaas1\"]\n[Black \"hansen\"]\n[Result \"0-1\"]\n[CurrentPosition \"4r1k1/7p/2q3p1/p3p1B1/1p1n1P1P/4Q1PB/PP4K1/8 w - - 2 36\"]\n[Timezone \"UTC\"]\n[ECO \"E07\"]\n[ECOUrl \"https://www.chess.com/openings/Catalan-Opening-Closed-Botvinnik-Variation\"]\n[UTCDate \"2026.05.16\"]\n[UTCTime \"03:42:20\"]\n[WhiteElo \"2900\"]\n[BlackElo \"3085\"]\n[TimeControl \"60\"]\n[Termination \"hansen won on time\"]\n[StartTime \"03:42:20\"]\n[EndDate \"2026.05.16\"]\n[EndTime \"03:44:20\"]\n[Link \"https://www.chess.com/game/live/168772277524\"]\n\n1. Nf3 {[%clk 0:00:59.6]} 1... d5 {[%clk 0:00:59.5]} 2. c4 {[%clk 0:00:59.2]} 2... e6 {[%clk 0:00:58.7]} 3. d4 {[%clk 0:00:58.9]} 3... Nf6 {[%clk 0:00:58.2]} 4. g3 {[%clk 0:00:58.6]} 4... Be7 {[%clk 0:00:57.7]} 5. Bg2 {[%clk 0:00:58.5]} 5... O-O {[%clk 0:00:57.4]} 6. O-O {[%clk 0:00:58.3]} 6... Nbd7 {[%clk 0:00:57]} 7. Nc3 {[%clk 0:00:57]} 7... c6 {[%clk 0:00:56.1]} 8. Qd3 {[%clk 0:00:55.4]} 8... a5 {[%clk 0:00:55.3]} 9. e4 {[%clk 0:00:54.5]} 9... dxc4 {[%clk 0:00:52.8]} 10. Qxc4 {[%clk 0:00:53.8]} 10... b5 {[%clk 0:00:52.6]} 11. Qd3 {[%clk 0:00:53]} 11... b4 {[%clk 0:00:51.4]} 12. Ne2 {[%clk 0:00:51.1]} 12... Ba6 {[%clk 0:00:50.8]} 13. Qe3 {[%clk 0:00:50.8]} 13... c5 {[%clk 0:00:50.3]} 14. Rd1 {[%clk 0:00:49]} 14... Rc8 {[%clk 0:00:46.6]} 15. Bd2 {[%clk 0:00:47.4]} 15... Ng4 {[%clk 0:00:45.2]} 16. Qf4 {[%clk 0:00:43]} 16... Bxe2 {[%clk 0:00:44.8]} 17. Qxg4 {[%clk 0:00:42.5]} 17... Bxd1 {[%clk 0:00:42.9]} 18. Rxd1 {[%clk 0:00:42.4]} 18... cxd4 {[%clk 0:00:42]} 19. Bh6 {[%clk 0:00:37.3]} 19... Bf6 {[%clk 0:00:41.6]} 20. Rxd4 {[%clk 0:00:13.6]} 20... Bxd4 {[%clk 0:00:39.3]} 21. e5 {[%clk 0:00:12.7]} 21... g6 {[%clk 0:00:36.2]} 22. Qxd4 {[%clk 0:00:10.7]} 22... Nc5 {[%clk 0:00:33.1]} 23. Qf4 {[%clk 0:00:09.5]} 23... f5 {[%clk 0:00:30.4]} 24. exf6 {[%clk 0:00:07.3]} 24... Qxf6 {[%clk 0:00:28.7]} 25. Qe3 {[%clk 0:00:06.6]} 25... Rfd8 {[%clk 0:00:26.5]} 26. h4 {[%clk 0:00:05.2]} 26... Rd1+ {[%clk 0:00:24.6]} 27. Kh2 {[%clk 0:00:04.7]} 27... Rd3 {[%clk 0:00:23.8]} 28. Qe2 {[%clk 0:00:03.8]} 28... Rxf3 {[%clk 0:00:17.9]} 29. Bxf3 {[%clk 0:00:03]} 29... Nd7 {[%clk 0:00:17.4]} 30. Bg4 {[%clk 0:00:02.6]} 30... Ne5 {[%clk 0:00:16.8]} 31. Bh3 {[%clk 0:00:02.3]} 31... Nf3+ {[%clk 0:00:16]} 32. Kg2 {[%clk 0:00:01.8]} 32... Nd4 {[%clk 0:00:15.9]} 33. Qe3 {[%clk 0:00:00.7]} 33... Re8 {[%clk 0:00:14.5]} 34. f4 {[%clk 0:00:00.3]} 34... e5 {[%clk 0:00:13.7]} 35. Bg5 {[%clk 0:00:00.2]} 35... Qc6+ {[%clk 0:00:13.5]} 0-1\n",
+      "pgn_sha256": "83ef195da900896bd9b6380ef347f1328049a3a1695c6a463318782e25975b30",
+      "source_account": "hansen"
+    },
+    {
+      "game_id": "167734662094",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.04.23\"]\n[Round \"-\"]\n[White \"Barad_Yeganegi01\"]\n[Black \"hansen\"]\n[Result \"1-0\"]\n[CurrentPosition \"8/5b1p/8/4pQk1/4PpP1/8/2p3PK/2B5 b - - 2 54\"]\n[Timezone \"UTC\"]\n[ECO \"E00\"]\n[ECOUrl \"https://www.chess.com/openings/Indian-Game-East-Indian-Defense\"]\n[UTCDate \"2026.04.23\"]\n[UTCTime \"22:10:48\"]\n[WhiteElo \"2924\"]\n[BlackElo \"3037\"]\n[TimeControl \"180\"]\n[Termination \"Barad_Yeganegi01 won on time\"]\n[StartTime \"22:10:48\"]\n[EndDate \"2026.04.23\"]\n[EndTime \"22:17:03\"]\n[Link \"https://www.chess.com/game/live/167734662094\"]\n\n1. d4 {[%clk 0:02:58]} 1... Nf6 {[%clk 0:02:58.4]} 2. c4 {[%clk 0:02:57.2]} 2... e6 {[%clk 0:02:57.8]} 3. Bf4 {[%clk 0:02:55.7]} 3... Bb4+ {[%clk 0:02:57.2]} 4. Nd2 {[%clk 0:02:54.4]} 4... O-O {[%clk 0:02:56.5]} 5. Nf3 {[%clk 0:02:53]} 5... d5 {[%clk 0:02:55.7]} 6. e3 {[%clk 0:02:52]} 6... Be7 {[%clk 0:02:53.7]} 7. Bd3 {[%clk 0:02:50.4]} 7... Nbd7 {[%clk 0:02:52.9]} 8. O-O {[%clk 0:02:49.3]} 8... c5 {[%clk 0:02:52.2]} 9. cxd5 {[%clk 0:02:48.6]} 9... Nxd5 {[%clk 0:02:51.6]} 10. Bg3 {[%clk 0:02:48.2]} 10... a6 {[%clk 0:02:45.8]} 11. Rc1 {[%clk 0:02:46.2]} 11... b5 {[%clk 0:02:43.8]} 12. dxc5 {[%clk 0:02:44.8]} 12... Nxc5 {[%clk 0:02:42.9]} 13. Bb1 {[%clk 0:02:43.9]} 13... Bb7 {[%clk 0:02:40.4]} 14. a3 {[%clk 0:02:41.2]} 14... Rc8 {[%clk 0:02:38.8]} 15. Nd4 {[%clk 0:02:38.2]} 15... Na4 {[%clk 0:02:37.9]} 16. Qb3 {[%clk 0:02:34.3]} 16... Ndb6 {[%clk 0:02:26.7]} 17. N2f3 {[%clk 0:02:14.6]} 17... Bd5 {[%clk 0:02:23.4]} 18. Qd3 {[%clk 0:02:12.4]} 18... g6 {[%clk 0:02:23]} 19. b3 {[%clk 0:02:08.6]} 19... Nc5 {[%clk 0:02:03.1]} 20. Qd1 {[%clk 0:02:04.7]} 20... Ne4 {[%clk 0:01:57.2]} 21. Bxe4 {[%clk 0:01:45.5]} 21... Bxe4 {[%clk 0:01:56]} 22. b4 {[%clk 0:01:27.3]} 22... Nc4 {[%clk 0:01:50.4]} 23. Ne5 {[%clk 0:01:26.1]} 23... Qd5 {[%clk 0:01:43.6]} 24. Nxc4 {[%clk 0:01:24.1]} 24... bxc4 {[%clk 0:01:43.5]} 25. f3 {[%clk 0:01:18.9]} 25... Bd3 {[%clk 0:01:42.8]} 26. Re1 {[%clk 0:01:17.4]} 26... e5 {[%clk 0:01:41.6]} 27. Ne2 {[%clk 0:01:16.8]} 27... f6 {[%clk 0:01:40]} 28. Nc3 {[%clk 0:01:15.8]} 28... Qe6 {[%clk 0:01:38.6]} 29. e4 {[%clk 0:01:15.1]} 29... a5 {[%clk 0:01:36.6]} 30. Nd5 {[%clk 0:01:13.3]} 30... axb4 {[%clk 0:01:35.8]} 31. axb4 {[%clk 0:01:11.7]} 31... Bxb4 {[%clk 0:01:35]} 32. Nxb4 {[%clk 0:01:00.8]} 32... Qb6+ {[%clk 0:01:34.1]} 33. Bf2 {[%clk 0:00:58.2]} 33... Qxb4 {[%clk 0:01:33.7]} 34. Ra1 {[%clk 0:00:55.9]} 34... Ra8 {[%clk 0:01:32.8]} 35. Qc1 {[%clk 0:00:52.8]} 35... Rxa1 {[%clk 0:01:30]} 36. Qxa1 {[%clk 0:00:52.7]} 36... c3 {[%clk 0:01:29.6]} 37. Rc1 {[%clk 0:00:44]} 37... c2 {[%clk 0:01:18.1]} 38. Qa2+ {[%clk 0:00:40.6]} 38... Kg7 {[%clk 0:01:15.5]} 39. Be3 {[%clk 0:00:36.3]} 39... Qc3 {[%clk 0:01:03.2]} 40. Kf2 {[%clk 0:00:22.9]} 40... Rf7 {[%clk 0:00:51.2]} 41. h4 {[%clk 0:00:21.4]} 41... Qc7 {[%clk 0:00:35.3]} 42. h5 {[%clk 0:00:19.7]} 42... gxh5 {[%clk 0:00:34.2]} 43. Rh1 {[%clk 0:00:18.1]} 43... Rd7 {[%clk 0:00:32.4]} 44. Bc1 {[%clk 0:00:16.1]} 44... f5 {[%clk 0:00:27.8]} 45. Rxh5 {[%clk 0:00:15.3]} 45... Qc5+ {[%clk 0:00:27]} 46. Kg3 {[%clk 0:00:14.2]} 46... f4+ {[%clk 0:00:25.9]} 47. Kh2 {[%clk 0:00:12.7]} 47... Kg6 {[%clk 0:00:16.4]} 48. Rh4 {[%clk 0:00:10.3]} 48... Qc4 {[%clk 0:00:10.7]} 49. Qa8 {[%clk 0:00:08.3]} 49... Qe6 {[%clk 0:00:07.4]} 50. Rg4+ {[%clk 0:00:06.9]} 50... Qxg4 {[%clk 0:00:02.3]} 51. fxg4 {[%clk 0:00:06]} 51... Bc4 {[%clk 0:00:02.2]} 52. Qc6+ {[%clk 0:00:04.9]} 52... Kg5 {[%clk 0:00:01.3]} 53. Qxd7 {[%clk 0:00:04.4]} 53... Bf7 {[%clk 0:00:00.7]} 54. Qf5+ {[%clk 0:00:04]} 1-0\n",
+      "pgn_sha256": "2b33f2d22bf697a626a2d7a91c2fbef8a5abc08ff91b93fd45f2df392fef7e2e",
+      "source_account": "hansen"
+    },
+    {
+      "game_id": "185826617862",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.10.23\"]\n[Round \"-\"]\n[White \"Rizatomy\"]\n[Black \"nelsi\"]\n[Result \"0-1\"]\n[CurrentPosition \"8/2k5/2p2K2/5R2/4P3/2P4P/8/5r2 w - - 5 58\"]\n[Timezone \"UTC\"]\n[ECO \"B02\"]\n[ECOUrl \"https://www.chess.com/openings/Alekhines-Defense-Scandinavian-Variation-3.exd5\"]\n[UTCDate \"2026.10.23\"]\n[UTCTime \"19:04:08\"]\n[WhiteElo \"2436\"]\n[BlackElo \"2499\"]\n[TimeControl \"60\"]\n[Termination \"nelsi won on time\"]\n[StartTime \"19:04:08\"]\n[EndDate \"2026.10.23\"]\n[EndTime \"19:06:24\"]\n[Link \"https://www.chess.com/game/live/185826617862\"]\n\n1. e4 {[%clk 0:00:59.2]} 1... d5 {[%clk 0:00:59.3]} 2. exd5 {[%clk 0:00:58.2]} 2... Nf6 {[%clk 0:00:59.1]} 3. Nc3 {[%clk 0:00:58.1]} 3... Bg4 {[%clk 0:00:58.6]} 4. Be2 {[%clk 0:00:56.7]} 4... Bxe2 {[%clk 0:00:58.1]} 5. Ngxe2 {[%clk 0:00:56.6]} 5... Nxd5 {[%clk 0:00:57.8]} 6. d4 {[%clk 0:00:55.9]} 6... Nc6 {[%clk 0:00:56.7]} 7. Nxd5 {[%clk 0:00:54.7]} 7... Qxd5 {[%clk 0:00:55.7]} 8. c3 {[%clk 0:00:54.6]} 8... e5 {[%clk 0:00:54.8]} 9. dxe5 {[%clk 0:00:53.2]} 9... Qxd1+ {[%clk 0:00:52.8]} 10. Kxd1 {[%clk 0:00:52]} 10... O-O-O+ {[%clk 0:00:52.7]} 11. Kc2 {[%clk 0:00:51.1]} 11... Nxe5 {[%clk 0:00:52.6]} 12. Be3 {[%clk 0:00:50.3]} 12... Ng4 {[%clk 0:00:49.6]} 13. h3 {[%clk 0:00:47.4]} 13... Nxe3+ {[%clk 0:00:48.7]} 14. fxe3 {[%clk 0:00:47.3]} 14... Bc5 {[%clk 0:00:48.3]} 15. Nd4 {[%clk 0:00:45.7]} 15... Rhe8 {[%clk 0:00:48]} 16. Rhe1 {[%clk 0:00:45]} 16... Re4 {[%clk 0:00:46.6]} 17. Rad1 {[%clk 0:00:43.7]} 17... Rde8 {[%clk 0:00:45.6]} 18. Rd3 {[%clk 0:00:41.8]} 18... g6 {[%clk 0:00:42.5]} 19. Kd2 {[%clk 0:00:41.1]} 19... a6 {[%clk 0:00:40.7]} 20. b4 {[%clk 0:00:39.3]} 20... Bf8 {[%clk 0:00:36.8]} 21. a4 {[%clk 0:00:38.3]} 21... Bh6 {[%clk 0:00:36.1]} 22. Nc2 {[%clk 0:00:34.1]} 22... f5 {[%clk 0:00:34]} 23. Rd4 {[%clk 0:00:33.3]} 23... R4e7 {[%clk 0:00:29.4]} 24. Kd3 {[%clk 0:00:32.6]} 24... f4 {[%clk 0:00:28.3]} 25. e4 {[%clk 0:00:31.6]} 25... Bg7 {[%clk 0:00:26.4]} 26. Rd5 {[%clk 0:00:28.7]} 26... c6 {[%clk 0:00:25.4]} 27. Rc5 {[%clk 0:00:28.1]} 27... Rd7+ {[%clk 0:00:24.8]} 28. Kc4 {[%clk 0:00:26.8]} 28... Rd2 {[%clk 0:00:22.7]} 29. Kb3 {[%clk 0:00:25.7]} 29... Bf8 {[%clk 0:00:21.5]} 30. Rc4 {[%clk 0:00:24.4]} 30... Rxg2 {[%clk 0:00:20.6]} 31. Rf1 {[%clk 0:00:22.9]} 31... g5 {[%clk 0:00:19.5]} 32. Rf3 {[%clk 0:00:21.3]} 32... Bg7 {[%clk 0:00:18.8]} 33. b5 {[%clk 0:00:20.6]} 33... Rg3 {[%clk 0:00:18.3]} 34. Rxg3 {[%clk 0:00:19.4]} 34... fxg3 {[%clk 0:00:17.3]} 35. Ne3 {[%clk 0:00:18.9]} 35... axb5 {[%clk 0:00:16.5]} 36. axb5 {[%clk 0:00:18.8]} 36... Kc7 {[%clk 0:00:15.5]} 37. bxc6 {[%clk 0:00:17.8]} 37... bxc6 {[%clk 0:00:15.4]} 38. Nf5 {[%clk 0:00:16.8]} 38... Be5 {[%clk 0:00:13.4]} 39. Ne3 {[%clk 0:00:15.5]} 39... h5 {[%clk 0:00:12.5]} 40. Kc2 {[%clk 0:00:14.5]} 40... Bf4 {[%clk 0:00:12]} 41. Ng2 {[%clk 0:00:13.2]} 41... Re5 {[%clk 0:00:10.4]} 42. Kd3 {[%clk 0:00:12.4]} 42... h4 {[%clk 0:00:09.5]} 43. Ke2 {[%clk 0:00:11.4]} 43... Ra5 {[%clk 0:00:08.4]} 44. Kf3 {[%clk 0:00:10.4]} 44... Ra2 {[%clk 0:00:06.5]} 45. Nxf4 {[%clk 0:00:08.9]} 45... Rf2+ {[%clk 0:00:06.2]} 46. Ke3 {[%clk 0:00:08.2]} 46... Rxf4 {[%clk 0:00:05.7]} 47. Rb4 {[%clk 0:00:06]} 47... g2 {[%clk 0:00:05.3]} 48. Rb1 {[%clk 0:00:05.1]} 48... g1=Q+ {[%clk 0:00:05.2]} 49. Rxg1 {[%clk 0:00:04.2]} 49... Rf7 {[%clk 0:00:04.6]} 50. Rg4 {[%clk 0:00:04.1]} 50... Re7 {[%clk 0:00:04.4]} 51. Rxg5 {[%clk 0:00:03.8]} 51... Kd7 {[%clk 0:00:03.9]} 52. Rf5 {[%clk 0:00:03.7]} 52... Kc7 {[%clk 0:00:03.6]} 53. Kf3 {[%clk 0:00:03.6]} 53... Rd7 {[%clk 0:00:03.3]} 54. Kg4 {[%clk 0:00:03.5]} 54... Rd3 {[%clk 0:00:03]} 55. Kxh4 {[%clk 0:00:03.4]} 55... Rd1 {[%clk 0:00:02.9]} 56. Kg5 {[%clk 0:00:03.3]} 56... Rg1+ {[%clk 0:00:02.7]} 57. Kf6 {[%clk 0:00:02.6]} 57... Rf1 {[%clk 0:00:02.6]} 0-1\n",
+      "pgn_sha256": "b8e8363e0eb78086a9d61e5efab6e3519d34af6bce85154bd483800f471b01c1",
+      "source_account": "nelsi"
+    },
+    {
+      "game_id": "167256015132",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.04.13\"]\n[Round \"-\"]\n[White \"Luca_is_bad_at_chess\"]\n[Black \"hansen\"]\n[Result \"0-1\"]\n[CurrentPosition \"4r1k1/1p1q1pp1/3b1nbp/3P4/1pPNp3/4P1nP/1R1NQ1BK/5R2 w - - 0 25\"]\n[Timezone \"UTC\"]\n[ECO \"A00\"]\n[ECOUrl \"https://www.chess.com/openings/Kings-Fianchetto-Opening-1...d5-2.Bg2-Nf6-3.c4\"]\n[UTCDate \"2026.04.13\"]\n[UTCTime \"14:43:21\"]\n[WhiteElo \"2799\"]\n[BlackElo \"3025\"]\n[TimeControl \"60\"]\n[Termination \"hansen won by resignation\"]\n[StartTime \"14:43:21\"]\n[EndDate \"2026.04.13\"]\n[EndTime \"14:44:34\"]\n[Link \"https://www.chess.com/game/live/167256015132\"]\n\n1. g3 {[%clk 0:00:59.2]} 1... d5 {[%clk 0:00:59.2]} 2. Bg2 {[%clk 0:00:59.1]} 2... Nf6 {[%clk 0:00:58.9]} 3. c4 {[%clk 0:00:58.3]} 3... d4 {[%clk 0:00:58.2]} 4. d3 {[%clk 0:00:57.7]} 4... e5 {[%clk 0:00:57.6]} 5. Nf3 {[%clk 0:00:57.6]} 5... c6 {[%clk 0:00:56.5]} 6. O-O {[%clk 0:00:57.5]} 6... Bd6 {[%clk 0:00:56]} 7. Nbd2 {[%clk 0:00:56.7]} 7... O-O {[%clk 0:00:55.6]} 8. Rb1 {[%clk 0:00:56.1]} 8... a5 {[%clk 0:00:54.5]} 9. b3 {[%clk 0:00:55]} 9... h6 {[%clk 0:00:53.3]} 10. a3 {[%clk 0:00:54.5]} 10... c5 {[%clk 0:00:52.6]} 11. b4 {[%clk 0:00:53.3]} 11... axb4 {[%clk 0:00:51.9]} 12. axb4 {[%clk 0:00:53.2]} 12... cxb4 {[%clk 0:00:51.7]} 13. Nb3 {[%clk 0:00:52.2]} 13... Nc6 {[%clk 0:00:51.2]} 14. e3 {[%clk 0:00:51.6]} 14... dxe3 {[%clk 0:00:50.2]} 15. Bxe3 {[%clk 0:00:51.5]} 15... Bf5 {[%clk 0:00:49.5]} 16. Rb2 {[%clk 0:00:49.7]} 16... Re8 {[%clk 0:00:47.5]} 17. d4 {[%clk 0:00:49]} 17... e4 {[%clk 0:00:46.2]} 18. Nfd2 {[%clk 0:00:47.6]} 18... Ra3 {[%clk 0:00:44.3]} 19. h3 {[%clk 0:00:42.2]} 19... Qd7 {[%clk 0:00:41.2]} 20. Kh2 {[%clk 0:00:39.4]} 20... Bg6 {[%clk 0:00:38.4]} 21. Qe2 {[%clk 0:00:36.5]} 21... Ne7 {[%clk 0:00:30.9]} 22. d5 {[%clk 0:00:34.1]} 22... Nf5 {[%clk 0:00:30.1]} 23. Nd4 {[%clk 0:00:33.7]} 23... Rxe3 {[%clk 0:00:27.5]} 24. fxe3 {[%clk 0:00:31.6]} 24... Nxg3 {[%clk 0:00:27]} 0-1\n",
+      "pgn_sha256": "8263ec70fabc1e1e9519ba8d09c71ec7dabe2b3a5947d04e1927d051cc14a320",
+      "source_account": "hansen"
+    },
+    {
+      "game_id": "167072458532",
+      "split": "training",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.04.09\"]\n[Round \"-\"]\n[White \"nelsi\"]\n[Black \"Bacarz2006\"]\n[Result \"1-0\"]\n[CurrentPosition \"8/1P1B4/5p2/2K3p1/8/6k1/2P5/8 b - - 0 51\"]\n[Timezone \"UTC\"]\n[ECO \"C42\"]\n[ECOUrl \"https://www.chess.com/openings/Petrovs-Defense-Classical-Variation\"]\n[UTCDate \"2026.04.09\"]\n[UTCTime \"13:03:20\"]\n[WhiteElo \"2568\"]\n[BlackElo \"2524\"]\n[TimeControl \"60\"]\n[Termination \"nelsi won on time\"]\n[StartTime \"13:03:20\"]\n[EndDate \"2026.04.09\"]\n[EndTime \"13:05:27\"]\n[Link \"https://www.chess.com/game/live/167072458532\"]\n\n1. e4 {[%clk 0:00:59.9]} 1... e5 {[%clk 0:00:59.5]} 2. Nf3 {[%clk 0:00:58.9]} 2... Nf6 {[%clk 0:00:59.4]} 3. Nxe5 {[%clk 0:00:58.1]} 3... Bd6 {[%clk 0:00:58.6]} 4. Nf3 {[%clk 0:00:56.8]} 4... Nxe4 {[%clk 0:00:57.9]} 5. Nc3 {[%clk 0:00:56.4]} 5... Nxc3 {[%clk 0:00:57]} 6. dxc3 {[%clk 0:00:56.3]} 6... O-O {[%clk 0:00:56.5]} 7. Be3 {[%clk 0:00:55.1]} 7... Re8 {[%clk 0:00:55.6]} 8. Bd3 {[%clk 0:00:54.7]} 8... Bf4 {[%clk 0:00:55.1]} 9. O-O {[%clk 0:00:53.6]} 9... Bxe3 {[%clk 0:00:54.7]} 10. fxe3 {[%clk 0:00:53]} 10... d5 {[%clk 0:00:54.3]} 11. Qe1 {[%clk 0:00:48.9]} 11... h6 {[%clk 0:00:53.1]} 12. Rd1 {[%clk 0:00:48.4]} 12... c6 {[%clk 0:00:52.5]} 13. e4 {[%clk 0:00:46.1]} 13... Bg4 {[%clk 0:00:51.5]} 14. Qg3 {[%clk 0:00:44.6]} 14... Bxf3 {[%clk 0:00:50.5]} 15. Rxf3 {[%clk 0:00:39]} 15... dxe4 {[%clk 0:00:47]} 16. Rxf7 {[%clk 0:00:38.2]} 16... Qg5 {[%clk 0:00:34.1]} 17. Qxg5 {[%clk 0:00:33.5]} 17... hxg5 {[%clk 0:00:34]} 18. Bc4 {[%clk 0:00:32.9]} 18... b5 {[%clk 0:00:32.6]} 19. Bb3 {[%clk 0:00:30.6]} 19... Kh7 {[%clk 0:00:29.2]} 20. g4 {[%clk 0:00:29.7]} 20... a5 {[%clk 0:00:27.8]} 21. a3 {[%clk 0:00:28.4]} 21... c5 {[%clk 0:00:26.6]} 22. Bd5 {[%clk 0:00:26.9]} 22... Ra6 {[%clk 0:00:25.9]} 23. Re1 {[%clk 0:00:22.4]} 23... Rf6 {[%clk 0:00:25.1]} 24. Bxe4+ {[%clk 0:00:21.4]} 24... Kg8 {[%clk 0:00:23.2]} 25. Rxf6 {[%clk 0:00:20.4]} 25... gxf6 {[%clk 0:00:21.8]} 26. Bh7+ {[%clk 0:00:19.6]} 26... Kf8 {[%clk 0:00:21.7]} 27. Rxe8+ {[%clk 0:00:17.7]} 27... Kxe8 {[%clk 0:00:21.6]} 28. Bd3 {[%clk 0:00:16.5]} 28... b4 {[%clk 0:00:19.9]} 29. cxb4 {[%clk 0:00:16.4]} 29... axb4 {[%clk 0:00:19.4]} 30. axb4 {[%clk 0:00:16.3]} 30... cxb4 {[%clk 0:00:19.3]} 31. Bc4 {[%clk 0:00:16.2]} 31... Ke7 {[%clk 0:00:16.9]} 32. Kf2 {[%clk 0:00:15.9]} 32... Kd6 {[%clk 0:00:16.5]} 33. Ke3 {[%clk 0:00:15.5]} 33... Kc5 {[%clk 0:00:11.4]} 34. b3 {[%clk 0:00:14.3]} 34... Nc6 {[%clk 0:00:10.2]} 35. Ke4 {[%clk 0:00:13.8]} 35... Ne5 {[%clk 0:00:10.1]} 36. Be2 {[%clk 0:00:12.7]} 36... Kd6 {[%clk 0:00:07.5]} 37. Kf5 {[%clk 0:00:12.1]} 37... Ke7 {[%clk 0:00:07.4]} 38. Ke4 {[%clk 0:00:11.2]} 38... Kd6 {[%clk 0:00:06.5]} 39. Kd4 {[%clk 0:00:10.7]} 39... Nc6+ {[%clk 0:00:05.3]} 40. Kc4 {[%clk 0:00:10]} 40... Ke5 {[%clk 0:00:04.8]} 41. Kc5 {[%clk 0:00:09.4]} 41... Nd4 {[%clk 0:00:04.7]} 42. Bd3 {[%clk 0:00:08]} 42... Nf3 {[%clk 0:00:03.9]} 43. h3 {[%clk 0:00:07]} 43... Nh2 {[%clk 0:00:03.8]} 44. Kxb4 {[%clk 0:00:06.1]} 44... Kf4 {[%clk 0:00:03.2]} 45. Kc5 {[%clk 0:00:05.4]} 45... Kg3 {[%clk 0:00:03.1]} 46. b4 {[%clk 0:00:05.2]} 46... Kxh3 {[%clk 0:00:02.7]} 47. Bf5 {[%clk 0:00:04.4]} 47... Kg3 {[%clk 0:00:00.8]} 48. b5 {[%clk 0:00:04.3]} 48... Nxg4 {[%clk 0:00:00.2]} 49. b6 {[%clk 0:00:04.2]} 49... Ne5 {[%clk 0:00:00.1]} 50. b7 {[%clk 0:00:02.5]} 50... Nd7+ {[%clk 0:00:00.1]} 51. Bxd7 {[%clk 0:00:01.5]} 1-0\n",
+      "pgn_sha256": "7fcc895246c2c69f82f12a0da5d96dcce29fbfe2c0c833777ba6fd4cc1ad099f",
+      "source_account": "nelsi"
+    }
+  ],
+  "targets": [
+    {
+      "game_id": "167240484122",
+      "ply": 15,
+      "split": "training",
+      "san": "Bxc6",
+      "uci": "b5c6",
+      "fen_before": "r2qkb1r/pp1b1ppp/2nPp3/1Bp2n2/5P2/2N2N2/PPPP2PP/R1BQK2R w KQkq - 3 8",
+      "fen_after": "r2qkb1r/pp1b1ppp/2BPp3/2p2n2/5P2/2N2N2/PPPP2PP/R1BQK2R b KQkq - 0 8",
+      "label": "mistake",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "Aswathchess",
+      "actual_mover_rating": 2847,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "8631ff90c7e904b4dc9852f01f9146eff69b8c3368c1db6dae4331c6602e5497"
+    },
+    {
+      "game_id": "167240484122",
+      "ply": 16,
+      "split": "training",
+      "san": "Bxc6",
+      "uci": "d7c6",
+      "fen_before": "r2qkb1r/pp1b1ppp/2BPp3/2p2n2/5P2/2N2N2/PPPP2PP/R1BQK2R b KQkq - 0 8",
+      "fen_after": "r2qkb1r/pp3ppp/2bPp3/2p2n2/5P2/2N2N2/PPPP2PP/R1BQK2R w KQkq - 0 9",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3041,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "55173681bc60dbb4b05ba3f318cadca945fd2eab25accd174fb4774eb1bdee1f"
+    },
+    {
+      "game_id": "167240484122",
+      "ply": 32,
+      "split": "training",
+      "san": "Ng3+",
+      "uci": "f5g3",
+      "fen_before": "3rk2r/pp3pp1/2q1p3/2N2n2/2p2P1p/1P6/P1PPQ1PP/R1B2R1K b k - 0 16",
+      "fen_after": "3rk2r/pp3pp1/2q1p3/2N5/2p2P1p/1P4n1/P1PPQ1PP/R1B2R1K w k - 1 17",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3041,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "9c5d9b9af050617a781d0c8da6dc9d4b737f4db0b8a0c4665aee63840908a191"
+    },
+    {
+      "game_id": "167240484122",
+      "ply": 35,
+      "split": "training",
+      "san": "Kg1",
+      "uci": "h1g1",
+      "fen_before": "3rk2r/pp3pp1/2q1p3/2N5/2p2P2/1P4p1/P1PPQ1P1/R1B2R1K w k - 0 18",
+      "fen_after": "3rk2r/pp3pp1/2q1p3/2N5/2p2P2/1P4p1/P1PPQ1P1/R1B2RK1 b k - 1 18",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "Aswathchess",
+      "actual_mover_rating": 2847,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "e36fe9c7b8f6b80e61cf998661506f6c95f33600a9b8fd762865618ca75b972d"
+    },
+    {
+      "game_id": "167240484122",
+      "ply": 36,
+      "split": "training",
+      "san": "Qxc5+",
+      "uci": "c6c5",
+      "fen_before": "3rk2r/pp3pp1/2q1p3/2N5/2p2P2/1P4p1/P1PPQ1P1/R1B2RK1 b k - 1 18",
+      "fen_after": "3rk2r/pp3pp1/4p3/2q5/2p2P2/1P4p1/P1PPQ1P1/R1B2RK1 w k - 0 19",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3041,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "5dc92f1e63f3a283363a7a0f20c5a812df248d892bb27e78769a5cbf53b1f93d"
+    },
+    {
+      "game_id": "167240484122",
+      "ply": 38,
+      "split": "training",
+      "san": "Rh1+",
+      "uci": "h8h1",
+      "fen_before": "3rk2r/pp3pp1/4p3/2q5/2p2P2/1P2Q1p1/P1PP2P1/R1B2RK1 b k - 1 19",
+      "fen_after": "3rk3/pp3pp1/4p3/2q5/2p2P2/1P2Q1p1/P1PP2P1/R1B2RKr w - - 2 20",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3041,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "5e3d59a57231253fdf716da5c8eddfc66439bbf02607b1fcfbcf0af5ad87c965"
+    },
+    {
+      "game_id": "167240484122",
+      "ply": 40,
+      "split": "training",
+      "san": "Qh5+",
+      "uci": "c5h5",
+      "fen_before": "3rk3/pp3pp1/4p3/2q5/2p2P2/1P2Q1p1/P1PP2P1/R1B2R1K b - - 0 20",
+      "fen_after": "3rk3/pp3pp1/4p3/7q/2p2P2/1P2Q1p1/P1PP2P1/R1B2R1K w - - 1 21",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3041,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "ac9915fe2f82ec36aacc4b6bb679c46ef8fc72293d4115265b68899c1e51d313"
+    },
+    {
+      "game_id": "167245993920",
+      "ply": 21,
+      "split": "training",
+      "san": "Bc4",
+      "uci": "f1c4",
+      "fen_before": "r2qk1nr/1b1nppb1/p2p2p1/2p3Np/Pp1PP2P/2N1BP2/1PPQ2P1/R3KB1R w KQkq - 0 11",
+      "fen_after": "r2qk1nr/1b1nppb1/p2p2p1/2p3Np/PpBPP2P/2N1BP2/1PPQ2P1/R3K2R b KQkq - 1 11",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3088,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "d121a48917b15f2419f41582877a4887a09f3bd138e82adeca48249f44908536"
+    },
+    {
+      "game_id": "167245993920",
+      "ply": 22,
+      "split": "training",
+      "san": "Nh6",
+      "uci": "g8h6",
+      "fen_before": "r2qk1nr/1b1nppb1/p2p2p1/2p3Np/PpBPP2P/2N1BP2/1PPQ2P1/R3K2R b KQkq - 1 11",
+      "fen_after": "r2qk2r/1b1nppb1/p2p2pn/2p3Np/PpBPP2P/2N1BP2/1PPQ2P1/R3K2R w KQkq - 2 12",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "chess_master_8820",
+      "actual_mover_rating": 3012,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "3e7e85f1982fe8088d0762cd41454339f52ef7ea2ac315eca72b1405bdfb8480"
+    },
+    {
+      "game_id": "167245993920",
+      "ply": 25,
+      "split": "training",
+      "san": "Ne6",
+      "uci": "g5e6",
+      "fen_before": "r2q1rk1/1b1nppb1/p2p2pn/2p3Np/PpBPP2P/4BP2/1PPQN1P1/R3K2R w KQ - 4 13",
+      "fen_after": "r2q1rk1/1b1nppb1/p2pN1pn/2p4p/PpBPP2P/4BP2/1PPQN1P1/R3K2R b KQ - 5 13",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3088,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "32b8d8e2f931ff03af893d5b937b7240bf2024b3deb2fd3c73844cf4c9c2bda7"
+    },
+    {
+      "game_id": "167245993920",
+      "ply": 31,
+      "split": "training",
+      "san": "Ba2",
+      "uci": "c4a2",
+      "fen_before": "r2q1r2/1b1np1k1/p3p1p1/2pp3p/PpBPP2P/5P2/1PPQN1P1/R3K2R w KQ - 0 16",
+      "fen_after": "r2q1r2/1b1np1k1/p3p1p1/2pp3p/Pp1PP2P/5P2/BPPQN1P1/R3K2R b KQ - 1 16",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3088,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "cf02086c3da60b6b9c02ce4ddf58c2207b19ea9b9c67a942e59fd7b8513f8033"
+    },
+    {
+      "game_id": "167245993920",
+      "ply": 33,
+      "split": "training",
+      "san": "Nf4",
+      "uci": "e2f4",
+      "fen_before": "r2q1r2/1b1np1k1/p3p1p1/2p4p/Pp1Pp2P/5P2/BPPQN1P1/R3K2R w KQ - 0 17",
+      "fen_after": "r2q1r2/1b1np1k1/p3p1p1/2p4p/Pp1PpN1P/5P2/BPPQ2P1/R3K2R b KQ - 1 17",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3088,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "66e6a3a892750dca9e2cf0c221eb5424d837103df6156fadd22b2e3b7432d8a9"
+    },
+    {
+      "game_id": "167245993920",
+      "ply": 34,
+      "split": "training",
+      "san": "Rxf4",
+      "uci": "f8f4",
+      "fen_before": "r2q1r2/1b1np1k1/p3p1p1/2p4p/Pp1PpN1P/5P2/BPPQ2P1/R3K2R b KQ - 1 17",
+      "fen_after": "r2q4/1b1np1k1/p3p1p1/2p4p/Pp1Ppr1P/5P2/BPPQ2P1/R3K2R w KQ - 0 18",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "chess_master_8820",
+      "actual_mover_rating": 3012,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "229788891524d5d9c950b241f2014d4f2287fdc6ccce35dffa10d821a5882131"
+    },
+    {
+      "game_id": "167245993920",
+      "ply": 51,
+      "split": "training",
+      "san": "Rxg6+",
+      "uci": "g1g6",
+      "fen_before": "r7/1b2p1k1/p3Bnp1/4Q2p/1p1R3P/8/1PP2q2/1K4R1 w - - 2 26",
+      "fen_after": "r7/1b2p1k1/p3BnR1/4Q2p/1p1R3P/8/1PP2q2/1K6 b - - 0 26",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3088,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "2f25e367024bf2ea1e7f1fd2a7f7525861b5e37cce8a0eebc284a0468232e131"
+    },
+    {
+      "game_id": "167245993920",
+      "ply": 53,
+      "split": "training",
+      "san": "Rg8+",
+      "uci": "g6g8",
+      "fen_before": "r4k2/1b2p3/p3BnR1/4Q2p/1p1R3P/8/1PP2q2/1K6 w - - 1 27",
+      "fen_after": "r4kR1/1b2p3/p3Bn2/4Q2p/1p1R3P/8/1PP2q2/1K6 b - - 2 27",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3088,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "2ce1fab8c917d6ebec8e5de1e0c1ac48210210a50943a439a4ce71e0ad964125"
+    },
+    {
+      "game_id": "167245993920",
+      "ply": 56,
+      "split": "training",
+      "san": "Qxf4",
+      "uci": "f2f4",
+      "fen_before": "r4kn1/1b2p3/p3B3/4Q2p/1p3R1P/8/1PP2q2/1K6 b - - 1 28",
+      "fen_after": "r4kn1/1b2p3/p3B3/4Q2p/1p3q1P/8/1PP5/1K6 w - - 0 29",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "chess_master_8820",
+      "actual_mover_rating": 3012,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "08b65f06780a9ffa9bec96e4f3b3125add1e19e0fd028ea1deefdbfd01d38d37"
+    },
+    {
+      "game_id": "167245993920",
+      "ply": 60,
+      "split": "training",
+      "san": "Kh7",
+      "uci": "g7h7",
+      "fen_before": "r5n1/1b2p1k1/p3B3/6Qp/1p5P/8/1PP5/1K6 b - - 2 30",
+      "fen_after": "r5n1/1b2p2k/p3B3/6Qp/1p5P/8/1PP5/1K6 w - - 3 31",
+      "label": "inaccuracy",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "chess_master_8820",
+      "actual_mover_rating": 3012,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "8c431191e9b7ed2bcdfa244e81c9f7c4d3eb5d813bb96f92cc2cc910ccd88a66"
+    },
+    {
+      "game_id": "167255249106",
+      "ply": 27,
+      "split": "training",
+      "san": "Ng4",
+      "uci": "e5g4",
+      "fen_before": "r1q2rk1/pb2bpp1/1p2pn1p/2p1N3/3P4/3BB3/PPP1QPPP/3R1RK1 w - - 0 14",
+      "fen_after": "r1q2rk1/pb2bpp1/1p2pn1p/2p5/3P2N1/3BB3/PPP1QPPP/3R1RK1 b - - 1 14",
+      "label": "mistake",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3010,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "512b8942965894f895ec51a74d76b03c60d16c2462b1824d5edfa351b3e1f193"
+    },
+    {
+      "game_id": "167255249106",
+      "ply": 30,
+      "split": "training",
+      "san": "Nxe3",
+      "uci": "d5e3",
+      "fen_before": "r1q2rk1/pb2bpp1/1p2p2p/2pn4/2PP2N1/3BB3/PP2QPPP/3R1RK1 b - - 0 15",
+      "fen_after": "r1q2rk1/pb2bpp1/1p2p2p/2p5/2PP2N1/3Bn3/PP2QPPP/3R1RK1 w - - 0 16",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "Luckyman9999999999",
+      "actual_mover_rating": 2899,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "f22a15ad44dc36a9de56fb42654a6614190008b997d3bac51f84c015047961e6"
+    },
+    {
+      "game_id": "167255249106",
+      "ply": 37,
+      "split": "training",
+      "san": "Rxf6",
+      "uci": "f1f6",
+      "fen_before": "r2r2k1/pbq2pp1/1p2pb1p/2p1N2Q/2PP4/3BP3/PP4PP/3R1RK1 w - - 5 19",
+      "fen_after": "r2r2k1/pbq2pp1/1p2pR1p/2p1N2Q/2PP4/3BP3/PP4PP/3R2K1 b - - 0 19",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3010,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "f283ea1aa6a762bd3df992db812c8d826aacde9a4b69fbc099dbfc1b7ba785e8"
+    },
+    {
+      "game_id": "167740813532",
+      "ply": 19,
+      "split": "training",
+      "san": "e5",
+      "uci": "e4e5",
+      "fen_before": "r2q1rk1/pb1p1pbp/nppPpnp1/8/4P3/2N2NP1/PPP2PBP/R1BQ1RK1 w - - 0 10",
+      "fen_after": "r2q1rk1/pb1p1pbp/nppPpnp1/4P3/8/2N2NP1/PPP2PBP/R1BQ1RK1 b - - 0 10",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3002,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "81986b051888486f0de980cd45472394a396c48297ecf60b91e6dc71ee3c681b"
+    },
+    {
+      "game_id": "167740813532",
+      "ply": 61,
+      "split": "training",
+      "san": "Rc2",
+      "uci": "d2c2",
+      "fen_before": "1r3br1/3p2nk/2nPp1pp/pq2Pp2/2p2PPN/P3B2N/1P1R1K1P/3Q2R1 w - - 0 31",
+      "fen_after": "1r3br1/3p2nk/2nPp1pp/pq2Pp2/2p2PPN/P3B2N/1PR2K1P/3Q2R1 b - - 1 31",
+      "label": "miss",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3002,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "26ddc25b055473cf8533d080f65ecb286588e5789898ae917f62c0f5b492c611"
+    },
+    {
+      "game_id": "167740813532",
+      "ply": 69,
+      "split": "training",
+      "san": "Nhg5+",
+      "uci": "h3g5",
+      "fen_before": "2r2br1/3p2nk/3Pp1pp/1q2Pp2/p1p2PP1/Pn2BNRN/1PR1QK1P/8 w - - 6 35",
+      "fen_after": "2r2br1/3p2nk/3Pp1pp/1q2PpN1/p1p2PP1/Pn2BNR1/1PR1QK1P/8 b - - 7 35",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3002,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "3dca9a53895005bfe9d56c7b329379f2d616b732eab054e74728da31856bee9a"
+    },
+    {
+      "game_id": "167740813532",
+      "ply": 71,
+      "split": "training",
+      "san": "Nxg5+",
+      "uci": "f3g5",
+      "fen_before": "2r2br1/3p2nk/3Pp1p1/1q2Ppp1/p1p2PP1/Pn2BNR1/1PR1QK1P/8 w - - 0 36",
+      "fen_after": "2r2br1/3p2nk/3Pp1p1/1q2PpN1/p1p2PP1/Pn2B1R1/1PR1QK1P/8 b - - 0 36",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3002,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "0a6b92169a0eaf5dfb568fd69daa2f8f2a1b5e2bf55f724faa54a78ff2c6f4bb"
+    },
+    {
+      "game_id": "167742352864",
+      "ply": 60,
+      "split": "training",
+      "san": "Rxc5",
+      "uci": "d5c5",
+      "fen_before": "4rn2/pp2p1k1/1qp1pbp1/2Nr3p/1P1P1B1P/P1P3PB/2Q2P1K/4R3 b - - 0 30",
+      "fen_after": "4rn2/pp2p1k1/1qp1pbp1/2r4p/1P1P1B1P/P1P3PB/2Q2P1K/4R3 w - - 0 31",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "ODreamchess",
+      "actual_mover_rating": 2829,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "3be7410e62f5d5d0a7b93c5138016d8800973dfe9a3bb861ebe745cbd1183e43"
+    },
+    {
+      "game_id": "167742352864",
+      "ply": 80,
+      "split": "training",
+      "san": "Qe4+",
+      "uci": "d3e4",
+      "fen_before": "1R6/pp3rk1/2p2pp1/2P4p/P2P3P/1QPq2P1/5PK1/8 b - - 5 40",
+      "fen_after": "1R6/pp3rk1/2p2pp1/2P4p/P2Pq2P/1QP3P1/5PK1/8 w - - 6 41",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "ODreamchess",
+      "actual_mover_rating": 2829,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "3d8780962943f2ce95ce138ebd418cf30d6f5047f8e9c628bc9650a53a0309a5"
+    },
+    {
+      "game_id": "167742352864",
+      "ply": 89,
+      "split": "training",
+      "san": "Qf8+",
+      "uci": "h8f8",
+      "fen_before": "1R5Q/pp5r/2p2ppk/2P4p/P2P3P/2P2qP1/5P1K/8 w - - 14 45",
+      "fen_after": "1R3Q2/pp5r/2p2ppk/2P4p/P2P3P/2P2qP1/5P1K/8 b - - 15 45",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3034,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "6fcf7e3b84da8d8afa0f63e8697dd4655fa603c45bba8253d3d1180572ed58dd"
+    },
+    {
+      "game_id": "167742352864",
+      "ply": 94,
+      "split": "training",
+      "san": "Qd3",
+      "uci": "d1d3",
+      "fen_before": "1R3Q2/pp4r1/2p2ppk/2P4p/P2P3P/2P3P1/5PK1/3q4 b - - 19 47",
+      "fen_after": "1R3Q2/pp4r1/2p2ppk/2P4p/P2P3P/2Pq2P1/5PK1/8 w - - 20 48",
+      "label": "inaccuracy",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "ODreamchess",
+      "actual_mover_rating": 2829,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "6ab60570581c9195013f1615dea081c609a0e7978546634a0b27803df6fad9c1"
+    },
+    {
+      "game_id": "167742352864",
+      "ply": 116,
+      "split": "training",
+      "san": "Kxf6",
+      "uci": "f7f6",
+      "fen_before": "8/pp3k2/2p2Qp1/2P4p/P2P3P/2P3P1/5PK1/8 b - - 0 58",
+      "fen_after": "8/pp6/2p2kp1/2P4p/P2P3P/2P3P1/5PK1/8 w - - 0 59",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "ODreamchess",
+      "actual_mover_rating": 2829,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "799ba690c7be1396b70cc2fb02155f3deac13a9ee058780730e6af68f340c263"
+    },
+    {
+      "game_id": "168413663740",
+      "ply": 38,
+      "split": "training",
+      "san": "dxc5",
+      "uci": "d6c5",
+      "fen_before": "1qr2rk1/5pbp/p1bppnp1/1pP5/1P1BPP1P/P1N2B2/4Q1P1/2RR2K1 b - - 0 19",
+      "fen_after": "1qr2rk1/5pbp/p1b1pnp1/1pp5/1P1BPP1P/P1N2B2/4Q1P1/2RR2K1 w - - 0 20",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3065,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "111601b0b8f3e1bf24e7ac17e353c2034ac9462144619c70a6622ac8e63e34e9"
+    },
+    {
+      "game_id": "168413663740",
+      "ply": 40,
+      "split": "training",
+      "san": "Qxf4",
+      "uci": "b8f4",
+      "fen_before": "1qr2rk1/5pbp/p1b1pnp1/1pB5/1P2PP1P/P1N2B2/4Q1P1/2RR2K1 b - - 0 20",
+      "fen_after": "2r2rk1/5pbp/p1b1pnp1/1pB5/1P2Pq1P/P1N2B2/4Q1P1/2RR2K1 w - - 0 21",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3065,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "773740c76028f2057ff07d6b6a1685e75206025c903582b62845a456ef76e755"
+    },
+    {
+      "game_id": "168413663740",
+      "ply": 42,
+      "split": "training",
+      "san": "Rfd8",
+      "uci": "f8d8",
+      "fen_before": "2r2rk1/5pbp/p1b1pnp1/1pB5/1P2Pq1P/P1N2B2/5QP1/2RR2K1 b - - 1 21",
+      "fen_after": "2rr2k1/5pbp/p1b1pnp1/1pB5/1P2Pq1P/P1N2B2/5QP1/2RR2K1 w - - 2 22",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3065,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "69777f565ca8cc88b3f053337dd2191470d614a9261955c38f2e692ad0b5e318"
+    },
+    {
+      "game_id": "168413663740",
+      "ply": 51,
+      "split": "training",
+      "san": "Bxg7",
+      "uci": "f6g7",
+      "fen_before": "2r1b1k1/5pbp/p3pBp1/1p6/1P2P1qP/P1N5/5QP1/3R2K1 w - - 2 26",
+      "fen_after": "2r1b1k1/5pBp/p3p1p1/1p6/1P2P1qP/P1N5/5QP1/3R2K1 b - - 0 26",
+      "label": "inaccuracy",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "likeyouuuu",
+      "actual_mover_rating": 2903,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "7a6776ec9d92e9395e238a6d352b4bb310caaf02cac35e7f010a95bd308979fc"
+    },
+    {
+      "game_id": "168413663740",
+      "ply": 53,
+      "split": "training",
+      "san": "Rf1",
+      "uci": "d1f1",
+      "fen_before": "2r1b3/5pkp/p3p1p1/1p6/1P2P1qP/P1N5/5QP1/3R2K1 w - - 0 27",
+      "fen_after": "2r1b3/5pkp/p3p1p1/1p6/1P2P1qP/P1N5/5QP1/5RK1 b - - 1 27",
+      "label": "good",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "likeyouuuu",
+      "actual_mover_rating": 2903,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "4e316b1d41d51e360e465c475199f8b383daf54be6d99c313570716d8589fb32"
+    },
+    {
+      "game_id": "168413663740",
+      "ply": 60,
+      "split": "training",
+      "san": "Qd2",
+      "uci": "e1d2",
+      "fen_before": "2r1b1k1/5p1p/p3pQp1/1p6/1P2P2P/P1N2R2/6PK/4q3 b - - 7 30",
+      "fen_after": "2r1b1k1/5p1p/p3pQp1/1p6/1P2P2P/P1N2R2/3q2PK/8 w - - 8 31",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3065,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "ee122fba5bbd51d4e30d7ac287b9cc55d114baf41b44d2ea635d3c2f4e848fc8"
+    },
+    {
+      "game_id": "168413663740",
+      "ply": 64,
+      "split": "training",
+      "san": "Qg7",
+      "uci": "h6g7",
+      "fen_before": "2r1b1k1/5p1p/p3pQpq/1p5P/1P2P3/P1N4R/6PK/8 b - - 2 32",
+      "fen_after": "2r1b1k1/5pqp/p3pQp1/1p5P/1P2P3/P1N4R/6PK/8 w - - 3 33",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3065,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "cfa4981e7ddcbe28fe0c752bee87117a10d24d144a3d7ce1c1f8b0605a7dea68"
+    },
+    {
+      "game_id": "168413663740",
+      "ply": 66,
+      "split": "training",
+      "san": "Qe5+",
+      "uci": "g7e5",
+      "fen_before": "2r1b1k1/5pqp/p3p1p1/1p5P/1P2P3/P1N2Q1R/6PK/8 b - - 4 33",
+      "fen_after": "2r1b1k1/5p1p/p3p1p1/1p2q2P/1P2P3/P1N2Q1R/6PK/8 w - - 5 34",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3065,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "82889abecd109a956dc1f0ba024c55f57af64da0e85d7719bfcc81b2940b4073"
+    },
+    {
+      "game_id": "168413663740",
+      "ply": 89,
+      "split": "training",
+      "san": "Rg8+",
+      "uci": "d8g8",
+      "fen_before": "3R4/5pkp/p1b1p1p1/1p6/1P6/P5q1/4r1P1/6K1 w - - 0 45",
+      "fen_after": "6R1/5pkp/p1b1p1p1/1p6/1P6/P5q1/4r1P1/6K1 b - - 1 45",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "likeyouuuu",
+      "actual_mover_rating": 2903,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "9a23e8d3a8dbc3646f6c5d8602d5c553f6d7486ce951ba4898cc13b872174957"
+    },
+    {
+      "game_id": "171291626363",
+      "ply": 37,
+      "split": "training",
+      "san": "dxe5",
+      "uci": "d4e5",
+      "fen_before": "r2q1r1k/1pp2ppn/pb1p3p/4pP2/3P2Pn/1BP1BN1P/PP3P2/R2QR1K1 w - - 1 19",
+      "fen_after": "r2q1r1k/1pp2ppn/pb1p3p/4PP2/6Pn/1BP1BN1P/PP3P2/R2QR1K1 b - - 0 19",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3074,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "31a30af2817a5e1c5b3dce4777d6637785b29432dcc128a960df6f3d1ef95975"
+    },
+    {
+      "game_id": "171291626363",
+      "ply": 47,
+      "split": "training",
+      "san": "Rxe3",
+      "uci": "e1e3",
+      "fen_before": "r4r1k/2p2pp1/p4q1p/4pPn1/6P1/1BP1b2P/PP3PQ1/3RR1K1 w - - 0 24",
+      "fen_after": "r4r1k/2p2pp1/p4q1p/4pPn1/6P1/1BP1R2P/PP3PQ1/3R2K1 b - - 0 24",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3074,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "14e3a196102b2a0a2288783f968cc96a7fef92b635b03a351fe1c153a7ecb90a"
+    },
+    {
+      "game_id": "171291626363",
+      "ply": 55,
+      "split": "training",
+      "san": "Bxd1",
+      "uci": "b3d1",
+      "fen_before": "5r1k/2Q2p2/p4qpp/5Pn1/4p1P1/1BP1R2P/PP3PK1/3r4 w - - 0 28",
+      "fen_after": "5r1k/2Q2p2/p4qpp/5Pn1/4p1P1/2P1R2P/PP3PK1/3B4 b - - 0 28",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3074,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "1049ef79173b0700bd354001e3cc267e233150fe8fb5cbf9942caa1f27572e86"
+    },
+    {
+      "game_id": "171291626363",
+      "ply": 65,
+      "split": "training",
+      "san": "Rxf3",
+      "uci": "e3f3",
+      "fen_before": "7k/5p2/p2q3p/5Q2/4p1PP/1BP1Rn2/PP1r1PK1/8 w - - 1 33",
+      "fen_after": "7k/5p2/p2q3p/5Q2/4p1PP/1BP2R2/PP1r1PK1/8 b - - 0 33",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3074,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "7473743546201be524254cd0610dba456fdf6f71375a884e5c5bb70dee9265c3"
+    },
+    {
+      "game_id": "171291626363",
+      "ply": 78,
+      "split": "training",
+      "san": "Qf6",
+      "uci": "f8f6",
+      "fen_before": "5q1k/8/pr2B2p/8/4Q1PP/2P5/P4PK1/8 b - - 8 39",
+      "fen_after": "7k/8/pr2Bq1p/8/4Q1PP/2P5/P4PK1/8 w - - 9 40",
+      "label": "inaccuracy",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "annasargsyan_m",
+      "actual_mover_rating": 2767,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "cb4fb8b542f178d22d2b39f7f4caeb393406730b5ab24ee107d666c88cec1c42"
+    },
+    {
+      "game_id": "172915254335",
+      "ply": 23,
+      "split": "training",
+      "san": "Nd5",
+      "uci": "c3d5",
+      "fen_before": "rq2k1nr/3p1ppp/p1b1p3/2b5/Pp2P3/2NB4/1PPBQPPP/R4RK1 w kq - 0 12",
+      "fen_after": "rq2k1nr/3p1ppp/p1b1p3/2bN4/Pp2P3/3B4/1PPBQPPP/R4RK1 b kq - 1 12",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3046,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "f5a471424f25b815c6106fe3c596274fc8604933875e7816b768325eb60ffcd8"
+    },
+    {
+      "game_id": "172915254335",
+      "ply": 25,
+      "split": "training",
+      "san": "Bf4",
+      "uci": "d2f4",
+      "fen_before": "rq2k1nr/3p1ppp/2b1p3/p1bN4/Pp2P3/3B4/1PPBQPPP/R4RK1 w kq - 0 13",
+      "fen_after": "rq2k1nr/3p1ppp/2b1p3/p1bN4/Pp2PB2/3B4/1PP1QPPP/R4RK1 b kq - 1 13",
+      "label": "good",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3046,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "5135f7910745c383a0f250da40b385c7b55372144864a78f2d7e53421a4beada"
+    },
+    {
+      "game_id": "172915254335",
+      "ply": 29,
+      "split": "training",
+      "san": "Nb6",
+      "uci": "d5b6",
+      "fen_before": "r3k1nr/3p1ppp/2bqp3/p2N4/Pp2P3/3B4/1PP1QPPP/R4RK1 w kq - 0 15",
+      "fen_after": "r3k1nr/3p1ppp/1Nbqp3/p7/Pp2P3/3B4/1PP1QPPP/R4RK1 b kq - 1 15",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3046,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "518b860cd161f0dca4470047962821d52f0559894da35a19d89d9f3b05b8666c"
+    },
+    {
+      "game_id": "172915254335",
+      "ply": 51,
+      "split": "training",
+      "san": "e6",
+      "uci": "e5e6",
+      "fen_before": "b2r3r/3pknpp/8/pBq1Pp2/P1P5/8/4QPPP/3RR1K1 w - - 0 26",
+      "fen_after": "b2r3r/3pknpp/4P3/pBq2p2/P1P5/8/4QPPP/3RR1K1 b - - 0 26",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3046,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "199903f1e5d2ea25217cf783d2921b1a98ad14f87a8063582fa2bcf34d6ce031"
+    },
+    {
+      "game_id": "172915254335",
+      "ply": 58,
+      "split": "training",
+      "san": "Kf7",
+      "uci": "e7f7",
+      "fen_before": "b2r2r1/3Pk1pp/8/pBq2p2/P1PRn3/8/1Q3PPP/4R1K1 b - - 2 29",
+      "fen_after": "b2r2r1/3P1kpp/8/pBq2p2/P1PRn3/8/1Q3PPP/4R1K1 w - - 3 30",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "vovachesss",
+      "actual_mover_rating": 2888,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "0c15d59d456e20c16393554493f2f9bc11e27de1c9df0da019232dc7cc64f598"
+    },
+    {
+      "game_id": "172915254335",
+      "ply": 63,
+      "split": "training",
+      "san": "Kf1",
+      "uci": "g1f1",
+      "fen_before": "b2r1r2/3P1kpp/8/pBq2pn1/P1PR4/5P2/1Q4PP/3R2K1 w - - 1 32",
+      "fen_after": "b2r1r2/3P1kpp/8/pBq2pn1/P1PR4/5P2/1Q4PP/3R1K2 b - - 2 32",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3046,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "b4641ae4facf00c2df0ba4d3763a1660a8c4eb1beb127a53c44c616547b0cfbb"
+    },
+    {
+      "game_id": "172915254335",
+      "ply": 76,
+      "split": "training",
+      "san": "Bxf3",
+      "uci": "a8f3",
+      "fen_before": "b2r2k1/3P1rpp/3R2n1/1BP2p2/P2Q4/q4P2/6PP/3R1K2 b - - 0 38",
+      "fen_after": "3r2k1/3P1rpp/3R2n1/1BP2p2/P2Q4/q4b2/6PP/3R1K2 w - - 0 39",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "vovachesss",
+      "actual_mover_rating": 2888,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "57e8ff4175f957f433453b0e3b49c6ed9acdf64ed8e5bb4a34b256a8fa65a0bc"
+    },
+    {
+      "game_id": "172915254335",
+      "ply": 78,
+      "split": "training",
+      "san": "Bxg2+",
+      "uci": "f3g2",
+      "fen_before": "3r2k1/3P1rpp/3R2n1/1BP2p2/P7/q2Q1b2/6PP/3R1K2 b - - 1 39",
+      "fen_after": "3r2k1/3P1rpp/3R2n1/1BP2p2/P7/q2Q4/6bP/3R1K2 w - - 0 40",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "vovachesss",
+      "actual_mover_rating": 2888,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "ff86e4c77385f20ca834e10410924fcc700ec8fdbc231d5fd679b83b55993038"
+    },
+    {
+      "game_id": "172915254335",
+      "ply": 79,
+      "split": "training",
+      "san": "Kg1",
+      "uci": "f1g1",
+      "fen_before": "3r2k1/3P1rpp/3R2n1/1BP2p2/P7/q2Q4/6bP/3R1K2 w - - 0 40",
+      "fen_after": "3r2k1/3P1rpp/3R2n1/1BP2p2/P7/q2Q4/6bP/3R2K1 b - - 1 40",
+      "label": "mistake",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3046,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "806cd7c342e6efb0182ab48929b77e481192bff2188692736cb230d26b51be7f"
+    },
+    {
+      "game_id": "172915254335",
+      "ply": 80,
+      "split": "training",
+      "san": "Qxc5+",
+      "uci": "a3c5",
+      "fen_before": "3r2k1/3P1rpp/3R2n1/1BP2p2/P7/q2Q4/6bP/3R2K1 b - - 1 40",
+      "fen_after": "3r2k1/3P1rpp/3R2n1/1Bq2p2/P7/3Q4/6bP/3R2K1 w - - 0 41",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "vovachesss",
+      "actual_mover_rating": 2888,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "c28292266ec72583a4eeecea91eeb8210a4a3cb415a71344a5218321018facfe"
+    },
+    {
+      "game_id": "172915254335",
+      "ply": 87,
+      "split": "training",
+      "san": "Bxf7",
+      "uci": "c4f7",
+      "fen_before": "3r1k2/3P1rpp/6n1/5p2/P1BRb3/8/7P/3R2K1 w - - 3 44",
+      "fen_after": "3r1k2/3P1Bpp/6n1/5p2/P2Rb3/8/7P/3R2K1 b - - 0 44",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3046,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "c0c6727e2e3b63bdd4097f2db6de992cab8c67aa7407784fc31bebcd06ea971d"
+    },
+    {
+      "game_id": "172915254335",
+      "ply": 92,
+      "split": "training",
+      "san": "Nc6",
+      "uci": "e5c6",
+      "fen_before": "3r4/3P1kpp/8/P3np2/3Rb3/8/5K1P/3R4 b - - 2 46",
+      "fen_after": "3r4/3P1kpp/2n5/P4p2/3Rb3/8/5K1P/3R4 w - - 3 47",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "vovachesss",
+      "actual_mover_rating": 2888,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "d091193b7cc5a5fc2a5cf8797cb7e6ef9e7f92f98f8fdb8453f2742dc458d4a2"
+    },
+    {
+      "game_id": "172915254335",
+      "ply": 116,
+      "split": "training",
+      "san": "Nd5+",
+      "uci": "c7d5",
+      "fen_before": "8/P1n3pk/1R5p/5p1P/4bK2/8/8/8 b - - 2 58",
+      "fen_after": "8/P5pk/1R5p/3n1p1P/4bK2/8/8/8 w - - 3 59",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "vovachesss",
+      "actual_mover_rating": 2888,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "31c065513773aa78abe92f7ce6a16c8a8a1dd5bc910899b7f4e028c3cdf74e7f"
+    },
+    {
+      "game_id": "166827147588",
+      "ply": 12,
+      "split": "training",
+      "san": "exd5",
+      "uci": "e6d5",
+      "fen_before": "rn1qkb1r/ppp2ppp/4pn2/3P1b2/2PP4/2N2P2/PP4PP/R1BQKBNR b KQkq - 1 6",
+      "fen_after": "rn1qkb1r/ppp2ppp/5n2/3p1b2/2PP4/2N2P2/PP4PP/R1BQKBNR w KQkq - 0 7",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2603,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "78e0dedd24138036d6b567c73547f4e42345d92f6015105c8d50c5f1cb4417eb"
+    },
+    {
+      "game_id": "166827147588",
+      "ply": 14,
+      "split": "training",
+      "san": "Nc6",
+      "uci": "b8c6",
+      "fen_before": "rn1qkb1r/ppp2ppp/5n2/3p1b2/2PP4/1QN2P2/PP4PP/R1B1KBNR b KQkq - 1 7",
+      "fen_after": "r2qkb1r/ppp2ppp/2n2n2/3p1b2/2PP4/1QN2P2/PP4PP/R1B1KBNR w KQkq - 2 8",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2603,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "14615eb2d27b1afc1260ad5435e8bbbe6f65ba4ab358592e2c7e2216d6107d4b"
+    },
+    {
+      "game_id": "166827147588",
+      "ply": 16,
+      "split": "training",
+      "san": "Nb4",
+      "uci": "c6b4",
+      "fen_before": "r2qkb1r/ppp2ppp/2n2n2/3P1b2/3P4/1QN2P2/PP4PP/R1B1KBNR b KQkq - 0 8",
+      "fen_after": "r2qkb1r/ppp2ppp/5n2/3P1b2/1n1P4/1QN2P2/PP4PP/R1B1KBNR w KQkq - 1 9",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2603,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "ffe00781c97e6c1a29536ad2513f05d9b93ef92ce1e66731843277ec8f4a3f25"
+    },
+    {
+      "game_id": "166827147588",
+      "ply": 17,
+      "split": "training",
+      "san": "Bb5+",
+      "uci": "f1b5",
+      "fen_before": "r2qkb1r/ppp2ppp/5n2/3P1b2/1n1P4/1QN2P2/PP4PP/R1B1KBNR w KQkq - 1 9",
+      "fen_after": "r2qkb1r/ppp2ppp/5n2/1B1P1b2/1n1P4/1QN2P2/PP4PP/R1B1K1NR b KQkq - 2 9",
+      "label": "mistake",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "I_Will_be_FM",
+      "actual_mover_rating": 2619,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "719fdb1bed848a9b22a05d779237fff9fe0a75b04c370069ca8e93025c94db73"
+    },
+    {
+      "game_id": "166827147588",
+      "ply": 18,
+      "split": "training",
+      "san": "c6",
+      "uci": "c7c6",
+      "fen_before": "r2qkb1r/ppp2ppp/5n2/1B1P1b2/1n1P4/1QN2P2/PP4PP/R1B1K1NR b KQkq - 2 9",
+      "fen_after": "r2qkb1r/pp3ppp/2p2n2/1B1P1b2/1n1P4/1QN2P2/PP4PP/R1B1K1NR w KQkq - 0 10",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2603,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "eb6c764a0b29438b2a8582048ffc0bdb3cebbc56328b84e1c62bde542ec8ee88"
+    },
+    {
+      "game_id": "166827147588",
+      "ply": 23,
+      "split": "training",
+      "san": "Kf1",
+      "uci": "e1f1",
+      "fen_before": "r2qkb1r/p4ppp/2p2n2/5b2/2BP4/1QN2P2/PPn3PP/R1B1K1NR w KQkq - 2 12",
+      "fen_after": "r2qkb1r/p4ppp/2p2n2/5b2/2BP4/1QN2P2/PPn3PP/R1B2KNR b kq - 3 12",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "I_Will_be_FM",
+      "actual_mover_rating": 2619,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "02a6cadde1a6a9e4c2be2acae564327cc03d498b70a763dff43bb79e63c41a5f"
+    },
+    {
+      "game_id": "166827147588",
+      "ply": 42,
+      "split": "training",
+      "san": "Rxe3",
+      "uci": "e8e3",
+      "fen_before": "r2qr1k1/p2b1ppp/2nb1n2/8/2BP4/P1N1BP2/1P2NKPP/1Q1R4 b - - 6 21",
+      "fen_after": "r2q2k1/p2b1ppp/2nb1n2/8/2BP4/P1N1rP2/1P2NKPP/1Q1R4 w - - 0 22",
+      "label": "excellent",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2603,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "51ed6e0518961813ecdf713be17f91020cf456994f6e246a81381373c8286bbd"
+    },
+    {
+      "game_id": "166827147588",
+      "ply": 56,
+      "split": "training",
+      "san": "Bg4",
+      "uci": "d7g4",
+      "fen_before": "4r1k1/p2b1ppp/2n5/3B4/3PP3/P2Q2Pq/1P2NK1b/3R4 b - - 2 28",
+      "fen_after": "4r1k1/p4ppp/2n5/3B4/3PP1b1/P2Q2Pq/1P2NK1b/3R4 w - - 3 29",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2603,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "b72c675e2f74f9768ad3319c040259d399be24f90222f318777f436189b87ccc"
+    },
+    {
+      "game_id": "166827147588",
+      "ply": 57,
+      "split": "training",
+      "san": "Nf4",
+      "uci": "e2f4",
+      "fen_before": "4r1k1/p4ppp/2n5/3B4/3PP1b1/P2Q2Pq/1P2NK1b/3R4 w - - 3 29",
+      "fen_after": "4r1k1/p4ppp/2n5/3B4/3PPNb1/P2Q2Pq/1P3K1b/3R4 b - - 4 29",
+      "label": "good",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "I_Will_be_FM",
+      "actual_mover_rating": 2619,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "5f6f890992fb59980dfb317ba37a977ec6eeb37eeabaef472932e2322af7a8a8"
+    },
+    {
+      "game_id": "166827147588",
+      "ply": 58,
+      "split": "training",
+      "san": "Bxg3+",
+      "uci": "h2g3",
+      "fen_before": "4r1k1/p4ppp/2n5/3B4/3PPNb1/P2Q2Pq/1P3K1b/3R4 b - - 4 29",
+      "fen_after": "4r1k1/p4ppp/2n5/3B4/3PPNb1/P2Q2bq/1P3K2/3R4 w - - 0 30",
+      "label": "good",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2603,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "bc2e0273deccdacfdd7e69a7cdd1ec06f524a43aed6da3c9c6ed6efbbe355dde"
+    },
+    {
+      "game_id": "166827147588",
+      "ply": 66,
+      "split": "training",
+      "san": "gxf4+",
+      "uci": "g5f4",
+      "fen_before": "4r1k1/p2b1p1p/2B5/6p1/3PPN2/P5K1/1P6/7R b - - 0 33",
+      "fen_after": "4r1k1/p2b1p1p/2B5/8/3PPp2/P5K1/1P6/7R w - - 0 34",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2603,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "9e4dd683f6ee3f49a6064d4c5d1989150e4b302d7df7d8eaf9b509388d9796f0"
+    },
+    {
+      "game_id": "166827147588",
+      "ply": 75,
+      "split": "training",
+      "san": "Ke5",
+      "uci": "f4e5",
+      "fen_before": "6k1/p4p1p/3r4/3P4/5K2/P7/1P6/3R4 w - - 3 38",
+      "fen_after": "6k1/p4p1p/3r4/3PK3/8/P7/1P6/3R4 b - - 4 38",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "I_Will_be_FM",
+      "actual_mover_rating": 2619,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "e85fdc9ebbb3f25618bb242e83e65f6b079b422e4bc1d23f1400045c14f27944"
+    },
+    {
+      "game_id": "164292223322",
+      "ply": 25,
+      "split": "training",
+      "san": "Nxe4",
+      "uci": "d2e4",
+      "fen_before": "1r3rk1/p1p2ppp/2pq4/3p3b/QP1Pn3/2P1P2P/P2N1PP1/R3KB1R w KQ - 1 13",
+      "fen_after": "1r3rk1/p1p2ppp/2pq4/3p3b/QP1PN3/2P1P2P/P4PP1/R3KB1R b KQ - 0 13",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "bilflynn",
+      "actual_mover_rating": 2450,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "309c1084cc82028339ec1a2ea611c639efef4cb9030b4442508df21a1cb77b71"
+    },
+    {
+      "game_id": "164292223322",
+      "ply": 31,
+      "split": "training",
+      "san": "g3",
+      "uci": "g2g3",
+      "fen_before": "1r3rk1/p1p3pp/2pq4/5p2/QP1Pp3/2P1P2P/P3KPP1/R6R w - - 0 16",
+      "fen_after": "1r3rk1/p1p3pp/2pq4/5p2/QP1Pp3/2P1P1PP/P3KP2/R6R b - - 0 16",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "bilflynn",
+      "actual_mover_rating": 2450,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "876716137be34648e4d73b2abf7491e615a48e90cbab610553d5bfddc1252a86"
+    },
+    {
+      "game_id": "164292223322",
+      "ply": 33,
+      "split": "training",
+      "san": "gxf4",
+      "uci": "g3f4",
+      "fen_before": "1r3rk1/p1p3pp/2pq4/8/QP1Ppp2/2P1P1PP/P3KP2/R6R w - - 0 17",
+      "fen_after": "1r3rk1/p1p3pp/2pq4/8/QP1PpP2/2P1P2P/P3KP2/R6R b - - 0 17",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "bilflynn",
+      "actual_mover_rating": 2450,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "be9c4ea1083a33e55dfe1f899141db80787d57e88fe02c26f875339addaf1c3e"
+    },
+    {
+      "game_id": "164292223322",
+      "ply": 35,
+      "split": "training",
+      "san": "exf4",
+      "uci": "e3f4",
+      "fen_before": "1r4k1/p1p3pp/2pq4/8/QP1Ppr2/2P1P2P/P3KP2/R6R w - - 0 18",
+      "fen_after": "1r4k1/p1p3pp/2pq4/8/QP1PpP2/2P4P/P3KP2/R6R b - - 0 18",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "bilflynn",
+      "actual_mover_rating": 2450,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "540e45cbadff1cb0d47bd9685d8a3980b46f0d2fb501e311737a918d7be00528"
+    },
+    {
+      "game_id": "164292223322",
+      "ply": 94,
+      "split": "training",
+      "san": "Kd5",
+      "uci": "e6d5",
+      "fen_before": "8/8/1K2k3/2P5/8/6p1/R7/8 b - - 1 47",
+      "fen_after": "8/8/1K6/2Pk4/8/6p1/R7/8 w - - 2 48",
+      "label": "inaccuracy",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2421,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "6aadb4c6d528fffecad5dc1b79fe8695734b368b4df39f4a7aa9bb4c17f93175"
+    },
+    {
+      "game_id": "166707582754",
+      "ply": 13,
+      "split": "training",
+      "san": "a4",
+      "uci": "a2a4",
+      "fen_before": "r1bqk1nr/1p1nppbp/p2p2p1/2pP4/4PP2/2N2N2/PPP3PP/R1BQKB1R w KQkq - 0 7",
+      "fen_after": "r1bqk1nr/1p1nppbp/p2p2p1/2pP4/P3PP2/2N2N2/1PP3PP/R1BQKB1R b KQkq - 0 7",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3077,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "5e048a4e9c21210d0b73ead6dd891e2f23b04cdabd225dffec3047430e6c3a19"
+    },
+    {
+      "game_id": "166707582754",
+      "ply": 17,
+      "split": "training",
+      "san": "O-O",
+      "uci": "e1g1",
+      "fen_before": "r1bq1rk1/1p1nppbp/p2p1np1/2pP4/P1B1PP2/2N2N2/1PP3PP/R1BQK2R w KQ - 3 9",
+      "fen_after": "r1bq1rk1/1p1nppbp/p2p1np1/2pP4/P1B1PP2/2N2N2/1PP3PP/R1BQ1RK1 b - - 4 9",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3077,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "aaa2fada509ab1d46bc305a8374cd725ddea0a036b819d729e29517cdbd7b50f"
+    },
+    {
+      "game_id": "166707582754",
+      "ply": 35,
+      "split": "training",
+      "san": "Ra2",
+      "uci": "a3a2",
+      "fen_before": "r4rk1/q1nnppbp/p2p2p1/2pP4/N3PP2/R7/1PP1B1PP/2BQ1R1K w - - 6 18",
+      "fen_after": "r4rk1/q1nnppbp/p2p2p1/2pP4/N3PP2/8/RPP1B1PP/2BQ1R1K b - - 7 18",
+      "label": "miss",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3077,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "e1bd96e36ae2c5b27383b168aa327af63aca308eb8c00a3ab14a8cca8eec4d0f"
+    },
+    {
+      "game_id": "166707582754",
+      "ply": 65,
+      "split": "training",
+      "san": "gxf5",
+      "uci": "g4f5",
+      "fen_before": "8/4q1bk/p2p2p1/1npP1p1p/2B1rPP1/1PP2Q1P/R2B2K1/8 w - - 3 33",
+      "fen_after": "8/4q1bk/p2p2p1/1npP1P1p/2B1rP2/1PP2Q1P/R2B2K1/8 b - - 0 33",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3077,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "dafde58681f6aa22b8415eb8f85e1d8ac22d143291afdf5971d8f6f14fc2bab7"
+    },
+    {
+      "game_id": "166707582754",
+      "ply": 70,
+      "split": "training",
+      "san": "Rxc4",
+      "uci": "e4c4",
+      "fen_before": "8/6bk/p2p2q1/1npP3p/2B1rP2/1PP2Q1P/R2B3K/8 b - - 1 35",
+      "fen_after": "8/6bk/p2p2q1/1npP3p/2r2P2/1PP2Q1P/R2B3K/8 w - - 0 36",
+      "label": "excellent",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "abhidabhi",
+      "actual_mover_rating": 3048,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "3becd7beaebf3592ea3da1fc0361f747460db617b61b12a97137e5149b73507e"
+    },
+    {
+      "game_id": "166707582754",
+      "ply": 75,
+      "split": "training",
+      "san": "f5",
+      "uci": "f4f5",
+      "fen_before": "8/7k/p2p3b/1npP3Q/2P2P2/2P4P/R2B3K/1q6 w - - 1 38",
+      "fen_after": "8/7k/p2p3b/1npP1P1Q/2P5/2P4P/R2B3K/1q6 b - - 0 38",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3077,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "50f44c7917cd7f575597491eb923c57f368fe0408a543c76b48b4d7531193a7f"
+    },
+    {
+      "game_id": "167741309078",
+      "ply": 30,
+      "split": "training",
+      "san": "Nb6",
+      "uci": "d7b6",
+      "fen_before": "r2qr1k1/1p1n1ppp/2p1pn2/3p4/P1PP4/2BBP2P/P4PP1/R2QR1K1 b - - 0 15",
+      "fen_after": "r2qr1k1/1p3ppp/1np1pn2/3p4/P1PP4/2BBP2P/P4PP1/R2QR1K1 w - - 1 16",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "ODreamchess",
+      "actual_mover_rating": 2862,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "4d12c5c96a7cddcf2d5fc0b673166bbd64c10ba24c2a49fe614cc9cbed95cc79"
+    },
+    {
+      "game_id": "167741309078",
+      "ply": 40,
+      "split": "training",
+      "san": "b5",
+      "uci": "b7b5",
+      "fen_before": "4r1k1/1p3ppp/2p1pn2/q7/2pPP3/7P/P4PP1/RQ2R1K1 b - - 1 20",
+      "fen_after": "4r1k1/5ppp/2p1pn2/qp6/2pPP3/7P/P4PP1/RQ2R1K1 w - - 0 21",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "ODreamchess",
+      "actual_mover_rating": 2862,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "1364e545665677f54ed63e71fca5f0212e77692a893eb5914562b68e8d5b044d"
+    },
+    {
+      "game_id": "167741309078",
+      "ply": 43,
+      "split": "training",
+      "san": "a4",
+      "uci": "a2a4",
+      "fen_before": "3r2k1/5ppp/2p1pn2/qp6/2pPP3/7P/P4PP1/RQR3K1 w - - 2 22",
+      "fen_after": "3r2k1/5ppp/2p1pn2/qp6/P1pPP3/7P/5PP1/RQR3K1 b - - 0 22",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3002,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "9b5a4adf7a1f4d62d37166baf61328474476828547e60d22ec1fd84c124e7c88"
+    },
+    {
+      "game_id": "167741309078",
+      "ply": 45,
+      "split": "training",
+      "san": "Rxc4",
+      "uci": "c1c4",
+      "fen_before": "3r2k1/5ppp/1qp1pn2/1p6/P1pPP3/7P/5PP1/RQR3K1 w - - 1 23",
+      "fen_after": "3r2k1/5ppp/1qp1pn2/1p6/P1RPP3/7P/5PP1/RQ4K1 b - - 0 23",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3002,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "9d033b4dfcbcb66a70cf006a0604ab961c1bfa85c1a3af181f0635e43739eef5"
+    },
+    {
+      "game_id": "167741309078",
+      "ply": 46,
+      "split": "training",
+      "san": "Nxe4",
+      "uci": "f6e4",
+      "fen_before": "3r2k1/5ppp/1qp1pn2/1p6/P1RPP3/7P/5PP1/RQ4K1 b - - 0 23",
+      "fen_after": "3r2k1/5ppp/1qp1p3/1p6/P1RPn3/7P/5PP1/RQ4K1 w - - 0 24",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "ODreamchess",
+      "actual_mover_rating": 2862,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "06c3661794fe44ffc8640b32f355d4e8d7b402080b6d309da620029f994fe1ed"
+    },
+    {
+      "game_id": "167741309078",
+      "ply": 71,
+      "split": "training",
+      "san": "Kb5",
+      "uci": "c4b5",
+      "fen_before": "8/6pp/r3k3/P1Pppp2/1pK5/7P/5PP1/R7 w - - 0 36",
+      "fen_after": "8/6pp/r3k3/PKPppp2/1p6/7P/5PP1/R7 b - - 1 36",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3002,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "0f3b40ef06d480f7a912a8ec28107df0798a021516b9cea5532bbe652d52ea39"
+    },
+    {
+      "game_id": "167741309078",
+      "ply": 74,
+      "split": "training",
+      "san": "b3",
+      "uci": "b4b3",
+      "fen_before": "r7/6pp/2K1k3/P1Pppp2/1p6/7P/5PP1/R7 b - - 3 37",
+      "fen_after": "r7/6pp/2K1k3/P1Pppp2/8/1p5P/5PP1/R7 w - - 0 38",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "ODreamchess",
+      "actual_mover_rating": 2862,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "79a0ef6d6e74768a8c8cc3f1856174cef2163753df4244d4322160c9741ac4fd"
+    },
+    {
+      "game_id": "167741309078",
+      "ply": 75,
+      "split": "training",
+      "san": "Kb7",
+      "uci": "c6b7",
+      "fen_before": "r7/6pp/2K1k3/P1Pppp2/8/1p5P/5PP1/R7 w - - 0 38",
+      "fen_after": "r7/1K4pp/4k3/P1Pppp2/8/1p5P/5PP1/R7 b - - 1 38",
+      "label": "blunder",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3002,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "86082948a8664729edaaf0846d707149d189eedc48dd1a31153635c54fcd6425"
+    },
+    {
+      "game_id": "167741309078",
+      "ply": 76,
+      "split": "training",
+      "san": "b2",
+      "uci": "b3b2",
+      "fen_before": "r7/1K4pp/4k3/P1Pppp2/8/1p5P/5PP1/R7 b - - 1 38",
+      "fen_after": "r7/1K4pp/4k3/P1Pppp2/8/7P/1p3PP1/R7 w - - 0 39",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "ODreamchess",
+      "actual_mover_rating": 2862,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "279472dc86835f19b79720955925bba7b29e038fc9cd1ef8737a535e1f96fc76"
+    },
+    {
+      "game_id": "166851185648",
+      "ply": 23,
+      "split": "training",
+      "san": "Bxf6",
+      "uci": "g5f6",
+      "fen_before": "r4r1k/ppp3pp/2nb1n2/3p2Bq/6b1/2PBPN2/PPQN1PPP/2KR3R w - - 5 12",
+      "fen_after": "r4r1k/ppp3pp/2nb1B2/3p3q/6b1/2PBPN2/PPQN1PPP/2KR3R b - - 0 12",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "BJJfighter123",
+      "actual_mover_rating": 2592,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "2d5bff72e864532c36a81a2ecef209618a2ba41da830ad210a67d6a9d8cd8adb"
+    },
+    {
+      "game_id": "166851185648",
+      "ply": 29,
+      "split": "training",
+      "san": "Bxf5",
+      "uci": "d3f5",
+      "fen_before": "5r1k/ppp3pp/2nb1r2/3p1b1q/8/2PBPN1P/PPQN1PP1/2K1R2R w - - 1 15",
+      "fen_after": "5r1k/ppp3pp/2nb1r2/3p1B1q/8/2P1PN1P/PPQN1PP1/2K1R2R b - - 0 15",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "BJJfighter123",
+      "actual_mover_rating": 2592,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "f6821f6b325e4d69fc53c4e14bf7be48ee1f9cd249c5e40d726d256dcb16981f"
+    },
+    {
+      "game_id": "166851185648",
+      "ply": 45,
+      "split": "training",
+      "san": "Nxe4",
+      "uci": "d2e4",
+      "fen_before": "4r2k/pp4pp/2p5/5r2/4p3/2P2PbP/PP1N2P1/2KR3R w - - 0 23",
+      "fen_after": "4r2k/pp4pp/2p5/5r2/4N3/2P2PbP/PP4P1/2KR3R b - - 0 23",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "BJJfighter123",
+      "actual_mover_rating": 2592,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "d8290241630633db092d622ac326113d2c6453477a18899353a1e4663bf8ff72"
+    },
+    {
+      "game_id": "166851185648",
+      "ply": 50,
+      "split": "training",
+      "san": "h6",
+      "uci": "h7h6",
+      "fen_before": "4r2k/pp4pp/2p5/r7/4Nb2/P1P2P1P/1PK3P1/3R3R b - - 0 25",
+      "fen_after": "4r2k/pp4p1/2p4p/r7/4Nb2/P1P2P1P/1PK3P1/3R3R w - - 0 26",
+      "label": "inaccuracy",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2581,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "cf85edfdf331946a1f1e5e28dc8d23e4d20434dfdaac6e750e18a293c7b63ef2"
+    },
+    {
+      "game_id": "166851185648",
+      "ply": 61,
+      "split": "training",
+      "san": "Nxc3",
+      "uci": "e4c3",
+      "fen_before": "4r2k/1p1R1Rp1/2p4p/pr6/4NP2/P1b4P/1PK3P1/8 w - - 0 31",
+      "fen_after": "4r2k/1p1R1Rp1/2p4p/pr6/5P2/P1N4P/1PK3P1/8 b - - 0 31",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "BJJfighter123",
+      "actual_mover_rating": 2592,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "2606e3f852f3e5e90f7e9a1cf0bd663f2afc7a6de9bdd011a83b0a92ed68f16e"
+    },
+    {
+      "game_id": "173279198536",
+      "ply": 41,
+      "split": "training",
+      "san": "Ne2",
+      "uci": "c3e2",
+      "fen_before": "r4rk1/2q1bpp1/1npp4/6P1/1p1PPB2/PPN2B1b/3Q1R2/R5K1 w - - 0 21",
+      "fen_after": "r4rk1/2q1bpp1/1npp4/6P1/1p1PPB2/PP3B1b/3QNR2/R5K1 b - - 1 21",
+      "label": "miss",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "aldareee",
+      "actual_mover_rating": 2786,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "812379ef7d54d6dec859bd2cd6954cffe485cec6d80bbe9c6b09d510d133a2a2"
+    },
+    {
+      "game_id": "173279198536",
+      "ply": 51,
+      "split": "training",
+      "san": "Kh1",
+      "uci": "g1h1",
+      "fen_before": "5rk1/4bpp1/1npp4/3P2P1/1p1NPBq1/5r1b/3Q3R/2R3K1 w - - 3 26",
+      "fen_after": "5rk1/4bpp1/1npp4/3P2P1/1p1NPBq1/5r1b/3Q3R/2R4K b - - 4 26",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "aldareee",
+      "actual_mover_rating": 2786,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "c696d5e29e8f2e48938318d2bd01099855351c82601ac42c4f5fbbd6918b05d3"
+    },
+    {
+      "game_id": "173279198536",
+      "ply": 56,
+      "split": "training",
+      "san": "Rxf5",
+      "uci": "f4f5",
+      "fen_before": "5rk1/4bpp1/1npp4/3P1NP1/1p2Pr1q/7b/3Q3R/6RK b - - 3 28",
+      "fen_after": "5rk1/4bpp1/1npp4/3P1rP1/1p2P2q/7b/3Q3R/6RK w - - 0 29",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "KNVB",
+      "actual_mover_rating": 3125,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "cddfccb41ed2a7d56a25075a632d49a87e17e541dcaa773084933f057235c500"
+    },
+    {
+      "game_id": "173279198536",
+      "ply": 59,
+      "split": "training",
+      "san": "Rgg2",
+      "uci": "g1g2",
+      "fen_before": "5rk1/4bpp1/1npp4/3P1PP1/1p2q3/7b/3Q3R/6RK w - - 1 30",
+      "fen_after": "5rk1/4bpp1/1npp4/3P1PP1/1p2q3/7b/3Q2RR/7K b - - 2 30",
+      "label": "excellent",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "aldareee",
+      "actual_mover_rating": 2786,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "d96a52a08ab3e0fd5a7963cb2255aef10dda22301ee4d3fe5cdd55f08abdac66"
+    },
+    {
+      "game_id": "173279198536",
+      "ply": 64,
+      "split": "training",
+      "san": "Nf4",
+      "uci": "d5f4",
+      "fen_before": "5rk1/4bpp1/2pp1P2/3n2P1/1p2q3/8/3Q2R1/7K b - - 0 32",
+      "fen_after": "5rk1/4bpp1/2pp1P2/6P1/1p2qn2/8/3Q2R1/7K w - - 1 33",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "KNVB",
+      "actual_mover_rating": 3125,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "0dac861bee2beea20db83a08536a7824d98e8fbae29175733962baa5731cac08"
+    },
+    {
+      "game_id": "168419894922",
+      "ply": 22,
+      "split": "training",
+      "san": "bxc6",
+      "uci": "b7c6",
+      "fen_before": "r1bq1rk1/pp2ppbp/2N3p1/2pn4/2NP4/2P3P1/P3PPBP/R1BQ1RK1 b - - 0 11",
+      "fen_after": "r1bq1rk1/p3ppbp/2p3p1/2pn4/2NP4/2P3P1/P3PPBP/R1BQ1RK1 w - - 0 12",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3085,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "f17925800e778bcd834ccd4cceba421a112a3352d312e674253b6f1c46f15cc2"
+    },
+    {
+      "game_id": "168419894922",
+      "ply": 25,
+      "split": "training",
+      "san": "Rb1",
+      "uci": "a1b1",
+      "fen_before": "1rbq1rk1/p3ppbp/2p3p1/2pn4/2NP4/2P3P1/PB2PPBP/R2Q1RK1 w - - 2 13",
+      "fen_after": "1rbq1rk1/p3ppbp/2p3p1/2pn4/2NP4/2P3P1/PB2PPBP/1R1Q1RK1 b - - 3 13",
+      "label": "mistake",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "Sajid0987654321",
+      "actual_mover_rating": 2791,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "3a5b0c981fd9073dcf74a47941c3534c1489d6a0d28b2ceee8034aff4f4fe55c"
+    },
+    {
+      "game_id": "168419894922",
+      "ply": 26,
+      "split": "training",
+      "san": "Rxb2",
+      "uci": "b8b2",
+      "fen_before": "1rbq1rk1/p3ppbp/2p3p1/2pn4/2NP4/2P3P1/PB2PPBP/1R1Q1RK1 b - - 3 13",
+      "fen_after": "2bq1rk1/p3ppbp/2p3p1/2pn4/2NP4/2P3P1/Pr2PPBP/1R1Q1RK1 w - - 0 14",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3085,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "bada80e486871168c1cdfa09bc563a5247e8bb9df258a6dc4d68cbb0f39248e4"
+    },
+    {
+      "game_id": "168419894922",
+      "ply": 27,
+      "split": "training",
+      "san": "Rxb2",
+      "uci": "b1b2",
+      "fen_before": "2bq1rk1/p3ppbp/2p3p1/2pn4/2NP4/2P3P1/Pr2PPBP/1R1Q1RK1 w - - 0 14",
+      "fen_after": "2bq1rk1/p3ppbp/2p3p1/2pn4/2NP4/2P3P1/PR2PPBP/3Q1RK1 b - - 0 14",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "Sajid0987654321",
+      "actual_mover_rating": 2791,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "2f496dd124b4a41fb2d1537b0fbffe0abb0a7e257eaebe3700670b92ef540fcd"
+    },
+    {
+      "game_id": "168419894922",
+      "ply": 32,
+      "split": "training",
+      "san": "Qc7",
+      "uci": "d8c7",
+      "fen_before": "2bq1rk1/p3ppbp/2B3p1/8/2Np4/2nQ2P1/PR2PP1P/5RK1 b - - 0 16",
+      "fen_after": "2b2rk1/p1q1ppbp/2B3p1/8/2Np4/2nQ2P1/PR2PP1P/5RK1 w - - 1 17",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3085,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "a635b23bb5fa8a3f2770f1b28bda23a833c876a0e144e2c5e52a5eea7737c9c5"
+    },
+    {
+      "game_id": "168772277524",
+      "ply": 30,
+      "split": "training",
+      "san": "Ng4",
+      "uci": "f6g4",
+      "fen_before": "2rq1rk1/3nbppp/b3pn2/p1p5/1p1PP3/4QNP1/PP1BNPBP/R2R2K1 b - - 3 15",
+      "fen_after": "2rq1rk1/3nbppp/b3p3/p1p5/1p1PP1n1/4QNP1/PP1BNPBP/R2R2K1 w - - 4 16",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3085,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "747e3b925e1b30f3d5e2beed4be70b1dd7c0bd7ac373d3725704b5e827baa65e"
+    },
+    {
+      "game_id": "168772277524",
+      "ply": 31,
+      "split": "training",
+      "san": "Qf4",
+      "uci": "e3f4",
+      "fen_before": "2rq1rk1/3nbppp/b3p3/p1p5/1p1PP1n1/4QNP1/PP1BNPBP/R2R2K1 w - - 4 16",
+      "fen_after": "2rq1rk1/3nbppp/b3p3/p1p5/1p1PPQn1/5NP1/PP1BNPBP/R2R2K1 b - - 5 16",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "Naaas1",
+      "actual_mover_rating": 2900,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "c3d46583e791d634c4f3ea330c26f2dbd7c26aa926a0d40e9fa6b63c58d2933e"
+    },
+    {
+      "game_id": "168772277524",
+      "ply": 38,
+      "split": "training",
+      "san": "Bf6",
+      "uci": "e7f6",
+      "fen_before": "2rq1rk1/3nbppp/4p2B/p7/1p1pP1Q1/5NP1/PP3PBP/3R2K1 b - - 1 19",
+      "fen_after": "2rq1rk1/3n1ppp/4pb1B/p7/1p1pP1Q1/5NP1/PP3PBP/3R2K1 w - - 2 20",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3085,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "333a9e5a9de18a9497dfa826fa9ab08e500f4b48d656e987bc6f70f3866c0161"
+    },
+    {
+      "game_id": "168772277524",
+      "ply": 39,
+      "split": "training",
+      "san": "Rxd4",
+      "uci": "d1d4",
+      "fen_before": "2rq1rk1/3n1ppp/4pb1B/p7/1p1pP1Q1/5NP1/PP3PBP/3R2K1 w - - 2 20",
+      "fen_after": "2rq1rk1/3n1ppp/4pb1B/p7/1p1RP1Q1/5NP1/PP3PBP/6K1 b - - 0 20",
+      "label": "good",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "Naaas1",
+      "actual_mover_rating": 2900,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "1a67c48b8082eedb575a62fe0c91d6c13ef58bc828f727e2d034bd16e56af7f7"
+    },
+    {
+      "game_id": "168772277524",
+      "ply": 42,
+      "split": "training",
+      "san": "g6",
+      "uci": "g7g6",
+      "fen_before": "2rq1rk1/3n1ppp/4p2B/p3P3/1p1b2Q1/5NP1/PP3PBP/6K1 b - - 0 21",
+      "fen_after": "2rq1rk1/3n1p1p/4p1pB/p3P3/1p1b2Q1/5NP1/PP3PBP/6K1 w - - 0 22",
+      "label": "good",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3085,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "6a40c879c05dab5ab6e0d4243b5a97dc24ce324f9a2bf7c82e99d722db39bbeb"
+    },
+    {
+      "game_id": "168772277524",
+      "ply": 44,
+      "split": "training",
+      "san": "Nc5",
+      "uci": "d7c5",
+      "fen_before": "2rq1rk1/3n1p1p/4p1pB/p3P3/1p1Q4/5NP1/PP3PBP/6K1 b - - 0 22",
+      "fen_after": "2rq1rk1/5p1p/4p1pB/p1n1P3/1p1Q4/5NP1/PP3PBP/6K1 w - - 1 23",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3085,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "cb707726c071e2b87689ff11107a35aeb4c461dc9e6a87f616e03b25d4cdc7e5"
+    },
+    {
+      "game_id": "168772277524",
+      "ply": 48,
+      "split": "training",
+      "san": "Qxf6",
+      "uci": "d8f6",
+      "fen_before": "2rq1rk1/7p/4pPpB/p1n5/1p3Q2/5NP1/PP3PBP/6K1 b - - 0 24",
+      "fen_after": "2r2rk1/7p/4pqpB/p1n5/1p3Q2/5NP1/PP3PBP/6K1 w - - 0 25",
+      "label": "good",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3085,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "d781f7864c8888cef738cf555350d86fb2e34b6d6a2df8feb5e1ef9fd90b651d"
+    },
+    {
+      "game_id": "168772277524",
+      "ply": 64,
+      "split": "training",
+      "san": "Nd4",
+      "uci": "f3d4",
+      "fen_before": "2r3k1/7p/4pqpB/p7/1p5P/5nPB/PP2QPK1/8 b - - 6 32",
+      "fen_after": "2r3k1/7p/4pqpB/p7/1p1n3P/6PB/PP2QPK1/8 w - - 7 33",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3085,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "9384ac3d5c0ae3fc3f07456b6020e835a3eeaf9fc1cbf56105e426c40745091c"
+    },
+    {
+      "game_id": "168772277524",
+      "ply": 68,
+      "split": "training",
+      "san": "e5",
+      "uci": "e6e5",
+      "fen_before": "4r1k1/7p/4pqpB/p7/1p1n1P1P/4Q1PB/PP4K1/8 b - - 0 34",
+      "fen_after": "4r1k1/7p/5qpB/p3p3/1p1n1P1P/4Q1PB/PP4K1/8 w - - 0 35",
+      "label": "miss",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3085,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "fbaeee785c3a41ebea13adaa7d03eebeba52b46108cd071f77231eb1f8193b83"
+    },
+    {
+      "game_id": "167734662094",
+      "ply": 25,
+      "split": "training",
+      "san": "Bb1",
+      "uci": "d3b1",
+      "fen_before": "r1bq1rk1/4bppp/p3p3/1pnn4/8/3BPNB1/PP1N1PPP/2RQ1RK1 w - - 0 13",
+      "fen_after": "r1bq1rk1/4bppp/p3p3/1pnn4/8/4PNB1/PP1N1PPP/1BRQ1RK1 b - - 1 13",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "Barad_Yeganegi01",
+      "actual_mover_rating": 2924,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "7a6a1ba75278a85d62a05c7c9f452567ab1d8909737852d5658909f10d9dab8b"
+    },
+    {
+      "game_id": "167734662094",
+      "ply": 36,
+      "split": "training",
+      "san": "g6",
+      "uci": "g7g6",
+      "fen_before": "2rq1rk1/4bppp/pn2p3/1p1b4/n2N4/P2QPNB1/1P3PPP/1BR2RK1 b - - 8 18",
+      "fen_after": "2rq1rk1/4bp1p/pn2p1p1/1p1b4/n2N4/P2QPNB1/1P3PPP/1BR2RK1 w - - 0 19",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3037,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "c0d74205f1c950574a2a1b5b51bb3c5509f91406d907cd87e3007b8bb2f63d77"
+    },
+    {
+      "game_id": "167734662094",
+      "ply": 48,
+      "split": "training",
+      "san": "bxc4",
+      "uci": "b5c4",
+      "fen_before": "2r2rk1/4bp1p/p3p1p1/1p1q4/1PNNb3/P3P1B1/5PPP/2RQ1RK1 b - - 0 24",
+      "fen_after": "2r2rk1/4bp1p/p3p1p1/3q4/1PpNb3/P3P1B1/5PPP/2RQ1RK1 w - - 0 25",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3037,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "bef2ed24313f297d61f0b10174caf7e2cf0284945f725593abbde9a0eb9ad52b"
+    },
+    {
+      "game_id": "167734662094",
+      "ply": 50,
+      "split": "training",
+      "san": "Bd3",
+      "uci": "e4d3",
+      "fen_before": "2r2rk1/4bp1p/p3p1p1/3q4/1PpNb3/P3PPB1/6PP/2RQ1RK1 b - - 0 25",
+      "fen_after": "2r2rk1/4bp1p/p3p1p1/3q4/1PpN4/P2bPPB1/6PP/2RQ1RK1 w - - 1 26",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3037,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "da005db2078b8dec939dc56d70e9013934edd7a204718e16f9a5e88d6cc6ab4c"
+    },
+    {
+      "game_id": "167734662094",
+      "ply": 52,
+      "split": "training",
+      "san": "e5",
+      "uci": "e6e5",
+      "fen_before": "2r2rk1/4bp1p/p3p1p1/3q4/1PpN4/P2bPPB1/6PP/2RQR1K1 b - - 2 26",
+      "fen_after": "2r2rk1/4bp1p/p5p1/3qp3/1PpN4/P2bPPB1/6PP/2RQR1K1 w - - 0 27",
+      "label": "mistake",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3037,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "6c8512fabaff585503517861d6005438f83b5f7ea444aeaf543e071283aabf9c"
+    },
+    {
+      "game_id": "167734662094",
+      "ply": 62,
+      "split": "training",
+      "san": "Bxb4",
+      "uci": "e7b4",
+      "fen_before": "2r2rk1/4b2p/4qpp1/3Np3/1Pp1P3/3b1PB1/6PP/2RQR1K1 b - - 0 31",
+      "fen_after": "2r2rk1/7p/4qpp1/3Np3/1bp1P3/3b1PB1/6PP/2RQR1K1 w - - 0 32",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3037,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "92872dad46a58cb5e75f4946d42e1ca62e0df2a4b52acb2e62335d95b8816c91"
+    },
+    {
+      "game_id": "167734662094",
+      "ply": 64,
+      "split": "training",
+      "san": "Qb6+",
+      "uci": "e6b6",
+      "fen_before": "2r2rk1/7p/4qpp1/4p3/1Np1P3/3b1PB1/6PP/2RQR1K1 b - - 0 32",
+      "fen_after": "2r2rk1/7p/1q3pp1/4p3/1Np1P3/3b1PB1/6PP/2RQR1K1 w - - 1 33",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3037,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "6d4004749ae4e361ca38220e34d603eaee6a15753ea5999600178e420f9483ac"
+    },
+    {
+      "game_id": "167734662094",
+      "ply": 72,
+      "split": "training",
+      "san": "c3",
+      "uci": "c4c3",
+      "fen_before": "5rk1/7p/5pp1/4p3/1qp1P3/3b1P2/5BPP/Q3R1K1 b - - 0 36",
+      "fen_after": "5rk1/7p/5pp1/4p3/1q2P3/2pb1P2/5BPP/Q3R1K1 w - - 0 37",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3037,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "a33e51f117461bbc4915ff1302a73ea0cb5d56c4317678c6621a6f30ac678ce0"
+    },
+    {
+      "game_id": "167734662094",
+      "ply": 91,
+      "split": "training",
+      "san": "Kg3",
+      "uci": "f2g3",
+      "fen_before": "8/3r2kp/8/2q1pp1R/4P3/3b1P2/Q1p2KP1/2B5 w - - 1 46",
+      "fen_after": "8/3r2kp/8/2q1pp1R/4P3/3b1PK1/Q1p3P1/2B5 b - - 2 46",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "Barad_Yeganegi01",
+      "actual_mover_rating": 2924,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "82c86f24818f63003474189c1d8f5f31a33077c0c7fb2a80f10e3c383efc74bc"
+    },
+    {
+      "game_id": "167734662094",
+      "ply": 92,
+      "split": "training",
+      "san": "f4+",
+      "uci": "f5f4",
+      "fen_before": "8/3r2kp/8/2q1pp1R/4P3/3b1PK1/Q1p3P1/2B5 b - - 2 46",
+      "fen_after": "8/3r2kp/8/2q1p2R/4Pp2/3b1PK1/Q1p3P1/2B5 w - - 0 47",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3037,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "13408b515dbed65838cd833e7fe15d1e4bfe43036b2c5f0f3509cb255c9b9c16"
+    },
+    {
+      "game_id": "167734662094",
+      "ply": 104,
+      "split": "training",
+      "san": "Kg5",
+      "uci": "g6g5",
+      "fen_before": "8/3r3p/2Q3k1/4p3/2b1PpP1/8/2p3PK/2B5 b - - 2 52",
+      "fen_after": "8/3r3p/2Q5/4p1k1/2b1PpP1/8/2p3PK/2B5 w - - 3 53",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3037,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "f800c54a8b253afd9fcefdd35483842481459d7ef703a675e27d4c4a80997ed0"
+    },
+    {
+      "game_id": "185826617862",
+      "ply": 29,
+      "split": "training",
+      "san": "Nd4",
+      "uci": "e2d4",
+      "fen_before": "2kr3r/ppp2ppp/8/2b5/8/2P1P2P/PPK1N1P1/R6R w - - 1 15",
+      "fen_after": "2kr3r/ppp2ppp/8/2b5/3N4/2P1P2P/PPK3P1/R6R b - - 2 15",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "Rizatomy",
+      "actual_mover_rating": 2436,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "7cb83ba271ededcc82d8229beab3a98c512554955a81c4918cd96ba224339315"
+    },
+    {
+      "game_id": "185826617862",
+      "ply": 53,
+      "split": "training",
+      "san": "Rc5",
+      "uci": "d5c5",
+      "fen_before": "2k1r3/1p2r1bp/p1p3p1/3R4/PP2Pp2/2PK3P/2N3P1/4R3 w - - 0 27",
+      "fen_after": "2k1r3/1p2r1bp/p1p3p1/2R5/PP2Pp2/2PK3P/2N3P1/4R3 b - - 1 27",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "Rizatomy",
+      "actual_mover_rating": 2436,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "1d2e24a7f1be55855487c5989aa16f505f3f1efdd4b226852620e36258b87e18"
+    },
+    {
+      "game_id": "185826617862",
+      "ply": 56,
+      "split": "training",
+      "san": "Rd2",
+      "uci": "d7d2",
+      "fen_before": "2k1r3/1p1r2bp/p1p3p1/2R5/PPK1Pp2/2P4P/2N3P1/4R3 b - - 3 28",
+      "fen_after": "2k1r3/1p4bp/p1p3p1/2R5/PPK1Pp2/2P4P/2Nr2P1/4R3 w - - 4 29",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2499,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "26f896080686b8689ae2fe0cef138ef8906f03ba1c29c86dd95aba6c49fbf571"
+    },
+    {
+      "game_id": "185826617862",
+      "ply": 62,
+      "split": "training",
+      "san": "g5",
+      "uci": "g6g5",
+      "fen_before": "2k1rb2/1p5p/p1p3p1/8/PPR1Pp2/1KP4P/2N3r1/5R2 b - - 1 31",
+      "fen_after": "2k1rb2/1p5p/p1p5/6p1/PPR1Pp2/1KP4P/2N3r1/5R2 w - - 0 32",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2499,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "a9e710fe9770c2d4f8009e23b2cc694ddb382c29e6be9cef9c414539b59e0941"
+    },
+    {
+      "game_id": "185826617862",
+      "ply": 63,
+      "split": "training",
+      "san": "Rf3",
+      "uci": "f1f3",
+      "fen_before": "2k1rb2/1p5p/p1p5/6p1/PPR1Pp2/1KP4P/2N3r1/5R2 w - - 0 32",
+      "fen_after": "2k1rb2/1p5p/p1p5/6p1/PPR1Pp2/1KP2R1P/2N3r1/8 b - - 1 32",
+      "label": "inaccuracy",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "Rizatomy",
+      "actual_mover_rating": 2436,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "e5a230914f4b311825a409190d71b2649b59825fa6af23696e702a7c7509ce74"
+    },
+    {
+      "game_id": "185826617862",
+      "ply": 91,
+      "split": "training",
+      "san": "Ke3",
+      "uci": "f3e3",
+      "fen_before": "8/2k5/2p5/6p1/2R1PN1p/2P2KpP/5r2/8 w - - 1 46",
+      "fen_after": "8/2k5/2p5/6p1/2R1PN1p/2P1K1pP/5r2/8 b - - 2 46",
+      "label": "excellent",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "Rizatomy",
+      "actual_mover_rating": 2436,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "ceea7480686cbe44b8bc965269780cdc5148bddbd982537dcd6e74d3ba0063c9"
+    },
+    {
+      "game_id": "185826617862",
+      "ply": 92,
+      "split": "training",
+      "san": "Rxf4",
+      "uci": "f2f4",
+      "fen_before": "8/2k5/2p5/6p1/2R1PN1p/2P1K1pP/5r2/8 b - - 2 46",
+      "fen_after": "8/2k5/2p5/6p1/2R1Pr1p/2P1K1pP/8/8 w - - 0 47",
+      "label": "excellent",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2499,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "30e563c1bfb04c7d64e0e36713b79594e6c80f5137c40e5c9ae90b0b5981132d"
+    },
+    {
+      "game_id": "167256015132",
+      "ply": 22,
+      "split": "training",
+      "san": "axb4",
+      "uci": "a5b4",
+      "fen_before": "rnbq1rk1/1p3pp1/3b1n1p/p1p1p3/1PPp4/P2P1NP1/3NPPBP/1RBQ1RK1 b - - 0 11",
+      "fen_after": "rnbq1rk1/1p3pp1/3b1n1p/2p1p3/1pPp4/P2P1NP1/3NPPBP/1RBQ1RK1 w - - 0 12",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3025,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "9fceccf1ad1a057b64269575e59635e62d4e5a862127eb0f3db78c6e069a7c1a"
+    },
+    {
+      "game_id": "167256015132",
+      "ply": 29,
+      "split": "training",
+      "san": "Bxe3",
+      "uci": "c1e3",
+      "fen_before": "r1bq1rk1/1p3pp1/2nb1n1p/4p3/1pP5/1N1PpNP1/5PBP/1RBQ1RK1 w - - 0 15",
+      "fen_after": "r1bq1rk1/1p3pp1/2nb1n1p/4p3/1pP5/1N1PBNP1/5PBP/1R1Q1RK1 b - - 0 15",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "Luca_is_bad_at_chess",
+      "actual_mover_rating": 2799,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "5633e6bd19c6b4dff79f8265996d7786720f443ea0ddf977cb2f119d5d32c7cc"
+    },
+    {
+      "game_id": "167256015132",
+      "ply": 31,
+      "split": "training",
+      "san": "Rb2",
+      "uci": "b1b2",
+      "fen_before": "r2q1rk1/1p3pp1/2nb1n1p/4pb2/1pP5/1N1PBNP1/5PBP/1R1Q1RK1 w - - 1 16",
+      "fen_after": "r2q1rk1/1p3pp1/2nb1n1p/4pb2/1pP5/1N1PBNP1/1R3PBP/3Q1RK1 b - - 2 16",
+      "label": "inaccuracy",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "Luca_is_bad_at_chess",
+      "actual_mover_rating": 2799,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "87a853cedf42de9fb2160fd8a72bdbba18b8c8ebed10bfe59dd1f943f260bdfe"
+    },
+    {
+      "game_id": "167256015132",
+      "ply": 46,
+      "split": "training",
+      "san": "Rxe3",
+      "uci": "a3e3",
+      "fen_before": "4r1k1/1p1q1pp1/3b1nbp/3P1n2/1pPNp3/r3B1PP/1R1NQPBK/5R2 b - - 2 23",
+      "fen_after": "4r1k1/1p1q1pp1/3b1nbp/3P1n2/1pPNp3/4r1PP/1R1NQPBK/5R2 w - - 0 24",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "hansen",
+      "actual_mover_rating": 3025,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "d6129219454ebbde2e0cc8835fd89bb0fa5580452df6b9b2deb857627b5afab1"
+    },
+    {
+      "game_id": "167256015132",
+      "ply": 47,
+      "split": "training",
+      "san": "fxe3",
+      "uci": "f2e3",
+      "fen_before": "4r1k1/1p1q1pp1/3b1nbp/3P1n2/1pPNp3/4r1PP/1R1NQPBK/5R2 w - - 0 24",
+      "fen_after": "4r1k1/1p1q1pp1/3b1nbp/3P1n2/1pPNp3/4P1PP/1R1NQ1BK/5R2 b - - 0 24",
+      "label": "excellent",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "Luca_is_bad_at_chess",
+      "actual_mover_rating": 2799,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "1846083911a5a6fa554271b2afcac434a9d3b636baf0e5d50dc63f1c431eeeb2"
+    },
+    {
+      "game_id": "167072458532",
+      "ply": 6,
+      "split": "training",
+      "san": "Bd6",
+      "uci": "f8d6",
+      "fen_before": "rnbqkb1r/pppp1ppp/5n2/4N3/4P3/8/PPPP1PPP/RNBQKB1R b KQkq - 0 3",
+      "fen_after": "rnbqk2r/pppp1ppp/3b1n2/4N3/4P3/8/PPPP1PPP/RNBQKB1R w KQkq - 1 4",
+      "label": "mistake",
+      "is_brilliant": false,
+      "negative_bucket": "easy_error",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "Bacarz2006",
+      "actual_mover_rating": 2524,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "d903fc96f3febea948f8905f8b8a38eec0ec830622175be66318f8335ad08c4e"
+    },
+    {
+      "game_id": "167072458532",
+      "ply": 31,
+      "split": "training",
+      "san": "Rxf7",
+      "uci": "f3f7",
+      "fen_before": "rn1qr1k1/pp3pp1/2p4p/8/4p3/2PB1RQ1/PPP3PP/3R2K1 w - - 0 16",
+      "fen_after": "rn1qr1k1/pp3Rp1/2p4p/8/4p3/2PB2Q1/PPP3PP/3R2K1 b - - 0 16",
+      "label": "brilliant",
+      "is_brilliant": true,
+      "negative_bucket": "positive",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2568,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "5114ebccdf8e2dc8d2f9c3a3a161927a94ec2f5596f6cb7d58e696d834c278b3"
+    },
+    {
+      "game_id": "167072458532",
+      "ply": 33,
+      "split": "training",
+      "san": "Qxg5",
+      "uci": "g3g5",
+      "fen_before": "rn2r1k1/pp3Rp1/2p4p/6q1/4p3/2PB2Q1/PPP3PP/3R2K1 w - - 1 17",
+      "fen_after": "rn2r1k1/pp3Rp1/2p4p/6Q1/4p3/2PB4/PPP3PP/3R2K1 b - - 0 17",
+      "label": "excellent",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2568,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "b3bfd63e4c43368749e0d3470564cd281debc4436f89a7daa6eb67912e545942"
+    },
+    {
+      "game_id": "167072458532",
+      "ply": 35,
+      "split": "training",
+      "san": "Bc4",
+      "uci": "d3c4",
+      "fen_before": "rn2r1k1/pp3Rp1/2p5/6p1/4p3/2PB4/PPP3PP/3R2K1 w - - 0 18",
+      "fen_after": "rn2r1k1/pp3Rp1/2p5/6p1/2B1p3/2P5/PPP3PP/3R2K1 b - - 1 18",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2568,
+      "source_types": [
+        "explicit_review_export_NAG",
+        "visible_Game_Review"
+      ],
+      "example_key": "a8e0398dd208237bb9499c30e401afed11194dbe25a0ca453908f51f28cc56b5"
+    },
+    {
+      "game_id": "167072458532",
+      "ply": 43,
+      "split": "training",
+      "san": "Bd5",
+      "uci": "b3d5",
+      "fen_before": "rn2r3/5Rpk/8/ppp3p1/4p1P1/PBP5/1PP4P/3R2K1 w - - 0 22",
+      "fen_after": "rn2r3/5Rpk/8/pppB2p1/4p1P1/P1P5/1PP4P/3R2K1 b - - 1 22",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2568,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "2fe127c82562ab43a1f06d9d29013d3e75b1940664080ab0baed0491fe8baefa"
+    },
+    {
+      "game_id": "167072458532",
+      "ply": 51,
+      "split": "training",
+      "san": "Bh7+",
+      "uci": "e4h7",
+      "fen_before": "1n2r1k1/8/5p2/ppp3p1/4B1P1/P1P5/1PP4P/4R1K1 w - - 0 26",
+      "fen_after": "1n2r1k1/7B/5p2/ppp3p1/6P1/P1P5/1PP4P/4R1K1 b - - 1 26",
+      "label": "best",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": true,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2568,
+      "source_types": [
+        "visible_Game_Review"
+      ],
+      "example_key": "8d15232f724d6a3dc351bc1cc35b20ad02bc553b44bf69089228b0f7ca459919"
+    },
+    {
+      "game_id": "167072458532",
+      "ply": 63,
+      "split": "training",
+      "san": "Kf2",
+      "uci": "g1f2",
+      "fen_before": "1n6/4k3/5p2/6p1/1pB3P1/8/1PP4P/6K1 w - - 2 32",
+      "fen_after": "1n6/4k3/5p2/6p1/1pB3P1/8/1PP2K1P/8 b - - 3 32",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2568,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "c44f2ab7a63932e317ffb5a8b4138d13a3fc9abbb3c15ffccbd278db0ab4aea4"
+    },
+    {
+      "game_id": "167072458532",
+      "ply": 65,
+      "split": "training",
+      "san": "Ke3",
+      "uci": "f2e3",
+      "fen_before": "1n6/8/3k1p2/6p1/1pB3P1/8/1PP2K1P/8 w - - 4 33",
+      "fen_after": "1n6/8/3k1p2/6p1/1pB3P1/4K3/1PP4P/8 b - - 5 33",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2568,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "e6078ff5951703703d9fdc24dfee0df943d486a51e9c8db74686364b6020a900"
+    },
+    {
+      "game_id": "167072458532",
+      "ply": 69,
+      "split": "training",
+      "san": "Ke4",
+      "uci": "e3e4",
+      "fen_before": "8/8/2n2p2/2k3p1/1pB3P1/1P2K3/2P4P/8 w - - 1 35",
+      "fen_after": "8/8/2n2p2/2k3p1/1pB1K1P1/1P6/2P4P/8 b - - 2 35",
+      "label": "great",
+      "is_brilliant": false,
+      "negative_bucket": "hard_ordinary",
+      "individual_rendered_board_verified": false,
+      "actual_mover": "nelsi",
+      "actual_mover_rating": 2568,
+      "source_types": [
+        "explicit_review_export_NAG"
+      ],
+      "example_key": "0625b651e407fb47e98f565035db6b8bad8511b7da48d4f4a1c93be0e31b2b28"
+    }
+  ],
+  "source_snapshots_sha256": {
+    "batch-sources/06/import-verified.py": "ad759d7c7bdd21e512bc2c1540b2bc36a8d508592233c174192e3ff2fbb98e9e",
+    "batch-sources/06/prepare-engine-batch.py": "59be30b8220e1f1e4c9c22cf42c42de0fc77254f6094505626c97a5e79b895d3"
+  }
+}

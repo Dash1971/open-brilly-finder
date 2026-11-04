@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-11-03T09:47:29.313909+00:00",
+  "scope": "Once-only per-worker tail after895-second cap; same848/2445/1.5m options and completed windows preserved byte-for-byte. No completed search reruns.",
+  "allowance_per_worker_recorded_seconds": 1600,
+  "tail_cap_formula": "1600 minus exact completed-worker recorded search seconds minus2-second stop margin",
+  "tail_collector_sha256": "c8c0a80705bb2de851fa5a415865ed60a92f10bf1b165506e735a041f6caebc3",
+  "session_disclosure": "Each tail uses a fresh process/UCIgame/fullPGN stack for remaining positions. Partially completed-game TT restart is explicitly recorded; not represented as identical warm-cache history.",
+  "no_further_retry_or_expansion": true,
+  "per_worker_tail_plan_required_before_launch": true,
+  "superseded_allowance_per_worker_recorded_seconds": 1200,
+  "final_authorization_sha256": "3011f1aed1c28706f72a956cf3f967c930ab741de8eeb9a2391b3ffd15aa8a37"
+}

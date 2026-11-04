@@ -1,0 +1,396 @@
+{
+  "scope": "Exploratory only: all818 core moves are now unblinded development. The additional stronger30 is targeted sensitivity, not an independent validation set.",
+  "source_sha256": {
+    "baseline": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301",
+    "same_root_fallback": "ee6157c662456a77bccca68f53375b6b91da893ba94a5a59a5eedf9f5fda5aef",
+    "same_root_strict": "bb5460ce4523074bdabf945ab938f398130c1838e55c45f72076220b5714686a"
+  },
+  "input_sha256": {
+    "mute-chess-research/studies/brilliant-moves/analysis-baseline.json": "b3a210af63a1fbd63ac75756ed9d58b34491cba05d471aa3d309763ac91b3a51",
+    "research/brilliants-improvement-2026-11-03/validation/analysis-baseline.json": "2ead7d25541c125c57b8b0a95d7b3e91bcb3da69ba6c46002520e588e4729576",
+    "research/brilliants-improvement-2026-11-03/validation/analysis-stronger.json": "37ee89fcda8cec2b2d4f0606c2a9c0a85cf640dd602bde6b4271b3b7a3e9ef36"
+  },
+  "metrics": {
+    "reference618": {
+      "baseline": {
+        "TP": 246,
+        "FN": 63,
+        "FP": 15,
+        "TN": 294,
+        "n": 618,
+        "agreement": 0.8737864077669902,
+        "detection": 0.7961165048543689,
+        "false_award_rate": 0.04854368932038835
+      },
+      "same_root_fallback": {
+        "TP": 248,
+        "FN": 61,
+        "FP": 16,
+        "TN": 293,
+        "n": 618,
+        "agreement": 0.8754045307443366,
+        "detection": 0.8025889967637541,
+        "false_award_rate": 0.05177993527508091
+      },
+      "same_root_strict": {
+        "TP": 229,
+        "FN": 80,
+        "FP": 14,
+        "TN": 295,
+        "n": 618,
+        "agreement": 0.8478964401294499,
+        "detection": 0.7411003236245954,
+        "false_award_rate": 0.045307443365695796
+      }
+    },
+    "recent200": {
+      "baseline": {
+        "TP": 74,
+        "FN": 26,
+        "FP": 10,
+        "TN": 90,
+        "n": 200,
+        "agreement": 0.82,
+        "detection": 0.74,
+        "false_award_rate": 0.1
+      },
+      "same_root_fallback": {
+        "TP": 74,
+        "FN": 26,
+        "FP": 10,
+        "TN": 90,
+        "n": 200,
+        "agreement": 0.82,
+        "detection": 0.74,
+        "false_award_rate": 0.1
+      },
+      "same_root_strict": {
+        "TP": 66,
+        "FN": 34,
+        "FP": 10,
+        "TN": 90,
+        "n": 200,
+        "agreement": 0.78,
+        "detection": 0.66,
+        "false_award_rate": 0.1
+      }
+    },
+    "stronger_recent30": {
+      "baseline": {
+        "TP": 6,
+        "FN": 14,
+        "FP": 8,
+        "TN": 2,
+        "n": 30,
+        "agreement": 0.26666666666666666,
+        "detection": 0.3,
+        "false_award_rate": 0.8
+      },
+      "same_root_fallback": {
+        "TP": 6,
+        "FN": 14,
+        "FP": 8,
+        "TN": 2,
+        "n": 30,
+        "agreement": 0.26666666666666666,
+        "detection": 0.3,
+        "false_award_rate": 0.8
+      },
+      "same_root_strict": {
+        "TP": 4,
+        "FN": 16,
+        "FP": 8,
+        "TN": 2,
+        "n": 30,
+        "agreement": 0.2,
+        "detection": 0.2,
+        "false_award_rate": 0.8
+      }
+    },
+    "all818": {
+      "baseline": {
+        "TP": 320,
+        "FN": 89,
+        "FP": 25,
+        "TN": 384,
+        "n": 818,
+        "agreement": 0.8606356968215159,
+        "detection": 0.78239608801956,
+        "false_award_rate": 0.061124694376528114
+      },
+      "same_root_fallback": {
+        "TP": 322,
+        "FN": 87,
+        "FP": 26,
+        "TN": 383,
+        "n": 818,
+        "agreement": 0.8618581907090465,
+        "detection": 0.7872860635696821,
+        "false_award_rate": 0.06356968215158924
+      },
+      "same_root_strict": {
+        "TP": 295,
+        "FN": 114,
+        "FP": 24,
+        "TN": 385,
+        "n": 818,
+        "agreement": 0.8312958435207825,
+        "detection": 0.7212713936430318,
+        "false_award_rate": 0.05867970660146699
+      }
+    }
+  },
+  "paired_changes": {
+    "same_root_fallback": {
+      "all818": {
+        "recover_TP": 3,
+        "lose_TP": 1,
+        "remove_FP": 0,
+        "add_FP": 1
+      },
+      "reference618": {
+        "recover_TP": 3,
+        "lose_TP": 1,
+        "remove_FP": 0,
+        "add_FP": 1
+      },
+      "recent200": {
+        "recover_TP": 0,
+        "lose_TP": 0,
+        "remove_FP": 0,
+        "add_FP": 0
+      },
+      "stronger_recent30": {
+        "recover_TP": 0,
+        "lose_TP": 0,
+        "remove_FP": 0,
+        "add_FP": 0
+      }
+    },
+    "same_root_strict": {
+      "all818": {
+        "recover_TP": 3,
+        "lose_TP": 28,
+        "remove_FP": 2,
+        "add_FP": 1
+      },
+      "reference618": {
+        "recover_TP": 3,
+        "lose_TP": 20,
+        "remove_FP": 2,
+        "add_FP": 1
+      },
+      "recent200": {
+        "recover_TP": 0,
+        "lose_TP": 8,
+        "remove_FP": 0,
+        "add_FP": 0
+      },
+      "stronger_recent30": {
+        "recover_TP": 0,
+        "lose_TP": 2,
+        "remove_FP": 0,
+        "add_FP": 0
+      }
+    }
+  },
+  "coverage": {
+    "all818": {
+      "all": {
+        "n": 818,
+        "current_root_present": 644,
+        "both_roots_present": 637,
+        "current_first": 524,
+        "current_second": 120,
+        "current_root_pass_child_fail": 7,
+        "current_root_fail_child_pass": 2
+      },
+      "baseline_false_awards": {
+        "n": 25,
+        "current_root_present": 23,
+        "both_roots_present": 23,
+        "current_first": 17,
+        "current_second": 6,
+        "current_root_pass_child_fail": 0,
+        "current_root_fail_child_pass": 0
+      },
+      "baseline_misses": {
+        "n": 89,
+        "current_root_present": 75,
+        "both_roots_present": 75,
+        "current_first": 58,
+        "current_second": 17,
+        "current_root_pass_child_fail": 2,
+        "current_root_fail_child_pass": 0
+      },
+      "baseline_true_awards": {
+        "n": 320,
+        "current_root_present": 295,
+        "both_roots_present": 293,
+        "current_first": 263,
+        "current_second": 32,
+        "current_root_pass_child_fail": 0,
+        "current_root_fail_child_pass": 0
+      }
+    },
+    "reference618": {
+      "all": {
+        "n": 618,
+        "current_root_present": 488,
+        "both_roots_present": 482,
+        "current_first": 394,
+        "current_second": 94,
+        "current_root_pass_child_fail": 4,
+        "current_root_fail_child_pass": 2
+      },
+      "baseline_false_awards": {
+        "n": 15,
+        "current_root_present": 13,
+        "both_roots_present": 13,
+        "current_first": 10,
+        "current_second": 3,
+        "current_root_pass_child_fail": 0,
+        "current_root_fail_child_pass": 0
+      },
+      "baseline_misses": {
+        "n": 63,
+        "current_root_present": 51,
+        "both_roots_present": 51,
+        "current_first": 39,
+        "current_second": 12,
+        "current_root_pass_child_fail": 1,
+        "current_root_fail_child_pass": 0
+      },
+      "baseline_true_awards": {
+        "n": 246,
+        "current_root_present": 229,
+        "both_roots_present": 227,
+        "current_first": 203,
+        "current_second": 26,
+        "current_root_pass_child_fail": 0,
+        "current_root_fail_child_pass": 0
+      }
+    },
+    "recent200": {
+      "all": {
+        "n": 200,
+        "current_root_present": 156,
+        "both_roots_present": 155,
+        "current_first": 130,
+        "current_second": 26,
+        "current_root_pass_child_fail": 3,
+        "current_root_fail_child_pass": 0
+      },
+      "baseline_false_awards": {
+        "n": 10,
+        "current_root_present": 10,
+        "both_roots_present": 10,
+        "current_first": 7,
+        "current_second": 3,
+        "current_root_pass_child_fail": 0,
+        "current_root_fail_child_pass": 0
+      },
+      "baseline_misses": {
+        "n": 26,
+        "current_root_present": 24,
+        "both_roots_present": 24,
+        "current_first": 19,
+        "current_second": 5,
+        "current_root_pass_child_fail": 1,
+        "current_root_fail_child_pass": 0
+      },
+      "baseline_true_awards": {
+        "n": 74,
+        "current_root_present": 66,
+        "both_roots_present": 66,
+        "current_first": 60,
+        "current_second": 6,
+        "current_root_pass_child_fail": 0,
+        "current_root_fail_child_pass": 0
+      }
+    },
+    "stronger_recent30": {
+      "all": {
+        "n": 30,
+        "current_root_present": 28,
+        "both_roots_present": 28,
+        "current_first": 22,
+        "current_second": 6,
+        "current_root_pass_child_fail": 0,
+        "current_root_fail_child_pass": 0
+      },
+      "baseline_false_awards": {
+        "n": 8,
+        "current_root_present": 8,
+        "both_roots_present": 8,
+        "current_first": 6,
+        "current_second": 2,
+        "current_root_pass_child_fail": 0,
+        "current_root_fail_child_pass": 0
+      },
+      "baseline_misses": {
+        "n": 14,
+        "current_root_present": 14,
+        "both_roots_present": 14,
+        "current_first": 12,
+        "current_second": 2,
+        "current_root_pass_child_fail": 0,
+        "current_root_fail_child_pass": 0
+      },
+      "baseline_true_awards": {
+        "n": 6,
+        "current_root_present": 4,
+        "both_roots_present": 4,
+        "current_first": 3,
+        "current_second": 1,
+        "current_root_pass_child_fail": 0,
+        "current_root_fail_child_pass": 0
+      }
+    }
+  },
+  "root_child_quality_disagreements": {
+    "all": {
+      "n": 818,
+      "root_fail_child_pass_either_window": [
+        "184623800724:84",
+        "185766514268:16",
+        "186569189971:75"
+      ],
+      "root_pass_child_fail_either_window": [
+        "177749871737:21",
+        "186052437796:16",
+        "186398857750:45",
+        "184634890030:37",
+        "185897727454:25",
+        "186007180386:89",
+        "174014470836:31",
+        "185357791081:68",
+        "185731268834:74"
+      ]
+    },
+    "baseline_false_awards": {
+      "n": 25,
+      "root_fail_child_pass_either_window": [],
+      "root_pass_child_fail_either_window": []
+    },
+    "baseline_misses": {
+      "n": 89,
+      "root_fail_child_pass_either_window": [],
+      "root_pass_child_fail_either_window": [
+        "184634890030:37",
+        "185897727454:25",
+        "186007180386:89",
+        "185357791081:68"
+      ]
+    }
+  },
+  "baseline_full_result_parity_n": 818,
+  "contracts": {
+    "ec_differences": 0,
+    "accuracy_cploss_differences": 0,
+    "other_nonbrilliant_symbol_differences": 0
+  },
+  "elapsed_ms": 7631,
+  "max_rss_kib": 173712,
+  "conclusion": "Neither same-root variant is a useful standalone precision improvement: both retain all10 recent false awards; strict root coverage loses8 correct recent brilliants. Do not promote from these results."
+}

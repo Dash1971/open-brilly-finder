@@ -1,0 +1,142 @@
+{
+  "scope": "Exploratory matched-case evidence. No estimate of classifier precision/recall.",
+  "acceptance_choice": "Opponent-best (lowest mover evaluation) qualifying capture; mates ranked separately from finite cp; no label-driven branch choice.",
+  "cases": 48,
+  "pairs": 24,
+  "searches": 62,
+  "new_branches_not_in_saved_top2": 27,
+  "class_summaries": {
+    "brilliant": {
+      "n": 24,
+      "recoup_first_reply": 18,
+      "acceptance_forces_winning_mate": 3,
+      "sustained_debt6_gt100_without_forced_mate": 2,
+      "new_accepting_branches": 15,
+      "all_accepting_branches": 30,
+      "cases_with_no_saved_acceptance": 11,
+      "acceptance_gain_cp": {
+        "known": 21,
+        "median": 6,
+        "min": -68,
+        "max": 397
+      },
+      "compensation_gap_cp": {
+        "known": 21,
+        "median": 365,
+        "min": 37,
+        "max": 1020
+      },
+      "debt6": {
+        "known": 24,
+        "median": -90.0,
+        "min": -1090,
+        "max": 210
+      },
+      "debt12": {
+        "known": 24,
+        "median": -90.0,
+        "min": -1090,
+        "max": 210
+      }
+    },
+    "ordinary": {
+      "n": 24,
+      "recoup_first_reply": 19,
+      "acceptance_forces_winning_mate": 3,
+      "sustained_debt6_gt100_without_forced_mate": 2,
+      "new_accepting_branches": 12,
+      "all_accepting_branches": 32,
+      "cases_with_no_saved_acceptance": 7,
+      "acceptance_gain_cp": {
+        "known": 21,
+        "median": 21,
+        "min": -44,
+        "max": 421
+      },
+      "compensation_gap_cp": {
+        "known": 21,
+        "median": 288,
+        "min": 19,
+        "max": 1460
+      },
+      "debt6": {
+        "known": 24,
+        "median": -90.0,
+        "min": -700,
+        "max": 320
+      },
+      "debt12": {
+        "known": 23,
+        "median": -90,
+        "min": -890,
+        "max": 210
+      }
+    }
+  },
+  "paired_comparisons": {
+    "acceptance_gain_cp": {
+      "ordinary_greater": 11,
+      "positive_greater": 9,
+      "unknown": 4
+    },
+    "compensation_gap_cp": {
+      "positive_greater": 16,
+      "ordinary_greater": 4,
+      "unknown": 4
+    },
+    "previous_compensation_gap_cp": {
+      "positive_greater": 16,
+      "ordinary_greater": 4,
+      "unknown": 4
+    },
+    "debt6": {
+      "positive_greater": 9,
+      "equal": 8,
+      "ordinary_greater": 7
+    },
+    "debt12": {
+      "ordinary_greater": 8,
+      "unknown": 1,
+      "positive_greater": 10,
+      "equal": 5
+    },
+    "own_checks6": {
+      "positive_greater": 5,
+      "equal": 12,
+      "ordinary_greater": 7
+    }
+  },
+  "saved_pv_audit": {
+    "missed_brilliant": {
+      "n": 51,
+      "saved_acceptance": 33,
+      "no_saved_acceptance": 18,
+      "recoup_by6": 24,
+      "no_recoup_by6_known": 9
+    },
+    "ordinary": {
+      "n": 149,
+      "saved_acceptance": 78,
+      "no_saved_acceptance": 71,
+      "recoup_by6": 54,
+      "no_recoup_by6_known": 24
+    }
+  },
+  "stability": {
+    "chosen_best_reply_agreement_between_windows": {
+      "True": 48
+    },
+    "compensation_gap_window_difference_median_cp": 0.0,
+    "compensation_gap_window_difference_max_cp": 91
+  },
+  "limitations": [
+    "Matched sample intentionally selects closest controls; not representative",
+    "All labels/features previously studied; no independent validation",
+    "Cp acceptance-vs-baseline compares separate engine searches",
+    "Previous window is correlated, not independent replication",
+    "Four pairs lack comparable finite-cp gaps because at least one side has forced mate",
+    "One ordinary12ply endpoint remains unknown",
+    "Pair similarity is approximate; e.g. minor piece type and evaluation may differ",
+    "No refreshed Chess.com labels/settings audit in this study"
+  ]
+}

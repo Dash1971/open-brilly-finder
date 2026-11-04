@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-04T04:22:18.686477+00:00",
+  "scope": "Descriptive matching of all429 eligible low-score positives; no model/cutoff/rule changes, no new accuracy claim.",
+  "primary_control": "Eligible hard_ordinary negative_bucket only; same outer fold and different whole game/position group.",
+  "additional": "Separate nearest eligible legacy negatives and correctly awarded positives; all429 retained.",
+  "anchors": "Prefer exact current ec_sacrifice, move_capture, move_check, offered_piece_moved, offered minor(any n/b), rook, queen booleans. If unavailable choose nearest samefold pool and flag fallback.",
+  "metric": "Average over two windows of capped feature differences normalized by eligible pooled5th\u201395thpercentile range; missing-one cost1 missing-both0; average within six fixed feature families then equally across families. No scores/labels in metric or scales.",
+  "panel": "Two closest distinct-group primary pairs per ECfalse/true x score-shortfall<=.025,(.025,.10],>.10; exact-anchor matches prioritized, tie key; strata order false then true,near middle far. Up to12 pairs. No cherrypicking after tactical inspection.",
+  "limits": "No chess searches. Saved evidence only. Scores used to define miss/score strata and describe, not distance. Matching is diagnostic; reused controls and nonidentical boards not independent trials.",
+  "input_sha256": {
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-evaluation-consistency-2026-11-04/PREDICTIONS.json": "49d8cf084bddede17ca86cf170fbae26e9074eff323cf4d5898671e99bec0c8f"
+  },
+  "script_sha256": "502431fee2a95878cf0b15f51fcf417be4469a1931b66c39fab48e2f4b40da1b"
+}

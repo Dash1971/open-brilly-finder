@@ -1,0 +1,205 @@
+{
+  "study_id": "brilliants-600-2026-11-03",
+  "prepared_at_utc": "2026-11-03T01:08:33.706811+00:00",
+  "authorization": {
+    "quantity_limit": 600,
+    "fresh_brilliant": 300,
+    "fresh_non_brilliant": 300,
+    "per_account_per_class": 60,
+    "time_cap": null,
+    "rule_tuning": false,
+    "application_changes": false,
+    "engine_runs_started": false
+  },
+  "baseline_state": {
+    "observed_at_utc": "2026-11-03T00:04:24Z",
+    "mute_repository": "https://github.com/Dash1971/mute-chess",
+    "current_main": "b3585f2c5b818bb8dfabb7fc4e3ed37cab848c12",
+    "current_main_pr": 228,
+    "current_policy": "mute-chess-brilliant-v2",
+    "native_patch_git_blob_sha": "addef7a02c1e6807e72910dcffca5cfaf7f4c5aa",
+    "native_source_path": "ui/analyse/src/noSweatClassify.ts",
+    "native_source_carried_by": "deploy/lila/patches/lila-nostr-maia.patch",
+    "prior_pr_222": {
+      "state": "MERGED",
+      "head": "be99bb71632c44e646b1f7a545d34235838ed633",
+      "merge": "e2dfd406d3ada79558064ee5e3df3e19338f9255",
+      "merged_at_utc": "2026-11-02T15:21:30Z",
+      "policy": "mute-chess-brilliant-v1",
+      "not_current_baseline": true
+    },
+    "ec_reference": {
+      "version": "v0.15.0",
+      "commit": "6f2d2628f0fbe11cb62a7dd2f9c102bb52907d53",
+      "annotation_file": "src/utils/score.ts",
+      "material_file": "src-tauri/src/chess.rs",
+      "repository": "https://github.com/franciscoBSalgueiro/en-croissant"
+    },
+    "mobile_maia_reference": {
+      "commit": "8563954429c2fb53ce0fe0e16c73c5d8a73ccfe0",
+      "repository": "https://github.com/Dash1971/maia-chess-android-preview",
+      "annotation_file": "lib/src/review_widgets.dart",
+      "qualification_file": "tool/hardening/classification/README.md",
+      "scope_note": "Inspected pinned reference; do not assert this is the current Mobile Maia release."
+    },
+    "ec_rule": {
+      "mapped_loss_negative_boundaries_pp": {
+        "dubious": ">5",
+        "mistake": ">10",
+        "blunder": ">20"
+      },
+      "brilliant": "played root is first, best-versus-second mapped gap >10 percentage points, EC sacrifice true, mapped loss <=5",
+      "interesting": "EC sacrifice outside unique-best branch and after cp >-200",
+      "sacrifice": "nonterminal and M(before) > -M(after) +100; every legal root followed by capture-only material qsearch",
+      "material_units": {
+        "pawn": 90,
+        "knight": 300,
+        "bishop": 300,
+        "rook": 500,
+        "queen": 1000
+      }
+    },
+    "mute_v2_rule": {
+      "near_best_max_mapped_loss_pp": 5,
+      "minimum_after_cp_mover": -100,
+      "requires_at_least_two_lines": true,
+      "unique_first_choice_required": false,
+      "sacrifice": "legal non-pawn non-king piece offer; no EC material fallback",
+      "offer_test": "Opponent best legal same-square capture exchange gain > max(0, mover material after minus before) +100. Capture/promotion gains are credited; either side can stop local exchange.",
+      "routine_win_veto": "another evaluated non-sacrificing root at >=+600 cp mover",
+      "provenance": "mute-chess-brilliant-v2",
+      "earlier_EC_sacrifice_labels": "Clear EC !! or !? when legal-offer test fails; keep negative classifications; otherwise retained fallback labels apply.",
+      "corroboration": "whole current/prior or independent matching-quality nonshallower decision window; withheld is not an award",
+      "known_limit": "same-square offer test can miss recoup on another square; current two-PV relevance gate does not examine every safe alternative",
+      "pawn_only_or_delayed_offers_eligible": false
+    },
+    "score_mapping": "W(cp)=100/(1+exp(-0.00368208*cp)); cp normalized to mover and clamped [-1000,1000]; mate win/loss mapped to +/-1000. This is a heuristic, not a calibrated outcome probability or Chess.com formula."
+  },
+  "sampling": {
+    "primary_source": "primary-moves.json after explicit fresh labels and PGN validation",
+    "gallery_label_disagreements": "retain as separate reserve evidence; replace positive until 60 current Brilliants per account",
+    "gallery_positive_categories": "prefer 15 each queen/rook/bishop/knight per account; record actual memberships",
+    "negative_controls": "separate unique same-player moves, prefer capture/exchange, quiet defense and mistakes/misses; select explicit current labels, absence is unknown",
+    "excluded_games_source": "exclude-games.json; old pilot and all original regression examples remain development evidence outside new primary600",
+    "negative_enrichment_priority": [
+      "apparent legal nonpawn piece offers under unchanged current-v2 predicate",
+      "quiet attacked and defended nonpawn pieces",
+      "recaptures/exchanges and other material captures"
+    ],
+    "negative_enrichment_limits": "Candidates are unknown until fresh current label; apparent offers may be Brilliants. Report actual achieved categories; no easy-negative-only claim."
+  },
+  "holdout": {
+    "whole_game_atomic": true,
+    "player_holdout": "Any game with Hikaru as either player",
+    "game_holdout": "Remaining games with int(SHA256(game_id),16)%5==0",
+    "development": "Remaining games",
+    "freeze_before_tuning": true,
+    "policy_evaluation": "Only unchanged pinned EC and Mute v2; no thresholds chosen on this study"
+  },
+  "fixed_engine_plan": {
+    "engine": "Stockfish18",
+    "binary_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+    "threads": 1,
+    "hash_mb": 64,
+    "baseline_nodes_per_position": 300000,
+    "stronger_nodes_per_position": 1500000,
+    "positions_per_target": "preceding,before,after (target ply-2,ply-1,ply); full PGN history retained",
+    "multipv": "Two legal distinct root moves when available; only complete exact same-depth iterations",
+    "prior_iteration": "Actual preceding completed iteration; never fabricated equal-depth score copies",
+    "cache": "Reuse only exact engine/script/budget/PGN/FEN identities; one saved snapshot per game/position/budget",
+    "hash_sessions": "Clear hash and new session per game/budget; requested positions in forward game order",
+    "terminal_positions": "Explicit terminal snapshots; no engine node charge"
+  },
+  "stronger_subset_predeclaration": {
+    "target_policy": "mute_v2",
+    "universe": "Primary600 baseline confirmed award mismatches to fresh binary label only",
+    "max_unique_moves": 30,
+    "selection": "If <=30 mismatches, all. Otherwise take up to15 FP and up to15 FN, each sorted by SHA256(game_id+\":\"+ply) ascending; fill unused slots from remaining mismatches in same hash order. No manual choices.",
+    "timing": "Write stronger-subset.json and hash before starting stronger engine searches",
+    "budget": "1500000 nodes per position, complete same-depth full windows only",
+    "report": "Report baseline metrics on all600; stronger subset is budget-sensitivity evidence, never silently substitutes scores in primary totals"
+  },
+  "feature_review_plan": {
+    "purpose": "Descriptive error analysis; no new rule or tuned threshold",
+    "fields": [
+      "legal offered piece and immediate capture credit",
+      "all-square capture recoup line and physical material outcome",
+      "capture sequence length/depth and temporary material deficit",
+      "net pawn/material gain",
+      "mover rating from PGN",
+      "game phase from move number and material with definition recorded"
+    ],
+    "limits": "Capture-only material probes are heuristic; no automatic veto without held-out validation. Conditional recoup lines distinguished from played moves."
+  },
+  "metrics": {
+    "primary": "TP,FN,FP,TN, detection rate, selected-control false-positive rate",
+    "strata": [
+      "account",
+      "whole-game split",
+      "observed gallery category",
+      "negative sampling category where recorded"
+    ],
+    "uncertainty": "Selected strong-player gallery sample is not a population prevalence estimate. Report denominators and zero/unknown as such.",
+    "award_stages": "Raw eligibility, confirmation-aware award and withheld counts separate",
+    "sensitivity": "Independent stronger-window decisions and corroboration of baseline decisions separate"
+  },
+  "owner_regression_controls": [
+    {
+      "name": "L1lChap-nelsi 14...Ndxe5",
+      "game_id": "186311900336",
+      "expected_ply_if_standard_start": 28,
+      "uci": "d7e5",
+      "fen_before": "r2r2k1/pp1nppbp/1qn3p1/4P3/5Pb1/P2B1N2/1P4PP/RNB1QR1K b - - 4 14",
+      "line": "14...Ndxe5 15.Nxe5 Nxe5 16.fxe5 Rxd3",
+      "owner_expected": "not_brilliant",
+      "chesscom_label": "excellent",
+      "mechanism": "same-square loss on e5 is recouped on d3; two knights for knight+bishop plus pawn",
+      "ec_material_mover_before": 90,
+      "ec_material_mover_after": 90,
+      "source": "https://github.com/Dash1971/mute-chess/issues/229",
+      "split": "known_development",
+      "new_evidence_status": "Separate post-pilot browser review reported by parent; outside new600 and pilot metrics"
+    },
+    {
+      "name": "41.Qf5+",
+      "game_id": null,
+      "expected_ply_if_standard_start": 81,
+      "uci": "d5f5",
+      "fen_before": "6r1/p1P3pk/1q1B1b1p/3Q4/8/7P/P4PP1/2R3K1 w - - 9 41",
+      "fen_after": "6r1/p1P3pk/1q1B1b1p/5Q2/8/7P/P4PP1/2R3K1 b - - 10 41",
+      "owner_expected": "not_brilliant",
+      "chesscom_label": "unknown_until_captured",
+      "mechanism": "EC material probe treats deferred optional promotion gain as sacrifice; no legal immediate nonpawn capture after check",
+      "source": "https://github.com/Dash1971/mute-chess/issues/227",
+      "split": "known_development"
+    },
+    {
+      "name": "17...Bf5",
+      "game_id": null,
+      "expected_ply_if_standard_start": 34,
+      "uci": "g4f5",
+      "fen_before": "r5k1/pp2ppbp/1q4p1/4P3/4Q1b1/P2r4/1P4PP/RNB2R1K b - - 1 17",
+      "owner_expected": "not_brilliant",
+      "chesscom_label": "unknown_until_captured",
+      "mechanism": "defended tactic; capture-only probe misses quiet Rd1+",
+      "source": "https://github.com/Dash1971/mute-chess/pull/228",
+      "split": "known_development"
+    }
+  ],
+  "deliverable_boundary": {
+    "changes": "Study-local scripts/reference/evidence/report only",
+    "not_authorized": [
+      "app classifier changes",
+      "Mobile Maia changes",
+      "deployment",
+      "new general tooling"
+    ]
+  },
+  "runtime_setup": {
+    "python": "Python 3 with python-chess available; script also recognizes this session\u2019s temporary dependency directory as a fallback. Install dependencies yourself in an isolated environment; no package/deployment framework is supplied.",
+    "engine": "Stockfish18 binary is currently explicitly pinned at /opt/homebrew/bin/stockfish with recorded SHA256. Moving/changing the binary path requires a new collector artifact/output; cached evidence is reused only when engine hash and collector script hash agree.",
+    "typescript": "Node24 and tsx loader, plus chessops0.15.1. Pinned classifier/core source files and import shim are relative paths. Point reference/current-v2/node_modules at an existing compatible node_modules directory; the session symlink is replaceable and not a dependency on /private/tmp.",
+    "command_example": "NODE24 --import /path/to/tsx/dist/loader.mjs replay.mts analysis-baseline.json [analysis-stronger.json] [output.json]",
+    "no_live_app_dependency": "The old /private/tmp native application checkout is not modified. Its preinstalled runtime dependencies were reused only to avoid a package framework."
+  }
+}

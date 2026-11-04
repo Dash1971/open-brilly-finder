@@ -1,0 +1,440 @@
+{
+  "generated_at_utc": "2026-11-03T06:21:33.698978+00:00",
+  "scope": "Audit of the saved60-case targeted stronger-search sensitivity subset. No engine run, browser use, source change or tuning.",
+  "source_sha256": {
+    "comparison-v2-stronger.json": "8709d6e442749c04b5112c56e7f791cf19b7607269124124ad9066d3d4bbd4e3",
+    "comparison-v3-stronger.json": "69c4db908022ec5b2567bf20e5a33da27e5cce0dda37efbb0c7d0ddf22f39224",
+    "analysis-baseline.json": "b3a210af63a1fbd63ac75756ed9d58b34491cba05d471aa3d309763ac91b3a51",
+    "analysis-stronger.json": "0344f08466cff60daa722559be769eda994482e00876fba005eccb4a7b65c365",
+    "SUMMARY.json": "0ca3b5ae62962afff73f1602b4c286f4ec4a3533c145c1500280def66dc6bba4"
+  },
+  "subset": {
+    "n": 60,
+    "positive_n": 30,
+    "negative_n": 30,
+    "selection": "Two frozen hash-selected v2-disagreement subsets, each15baselinefalseawards+15baselinemisses; not a new random or unseen-validation sample.",
+    "complete_same_depth_windows": 60,
+    "material_parity_differences": 0
+  },
+  "standalone_stronger": {
+    "ec_raw": {
+      "baseline_on_same60": {
+        "n": 60,
+        "positive_n": 30,
+        "negative_n": 30,
+        "TP": 0,
+        "FN": 30,
+        "FP": 1,
+        "TN": 29,
+        "withheld_positive": 0,
+        "withheld_negative": 0,
+        "incomplete": 0,
+        "agreement": 0.48333333333333334,
+        "brilliant_detection": 0.0,
+        "false_award_rate": 0.03333333333333333
+      },
+      "stronger_window": {
+        "n": 60,
+        "positive_n": 30,
+        "negative_n": 30,
+        "TP": 1,
+        "FN": 29,
+        "FP": 1,
+        "TN": 29,
+        "withheld_positive": 0,
+        "withheld_negative": 0,
+        "incomplete": 0,
+        "agreement": 0.5,
+        "brilliant_detection": 0.03333333333333333,
+        "false_award_rate": 0.03333333333333333
+      },
+      "binary_changes": 1,
+      "changes": [
+        {
+          "game_id": "184634890030",
+          "ply": 37,
+          "san": "Qxh7+",
+          "label": "brilliant",
+          "baseline_symbol": "!?",
+          "new_symbol": "!!",
+          "direction": "no_award_to_award",
+          "baseline_withheld": false,
+          "new_withheld": false
+        }
+      ]
+    },
+    "ec_confirmed": {
+      "baseline_on_same60": {
+        "n": 60,
+        "positive_n": 30,
+        "negative_n": 30,
+        "TP": 0,
+        "FN": 30,
+        "FP": 1,
+        "TN": 29,
+        "withheld_positive": 0,
+        "withheld_negative": 0,
+        "incomplete": 0,
+        "agreement": 0.48333333333333334,
+        "brilliant_detection": 0.0,
+        "false_award_rate": 0.03333333333333333
+      },
+      "stronger_window": {
+        "n": 60,
+        "positive_n": 30,
+        "negative_n": 30,
+        "TP": 1,
+        "FN": 29,
+        "FP": 1,
+        "TN": 29,
+        "withheld_positive": 0,
+        "withheld_negative": 0,
+        "incomplete": 0,
+        "agreement": 0.5,
+        "brilliant_detection": 0.03333333333333333,
+        "false_award_rate": 0.03333333333333333
+      },
+      "binary_changes": 1,
+      "changes": [
+        {
+          "game_id": "184634890030",
+          "ply": 37,
+          "san": "Qxh7+",
+          "label": "brilliant",
+          "baseline_symbol": "!?",
+          "new_symbol": "!!",
+          "direction": "no_award_to_award",
+          "baseline_withheld": false,
+          "new_withheld": false
+        }
+      ]
+    },
+    "mute_v2": {
+      "baseline_on_same60": {
+        "n": 60,
+        "positive_n": 30,
+        "negative_n": 30,
+        "TP": 0,
+        "FN": 30,
+        "FP": 30,
+        "TN": 0,
+        "withheld_positive": 1,
+        "withheld_negative": 0,
+        "incomplete": 0,
+        "agreement": 0.0,
+        "brilliant_detection": 0.0,
+        "false_award_rate": 1.0
+      },
+      "stronger_window": {
+        "n": 60,
+        "positive_n": 30,
+        "negative_n": 30,
+        "TP": 4,
+        "FN": 26,
+        "FP": 28,
+        "TN": 2,
+        "withheld_positive": 0,
+        "withheld_negative": 1,
+        "incomplete": 0,
+        "agreement": 0.1,
+        "brilliant_detection": 0.13333333333333333,
+        "false_award_rate": 0.9333333333333333
+      },
+      "binary_changes": 6,
+      "changes": [
+        {
+          "game_id": "171711505152",
+          "ply": 69,
+          "san": "Nxd8",
+          "label": "brilliant",
+          "baseline_symbol": "!?",
+          "new_symbol": "!!",
+          "direction": "no_award_to_award",
+          "baseline_withheld": false,
+          "new_withheld": false
+        },
+        {
+          "game_id": "185811812218",
+          "ply": 57,
+          "san": "Bg6",
+          "label": "brilliant",
+          "baseline_symbol": "!?",
+          "new_symbol": "!!",
+          "direction": "no_award_to_award",
+          "baseline_withheld": false,
+          "new_withheld": false
+        },
+        {
+          "game_id": "187780685807",
+          "ply": 52,
+          "san": "Qh4",
+          "label": "non_brilliant",
+          "baseline_symbol": "!!",
+          "new_symbol": "",
+          "direction": "award_to_no_award",
+          "baseline_withheld": false,
+          "new_withheld": true
+        },
+        {
+          "game_id": "183799110991",
+          "ply": 66,
+          "san": "Rxc3",
+          "label": "non_brilliant",
+          "baseline_symbol": "!!",
+          "new_symbol": "?!",
+          "direction": "award_to_no_award",
+          "baseline_withheld": false,
+          "new_withheld": false
+        },
+        {
+          "game_id": "184634890030",
+          "ply": 37,
+          "san": "Qxh7+",
+          "label": "brilliant",
+          "baseline_symbol": "",
+          "new_symbol": "!!",
+          "direction": "no_award_to_award",
+          "baseline_withheld": true,
+          "new_withheld": false
+        },
+        {
+          "game_id": "185897727454",
+          "ply": 25,
+          "san": "Bxh7+",
+          "label": "brilliant",
+          "baseline_symbol": "?",
+          "new_symbol": "!!",
+          "direction": "no_award_to_award",
+          "baseline_withheld": false,
+          "new_withheld": false
+        }
+      ]
+    },
+    "mute_v3": {
+      "baseline_on_same60": {
+        "n": 60,
+        "positive_n": 30,
+        "negative_n": 30,
+        "TP": 0,
+        "FN": 30,
+        "FP": 8,
+        "TN": 22,
+        "withheld_positive": 1,
+        "withheld_negative": 0,
+        "incomplete": 0,
+        "agreement": 0.36666666666666664,
+        "brilliant_detection": 0.0,
+        "false_award_rate": 0.26666666666666666
+      },
+      "stronger_window": {
+        "n": 60,
+        "positive_n": 30,
+        "negative_n": 30,
+        "TP": 4,
+        "FN": 26,
+        "FP": 7,
+        "TN": 23,
+        "withheld_positive": 0,
+        "withheld_negative": 1,
+        "incomplete": 0,
+        "agreement": 0.45,
+        "brilliant_detection": 0.13333333333333333,
+        "false_award_rate": 0.23333333333333334
+      },
+      "binary_changes": 5,
+      "changes": [
+        {
+          "game_id": "171711505152",
+          "ply": 69,
+          "san": "Nxd8",
+          "label": "brilliant",
+          "baseline_symbol": "!?",
+          "new_symbol": "!!",
+          "direction": "no_award_to_award",
+          "baseline_withheld": false,
+          "new_withheld": false
+        },
+        {
+          "game_id": "185811812218",
+          "ply": 57,
+          "san": "Bg6",
+          "label": "brilliant",
+          "baseline_symbol": "!?",
+          "new_symbol": "!!",
+          "direction": "no_award_to_award",
+          "baseline_withheld": false,
+          "new_withheld": false
+        },
+        {
+          "game_id": "187780685807",
+          "ply": 52,
+          "san": "Qh4",
+          "label": "non_brilliant",
+          "baseline_symbol": "!!",
+          "new_symbol": "",
+          "direction": "award_to_no_award",
+          "baseline_withheld": false,
+          "new_withheld": true
+        },
+        {
+          "game_id": "184634890030",
+          "ply": 37,
+          "san": "Qxh7+",
+          "label": "brilliant",
+          "baseline_symbol": "",
+          "new_symbol": "!!",
+          "direction": "no_award_to_award",
+          "baseline_withheld": true,
+          "new_withheld": false
+        },
+        {
+          "game_id": "185897727454",
+          "ply": 25,
+          "san": "Bxh7+",
+          "label": "brilliant",
+          "baseline_symbol": "?",
+          "new_symbol": "!!",
+          "direction": "no_award_to_award",
+          "baseline_withheld": false,
+          "new_withheld": false
+        }
+      ]
+    }
+  },
+  "independent_confirmation": {
+    "ec_confirmed": {
+      "confirmed_baseline_on_same60": {
+        "n": 60,
+        "positive_n": 30,
+        "negative_n": 30,
+        "TP": 0,
+        "FN": 30,
+        "FP": 1,
+        "TN": 29,
+        "withheld_positive": 0,
+        "withheld_negative": 0,
+        "incomplete": 0,
+        "agreement": 0.48333333333333334,
+        "brilliant_detection": 0.0,
+        "false_award_rate": 0.03333333333333333
+      },
+      "binary_changes": 0,
+      "changes": [],
+      "incomplete_outside_subset": 558
+    },
+    "mute_v2": {
+      "confirmed_baseline_on_same60": {
+        "n": 60,
+        "positive_n": 30,
+        "negative_n": 30,
+        "TP": 1,
+        "FN": 29,
+        "FP": 29,
+        "TN": 1,
+        "withheld_positive": 0,
+        "withheld_negative": 1,
+        "incomplete": 0,
+        "agreement": 0.03333333333333333,
+        "brilliant_detection": 0.03333333333333333,
+        "false_award_rate": 0.9666666666666667
+      },
+      "binary_changes": 2,
+      "changes": [
+        {
+          "game_id": "183799110991",
+          "ply": 66,
+          "san": "Rxc3",
+          "label": "non_brilliant",
+          "baseline_symbol": "!!",
+          "new_symbol": "",
+          "direction": "award_to_no_award",
+          "baseline_withheld": false,
+          "new_withheld": true
+        },
+        {
+          "game_id": "184634890030",
+          "ply": 37,
+          "san": "Qxh7+",
+          "label": "brilliant",
+          "baseline_symbol": "",
+          "new_symbol": "!!",
+          "direction": "no_award_to_award",
+          "baseline_withheld": true,
+          "new_withheld": false
+        }
+      ],
+      "incomplete_outside_subset": 558
+    },
+    "mute_v3": {
+      "confirmed_baseline_on_same60": {
+        "n": 60,
+        "positive_n": 30,
+        "negative_n": 30,
+        "TP": 1,
+        "FN": 29,
+        "FP": 8,
+        "TN": 22,
+        "withheld_positive": 0,
+        "withheld_negative": 0,
+        "incomplete": 0,
+        "agreement": 0.38333333333333336,
+        "brilliant_detection": 0.03333333333333333,
+        "false_award_rate": 0.26666666666666666
+      },
+      "binary_changes": 1,
+      "changes": [
+        {
+          "game_id": "184634890030",
+          "ply": 37,
+          "san": "Qxh7+",
+          "label": "brilliant",
+          "baseline_symbol": "",
+          "new_symbol": "!!",
+          "direction": "no_award_to_award",
+          "baseline_withheld": true,
+          "new_withheld": false
+        }
+      ],
+      "incomplete_outside_subset": 558
+    }
+  },
+  "audit": {
+    "combined_primary_moves": 618,
+    "primary_games": 299,
+    "source_label_conflicts": 0,
+    "validation_overlap_excluded_games": 0
+  },
+  "interpretation": {
+    "standalone": "Uses stronger scores and their own saved earlier complete iterations.",
+    "independent_confirmation": "Uses the baseline score window plus supplied nonshallower stronger evidence as corroboration; it can withhold/release a provisional standout but does not substitute stronger scores into baseline eligibility.",
+    "all_fresh_summaries": "Retain the618 baseline decisions deliberately; do not read them as standalone60-case stronger results.",
+    "ec_raw_derivation": "Stronger direct EC is ec.provisional before confidence filtering. Baseline provisional EC matches the unchanged independent oracle for all618rows in both replay files; the stronger raw oracle is not separately stored.",
+    "not_validation": "The60moves were selected because v2 disagreed with observedlabels; these sensitivity counts do not estimate heldout/population performance."
+  },
+  "time": {
+    "baseline": {
+      "target_moves": 618,
+      "snapshots": 1775,
+      "terminal_snapshots": 2,
+      "snapshots_with_recorded_elapsed": 1773,
+      "requested_nodes_per_searched_position": 300000,
+      "recorded_search_elapsed_seconds_sum": 871.509555,
+      "threads": 1,
+      "hash_mb": 64,
+      "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374"
+    },
+    "stronger": {
+      "target_moves": 60,
+      "snapshots": 178,
+      "terminal_snapshots": 0,
+      "snapshots_with_recorded_elapsed": 178,
+      "requested_nodes_per_searched_position": 1500000,
+      "recorded_search_elapsed_seconds_sum": 183.178675,
+      "threads": 1,
+      "hash_mb": 64,
+      "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374"
+    },
+    "recorded_search_elapsed_seconds_combined_sum": 1054.68823,
+    "meaning": "Sum of saved per-snapshot elapsed_seconds, including all emitted search events until stop; terminal records have no charged search duration. Not full collection wall time, replay overhead, CPU billing or token/API cost."
+  }
+}

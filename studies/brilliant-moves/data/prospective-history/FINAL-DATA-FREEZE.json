@@ -1,0 +1,117 @@
+{
+  "frozen_at_utc": "2026-11-03T13:54:21.223380+00:00",
+  "scope": "All200primary fresh labels finalized before any model/engine evaluation; predictor source unchanged. Current truth is joined after model outputs. No gallery-label-only negatives.",
+  "primary_moves": 200,
+  "brilliant": 100,
+  "explicit_nonbrilliant": 100,
+  "primary_games": 109,
+  "all_raw_fresh_captures": 217,
+  "secondary_fresh_captures": 17,
+  "all217_raw_boards_PGN_SAN_UCI_FEN_ply_verified": true,
+  "all571_reviewed_games_excluded": true,
+  "all46194known_before_and_after_positions_excluded": true,
+  "no_conflicting_fresh_binary_labels": true,
+  "per_account_selection_audit": {
+    "nelsi": {
+      "raw_captures": 47,
+      "primary_brilliant": 20,
+      "primary_nonbrilliant": 20,
+      "secondary": 7,
+      "all_original20_nominees_captured": true,
+      "negative_keys_exact_original20_games_and_first_nonbrilliant_frozen_control": true,
+      "positive_keys_follow_original_then_frozen_reserve_order": true,
+      "visited_positive_reserves": [
+        "167306626524:24",
+        "167319180912:47",
+        "167356800482:54",
+        "167319477752:19",
+        "167254631190:38"
+      ]
+    },
+    "hansen": {
+      "raw_captures": 43,
+      "primary_brilliant": 20,
+      "primary_nonbrilliant": 20,
+      "secondary": 3,
+      "all_original20_nominees_captured": true,
+      "negative_keys_exact_original20_games_and_first_nonbrilliant_frozen_control": true,
+      "positive_keys_follow_original_then_frozen_reserve_order": true,
+      "visited_positive_reserves": [
+        "173267573553:89"
+      ]
+    },
+    "KNVB": {
+      "raw_captures": 43,
+      "primary_brilliant": 20,
+      "primary_nonbrilliant": 20,
+      "secondary": 3,
+      "all_original20_nominees_captured": true,
+      "negative_keys_exact_original20_games_and_first_nonbrilliant_frozen_control": true,
+      "positive_keys_follow_original_then_frozen_reserve_order": true,
+      "visited_positive_reserves": [
+        "184073619038:105"
+      ]
+    },
+    "GothamChess": {
+      "raw_captures": 42,
+      "primary_brilliant": 20,
+      "primary_nonbrilliant": 20,
+      "secondary": 2,
+      "all_original20_nominees_captured": true,
+      "negative_keys_exact_original20_games_and_first_nonbrilliant_frozen_control": true,
+      "positive_keys_follow_original_then_frozen_reserve_order": true,
+      "visited_positive_reserves": [
+        "171799048140:24",
+        "185498594944:39"
+      ]
+    },
+    "Hikaru": {
+      "raw_captures": 42,
+      "primary_brilliant": 20,
+      "primary_nonbrilliant": 20,
+      "secondary": 2,
+      "all_original20_nominees_captured": true,
+      "negative_keys_exact_original20_games_and_first_nonbrilliant_frozen_control": true,
+      "positive_keys_follow_original_then_frozen_reserve_order": true,
+      "visited_positive_reserves": [
+        "184040871044:64"
+      ]
+    }
+  },
+  "coach_quality_counts": {
+    "verified_visible_complete": 217
+  },
+  "prepared_database_sha256_unchanged": "cafe2a3e589f0d045c3402d2f8b17887b322557b9ad9780155422a291657293b",
+  "working_database": "workingassessment.db",
+  "working_database_sha256": "13e6575c245acbdbf8260486315cf79bd920b8fe7e66df08bbff1263294dea7e",
+  "primary_queue": "root-frozen-final200queue.json",
+  "primary_queue_sha256": "aeec043aa16b97000b4a8bc4d2f32b092e49c28a243f3b12f09bdfbf1054ca94",
+  "raw_file_sha256": {
+    "evidence/nelsi-fresh-review.json": "628de54604df06309d8e77c37de5710833e7536cf53fb835f67f0e9b8f7d6962",
+    "evidence/hansen-fresh-review.json": "72641aed6c23a4f497c011d746afc65e11bdf27da2ffdc1a9539e18d9e16592d",
+    "evidence/knvb-fresh-review.json": "778c7e6efb6c1669e912c59028fa12528024c7be5b2fec44b562b0423d4897e9",
+    "evidence/gothamchess-fresh-review.json": "cda396edc49b8bd4c8678ece11757f2a366b16d399c741b49c4306a4cad7731b",
+    "evidence/hikaru-fresh-review.json": "2b5a88e54f7bf45e34a212e3b841338168ec76cc5aa764d646074de05d54a48c"
+  },
+  "source_and_protocol_freeze_sha256": {
+    "FREEZE.json": "0f52334e2b730acf58a44785aa09b4bc8dbd3c8fd68ca57b4206a4efb300e9a8",
+    "ADAPTER-FREEZE.json": "348be630ab83301a263dbd50cc1808b2c07acca158c13f196fb4be17d19308a1",
+    "PROTOCOL-FREEZE.json": "0c2424b40feb9215bd87ca8846b3dcbdb20b478e9e00c0dcf8ca1725653fa998",
+    "QUEUE-FREEZE.json": "6ac5b29d0eccba0f0e955947f26170ed5e5e772369800cbd88ffd859435c14d6",
+    "FINALQUEUE.json": "c4586980b9bdbed2476e16d8c753ef2fbfdb23905bc436d5b23d0a42144900bb",
+    "NATIVE-SUBSET-FREEZE.json": "b05fec9a0472f081dfda51cca71fcc0339f1ce5730aaf47636a21ee29167e9e4",
+    "GOTHAM-QUOTA-COMPLETION-ADDENDUM.json": "f93ca19b820d163e4066bfedc5859530db4fd06bef49eca437a9a207f07999c7",
+    "GOTHAM-TOPUP-GO.json": "f8ad7badadda4f0bde2f84bc89a7ae93e7b3e97a63c3300ca0bdb08e966475fe"
+  },
+  "output_sha256": {
+    "primary-moves.json": "aeec043aa16b97000b4a8bc4d2f32b092e49c28a243f3b12f09bdfbf1054ca94",
+    "selected-assessment-games.pgn": "37f0a81ec1e046ff33a4b9b0b67f33cfeb5ce3e42b4cc3427bc032de6dce344a",
+    "selected-assessment-pgn-provenance.json": "501f004e0a30219782c39881f7d8b9c38edb927becc38eaff23caea04e288edd",
+    "working-observations-export.json": "be459e8d565c74d001e24ca37eaf4d5b09aa9360bf1728f1110fb78ac58fbe15"
+  },
+  "database_integrity": "ok",
+  "database_foreign_keys": "ok",
+  "engine_searches_or_model_scores_performed": false,
+  "selection_audit_originals_not_reimported": true,
+  "knvb_partition_not_reimported": true
+}

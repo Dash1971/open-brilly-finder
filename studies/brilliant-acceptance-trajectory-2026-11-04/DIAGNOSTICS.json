@@ -1,0 +1,110 @@
+{
+  "scope": "Descriptive post-fit diagnosis only; no changes to model, thresholds or selection.",
+  "custom_trajectory": {
+    "hard": {
+      "positive": 191,
+      "negative": 286,
+      "custom_trajectory": {
+        "TP": 8,
+        "FP": 0
+      },
+      "custom_retuned": {
+        "TP": 7,
+        "FP": 0
+      },
+      "gained_true": [
+        {
+          "key": "186041863638:55",
+          "pilot_group": false,
+          "cohort": "former848"
+        },
+        {
+          "key": "170562461430:54",
+          "pilot_group": false,
+          "cohort": "batch-11"
+        }
+      ],
+      "lost_true": [
+        {
+          "key": "187780686981:29",
+          "pilot_group": false,
+          "cohort": "former848"
+        }
+      ],
+      "gained_wrong": [],
+      "removed_wrong": []
+    },
+    "fresh_hard": {
+      "positive": 54,
+      "negative": 150,
+      "custom_trajectory": {
+        "TP": 4,
+        "FP": 0
+      },
+      "custom_retuned": {
+        "TP": 3,
+        "FP": 0
+      },
+      "gained_true": [
+        {
+          "key": "170562461430:54",
+          "pilot_group": false,
+          "cohort": "batch-11"
+        }
+      ],
+      "lost_true": [],
+      "gained_wrong": [],
+      "removed_wrong": []
+    }
+  },
+  "standard_rf_trajectory": {
+    "hard": {
+      "positive": 191,
+      "negative": 286,
+      "standard_rf_trajectory": {
+        "TP": 11,
+        "FP": 0
+      },
+      "standard_rf": {
+        "TP": 8,
+        "FP": 0
+      },
+      "gained_true": [
+        {
+          "key": "184752512081:53",
+          "pilot_group": false,
+          "cohort": "former848"
+        },
+        {
+          "key": "167744883950:83",
+          "pilot_group": false,
+          "cohort": "former200"
+        },
+        {
+          "key": "187780686981:29",
+          "pilot_group": false,
+          "cohort": "former848"
+        }
+      ],
+      "lost_true": [],
+      "gained_wrong": [],
+      "removed_wrong": []
+    },
+    "fresh_hard": {
+      "positive": 54,
+      "negative": 150,
+      "standard_rf_trajectory": {
+        "TP": 4,
+        "FP": 0
+      },
+      "standard_rf": {
+        "TP": 4,
+        "FP": 0
+      },
+      "gained_true": [],
+      "lost_true": [],
+      "gained_wrong": [],
+      "removed_wrong": []
+    }
+  }
+}

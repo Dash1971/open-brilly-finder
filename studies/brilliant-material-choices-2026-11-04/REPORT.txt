@@ -1,0 +1,257 @@
+MATERIAL CHOICES IN THE 19 MATING-OFFER CASES
+2026-11-04
+
+Finding
+
+Material accounting explains the chess more clearly, but does not separate
+Chess.com's Brilliants from its Great/Best moves in these cases. In particular,
+Brilliant does not consistently mean paying a larger material price than the
+realistic alternatives. Some Brilliants preserve or win material against best
+defense; one Great actually gives up a bishop to force mate. Nor does having a
+strong alternative without an immediate offer consistently prevent Brilliant.
+
+This is diagnosis of the same 19 known cases, not another evaluation trial.
+All four correct additions, eight wrong additions, and seven missed Brilliants
+remain included. No classification rule, forest, threshold, or application was
+changed. Ratings were not used. These observations cannot establish Chess.com's
+private algorithm or a general accuracy figure.
+
+What we compared
+
+For each original full-history position, Stockfish 18 searched the best four
+moves at 3 million nodes. A separate search found the best move among all legal
+roots without a qualifying immediate nonpawn offer, where that set was nonempty.
+All actual moves appeared in the top four. There were 31 searches, completed in
+84.55 seconds, with one thread, Hash64, cleared hash and fresh UCI game per query.
+The script, input, engine and dependency hashes were frozen before execution.
+
+The immediate-offer test is the existing bounded exchange calculation: an
+opponent's legal capture of a nonpawn piece qualifies when its net same-square
+exchange gain exceeds the mover's immediate capture credit by more than100.
+There were no unknown root qualifications. Seven positions had no legal move
+without such an offer. This does NOT prove an unavoidable material loss: a
+capture may allow mate, and a check may merely postpone an offer.
+
+We legally replayed 287 lines: both saved depth windows, all new candidate PVs,
+the previously saved acceptance responses, and immediate acceptance/mate
+witnesses. No new acceptance searches were added. Material counts start from
+the ORIGINAL position, before the played move, so initial captures count as
+credit. Values are pawn90, minor300, rook500, queen1000. These accounting units
+are not engine centipawns. A transient deficit before a recapture is not a
+lasting sacrifice. Nonterminal PV endpoints remain truncated evidence; mate
+ends the game and is not evidence of a permanent material debt.
+
+Evaluation comparison (all scores from the mover's perspective)
+
+"Other" is the strongest different move found in the SAME unrestricted search.
+"No offer" is the separate constrained search. Its evaluations are approximate
+comparisons, not exact costs: the two searches allocate their nodes differently.
+An empty set is shown as NONE; it is not a missing or losing evaluation.
+M3 means a forced mate in3; -M7 means the mover is being mated in7.
+
+Group / game:ply / played       Actual    Other                  No offer
+CORRECT ADDITIONS (Chess.com Brilliant)
+166826414194:56 Bxg3            +1.69     Ng7 -5.05               NONE
+173510361166:31 Qh5              M3       Nxf7 +2.90              Bf4 +2.49
+169151816360:29 Qxg4            +3.52     Ne2 +1.48               Ne2 +1.44
+174182921870:70 Rd8             +6.63     Qf2+ +0.63              Qf2+ +0.07
+
+WRONG ADDITIONS (Chess.com Great unless marked Best)
+173487499542:32 Bh3             +1.90     Nh4 -0.65               NONE
+167315486838:54 Qe6             +0.40     Qxf3+ -9.83             NONE
+179135871509:66 Qf6 [Best]      +4.76     Nd2+ +2.35              Nd2+ +2.92
+184007310619:65 Rxf2            +0.24     Kg1 -M7                 NONE
+147424650238:25 Qh5 [Best]       M4       Rxf4 +5.38              Nc3 -0.87
+171360742446:77 Qf7              M3       Qxc2 -3.37              NONE
+171609570218:62 Qf6             +4.65     Qf7 +0.03               NONE
+173700284016:22 Ba6             +2.70     Bc5 -0.23               Rb8 -3.10
+
+MISSED BRILLIANTS
+169433595406:52 Nxf4            +5.06     Rf8 -1.15               Rf8 -1.66
+145479440308:17 Nxe5            +0.96     Nbd2 +0.39              Nbd2 +0.43
+172807397646:46 h3               M10      Qe4 +8.22               cxd4 +8.16
+148103018608:20 Qxe3            +3.71     Bxf3 +3.09              Bxf3 +3.34
+168956462236:46 Ng4             +4.04     Qh5 +6.35               Qh5 +6.70
+145360060432:40 d3              +5.54     Ng6 +3.30               Ng4 +2.14
+165547173668:60 Nb8             +3.47     Nb6 +4.24               NONE
+
+The two depth windows preserve the important comparisons. The false Qh5's
+constrained alternative changes from Nc5 (-0.73) to Nc3 (-0.87), so its exact
+identity is uncertain. Both are far below the mating move. Do not infer an
+exact cutoff from any of these values.
+
+Contradictions that matter most
+
+1. Genuine queen offer, but no paid queen sacrifice against best defense.
+   Brilliant Nxe5 offers ...Bxd1 Bxf7#. Yet best defense is ...Qxe5:
+   White captures a knight, Black captures that knight, and the original
+   material balance is restored. Nbd2 also preserves material initially and
+   scores +0.39 in the same search, versus +0.96 for Nxe5. Thus the Brilliant
+   does not require a large evaluation improvement or material expenditure.
+
+2. A Great really does pay for its mate.
+   Great Qf7 meets ...Rxg2+ Rxg2 Bxg2 Qxh7#. White gives up a bishop and rook,
+   takes a rook and pawn, and mates: a net bishop-for-pawn material concession.
+   Qxc2, the next move found, is losing (-3.37). This is not an empty threat or
+   an offer that the principal variation simply declines. Its material cost
+   is more concrete than the Nxe5 Brilliant above, yet Chess.com says Great.
+
+3. The two Qh5 moves remain closely matched despite opposite labels.
+   Brilliant16.Qh5 leaves Bg5 offered: ...Bxg5 Qxf7#. Best13.Qh5 leaves Ne4
+   offered: ...dxe4 Qf7# or Qg6#. Both offer a minor piece, both force mate,
+   and neither best-defense mating PV drops below the original material count.
+   Avoiding an immediate offer is worse in both positions: Bf4 +2.49 for the
+   Brilliant, Nc3 -0.87 for the Best. The Best does have a stronger OTHER
+   winning option, Rxf4 +5.38, but that move also leaves offers. This may help
+   describe this pair; it does not explain h3, below.
+
+4. New, undefended material exposure does not settle Rd8 versus Ba6.
+   Brilliant Rd8 offers the moved rook: Qxd8 Qxg2#. Great Ba6 offers the moved
+   bishop: Qxa6 Qd1#, while an already threatened rook also remains offered.
+   Both actual moves are best and both have substantially worse alternatives.
+   Against the saved strongest defenses, Rd8 wins a rook with ...Qxe2, whereas
+   Ba6 eventually trades bishops and wins a pawn. Neither line establishes a
+   lasting material expenditure by the player making the offer.
+   The constrained Rd8 alternative begins Qf2+ and plays ...Rd8 two plies
+   later: the filter can delay the same rook offer rather than avoid it.
+
+5. Strong material-preserving alternatives do not consistently prevent Brilliant.
+   Brilliant h3 forces mate in10, but cxd4 is already +8.16 in the constrained
+   search. That alternative's saved line never falls below the original
+   material balance and ends materially ahead; it eventually offers a rook
+   nevertheless. This is a direct caution against a simple "already winning
+   without the offer" interpretation. Ng4 also remains Brilliant despite
+   Stockfish preferring Qh5. We have measured the disagreement, not explained
+   Chess.com's internal evaluation or proved its label wrong.
+
+6. Being forced to leave something offered occurs on both sides.
+   No legal root avoids an immediate offer for Bxg3 and Nb8 (Brilliant), or
+   Bh3, Qe6, Rxf2, Qf7 and the knight-fork Qf6 (Great). Bxg3 rescues a rook
+   attacked by a knight by capturing that knight and exposing its own queen;
+   best defense exchanges bishop for knight. Nb8's alternative Nb6 offers the
+   same knight on another square. A binary "could avoid offering material"
+   description therefore loses the essential transaction.
+
+Case-by-case material ledger, including all contradictions
+
+CORRECT ADDITIONS
+
+Bxg3 (166826414194): The move collects a knight, offers the stationary queen,
+and threatens mate if it is taken. Against Qxg3+ the bishop is traded for that
+knight, restoring the original material balance. Ng7 instead permits Nxf5,
+giving rook for knight. The Brilliant preserves material better in these lines.
+
+Qh5 (173510361166): The already attacked bishop on g5 remains available.
+Best defense Kg8 Bh7+ Kh8 Nxf7# declines it. Bf4 avoids an immediate offer,
+but later trades minors. No material debt is required for the actual mate.
+
+Qxg4 (169151816360): Captures a pawn and offers the moved queen. If ...Bxg4,
+White is down910 accounting units relative to before the move, then mates.
+Best defense ...Re8 declines the queen; the saved line keeps the extra pawn.
+Ne2 and Qb3 are quieter, materially viable but weaker alternatives.
+
+Rd8 (174182921870): Offers the moved rook, but strongest defense Re2 lets
+Black capture that rook with Qxe2. The actual PV wins material. Qf2+ and a4
+avoid an immediate offer and are far less effective; Qf2+ can postpone Rd8.
+
+WRONG ADDITIONS
+
+Bh3 (173487499542, Great): A knight already forks two rooks. The move leaves
+both offered while creating mate. Best defense g3 Red8 leads to exchanges:
+Bxf6 Qxf6 Nxa8 Rxd1 Rfxd1. Black's two rooks are exchanged for White's queen,
+restoring the initial material balance with these piece values. Inferior
+alternatives also leave an offer; this is a rescue of an existing threat.
+
+Qe6 (167315486838, Great): The rook is already threatened. The queen move
+threatens mate after Rxg7 but best defense Qxe6 fxe6 exchanges queens and
+preserves the initial material balance. The other searched moves lose badly.
+The queen's temporary disappearance before fxe6 is not a queen sacrifice.
+
+Qf6 (179135871509, Best): Leaves an attacked bishop on g5. Best defense Nc3
+declines it; Qxf5+ wins a minor. Nd2+ is a viable alternative without an
+immediate offer, though its later exchanges differ between the two searches.
+An immediately quiet root is not a guarantee of a quiet subsequent transaction.
+
+Rxf2 (184007310619, Great): In check, White captures a knight and offers the
+rook. Taking it permits Qxg7#. Best defense Rxe5 Rxe2 Qxe2 instead exchanges
+knights and rooks, restoring the initial material balance. Every other legal
+move loses to mate in this search. The apparent rook price ignores the knight
+already collected and the opponent's alternative exchanges.
+
+Qh5 (147424650238, Best): Leaves a knight offered, but the forced-mate PV
+Qe8 Qxe8 Rg8 Qg6+ Kh8 Nf7# instead collects the enemy queen. Rxf4 and Bxf4
+are already winning but still leave immediate offers. Retreating the offered
+knight to Nc3 avoids an immediate offer but loses the advantage.
+
+Qf7 (171360742446, Great): Actual best-defense mate pays a bishop for a pawn,
+as described above. All roots leave an immediate offer. This remains a strong
+counterexample to requiring an actual material concession for Brilliant.
+
+Qf6 (171609570218, Great): A knight already forks queen and rook. Qf6 saves
+the queen and guards the rook, leaving an exchange concession if Nxg7.
+Best defense Nxe4 Nxe4 Rxe4 Rg5 Qh4 Qxf5 removes the forking knight and
+recovers material. Qf7 offers a queen exchange and roughly equality; it too
+leaves the rook available initially. The chosen move is materially stronger.
+
+Ba6 (173700284016, Great): Newly offers a bishop while leaving a threatened
+rook. Against Bd3 Rd8 a3 Bxd3 cxd3 Be7 Be3 Qxd3, the bishop is exchanged
+and a pawn is won. The cleanest immediate retreat Rb8 is losing and still
+allows a bishop to be taken later. This is not explained away as a fake offer.
+
+MISSED BRILLIANTS
+
+Nxf4 (169433595406): First wins a bishop; offers a rook. If Rxd8, the immediate
+net loss is only200 accounting units, before any reply, because the bishop
+is already collected. The saved best-defense PV trades queen for two rooks
+and retains a material gain. Earlier acceptance analysis also found a winning
+nonmating material route. That evidence remains; it was not excluded here.
+
+Nxe5 (145479440308): Trades knights against best defense while offering a
+separate queen, as described above. Nbd2 is a viable non-offering alternative.
+Its later truncated PV ending down material is not a proof of forced loss.
+
+h3 (172807397646): Leaves a bishop offered. Best defense Nf4 allows a pawn
+advance, promotion, exchanges and mate without a deficit relative to the
+original material balance. cxd4 also wins comfortably and preserves material
+through its saved line, despite a later rook offer. Keep this contradiction.
+
+Qxe3 (148103018608): Captures a bishop before offering the queen. Its immediate
+accepted queen price is700 units relative to the original position, not1000;
+fxe3 allows Bg3#. Best defense Nd5 Qh6 hxg4 Qxh1 instead trades bishops and
+wins a rook. Bxf3 is nearly as strong but its continuation includes a later
+unrecaptured bishop offer. Neither the immediate-offer filter nor one scalar
+material difference fully describes these alternatives.
+
+Ng4 (168956462236): Offers a knight, but best defense first allows Qxf1,
+collecting a bishop; only then does hxg4 fxg4 occur. The saved actual PV never
+falls below its original material balance. Qh5 is stronger, qualifies as no
+immediate offer, and itself starts Qxc6+ bxc6: knight lost, queen gained.
+The timing and total transaction matter more than the first captured piece.
+
+d3 (145360060432): Leaves a knight offered, but strongest defense c3 Qd5 Bg2
+Bxg2 fxe5 Bh3 Qf3 Qxe5 first lets Black take a bishop, then lose the knight,
+then recover a pawn. It is a minor exchange followed by gains. Alternatives
+Ng6/Ng4 are weaker and initially give up a pawn instead.
+
+Nb8 (165547173668): Offers the moved knight; best defense Rc1 declines it.
+Later Rxf8+ Nxf8 exchanges rooks, followed by Qxe5 losing a pawn. The stronger
+Nb6 also offers the knight and its saved PV preserves material. All legal
+moves leave an offer, so no clean non-offering comparison exists in this set.
+
+What this investigation supports
+
+We should describe the offered piece, the full exchange transaction, and the
+quality/material consequences of alternatives separately. The current idea of
+"material sacrifice" conflates them. This better description is useful for
+understanding errors, but these cases do NOT yet support a new decision rule.
+The strongest contradictory pairs remain unresolved, especially the two Qh5
+moves, Rd8 versus Ba6, and Brilliant Nxe5 versus Great Qf7. Any future account
+of Chess.com's distinction must explain those rather than discard them.
+
+Artifacts
+
+PROTOCOL.json / probe.py: frozen search definitions and hashes.
+CHOICES.json: all legal rootsets, both search windows, scores and full legal PVs.
+trace.py / MATERIAL-LEDGERS.json: replayable per-ply balances, capture events,
+immediate offer accounts, acceptance evidence, and all19 cases.
+VERIFICATION.json: focused provenance/replay checks.

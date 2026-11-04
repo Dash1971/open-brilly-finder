@@ -1,0 +1,85 @@
+{
+  "scope": "Artificial single-feature model sensitivity only. Not legal position edits, measured probabilities, classifier changes, or a proposed override.",
+  "rows": [
+    {
+      "budget": 300000,
+      "actual_score": 0.6064957802681255,
+      "score_if_only_ec_sacrifice_true": 0.6829338838475308,
+      "score_if_only_mating_acceptance_false": 0.5797600369510935,
+      "most_frequent_splits_on_actual_paths": [
+        [
+          "ec_material_margin",
+          17
+        ],
+        [
+          "best_minus_prior_cp",
+          15
+        ],
+        [
+          "offered_piece_moved",
+          14
+        ],
+        [
+          "physical_debt3_min",
+          12
+        ],
+        [
+          "ec_material_after",
+          12
+        ],
+        [
+          "ec_sacrifice",
+          12
+        ],
+        [
+          "capture_promotion_credit",
+          11
+        ],
+        [
+          "after_mapped_score",
+          11
+        ]
+      ]
+    },
+    {
+      "budget": 3000000,
+      "actual_score": 0.6213736221761075,
+      "score_if_only_ec_sacrifice_true": 0.7017056335529022,
+      "score_if_only_mating_acceptance_false": 0.5980589314906544,
+      "most_frequent_splits_on_actual_paths": [
+        [
+          "ec_material_margin",
+          17
+        ],
+        [
+          "offered_piece_moved",
+          14
+        ],
+        [
+          "best_minus_prior_cp",
+          14
+        ],
+        [
+          "physical_debt3_min",
+          13
+        ],
+        [
+          "ec_material_after",
+          12
+        ],
+        [
+          "ec_sacrifice",
+          12
+        ],
+        [
+          "capture_promotion_credit",
+          11
+        ],
+        [
+          "after_mapped_score",
+          10
+        ]
+      ]
+    }
+  ]
+}

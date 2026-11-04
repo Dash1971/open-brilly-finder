@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-11-04T05:38:40.015271+00:00",
+  "scope": "Descriptive comparison of saved sacrifice-compensation relation witnesses only. No classifier fits, rules, cutoffs, fresh validation or deployment.",
+  "script_sha256": "7dd5e775552ed670f3ccf84205f3cd95630999610c4af653f87fc68c409625bd",
+  "source_sha256": {
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-evaluation-consistency-2026-11-04/PREDICTIONS.json": "49d8cf084bddede17ca86cf170fbae26e9074eff323cf4d5898671e99bec0c8f",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-forest-miss-diagnosis-2026-11-04/MATCHES.json": "c465643efed4ec4d89a0c4b5b59eac89c2bcb22a9cb45b39881b7e9ea9a8fcbd",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-forest-miss-diagnosis-2026-11-04/PANEL.json": "80ff3232ccbde94c33d92d6c2bfefd0f0698219e39b51a545c8e56e2985e3710"
+  },
+  "cohorts": "All1302eligible; primary429old custom_retuned misses vs226hardordinary;452found descriptive comparator; same429matches and272exactanchors, same12pairs.",
+  "branch_selection": "In each window independently, take first(best) saved response per acceptance, then select opponent-best acceptance by lowest mover outcome: losingmates thenfinitecp thenwinningmates, matesordered toopponent preference, uci tie. Missing response in ANY acceptance yields unknowncasewindow.",
+  "horizon": "First6responseplies. Booleans indicate observedwitness, not impossible whenfalse; missingbranch null; incompletehorizon explicitlyreported.",
+  "metrics": "Fixed fields incompare.py, primary currentwindow; previousretained forconsistency. Countcases notbranches. Reportallpredefined16 descriptors; no thresholdselection or pvalues.",
+  "matching_limit": "Controls canrecur across429pairs; use272exact-anchor pairs separately and preserve157weakfallbacks. Theseare label-informed existingdevelopment examples."
+}

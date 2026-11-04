@@ -1,0 +1,33 @@
+{
+  "created_at_utc": "2026-11-04T03:18:25.584710+00:00",
+  "scope": "Prospective targeted external test; one fixed custom forest, fixed threshold and previously specified exception. No fitting, threshold selection, family selection, rating features, deployment or general tooling.",
+  "forest_threshold": 0.8143062085223279,
+  "mating_enabled": true,
+  "forest": "Exact selected fullfit custom forest from previous study. Bothwindowminimum score; inherited eligible/confidence/physicalknown guards.",
+  "candidate": "baseline forest award OR (exact base_rule AND saved nonmate_material_win==0 in BOTHwindows). Anyunknown abstains. No removal of existing baseline awards.",
+  "source_sha256": {
+    "research/brilliant-nonmate-material-2026-11-04/MODEL-FREEZE.json": "04e607ded4ee6b094e532af3c1cfb5361814b8ac6eda2aaaea81e7bfd2dcb748",
+    "research/brilliant-nonmate-material-2026-11-04/PROTOCOL.json": "2589ed973e17d895bbdbaa592f320f7f862a1168cda436bb7e975383c456e8ab",
+    "research/brilliant-nonmate-material-2026-11-04/FEATURE-PROTOCOL.json": "c8bf0b66132f091ca1c2b0a1c9e7b77c577dd0da7d30e644d23f09951a5d7cfc",
+    "research/brilliant-nonmate-material-2026-11-04/base_rule.py": "12caac7b54c69a2be25e157799a9af80db2d3f28e8407e493bb5383b83bbaa7d",
+    "research/brilliant-nonmate-material-2026-11-04/extract.py": "baf3523c8b8fc7055e0085771255476537c57c18f0506b4b028dadb09c16b3e1",
+    "research/brilliant-nonmate-material-2026-11-04/selected-model.json": "e153a3d151a8803d13fc85ba857c9297541a5d45b627f776ea56f1a249002332"
+  },
+  "artifact_sha256": {
+    "forest.json": "e153a3d151a8803d13fc85ba857c9297541a5d45b627f776ea56f1a249002332",
+    "base_rule.py": "12caac7b54c69a2be25e157799a9af80db2d3f28e8407e493bb5383b83bbaa7d",
+    "nonmate_extract.py": "baf3523c8b8fc7055e0085771255476537c57c18f0506b4b028dadb09c16b3e1"
+  },
+  "engine": "SF18 existing pinned binary; Threads1Hash64MultiPV2 nodes300000, current/previous completed same-depth windows, fullPGNhistory; clearhash/newgameperposition. Same feature extractor as earlier standard studies.",
+  "sampling": {
+    "source": "Existing public monthly PGN caches; exclude all previously studied/reviewed/reserved gameIDs and seen before/after positionfirst4fields. Exclusion manifest frozen before mining. No labels used to select or order.",
+    "mine": "Deterministic sha256 game order, chronological actual played moves; any qualifying nonpawn-piece capture after move permitting actual immediate mate reply. Up to4000freshgames/400rawcandidates/600wallseconds, whichever first. No synthetic turnnewness filter; inheritedrule handlesattribution.",
+    "inference": "Up to400rawcandidates, deterministic sha256 caseorder;900secondwall cap; only completedcasesincluded, partialexplicit.3coreposition searches then exact75features. Acceptingbranch searches for base_rule matches only;<=4offers. Fixed settings no retries.",
+    "review": "Up to12new-award candidates ordered by casehash and up to12nearby nonawarded structuralmatingoffers fromdistinctgames. Prioritize base-rulepass material-veto/unknown controls, then minimize categorical mismatch (capture/check/queenoffer/movedoffer) and numericdistance(bestscore/100,gap/10,prior score/100); greedydeterministic tiescasehash. If fewernewawards, includeall plus up to12controls. If0newawards, review first12base-rulepass candidates or closest structuraloffers for diagnostic coverage; no expansion.",
+    "freeze": "Freeze all scoredcases and exact reviewqueue/hash BEFORE any new Chess.com label read. Retain all queued results, unresolvedlabelsreported, no result-based topup.",
+    "label": "Chess.com GameReview TorchHuman/Fast currentaccount settings read-only. Exacttargetmove fromsamepublicgame; no inventedratings. OriginalgameReview first; importoriginalPGN onlyifnormalUI cannotopen. Do not changepreferences.",
+    "unit": "Whole game one reviewtarget pergame; reject crossgame duplicated targetpositions. No newfolds or retraining: priorgroupeddevelopment design preserved, prospectiveexternalgames fully heldout."
+  },
+  "reporting": "Paired baseline vs candidate TP/FP/FN/TN, incrementaltrue/wrong awards, allqueuedcases. Targetedcasecontrol sample cannot estimate population recall/precision or prove<1%wrong. KeepdiagnosticknownNe5 excluded. Report binomial uncertainty fornewawards; do notdeclarezeroFPpopulation guarantee.",
+  "stop": "No outcome-driven tuning, retries, threshold variants, newfamilies or sampletopups. Any operationalproblem stop expansion and report minimalblocker."
+}

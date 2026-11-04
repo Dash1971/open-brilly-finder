@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {attributedOfferDecision} from './offerDecisionProofs.ts';
+import {hasMatingAcceptance,isSacrifice} from '../../../root/frozen-v4/noSweatClassify.ts';
+const path='/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/variants/';
+const r=JSON.parse(readFileSync(path+'capture-regression.json','utf8'));
+const decision=attributedOfferDecision(undefined,r.fen_before,r.fen_after,r.uci,false);
+assert.equal(isSacrifice(r.fen_before,r.fen_after),false);
+assert.equal(hasMatingAcceptance(r.fen_before,r.fen_after),false);
+assert.equal(decision.attributed,true);
+assert.equal(decision.quietCorroboration,false);
+assert.equal(decision.matingAcceptance,false);
+const results=JSON.parse(readFileSync(path+'results-CD.json','utf8'));
+assert.equal(results.summaries.core818.v4.TP,320);assert.equal(results.summaries.core818.v4.FP,25);
+console.log(JSON.stringify({captureRegression:'Ndxe5 existing EC/mate guard remains false; quiet exception not applied',decision,baselineParity:true}));

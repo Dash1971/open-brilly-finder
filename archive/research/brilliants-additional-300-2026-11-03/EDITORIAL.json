@@ -1,0 +1,49 @@
+{
+  "recorded_at_utc": "2026-11-03T04:58:34.075693+00:00",
+  "editorial_goal": "One unified visual,data-driven study of agreement withChess.comandthebestopen-sourceimplementationamongthepeersactuallytested.",
+  "main_report": {
+    "lead": "Measured Chess.com agreement on the complete combined sample and on reserved games; describe what the classifier recognizes.",
+    "comparators": [
+      "En Croissant lateststablev0.15.1directannotation",
+      "Final Mute candidate with confirmed awards"
+    ],
+    "metrics": [
+      "balanced overall agreement",
+      "Brilliant detection",
+      "extra awards among explicitnon-Brilliants",
+      "reserved-game validation results"
+    ],
+    "structure": [
+      "Outcome and scope in one paragraph",
+      "Large combinedcomparisonfigure",
+      "3chesspositionexamplesexplainingaward/rejection/disagreement",
+      "Plainlanguagealgorithmflow",
+      "What remains uncertain,short and specific"
+    ],
+    "exclude": [
+      "collection chronology",
+      "startingcount/increasedcount narrative",
+      "chat context",
+      "PR iteration numbers",
+      "memory/browser/tooling history",
+      "unmeasured99%claim",
+      "unsupportedrankingoverallopensourceprojects"
+    ]
+  },
+  "technical_appendix": [
+    "exactsourcepinsandlatestECbyte-identicalproof",
+    "rawECvsMobileMaia/sharedconfirmationdistinction",
+    "combineddatasetdedupandwholegamepartitions",
+    "source/test/developmentprovenanceandselectionbias",
+    "originalartifacthasheswithnotimelineinstory",
+    "reproductioninputsandcommands"
+  ],
+  "sampling_caution": "A balanced,enriched challenge set measuresconditionalagreement; notnaturalBrilliantprevalence orordinary-gamefalsepositiverates.",
+  "planned_complete_core_sample": {
+    "moves": 618,
+    "observed_brilliant": 309,
+    "explicit_non_brilliant": 309,
+    "completion_required": true
+  },
+  "publication_gate": "No final combined results until all300additionalmovesareverified and fullfrozen-policy replay iscomplete."
+}

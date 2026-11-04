@@ -1,0 +1,80 @@
+Mating-offer mechanism comparison — 2026-11-04
+
+Scope: four correct additional awards, eight wrong additional awards, and seven missed Chess.com Brilliants from the frozen prospective study. Diagnostic only. No new classifier, rule, cutoff, training data insertion, retrospective re-scoring, or deployment. Ratings excluded from the investigation.
+
+MAIN FINDING
+We have not recovered Chess.com's exact sacrifice criterion. We have identified three different issues that the current approach combines: tactical importance, what constitutes a sacrifice, and the reliability/scale of engine quality measurements. The19cases disprove several simple explanations and expose a concrete search artifact. They do not justify another hand-written exception.
+
+1. TACTICAL IMPORTANCE IS NOT THE SAME AS BRILLIANCE
+Six of eight false awards are Great, two Best. Our mating exception explicitly demands rank1, a >10point advantage over the next option and >5point improvement over the prior-own-move evaluation. That demands a uniquely strong turning-point move. Chess.com's public description of Great emphasizes critical/only-good moves; Brilliant emphasizes a good piece sacrifice and best-or-nearly-best quality. It does not say the Brilliant move must be uniquely good.
+
+Observed example: the missed9.Nxe5 (145479440308:17) is another Legal-like queen offer: ...Bxd1 Bxf7#. Chess.com calls it Brilliant. Saved Stockfish instead gives ...Qxe5 as best defense; Nxe5 scores+0.80 and the alternative Bb5+ scores+0.47. Our exception misses it because the gap and improvement are too small, even though the engine regards Nxe5 as best. The original forest also scores it below cutoff. This is an overly narrow exception, not failure to see the mate.
+
+The missed ...h3 similarly fails the uniqueness condition despite a recognized forced mate. A second option, ...cxd4, is already winning in saved Stockfish analysis. Both illustrate why important/unique is not a sufficient substitute for sacrificial. Conversely Brilliant ...Bxg3 is also an urgent defensive resource, so 'defensive move means Great' is false.
+
+Official source, consulted2026-11-04:
+https://support.chess.com/en/articles/8572705-how-are-moves-classified-what-is-a-blunder-or-brilliant-etc
+The public description is qualitative and not a complete executable specification; these local Stockfish scores need not be Chess.com's exact internal search values or expected-point calculation.
+
+2. THE SACRIFICE BOUNDARY REMAINS PARTLY UNRESOLVED
+All twelve awarded candidates have real legal acceptance-mate witnesses. This is not a collection of illegal pinned-piece captures or imaginary mates.
+
+The four correct awards have clear sacrificial mechanisms:
+- ...Bxg3 exposes an undefended queen: Qxd7 Rxf1#.
+- Qh5 leaves a bishop available: ...Bxg5 Qxf7#. Its apparent queen recapture is unsafe because of the opposing queen's x-ray.
+- Qxg4 puts the queen on an undefended square: ...Bxg4 Ne7# or Nxf6#.
+- ...Rd8 offers an undefended rook: Qxd8 Qxg2#.
+
+Many Great moves deal with a fork, an already attacked piece, or a check. Examples: ...Bh3 answers a knight fork of two rooks; ...Qf6 moves the queen out of a knight fork while the rook remains available; Rxf2 is a check evasion. These differences suggest we need to understand the whole material transaction and what choices existed before the move, not merely inspect a greedy capture after it.
+
+But this is only a tendency. Great ...Ba6 is a decisive counterexample: it offers its moved, undefended bishop, and Qxa6 Qd1# is a real deflection mate. There is no recapture of that bishop. That broad mechanism resembles Brilliant ...Rd8. Also, Brilliant ...Bxg3 answers an existing attack on a rook. Neither 'new undefended piece', 'voluntary rather than defensive', 'moved piece', nor 'no recapture' cleanly separates these cases.
+
+The two Best examples have useful alternatives. Best Qh5 has Bxf4 at+4.02 compared with forced mate; already being comfortably winning is a plausible explanation, consistent with Chess.com's public guidance. It is not established as the actual reason. Brilliant Qh5 also has a favorable alternative (+2.73), and Brilliant ...h3 has an even higher winning alternative under this different engine. Inferring a new numerical winning cutoff would not be justified.
+
+3. THE MATERIAL VETO ANSWERS AN INCOMPLETE QUESTION
+The proxy asks whether a finite favorable saved alternative gains at least300cp by ply12. This is much narrower than 'is this a meaningful sacrifice?' and does not prove that mate is the only viable compensation.
+
+Missed Brilliant ...Nxf4 offers a rook: Rxd8 Qxg2#. But Black can also recapture and eventually win a rook; the saved nonmating line has +500material at ply12 and favorable engine score+6.21. Our veto rejects it. Chess.com explicitly still calls it Brilliant. A material-winning alternative therefore cannot be a universal disqualifier.
+
+Great ...Ba6 passes the veto although its nonmating continuations are favorable. After Bxa8, the saved alternative begins ...Bxe2+ Kxe2 ...Ke7 and evaluates+5.56 for Black, but material gain at the fixed horizon is290cp, just below300. After Qxa6, the alternative ...Qxe4 also remains favorable while material has returned to the pre-move balance at the horizon. The proxy overlooks these as disqualifying alternatives because it measures a particular gain threshold, not viability or recovery of the sacrificed material. This is a diagnosis of the proxy's meaning, not a proposal to tune its cutoff.
+
+Several other cases have only mate-scored top replies, or finite alternatives with poor scores. A zero proxy value means no qualifying witness among the sampled replies. It cannot establish that no relevant alternative exists outside MultiPV2.
+
+4. THE SEVEN MISSES HAVE DIFFERENT CAUSES
+Move | Main observed blockers in the frozen study
+Nxf4 | Forest below cutoff; passes original mating rule, then explicitly vetoed for a favorable material-winning alternative.
+Nxe5 | Forest below cutoff; best-vs-second gap and prior-improvement requirements both fail despite best-move status and legal queen-offer mate.
+h3 | Forest below cutoff; gap requirement fails because the other saved option also wins.
+Qxe3 | Forest score about.952 is high, but independent before/after searches manufacture an apparent quality loss above the allowed5points. Also EC=true, outside the special EC=false exception.
+Ng4 | Quality gate fails; played move absent from original top2, forest score also low. Deeper analysis still favors other moves.
+d3 | Already recognized as an EC sacrifice and eligible; forest minscore.799007 is below fixed.814306 cutoff. EC=true excludes the new exception. This is a statistical miss, not absence of a mating witness.
+Nb8 | Quality gate fails; played move ranks2 and forest score is low. Before/after search disagreement adds loss beyond the within-search comparison.
+
+The feature mating_acceptance=false for EC=true cases is an encoding convention (!ec && mate witness), not evidence that a mate witness is absent. All seven have legally verified accepting captures allowing mate.
+
+5. BOUNDED DEEPER/CHESS.COM CHECKS
+For Qxe3, Ng4, Nb8 only, ran nine prespecified3M-node Stockfish18 diagnostics: before MultiPV2, after MultiPV2, and played-root-only search for each. Full PGN history, Threads1Hash64, fresh hash/session each query;24.9seconds total, no follow-up budget sweep.
+
+Move | Original300k before-after loss | Deeper3M loss, current window
+Qxe3 |8.43points|0.00points
+Ng4 |9.72points|9.03points
+Nb8 |7.28points|7.52points
+
+Qxe3 remains rank1 and scores+3.76 for the mover both before and after at3M. Both current and previous window losses become0. Its earlier8.43point rejection was a search-consistency artifact. This does not assert what a fully recomputed deeper-feature forest would award; no policy was re-evaluated.
+
+Ng4 remains outside the deeper top2 and Nb8 remains second choice. Their story is not 'just search deeper'. Played-root-only searches also show sensitivity to search context; they are not guaranteed directly comparable to separate unrestricted searches. In particular Nb8's forced-only result is closer to best than its independently searched after-position result. No side of that comparison was chosen to manufacture a new award.
+
+Read Chess.com's visible review card evaluations immediately before and after the same moves, with TorchHuman/Fast settings verified unchanged:
+- Qxe3: Black+3.69 before and+3.69 after; Brilliant.
+- Ng4: Black+5.70 before and+4.42 after; Brilliant.
+- Nb8: Black+3.81 before and+2.95 after; Brilliant.
+
+Applying OUR logistic conversion to the last two displayed pairs yields approximately5.50point loss, already beyond OUR5point gate, yet both are labelled Brilliant. This shows that our current gate cannot be assumed to reproduce the visible Chess.com judgments. It does not expose Chess.com's private expected-point calculation, prove which engine is objectively right, or establish a new tolerance. Visible rounded card scores may themselves differ from internal classification inputs.
+
+WHAT TO UNDERSTAND BEFORE ANOTHER RULE
+Separate (a) whether the move is sufficiently good, (b) what material is genuinely being offered compared with realistic alternatives, and (c) how that offer relates to the tactical threat. Uniqueness/turning-point features primarily describe (a)'s importance, not automatically(b). A sampled material-gain veto is not a complete measurement of(b). Unstable before/after searches can reject(a) before the learned classifier gets a say.
+
+The concrete progress is identifying mistaken assumptions and one confirmed measurement artifact, not recovering a hidden Chess.com formula. Better evidence about material choices/defense and consistent quality comparisons is justified. Another threshold or exception is not yet justified by these nineteen cases. Preserve the original fresh-test failure; these cases are now diagnostic/development evidence, not an untouched validation set.
+
+EVIDENCE AND VALIDATION
+CASES.json/COMPARISON.json cover exactly4correct,8wrong,7missed. AWARD-AUDIT.txt details all12awarded mechanisms and counterexamples; MISS-AUDIT.txt details all7gate failures and saved lines. DEPTH-PROTOCOL.json,probe_depth.py,DEPTH.json preserve the bounded deeper diagnostic. CHESSCOM-EVALUATIONS.json plus six full UI-text receipts preserve displayed score comparisons; CHESSCOM-SETTINGS.txt records unchanged review settings. Previous prospective freezes and labels were rehashed unchanged; quoted saved tactical lines were replayed legally. No ratings analyzed, rule/model/threshold changes, revised prospective verdict, or deployment.

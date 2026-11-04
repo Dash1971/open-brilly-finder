@@ -1,0 +1,171 @@
+Mute Chess: conditional response gap feature experiment
+November 4, 2026 (Japan)
+
+Outcome
+
+Adding this one feature did not establish a useful replacement. It hurt the
+custom forest and produced a small, uncertain gain in the standard forest.
+Neither learner recognized more of the difficult ec_sacrifice=false positives
+that motivated the hypothesis. Final training-only selection retained the
+original expanded custom forest with the previously selected retuned cutoff.
+No application model, setting, or deployment was changed.
+
+Same grouped evaluation, paired original-versus-augmented learners
+
+Approach                          Correct/917  Recall  Wrong  Wrong/awards
+Custom, original fixed cutoff     436          47.5%   6      1.36%
+Custom, original retuned cutoff   452          49.3%   6      1.31%
+Custom, plus conditional gap      424          46.2%   7      1.62%
+Standard RF, original features    473          51.6%   7      1.46%
+Standard RF, plus gap             477          52.0%   7      1.45%
+Training-selected procedure       465          50.7%   5      1.06%
+
+The proper feature comparisons are augmented custom versus RETUNED original
+custom, and augmented RF versus original RF. This prevents threshold-tuning
+gains from being misattributed to the added measurement. These are the learning
+methods retrained on common data, not a new measurement of live-site recall.
+
+Custom: 28 fewer correct awards and one more wrong award. It gained22true awards,
+lost50, added3wrong awards and removed2.
+
+Standard RF: four more correct awards with the same total of seven wrong awards.
+It gained24true awards and lost20; one new wrong award replaced one old wrong
+award. Thus it is a net aggregate gain, not a strict superset of better decisions.
+The conditional group-bootstrap95% interval for recall change was approximately
+-0.98 to +1.86 percentage points, including no gain. The FP-count difference
+interval was -3 to +3. This does not establish equal future false-award rates.
+
+The selected procedure chose a learner/cutoff using only each outer training
+partition's inner folds. Its pooled465/5 result is secondary evidence about that
+selection strategy, not the performance of one fixed replacement model, and
+cannot be attributed solely to the gap. The main paired comparisons above are
+the direct test of the feature. Selection versus retuned custom has a conditional
+recall-change interval of +0.11 to +2.78 percentage points; its false-count
+difference interval spans -5 to +2. All bootstrap intervals condition on the
+fitted OOF predictions and omit refitting/repeated-research uncertainty.
+
+Does the effect extend beyond the pilot?
+
+The48pilot groups contain404of the3724training cases, including58positives.
+Removing those groups from the OUTER TEST reporting leaves3320cases and859
+positives. This is a breakdown of the same evaluation, not another fresh test;
+legal training folds can still include pilot groups.
+
+Approach                          Correct/859  Wrong
+Original retuned custom           438          6
+Custom plus gap                   408          7
+Original standard RF              457          7
+Standard RF plus gap              461          7
+Training-selected procedure       449          5
+
+The RF's four additional true awards remain in this breakdown. The custom
+regression also remains. This reduces concern that the small RF gain is solely
+an effect on hand-inspected pilot cases, but does not restore independent
+validation of a hypothesis developed through repeated study of this corpus.
+
+Most relevant difficult subgroup
+
+Among191eligible Chess.com Brilliants with ec_sacrifice=false:
+  Retuned custom before/after gap: 7 -> 7 recognized.
+  Standard RF before/after gap:    8 -> 8 recognized.
+All four had zero wrong awards among286eligible negative cases in that subgroup.
+The standard RF's net four extra Brilliants came from ec_sacrifice=true cases.
+Thus the feature did not resolve the missed-sacrifice category that suggested it.
+
+Exactly what changed
+
+For every case with at least one eligible engine window, enumerate all qualifying
+accepting captures using the same legal-capture/SEE qualification as the pilot.
+Search the position after each accepting capture, retaining full game history.
+For each current/previous complete engine iteration, choose the opponent's best
+acceptance: lowest resulting evaluation for the player making the original move.
+The feature is the difference between that player's best and second-best reply
+scores after that acceptance, in mover-relative centipawns.
+
+Only this scalar and its missing-value indicator were appended to the original
+150columns. The existing75raw measurements and75missing flags remained exactly
+unchanged, in their original column positions. No new eligibility gate was added.
+The feature was extracted irrespective of truth, cohort, model score or existing
+En Croissant sacrifice feature. Missing values were not filled with zero.
+
+When the chosen acceptance involves a mate score, fewer than two responses, or
+an unavailable complete window, the gap is missing. Mate was not converted into
+centipawns. A terminal outcome on a NONselected acceptance is a complete outcome
+for branch ranking; it need not have two replies to allow a gap on the selected
+nonterminal branch. The two engine iterations are correlated, not independent.
+
+Extraction and costs
+
+All1320any-window-eligible cases were processed, with1481accepting branches.
+62branches reused hash-verified pilot evidence;1419were newly searched.
+Pinned Stockfish18,300000nodes/search, one thread,64MiB hash, up to two complete
+same-depth roots, hash cleared for each search, full PGN history retained.
+The gap was finite for1070cases in each engine window;248had mate scores and2
+had fewer than two replies in each window.1069cases had finite gaps in both
+windows; two cases were finite in only one window. No offer mapping timed out.
+Cases ineligible in both windows were not searched and retained missing gaps.
+
+New engine work took341seconds including orchestration. All101model fits and
+the paired evaluation took69seconds; evaluator peak RSS was about246MiB.
+No new data collection, public writes, or application releases occurred.
+
+Evaluation controls
+
+Same3724deduplicated moves,917positives,972game/position-group components.
+Same five outer folds, three inner folds, salted group assignments, seeds,
+window-row weighting, and award guards as the previous standard-learner study.
+
+Custom:64trees, depth6, minimum8distinct moves per leaf,12candidate features,
+whole-group bootstrap, cost5weighted splits and raw leaf fractions.
+Standard RF:128trees, depth6,16unique window rows per leaf,12candidate features,
+row bootstrap, no class weighting, one thread; scikit-learn1.7.2.
+No hyperparameter sweeps, alternative feature definitions or outcome-driven
+reruns were performed. Adding columns can change randomized tree splits, so
+small differences are not proof of a stable causal improvement from the feature.
+
+Inner thresholds maximize correct awards subject to no more wrong awards AND
+no worse wrong-award fraction than the original fixed custom reference. Outer
+labels never choose the method or threshold. Training constraints need not hold
+exactly on unseen folds; failures are included in the reported totals.
+
+Original custom and RF scores and original-arm award decisions reproduced the
+previous run exactly. Source/protocol/feature/model hashes, grouping, absence of
+ineligible awards, coverage and confusion counts passed verification.
+
+Final training-only choice
+
+Separate five-fold calibration chose original custom_retuned at0.8143062085223279.
+The model is byte-identical to the prior expanded custom forest:
+e153a3d151a8803d13fc85ba857c9297541a5d45b627f776ea56f1a249002332
+The chosen cutoff is also identical to the previous standard-learner experiment.
+This is an experimental retained candidate, not a promoted application change.
+The already-seen654move benchmark was not replayed again in this experiment.
+
+Recommendation
+
+Retain the saved feature/search evidence, but do not adopt this feature or expand
+its search/model variants on the strength of this result. The target subgroup
+remains unresolved. The next higher-value investigation is whether closely
+matched Brilliant/ordinary cases differ in target award conditions, analysis
+strength/evaluation, or player context, before adding more sacrifice descriptors.
+This is a recommendation only; no label re-review or new study has been started.
+
+Limitations
+
+The corpus is enriched and repeatedly studied; sample precision is not a
+deployment guarantee. The pilot supplied label-informed hypotheses. Even the
+non-pilot breakdown is not independent validation. Only one representation of
+conditional response gap and two fixed learner configurations were tested.
+This result does not prove that counterfactual analysis can never help.
+
+Artifacts
+
+PROTOCOL.json: frozen feature definition, budgets, grouped evaluation plan.
+ENGINE-EVIDENCE.jsonl: all1481conditional search results and feature provenance.
+GAP-FEATURES.json / EXTRACTION.json: per-case features, coverage and hashes.
+EVALUATOR-SOURCE-FREEZE.json / EVALUATION-FREEZE.json: frozen source/data binding.
+PREDICTIONS.json / RESULTS.json: all scores, decisions, folds and paired outcomes.
+MODEL-FREEZE.json / selected-model.json: retained experimental model/cutoff.
+FEATURE-CHECKS.json / VERIFICATION.json: feature semantics and count checks.
+extract.py / evaluate.py / verify.py: one-study implementation using existing
+collector and forest kernels; no shared tooling or deployment framework changes.

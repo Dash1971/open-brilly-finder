@@ -1,0 +1,53 @@
+{
+  "created_at_utc": "2026-11-04T02:47:04.703629+00:00",
+  "scope": "One fixed material-gain veto on prior immediate-mating-offer rule; unchanged original forests and grouped evaluation. No ratings or app changes.",
+  "source_sha256": {
+    "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/fit.py": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f",
+    "research/brilliant-standard-learners-2026-11-04/PREDICTIONS.json": "ae845d2fd687262f2c41cbdaa2054d85c1f3eb48120a602d30a8a4b8a4dc4a82",
+    "research/brilliant-matched-sacrifices-2026-11-04/MATCHED-CASES.json": "e6d482a5447099854fc3235e4d65dcdd6d0a9c7109275c2081847973cba93553",
+    "research/ne5-queen-sacrifice-2026-11-04/DIAGNOSTICS.json": "ada20541fce57ddda5cf704b60c685fe758929828f80bb23f270bf4a35fbdc78",
+    "research/ne5-queen-sacrifice-2026-11-04/SNAPSHOTS.json": "b728dd6ecfccf96b94ae503996dda70dbe41dc4afb2928a8b8b151e4dbd62f08",
+    "research/brilliant-mating-offers-2026-11-04/rule.py": "12caac7b54c69a2be25e157799a9af80db2d3f28e8407e493bb5383b83bbaa7d",
+    "research/brilliant-mating-offers-2026-11-04/PREDICTIONS.json": "28e2da60bec2b78ad27b90798e887d12fcb7c8ea076290525e704b52d610b68b",
+    "research/brilliant-mating-offers-2026-11-04/RESULTS.json": "4ad5889d3fcb31283551db79356dc8c4b573c7d5d39670d422981d52c87cebe6",
+    "research/brilliant-nonmate-material-2026-11-04/base_rule.py": "12caac7b54c69a2be25e157799a9af80db2d3f28e8407e493bb5383b83bbaa7d"
+  },
+  "rule": "Prior mating rule AND nonmate_material_win exactly0 in BOTH windows.1vetoes;None abstains. Feature definition frozen separately: inspect every qualifying mating acceptance, finite favorable alternative PV, >=300cp material gain at12plies from pretarget baseline. Missing/truncated relevant lines unknown. MultiPV2 limited proxy, not exhaustive no-mate proof.",
+  "evaluation": {
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "fold_salts_and_seeds": "Identical to standard-learner experiment",
+    "learners": [
+      "custom64tree depth6 leaf8distinctmoves mtry12 cost5split rawleaf groupbootstrap",
+      "sklearnRF128tree depth6 leaf16rows mtry12 unweightedclasses rowbootstrap"
+    ],
+    "arms": [
+      "custom_fixed",
+      "custom_retuned",
+      "standard_rf",
+      "custom_material_always",
+      "standard_rf_material_always",
+      "custom_material_gated",
+      "standard_rf_material_gated",
+      "base_only_selector"
+    ],
+    "threshold_rule": "Max innerOOF TP with FP<=fixedoriginal reference FP AND wrong-award fraction<=fixedoriginal reference. Same exact-score threshold selection/ties as previous study.",
+    "selection": "Max inner TP then fewer FP; ties custom_fixed, custom_retuned, standard_rf, custom_material_gated, standard_rf_material_gated. Always-on diagnostics excluded. Also report fair same-three-base-arm-only selection.",
+    "control": "Original features, models, seeds, folds, guards, weights and thresholds unchanged; exact baseline parity required.",
+    "primary_reporting": "Same pooled outer heldout counts and changes; compare refined to noaddon and historical unrefined matching arms. Fair base-only selector included. Report retained/rejected/unknown rule hits and outsidepilot cases.",
+    "sensitivity": "Report scores on outer TEST rows excluding every pilot whole group. Training folds may include pilot groups when legal. This is a non-pilot-case breakdown, not new independent validation.",
+    "subgroup": "Eligible ec=false; fresh hard; fixed-rule hits; outside48pilot groups.",
+    "final_calibration": "Same separate5fold final calibration; train/freeze one selected fullfit. No replay on already-seen654 in this experiment; leave fresh validation for later.",
+    "limits": {
+      "fit_wall_seconds": 600,
+      "rss_bytes": 536870912,
+      "threads": 1,
+      "max_fits": 51,
+      "parameter_sweeps": 0
+    },
+    "addon": "Refined rule enabled only if inner OOF baseline+rule adds >=1TP and zero FP; same baseline thresholds. Always-on diagnostic applies regardless. No selection using heldout labels."
+  },
+  "interpretation": "Development evidence on reused data. Known Qe5 counterexample motivated feature; descriptive separation on that case is not independent validation. Ne5 verified Brilliant in separate Chess.com import, excluded from dataset/selection. No fresh/generalization claim.",
+  "stop": "No outcome-dependent tuning, retries, cutoff sweeps or repeated654benchmark replay."
+}

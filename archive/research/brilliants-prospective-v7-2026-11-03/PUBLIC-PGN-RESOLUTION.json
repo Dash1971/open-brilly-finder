@@ -1,0 +1,38 @@
+{
+  "current_month_refreshes_in_new_folder": [
+    {
+      "account": "nelsi",
+      "published_archive_list_source": "research/brilliants-600-2026-11-03/original-pgn/nelsi-archive-list.json",
+      "archive_list_sha256": "7b02b3028ae1c84ed12471c8c36b687cf7efd765c85219b76f3f9ccd2233c63f",
+      "published_month": "https://api.chess.com/pub/player/nelsi/games/2026/11",
+      "result": {
+        "games_imported_or_matched": [
+          "186436257870",
+          "186438780844"
+        ],
+        "requested_not_found": []
+      }
+    },
+    {
+      "account": "GothamChess",
+      "published_archive_list_source": "research/brilliants-improvement-2026-11-03/future-validation-v5/original-pgn/gothamchess-archive-list.json",
+      "archive_list_sha256": "225621c7818deab79563d2a9f397a4871cb8e6e429f7a539c7627d4abeaf7e85",
+      "published_month": "https://api.chess.com/pub/player/gothamchess/games/2026/11",
+      "result": {
+        "games_imported_or_matched": [
+          "186445470518"
+        ],
+        "requested_not_found": []
+      }
+    }
+  ],
+  "bounded_published_month_walk": [
+    {
+      "account": "KNVB",
+      "selected_id_count": 4,
+      "published_months_examined": 3,
+      "unresolved_ids": []
+    }
+  ],
+  "no_current_review_labels": true
+}

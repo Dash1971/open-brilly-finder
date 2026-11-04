@@ -1,0 +1,22 @@
+{
+  "prepared_at_utc": "2026-11-03T13:40:27.557147+00:00",
+  "mode": "READONLY identity audit after root finishes raw collection and constructs workingassessment.db; no engine or model metrics",
+  "writer": "root only; auditor opens SQLite URI mode=ro and never calls import/export/connect mutators",
+  "checks": [
+    "Exactly200 selected current observations:100Brilliant+100explicitnon,20+20/account; supplementalGothampositive only peraddendum, existing20Gothamnegatives unchanged.",
+    "Every selected key joins legal fullPGN to exactply/SAN/UCI/beforeFEN/afterFEN; live/daily namespace agrees.",
+    "Rendered currentboard placement matches afterFEN; sourceURL and capturetimestamp present; coach text preserved with completeness flag rather than silently truncated.",
+    "No prior571reviewed game or approved canonicalposition overlap; no duplicate selected game/ply or conflicting observedlabels; originalselectedcontrols/reserves followfrozenorder.",
+    "All gallery/current disagreements and controlBrilliants retainedsecondary; unselected raw evidence remains available.",
+    "AdditionalGotham game/ply permitted ONLY frozenpositiveaddendum and explicitrawcapture; no newcontrol selected from supplementalgame.",
+    "Finalinput200/gamecounts+PGN/DB/rawfile hashes frozen before engines; missing or inconsistent evidence blocks core freeze rather than inventing label.",
+    "Native10 uses originalfixed10games irrespectivecurrentlabel; Native10INPUTsha unchanged.",
+    "Panelv2 remains separate and currentlabels unknown until activationfreeze; no modelscores used in identity checks."
+  ],
+  "do_not_read": [
+    "native/SF18 evaluation result files",
+    "classifier probabilities or decision metrics"
+  ],
+  "database_write_permitted": false,
+  "root_GO_required_before_engine": true
+}

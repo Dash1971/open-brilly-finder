@@ -1,0 +1,37 @@
+Knight's Eye adapter — frozen-policy external comparison
+
+Ownership: study-local knights-adapter.mjs only; upstream classifier source is unchanged.
+Repository commit: c8183a6da88f3b5a2450dab35353dedd1d8d7a62, policy revision48.
+Runtime: checked-in artifacts/knights-eye-chess-move-classifier-0.1.0-dev.17.1.tgz, extracted under /private/tmp/mute-brilliant-repo-review/knights-runtime/package.
+The archive's analyze.ts, knights-eye-policy.ts, knights-eye-policy-runtime.js, contracts.ts and analysis-types.ts are byte-identical to the pinned checkout. Its dist/core.js and dist/policy.js are used directly; hashes are returned by --identity. No classifier rules are translated or reimplemented.
+Chess library: official registry chess.js1.4.0 tarball, isolated under /private/tmp/mute-brilliant-repo-review/chessjs-runtime/package. Its ESM file hash is recorded. Node24.22.1.
+The local Node distribution's npm command was incomplete (missing npm/lib/cli.js); no toolchain repair was attempted. The repository's own release archive avoided rebuilding or altering source.
+
+Acquisition settings
+candidateCount2 matches saved two-root windows rather than the library's default3; this is the supported searchPolicy setting, not a policy threshold or rule change. verificationDepth10 is unchanged. Ordinary requested depth is the minimum complete nonterminal source-window depth over prior/before/after. Each source snapshot retains its actual achieved depth. No opening lookup is supplied, so no Book assertion is made. Ratings are not inputs.
+
+Stepper protocol
+Run the module with Node24 and stream one JSON request per stdin line. Every line yields one JSON result. Request shape:
+{row, window:'current'|'previous', evidence:[supplemental live-position envelopes]}
+The adapter expects row.historyUcis to INCLUDE the selected row.uci. The study INPUTS.jsonl stores history through fen_before; parent orchestration appends row.uci to a copy before invoking the adapter. The original INPUTS remains unchanged.
+Required row fields: key,rootFen,historyUcis,uci,fen_before,fen_after,windows. Each window contains before/after/prior snapshots {fen,depth,lines:[{cp|mate,moves,optional depth/bound flags}]}. Source scores are White-relative. convertSnapshot converts to the actual position's side-to-move for Knight's Eye. It preserves original principal variations; no scores/PVs are invented. Parent verified source collector stores complete common-depth exact (not bound) windows.
+Exact game history and before/after FENs are replay-verified before native API invocation. The native API checks evidence depth, candidate coverage, score shape, scope and complete legal PV replay again.
+
+Supplemental engine requests
+Native missing request is returned as {fen,depth,multiPv,rootMoves?}. Required unrestricted contexts are the original prior/before/after windows. Acceptance verification is a restricted search from AFTER the played move, covering all native candidate captures in one search. Separate searches from already-accepted child positions are not substituted. Continuation verification uses the after+acceptance board and at most16 roots. Classification reconciliation and non-first Brilliant confirmation use the original before board and requested roots/depth.
+Parent may reuse supplemental evidence across windows only when exact FEN/history/root scope agrees and achieved depth meets the new request. Additional evidence cannot overwrite an original unrestricted snapshot in this adapter. Supplemental envelope:
+{kind:'live-position',fen,rootMoves?,analysis:{depth,bestmove,scoreCp,mate,pv,candidates:[{multipv,depth,scoreCp,mate,pv}]}}
+Scores are side-to-move, mates signed moves. All requested roots must be covered with exact scores, legal PVs and achieved depth at least requested. Parent owns fixed search budgets and explicit failure/timeout outcomes.
+
+Missing evidence
+Native unavailable is returned without an ordinary label. Native core sometimes withholds optional Brilliant credit while completing an ordinary label when its final best/played comparison is unavailable. The adapter observes that request, leaves the native decision intact as nativeDecision, but marks the comparison outcome unavailable until the native context contains an admitted pair. This is conservative coverage reporting, not a replacement classification rule. Both absent and supplied-but-rejected pair evidence remain unresolved.
+No Mute eligibility gate is imposed. The native policy/core does its own board and engine checks. Native orchestration may request sacrifice evidence even when later quality checks reject a move; the adapter does not add an early gate.
+
+Validation
+--self-test passed: White cp direction, Black cp direction, Black mate direction, exact full replay/native ordinary result, illegal source PV withheld.
+Focused unchanged upstream tests passed:
+- newly attacked offers need a persistent material deficit after legal exchange settlement (one test; includes true sacrifice and two false material-refund cases).
+- service acquires and admits the exact post-acceptance continuation scope (one test; asserts complete Brilliant and missing evidence handling).
+Five first hash-ordered INPUTS cases were used for timing/admission only, with no label access: three complete and two legitimate missing acceptance requests, no invalid data. Approximately60–89ms per current window on this host. No outcome-driven adapter or policy changes were made.
+The first smoke attempt used unappended INPUTS history and correctly rejected all five mismatched before FENs; parent confirmed the prefix convention and the second smoke appended selected UCI. This corrected only adapter call construction, not any evidence or label.
+No full labeled comparison was run by this subagent. Parent executes the frozen protocol.

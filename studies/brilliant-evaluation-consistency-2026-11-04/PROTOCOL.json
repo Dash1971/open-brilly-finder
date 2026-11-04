@@ -1,0 +1,25 @@
+{
+  "frozen_at": "2026-11-04T04:15:50.512599+00:00",
+  "purpose": "Audit every saved miss and test one consistent-quality gate substitution with exact frozen grouped OOF forest scores and original thresholds. No forest fitting, new features, model selection, engine queries or deployment.",
+  "data": "3724 moves,917 positive,2807 negative,972 game/position groups; all included, no truth-based selection.",
+  "primary": "Original custom_retuned arm with its existing inner-training-selected threshold in each of five outer folds versus same scores/cutoffs and root-consistent quality gate.",
+  "secondary": "Original custom_fixed5/6 versus same gate substitution; control only, no selection of winning arm.",
+  "candidate": "If complete played-root scores and same_root_loss_pp exist in BOTH windows, use same_root_loss_pp<=5 instead of mapped_loss_pp<=5 in each external eligibility quality check. Otherwise retain original policy for the entire pair.",
+  "unchanged": "All75 original forest feature values, missing indicators, saved per-move minimum OOF scores, per-fold cutoffs, raw_offer, after_floor>=-100, two_roots, window completeness, confidence_sufficient and physical_unknown. No losing-mate remapping change.",
+  "evaluation": "Exact same outer group hashes/splits, alias/game/canonical-position grouping and both windows. Original three-inner-fold choices frozen; no new threshold selection requires rerunning inner folds. Each original training fit excluded its entire outer test groups.",
+  "success": "Primary must increase pooled TP with FP count no higher AND wrong fraction of awards no higher than paired original; report all gained/lost true/wrong awards, including failed criterion. Do not retune after outcomes.",
+  "audit": "Misses partitioned by gate-only, score-only, both; overlapping gate reasons; score shortfalls in fixed0.025/0.05/0.10 descriptive bins; label-stratified coverage and gate transitions.",
+  "uncertainty": "2000 paired whole-group bootstrap draws, seed20261104, conditional on saved predictions. No independent new-data claim.",
+  "limits": "Original training excluded ineligible rows; newly admitted rows have a changed eligibility distribution. Forest feature inputs still contain original loss values. This isolates the external gate, not wholesale evaluation replacement or search accuracy. Repeatedly studied enriched data.",
+  "resources": "No new engine calls or fits; one evaluation run, no outcome retries. NumPy from existing venv.",
+  "input_sha256": {
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-standard-learners-2026-11-04/PREDICTIONS.json": "ae845d2fd687262f2c41cbdaa2054d85c1f3eb48120a602d30a8a4b8a4dc4a82",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-standard-learners-2026-11-04/RESULTS.json": "6857dfa78361ccd260d53e60878deb7366cf296f52ad6f02dca3b240eaff65f0",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-standard-learners-2026-11-04/selected-model.json": "e153a3d151a8803d13fc85ba857c9297541a5d45b627f776ea56f1a249002332",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-standard-learners-2026-11-04/experiment.py": "0c9b361880d65d43a11443a84d438917866084c77b6edd7af021fbc4b76e3814",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/feature_kernel.py": "8d77d2f482b57f492a4f307c447df1b96befb74e81a0accb7d5f33a886446d14",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/context.mts": "fb3dfb6cb4da23d39fe1acbe7a12d77d6861a6b2357a53f9bb420dcb043e050a"
+  },
+  "script_sha256": "84117cbf99404b8f575d975dcb2dc30c28d1c12fc449dd2480346ff5c06ceaac"
+}

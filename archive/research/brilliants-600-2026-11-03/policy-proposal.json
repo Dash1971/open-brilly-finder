@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-11-03",
+  "sample_moves": 318,
+  "selection_sha256": "07617a7d64de84bfb2e2e564823de9d63a23764b5275e3263efe800328ad414d",
+  "baseline_policy": "mute-chess-brilliant-v2",
+  "candidate_policy": "mute-chess-brilliant-v3",
+  "chosen_after_inspecting_sample": true,
+  "guard": "ecSacrifice || (after.mate !== undefined && normalized(after, mover) > 0)",
+  "raw_offer_and_safe_alternative_unchanged": true,
+  "candidate_is_independent_validation": false,
+  "original_target": 600,
+  "collection_complete": true
+}

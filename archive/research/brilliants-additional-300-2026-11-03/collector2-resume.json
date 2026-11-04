@@ -1,0 +1,92 @@
+{
+  "updated_at_utc": "2026-11-03T04:58:19.237398+00:00",
+  "status": "Waiting for owner/browser reconnect; all UI actions stopped.",
+  "collector": "research_repo / collector2",
+  "owned_tab": {
+    "id": "245638143",
+    "browser": "Chrome",
+    "last_reported_browser_id": "1",
+    "profile": "D",
+    "url": "https://www.chess.com/analysis/game/live/185700879910/review?move=54",
+    "url_basis": "Parent read-only inventory after provider reconnection; this page has not supplied a recorded label."
+  },
+  "accounts": {
+    "hansen": {
+      "evidence_file": "evidence/hansen-reviews-01.json",
+      "total_observations": 62,
+      "selected_brilliant": 30,
+      "selected_non_brilliant": 30,
+      "last_captured_at": "2026-11-03T04:52:54.430Z",
+      "last_saved_move": {
+        "game_id": "171575524144",
+        "ply": 59,
+        "san": "Bxe6",
+        "label": "brilliant",
+        "source_link": "https://www.chess.com/analysis/game/live/171575524144/review?move=58"
+      },
+      "queue_file": "hansen-ui-queue.json",
+      "gallery_keys_source": "hansen-candidate-pool.json",
+      "coach_partial_records": [
+        {
+          "game_id": "172268059136",
+          "ply": 112,
+          "san": "Bxg3",
+          "captured_at": "2026-11-03T04:34:26.865Z"
+        },
+        {
+          "game_id": "183800911053",
+          "ply": 48,
+          "san": "Rxe4",
+          "captured_at": "2026-11-03T04:34:51.073Z"
+        }
+      ]
+    },
+    "gothamchess": {
+      "evidence_file": "evidence/gothamchess-reviews-01.json",
+      "total_observations": 4,
+      "selected_brilliant": 2,
+      "selected_non_brilliant": 2,
+      "last_captured_at": "2026-11-03T04:53:53.576Z",
+      "last_saved_move": {
+        "game_id": "185789012464",
+        "ply": 110,
+        "san": "Rf6+",
+        "label": "good",
+        "source_link": "https://www.chess.com/analysis/game/live/185789012464/review?move=109"
+      },
+      "queue_file": "gothamchess-ui-queue.json",
+      "gallery_keys_source": "gothamchess-candidate-pool.json",
+      "coach_partial_records": []
+    }
+  },
+  "next_target": {
+    "account": "GothamChess",
+    "game_id": "185700879910",
+    "ply": 55,
+    "san": "Qe7",
+    "uci": "c5e7",
+    "source_link": "https://www.chess.com/analysis/game/live/185700879910/review?move=54",
+    "sampling_category": "Bishop Sacrifice"
+  },
+  "quota_per_account": {
+    "brilliant": 30,
+    "non_brilliant": 30
+  },
+  "resume_rules": [
+    "Await parent clearance after user reconnects Chrome; do not retry UI, create tabs, restart applications, or run engines while held.",
+    "Rebind existing owned tab245638143 through fresh documented Chrome binding; do not reuse stale handles.",
+    "Read current browser troubleshooting documentation using the API exposed by the fresh runtime before recovery.",
+    "Pass tab, store, filesystem and every helper reference explicitly; all globals use rr300 prefix.",
+    "Reload disk queue/evidence and all candidate-pool galleryKeys. A completed positive target must also have a saved explicit non-Brilliant control before skipping its pair.",
+    "Preserve already saved partial coach text; future completion waits follow observed pending characters, inspecting hidden text length only.",
+    "Keep loading Game Review on the same URL. If the rendered UI opens Analysis, use its observed Game Review button; if completed summary shows Start Review, use that observed button.",
+    "Verify visible SAN, one-based ply, numeric game URL, explicit label and board classes before per-move save. Never infer a negative label from gallery absence.",
+    "Use systematic replacements only when selected by corpus agent or parent; cap each account at30 current Brilliants and30 explicit non-Brilliants.",
+    "Prior318 study remains immutable. No browser-private APIs, engines, plots, publication or general tooling."
+  ],
+  "canonical_helper_files": [
+    "ui-take-visible.js",
+    "ui-pair-candidates.js"
+  ],
+  "resource_hold_reason": "Browser provider unavailable after reconnect; parent requested owner reconnect. Resource measurements also require controlled collector concurrency."
+}

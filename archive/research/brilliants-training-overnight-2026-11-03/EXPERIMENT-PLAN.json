@@ -1,0 +1,69 @@
+{
+  "written_at_utc": "2026-11-03T16:14:58.837351+00:00",
+  "authorization": "User permits experimental retraining/testing if expedited collection leaves time; current app/live model and Mute Dev PR MUST remain unchanged.",
+  "experiment_branch": "codex/brilliant-training-overnight-2026-11-03",
+  "experiment_worktree": "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03",
+  "status": "One fixed experimental fit authorized after resource-limited source collection; all research tabs closed, no reserved scoring yet.",
+  "current_model_sha256": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+  "candidate_count": 1,
+  "training_data": "Original848 plus the400 former test examples may become training; add verified new TRAINING-game cases with complete extracted features. Preserve original model/results unchanged. Never train/tune on new reserved-game labels/features. Deduplicate canonical examples and quarantine contradictory labels.",
+  "grouping": "Bootstrap whole game/identical-before-position union groups, keeping current/previous windows linked; preserve original raw-leaf and5:1 error-cost behavior.",
+  "fixed_candidate_parameters": {
+    "trees": 64,
+    "max_depth": 6,
+    "minimum_distinct_moves_per_leaf": 8,
+    "features_per_split": 12,
+    "negative_class_cost": 5,
+    "seed": 20261103,
+    "features": 75,
+    "missing_indicators": 75,
+    "threshold_both_windows": 0.8333333333333334
+  },
+  "fitting_scope": "Reuse the existing audited Tree kernel with study-specific input/output wiring only. Do not execute the old fit.py main, overwrite old artifacts, install dependencies, change features/engine profile, or build a general ML framework.",
+  "resource_limits": {
+    "fit_wall_seconds": 180,
+    "fit_peak_rss_mib": 512,
+    "all_research_browser_tabs_closed": true,
+    "engine_profile": "Same pinned SF18/300k/Threads1/Hash64/current+previous complete windows/fullPGN",
+    "one_engine_at_a_time": true,
+    "stop_on_memory_pressure": [
+      2,
+      4
+    ]
+  },
+  "start_conditions": "Root GO only, enough verified relevant training data/complete features, normal memory and enough time before nine-hour deadline. Collection remains priority; skip fitting rather than weaken label verification or contaminate assessment.",
+  "freeze_before_scoring": [
+    "training case list and source hashes",
+    "candidate parameters and source kernel hash",
+    "trained model artifact SHA",
+    "reserved case list/exclusion and sampling rules"
+  ],
+  "evaluation": "Run frozen baseline and candidate on identical saved engine evidence from wholly reserved NEW games, after conservative old/new training-position overlap exclusions. Apply consistent physical-unknown abstention to both. Report recognized Brilliants and wrong awards among hard ordinary controls separately; easy error negatives are supplemental and must not inflate a headline agreement claim.",
+  "interpretation": "A useful result finds more actual Brilliants without more wrong awards on the same reserved sample. Report literal counts and small-sample limitations; no universal accuracy or deployment claim. Do not retune after seeing reserved results or automatically promote the candidate.",
+  "deadline_utc": "2026-11-03T23:55:39Z",
+  "known_case_diagnostics": {
+    "keys": [
+      "171488501692:36",
+      "173517772799:30"
+    ],
+    "purpose": "Check the familiar hxg6/hxg5 ordinary recovery examples after fitting. These examples are in the old training pool, so report only as regression diagnostics, never as independent test evidence. No tuning after these or reserved outcomes."
+  },
+  "peer_comparison": {
+    "method": "En Croissant v0.15 direct current-window annotation, as historical peer CSV ec_direct_award",
+    "predicate_validation": "adapter/EC-DIRECT-CHECKS.json: 400/400 exact historical labels,56 awards",
+    "contract": "No added forest physicalUnknown abstention, previous-window confirmation or confidence gate; preserve original EC contract. Baseline/candidate forest gates remain unchanged."
+  },
+  "frozen_training": {
+    "path": "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json",
+    "sha256": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "counts": {
+      "raw": 3748,
+      "deduplicated": 3724,
+      "positive": 917,
+      "groups": 972
+    },
+    "quarantined_examples": 0,
+    "raw_new_training_cases": 2500,
+    "completed_new_training_games": 333
+  }
+}

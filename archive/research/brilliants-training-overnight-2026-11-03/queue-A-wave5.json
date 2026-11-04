@@ -1,0 +1,24 @@
+{
+  "prepared_at": "2026-11-03T15:47:44.993834+00:00",
+  "wave": 5,
+  "scope": "New visible gallery nominations resolved against existing official PGN caches. No current review labels or model outputs used.",
+  "collector": "root",
+  "split_rule": "sha256('mute-overnight-2026-11-03-v1:'+gameID) mod5==0 assessment",
+  "assessment_position_exclusions": "ASSESSMENT-POSITION-EXCLUSIONS.json",
+  "source_receipts": [
+    {
+      "source": "research/brilliants-training-overnight-2026-11-03/original-pgn/hansen-2026-03.pgn",
+      "sha256": "3d3cdb32c2d957a360eca9389799b44f758b50a1ec3eff94bd65d93870e619b1",
+      "PGNs_reused": 22
+    }
+  ],
+  "rejections": [],
+  "games": [],
+  "counts": {
+    "games": 0,
+    "nominees": 0,
+    "positions": 0,
+    "training_games": 0,
+    "assessment_games": 0
+  }
+}

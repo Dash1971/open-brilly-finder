@@ -1,0 +1,43 @@
+{
+  "prepared_at_utc": "2026-11-03T07:19:31.797462+00:00",
+  "status": "All core identities frozen before fresh labels; current labels unknown",
+  "candidate_freeze_sha256": "f2323f846cfbb84b66fc85fc988c34da2452cd0cad8de38a596b08f2cb7dd445",
+  "files": [
+    {
+      "path": "gothamchess-ui-queue.json",
+      "sha256": "9328babc29b817f8657733cc3f2f76bf0294e12890f706c3b05952d71b428c10",
+      "targets": 20,
+      "controls": 1218,
+      "reserves": 12
+    },
+    {
+      "path": "hansen-ui-queue.json",
+      "sha256": "1885e890561d0eb934b77ebe434dbbae5e35826c63332ce335c500cf31faf8a3",
+      "targets": 20,
+      "controls": 1462,
+      "reserves": 19
+    },
+    {
+      "path": "hikaru-ui-queue.json",
+      "sha256": "3798a21da472ec9ee02766d4264a2672eb400c8c20cc0ff509ed21b19aec5f6e",
+      "targets": 20,
+      "controls": 1374,
+      "reserves": 22
+    },
+    {
+      "path": "knvb-ui-queue.json",
+      "sha256": "d59e2d1ee46b3eb195a126a2020f3d9e2708a39cdb2f3d5893529420cd7ace8f",
+      "targets": 20,
+      "controls": 4343,
+      "reserves": 67
+    },
+    {
+      "path": "nelsi-ui-queue.json",
+      "sha256": "56184595bf2fa2d743e474d22be0c4f2dd45a52c8dcdc1e0736ecef8e91ffec9",
+      "targets": 20,
+      "controls": 1544,
+      "reserves": 21
+    }
+  ],
+  "format_only_source_refresh_before_labels_utc": "2026-11-03T07:20:41.336184+00:00"
+}

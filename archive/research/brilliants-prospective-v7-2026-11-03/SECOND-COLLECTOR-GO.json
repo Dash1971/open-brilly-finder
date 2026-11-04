@@ -1,0 +1,21 @@
+{
+  "authorized_at_utc": "2026-11-03T13:10:21.326023+00:00",
+  "memory_pressure": 1,
+  "swap_mb": 2604.62,
+  "after": "First actual freshGameReview completed and tabclosed; earlier galleriesclosed andpressure1/2660MB.",
+  "max_concurrent_collectors": 2,
+  "root_accounts": [
+    "nelsi",
+    "KNVB",
+    "Hikaru"
+  ],
+  "pilot_accounts": [
+    "hansen",
+    "GothamChess"
+  ],
+  "engines_authorized": false,
+  "raw_files_only": true,
+  "no_concurrent_SQLite_writes": true,
+  "fresh_tab_per_game_closed_after_save": true,
+  "stop_on_pressure_level_2_or_4": true
+}

@@ -1,0 +1,48 @@
+{
+  "frozen_at_utc": "2026-11-03T09:24:00.658442+00:00",
+  "scope": "Fixed higher-capacity diagnostic, not prospective validation or production approval. All848 cases unblinded development. No post-result tuning.",
+  "input_sha256": "d1e97b2c3346994fbc4d73b289c6b6763ea454bdbc8d8935370c643aeceaaa3a",
+  "existing_cart_sha256": "5fd6bb9d20c8fa28ab2bf7ca0d36b20172075983f138fdf6d6781375d0133db4",
+  "seed": 20261103,
+  "trees": 64,
+  "maximum_depth": 6,
+  "minimum_leaf_distinct_original_moves": 8,
+  "negative_class_cost": 5,
+  "base_predictors": 75,
+  "design_features": 150,
+  "representation": "Exactly existing CART:75 numeric/Boolean predictors plus75 missing indicators, NaN routes left. No identity/account/rating/labels/coach fields.",
+  "features_per_split": 12,
+  "feature_sampling": "Uniform without replacement independently at every split.",
+  "bootstrap": "Sample whole training game/normalized-before-position union components with replacement, count=number of training components. Include all groups in population. Apply sampled multiplicity to all eligible window rows of that group; never resample windows independently.",
+  "training_window_weight": "(5 if negative else1)/number of eligible windows for the original move, as existing CART. Bootstrap rows are replicated by group multiplicity.",
+  "raw_leaf_probability": "Raw positive bootstrap window rows / all bootstrap window rows in the leaf. No class-cost weighting in p; minleaf counts unique original moves, not replicated rows. Forest window p is arithmetic mean of64 leaf RAW p. Not calibrated.",
+  "outer_evaluation": "Exactly existing five grouped outer folds in features.json. Each test fold is excluded as whole unions. Separate descriptive full-data forest.",
+  "operating_points": [
+    {
+      "name": "cost5",
+      "threshold": 0.8333333333333334
+    },
+    {
+      "name": "strict98",
+      "threshold": 0.98
+    }
+  ],
+  "final_award": "Both window mean RAW p >=threshold AND original eligibility in both windows AND original confidence_sufficient.",
+  "case_score_for_AUC": "min(current_mean_p,previous_mean_p), reported both raw and with ineligible/insufficient cases set to0. Case-level AUC, not independent-window performance.",
+  "importance": "Mean per-tree normalized weighted-Gini gain, with expanded-feature and collapsed missing-indicator views. Descriptive, not causal.",
+  "resource_caps": {
+    "wall_seconds": 180,
+    "peak_RSS_bytes": 268435456,
+    "python_workers": 1,
+    "engines": 0
+  },
+  "outputs": [
+    "predictions.json",
+    "RESULTS.json",
+    "feature-importance.json",
+    "forest-full.json",
+    "MODEL-AUDIT.json",
+    "bootstrap-groups.json"
+  ],
+  "no_tuning_after_results": true
+}

@@ -1,0 +1,53 @@
+{
+  "completed_at_utc": "2026-11-03T13:40:35.563146+00:00",
+  "accounts": {
+    "hansen": {
+      "primary": 40,
+      "brilliant": 20,
+      "confirmed_nonbrilliant": 20,
+      "raw_captures": 43,
+      "secondary": 3,
+      "boards_and_exact_PGN_identities_verified": 43,
+      "coaches_visible_complete": 43,
+      "first_capture": "2026-11-03T13:12:16.467Z",
+      "last_capture": "2026-11-03T13:21:03.288Z",
+      "file": "evidence/hansen-fresh-review.json",
+      "sha256": "72641aed6c23a4f497c011d746afc65e11bdf27da2ffdc1a9539e18d9e16592d"
+    },
+    "GothamChess": {
+      "primary": 40,
+      "brilliant": 20,
+      "confirmed_nonbrilliant": 20,
+      "raw_captures": 42,
+      "secondary": 2,
+      "boards_and_exact_PGN_identities_verified": 42,
+      "coaches_visible_complete": 42,
+      "first_capture": "2026-11-03T13:21:17.719Z",
+      "last_capture": "2026-11-03T13:39:07.899Z",
+      "file": "evidence/gothamchess-fresh-review.json",
+      "sha256": "cda396edc49b8bd4c8678ece11757f2a366b16d399c741b49c4306a4cad7731b"
+    },
+    "Hikaru": {
+      "primary": 40,
+      "brilliant": 20,
+      "confirmed_nonbrilliant": 20,
+      "raw_captures": 42,
+      "secondary": 2,
+      "boards_and_exact_PGN_identities_verified": 42,
+      "coaches_visible_complete": 42,
+      "first_capture": "2026-11-03T13:29:11.144Z",
+      "last_capture": "2026-11-03T13:38:38.955Z",
+      "file": "evidence/hikaru-fresh-review.json",
+      "sha256": "2b5a88e54f7bf45e34a212e3b841338168ec76cc5aa764d646074de05d54a48c"
+    }
+  },
+  "primary_moves": 120,
+  "raw_captures": 127,
+  "all_own_ephemeral_tabs_closed": true,
+  "SQL_writes_performed_by_collector": false,
+  "engines_or_model_scoring_run": false,
+  "selection": "Original20negativecontrols/account; positive-onlyfirstfrozenreserves, plusrootauthorizedGothamaddendumfirst185498594944:39 Rh8+ only.",
+  "gotham_addendum": "GOTHAM-QUOTA-COMPLETION-ADDENDUM.json",
+  "extra_identity_PGN_source": "gothamchess-positive-topup-pgn.json legally replayed directly; prepared DB unchanged",
+  "model_sources_unchanged": true
+}

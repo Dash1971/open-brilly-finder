@@ -1,0 +1,21 @@
+{
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "python_chess": "1.11.2",
+  "engine_binary_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+  "requested_engine_options": {
+    "path": "/opt/homebrew/bin/stockfish",
+    "sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+    "name": "Stockfish18",
+    "nodes": 1500000,
+    "workers": 4,
+    "Threads_per_worker": 1,
+    "Hash_MB_per_worker": 64,
+    "MultiPV": 2,
+    "legal_root_limit": "min(2,legal_move_count)",
+    "options": "Other options default and recorded verbatim; no clock/root restriction."
+  },
+  "replay_node_binary": "/private/tmp/node-v24.22.1-darwin-arm64/bin/node",
+  "replay_node_binary_sha256": "6f32069480ec14d52b6d7b1f3c7124cfbbc46203abf5ddf5c65b127435f3f329",
+  "replay_loader": "tsx/dist/cli.mjs from existing local runtime; no installation",
+  "source_inputs_unchanged_after_run": true
+}

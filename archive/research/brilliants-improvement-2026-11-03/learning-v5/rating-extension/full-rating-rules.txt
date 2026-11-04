@@ -1,0 +1,32 @@
+Full-data descriptive fit, not held-out performance.
+IF ec_material_margin is missing OR <= -5:
+  IF offered_piece_moved is missing OR <= 0.5:
+    IF mating_acceptance is missing OR <= 0.5:
+      IF ec_material_after is missing OR <= 5:
+        LEAF: 6 Brilliant / 100 other window rows; 54 distinct moves; raw positive fraction=0.0566; weighted positive=3.00, negative=255.00; cost5=False, strict98=False
+      ELSE:
+        LEAF: 16 Brilliant / 34 other window rows; 25 distinct moves; raw positive fraction=0.3200; weighted positive=8.00, negative=85.00; cost5=False, strict98=False
+    ELSE:
+      LEAF: 22 Brilliant / 8 other window rows; 15 distinct moves; raw positive fraction=0.7333; weighted positive=11.00, negative=20.00; cost5=False, strict98=False
+  ELSE:
+    IF best_minus_prior_cp is missing OR <= 233:
+      IF offer_exchange_gain_max is missing OR <= 455:
+        LEAF: 46 Brilliant / 46 other window rows; 46 distinct moves; raw positive fraction=0.5000; weighted positive=23.00, negative=115.00; cost5=False, strict98=False
+      ELSE:
+        LEAF: 52 Brilliant / 6 other window rows; 29 distinct moves; raw positive fraction=0.8966; weighted positive=26.00, negative=15.00; cost5=True, strict98=False
+    ELSE:
+      LEAF: 40 Brilliant / 0 other window rows; 20 distinct moves; raw positive fraction=1.0000; weighted positive=20.00, negative=0.00; cost5=True, strict98=True
+ELSE:
+  IF phase is missing OR <= 9.5:
+    IF raw_material_after is missing OR <= 330:
+      LEAF: 26 Brilliant / 4 other window rows; 15 distinct moves; raw positive fraction=0.8667; weighted positive=13.00, negative=10.00; cost5=True, strict98=False
+    ELSE:
+      LEAF: 6 Brilliant / 28 other window rows; 17 distinct moves; raw positive fraction=0.1765; weighted positive=3.00, negative=70.00; cost5=False, strict98=False
+  ELSE:
+    IF already_vulnerable_same_square_count is missing OR <= 0.5:
+      IF after_minus_prior_cp is missing OR <= 4.5:
+        LEAF: 91 Brilliant / 16 other window rows; 56 distinct moves; raw positive fraction=0.8505; weighted positive=46.00, negative=40.00; cost5=True, strict98=False
+      ELSE:
+        LEAF: 460 Brilliant / 4 other window rows; 235 distinct moves; raw positive fraction=0.9914; weighted positive=231.00, negative=10.00; cost5=True, strict98=True
+    ELSE:
+      LEAF: 26 Brilliant / 24 other window rows; 25 distinct moves; raw positive fraction=0.5200; weighted positive=13.00, negative=60.00; cost5=False, strict98=False

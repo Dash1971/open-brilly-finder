@@ -1,0 +1,32 @@
+{
+  "frozen_at": "2026-11-04T03:42:08.212036+00:00",
+  "purpose": "Diagnostic only, selected known misses; not fresh validation. No reclassification, training, or threshold changes.",
+  "keys": [
+    "148103018608:20",
+    "168956462236:46",
+    "165547173668:60"
+  ],
+  "engine": "/opt/homebrew/bin/stockfish",
+  "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+  "threads": 1,
+  "hash_mb": 64,
+  "nodes_per_query": 3000000,
+  "maximum_queries": 9,
+  "total_wall_cap_seconds": 120,
+  "retry_policy": "none; no outcome tuning",
+  "order": [
+    "before MultiPV2",
+    "after MultiPV2",
+    "before played-only singlePV"
+  ],
+  "history": "Full original PGN move stack, fresh game session and Clear Hash per query",
+  "unrestricted_method": "AST-extracted packed/search from frozen collector, same-depth current/previous",
+  "forced_method": "engine.analyse before, root_moves=[played], MultiPV1, 3M nodes",
+  "mapping": "Scores white-oriented; mover sign; cp clamped +/-1000, mate sign mapped +/-1000; 100/(1+exp(-0.00368208*mapped_cp)); loss is before best minus after best in percentage points, signed and clipped shown",
+  "caveat": "Forced played-only search has separate search context and is not guaranteed a fair comparison with unrestricted MultiPV or after-position search. Larger node budget can change principal variations without resolving classifier gates.",
+  "source_sha256": "da826082409943d599f40a28f7359849de1211cb2d2ff5cf7c2eb2f48cc795c3",
+  "method_sha256": "c3b923604b99481100d6da620cdf11689494b579520e7f8186235bc856cfc1bd",
+  "script_sha256": "5cea46ba5298035e2331b85b4c8094b5203f54a2078db61fca3e63f9dcc48212",
+  "base_rule_sha256": "12caac7b54c69a2be25e157799a9af80db2d3f28e8407e493bb5383b83bbaa7d",
+  "python_chess_sha256": "1fde6a8e932508d14b31f6a584497b49c2969fc3c7cdc675347f819f0d667a5b"
+}

@@ -1,0 +1,122 @@
+{
+  "scope": "Fresh frozen200 complete nativeS/A assessment; unchanged sources, no tuning; v4/EC/forest joined separately by research_repo.",
+  "summaries": {
+    "all200": {
+      "baseA": {
+        "TP": 78,
+        "FP": 6,
+        "FN": 22,
+        "TN": 94
+      },
+      "sequence": {
+        "TP": 78,
+        "FP": 5,
+        "FN": 22,
+        "TN": 95
+      }
+    },
+    "GothamChess": {
+      "baseA": {
+        "TP": 16,
+        "FP": 0,
+        "FN": 4,
+        "TN": 20
+      },
+      "sequence": {
+        "TP": 16,
+        "FP": 0,
+        "FN": 4,
+        "TN": 20
+      }
+    },
+    "nelsi": {
+      "baseA": {
+        "TP": 18,
+        "FP": 2,
+        "FN": 2,
+        "TN": 18
+      },
+      "sequence": {
+        "TP": 18,
+        "FP": 2,
+        "FN": 2,
+        "TN": 18
+      }
+    },
+    "hansen": {
+      "baseA": {
+        "TP": 17,
+        "FP": 3,
+        "FN": 3,
+        "TN": 17
+      },
+      "sequence": {
+        "TP": 17,
+        "FP": 3,
+        "FN": 3,
+        "TN": 17
+      }
+    },
+    "Hikaru": {
+      "baseA": {
+        "TP": 11,
+        "FP": 1,
+        "FN": 9,
+        "TN": 19
+      },
+      "sequence": {
+        "TP": 11,
+        "FP": 0,
+        "FN": 9,
+        "TN": 20
+      }
+    },
+    "KNVB": {
+      "baseA": {
+        "TP": 16,
+        "FP": 0,
+        "FN": 4,
+        "TN": 20
+      },
+      "sequence": {
+        "TP": 16,
+        "FP": 0,
+        "FN": 4,
+        "TN": 20
+      }
+    }
+  },
+  "agreement": 0.865,
+  "recall": 0.78,
+  "false_award_rate_among100_controls": 0.05,
+  "badge_precision_in_balanced_selected_sample": 0.9397590361445783,
+  "working_target_90_percent_agreement_and_at_most2_false_awards_met": false,
+  "supplemental_searches": 0,
+  "structurally_relevant_prior_origins": 1,
+  "missing_relevant_prior_windows": 0,
+  "structural_or_temporal_budget_unknown": 0,
+  "max_temporal_proof_nodes": 144,
+  "proof_status_counts": {
+    "ineligible": 173,
+    "complete": 27
+  },
+  "A_withheld_count": 2,
+  "sole_temporal_change": {
+    "key": "184756110863:22",
+    "san": "Bg4",
+    "label": "?!",
+    "proof": {
+      "veto": true,
+      "status": "complete",
+      "nodes": 63,
+      "origins": [
+        {
+          "ply": 20,
+          "renewed": false,
+          "details": []
+        }
+      ]
+    }
+  },
+  "frozen_dependencies_unchanged": true
+}

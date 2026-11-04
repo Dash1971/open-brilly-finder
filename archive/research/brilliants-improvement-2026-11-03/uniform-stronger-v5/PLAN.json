@@ -1,0 +1,74 @@
+{
+  "frozen_at_utc": "2026-11-03T09:36:27.249243+00:00",
+  "scope": "848cases/all2445snapshots uniformly1.5m nodes. All development; never fresh validation. No targeted/baseline engine snapshot substitution.",
+  "engine": {
+    "path": "/opt/homebrew/bin/stockfish",
+    "sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+    "name": "Stockfish18",
+    "nodes": 1500000,
+    "workers": 4,
+    "Threads_per_worker": 1,
+    "Hash_MB_per_worker": 64,
+    "MultiPV": 2,
+    "legal_root_limit": "min(2,legal_move_count)",
+    "options": "Other options default and recorded verbatim; no clock/root restriction."
+  },
+  "partitions": [
+    {
+      "worker": 0,
+      "input": "partition-0.json",
+      "sha256": "aaaecf89575f985bcb3681f8516322a3e7e9f23824740cbc4b01ef6cf6e31f94",
+      "games": 110,
+      "cases": 210,
+      "snapshots": 606,
+      "recorded_search_cap_seconds": 895
+    },
+    {
+      "worker": 1,
+      "input": "partition-1.json",
+      "sha256": "b8ed341563fd0537feed141268b78b134818aaea55c58fa341a0a080cedb63f3",
+      "games": 110,
+      "cases": 217,
+      "snapshots": 629,
+      "recorded_search_cap_seconds": 895
+    },
+    {
+      "worker": 2,
+      "input": "partition-2.json",
+      "sha256": "ce9a90051b6c8fd6c200288720e4bea0743691f0d1d6e3dca14adf459b11874d",
+      "games": 110,
+      "cases": 215,
+      "snapshots": 622,
+      "recorded_search_cap_seconds": 895
+    },
+    {
+      "worker": 3,
+      "input": "partition-3.json",
+      "sha256": "7148f0338ca3c0495e62fbd0cb0f21f6ea91b77fffd55aae3208b09ce4c73b54",
+      "games": 109,
+      "cases": 206,
+      "snapshots": 588,
+      "recorded_search_cap_seconds": 895
+    }
+  ],
+  "order": "Sorted gameIDs round-robin to workers; chronological needed plies within each game. Full PGN move stack. Clear Hash plus distinct game=session object per game. Worker partition does not share cache across games.",
+  "cache": "Clean output only. No reuse of baseline/targeted engine values, no automatic resume/retry. Existing collector atomic snapshot checkpoints.",
+  "complete_windows": "Only exact complete same-depth MultiPV roots; store actual previous completed iteration as confidence window. No copying final scores into prior windows. Terminal positions retain existing exact terminal handling.",
+  "cap": "Four workers each895recorded search seconds; combined59m40s inside60min. Guard checked during info stream; no automatic retry or expansion.",
+  "source_hashes": {
+    "brilliants-improvement-2026-11-03/surprise-v5/analysis.py": "5ac9d2c27f11d4dce861afa39e9f81b4977411f633b22bdde0d34620ecf7f618",
+    "brilliants-final-2026-11-03/corpus.sqlite3": "c9095e767410db0e3dc225c2b2d35f826dab34255199477f5b7950089d8f42d3",
+    "brilliants-final-2026-11-03/analysis-baseline.json": "d8833860a3f7f5aec1c7817c3203a10af500044e885efc364e9d03626fc3655b",
+    "brilliants-final-2026-11-03/analysis-panel.json": "682e50dd4083787f643ef990df12e6bed34407dfdeee83c8688497dbc44d06f2",
+    "brilliants-improvement-2026-11-03/root/frozen-v4/noSweatClassify.ts": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301",
+    "brilliants-improvement-2026-11-03/root/frozen-v4/noSweatCore.ts": "3fa48e3c50e7361a244c0ebb58543315b6a5f208c0c0e1979ae18fca40366a40",
+    "brilliants-improvement-2026-11-03/astra/v5/variants/variantA.ts": "bdc7b52881c7cfe26a3ad6d6483805a4e58a2e6ca1181e5b0e5dd2c3f382ce3b",
+    "brilliants-improvement-2026-11-03/astra/v5/variants/offerProofs.ts": "d1d887daa2163e9ec79145414a4bfa8669af66ccabc62a98dcec8bb012a0ecaa"
+  },
+  "collector_sha256": "d542ad2fc33c9c4863d15d3febcabb9cc73cb772e118432694f643af63f7bf3f",
+  "replay": "Exact frozen v4 and variantA plus direct EC on complete clean uniform evidence, paired against original300k evidence. No alternative rule tuning.",
+  "pre_search_amendment": {
+    "reason": "Parent explicitly authorized4workers before any collector launch; no search data existed or was discarded.",
+    "superseded_unused_plan_sha256": "24ac64c57cb4707004a1ef5c0ec3c57a26d624f43ac57cbc9449ac8d523ded6d"
+  }
+}

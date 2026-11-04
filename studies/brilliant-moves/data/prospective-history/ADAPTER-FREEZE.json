@@ -1,0 +1,65 @@
+{
+  "frozen_at_utc": "2026-11-03T12:49:06.048281+00:00",
+  "source_freeze_sha256": "0f52334e2b730acf58a44785aa09b4bc8dbd3c8fd68ca57b4206a4efb300e9a8",
+  "no_fresh_engine_runs": true,
+  "synthetic_smoke": "start/e4/e5 only; final smoke3 windows14/13 completed, no study data",
+  "files": {
+    "adapter/native-balanced.mts": {
+      "sha256": "afc65e1c28603cc0759c8f093e3e4e6b845a5e14bb65ea251664af39c54cb0c9",
+      "bytes": 7293
+    },
+    "adapter/replay-primary.mts": {
+      "sha256": "7dea99686eeaaf333ab2602e4b61f8bc5fd1b2b89f1da428b8ada7dc4dabb253",
+      "bytes": 4002
+    },
+    "adapter/check-freeze.py": {
+      "sha256": "4e8c84aea684ba7fe93bef7e72fbb27ae23c1dca797e4d176c7bbebdfdf73043",
+      "bytes": 745
+    },
+    "adapter/tsconfig.json": {
+      "sha256": "150a5022b7efffc21c30fefd70552d94c687990a2921761e36077543f7dbed36",
+      "bytes": 412
+    },
+    "package.json": {
+      "sha256": "a90fc33418afa2b9cbf4768524b021135b965ecdf993457505bfae3ac44a8428",
+      "bytes": 33
+    },
+    "MEASUREMENT-PLAN.md": {
+      "sha256": "7f25c0d6565ded177039e1245bf53e11ecb5ff96e7d03ef07effcde2a8be6309",
+      "bytes": 7125
+    },
+    "ASSET-RECEIPT.json": {
+      "sha256": "9a55d512d260e8a6ca6bb23bc3180f3fcac971bde7d76a8250c8be3b80314386",
+      "bytes": 369
+    }
+  },
+  "native_profile": {
+    "engine": "Stockfish19smallnet",
+    "hash_mb": 16,
+    "threads": 1,
+    "depth": 14,
+    "movetime_ms": 1000,
+    "position_command": "FEN only",
+    "full_game_order": true,
+    "confirmation_allowance": 6,
+    "position_search_cap": 1500,
+    "engine_time_cap_ms": 1500000,
+    "games_cap": 10
+  },
+  "primary_profile": {
+    "engine": "SF18",
+    "nodes": 300000,
+    "threads": 1,
+    "hash_mb": 64,
+    "full_pgn_history": true
+  },
+  "runtime": {
+    "node": "<temporary>/node-v24.22.1-darwin-arm64/bin/node",
+    "tsx_loader": "<temporary>/mute-precision-native/node_modules/tsx/dist/loader.mjs"
+  },
+  "known_limits": [
+    "Node-hosted actual native review flow is not a browser-device timing test.",
+    "V6/EC secondary comparison shares v7-driven search/confirmation evidence, not an independent v6 engine run.",
+    "No recovery activations makes v7-v6 benefit inconclusive."
+  ]
+}

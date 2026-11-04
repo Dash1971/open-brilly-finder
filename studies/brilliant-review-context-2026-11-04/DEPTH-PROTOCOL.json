@@ -1,0 +1,172 @@
+{
+  "scope": "Fixed matched48 diagnostic. No ratings consumed, classifier dependence or fitting, application changes, training or deployment. Local SF18 is not Chess.com review.",
+  "cases_sha256": "e6d482a5447099854fc3235e4d65dcdd6d0a9c7109275c2081847973cba93553",
+  "games_sha256": "2ec968779a8a126947bb807a30469a6a86871e2d65bd0eafd375712f927c0d95",
+  "collector_sha256": "c3b923604b99481100d6da620cdf11689494b579520e7f8186235bc856cfc1bd",
+  "script_sha256": "93a3e7c461ef019605f00bade9b216936cfec07756baced3765cf7c48f0ee74b",
+  "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+  "nodes_per_search": 3000000,
+  "searches": 96,
+  "positions": "Full PGN history BEFORE and AFTER each target; cases in original fixed order. Clear Hash each search; fresh game object.",
+  "threads": 1,
+  "hash_mb": 64,
+  "multipv": 2,
+  "wall_seconds": 600,
+  "auto_retry": false,
+  "collection": "Exact packed/search AST functions; last complete same-depth top2, current and previous retained.",
+  "score": "White raw scores normalized to target mover; mapped clamp cp +-1000, mate sign to +-1000; winprob=100/(1+exp(-0.00368208*mapped)).",
+  "alternate": "Best BEFORE root excluding played; if played absent from top2, top1; unavailable with no distinct root. This is not a newly verified safe/material-preserving alternative.",
+  "summaries": "Raw cp shifts >50, >100; mapped loss before-to-after and same-search root; rank and alternate; pair contrasts. Diagnostic quality flags loss>5pp and <-5pp cross-search; stable matched = both after shifts <=50cp, loss <=5pp and pair after gap<=100cp. Thresholds descriptive, not award rules.",
+  "pairs": [
+    {
+      "pair": 1,
+      "distance": 0.030600031411624148,
+      "positive": "166122402690:37",
+      "ordinary": "173774757032:28"
+    },
+    {
+      "pair": 2,
+      "distance": 0.04106528843493517,
+      "positive": "173661079138:26",
+      "ordinary": "147329069640:16"
+    },
+    {
+      "pair": 3,
+      "distance": 0.04444042095418653,
+      "positive": "184653480432:30",
+      "ordinary": "173765223182:58"
+    },
+    {
+      "pair": 4,
+      "distance": 0.07646037519837678,
+      "positive": "173184879010:62",
+      "ordinary": "166897350472:18"
+    },
+    {
+      "pair": 5,
+      "distance": 0.0837409746952407,
+      "positive": "167122315622:53",
+      "ordinary": "172804595924:41"
+    },
+    {
+      "pair": 6,
+      "distance": 0.08898804806955023,
+      "positive": "173532009624:45",
+      "ordinary": "166699653212:39"
+    },
+    {
+      "pair": 7,
+      "distance": 0.09400825842930956,
+      "positive": "168415989030:55",
+      "ordinary": "172312827850:23"
+    },
+    {
+      "pair": 8,
+      "distance": 0.09590160043446734,
+      "positive": "185229374468:26",
+      "ordinary": "184300109262:14"
+    },
+    {
+      "pair": 9,
+      "distance": 0.09857734127566768,
+      "positive": "171472107788:38",
+      "ordinary": "166578129186:33"
+    },
+    {
+      "pair": 10,
+      "distance": 0.0991257797941518,
+      "positive": "170661862908:40",
+      "ordinary": "184277876260:54"
+    },
+    {
+      "pair": 11,
+      "distance": 0.10173889508743839,
+      "positive": "167735024286:72",
+      "ordinary": "172828071536:75"
+    },
+    {
+      "pair": 12,
+      "distance": 0.11055390839877112,
+      "positive": "172534191020:19",
+      "ordinary": "172399142014:58"
+    },
+    {
+      "pair": 13,
+      "distance": 0.11232251145280489,
+      "positive": "184185752754:59",
+      "ordinary": "173625605676:68"
+    },
+    {
+      "pair": 14,
+      "distance": 0.11830332263089961,
+      "positive": "168815996146:51",
+      "ordinary": "174474699682:54"
+    },
+    {
+      "pair": 15,
+      "distance": 0.12419666363278258,
+      "positive": "172914653473:86",
+      "ordinary": "184330910250:75"
+    },
+    {
+      "pair": 16,
+      "distance": 0.13062392531721453,
+      "positive": "181991300863:49",
+      "ordinary": "171805090202:89"
+    },
+    {
+      "pair": 17,
+      "distance": 0.1437066554018974,
+      "positive": "172256931994:52",
+      "ordinary": "170804505058:23"
+    },
+    {
+      "pair": 18,
+      "distance": 0.14920367547785965,
+      "positive": "166981885820:34",
+      "ordinary": "169295732472:39"
+    },
+    {
+      "pair": 19,
+      "distance": 0.15854934829154613,
+      "positive": "173720481882:31",
+      "ordinary": "166508569726:24"
+    },
+    {
+      "pair": 20,
+      "distance": 0.15911282425339437,
+      "positive": "171728787528:43",
+      "ordinary": "182338102719:54"
+    },
+    {
+      "pair": 21,
+      "distance": 0.16095238095238093,
+      "positive": "183973291902:40",
+      "ordinary": "171615877812:32"
+    },
+    {
+      "pair": 22,
+      "distance": 0.16705680582228039,
+      "positive": "167744579866:37",
+      "ordinary": "167245993920:25"
+    },
+    {
+      "pair": 23,
+      "distance": 0.16986481034828568,
+      "positive": "173851185684:34",
+      "ordinary": "167275575688:60"
+    },
+    {
+      "pair": 24,
+      "distance": 0.17839668495063446,
+      "positive": "173628147512:111",
+      "ordinary": "169084959468:69"
+    }
+  ],
+  "validation": {
+    "coverage48": true,
+    "fen_and_history": true,
+    "engine_hash": true,
+    "mover_sign": true
+  }
+}

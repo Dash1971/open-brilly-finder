@@ -1,0 +1,10 @@
+{
+  "feature": "weak_minus_strong_loss_pp",
+  "direction": "Larger means lower-budget engine rates the move worse relative to its own best, conditional on stronger quality.",
+  "scope": "Descriptive rank association only on both-hard-window-eligible cases; no independent samples or significance claim.",
+  "positive_cases": 394,
+  "negative_cases": 134,
+  "rank_AUC": 0.4939957572543374,
+  "positive_median": 0.31702503277269045,
+  "negative_median": 0.47819689895445094
+}

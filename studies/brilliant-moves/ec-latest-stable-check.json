@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-11-03T04:48:47.333315+00:00",
+  "latest_stable_release": {
+    "tag": "v0.15.1",
+    "published_at": "2026-09-05T11:51:13Z",
+    "commit": "4932c9231517f6fd75e5a97902b207c7dc82e61f",
+    "url": "https://github.com/franciscoBSalgueiro/en-croissant/releases/tag/v0.15.1"
+  },
+  "pinned_reference_commit": "6f2d2628f0fbe11cb62a7dd2f9c102bb52907d53",
+  "byte_identical_at_both_commits": {
+    "src/utils/score.ts": {
+      "git_blob_sha": "85ed17d99740dec954aed301f408ef8ff68968d0",
+      "size": 3404
+    },
+    "src-tauri/src/chess.rs": {
+      "git_blob_sha": "0eccc73e0d69a14a25fa06bd914ceebf5367e413",
+      "size": 25117
+    }
+  },
+  "meaning": "Pinned EC score/material code is byte-identical to latest stable release; application/evidence collection behavior is not thereby asserted identical. Report direct EC annotation and shared-confirmation outputs separately for a fair peer comparison."
+}

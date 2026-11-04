@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "input_sha256": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+  "feature_sha256": "1b9f171b4ced3f8f30ad3148005426285b4ef0d6dbbc528c9c9a4f910432974b",
+  "protocol_sha256": "a33e3d63f764237d8021d510c28a69e7fb25b6d699d13b6a46f20be9b8ea137a",
+  "script_sha256": "17e62dfe91bb3d876aebfbb4ad5374e370eb818c547937b126cc39eb6a80ac4e",
+  "evidence_sha256": "2af8d1f56ce5bf4b6730b712f90103b06992a8a9a13320833c3f3a2f5d641add",
+  "counts": {
+    "known_windows": 2640,
+    "fork_true_windows": 251,
+    "check_true_windows": 1222,
+    "not_requested_windows": 4808
+  },
+  "cases": 3724,
+  "requested_cases": 1320,
+  "original_diagnostic_case_window_parity": 2604,
+  "legal_acceptance_reply_pairs_checked": 2640,
+  "elapsed_seconds": 0.39542104210704565,
+  "new_engine_queries": 0,
+  "semantics": "Original75 features unchanged. Two new booleans from opponent-best saved accepting branch and its best first reply; all branches scored before choosing; mate order preserved; missing remains null. No truth or classifier score used."
+}

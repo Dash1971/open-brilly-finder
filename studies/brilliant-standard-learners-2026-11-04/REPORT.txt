@@ -1,0 +1,139 @@
+Mute Chess: saved-data standard learner comparison
+November 4, 2026 (Japan)
+
+Outcome
+
+There is a small improvement from threshold tuning, but no established standard-
+learner replacement that finds more Brilliants without increasing wrong awards.
+The standard random forest is promising enough to retain as a comparison method.
+This experiment does not justify changing the deployed classifier.
+
+Main comparison: held-out predictions from five outer game-group folds
+
+Method                       Found / 917   Recall    Wrong awards   Wrong / awards
+Existing forest, fixed       436           47.5%     6              1.36%
+Existing forest, retuned      452           49.3%     6              1.31%
+Standard random forest       473           51.6%     7              1.46%
+Histogram gradient boosting  329           35.9%     4              1.20%
+Training-selected procedure  454           49.5%     6              1.30%
+
+The existing forest here is the current learning method retrained on the same
+expanded data as its competitors. It is NOT the deployed 848-example model
+evaluated on examples it already learned from. Thus these figures should not
+be substituted for deployed-model recall on a different population.
+
+The retuned forest gained 16 true awards and lost none; its six false awards
+were exactly the same six moves. The standard RF gained 55 true awards, lost
+18, removed two false awards and added three. Its net gain of 37 true awards
+came with one additional false award. The training-selected procedure gained
+37 true awards, lost 19, removed two false awards and added two.
+
+How the comparison was protected
+
+- All 3,724 saved examples, 917 positives and 972 group components were used.
+- Same 75 chess features plus their 75 missing indicators; no new features,
+  labels, rating predictors, engine searches, or collection.
+- Same eligible window rows, initial equal total weight per move, two-window
+  confirmation, confidence requirements, and physical-unknown abstention.
+- Whole games, repeated canonical before-positions, duplicate aliases, and both
+  engine windows remained grouped. No outer test group entered its training set.
+- Five outer folds estimated performance. Three inner folds selected cutoffs.
+- Cutoffs maximized correct awards subject to BOTH no more false awards and no
+  worse wrong-award fraction than the fixed reference on inner predictions.
+- All negatives, including easy errors, counted toward the false-award budget.
+- A retuned-custom control distinguishes cutoff gains from learner gains.
+- The primary selection procedure chose among the four arms using inner folds
+  only, with the fixed reference as fallback. Individual arms are also reported.
+- Every reference fold reproduced the previous experiment's true/false counts.
+  Reference final-calibration scores reproduced exactly (maximum difference 0).
+- Parameters were fixed before results. No parameter sweep or second fit round
+  followed disappointing results.
+
+Learners
+
+Standard RF: scikit-learn RandomForestClassifier, 128 trees, depth 6, 16 unique
+window rows per leaf, 12 candidate features, one thread, no class weighting.
+
+Boosting: scikit-learn HistGradientBoostingClassifier, 200 iterations, learning
+rate 0.05, at most 15 leaves per tree, 16 rows per leaf, L2 1, early stopping off.
+
+These are alternative learner packages, not a bitwise algorithm ablation. The
+standard RF bootstraps window rows rather than whole groups; the custom forest
+bootstraps groups. All evaluation splits remain grouped. Native missing-value
+routing, class-weight treatment, leaf constraints and tree count also differ.
+Only one fixed configuration per standard family was tested. A poor result for
+this boosting configuration does not rule out gradient boosting generally.
+
+Final training-only selection and secondary replay
+
+A separate five-fold calibration selected the original expanded custom forest
+with a cutoff of 0.8143062085223279 rather than 5/6 (0.8333333333333334).
+It found 486/917 positives with seven false awards on those selection folds.
+That is SELECTION evidence, not the main performance estimate.
+
+The full-fit selected model is byte-identical to the previous expanded forest:
+e153a3d151a8803d13fc85ba857c9297541a5d45b627f776ea56f1a249002332
+Only the experimental award cutoff differs. MODEL-FREEZE.json records it.
+No application setting or deployed model was changed.
+
+After freezing that choice, the already-seen 89-game benchmark was replayed:
+  Selected cutoff:       40/71 Brilliants, zero false awards (56.3% recall).
+  Expanded fixed cutoff: 37/71 Brilliants, zero false awards (52.1% recall).
+  Deployed reference:    42/71 Brilliants, two false awards (59.2% recall).
+
+The 89 games were already examined in prior research and this conversation.
+This replay is corroborating development evidence, not a fresh blind test.
+
+What this says about the next direction
+
+Among the 191 eligible Chess.com Brilliants for which the En Croissant sacrifice
+feature is false, outer predictions found:
+  Current forest: 7; retuned forest: 7; standard RF: 8; boosting: 14.
+Boosting also made one false award in that subgroup. The standard learner's
+improvement therefore largely came from the already-better-understood cases.
+The main missed-sacrifice category remains largely unresolved.
+
+Recommended next investigation: inspect matched missed Brilliants and ordinary
+offers in that subgroup, then test whether additional sacrifice/acceptance
+evidence distinguishes them. Retain the standard RF as a comparison baseline.
+This recommendation is a hypothesis, not a finding that the inputs are
+fundamentally incapable of separating the labels. No such next experiment ran.
+
+Uncertainty and scope
+
+This is repeatedly studied, enriched research data from a limited player
+population. The wrong-award fractions are sample precision estimates, not
+deployment promises. There is no new held-out-player or representative test.
+
+Paired group-bootstrap 95% percentile intervals, conditional on the fixed outer
+predictions, for recall gain over the current forest:
+  Retuned custom: +0.97 to +2.66 percentage points.
+  Standard RF:    +2.25 to +5.86 percentage points.
+  Selection:      +0.43 to +3.65 percentage points.
+
+Standard RF's false-count difference interval was about -3 to +5; the selected
+procedure's was -4 to +4. These intervals do not establish equal future error
+rates. The retuned custom interval is zero because all observed negative
+decisions are identical, not because future extra errors are impossible.
+Bootstrap does not include refitting or accumulated model-selection uncertainty.
+
+The first 60% recall / 99% precision milestone was not reached.
+
+Artifacts and reproduction
+
+PROTOCOL.json: fixed design, hashes, environment, and limits.
+experiment.py: one-study implementation using the pinned original Tree class.
+RESULTS.json: complete counts, selections, subgroup results, uncertainty.
+PREDICTIONS.json: all outer predictions and final-calibration scores.
+MODEL-FREEZE.json and selected-model.json: experimental selected model/cutoff.
+SEEN-BENCHMARK-PREDICTIONS.json: secondary replay decisions.
+VERIFICATION.json: independent recomputation and artifact consistency checks.
+
+Run used Python 3.12 with scikit-learn 1.7.2, NumPy 2.5.4, SciPy 1.18.1.
+76 model fits completed in 47.9 seconds; peak resident memory about 245 MiB.
+Dependencies are isolated under /private/tmp/brilliant-learner-2026-11-04-venv.
+No browser collectors, schedules, engine workers or deployment actions ran.
+
+API references:
+https://scikit-learn.org/1.7/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+https://scikit-learn.org/1.7/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html

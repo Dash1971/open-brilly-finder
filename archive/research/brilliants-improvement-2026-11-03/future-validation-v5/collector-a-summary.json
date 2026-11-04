@@ -1,0 +1,47 @@
+{
+  "completed_at_utc": "2026-11-03T10:43:03.607892+00:00",
+  "collector": "pilot_corpus",
+  "accounts": {
+    "hansen": {
+      "counts": {
+        "primary_brilliant": 20,
+        "primary_nonbrilliant": 20,
+        "secondary_control_brilliant": 1
+      },
+      "raw_records": 41,
+      "unique_move_keys": 41,
+      "exact_PGN_SAN_UCI_FEN_matches": 41,
+      "rendered_after_boards_verified": 41,
+      "visible_coach_complete_flags": 41,
+      "positive_reserves_used": 0,
+      "gallery_disagreements": 0,
+      "evidence_sha256": "f5596ec77edab35e193265f8a57f741c06f485d71eac6ad88164c5740722d1a2",
+      "first_capture_utc": "2026-11-03T10:24:39.277Z",
+      "last_capture_utc": "2026-11-03T10:34:53.017Z"
+    },
+    "GothamChess": {
+      "counts": {
+        "primary_brilliant": 20,
+        "primary_nonbrilliant": 20,
+        "secondary_control_brilliant": 1
+      },
+      "raw_records": 41,
+      "unique_move_keys": 41,
+      "exact_PGN_SAN_UCI_FEN_matches": 41,
+      "rendered_after_boards_verified": 41,
+      "visible_coach_complete_flags": 41,
+      "positive_reserves_used": 0,
+      "gallery_disagreements": 0,
+      "evidence_sha256": "fd2e9eb038f16f2bf62f75ece67316d73a5627a080e9500025fdbecf174eb85c",
+      "first_capture_utc": "2026-11-03T10:35:18.276Z",
+      "last_capture_utc": "2026-11-03T10:41:18.618Z"
+    }
+  },
+  "total_primary_moves": 80,
+  "total_raw_records": 82,
+  "all_own_tabs_closed": true,
+  "database_writes_during_collection": false,
+  "model_engine_scoring_or_metric_peek_during_collection": false,
+  "queue_freeze_sha256": "3fa68a35d68e7d731720093fc31d9546e6455ba26bb1b6cf7e539357b5cc3fd6",
+  "notes": "Hansen thirdgame firstcontrol wasBrilliant. Itwassavedsecondary, tabclosedprematurely, samegamereopenedonlyfornextfrozencontrol andthatfactrecordedinrawcapture_context. No queue/source edits or unfrozenmove chosen."
+}

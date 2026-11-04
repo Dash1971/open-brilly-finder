@@ -1,0 +1,371 @@
+{
+  "frozen_at_utc": "2026-11-03T12:59:38.495237+00:00",
+  "all_current_labels_unknown": true,
+  "fresh_review_observations": 0,
+  "targets": 100,
+  "planned_fresh_primary_moves": 200,
+  "class_target": {
+    "brilliant": 100,
+    "explicit_non_brilliant": 100
+  },
+  "accounts": {
+    "nelsi": {
+      "targets": 20,
+      "positive_reserves": 12,
+      "primary_control_candidates": 80,
+      "all_targets_and_reserves_have4controls": true,
+      "categories": {
+        "Bishop Sacrifice": 3,
+        "All Types": 17
+      }
+    },
+    "hansen": {
+      "targets": 20,
+      "positive_reserves": 16,
+      "primary_control_candidates": 80,
+      "all_targets_and_reserves_have4controls": true,
+      "categories": {
+        "Bishop Sacrifice": 4,
+        "All Types": 16
+      }
+    },
+    "KNVB": {
+      "targets": 20,
+      "positive_reserves": 11,
+      "primary_control_candidates": 80,
+      "all_targets_and_reserves_have4controls": true,
+      "categories": {
+        "Queen Sacrifice": 4,
+        "Rook Sacrifice": 6,
+        "Bishop Sacrifice": 5,
+        "Knight Sacrifice": 5
+      }
+    },
+    "GothamChess": {
+      "targets": 20,
+      "positive_reserves": 1,
+      "primary_control_candidates": 80,
+      "all_targets_and_reserves_have4controls": true,
+      "categories": {
+        "Queen Sacrifice": 2,
+        "Bishop Sacrifice": 3,
+        "Knight Sacrifice": 15
+      }
+    },
+    "Hikaru": {
+      "targets": 20,
+      "positive_reserves": 19,
+      "primary_control_candidates": 80,
+      "all_targets_and_reserves_have4controls": true,
+      "categories": {
+        "Queen Sacrifice": 2,
+        "Bishop Sacrifice": 3,
+        "All Types": 15
+      }
+    }
+  },
+  "file_sha256": {
+    "PLAN.json": "7b25a8af4a1c47035132b16ab70fc0d60fad1635353fbb829d627f948ba21ad9",
+    "PLAN-PREPARED.json": "ee98cf4a169f00d0ff6fdee233ebb7ae683838a0e7753305f70984f63cfa3b7c",
+    "PROTOCOL-FREEZE.json": "0c2424b40feb9215bd87ca8846b3dcbdb20b478e9e00c0dcf8ca1725653fa998",
+    "FREEZE.json": "0f52334e2b730acf58a44785aa09b4bc8dbd3c8fd68ca57b4206a4efb300e9a8",
+    "ADAPTER-FREEZE.json": "348be630ab83301a263dbd50cc1808b2c07acca158c13f196fb4be17d19308a1",
+    "FINALQUEUE.json": "c4586980b9bdbed2476e16d8c753ef2fbfdb23905bc436d5b23d0a42144900bb",
+    "NATIVE-SUBSET-FREEZE.json": "b05fec9a0472f081dfda51cca71fcc0339f1ce5730aaf47636a21ee29167e9e4",
+    "exclude-games.json": "3b241c8ef136d69e4d3250ecaa58b88f7299a98115c5d02b7701032efb0df679",
+    "known-position-exclusions.json": "18433ffb7bb17143cd00e7491c00d776ea93bcda606f894b5cb8852689467d0c",
+    "known-regression-fens.json": "d47700661f188901a70957983e1bfeb8b27abe199aae9a1b67289af1685e3ba1",
+    "historical-pool-snapshot.json": "c0c0d4cbf2d0f3d509a9ba4705bf93a7f84063293cc39a1814b3de4c3cb9af33",
+    "ELIGIBLE-PGN-POOL.json": "f7161e7391ae064ea4b0719219d0e5b0c6ab2f1edaa22fe000e92d8980ab86d4",
+    "MONTHLY-CACHE-SNAPSHOT.json": "95419df2d61771a915f43663f060cf4950e79ac27bcdce98e6ecf5b18d2808ee",
+    "PUBLIC-PGN-RESOLUTION.json": "c1ddb8464e0fa2545a7e36b56d05470f6074fb0eeef059d8afe2e8648dfa2230",
+    "corpus.py": "8cf41d616ed4ef00a8f3cfd3dabccb8934dfb6de5d38adee8180ab016fe789d3",
+    "prepare_cached_pgn.py": "45e7aa0eca3e654be475b446dbf199dba732812fd23137e7205a9a20b6c98c4a",
+    "prepare_controls.py": "ac2398c0655552d735a61115c6a5079af13040b318c15dd06a784310bb57f44b",
+    "prepare-controls.mts": "9ae5719ca2b936f6b78489a9bce7e4aac6358b3ef3b7fa92fbf4da255839d4ac",
+    "select_draft.py": "774c40e2bd0381e8e3107f3f5456efd8e32d01acae92fdf9e9aa2cf1a355139b",
+    "finalize_queue.py": "9e7f6fb322e3eb60dd1e2ccf1d5e93506d2cb5cf6c61a67657ac15d70b0c3605",
+    "control-preparation-summary.json": "1d9b9866c1f31cf74a4cc6fe9366e59439a8946be470a409f93a04c3f32de26a",
+    "nelsi-ui-queue.json": "82c3090239f4afd3bff006ef10298a404ec6bd84493dde0a527f2c344b7aae9c",
+    "hansen-ui-queue.json": "004176ff7550c30325d1db990f1335dcae02071242c11250ae7682d8a1382967",
+    "knvb-ui-queue.json": "2b081bb8954e43e58f0801012b204b4780d005f609357228d98c012e1ad38275",
+    "gothamchess-ui-queue.json": "6aff4a2f2bff9061500d99bba93c6a931cfbe990b17c254ee7b1765e941fcf32",
+    "hikaru-ui-queue.json": "acd07cff5161e5617fa58b1c4379c1652c4f053cb60d45398b38e681832110ee",
+    "hansen-gallery-topup-raw.json": "a9fe850d9c4fe314ab42f0a65d8200227d8998d7634546faa1faa7e0976776db",
+    "hikaru-gallery-topup-raw.json": "20937f2932cba389e6fc40e977060b8c37f7013091f1dab222e82e8f6a6ae0e8",
+    "nelsi-gallery-topup-raw.json": "43f1eb8c418b8b87cc09ab102d0c49e0aa673a607bf7d5c3645ab6196e3a9c67"
+  },
+  "final_source_freeze_sha256": "0f52334e2b730acf58a44785aa09b4bc8dbd3c8fd68ca57b4206a4efb300e9a8",
+  "adapter_freeze_sha256": "348be630ab83301a263dbd50cc1808b2c07acca158c13f196fb4be17d19308a1",
+  "prelabel_protocol_initial_source_sha256": "82a20604aca86c726da2a8a8743cdbd67dbbce8efbb6c82e0a47e50bec0415bd",
+  "note_source_finalization": "Protocol initialsource pin is archival; finalsourcearchive/adapter frozen before newlabels and pinned separately.",
+  "source_and_adapter_files_verified": [
+    {
+      "artifact": "sources/native/ui/analyse/src/noSweatClassify.ts",
+      "sha256": "79b2b94717e83d0b01bb32a834f4efa93498342cfb7bcb1ba068e9dcbefe898b"
+    },
+    {
+      "artifact": "sources/native/ui/analyse/src/noSweatHistoryOffer.ts",
+      "sha256": "11998e94330999e001a9e1aa683047c24563880cb1ebb4ad6ec019d813365785"
+    },
+    {
+      "artifact": "sources/native/ui/analyse/src/noSweatHistoryProof.ts",
+      "sha256": "eaad6d0f9235b64f11946aee137570efa7e60a9170c8af8c45b9f2d9a6df6f33"
+    },
+    {
+      "artifact": "sources/native/ui/analyse/src/noSweatRecoveryProof.ts",
+      "sha256": "f9dc9ddf2126b5210dbc1d595c9c81b8561290e7e6a6b85e808a4f7f3fd5fca6"
+    },
+    {
+      "artifact": "sources/native/ui/analyse/src/noSweatCore.ts",
+      "sha256": "7dd54eb1eb00aecd92887a5a32b8f81812e100f87398de20991f07505439c2ad"
+    },
+    {
+      "artifact": "sources/native/ui/analyse/src/noSweatSnapshots.ts",
+      "sha256": "083a510f3c94a0d1eeacdb44d2f618e72ca4d57befacf2e4d6a341d54c5cfb40"
+    },
+    {
+      "artifact": "sources/native/ui/analyse/src/noSweatFish.ts",
+      "sha256": "1336ab8bf2b580734dbd44f1f6a37d5f5fa32f648b16cea5d79d6a0fb1c3e67c"
+    },
+    {
+      "artifact": "sources/native/ui/analyse/src/noSweatFullReview.ts",
+      "sha256": "8e297163ed8bbb5afc73fc80834fcece79ebb364f39feb5eda0645f9d2807dc5"
+    },
+    {
+      "artifact": "sources/native/ui/analyse/src/noSweatClassifierClient.ts",
+      "sha256": "781b40b2d0282b1bbd036049533fe41abf4c9539b85d39c6a550a636d221c6d5"
+    },
+    {
+      "artifact": "sources/native/ui/analyse/src/analyse.nosweatWorker.ts",
+      "sha256": "57bd6d1a599a611f3421404d4987d59d22415b174369c4470ac9e7f3a67eb7a7"
+    },
+    {
+      "artifact": "sources/native/ui/lib/src/nosweat/core.ts",
+      "sha256": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a"
+    },
+    {
+      "artifact": "sources/native/ui/lib/src/nosweat/reviewQuality.ts",
+      "sha256": "a8077a2894752982a4ce32f3f0c0db227cd5f4f69e3d44f8931d59aac1e98522"
+    },
+    {
+      "artifact": "sources/native/ui/lib/src/ceval/engines/stockfishWebEngine.ts",
+      "sha256": "27de463cf1ddbf239aa05f2f777cfdc993390eedc1a4c95f6a84b5d355d06fed"
+    },
+    {
+      "artifact": "sources/native/ui/lib/src/ceval/util.ts",
+      "sha256": "04aa1afe3d662581cc2cd3c47cf909562b004cb10078b2cafb14f5b5608ce6d0"
+    },
+    {
+      "artifact": "sources/native/ui/analyse/src/local/localAnalysisEngine.ts",
+      "sha256": "30a9e1e5a95dd63c38cc8cc9f0f04771b8c12f82645782947063d488c0056acb"
+    },
+    {
+      "artifact": "sources/app/analysis/reference/score.ts",
+      "sha256": "3a623bc787e7d84e1026904cc94e05984d77766593403bc4dc5bf63f600e5e1b"
+    },
+    {
+      "artifact": "sources/app/analysis/reference/material.rs",
+      "sha256": "8d52ed11698ced7b75ad247556aee02e0ffbac08688997e164c3b8df7054dc5b"
+    },
+    {
+      "artifact": "sources/app/LICENSE",
+      "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/package.json",
+      "sha256": "be321be1778ab6b6e498ea5010a10101ab1be25e9b2e79050f0365bbde5b29dc"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/attacks.js",
+      "sha256": "d2769e8e46af668b706d0f7b710337d1d80246648bd6afc6eb7eeef5085e2886"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/board.js",
+      "sha256": "4da5f7ddfcd680567cd72b86b3b48ac77194507a94d33f8483d79da26bac7b2a"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/chess.js",
+      "sha256": "ca4ffca6df899e06465a397fc983c3fa55c755c35f6febe071fe5896ade67132"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/compat.js",
+      "sha256": "883722ed669a9b7d9a3a1792f028acf5b5b9b44a60568645d42cc72f6cedf455"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/debug.js",
+      "sha256": "00127220dd3886dce3565a5a01fe16a85c6f60a58df17fd0d92a1c3ccf99a649"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/fen.js",
+      "sha256": "0c01422cf28c8faef8121961a7075c1e103462710a20e61ff2a915f92942ed84"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/index.js",
+      "sha256": "8107327e23f63ce65e2bbc0cc8abb444eef08fbc099970127c486e1eff93c885"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/pgn.js",
+      "sha256": "7521e312c8d950e07533dfcbc2285f87aba5c94a6ded0cad7f69f59dfcd70e3f"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/san.js",
+      "sha256": "bf3c8452745c168b8479df0032f500e867d039b164c2b5380b39ecb9230f9539"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/setup.js",
+      "sha256": "59581828957569f915fae2320add6f55fc46d2359905e2ed80bda8836957168a"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/squareSet.js",
+      "sha256": "838c400af128d051b693ce2f1424dfd79f446e6362bca9e93bfa546080d249c9"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/transform.js",
+      "sha256": "504c7928ace61a8e62ba71df2cc5ee88a90b6a3edd165b7ef8a7fe9f8e0c16ac"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/types.js",
+      "sha256": "0d1bf5b70d49015ad4649731f0277a26a262f566fac970e92135cc8a2e052e0c"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/util.js",
+      "sha256": "e454a8e6e7a2954d6b260b394332fc35742042507c1d48c6b6e072baa6a3f365"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/dist/esm/variant.js",
+      "sha256": "215fb7fc95df8f992a9c03a6361873c622b3ede3fb869757f0c0891cd99b25a5"
+    },
+    {
+      "artifact": "sources/dependencies/chessops/LICENSE.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "artifact": "sources/native-assets/sf_19_smallnet.js",
+      "sha256": "114751d6f0c1e98dfedb9eb1928ac86fb763bab2b5282f24e2d7865156abac2e"
+    },
+    {
+      "artifact": "sources/native-assets/sf_19_smallnet.wasm",
+      "sha256": "7e6629d0e1226a0d20c9c2c71c69dd3dccbe260a25f0053d3e5e4e5acea77fbc"
+    },
+    {
+      "artifact": "sources/native-assets/nn-61e7af4bb97d.nnue.lfs-pointer",
+      "sha256": "da6afa2128986e0d54cf0c5a1be1c88a3a8f44b15580de266e3b8eceb954e143"
+    },
+    {
+      "artifact": "sources/research-reference/CANDIDATE-PLAN.json",
+      "sha256": "1d95afbf290345ae9eeefa611f3286f07dfed8ab5da60d2aef202866d89b703f"
+    },
+    {
+      "artifact": "sources/research-reference/candidate.py",
+      "sha256": "d87bf86b8da910950ca1da5c7ea753e2e96059dc0d8c93f16882a06012308a06"
+    },
+    {
+      "artifact": "sources/research-reference/probe.py",
+      "sha256": "ccba09c903188490be3a1568a6174ed678b12edb080ab2db379cbc0a3302555a"
+    },
+    {
+      "artifact": "sources/dependencies/badrap-result/LICENSE",
+      "sha256": "277b8788944a31c695bd302ffe7da6ff4b96ba3bc14f829e3a4b8fbd8f1992e0"
+    },
+    {
+      "artifact": "sources/dependencies/badrap-result/dist/node-cjs/index.d.ts",
+      "sha256": "d4feb92f592533eb93af021c53a852cdd74ea086f882361e7e2bb25d3715d733"
+    },
+    {
+      "artifact": "sources/dependencies/badrap-result/dist/node-cjs/index.esm.d.mts",
+      "sha256": "97e1818573679b5d3d697406abd3e5f1e9cd00da1f2783ab236912180462f5be"
+    },
+    {
+      "artifact": "sources/dependencies/badrap-result/dist/node-cjs/index.esm.mjs",
+      "sha256": "5fcadd6a2490d99ca60ef31a632ed7885fff6f568b996cfc5349200b15fc2709"
+    },
+    {
+      "artifact": "sources/dependencies/badrap-result/dist/node-cjs/index.esm.mjs.map",
+      "sha256": "e951ac2137144eea3707431804ae1792208b59db8573356deaa9c3abcc9d1299"
+    },
+    {
+      "artifact": "sources/dependencies/badrap-result/dist/node-cjs/index.js",
+      "sha256": "c7c0916a78f75b5ea19d22b94e698eae1c6c701e93c554605409d40f80a5a13f"
+    },
+    {
+      "artifact": "sources/dependencies/badrap-result/dist/node-cjs/index.js.map",
+      "sha256": "4dfabd73e887af8c4f3c527ce874bfd9173560e3bf4b6c75f7addcd901eaea8f"
+    },
+    {
+      "artifact": "sources/dependencies/badrap-result/package.json",
+      "sha256": "b1292a46628749db6cba3ae8910ca561fb85e1e229b8da8f40a98dc002f35acb"
+    },
+    {
+      "artifact": "sources/native/ui/lib/src/nosweat/moveClasses.ts",
+      "sha256": "d4d5125e32964485d49a42243225745ef347910a66bce9e5c9fd4d374ab2cdef"
+    },
+    {
+      "artifact": "sources/native-assets/nn-61e7af4bb97d.nnue",
+      "sha256": "61e7af4bb97d51eeeb25d322916f86513b5cd3a827ce189c98c6e31946f99e5b"
+    },
+    {
+      "artifact": "adapter/native-balanced.mts",
+      "sha256": "afc65e1c28603cc0759c8f093e3e4e6b845a5e14bb65ea251664af39c54cb0c9"
+    },
+    {
+      "artifact": "adapter/replay-primary.mts",
+      "sha256": "7dea99686eeaaf333ab2602e4b61f8bc5fd1b2b89f1da428b8ada7dc4dabb253"
+    },
+    {
+      "artifact": "adapter/check-freeze.py",
+      "sha256": "4e8c84aea684ba7fe93bef7e72fbb27ae23c1dca797e4d176c7bbebdfdf73043"
+    },
+    {
+      "artifact": "adapter/tsconfig.json",
+      "sha256": "150a5022b7efffc21c30fefd70552d94c687990a2921761e36077543f7dbed36"
+    },
+    {
+      "artifact": "package.json",
+      "sha256": "a90fc33418afa2b9cbf4768524b021135b965ecdf993457505bfae3ac44a8428"
+    },
+    {
+      "artifact": "MEASUREMENT-PLAN.md",
+      "sha256": "7f25c0d6565ded177039e1245bf53e11ecb5ff96e7d03ef07effcde2a8be6309"
+    },
+    {
+      "artifact": "ASSET-RECEIPT.json",
+      "sha256": "9a55d512d260e8a6ca6bb23bc3180f3fcac971bde7d76a8250c8be3b80314386"
+    }
+  ],
+  "all571reviewed_games_excluded": true,
+  "all46194knownpositions_excluded": true,
+  "full_PGN_identity_validation": {
+    "games": 163,
+    "positions": 13761,
+    "observations": 107,
+    "indexing_mismatches": [],
+    "raw_evidence_versions": 107,
+    "metadata_enrichment_revisions": 0,
+    "gallery_board_placements_checked": 56,
+    "fresh_review_board_placements_checked": 0,
+    "unique_moves_with_board_identity": 55,
+    "source_move_indices_checked": 107,
+    "known_regression_fen_positions": 46194,
+    "known_regression_fen_matches": [],
+    "observations_waiting_for_pgn": [],
+    "gallery_fresh_disagreements": [],
+    "fresh_binary_label_conflicts": [],
+    "label_counts": [
+      {
+        "label_status": "gallery_brilliant",
+        "n": 107
+      }
+    ],
+    "split_counts": [
+      {
+        "split": "validation",
+        "n": 163
+      }
+    ]
+  },
+  "prepared_database_sha256": "cafe2a3e589f0d045c3402d2f8b17887b322557b9ad9780155422a291657293b",
+  "raw_gallery_audit": "Everyoriginalrawgallerycard remains in hashed *-gallery-topup-raw.json, including duplicate/excludedcards. No unresolvednominations silently substituted.",
+  "no_engines_or_current_review_labels": true,
+  "native_subset_receipt": "NATIVE-SUBSET-FREEZE.json"
+}

@@ -1,0 +1,4163 @@
+{
+  "scope": "One frozen external-classifier comparison; no fitting, tuning, or deployment. Rules at reviewed commits unchanged. Acquisition adapters only.",
+  "protocol_sha256": "d56dedbd477337a901c61506463edd5aa7476f73306b1e1febc35e629b995d9f",
+  "script_sha256": "c1202ea8ee4f89e44595c90ebc7a78ddc8b386bedb1a189db4071ccd3cf2f97c",
+  "input_sha256": "1ab07614f636a88f343abb516d2a477eacb8635a336c3be8bd345644aa483d69",
+  "metadata_sha256": "018a359231c8db9b89536e55b24d9f6b0983b3065a73bb17be4753f0813384fa",
+  "prediction_sha256": {
+    "WINTR-PREDICTIONS.jsonl": "cddb487f3482fff0a490069812eb91c5b762a1af446169521f881b6f8991c2c2",
+    "KNIGHTS-PREDICTIONS.jsonl": "ca454bda198398a4ad988e963e4fa6fb46c44a7e7df160454912eda0cd3c71b1"
+  },
+  "counts": {
+    "cases": 3724,
+    "groups": 972,
+    "positives": 917,
+    "negatives": 2807,
+    "original_429_misses": 429
+  },
+  "baseline": {
+    "custom_retuned": {
+      "TN_known": 2801,
+      "FN_known": 465,
+      "TP": 452,
+      "FP": 6,
+      "unresolved_positive": 0,
+      "unresolved_negative": 0,
+      "cases": 3724,
+      "positives": 917,
+      "negatives": 2807,
+      "resolved": 3724,
+      "unresolved": 0,
+      "coverage": 1.0,
+      "positive_coverage": 1.0,
+      "negative_coverage": 1.0,
+      "confirmed_awards": 458,
+      "precision_of_confirmed_awards": 0.9868995633187773,
+      "wrong_fraction_of_confirmed_awards": 0.013100436681222707,
+      "confirmed_recall_all_positives": 0.49291166848418755,
+      "recall_bounds_if_unresolved_completed": [
+        0.49291166848418755,
+        0.49291166848418755
+      ],
+      "resolved_only_recall": 0.49291166848418755
+    },
+    "custom_fixed": {
+      "TN_known": 2801,
+      "FN_known": 481,
+      "TP": 436,
+      "FP": 6,
+      "unresolved_positive": 0,
+      "unresolved_negative": 0,
+      "cases": 3724,
+      "positives": 917,
+      "negatives": 2807,
+      "resolved": 3724,
+      "unresolved": 0,
+      "coverage": 1.0,
+      "positive_coverage": 1.0,
+      "negative_coverage": 1.0,
+      "confirmed_awards": 442,
+      "precision_of_confirmed_awards": 0.9864253393665159,
+      "wrong_fraction_of_confirmed_awards": 0.013574660633484163,
+      "confirmed_recall_all_positives": 0.47546346782988,
+      "recall_bounds_if_unresolved_completed": [
+        0.47546346782988,
+        0.47546346782988
+      ],
+      "resolved_only_recall": 0.47546346782988
+    }
+  },
+  "arms": {
+    "wintr_both": {
+      "pooled": {
+        "TN_known": 2782,
+        "FP": 20,
+        "FN_known": 630,
+        "TP": 287,
+        "unresolved_negative": 5,
+        "unresolved_positive": 0,
+        "cases": 3724,
+        "positives": 917,
+        "negatives": 2807,
+        "resolved": 3719,
+        "unresolved": 5,
+        "coverage": 0.998657357679914,
+        "positive_coverage": 1.0,
+        "negative_coverage": 0.9982187388671179,
+        "confirmed_awards": 307,
+        "precision_of_confirmed_awards": 0.9348534201954397,
+        "wrong_fraction_of_confirmed_awards": 0.06514657980456026,
+        "confirmed_recall_all_positives": 0.31297709923664124,
+        "recall_bounds_if_unresolved_completed": [
+          0.31297709923664124,
+          0.31297709923664124
+        ],
+        "resolved_only_recall": 0.31297709923664124
+      },
+      "resolved_only_matched_baseline": {
+        "TN_known": 2796,
+        "FN_known": 465,
+        "TP": 452,
+        "FP": 6,
+        "unresolved_positive": 0,
+        "unresolved_negative": 0,
+        "cases": 3719,
+        "positives": 917,
+        "negatives": 2802,
+        "resolved": 3719,
+        "unresolved": 0,
+        "coverage": 1.0,
+        "positive_coverage": 1.0,
+        "negative_coverage": 1.0,
+        "confirmed_awards": 458,
+        "precision_of_confirmed_awards": 0.9868995633187773,
+        "wrong_fraction_of_confirmed_awards": 0.013100436681222707,
+        "confirmed_recall_all_positives": 0.49291166848418755,
+        "recall_bounds_if_unresolved_completed": [
+          0.49291166848418755,
+          0.49291166848418755
+        ],
+        "resolved_only_recall": 0.49291166848418755
+      },
+      "resolved_only_external": {
+        "TN_known": 2782,
+        "FP": 20,
+        "FN_known": 630,
+        "TP": 287,
+        "unresolved_positive": 0,
+        "unresolved_negative": 0,
+        "cases": 3719,
+        "positives": 917,
+        "negatives": 2802,
+        "resolved": 3719,
+        "unresolved": 0,
+        "coverage": 1.0,
+        "positive_coverage": 1.0,
+        "negative_coverage": 1.0,
+        "confirmed_awards": 307,
+        "precision_of_confirmed_awards": 0.9348534201954397,
+        "wrong_fraction_of_confirmed_awards": 0.06514657980456026,
+        "confirmed_recall_all_positives": 0.31297709923664124,
+        "recall_bounds_if_unresolved_completed": [
+          0.31297709923664124,
+          0.31297709923664124
+        ],
+        "resolved_only_recall": 0.31297709923664124
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "external": {
+            "TN_known": 531,
+            "FN_known": 128,
+            "TP": 68,
+            "FP": 3,
+            "unresolved_negative": 1,
+            "unresolved_positive": 0,
+            "cases": 731,
+            "positives": 196,
+            "negatives": 535,
+            "resolved": 730,
+            "unresolved": 1,
+            "coverage": 0.9986320109439124,
+            "positive_coverage": 1.0,
+            "negative_coverage": 0.9981308411214953,
+            "confirmed_awards": 71,
+            "precision_of_confirmed_awards": 0.9577464788732394,
+            "wrong_fraction_of_confirmed_awards": 0.04225352112676056,
+            "confirmed_recall_all_positives": 0.3469387755102041,
+            "recall_bounds_if_unresolved_completed": [
+              0.3469387755102041,
+              0.3469387755102041
+            ],
+            "resolved_only_recall": 0.3469387755102041
+          },
+          "baseline": {
+            "TN_known": 533,
+            "FN_known": 109,
+            "TP": 87,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 731,
+            "positives": 196,
+            "negatives": 535,
+            "resolved": 731,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 89,
+            "precision_of_confirmed_awards": 0.9775280898876404,
+            "wrong_fraction_of_confirmed_awards": 0.02247191011235955,
+            "confirmed_recall_all_positives": 0.44387755102040816,
+            "recall_bounds_if_unresolved_completed": [
+              0.44387755102040816,
+              0.44387755102040816
+            ],
+            "resolved_only_recall": 0.44387755102040816
+          }
+        },
+        {
+          "fold": 1,
+          "external": {
+            "FN_known": 129,
+            "TN_known": 594,
+            "TP": 59,
+            "unresolved_negative": 3,
+            "FP": 6,
+            "unresolved_positive": 0,
+            "cases": 791,
+            "positives": 188,
+            "negatives": 603,
+            "resolved": 788,
+            "unresolved": 3,
+            "coverage": 0.9962073324905183,
+            "positive_coverage": 1.0,
+            "negative_coverage": 0.9950248756218906,
+            "confirmed_awards": 65,
+            "precision_of_confirmed_awards": 0.9076923076923077,
+            "wrong_fraction_of_confirmed_awards": 0.09230769230769231,
+            "confirmed_recall_all_positives": 0.31382978723404253,
+            "recall_bounds_if_unresolved_completed": [
+              0.31382978723404253,
+              0.31382978723404253
+            ],
+            "resolved_only_recall": 0.31382978723404253
+          },
+          "baseline": {
+            "FN_known": 92,
+            "TN_known": 601,
+            "TP": 96,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 791,
+            "positives": 188,
+            "negatives": 603,
+            "resolved": 791,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 98,
+            "precision_of_confirmed_awards": 0.9795918367346939,
+            "wrong_fraction_of_confirmed_awards": 0.02040816326530612,
+            "confirmed_recall_all_positives": 0.5106382978723404,
+            "recall_bounds_if_unresolved_completed": [
+              0.5106382978723404,
+              0.5106382978723404
+            ],
+            "resolved_only_recall": 0.5106382978723404
+          }
+        },
+        {
+          "fold": 2,
+          "external": {
+            "FP": 4,
+            "TN_known": 575,
+            "FN_known": 121,
+            "TP": 55,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 755,
+            "positives": 176,
+            "negatives": 579,
+            "resolved": 755,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 59,
+            "precision_of_confirmed_awards": 0.9322033898305084,
+            "wrong_fraction_of_confirmed_awards": 0.06779661016949153,
+            "confirmed_recall_all_positives": 0.3125,
+            "recall_bounds_if_unresolved_completed": [
+              0.3125,
+              0.3125
+            ],
+            "resolved_only_recall": 0.3125
+          },
+          "baseline": {
+            "TN_known": 577,
+            "TP": 95,
+            "FN_known": 81,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 755,
+            "positives": 176,
+            "negatives": 579,
+            "resolved": 755,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 97,
+            "precision_of_confirmed_awards": 0.979381443298969,
+            "wrong_fraction_of_confirmed_awards": 0.020618556701030927,
+            "confirmed_recall_all_positives": 0.5397727272727273,
+            "recall_bounds_if_unresolved_completed": [
+              0.5397727272727273,
+              0.5397727272727273
+            ],
+            "resolved_only_recall": 0.5397727272727273
+          }
+        },
+        {
+          "fold": 3,
+          "external": {
+            "TN_known": 556,
+            "FN_known": 120,
+            "TP": 61,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 739,
+            "positives": 181,
+            "negatives": 558,
+            "resolved": 739,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 63,
+            "precision_of_confirmed_awards": 0.9682539682539683,
+            "wrong_fraction_of_confirmed_awards": 0.031746031746031744,
+            "confirmed_recall_all_positives": 0.3370165745856354,
+            "recall_bounds_if_unresolved_completed": [
+              0.3370165745856354,
+              0.3370165745856354
+            ],
+            "resolved_only_recall": 0.3370165745856354
+          },
+          "baseline": {
+            "TN_known": 558,
+            "FN_known": 86,
+            "TP": 95,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 739,
+            "positives": 181,
+            "negatives": 558,
+            "resolved": 739,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 95,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.5248618784530387,
+            "recall_bounds_if_unresolved_completed": [
+              0.5248618784530387,
+              0.5248618784530387
+            ],
+            "resolved_only_recall": 0.5248618784530387
+          }
+        },
+        {
+          "fold": 4,
+          "external": {
+            "TN_known": 526,
+            "FN_known": 132,
+            "TP": 44,
+            "FP": 5,
+            "unresolved_negative": 1,
+            "unresolved_positive": 0,
+            "cases": 708,
+            "positives": 176,
+            "negatives": 532,
+            "resolved": 707,
+            "unresolved": 1,
+            "coverage": 0.998587570621469,
+            "positive_coverage": 1.0,
+            "negative_coverage": 0.9981203007518797,
+            "confirmed_awards": 49,
+            "precision_of_confirmed_awards": 0.8979591836734694,
+            "wrong_fraction_of_confirmed_awards": 0.10204081632653061,
+            "confirmed_recall_all_positives": 0.25,
+            "recall_bounds_if_unresolved_completed": [
+              0.25,
+              0.25
+            ],
+            "resolved_only_recall": 0.25
+          },
+          "baseline": {
+            "TN_known": 532,
+            "FN_known": 97,
+            "TP": 79,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 708,
+            "positives": 176,
+            "negatives": 532,
+            "resolved": 708,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 79,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.44886363636363635,
+            "recall_bounds_if_unresolved_completed": [
+              0.44886363636363635,
+              0.44886363636363635
+            ],
+            "resolved_only_recall": 0.44886363636363635
+          }
+        }
+      ],
+      "changes_vs_baseline": {
+        "recovered_correct": 88,
+        "lost_correct_known": 253,
+        "new_wrong": 19,
+        "removed_wrong_known": 5,
+        "unresolved_baseline_correct": 0,
+        "unresolved_baseline_wrong": 0,
+        "shared_correct": 199,
+        "shared_wrong": 1
+      },
+      "hypothetical_union": {
+        "interpretation": "Descriptive only, not fitted, selected or deployed; baseline awards retained and confirmed external-only awards added. Unknown remains unknown when baseline rejects.",
+        "pooled": {
+          "TN_known": 2777,
+          "FP": 25,
+          "FN_known": 377,
+          "TP": 540,
+          "unresolved_negative": 5,
+          "unresolved_positive": 0,
+          "cases": 3724,
+          "positives": 917,
+          "negatives": 2807,
+          "resolved": 3719,
+          "unresolved": 5,
+          "coverage": 0.998657357679914,
+          "positive_coverage": 1.0,
+          "negative_coverage": 0.9982187388671179,
+          "confirmed_awards": 565,
+          "precision_of_confirmed_awards": 0.9557522123893806,
+          "wrong_fraction_of_confirmed_awards": 0.04424778761061947,
+          "confirmed_recall_all_positives": 0.5888767720828789,
+          "recall_bounds_if_unresolved_completed": [
+            0.5888767720828789,
+            0.5888767720828789
+          ],
+          "resolved_only_recall": 0.5888767720828789
+        },
+        "added_correct": 88,
+        "added_wrong": 19
+      },
+      "subgroups": {
+        "original_429_misses": {
+          "external": {
+            "FN_known": 343,
+            "TP": 86,
+            "FP": 0,
+            "TN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 429,
+            "positives": 429,
+            "negatives": 0,
+            "resolved": 429,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": null,
+            "confirmed_awards": 86,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.20046620046620048,
+            "recall_bounds_if_unresolved_completed": [
+              0.20046620046620048,
+              0.20046620046620048
+            ],
+            "resolved_only_recall": 0.20046620046620048
+          },
+          "baseline": {
+            "FN_known": 429,
+            "TP": 0,
+            "FP": 0,
+            "TN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 429,
+            "positives": 429,
+            "negatives": 0,
+            "resolved": 429,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": null,
+            "confirmed_awards": 0,
+            "precision_of_confirmed_awards": null,
+            "wrong_fraction_of_confirmed_awards": null,
+            "confirmed_recall_all_positives": 0.0,
+            "recall_bounds_if_unresolved_completed": [
+              0.0,
+              0.0
+            ],
+            "resolved_only_recall": 0.0
+          }
+        },
+        "eligible_ec_false": {
+          "external": {
+            "FN_known": 181,
+            "TN_known": 284,
+            "TP": 10,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 477,
+            "positives": 191,
+            "negatives": 286,
+            "resolved": 477,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 12,
+            "precision_of_confirmed_awards": 0.8333333333333334,
+            "wrong_fraction_of_confirmed_awards": 0.16666666666666666,
+            "confirmed_recall_all_positives": 0.05235602094240838,
+            "recall_bounds_if_unresolved_completed": [
+              0.05235602094240838,
+              0.05235602094240838
+            ],
+            "resolved_only_recall": 0.05235602094240838
+          },
+          "baseline": {
+            "FN_known": 184,
+            "TN_known": 286,
+            "TP": 7,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 477,
+            "positives": 191,
+            "negatives": 286,
+            "resolved": 477,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 7,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.03664921465968586,
+            "recall_bounds_if_unresolved_completed": [
+              0.03664921465968586,
+              0.03664921465968586
+            ],
+            "resolved_only_recall": 0.03664921465968586
+          }
+        },
+        "eligible_ec_true": {
+          "external": {
+            "FP": 18,
+            "FN_known": 415,
+            "TN_known": 117,
+            "TP": 275,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 825,
+            "positives": 690,
+            "negatives": 135,
+            "resolved": 825,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 293,
+            "precision_of_confirmed_awards": 0.9385665529010239,
+            "wrong_fraction_of_confirmed_awards": 0.06143344709897611,
+            "confirmed_recall_all_positives": 0.39855072463768115,
+            "recall_bounds_if_unresolved_completed": [
+              0.39855072463768115,
+              0.39855072463768115
+            ],
+            "resolved_only_recall": 0.39855072463768115
+          },
+          "baseline": {
+            "TN_known": 129,
+            "FN_known": 245,
+            "TP": 445,
+            "FP": 6,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 825,
+            "positives": 690,
+            "negatives": 135,
+            "resolved": 825,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 451,
+            "precision_of_confirmed_awards": 0.9866962305986696,
+            "wrong_fraction_of_confirmed_awards": 0.013303769401330377,
+            "confirmed_recall_all_positives": 0.644927536231884,
+            "recall_bounds_if_unresolved_completed": [
+              0.644927536231884,
+              0.644927536231884
+            ],
+            "resolved_only_recall": 0.644927536231884
+          }
+        },
+        "all_ec_false": {
+          "external": {
+            "TN_known": 2417,
+            "FN_known": 187,
+            "TP": 10,
+            "unresolved_negative": 5,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "cases": 2621,
+            "positives": 197,
+            "negatives": 2424,
+            "resolved": 2616,
+            "unresolved": 5,
+            "coverage": 0.9980923311713087,
+            "positive_coverage": 1.0,
+            "negative_coverage": 0.9979372937293729,
+            "confirmed_awards": 12,
+            "precision_of_confirmed_awards": 0.8333333333333334,
+            "wrong_fraction_of_confirmed_awards": 0.16666666666666666,
+            "confirmed_recall_all_positives": 0.050761421319796954,
+            "recall_bounds_if_unresolved_completed": [
+              0.050761421319796954,
+              0.050761421319796954
+            ],
+            "resolved_only_recall": 0.050761421319796954
+          },
+          "baseline": {
+            "TN_known": 2424,
+            "FN_known": 190,
+            "TP": 7,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 2621,
+            "positives": 197,
+            "negatives": 2424,
+            "resolved": 2621,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 7,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.03553299492385787,
+            "recall_bounds_if_unresolved_completed": [
+              0.03553299492385787,
+              0.03553299492385787
+            ],
+            "resolved_only_recall": 0.03553299492385787
+          }
+        },
+        "hard_ordinary": {
+          "external": {
+            "TN_known": 1827,
+            "FP": 13,
+            "unresolved_negative": 3,
+            "TP": 0,
+            "FN_known": 0,
+            "unresolved_positive": 0,
+            "cases": 1843,
+            "positives": 0,
+            "negatives": 1843,
+            "resolved": 1840,
+            "unresolved": 3,
+            "coverage": 0.9983722192078134,
+            "positive_coverage": null,
+            "negative_coverage": 0.9983722192078134,
+            "confirmed_awards": 13,
+            "precision_of_confirmed_awards": 0.0,
+            "wrong_fraction_of_confirmed_awards": 1.0,
+            "confirmed_recall_all_positives": null,
+            "recall_bounds_if_unresolved_completed": [
+              null,
+              null
+            ],
+            "resolved_only_recall": null
+          },
+          "baseline": {
+            "TN_known": 1840,
+            "FP": 3,
+            "TP": 0,
+            "FN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 1843,
+            "positives": 0,
+            "negatives": 1843,
+            "resolved": 1843,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": null,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 3,
+            "precision_of_confirmed_awards": 0.0,
+            "wrong_fraction_of_confirmed_awards": 1.0,
+            "confirmed_recall_all_positives": null,
+            "recall_bounds_if_unresolved_completed": [
+              null,
+              null
+            ],
+            "resolved_only_recall": null
+          }
+        }
+      },
+      "bootstrap": {
+        "samples": 2000,
+        "seed": 20261104,
+        "groups": 972,
+        "method": "Paired group resampling of fixed observed decisions; unknowns remain unresolved, only true awards count. Does not model refitting, acquisition changes or hypothesis selection.",
+        "percentile_95": {
+          "confirmed_TP_delta": [
+            -199.0,
+            -130.0
+          ],
+          "confirmed_FP_delta": [
+            5.0,
+            23.024999999999864
+          ],
+          "confirmed_recall_all_positive_delta": [
+            -0.21592301405418646,
+            -0.14301427140530648
+          ],
+          "wrong_fraction_of_confirmed_awards_delta": [
+            0.02479997078392734,
+            0.08084541700426565
+          ],
+          "unresolved_positive": [
+            0.0,
+            0.0
+          ],
+          "unresolved_negative": [
+            1.0,
+            10.0
+          ]
+        }
+      }
+    },
+    "wintr_current": {
+      "pooled": {
+        "TN_known": 2780,
+        "FP": 22,
+        "FN_known": 627,
+        "TP": 290,
+        "unresolved_negative": 5,
+        "unresolved_positive": 0,
+        "cases": 3724,
+        "positives": 917,
+        "negatives": 2807,
+        "resolved": 3719,
+        "unresolved": 5,
+        "coverage": 0.998657357679914,
+        "positive_coverage": 1.0,
+        "negative_coverage": 0.9982187388671179,
+        "confirmed_awards": 312,
+        "precision_of_confirmed_awards": 0.9294871794871795,
+        "wrong_fraction_of_confirmed_awards": 0.07051282051282051,
+        "confirmed_recall_all_positives": 0.31624863685932386,
+        "recall_bounds_if_unresolved_completed": [
+          0.31624863685932386,
+          0.31624863685932386
+        ],
+        "resolved_only_recall": 0.31624863685932386
+      },
+      "resolved_only_matched_baseline": {
+        "TN_known": 2796,
+        "FN_known": 465,
+        "TP": 452,
+        "FP": 6,
+        "unresolved_positive": 0,
+        "unresolved_negative": 0,
+        "cases": 3719,
+        "positives": 917,
+        "negatives": 2802,
+        "resolved": 3719,
+        "unresolved": 0,
+        "coverage": 1.0,
+        "positive_coverage": 1.0,
+        "negative_coverage": 1.0,
+        "confirmed_awards": 458,
+        "precision_of_confirmed_awards": 0.9868995633187773,
+        "wrong_fraction_of_confirmed_awards": 0.013100436681222707,
+        "confirmed_recall_all_positives": 0.49291166848418755,
+        "recall_bounds_if_unresolved_completed": [
+          0.49291166848418755,
+          0.49291166848418755
+        ],
+        "resolved_only_recall": 0.49291166848418755
+      },
+      "resolved_only_external": {
+        "TN_known": 2780,
+        "FP": 22,
+        "FN_known": 627,
+        "TP": 290,
+        "unresolved_positive": 0,
+        "unresolved_negative": 0,
+        "cases": 3719,
+        "positives": 917,
+        "negatives": 2802,
+        "resolved": 3719,
+        "unresolved": 0,
+        "coverage": 1.0,
+        "positive_coverage": 1.0,
+        "negative_coverage": 1.0,
+        "confirmed_awards": 312,
+        "precision_of_confirmed_awards": 0.9294871794871795,
+        "wrong_fraction_of_confirmed_awards": 0.07051282051282051,
+        "confirmed_recall_all_positives": 0.31624863685932386,
+        "recall_bounds_if_unresolved_completed": [
+          0.31624863685932386,
+          0.31624863685932386
+        ],
+        "resolved_only_recall": 0.31624863685932386
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "external": {
+            "TN_known": 530,
+            "FN_known": 128,
+            "TP": 68,
+            "FP": 4,
+            "unresolved_negative": 1,
+            "unresolved_positive": 0,
+            "cases": 731,
+            "positives": 196,
+            "negatives": 535,
+            "resolved": 730,
+            "unresolved": 1,
+            "coverage": 0.9986320109439124,
+            "positive_coverage": 1.0,
+            "negative_coverage": 0.9981308411214953,
+            "confirmed_awards": 72,
+            "precision_of_confirmed_awards": 0.9444444444444444,
+            "wrong_fraction_of_confirmed_awards": 0.05555555555555555,
+            "confirmed_recall_all_positives": 0.3469387755102041,
+            "recall_bounds_if_unresolved_completed": [
+              0.3469387755102041,
+              0.3469387755102041
+            ],
+            "resolved_only_recall": 0.3469387755102041
+          },
+          "baseline": {
+            "TN_known": 533,
+            "FN_known": 109,
+            "TP": 87,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 731,
+            "positives": 196,
+            "negatives": 535,
+            "resolved": 731,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 89,
+            "precision_of_confirmed_awards": 0.9775280898876404,
+            "wrong_fraction_of_confirmed_awards": 0.02247191011235955,
+            "confirmed_recall_all_positives": 0.44387755102040816,
+            "recall_bounds_if_unresolved_completed": [
+              0.44387755102040816,
+              0.44387755102040816
+            ],
+            "resolved_only_recall": 0.44387755102040816
+          }
+        },
+        {
+          "fold": 1,
+          "external": {
+            "FN_known": 129,
+            "TN_known": 594,
+            "TP": 59,
+            "unresolved_negative": 3,
+            "FP": 6,
+            "unresolved_positive": 0,
+            "cases": 791,
+            "positives": 188,
+            "negatives": 603,
+            "resolved": 788,
+            "unresolved": 3,
+            "coverage": 0.9962073324905183,
+            "positive_coverage": 1.0,
+            "negative_coverage": 0.9950248756218906,
+            "confirmed_awards": 65,
+            "precision_of_confirmed_awards": 0.9076923076923077,
+            "wrong_fraction_of_confirmed_awards": 0.09230769230769231,
+            "confirmed_recall_all_positives": 0.31382978723404253,
+            "recall_bounds_if_unresolved_completed": [
+              0.31382978723404253,
+              0.31382978723404253
+            ],
+            "resolved_only_recall": 0.31382978723404253
+          },
+          "baseline": {
+            "FN_known": 92,
+            "TN_known": 601,
+            "TP": 96,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 791,
+            "positives": 188,
+            "negatives": 603,
+            "resolved": 791,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 98,
+            "precision_of_confirmed_awards": 0.9795918367346939,
+            "wrong_fraction_of_confirmed_awards": 0.02040816326530612,
+            "confirmed_recall_all_positives": 0.5106382978723404,
+            "recall_bounds_if_unresolved_completed": [
+              0.5106382978723404,
+              0.5106382978723404
+            ],
+            "resolved_only_recall": 0.5106382978723404
+          }
+        },
+        {
+          "fold": 2,
+          "external": {
+            "FP": 5,
+            "TN_known": 574,
+            "FN_known": 121,
+            "TP": 55,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 755,
+            "positives": 176,
+            "negatives": 579,
+            "resolved": 755,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 60,
+            "precision_of_confirmed_awards": 0.9166666666666666,
+            "wrong_fraction_of_confirmed_awards": 0.08333333333333333,
+            "confirmed_recall_all_positives": 0.3125,
+            "recall_bounds_if_unresolved_completed": [
+              0.3125,
+              0.3125
+            ],
+            "resolved_only_recall": 0.3125
+          },
+          "baseline": {
+            "TN_known": 577,
+            "TP": 95,
+            "FN_known": 81,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 755,
+            "positives": 176,
+            "negatives": 579,
+            "resolved": 755,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 97,
+            "precision_of_confirmed_awards": 0.979381443298969,
+            "wrong_fraction_of_confirmed_awards": 0.020618556701030927,
+            "confirmed_recall_all_positives": 0.5397727272727273,
+            "recall_bounds_if_unresolved_completed": [
+              0.5397727272727273,
+              0.5397727272727273
+            ],
+            "resolved_only_recall": 0.5397727272727273
+          }
+        },
+        {
+          "fold": 3,
+          "external": {
+            "TN_known": 556,
+            "FN_known": 119,
+            "TP": 62,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 739,
+            "positives": 181,
+            "negatives": 558,
+            "resolved": 739,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 64,
+            "precision_of_confirmed_awards": 0.96875,
+            "wrong_fraction_of_confirmed_awards": 0.03125,
+            "confirmed_recall_all_positives": 0.3425414364640884,
+            "recall_bounds_if_unresolved_completed": [
+              0.3425414364640884,
+              0.3425414364640884
+            ],
+            "resolved_only_recall": 0.3425414364640884
+          },
+          "baseline": {
+            "TN_known": 558,
+            "FN_known": 86,
+            "TP": 95,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 739,
+            "positives": 181,
+            "negatives": 558,
+            "resolved": 739,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 95,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.5248618784530387,
+            "recall_bounds_if_unresolved_completed": [
+              0.5248618784530387,
+              0.5248618784530387
+            ],
+            "resolved_only_recall": 0.5248618784530387
+          }
+        },
+        {
+          "fold": 4,
+          "external": {
+            "TN_known": 526,
+            "FN_known": 130,
+            "TP": 46,
+            "FP": 5,
+            "unresolved_negative": 1,
+            "unresolved_positive": 0,
+            "cases": 708,
+            "positives": 176,
+            "negatives": 532,
+            "resolved": 707,
+            "unresolved": 1,
+            "coverage": 0.998587570621469,
+            "positive_coverage": 1.0,
+            "negative_coverage": 0.9981203007518797,
+            "confirmed_awards": 51,
+            "precision_of_confirmed_awards": 0.9019607843137255,
+            "wrong_fraction_of_confirmed_awards": 0.09803921568627451,
+            "confirmed_recall_all_positives": 0.26136363636363635,
+            "recall_bounds_if_unresolved_completed": [
+              0.26136363636363635,
+              0.26136363636363635
+            ],
+            "resolved_only_recall": 0.26136363636363635
+          },
+          "baseline": {
+            "TN_known": 532,
+            "FN_known": 97,
+            "TP": 79,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 708,
+            "positives": 176,
+            "negatives": 532,
+            "resolved": 708,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 79,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.44886363636363635,
+            "recall_bounds_if_unresolved_completed": [
+              0.44886363636363635,
+              0.44886363636363635
+            ],
+            "resolved_only_recall": 0.44886363636363635
+          }
+        }
+      ],
+      "changes_vs_baseline": {
+        "recovered_correct": 89,
+        "lost_correct_known": 251,
+        "new_wrong": 21,
+        "removed_wrong_known": 5,
+        "unresolved_baseline_correct": 0,
+        "unresolved_baseline_wrong": 0,
+        "shared_correct": 201,
+        "shared_wrong": 1
+      },
+      "hypothetical_union": {
+        "interpretation": "Descriptive only, not fitted, selected or deployed; baseline awards retained and confirmed external-only awards added. Unknown remains unknown when baseline rejects.",
+        "pooled": {
+          "TN_known": 2775,
+          "FP": 27,
+          "FN_known": 376,
+          "TP": 541,
+          "unresolved_negative": 5,
+          "unresolved_positive": 0,
+          "cases": 3724,
+          "positives": 917,
+          "negatives": 2807,
+          "resolved": 3719,
+          "unresolved": 5,
+          "coverage": 0.998657357679914,
+          "positive_coverage": 1.0,
+          "negative_coverage": 0.9982187388671179,
+          "confirmed_awards": 568,
+          "precision_of_confirmed_awards": 0.9524647887323944,
+          "wrong_fraction_of_confirmed_awards": 0.04753521126760563,
+          "confirmed_recall_all_positives": 0.5899672846237731,
+          "recall_bounds_if_unresolved_completed": [
+            0.5899672846237731,
+            0.5899672846237731
+          ],
+          "resolved_only_recall": 0.5899672846237731
+        },
+        "added_correct": 89,
+        "added_wrong": 21
+      },
+      "subgroups": {
+        "original_429_misses": {
+          "external": {
+            "FN_known": 342,
+            "TP": 87,
+            "FP": 0,
+            "TN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 429,
+            "positives": 429,
+            "negatives": 0,
+            "resolved": 429,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": null,
+            "confirmed_awards": 87,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.20279720279720279,
+            "recall_bounds_if_unresolved_completed": [
+              0.20279720279720279,
+              0.20279720279720279
+            ],
+            "resolved_only_recall": 0.20279720279720279
+          },
+          "baseline": {
+            "FN_known": 429,
+            "TP": 0,
+            "FP": 0,
+            "TN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 429,
+            "positives": 429,
+            "negatives": 0,
+            "resolved": 429,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": null,
+            "confirmed_awards": 0,
+            "precision_of_confirmed_awards": null,
+            "wrong_fraction_of_confirmed_awards": null,
+            "confirmed_recall_all_positives": 0.0,
+            "recall_bounds_if_unresolved_completed": [
+              0.0,
+              0.0
+            ],
+            "resolved_only_recall": 0.0
+          }
+        },
+        "eligible_ec_false": {
+          "external": {
+            "FN_known": 181,
+            "TN_known": 284,
+            "TP": 10,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 477,
+            "positives": 191,
+            "negatives": 286,
+            "resolved": 477,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 12,
+            "precision_of_confirmed_awards": 0.8333333333333334,
+            "wrong_fraction_of_confirmed_awards": 0.16666666666666666,
+            "confirmed_recall_all_positives": 0.05235602094240838,
+            "recall_bounds_if_unresolved_completed": [
+              0.05235602094240838,
+              0.05235602094240838
+            ],
+            "resolved_only_recall": 0.05235602094240838
+          },
+          "baseline": {
+            "FN_known": 184,
+            "TN_known": 286,
+            "TP": 7,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 477,
+            "positives": 191,
+            "negatives": 286,
+            "resolved": 477,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 7,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.03664921465968586,
+            "recall_bounds_if_unresolved_completed": [
+              0.03664921465968586,
+              0.03664921465968586
+            ],
+            "resolved_only_recall": 0.03664921465968586
+          }
+        },
+        "eligible_ec_true": {
+          "external": {
+            "FP": 19,
+            "FN_known": 412,
+            "TN_known": 116,
+            "TP": 278,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 825,
+            "positives": 690,
+            "negatives": 135,
+            "resolved": 825,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 297,
+            "precision_of_confirmed_awards": 0.936026936026936,
+            "wrong_fraction_of_confirmed_awards": 0.06397306397306397,
+            "confirmed_recall_all_positives": 0.4028985507246377,
+            "recall_bounds_if_unresolved_completed": [
+              0.4028985507246377,
+              0.4028985507246377
+            ],
+            "resolved_only_recall": 0.4028985507246377
+          },
+          "baseline": {
+            "TN_known": 129,
+            "FN_known": 245,
+            "TP": 445,
+            "FP": 6,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 825,
+            "positives": 690,
+            "negatives": 135,
+            "resolved": 825,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 451,
+            "precision_of_confirmed_awards": 0.9866962305986696,
+            "wrong_fraction_of_confirmed_awards": 0.013303769401330377,
+            "confirmed_recall_all_positives": 0.644927536231884,
+            "recall_bounds_if_unresolved_completed": [
+              0.644927536231884,
+              0.644927536231884
+            ],
+            "resolved_only_recall": 0.644927536231884
+          }
+        },
+        "all_ec_false": {
+          "external": {
+            "TN_known": 2417,
+            "FN_known": 187,
+            "TP": 10,
+            "unresolved_negative": 5,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "cases": 2621,
+            "positives": 197,
+            "negatives": 2424,
+            "resolved": 2616,
+            "unresolved": 5,
+            "coverage": 0.9980923311713087,
+            "positive_coverage": 1.0,
+            "negative_coverage": 0.9979372937293729,
+            "confirmed_awards": 12,
+            "precision_of_confirmed_awards": 0.8333333333333334,
+            "wrong_fraction_of_confirmed_awards": 0.16666666666666666,
+            "confirmed_recall_all_positives": 0.050761421319796954,
+            "recall_bounds_if_unresolved_completed": [
+              0.050761421319796954,
+              0.050761421319796954
+            ],
+            "resolved_only_recall": 0.050761421319796954
+          },
+          "baseline": {
+            "TN_known": 2424,
+            "FN_known": 190,
+            "TP": 7,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 2621,
+            "positives": 197,
+            "negatives": 2424,
+            "resolved": 2621,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 7,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.03553299492385787,
+            "recall_bounds_if_unresolved_completed": [
+              0.03553299492385787,
+              0.03553299492385787
+            ],
+            "resolved_only_recall": 0.03553299492385787
+          }
+        },
+        "hard_ordinary": {
+          "external": {
+            "TN_known": 1827,
+            "FP": 13,
+            "unresolved_negative": 3,
+            "TP": 0,
+            "FN_known": 0,
+            "unresolved_positive": 0,
+            "cases": 1843,
+            "positives": 0,
+            "negatives": 1843,
+            "resolved": 1840,
+            "unresolved": 3,
+            "coverage": 0.9983722192078134,
+            "positive_coverage": null,
+            "negative_coverage": 0.9983722192078134,
+            "confirmed_awards": 13,
+            "precision_of_confirmed_awards": 0.0,
+            "wrong_fraction_of_confirmed_awards": 1.0,
+            "confirmed_recall_all_positives": null,
+            "recall_bounds_if_unresolved_completed": [
+              null,
+              null
+            ],
+            "resolved_only_recall": null
+          },
+          "baseline": {
+            "TN_known": 1840,
+            "FP": 3,
+            "TP": 0,
+            "FN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 1843,
+            "positives": 0,
+            "negatives": 1843,
+            "resolved": 1843,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": null,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 3,
+            "precision_of_confirmed_awards": 0.0,
+            "wrong_fraction_of_confirmed_awards": 1.0,
+            "confirmed_recall_all_positives": null,
+            "recall_bounds_if_unresolved_completed": [
+              null,
+              null
+            ],
+            "resolved_only_recall": null
+          }
+        }
+      },
+      "bootstrap": {
+        "samples": 2000,
+        "seed": 20261104,
+        "groups": 972,
+        "method": "Paired group resampling of fixed observed decisions; unknowns remain unresolved, only true awards count. Does not model refitting, acquisition changes or hypothesis selection.",
+        "percentile_95": {
+          "confirmed_TP_delta": [
+            -196.0,
+            -126.97500000000014
+          ],
+          "confirmed_FP_delta": [
+            6.975000000000001,
+            26.0
+          ],
+          "confirmed_recall_all_positive_delta": [
+            -0.2117328917923263,
+            -0.13955387477754413
+          ],
+          "wrong_fraction_of_confirmed_awards_delta": [
+            0.030374489281612915,
+            0.08694933873732505
+          ],
+          "unresolved_positive": [
+            0.0,
+            0.0
+          ],
+          "unresolved_negative": [
+            1.0,
+            10.0
+          ]
+        }
+      }
+    },
+    "wintr_previous": {
+      "pooled": {
+        "TN_known": 2782,
+        "FP": 20,
+        "FN_known": 625,
+        "TP": 292,
+        "unresolved_negative": 5,
+        "unresolved_positive": 0,
+        "cases": 3724,
+        "positives": 917,
+        "negatives": 2807,
+        "resolved": 3719,
+        "unresolved": 5,
+        "coverage": 0.998657357679914,
+        "positive_coverage": 1.0,
+        "negative_coverage": 0.9982187388671179,
+        "confirmed_awards": 312,
+        "precision_of_confirmed_awards": 0.9358974358974359,
+        "wrong_fraction_of_confirmed_awards": 0.0641025641025641,
+        "confirmed_recall_all_positives": 0.31842966194111233,
+        "recall_bounds_if_unresolved_completed": [
+          0.31842966194111233,
+          0.31842966194111233
+        ],
+        "resolved_only_recall": 0.31842966194111233
+      },
+      "resolved_only_matched_baseline": {
+        "TN_known": 2796,
+        "FN_known": 465,
+        "TP": 452,
+        "FP": 6,
+        "unresolved_positive": 0,
+        "unresolved_negative": 0,
+        "cases": 3719,
+        "positives": 917,
+        "negatives": 2802,
+        "resolved": 3719,
+        "unresolved": 0,
+        "coverage": 1.0,
+        "positive_coverage": 1.0,
+        "negative_coverage": 1.0,
+        "confirmed_awards": 458,
+        "precision_of_confirmed_awards": 0.9868995633187773,
+        "wrong_fraction_of_confirmed_awards": 0.013100436681222707,
+        "confirmed_recall_all_positives": 0.49291166848418755,
+        "recall_bounds_if_unresolved_completed": [
+          0.49291166848418755,
+          0.49291166848418755
+        ],
+        "resolved_only_recall": 0.49291166848418755
+      },
+      "resolved_only_external": {
+        "TN_known": 2782,
+        "FP": 20,
+        "FN_known": 625,
+        "TP": 292,
+        "unresolved_positive": 0,
+        "unresolved_negative": 0,
+        "cases": 3719,
+        "positives": 917,
+        "negatives": 2802,
+        "resolved": 3719,
+        "unresolved": 0,
+        "coverage": 1.0,
+        "positive_coverage": 1.0,
+        "negative_coverage": 1.0,
+        "confirmed_awards": 312,
+        "precision_of_confirmed_awards": 0.9358974358974359,
+        "wrong_fraction_of_confirmed_awards": 0.0641025641025641,
+        "confirmed_recall_all_positives": 0.31842966194111233,
+        "recall_bounds_if_unresolved_completed": [
+          0.31842966194111233,
+          0.31842966194111233
+        ],
+        "resolved_only_recall": 0.31842966194111233
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "external": {
+            "TN_known": 531,
+            "FN_known": 128,
+            "TP": 68,
+            "FP": 3,
+            "unresolved_negative": 1,
+            "unresolved_positive": 0,
+            "cases": 731,
+            "positives": 196,
+            "negatives": 535,
+            "resolved": 730,
+            "unresolved": 1,
+            "coverage": 0.9986320109439124,
+            "positive_coverage": 1.0,
+            "negative_coverage": 0.9981308411214953,
+            "confirmed_awards": 71,
+            "precision_of_confirmed_awards": 0.9577464788732394,
+            "wrong_fraction_of_confirmed_awards": 0.04225352112676056,
+            "confirmed_recall_all_positives": 0.3469387755102041,
+            "recall_bounds_if_unresolved_completed": [
+              0.3469387755102041,
+              0.3469387755102041
+            ],
+            "resolved_only_recall": 0.3469387755102041
+          },
+          "baseline": {
+            "TN_known": 533,
+            "FN_known": 109,
+            "TP": 87,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 731,
+            "positives": 196,
+            "negatives": 535,
+            "resolved": 731,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 89,
+            "precision_of_confirmed_awards": 0.9775280898876404,
+            "wrong_fraction_of_confirmed_awards": 0.02247191011235955,
+            "confirmed_recall_all_positives": 0.44387755102040816,
+            "recall_bounds_if_unresolved_completed": [
+              0.44387755102040816,
+              0.44387755102040816
+            ],
+            "resolved_only_recall": 0.44387755102040816
+          }
+        },
+        {
+          "fold": 1,
+          "external": {
+            "FN_known": 126,
+            "TN_known": 594,
+            "TP": 62,
+            "unresolved_negative": 3,
+            "FP": 6,
+            "unresolved_positive": 0,
+            "cases": 791,
+            "positives": 188,
+            "negatives": 603,
+            "resolved": 788,
+            "unresolved": 3,
+            "coverage": 0.9962073324905183,
+            "positive_coverage": 1.0,
+            "negative_coverage": 0.9950248756218906,
+            "confirmed_awards": 68,
+            "precision_of_confirmed_awards": 0.9117647058823529,
+            "wrong_fraction_of_confirmed_awards": 0.08823529411764706,
+            "confirmed_recall_all_positives": 0.32978723404255317,
+            "recall_bounds_if_unresolved_completed": [
+              0.32978723404255317,
+              0.32978723404255317
+            ],
+            "resolved_only_recall": 0.32978723404255317
+          },
+          "baseline": {
+            "FN_known": 92,
+            "TN_known": 601,
+            "TP": 96,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 791,
+            "positives": 188,
+            "negatives": 603,
+            "resolved": 791,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 98,
+            "precision_of_confirmed_awards": 0.9795918367346939,
+            "wrong_fraction_of_confirmed_awards": 0.02040816326530612,
+            "confirmed_recall_all_positives": 0.5106382978723404,
+            "recall_bounds_if_unresolved_completed": [
+              0.5106382978723404,
+              0.5106382978723404
+            ],
+            "resolved_only_recall": 0.5106382978723404
+          }
+        },
+        {
+          "fold": 2,
+          "external": {
+            "FP": 4,
+            "TN_known": 575,
+            "FN_known": 121,
+            "TP": 55,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 755,
+            "positives": 176,
+            "negatives": 579,
+            "resolved": 755,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 59,
+            "precision_of_confirmed_awards": 0.9322033898305084,
+            "wrong_fraction_of_confirmed_awards": 0.06779661016949153,
+            "confirmed_recall_all_positives": 0.3125,
+            "recall_bounds_if_unresolved_completed": [
+              0.3125,
+              0.3125
+            ],
+            "resolved_only_recall": 0.3125
+          },
+          "baseline": {
+            "TN_known": 577,
+            "TP": 95,
+            "FN_known": 81,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 755,
+            "positives": 176,
+            "negatives": 579,
+            "resolved": 755,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 97,
+            "precision_of_confirmed_awards": 0.979381443298969,
+            "wrong_fraction_of_confirmed_awards": 0.020618556701030927,
+            "confirmed_recall_all_positives": 0.5397727272727273,
+            "recall_bounds_if_unresolved_completed": [
+              0.5397727272727273,
+              0.5397727272727273
+            ],
+            "resolved_only_recall": 0.5397727272727273
+          }
+        },
+        {
+          "fold": 3,
+          "external": {
+            "TN_known": 556,
+            "FN_known": 119,
+            "TP": 62,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 739,
+            "positives": 181,
+            "negatives": 558,
+            "resolved": 739,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 64,
+            "precision_of_confirmed_awards": 0.96875,
+            "wrong_fraction_of_confirmed_awards": 0.03125,
+            "confirmed_recall_all_positives": 0.3425414364640884,
+            "recall_bounds_if_unresolved_completed": [
+              0.3425414364640884,
+              0.3425414364640884
+            ],
+            "resolved_only_recall": 0.3425414364640884
+          },
+          "baseline": {
+            "TN_known": 558,
+            "FN_known": 86,
+            "TP": 95,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 739,
+            "positives": 181,
+            "negatives": 558,
+            "resolved": 739,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 95,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.5248618784530387,
+            "recall_bounds_if_unresolved_completed": [
+              0.5248618784530387,
+              0.5248618784530387
+            ],
+            "resolved_only_recall": 0.5248618784530387
+          }
+        },
+        {
+          "fold": 4,
+          "external": {
+            "TN_known": 526,
+            "FN_known": 131,
+            "TP": 45,
+            "FP": 5,
+            "unresolved_negative": 1,
+            "unresolved_positive": 0,
+            "cases": 708,
+            "positives": 176,
+            "negatives": 532,
+            "resolved": 707,
+            "unresolved": 1,
+            "coverage": 0.998587570621469,
+            "positive_coverage": 1.0,
+            "negative_coverage": 0.9981203007518797,
+            "confirmed_awards": 50,
+            "precision_of_confirmed_awards": 0.9,
+            "wrong_fraction_of_confirmed_awards": 0.1,
+            "confirmed_recall_all_positives": 0.2556818181818182,
+            "recall_bounds_if_unresolved_completed": [
+              0.2556818181818182,
+              0.2556818181818182
+            ],
+            "resolved_only_recall": 0.2556818181818182
+          },
+          "baseline": {
+            "TN_known": 532,
+            "FN_known": 97,
+            "TP": 79,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 708,
+            "positives": 176,
+            "negatives": 532,
+            "resolved": 708,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 79,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.44886363636363635,
+            "recall_bounds_if_unresolved_completed": [
+              0.44886363636363635,
+              0.44886363636363635
+            ],
+            "resolved_only_recall": 0.44886363636363635
+          }
+        }
+      ],
+      "changes_vs_baseline": {
+        "recovered_correct": 91,
+        "lost_correct_known": 251,
+        "new_wrong": 19,
+        "removed_wrong_known": 5,
+        "unresolved_baseline_correct": 0,
+        "unresolved_baseline_wrong": 0,
+        "shared_correct": 201,
+        "shared_wrong": 1
+      },
+      "hypothetical_union": {
+        "interpretation": "Descriptive only, not fitted, selected or deployed; baseline awards retained and confirmed external-only awards added. Unknown remains unknown when baseline rejects.",
+        "pooled": {
+          "TN_known": 2777,
+          "FP": 25,
+          "FN_known": 374,
+          "TP": 543,
+          "unresolved_negative": 5,
+          "unresolved_positive": 0,
+          "cases": 3724,
+          "positives": 917,
+          "negatives": 2807,
+          "resolved": 3719,
+          "unresolved": 5,
+          "coverage": 0.998657357679914,
+          "positive_coverage": 1.0,
+          "negative_coverage": 0.9982187388671179,
+          "confirmed_awards": 568,
+          "precision_of_confirmed_awards": 0.9559859154929577,
+          "wrong_fraction_of_confirmed_awards": 0.04401408450704225,
+          "confirmed_recall_all_positives": 0.5921483097055616,
+          "recall_bounds_if_unresolved_completed": [
+            0.5921483097055616,
+            0.5921483097055616
+          ],
+          "resolved_only_recall": 0.5921483097055616
+        },
+        "added_correct": 91,
+        "added_wrong": 19
+      },
+      "subgroups": {
+        "original_429_misses": {
+          "external": {
+            "FN_known": 340,
+            "TP": 89,
+            "FP": 0,
+            "TN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 429,
+            "positives": 429,
+            "negatives": 0,
+            "resolved": 429,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": null,
+            "confirmed_awards": 89,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.20745920745920746,
+            "recall_bounds_if_unresolved_completed": [
+              0.20745920745920746,
+              0.20745920745920746
+            ],
+            "resolved_only_recall": 0.20745920745920746
+          },
+          "baseline": {
+            "FN_known": 429,
+            "TP": 0,
+            "FP": 0,
+            "TN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 429,
+            "positives": 429,
+            "negatives": 0,
+            "resolved": 429,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": null,
+            "confirmed_awards": 0,
+            "precision_of_confirmed_awards": null,
+            "wrong_fraction_of_confirmed_awards": null,
+            "confirmed_recall_all_positives": 0.0,
+            "recall_bounds_if_unresolved_completed": [
+              0.0,
+              0.0
+            ],
+            "resolved_only_recall": 0.0
+          }
+        },
+        "eligible_ec_false": {
+          "external": {
+            "FN_known": 181,
+            "TN_known": 284,
+            "TP": 10,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 477,
+            "positives": 191,
+            "negatives": 286,
+            "resolved": 477,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 12,
+            "precision_of_confirmed_awards": 0.8333333333333334,
+            "wrong_fraction_of_confirmed_awards": 0.16666666666666666,
+            "confirmed_recall_all_positives": 0.05235602094240838,
+            "recall_bounds_if_unresolved_completed": [
+              0.05235602094240838,
+              0.05235602094240838
+            ],
+            "resolved_only_recall": 0.05235602094240838
+          },
+          "baseline": {
+            "FN_known": 184,
+            "TN_known": 286,
+            "TP": 7,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 477,
+            "positives": 191,
+            "negatives": 286,
+            "resolved": 477,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 7,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.03664921465968586,
+            "recall_bounds_if_unresolved_completed": [
+              0.03664921465968586,
+              0.03664921465968586
+            ],
+            "resolved_only_recall": 0.03664921465968586
+          }
+        },
+        "eligible_ec_true": {
+          "external": {
+            "FP": 18,
+            "FN_known": 410,
+            "TN_known": 117,
+            "TP": 280,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 825,
+            "positives": 690,
+            "negatives": 135,
+            "resolved": 825,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 298,
+            "precision_of_confirmed_awards": 0.9395973154362416,
+            "wrong_fraction_of_confirmed_awards": 0.06040268456375839,
+            "confirmed_recall_all_positives": 0.4057971014492754,
+            "recall_bounds_if_unresolved_completed": [
+              0.4057971014492754,
+              0.4057971014492754
+            ],
+            "resolved_only_recall": 0.4057971014492754
+          },
+          "baseline": {
+            "TN_known": 129,
+            "FN_known": 245,
+            "TP": 445,
+            "FP": 6,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 825,
+            "positives": 690,
+            "negatives": 135,
+            "resolved": 825,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 451,
+            "precision_of_confirmed_awards": 0.9866962305986696,
+            "wrong_fraction_of_confirmed_awards": 0.013303769401330377,
+            "confirmed_recall_all_positives": 0.644927536231884,
+            "recall_bounds_if_unresolved_completed": [
+              0.644927536231884,
+              0.644927536231884
+            ],
+            "resolved_only_recall": 0.644927536231884
+          }
+        },
+        "all_ec_false": {
+          "external": {
+            "TN_known": 2417,
+            "FN_known": 187,
+            "TP": 10,
+            "unresolved_negative": 5,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "cases": 2621,
+            "positives": 197,
+            "negatives": 2424,
+            "resolved": 2616,
+            "unresolved": 5,
+            "coverage": 0.9980923311713087,
+            "positive_coverage": 1.0,
+            "negative_coverage": 0.9979372937293729,
+            "confirmed_awards": 12,
+            "precision_of_confirmed_awards": 0.8333333333333334,
+            "wrong_fraction_of_confirmed_awards": 0.16666666666666666,
+            "confirmed_recall_all_positives": 0.050761421319796954,
+            "recall_bounds_if_unresolved_completed": [
+              0.050761421319796954,
+              0.050761421319796954
+            ],
+            "resolved_only_recall": 0.050761421319796954
+          },
+          "baseline": {
+            "TN_known": 2424,
+            "FN_known": 190,
+            "TP": 7,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 2621,
+            "positives": 197,
+            "negatives": 2424,
+            "resolved": 2621,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 7,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.03553299492385787,
+            "recall_bounds_if_unresolved_completed": [
+              0.03553299492385787,
+              0.03553299492385787
+            ],
+            "resolved_only_recall": 0.03553299492385787
+          }
+        },
+        "hard_ordinary": {
+          "external": {
+            "TN_known": 1827,
+            "FP": 13,
+            "unresolved_negative": 3,
+            "TP": 0,
+            "FN_known": 0,
+            "unresolved_positive": 0,
+            "cases": 1843,
+            "positives": 0,
+            "negatives": 1843,
+            "resolved": 1840,
+            "unresolved": 3,
+            "coverage": 0.9983722192078134,
+            "positive_coverage": null,
+            "negative_coverage": 0.9983722192078134,
+            "confirmed_awards": 13,
+            "precision_of_confirmed_awards": 0.0,
+            "wrong_fraction_of_confirmed_awards": 1.0,
+            "confirmed_recall_all_positives": null,
+            "recall_bounds_if_unresolved_completed": [
+              null,
+              null
+            ],
+            "resolved_only_recall": null
+          },
+          "baseline": {
+            "TN_known": 1840,
+            "FP": 3,
+            "TP": 0,
+            "FN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 1843,
+            "positives": 0,
+            "negatives": 1843,
+            "resolved": 1843,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": null,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 3,
+            "precision_of_confirmed_awards": 0.0,
+            "wrong_fraction_of_confirmed_awards": 1.0,
+            "confirmed_recall_all_positives": null,
+            "recall_bounds_if_unresolved_completed": [
+              null,
+              null
+            ],
+            "resolved_only_recall": null
+          }
+        }
+      },
+      "bootstrap": {
+        "samples": 2000,
+        "seed": 20261104,
+        "groups": 972,
+        "method": "Paired group resampling of fixed observed decisions; unknowns remain unresolved, only true awards count. Does not model refitting, acquisition changes or hypothesis selection.",
+        "percentile_95": {
+          "confirmed_TP_delta": [
+            -194.0,
+            -126.0
+          ],
+          "confirmed_FP_delta": [
+            5.0,
+            23.024999999999864
+          ],
+          "confirmed_recall_all_positive_delta": [
+            -0.2102958458884308,
+            -0.13784703415636973
+          ],
+          "wrong_fraction_of_confirmed_awards_delta": [
+            0.024000855881095393,
+            0.07914736945713165
+          ],
+          "unresolved_positive": [
+            0.0,
+            0.0
+          ],
+          "unresolved_negative": [
+            1.0,
+            10.0
+          ]
+        }
+      }
+    },
+    "knights_both": {
+      "pooled": {
+        "TN_known": 2643,
+        "FP": 142,
+        "FN_known": 293,
+        "TP": 590,
+        "unresolved_negative": 22,
+        "unresolved_positive": 34,
+        "cases": 3724,
+        "positives": 917,
+        "negatives": 2807,
+        "resolved": 3668,
+        "unresolved": 56,
+        "coverage": 0.9849624060150376,
+        "positive_coverage": 0.9629225736095965,
+        "negative_coverage": 0.9921624510153189,
+        "confirmed_awards": 732,
+        "precision_of_confirmed_awards": 0.8060109289617486,
+        "wrong_fraction_of_confirmed_awards": 0.19398907103825136,
+        "confirmed_recall_all_positives": 0.64340239912759,
+        "recall_bounds_if_unresolved_completed": [
+          0.64340239912759,
+          0.6804798255179935
+        ],
+        "resolved_only_recall": 0.6681766704416761
+      },
+      "resolved_only_matched_baseline": {
+        "TN_known": 2779,
+        "FN_known": 443,
+        "TP": 440,
+        "FP": 6,
+        "unresolved_positive": 0,
+        "unresolved_negative": 0,
+        "cases": 3668,
+        "positives": 883,
+        "negatives": 2785,
+        "resolved": 3668,
+        "unresolved": 0,
+        "coverage": 1.0,
+        "positive_coverage": 1.0,
+        "negative_coverage": 1.0,
+        "confirmed_awards": 446,
+        "precision_of_confirmed_awards": 0.9865470852017937,
+        "wrong_fraction_of_confirmed_awards": 0.013452914798206279,
+        "confirmed_recall_all_positives": 0.4983012457531144,
+        "recall_bounds_if_unresolved_completed": [
+          0.4983012457531144,
+          0.4983012457531144
+        ],
+        "resolved_only_recall": 0.4983012457531144
+      },
+      "resolved_only_external": {
+        "TN_known": 2643,
+        "FP": 142,
+        "FN_known": 293,
+        "TP": 590,
+        "unresolved_positive": 0,
+        "unresolved_negative": 0,
+        "cases": 3668,
+        "positives": 883,
+        "negatives": 2785,
+        "resolved": 3668,
+        "unresolved": 0,
+        "coverage": 1.0,
+        "positive_coverage": 1.0,
+        "negative_coverage": 1.0,
+        "confirmed_awards": 732,
+        "precision_of_confirmed_awards": 0.8060109289617486,
+        "wrong_fraction_of_confirmed_awards": 0.19398907103825136,
+        "confirmed_recall_all_positives": 0.6681766704416761,
+        "recall_bounds_if_unresolved_completed": [
+          0.6681766704416761,
+          0.6681766704416761
+        ],
+        "resolved_only_recall": 0.6681766704416761
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "external": {
+            "TN_known": 498,
+            "TP": 122,
+            "FP": 31,
+            "FN_known": 65,
+            "unresolved_positive": 9,
+            "unresolved_negative": 6,
+            "cases": 731,
+            "positives": 196,
+            "negatives": 535,
+            "resolved": 716,
+            "unresolved": 15,
+            "coverage": 0.9794801641586868,
+            "positive_coverage": 0.9540816326530612,
+            "negative_coverage": 0.9887850467289719,
+            "confirmed_awards": 153,
+            "precision_of_confirmed_awards": 0.7973856209150327,
+            "wrong_fraction_of_confirmed_awards": 0.20261437908496732,
+            "confirmed_recall_all_positives": 0.6224489795918368,
+            "recall_bounds_if_unresolved_completed": [
+              0.6224489795918368,
+              0.6683673469387755
+            ],
+            "resolved_only_recall": 0.6524064171122995
+          },
+          "baseline": {
+            "TN_known": 533,
+            "FN_known": 109,
+            "TP": 87,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 731,
+            "positives": 196,
+            "negatives": 535,
+            "resolved": 731,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 89,
+            "precision_of_confirmed_awards": 0.9775280898876404,
+            "wrong_fraction_of_confirmed_awards": 0.02247191011235955,
+            "confirmed_recall_all_positives": 0.44387755102040816,
+            "recall_bounds_if_unresolved_completed": [
+              0.44387755102040816,
+              0.44387755102040816
+            ],
+            "resolved_only_recall": 0.44387755102040816
+          }
+        },
+        {
+          "fold": 1,
+          "external": {
+            "FN_known": 58,
+            "TN_known": 571,
+            "TP": 120,
+            "FP": 26,
+            "unresolved_positive": 10,
+            "unresolved_negative": 6,
+            "cases": 791,
+            "positives": 188,
+            "negatives": 603,
+            "resolved": 775,
+            "unresolved": 16,
+            "coverage": 0.9797724399494311,
+            "positive_coverage": 0.9468085106382979,
+            "negative_coverage": 0.9900497512437811,
+            "confirmed_awards": 146,
+            "precision_of_confirmed_awards": 0.821917808219178,
+            "wrong_fraction_of_confirmed_awards": 0.1780821917808219,
+            "confirmed_recall_all_positives": 0.6382978723404256,
+            "recall_bounds_if_unresolved_completed": [
+              0.6382978723404256,
+              0.6914893617021277
+            ],
+            "resolved_only_recall": 0.6741573033707865
+          },
+          "baseline": {
+            "FN_known": 92,
+            "TN_known": 601,
+            "TP": 96,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 791,
+            "positives": 188,
+            "negatives": 603,
+            "resolved": 791,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 98,
+            "precision_of_confirmed_awards": 0.9795918367346939,
+            "wrong_fraction_of_confirmed_awards": 0.02040816326530612,
+            "confirmed_recall_all_positives": 0.5106382978723404,
+            "recall_bounds_if_unresolved_completed": [
+              0.5106382978723404,
+              0.5106382978723404
+            ],
+            "resolved_only_recall": 0.5106382978723404
+          }
+        },
+        {
+          "fold": 2,
+          "external": {
+            "FP": 25,
+            "TN_known": 551,
+            "TP": 128,
+            "FN_known": 41,
+            "unresolved_positive": 7,
+            "unresolved_negative": 3,
+            "cases": 755,
+            "positives": 176,
+            "negatives": 579,
+            "resolved": 745,
+            "unresolved": 10,
+            "coverage": 0.9867549668874173,
+            "positive_coverage": 0.9602272727272727,
+            "negative_coverage": 0.9948186528497409,
+            "confirmed_awards": 153,
+            "precision_of_confirmed_awards": 0.8366013071895425,
+            "wrong_fraction_of_confirmed_awards": 0.16339869281045752,
+            "confirmed_recall_all_positives": 0.7272727272727273,
+            "recall_bounds_if_unresolved_completed": [
+              0.7272727272727273,
+              0.7670454545454546
+            ],
+            "resolved_only_recall": 0.757396449704142
+          },
+          "baseline": {
+            "TN_known": 577,
+            "TP": 95,
+            "FN_known": 81,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 755,
+            "positives": 176,
+            "negatives": 579,
+            "resolved": 755,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 97,
+            "precision_of_confirmed_awards": 0.979381443298969,
+            "wrong_fraction_of_confirmed_awards": 0.020618556701030927,
+            "confirmed_recall_all_positives": 0.5397727272727273,
+            "recall_bounds_if_unresolved_completed": [
+              0.5397727272727273,
+              0.5397727272727273
+            ],
+            "resolved_only_recall": 0.5397727272727273
+          }
+        },
+        {
+          "fold": 3,
+          "external": {
+            "TN_known": 525,
+            "FN_known": 62,
+            "TP": 116,
+            "unresolved_negative": 2,
+            "FP": 31,
+            "unresolved_positive": 3,
+            "cases": 739,
+            "positives": 181,
+            "negatives": 558,
+            "resolved": 734,
+            "unresolved": 5,
+            "coverage": 0.993234100135318,
+            "positive_coverage": 0.9834254143646409,
+            "negative_coverage": 0.996415770609319,
+            "confirmed_awards": 147,
+            "precision_of_confirmed_awards": 0.7891156462585034,
+            "wrong_fraction_of_confirmed_awards": 0.2108843537414966,
+            "confirmed_recall_all_positives": 0.6408839779005525,
+            "recall_bounds_if_unresolved_completed": [
+              0.6408839779005525,
+              0.6574585635359116
+            ],
+            "resolved_only_recall": 0.651685393258427
+          },
+          "baseline": {
+            "TN_known": 558,
+            "FN_known": 86,
+            "TP": 95,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 739,
+            "positives": 181,
+            "negatives": 558,
+            "resolved": 739,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 95,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.5248618784530387,
+            "recall_bounds_if_unresolved_completed": [
+              0.5248618784530387,
+              0.5248618784530387
+            ],
+            "resolved_only_recall": 0.5248618784530387
+          }
+        },
+        {
+          "fold": 4,
+          "external": {
+            "TN_known": 498,
+            "TP": 104,
+            "FN_known": 67,
+            "FP": 29,
+            "unresolved_negative": 5,
+            "unresolved_positive": 5,
+            "cases": 708,
+            "positives": 176,
+            "negatives": 532,
+            "resolved": 698,
+            "unresolved": 10,
+            "coverage": 0.9858757062146892,
+            "positive_coverage": 0.9715909090909091,
+            "negative_coverage": 0.9906015037593985,
+            "confirmed_awards": 133,
+            "precision_of_confirmed_awards": 0.7819548872180451,
+            "wrong_fraction_of_confirmed_awards": 0.21804511278195488,
+            "confirmed_recall_all_positives": 0.5909090909090909,
+            "recall_bounds_if_unresolved_completed": [
+              0.5909090909090909,
+              0.6193181818181818
+            ],
+            "resolved_only_recall": 0.6081871345029239
+          },
+          "baseline": {
+            "TN_known": 532,
+            "FN_known": 97,
+            "TP": 79,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 708,
+            "positives": 176,
+            "negatives": 532,
+            "resolved": 708,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 79,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.44886363636363635,
+            "recall_bounds_if_unresolved_completed": [
+              0.44886363636363635,
+              0.44886363636363635
+            ],
+            "resolved_only_recall": 0.44886363636363635
+          }
+        }
+      ],
+      "changes_vs_baseline": {
+        "recovered_correct": 256,
+        "lost_correct_known": 106,
+        "new_wrong": 141,
+        "removed_wrong_known": 5,
+        "unresolved_baseline_correct": 12,
+        "unresolved_baseline_wrong": 0,
+        "shared_correct": 334,
+        "shared_wrong": 1
+      },
+      "hypothetical_union": {
+        "interpretation": "Descriptive only, not fitted, selected or deployed; baseline awards retained and confirmed external-only awards added. Unknown remains unknown when baseline rejects.",
+        "pooled": {
+          "TN_known": 2638,
+          "FP": 147,
+          "FN_known": 187,
+          "TP": 708,
+          "unresolved_negative": 22,
+          "unresolved_positive": 22,
+          "cases": 3724,
+          "positives": 917,
+          "negatives": 2807,
+          "resolved": 3680,
+          "unresolved": 44,
+          "coverage": 0.9881847475832438,
+          "positive_coverage": 0.9760087241003271,
+          "negative_coverage": 0.9921624510153189,
+          "confirmed_awards": 855,
+          "precision_of_confirmed_awards": 0.8280701754385965,
+          "wrong_fraction_of_confirmed_awards": 0.17192982456140352,
+          "confirmed_recall_all_positives": 0.772082878953108,
+          "recall_bounds_if_unresolved_completed": [
+            0.772082878953108,
+            0.7960741548527808
+          ],
+          "resolved_only_recall": 0.7910614525139665
+        },
+        "added_correct": 256,
+        "added_wrong": 141
+      },
+      "subgroups": {
+        "original_429_misses": {
+          "external": {
+            "FN_known": 155,
+            "TP": 252,
+            "unresolved_positive": 22,
+            "FP": 0,
+            "TN_known": 0,
+            "unresolved_negative": 0,
+            "cases": 429,
+            "positives": 429,
+            "negatives": 0,
+            "resolved": 407,
+            "unresolved": 22,
+            "coverage": 0.9487179487179487,
+            "positive_coverage": 0.9487179487179487,
+            "negative_coverage": null,
+            "confirmed_awards": 252,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.5874125874125874,
+            "recall_bounds_if_unresolved_completed": [
+              0.5874125874125874,
+              0.6386946386946387
+            ],
+            "resolved_only_recall": 0.6191646191646192
+          },
+          "baseline": {
+            "FN_known": 429,
+            "TP": 0,
+            "FP": 0,
+            "TN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 429,
+            "positives": 429,
+            "negatives": 0,
+            "resolved": 429,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": null,
+            "confirmed_awards": 0,
+            "precision_of_confirmed_awards": null,
+            "wrong_fraction_of_confirmed_awards": null,
+            "confirmed_recall_all_positives": 0.0,
+            "recall_bounds_if_unresolved_completed": [
+              0.0,
+              0.0
+            ],
+            "resolved_only_recall": 0.0
+          }
+        },
+        "eligible_ec_false": {
+          "external": {
+            "FN_known": 76,
+            "TP": 110,
+            "TN_known": 204,
+            "FP": 78,
+            "unresolved_negative": 4,
+            "unresolved_positive": 5,
+            "cases": 477,
+            "positives": 191,
+            "negatives": 286,
+            "resolved": 468,
+            "unresolved": 9,
+            "coverage": 0.9811320754716981,
+            "positive_coverage": 0.9738219895287958,
+            "negative_coverage": 0.986013986013986,
+            "confirmed_awards": 188,
+            "precision_of_confirmed_awards": 0.5851063829787234,
+            "wrong_fraction_of_confirmed_awards": 0.4148936170212766,
+            "confirmed_recall_all_positives": 0.5759162303664922,
+            "recall_bounds_if_unresolved_completed": [
+              0.5759162303664922,
+              0.6020942408376964
+            ],
+            "resolved_only_recall": 0.5913978494623656
+          },
+          "baseline": {
+            "FN_known": 184,
+            "TN_known": 286,
+            "TP": 7,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 477,
+            "positives": 191,
+            "negatives": 286,
+            "resolved": 477,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 7,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.03664921465968586,
+            "recall_bounds_if_unresolved_completed": [
+              0.03664921465968586,
+              0.03664921465968586
+            ],
+            "resolved_only_recall": 0.03664921465968586
+          }
+        },
+        "eligible_ec_true": {
+          "external": {
+            "FP": 49,
+            "FN_known": 185,
+            "TP": 476,
+            "TN_known": 74,
+            "unresolved_positive": 29,
+            "unresolved_negative": 12,
+            "cases": 825,
+            "positives": 690,
+            "negatives": 135,
+            "resolved": 784,
+            "unresolved": 41,
+            "coverage": 0.9503030303030303,
+            "positive_coverage": 0.9579710144927536,
+            "negative_coverage": 0.9111111111111111,
+            "confirmed_awards": 525,
+            "precision_of_confirmed_awards": 0.9066666666666666,
+            "wrong_fraction_of_confirmed_awards": 0.09333333333333334,
+            "confirmed_recall_all_positives": 0.6898550724637681,
+            "recall_bounds_if_unresolved_completed": [
+              0.6898550724637681,
+              0.7318840579710145
+            ],
+            "resolved_only_recall": 0.7201210287443268
+          },
+          "baseline": {
+            "TN_known": 129,
+            "FN_known": 245,
+            "TP": 445,
+            "FP": 6,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 825,
+            "positives": 690,
+            "negatives": 135,
+            "resolved": 825,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 451,
+            "precision_of_confirmed_awards": 0.9866962305986696,
+            "wrong_fraction_of_confirmed_awards": 0.013303769401330377,
+            "confirmed_recall_all_positives": 0.644927536231884,
+            "recall_bounds_if_unresolved_completed": [
+              0.644927536231884,
+              0.644927536231884
+            ],
+            "resolved_only_recall": 0.644927536231884
+          }
+        },
+        "all_ec_false": {
+          "external": {
+            "TN_known": 2332,
+            "FN_known": 82,
+            "TP": 110,
+            "FP": 82,
+            "unresolved_negative": 10,
+            "unresolved_positive": 5,
+            "cases": 2621,
+            "positives": 197,
+            "negatives": 2424,
+            "resolved": 2606,
+            "unresolved": 15,
+            "coverage": 0.994276993513926,
+            "positive_coverage": 0.9746192893401016,
+            "negative_coverage": 0.9958745874587459,
+            "confirmed_awards": 192,
+            "precision_of_confirmed_awards": 0.5729166666666666,
+            "wrong_fraction_of_confirmed_awards": 0.4270833333333333,
+            "confirmed_recall_all_positives": 0.5583756345177665,
+            "recall_bounds_if_unresolved_completed": [
+              0.5583756345177665,
+              0.583756345177665
+            ],
+            "resolved_only_recall": 0.5729166666666666
+          },
+          "baseline": {
+            "TN_known": 2424,
+            "FN_known": 190,
+            "TP": 7,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 2621,
+            "positives": 197,
+            "negatives": 2424,
+            "resolved": 2621,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 7,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.03553299492385787,
+            "recall_bounds_if_unresolved_completed": [
+              0.03553299492385787,
+              0.03553299492385787
+            ],
+            "resolved_only_recall": 0.03553299492385787
+          }
+        },
+        "hard_ordinary": {
+          "external": {
+            "TN_known": 1756,
+            "FP": 77,
+            "unresolved_negative": 10,
+            "TP": 0,
+            "FN_known": 0,
+            "unresolved_positive": 0,
+            "cases": 1843,
+            "positives": 0,
+            "negatives": 1843,
+            "resolved": 1833,
+            "unresolved": 10,
+            "coverage": 0.9945740640260445,
+            "positive_coverage": null,
+            "negative_coverage": 0.9945740640260445,
+            "confirmed_awards": 77,
+            "precision_of_confirmed_awards": 0.0,
+            "wrong_fraction_of_confirmed_awards": 1.0,
+            "confirmed_recall_all_positives": null,
+            "recall_bounds_if_unresolved_completed": [
+              null,
+              null
+            ],
+            "resolved_only_recall": null
+          },
+          "baseline": {
+            "TN_known": 1840,
+            "FP": 3,
+            "TP": 0,
+            "FN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 1843,
+            "positives": 0,
+            "negatives": 1843,
+            "resolved": 1843,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": null,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 3,
+            "precision_of_confirmed_awards": 0.0,
+            "wrong_fraction_of_confirmed_awards": 1.0,
+            "confirmed_recall_all_positives": null,
+            "recall_bounds_if_unresolved_completed": [
+              null,
+              null
+            ],
+            "resolved_only_recall": null
+          }
+        }
+      },
+      "bootstrap": {
+        "samples": 2000,
+        "seed": 20261104,
+        "groups": 972,
+        "method": "Paired group resampling of fixed observed decisions; unknowns remain unresolved, only true awards count. Does not model refitting, acquisition changes or hypothesis selection.",
+        "percentile_95": {
+          "confirmed_TP_delta": [
+            99.0,
+            174.0
+          ],
+          "confirmed_FP_delta": [
+            111.0,
+            162.0
+          ],
+          "confirmed_recall_all_positive_delta": [
+            0.10807785034400082,
+            0.1894866453335624
+          ],
+          "wrong_fraction_of_confirmed_awards_delta": [
+            0.1510010352167163,
+            0.21083890122322463
+          ],
+          "unresolved_positive": [
+            23.0,
+            46.0
+          ],
+          "unresolved_negative": [
+            13.0,
+            32.0
+          ]
+        }
+      }
+    },
+    "knights_current": {
+      "pooled": {
+        "TN_known": 2641,
+        "FP": 142,
+        "FN_known": 289,
+        "TP": 596,
+        "unresolved_negative": 24,
+        "unresolved_positive": 32,
+        "cases": 3724,
+        "positives": 917,
+        "negatives": 2807,
+        "resolved": 3668,
+        "unresolved": 56,
+        "coverage": 0.9849624060150376,
+        "positive_coverage": 0.965103598691385,
+        "negative_coverage": 0.991449946562166,
+        "confirmed_awards": 738,
+        "precision_of_confirmed_awards": 0.8075880758807588,
+        "wrong_fraction_of_confirmed_awards": 0.19241192411924118,
+        "confirmed_recall_all_positives": 0.6499454743729552,
+        "recall_bounds_if_unresolved_completed": [
+          0.6499454743729552,
+          0.6848418756815703
+        ],
+        "resolved_only_recall": 0.6734463276836158
+      },
+      "resolved_only_matched_baseline": {
+        "TN_known": 2777,
+        "FN_known": 444,
+        "TP": 441,
+        "FP": 6,
+        "unresolved_positive": 0,
+        "unresolved_negative": 0,
+        "cases": 3668,
+        "positives": 885,
+        "negatives": 2783,
+        "resolved": 3668,
+        "unresolved": 0,
+        "coverage": 1.0,
+        "positive_coverage": 1.0,
+        "negative_coverage": 1.0,
+        "confirmed_awards": 447,
+        "precision_of_confirmed_awards": 0.9865771812080537,
+        "wrong_fraction_of_confirmed_awards": 0.013422818791946308,
+        "confirmed_recall_all_positives": 0.49830508474576274,
+        "recall_bounds_if_unresolved_completed": [
+          0.49830508474576274,
+          0.49830508474576274
+        ],
+        "resolved_only_recall": 0.49830508474576274
+      },
+      "resolved_only_external": {
+        "TN_known": 2641,
+        "FP": 142,
+        "FN_known": 289,
+        "TP": 596,
+        "unresolved_positive": 0,
+        "unresolved_negative": 0,
+        "cases": 3668,
+        "positives": 885,
+        "negatives": 2783,
+        "resolved": 3668,
+        "unresolved": 0,
+        "coverage": 1.0,
+        "positive_coverage": 1.0,
+        "negative_coverage": 1.0,
+        "confirmed_awards": 738,
+        "precision_of_confirmed_awards": 0.8075880758807588,
+        "wrong_fraction_of_confirmed_awards": 0.19241192411924118,
+        "confirmed_recall_all_positives": 0.6734463276836158,
+        "recall_bounds_if_unresolved_completed": [
+          0.6734463276836158,
+          0.6734463276836158
+        ],
+        "resolved_only_recall": 0.6734463276836158
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "external": {
+            "TN_known": 497,
+            "TP": 125,
+            "FP": 31,
+            "FN_known": 65,
+            "unresolved_positive": 6,
+            "unresolved_negative": 7,
+            "cases": 731,
+            "positives": 196,
+            "negatives": 535,
+            "resolved": 718,
+            "unresolved": 13,
+            "coverage": 0.9822161422708618,
+            "positive_coverage": 0.9693877551020408,
+            "negative_coverage": 0.9869158878504672,
+            "confirmed_awards": 156,
+            "precision_of_confirmed_awards": 0.8012820512820513,
+            "wrong_fraction_of_confirmed_awards": 0.1987179487179487,
+            "confirmed_recall_all_positives": 0.6377551020408163,
+            "recall_bounds_if_unresolved_completed": [
+              0.6377551020408163,
+              0.6683673469387755
+            ],
+            "resolved_only_recall": 0.6578947368421053
+          },
+          "baseline": {
+            "TN_known": 533,
+            "FN_known": 109,
+            "TP": 87,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 731,
+            "positives": 196,
+            "negatives": 535,
+            "resolved": 731,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 89,
+            "precision_of_confirmed_awards": 0.9775280898876404,
+            "wrong_fraction_of_confirmed_awards": 0.02247191011235955,
+            "confirmed_recall_all_positives": 0.44387755102040816,
+            "recall_bounds_if_unresolved_completed": [
+              0.44387755102040816,
+              0.44387755102040816
+            ],
+            "resolved_only_recall": 0.44387755102040816
+          }
+        },
+        {
+          "fold": 1,
+          "external": {
+            "FN_known": 56,
+            "TN_known": 570,
+            "TP": 121,
+            "FP": 26,
+            "unresolved_positive": 11,
+            "unresolved_negative": 7,
+            "cases": 791,
+            "positives": 188,
+            "negatives": 603,
+            "resolved": 773,
+            "unresolved": 18,
+            "coverage": 0.97724399494311,
+            "positive_coverage": 0.9414893617021277,
+            "negative_coverage": 0.988391376451078,
+            "confirmed_awards": 147,
+            "precision_of_confirmed_awards": 0.8231292517006803,
+            "wrong_fraction_of_confirmed_awards": 0.17687074829931973,
+            "confirmed_recall_all_positives": 0.6436170212765957,
+            "recall_bounds_if_unresolved_completed": [
+              0.6436170212765957,
+              0.7021276595744681
+            ],
+            "resolved_only_recall": 0.6836158192090396
+          },
+          "baseline": {
+            "FN_known": 92,
+            "TN_known": 601,
+            "TP": 96,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 791,
+            "positives": 188,
+            "negatives": 603,
+            "resolved": 791,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 98,
+            "precision_of_confirmed_awards": 0.9795918367346939,
+            "wrong_fraction_of_confirmed_awards": 0.02040816326530612,
+            "confirmed_recall_all_positives": 0.5106382978723404,
+            "recall_bounds_if_unresolved_completed": [
+              0.5106382978723404,
+              0.5106382978723404
+            ],
+            "resolved_only_recall": 0.5106382978723404
+          }
+        },
+        {
+          "fold": 2,
+          "external": {
+            "FP": 25,
+            "TN_known": 551,
+            "TP": 128,
+            "FN_known": 41,
+            "unresolved_positive": 7,
+            "unresolved_negative": 3,
+            "cases": 755,
+            "positives": 176,
+            "negatives": 579,
+            "resolved": 745,
+            "unresolved": 10,
+            "coverage": 0.9867549668874173,
+            "positive_coverage": 0.9602272727272727,
+            "negative_coverage": 0.9948186528497409,
+            "confirmed_awards": 153,
+            "precision_of_confirmed_awards": 0.8366013071895425,
+            "wrong_fraction_of_confirmed_awards": 0.16339869281045752,
+            "confirmed_recall_all_positives": 0.7272727272727273,
+            "recall_bounds_if_unresolved_completed": [
+              0.7272727272727273,
+              0.7670454545454546
+            ],
+            "resolved_only_recall": 0.757396449704142
+          },
+          "baseline": {
+            "TN_known": 577,
+            "TP": 95,
+            "FN_known": 81,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 755,
+            "positives": 176,
+            "negatives": 579,
+            "resolved": 755,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 97,
+            "precision_of_confirmed_awards": 0.979381443298969,
+            "wrong_fraction_of_confirmed_awards": 0.020618556701030927,
+            "confirmed_recall_all_positives": 0.5397727272727273,
+            "recall_bounds_if_unresolved_completed": [
+              0.5397727272727273,
+              0.5397727272727273
+            ],
+            "resolved_only_recall": 0.5397727272727273
+          }
+        },
+        {
+          "fold": 3,
+          "external": {
+            "TN_known": 525,
+            "FN_known": 61,
+            "TP": 117,
+            "unresolved_negative": 2,
+            "FP": 31,
+            "unresolved_positive": 3,
+            "cases": 739,
+            "positives": 181,
+            "negatives": 558,
+            "resolved": 734,
+            "unresolved": 5,
+            "coverage": 0.993234100135318,
+            "positive_coverage": 0.9834254143646409,
+            "negative_coverage": 0.996415770609319,
+            "confirmed_awards": 148,
+            "precision_of_confirmed_awards": 0.7905405405405406,
+            "wrong_fraction_of_confirmed_awards": 0.20945945945945946,
+            "confirmed_recall_all_positives": 0.6464088397790055,
+            "recall_bounds_if_unresolved_completed": [
+              0.6464088397790055,
+              0.6629834254143646
+            ],
+            "resolved_only_recall": 0.6573033707865169
+          },
+          "baseline": {
+            "TN_known": 558,
+            "FN_known": 86,
+            "TP": 95,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 739,
+            "positives": 181,
+            "negatives": 558,
+            "resolved": 739,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 95,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.5248618784530387,
+            "recall_bounds_if_unresolved_completed": [
+              0.5248618784530387,
+              0.5248618784530387
+            ],
+            "resolved_only_recall": 0.5248618784530387
+          }
+        },
+        {
+          "fold": 4,
+          "external": {
+            "TN_known": 498,
+            "TP": 105,
+            "FN_known": 66,
+            "FP": 29,
+            "unresolved_negative": 5,
+            "unresolved_positive": 5,
+            "cases": 708,
+            "positives": 176,
+            "negatives": 532,
+            "resolved": 698,
+            "unresolved": 10,
+            "coverage": 0.9858757062146892,
+            "positive_coverage": 0.9715909090909091,
+            "negative_coverage": 0.9906015037593985,
+            "confirmed_awards": 134,
+            "precision_of_confirmed_awards": 0.7835820895522388,
+            "wrong_fraction_of_confirmed_awards": 0.21641791044776118,
+            "confirmed_recall_all_positives": 0.5965909090909091,
+            "recall_bounds_if_unresolved_completed": [
+              0.5965909090909091,
+              0.625
+            ],
+            "resolved_only_recall": 0.6140350877192983
+          },
+          "baseline": {
+            "TN_known": 532,
+            "FN_known": 97,
+            "TP": 79,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 708,
+            "positives": 176,
+            "negatives": 532,
+            "resolved": 708,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 79,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.44886363636363635,
+            "recall_bounds_if_unresolved_completed": [
+              0.44886363636363635,
+              0.44886363636363635
+            ],
+            "resolved_only_recall": 0.44886363636363635
+          }
+        }
+      ],
+      "changes_vs_baseline": {
+        "recovered_correct": 259,
+        "lost_correct_known": 104,
+        "new_wrong": 141,
+        "removed_wrong_known": 5,
+        "unresolved_baseline_correct": 11,
+        "unresolved_baseline_wrong": 0,
+        "shared_correct": 337,
+        "shared_wrong": 1
+      },
+      "hypothetical_union": {
+        "interpretation": "Descriptive only, not fitted, selected or deployed; baseline awards retained and confirmed external-only awards added. Unknown remains unknown when baseline rejects.",
+        "pooled": {
+          "TN_known": 2636,
+          "FP": 147,
+          "FN_known": 185,
+          "TP": 711,
+          "unresolved_negative": 24,
+          "unresolved_positive": 21,
+          "cases": 3724,
+          "positives": 917,
+          "negatives": 2807,
+          "resolved": 3679,
+          "unresolved": 45,
+          "coverage": 0.9879162191192267,
+          "positive_coverage": 0.9770992366412213,
+          "negative_coverage": 0.991449946562166,
+          "confirmed_awards": 858,
+          "precision_of_confirmed_awards": 0.8286713286713286,
+          "wrong_fraction_of_confirmed_awards": 0.17132867132867133,
+          "confirmed_recall_all_positives": 0.7753544165757906,
+          "recall_bounds_if_unresolved_completed": [
+            0.7753544165757906,
+            0.7982551799345693
+          ],
+          "resolved_only_recall": 0.7935267857142857
+        },
+        "added_correct": 259,
+        "added_wrong": 141
+      },
+      "subgroups": {
+        "original_429_misses": {
+          "external": {
+            "FN_known": 153,
+            "TP": 255,
+            "unresolved_positive": 21,
+            "FP": 0,
+            "TN_known": 0,
+            "unresolved_negative": 0,
+            "cases": 429,
+            "positives": 429,
+            "negatives": 0,
+            "resolved": 408,
+            "unresolved": 21,
+            "coverage": 0.951048951048951,
+            "positive_coverage": 0.951048951048951,
+            "negative_coverage": null,
+            "confirmed_awards": 255,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.5944055944055944,
+            "recall_bounds_if_unresolved_completed": [
+              0.5944055944055944,
+              0.6433566433566433
+            ],
+            "resolved_only_recall": 0.625
+          },
+          "baseline": {
+            "FN_known": 429,
+            "TP": 0,
+            "FP": 0,
+            "TN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 429,
+            "positives": 429,
+            "negatives": 0,
+            "resolved": 429,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": null,
+            "confirmed_awards": 0,
+            "precision_of_confirmed_awards": null,
+            "wrong_fraction_of_confirmed_awards": null,
+            "confirmed_recall_all_positives": 0.0,
+            "recall_bounds_if_unresolved_completed": [
+              0.0,
+              0.0
+            ],
+            "resolved_only_recall": 0.0
+          }
+        },
+        "eligible_ec_false": {
+          "external": {
+            "FN_known": 76,
+            "TP": 110,
+            "TN_known": 203,
+            "FP": 78,
+            "unresolved_negative": 5,
+            "unresolved_positive": 5,
+            "cases": 477,
+            "positives": 191,
+            "negatives": 286,
+            "resolved": 467,
+            "unresolved": 10,
+            "coverage": 0.9790356394129979,
+            "positive_coverage": 0.9738219895287958,
+            "negative_coverage": 0.9825174825174825,
+            "confirmed_awards": 188,
+            "precision_of_confirmed_awards": 0.5851063829787234,
+            "wrong_fraction_of_confirmed_awards": 0.4148936170212766,
+            "confirmed_recall_all_positives": 0.5759162303664922,
+            "recall_bounds_if_unresolved_completed": [
+              0.5759162303664922,
+              0.6020942408376964
+            ],
+            "resolved_only_recall": 0.5913978494623656
+          },
+          "baseline": {
+            "FN_known": 184,
+            "TN_known": 286,
+            "TP": 7,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 477,
+            "positives": 191,
+            "negatives": 286,
+            "resolved": 477,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 7,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.03664921465968586,
+            "recall_bounds_if_unresolved_completed": [
+              0.03664921465968586,
+              0.03664921465968586
+            ],
+            "resolved_only_recall": 0.03664921465968586
+          }
+        },
+        "eligible_ec_true": {
+          "external": {
+            "FP": 49,
+            "FN_known": 181,
+            "TP": 482,
+            "TN_known": 74,
+            "unresolved_positive": 27,
+            "unresolved_negative": 12,
+            "cases": 825,
+            "positives": 690,
+            "negatives": 135,
+            "resolved": 786,
+            "unresolved": 39,
+            "coverage": 0.9527272727272728,
+            "positive_coverage": 0.9608695652173913,
+            "negative_coverage": 0.9111111111111111,
+            "confirmed_awards": 531,
+            "precision_of_confirmed_awards": 0.9077212806026366,
+            "wrong_fraction_of_confirmed_awards": 0.09227871939736347,
+            "confirmed_recall_all_positives": 0.6985507246376812,
+            "recall_bounds_if_unresolved_completed": [
+              0.6985507246376812,
+              0.7376811594202899
+            ],
+            "resolved_only_recall": 0.726998491704374
+          },
+          "baseline": {
+            "TN_known": 129,
+            "FN_known": 245,
+            "TP": 445,
+            "FP": 6,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 825,
+            "positives": 690,
+            "negatives": 135,
+            "resolved": 825,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 451,
+            "precision_of_confirmed_awards": 0.9866962305986696,
+            "wrong_fraction_of_confirmed_awards": 0.013303769401330377,
+            "confirmed_recall_all_positives": 0.644927536231884,
+            "recall_bounds_if_unresolved_completed": [
+              0.644927536231884,
+              0.644927536231884
+            ],
+            "resolved_only_recall": 0.644927536231884
+          }
+        },
+        "all_ec_false": {
+          "external": {
+            "TN_known": 2330,
+            "FN_known": 82,
+            "TP": 110,
+            "FP": 82,
+            "unresolved_negative": 12,
+            "unresolved_positive": 5,
+            "cases": 2621,
+            "positives": 197,
+            "negatives": 2424,
+            "resolved": 2604,
+            "unresolved": 17,
+            "coverage": 0.9935139259824495,
+            "positive_coverage": 0.9746192893401016,
+            "negative_coverage": 0.995049504950495,
+            "confirmed_awards": 192,
+            "precision_of_confirmed_awards": 0.5729166666666666,
+            "wrong_fraction_of_confirmed_awards": 0.4270833333333333,
+            "confirmed_recall_all_positives": 0.5583756345177665,
+            "recall_bounds_if_unresolved_completed": [
+              0.5583756345177665,
+              0.583756345177665
+            ],
+            "resolved_only_recall": 0.5729166666666666
+          },
+          "baseline": {
+            "TN_known": 2424,
+            "FN_known": 190,
+            "TP": 7,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 2621,
+            "positives": 197,
+            "negatives": 2424,
+            "resolved": 2621,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 7,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.03553299492385787,
+            "recall_bounds_if_unresolved_completed": [
+              0.03553299492385787,
+              0.03553299492385787
+            ],
+            "resolved_only_recall": 0.03553299492385787
+          }
+        },
+        "hard_ordinary": {
+          "external": {
+            "TN_known": 1755,
+            "FP": 77,
+            "unresolved_negative": 11,
+            "TP": 0,
+            "FN_known": 0,
+            "unresolved_positive": 0,
+            "cases": 1843,
+            "positives": 0,
+            "negatives": 1843,
+            "resolved": 1832,
+            "unresolved": 11,
+            "coverage": 0.9940314704286489,
+            "positive_coverage": null,
+            "negative_coverage": 0.9940314704286489,
+            "confirmed_awards": 77,
+            "precision_of_confirmed_awards": 0.0,
+            "wrong_fraction_of_confirmed_awards": 1.0,
+            "confirmed_recall_all_positives": null,
+            "recall_bounds_if_unresolved_completed": [
+              null,
+              null
+            ],
+            "resolved_only_recall": null
+          },
+          "baseline": {
+            "TN_known": 1840,
+            "FP": 3,
+            "TP": 0,
+            "FN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 1843,
+            "positives": 0,
+            "negatives": 1843,
+            "resolved": 1843,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": null,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 3,
+            "precision_of_confirmed_awards": 0.0,
+            "wrong_fraction_of_confirmed_awards": 1.0,
+            "confirmed_recall_all_positives": null,
+            "recall_bounds_if_unresolved_completed": [
+              null,
+              null
+            ],
+            "resolved_only_recall": null
+          }
+        }
+      },
+      "bootstrap": {
+        "samples": 2000,
+        "seed": 20261104,
+        "groups": 972,
+        "method": "Paired group resampling of fixed observed decisions; unknowns remain unresolved, only true awards count. Does not model refitting, acquisition changes or hypothesis selection.",
+        "percentile_95": {
+          "confirmed_TP_delta": [
+            105.0,
+            180.0
+          ],
+          "confirmed_FP_delta": [
+            111.0,
+            162.0
+          ],
+          "confirmed_recall_all_positive_delta": [
+            0.11517547735005125,
+            0.19591326456624028
+          ],
+          "wrong_fraction_of_confirmed_awards_delta": [
+            0.14950464667306415,
+            0.20942805046525242
+          ],
+          "unresolved_positive": [
+            22.0,
+            44.0
+          ],
+          "unresolved_negative": [
+            14.0,
+            35.0
+          ]
+        }
+      }
+    },
+    "knights_previous": {
+      "pooled": {
+        "TN_known": 2639,
+        "FP": 150,
+        "FN_known": 290,
+        "TP": 611,
+        "unresolved_negative": 18,
+        "unresolved_positive": 16,
+        "cases": 3724,
+        "positives": 917,
+        "negatives": 2807,
+        "resolved": 3690,
+        "unresolved": 34,
+        "coverage": 0.9908700322234156,
+        "positive_coverage": 0.9825517993456925,
+        "negative_coverage": 0.9935874599216246,
+        "confirmed_awards": 761,
+        "precision_of_confirmed_awards": 0.8028909329829172,
+        "wrong_fraction_of_confirmed_awards": 0.19710906701708278,
+        "confirmed_recall_all_positives": 0.6663031624863686,
+        "recall_bounds_if_unresolved_completed": [
+          0.6663031624863686,
+          0.6837513631406761
+        ],
+        "resolved_only_recall": 0.6781354051054383
+      },
+      "resolved_only_matched_baseline": {
+        "TN_known": 2783,
+        "FN_known": 457,
+        "TP": 444,
+        "FP": 6,
+        "unresolved_positive": 0,
+        "unresolved_negative": 0,
+        "cases": 3690,
+        "positives": 901,
+        "negatives": 2789,
+        "resolved": 3690,
+        "unresolved": 0,
+        "coverage": 1.0,
+        "positive_coverage": 1.0,
+        "negative_coverage": 1.0,
+        "confirmed_awards": 450,
+        "precision_of_confirmed_awards": 0.9866666666666667,
+        "wrong_fraction_of_confirmed_awards": 0.013333333333333334,
+        "confirmed_recall_all_positives": 0.49278579356270813,
+        "recall_bounds_if_unresolved_completed": [
+          0.49278579356270813,
+          0.49278579356270813
+        ],
+        "resolved_only_recall": 0.49278579356270813
+      },
+      "resolved_only_external": {
+        "TN_known": 2639,
+        "FP": 150,
+        "FN_known": 290,
+        "TP": 611,
+        "unresolved_positive": 0,
+        "unresolved_negative": 0,
+        "cases": 3690,
+        "positives": 901,
+        "negatives": 2789,
+        "resolved": 3690,
+        "unresolved": 0,
+        "coverage": 1.0,
+        "positive_coverage": 1.0,
+        "negative_coverage": 1.0,
+        "confirmed_awards": 761,
+        "precision_of_confirmed_awards": 0.8028909329829172,
+        "wrong_fraction_of_confirmed_awards": 0.19710906701708278,
+        "confirmed_recall_all_positives": 0.6781354051054383,
+        "recall_bounds_if_unresolved_completed": [
+          0.6781354051054383,
+          0.6781354051054383
+        ],
+        "resolved_only_recall": 0.6781354051054383
+      },
+      "per_fold": [
+        {
+          "fold": 0,
+          "external": {
+            "TN_known": 497,
+            "TP": 124,
+            "FP": 34,
+            "FN_known": 65,
+            "unresolved_positive": 7,
+            "unresolved_negative": 4,
+            "cases": 731,
+            "positives": 196,
+            "negatives": 535,
+            "resolved": 720,
+            "unresolved": 11,
+            "coverage": 0.9849521203830369,
+            "positive_coverage": 0.9642857142857143,
+            "negative_coverage": 0.9925233644859813,
+            "confirmed_awards": 158,
+            "precision_of_confirmed_awards": 0.7848101265822784,
+            "wrong_fraction_of_confirmed_awards": 0.21518987341772153,
+            "confirmed_recall_all_positives": 0.6326530612244898,
+            "recall_bounds_if_unresolved_completed": [
+              0.6326530612244898,
+              0.6683673469387755
+            ],
+            "resolved_only_recall": 0.656084656084656
+          },
+          "baseline": {
+            "TN_known": 533,
+            "FN_known": 109,
+            "TP": 87,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 731,
+            "positives": 196,
+            "negatives": 535,
+            "resolved": 731,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 89,
+            "precision_of_confirmed_awards": 0.9775280898876404,
+            "wrong_fraction_of_confirmed_awards": 0.02247191011235955,
+            "confirmed_recall_all_positives": 0.44387755102040816,
+            "recall_bounds_if_unresolved_completed": [
+              0.44387755102040816,
+              0.44387755102040816
+            ],
+            "resolved_only_recall": 0.44387755102040816
+          }
+        },
+        {
+          "fold": 1,
+          "external": {
+            "FN_known": 57,
+            "TN_known": 571,
+            "TP": 130,
+            "FP": 28,
+            "unresolved_negative": 4,
+            "unresolved_positive": 1,
+            "cases": 791,
+            "positives": 188,
+            "negatives": 603,
+            "resolved": 786,
+            "unresolved": 5,
+            "coverage": 0.9936788874841972,
+            "positive_coverage": 0.9946808510638298,
+            "negative_coverage": 0.9933665008291874,
+            "confirmed_awards": 158,
+            "precision_of_confirmed_awards": 0.8227848101265823,
+            "wrong_fraction_of_confirmed_awards": 0.17721518987341772,
+            "confirmed_recall_all_positives": 0.6914893617021277,
+            "recall_bounds_if_unresolved_completed": [
+              0.6914893617021277,
+              0.6968085106382979
+            ],
+            "resolved_only_recall": 0.6951871657754011
+          },
+          "baseline": {
+            "FN_known": 92,
+            "TN_known": 601,
+            "TP": 96,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 791,
+            "positives": 188,
+            "negatives": 603,
+            "resolved": 791,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 98,
+            "precision_of_confirmed_awards": 0.9795918367346939,
+            "wrong_fraction_of_confirmed_awards": 0.02040816326530612,
+            "confirmed_recall_all_positives": 0.5106382978723404,
+            "recall_bounds_if_unresolved_completed": [
+              0.5106382978723404,
+              0.5106382978723404
+            ],
+            "resolved_only_recall": 0.5106382978723404
+          }
+        },
+        {
+          "fold": 2,
+          "external": {
+            "FP": 26,
+            "TN_known": 550,
+            "TP": 133,
+            "FN_known": 40,
+            "unresolved_positive": 3,
+            "unresolved_negative": 3,
+            "cases": 755,
+            "positives": 176,
+            "negatives": 579,
+            "resolved": 749,
+            "unresolved": 6,
+            "coverage": 0.9920529801324504,
+            "positive_coverage": 0.9829545454545454,
+            "negative_coverage": 0.9948186528497409,
+            "confirmed_awards": 159,
+            "precision_of_confirmed_awards": 0.8364779874213837,
+            "wrong_fraction_of_confirmed_awards": 0.16352201257861634,
+            "confirmed_recall_all_positives": 0.7556818181818182,
+            "recall_bounds_if_unresolved_completed": [
+              0.7556818181818182,
+              0.7727272727272727
+            ],
+            "resolved_only_recall": 0.7687861271676301
+          },
+          "baseline": {
+            "TN_known": 577,
+            "TP": 95,
+            "FN_known": 81,
+            "FP": 2,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 755,
+            "positives": 176,
+            "negatives": 579,
+            "resolved": 755,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 97,
+            "precision_of_confirmed_awards": 0.979381443298969,
+            "wrong_fraction_of_confirmed_awards": 0.020618556701030927,
+            "confirmed_recall_all_positives": 0.5397727272727273,
+            "recall_bounds_if_unresolved_completed": [
+              0.5397727272727273,
+              0.5397727272727273
+            ],
+            "resolved_only_recall": 0.5397727272727273
+          }
+        },
+        {
+          "fold": 3,
+          "external": {
+            "TN_known": 524,
+            "FN_known": 62,
+            "TP": 117,
+            "unresolved_negative": 3,
+            "FP": 31,
+            "unresolved_positive": 2,
+            "cases": 739,
+            "positives": 181,
+            "negatives": 558,
+            "resolved": 734,
+            "unresolved": 5,
+            "coverage": 0.993234100135318,
+            "positive_coverage": 0.988950276243094,
+            "negative_coverage": 0.9946236559139785,
+            "confirmed_awards": 148,
+            "precision_of_confirmed_awards": 0.7905405405405406,
+            "wrong_fraction_of_confirmed_awards": 0.20945945945945946,
+            "confirmed_recall_all_positives": 0.6464088397790055,
+            "recall_bounds_if_unresolved_completed": [
+              0.6464088397790055,
+              0.6574585635359116
+            ],
+            "resolved_only_recall": 0.6536312849162011
+          },
+          "baseline": {
+            "TN_known": 558,
+            "FN_known": 86,
+            "TP": 95,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 739,
+            "positives": 181,
+            "negatives": 558,
+            "resolved": 739,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 95,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.5248618784530387,
+            "recall_bounds_if_unresolved_completed": [
+              0.5248618784530387,
+              0.5248618784530387
+            ],
+            "resolved_only_recall": 0.5248618784530387
+          }
+        },
+        {
+          "fold": 4,
+          "external": {
+            "TN_known": 497,
+            "TP": 107,
+            "FN_known": 66,
+            "FP": 31,
+            "unresolved_negative": 4,
+            "unresolved_positive": 3,
+            "cases": 708,
+            "positives": 176,
+            "negatives": 532,
+            "resolved": 701,
+            "unresolved": 7,
+            "coverage": 0.9901129943502824,
+            "positive_coverage": 0.9829545454545454,
+            "negative_coverage": 0.9924812030075187,
+            "confirmed_awards": 138,
+            "precision_of_confirmed_awards": 0.7753623188405797,
+            "wrong_fraction_of_confirmed_awards": 0.2246376811594203,
+            "confirmed_recall_all_positives": 0.6079545454545454,
+            "recall_bounds_if_unresolved_completed": [
+              0.6079545454545454,
+              0.625
+            ],
+            "resolved_only_recall": 0.6184971098265896
+          },
+          "baseline": {
+            "TN_known": 532,
+            "FN_known": 97,
+            "TP": 79,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 708,
+            "positives": 176,
+            "negatives": 532,
+            "resolved": 708,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 79,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.44886363636363635,
+            "recall_bounds_if_unresolved_completed": [
+              0.44886363636363635,
+              0.44886363636363635
+            ],
+            "resolved_only_recall": 0.44886363636363635
+          }
+        }
+      ],
+      "changes_vs_baseline": {
+        "recovered_correct": 273,
+        "lost_correct_known": 106,
+        "new_wrong": 149,
+        "removed_wrong_known": 5,
+        "unresolved_baseline_correct": 8,
+        "unresolved_baseline_wrong": 0,
+        "shared_correct": 338,
+        "shared_wrong": 1
+      },
+      "hypothetical_union": {
+        "interpretation": "Descriptive only, not fitted, selected or deployed; baseline awards retained and confirmed external-only awards added. Unknown remains unknown when baseline rejects.",
+        "pooled": {
+          "TN_known": 2634,
+          "FP": 155,
+          "FN_known": 184,
+          "TP": 725,
+          "unresolved_negative": 18,
+          "unresolved_positive": 8,
+          "cases": 3724,
+          "positives": 917,
+          "negatives": 2807,
+          "resolved": 3698,
+          "unresolved": 26,
+          "coverage": 0.9930182599355531,
+          "positive_coverage": 0.9912758996728462,
+          "negative_coverage": 0.9935874599216246,
+          "confirmed_awards": 880,
+          "precision_of_confirmed_awards": 0.8238636363636364,
+          "wrong_fraction_of_confirmed_awards": 0.17613636363636365,
+          "confirmed_recall_all_positives": 0.7906215921483097,
+          "recall_bounds_if_unresolved_completed": [
+            0.7906215921483097,
+            0.7993456924754635
+          ],
+          "resolved_only_recall": 0.7975797579757976
+        },
+        "added_correct": 273,
+        "added_wrong": 149
+      },
+      "subgroups": {
+        "original_429_misses": {
+          "external": {
+            "FN_known": 152,
+            "TP": 269,
+            "unresolved_positive": 8,
+            "FP": 0,
+            "TN_known": 0,
+            "unresolved_negative": 0,
+            "cases": 429,
+            "positives": 429,
+            "negatives": 0,
+            "resolved": 421,
+            "unresolved": 8,
+            "coverage": 0.9813519813519813,
+            "positive_coverage": 0.9813519813519813,
+            "negative_coverage": null,
+            "confirmed_awards": 269,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.627039627039627,
+            "recall_bounds_if_unresolved_completed": [
+              0.627039627039627,
+              0.6456876456876457
+            ],
+            "resolved_only_recall": 0.6389548693586699
+          },
+          "baseline": {
+            "FN_known": 429,
+            "TP": 0,
+            "FP": 0,
+            "TN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 429,
+            "positives": 429,
+            "negatives": 0,
+            "resolved": 429,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": null,
+            "confirmed_awards": 0,
+            "precision_of_confirmed_awards": null,
+            "wrong_fraction_of_confirmed_awards": null,
+            "confirmed_recall_all_positives": 0.0,
+            "recall_bounds_if_unresolved_completed": [
+              0.0,
+              0.0
+            ],
+            "resolved_only_recall": 0.0
+          }
+        },
+        "eligible_ec_false": {
+          "external": {
+            "FN_known": 75,
+            "TP": 114,
+            "TN_known": 203,
+            "FP": 81,
+            "unresolved_positive": 2,
+            "unresolved_negative": 2,
+            "cases": 477,
+            "positives": 191,
+            "negatives": 286,
+            "resolved": 473,
+            "unresolved": 4,
+            "coverage": 0.9916142557651991,
+            "positive_coverage": 0.9895287958115183,
+            "negative_coverage": 0.993006993006993,
+            "confirmed_awards": 195,
+            "precision_of_confirmed_awards": 0.5846153846153846,
+            "wrong_fraction_of_confirmed_awards": 0.4153846153846154,
+            "confirmed_recall_all_positives": 0.5968586387434555,
+            "recall_bounds_if_unresolved_completed": [
+              0.5968586387434555,
+              0.6073298429319371
+            ],
+            "resolved_only_recall": 0.6031746031746031
+          },
+          "baseline": {
+            "FN_known": 184,
+            "TN_known": 286,
+            "TP": 7,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 477,
+            "positives": 191,
+            "negatives": 286,
+            "resolved": 477,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 7,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.03664921465968586,
+            "recall_bounds_if_unresolved_completed": [
+              0.03664921465968586,
+              0.03664921465968586
+            ],
+            "resolved_only_recall": 0.03664921465968586
+          }
+        },
+        "eligible_ec_true": {
+          "external": {
+            "FP": 54,
+            "FN_known": 183,
+            "TP": 493,
+            "TN_known": 74,
+            "unresolved_negative": 7,
+            "unresolved_positive": 14,
+            "cases": 825,
+            "positives": 690,
+            "negatives": 135,
+            "resolved": 804,
+            "unresolved": 21,
+            "coverage": 0.9745454545454545,
+            "positive_coverage": 0.9797101449275363,
+            "negative_coverage": 0.9481481481481482,
+            "confirmed_awards": 547,
+            "precision_of_confirmed_awards": 0.9012797074954296,
+            "wrong_fraction_of_confirmed_awards": 0.09872029250457039,
+            "confirmed_recall_all_positives": 0.7144927536231884,
+            "recall_bounds_if_unresolved_completed": [
+              0.7144927536231884,
+              0.7347826086956522
+            ],
+            "resolved_only_recall": 0.7292899408284024
+          },
+          "baseline": {
+            "TN_known": 129,
+            "FN_known": 245,
+            "TP": 445,
+            "FP": 6,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 825,
+            "positives": 690,
+            "negatives": 135,
+            "resolved": 825,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 451,
+            "precision_of_confirmed_awards": 0.9866962305986696,
+            "wrong_fraction_of_confirmed_awards": 0.013303769401330377,
+            "confirmed_recall_all_positives": 0.644927536231884,
+            "recall_bounds_if_unresolved_completed": [
+              0.644927536231884,
+              0.644927536231884
+            ],
+            "resolved_only_recall": 0.644927536231884
+          }
+        },
+        "all_ec_false": {
+          "external": {
+            "TN_known": 2329,
+            "FN_known": 81,
+            "TP": 114,
+            "FP": 85,
+            "unresolved_negative": 10,
+            "unresolved_positive": 2,
+            "cases": 2621,
+            "positives": 197,
+            "negatives": 2424,
+            "resolved": 2609,
+            "unresolved": 12,
+            "coverage": 0.9954215948111408,
+            "positive_coverage": 0.9898477157360406,
+            "negative_coverage": 0.9958745874587459,
+            "confirmed_awards": 199,
+            "precision_of_confirmed_awards": 0.5728643216080402,
+            "wrong_fraction_of_confirmed_awards": 0.4271356783919598,
+            "confirmed_recall_all_positives": 0.5786802030456852,
+            "recall_bounds_if_unresolved_completed": [
+              0.5786802030456852,
+              0.5888324873096447
+            ],
+            "resolved_only_recall": 0.5846153846153846
+          },
+          "baseline": {
+            "TN_known": 2424,
+            "FN_known": 190,
+            "TP": 7,
+            "FP": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 2621,
+            "positives": 197,
+            "negatives": 2424,
+            "resolved": 2621,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": 1.0,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 7,
+            "precision_of_confirmed_awards": 1.0,
+            "wrong_fraction_of_confirmed_awards": 0.0,
+            "confirmed_recall_all_positives": 0.03553299492385787,
+            "recall_bounds_if_unresolved_completed": [
+              0.03553299492385787,
+              0.03553299492385787
+            ],
+            "resolved_only_recall": 0.03553299492385787
+          }
+        },
+        "hard_ordinary": {
+          "external": {
+            "TN_known": 1752,
+            "FP": 80,
+            "unresolved_negative": 11,
+            "TP": 0,
+            "FN_known": 0,
+            "unresolved_positive": 0,
+            "cases": 1843,
+            "positives": 0,
+            "negatives": 1843,
+            "resolved": 1832,
+            "unresolved": 11,
+            "coverage": 0.9940314704286489,
+            "positive_coverage": null,
+            "negative_coverage": 0.9940314704286489,
+            "confirmed_awards": 80,
+            "precision_of_confirmed_awards": 0.0,
+            "wrong_fraction_of_confirmed_awards": 1.0,
+            "confirmed_recall_all_positives": null,
+            "recall_bounds_if_unresolved_completed": [
+              null,
+              null
+            ],
+            "resolved_only_recall": null
+          },
+          "baseline": {
+            "TN_known": 1840,
+            "FP": 3,
+            "TP": 0,
+            "FN_known": 0,
+            "unresolved_positive": 0,
+            "unresolved_negative": 0,
+            "cases": 1843,
+            "positives": 0,
+            "negatives": 1843,
+            "resolved": 1843,
+            "unresolved": 0,
+            "coverage": 1.0,
+            "positive_coverage": null,
+            "negative_coverage": 1.0,
+            "confirmed_awards": 3,
+            "precision_of_confirmed_awards": 0.0,
+            "wrong_fraction_of_confirmed_awards": 1.0,
+            "confirmed_recall_all_positives": null,
+            "recall_bounds_if_unresolved_completed": [
+              null,
+              null
+            ],
+            "resolved_only_recall": null
+          }
+        }
+      },
+      "bootstrap": {
+        "samples": 2000,
+        "seed": 20261104,
+        "groups": 972,
+        "method": "Paired group resampling of fixed observed decisions; unknowns remain unresolved, only true awards count. Does not model refitting, acquisition changes or hypothesis selection.",
+        "percentile_95": {
+          "confirmed_TP_delta": [
+            120.0,
+            195.0
+          ],
+          "confirmed_FP_delta": [
+            119.0,
+            170.02499999999986
+          ],
+          "confirmed_recall_all_positive_delta": [
+            0.13157894736842105,
+            0.21249620355180143
+          ],
+          "wrong_fraction_of_confirmed_awards_delta": [
+            0.1533201385508612,
+            0.2137413152676271
+          ],
+          "unresolved_positive": [
+            9.0,
+            24.0
+          ],
+          "unresolved_negative": [
+            10.0,
+            28.0
+          ]
+        }
+      }
+    }
+  },
+  "unresolved_reasons": {
+    "wintr": {
+      "current": {
+        "empty_pv": 5
+      },
+      "previous": {
+        "empty_pv": 5
+      }
+    },
+    "knights": {
+      "current": {
+        "incomplete-evidence": 12,
+        "optional-brilliant-pair-unresolved": 38,
+        "invalid-request": 6
+      },
+      "previous": {
+        "incomplete-evidence": 16,
+        "optional-brilliant-pair-unresolved": 12,
+        "invalid-request": 6
+      }
+    }
+  },
+  "interpretation": "Known false means an explicit no-award decision. Unresolved positives/negatives are separate; they are not false/true negatives. Confirmed recall uses all917 positives and is a lower bound when unresolved. Baseline comparison on resolved subset is secondary; it is not fresh validation. Same outer groups, no training or inner cutoff selection."
+}

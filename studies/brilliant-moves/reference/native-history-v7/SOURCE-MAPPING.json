@@ -1,0 +1,157 @@
+{
+  "policy": "mute-brilliant-v7",
+  "scope": "Readable native TypeScript and exact completed parity receipts only; no private runners, engine binaries, node_modules, installs or services.",
+  "source_receipt_sha256": "69d1a2e32b8433778a9c1f284f62ee034d96f7b14753d52554ae42e7498891fd",
+  "all15_source_receipt_hashes_verified": [
+    "ui/analyse/src/noSweatClassify.ts",
+    "ui/analyse/src/noSweatHistoryOffer.ts",
+    "ui/analyse/src/noSweatHistoryProof.ts",
+    "ui/analyse/src/noSweatRecoveryProof.ts",
+    "ui/analyse/src/noSweatFullReview.ts",
+    "ui/analyse/src/analyse.nosweatWorker.ts",
+    "ui/analyse/src/util.ts",
+    "ui/analyse/tsconfig.json",
+    "ui/analyse/tests/noSweatHistory.test.ts",
+    "ui/analyse/tests/noSweatRecovery.test.ts",
+    "ui/analyse/tests/fixtures/noSweat/brilliant-v6.json",
+    "ui/analyse/tests/fixtures/noSweat/brilliant-v7.json",
+    "ui/analyse/tests/noSweatBrilliants.test.ts",
+    "ui/analyse/tests/noSweatMuteBrilliants.test.ts",
+    "ui/analyse/tests/noSweatFullGame.test.ts"
+  ],
+  "code_source_mapping": [
+    {
+      "native_repository_path": "ui/analyse/src/noSweatClassify.ts",
+      "sha256": "79b2b94717e83d0b01bb32a834f4efa93498342cfb7bcb1ba068e9dcbefe898b",
+      "public_artifact": "reference/native-history-v7/ui/analyse/src/noSweatClassify.ts",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "ui/analyse/src/noSweatHistoryOffer.ts",
+      "sha256": "11998e94330999e001a9e1aa683047c24563880cb1ebb4ad6ec019d813365785",
+      "public_artifact": "reference/native-history-v7/ui/analyse/src/noSweatHistoryOffer.ts",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "ui/analyse/src/noSweatHistoryProof.ts",
+      "sha256": "eaad6d0f9235b64f11946aee137570efa7e60a9170c8af8c45b9f2d9a6df6f33",
+      "public_artifact": "reference/native-history-v7/ui/analyse/src/noSweatHistoryProof.ts",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "ui/analyse/src/noSweatRecoveryProof.ts",
+      "sha256": "f9dc9ddf2126b5210dbc1d595c9c81b8561290e7e6a6b85e808a4f7f3fd5fca6",
+      "public_artifact": "reference/native-history-v7/ui/analyse/src/noSweatRecoveryProof.ts",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "ui/analyse/src/noSweatFullReview.ts",
+      "sha256": "8e297163ed8bbb5afc73fc80834fcece79ebb364f39feb5eda0645f9d2807dc5",
+      "public_artifact": "reference/native-history-v7/ui/analyse/src/noSweatFullReview.ts",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "ui/analyse/src/analyse.nosweatWorker.ts",
+      "sha256": "57bd6d1a599a611f3421404d4987d59d22415b174369c4470ac9e7f3a67eb7a7",
+      "public_artifact": "reference/native-history-v7/ui/analyse/src/analyse.nosweatWorker.ts",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "ui/analyse/src/util.ts",
+      "sha256": "896c7ebf060c017e41c7ad769dc56a6fa6f0387fb0d1d713c59918d4a4f88f91",
+      "public_artifact": "reference/native-history-v7/ui/analyse/src/util.ts",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "ui/analyse/src/noSweatCore.ts",
+      "sha256": "7dd54eb1eb00aecd92887a5a32b8f81812e100f87398de20991f07505439c2ad",
+      "public_artifact": "reference/native-history-v7/ui/analyse/src/noSweatCore.ts",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "ui/analyse/src/noSweatSnapshots.ts",
+      "sha256": "083a510f3c94a0d1eeacdb44d2f618e72ca4d57befacf2e4d6a341d54c5cfb40",
+      "public_artifact": "reference/native-history-v7/ui/analyse/src/noSweatSnapshots.ts",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "ui/analyse/src/noSweatFish.ts",
+      "sha256": "1336ab8bf2b580734dbd44f1f6a37d5f5fa32f648b16cea5d79d6a0fb1c3e67c",
+      "public_artifact": "reference/native-history-v7/ui/analyse/src/noSweatFish.ts",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "ui/lib/src/nosweat/core.ts",
+      "sha256": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a",
+      "public_artifact": "reference/native-history-v7/ui/lib/src/nosweat/core.ts",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "ui/lib/src/nosweat/moveClasses.ts",
+      "sha256": "d4d5125e32964485d49a42243225745ef347910a66bce9e5c9fd4d374ab2cdef",
+      "public_artifact": "reference/native-history-v7/ui/lib/src/nosweat/moveClasses.ts",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "ui/lib/src/nosweat/reviewQuality.ts",
+      "sha256": "a8077a2894752982a4ce32f3f0c0db227cd5f4f69e3d44f8931d59aac1e98522",
+      "public_artifact": "reference/native-history-v7/ui/lib/src/nosweat/reviewQuality.ts",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "analysis/recovery-port/SUMMARY.json",
+      "sha256": "69d1a2e32b8433778a9c1f284f62ee034d96f7b14753d52554ae42e7498891fd",
+      "public_artifact": "reference/native-history-v7/SUMMARY.json",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "analysis/recovery-port/parity.json",
+      "sha256": "4d482dbb5e1c77dba5402ec2137e1248d69508b187e28a4a0df9a8c334127def",
+      "public_artifact": "reference/native-history-v7/parity.json",
+      "byte_identical": true
+    },
+    {
+      "native_repository_path": "analysis/recovery-port/RESULTS.md",
+      "sha256": "b9738cfa12d648995470ffde322bf397f3f60ae04607fdf1870f9489b414cbb3",
+      "public_artifact": "reference/native-history-v7/RESULTS.md",
+      "byte_identical": true
+    }
+  ],
+  "parity": {
+    "cases": 1048,
+    "decision_differences": 0,
+    "recovery_status_node_certificate_differences": 0,
+    "EC_full_result_differences": 0,
+    "focused_tests_passed": 57,
+    "TP": 400,
+    "FN": 113,
+    "FP": 22,
+    "TN": 513,
+    "lost_true_awards": 0,
+    "removed_false_awards": 2
+  },
+  "evaluation_role": "All1048aredevelopmentforthe v7 refinement. parity.json retains bank names development848/fresh200 as historical source metadata; the refined20078TP/3FP are retrospective, not new untouched validation.",
+  "runtime_domain": "Saved SF18/300k parity only; native SF19/timed review is unvalidated. This source snapshot is for inspection within its Lila dependency context, not a standalone runtime package.",
+  "history_origin_snapshots": [
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/astra/v5/repeat-award/six-snapshots.json",
+      "source_sha256": "31e2da908b891f349db19db7ddd406bb8d30cfcbb4dc639e8535a50b2ecc5125",
+      "public_artifact": "data/history-origin-six.json",
+      "public_sha256": "eb9e5b1c460c4b279ab459a7978af7122b317285937493f87b6afe5d152a2bd3",
+      "snapshots": 6,
+      "normalization": "Omit engine_path; retain engine_binary_name and exact engine SHA. Snapshot content unchanged.",
+      "omitted_engine_path_sha256": "65d761e1c95d0b48a7f53c9e47ade4baeb9cf11e67eff0674310c760e8ae4d93"
+    },
+    {
+      "source_artifact": "research/brilliants-improvement-2026-11-03/astra/v5/repeat-award/completion-snapshots.json",
+      "source_sha256": "f3cd39ca7a3faa32cd14d576773774de4bdd0f063330023fdb4269a24cb1bbdf",
+      "public_artifact": "data/history-origin-completion.json",
+      "public_sha256": "615c130c14e5955287b89df1e133967aa2bdef0f119a86eb50ba0d51bbdaa724",
+      "snapshots": 10,
+      "normalization": "Omit engine_path; retain engine_binary_name and exact engine SHA. Snapshot content unchanged.",
+      "omitted_engine_path_sha256": "65d761e1c95d0b48a7f53c9e47ade4baeb9cf11e67eff0674310c760e8ae4d93"
+    }
+  ],
+  "history_origin_snapshot_count": 16,
+  "existing_core_snapshots_replaced": 0
+}

@@ -1,0 +1,577 @@
+{
+  "status": "passed",
+  "assertions": {
+    "source_positions": 1320,
+    "exact_gap_selection": 2640,
+    "legal_full_saved_pv": 2640
+  },
+  "pilot_cases": 48,
+  "pilot_selected_current_comparisons": [
+    {
+      "key": "147329069640:16",
+      "selected_acceptance": "f3e5",
+      "compared_plies": 10,
+      "prior_debt6": -490,
+      "new_debt6": -490,
+      "prior_debt12": null,
+      "new_debt12": null
+    },
+    {
+      "key": "166122402690:37",
+      "selected_acceptance": "f6h6",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -1090,
+      "new_debt12": -1090
+    },
+    {
+      "key": "166508569726:24",
+      "selected_acceptance": "c3e2",
+      "compared_plies": 12,
+      "prior_debt6": -290,
+      "new_debt6": -290,
+      "prior_debt12": -380,
+      "new_debt12": -380
+    },
+    {
+      "key": "166578129186:33",
+      "selected_acceptance": "d8c7",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -90,
+      "new_debt12": -90
+    },
+    {
+      "key": "166699653212:39",
+      "selected_acceptance": "f8e6",
+      "compared_plies": 8,
+      "prior_debt6": 210,
+      "new_debt6": 210,
+      "prior_debt12": -90,
+      "new_debt12": -90
+    },
+    {
+      "key": "166897350472:18",
+      "selected_acceptance": "c3b4",
+      "compared_plies": 12,
+      "prior_debt6": -700,
+      "new_debt6": -700,
+      "prior_debt12": -700,
+      "new_debt12": -700
+    },
+    {
+      "key": "166981885820:34",
+      "selected_acceptance": "c5f8",
+      "compared_plies": 12,
+      "prior_debt6": 110,
+      "new_debt6": 110,
+      "prior_debt12": 110,
+      "new_debt12": 110
+    },
+    {
+      "key": "167122315622:53",
+      "selected_acceptance": "b5c4",
+      "compared_plies": 2,
+      "prior_debt6": 210,
+      "new_debt6": 210,
+      "prior_debt12": 210,
+      "new_debt12": 210
+    },
+    {
+      "key": "167245993920:25",
+      "selected_acceptance": "f7e6",
+      "compared_plies": 12,
+      "prior_debt6": 0,
+      "new_debt6": 0,
+      "prior_debt12": 90,
+      "new_debt12": 90
+    },
+    {
+      "key": "167275575688:60",
+      "selected_acceptance": "f3d2",
+      "compared_plies": 12,
+      "prior_debt6": 320,
+      "new_debt6": 320,
+      "prior_debt12": 20,
+      "new_debt12": 20
+    },
+    {
+      "key": "167735024286:72",
+      "selected_acceptance": "a7a8",
+      "compared_plies": 2,
+      "prior_debt6": 210,
+      "new_debt6": 210,
+      "prior_debt12": 210,
+      "new_debt12": 210
+    },
+    {
+      "key": "167744579866:37",
+      "selected_acceptance": "g7f6",
+      "compared_plies": 12,
+      "prior_debt6": -1090,
+      "new_debt6": -1090,
+      "prior_debt12": -800,
+      "new_debt12": -800
+    },
+    {
+      "key": "168415989030:55",
+      "selected_acceptance": "b5c4",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -180,
+      "new_debt12": -180
+    },
+    {
+      "key": "168815996146:51",
+      "selected_acceptance": "e5d4",
+      "compared_plies": 12,
+      "prior_debt6": 10,
+      "new_debt6": 10,
+      "prior_debt12": 10,
+      "new_debt12": 10
+    },
+    {
+      "key": "169084959468:69",
+      "selected_acceptance": "a7d7",
+      "compared_plies": 12,
+      "prior_debt6": -290,
+      "new_debt6": -290,
+      "prior_debt12": -490,
+      "new_debt12": -490
+    },
+    {
+      "key": "169295732472:39",
+      "selected_acceptance": "c3d1",
+      "compared_plies": 12,
+      "prior_debt6": 110,
+      "new_debt6": 110,
+      "prior_debt12": 20,
+      "new_debt12": 20
+    },
+    {
+      "key": "170661862908:40",
+      "selected_acceptance": "f1d3",
+      "compared_plies": 2,
+      "prior_debt6": 210,
+      "new_debt6": 210,
+      "prior_debt12": 210,
+      "new_debt12": 210
+    },
+    {
+      "key": "170804505058:23",
+      "selected_acceptance": "h8h5",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -90,
+      "new_debt12": -90
+    },
+    {
+      "key": "171472107788:38",
+      "selected_acceptance": "d4b3",
+      "compared_plies": 12,
+      "prior_debt6": -110,
+      "new_debt6": -110,
+      "prior_debt12": -110,
+      "new_debt12": -110
+    },
+    {
+      "key": "171615877812:32",
+      "selected_acceptance": "f1f6",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -90,
+      "new_debt12": -90
+    },
+    {
+      "key": "171728787528:43",
+      "selected_acceptance": "f6e5",
+      "compared_plies": 12,
+      "prior_debt6": -500,
+      "new_debt6": -500,
+      "prior_debt12": -1090,
+      "new_debt12": -1090
+    },
+    {
+      "key": "171805090202:89",
+      "selected_acceptance": "b6e6",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -90,
+      "new_debt12": -90
+    },
+    {
+      "key": "172256931994:52",
+      "selected_acceptance": "e5d4",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -500,
+      "new_debt12": -500
+    },
+    {
+      "key": "172312827850:23",
+      "selected_acceptance": "g8f7",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -480,
+      "new_debt12": -480
+    },
+    {
+      "key": "172399142014:58",
+      "selected_acceptance": "e4d5",
+      "compared_plies": 12,
+      "prior_debt6": -290,
+      "new_debt6": -290,
+      "prior_debt12": -290,
+      "new_debt12": -290
+    },
+    {
+      "key": "172534191020:19",
+      "selected_acceptance": "d7e5",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -90,
+      "new_debt12": -90
+    },
+    {
+      "key": "172804595924:41",
+      "selected_acceptance": "e5f4",
+      "compared_plies": 12,
+      "prior_debt6": -200,
+      "new_debt6": -200,
+      "prior_debt12": -500,
+      "new_debt12": -500
+    },
+    {
+      "key": "172828071536:75",
+      "selected_acceptance": "a3c3",
+      "compared_plies": 2,
+      "prior_debt6": 0,
+      "new_debt6": 0,
+      "prior_debt12": 0,
+      "new_debt12": 0
+    },
+    {
+      "key": "172914653473:86",
+      "selected_acceptance": "b2b3",
+      "compared_plies": 12,
+      "prior_debt6": 110,
+      "new_debt6": 110,
+      "prior_debt12": 200,
+      "new_debt12": 200
+    },
+    {
+      "key": "173184879010:62",
+      "selected_acceptance": "e3d4",
+      "compared_plies": 12,
+      "prior_debt6": -1000,
+      "new_debt6": -1000,
+      "prior_debt12": -1000,
+      "new_debt12": -1000
+    },
+    {
+      "key": "173532009624:45",
+      "selected_acceptance": "c7d7",
+      "compared_plies": 12,
+      "prior_debt6": -290,
+      "new_debt6": -290,
+      "prior_debt12": -90,
+      "new_debt12": -90
+    },
+    {
+      "key": "173625605676:68",
+      "selected_acceptance": "b1c1",
+      "compared_plies": 12,
+      "prior_debt6": -500,
+      "new_debt6": -500,
+      "prior_debt12": -500,
+      "new_debt12": -500
+    },
+    {
+      "key": "173628147512:111",
+      "selected_acceptance": "b5d6",
+      "compared_plies": 12,
+      "prior_debt6": -200,
+      "new_debt6": -200,
+      "prior_debt12": -200,
+      "new_debt12": -200
+    },
+    {
+      "key": "173661079138:26",
+      "selected_acceptance": "f3e5",
+      "compared_plies": 12,
+      "prior_debt6": -490,
+      "new_debt6": -490,
+      "prior_debt12": -490,
+      "new_debt12": -490
+    },
+    {
+      "key": "173720481882:31",
+      "selected_acceptance": "f8f7",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -90,
+      "new_debt12": -90
+    },
+    {
+      "key": "173765223182:58",
+      "selected_acceptance": "a3b4",
+      "compared_plies": 12,
+      "prior_debt6": 0,
+      "new_debt6": 0,
+      "prior_debt12": -300,
+      "new_debt12": -300
+    },
+    {
+      "key": "173774757032:28",
+      "selected_acceptance": "a2b4",
+      "compared_plies": 12,
+      "prior_debt6": -590,
+      "new_debt6": -590,
+      "prior_debt12": -90,
+      "new_debt12": -90
+    },
+    {
+      "key": "173851185684:34",
+      "selected_acceptance": "d5b6",
+      "compared_plies": 12,
+      "prior_debt6": 20,
+      "new_debt6": 20,
+      "prior_debt12": 20,
+      "new_debt12": 20
+    },
+    {
+      "key": "174474699682:54",
+      "selected_acceptance": "d2b2",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -90,
+      "new_debt12": -90
+    },
+    {
+      "key": "181991300863:49",
+      "selected_acceptance": "b8b7",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -90,
+      "new_debt12": -90
+    },
+    {
+      "key": "182338102719:54",
+      "selected_acceptance": "c1f4",
+      "compared_plies": 12,
+      "prior_debt6": -590,
+      "new_debt6": -590,
+      "prior_debt12": -890,
+      "new_debt12": -890
+    },
+    {
+      "key": "183973291902:40",
+      "selected_acceptance": "f3e5",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -90,
+      "new_debt12": -90
+    },
+    {
+      "key": "184185752754:59",
+      "selected_acceptance": "c7b7",
+      "compared_plies": 12,
+      "prior_debt6": -500,
+      "new_debt6": -500,
+      "prior_debt12": -680,
+      "new_debt12": -680
+    },
+    {
+      "key": "184277876260:54",
+      "selected_acceptance": "e2e3",
+      "compared_plies": 2,
+      "prior_debt6": 210,
+      "new_debt6": 210,
+      "prior_debt12": 210,
+      "new_debt12": 210
+    },
+    {
+      "key": "184300109262:14",
+      "selected_acceptance": "h2g3",
+      "compared_plies": 12,
+      "prior_debt6": 10,
+      "new_debt6": 10,
+      "prior_debt12": -80,
+      "new_debt12": -80
+    },
+    {
+      "key": "184330910250:75",
+      "selected_acceptance": "d6e5",
+      "compared_plies": 12,
+      "prior_debt6": 20,
+      "new_debt6": 20,
+      "prior_debt12": 20,
+      "new_debt12": 20
+    },
+    {
+      "key": "184653480432:30",
+      "selected_acceptance": "e2c2",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -90,
+      "new_debt12": -90
+    },
+    {
+      "key": "185229374468:26",
+      "selected_acceptance": "d3e4",
+      "compared_plies": 12,
+      "prior_debt6": -90,
+      "new_debt6": -90,
+      "prior_debt12": -90,
+      "new_debt12": -90
+    }
+  ],
+  "missingness_examples": {
+    "known": {
+      "key": "183200302081:135",
+      "window": "current",
+      "features": {
+        "material_debt6_cp": -610,
+        "material_debt12_cp": -610,
+        "recovered_by12": 1,
+        "first_recovery_ply": 4,
+        "acceptance_mate_outcome": 0,
+        "terminal_draw_by12": 0,
+        "initial_debt_cp": 300
+      },
+      "observed_plies": 12
+    },
+    "recovered": {
+      "key": "183200302081:135",
+      "window": "current",
+      "features": {
+        "material_debt6_cp": -610,
+        "material_debt12_cp": -610,
+        "recovered_by12": 1,
+        "first_recovery_ply": 4,
+        "acceptance_mate_outcome": 0,
+        "terminal_draw_by12": 0,
+        "initial_debt_cp": 300
+      },
+      "observed_plies": 12
+    },
+    "no_recovery_through_horizon_or_terminal": {
+      "key": "166605955282:65",
+      "window": "current",
+      "features": {
+        "material_debt6_cp": 300,
+        "material_debt12_cp": 300,
+        "recovered_by12": 0,
+        "first_recovery_ply": null,
+        "acceptance_mate_outcome": 0,
+        "terminal_draw_by12": 0,
+        "initial_debt_cp": 300
+      },
+      "observed_plies": 12
+    },
+    "ineligible_both_windows_not_requested": {
+      "key": "167742352864:94",
+      "window": "current",
+      "features": {
+        "material_debt6_cp": null,
+        "material_debt12_cp": null,
+        "recovered_by12": null,
+        "first_recovery_ply": null,
+        "acceptance_mate_outcome": null,
+        "terminal_draw_by12": null,
+        "initial_debt_cp": null
+      },
+      "observed_plies": null
+    },
+    "truncated_before12": {
+      "key": "174150433334:42",
+      "window": "current",
+      "features": {
+        "material_debt6_cp": 120,
+        "material_debt12_cp": null,
+        "recovered_by12": null,
+        "first_recovery_ply": null,
+        "acceptance_mate_outcome": 0,
+        "terminal_draw_by12": null,
+        "initial_debt_cp": 210
+      },
+      "observed_plies": 6
+    }
+  },
+  "terminal_examples": {
+    "CHECKMATE": {
+      "key": "171640204264:47",
+      "window": "current",
+      "terminal": {
+        "ply": 4,
+        "termination": "CHECKMATE",
+        "winner": "white"
+      },
+      "features": {
+        "material_debt6_cp": -1610,
+        "material_debt12_cp": -1610,
+        "recovered_by12": 1,
+        "first_recovery_ply": 2,
+        "acceptance_mate_outcome": 1,
+        "terminal_draw_by12": 0,
+        "initial_debt_cp": 300
+      }
+    },
+    "INSUFFICIENT_MATERIAL": {
+      "key": "174520947570:152",
+      "window": "current",
+      "terminal": {
+        "ply": 8,
+        "termination": "INSUFFICIENT_MATERIAL",
+        "winner": null
+      },
+      "features": {
+        "material_debt6_cp": -610,
+        "material_debt12_cp": -110,
+        "recovered_by12": 1,
+        "first_recovery_ply": 6,
+        "acceptance_mate_outcome": 0,
+        "terminal_draw_by12": 1,
+        "initial_debt_cp": 300
+      }
+    }
+  },
+  "independent_consistency_checks": {
+    "status": "passed",
+    "windows_checked": 7448,
+    "counts": {
+      "all_missing_windows": 4808,
+      "actual_terminal_extension": 474,
+      "truncated_debt12": 134,
+      "truncated_draw_unknown": 134,
+      "truncated_debt6": 10,
+      "mate_score_without_terminal_within12": 26
+    },
+    "pilot_horizon_debt_differences": 0,
+    "observed_terminal_types": [
+      "CHECKMATE",
+      "INSUFFICIENT_MATERIAL"
+    ],
+    "absent_selected_terminal_types": [
+      "STALEMATE",
+      "FIVEFOLD_REPETITION",
+      "SEVENTYFIVE_MOVES"
+    ],
+    "nonpositive_initial_debt_observed": false,
+    "note": "No selected line has nonpositive initial debt, so that explicit null guard is source-reviewed rather than demonstrated by a selected source example. No forced-mate score is inferred from short PV."
+  }
+}

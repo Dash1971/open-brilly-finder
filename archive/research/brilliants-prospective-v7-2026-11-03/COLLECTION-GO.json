@@ -1,0 +1,19 @@
+{
+  "authorized_at_utc": "2026-11-03T13:03:30.014558+00:00",
+  "task": "Complete frozen fresh-game validation before merge; documentation changes deferred until testing complete.",
+  "current_review_label_collection": true,
+  "classifiers_and_selection_unchanged": true,
+  "engine_work_now": false,
+  "merge_or_deploy": false,
+  "hashes": {
+    "FREEZE.json": "0f52334e2b730acf58a44785aa09b4bc8dbd3c8fd68ca57b4206a4efb300e9a8",
+    "ADAPTER-FREEZE.json": "348be630ab83301a263dbd50cc1808b2c07acca158c13f196fb4be17d19308a1",
+    "COLLECTION-FREEZE.json": "6e24793af0a7b46ebcf03d65c4a6e85cad4ac66b368372ba96b4874b03ff070e",
+    "QUEUE-FREEZE.json": "6ac5b29d0eccba0f0e955947f26170ed5e5e772369800cbd88ffd859435c14d6",
+    "FINALQUEUE.json": "c4586980b9bdbed2476e16d8c753ef2fbfdb23905bc436d5b23d0a42144900bb",
+    "PROTOCOL-FREEZE.json": "0c2424b40feb9215bd87ca8846b3dcbdb20b478e9e00c0dcf8ca1725653fa998",
+    "NATIVE-SUBSET-FREEZE.json": "b05fec9a0472f081dfda51cca71fcc0339f1ce5730aaf47636a21ee29167e9e4"
+  },
+  "collectors": "Begin root alone, fresh tab/game,close after saving. Second collector only after measured stable pressure on actual current-review pages. Raw files only; no concurrent database writes or engine work.",
+  "stop_rule": "Complete primary200 using frozen reserve orders; preserve all observations and mismatches. No outcome-driven source/threshold changes."
+}

@@ -1,0 +1,1128 @@
+{
+  "scope": "Descriptive comparison on848unblindeddevelopment cases. Forest uses fixed grouped out-of-fold predictions; EC direct is the published deterministic current-window annotation on identical saved baseline evidence. This is not fresh independent validation or proof of product superiority.",
+  "forest_operating_point": "Prespecified cost5: both-window mean RAW p>=5/6 plus original quality/offer/confidence guards; not postselected OOF ranking threshold.",
+  "forest_OOF": {
+    "TP": 223,
+    "FN": 190,
+    "FP": 2,
+    "TN": 433
+  },
+  "EC_direct": {
+    "TP": 113,
+    "FN": 300,
+    "FP": 7,
+    "TN": 428,
+    "n": 848,
+    "agreement": 0.6379716981132075,
+    "recall": 0.2736077481840194,
+    "false_award_rate": 0.016091954022988506,
+    "sample_precision": 0.9416666666666667
+  },
+  "EC_confirmed_separate": {
+    "TP": 109,
+    "FN": 304,
+    "FP": 7,
+    "TN": 428,
+    "n": 848,
+    "agreement": 0.6332547169811321,
+    "recall": 0.2639225181598063,
+    "false_award_rate": 0.016091954022988506,
+    "sample_precision": 0.9396551724137931
+  },
+  "same848keys_labels_SAN": true,
+  "sample_count_dominance": {
+    "more_true_awards": true,
+    "fewer_false_awards": true
+  },
+  "input_sha256": {
+    "forest_predictions": "e7e9c2f60510cf1d59030a4c081a644f54cd9e18b3f1d683dc0e3d924bc5eb54",
+    "EC_baseline_replay": "0ec164cbc04c48599ca483bc167e72270a47b0fa20f889dafaf2439df84b6c0b"
+  },
+  "different_awards": [
+    {
+      "key": "169826869102:49",
+      "san": "exd5",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "169826869102:67",
+      "san": "Qxd6+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "171577734842:63",
+      "san": "Qxf6+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "172079014628:25",
+      "san": "Nxd4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "173235911852:53",
+      "san": "Qxh6+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "174516763460:50",
+      "san": "Rxf4+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "175081315049:72",
+      "san": "Qxg2+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "177749871737:45",
+      "san": "Qxe5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "178708673761:88",
+      "san": "Qd1+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "180009873904:46",
+      "san": "Qh1+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "183973710849:37",
+      "san": "Qxg7+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "183988710985:95",
+      "san": "Rh8+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184471865958:64",
+      "san": "Qxc6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184485128986:74",
+      "san": "Qxg1+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185363189653:79",
+      "san": "Qxc8",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185741429132:59",
+      "san": "Kh1",
+      "truth": false,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "185758898568:49",
+      "san": "Rxf6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185777067822:85",
+      "san": "Rxh6+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185779950694:78",
+      "san": "Nc3+",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "185789456944:33",
+      "san": "Ng5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185868851860:32",
+      "san": "Nxe3",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "185912817674:34",
+      "san": "Qe7",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "185961989677:71",
+      "san": "Bxf6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185966790779:55",
+      "san": "Qxb6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185966790779:67",
+      "san": "Qxf7+",
+      "truth": false,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "185989473802:52",
+      "san": "Bxh3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186026163000:46",
+      "san": "Bxh4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186031870380:22",
+      "san": "Nxd5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186038944608:31",
+      "san": "N6f5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186041863638:55",
+      "san": "Rxg7+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186042291426:33",
+      "san": "Rxe5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186051372886:40",
+      "san": "Nhxf4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186052437796:18",
+      "san": "Nf6",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "186063842654:49",
+      "san": "Rh8+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186064974534:17",
+      "san": "Rxf5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186065215864:17",
+      "san": "Rxf5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186065442490:25",
+      "san": "Bxe6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186071905656:18",
+      "san": "Nxd4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186072205082:28",
+      "san": "Nxd5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186073124334:24",
+      "san": "Bd6",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "186101258092:27",
+      "san": "Bxh7+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186102691718:20",
+      "san": "Nxe5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186111827132:38",
+      "san": "Nxf4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186218189057:69",
+      "san": "Bxh7+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186305157204:49",
+      "san": "Rxd6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186311391426:23",
+      "san": "Bxh6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186314657416:17",
+      "san": "Nxf7",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186367356936:21",
+      "san": "Qxg6+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186367460996:57",
+      "san": "R1xf5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186367835010:17",
+      "san": "Rxd6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186389789789:80",
+      "san": "Qxh3+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186390389753:75",
+      "san": "Rd3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186566789489:55",
+      "san": "Qxf5+",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "186567391345:70",
+      "san": "c3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186567991235:31",
+      "san": "Bxe6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186573390087:21",
+      "san": "Nd5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186822989225:52",
+      "san": "Ng4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186823589241:79",
+      "san": "Rxa7",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186824189313:36",
+      "san": "Nxf2",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "187171696319:17",
+      "san": "Ne6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "187173495367:48",
+      "san": "Qxd6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "187780685807:50",
+      "san": "Rxf3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "187780686981:29",
+      "san": "Bxe6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "164503197970:46",
+      "san": "Qxf2+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "165566275946:19",
+      "san": "Qxb7",
+      "truth": false,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "165818824512:58",
+      "san": "Rxc3",
+      "truth": false,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "165819580262:69",
+      "san": "Qxd5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "165958193524:36",
+      "san": "Rdh8",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "171575524144:59",
+      "san": "Bxe6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "171640557466:50",
+      "san": "Ba5",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "171726954714:48",
+      "san": "Qxc3",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "171752277154:38",
+      "san": "Nxd4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "172526218968:47",
+      "san": "Bxh7+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "174195616430:49",
+      "san": "Bxb6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "174461400570:62",
+      "san": "Bg2+",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "174480720608:31",
+      "san": "Qd3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "174489085918:27",
+      "san": "d5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "178708072359:57",
+      "san": "Rxb2",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "178708072359:59",
+      "san": "Qd2",
+      "truth": false,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "180949672051:80",
+      "san": "Nxf3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "181383500767:94",
+      "san": "Nxb3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "183367102125:49",
+      "san": "Qxe8+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "183545310851:38",
+      "san": "Bxb3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "183799110991:36",
+      "san": "Nxf4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "183800911053:48",
+      "san": "Rxe4",
+      "truth": false,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184128361014:26",
+      "san": "Bxh3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184331730728:52",
+      "san": "Be4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184420224234:79",
+      "san": "f7",
+      "truth": false,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "184675797960:45",
+      "san": "Bxg6+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184758156634:36",
+      "san": "Bf4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184851604688:101",
+      "san": "a6",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "184926439598:75",
+      "san": "Qxa5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184926599842:61",
+      "san": "Qxf7+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184950055242:45",
+      "san": "Nxf7",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184973393950:49",
+      "san": "Rxh7+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185059632338:58",
+      "san": "Qxc7",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185135318612:36",
+      "san": "Nxg4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185136515226:72",
+      "san": "Be2+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185166937414:36",
+      "san": "Rxa2",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185330168240:23",
+      "san": "Nge2",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "185334207554:29",
+      "san": "Bxh6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185334942666:40",
+      "san": "Nbxd5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185388513294:43",
+      "san": "Ngh6+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185392726850:61",
+      "san": "Rxg7",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185393659036:45",
+      "san": "Rxf7",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185395918494:20",
+      "san": "Bb3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185571535188:83",
+      "san": "Qxb8",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185673410356:39",
+      "san": "Nxf7",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185701169326:95",
+      "san": "Rd8+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185702128930:36",
+      "san": "Bxh3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185702381036:62",
+      "san": "Ngxh4+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185708268796:101",
+      "san": "Bxb5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185727566318:47",
+      "san": "Bxd5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185728969214:24",
+      "san": "Bxg3+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185769255732:59",
+      "san": "Rxh5+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186007442472:45",
+      "san": "Bxg4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186568589277:32",
+      "san": "Ncxa4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186569189275:28",
+      "san": "Nxd4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186569189511:90",
+      "san": "Nxf4+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186569789637:36",
+      "san": "Nxd5",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "168770939742:64",
+      "san": "Bxd3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "168788688076:68",
+      "san": "Nxe3+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "171303218306:45",
+      "san": "Nxh6+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "171489489774:34",
+      "san": "Rxe4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "172916456523:21",
+      "san": "Nxe5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "172918854783:42",
+      "san": "Nh3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "173086257577:35",
+      "san": "Bxh6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "173236586012:79",
+      "san": "Rxd3",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "173266373303:60",
+      "san": "Bxf4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "173517172721:57",
+      "san": "Nxe6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "173949173956:48",
+      "san": "Qxd5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "174052876712:38",
+      "san": "Bxf4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "174156500008:51",
+      "san": "Rxd7",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "174183730932:84",
+      "san": "Qxf1+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "174184365826:77",
+      "san": "Kxf3",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "174350569282:58",
+      "san": "hxg3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "174394143338:21",
+      "san": "Nxg5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "174424077248:71",
+      "san": "Qxc8+",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "174490497572:26",
+      "san": "Nxb4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "175079513195:55",
+      "san": "Bxe6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "178706872777:49",
+      "san": "Nfxh5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184272623262:50",
+      "san": "Qxg3+",
+      "truth": false,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "184278086094:69",
+      "san": "Rxa6",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184387370778:118",
+      "san": "Rxf7",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "184512046868:24",
+      "san": "Nd4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184623232028:38",
+      "san": "hxg4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184732457434:68",
+      "san": "R8xc7",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184758405514:40",
+      "san": "Ngh4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "184923543936:70",
+      "san": "Nxa6",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    },
+    {
+      "key": "184981639688:42",
+      "san": "Nxh3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185032708726:33",
+      "san": "Bxd5",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "185731268834:72",
+      "san": "Rxe3",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186393990159:71",
+      "san": "Qg6+",
+      "truth": false,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "186434315980:20",
+      "san": "Qxd4",
+      "truth": true,
+      "forest_OOF": true,
+      "EC_direct": false
+    },
+    {
+      "key": "174472504480:49",
+      "san": "Rh8+",
+      "truth": true,
+      "forest_OOF": false,
+      "EC_direct": true
+    }
+  ]
+}

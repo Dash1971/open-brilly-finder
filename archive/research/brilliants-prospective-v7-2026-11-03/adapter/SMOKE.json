@@ -1,0 +1,1066 @@
+{
+  "scope": "Synthetic-only smoke; not study evidence",
+  "started_at_utc": "2026-11-03T12:48:25.374Z",
+  "finished_at_utc": "2026-11-03T12:48:25.788Z",
+  "status": "complete",
+  "engineName": "Stockfish 19",
+  "gameCount": 1,
+  "searchCount": 3,
+  "engine_ms": 288.38379199999997,
+  "elapsed_ms": 414,
+  "games": [
+    {
+      "game_id": "synthetic-start-e4-e5",
+      "account": "synthetic",
+      "complete": true,
+      "results": [
+        [
+          1,
+          ""
+        ],
+        [
+          2,
+          ""
+        ]
+      ],
+      "decisions": [
+        {
+          "ply": 1,
+          "confirmation": false,
+          "input": {
+            "positions": [
+              "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+              "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"
+            ],
+            "reviews": [
+              {
+                "current": {
+                  "depth": 14,
+                  "lines": [
+                    {
+                      "cp": 34,
+                      "moves": [
+                        "d2d4",
+                        "d7d5",
+                        "c2c4",
+                        "e7e6",
+                        "g1f3",
+                        "f8e7",
+                        "b1c3",
+                        "g8f6",
+                        "c1f4",
+                        "e8g8",
+                        "e2e3",
+                        "c7c5",
+                        "d4c5",
+                        "e7c5",
+                        "c4d5",
+                        "f6d5",
+                        "c3d5",
+                        "e6d5"
+                      ]
+                    },
+                    {
+                      "cp": 32,
+                      "moves": [
+                        "e2e4",
+                        "c7c5",
+                        "b1c3",
+                        "b8c6",
+                        "g1f3",
+                        "e7e5",
+                        "f1c4",
+                        "f8e7",
+                        "a2a4",
+                        "d7d6",
+                        "e1g1",
+                        "g8f6",
+                        "d2d3",
+                        "e8g8"
+                      ]
+                    }
+                  ]
+                },
+                "previous": {
+                  "depth": 13,
+                  "lines": [
+                    {
+                      "cp": 34,
+                      "moves": [
+                        "e2e4",
+                        "c7c5",
+                        "g1f3",
+                        "b8c6",
+                        "b1c3",
+                        "e7e5",
+                        "f1c4",
+                        "d7d6",
+                        "e1g1"
+                      ]
+                    },
+                    {
+                      "cp": 24,
+                      "moves": [
+                        "d2d4",
+                        "d7d5",
+                        "c2c4",
+                        "e7e6",
+                        "g1f3",
+                        "g8f6",
+                        "b1c3",
+                        "f8e7"
+                      ]
+                    }
+                  ]
+                },
+                "quality": "mobile-maia-full-review-v2:14:1000"
+              },
+              {
+                "current": {
+                  "depth": 14,
+                  "lines": [
+                    {
+                      "cp": 28,
+                      "moves": [
+                        "e7e6",
+                        "g1f3",
+                        "d7d5",
+                        "b1c3",
+                        "g8f6",
+                        "e4e5",
+                        "f6d7",
+                        "c3e2",
+                        "c7c5",
+                        "c2c3",
+                        "c5c4",
+                        "d2d4",
+                        "c4d3",
+                        "e2f4",
+                        "b8c6",
+                        "f4d3"
+                      ]
+                    },
+                    {
+                      "cp": 34,
+                      "moves": [
+                        "e7e5",
+                        "g1f3",
+                        "b8c6",
+                        "d2d4",
+                        "e5d4",
+                        "f3d4",
+                        "g8f6",
+                        "d4c6",
+                        "b7c6",
+                        "b1c3",
+                        "f8b4",
+                        "f1d3",
+                        "d7d5",
+                        "e4e5",
+                        "f6g4",
+                        "e1g1",
+                        "e8g8",
+                        "a2a3"
+                      ]
+                    }
+                  ]
+                },
+                "previous": {
+                  "depth": 13,
+                  "lines": [
+                    {
+                      "cp": 33,
+                      "moves": [
+                        "e7e5",
+                        "g1f3",
+                        "b8c6",
+                        "d2d4",
+                        "e5d4",
+                        "f3d4",
+                        "g8f6",
+                        "d4c6",
+                        "b7c6",
+                        "d1d4",
+                        "c6c5",
+                        "d4e5",
+                        "d8e7",
+                        "e5e7",
+                        "f8e7",
+                        "b1c3",
+                        "e8g8"
+                      ]
+                    },
+                    {
+                      "cp": 40,
+                      "moves": [
+                        "e7e6",
+                        "d2d4",
+                        "d7d5",
+                        "b1c3",
+                        "g8f6",
+                        "e4e5",
+                        "f6d7",
+                        "c3e2",
+                        "c7c5",
+                        "c2c3",
+                        "d8a5",
+                        "g1f3",
+                        "b8c6",
+                        "c1d2",
+                        "a5b6",
+                        "a1b1",
+                        "f8e7",
+                        "h2h4"
+                      ]
+                    }
+                  ]
+                },
+                "quality": "mobile-maia-full-review-v2:14:1000"
+              }
+            ],
+            "move": "e2e4",
+            "ply": 1,
+            "history": []
+          },
+          "v7": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 98.5564683594482,
+            "cpLoss": 6,
+            "version": "mute-chess-brilliant-v7"
+          },
+          "v6": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 98.5564683594482,
+            "cpLoss": 6,
+            "version": "mute-chess-brilliant-v6"
+          },
+          "ec_direct": ""
+        },
+        {
+          "ply": 2,
+          "confirmation": false,
+          "input": {
+            "positions": [
+              "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+              "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+              "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+            ],
+            "reviews": [
+              {
+                "current": {
+                  "depth": 14,
+                  "lines": [
+                    {
+                      "cp": 34,
+                      "moves": [
+                        "d2d4",
+                        "d7d5",
+                        "c2c4",
+                        "e7e6",
+                        "g1f3",
+                        "f8e7",
+                        "b1c3",
+                        "g8f6",
+                        "c1f4",
+                        "e8g8",
+                        "e2e3",
+                        "c7c5",
+                        "d4c5",
+                        "e7c5",
+                        "c4d5",
+                        "f6d5",
+                        "c3d5",
+                        "e6d5"
+                      ]
+                    },
+                    {
+                      "cp": 32,
+                      "moves": [
+                        "e2e4",
+                        "c7c5",
+                        "b1c3",
+                        "b8c6",
+                        "g1f3",
+                        "e7e5",
+                        "f1c4",
+                        "f8e7",
+                        "a2a4",
+                        "d7d6",
+                        "e1g1",
+                        "g8f6",
+                        "d2d3",
+                        "e8g8"
+                      ]
+                    }
+                  ]
+                },
+                "previous": {
+                  "depth": 13,
+                  "lines": [
+                    {
+                      "cp": 34,
+                      "moves": [
+                        "e2e4",
+                        "c7c5",
+                        "g1f3",
+                        "b8c6",
+                        "b1c3",
+                        "e7e5",
+                        "f1c4",
+                        "d7d6",
+                        "e1g1"
+                      ]
+                    },
+                    {
+                      "cp": 24,
+                      "moves": [
+                        "d2d4",
+                        "d7d5",
+                        "c2c4",
+                        "e7e6",
+                        "g1f3",
+                        "g8f6",
+                        "b1c3",
+                        "f8e7"
+                      ]
+                    }
+                  ]
+                },
+                "quality": "mobile-maia-full-review-v2:14:1000"
+              },
+              {
+                "current": {
+                  "depth": 14,
+                  "lines": [
+                    {
+                      "cp": 28,
+                      "moves": [
+                        "e7e6",
+                        "g1f3",
+                        "d7d5",
+                        "b1c3",
+                        "g8f6",
+                        "e4e5",
+                        "f6d7",
+                        "c3e2",
+                        "c7c5",
+                        "c2c3",
+                        "c5c4",
+                        "d2d4",
+                        "c4d3",
+                        "e2f4",
+                        "b8c6",
+                        "f4d3"
+                      ]
+                    },
+                    {
+                      "cp": 34,
+                      "moves": [
+                        "e7e5",
+                        "g1f3",
+                        "b8c6",
+                        "d2d4",
+                        "e5d4",
+                        "f3d4",
+                        "g8f6",
+                        "d4c6",
+                        "b7c6",
+                        "b1c3",
+                        "f8b4",
+                        "f1d3",
+                        "d7d5",
+                        "e4e5",
+                        "f6g4",
+                        "e1g1",
+                        "e8g8",
+                        "a2a3"
+                      ]
+                    }
+                  ]
+                },
+                "previous": {
+                  "depth": 13,
+                  "lines": [
+                    {
+                      "cp": 33,
+                      "moves": [
+                        "e7e5",
+                        "g1f3",
+                        "b8c6",
+                        "d2d4",
+                        "e5d4",
+                        "f3d4",
+                        "g8f6",
+                        "d4c6",
+                        "b7c6",
+                        "d1d4",
+                        "c6c5",
+                        "d4e5",
+                        "d8e7",
+                        "e5e7",
+                        "f8e7",
+                        "b1c3",
+                        "e8g8"
+                      ]
+                    },
+                    {
+                      "cp": 40,
+                      "moves": [
+                        "e7e6",
+                        "d2d4",
+                        "d7d5",
+                        "b1c3",
+                        "g8f6",
+                        "e4e5",
+                        "f6d7",
+                        "c3e2",
+                        "c7c5",
+                        "c2c3",
+                        "d8a5",
+                        "g1f3",
+                        "b8c6",
+                        "c1d2",
+                        "a5b6",
+                        "a1b1",
+                        "f8e7",
+                        "h2h4"
+                      ]
+                    }
+                  ]
+                },
+                "quality": "mobile-maia-full-review-v2:14:1000"
+              },
+              {
+                "current": {
+                  "depth": 14,
+                  "lines": [
+                    {
+                      "cp": 29,
+                      "moves": [
+                        "g1f3",
+                        "b8c6",
+                        "d2d4",
+                        "e5d4",
+                        "f3d4",
+                        "g8f6",
+                        "d4c6",
+                        "b7c6",
+                        "f1d3",
+                        "d7d5",
+                        "d1e2",
+                        "d5e4",
+                        "d3e4",
+                        "f6e4",
+                        "e2e4",
+                        "f8e7",
+                        "c1g5"
+                      ]
+                    },
+                    {
+                      "cp": 13,
+                      "moves": [
+                        "b1c3",
+                        "b8c6",
+                        "g1f3",
+                        "g8f6",
+                        "d2d4",
+                        "e5d4",
+                        "c3d5",
+                        "f8e7",
+                        "c1f4",
+                        "d7d6",
+                        "f3d4",
+                        "c6d4",
+                        "d1d4",
+                        "f6d5"
+                      ]
+                    }
+                  ]
+                },
+                "previous": {
+                  "depth": 13,
+                  "lines": [
+                    {
+                      "cp": 31,
+                      "moves": [
+                        "g1f3",
+                        "b8c6",
+                        "d2d4",
+                        "e5d4",
+                        "f3d4",
+                        "g8f6",
+                        "d4c6",
+                        "b7c6",
+                        "f1d3",
+                        "d7d5",
+                        "d1e2",
+                        "c8g4",
+                        "f2f3",
+                        "g4e6",
+                        "e4e5"
+                      ]
+                    },
+                    {
+                      "cp": 19,
+                      "moves": [
+                        "b1c3",
+                        "b8c6",
+                        "g1f3",
+                        "g8f6",
+                        "f1b5",
+                        "f8d6",
+                        "d2d4",
+                        "e5d4",
+                        "f3d4",
+                        "e8g8",
+                        "d4f5",
+                        "d6e5",
+                        "c1g5",
+                        "e5c3",
+                        "b2c3",
+                        "d7d5"
+                      ]
+                    }
+                  ]
+                },
+                "quality": "mobile-maia-full-review-v2:14:1000"
+              }
+            ],
+            "move": "e7e5",
+            "ply": 2,
+            "history": [
+              {
+                "ply": 1,
+                "before": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+                "after": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+                "move": "e2e4",
+                "positions": [
+                  "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+                  "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"
+                ],
+                "reviews": [
+                  {
+                    "current": {
+                      "depth": 14,
+                      "lines": [
+                        {
+                          "cp": 34,
+                          "moves": [
+                            "d2d4",
+                            "d7d5",
+                            "c2c4",
+                            "e7e6",
+                            "g1f3",
+                            "f8e7",
+                            "b1c3",
+                            "g8f6",
+                            "c1f4",
+                            "e8g8",
+                            "e2e3",
+                            "c7c5",
+                            "d4c5",
+                            "e7c5",
+                            "c4d5",
+                            "f6d5",
+                            "c3d5",
+                            "e6d5"
+                          ]
+                        },
+                        {
+                          "cp": 32,
+                          "moves": [
+                            "e2e4",
+                            "c7c5",
+                            "b1c3",
+                            "b8c6",
+                            "g1f3",
+                            "e7e5",
+                            "f1c4",
+                            "f8e7",
+                            "a2a4",
+                            "d7d6",
+                            "e1g1",
+                            "g8f6",
+                            "d2d3",
+                            "e8g8"
+                          ]
+                        }
+                      ]
+                    },
+                    "previous": {
+                      "depth": 13,
+                      "lines": [
+                        {
+                          "cp": 34,
+                          "moves": [
+                            "e2e4",
+                            "c7c5",
+                            "g1f3",
+                            "b8c6",
+                            "b1c3",
+                            "e7e5",
+                            "f1c4",
+                            "d7d6",
+                            "e1g1"
+                          ]
+                        },
+                        {
+                          "cp": 24,
+                          "moves": [
+                            "d2d4",
+                            "d7d5",
+                            "c2c4",
+                            "e7e6",
+                            "g1f3",
+                            "g8f6",
+                            "b1c3",
+                            "f8e7"
+                          ]
+                        }
+                      ]
+                    },
+                    "quality": "mobile-maia-full-review-v2:14:1000"
+                  },
+                  {
+                    "current": {
+                      "depth": 14,
+                      "lines": [
+                        {
+                          "cp": 28,
+                          "moves": [
+                            "e7e6",
+                            "g1f3",
+                            "d7d5",
+                            "b1c3",
+                            "g8f6",
+                            "e4e5",
+                            "f6d7",
+                            "c3e2",
+                            "c7c5",
+                            "c2c3",
+                            "c5c4",
+                            "d2d4",
+                            "c4d3",
+                            "e2f4",
+                            "b8c6",
+                            "f4d3"
+                          ]
+                        },
+                        {
+                          "cp": 34,
+                          "moves": [
+                            "e7e5",
+                            "g1f3",
+                            "b8c6",
+                            "d2d4",
+                            "e5d4",
+                            "f3d4",
+                            "g8f6",
+                            "d4c6",
+                            "b7c6",
+                            "b1c3",
+                            "f8b4",
+                            "f1d3",
+                            "d7d5",
+                            "e4e5",
+                            "f6g4",
+                            "e1g1",
+                            "e8g8",
+                            "a2a3"
+                          ]
+                        }
+                      ]
+                    },
+                    "previous": {
+                      "depth": 13,
+                      "lines": [
+                        {
+                          "cp": 33,
+                          "moves": [
+                            "e7e5",
+                            "g1f3",
+                            "b8c6",
+                            "d2d4",
+                            "e5d4",
+                            "f3d4",
+                            "g8f6",
+                            "d4c6",
+                            "b7c6",
+                            "d1d4",
+                            "c6c5",
+                            "d4e5",
+                            "d8e7",
+                            "e5e7",
+                            "f8e7",
+                            "b1c3",
+                            "e8g8"
+                          ]
+                        },
+                        {
+                          "cp": 40,
+                          "moves": [
+                            "e7e6",
+                            "d2d4",
+                            "d7d5",
+                            "b1c3",
+                            "g8f6",
+                            "e4e5",
+                            "f6d7",
+                            "c3e2",
+                            "c7c5",
+                            "c2c3",
+                            "d8a5",
+                            "g1f3",
+                            "b8c6",
+                            "c1d2",
+                            "a5b6",
+                            "a1b1",
+                            "f8e7",
+                            "h2h4"
+                          ]
+                        }
+                      ]
+                    },
+                    "quality": "mobile-maia-full-review-v2:14:1000"
+                  }
+                ]
+              }
+            ]
+          },
+          "v7": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 1,
+            "version": "mute-chess-brilliant-v7"
+          },
+          "v6": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 1,
+            "version": "mute-chess-brilliant-v6"
+          },
+          "ec_direct": ""
+        }
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "game_id": "synthetic-start-e4-e5",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "depth": 14,
+      "movetime": 1000,
+      "multiPV": 2,
+      "new_session": true,
+      "elapsed_ms": 53.08962500000001,
+      "last_info": "info depth 14 seldepth 21 multipv 2 score cp 32 nodes 62285 nps 1197788 hashfull 26 tbhits 0 time 52 pv e2e4 c7c5 b1c3 b8c6 g1f3 e7e5 f1c4 f8e7 a2a4 d7d6 e1g1 g8f6 d2d3 e8g8",
+      "bestmove": "bestmove d2d4 ponder d7d5",
+      "review": {
+        "current": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": 34,
+              "moves": [
+                "d2d4",
+                "d7d5",
+                "c2c4",
+                "e7e6",
+                "g1f3",
+                "f8e7",
+                "b1c3",
+                "g8f6",
+                "c1f4",
+                "e8g8",
+                "e2e3",
+                "c7c5",
+                "d4c5",
+                "e7c5",
+                "c4d5",
+                "f6d5",
+                "c3d5",
+                "e6d5"
+              ]
+            },
+            {
+              "cp": 32,
+              "moves": [
+                "e2e4",
+                "c7c5",
+                "b1c3",
+                "b8c6",
+                "g1f3",
+                "e7e5",
+                "f1c4",
+                "f8e7",
+                "a2a4",
+                "d7d6",
+                "e1g1",
+                "g8f6",
+                "d2d3",
+                "e8g8"
+              ]
+            }
+          ]
+        },
+        "previous": {
+          "depth": 13,
+          "lines": [
+            {
+              "cp": 34,
+              "moves": [
+                "e2e4",
+                "c7c5",
+                "g1f3",
+                "b8c6",
+                "b1c3",
+                "e7e5",
+                "f1c4",
+                "d7d6",
+                "e1g1"
+              ]
+            },
+            {
+              "cp": 24,
+              "moves": [
+                "d2d4",
+                "d7d5",
+                "c2c4",
+                "e7e6",
+                "g1f3",
+                "g8f6",
+                "b1c3",
+                "f8e7"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "game_id": "synthetic-start-e4-e5",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "depth": 14,
+      "movetime": 1000,
+      "multiPV": 2,
+      "new_session": false,
+      "elapsed_ms": 103.25512499999996,
+      "last_info": "info depth 14 seldepth 26 multipv 2 score cp -34 nodes 143743 nps 1395563 hashfull 46 tbhits 0 time 103 pv e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 g8f6 d4c6 b7c6 b1c3 f8b4 f1d3 d7d5 e4e5 f6g4 e1g1 e8g8 a2a3",
+      "bestmove": "bestmove e7e6 ponder g1f3",
+      "review": {
+        "current": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": 28,
+              "moves": [
+                "e7e6",
+                "g1f3",
+                "d7d5",
+                "b1c3",
+                "g8f6",
+                "e4e5",
+                "f6d7",
+                "c3e2",
+                "c7c5",
+                "c2c3",
+                "c5c4",
+                "d2d4",
+                "c4d3",
+                "e2f4",
+                "b8c6",
+                "f4d3"
+              ]
+            },
+            {
+              "cp": 34,
+              "moves": [
+                "e7e5",
+                "g1f3",
+                "b8c6",
+                "d2d4",
+                "e5d4",
+                "f3d4",
+                "g8f6",
+                "d4c6",
+                "b7c6",
+                "b1c3",
+                "f8b4",
+                "f1d3",
+                "d7d5",
+                "e4e5",
+                "f6g4",
+                "e1g1",
+                "e8g8",
+                "a2a3"
+              ]
+            }
+          ]
+        },
+        "previous": {
+          "depth": 13,
+          "lines": [
+            {
+              "cp": 33,
+              "moves": [
+                "e7e5",
+                "g1f3",
+                "b8c6",
+                "d2d4",
+                "e5d4",
+                "f3d4",
+                "g8f6",
+                "d4c6",
+                "b7c6",
+                "d1d4",
+                "c6c5",
+                "d4e5",
+                "d8e7",
+                "e5e7",
+                "f8e7",
+                "b1c3",
+                "e8g8"
+              ]
+            },
+            {
+              "cp": 40,
+              "moves": [
+                "e7e6",
+                "d2d4",
+                "d7d5",
+                "b1c3",
+                "g8f6",
+                "e4e5",
+                "f6d7",
+                "c3e2",
+                "c7c5",
+                "c2c3",
+                "d8a5",
+                "g1f3",
+                "b8c6",
+                "c1d2",
+                "a5b6",
+                "a1b1",
+                "f8e7",
+                "h2h4"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "game_id": "synthetic-start-e4-e5",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "depth": 14,
+      "movetime": 1000,
+      "multiPV": 2,
+      "new_session": false,
+      "elapsed_ms": 132.039042,
+      "last_info": "info depth 14 seldepth 23 multipv 2 score cp 13 nodes 167098 nps 1265893 hashfull 59 tbhits 0 time 132 pv b1c3 b8c6 g1f3 g8f6 d2d4 e5d4 c3d5 f8e7 c1f4 d7d6 f3d4 c6d4 d1d4 f6d5",
+      "bestmove": "bestmove g1f3 ponder b8c6",
+      "review": {
+        "current": {
+          "depth": 14,
+          "lines": [
+            {
+              "cp": 29,
+              "moves": [
+                "g1f3",
+                "b8c6",
+                "d2d4",
+                "e5d4",
+                "f3d4",
+                "g8f6",
+                "d4c6",
+                "b7c6",
+                "f1d3",
+                "d7d5",
+                "d1e2",
+                "d5e4",
+                "d3e4",
+                "f6e4",
+                "e2e4",
+                "f8e7",
+                "c1g5"
+              ]
+            },
+            {
+              "cp": 13,
+              "moves": [
+                "b1c3",
+                "b8c6",
+                "g1f3",
+                "g8f6",
+                "d2d4",
+                "e5d4",
+                "c3d5",
+                "f8e7",
+                "c1f4",
+                "d7d6",
+                "f3d4",
+                "c6d4",
+                "d1d4",
+                "f6d5"
+              ]
+            }
+          ]
+        },
+        "previous": {
+          "depth": 13,
+          "lines": [
+            {
+              "cp": 31,
+              "moves": [
+                "g1f3",
+                "b8c6",
+                "d2d4",
+                "e5d4",
+                "f3d4",
+                "g8f6",
+                "d4c6",
+                "b7c6",
+                "f1d3",
+                "d7d5",
+                "d1e2",
+                "c8g4",
+                "f2f3",
+                "g4e6",
+                "e4e5"
+              ]
+            },
+            {
+              "cp": 19,
+              "moves": [
+                "b1c3",
+                "b8c6",
+                "g1f3",
+                "g8f6",
+                "f1b5",
+                "f8d6",
+                "d2d4",
+                "e5d4",
+                "f3d4",
+                "e8g8",
+                "d4f5",
+                "d6e5",
+                "c1g5",
+                "e5c3",
+                "b2c3",
+                "d7d5"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

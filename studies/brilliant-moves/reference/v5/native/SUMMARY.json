@@ -1,0 +1,36 @@
+{
+  "scope": "Bounded native draft TS port;1048fixed savedSF18 cases only; no model fitting or upstream rule changes. NativeSF19/variable budgets remain unvalidated.",
+  "completed_at_utc": "2026-11-03T11:02:55.729849+00:00",
+  "cases": 1048,
+  "development_cases": 848,
+  "fresh_cases": 200,
+  "features": 75,
+  "window_feature_values": 157200,
+  "nonfloating_feature_or_missingness_mismatch_cases": 0,
+  "max_floating_feature_difference": 2.842170943040401e-14,
+  "score_or_award_differences_tolerance_1e_minus12": 0,
+  "integrated_native_v5_brilliant_differences": 0,
+  "native_EC_full_result_differences": 0,
+  "model_byte_equal": true,
+  "source_sha256": "ae072a49d00004f5b773f4e47afcd074bd167724ea2edceead51c2d90ed6b875",
+  "model_sha256": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+  "model_bytes": 1296626,
+  "last_joint_benchmark_ms": 13041,
+  "last_joint_peak_rss_kib": 196032,
+  "no_probe_timeouts_observed": true,
+  "strict_isolated_typecheck": "pass",
+  "oxfmt": "pass",
+  "focused_contract_tests": {
+    "passed": true,
+    "checks": [
+      "missing quality cannot award",
+      "NaN/Infinity predictors rejected",
+      "confirmation overrides only second window",
+      "lower-depth confirmation rejected",
+      "mismatched quality rejected",
+      "legacy two-position missing prior features",
+      "missing prior iteration cannot award",
+      "castling/EP/promotion board flags and absent-engine abstention"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "saved_at": "2026-11-03T04:58:42.085016+00:00",
+  "reason": "Chrome extension/provider interrupted; all UI collection paused pending user reconnect.",
+  "imported": [
+    {
+      "file": "gothamchess-reviews-01.json",
+      "observations_processed": 4,
+      "unselected_records_skipped": 0,
+      "excluded_known_games_skipped": []
+    },
+    {
+      "file": "hansen-reviews-01.json",
+      "observations_processed": 62,
+      "unselected_records_skipped": 0,
+      "excluded_known_games_skipped": []
+    },
+    {
+      "file": "knvb-reviews-01.json",
+      "observations_processed": 40,
+      "unselected_records_skipped": 0,
+      "excluded_known_games_skipped": []
+    },
+    {
+      "file": "nelsi-reviews-01.json",
+      "observations_processed": 4,
+      "unselected_records_skipped": 0,
+      "excluded_known_games_skipped": []
+    }
+  ],
+  "progress": {
+    "per_account": {
+      "nelsi": {
+        "fresh_brilliant": 2,
+        "fresh_non_brilliant": 2
+      },
+      "hansen": {
+        "fresh_brilliant": 30,
+        "fresh_non_brilliant": 30
+      },
+      "KNVB": {
+        "fresh_brilliant": 20,
+        "fresh_non_brilliant": 19
+      },
+      "GothamChess": {
+        "fresh_brilliant": 2,
+        "fresh_non_brilliant": 2
+      },
+      "Hikaru": {
+        "fresh_brilliant": 0,
+        "fresh_non_brilliant": 0
+      }
+    },
+    "primary_unique_moves": 107,
+    "primary_fresh_brilliant": 54,
+    "primary_fresh_non_brilliant": 53,
+    "primary_moves_with_captured_board_identity": 107,
+    "primary_moves_with_board_missing": 0,
+    "pending_identity_or_pgn": [],
+    "reserve_or_conflicting_moves": [],
+    "target_complete": false
+  },
+  "validation": {
+    "games": 307,
+    "observations": 261,
+    "raw_evidence_versions": 263,
+    "metadata_enrichment_revisions": 2,
+    "indexing_mismatches": [],
+    "observations_waiting_for_pgn": [],
+    "fresh_binary_label_conflicts": [],
+    "gallery_fresh_disagreements": [
+      {
+        "game_id": "171728719428",
+        "ply": 106,
+        "statuses": "gallery_brilliant,fresh_confirmed_non_brilliant"
+      }
+    ]
+  },
+  "selected_known_fen_hits": [],
+  "cross_partition_overlap_groups": 0,
+  "coach_quality": {
+    "text_present": 103,
+    "ends_with_sentence_punctuation": 96,
+    "has_explicit_capture_status": 107,
+    "explicitly_recorded_visible_complete": 95,
+    "note": "Nonempty text and terminal punctuation do not prove completeness. Legacy typewriter-animation captures may be partial; raw text and capture timestamps are unchanged."
+  },
+  "checkpoint_peak_rss_bytes": 44466176
+}

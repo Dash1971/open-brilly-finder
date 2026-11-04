@@ -1,0 +1,38 @@
+{
+  "status": "frozen_before_feature_extraction_or_outcome_summaries",
+  "frozen_at_utc": "2026-11-04T02:12:06.528463+00:00",
+  "extract_script_sha256": "733719981ec99330bfce6d95b7d80bab70c4ad7827f08afab32fe5254df83775",
+  "source_sha256": {
+    "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/pv-trajectory-experiment/source-pack/after-snapshots.jsonl.gz": "5d22309176794a81ac6294164c8166f9e202f90d90fcece814ad86d533baa1ad",
+    "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/pv-trajectory-experiment/source-pack/games.jsonl.gz": "c2e396b22fe33e1701c0cc5509a5b3419f6c35d1b356c27dbaf05568d5e8c24a",
+    "research/brilliant-conditional-gap-2026-11-04/ENGINE-EVIDENCE.jsonl": "d81a5cb5cc2883bd28291286763a4a4762b69297b2b1d0cf3983ace248e74aee",
+    "research/brilliant-conditional-gap-2026-11-04/GAP-FEATURES.json": "fa84e03661767c40c722ee561cb86de4f0d3d0656184b2dc70c0dd9faa34a394",
+    "research/brilliant-matched-sacrifices-2026-11-04/PROBES.json": "2c7b0b4cc49d81c3008a56f7a77659198d51c11f61ec21ef2ab3fc82b43197b8"
+  },
+  "bundle": [
+    "material_debt6_cp",
+    "material_debt12_cp",
+    "recovered_by12",
+    "first_recovery_ply",
+    "acceptance_mate_outcome",
+    "terminal_draw_by12",
+    "initial_debt_cp"
+  ],
+  "windows": [
+    "current",
+    "previous"
+  ],
+  "cases": 3724,
+  "evidence_cases": 1320,
+  "offers": 1481,
+  "selection": "All offer snapshots for a window must be complete. Minimum mover-perspective saved best-response score, same prior gap mate rank, UCI tie break. Assert exact selected acceptance and depth against GAP-FEATURES. No ratings/truth use.",
+  "material": "Signed loss relative to balance BEFORE played move, mover perspective. Pawn90 knight/bishop300 rook500 queen1000. Acceptance is ply1; own replies are even plies. Physical balance retained for mates.",
+  "horizons": "Use acceptance plus saved best PV only. At plies6/12 use exact physical debt, or extend the actual automatic terminal position unchanged. Null for truncated nonterminal PV.",
+  "recovery": "For strictly positive initial_debt only: first own reply at plies2..12 with debt<=0. recovered_by12=1 if found,0 only when fully observed12 or automatic terminal without recovery; otherwise null. first_recovery_ply=null when no known recovery. initial_debt<=0 => both recovery features null with diagnostic reason.",
+  "mate_outcome": "Saved best-line mate score multiplied by mover color sign gives +1 or -1, finite cp gives0. Independent of PV truncation and physical debt.",
+  "terminal_draw": "python-chess outcome(claim_draw=False), replay full original PGN history. Automatic stalemate, insufficient material, fivefold repetition, 75moves are draws.1 for draw within12;0 for full12 nonterminal or actual terminal mate within12;otherwise null. Claimable threefold/50moves do not terminate.",
+  "missing": "No qualifying offer, unknown offer mapping, or any incomplete acceptance snapshot window => all seven null. Missingness is explicit null, not0.",
+  "validation": "Legal full saved PV; source FEN/PGN/history hashes; exact prior gap selection; current selected acceptance trace comparison to saved48 pilot PROBES; focused missingness and automatic terminal examples.",
+  "output_schema": "TRAJECTORY-FEATURES: {case_key:{current:{feature_name:number|null},previous:{feature_name:number|null}}}. EXTRACTION diagnostics contain reasons, selected UCI/depth, full observed <=12 trace with FEN/history hash, terminal outcomes. No model scoring."
+}

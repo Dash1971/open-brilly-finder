@@ -1,0 +1,3058 @@
+{
+  "172291845278:66": {
+    "features": {
+      "current": {
+        "nonmate_material_win": 0
+      },
+      "previous": {
+        "nonmate_material_win": 0
+      }
+    },
+    "traces": {
+      "current": {
+        "reason": "no_saved_material_win_witness",
+        "captures": [
+          {
+            "acceptance": "a2b3",
+            "mate_in_one_witnesses": [
+              "b1b3"
+            ],
+            "legal_response_count": 25,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "b1b3",
+                    "san": "Qxb3#",
+                    "gain_cp": -410,
+                    "fen": "6k1/6p1/3P3p/8/p1PR4/1qK2N2/3R2PP/8 w - - 0 35",
+                    "history_sha256": "6ddc6a1e8837d6bfa2b70e768476d6fe087281f4681cd8c6b3281dcc8ecbfa75"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": 618
+                },
+                "saved_pv_plies": 22,
+                "gain12_cp": -1410,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "b1a1",
+                    "san": "Qa1+",
+                    "gain_cp": -500,
+                    "fen": "6k1/6p1/3P3p/8/p1PR4/1PK2N2/3R2PP/q7 w - - 1 35",
+                    "history_sha256": "e44f4c47505b1b92f1e6a8addd734717496d2e8f51c4c5bc1f7cbb07922abc72"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "c3b4",
+                    "san": "Kb4",
+                    "gain_cp": -500,
+                    "fen": "6k1/6p1/3P3p/8/pKPR4/1P3N2/3R2PP/q7 b - - 2 35",
+                    "history_sha256": "a0546d38d0247f628356a65ddd786e0748575798b307c625e1fd389242cfda08"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "a4b3",
+                    "san": "axb3",
+                    "gain_cp": -410,
+                    "fen": "6k1/6p1/3P3p/8/1KPR4/1p3N2/3R2PP/q7 w - - 0 36",
+                    "history_sha256": "e2c5dec0f84e38a12068e723b4fdda6a4b6fd4fa21113195a5bcf40d7c2af1f8"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "b4b3",
+                    "san": "Kxb3",
+                    "gain_cp": -500,
+                    "fen": "6k1/6p1/3P3p/8/2PR4/1K3N2/3R2PP/q7 b - - 0 36",
+                    "history_sha256": "52623c2b0171733e54221e83963fef52c7950f49880bac4ff29239137e64ac77"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "g8h7",
+                    "san": "Kh7",
+                    "gain_cp": -500,
+                    "fen": "8/6pk/3P3p/8/2PR4/1K3N2/3R2PP/q7 w - - 1 37",
+                    "history_sha256": "e27fcab264b96a85d699375a4eba6006fc11745de06c46f9d02f7201194d45a0"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "d6d7",
+                    "san": "d7",
+                    "gain_cp": -500,
+                    "fen": "8/3P2pk/7p/8/2PR4/1K3N2/3R2PP/q7 b - - 0 37",
+                    "history_sha256": "f3c23c15eea5d899243f508e5a8126c0a3647355153238d584577800c31030cd"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "a1a7",
+                    "san": "Qa7",
+                    "gain_cp": -500,
+                    "fen": "8/q2P2pk/7p/8/2PR4/1K3N2/3R2PP/8 w - - 1 38",
+                    "history_sha256": "8d3b234b70e166f04b3dce93d1b7968a02c1bac525d7278762f3767ea74cde12"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "d7d8q",
+                    "san": "d8=Q",
+                    "gain_cp": -1410,
+                    "fen": "3Q4/q5pk/7p/8/2PR4/1K3N2/3R2PP/8 b - - 0 38",
+                    "history_sha256": "a0fe1131d0ce002d4a72b833c37204c4fd614b148b1f4e430f3c9ff31ff071f9"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "a7b7",
+                    "san": "Qb7+",
+                    "gain_cp": -1410,
+                    "fen": "3Q4/1q4pk/7p/8/2PR4/1K3N2/3R2PP/8 w - - 1 39",
+                    "history_sha256": "b7db737ee94e0b1e8586eabadf3c126ba8a3e184f70bec44068b9a963ba811bd"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "b3c3",
+                    "san": "Kc3",
+                    "gain_cp": -1410,
+                    "fen": "3Q4/1q4pk/7p/8/2PR4/2K2N2/3R2PP/8 b - - 2 39",
+                    "history_sha256": "e1d512956df6d3083df5c6cafa2cc5144bd453395e796e5864bf660ecfe2eeaa"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "b7a6",
+                    "san": "Qa6",
+                    "gain_cp": -1410,
+                    "fen": "3Q4/6pk/q6p/8/2PR4/2K2N2/3R2PP/8 w - - 3 40",
+                    "history_sha256": "0884940ccbd2dc72b38b7f2d7cf3bb3003fd3544d085f61f7c6db8a6ba741753"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 18
+          }
+        ]
+      },
+      "previous": {
+        "reason": "no_saved_material_win_witness",
+        "captures": [
+          {
+            "acceptance": "a2b3",
+            "mate_in_one_witnesses": [
+              "b1b3"
+            ],
+            "legal_response_count": 25,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "b1b3",
+                    "san": "Qxb3#",
+                    "gain_cp": -410,
+                    "fen": "6k1/6p1/3P3p/8/p1PR4/1qK2N2/3R2PP/8 w - - 0 35",
+                    "history_sha256": "6ddc6a1e8837d6bfa2b70e768476d6fe087281f4681cd8c6b3281dcc8ecbfa75"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": 564
+                },
+                "saved_pv_plies": 16,
+                "gain12_cp": -500,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "b1a1",
+                    "san": "Qa1+",
+                    "gain_cp": -500,
+                    "fen": "6k1/6p1/3P3p/8/p1PR4/1PK2N2/3R2PP/q7 w - - 1 35",
+                    "history_sha256": "e44f4c47505b1b92f1e6a8addd734717496d2e8f51c4c5bc1f7cbb07922abc72"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "c3b4",
+                    "san": "Kb4",
+                    "gain_cp": -500,
+                    "fen": "6k1/6p1/3P3p/8/pKPR4/1P3N2/3R2PP/q7 b - - 2 35",
+                    "history_sha256": "a0546d38d0247f628356a65ddd786e0748575798b307c625e1fd389242cfda08"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "a4b3",
+                    "san": "axb3",
+                    "gain_cp": -410,
+                    "fen": "6k1/6p1/3P3p/8/1KPR4/1p3N2/3R2PP/q7 w - - 0 36",
+                    "history_sha256": "e2c5dec0f84e38a12068e723b4fdda6a4b6fd4fa21113195a5bcf40d7c2af1f8"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "b4b3",
+                    "san": "Kxb3",
+                    "gain_cp": -500,
+                    "fen": "6k1/6p1/3P3p/8/2PR4/1K3N2/3R2PP/q7 b - - 0 36",
+                    "history_sha256": "52623c2b0171733e54221e83963fef52c7950f49880bac4ff29239137e64ac77"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "a1b1",
+                    "san": "Qb1+",
+                    "gain_cp": -500,
+                    "fen": "6k1/6p1/3P3p/8/2PR4/1K3N2/3R2PP/1q6 w - - 1 37",
+                    "history_sha256": "89d2abb13f1a27668fb6084dcfd9143488f47201ea8ac52c2fe02d7f3411e27c"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "d2b2",
+                    "san": "Rb2",
+                    "gain_cp": -500,
+                    "fen": "6k1/6p1/3P3p/8/2PR4/1K3N2/1R4PP/1q6 b - - 2 37",
+                    "history_sha256": "6229bea60a072cae5f13dfb1214ddfaff531c7e987d8cfc08d67259beb58dbe4"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "b1g6",
+                    "san": "Qg6",
+                    "gain_cp": -500,
+                    "fen": "6k1/6p1/3P2qp/8/2PR4/1K3N2/1R4PP/8 w - - 3 38",
+                    "history_sha256": "43efa5d1f4e0783821d156e4df5bcc4bd5a1c14beb8a52a3f52bfaab5507244f"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "d6d7",
+                    "san": "d7",
+                    "gain_cp": -500,
+                    "fen": "6k1/3P2p1/6qp/8/2PR4/1K3N2/1R4PP/8 b - - 0 38",
+                    "history_sha256": "0ff2b96d8a9ff93940e9fc218a7f16c7a08d5f343722231d96ef02f8295c09b2"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "g6b6",
+                    "san": "Qb6+",
+                    "gain_cp": -500,
+                    "fen": "6k1/3P2p1/1q5p/8/2PR4/1K3N2/1R4PP/8 w - - 1 39",
+                    "history_sha256": "0092f4db9779d5d7b442711d8784f4aa97529de89b9e3dc0266ed4ab0be5a572"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "b3c2",
+                    "san": "Kc2",
+                    "gain_cp": -500,
+                    "fen": "6k1/3P2p1/1q5p/8/2PR4/5N2/1RK3PP/8 b - - 2 39",
+                    "history_sha256": "e5240c7f03dcc967e93c0f01044f0cf9331dff4f761937fd1b0c9595d18994dd"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "b6a6",
+                    "san": "Qa6",
+                    "gain_cp": -500,
+                    "fen": "6k1/3P2p1/q6p/8/2PR4/5N2/1RK3PP/8 w - - 3 40",
+                    "history_sha256": "542ba271d40f37e6e0a079f2d7148af8be28585e416c4d330eb4ca74711519cf"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 17
+          }
+        ]
+      }
+    }
+  },
+  "184710314858:52": {
+    "features": {
+      "current": {
+        "nonmate_material_win": 0
+      },
+      "previous": {
+        "nonmate_material_win": 0
+      }
+    },
+    "traces": {
+      "current": {
+        "reason": "no_saved_material_win_witness",
+        "captures": [
+          {
+            "acceptance": "a6a5",
+            "mate_in_one_witnesses": [
+              "c8c1"
+            ],
+            "legal_response_count": 33,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "c8c1",
+                    "san": "Rxc1#",
+                    "gain_cp": -500,
+                    "fen": "8/5pkp/3b2n1/Rp4Q1/3P4/P3P3/1P3PPP/2r3K1 w - - 0 28",
+                    "history_sha256": "1a3801d9e1568c9b556410c4234e3a894f802888c5ee407336c2397ee8fa241b"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": 650
+                },
+                "saved_pv_plies": 15,
+                "gain12_cp": -510,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "c8e8",
+                    "san": "Re8",
+                    "gain_cp": -1000,
+                    "fen": "4r3/5pkp/3b2n1/Rp4Q1/3P4/P3P3/1P3PPP/2R3K1 w - - 1 28",
+                    "history_sha256": "a6da5f1639a739813727dde1226113abfa0172bd83a565bd37c35515386bf612"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "a5a7",
+                    "san": "Ra7",
+                    "gain_cp": -1000,
+                    "fen": "4r3/R4pkp/3b2n1/1p4Q1/3P4/P3P3/1P3PPP/2R3K1 b - - 2 28",
+                    "history_sha256": "7c4dad0abb384923a8ab3f125cb672aab21c14cc01b27e99d97b6cb36a24a331"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "d6f4",
+                    "san": "Bf4",
+                    "gain_cp": -1000,
+                    "fen": "4r3/R4pkp/6n1/1p4Q1/3P1b2/P3P3/1P3PPP/2R3K1 w - - 3 29",
+                    "history_sha256": "5e77bcc15c2fee0d24e5c4ba3d3e5c0231eeeb3f638b4890482d89f0daa8da1e"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "g5f4",
+                    "san": "Qxf4",
+                    "gain_cp": -1300,
+                    "fen": "4r3/R4pkp/6n1/1p6/3P1Q2/P3P3/1P3PPP/2R3K1 b - - 0 29",
+                    "history_sha256": "862b3087a956682876a20c5571a75e103591f7f057d319652d5b96757338f198"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "g6f4",
+                    "san": "Nxf4",
+                    "gain_cp": -300,
+                    "fen": "4r3/R4pkp/8/1p6/3P1n2/P3P3/1P3PPP/2R3K1 w - - 0 30",
+                    "history_sha256": "61ffc7442ce4648528a008f0c89bc45ffcfac318ca3a2a776818ac37391a623f"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "e3f4",
+                    "san": "exf4",
+                    "gain_cp": -600,
+                    "fen": "4r3/R4pkp/8/1p6/3P1P2/P7/1P3PPP/2R3K1 b - - 0 30",
+                    "history_sha256": "4872745e00d3a4258eb334e06a060f77d7ffb07c928cd030ccc23b99d1fc8c54"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "e8e2",
+                    "san": "Re2",
+                    "gain_cp": -600,
+                    "fen": "8/R4pkp/8/1p6/3P1P2/P7/1P2rPPP/2R3K1 w - - 1 31",
+                    "history_sha256": "a6e384c0d4a8afca6831f788a863cf61142d573438d44a3ed7e9d4c2f60f048a"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "a7b7",
+                    "san": "Rb7",
+                    "gain_cp": -600,
+                    "fen": "8/1R3pkp/8/1p6/3P1P2/P7/1P2rPPP/2R3K1 b - - 2 31",
+                    "history_sha256": "16a73a17841b7c7d11d72e7f334b4646ea57c6fef634c4882f55bad0077ecb7b"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "e2b2",
+                    "san": "Rxb2",
+                    "gain_cp": -510,
+                    "fen": "8/1R3pkp/8/1p6/3P1P2/P7/1r3PPP/2R3K1 w - - 0 32",
+                    "history_sha256": "605d95323056e22e8ec6a8771e540ccc3b771c92bcaaa66affd5aca6acf69456"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "h2h3",
+                    "san": "h3",
+                    "gain_cp": -510,
+                    "fen": "8/1R3pkp/8/1p6/3P1P2/P6P/1r3PP1/2R3K1 b - - 0 32",
+                    "history_sha256": "59170f12797b168679291d8b5a93d0caaaad1140ec7616947572320f07890573"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "b2a2",
+                    "san": "Ra2",
+                    "gain_cp": -510,
+                    "fen": "8/1R3pkp/8/1p6/3P1P2/P6P/r4PP1/2R3K1 w - - 1 33",
+                    "history_sha256": "433bf38b417f48157ae455bac82692ab31c64fa252e9e10aa2f9a041b249ac35"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 17
+          },
+          {
+            "acceptance": "a6d6",
+            "mate_in_one_witnesses": [
+              "c8c1"
+            ],
+            "legal_response_count": 34,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "c8c1",
+                    "san": "Rxc1#",
+                    "gain_cp": 200,
+                    "fen": "8/5pkp/3R2n1/qp4Q1/3P4/P3P3/1P3PPP/2r3K1 w - - 0 28",
+                    "history_sha256": "8001d2ca6341314ee70174539148307d1a2db72d2ef96f44a2fcd4009c6c27dd"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": 434
+                },
+                "saved_pv_plies": 17,
+                "gain12_cp": -100,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "a5d8",
+                    "san": "Qd8",
+                    "gain_cp": -300,
+                    "fen": "2rq4/5pkp/3R2n1/1p4Q1/3P4/P3P3/1P3PPP/2R3K1 w - - 1 28",
+                    "history_sha256": "532d569b9971cfc60470243e9fb31612aed64717d9ae29880274168c26a81146"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "d6g6",
+                    "san": "Rxg6+",
+                    "gain_cp": -600,
+                    "fen": "2rq4/5pkp/6R1/1p4Q1/3P4/P3P3/1P3PPP/2R3K1 b - - 0 28",
+                    "history_sha256": "ab189ab595651a71097dce201e388dc77b9d86a5c33d56c24e1e5b8400ee989c"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "h7g6",
+                    "san": "hxg6",
+                    "gain_cp": -100,
+                    "fen": "2rq4/5pk1/6p1/1p4Q1/3P4/P3P3/1P3PPP/2R3K1 w - - 0 29",
+                    "history_sha256": "718acf0bda63ed0c131943caa61d32fd18cc59c3db99f099b51887a900020dc8"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "g5e5",
+                    "san": "Qe5+",
+                    "gain_cp": -100,
+                    "fen": "2rq4/5pk1/6p1/1p2Q3/3P4/P3P3/1P3PPP/2R3K1 b - - 1 29",
+                    "history_sha256": "392153ebf46359579de30c85f7d54f808703b53dfd7a0438ab75f2ea4bea2b55"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "f7f6",
+                    "san": "f6",
+                    "gain_cp": -100,
+                    "fen": "2rq4/6k1/5pp1/1p2Q3/3P4/P3P3/1P3PPP/2R3K1 w - - 0 30",
+                    "history_sha256": "8d8dbf9987d59ca7da89d201325e8d3e54eec8b4b76878f54101900921b1ad6d"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "c1c8",
+                    "san": "Rxc8",
+                    "gain_cp": -600,
+                    "fen": "2Rq4/6k1/5pp1/1p2Q3/3P4/P3P3/1P3PPP/6K1 b - - 0 30",
+                    "history_sha256": "52eff2ebfdffe5eabe2000db127375770d9561932edb024c845f22858f991127"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "d8c8",
+                    "san": "Qxc8",
+                    "gain_cp": -100,
+                    "fen": "2q5/6k1/5pp1/1p2Q3/3P4/P3P3/1P3PPP/6K1 w - - 0 31",
+                    "history_sha256": "e8849454f0885d56c5b6023afbdeb080a1230aeec053cfb8d4c33c17b8e70add"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "e5c5",
+                    "san": "Qc5",
+                    "gain_cp": -100,
+                    "fen": "2q5/6k1/5pp1/1pQ5/3P4/P3P3/1P3PPP/6K1 b - - 1 31",
+                    "history_sha256": "b371d175bcc4b5f2ca99eda739aa2ba9f4ada5489e115ead196d8b90d9d8bd8e"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "c8d7",
+                    "san": "Qd7",
+                    "gain_cp": -100,
+                    "fen": "8/3q2k1/5pp1/1pQ5/3P4/P3P3/1P3PPP/6K1 w - - 2 32",
+                    "history_sha256": "cf7499f4fdbddbcbf75524d729a73e5573f8d358bcfc678a119be2014a7b3425"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "c5c1",
+                    "san": "Qc1",
+                    "gain_cp": -100,
+                    "fen": "8/3q2k1/5pp1/1p6/3P4/P3P3/1P3PPP/2Q3K1 b - - 3 32",
+                    "history_sha256": "0226bfd2aa346112267fed0ef067eab0a67c5260c3f79c0a085c27873c5ea968"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "b5b4",
+                    "san": "b4",
+                    "gain_cp": -100,
+                    "fen": "8/3q2k1/5pp1/8/1p1P4/P3P3/1P3PPP/2Q3K1 w - - 0 33",
+                    "history_sha256": "ab46dcd1327d19b879d8fc7d0d56dd15a3d5dff346c2c32e7bdec0f7bb9ed593"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 18
+          },
+          {
+            "acceptance": "c1c8",
+            "mate_in_one_witnesses": [
+              "a5e1"
+            ],
+            "legal_response_count": 26,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "a5e1",
+                    "san": "Qe1#",
+                    "gain_cp": -500,
+                    "fen": "2R5/5pkp/R2b2n1/1p4Q1/3P4/P3P3/1P3PPP/4q1K1 w - - 1 28",
+                    "history_sha256": "3fa983a53ab9978ab010cffca178fd0ee0432417a8e92a5abcc7559f53916519"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": 301
+                },
+                "saved_pv_plies": 17,
+                "gain12_cp": 0,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "a5a6",
+                    "san": "Qxa6",
+                    "gain_cp": 0,
+                    "fen": "2R5/5pkp/q2b2n1/1p4Q1/3P4/P3P3/1P3PPP/6K1 w - - 0 28",
+                    "history_sha256": "9a51067d882473553475a694d4d0c8e3d29e148d77fccf6c7d4e6e285934540c"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "c8c1",
+                    "san": "Rc1",
+                    "gain_cp": 0,
+                    "fen": "8/5pkp/q2b2n1/1p4Q1/3P4/P3P3/1P3PPP/2R3K1 b - - 1 28",
+                    "history_sha256": "04063621cd9e1e9fd9d4f040ef7a5b21941d4baeab284dfbf2f85836e0b29da0"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "b5b4",
+                    "san": "b4",
+                    "gain_cp": 0,
+                    "fen": "8/5pkp/q2b2n1/6Q1/1p1P4/P3P3/1P3PPP/2R3K1 w - - 0 29",
+                    "history_sha256": "b7c60225d539e9717f7db6b2d114c40d67cfd90c94f9a6bec553fc1b5e301f78"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "a3b4",
+                    "san": "axb4",
+                    "gain_cp": -90,
+                    "fen": "8/5pkp/q2b2n1/6Q1/1P1P4/4P3/1P3PPP/2R3K1 b - - 0 29",
+                    "history_sha256": "5fce2bbd5e3eb8dc62d15f656b2459b55a2ed2f24b6a0ab41cb1c70e3087be8c"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "a6e2",
+                    "san": "Qe2",
+                    "gain_cp": -90,
+                    "fen": "8/5pkp/3b2n1/6Q1/1P1P4/4P3/1P2qPPP/2R3K1 w - - 1 30",
+                    "history_sha256": "87e3021e19e7f3329ffb8c9bf35b0f66b08682e7dc7f5e864354d2213cfb9609"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "g5f5",
+                    "san": "Qf5",
+                    "gain_cp": -90,
+                    "fen": "8/5pkp/3b2n1/5Q2/1P1P4/4P3/1P2qPPP/2R3K1 b - - 2 30",
+                    "history_sha256": "8ef2ece43a3fa6ce973780179eea8c1e3ad40d6e1858603f827f691e437d1d74"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "d6b4",
+                    "san": "Bxb4",
+                    "gain_cp": 0,
+                    "fen": "8/5pkp/6n1/5Q2/1b1P4/4P3/1P2qPPP/2R3K1 w - - 0 31",
+                    "history_sha256": "afcf92ac37fc1b2400febfb6e1511f5131ee679a0a2be0c1d95d86d7af7b28d0"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "f5c2",
+                    "san": "Qc2",
+                    "gain_cp": 0,
+                    "fen": "8/5pkp/6n1/8/1b1P4/4P3/1PQ1qPPP/2R3K1 b - - 1 31",
+                    "history_sha256": "b215972003459a62d9d5cb7dc20bdc7d37f9c79457512fc439a256d393f5c54b"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "e2g4",
+                    "san": "Qg4",
+                    "gain_cp": 0,
+                    "fen": "8/5pkp/6n1/8/1b1P2q1/4P3/1PQ2PPP/2R3K1 w - - 2 32",
+                    "history_sha256": "3e97190626484b05292d295cc647b9127ff2cc78f8871711efe5700637b0b59f"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "c2d1",
+                    "san": "Qd1",
+                    "gain_cp": 0,
+                    "fen": "8/5pkp/6n1/8/1b1P2q1/4P3/1P3PPP/2RQ2K1 b - - 3 32",
+                    "history_sha256": "f6b4a79045dd15038fd737249e64f8727ccea64ab968d336d7addb9b8e7b9959"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "g4e6",
+                    "san": "Qe6",
+                    "gain_cp": 0,
+                    "fen": "8/5pkp/4q1n1/8/1b1P4/4P3/1P3PPP/2RQ2K1 w - - 4 33",
+                    "history_sha256": "bc8989c39135ba0f0dcac293bd7d4e59db990cff163e38fd2883f62caefd3408"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 19
+          }
+        ]
+      },
+      "previous": {
+        "reason": "no_saved_material_win_witness",
+        "captures": [
+          {
+            "acceptance": "a6a5",
+            "mate_in_one_witnesses": [
+              "c8c1"
+            ],
+            "legal_response_count": 33,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "c8c1",
+                    "san": "Rxc1#",
+                    "gain_cp": -500,
+                    "fen": "8/5pkp/3b2n1/Rp4Q1/3P4/P3P3/1P3PPP/2r3K1 w - - 0 28",
+                    "history_sha256": "1a3801d9e1568c9b556410c4234e3a894f802888c5ee407336c2397ee8fa241b"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": 627
+                },
+                "saved_pv_plies": 12,
+                "gain12_cp": -530,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "d6a3",
+                    "san": "Bxa3",
+                    "gain_cp": -910,
+                    "fen": "2r5/5pkp/6n1/Rp4Q1/3P4/b3P3/1P3PPP/2R3K1 w - - 0 28",
+                    "history_sha256": "6376ef08e6249f590d2b89954e458c8a255203bfaee55505faa7691462df7396"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "c1c8",
+                    "san": "Rxc8",
+                    "gain_cp": -1410,
+                    "fen": "2R5/5pkp/6n1/Rp4Q1/3P4/b3P3/1P3PPP/6K1 b - - 0 28",
+                    "history_sha256": "80bfb314b2ed2d25317568a8f5f7e639d1d17f70862ea96f93727bead9af4eed"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "a3b2",
+                    "san": "Bxb2",
+                    "gain_cp": -1320,
+                    "fen": "2R5/5pkp/6n1/Rp4Q1/3P4/4P3/1b3PPP/6K1 w - - 0 29",
+                    "history_sha256": "6e25a277cbf20d8d7ebc0e5cea33b4edeb066c31d99b628ac051606bdccd4822"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "g5f6",
+                    "san": "Qf6+",
+                    "gain_cp": -1320,
+                    "fen": "2R5/5pkp/5Qn1/Rp6/3P4/4P3/1b3PPP/6K1 b - - 1 29",
+                    "history_sha256": "e9e490dc12892198aae000e1c3eded74b0adf6b172f9f79caaeb23d3a06fdc3c"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "g7f6",
+                    "san": "Kxf6",
+                    "gain_cp": -320,
+                    "fen": "2R5/5p1p/5kn1/Rp6/3P4/4P3/1b3PPP/6K1 w - - 0 30",
+                    "history_sha256": "8d3aab8ffbb481a9fd76cc912ef6fbd19e8e574cfedcc18ce877866ab3303e81"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "g2g3",
+                    "san": "g3",
+                    "gain_cp": -320,
+                    "fen": "2R5/5p1p/5kn1/Rp6/3P4/4P1P1/1b3P1P/6K1 b - - 0 30",
+                    "history_sha256": "f291af61771daba7daf77572e5977c93172c923ac47c47f56fda4204c0b3ffff"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "b2d4",
+                    "san": "Bxd4",
+                    "gain_cp": -230,
+                    "fen": "2R5/5p1p/5kn1/Rp6/3b4/4P1P1/5P1P/6K1 w - - 0 31",
+                    "history_sha256": "bbabf7d429306f6b8f098398263796b622619468eba7f174dc77f960081666e8"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "e3d4",
+                    "san": "exd4",
+                    "gain_cp": -530,
+                    "fen": "2R5/5p1p/5kn1/Rp6/3P4/6P1/5P1P/6K1 b - - 0 31",
+                    "history_sha256": "3ee821a7a47b670c8474114f2aa0505ca140876ee3f02c64976ffa45c2bb8662"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "f6g7",
+                    "san": "Kg7",
+                    "gain_cp": -530,
+                    "fen": "2R5/5pkp/6n1/Rp6/3P4/6P1/5P1P/6K1 w - - 1 32",
+                    "history_sha256": "0c28056ba6e6a3e45ae915efc76199fd88749c94e5616f4eb7b4ac7b66d6d516"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "a5a8",
+                    "san": "Raa8",
+                    "gain_cp": -530,
+                    "fen": "R1R5/5pkp/6n1/1p6/3P4/6P1/5P1P/6K1 b - - 2 32",
+                    "history_sha256": "5f6699e5c1652a9f507b2104b7518f60b50c70dc71dd791aa149a13cebbb2a1c"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "b5b4",
+                    "san": "b4",
+                    "gain_cp": -530,
+                    "fen": "R1R5/5pkp/6n1/8/1p1P4/6P1/5P1P/6K1 w - - 0 33",
+                    "history_sha256": "96974f4f1d29b1fad3210f7ece0543feca586751f0a338748abb692add97f95b"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 16
+          },
+          {
+            "acceptance": "a6d6",
+            "mate_in_one_witnesses": [
+              "c8c1"
+            ],
+            "legal_response_count": 34,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "c8c1",
+                    "san": "Rxc1#",
+                    "gain_cp": 200,
+                    "fen": "8/5pkp/3R2n1/qp4Q1/3P4/P3P3/1P3PPP/2r3K1 w - - 0 28",
+                    "history_sha256": "8001d2ca6341314ee70174539148307d1a2db72d2ef96f44a2fcd4009c6c27dd"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": 399
+                },
+                "saved_pv_plies": 15,
+                "gain12_cp": -100,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "a5d8",
+                    "san": "Qd8",
+                    "gain_cp": -300,
+                    "fen": "2rq4/5pkp/3R2n1/1p4Q1/3P4/P3P3/1P3PPP/2R3K1 w - - 1 28",
+                    "history_sha256": "532d569b9971cfc60470243e9fb31612aed64717d9ae29880274168c26a81146"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "d6g6",
+                    "san": "Rxg6+",
+                    "gain_cp": -600,
+                    "fen": "2rq4/5pkp/6R1/1p4Q1/3P4/P3P3/1P3PPP/2R3K1 b - - 0 28",
+                    "history_sha256": "ab189ab595651a71097dce201e388dc77b9d86a5c33d56c24e1e5b8400ee989c"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "h7g6",
+                    "san": "hxg6",
+                    "gain_cp": -100,
+                    "fen": "2rq4/5pk1/6p1/1p4Q1/3P4/P3P3/1P3PPP/2R3K1 w - - 0 29",
+                    "history_sha256": "718acf0bda63ed0c131943caa61d32fd18cc59c3db99f099b51887a900020dc8"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "g5e5",
+                    "san": "Qe5+",
+                    "gain_cp": -100,
+                    "fen": "2rq4/5pk1/6p1/1p2Q3/3P4/P3P3/1P3PPP/2R3K1 b - - 1 29",
+                    "history_sha256": "392153ebf46359579de30c85f7d54f808703b53dfd7a0438ab75f2ea4bea2b55"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "f7f6",
+                    "san": "f6",
+                    "gain_cp": -100,
+                    "fen": "2rq4/6k1/5pp1/1p2Q3/3P4/P3P3/1P3PPP/2R3K1 w - - 0 30",
+                    "history_sha256": "8d8dbf9987d59ca7da89d201325e8d3e54eec8b4b76878f54101900921b1ad6d"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "c1c8",
+                    "san": "Rxc8",
+                    "gain_cp": -600,
+                    "fen": "2Rq4/6k1/5pp1/1p2Q3/3P4/P3P3/1P3PPP/6K1 b - - 0 30",
+                    "history_sha256": "52eff2ebfdffe5eabe2000db127375770d9561932edb024c845f22858f991127"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "d8c8",
+                    "san": "Qxc8",
+                    "gain_cp": -100,
+                    "fen": "2q5/6k1/5pp1/1p2Q3/3P4/P3P3/1P3PPP/6K1 w - - 0 31",
+                    "history_sha256": "e8849454f0885d56c5b6023afbdeb080a1230aeec053cfb8d4c33c17b8e70add"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "e5e7",
+                    "san": "Qe7+",
+                    "gain_cp": -100,
+                    "fen": "2q5/4Q1k1/5pp1/1p6/3P4/P3P3/1P3PPP/6K1 b - - 1 31",
+                    "history_sha256": "aa8c80df6b471840c94fbf8fc2b8fcd281a370211ae6040a5950a563a5573adf"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "g7g8",
+                    "san": "Kg8",
+                    "gain_cp": -100,
+                    "fen": "2q3k1/4Q3/5pp1/1p6/3P4/P3P3/1P3PPP/6K1 w - - 2 32",
+                    "history_sha256": "01bec802ce006cbbb418de289bb571e81868caa428f8148a1eae09fb3588b2c5"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "e7c5",
+                    "san": "Qc5",
+                    "gain_cp": -100,
+                    "fen": "2q3k1/8/5pp1/1pQ5/3P4/P3P3/1P3PPP/6K1 b - - 3 32",
+                    "history_sha256": "43289acdc4464c8e70460341d29ee37517642b68b6dcc8fd5ba88f2167ea9187"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "c8f5",
+                    "san": "Qf5",
+                    "gain_cp": -100,
+                    "fen": "6k1/8/5pp1/1pQ2q2/3P4/P3P3/1P3PPP/6K1 w - - 4 33",
+                    "history_sha256": "7ce5ea72d9218fad81d4ba4f2c3cf5daa5b2897b97e3e4b139b3304669fda108"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 17
+          },
+          {
+            "acceptance": "c1c8",
+            "mate_in_one_witnesses": [
+              "a5e1"
+            ],
+            "legal_response_count": 26,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "a5e1",
+                    "san": "Qe1#",
+                    "gain_cp": -500,
+                    "fen": "2R5/5pkp/R2b2n1/1p4Q1/3P4/P3P3/1P3PPP/4q1K1 w - - 1 28",
+                    "history_sha256": "3fa983a53ab9978ab010cffca178fd0ee0432417a8e92a5abcc7559f53916519"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": 313
+                },
+                "saved_pv_plies": 13,
+                "gain12_cp": 0,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "a5a6",
+                    "san": "Qxa6",
+                    "gain_cp": 0,
+                    "fen": "2R5/5pkp/q2b2n1/1p4Q1/3P4/P3P3/1P3PPP/6K1 w - - 0 28",
+                    "history_sha256": "9a51067d882473553475a694d4d0c8e3d29e148d77fccf6c7d4e6e285934540c"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "c8c1",
+                    "san": "Rc1",
+                    "gain_cp": 0,
+                    "fen": "8/5pkp/q2b2n1/1p4Q1/3P4/P3P3/1P3PPP/2R3K1 b - - 1 28",
+                    "history_sha256": "04063621cd9e1e9fd9d4f040ef7a5b21941d4baeab284dfbf2f85836e0b29da0"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "b5b4",
+                    "san": "b4",
+                    "gain_cp": 0,
+                    "fen": "8/5pkp/q2b2n1/6Q1/1p1P4/P3P3/1P3PPP/2R3K1 w - - 0 29",
+                    "history_sha256": "b7c60225d539e9717f7db6b2d114c40d67cfd90c94f9a6bec553fc1b5e301f78"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "a3b4",
+                    "san": "axb4",
+                    "gain_cp": -90,
+                    "fen": "8/5pkp/q2b2n1/6Q1/1P1P4/4P3/1P3PPP/2R3K1 b - - 0 29",
+                    "history_sha256": "5fce2bbd5e3eb8dc62d15f656b2459b55a2ed2f24b6a0ab41cb1c70e3087be8c"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "a6e2",
+                    "san": "Qe2",
+                    "gain_cp": -90,
+                    "fen": "8/5pkp/3b2n1/6Q1/1P1P4/4P3/1P2qPPP/2R3K1 w - - 1 30",
+                    "history_sha256": "87e3021e19e7f3329ffb8c9bf35b0f66b08682e7dc7f5e864354d2213cfb9609"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "g5f5",
+                    "san": "Qf5",
+                    "gain_cp": -90,
+                    "fen": "8/5pkp/3b2n1/5Q2/1P1P4/4P3/1P2qPPP/2R3K1 b - - 2 30",
+                    "history_sha256": "8ef2ece43a3fa6ce973780179eea8c1e3ad40d6e1858603f827f691e437d1d74"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "e2b2",
+                    "san": "Qxb2",
+                    "gain_cp": 0,
+                    "fen": "8/5pkp/3b2n1/5Q2/1P1P4/4P3/1q3PPP/2R3K1 w - - 0 31",
+                    "history_sha256": "82ced628108979320f689514ccc718115697ae0c2a90605a54107fc5853d695a"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "f5b1",
+                    "san": "Qb1",
+                    "gain_cp": 0,
+                    "fen": "8/5pkp/3b2n1/8/1P1P4/4P3/1q3PPP/1QR3K1 b - - 1 31",
+                    "history_sha256": "0b7cd7d8ac44499b5d613ae6e3b36073fe4323bc8a702a40bdc3caafe009b425"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "b2e2",
+                    "san": "Qe2",
+                    "gain_cp": 0,
+                    "fen": "8/5pkp/3b2n1/8/1P1P4/4P3/4qPPP/1QR3K1 w - - 2 32",
+                    "history_sha256": "3eae9bf32b27e9fdc58de223c72041975e784fa6f699811886c065feef9aec26"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "h2h3",
+                    "san": "h3",
+                    "gain_cp": 0,
+                    "fen": "8/5pkp/3b2n1/8/1P1P4/4P2P/4qPP1/1QR3K1 b - - 0 32",
+                    "history_sha256": "70b5459722687882dcb9ea0d20506852ef077d7829f2e1fe8ad94252945d04e5"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "e2h5",
+                    "san": "Qh5",
+                    "gain_cp": 0,
+                    "fen": "8/5pkp/3b2n1/7q/1P1P4/4P2P/5PP1/1QR3K1 w - - 1 33",
+                    "history_sha256": "5f393651ec94c4324699543fb8cb752d948f87b87e3defc17b2765a22d67850f"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 18
+          }
+        ]
+      }
+    }
+  },
+  "185214494356:53": {
+    "features": {
+      "current": {
+        "nonmate_material_win": 0
+      },
+      "previous": {
+        "nonmate_material_win": 0
+      }
+    },
+    "traces": {
+      "current": {
+        "reason": "no_saved_material_win_witness",
+        "captures": [
+          {
+            "acceptance": "e8f8",
+            "mate_in_one_witnesses": [
+              "g4g6"
+            ],
+            "legal_response_count": 31,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": 1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": true
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "g4g6",
+                    "san": "Qxg6#",
+                    "gain_cp": -200,
+                    "fen": "5q1b/ppr4k/4p1Qp/3pP3/3P4/3BP3/PP4P1/6K1 b - - 0 28",
+                    "history_sha256": "afd20944cc38220851e215d70b11f6f9d99d2759071d4964dd187e2f2280b674"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": -143
+                },
+                "saved_pv_plies": 13,
+                "gain12_cp": -20,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "d3g6",
+                    "san": "Bxg6+",
+                    "gain_cp": -200,
+                    "fen": "5q1b/ppr4k/4p1Bp/3pP3/3P2Q1/4P3/PP4P1/6K1 b - - 0 28",
+                    "history_sha256": "0d37a3b3d7a25ccff1f9b76d5ff27736424b19c19d4ed827b2a0e6cd325d638b"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "h7g8",
+                    "san": "Kg8",
+                    "gain_cp": -200,
+                    "fen": "5qkb/ppr5/4p1Bp/3pP3/3P2Q1/4P3/PP4P1/6K1 w - - 1 29",
+                    "history_sha256": "d5a84849215b1717e164fbe9c4b0440070f2edb8102d84451bc10a1ae8819414"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "g4e6",
+                    "san": "Qxe6+",
+                    "gain_cp": -110,
+                    "fen": "5qkb/ppr5/4Q1Bp/3pP3/3P4/4P3/PP4P1/6K1 b - - 0 29",
+                    "history_sha256": "6b0e86ea438dc7a9444fa63d23ff62ee9938d635662cf18fe8d285c0e660efa2"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "g8g7",
+                    "san": "Kg7",
+                    "gain_cp": -110,
+                    "fen": "5q1b/ppr3k1/4Q1Bp/3pP3/3P4/4P3/PP4P1/6K1 w - - 1 30",
+                    "history_sha256": "2993c66c72d0dd4287ca7067d0f5de8ade9aa81bb8f33379ef51afbf44d6bfdd"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "g6h5",
+                    "san": "Bh5",
+                    "gain_cp": -110,
+                    "fen": "5q1b/ppr3k1/4Q2p/3pP2B/3P4/4P3/PP4P1/6K1 b - - 2 30",
+                    "history_sha256": "c751f57956ff6735edc2611fb2216a74b69793af5510d89f556e0b6e8f29483c"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "f8e7",
+                    "san": "Qe7",
+                    "gain_cp": -110,
+                    "fen": "7b/ppr1q1k1/4Q2p/3pP2B/3P4/4P3/PP4P1/6K1 w - - 3 31",
+                    "history_sha256": "a1ccdc1fba4d2239a5414f0a892f5a9c6a641a95ee1a0c35afd24e77ed3425ff"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "e6g6",
+                    "san": "Qg6+",
+                    "gain_cp": -110,
+                    "fen": "7b/ppr1q1k1/6Qp/3pP2B/3P4/4P3/PP4P1/6K1 b - - 4 31",
+                    "history_sha256": "b991e29fb1ed32f46f3d7a8fafa72c07ddd08dac1adc03360115e340251493a3"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "g7f8",
+                    "san": "Kf8",
+                    "gain_cp": -110,
+                    "fen": "5k1b/ppr1q3/6Qp/3pP2B/3P4/4P3/PP4P1/6K1 w - - 5 32",
+                    "history_sha256": "abbcdf0cda5d8ff4564cf6a43c49b4c675c8f3dfbcdf311c1e9eab3374432636"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "g6h6",
+                    "san": "Qxh6+",
+                    "gain_cp": -20,
+                    "fen": "5k1b/ppr1q3/7Q/3pP2B/3P4/4P3/PP4P1/6K1 b - - 0 32",
+                    "history_sha256": "c7c9ce0efbed5933de3414aaaff0d644f121e29b519cfd0ccac6ae378a7338a6"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "h8g7",
+                    "san": "Bg7",
+                    "gain_cp": -20,
+                    "fen": "5k2/ppr1q1b1/7Q/3pP2B/3P4/4P3/PP4P1/6K1 w - - 1 33",
+                    "history_sha256": "353c411e4619197580301155d5c981ce018a3fe6d8f734e015f77154664134f6"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "h6f4",
+                    "san": "Qf4+",
+                    "gain_cp": -20,
+                    "fen": "5k2/ppr1q1b1/8/3pP2B/3P1Q2/4P3/PP4P1/6K1 b - - 2 33",
+                    "history_sha256": "1ab49a9197f79289837e34104e0459efc8dd79a42255ad895fb375c9c796cf80"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 14
+          }
+        ]
+      },
+      "previous": {
+        "reason": "no_saved_material_win_witness",
+        "captures": [
+          {
+            "acceptance": "e8f8",
+            "mate_in_one_witnesses": [
+              "g4g6"
+            ],
+            "legal_response_count": 31,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": 1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": true
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "g4g6",
+                    "san": "Qxg6#",
+                    "gain_cp": -200,
+                    "fen": "5q1b/ppr4k/4p1Qp/3pP3/3P4/3BP3/PP4P1/6K1 b - - 0 28",
+                    "history_sha256": "afd20944cc38220851e215d70b11f6f9d99d2759071d4964dd187e2f2280b674"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": -156
+                },
+                "saved_pv_plies": 20,
+                "gain12_cp": -110,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "d3g6",
+                    "san": "Bxg6+",
+                    "gain_cp": -200,
+                    "fen": "5q1b/ppr4k/4p1Bp/3pP3/3P2Q1/4P3/PP4P1/6K1 b - - 0 28",
+                    "history_sha256": "0d37a3b3d7a25ccff1f9b76d5ff27736424b19c19d4ed827b2a0e6cd325d638b"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "h7g8",
+                    "san": "Kg8",
+                    "gain_cp": -200,
+                    "fen": "5qkb/ppr5/4p1Bp/3pP3/3P2Q1/4P3/PP4P1/6K1 w - - 1 29",
+                    "history_sha256": "d5a84849215b1717e164fbe9c4b0440070f2edb8102d84451bc10a1ae8819414"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "g4e6",
+                    "san": "Qxe6+",
+                    "gain_cp": -110,
+                    "fen": "5qkb/ppr5/4Q1Bp/3pP3/3P4/4P3/PP4P1/6K1 b - - 0 29",
+                    "history_sha256": "6b0e86ea438dc7a9444fa63d23ff62ee9938d635662cf18fe8d285c0e660efa2"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "g8g7",
+                    "san": "Kg7",
+                    "gain_cp": -110,
+                    "fen": "5q1b/ppr3k1/4Q1Bp/3pP3/3P4/4P3/PP4P1/6K1 w - - 1 30",
+                    "history_sha256": "2993c66c72d0dd4287ca7067d0f5de8ade9aa81bb8f33379ef51afbf44d6bfdd"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "g6h5",
+                    "san": "Bh5",
+                    "gain_cp": -110,
+                    "fen": "5q1b/ppr3k1/4Q2p/3pP2B/3P4/4P3/PP4P1/6K1 b - - 2 30",
+                    "history_sha256": "c751f57956ff6735edc2611fb2216a74b69793af5510d89f556e0b6e8f29483c"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "f8e7",
+                    "san": "Qe7",
+                    "gain_cp": -110,
+                    "fen": "7b/ppr1q1k1/4Q2p/3pP2B/3P4/4P3/PP4P1/6K1 w - - 3 31",
+                    "history_sha256": "a1ccdc1fba4d2239a5414f0a892f5a9c6a641a95ee1a0c35afd24e77ed3425ff"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "e6g6",
+                    "san": "Qg6+",
+                    "gain_cp": -110,
+                    "fen": "7b/ppr1q1k1/6Qp/3pP2B/3P4/4P3/PP4P1/6K1 b - - 4 31",
+                    "history_sha256": "b991e29fb1ed32f46f3d7a8fafa72c07ddd08dac1adc03360115e340251493a3"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "g7f8",
+                    "san": "Kf8",
+                    "gain_cp": -110,
+                    "fen": "5k1b/ppr1q3/6Qp/3pP2B/3P4/4P3/PP4P1/6K1 w - - 5 32",
+                    "history_sha256": "abbcdf0cda5d8ff4564cf6a43c49b4c675c8f3dfbcdf311c1e9eab3374432636"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "h5f3",
+                    "san": "Bf3",
+                    "gain_cp": -110,
+                    "fen": "5k1b/ppr1q3/6Qp/3pP3/3P4/4PB2/PP4P1/6K1 b - - 6 32",
+                    "history_sha256": "6a70347f46286f29edf44c849fe99a21d220c5c7aa6bdb9117966454df3e7aeb"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "e7g5",
+                    "san": "Qg5",
+                    "gain_cp": -110,
+                    "fen": "5k1b/ppr5/6Qp/3pP1q1/3P4/4PB2/PP4P1/6K1 w - - 7 33",
+                    "history_sha256": "c583ff0812bf50dcb4a9e44af017c1753da7d27ecb5d7ddd42767c829d3d7717"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "g6d6",
+                    "san": "Qd6+",
+                    "gain_cp": -110,
+                    "fen": "5k1b/ppr5/3Q3p/3pP1q1/3P4/4PB2/PP4P1/6K1 b - - 8 33",
+                    "history_sha256": "b3ace82b0c068606de14e15b74342cdb9e2ecdec593ab633c0e36afa58ca4a99"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 13
+          }
+        ]
+      }
+    }
+  },
+  "169962611516:55": {
+    "features": {
+      "current": {
+        "nonmate_material_win": 0
+      },
+      "previous": {
+        "nonmate_material_win": 0
+      }
+    },
+    "traces": {
+      "current": {
+        "reason": "no_saved_material_win_witness",
+        "captures": [
+          {
+            "acceptance": "g6h5",
+            "mate_in_one_witnesses": [
+              "f5h5"
+            ],
+            "legal_response_count": 38,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": 1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": true
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "f5h5",
+                    "san": "Rxh5#",
+                    "gain_cp": -820,
+                    "fen": "4r2b/pp1qNp1k/3prP2/2p1n2R/4P3/2P5/PPB3PP/3R2K1 b - - 0 29",
+                    "history_sha256": "7a02b2c10c38a9c65fc66d6513e53de2a84388cea971bac8d2ddf94336c3c0fb"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": -278
+                },
+                "saved_pv_plies": 8,
+                "gain12_cp": null,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "e7d5",
+                    "san": "Nd5",
+                    "gain_cp": -910,
+                    "fen": "4r2b/pp1q1p1k/3prP2/2pNnR1p/4P3/2P5/PPB3PP/3R2K1 b - - 1 29",
+                    "history_sha256": "cb1489440c598430d68319afb3d77544b006dd25b1102ff8eaa081c99870be8a"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "h8f6",
+                    "san": "Bxf6",
+                    "gain_cp": -1000,
+                    "fen": "4r3/pp1q1p1k/3prb2/2pNnR1p/4P3/2P5/PPB3PP/3R2K1 w - - 0 30",
+                    "history_sha256": "2146c6ae0c39a3f05847cf07ec06cb89b76a1b882cc4bf1fb50a2439d067ed78"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "d1f1",
+                    "san": "Rdf1",
+                    "gain_cp": -1000,
+                    "fen": "4r3/pp1q1p1k/3prb2/2pNnR1p/4P3/2P5/PPB3PP/5RK1 b - - 1 30",
+                    "history_sha256": "3774e15238550cdd6bee917521c7c851d777f16410e8b55950b161d990a6e75e"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "d7d8",
+                    "san": "Qd8",
+                    "gain_cp": -1000,
+                    "fen": "3qr3/pp3p1k/3prb2/2pNnR1p/4P3/2P5/PPB3PP/5RK1 w - - 2 31",
+                    "history_sha256": "43aa90f0cffbad2c430f54310b67c6006363d95d4ac2fd04202c44322cded65a"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "c2b3",
+                    "san": "Bb3",
+                    "gain_cp": -1000,
+                    "fen": "3qr3/pp3p1k/3prb2/2pNnR1p/4P3/1BP5/PP4PP/5RK1 b - - 3 31",
+                    "history_sha256": "64d3f99f42e553ca19762174d2d8905381858be960e1fea207c69812adaa9f34"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "h7g8",
+                    "san": "Kg8",
+                    "gain_cp": -1000,
+                    "fen": "3qr1k1/pp3p2/3prb2/2pNnR1p/4P3/1BP5/PP4PP/5RK1 w - - 4 32",
+                    "history_sha256": "68f850f763888e4827dbc25698edb7bb1f6ec8c51857f6d6b558adc9f64fc94f"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "d5f6",
+                    "san": "Nxf6+",
+                    "gain_cp": -700,
+                    "fen": "3qr1k1/pp3p2/3prN2/2p1nR1p/4P3/1BP5/PP4PP/5RK1 b - - 0 32",
+                    "history_sha256": "06d46e93884ada116b2eae2f9d366fcd6007120f8e3dfa0de4fd0d82964bcf48"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "e6f6",
+                    "san": "Rxf6",
+                    "gain_cp": -1000,
+                    "fen": "3qr1k1/pp3p2/3p1r2/2p1nR1p/4P3/1BP5/PP4PP/5RK1 w - - 0 33",
+                    "history_sha256": "5038955e4dd0ae8889b907c4e438d319597a3080798991c5e4957c0d9846b698"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 17
+          }
+        ]
+      },
+      "previous": {
+        "reason": "no_saved_material_win_witness",
+        "captures": [
+          {
+            "acceptance": "g6h5",
+            "mate_in_one_witnesses": [
+              "f5h5"
+            ],
+            "legal_response_count": 38,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": 1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": true
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "f5h5",
+                    "san": "Rxh5#",
+                    "gain_cp": -820,
+                    "fen": "4r2b/pp1qNp1k/3prP2/2p1n2R/4P3/2P5/PPB3PP/3R2K1 b - - 0 29",
+                    "history_sha256": "7a02b2c10c38a9c65fc66d6513e53de2a84388cea971bac8d2ddf94336c3c0fb"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": -283
+                },
+                "saved_pv_plies": 11,
+                "gain12_cp": -910,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "e7d5",
+                    "san": "Nd5",
+                    "gain_cp": -910,
+                    "fen": "4r2b/pp1q1p1k/3prP2/2pNnR1p/4P3/2P5/PPB3PP/3R2K1 b - - 1 29",
+                    "history_sha256": "cb1489440c598430d68319afb3d77544b006dd25b1102ff8eaa081c99870be8a"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "h8f6",
+                    "san": "Bxf6",
+                    "gain_cp": -1000,
+                    "fen": "4r3/pp1q1p1k/3prb2/2pNnR1p/4P3/2P5/PPB3PP/3R2K1 w - - 0 30",
+                    "history_sha256": "2146c6ae0c39a3f05847cf07ec06cb89b76a1b882cc4bf1fb50a2439d067ed78"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "d1f1",
+                    "san": "Rdf1",
+                    "gain_cp": -1000,
+                    "fen": "4r3/pp1q1p1k/3prb2/2pNnR1p/4P3/2P5/PPB3PP/5RK1 b - - 1 30",
+                    "history_sha256": "3774e15238550cdd6bee917521c7c851d777f16410e8b55950b161d990a6e75e"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "f6g7",
+                    "san": "Bg7",
+                    "gain_cp": -1000,
+                    "fen": "4r3/pp1q1pbk/3pr3/2pNnR1p/4P3/2P5/PPB3PP/5RK1 w - - 2 31",
+                    "history_sha256": "631723212ebcce7c2f7a18f0308d589ceb558c15055018d0d3a3a341a344cccc"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "g1h1",
+                    "san": "Kh1",
+                    "gain_cp": -1000,
+                    "fen": "4r3/pp1q1pbk/3pr3/2pNnR1p/4P3/2P5/PPB3PP/5R1K b - - 3 31",
+                    "history_sha256": "73b7df8eb985bc5def913d25e5d4dbf8c86b88073abfc0bdeb9672ffef91692a"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "d7d8",
+                    "san": "Qd8",
+                    "gain_cp": -1000,
+                    "fen": "3qr3/pp3pbk/3pr3/2pNnR1p/4P3/2P5/PPB3PP/5R1K w - - 4 32",
+                    "history_sha256": "f5744cb908badae5417d0d5276624ae7fe9bf866624741c1c6cc5dde73f66951"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "f5h5",
+                    "san": "Rxh5+",
+                    "gain_cp": -910,
+                    "fen": "3qr3/pp3pbk/3pr3/2pNn2R/4P3/2P5/PPB3PP/5R1K b - - 0 32",
+                    "history_sha256": "0aae5e761641b272a4c9cbdea7e11e434cf2f6c0ae9dda4df48936601c97a931"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "h7g8",
+                    "san": "Kg8",
+                    "gain_cp": -910,
+                    "fen": "3qr1k1/pp3pb1/3pr3/2pNn2R/4P3/2P5/PPB3PP/5R1K w - - 1 33",
+                    "history_sha256": "a85cbdb2005844a5918dac94426c71872330af24e98be5e10689bc3c1b1ed8bf"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "c2a4",
+                    "san": "Ba4",
+                    "gain_cp": -910,
+                    "fen": "3qr1k1/pp3pb1/3pr3/2pNn2R/B3P3/2P5/PP4PP/5R1K b - - 2 33",
+                    "history_sha256": "5b75748093511d0515db467a2eb18be4f3489c30786256b73a15ea3d7b6982a1"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "g8f8",
+                    "san": "Kf8",
+                    "gain_cp": -910,
+                    "fen": "3qrk2/pp3pb1/3pr3/2pNn2R/B3P3/2P5/PP4PP/5R1K w - - 3 34",
+                    "history_sha256": "99b522446abff64553b1d7cf5378a4fed841ce6faa2b89666ed8bdb20bcfe335"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "h2h3",
+                    "san": "h3",
+                    "gain_cp": -910,
+                    "fen": "3qrk2/pp3pb1/3pr3/2pNn2R/B3P3/2P4P/PP4P1/5R1K b - - 0 34",
+                    "history_sha256": "955f8aaa83b7d49d6383dd936644d0cace8981a696722859e96186433fe1ca27"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 16
+          }
+        ]
+      }
+    }
+  },
+  "171270665964:60": {
+    "features": {
+      "current": {
+        "nonmate_material_win": 0
+      },
+      "previous": {
+        "nonmate_material_win": 0
+      }
+    },
+    "traces": {
+      "current": {
+        "reason": "no_saved_material_win_witness",
+        "captures": [
+          {
+            "acceptance": "d1e1",
+            "mate_in_one_witnesses": [
+              "e8e1"
+            ],
+            "legal_response_count": 25,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "e8e1",
+                    "san": "Rxe1#",
+                    "gain_cp": -500,
+                    "fen": "7k/p5bp/6p1/5pB1/2N5/2P2P2/P1Q3PP/4r2K w - - 0 32",
+                    "history_sha256": "665d4d51378cbaca92fc7bfb5def7912664888ffbba714840a2cb9963e57faf9"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": 752
+                },
+                "saved_pv_plies": 16,
+                "gain12_cp": 0,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "e8c8",
+                    "san": "Rc8",
+                    "gain_cp": -1000,
+                    "fen": "2r4k/p5bp/6p1/5pB1/2N5/2P2P2/P1Q3PP/4R2K w - - 1 32",
+                    "history_sha256": "09dbb2368851fc4276c28f28bee52159d9f8b1c53483f4b2012feac027080da4"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "c2d2",
+                    "san": "Qd2",
+                    "gain_cp": -1000,
+                    "fen": "2r4k/p5bp/6p1/5pB1/2N5/2P2P2/P2Q2PP/4R2K b - - 2 32",
+                    "history_sha256": "0e6835bf77d0c8139fc993b16f0560770a6189d336f9d88f5fb7ed424286c671"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "c8f8",
+                    "san": "Rf8",
+                    "gain_cp": -1000,
+                    "fen": "5r1k/p5bp/6p1/5pB1/2N5/2P2P2/P2Q2PP/4R2K w - - 3 33",
+                    "history_sha256": "c87e28643e568e80203a22bccf99686345855e63d3a6c34b922ca1cd54e8a663"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "g5h6",
+                    "san": "Bh6",
+                    "gain_cp": -1000,
+                    "fen": "5r1k/p5bp/6pB/5p2/2N5/2P2P2/P2Q2PP/4R2K b - - 4 33",
+                    "history_sha256": "d5a3ebd2e6e218a13ad0e3d64af706f2a598c6e586f4fda604cb3f580ee07a9a"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "g7h6",
+                    "san": "Bxh6",
+                    "gain_cp": -700,
+                    "fen": "5r1k/p6p/6pb/5p2/2N5/2P2P2/P2Q2PP/4R2K w - - 0 34",
+                    "history_sha256": "184a94d353a7d44d8515c8ef3772029130dc133f8e348e9ce3f6ee9627667538"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "d2h6",
+                    "san": "Qxh6",
+                    "gain_cp": -1000,
+                    "fen": "5r1k/p6p/6pQ/5p2/2N5/2P2P2/P5PP/4R2K b - - 0 34",
+                    "history_sha256": "164220158c08db4f9317783c4c3572efa532ac7a59aa7b1d59d616d223e8b730"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "f8d8",
+                    "san": "Rd8",
+                    "gain_cp": -1000,
+                    "fen": "3r3k/p6p/6pQ/5p2/2N5/2P2P2/P5PP/4R2K w - - 1 35",
+                    "history_sha256": "49070e25875e8a9e0f9572764d4f5e3565bc10d84c746289bff75835f2fd9f59"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "h6h4",
+                    "san": "Qh4",
+                    "gain_cp": -1000,
+                    "fen": "3r3k/p6p/6p1/5p2/2N4Q/2P2P2/P5PP/4R2K b - - 2 35",
+                    "history_sha256": "5189819cf8c6164663c60c104def53c6fb111931adc91e7a6e73df67bbb88704"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "g6g5",
+                    "san": "g5",
+                    "gain_cp": -1000,
+                    "fen": "3r3k/p6p/8/5pp1/2N4Q/2P2P2/P5PP/4R2K w - - 0 36",
+                    "history_sha256": "7514a4bef33cabe34639b84c3be845e34dc1165fca3aee7d015f7d3fdd577c99"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "h4d4",
+                    "san": "Qd4+",
+                    "gain_cp": -1000,
+                    "fen": "3r3k/p6p/8/5pp1/2NQ4/2P2P2/P5PP/4R2K b - - 1 36",
+                    "history_sha256": "24a43b83f5a5990d1d47b967737415b68fe23b372282ea41accd56efff40e59a"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "d8d4",
+                    "san": "Rxd4",
+                    "gain_cp": 0,
+                    "fen": "7k/p6p/8/5pp1/2Nr4/2P2P2/P5PP/4R2K w - - 0 37",
+                    "history_sha256": "12ec967cd6aea02c8dc79c22e7746fd60362da7c9a90dfc66dfbec19ca409749"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 18
+          }
+        ]
+      },
+      "previous": {
+        "reason": "no_saved_material_win_witness",
+        "captures": [
+          {
+            "acceptance": "d1e1",
+            "mate_in_one_witnesses": [
+              "e8e1"
+            ],
+            "legal_response_count": 25,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "e8e1",
+                    "san": "Rxe1#",
+                    "gain_cp": -500,
+                    "fen": "7k/p5bp/6p1/5pB1/2N5/2P2P2/P1Q3PP/4r2K w - - 0 32",
+                    "history_sha256": "665d4d51378cbaca92fc7bfb5def7912664888ffbba714840a2cb9963e57faf9"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": 703
+                },
+                "saved_pv_plies": 17,
+                "gain12_cp": -1000,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "e8c8",
+                    "san": "Rc8",
+                    "gain_cp": -1000,
+                    "fen": "2r4k/p5bp/6p1/5pB1/2N5/2P2P2/P1Q3PP/4R2K w - - 1 32",
+                    "history_sha256": "09dbb2368851fc4276c28f28bee52159d9f8b1c53483f4b2012feac027080da4"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "c2d2",
+                    "san": "Qd2",
+                    "gain_cp": -1000,
+                    "fen": "2r4k/p5bp/6p1/5pB1/2N5/2P2P2/P2Q2PP/4R2K b - - 2 32",
+                    "history_sha256": "0e6835bf77d0c8139fc993b16f0560770a6189d336f9d88f5fb7ed424286c671"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "h8g8",
+                    "san": "Kg8",
+                    "gain_cp": -1000,
+                    "fen": "2r3k1/p5bp/6p1/5pB1/2N5/2P2P2/P2Q2PP/4R2K w - - 3 33",
+                    "history_sha256": "95c0fa2bd563fdee205eddcb70691ef3caa41144bd8d96256f4e2c59e4aaf2a1"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "h1g1",
+                    "san": "Kg1",
+                    "gain_cp": -1000,
+                    "fen": "2r3k1/p5bp/6p1/5pB1/2N5/2P2P2/P2Q2PP/4R1K1 b - - 4 33",
+                    "history_sha256": "c58b1026fe385784db02a3097342eeb6e81baf419354c5c96e19f88a01a0291b"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "h7h6",
+                    "san": "h6",
+                    "gain_cp": -1000,
+                    "fen": "2r3k1/p5b1/6pp/5pB1/2N5/2P2P2/P2Q2PP/4R1K1 w - - 0 34",
+                    "history_sha256": "576ac54a2593f28d75e15fc6cfbfb18cfabd0de3438291570baa7aeccf425677"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "g5f4",
+                    "san": "Bf4",
+                    "gain_cp": -1000,
+                    "fen": "2r3k1/p5b1/6pp/5p2/2N2B2/2P2P2/P2Q2PP/4R1K1 b - - 1 34",
+                    "history_sha256": "cfc8706a4d8cce4e112d42036db56a6fe6ead01aab2bc7f303a2f4b0be684a98"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "g8h7",
+                    "san": "Kh7",
+                    "gain_cp": -1000,
+                    "fen": "2r5/p5bk/6pp/5p2/2N2B2/2P2P2/P2Q2PP/4R1K1 w - - 2 35",
+                    "history_sha256": "12cf65b6fc4c08058f615c111d98fa6b36e729966cbe3521ce0d752ca0a9641d"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "c4d6",
+                    "san": "Nd6",
+                    "gain_cp": -1000,
+                    "fen": "2r5/p5bk/3N2pp/5p2/5B2/2P2P2/P2Q2PP/4R1K1 b - - 3 35",
+                    "history_sha256": "7c9fe71c2f966a7fec0e89e3e4966b5ae5c773617a5c20722de448006be32df4"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "c8d8",
+                    "san": "Rd8",
+                    "gain_cp": -1000,
+                    "fen": "3r4/p5bk/3N2pp/5p2/5B2/2P2P2/P2Q2PP/4R1K1 w - - 4 36",
+                    "history_sha256": "e12f2db844e05f6af995e0a0bfa6d39b4f3017785611f444b44d0e642abef90d"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "g1f1",
+                    "san": "Kf1",
+                    "gain_cp": -1000,
+                    "fen": "3r4/p5bk/3N2pp/5p2/5B2/2P2P2/P2Q2PP/4RK2 b - - 5 36",
+                    "history_sha256": "38f8c2aa18e280565737e2cccd1f9c0668b64267878e7ee1cc6f10185ca90c08"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "g6g5",
+                    "san": "g5",
+                    "gain_cp": -1000,
+                    "fen": "3r4/p5bk/3N3p/5pp1/5B2/2P2P2/P2Q2PP/4RK2 w - - 0 37",
+                    "history_sha256": "c5d00d27d24d861bfe138a9c5ecda6cee2ae38e74233023dc084433bcacf81d9"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 17
+          }
+        ]
+      }
+    }
+  },
+  "185741429132:55": {
+    "features": {
+      "current": {
+        "nonmate_material_win": 1
+      },
+      "previous": {
+        "nonmate_material_win": 1
+      }
+    },
+    "traces": {
+      "current": {
+        "reason": "material_win_witness",
+        "captures": [
+          {
+            "acceptance": "e6g6",
+            "mate_in_one_witnesses": [
+              "e3e8"
+            ],
+            "legal_response_count": 45,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": 1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": true
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "e3e8",
+                    "san": "Rxe8#",
+                    "gain_cp": 200,
+                    "fen": "4Rk2/ppq2pp1/3b2r1/3Q4/5P2/2P4P/P5PK/4R3 b - - 0 29",
+                    "history_sha256": "4c3d91566bc1a284c4f0fc9e2b0a5705d4099cd3f033c88e49364d89a20cb0bd"
+                  }
+                ]
+              },
+              {
+                "state": 1,
+                "reason": "material_win_at12",
+                "score": {
+                  "cp": 835
+                },
+                "saved_pv_plies": 19,
+                "gain12_cp": 1000,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "d5d6",
+                    "san": "Qxd6+",
+                    "gain_cp": 0,
+                    "fen": "4rk2/ppq2pp1/3Q2r1/8/5P2/2P1R2P/P5PK/4R3 b - - 0 29",
+                    "history_sha256": "811da65519c3a02d933da6135c4e3834f356f514a5c426a881d22d9733cc7dfe"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "e8e7",
+                    "san": "Re7",
+                    "gain_cp": 0,
+                    "fen": "5k2/ppq1rpp1/3Q2r1/8/5P2/2P1R2P/P5PK/4R3 w - - 1 30",
+                    "history_sha256": "eb938822dc3f6fe2b06132a1ce98bc3c502ad18aa2ab0ced2f1ee5a03c71c1ea"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "d6c7",
+                    "san": "Qxc7",
+                    "gain_cp": 1000,
+                    "fen": "5k2/ppQ1rpp1/6r1/8/5P2/2P1R2P/P5PK/4R3 b - - 0 30",
+                    "history_sha256": "46620564c00653aa8b1c5cf183cf273d96e3bbb51f8fe2ff5cac7a120e285040"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "g6e6",
+                    "san": "Rge6",
+                    "gain_cp": 1000,
+                    "fen": "5k2/ppQ1rpp1/4r3/8/5P2/2P1R2P/P5PK/4R3 w - - 1 31",
+                    "history_sha256": "11f8fcc81f9937d3f8737a62dc3d502655192f99095494f63c06936dc34ae7c5"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "e3e6",
+                    "san": "Rxe6",
+                    "gain_cp": 1500,
+                    "fen": "5k2/ppQ1rpp1/4R3/8/5P2/2P4P/P5PK/4R3 b - - 0 31",
+                    "history_sha256": "b5f0cd0af925fd6cf73194187c721f76dc79ed47dfa710abb2821d884be25c14"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "f7e6",
+                    "san": "fxe6",
+                    "gain_cp": 1000,
+                    "fen": "5k2/ppQ1r1p1/4p3/8/5P2/2P4P/P5PK/4R3 w - - 0 32",
+                    "history_sha256": "5d41076b681fe5691c0f0b9e83cedca78f70ae7ff6ea453b6621efd5f85dd6d4"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "c7c8",
+                    "san": "Qc8+",
+                    "gain_cp": 1000,
+                    "fen": "2Q2k2/pp2r1p1/4p3/8/5P2/2P4P/P5PK/4R3 b - - 1 32",
+                    "history_sha256": "ef4536e75145ba25b48f79528ea6aa30125fe57c80983e414bbea2212b4b23f2"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "e7e8",
+                    "san": "Re8",
+                    "gain_cp": 1000,
+                    "fen": "2Q1rk2/pp4p1/4p3/8/5P2/2P4P/P5PK/4R3 w - - 2 33",
+                    "history_sha256": "d7d7dda3e31f9fad1aa4f199f0f892e2735612049f04d2dc04bf02c821eea859"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "c8c5",
+                    "san": "Qc5+",
+                    "gain_cp": 1000,
+                    "fen": "4rk2/pp4p1/4p3/2Q5/5P2/2P4P/P5PK/4R3 b - - 3 33",
+                    "history_sha256": "17bf6653b9d5b1bcd9626841e7a1de9cb757e37bf5f97027dfe43d9e4cc9e3a7"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "f8g8",
+                    "san": "Kg8",
+                    "gain_cp": 1000,
+                    "fen": "4r1k1/pp4p1/4p3/2Q5/5P2/2P4P/P5PK/4R3 w - - 4 34",
+                    "history_sha256": "ddf2da7ccbf266f69af4907602e808a19f8eca04289029ab15648a666e142e22"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "c5c7",
+                    "san": "Qc7",
+                    "gain_cp": 1000,
+                    "fen": "4r1k1/ppQ3p1/4p3/8/5P2/2P4P/P5PK/4R3 b - - 5 34",
+                    "history_sha256": "6ffc749b3511c40e9d109794878fcfa2e1384c78c302c1a2ae891ae30a231ff3"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 17
+          }
+        ]
+      },
+      "previous": {
+        "reason": "material_win_witness",
+        "captures": [
+          {
+            "acceptance": "e6g6",
+            "mate_in_one_witnesses": [
+              "e3e8"
+            ],
+            "legal_response_count": 45,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": 1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": true
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "e3e8",
+                    "san": "Rxe8#",
+                    "gain_cp": 200,
+                    "fen": "4Rk2/ppq2pp1/3b2r1/3Q4/5P2/2P4P/P5PK/4R3 b - - 0 29",
+                    "history_sha256": "4c3d91566bc1a284c4f0fc9e2b0a5705d4099cd3f033c88e49364d89a20cb0bd"
+                  }
+                ]
+              },
+              {
+                "state": 1,
+                "reason": "material_win_at12",
+                "score": {
+                  "cp": 825
+                },
+                "saved_pv_plies": 14,
+                "gain12_cp": 1000,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "d5d6",
+                    "san": "Qxd6+",
+                    "gain_cp": 0,
+                    "fen": "4rk2/ppq2pp1/3Q2r1/8/5P2/2P1R2P/P5PK/4R3 b - - 0 29",
+                    "history_sha256": "811da65519c3a02d933da6135c4e3834f356f514a5c426a881d22d9733cc7dfe"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "e8e7",
+                    "san": "Re7",
+                    "gain_cp": 0,
+                    "fen": "5k2/ppq1rpp1/3Q2r1/8/5P2/2P1R2P/P5PK/4R3 w - - 1 30",
+                    "history_sha256": "eb938822dc3f6fe2b06132a1ce98bc3c502ad18aa2ab0ced2f1ee5a03c71c1ea"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "d6c7",
+                    "san": "Qxc7",
+                    "gain_cp": 1000,
+                    "fen": "5k2/ppQ1rpp1/6r1/8/5P2/2P1R2P/P5PK/4R3 b - - 0 30",
+                    "history_sha256": "46620564c00653aa8b1c5cf183cf273d96e3bbb51f8fe2ff5cac7a120e285040"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "g6e6",
+                    "san": "Rge6",
+                    "gain_cp": 1000,
+                    "fen": "5k2/ppQ1rpp1/4r3/8/5P2/2P1R2P/P5PK/4R3 w - - 1 31",
+                    "history_sha256": "11f8fcc81f9937d3f8737a62dc3d502655192f99095494f63c06936dc34ae7c5"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "e3e6",
+                    "san": "Rxe6",
+                    "gain_cp": 1500,
+                    "fen": "5k2/ppQ1rpp1/4R3/8/5P2/2P4P/P5PK/4R3 b - - 0 31",
+                    "history_sha256": "b5f0cd0af925fd6cf73194187c721f76dc79ed47dfa710abb2821d884be25c14"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "f7e6",
+                    "san": "fxe6",
+                    "gain_cp": 1000,
+                    "fen": "5k2/ppQ1r1p1/4p3/8/5P2/2P4P/P5PK/4R3 w - - 0 32",
+                    "history_sha256": "5d41076b681fe5691c0f0b9e83cedca78f70ae7ff6ea453b6621efd5f85dd6d4"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "c7c5",
+                    "san": "Qc5",
+                    "gain_cp": 1000,
+                    "fen": "5k2/pp2r1p1/4p3/2Q5/5P2/2P4P/P5PK/4R3 b - - 1 32",
+                    "history_sha256": "fcde7b834c383e17319668cbc0e35cd431de69f4a31cb1b26064ce8f2076b998"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "f8f7",
+                    "san": "Kf7",
+                    "gain_cp": 1000,
+                    "fen": "8/pp2rkp1/4p3/2Q5/5P2/2P4P/P5PK/4R3 w - - 2 33",
+                    "history_sha256": "32383706e1c6bcee17686d2caa94ea9e90a3553a58ab5ab9bff35e6b9fff35b9"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "c5h5",
+                    "san": "Qh5+",
+                    "gain_cp": 1000,
+                    "fen": "8/pp2rkp1/4p3/7Q/5P2/2P4P/P5PK/4R3 b - - 3 33",
+                    "history_sha256": "43f434420319deb858d80901c27f724a28b30aefe4a8cc19ae931aeb24a74340"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "f7g8",
+                    "san": "Kg8",
+                    "gain_cp": 1000,
+                    "fen": "6k1/pp2r1p1/4p3/7Q/5P2/2P4P/P5PK/4R3 w - - 4 34",
+                    "history_sha256": "14fd80b3405b2bc800f43038f6ee93e198b9bf4991842c89f3fc0c48720c1ad0"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "h5g4",
+                    "san": "Qg4",
+                    "gain_cp": 1000,
+                    "fen": "6k1/pp2r1p1/4p3/8/5PQ1/2P4P/P5PK/4R3 b - - 5 34",
+                    "history_sha256": "d1abd17305cecfbba0007150f83a3cc2b25a95fa4dfd21c21c4997dab93addf9"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 16
+          }
+        ]
+      }
+    }
+  },
+  "173266974169:84": {
+    "features": {
+      "current": {
+        "nonmate_material_win": 1
+      },
+      "previous": {
+        "nonmate_material_win": 1
+      }
+    },
+    "traces": {
+      "current": {
+        "reason": "material_win_witness",
+        "captures": [
+          {
+            "acceptance": "f5c2",
+            "mate_in_one_witnesses": [
+              "e5h2"
+            ],
+            "legal_response_count": 39,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "e5h2",
+                    "san": "Qxh2#",
+                    "gain_cp": -410,
+                    "fen": "5rk1/2b2p2/6p1/6Qp/p7/2P5/1PB3Pq/3R1R1K w - - 0 44",
+                    "history_sha256": "8758eb75061deaea96d282971cba8909520695eee82a7fcc22e73dad4991ec17"
+                  }
+                ]
+              },
+              {
+                "state": 1,
+                "reason": "material_win_at12",
+                "score": {
+                  "cp": -503
+                },
+                "saved_pv_plies": 18,
+                "gain12_cp": 680,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "e5g5",
+                    "san": "Qxg5",
+                    "gain_cp": 500,
+                    "fen": "5rk1/2b2p2/6p1/6qp/p7/2P5/1PB3PP/3R1R1K w - - 0 44",
+                    "history_sha256": "4f6450a3a7cc8a1fb68e52cc62b8f9317ddc26762ff41e54b6f11d5b3a843a1e"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "d1d4",
+                    "san": "Rd4",
+                    "gain_cp": 500,
+                    "fen": "5rk1/2b2p2/6p1/6qp/p2R4/2P5/1PB3PP/5R1K b - - 1 44",
+                    "history_sha256": "570fce7b59aa4930ee5a04009e845b91693949b40a60ba8a99c2f7ab5bc503a0"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "g5e5",
+                    "san": "Qe5",
+                    "gain_cp": 500,
+                    "fen": "5rk1/2b2p2/6p1/4q2p/p2R4/2P5/1PB3PP/5R1K w - - 2 45",
+                    "history_sha256": "56e16f145f16d6ca617dd17d97bc253c4de546725f16ef06d7096c7de7d3f0b2"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "g2g3",
+                    "san": "g3",
+                    "gain_cp": 500,
+                    "fen": "5rk1/2b2p2/6p1/4q2p/p2R4/2P3P1/1PB4P/5R1K b - - 0 45",
+                    "history_sha256": "a53b092bafd766428cad2a58ae51294acb73d1a10bc574cb58ec077b0fe42949"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "f8d8",
+                    "san": "Rd8",
+                    "gain_cp": 500,
+                    "fen": "3r2k1/2b2p2/6p1/4q2p/p2R4/2P3P1/1PB4P/5R1K w - - 1 46",
+                    "history_sha256": "9d34f9b96ef59ba0e99c1ef12b746649416d0d72d2b150b3f9c928790433f8d3"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "d4e4",
+                    "san": "Re4",
+                    "gain_cp": 500,
+                    "fen": "3r2k1/2b2p2/6p1/4q2p/p3R3/2P3P1/1PB4P/5R1K b - - 2 46",
+                    "history_sha256": "52f18718b597d4b5565ed3ebf5eaa5597120e219cf300679e72465084aca13eb"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "e5b5",
+                    "san": "Qb5",
+                    "gain_cp": 500,
+                    "fen": "3r2k1/2b2p2/6p1/1q5p/p3R3/2P3P1/1PB4P/5R1K w - - 3 47",
+                    "history_sha256": "e3517ce6ff89337e8f812a640196a09a10d712a15438e2edeaefbf9f7dd4b8f5"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "e4e1",
+                    "san": "Ree1",
+                    "gain_cp": 500,
+                    "fen": "3r2k1/2b2p2/6p1/1q5p/p7/2P3P1/1PB4P/4RR1K b - - 4 47",
+                    "history_sha256": "8802394fd90aeb861e47d63ba140ee6768c4b17f32ea986cabfde8f685e48b32"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "b5b2",
+                    "san": "Qxb2",
+                    "gain_cp": 590,
+                    "fen": "3r2k1/2b2p2/6p1/7p/p7/2P3P1/1qB4P/4RR1K w - - 0 48",
+                    "history_sha256": "27ab60e39219055d34e8dfa05eed4cbb4f2eab085fede2fcbd851aa28383f451"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "c2e4",
+                    "san": "Be4",
+                    "gain_cp": 590,
+                    "fen": "3r2k1/2b2p2/6p1/7p/p3B3/2P3P1/1q5P/4RR1K b - - 1 48",
+                    "history_sha256": "a478a2d78051f020ae3aff5af65c84fe1f7b8a96ef5eecd965470f87761931d0"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "b2c3",
+                    "san": "Qxc3",
+                    "gain_cp": 680,
+                    "fen": "3r2k1/2b2p2/6p1/7p/p3B3/2q3P1/7P/4RR1K w - - 0 49",
+                    "history_sha256": "6a71486582a813cfc8a042afe1a921d2661eb20e5d25112a4b0101656e56df56"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 17
+          }
+        ]
+      },
+      "previous": {
+        "reason": "material_win_witness",
+        "captures": [
+          {
+            "acceptance": "f5c2",
+            "mate_in_one_witnesses": [
+              "e5h2"
+            ],
+            "legal_response_count": 39,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "e5h2",
+                    "san": "Qxh2#",
+                    "gain_cp": -410,
+                    "fen": "5rk1/2b2p2/6p1/6Qp/p7/2P5/1PB3Pq/3R1R1K w - - 0 44",
+                    "history_sha256": "8758eb75061deaea96d282971cba8909520695eee82a7fcc22e73dad4991ec17"
+                  }
+                ]
+              },
+              {
+                "state": 1,
+                "reason": "material_win_at12",
+                "score": {
+                  "cp": -501
+                },
+                "saved_pv_plies": 14,
+                "gain12_cp": 500,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "e5g5",
+                    "san": "Qxg5",
+                    "gain_cp": 500,
+                    "fen": "5rk1/2b2p2/6p1/6qp/p7/2P5/1PB3PP/3R1R1K w - - 0 44",
+                    "history_sha256": "4f6450a3a7cc8a1fb68e52cc62b8f9317ddc26762ff41e54b6f11d5b3a843a1e"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "d1d4",
+                    "san": "Rd4",
+                    "gain_cp": 500,
+                    "fen": "5rk1/2b2p2/6p1/6qp/p2R4/2P5/1PB3PP/5R1K b - - 1 44",
+                    "history_sha256": "570fce7b59aa4930ee5a04009e845b91693949b40a60ba8a99c2f7ab5bc503a0"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "g5e5",
+                    "san": "Qe5",
+                    "gain_cp": 500,
+                    "fen": "5rk1/2b2p2/6p1/4q2p/p2R4/2P5/1PB3PP/5R1K w - - 2 45",
+                    "history_sha256": "56e16f145f16d6ca617dd17d97bc253c4de546725f16ef06d7096c7de7d3f0b2"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "g2g3",
+                    "san": "g3",
+                    "gain_cp": 500,
+                    "fen": "5rk1/2b2p2/6p1/4q2p/p2R4/2P3P1/1PB4P/5R1K b - - 0 45",
+                    "history_sha256": "a53b092bafd766428cad2a58ae51294acb73d1a10bc574cb58ec077b0fe42949"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "e5e2",
+                    "san": "Qe2",
+                    "gain_cp": 500,
+                    "fen": "5rk1/2b2p2/6p1/7p/p2R4/2P3P1/1PB1q2P/5R1K w - - 1 46",
+                    "history_sha256": "8632a3f585897cb196f93d796d3f8d67cb2050bbc8db7a700be245e115274ae7"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "c2d3",
+                    "san": "Bd3",
+                    "gain_cp": 500,
+                    "fen": "5rk1/2b2p2/6p1/7p/p2R4/2PB2P1/1P2q2P/5R1K b - - 2 46",
+                    "history_sha256": "c8f3b36729ae6eb08e6477f9040c1dfd7cc6bf9485f424135571b52a91696c77"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "e2e7",
+                    "san": "Qe7",
+                    "gain_cp": 500,
+                    "fen": "5rk1/2b1qp2/6p1/7p/p2R4/2PB2P1/1P5P/5R1K w - - 3 47",
+                    "history_sha256": "3e5086f68284cd18bbffeb5004f9400cf14ace9c68f4075a41ce625859e942d7"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "d3c4",
+                    "san": "Bc4",
+                    "gain_cp": 500,
+                    "fen": "5rk1/2b1qp2/6p1/7p/p1BR4/2P3P1/1P5P/5R1K b - - 4 47",
+                    "history_sha256": "29aefe735ad73f633e9283de91c309fc535ab044cf8e426c90c65227f16736f5"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "g8h8",
+                    "san": "Kh8",
+                    "gain_cp": 500,
+                    "fen": "5r1k/2b1qp2/6p1/7p/p1BR4/2P3P1/1P5P/5R1K w - - 5 48",
+                    "history_sha256": "ed584d85dee551492436ebb69b7067b1211c09f9d515fda4790c70acb4af755d"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "f1d1",
+                    "san": "Rfd1",
+                    "gain_cp": 500,
+                    "fen": "5r1k/2b1qp2/6p1/7p/p1BR4/2P3P1/1P5P/3R3K b - - 6 48",
+                    "history_sha256": "051aa22bb8a9e864ced7462af8e88caaa4aae10d79649e7216e532dbc65d7cdf"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "e7c5",
+                    "san": "Qc5",
+                    "gain_cp": 500,
+                    "fen": "5r1k/2b2p2/6p1/2q4p/p1BR4/2P3P1/1P5P/3R3K w - - 7 49",
+                    "history_sha256": "1542d9c62fa19520c11140faf036c2d08676df4122ec5481a3a3922e84d3c4ae"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 16
+          }
+        ]
+      }
+    }
+  },
+  "167735024286:72": {
+    "features": {
+      "current": {
+        "nonmate_material_win": 0
+      },
+      "previous": {
+        "nonmate_material_win": 0
+      }
+    },
+    "traces": {
+      "current": {
+        "reason": "no_saved_material_win_witness",
+        "captures": [
+          {
+            "acceptance": "a7a8",
+            "mate_in_one_witnesses": [
+              "h3g2"
+            ],
+            "legal_response_count": 30,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "h3g2",
+                    "san": "Qxg2#",
+                    "gain_cp": -210,
+                    "fen": "R2bk3/5p2/1B1p2r1/1R2p3/4P3/2N2P2/1PP3q1/6K1 w - - 0 38",
+                    "history_sha256": "e75555dab349f7f3db8e87f86c3b3c4ba1ac1b595a6dde38990f6153eb0f6501"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -3
+                },
+                "saved_pv_plies": 5,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 6,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "g6g2",
+                    "san": "Rxg2+",
+                    "gain_cp": -210,
+                    "fen": "R2bk3/5p2/1B1p4/1R2p3/4P3/2N2P1q/1PP3r1/6K1 w - - 0 38",
+                    "history_sha256": "b02e50223e7d5af3047350d8d8bd8036580956b168c1425bfd84bd39d7444184"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "g1f1",
+                    "san": "Kf1",
+                    "gain_cp": -210,
+                    "fen": "R2bk3/5p2/1B1p4/1R2p3/4P3/2N2P1q/1PP3r1/5K2 b - - 1 38",
+                    "history_sha256": "3c9a97ad652eb68127d82f2c113843928db77b79658450a21155e77a46b28cf8"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "h3h1",
+                    "san": "Qh1+",
+                    "gain_cp": -210,
+                    "fen": "R2bk3/5p2/1B1p4/1R2p3/4P3/2N2P2/1PP3r1/5K1q w - - 2 39",
+                    "history_sha256": "fbec8deb675f3c0b2f5558863bfdc161809451afd36da71cc7012b8bef21dab7"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "b6g1",
+                    "san": "Bg1",
+                    "gain_cp": -210,
+                    "fen": "R2bk3/5p2/3p4/1R2p3/4P3/2N2P2/1PP3r1/5KBq b - - 3 39",
+                    "history_sha256": "ad1230a3c0ec995c3695615c624d25b46665a0ea5540d8931e59f5e3bdf0dfd6"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "h1g1",
+                    "san": "Qxg1#",
+                    "gain_cp": 90,
+                    "fen": "R2bk3/5p2/3p4/1R2p3/4P3/2N2P2/1PP3r1/5Kq1 w - - 0 40",
+                    "history_sha256": "ea2137976578a328e9c826537bdeac8867d1300609e5364b61bd94c0066868a9"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 245
+          }
+        ]
+      },
+      "previous": {
+        "reason": "no_saved_material_win_witness",
+        "captures": [
+          {
+            "acceptance": "a7a8",
+            "mate_in_one_witnesses": [
+              "h3g2"
+            ],
+            "legal_response_count": 30,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "h3g2",
+                    "san": "Qxg2#",
+                    "gain_cp": -210,
+                    "fen": "R2bk3/5p2/1B1p2r1/1R2p3/4P3/2N2P2/1PP3q1/6K1 w - - 0 38",
+                    "history_sha256": "e75555dab349f7f3db8e87f86c3b3c4ba1ac1b595a6dde38990f6153eb0f6501"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": -3
+                },
+                "saved_pv_plies": 5,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 6,
+                  "termination": "CHECKMATE",
+                  "winner": false
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "g6g2",
+                    "san": "Rxg2+",
+                    "gain_cp": -210,
+                    "fen": "R2bk3/5p2/1B1p4/1R2p3/4P3/2N2P1q/1PP3r1/6K1 w - - 0 38",
+                    "history_sha256": "b02e50223e7d5af3047350d8d8bd8036580956b168c1425bfd84bd39d7444184"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "g1f1",
+                    "san": "Kf1",
+                    "gain_cp": -210,
+                    "fen": "R2bk3/5p2/1B1p4/1R2p3/4P3/2N2P1q/1PP3r1/5K2 b - - 1 38",
+                    "history_sha256": "3c9a97ad652eb68127d82f2c113843928db77b79658450a21155e77a46b28cf8"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "h3h1",
+                    "san": "Qh1+",
+                    "gain_cp": -210,
+                    "fen": "R2bk3/5p2/1B1p4/1R2p3/4P3/2N2P2/1PP3r1/5K1q w - - 2 39",
+                    "history_sha256": "fbec8deb675f3c0b2f5558863bfdc161809451afd36da71cc7012b8bef21dab7"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "b6g1",
+                    "san": "Bg1",
+                    "gain_cp": -210,
+                    "fen": "R2bk3/5p2/3p4/1R2p3/4P3/2N2P2/1PP3r1/5KBq b - - 3 39",
+                    "history_sha256": "ad1230a3c0ec995c3695615c624d25b46665a0ea5540d8931e59f5e3bdf0dfd6"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "h1g1",
+                    "san": "Qxg1#",
+                    "gain_cp": 90,
+                    "fen": "R2bk3/5p2/3p4/1R2p3/4P3/2N2P2/1PP3r1/5Kq1 w - - 0 40",
+                    "history_sha256": "ea2137976578a328e9c826537bdeac8867d1300609e5364b61bd94c0066868a9"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 244
+          }
+        ]
+      }
+    }
+  },
+  "184069349690:45": {
+    "features": {
+      "current": {
+        "nonmate_material_win": 0
+      },
+      "previous": {
+        "nonmate_material_win": 0
+      }
+    },
+    "traces": {
+      "current": {
+        "reason": "no_saved_material_win_witness",
+        "captures": [
+          {
+            "acceptance": "a8e8",
+            "mate_in_one_witnesses": [
+              "e1e8"
+            ],
+            "legal_response_count": 27,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": 1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": true
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "e1e8",
+                    "san": "Rxe8#",
+                    "gain_cp": -500,
+                    "fen": "4R1k1/5npp/1pr5/p2n4/5P2/6P1/qP3P1P/2R3K1 b - - 0 24",
+                    "history_sha256": "96ebd61c37e280b1a276c163ac664ed6b38ce8ad29f1d213c8d6e12138d63bd8"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": -729
+                },
+                "saved_pv_plies": 14,
+                "gain12_cp": -1000,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "c1d1",
+                    "san": "Rcd1",
+                    "gain_cp": -1000,
+                    "fen": "4r1k1/5npp/1pr5/p2n4/5P2/6P1/qP3P1P/3RR1K1 b - - 1 24",
+                    "history_sha256": "e3587f43851b1191764eb4a8071037e87a026b2bf15eba5a4dbf7931a020ed5d"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "c6c8",
+                    "san": "Rcc8",
+                    "gain_cp": -1000,
+                    "fen": "2r1r1k1/5npp/1p6/p2n4/5P2/6P1/qP3P1P/3RR1K1 w - - 2 25",
+                    "history_sha256": "9807ba7375d0403ae480e96db8760503ff1dae7abca4d1f5ef928e14c9f8484b"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "f4f5",
+                    "san": "f5",
+                    "gain_cp": -1000,
+                    "fen": "2r1r1k1/5npp/1p6/p2n1P2/8/6P1/qP3P1P/3RR1K1 b - - 0 25",
+                    "history_sha256": "4493d835b63a514d34193d72524300464242b264d51e2dc14bc3627045e45311"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "d5f6",
+                    "san": "Nf6",
+                    "gain_cp": -1000,
+                    "fen": "2r1r1k1/5npp/1p3n2/p4P2/8/6P1/qP3P1P/3RR1K1 w - - 1 26",
+                    "history_sha256": "1bafd1252f4aa3f6c52708030e6cba01d45b59bbb9d75f4269b1146eef7256be"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "e1e3",
+                    "san": "Re3",
+                    "gain_cp": -1000,
+                    "fen": "2r1r1k1/5npp/1p3n2/p4P2/8/4R1P1/qP3P1P/3R2K1 b - - 2 26",
+                    "history_sha256": "f3bc863b1b6283223caa64d7bf34c523eb45941712ed457218228c7fc55ada0d"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "a2a4",
+                    "san": "Qa4",
+                    "gain_cp": -1000,
+                    "fen": "2r1r1k1/5npp/1p3n2/p4P2/q7/4R1P1/1P3P1P/3R2K1 w - - 3 27",
+                    "history_sha256": "a8c76b5fff3cab612d83bee5bdb8966349097ba1bf9455c7994ad24001e41417"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "d1e1",
+                    "san": "Rde1",
+                    "gain_cp": -1000,
+                    "fen": "2r1r1k1/5npp/1p3n2/p4P2/q7/4R1P1/1P3P1P/4R1K1 b - - 4 27",
+                    "history_sha256": "f2ac12abcd3745edca9649ed97026103f424fce464c62fde8b68fd909633dfd2"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "a4c6",
+                    "san": "Qc6",
+                    "gain_cp": -1000,
+                    "fen": "2r1r1k1/5npp/1pq2n2/p4P2/8/4R1P1/1P3P1P/4R1K1 w - - 5 28",
+                    "history_sha256": "ecdca673358d9d64175871938b841f8206c80d88b751cd9ea6a44bfd62b8cc18"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "e3e6",
+                    "san": "Re6",
+                    "gain_cp": -1000,
+                    "fen": "2r1r1k1/5npp/1pq1Rn2/p4P2/8/6P1/1P3P1P/4R1K1 b - - 6 28",
+                    "history_sha256": "008698e2400d54f4de6d064e498fda79e3317a64e760a5bf177a886c2f6bbf8b"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "c6d7",
+                    "san": "Qd7",
+                    "gain_cp": -1000,
+                    "fen": "2r1r1k1/3q1npp/1p2Rn2/p4P2/8/6P1/1P3P1P/4R1K1 w - - 7 29",
+                    "history_sha256": "1cb5698847ed09651e097f98e348d5cb2078b3268d7b650b0e7f205f3a9a8689"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "b2b3",
+                    "san": "b3",
+                    "gain_cp": -1000,
+                    "fen": "2r1r1k1/3q1npp/1p2Rn2/p4P2/8/1P4P1/5P1P/4R1K1 b - - 0 29",
+                    "history_sha256": "3f42c55634790c6643f1e134c1615af3de1058ef110bb4241d96b50d47733aeb"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 16
+          }
+        ]
+      },
+      "previous": {
+        "reason": "no_saved_material_win_witness",
+        "captures": [
+          {
+            "acceptance": "a8e8",
+            "mate_in_one_witnesses": [
+              "e1e8"
+            ],
+            "legal_response_count": 27,
+            "lines": [
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "mate": 1
+                },
+                "saved_pv_plies": 1,
+                "gain12_cp": null,
+                "terminal": {
+                  "ply": 2,
+                  "termination": "CHECKMATE",
+                  "winner": true
+                },
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "e1e8",
+                    "san": "Rxe8#",
+                    "gain_cp": -500,
+                    "fen": "4R1k1/5npp/1pr5/p2n4/5P2/6P1/qP3P1P/2R3K1 b - - 0 24",
+                    "history_sha256": "96ebd61c37e280b1a276c163ac664ed6b38ce8ad29f1d213c8d6e12138d63bd8"
+                  }
+                ]
+              },
+              {
+                "state": 0,
+                "reason": "not_finite_favorable",
+                "score": {
+                  "cp": -706
+                },
+                "saved_pv_plies": 11,
+                "gain12_cp": -1500,
+                "terminal": null,
+                "steps": [
+                  {
+                    "ply": 2,
+                    "uci": "c1d1",
+                    "san": "Rcd1",
+                    "gain_cp": -1000,
+                    "fen": "4r1k1/5npp/1pr5/p2n4/5P2/6P1/qP3P1P/3RR1K1 b - - 1 24",
+                    "history_sha256": "e3587f43851b1191764eb4a8071037e87a026b2bf15eba5a4dbf7931a020ed5d"
+                  },
+                  {
+                    "ply": 3,
+                    "uci": "c6c8",
+                    "san": "Rcc8",
+                    "gain_cp": -1000,
+                    "fen": "2r1r1k1/5npp/1p6/p2n4/5P2/6P1/qP3P1P/3RR1K1 w - - 2 25",
+                    "history_sha256": "9807ba7375d0403ae480e96db8760503ff1dae7abca4d1f5ef928e14c9f8484b"
+                  },
+                  {
+                    "ply": 4,
+                    "uci": "b2b3",
+                    "san": "b3",
+                    "gain_cp": -1000,
+                    "fen": "2r1r1k1/5npp/1p6/p2n4/5P2/1P4P1/q4P1P/3RR1K1 b - - 0 25",
+                    "history_sha256": "e3f5d70028d8604db683efcbcbb05904f492b5aca96acc4651b7cf55eea13ff8"
+                  },
+                  {
+                    "ply": 5,
+                    "uci": "d5f6",
+                    "san": "Nf6",
+                    "gain_cp": -1000,
+                    "fen": "2r1r1k1/5npp/1p3n2/p7/5P2/1P4P1/q4P1P/3RR1K1 w - - 1 26",
+                    "history_sha256": "82e51356b1afaa4e1f445a787ae8f3597cf4171235654b585870086a4f34e9a2"
+                  },
+                  {
+                    "ply": 6,
+                    "uci": "g3g4",
+                    "san": "g4",
+                    "gain_cp": -1000,
+                    "fen": "2r1r1k1/5npp/1p3n2/p7/5PP1/1P6/q4P1P/3RR1K1 b - - 0 26",
+                    "history_sha256": "f4d59b04c62fc0341439f86ae82f7d1d2aa6a2d87d80b4fc9a96a83f68d778c1"
+                  },
+                  {
+                    "ply": 7,
+                    "uci": "e8e1",
+                    "san": "Rxe1+",
+                    "gain_cp": -1500,
+                    "fen": "2r3k1/5npp/1p3n2/p7/5PP1/1P6/q4P1P/3Rr1K1 w - - 0 27",
+                    "history_sha256": "24b106f15a94caa160db6c8bc71d5cbb66b27056a29d8457735f3a9dd310a407"
+                  },
+                  {
+                    "ply": 8,
+                    "uci": "d1e1",
+                    "san": "Rxe1",
+                    "gain_cp": -1000,
+                    "fen": "2r3k1/5npp/1p3n2/p7/5PP1/1P6/q4P1P/4R1K1 b - - 0 27",
+                    "history_sha256": "a063b5e9e30871f3938a7860d6ebee5a2b33c884bf96ec36d3a13bf6b391245f"
+                  },
+                  {
+                    "ply": 9,
+                    "uci": "c8e8",
+                    "san": "Re8",
+                    "gain_cp": -1000,
+                    "fen": "4r1k1/5npp/1p3n2/p7/5PP1/1P6/q4P1P/4R1K1 w - - 1 28",
+                    "history_sha256": "1c8d480a1eb2c233e4df8a78b0b85370060c0842cfc4c446e31e200ea83f2a40"
+                  },
+                  {
+                    "ply": 10,
+                    "uci": "h2h3",
+                    "san": "h3",
+                    "gain_cp": -1000,
+                    "fen": "4r1k1/5npp/1p3n2/p7/5PP1/1P5P/q4P2/4R1K1 b - - 0 28",
+                    "history_sha256": "a055be67e7acc6886ddbf2208a19f904d69966974f3c6295226d7fd509841ba8"
+                  },
+                  {
+                    "ply": 11,
+                    "uci": "e8e1",
+                    "san": "Rxe1+",
+                    "gain_cp": -1500,
+                    "fen": "6k1/5npp/1p3n2/p7/5PP1/1P5P/q4P2/4r1K1 w - - 0 29",
+                    "history_sha256": "ad9a423e3205ba2882fbc51b372b91594d4eb3a84a3d1185510b4db0db11040a"
+                  },
+                  {
+                    "ply": 12,
+                    "uci": "g1g2",
+                    "san": "Kg2",
+                    "gain_cp": -1500,
+                    "fen": "6k1/5npp/1p3n2/p7/5PP1/1P5P/q4PK1/4r3 b - - 1 29",
+                    "history_sha256": "9291299ae1196809c56a439a037d98f3a551672886212951c78723ca0863df32"
+                  }
+                ]
+              }
+            ],
+            "reason": "saved_multipv_complete",
+            "depth": 15
+          }
+        ]
+      }
+    }
+  }
+}

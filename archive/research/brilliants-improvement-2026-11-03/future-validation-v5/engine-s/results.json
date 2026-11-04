@@ -1,0 +1,8180 @@
+{
+  "scope": "Fresh frozen200 prospective fixed-source assessment at300k, separate complete prior-origin bank, no tuning or core replacement.",
+  "freeze": {
+    "frozen_at": "2026-11-03T09:48:31.491Z",
+    "scope": "One private A plus repeat-continuation rule with new safe checking-fork or new legal mating acceptance exceptions; no identities/labels in proof;512 shared structural and forcing nodes; prior unsuppressed confirmed A.",
+    "sha256": {
+      "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/temporalProof.ts": "16faa288afc2e18716cdc7135efa8275712cd3b12624e4f696f33f25f6b3fe29",
+      "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/replay.mts": "57c238853d588eb31c1e79d1341845bb02b1d66f7eceb8412f58ebc1586586d7",
+      "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/../variants/variantA.ts": "bdc7b52881c7cfe26a3ad6d6483805a4e58a2e6ca1181e5b0e5dd2c3f382ce3b",
+      "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/../variants/offerProofs.ts": "d1d887daa2163e9ec79145414a4bfa8669af66ccabc62a98dcec8bb012a0ecaa",
+      "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/sequence-reference/../../../root/frozen-v4/core.ts": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a"
+    },
+    "correction": "Correct castling detection: same-rank two-file king move or king destination own rook. Original source-freeze.json retained."
+  },
+  "evidence": {
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/future-validation-v5/engine-core/analysis-core.json": "40ba351e58422b043608cfc55e2479be23b6400b09953826719ac559ea72c6c9",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/future-validation-v5/engine-s/prior-snapshots.json": "6b692e12788027021ffe53201e4e2aa0a3169a12a89280be0cdcbc3c01310d13"
+  },
+  "summaries": {
+    "all200": {
+      "baseA": {
+        "TP": 78,
+        "FP": 6,
+        "FN": 22,
+        "TN": 94
+      },
+      "sequence": {
+        "TP": 78,
+        "FP": 5,
+        "FN": 22,
+        "TN": 95
+      }
+    },
+    "GothamChess": {
+      "baseA": {
+        "TP": 16,
+        "FP": 0,
+        "FN": 4,
+        "TN": 20
+      },
+      "sequence": {
+        "TP": 16,
+        "FP": 0,
+        "FN": 4,
+        "TN": 20
+      }
+    },
+    "nelsi": {
+      "baseA": {
+        "TP": 18,
+        "FP": 2,
+        "FN": 2,
+        "TN": 18
+      },
+      "sequence": {
+        "TP": 18,
+        "FP": 2,
+        "FN": 2,
+        "TN": 18
+      }
+    },
+    "hansen": {
+      "baseA": {
+        "TP": 17,
+        "FP": 3,
+        "FN": 3,
+        "TN": 17
+      },
+      "sequence": {
+        "TP": 17,
+        "FP": 3,
+        "FN": 3,
+        "TN": 17
+      }
+    },
+    "Hikaru": {
+      "baseA": {
+        "TP": 11,
+        "FP": 1,
+        "FN": 9,
+        "TN": 19
+      },
+      "sequence": {
+        "TP": 11,
+        "FP": 0,
+        "FN": 9,
+        "TN": 20
+      }
+    },
+    "KNVB": {
+      "baseA": {
+        "TP": 16,
+        "FP": 0,
+        "FN": 4,
+        "TN": 20
+      },
+      "sequence": {
+        "TP": 16,
+        "FP": 0,
+        "FN": 4,
+        "TN": 20
+      }
+    }
+  },
+  "rows": [
+    {
+      "key": "1006812690:46",
+      "san": "Bg5",
+      "base": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "1006812690:44",
+          "1006812690:45",
+          "1006812690:46"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "1006812690:48",
+      "san": "Nxf4",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "1006812690:46",
+          "1006812690:47",
+          "1006812690:48"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 42,
+          "prediction": {
+            "missing": [
+              "1006812690:40",
+              "1006812690:41",
+              "1006812690:42"
+            ]
+          }
+        },
+        {
+          "ply": 44,
+          "prediction": {
+            "missing": [
+              "1006812690:42",
+              "1006812690:43"
+            ]
+          }
+        },
+        {
+          "ply": 46,
+          "prediction": {
+            "symbol": "!",
+            "provisional": "!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "1006812690:44",
+              "1006812690:45",
+              "1006812690:46"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "167232570202:23",
+      "san": "Bxh6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 95.70532847377837,
+        "cpLoss": 15,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167232570202:21",
+          "167232570202:22",
+          "167232570202:23"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 17,
+          "prediction": {
+            "missing": [
+              "167232570202:15",
+              "167232570202:16",
+              "167232570202:17"
+            ]
+          }
+        },
+        {
+          "ply": 19,
+          "prediction": {
+            "missing": [
+              "167232570202:17",
+              "167232570202:18",
+              "167232570202:19"
+            ]
+          }
+        },
+        {
+          "ply": 21,
+          "prediction": {
+            "missing": [
+              "167232570202:19",
+              "167232570202:20"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "167318775570:24",
+      "san": "Bxh3",
+      "base": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 99.53090959148423,
+        "cpLoss": 4,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167318775570:22",
+          "167318775570:23",
+          "167318775570:24"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "nelsi"
+    },
+    {
+      "key": "167318775570:32",
+      "san": "Bg5",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167318775570:30",
+          "167318775570:31",
+          "167318775570:32"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 8,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 26,
+          "prediction": {
+            "missing": [
+              "167318775570:25",
+              "167318775570:26"
+            ]
+          }
+        },
+        {
+          "ply": 28,
+          "prediction": {
+            "missing": [
+              "167318775570:26",
+              "167318775570:27",
+              "167318775570:28"
+            ]
+          }
+        },
+        {
+          "ply": 30,
+          "prediction": {
+            "missing": [
+              "167318775570:28",
+              "167318775570:29"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "167735813618:71",
+      "san": "Bxe3",
+      "base": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167735813618:69",
+          "167735813618:70",
+          "167735813618:71"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "167735813618:89",
+      "san": "Kf1",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167735813618:87",
+          "167735813618:88",
+          "167735813618:89"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "hansen"
+    },
+    {
+      "key": "167741829524:31",
+      "san": "Bf4",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167741829524:29",
+          "167741829524:30",
+          "167741829524:31"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "hansen"
+    },
+    {
+      "key": "167741829524:33",
+      "san": "Bxh7+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.63367343363315,
+        "cpLoss": 6,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167741829524:31",
+          "167741829524:32",
+          "167741829524:33"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 27,
+          "prediction": {
+            "missing": [
+              "167741829524:25",
+              "167741829524:26",
+              "167741829524:27"
+            ]
+          }
+        },
+        {
+          "ply": 29,
+          "prediction": {
+            "missing": [
+              "167741829524:27",
+              "167741829524:28"
+            ]
+          }
+        },
+        {
+          "ply": 31,
+          "prediction": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "167741829524:29",
+              "167741829524:30",
+              "167741829524:31"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "167741909692:53",
+      "san": "Nf3",
+      "base": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 25.36914812806154,
+        "cpLoss": 585,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167741909692:51",
+          "167741909692:52",
+          "167741909692:53"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "miss",
+      "account": "hansen"
+    },
+    {
+      "key": "167741909692:59",
+      "san": "Qh6+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167741909692:57",
+          "167741909692:58",
+          "167741909692:59"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 53,
+          "prediction": {
+            "symbol": "??",
+            "provisional": "??",
+            "withheld": false,
+            "accuracy": 25.36914812806154,
+            "cpLoss": 585,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "167741909692:51",
+              "167741909692:52",
+              "167741909692:53"
+            ]
+          }
+        },
+        {
+          "ply": 55,
+          "prediction": {
+            "missing": [
+              "167741909692:54",
+              "167741909692:55"
+            ]
+          }
+        },
+        {
+          "ply": 57,
+          "prediction": {
+            "missing": [
+              "167741909692:55",
+              "167741909692:56"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "167742086130:58",
+      "san": "Qxf4",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167742086130:56",
+          "167742086130:57",
+          "167742086130:58"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 52,
+          "prediction": {
+            "missing": [
+              "167742086130:50",
+              "167742086130:51",
+              "167742086130:52"
+            ]
+          }
+        },
+        {
+          "ply": 54,
+          "prediction": {
+            "missing": [
+              "167742086130:52",
+              "167742086130:53",
+              "167742086130:54"
+            ]
+          }
+        },
+        {
+          "ply": 56,
+          "prediction": {
+            "missing": [
+              "167742086130:54",
+              "167742086130:55"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "167742086130:64",
+      "san": "Bd6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 2,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167742086130:62",
+          "167742086130:63",
+          "167742086130:64"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "hansen"
+    },
+    {
+      "key": "167744883950:69",
+      "san": "Bf6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167744883950:67",
+          "167744883950:68",
+          "167744883950:69"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "hansen"
+    },
+    {
+      "key": "167744883950:83",
+      "san": "Qf8+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167744883950:81",
+          "167744883950:82",
+          "167744883950:83"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 77,
+          "prediction": {
+            "missing": [
+              "167744883950:75",
+              "167744883950:76",
+              "167744883950:77"
+            ]
+          }
+        },
+        {
+          "ply": 79,
+          "prediction": {
+            "missing": [
+              "167744883950:77",
+              "167744883950:78",
+              "167744883950:79"
+            ]
+          }
+        },
+        {
+          "ply": 81,
+          "prediction": {
+            "missing": [
+              "167744883950:79",
+              "167744883950:80"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "167746069278:24",
+      "san": "Bxh2+",
+      "base": {
+        "symbol": "",
+        "provisional": "!!",
+        "withheld": true,
+        "accuracy": 81.46707159291847,
+        "cpLoss": 53,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167746069278:22",
+          "167746069278:23",
+          "167746069278:24"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?!",
+      "account": "hansen"
+    },
+    {
+      "key": "167746069278:40",
+      "san": "Ng4",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167746069278:38",
+          "167746069278:39",
+          "167746069278:40"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 6,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 34,
+          "prediction": {
+            "missing": [
+              "167746069278:32",
+              "167746069278:33",
+              "167746069278:34"
+            ]
+          }
+        },
+        {
+          "ply": 36,
+          "prediction": {
+            "missing": [
+              "167746069278:34",
+              "167746069278:35",
+              "167746069278:36"
+            ]
+          }
+        },
+        {
+          "ply": 38,
+          "prediction": {
+            "missing": [
+              "167746069278:36",
+              "167746069278:37"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "167746953578:81",
+      "san": "Be6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167746953578:79",
+          "167746953578:80",
+          "167746953578:81"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "hansen"
+    },
+    {
+      "key": "167746953578:85",
+      "san": "Bh4",
+      "base": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 74.62960110974092,
+        "cpLoss": 167,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "167746953578:83",
+          "167746953578:84",
+          "167746953578:85"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "168156242980:23",
+      "san": "d5",
+      "base": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 49.16872092044147,
+        "cpLoss": 176,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "168156242980:21",
+          "168156242980:22",
+          "168156242980:23"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "??",
+      "account": "nelsi"
+    },
+    {
+      "key": "168788226486:52",
+      "san": "Qf7",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "168788226486:50",
+          "168788226486:51",
+          "168788226486:52"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 7,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 46,
+          "prediction": {
+            "missing": [
+              "168788226486:44",
+              "168788226486:45",
+              "168788226486:46"
+            ]
+          }
+        },
+        {
+          "ply": 48,
+          "prediction": {
+            "missing": [
+              "168788226486:46",
+              "168788226486:47",
+              "168788226486:48"
+            ]
+          }
+        },
+        {
+          "ply": 50,
+          "prediction": {
+            "missing": [
+              "168788226486:48",
+              "168788226486:49"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "168788226486:58",
+      "san": "N2e4+",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "168788226486:56",
+          "168788226486:57",
+          "168788226486:58"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "hansen"
+    },
+    {
+      "key": "168957905206:41",
+      "san": "Rac1",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 93.1489165214217,
+        "cpLoss": 22,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "168957905206:39",
+          "168957905206:40",
+          "168957905206:41"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "hansen"
+    },
+    {
+      "key": "168957905206:57",
+      "san": "Bxg7",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "168957905206:55",
+          "168957905206:56",
+          "168957905206:57"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 51,
+          "prediction": {
+            "missing": [
+              "168957905206:49",
+              "168957905206:50",
+              "168957905206:51"
+            ]
+          }
+        },
+        {
+          "ply": 53,
+          "prediction": {
+            "missing": [
+              "168957905206:51",
+              "168957905206:52",
+              "168957905206:53"
+            ]
+          }
+        },
+        {
+          "ply": 55,
+          "prediction": {
+            "missing": [
+              "168957905206:53",
+              "168957905206:54"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "169921610506:21",
+      "san": "Bxh7+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "169921610506:19",
+          "169921610506:20",
+          "169921610506:21"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 15,
+          "prediction": {
+            "missing": [
+              "169921610506:13",
+              "169921610506:14",
+              "169921610506:15"
+            ]
+          }
+        },
+        {
+          "ply": 17,
+          "prediction": {
+            "missing": [
+              "169921610506:15",
+              "169921610506:16",
+              "169921610506:17"
+            ]
+          }
+        },
+        {
+          "ply": 19,
+          "prediction": {
+            "missing": [
+              "169921610506:17",
+              "169921610506:18"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "169921610506:31",
+      "san": "Be7",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 92.95096284973614,
+        "cpLoss": 21,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "169921610506:29",
+          "169921610506:30",
+          "169921610506:31"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?",
+      "account": "nelsi"
+    },
+    {
+      "key": "170815444900:33",
+      "san": "h5",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 93.43637555463049,
+        "cpLoss": 19,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "170815444900:31",
+          "170815444900:32",
+          "170815444900:33"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 14,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 27,
+          "prediction": {
+            "missing": [
+              "170815444900:25",
+              "170815444900:26",
+              "170815444900:27"
+            ]
+          }
+        },
+        {
+          "ply": 29,
+          "prediction": {
+            "missing": [
+              "170815444900:27",
+              "170815444900:28",
+              "170815444900:29"
+            ]
+          }
+        },
+        {
+          "ply": 31,
+          "prediction": {
+            "missing": [
+              "170815444900:29",
+              "170815444900:30"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "171114861008:34",
+      "san": "Nxe5",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 97.09725776511269,
+        "cpLoss": 10,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171114861008:32",
+          "171114861008:33",
+          "171114861008:34"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "171114861008:40",
+      "san": "Bg6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 85.59812178197836,
+        "cpLoss": 43,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171114861008:38",
+          "171114861008:39",
+          "171114861008:40"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?",
+      "account": "nelsi"
+    },
+    {
+      "key": "171121352102:24",
+      "san": "h4",
+      "base": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 54.30206257819345,
+        "cpLoss": 163,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171121352102:22",
+          "171121352102:23",
+          "171121352102:24"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "??",
+      "account": "nelsi"
+    },
+    {
+      "key": "171121352102:52",
+      "san": "Rxb2",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171121352102:50",
+          "171121352102:51",
+          "171121352102:52"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 46,
+          "prediction": {
+            "missing": [
+              "171121352102:44",
+              "171121352102:45",
+              "171121352102:46"
+            ]
+          }
+        },
+        {
+          "ply": 48,
+          "prediction": {
+            "missing": [
+              "171121352102:46",
+              "171121352102:47",
+              "171121352102:48"
+            ]
+          }
+        },
+        {
+          "ply": 50,
+          "prediction": {
+            "missing": [
+              "171121352102:48",
+              "171121352102:49"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "171486761466:21",
+      "san": "Rxf5",
+      "base": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 33.9806143977187,
+        "cpLoss": 269,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171486761466:19",
+          "171486761466:20",
+          "171486761466:21"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "??",
+      "account": "nelsi"
+    },
+    {
+      "key": "171486761466:61",
+      "san": "Qf3",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 90.6272320530925,
+        "cpLoss": 62,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171486761466:59",
+          "171486761466:60",
+          "171486761466:61"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 9,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 55,
+          "prediction": {
+            "missing": [
+              "171486761466:53",
+              "171486761466:54",
+              "171486761466:55"
+            ]
+          }
+        },
+        {
+          "ply": 57,
+          "prediction": {
+            "missing": [
+              "171486761466:55",
+              "171486761466:56",
+              "171486761466:57"
+            ]
+          }
+        },
+        {
+          "ply": 59,
+          "prediction": {
+            "missing": [
+              "171486761466:57",
+              "171486761466:58"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "171488501692:34",
+      "san": "Nxc4",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171488501692:32",
+          "171488501692:33",
+          "171488501692:34"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 28,
+          "prediction": {
+            "missing": [
+              "171488501692:26",
+              "171488501692:27",
+              "171488501692:28"
+            ]
+          }
+        },
+        {
+          "ply": 30,
+          "prediction": {
+            "missing": [
+              "171488501692:28",
+              "171488501692:29",
+              "171488501692:30"
+            ]
+          }
+        },
+        {
+          "ply": 32,
+          "prediction": {
+            "missing": [
+              "171488501692:30",
+              "171488501692:31"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "171488501692:36",
+      "san": "hxg6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 99.8530215778511,
+        "cpLoss": 3,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171488501692:34",
+          "171488501692:35",
+          "171488501692:36"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 30,
+          "prediction": {
+            "missing": [
+              "171488501692:28",
+              "171488501692:29",
+              "171488501692:30"
+            ]
+          }
+        },
+        {
+          "ply": 32,
+          "prediction": {
+            "missing": [
+              "171488501692:30",
+              "171488501692:31"
+            ]
+          }
+        },
+        {
+          "ply": 34,
+          "prediction": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "171488501692:32",
+              "171488501692:33",
+              "171488501692:34"
+            ]
+          }
+        }
+      ],
+      "truth": false,
+      "label": "best",
+      "account": "nelsi"
+    },
+    {
+      "key": "171610444110:21",
+      "san": "Nb5",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171610444110:19",
+          "171610444110:20",
+          "171610444110:21"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 8,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 15,
+          "prediction": {
+            "missing": [
+              "171610444110:13",
+              "171610444110:14",
+              "171610444110:15"
+            ]
+          }
+        },
+        {
+          "ply": 17,
+          "prediction": {
+            "missing": [
+              "171610444110:15",
+              "171610444110:16",
+              "171610444110:17"
+            ]
+          }
+        },
+        {
+          "ply": 19,
+          "prediction": {
+            "missing": [
+              "171610444110:17",
+              "171610444110:18"
+            ]
+          }
+        }
+      ],
+      "truth": false,
+      "label": "!",
+      "account": "nelsi"
+    },
+    {
+      "key": "171610444110:37",
+      "san": "Rxe6+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171610444110:35",
+          "171610444110:36",
+          "171610444110:37"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 31,
+          "prediction": {
+            "missing": [
+              "171610444110:29",
+              "171610444110:30",
+              "171610444110:31"
+            ]
+          }
+        },
+        {
+          "ply": 33,
+          "prediction": {
+            "missing": [
+              "171610444110:31",
+              "171610444110:32",
+              "171610444110:33"
+            ]
+          }
+        },
+        {
+          "ply": 35,
+          "prediction": {
+            "missing": [
+              "171610444110:33",
+              "171610444110:34"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "171611649712:31",
+      "san": "Nxf7",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171611649712:29",
+          "171611649712:30",
+          "171611649712:31"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 25,
+          "prediction": {
+            "missing": [
+              "171611649712:23",
+              "171611649712:24",
+              "171611649712:25"
+            ]
+          }
+        },
+        {
+          "ply": 27,
+          "prediction": {
+            "missing": [
+              "171611649712:25",
+              "171611649712:26",
+              "171611649712:27"
+            ]
+          }
+        },
+        {
+          "ply": 29,
+          "prediction": {
+            "missing": [
+              "171611649712:27",
+              "171611649712:28"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "171611649712:37",
+      "san": "Nd6+",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171611649712:35",
+          "171611649712:36",
+          "171611649712:37"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "nelsi"
+    },
+    {
+      "key": "171635413720:43",
+      "san": "Nh6+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171635413720:41",
+          "171635413720:42",
+          "171635413720:43"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 37,
+          "prediction": {
+            "missing": [
+              "171635413720:35",
+              "171635413720:36",
+              "171635413720:37"
+            ]
+          }
+        },
+        {
+          "ply": 39,
+          "prediction": {
+            "missing": [
+              "171635413720:37",
+              "171635413720:38",
+              "171635413720:39"
+            ]
+          }
+        },
+        {
+          "ply": 41,
+          "prediction": {
+            "missing": [
+              "171635413720:39",
+              "171635413720:40"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "171635413720:59",
+      "san": "Nxg6+",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171635413720:57",
+          "171635413720:58",
+          "171635413720:59"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "hansen"
+    },
+    {
+      "key": "171727211094:59",
+      "san": "Nxg6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171727211094:57",
+          "171727211094:58",
+          "171727211094:59"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 53,
+          "prediction": {
+            "missing": [
+              "171727211094:51",
+              "171727211094:52",
+              "171727211094:53"
+            ]
+          }
+        },
+        {
+          "ply": 55,
+          "prediction": {
+            "missing": [
+              "171727211094:53",
+              "171727211094:54",
+              "171727211094:55"
+            ]
+          }
+        },
+        {
+          "ply": 57,
+          "prediction": {
+            "missing": [
+              "171727211094:55",
+              "171727211094:56"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "171727211094:69",
+      "san": "Rxe6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171727211094:67",
+          "171727211094:68",
+          "171727211094:69"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "hansen"
+    },
+    {
+      "key": "171727306254:54",
+      "san": "Nxf2",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171727306254:52",
+          "171727306254:53",
+          "171727306254:54"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "171727306254:58",
+      "san": "Nxe3",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171727306254:56",
+          "171727306254:57",
+          "171727306254:58"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "hansen"
+    },
+    {
+      "key": "171891388774:7",
+      "san": "Bc4",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171891388774:5",
+          "171891388774:6",
+          "171891388774:7"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 11,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 1,
+          "prediction": {
+            "missing": [
+              "171891388774:0",
+              "171891388774:1"
+            ]
+          }
+        },
+        {
+          "ply": 3,
+          "prediction": {
+            "missing": [
+              "171891388774:1",
+              "171891388774:2",
+              "171891388774:3"
+            ]
+          }
+        },
+        {
+          "ply": 5,
+          "prediction": {
+            "missing": [
+              "171891388774:3",
+              "171891388774:4"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "171891388774:9",
+      "san": "e5",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "171891388774:7",
+          "171891388774:8",
+          "171891388774:9"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "172153199036:40",
+      "san": "Rxf3",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172153199036:38",
+          "172153199036:39",
+          "172153199036:40"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 34,
+          "prediction": {
+            "missing": [
+              "172153199036:32",
+              "172153199036:33",
+              "172153199036:34"
+            ]
+          }
+        },
+        {
+          "ply": 36,
+          "prediction": {
+            "missing": [
+              "172153199036:34",
+              "172153199036:35",
+              "172153199036:36"
+            ]
+          }
+        },
+        {
+          "ply": 38,
+          "prediction": {
+            "missing": [
+              "172153199036:36",
+              "172153199036:37"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "172153199036:54",
+      "san": "Nb4+",
+      "base": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 29.046135604462194,
+        "cpLoss": 326,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172153199036:52",
+          "172153199036:53",
+          "172153199036:54"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "??",
+      "account": "nelsi"
+    },
+    {
+      "key": "172253295412:17",
+      "san": "Nxe6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 2,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172253295412:15",
+          "172253295412:16",
+          "172253295412:17"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 11,
+          "prediction": {
+            "missing": [
+              "172253295412:9",
+              "172253295412:10",
+              "172253295412:11"
+            ]
+          }
+        },
+        {
+          "ply": 13,
+          "prediction": {
+            "missing": [
+              "172253295412:11",
+              "172253295412:12",
+              "172253295412:13"
+            ]
+          }
+        },
+        {
+          "ply": 15,
+          "prediction": {
+            "missing": [
+              "172253295412:13",
+              "172253295412:14"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "172253295412:29",
+      "san": "Qe6+",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172253295412:27",
+          "172253295412:28",
+          "172253295412:29"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "!",
+      "account": "nelsi"
+    },
+    {
+      "key": "172260433072:40",
+      "san": "Nxe3",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172260433072:38",
+          "172260433072:39",
+          "172260433072:40"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 34,
+          "prediction": {
+            "missing": [
+              "172260433072:32",
+              "172260433072:33",
+              "172260433072:34"
+            ]
+          }
+        },
+        {
+          "ply": 36,
+          "prediction": {
+            "missing": [
+              "172260433072:34",
+              "172260433072:35",
+              "172260433072:36"
+            ]
+          }
+        },
+        {
+          "ply": 38,
+          "prediction": {
+            "missing": [
+              "172260433072:36",
+              "172260433072:37"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "172260433072:58",
+      "san": "Bd5",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172260433072:56",
+          "172260433072:57",
+          "172260433072:58"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "nelsi"
+    },
+    {
+      "key": "172376177350:43",
+      "san": "Nd3",
+      "base": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 77.97502537683829,
+        "cpLoss": 66,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172376177350:41",
+          "172376177350:42",
+          "172376177350:43"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "172376177350:53",
+      "san": "Ne4",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 85.63646700895904,
+        "cpLoss": 78,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172376177350:51",
+          "172376177350:52",
+          "172376177350:53"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 8,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 47,
+          "prediction": {
+            "missing": [
+              "172376177350:45",
+              "172376177350:46",
+              "172376177350:47"
+            ]
+          }
+        },
+        {
+          "ply": 49,
+          "prediction": {
+            "missing": [
+              "172376177350:47",
+              "172376177350:48",
+              "172376177350:49"
+            ]
+          }
+        },
+        {
+          "ply": 51,
+          "prediction": {
+            "missing": [
+              "172376177350:49",
+              "172376177350:50"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "172450756938:60",
+      "san": "Nxg4",
+      "base": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 64.8843135088284,
+        "cpLoss": 115,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172450756938:58",
+          "172450756938:59",
+          "172450756938:60"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "??",
+      "account": "GothamChess"
+    },
+    {
+      "key": "172450756938:70",
+      "san": "Qh1+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172450756938:68",
+          "172450756938:69",
+          "172450756938:70"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 64,
+          "prediction": {
+            "missing": [
+              "172450756938:62",
+              "172450756938:63",
+              "172450756938:64"
+            ]
+          }
+        },
+        {
+          "ply": 66,
+          "prediction": {
+            "missing": [
+              "172450756938:64",
+              "172450756938:65",
+              "172450756938:66"
+            ]
+          }
+        },
+        {
+          "ply": 68,
+          "prediction": {
+            "missing": [
+              "172450756938:66",
+              "172450756938:67"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "172455502166:50",
+      "san": "Ng4",
+      "base": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 50.38910877321544,
+        "cpLoss": 174,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172455502166:48",
+          "172455502166:49",
+          "172455502166:50"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "miss",
+      "account": "GothamChess"
+    },
+    {
+      "key": "172455502166:64",
+      "san": "Qe1",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 87.37060687419618,
+        "cpLoss": 41,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172455502166:62",
+          "172455502166:63",
+          "172455502166:64"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 9,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 58,
+          "prediction": {
+            "missing": [
+              "172455502166:56",
+              "172455502166:57",
+              "172455502166:58"
+            ]
+          }
+        },
+        {
+          "ply": 60,
+          "prediction": {
+            "missing": [
+              "172455502166:58",
+              "172455502166:59",
+              "172455502166:60"
+            ]
+          }
+        },
+        {
+          "ply": 62,
+          "prediction": {
+            "missing": [
+              "172455502166:60",
+              "172455502166:61"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "172657252323:56",
+      "san": "Qd6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172657252323:54",
+          "172657252323:55",
+          "172657252323:56"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 9,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 50,
+          "prediction": {
+            "missing": [
+              "172657252323:48",
+              "172657252323:49",
+              "172657252323:50"
+            ]
+          }
+        },
+        {
+          "ply": 52,
+          "prediction": {
+            "missing": [
+              "172657252323:50",
+              "172657252323:51",
+              "172657252323:52"
+            ]
+          }
+        },
+        {
+          "ply": 54,
+          "prediction": {
+            "missing": [
+              "172657252323:52",
+              "172657252323:53"
+            ]
+          }
+        }
+      ],
+      "truth": false,
+      "label": "excellent",
+      "account": "hansen"
+    },
+    {
+      "key": "172657252323:58",
+      "san": "Bxg2+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172657252323:56",
+          "172657252323:57",
+          "172657252323:58"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 52,
+          "prediction": {
+            "missing": [
+              "172657252323:50",
+              "172657252323:51",
+              "172657252323:52"
+            ]
+          }
+        },
+        {
+          "ply": 54,
+          "prediction": {
+            "missing": [
+              "172657252323:52",
+              "172657252323:53"
+            ]
+          }
+        },
+        {
+          "ply": 56,
+          "prediction": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "172657252323:54",
+              "172657252323:55",
+              "172657252323:56"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "172658453657:24",
+      "san": "Nb4",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 96.01768231892957,
+        "cpLoss": 13,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172658453657:22",
+          "172658453657:23",
+          "172658453657:24"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 9,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 18,
+          "prediction": {
+            "missing": [
+              "172658453657:16",
+              "172658453657:17",
+              "172658453657:18"
+            ]
+          }
+        },
+        {
+          "ply": 20,
+          "prediction": {
+            "missing": [
+              "172658453657:18",
+              "172658453657:19",
+              "172658453657:20"
+            ]
+          }
+        },
+        {
+          "ply": 22,
+          "prediction": {
+            "missing": [
+              "172658453657:20",
+              "172658453657:21"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "172658453657:44",
+      "san": "Qxa2",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 92.97999033500325,
+        "cpLoss": 25,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172658453657:42",
+          "172658453657:43",
+          "172658453657:44"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "hansen"
+    },
+    {
+      "key": "172662051055:71",
+      "san": "Bxb7+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172662051055:69",
+          "172662051055:70",
+          "172662051055:71"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 65,
+          "prediction": {
+            "missing": [
+              "172662051055:63",
+              "172662051055:64",
+              "172662051055:65"
+            ]
+          }
+        },
+        {
+          "ply": 67,
+          "prediction": {
+            "missing": [
+              "172662051055:65",
+              "172662051055:66",
+              "172662051055:67"
+            ]
+          }
+        },
+        {
+          "ply": 69,
+          "prediction": {
+            "missing": [
+              "172662051055:67",
+              "172662051055:68"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "172662051055:73",
+      "san": "Rxd7+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172662051055:71",
+          "172662051055:72",
+          "172662051055:73"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 67,
+          "prediction": {
+            "missing": [
+              "172662051055:65",
+              "172662051055:66",
+              "172662051055:67"
+            ]
+          }
+        },
+        {
+          "ply": 69,
+          "prediction": {
+            "missing": [
+              "172662051055:67",
+              "172662051055:68"
+            ]
+          }
+        },
+        {
+          "ply": 71,
+          "prediction": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "172662051055:69",
+              "172662051055:70",
+              "172662051055:71"
+            ]
+          }
+        }
+      ],
+      "truth": false,
+      "label": "excellent",
+      "account": "hansen"
+    },
+    {
+      "key": "172827462484:105",
+      "san": "Qf8+",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172827462484:103",
+          "172827462484:104",
+          "172827462484:105"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "GothamChess"
+    },
+    {
+      "key": "172827462484:93",
+      "san": "Nxf6+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "172827462484:91",
+          "172827462484:92",
+          "172827462484:93"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 87,
+          "prediction": {
+            "missing": [
+              "172827462484:85",
+              "172827462484:86",
+              "172827462484:87"
+            ]
+          }
+        },
+        {
+          "ply": 89,
+          "prediction": {
+            "missing": [
+              "172827462484:87",
+              "172827462484:88",
+              "172827462484:89"
+            ]
+          }
+        },
+        {
+          "ply": 91,
+          "prediction": {
+            "missing": [
+              "172827462484:89",
+              "172827462484:90"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173050435284:37",
+      "san": "Bxh6",
+      "base": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 47.16410772314501,
+        "cpLoss": 204,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173050435284:35",
+          "173050435284:36",
+          "173050435284:37"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?",
+      "account": "nelsi"
+    },
+    {
+      "key": "173050435284:49",
+      "san": "Qg2",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173050435284:47",
+          "173050435284:48",
+          "173050435284:49"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 6,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 43,
+          "prediction": {
+            "missing": [
+              "173050435284:41",
+              "173050435284:42",
+              "173050435284:43"
+            ]
+          }
+        },
+        {
+          "ply": 45,
+          "prediction": {
+            "missing": [
+              "173050435284:43",
+              "173050435284:44",
+              "173050435284:45"
+            ]
+          }
+        },
+        {
+          "ply": 47,
+          "prediction": {
+            "missing": [
+              "173050435284:45",
+              "173050435284:46"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "173235710516:21",
+      "san": "Qxd5",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173235710516:19",
+          "173235710516:20",
+          "173235710516:21"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 15,
+          "prediction": {
+            "missing": [
+              "173235710516:13",
+              "173235710516:14",
+              "173235710516:15"
+            ]
+          }
+        },
+        {
+          "ply": 17,
+          "prediction": {
+            "missing": [
+              "173235710516:15",
+              "173235710516:16",
+              "173235710516:17"
+            ]
+          }
+        },
+        {
+          "ply": 19,
+          "prediction": {
+            "missing": [
+              "173235710516:17",
+              "173235710516:18"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173235710516:27",
+      "san": "Nb6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 95.10212657567347,
+        "cpLoss": 22,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173235710516:25",
+          "173235710516:26",
+          "173235710516:27"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173422249992:41",
+      "san": "Nxg6",
+      "base": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173422249992:39",
+          "173422249992:40",
+          "173422249992:41"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173422249992:55",
+      "san": "Rg1",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.31663460446579,
+        "cpLoss": 12,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173422249992:53",
+          "173422249992:54",
+          "173422249992:55"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173434013720:56",
+      "san": "Qxe4",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173434013720:54",
+          "173434013720:55",
+          "173434013720:56"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 50,
+          "prediction": {
+            "missing": [
+              "173434013720:48",
+              "173434013720:49",
+              "173434013720:50"
+            ]
+          }
+        },
+        {
+          "ply": 52,
+          "prediction": {
+            "missing": [
+              "173434013720:50",
+              "173434013720:51",
+              "173434013720:52"
+            ]
+          }
+        },
+        {
+          "ply": 54,
+          "prediction": {
+            "missing": [
+              "173434013720:52",
+              "173434013720:53"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173434013720:62",
+      "san": "Ra1",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.33342607003047,
+        "cpLoss": 90,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173434013720:60",
+          "173434013720:61",
+          "173434013720:62"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173476659474:20",
+      "san": "Nxd4",
+      "base": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 99.85525998806554,
+        "cpLoss": 3,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173476659474:18",
+          "173476659474:19",
+          "173476659474:20"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173476659474:26",
+      "san": "Bc6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173476659474:24",
+          "173476659474:25",
+          "173476659474:26"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 6,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 20,
+          "prediction": {
+            "symbol": "!",
+            "provisional": "!",
+            "withheld": false,
+            "accuracy": 99.85525998806554,
+            "cpLoss": 3,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "173476659474:18",
+              "173476659474:19",
+              "173476659474:20"
+            ]
+          }
+        },
+        {
+          "ply": 22,
+          "prediction": {
+            "missing": [
+              "173476659474:21",
+              "173476659474:22"
+            ]
+          }
+        },
+        {
+          "ply": 24,
+          "prediction": {
+            "missing": [
+              "173476659474:22",
+              "173476659474:23"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173487325950:50",
+      "san": "Qd2+",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173487325950:48",
+          "173487325950:49",
+          "173487325950:50"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173487325950:52",
+      "san": "Bxe3",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 99.50744124144103,
+        "cpLoss": 12,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173487325950:50",
+          "173487325950:51",
+          "173487325950:52"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 46,
+          "prediction": {
+            "missing": [
+              "173487325950:44",
+              "173487325950:45",
+              "173487325950:46"
+            ]
+          }
+        },
+        {
+          "ply": 48,
+          "prediction": {
+            "missing": [
+              "173487325950:46",
+              "173487325950:47"
+            ]
+          }
+        },
+        {
+          "ply": 50,
+          "prediction": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "173487325950:48",
+              "173487325950:49",
+              "173487325950:50"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173516572419:38",
+      "san": "Nxd4",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173516572419:36",
+          "173516572419:37",
+          "173516572419:38"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 32,
+          "prediction": {
+            "missing": [
+              "173516572419:30",
+              "173516572419:31",
+              "173516572419:32"
+            ]
+          }
+        },
+        {
+          "ply": 34,
+          "prediction": {
+            "missing": [
+              "173516572419:32",
+              "173516572419:33",
+              "173516572419:34"
+            ]
+          }
+        },
+        {
+          "ply": 36,
+          "prediction": {
+            "missing": [
+              "173516572419:34",
+              "173516572419:35"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "173516572419:48",
+      "san": "Bd5",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 91.48530361546268,
+        "cpLoss": 55,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173516572419:46",
+          "173516572419:47",
+          "173516572419:48"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "hansen"
+    },
+    {
+      "key": "173517772799:30",
+      "san": "hxg5",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173517772799:28",
+          "173517772799:29",
+          "173517772799:30"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 24,
+          "prediction": {
+            "missing": [
+              "173517772799:22",
+              "173517772799:23",
+              "173517772799:24"
+            ]
+          }
+        },
+        {
+          "ply": 26,
+          "prediction": {
+            "missing": [
+              "173517772799:24",
+              "173517772799:25",
+              "173517772799:26"
+            ]
+          }
+        },
+        {
+          "ply": 28,
+          "prediction": {
+            "missing": [
+              "173517772799:26",
+              "173517772799:27"
+            ]
+          }
+        }
+      ],
+      "truth": false,
+      "label": "best",
+      "account": "hansen"
+    },
+    {
+      "key": "173517772799:80",
+      "san": "Nxg3",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 97.17736234101567,
+        "cpLoss": 16,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173517772799:78",
+          "173517772799:79",
+          "173517772799:80"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 74,
+          "prediction": {
+            "missing": [
+              "173517772799:72",
+              "173517772799:73",
+              "173517772799:74"
+            ]
+          }
+        },
+        {
+          "ply": 76,
+          "prediction": {
+            "missing": [
+              "173517772799:74",
+              "173517772799:75",
+              "173517772799:76"
+            ]
+          }
+        },
+        {
+          "ply": 78,
+          "prediction": {
+            "missing": [
+              "173517772799:76",
+              "173517772799:77"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "173659942236:81",
+      "san": "Qxg8+",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173659942236:79",
+          "173659942236:80",
+          "173659942236:81"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "173659942236:87",
+      "san": "Bd4",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173659942236:85",
+          "173659942236:86",
+          "173659942236:87"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "Hikaru"
+    },
+    {
+      "key": "173664541242:34",
+      "san": "Rac8",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 87.24735000113245,
+        "cpLoss": 36,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173664541242:32",
+          "173664541242:33",
+          "173664541242:34"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173664541242:44",
+      "san": "Qxc5",
+      "base": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173664541242:42",
+          "173664541242:43",
+          "173664541242:44"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173716013666:43",
+      "san": "Nd7+",
+      "base": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 80.61246436180728,
+        "cpLoss": 122,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173716013666:41",
+          "173716013666:42",
+          "173716013666:43"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173716013666:51",
+      "san": "Nf6+",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173716013666:49",
+          "173716013666:50",
+          "173716013666:51"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173719918770:71",
+      "san": "fxg6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.33978912556482,
+        "cpLoss": 74,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173719918770:69",
+          "173719918770:70",
+          "173719918770:71"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "173820532932:19",
+      "san": "Ngf3",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 91.60158917541987,
+        "cpLoss": 24,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173820532932:17",
+          "173820532932:18",
+          "173820532932:19"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173820532932:35",
+      "san": "Ng5",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 94.45039475360802,
+        "cpLoss": 26,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173820532932:33",
+          "173820532932:34",
+          "173820532932:35"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 12,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 29,
+          "prediction": {
+            "missing": [
+              "173820532932:27",
+              "173820532932:28",
+              "173820532932:29"
+            ]
+          }
+        },
+        {
+          "ply": 31,
+          "prediction": {
+            "missing": [
+              "173820532932:29",
+              "173820532932:30",
+              "173820532932:31"
+            ]
+          }
+        },
+        {
+          "ply": 33,
+          "prediction": {
+            "missing": [
+              "173820532932:31",
+              "173820532932:32"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "173948558416:60",
+      "san": "Ne4",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 90.87665574064548,
+        "cpLoss": 43,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173948558416:58",
+          "173948558416:59",
+          "173948558416:60"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "KNVB"
+    },
+    {
+      "key": "173948558416:62",
+      "san": "Qxf2+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 84.35948196305495,
+        "cpLoss": 81,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "173948558416:60",
+          "173948558416:61",
+          "173948558416:62"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 56,
+          "prediction": {
+            "missing": [
+              "173948558416:54",
+              "173948558416:55",
+              "173948558416:56"
+            ]
+          }
+        },
+        {
+          "ply": 58,
+          "prediction": {
+            "missing": [
+              "173948558416:56",
+              "173948558416:57"
+            ]
+          }
+        },
+        {
+          "ply": 60,
+          "prediction": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 90.87665574064548,
+            "cpLoss": 43,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "173948558416:58",
+              "173948558416:59",
+              "173948558416:60"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "174394647488:42",
+      "san": "Kb8",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "174394647488:40",
+          "174394647488:41",
+          "174394647488:42"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 6,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 36,
+          "prediction": {
+            "missing": [
+              "174394647488:34",
+              "174394647488:35",
+              "174394647488:36"
+            ]
+          }
+        },
+        {
+          "ply": 38,
+          "prediction": {
+            "missing": [
+              "174394647488:36",
+              "174394647488:37",
+              "174394647488:38"
+            ]
+          }
+        },
+        {
+          "ply": 40,
+          "prediction": {
+            "missing": [
+              "174394647488:38",
+              "174394647488:39"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "174394647488:46",
+      "san": "Bh6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "174394647488:44",
+          "174394647488:45",
+          "174394647488:46"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "!",
+      "account": "nelsi"
+    },
+    {
+      "key": "174427252006:64",
+      "san": "Rd1",
+      "base": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 99.85109948657505,
+        "cpLoss": 8,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "174427252006:62",
+          "174427252006:63",
+          "174427252006:64"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "KNVB"
+    },
+    {
+      "key": "174427252006:66",
+      "san": "bxc3",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 5,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "174427252006:64",
+          "174427252006:65",
+          "174427252006:66"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 60,
+          "prediction": {
+            "missing": [
+              "174427252006:58",
+              "174427252006:59",
+              "174427252006:60"
+            ]
+          }
+        },
+        {
+          "ply": 62,
+          "prediction": {
+            "missing": [
+              "174427252006:60",
+              "174427252006:61"
+            ]
+          }
+        },
+        {
+          "ply": 64,
+          "prediction": {
+            "symbol": "!",
+            "provisional": "!",
+            "withheld": false,
+            "accuracy": 99.85109948657505,
+            "cpLoss": 8,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "174427252006:62",
+              "174427252006:63",
+              "174427252006:64"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "174471378706:147",
+      "san": "Rg8",
+      "base": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 67.27961327885924,
+        "cpLoss": 447,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "174471378706:145",
+          "174471378706:146",
+          "174471378706:147"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?",
+      "account": "KNVB"
+    },
+    {
+      "key": "174471378706:45",
+      "san": "Bxd5",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "174471378706:43",
+          "174471378706:44",
+          "174471378706:45"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 39,
+          "prediction": {
+            "missing": [
+              "174471378706:37",
+              "174471378706:38",
+              "174471378706:39"
+            ]
+          }
+        },
+        {
+          "ply": 41,
+          "prediction": {
+            "missing": [
+              "174471378706:39",
+              "174471378706:40",
+              "174471378706:41"
+            ]
+          }
+        },
+        {
+          "ply": 43,
+          "prediction": {
+            "missing": [
+              "174471378706:41",
+              "174471378706:42"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "174487934530:27",
+      "san": "Nxg6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 97.1471305974285,
+        "cpLoss": 10,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "174487934530:25",
+          "174487934530:26",
+          "174487934530:27"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 21,
+          "prediction": {
+            "missing": [
+              "174487934530:19",
+              "174487934530:20",
+              "174487934530:21"
+            ]
+          }
+        },
+        {
+          "ply": 23,
+          "prediction": {
+            "missing": [
+              "174487934530:21",
+              "174487934530:22",
+              "174487934530:23"
+            ]
+          }
+        },
+        {
+          "ply": 25,
+          "prediction": {
+            "missing": [
+              "174487934530:23",
+              "174487934530:24"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "174487934530:87",
+      "san": "Rxe2+",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 3,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "174487934530:85",
+          "174487934530:86",
+          "174487934530:87"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "GothamChess"
+    },
+    {
+      "key": "174521237632:40",
+      "san": "Rxd5",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "174521237632:38",
+          "174521237632:39",
+          "174521237632:40"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 34,
+          "prediction": {
+            "missing": [
+              "174521237632:32",
+              "174521237632:33",
+              "174521237632:34"
+            ]
+          }
+        },
+        {
+          "ply": 36,
+          "prediction": {
+            "missing": [
+              "174521237632:34",
+              "174521237632:35",
+              "174521237632:36"
+            ]
+          }
+        },
+        {
+          "ply": 38,
+          "prediction": {
+            "missing": [
+              "174521237632:36",
+              "174521237632:37"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "174521237632:58",
+      "san": "Ne6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 98.68076713954707,
+        "cpLoss": 12,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "174521237632:56",
+          "174521237632:57",
+          "174521237632:58"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "KNVB"
+    },
+    {
+      "key": "178354672033:41",
+      "san": "Nh6+",
+      "base": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 80.75126538759021,
+        "cpLoss": 73,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "178354672033:39",
+          "178354672033:40",
+          "178354672033:41"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "good",
+      "account": "hansen"
+    },
+    {
+      "key": "178354672033:43",
+      "san": "Nxf7",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "178354672033:41",
+          "178354672033:42",
+          "178354672033:43"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 37,
+          "prediction": {
+            "missing": [
+              "178354672033:35",
+              "178354672033:36",
+              "178354672033:37"
+            ]
+          }
+        },
+        {
+          "ply": 39,
+          "prediction": {
+            "missing": [
+              "178354672033:37",
+              "178354672033:38"
+            ]
+          }
+        },
+        {
+          "ply": 41,
+          "prediction": {
+            "symbol": "?!",
+            "provisional": "?!",
+            "withheld": false,
+            "accuracy": 80.75126538759021,
+            "cpLoss": 73,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "178354672033:39",
+              "178354672033:40",
+              "178354672033:41"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "178355872183:55",
+      "san": "Bxg6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "178355872183:53",
+          "178355872183:54",
+          "178355872183:55"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 49,
+          "prediction": {
+            "missing": [
+              "178355872183:47",
+              "178355872183:48",
+              "178355872183:49"
+            ]
+          }
+        },
+        {
+          "ply": 51,
+          "prediction": {
+            "missing": [
+              "178355872183:49",
+              "178355872183:50",
+              "178355872183:51"
+            ]
+          }
+        },
+        {
+          "ply": 53,
+          "prediction": {
+            "missing": [
+              "178355872183:51",
+              "178355872183:52"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "178355872183:65",
+      "san": "Rxh7",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "178355872183:63",
+          "178355872183:64",
+          "178355872183:65"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "hansen"
+    },
+    {
+      "key": "178708671947:26",
+      "san": "d5",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 96.20211691742539,
+        "cpLoss": 12,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "178708671947:24",
+          "178708671947:25",
+          "178708671947:26"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 20,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 20,
+          "prediction": {
+            "missing": [
+              "178708671947:18",
+              "178708671947:19",
+              "178708671947:20"
+            ]
+          }
+        },
+        {
+          "ply": 22,
+          "prediction": {
+            "missing": [
+              "178708671947:20",
+              "178708671947:21",
+              "178708671947:22"
+            ]
+          }
+        },
+        {
+          "ply": 24,
+          "prediction": {
+            "missing": [
+              "178708671947:22",
+              "178708671947:23"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "hansen"
+    },
+    {
+      "key": "178708671947:50",
+      "san": "Qb2",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 86.81724279974088,
+        "cpLoss": 40,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "178708671947:48",
+          "178708671947:49",
+          "178708671947:50"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?!",
+      "account": "hansen"
+    },
+    {
+      "key": "180018600334:43",
+      "san": "Nc4",
+      "base": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 66.3411672210971,
+        "cpLoss": 105,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "180018600334:41",
+          "180018600334:42",
+          "180018600334:43"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "miss",
+      "account": "KNVB"
+    },
+    {
+      "key": "180018600334:53",
+      "san": "Bd2",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.36232110877638,
+        "cpLoss": 4,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "180018600334:51",
+          "180018600334:52",
+          "180018600334:53"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "180026338306:25",
+      "san": "Nd5",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 90.66592703779314,
+        "cpLoss": 28,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "180026338306:23",
+          "180026338306:24",
+          "180026338306:25"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "miss",
+      "account": "GothamChess"
+    },
+    {
+      "key": "180026338306:45",
+      "san": "Ne5",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "180026338306:43",
+          "180026338306:44",
+          "180026338306:45"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 9,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 39,
+          "prediction": {
+            "missing": [
+              "180026338306:37",
+              "180026338306:38",
+              "180026338306:39"
+            ]
+          }
+        },
+        {
+          "ply": 41,
+          "prediction": {
+            "missing": [
+              "180026338306:39",
+              "180026338306:40",
+              "180026338306:41"
+            ]
+          }
+        },
+        {
+          "ply": 43,
+          "prediction": {
+            "missing": [
+              "180026338306:41",
+              "180026338306:42"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "182334502199:57",
+      "san": "Qxd1",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "182334502199:55",
+          "182334502199:56",
+          "182334502199:57"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 51,
+          "prediction": {
+            "missing": [
+              "182334502199:49",
+              "182334502199:50",
+              "182334502199:51"
+            ]
+          }
+        },
+        {
+          "ply": 53,
+          "prediction": {
+            "missing": [
+              "182334502199:51",
+              "182334502199:52",
+              "182334502199:53"
+            ]
+          }
+        },
+        {
+          "ply": 55,
+          "prediction": {
+            "missing": [
+              "182334502199:53",
+              "182334502199:54"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "182335701261:21",
+      "san": "Bxe6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 96.65429304965268,
+        "cpLoss": 14,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "182335701261:19",
+          "182335701261:20",
+          "182335701261:21"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 15,
+          "prediction": {
+            "missing": [
+              "182335701261:13",
+              "182335701261:14",
+              "182335701261:15"
+            ]
+          }
+        },
+        {
+          "ply": 17,
+          "prediction": {
+            "missing": [
+              "182335701261:15",
+              "182335701261:16",
+              "182335701261:17"
+            ]
+          }
+        },
+        {
+          "ply": 19,
+          "prediction": {
+            "missing": [
+              "182335701261:17",
+              "182335701261:18"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184182682508:53",
+      "san": "Rxc3",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184182682508:51",
+          "184182682508:52",
+          "184182682508:53"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 47,
+          "prediction": {
+            "missing": [
+              "184182682508:45",
+              "184182682508:46",
+              "184182682508:47"
+            ]
+          }
+        },
+        {
+          "ply": 49,
+          "prediction": {
+            "missing": [
+              "184182682508:47",
+              "184182682508:48",
+              "184182682508:49"
+            ]
+          }
+        },
+        {
+          "ply": 51,
+          "prediction": {
+            "missing": [
+              "184182682508:49",
+              "184182682508:50"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184182682508:55",
+      "san": "Ne5",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184182682508:53",
+          "184182682508:54",
+          "184182682508:55"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184239087562:72",
+      "san": "Ne4",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184239087562:70",
+          "184239087562:71",
+          "184239087562:72"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184273349468:30",
+      "san": "Bxf6",
+      "base": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184273349468:28",
+          "184273349468:29",
+          "184273349468:30"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "nelsi"
+    },
+    {
+      "key": "184274391024:32",
+      "san": "Qh6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 1,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184274391024:30",
+          "184274391024:31",
+          "184274391024:32"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "nelsi"
+    },
+    {
+      "key": "184274391024:34",
+      "san": "Bxh3",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 89.37722701970742,
+        "cpLoss": 30,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184274391024:32",
+          "184274391024:33",
+          "184274391024:34"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 28,
+          "prediction": {
+            "missing": [
+              "184274391024:26",
+              "184274391024:27",
+              "184274391024:28"
+            ]
+          }
+        },
+        {
+          "ply": 30,
+          "prediction": {
+            "missing": [
+              "184274391024:28",
+              "184274391024:29"
+            ]
+          }
+        },
+        {
+          "ply": 32,
+          "prediction": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 1,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "184274391024:30",
+              "184274391024:31",
+              "184274391024:32"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "184278270138:48",
+      "san": "Ne3",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 95.4070211450669,
+        "cpLoss": 17,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184278270138:46",
+          "184278270138:47",
+          "184278270138:48"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184377073250:38",
+      "san": "Rc4",
+      "base": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 86.46130252369514,
+        "cpLoss": 39,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184377073250:36",
+          "184377073250:37",
+          "184377073250:38"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "184377073250:48",
+      "san": "Ng3+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184377073250:46",
+          "184377073250:47",
+          "184377073250:48"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 42,
+          "prediction": {
+            "missing": [
+              "184377073250:40",
+              "184377073250:41",
+              "184377073250:42"
+            ]
+          }
+        },
+        {
+          "ply": 44,
+          "prediction": {
+            "missing": [
+              "184377073250:42",
+              "184377073250:43",
+              "184377073250:44"
+            ]
+          }
+        },
+        {
+          "ply": 46,
+          "prediction": {
+            "missing": [
+              "184377073250:44",
+              "184377073250:45"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "184380420058:51",
+      "san": "Qe4",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 90.80961365667339,
+        "cpLoss": 26,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184380420058:49",
+          "184380420058:50",
+          "184380420058:51"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "good",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184380420058:57",
+      "san": "Rxg7+",
+      "base": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184380420058:55",
+          "184380420058:56",
+          "184380420058:57"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184429023318:28",
+      "san": "Nxf2",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 92.28717872972062,
+        "cpLoss": 30,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184429023318:26",
+          "184429023318:27",
+          "184429023318:28"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 22,
+          "prediction": {
+            "missing": [
+              "184429023318:20",
+              "184429023318:21",
+              "184429023318:22"
+            ]
+          }
+        },
+        {
+          "ply": 24,
+          "prediction": {
+            "missing": [
+              "184429023318:22",
+              "184429023318:23",
+              "184429023318:24"
+            ]
+          }
+        },
+        {
+          "ply": 26,
+          "prediction": {
+            "missing": [
+              "184429023318:24",
+              "184429023318:25"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "184429023318:36",
+      "san": "Nef2",
+      "base": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 40.471647126532844,
+        "cpLoss": 250,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184429023318:34",
+          "184429023318:35",
+          "184429023318:36"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "??",
+      "account": "nelsi"
+    },
+    {
+      "key": "184472674494:30",
+      "san": "Ng6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 91.83322155021186,
+        "cpLoss": 24,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184472674494:28",
+          "184472674494:29",
+          "184472674494:30"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 9,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 24,
+          "prediction": {
+            "missing": [
+              "184472674494:22",
+              "184472674494:23",
+              "184472674494:24"
+            ]
+          }
+        },
+        {
+          "ply": 26,
+          "prediction": {
+            "missing": [
+              "184472674494:24",
+              "184472674494:25",
+              "184472674494:26"
+            ]
+          }
+        },
+        {
+          "ply": 28,
+          "prediction": {
+            "missing": [
+              "184472674494:26",
+              "184472674494:27"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "184472674494:32",
+      "san": "Nf4",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184472674494:30",
+          "184472674494:31",
+          "184472674494:32"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "184472811812:49",
+      "san": "Rxh6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184472811812:47",
+          "184472811812:48",
+          "184472811812:49"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 43,
+          "prediction": {
+            "missing": [
+              "184472811812:41",
+              "184472811812:42",
+              "184472811812:43"
+            ]
+          }
+        },
+        {
+          "ply": 45,
+          "prediction": {
+            "missing": [
+              "184472811812:43",
+              "184472811812:44",
+              "184472811812:45"
+            ]
+          }
+        },
+        {
+          "ply": 47,
+          "prediction": {
+            "missing": [
+              "184472811812:45",
+              "184472811812:46"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184472811812:53",
+      "san": "Rxf8+",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184472811812:51",
+          "184472811812:52",
+          "184472811812:53"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184480624878:24",
+      "san": "Qd7",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 97.4999229935764,
+        "cpLoss": 9,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184480624878:22",
+          "184480624878:23",
+          "184480624878:24"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184480624878:26",
+      "san": "Nxg3+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184480624878:24",
+          "184480624878:25",
+          "184480624878:26"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 20,
+          "prediction": {
+            "missing": [
+              "184480624878:18",
+              "184480624878:19",
+              "184480624878:20"
+            ]
+          }
+        },
+        {
+          "ply": 22,
+          "prediction": {
+            "missing": [
+              "184480624878:20",
+              "184480624878:21"
+            ]
+          }
+        },
+        {
+          "ply": 24,
+          "prediction": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 97.4999229935764,
+            "cpLoss": 9,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "184480624878:22",
+              "184480624878:23",
+              "184480624878:24"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184481651976:26",
+      "san": "Be7",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 98.55331873764872,
+        "cpLoss": 6,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184481651976:24",
+          "184481651976:25",
+          "184481651976:26"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "GothamChess"
+    },
+    {
+      "key": "184481651976:34",
+      "san": "Nxd4",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.37756720443097,
+        "cpLoss": 4,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184481651976:32",
+          "184481651976:33",
+          "184481651976:34"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "184560137788:13",
+      "san": "Bxf7+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 99.58996835870086,
+        "cpLoss": 4,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184560137788:11",
+          "184560137788:12",
+          "184560137788:13"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 7,
+          "prediction": {
+            "missing": [
+              "184560137788:5",
+              "184560137788:6",
+              "184560137788:7"
+            ]
+          }
+        },
+        {
+          "ply": 9,
+          "prediction": {
+            "missing": [
+              "184560137788:7",
+              "184560137788:8",
+              "184560137788:9"
+            ]
+          }
+        },
+        {
+          "ply": 11,
+          "prediction": {
+            "missing": [
+              "184560137788:9",
+              "184560137788:10"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "184560137788:27",
+      "san": "Ne2",
+      "base": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 68.26763473089224,
+        "cpLoss": 118,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184560137788:25",
+          "184560137788:26",
+          "184560137788:27"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?!",
+      "account": "KNVB"
+    },
+    {
+      "key": "184615644672:102",
+      "san": "Bxa5",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.15774411670769,
+        "cpLoss": 7,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184615644672:100",
+          "184615644672:101",
+          "184615644672:102"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 96,
+          "prediction": {
+            "missing": [
+              "184615644672:95",
+              "184615644672:96"
+            ]
+          }
+        },
+        {
+          "ply": 98,
+          "prediction": {
+            "missing": [
+              "184615644672:96",
+              "184615644672:97",
+              "184615644672:98"
+            ]
+          }
+        },
+        {
+          "ply": 100,
+          "prediction": {
+            "missing": [
+              "184615644672:98",
+              "184615644672:99"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "184615644672:94",
+      "san": "Nc4",
+      "base": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 51.314108483468054,
+        "cpLoss": 172,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184615644672:92",
+          "184615644672:93",
+          "184615644672:94"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "miss",
+      "account": "KNVB"
+    },
+    {
+      "key": "184618094830:105",
+      "san": "d6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184618094830:103",
+          "184618094830:104",
+          "184618094830:105"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 2,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 99,
+          "prediction": {
+            "missing": [
+              "184618094830:97",
+              "184618094830:98",
+              "184618094830:99"
+            ]
+          }
+        },
+        {
+          "ply": 101,
+          "prediction": {
+            "missing": [
+              "184618094830:99",
+              "184618094830:100",
+              "184618094830:101"
+            ]
+          }
+        },
+        {
+          "ply": 103,
+          "prediction": {
+            "missing": [
+              "184618094830:101",
+              "184618094830:102"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "184618094830:127",
+      "san": "Ke1",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.66027221268452,
+        "cpLoss": 28,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184618094830:125",
+          "184618094830:126",
+          "184618094830:127"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?!",
+      "account": "KNVB"
+    },
+    {
+      "key": "184710314858:40",
+      "san": "Rxc6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 88.46645071915916,
+        "cpLoss": 48,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184710314858:38",
+          "184710314858:39",
+          "184710314858:40"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "good",
+      "account": "GothamChess"
+    },
+    {
+      "key": "184710314858:52",
+      "san": "Rc8",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.48106273081177,
+        "cpLoss": 10,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184710314858:50",
+          "184710314858:51",
+          "184710314858:52"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 11,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 46,
+          "prediction": {
+            "missing": [
+              "184710314858:44",
+              "184710314858:45",
+              "184710314858:46"
+            ]
+          }
+        },
+        {
+          "ply": 48,
+          "prediction": {
+            "missing": [
+              "184710314858:46",
+              "184710314858:47",
+              "184710314858:48"
+            ]
+          }
+        },
+        {
+          "ply": 50,
+          "prediction": {
+            "missing": [
+              "184710314858:48",
+              "184710314858:49"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "GothamChess"
+    },
+    {
+      "key": "184731606382:47",
+      "san": "Bxh6",
+      "base": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 79.31877775679664,
+        "cpLoss": 61,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184731606382:45",
+          "184731606382:46",
+          "184731606382:47"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184731606382:63",
+      "san": "Rd5",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184731606382:61",
+          "184731606382:62",
+          "184731606382:63"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 16,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 57,
+          "prediction": {
+            "missing": [
+              "184731606382:55",
+              "184731606382:56",
+              "184731606382:57"
+            ]
+          }
+        },
+        {
+          "ply": 59,
+          "prediction": {
+            "missing": [
+              "184731606382:57",
+              "184731606382:58",
+              "184731606382:59"
+            ]
+          }
+        },
+        {
+          "ply": 61,
+          "prediction": {
+            "missing": [
+              "184731606382:59",
+              "184731606382:60"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184737589644:37",
+      "san": "Rxf7",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 88.74837927258899,
+        "cpLoss": 35,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184737589644:35",
+          "184737589644:36",
+          "184737589644:37"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184737589644:43",
+      "san": "Rxb6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 95.52758984159225,
+        "cpLoss": 16,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184737589644:41",
+          "184737589644:42",
+          "184737589644:43"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 37,
+          "prediction": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 88.74837927258899,
+            "cpLoss": 35,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "184737589644:35",
+              "184737589644:36",
+              "184737589644:37"
+            ]
+          }
+        },
+        {
+          "ply": 39,
+          "prediction": {
+            "missing": [
+              "184737589644:38",
+              "184737589644:39"
+            ]
+          }
+        },
+        {
+          "ply": 41,
+          "prediction": {
+            "missing": [
+              "184737589644:39",
+              "184737589644:40"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184756110863:20",
+      "san": "Nd4",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184756110863:18",
+          "184756110863:19",
+          "184756110863:20"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 17,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 14,
+          "prediction": {
+            "missing": [
+              "184756110863:12",
+              "184756110863:13",
+              "184756110863:14"
+            ]
+          }
+        },
+        {
+          "ply": 16,
+          "prediction": {
+            "missing": [
+              "184756110863:14",
+              "184756110863:15",
+              "184756110863:16"
+            ]
+          }
+        },
+        {
+          "ply": 18,
+          "prediction": {
+            "missing": [
+              "184756110863:16",
+              "184756110863:17"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184756110863:22",
+      "san": "Bg4",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 85.9906234476911,
+        "cpLoss": 43,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184756110863:20",
+          "184756110863:21",
+          "184756110863:22"
+        ]
+      },
+      "proof": {
+        "veto": true,
+        "status": "complete",
+        "nodes": 63,
+        "origins": [
+          {
+            "ply": 20,
+            "renewed": false,
+            "details": []
+          }
+        ]
+      },
+      "awarded": false,
+      "earlier": [
+        {
+          "ply": 16,
+          "prediction": {
+            "missing": [
+              "184756110863:14",
+              "184756110863:15",
+              "184756110863:16"
+            ]
+          }
+        },
+        {
+          "ply": 18,
+          "prediction": {
+            "missing": [
+              "184756110863:16",
+              "184756110863:17"
+            ]
+          }
+        },
+        {
+          "ply": 20,
+          "prediction": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "184756110863:18",
+              "184756110863:19",
+              "184756110863:20"
+            ]
+          }
+        }
+      ],
+      "truth": false,
+      "label": "?!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184757910813:44",
+      "san": "Qb5",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 84.70481821580165,
+        "cpLoss": 44,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184757910813:42",
+          "184757910813:43",
+          "184757910813:44"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184757910813:46",
+      "san": "Qe2",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 96.26187854336175,
+        "cpLoss": 12,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184757910813:44",
+          "184757910813:45",
+          "184757910813:46"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 5,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 40,
+          "prediction": {
+            "missing": [
+              "184757910813:38",
+              "184757910813:39",
+              "184757910813:40"
+            ]
+          }
+        },
+        {
+          "ply": 42,
+          "prediction": {
+            "missing": [
+              "184757910813:40",
+              "184757910813:41"
+            ]
+          }
+        },
+        {
+          "ply": 44,
+          "prediction": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 84.70481821580165,
+            "cpLoss": 44,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "184757910813:42",
+              "184757910813:43",
+              "184757910813:44"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184775179950:62",
+      "san": "Rxe8",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 94.99164395831718,
+        "cpLoss": 15,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184775179950:60",
+          "184775179950:61",
+          "184775179950:62"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184775179950:64",
+      "san": "Re1+",
+      "base": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184775179950:62",
+          "184775179950:63",
+          "184775179950:64"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "184980636738:88",
+      "san": "Nb6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 87.63117298065818,
+        "cpLoss": 36,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184980636738:86",
+          "184980636738:87",
+          "184980636738:88"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?",
+      "account": "KNVB"
+    },
+    {
+      "key": "184980636738:94",
+      "san": "Nxc3",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "184980636738:92",
+          "184980636738:93",
+          "184980636738:94"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 88,
+          "prediction": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 87.63117298065818,
+            "cpLoss": 36,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "184980636738:86",
+              "184980636738:87",
+              "184980636738:88"
+            ]
+          }
+        },
+        {
+          "ply": 90,
+          "prediction": {
+            "missing": [
+              "184980636738:89",
+              "184980636738:90"
+            ]
+          }
+        },
+        {
+          "ply": 92,
+          "prediction": {
+            "missing": [
+              "184980636738:90",
+              "184980636738:91"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "185010511207:44",
+      "san": "Qxe2",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 97.3528185758888,
+        "cpLoss": 9,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185010511207:42",
+          "185010511207:43",
+          "185010511207:44"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "185010511207:50",
+      "san": "e3",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185010511207:48",
+          "185010511207:49",
+          "185010511207:50"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "185024676458:56",
+      "san": "Bxc3",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 87.26611277335495,
+        "cpLoss": 108,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185024676458:54",
+          "185024676458:55",
+          "185024676458:56"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 50,
+          "prediction": {
+            "missing": [
+              "185024676458:48",
+              "185024676458:49",
+              "185024676458:50"
+            ]
+          }
+        },
+        {
+          "ply": 52,
+          "prediction": {
+            "missing": [
+              "185024676458:50",
+              "185024676458:51",
+              "185024676458:52"
+            ]
+          }
+        },
+        {
+          "ply": 54,
+          "prediction": {
+            "missing": [
+              "185024676458:52",
+              "185024676458:53"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "185024676458:78",
+      "san": "Qa2+",
+      "base": {
+        "symbol": "??",
+        "provisional": "??",
+        "withheld": false,
+        "accuracy": 0.07800258159905304,
+        "cpLoss": 1608,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185024676458:76",
+          "185024676458:77",
+          "185024676458:78"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "miss",
+      "account": "KNVB"
+    },
+    {
+      "key": "185031691156:23",
+      "san": "Na3",
+      "base": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 65.12935541333316,
+        "cpLoss": 108,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185031691156:21",
+          "185031691156:22",
+          "185031691156:23"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?",
+      "account": "KNVB"
+    },
+    {
+      "key": "185031691156:37",
+      "san": "Nxe6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185031691156:35",
+          "185031691156:36",
+          "185031691156:37"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 31,
+          "prediction": {
+            "missing": [
+              "185031691156:29",
+              "185031691156:30",
+              "185031691156:31"
+            ]
+          }
+        },
+        {
+          "ply": 33,
+          "prediction": {
+            "missing": [
+              "185031691156:31",
+              "185031691156:32",
+              "185031691156:33"
+            ]
+          }
+        },
+        {
+          "ply": 35,
+          "prediction": {
+            "missing": [
+              "185031691156:33",
+              "185031691156:34"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "185033501800:115",
+      "san": "Nxe4",
+      "base": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 83.08808537421142,
+        "cpLoss": 139,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185033501800:113",
+          "185033501800:114",
+          "185033501800:115"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "KNVB"
+    },
+    {
+      "key": "185033501800:57",
+      "san": "Nb4",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 99.05120731345986,
+        "cpLoss": 5,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185033501800:55",
+          "185033501800:56",
+          "185033501800:57"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "185227199376:63",
+      "san": "Qg2",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 86.91380170374063,
+        "cpLoss": 42,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185227199376:61",
+          "185227199376:62",
+          "185227199376:63"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?!",
+      "account": "KNVB"
+    },
+    {
+      "key": "185227199376:65",
+      "san": "Rxf3",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 95.83156690983728,
+        "cpLoss": 13,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185227199376:63",
+          "185227199376:64",
+          "185227199376:65"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 59,
+          "prediction": {
+            "missing": [
+              "185227199376:57",
+              "185227199376:58",
+              "185227199376:59"
+            ]
+          }
+        },
+        {
+          "ply": 61,
+          "prediction": {
+            "missing": [
+              "185227199376:59",
+              "185227199376:60"
+            ]
+          }
+        },
+        {
+          "ply": 63,
+          "prediction": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 86.91380170374063,
+            "cpLoss": 42,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "185227199376:61",
+              "185227199376:62",
+              "185227199376:63"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "185277391724:18",
+      "san": "Bxh3",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185277391724:16",
+          "185277391724:17",
+          "185277391724:18"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 12,
+          "prediction": {
+            "missing": [
+              "185277391724:10",
+              "185277391724:11",
+              "185277391724:12"
+            ]
+          }
+        },
+        {
+          "ply": 14,
+          "prediction": {
+            "missing": [
+              "185277391724:12",
+              "185277391724:13",
+              "185277391724:14"
+            ]
+          }
+        },
+        {
+          "ply": 16,
+          "prediction": {
+            "missing": [
+              "185277391724:14",
+              "185277391724:15"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "185277391724:28",
+      "san": "Ng4",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185277391724:26",
+          "185277391724:27",
+          "185277391724:28"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "KNVB"
+    },
+    {
+      "key": "185332292302:106",
+      "san": "Nxa2",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.95326594290125,
+        "cpLoss": 5,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185332292302:104",
+          "185332292302:105",
+          "185332292302:106"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 100,
+          "prediction": {
+            "missing": [
+              "185332292302:98",
+              "185332292302:99",
+              "185332292302:100"
+            ]
+          }
+        },
+        {
+          "ply": 102,
+          "prediction": {
+            "missing": [
+              "185332292302:100",
+              "185332292302:101",
+              "185332292302:102"
+            ]
+          }
+        },
+        {
+          "ply": 104,
+          "prediction": {
+            "missing": [
+              "185332292302:102",
+              "185332292302:103"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "185332292302:118",
+      "san": "Ke2",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185332292302:116",
+          "185332292302:117",
+          "185332292302:118"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "good",
+      "account": "nelsi"
+    },
+    {
+      "key": "185363189957:24",
+      "san": "Kxg7",
+      "base": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 62.549051162471756,
+        "cpLoss": 122,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185363189957:22",
+          "185363189957:23",
+          "185363189957:24"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "miss",
+      "account": "Hikaru"
+    },
+    {
+      "key": "185363189957:34",
+      "san": "Nxb4",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185363189957:32",
+          "185363189957:33",
+          "185363189957:34"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "185388991304:17",
+      "san": "Ne5",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185388991304:15",
+          "185388991304:16",
+          "185388991304:17"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "KNVB"
+    },
+    {
+      "key": "185388991304:21",
+      "san": "Qh5",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.32858527383907,
+        "cpLoss": 7,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185388991304:19",
+          "185388991304:20",
+          "185388991304:21"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 144,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 15,
+          "prediction": {
+            "missing": [
+              "185388991304:13",
+              "185388991304:14"
+            ]
+          }
+        },
+        {
+          "ply": 17,
+          "prediction": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "185388991304:15",
+              "185388991304:16",
+              "185388991304:17"
+            ]
+          }
+        },
+        {
+          "ply": 19,
+          "prediction": {
+            "missing": [
+              "185388991304:18"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "185640611734:65",
+      "san": "Qd4",
+      "base": {
+        "symbol": "?",
+        "provisional": "?",
+        "withheld": false,
+        "accuracy": 49.741411762068495,
+        "cpLoss": 178,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185640611734:63",
+          "185640611734:64",
+          "185640611734:65"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "miss",
+      "account": "KNVB"
+    },
+    {
+      "key": "185640611734:69",
+      "san": "Rxe4",
+      "base": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185640611734:67",
+          "185640611734:68",
+          "185640611734:69"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "185659472924:65",
+      "san": "Kh1",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185659472924:63",
+          "185659472924:64",
+          "185659472924:65"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "KNVB"
+    },
+    {
+      "key": "185659472924:85",
+      "san": "Rf8+",
+      "base": {
+        "symbol": "!?",
+        "provisional": "!?",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185659472924:83",
+          "185659472924:84",
+          "185659472924:85"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "185663696126:72",
+      "san": "Rf6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185663696126:70",
+          "185663696126:71",
+          "185663696126:72"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "KNVB"
+    },
+    {
+      "key": "185663696126:76",
+      "san": "Nf2+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 98.1018132400915,
+        "cpLoss": 13,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185663696126:74",
+          "185663696126:75",
+          "185663696126:76"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 70,
+          "prediction": {
+            "missing": [
+              "185663696126:68",
+              "185663696126:69"
+            ]
+          }
+        },
+        {
+          "ply": 72,
+          "prediction": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "185663696126:70",
+              "185663696126:71",
+              "185663696126:72"
+            ]
+          }
+        },
+        {
+          "ply": 74,
+          "prediction": {
+            "missing": [
+              "185663696126:73"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "185699365144:181",
+      "san": "Kd3",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 95.0040141299881,
+        "cpLoss": 34,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185699365144:179",
+          "185699365144:180",
+          "185699365144:181"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "KNVB"
+    },
+    {
+      "key": "185703992543:36",
+      "san": "Ne4",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 95.34657757171435,
+        "cpLoss": 29,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185703992543:34",
+          "185703992543:35",
+          "185703992543:36"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 8,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 30,
+          "prediction": {
+            "missing": [
+              "185703992543:28",
+              "185703992543:29",
+              "185703992543:30"
+            ]
+          }
+        },
+        {
+          "ply": 32,
+          "prediction": {
+            "missing": [
+              "185703992543:30",
+              "185703992543:31",
+              "185703992543:32"
+            ]
+          }
+        },
+        {
+          "ply": 34,
+          "prediction": {
+            "missing": [
+              "185703992543:32",
+              "185703992543:33"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "185728395618:46",
+      "san": "Rxf2+",
+      "base": {
+        "symbol": "",
+        "provisional": "!",
+        "withheld": true,
+        "accuracy": 91.4971789513939,
+        "cpLoss": 26,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185728395618:44",
+          "185728395618:45",
+          "185728395618:46"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "185728395618:52",
+      "san": "Rf8",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185728395618:50",
+          "185728395618:51",
+          "185728395618:52"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "nelsi"
+    },
+    {
+      "key": "185745214488:35",
+      "san": "Bf3",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 91.56063434222143,
+        "cpLoss": 24,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185745214488:33",
+          "185745214488:34",
+          "185745214488:35"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "good",
+      "account": "Hikaru"
+    },
+    {
+      "key": "185745214488:71",
+      "san": "Re8+",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185745214488:69",
+          "185745214488:70",
+          "185745214488:71"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "185785803250:79",
+      "san": "Rxc6",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185785803250:77",
+          "185785803250:78",
+          "185785803250:79"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 73,
+          "prediction": {
+            "missing": [
+              "185785803250:71",
+              "185785803250:72",
+              "185785803250:73"
+            ]
+          }
+        },
+        {
+          "ply": 75,
+          "prediction": {
+            "missing": [
+              "185785803250:73",
+              "185785803250:74",
+              "185785803250:75"
+            ]
+          }
+        },
+        {
+          "ply": 77,
+          "prediction": {
+            "missing": [
+              "185785803250:75",
+              "185785803250:76"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "KNVB"
+    },
+    {
+      "key": "185785803250:85",
+      "san": "Rc6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.51561029263763,
+        "cpLoss": 72,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185785803250:83",
+          "185785803250:84",
+          "185785803250:85"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "KNVB"
+    },
+    {
+      "key": "185961990851:36",
+      "san": "Bxf5",
+      "base": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185961990851:34",
+          "185961990851:35",
+          "185961990851:36"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "Hikaru"
+    },
+    {
+      "key": "185961990851:38",
+      "san": "Nf3",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185961990851:36",
+          "185961990851:37",
+          "185961990851:38"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "complete",
+        "nodes": 12,
+        "origins": []
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 32,
+          "prediction": {
+            "missing": [
+              "185961990851:30",
+              "185961990851:31",
+              "185961990851:32"
+            ]
+          }
+        },
+        {
+          "ply": 34,
+          "prediction": {
+            "missing": [
+              "185961990851:32",
+              "185961990851:33"
+            ]
+          }
+        },
+        {
+          "ply": 36,
+          "prediction": {
+            "symbol": "!",
+            "provisional": "!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "185961990851:34",
+              "185961990851:35",
+              "185961990851:36"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "185963189457:61",
+      "san": "Ng5",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185963189457:59",
+          "185963189457:60",
+          "185963189457:61"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "185963189457:67",
+      "san": "Rfxf7",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "185963189457:65",
+          "185963189457:66",
+          "185963189457:67"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 61,
+          "prediction": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "private-v5-attributable-mate-A",
+            "snapshot_ids": [
+              "185963189457:59",
+              "185963189457:60",
+              "185963189457:61"
+            ]
+          }
+        },
+        {
+          "ply": 63,
+          "prediction": {
+            "missing": [
+              "185963189457:62",
+              "185963189457:63"
+            ]
+          }
+        },
+        {
+          "ply": 65,
+          "prediction": {
+            "missing": [
+              "185963189457:63",
+              "185963189457:64"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "186014552162:42",
+      "san": "Rh2+",
+      "base": {
+        "symbol": "!!",
+        "provisional": "!!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "186014552162:40",
+          "186014552162:41",
+          "186014552162:42"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": true,
+      "earlier": [
+        {
+          "ply": 36,
+          "prediction": {
+            "missing": [
+              "186014552162:34",
+              "186014552162:35",
+              "186014552162:36"
+            ]
+          }
+        },
+        {
+          "ply": 38,
+          "prediction": {
+            "missing": [
+              "186014552162:36",
+              "186014552162:37",
+              "186014552162:38"
+            ]
+          }
+        },
+        {
+          "ply": 40,
+          "prediction": {
+            "missing": [
+              "186014552162:38",
+              "186014552162:39"
+            ]
+          }
+        }
+      ],
+      "truth": true,
+      "label": "!!",
+      "account": "nelsi"
+    },
+    {
+      "key": "186014552162:54",
+      "san": "Rd3",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 89.11112092542234,
+        "cpLoss": 52,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "186014552162:52",
+          "186014552162:53",
+          "186014552162:54"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "excellent",
+      "account": "nelsi"
+    },
+    {
+      "key": "186570389967:18",
+      "san": "Ne4",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 92.31289392128637,
+        "cpLoss": 22,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "186570389967:16",
+          "186570389967:17",
+          "186570389967:18"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "best",
+      "account": "Hikaru"
+    },
+    {
+      "key": "186570389967:52",
+      "san": "Rxd3",
+      "base": {
+        "symbol": "!",
+        "provisional": "!",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 0,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "186570389967:50",
+          "186570389967:51",
+          "186570389967:52"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "187172297075:31",
+      "san": "Be3",
+      "base": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 67.07862612880723,
+        "cpLoss": 100,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "187172297075:29",
+          "187172297075:30",
+          "187172297075:31"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "miss",
+      "account": "Hikaru"
+    },
+    {
+      "key": "187172297075:43",
+      "san": "Rxf6",
+      "base": {
+        "symbol": "",
+        "provisional": "",
+        "withheld": false,
+        "accuracy": 100,
+        "cpLoss": 2,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "187172297075:41",
+          "187172297075:42",
+          "187172297075:43"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": true,
+      "label": "!!",
+      "account": "Hikaru"
+    },
+    {
+      "key": "187176497301:63",
+      "san": "Bxe6",
+      "base": {
+        "symbol": "?!",
+        "provisional": "?!",
+        "withheld": false,
+        "accuracy": 68.97598188484783,
+        "cpLoss": 107,
+        "version": "private-v5-attributable-mate-A",
+        "snapshot_ids": [
+          "187176497301:61",
+          "187176497301:62",
+          "187176497301:63"
+        ]
+      },
+      "proof": {
+        "veto": false,
+        "status": "ineligible",
+        "nodes": 0
+      },
+      "awarded": false,
+      "earlier": [],
+      "truth": false,
+      "label": "?!",
+      "account": "Hikaru"
+    }
+  ]
+}

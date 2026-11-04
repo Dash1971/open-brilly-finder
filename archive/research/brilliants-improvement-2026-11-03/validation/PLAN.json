@@ -1,0 +1,113 @@
+{
+  "study_id": "brilliants-improvement-independent-200-2026-11-03",
+  "frozen_at_utc": "2026-11-03T07:11:09.519400+00:00",
+  "status": "Protocol and cached selection preparation after candidate source freeze; no fresh labels collected. Parent coordinates and owns browser collection.",
+  "candidate_freeze": {
+    "path": "../CANDIDATE-FREEZE.json",
+    "sha256": "f2323f846cfbb84b66fc85fc988c34da2452cd0cad8de38a596b08f2cb7dd445",
+    "candidate_policy": "mute-chess-brilliant-v4",
+    "source_frozen_at_utc": "2026-11-03T07:20:41.336184+00:00",
+    "no_retuning_from_new_labels": true,
+    "format_only_revision_before_labels": true
+  },
+  "quantity": {
+    "primary_total": 200,
+    "current_brilliant": 100,
+    "explicit_non_brilliant": 100,
+    "per_account_per_class": 20,
+    "accounts": [
+      "nelsi",
+      "hansen",
+      "KNVB",
+      "GothamChess",
+      "Hikaru"
+    ],
+    "positive_games": "One chosen positive per new game; prefer one explicit non-Brilliant control from that same game.",
+    "secondary": "Changed gallery labels and control candidates displaying Brilliant stay secondary; replacement order is frozen without using candidate predictions."
+  },
+  "selection": {
+    "positives": "Hash-sort eligible cached candidates within account/category, then Queen/Rook/Bishop/Knight round robin, skipping duplicate games and before-position+move identities. Category quotas are availability-based, not forced5/category. Cached Hansen currently supplies Bishop/Knight only. Topups follow observed gallery order after all current exclusions; freeze their eligible identities before fresh review.",
+    "hash_seed": "mute-improvement-validation-v1",
+    "negatives": "Same-player PGN moves: raw pinned-v2 legal piece offers, then quiet attacked/defended nonpawn/nonking moves, recaptures/exchanges, other captures, other quiet moves; nearest target ply then ply. Exclude old sampled positions, terminal-after positions, selected/gallery candidate keys and the target. Book and every other explicit non-Brilliant label remain eligible; do not remove them after observing their label.",
+    "partitions": "Every new main case is independent validation; all618 existing cases and their former splits are development. No new discovery/tuning subset.",
+    "known_positions": "Exclude all325 known reviewed/development game IDs, all explicit sampled/regression/development FENs, and conservatively every cached position in those games. Compare normalized first4FENfields before AND after each sampled target/control. This does not require entire game histories to be disjoint: starting positions and ordinary opening prefixes are shared. Refresh exclusions at source freeze and record hashes.",
+    "deduplication": "One core positive per new game; no repeated positive before-position+UCI across games/accounts. Negative keys are unique; report repeated negative positions and analyze by whole-game clusters.",
+    "replacement": "First unused eligible same-category candidate in the predeclared hash order, then next category round robin if exhausted. No replacement based on any tested classifier result. If account source exhausted, report shortfall and obtain a bounded source topup rather than silently shifting20/account."
+  },
+  "evidence": {
+    "required": [
+      "numeric_game_id",
+      "expected_live_or_daily_namespace",
+      "visible_SAN",
+      "one_based_ply",
+      "explicit_displayed_label",
+      "capture_timestamp",
+      "full_observed_source_URL",
+      "full_PGN",
+      "derived_before_after_FEN"
+    ],
+    "additional": [
+      "rendered_board_piece_classes",
+      "visible_coach_text_and_pending_character_completeness_flag",
+      "displayed_evaluation",
+      "ratings_dates_clocks",
+      "gallery_category"
+    ],
+    "unknown_is_not_negative": true,
+    "historical_gallery_is_not_current_label": true
+  },
+  "baseline_sources": {
+    "ec": "6f2d2628f0fbe11cb62a7dd2f9c102bb52907d53 (score/material identical to v0.15.1)",
+    "v2": "b3585f2c5b818bb8dfabb7fc4e3ed37cab848c12",
+    "v3": "ac298a0d69ab51808857b089063348f2adac1101",
+    "v4": "Source hashes in ../CANDIDATE-FREEZE.json"
+  },
+  "reporting": {
+    "primary": "Report paired TP/FN/FP/TN, detection and extra awards separately for raw EC, confirmed v2/v3 and frozen v4 on identical saved evidence.",
+    "decision": "Report observed Pareto change and the predeclared FN+3*FP loss; do not choose or revise the candidate from validation outcomes. A failed test remains a failed/inconclusive test.",
+    "uncertainty": "Use whole-game paired differences and cluster-aware uncertainty; small account/category strata are descriptive. A 100-negative sample cannot establish near-zero error or99% agreement.",
+    "subgroups": [
+      "account",
+      "gallery category",
+      "raw legal offer vs other controls",
+      "Book vs non-Book",
+      "live vs daily",
+      "mechanism panel separate from primary"
+    ]
+  },
+  "optional_mechanism_panel": {
+    "total_cap": 40,
+    "counts": {
+      "mating_acceptance": 10,
+      "unchanged_offer_while_in_check": 10,
+      "phase_winning_context": 10,
+      "cross_square_material_recoup": 10
+    },
+    "status": "Definitions proposed; identities must be preselected and frozen before any current labels. No labels collected or cases selected yet.",
+    "selection": "Use new unreviewed games/positions only, fixed board/history features and deterministic hash order. Retain ALL observed labels regardless of class or policy success; do not fill brilliant/non-Brilliant quotas. Prefer games disjoint from the core; report any shared games.",
+    "definitions": {
+      "mating_acceptance": "A qualifying legal nonpawn acceptance permits a legal mate-in-one reply; save the two-move conditional witness. Bounded legal enumeration, not forced acceptance or an engine evaluation.",
+      "unchanged_offer_while_in_check": "Mover starts in check; every qualifying current offered piece stays on its square and has the same positive legal exchange vulnerability as after the previous own move. Explicit unknown if history/proof unavailable.",
+      "phase_winning_context": "Preselect structural phase/material contexts using frozen N/B1,R2,Q4 weights, phase<=8 and mover lead>=300 boundaries. Actual winning safe alternatives require later fixed-budget SF evidence; do not claim winning from material or game result alone. No post-label replacement if the evaluation does not confirm the intended mechanism.",
+      "cross_square_material_recoup": "A legal offered-piece acceptance followed by a legal capture sequence restores material on another square. Preserve conditional line/raw material and capture-only/quiet-response limitations; no claim that the continuation is forced."
+    }
+  },
+  "resources": {
+    "initial_collectors": 1,
+    "maximum_collectors": 2,
+    "increase_only_parent_clearance": true,
+    "fresh_tab_per_game": true,
+    "close_after_saved_pair": true,
+    "never_navigate_one_review_tab_between_games": true,
+    "engine_during_collection": false,
+    "heavy_browser_and_engine_jobs_never_concurrent": true,
+    "checkpoint_every_move": true,
+    "monitor": "Parent checks full process footprint and swap activity at batch boundaries; close only owned research tabs."
+  },
+  "exclusion_snapshot": {
+    "game_ids": 325,
+    "explicit_or_sampled_fens": 1931,
+    "conservative_fens": 25904,
+    "refresh_at_freeze_required": true
+  }
+}

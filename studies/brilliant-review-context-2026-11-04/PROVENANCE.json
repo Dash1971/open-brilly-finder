@@ -1,0 +1,1626 @@
+{
+  "title": "Chess.com review provenance for matched tactics",
+  "date": "2026-11-04",
+  "scope": "48 matched cases only; no rating fields or rating analysis.",
+  "sources": {
+    "matched_cases": "research/brilliant-matched-sacrifices-2026-11-04/MATCHED-CASES.json",
+    "archive_evidence": "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/evidence.jsonl.gz",
+    "raw_collectors": "research/brilliants-training-overnight-2026-11-03/collector-a and collector-b"
+  },
+  "coverage": {
+    "matched_cases": 48,
+    "truth_true": 24,
+    "truth_false": 24,
+    "collector_a_cases": 30,
+    "collector_b_cases": 18,
+    "exact_target_ply_evidence_records": 75,
+    "cases_with_visible_review_record": 43,
+    "cases_with_explicit_export_NAG_record": 32,
+    "cases_with_both": 27,
+    "cases_with_same_label_when_both_present": 27
+  },
+  "settings_provenance": {
+    "review_settings_saved": false,
+    "engine_saved": false,
+    "depth_saved": false,
+    "platform_saved": false,
+    "version_saved": false,
+    "notes": "Collector-B game JSON explicitly stores review_settings:null and says settings were not displayed and were not inferred from Analysis engine depth. Collector-A checks JSON stores labels, node/SAN, FEN, pieces, URL/capture time and board verification but no settings/engine/depth/platform/version or displayed eval fields. Local before_depth/after_depth and local Stockfish profile in MATCHED-CASES/PROTOCOL are not Chess.com review settings."
+  },
+  "eval_comparison_method": {
+    "displayed_eval_orientation": "Chess.com saved displayed evaluation is treated as white-perspective; converted to mover perspective by multiplying by +1 if fen_before side to move is white, otherwise -1. Displayed decimal is rounded to centipawns.",
+    "local_value": "current_features.after_cp, in mover perspective from local Stockfish analysis.",
+    "delta": "displayed mover-perspective centipawns minus local after_cp; cross-engine/snapshot comparison only, not equivalent analyses."
+  },
+  "eval_comparison_summary": {
+    "cases_with_saved_displayed_evaluation": 12,
+    "mean_delta_cp": -22.75,
+    "median_delta_cp": -10.5,
+    "mean_absolute_delta_cp": 39.75,
+    "min_delta_cp": -112,
+    "max_delta_cp": 36
+  },
+  "ui_pgn_agreement": {
+    "target_ply_cases_with_both_sources": 27,
+    "label_agreements": 27,
+    "label_disagreements": 0,
+    "note": "Agreement assessed only where exact target ply has both evidence record types. Missing export NAG is not interpreted as a negative label. Adjacent-ply labels are excluded."
+  },
+  "limitations": [
+    "PGN NAG annotations preserve review labels but not Chess.com eval trajectory/settings.",
+    "Displayed evaluations are partial single-move snapshots: collector-A none; collector-B only a subset.",
+    "Comparison is descriptive across Chess.com displayed snapshots and a separate local Stockfish profile; differing engines, positions/snapshot timing, rounding, and review configuration are unrecorded.",
+    "Evidence rows are keyed by exact game_id and ply; visible UI node/SAN was retained where available. Export-only records lack selected-node metadata."
+  ],
+  "cases": [
+    {
+      "key": "147329069640:16",
+      "truth": false,
+      "san": "Nxe5",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/147329069640-checks.json",
+          "label": "best",
+          "selected_node": "0-15",
+          "selected_san": "Nxe5",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "7c62159359ee6aa5bf8c3cc3254f5ae8e0da705b61f35d09762feb90c4535fee"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "166122402690:37",
+      "truth": true,
+      "san": "Bxh6",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/166122402690-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "3eef4d75dcb188de030e8fa998cbbc666d893cad3b2ec0b9c9ebc9da9c724fe7"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/166122402690-checks.json",
+          "label": "brilliant",
+          "selected_node": "0-36",
+          "selected_san": "Bxh6",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "777ba170536ea24862aecd740e424d97d0ba796a3662b02e604c988cb585bc6d"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "166508569726:24",
+      "truth": false,
+      "san": "Nxe2+",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/166508569726-checks.json",
+          "label": "best",
+          "selected_node": "0-23",
+          "selected_san": "Nxe2+",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "2e15825078e5d76e6f47d6a04a2abaa47cee2ffe6b9c9ac769054aaf035724c7"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "166578129186:33",
+      "truth": false,
+      "san": "Nc7",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 0,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/166578129186-export.pgn",
+          "label": "great",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 1,
+          "source_sha256": "da8d2c1a3ccc7828bdc5b3503257b53cc17f6b2d2db1ec38fcdb7e29796a9ef0"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "166699653212:39",
+      "truth": false,
+      "san": "Bxf5",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/166699653212-checks.json",
+          "label": "excellent",
+          "selected_node": "0-38",
+          "selected_san": "Bxf5",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "aeb40ab77c7cdae05c2dc8b1bb6c91a391171cc61cc0a8bb674d56f6d53c5113"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "166897350472:18",
+      "truth": false,
+      "san": "Nb4",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/166897350472-checks.json",
+          "label": "best",
+          "selected_node": "0-17",
+          "selected_san": "Nb4",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "0f8ada86339f86be434a21e0e57d591fa7e1ac19eb80b9344ad62f81f032fde7"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "166981885820:34",
+      "truth": true,
+      "san": "Bxb3",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/166981885820-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "3366b550b4f59d5bcbbcca020059b6f0b9fa45df740cb20c9aef343c7412f15a"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/166981885820-checks.json",
+          "label": "brilliant",
+          "selected_node": "0-33",
+          "selected_san": "Bxb3",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "0fd9a24374e4797fa11d5135a88ec33a22ec790c52f05cd3b54cab142ea67f5a"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "167122315622:53",
+      "truth": true,
+      "san": "Qc7",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/167122315622-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "ad868900448a85bbc210d3ca5ce73bd511536d16bc561447975ecaac171ef268"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/167122315622-checks.json",
+          "label": "brilliant",
+          "selected_node": "0-52",
+          "selected_san": "Qc7",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "7acac1519d8e45ae7aafe01a350dc7cd04e8192bd9bfa08258aec6b838f7f407"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "167245993920:25",
+      "truth": false,
+      "san": "Ne6",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-b",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/167245993920.json",
+          "label": "best",
+          "selected_node": "0-24",
+          "selected_san": "Ne6",
+          "displayed_evaluation": "+1.26",
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "48398c94039a18b839f0ac59dce0baef5c092e349417aa63e1483a5653c3b24e"
+        }
+      ],
+      "evaluation_comparison": {
+        "displayed_eval_raw_white_pov": "+1.26",
+        "fen_before_side_to_move": "w",
+        "displayed_eval_mover_cp_rounded": 126,
+        "local_stockfish_after_cp_mover_pov": 98,
+        "delta_displayed_minus_local_cp": 28
+      }
+    },
+    {
+      "key": "167275575688:60",
+      "truth": false,
+      "san": "hxg5",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-b",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/167275575688.json",
+          "label": "excellent",
+          "selected_node": "0-59",
+          "selected_san": "hxg5",
+          "displayed_evaluation": "-3.12",
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "14c5aa908eeb5837eeb3c301945afe6332731bd85394d625f144794347e18aed"
+        }
+      ],
+      "evaluation_comparison": {
+        "displayed_eval_raw_white_pov": "-3.12",
+        "fen_before_side_to_move": "b",
+        "displayed_eval_mover_cp_rounded": 312,
+        "local_stockfish_after_cp_mover_pov": 283,
+        "delta_displayed_minus_local_cp": 29
+      }
+    },
+    {
+      "key": "167735024286:72",
+      "truth": true,
+      "san": "Qh3",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-b",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-b/167735024286.review-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "c5e930995e7f0a944f52c7146a86a96f993e2a0f2f5b0a99db7f22b6ff527b5d"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/167735024286.json",
+          "label": "brilliant",
+          "selected_node": "0-71",
+          "selected_san": "Qh3",
+          "displayed_evaluation": "-7.33",
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "07833334110454b765a121550981e03a3dadd2d4ec5ddb0f0f97c39a34343fbd"
+        }
+      ],
+      "evaluation_comparison": {
+        "displayed_eval_raw_white_pov": "-7.33",
+        "fen_before_side_to_move": "b",
+        "displayed_eval_mover_cp_rounded": 733,
+        "local_stockfish_after_cp_mover_pov": 845,
+        "delta_displayed_minus_local_cp": -112
+      }
+    },
+    {
+      "key": "167744579866:37",
+      "truth": true,
+      "san": "Nf6+",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-b",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-b/167744579866.review-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "2347e32e10ab4c682059d5c3b092ab6e3139064b147e59c9df593559c252d141"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/167744579866.json",
+          "label": "brilliant",
+          "selected_node": "0-36",
+          "selected_san": "Nf6+",
+          "displayed_evaluation": "+6.21",
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "48ffb6b81086e60e6277ac63448819628859a4dbc1eebb11b9add753ea507715"
+        }
+      ],
+      "evaluation_comparison": {
+        "displayed_eval_raw_white_pov": "+6.21",
+        "fen_before_side_to_move": "w",
+        "displayed_eval_mover_cp_rounded": 621,
+        "local_stockfish_after_cp_mover_pov": 702,
+        "delta_displayed_minus_local_cp": -81
+      }
+    },
+    {
+      "key": "168415989030:55",
+      "truth": true,
+      "san": "Nxc4",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-b",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-b/168415989030.review-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "4069c0db8d133998b2ec96c299e6a1ccde4528d191b1b6acdd4939abcdc7f803"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/168415989030.json",
+          "label": "brilliant",
+          "selected_node": "0-54",
+          "selected_san": "Nxc4",
+          "displayed_evaluation": "+2.85",
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "674e0de9b9d201b46d0ff4cd21aef1c850f608ec936cb9bca02878d35719a697"
+        }
+      ],
+      "evaluation_comparison": {
+        "displayed_eval_raw_white_pov": "+2.85",
+        "fen_before_side_to_move": "w",
+        "displayed_eval_mover_cp_rounded": 285,
+        "local_stockfish_after_cp_mover_pov": 249,
+        "delta_displayed_minus_local_cp": 36
+      }
+    },
+    {
+      "key": "168815996146:51",
+      "truth": true,
+      "san": "Nxd4",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/168815996146-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "4fe0a0183eea72bcb6ad028dc06ed4d423109e9e4a90abe7cb6f4a8d7e9b1204"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/168815996146-checks.json",
+          "label": "brilliant",
+          "selected_node": "0-50",
+          "selected_san": "Nxd4",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "4ea0edbbf3b8dff44b20895d3e8b6f7987688fc42b427e26c004e4228e8cb2da"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "169084959468:69",
+      "truth": false,
+      "san": "Nd7+",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-b",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/169084959468.json",
+          "label": "best",
+          "selected_node": "0-68",
+          "selected_san": "Nd7+",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "f25dfe005b4861aae4da1f1bfdc215359f456262b247a59cc8deccf263fef4fe"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "169295732472:39",
+      "truth": false,
+      "san": "Qxh5",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-b",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/169295732472.json",
+          "label": "best",
+          "selected_node": "0-38",
+          "selected_san": "Qxh5",
+          "displayed_evaluation": "+1.52",
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "7e4051a30ddd2e7518719010e0813f48ee9fea78222c3b8ad51b4bf103bd7fbe"
+        }
+      ],
+      "evaluation_comparison": {
+        "displayed_eval_raw_white_pov": "+1.52",
+        "fen_before_side_to_move": "w",
+        "displayed_eval_mover_cp_rounded": 152,
+        "local_stockfish_after_cp_mover_pov": 187,
+        "delta_displayed_minus_local_cp": -35
+      }
+    },
+    {
+      "key": "170661862908:40",
+      "truth": true,
+      "san": "Nd3",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/170661862908-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "7b588f1e6e4163030e671b3bc9013b659b0678e6eda91f202d6b8bb04a9bdd2d"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/170661862908-checks.json",
+          "label": "brilliant",
+          "selected_node": "0-39",
+          "selected_san": "Nd3",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "89d1306aea9380930622a9a36f07e0ad9a7b31c680a7426e58f3ee5706eb8d8b"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "170804505058:23",
+      "truth": false,
+      "san": "Bxh5",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/170804505058-checks.json",
+          "label": "good",
+          "selected_node": "0-22",
+          "selected_san": "Bxh5",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "5590d88f95ac8ad70b91bfefeb1820816a76f2bc00f299b69186aa7b45dae3d8"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "171472107788:38",
+      "truth": true,
+      "san": "Bb3",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-b",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-b/171472107788.review-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "4eac20170fb38a041bca60a244535c36b8a538caae8502e17a4c889fa055658b"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/171472107788.json",
+          "label": "brilliant",
+          "selected_node": "0-37",
+          "selected_san": "Bb3",
+          "displayed_evaluation": "-0.10",
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "a24900f2cc331c0de2acd8a75e81d2296ee6187dd3f8fcc91798a204ca259a73"
+        }
+      ],
+      "evaluation_comparison": {
+        "displayed_eval_raw_white_pov": "-0.10",
+        "fen_before_side_to_move": "b",
+        "displayed_eval_mover_cp_rounded": 10,
+        "local_stockfish_after_cp_mover_pov": 23,
+        "delta_displayed_minus_local_cp": -13
+      }
+    },
+    {
+      "key": "171615877812:32",
+      "truth": false,
+      "san": "Bxf6",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/171615877812-checks.json",
+          "label": "best",
+          "selected_node": "0-31",
+          "selected_san": "Bxf6",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "03dcc074e6b22bcb86452281b490e83191c63076394234eb59705a8b404f19cd"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "171728787528:43",
+      "truth": true,
+      "san": "Rxe5",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-b",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-b/171728787528.review-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "b364f8d42d0757d32d8d200d37b85bf62fde8e08eed49d086712e5a1f09a5865"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/171728787528.json",
+          "label": "brilliant",
+          "selected_node": "0-42",
+          "selected_san": "Rxe5",
+          "displayed_evaluation": "+5.26",
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "133a1e10887b5a26e611685f55609755bfc1fa343a7af02287d6362711f2a4c6"
+        }
+      ],
+      "evaluation_comparison": {
+        "displayed_eval_raw_white_pov": "+5.26",
+        "fen_before_side_to_move": "w",
+        "displayed_eval_mover_cp_rounded": 526,
+        "local_stockfish_after_cp_mover_pov": 592,
+        "delta_displayed_minus_local_cp": -66
+      }
+    },
+    {
+      "key": "171805090202:89",
+      "truth": false,
+      "san": "Nxe6",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 0,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/171805090202-export.pgn",
+          "label": "great",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 1,
+          "source_sha256": "8cbb72dc416266243b54264326ad976082ddfe3ecb366af116bedf19f2b0c884"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "172256931994:52",
+      "truth": true,
+      "san": "Nxd4",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/172256931994-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "d264603a816b748448ee569c84d310649cc3ee3b76954ade08da049e82b89883"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/172256931994-checks.json",
+          "label": "brilliant",
+          "selected_node": "0-51",
+          "selected_san": "Nxd4",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "15a150638e6bf02259c6f4226e6ae7f892acb327b92d478c1fe27aa6ac079854"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "172312827850:23",
+      "truth": false,
+      "san": "Nxf7",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/172312827850-export.pgn",
+          "label": "great",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 1,
+          "source_sha256": "71a2136d041f832bd69b79fca168441b1edfc0bed5860566a9d89fbb111a7f08"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/172312827850-checks.json",
+          "label": "great",
+          "selected_node": "0-22",
+          "selected_san": "Nxf7",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "84f9250d4820fa2fb00ce246bb3717d458b559f732f7b25b4187a12996a95ddf"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "172399142014:58",
+      "truth": false,
+      "san": "Nxd5",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 0,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/172399142014-export.pgn",
+          "label": "great",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 1,
+          "source_sha256": "acf6f86f29c05d9c627993f22ad9749c417bce15f8e191af15707fe1a704bd85"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "172534191020:19",
+      "truth": true,
+      "san": "Nxe5",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/172534191020-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "40544a7abd31e2ed3c271bbfa3b826aec282c2357868f8f66fcac1107f2d9e24"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/172534191020-checks.json",
+          "label": "brilliant",
+          "selected_node": "0-18",
+          "selected_san": "Nxe5",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "2bbd58594458b4d8e305a3a9328041e9812b15450163df4f3ab3808a7a27b481"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "172804595924:41",
+      "truth": false,
+      "san": "Rb1",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/172804595924-checks.json",
+          "label": "good",
+          "selected_node": "0-40",
+          "selected_san": "Rb1",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "5a501542d71f32c71ae903a0f30768b609cb825bcad63b9843424d73615d8a99"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "172828071536:75",
+      "truth": false,
+      "san": "Qh6",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/172828071536-checks.json",
+          "label": "good",
+          "selected_node": "0-74",
+          "selected_san": "Qh6",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "4d381721fd5d16c5e44c316e004788eab294d0a5802b13563564af116990f3cc"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "172914653473:86",
+      "truth": true,
+      "san": "Rxb3+",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-b",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-b/172914653473.review-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "6501ee5b7cead8acaee99d86804c29cdb0cb3c3caaf9b9be90a51d692c41cf96"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/172914653473.json",
+          "label": "brilliant",
+          "selected_node": "0-85",
+          "selected_san": "Rxb3+",
+          "displayed_evaluation": "-3.11",
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "0c66e8e2373c0bcefa78cef3f512240c0525041904a8c7c7989c26469f9a96a5"
+        }
+      ],
+      "evaluation_comparison": {
+        "displayed_eval_raw_white_pov": "-3.11",
+        "fen_before_side_to_move": "b",
+        "displayed_eval_mover_cp_rounded": 311,
+        "local_stockfish_after_cp_mover_pov": 371,
+        "delta_displayed_minus_local_cp": -60
+      }
+    },
+    {
+      "key": "173184879010:62",
+      "truth": true,
+      "san": "Bd4",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/173184879010-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "1286f7d00c373d58f58c76fc09b991f45361f6ea39c5082ca69e4c7e5012415f"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/173184879010-checks.json",
+          "label": "brilliant",
+          "selected_node": "0-61",
+          "selected_san": "Bd4",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "6d366b67f3528cbba4c58a5abaaf0797f885fe6f57dcae0457aff627c04341f6"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "173532009624:45",
+      "truth": true,
+      "san": "Bxe5",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/173532009624-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "a0382ef946ae8b3ef555404ad07da507bdc4524a8a5d23ec799f6cd93fe98ca6"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/173532009624-checks.json",
+          "label": "brilliant",
+          "selected_node": "0-44",
+          "selected_san": "Bxe5",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "057ad9beb0bdbb1dd0474239f8817303bad31cf399f5d7e23a08daa6192ed8a4"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "173625605676:68",
+      "truth": false,
+      "san": "Rc1+",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-b",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-b/173625605676.review-export.pgn",
+          "label": "great",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 1,
+          "source_sha256": "d7a4cc6110aab5820bab7dd1f5b62f2f5f66a467daa34d1387c74b6e480a80d6"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/173625605676.json",
+          "label": "great",
+          "selected_node": "0-67",
+          "selected_san": "Rc1+",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "cc6070a6d239a9619c41e8daad90696523993d14449344edcba33093a1fd1e6a"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "173628147512:111",
+      "truth": true,
+      "san": "Nd6+",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-b",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-b/173628147512.review-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "4da5f117c0aec2286e72299e423fe233320e2e08eb9411dd2c4957e93a596078"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/173628147512.json",
+          "label": "brilliant",
+          "selected_node": "0-110",
+          "selected_san": "Nd6+",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "9e90c3ebe93dee46536e293db7a9c4496bf40699dfe672f48e1bb52cdc706f83"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "173661079138:26",
+      "truth": true,
+      "san": "Nxe5",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/173661079138-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "37b211ca8fd635175b9949f3d07b9f127496c9dc5309cd8153642cc99a014713"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/173661079138-checks.json",
+          "label": "brilliant",
+          "selected_node": "0-25",
+          "selected_san": "Nxe5",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "930feb1bce1158335814f6fb15fb5d41a4f8be533a477c127384d5ca6e16e9f1"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "173720481882:31",
+      "truth": true,
+      "san": "Nxf7+",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/173720481882-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "62d637184ea43ed7a51177411624175117a125718b0077bcb8cd9737b25b4fe6"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/173720481882-checks.json",
+          "label": "brilliant",
+          "selected_node": "0-30",
+          "selected_san": "Nxf7+",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "21bbc2a3df47fe2ffe44e0c61ac5bb41b7b46b02e899fad395de73f83aad80e4"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "173765223182:58",
+      "truth": false,
+      "san": "Nxb4",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/173765223182-checks.json",
+          "label": "good",
+          "selected_node": "0-57",
+          "selected_san": "Nxb4",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "dfc3c4b0d433c0d00abc576303072c2d2eb5f1f0583cdc57992810b831e7303a"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "173774757032:28",
+      "truth": false,
+      "san": "Nxb4",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/173774757032-checks.json",
+          "label": "good",
+          "selected_node": "0-27",
+          "selected_san": "Nxb4",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "da12910bebdf0f30e26cd27303d8f74fdd6a7a7820ec936df8f35c8095de8c32"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "173851185684:34",
+      "truth": true,
+      "san": "Nxe5",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/173851185684-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "0e2abe7e3baf134eb31b9f9001ad5e622e4855c85b8d301b009d10ba25a4bb4c"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/173851185684-checks.json",
+          "label": "brilliant",
+          "selected_node": "0-33",
+          "selected_san": "Nxe5",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "4166a685261d35052222b35ed55385bdeea5683a9b1010b3561453a71145deb2"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "174474699682:54",
+      "truth": false,
+      "san": "Nxb2",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-b",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/174474699682.json",
+          "label": "best",
+          "selected_node": "0-53",
+          "selected_san": "Nxb2",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "0a0c2c9e561b2f195dca64e51c8a1504e845726544fbcb31bbff53f674909e95"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "181991300863:49",
+      "truth": true,
+      "san": "Nxb7",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/181991300863-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "4804aab65bd3754872f74684415c1377643f607bb6775b43715507cf12188456"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/181991300863-checks.json",
+          "label": "brilliant",
+          "selected_node": "0-48",
+          "selected_san": "Nxb7",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "e0ebdffdce2882753ecc5e2f72a00337ca5ee51c187d3c8e8f38f5e9c719d716"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "182338102719:54",
+      "truth": false,
+      "san": "Rxf4+",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 0,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/182338102719-checks.json",
+          "label": "best",
+          "selected_node": "0-53",
+          "selected_san": "Rxf4+",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "845877a41f6045cea6fb1778b89a105dea77a74e4e0bc63fadf7a4122d5374ed"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "183973291902:40",
+      "truth": true,
+      "san": "Nxe5",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-b",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-b/183973291902.review-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "ed969f3d56e333e49227cefc7a32527746cdfc62fb4cc8d2efc5e0dcd38a50d4"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/183973291902.json",
+          "label": "brilliant",
+          "selected_node": "0-39",
+          "selected_san": "Nxe5",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "f96b07d76414e8b066e90c62b087b117781b5104a0e6e92ba2357b9117ad66b6"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "184185752754:59",
+      "truth": true,
+      "san": "Rb7+",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-b",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-b/184185752754.review-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "f04bb93d3afc8b707898c266c8c11ef830b6464106e414ee6fec89c9ba6ecf18"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/184185752754.json",
+          "label": "brilliant",
+          "selected_node": "0-58",
+          "selected_san": "Rb7+",
+          "displayed_evaluation": "+6.14",
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "8d10647340d46550118196fc885236c70f7cd32e016f0d24d78ac2b17df2ed44"
+        }
+      ],
+      "evaluation_comparison": {
+        "displayed_eval_raw_white_pov": "+6.14",
+        "fen_before_side_to_move": "w",
+        "displayed_eval_mover_cp_rounded": 614,
+        "local_stockfish_after_cp_mover_pov": 607,
+        "delta_displayed_minus_local_cp": 7
+      }
+    },
+    {
+      "key": "184277876260:54",
+      "truth": false,
+      "san": "Ne3",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-b",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 0,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-b/184277876260.review-export.pgn",
+          "label": "great",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 1,
+          "source_sha256": "99cf648c1d899447e9a754db3c936b80f47a3b4803c1f0da9f9093a62245cbeb"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "184300109262:14",
+      "truth": false,
+      "san": "Nxg3",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-b",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-b/184300109262.review-export.pgn",
+          "label": "great",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 1,
+          "source_sha256": "afba8868fa666df64453e0a9983fcedcf456c5cbb0c5bc101a138ab7a2794af8"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/184300109262.json",
+          "label": "great",
+          "selected_node": "0-13",
+          "selected_san": "Nxg3",
+          "displayed_evaluation": "+0.42",
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "ddd4f610720a3a0e15a77c99d5dfa21dc007df4aede542d41024d3e4b4b3392e"
+        }
+      ],
+      "evaluation_comparison": {
+        "displayed_eval_raw_white_pov": "+0.42",
+        "fen_before_side_to_move": "b",
+        "displayed_eval_mover_cp_rounded": -42,
+        "local_stockfish_after_cp_mover_pov": -44,
+        "delta_displayed_minus_local_cp": 2
+      }
+    },
+    {
+      "key": "184330910250:75",
+      "truth": false,
+      "san": "Rxe5",
+      "fen_before_side_to_move": "w",
+      "collector": "collector-a",
+      "evidence_record_count": 1,
+      "visible_review_record_count": 0,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": null,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/184330910250-export.pgn",
+          "label": "great",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 1,
+          "source_sha256": "6a9e97a45e0db6d0ba9b5f3570dfa397b449f8bb0fd51d4d2f0177b8214de8c2"
+        }
+      ],
+      "evaluation_comparison": null
+    },
+    {
+      "key": "184653480432:30",
+      "truth": true,
+      "san": "Bxc2",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-b",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-b/184653480432.review-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "de19fedb355f8d9cd0efb3e109e3ed9b99817dfc9a52ddfa95f4888ce6d296e6"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-b/184653480432.json",
+          "label": "brilliant",
+          "selected_node": "0-29",
+          "selected_san": "Bxc2",
+          "displayed_evaluation": "-0.70",
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "fa08255a8f82cf9711bbfafe6fb5aa57529794322cd52a597bc4b7df3c1962f1"
+        }
+      ],
+      "evaluation_comparison": {
+        "displayed_eval_raw_white_pov": "-0.70",
+        "fen_before_side_to_move": "b",
+        "displayed_eval_mover_cp_rounded": 70,
+        "local_stockfish_after_cp_mover_pov": 78,
+        "delta_displayed_minus_local_cp": -8
+      }
+    },
+    {
+      "key": "185229374468:26",
+      "truth": true,
+      "san": "Nxe4",
+      "fen_before_side_to_move": "b",
+      "collector": "collector-a",
+      "evidence_record_count": 2,
+      "visible_review_record_count": 1,
+      "explicit_review_export_record_count": 1,
+      "visible_export_label_agreement": true,
+      "target_sources": [
+        {
+          "source_type": "explicit_review_export_NAG",
+          "source_file": "collector-a/185229374468-export.pgn",
+          "label": "brilliant",
+          "selected_node": null,
+          "selected_san": null,
+          "displayed_evaluation": null,
+          "rendered_board_verified": 0,
+          "method_nag": 3,
+          "source_sha256": "51cc8026161d4b09e7a1873137c00676e43d654c4c640f5aa8e6515c15385c40"
+        },
+        {
+          "source_type": "visible_Game_Review",
+          "source_file": "collector-a/185229374468-checks.json",
+          "label": "brilliant",
+          "selected_node": "0-25",
+          "selected_san": "Nxe4",
+          "displayed_evaluation": null,
+          "rendered_board_verified": 1,
+          "method_nag": null,
+          "source_sha256": "d6e3aa71e6f97a05e100e2d186003503d71da62c4a4cb13c5a516366f05fc3db"
+        }
+      ],
+      "evaluation_comparison": null
+    }
+  ]
+}

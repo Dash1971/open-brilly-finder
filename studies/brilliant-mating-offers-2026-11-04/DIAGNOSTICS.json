@@ -1,0 +1,856 @@
+{
+  "scope": "Post-evaluation diagnostics; no revised parameters. Ne5 Chess.com label unverified, not included in performance counts.",
+  "rule_hits": [
+    {
+      "key": "172291845278:66",
+      "group": "172291845278",
+      "truth": true,
+      "cohort": "batch-09",
+      "eligible": true,
+      "mating_rule": true,
+      "pilot_group": false,
+      "outer_fold": 1,
+      "final_calibration_fold": 4,
+      "outer_scores": {
+        "custom": 0.8811590068895828,
+        "standard_rf": 0.8573082320420621
+      },
+      "outer_awards": {
+        "custom_fixed": true,
+        "custom_retuned": true,
+        "standard_rf": true,
+        "custom_mating_always": true,
+        "standard_rf_mating_always": true,
+        "custom_mating_gated": true,
+        "standard_rf_mating_gated": true,
+        "selected_procedure": true
+      },
+      "final_calibration_scores": {
+        "custom": 0.8758804156553162,
+        "standard_rf": 0.8556195733569961
+      },
+      "game_id": "172291845278",
+      "san": "Rb3+",
+      "uci": "b8b3",
+      "fen_before": "1r4k1/6p1/3P3p/8/p1PR4/2K2N2/P2R2PP/1q6 b - - 0 33",
+      "negative_bucket": "positive",
+      "mate_acceptance_witnesses": [
+        [
+          "axb3",
+          "Qxb3#"
+        ]
+      ],
+      "features": {
+        "current": {
+          "best_mapped_score": 1000,
+          "after_mapped_score": 1000,
+          "prior_mapped_score": -48,
+          "best_second_gap_pp": 52.40807498488155,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": 410,
+          "physical_debt3_max": 410,
+          "offered_role_q": false,
+          "offered_role_r": true,
+          "offered_role_n": false,
+          "offered_role_b": false,
+          "offered_piece_moved": true
+        },
+        "previous": {
+          "best_mapped_score": 1000,
+          "after_mapped_score": 1000,
+          "prior_mapped_score": -36,
+          "best_second_gap_pp": 50.11991902350575,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": 410,
+          "physical_debt3_max": 410,
+          "offered_role_q": false,
+          "offered_role_r": true,
+          "offered_role_n": false,
+          "offered_role_b": false,
+          "offered_piece_moved": true
+        }
+      }
+    },
+    {
+      "key": "184710314858:52",
+      "group": "184710314858",
+      "truth": true,
+      "cohort": "former200",
+      "eligible": true,
+      "mating_rule": true,
+      "pilot_group": false,
+      "outer_fold": 0,
+      "final_calibration_fold": 2,
+      "outer_scores": {
+        "custom": 0.6792652158282587,
+        "standard_rf": 0.6806338717457902
+      },
+      "outer_awards": {
+        "custom_fixed": false,
+        "custom_retuned": false,
+        "standard_rf": false,
+        "custom_mating_always": true,
+        "standard_rf_mating_always": true,
+        "custom_mating_gated": false,
+        "standard_rf_mating_gated": false,
+        "selected_procedure": false
+      },
+      "final_calibration_scores": {
+        "custom": 0.6162148970119541,
+        "standard_rf": 0.6187230172657694
+      },
+      "game_id": "184710314858",
+      "san": "Rc8",
+      "uci": "d8c8",
+      "fen_before": "3r4/5pkp/R2b2n1/qp4Q1/3P4/P3P3/1P3PPP/2R3K1 b - - 0 26",
+      "negative_bucket": "legacy_mixed",
+      "mate_acceptance_witnesses": [
+        [
+          "Rxa5",
+          "Rxc1#"
+        ],
+        [
+          "Rxd6",
+          "Rxc1#"
+        ],
+        [
+          "Rxc8",
+          "Qe1#"
+        ]
+      ],
+      "features": {
+        "current": {
+          "best_mapped_score": 398,
+          "after_mapped_score": 388,
+          "prior_mapped_score": -500,
+          "best_second_gap_pp": 57.09872388350651,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": -200,
+          "physical_debt3_max": 500,
+          "offered_role_q": true,
+          "offered_role_r": true,
+          "offered_role_n": false,
+          "offered_role_b": true,
+          "offered_piece_moved": true
+        },
+        "previous": {
+          "best_mapped_score": 398,
+          "after_mapped_score": 395,
+          "prior_mapped_score": -500,
+          "best_second_gap_pp": 57.09872388350651,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": -200,
+          "physical_debt3_max": 500,
+          "offered_role_q": true,
+          "offered_role_r": true,
+          "offered_role_n": false,
+          "offered_role_b": true,
+          "offered_piece_moved": true
+        }
+      }
+    },
+    {
+      "key": "185214494356:53",
+      "group": "185214494356",
+      "truth": true,
+      "cohort": "former848",
+      "eligible": true,
+      "mating_rule": true,
+      "pilot_group": false,
+      "outer_fold": 4,
+      "final_calibration_fold": 2,
+      "outer_scores": {
+        "custom": 0.7741180457729586,
+        "standard_rf": 0.7685637566771263
+      },
+      "outer_awards": {
+        "custom_fixed": false,
+        "custom_retuned": false,
+        "standard_rf": false,
+        "custom_mating_always": true,
+        "standard_rf_mating_always": true,
+        "custom_mating_gated": true,
+        "standard_rf_mating_gated": true,
+        "selected_procedure": true
+      },
+      "final_calibration_scores": {
+        "custom": 0.7044242586239207,
+        "standard_rf": 0.7048253398067589
+      },
+      "game_id": "185214494356",
+      "san": "Rf8",
+      "uci": "f3f8",
+      "fen_before": "4q2b/ppr4k/4p1np/3pP3/3P2Q1/3BPR2/PP4P1/6K1 w - - 4 27",
+      "negative_bucket": "legacy_mixed",
+      "mate_acceptance_witnesses": [
+        [
+          "Qxf8",
+          "Qxg6#"
+        ]
+      ],
+      "features": {
+        "current": {
+          "best_mapped_score": 681,
+          "after_mapped_score": 823,
+          "prior_mapped_score": 0,
+          "best_second_gap_pp": 12.202637085072737,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": 110,
+          "physical_debt3_max": 110,
+          "offered_role_q": false,
+          "offered_role_r": true,
+          "offered_role_n": false,
+          "offered_role_b": false,
+          "offered_piece_moved": true
+        },
+        "previous": {
+          "best_mapped_score": 681,
+          "after_mapped_score": 805,
+          "prior_mapped_score": 0,
+          "best_second_gap_pp": 12.202637085072737,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": 110,
+          "physical_debt3_max": 110,
+          "offered_role_q": false,
+          "offered_role_r": true,
+          "offered_role_n": false,
+          "offered_role_b": false,
+          "offered_piece_moved": true
+        }
+      }
+    },
+    {
+      "key": "169962611516:55",
+      "group": "169962611516",
+      "truth": true,
+      "cohort": "batch-11",
+      "eligible": true,
+      "mating_rule": true,
+      "pilot_group": false,
+      "outer_fold": 1,
+      "final_calibration_fold": 3,
+      "outer_scores": {
+        "custom": 0.8524781927507176,
+        "standard_rf": 0.892281995764346
+      },
+      "outer_awards": {
+        "custom_fixed": true,
+        "custom_retuned": true,
+        "standard_rf": true,
+        "custom_mating_always": true,
+        "standard_rf_mating_always": true,
+        "custom_mating_gated": true,
+        "standard_rf_mating_gated": true,
+        "selected_procedure": true
+      },
+      "final_calibration_scores": {
+        "custom": 0.8653349824540851,
+        "standard_rf": 0.8344578892056493
+      },
+      "game_id": "169962611516",
+      "san": "Qxh5+",
+      "uci": "g5h5",
+      "fen_before": "4r2b/pp1qNp1k/3prPp1/2p1nRQp/4P3/2P5/PPB3PP/3R2K1 w - - 7 28",
+      "negative_bucket": "positive",
+      "mate_acceptance_witnesses": [
+        [
+          "gxh5",
+          "Rxh5#"
+        ]
+      ],
+      "features": {
+        "current": {
+          "best_mapped_score": 1000,
+          "after_mapped_score": 1000,
+          "prior_mapped_score": -396,
+          "best_second_gap_pp": 35.36743728181082,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": 820,
+          "physical_debt3_max": 820,
+          "offered_role_q": true,
+          "offered_role_r": false,
+          "offered_role_n": false,
+          "offered_role_b": false,
+          "offered_piece_moved": true
+        },
+        "previous": {
+          "best_mapped_score": 1000,
+          "after_mapped_score": 1000,
+          "prior_mapped_score": -396,
+          "best_second_gap_pp": 34.76322341290731,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": 820,
+          "physical_debt3_max": 820,
+          "offered_role_q": true,
+          "offered_role_r": false,
+          "offered_role_n": false,
+          "offered_role_b": false,
+          "offered_piece_moved": true
+        }
+      }
+    },
+    {
+      "key": "171270665964:60",
+      "group": "171270665964",
+      "truth": true,
+      "cohort": "batch-12",
+      "eligible": true,
+      "mating_rule": true,
+      "pilot_group": false,
+      "outer_fold": 1,
+      "final_calibration_fold": 4,
+      "outer_scores": {
+        "custom": 0.9020054056635132,
+        "standard_rf": 0.8715809511160498
+      },
+      "outer_awards": {
+        "custom_fixed": true,
+        "custom_retuned": true,
+        "standard_rf": true,
+        "custom_mating_always": true,
+        "standard_rf_mating_always": true,
+        "custom_mating_gated": true,
+        "standard_rf_mating_gated": true,
+        "selected_procedure": true
+      },
+      "final_calibration_scores": {
+        "custom": 0.8767010030379787,
+        "standard_rf": 0.8557225724327846
+      },
+      "game_id": "171270665964",
+      "san": "Qe1+",
+      "uci": "e6e1",
+      "fen_before": "4r2k/p5bp/4q1p1/5pB1/2N5/2P2P2/P1Q3PP/3R3K b - - 0 30",
+      "negative_bucket": "positive",
+      "mate_acceptance_witnesses": [
+        [
+          "Rxe1",
+          "Rxe1#"
+        ]
+      ],
+      "features": {
+        "current": {
+          "best_mapped_score": 1000,
+          "after_mapped_score": 1000,
+          "prior_mapped_score": -45,
+          "best_second_gap_pp": 47.54474363414323,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": 500,
+          "physical_debt3_max": 500,
+          "offered_role_q": true,
+          "offered_role_r": false,
+          "offered_role_n": false,
+          "offered_role_b": false,
+          "offered_piece_moved": true
+        },
+        "previous": {
+          "best_mapped_score": 1000,
+          "after_mapped_score": 1000,
+          "prior_mapped_score": -45,
+          "best_second_gap_pp": 47.54474363414323,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": 500,
+          "physical_debt3_max": 500,
+          "offered_role_q": true,
+          "offered_role_r": false,
+          "offered_role_n": false,
+          "offered_role_b": false,
+          "offered_piece_moved": true
+        }
+      }
+    },
+    {
+      "key": "185741429132:55",
+      "group": "185741429132",
+      "truth": true,
+      "cohort": "former848",
+      "eligible": true,
+      "mating_rule": true,
+      "pilot_group": false,
+      "outer_fold": 2,
+      "final_calibration_fold": 1,
+      "outer_scores": {
+        "custom": 0.6014786308641059,
+        "standard_rf": 0.5998562256306205
+      },
+      "outer_awards": {
+        "custom_fixed": false,
+        "custom_retuned": false,
+        "standard_rf": false,
+        "custom_mating_always": true,
+        "standard_rf_mating_always": true,
+        "custom_mating_gated": false,
+        "standard_rf_mating_gated": false,
+        "selected_procedure": false
+      },
+      "final_calibration_scores": {
+        "custom": 0.5700435172174676,
+        "standard_rf": 0.6376149890400188
+      },
+      "game_id": "185741429132",
+      "san": "Ng6+",
+      "uci": "e5g6",
+      "fen_before": "4rk2/ppq2pp1/3br3/3QN3/5P2/2P1R2P/P5PK/4R3 w - - 3 28",
+      "negative_bucket": "legacy_mixed",
+      "mate_acceptance_witnesses": [
+        [
+          "Rxg6",
+          "Rxe8#"
+        ]
+      ],
+      "features": {
+        "current": {
+          "best_mapped_score": 284,
+          "after_mapped_score": 332,
+          "prior_mapped_score": -8,
+          "best_second_gap_pp": 21.78722753509114,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": -200,
+          "physical_debt3_max": -110,
+          "offered_role_q": false,
+          "offered_role_r": false,
+          "offered_role_n": true,
+          "offered_role_b": false,
+          "offered_piece_moved": true
+        },
+        "previous": {
+          "best_mapped_score": 284,
+          "after_mapped_score": 332,
+          "prior_mapped_score": -8,
+          "best_second_gap_pp": 21.78722753509114,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": -200,
+          "physical_debt3_max": -110,
+          "offered_role_q": false,
+          "offered_role_r": false,
+          "offered_role_n": true,
+          "offered_role_b": false,
+          "offered_piece_moved": true
+        }
+      }
+    },
+    {
+      "key": "173266974169:84",
+      "group": "173266974169",
+      "truth": false,
+      "cohort": "former_new200",
+      "eligible": true,
+      "mating_rule": true,
+      "pilot_group": false,
+      "outer_fold": 4,
+      "final_calibration_fold": 3,
+      "outer_scores": {
+        "custom": 0.4087829278788306,
+        "standard_rf": 0.41230933598322295
+      },
+      "outer_awards": {
+        "custom_fixed": false,
+        "custom_retuned": false,
+        "standard_rf": false,
+        "custom_mating_always": true,
+        "standard_rf_mating_always": true,
+        "custom_mating_gated": true,
+        "standard_rf_mating_gated": true,
+        "selected_procedure": true
+      },
+      "final_calibration_scores": {
+        "custom": 0.39748768032085396,
+        "standard_rf": 0.37904025472814523
+      },
+      "game_id": "173266974169",
+      "san": "Qe5",
+      "uci": "e4e5",
+      "fen_before": "5rk1/2b2p2/6p1/5BQp/p3q3/2P5/1Pr3PP/3R1R1K b - - 1 42",
+      "negative_bucket": "legacy_mixed",
+      "mate_acceptance_witnesses": [
+        [
+          "Bxc2",
+          "Qxh2#"
+        ]
+      ],
+      "features": {
+        "current": {
+          "best_mapped_score": 360,
+          "after_mapped_score": 375,
+          "prior_mapped_score": 112,
+          "best_second_gap_pp": 57.959551334851476,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": -500,
+          "physical_debt3_max": -500,
+          "offered_role_q": false,
+          "offered_role_r": true,
+          "offered_role_n": false,
+          "offered_role_b": false,
+          "offered_piece_moved": false
+        },
+        "previous": {
+          "best_mapped_score": 360,
+          "after_mapped_score": 375,
+          "prior_mapped_score": 56,
+          "best_second_gap_pp": 57.959551334851476,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": -500,
+          "physical_debt3_max": -500,
+          "offered_role_q": false,
+          "offered_role_r": true,
+          "offered_role_n": false,
+          "offered_role_b": false,
+          "offered_piece_moved": false
+        }
+      }
+    },
+    {
+      "key": "167735024286:72",
+      "group": "167735024286",
+      "truth": true,
+      "cohort": "batch-07",
+      "eligible": true,
+      "mating_rule": true,
+      "pilot_group": true,
+      "outer_fold": 4,
+      "final_calibration_fold": 3,
+      "outer_scores": {
+        "custom": 0.5672521800154189,
+        "standard_rf": 0.5374037117720737
+      },
+      "outer_awards": {
+        "custom_fixed": false,
+        "custom_retuned": false,
+        "standard_rf": false,
+        "custom_mating_always": true,
+        "standard_rf_mating_always": true,
+        "custom_mating_gated": true,
+        "standard_rf_mating_gated": true,
+        "selected_procedure": true
+      },
+      "final_calibration_scores": {
+        "custom": 0.46030480858293965,
+        "standard_rf": 0.487689324707047
+      },
+      "game_id": "167735024286",
+      "san": "Qh3",
+      "uci": "c8h3",
+      "fen_before": "b1qbk3/R4p2/1B1p2r1/1R2p3/4P3/2N2P2/1PP3P1/6K1 b - - 5 36",
+      "negative_bucket": "positive",
+      "mate_acceptance_witnesses": [
+        [
+          "Rxa8",
+          "Qxg2#"
+        ]
+      ],
+      "features": {
+        "current": {
+          "best_mapped_score": 703,
+          "after_mapped_score": 845,
+          "prior_mapped_score": 307,
+          "best_second_gap_pp": 11.94399376103982,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": 120,
+          "physical_debt3_max": 120,
+          "offered_role_q": false,
+          "offered_role_r": false,
+          "offered_role_n": false,
+          "offered_role_b": true,
+          "offered_piece_moved": false
+        },
+        "previous": {
+          "best_mapped_score": 703,
+          "after_mapped_score": 845,
+          "prior_mapped_score": 307,
+          "best_second_gap_pp": 11.94399376103982,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": 120,
+          "physical_debt3_max": 120,
+          "offered_role_q": false,
+          "offered_role_r": false,
+          "offered_role_n": false,
+          "offered_role_b": true,
+          "offered_piece_moved": false
+        }
+      }
+    },
+    {
+      "key": "184069349690:45",
+      "group": "184069349690",
+      "truth": true,
+      "cohort": "former848",
+      "eligible": true,
+      "mating_rule": true,
+      "pilot_group": false,
+      "outer_fold": 4,
+      "final_calibration_fold": 4,
+      "outer_scores": {
+        "custom": 0.872582960165413,
+        "standard_rf": 0.8714741410690555
+      },
+      "outer_awards": {
+        "custom_fixed": true,
+        "custom_retuned": true,
+        "standard_rf": true,
+        "custom_mating_always": true,
+        "standard_rf_mating_always": true,
+        "custom_mating_gated": true,
+        "standard_rf_mating_gated": true,
+        "selected_procedure": true
+      },
+      "final_calibration_scores": {
+        "custom": 0.8641536545531301,
+        "standard_rf": 0.8629041695712785
+      },
+      "game_id": "184069349690",
+      "san": "Qe8+",
+      "uci": "e6e8",
+      "fen_before": "r5k1/5npp/1pr1Q3/p2n4/5P2/6P1/qP3P1P/2R1R1K1 w - - 0 23",
+      "negative_bucket": "legacy_mixed",
+      "mate_acceptance_witnesses": [
+        [
+          "Rxe8",
+          "Rxe8#"
+        ]
+      ],
+      "features": {
+        "current": {
+          "best_mapped_score": 1000,
+          "after_mapped_score": 1000,
+          "prior_mapped_score": 213,
+          "best_second_gap_pp": 21.213951974983388,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": 500,
+          "physical_debt3_max": 500,
+          "offered_role_q": true,
+          "offered_role_r": false,
+          "offered_role_n": false,
+          "offered_role_b": false,
+          "offered_piece_moved": true
+        },
+        "previous": {
+          "best_mapped_score": 1000,
+          "after_mapped_score": 1000,
+          "prior_mapped_score": 209,
+          "best_second_gap_pp": 20.817133957947462,
+          "same_root_rank": 1,
+          "ec_sacrifice": false,
+          "mating_acceptance": true,
+          "physical_debt3_min": 500,
+          "physical_debt3_max": 500,
+          "offered_role_q": true,
+          "offered_role_r": false,
+          "offered_role_n": false,
+          "offered_role_b": false,
+          "offered_piece_moved": true
+        }
+      }
+    }
+  ],
+  "hard_subgroup": {
+    "custom_fixed": {
+      "TP": 7,
+      "FP": 0,
+      "positives": 191,
+      "negatives": 286
+    },
+    "custom_retuned": {
+      "TP": 7,
+      "FP": 0,
+      "positives": 191,
+      "negatives": 286
+    },
+    "standard_rf": {
+      "TP": 8,
+      "FP": 0,
+      "positives": 191,
+      "negatives": 286
+    },
+    "custom_mating_always": {
+      "TP": 11,
+      "FP": 1,
+      "positives": 191,
+      "negatives": 286
+    },
+    "standard_rf_mating_always": {
+      "TP": 12,
+      "FP": 1,
+      "positives": 191,
+      "negatives": 286
+    },
+    "custom_mating_gated": {
+      "TP": 9,
+      "FP": 1,
+      "positives": 191,
+      "negatives": 286
+    },
+    "standard_rf_mating_gated": {
+      "TP": 10,
+      "FP": 1,
+      "positives": 191,
+      "negatives": 286
+    },
+    "selected_procedure": {
+      "TP": 8,
+      "FP": 1,
+      "positives": 191,
+      "negatives": 286
+    }
+  },
+  "fresh_hard_subgroup": {
+    "custom_fixed": {
+      "TP": 3,
+      "FP": 0,
+      "positives": 54,
+      "negatives": 150
+    },
+    "custom_retuned": {
+      "TP": 3,
+      "FP": 0,
+      "positives": 54,
+      "negatives": 150
+    },
+    "standard_rf": {
+      "TP": 4,
+      "FP": 0,
+      "positives": 54,
+      "negatives": 150
+    },
+    "custom_mating_always": {
+      "TP": 4,
+      "FP": 0,
+      "positives": 54,
+      "negatives": 150
+    },
+    "standard_rf_mating_always": {
+      "TP": 5,
+      "FP": 0,
+      "positives": 54,
+      "negatives": 150
+    },
+    "custom_mating_gated": {
+      "TP": 4,
+      "FP": 0,
+      "positives": 54,
+      "negatives": 150
+    },
+    "standard_rf_mating_gated": {
+      "TP": 5,
+      "FP": 0,
+      "positives": 54,
+      "negatives": 150
+    },
+    "selected_procedure": {
+      "TP": 4,
+      "FP": 0,
+      "positives": 54,
+      "negatives": 150
+    }
+  },
+  "rule_subgroup": {
+    "custom_fixed": {
+      "TP": 4,
+      "FP": 0,
+      "positives": 8,
+      "negatives": 1
+    },
+    "custom_retuned": {
+      "TP": 4,
+      "FP": 0,
+      "positives": 8,
+      "negatives": 1
+    },
+    "standard_rf": {
+      "TP": 4,
+      "FP": 0,
+      "positives": 8,
+      "negatives": 1
+    },
+    "custom_mating_always": {
+      "TP": 8,
+      "FP": 1,
+      "positives": 8,
+      "negatives": 1
+    },
+    "standard_rf_mating_always": {
+      "TP": 8,
+      "FP": 1,
+      "positives": 8,
+      "negatives": 1
+    },
+    "custom_mating_gated": {
+      "TP": 6,
+      "FP": 1,
+      "positives": 8,
+      "negatives": 1
+    },
+    "standard_rf_mating_gated": {
+      "TP": 6,
+      "FP": 1,
+      "positives": 8,
+      "negatives": 1
+    },
+    "selected_procedure": {
+      "TP": 6,
+      "FP": 1,
+      "positives": 8,
+      "negatives": 1
+    }
+  },
+  "ne5": [
+    {
+      "budget": 300000,
+      "rule_matches": true,
+      "saved_deployed_model_awarded": false,
+      "research_final_model_scores": {
+        "current": 0.5346574002789607,
+        "previous": 0.5245789370754975
+      },
+      "research_final_model_awarded": false,
+      "always_on_addon_awarded": true,
+      "final_selected_policy_awarded": false
+    },
+    {
+      "budget": 3000000,
+      "rule_matches": true,
+      "saved_deployed_model_awarded": false,
+      "research_final_model_scores": {
+        "current": 0.5305335607564142,
+        "previous": 0.5305335607564142
+      },
+      "research_final_model_awarded": false,
+      "always_on_addon_awarded": true,
+      "final_selected_policy_awarded": false
+    }
+  ],
+  "ne5_dataset_position_overlaps": []
+}

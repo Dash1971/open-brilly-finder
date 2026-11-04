@@ -1,0 +1,933 @@
+{
+  "status": "complete",
+  "stage": "uniform-stronger-development",
+  "nodes_per_position": 1500000,
+  "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+  "threads_per_worker": 1,
+  "hash_mb_per_worker": 64,
+  "workers": 4,
+  "target_count": 848,
+  "snapshot_count": 2445,
+  "development_only": true,
+  "uniform_requested_node_budget": true,
+  "cache_session_note": "Whole-game clean sessions initially; any once-only tail TT restart boundaries are preserved in source provenance. No claim of identical warm-cache history at those boundaries.",
+  "baseline_or_targeted_engine_values_substituted": 0,
+  "recorded_search_seconds": 5173.422952,
+  "worker_summaries": [
+    {
+      "worker": 0,
+      "completed_snapshots": 606,
+      "recorded_search_seconds": 1275.22483,
+      "tail_used": true,
+      "partial_game_TT_restarts": 1
+    },
+    {
+      "worker": 1,
+      "completed_snapshots": 629,
+      "recorded_search_seconds": 1313.606547,
+      "tail_used": true,
+      "partial_game_TT_restarts": 1
+    },
+    {
+      "worker": 2,
+      "completed_snapshots": 622,
+      "recorded_search_seconds": 1318.436009,
+      "tail_used": true,
+      "partial_game_TT_restarts": 0
+    },
+    {
+      "worker": 3,
+      "completed_snapshots": 588,
+      "recorded_search_seconds": 1266.155566,
+      "tail_used": true,
+      "partial_game_TT_restarts": 1
+    }
+  ],
+  "source_provenance": [
+    {
+      "file": "analysis-worker-0.json",
+      "sha256": "32eff2ece73b0e8b699d64ff39c68fafb9b2b5762bf7a099db75c57fcb228a4a",
+      "snapshots": 445,
+      "recorded_search_seconds": 895.145432,
+      "status": "stopped",
+      "script_sha256": "d542ad2fc33c9c4863d15d3febcabb9cc73cb772e118432694f643af63f7bf3f",
+      "tt_restart_boundaries": []
+    },
+    {
+      "file": "analysis-tail-0.json",
+      "sha256": "7d89d76395da8315655471924d1b1372a1e77818edda470cacb7e6d0a149121e",
+      "snapshots": 161,
+      "recorded_search_seconds": 380.079398,
+      "status": "complete",
+      "script_sha256": "c8c0a80705bb2de851fa5a415865ed60a92f10bf1b165506e735a041f6caebc3",
+      "tt_restart_boundaries": [
+        {
+          "game_id": "185964989595",
+          "first_new_position_ply": 48,
+          "completed_prefix_position_plies": [
+            41,
+            42,
+            43,
+            47
+          ],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": true
+        },
+        {
+          "game_id": "185989389404",
+          "first_new_position_ply": 13,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186007180386",
+          "first_new_position_ply": 87,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186015788378",
+          "first_new_position_ply": 58,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186038417660",
+          "first_new_position_ply": 57,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186041863638",
+          "first_new_position_ply": 45,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186052437796",
+          "first_new_position_ply": 14,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186064974534",
+          "first_new_position_ply": 15,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186065442490",
+          "first_new_position_ply": 23,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186073182164",
+          "first_new_position_ply": 79,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186104649580",
+          "first_new_position_ply": 51,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186140209072",
+          "first_new_position_ply": 40,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186219389143",
+          "first_new_position_ply": 23,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186311391426",
+          "first_new_position_ply": 21,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186367377746",
+          "first_new_position_ply": 48,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186371786706",
+          "first_new_position_ply": 11,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186393990159",
+          "first_new_position_ply": 63,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186399227824",
+          "first_new_position_ply": 13,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186434170706",
+          "first_new_position_ply": 18,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186566789489",
+          "first_new_position_ply": 35,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186567991235",
+          "first_new_position_ply": 29,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186569189971",
+          "first_new_position_ply": 59,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186571589459",
+          "first_new_position_ply": 57,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186823589241",
+          "first_new_position_ply": 17,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "187172896469",
+          "first_new_position_ply": 54,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "187175896169",
+          "first_new_position_ply": 43,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "187780686673",
+          "first_new_position_ply": 34,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        }
+      ]
+    },
+    {
+      "file": "analysis-worker-1.json",
+      "sha256": "a541a4bc2fed6314ff0cfdefde2592b9858665014967d480d46b43ab68d7ac6c",
+      "snapshots": 446,
+      "recorded_search_seconds": 895.248011,
+      "status": "stopped",
+      "script_sha256": "d542ad2fc33c9c4863d15d3febcabb9cc73cb772e118432694f643af63f7bf3f",
+      "tt_restart_boundaries": []
+    },
+    {
+      "file": "analysis-tail-1.json",
+      "sha256": "ee62c7865310b0583431094b40ebf888dfbdb4e27e2598edc26ba6143332c682",
+      "snapshots": 183,
+      "recorded_search_seconds": 418.358536,
+      "status": "complete",
+      "script_sha256": "c8c0a80705bb2de851fa5a415865ed60a92f10bf1b165506e735a041f6caebc3",
+      "tt_restart_boundaries": [
+        {
+          "game_id": "185868851860",
+          "first_new_position_ply": 32,
+          "completed_prefix_position_plies": [
+            30,
+            31
+          ],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": true
+        },
+        {
+          "game_id": "185912817674",
+          "first_new_position_ply": 32,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "185962589629",
+          "first_new_position_ply": 59,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "185966790779",
+          "first_new_position_ply": 53,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "185989473802",
+          "first_new_position_ply": 32,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186007442472",
+          "first_new_position_ply": 43,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186026163000",
+          "first_new_position_ply": 44,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186038700018",
+          "first_new_position_ply": 50,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186042291426",
+          "first_new_position_ply": 31,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186059773768",
+          "first_new_position_ply": 65,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186065113838",
+          "first_new_position_ply": 109,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186071905656",
+          "first_new_position_ply": 16,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186090364840",
+          "first_new_position_ply": 29,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186106263896",
+          "first_new_position_ply": 57,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186164630500",
+          "first_new_position_ply": 47,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186221189079",
+          "first_new_position_ply": 56,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186312822844",
+          "first_new_position_ply": 25,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186367460996",
+          "first_new_position_ply": 55,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186377472342",
+          "first_new_position_ply": 13,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186394589423",
+          "first_new_position_ply": 62,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186405183098",
+          "first_new_position_ply": 15,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186434275838",
+          "first_new_position_ply": 37,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186567389757",
+          "first_new_position_ply": 54,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186568589277",
+          "first_new_position_ply": 30,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186569789637",
+          "first_new_position_ply": 34,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186573390087",
+          "first_new_position_ply": 13,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186824189313",
+          "first_new_position_ply": 34,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "187173495367",
+          "first_new_position_ply": 40,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "187175897899",
+          "first_new_position_ply": 33,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "187780686981",
+          "first_new_position_ply": 27,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        }
+      ]
+    },
+    {
+      "file": "analysis-worker-2.json",
+      "sha256": "7be2157997cb08b3729e4f707ad842f81c3a76b1969ad14307655409fa8ae584",
+      "snapshots": 444,
+      "recorded_search_seconds": 895.25566,
+      "status": "stopped",
+      "script_sha256": "d542ad2fc33c9c4863d15d3febcabb9cc73cb772e118432694f643af63f7bf3f",
+      "tt_restart_boundaries": []
+    },
+    {
+      "file": "analysis-tail-2.json",
+      "sha256": "cbb0bc5daa3a3a6da81f741920ad88662c86f76b9609dddc3b81ad4a6768e380",
+      "snapshots": 178,
+      "recorded_search_seconds": 423.180349,
+      "status": "complete",
+      "script_sha256": "c8c0a80705bb2de851fa5a415865ed60a92f10bf1b165506e735a041f6caebc3",
+      "tt_restart_boundaries": [
+        {
+          "game_id": "185931745402",
+          "first_new_position_ply": 17,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "185963189847",
+          "first_new_position_ply": 40,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "185989112474",
+          "first_new_position_ply": 72,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186006374302",
+          "first_new_position_ply": 58,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186015233320",
+          "first_new_position_ply": 49,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186031870380",
+          "first_new_position_ply": 20,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186038944608",
+          "first_new_position_ply": 29,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186042909376",
+          "first_new_position_ply": 21,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186063842654",
+          "first_new_position_ply": 37,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186065215864",
+          "first_new_position_ply": 15,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186072205082",
+          "first_new_position_ply": 26,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186101258092",
+          "first_new_position_ply": 25,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186111827132",
+          "first_new_position_ply": 36,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186167189226",
+          "first_new_position_ply": 28,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186250847256",
+          "first_new_position_ply": 19,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186314657416",
+          "first_new_position_ply": 15,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186367835010",
+          "first_new_position_ply": 15,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186389789789",
+          "first_new_position_ply": 52,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186398168792",
+          "first_new_position_ply": 46,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186405562696",
+          "first_new_position_ply": 15,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186434315980",
+          "first_new_position_ply": 18,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186567391345",
+          "first_new_position_ply": 58,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186569189275",
+          "first_new_position_ply": 26,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186570390979",
+          "first_new_position_ply": 74,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186573390209",
+          "first_new_position_ply": 38,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "187171096043",
+          "first_new_position_ply": 18,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "187175295339",
+          "first_new_position_ply": 38,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "187177696203",
+          "first_new_position_ply": 29,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "994221268",
+          "first_new_position_ply": 18,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        }
+      ]
+    },
+    {
+      "file": "analysis-worker-3.json",
+      "sha256": "33ec63fee38874c5100162bdbb3962c94e0e0ff506c71fa75dcafb32d4eb66e5",
+      "snapshots": 434,
+      "recorded_search_seconds": 895.185821,
+      "status": "stopped",
+      "script_sha256": "d542ad2fc33c9c4863d15d3febcabb9cc73cb772e118432694f643af63f7bf3f",
+      "tt_restart_boundaries": []
+    },
+    {
+      "file": "analysis-tail-3.json",
+      "sha256": "cb5f255caea3668a9ff846638279989b8ceb25a2255f540c725a159810ba4d0b",
+      "snapshots": 154,
+      "recorded_search_seconds": 370.969745,
+      "status": "complete",
+      "script_sha256": "c8c0a80705bb2de851fa5a415865ed60a92f10bf1b165506e735a041f6caebc3",
+      "tt_restart_boundaries": [
+        {
+          "game_id": "185961989677",
+          "first_new_position_ply": 20,
+          "completed_prefix_position_plies": [
+            19
+          ],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": true
+        },
+        {
+          "game_id": "185964391261",
+          "first_new_position_ply": 19,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "185989234520",
+          "first_new_position_ply": 43,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186007070802",
+          "first_new_position_ply": 79,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186015392652",
+          "first_new_position_ply": 47,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186032403160",
+          "first_new_position_ply": 55,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186039232886",
+          "first_new_position_ply": 84,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186051372886",
+          "first_new_position_ply": 34,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186064587272",
+          "first_new_position_ply": 34,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186065349458",
+          "first_new_position_ply": 13,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186073124334",
+          "first_new_position_ply": 20,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186102691718",
+          "first_new_position_ply": 18,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186116217808",
+          "first_new_position_ply": 48,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186218189057",
+          "first_new_position_ply": 37,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186305157204",
+          "first_new_position_ply": 47,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186367356936",
+          "first_new_position_ply": 13,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186371637568",
+          "first_new_position_ply": 11,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186390389753",
+          "first_new_position_ply": 45,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186398857750",
+          "first_new_position_ply": 43,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186422558132",
+          "first_new_position_ply": 39,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186566789127",
+          "first_new_position_ply": 36,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186567989873",
+          "first_new_position_ply": 47,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186569189511",
+          "first_new_position_ply": 76,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186570990865",
+          "first_new_position_ply": 48,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "186822989225",
+          "first_new_position_ply": 32,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "187171696319",
+          "first_new_position_ply": 13,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "187175296311",
+          "first_new_position_ply": 51,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        },
+        {
+          "game_id": "187780685807",
+          "first_new_position_ply": 48,
+          "completed_prefix_position_plies": [],
+          "fresh_uci_session": true,
+          "partial_game_cache_restart": false
+        }
+      ]
+    }
+  ],
+  "plan_sha256": "f276dd885b06f591bfcf323f62bb12be896295f450989a082b8c5727b0db3b1a"
+}

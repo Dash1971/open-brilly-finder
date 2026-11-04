@@ -1,0 +1,804 @@
+[
+  {
+    "key": "185789456944:21",
+    "san": "Rb1",
+    "origins": [
+      {
+        "priorPly": 19,
+        "priorSan": "h4",
+        "victim": "g5",
+        "prior": {
+          "status": "complete",
+          "nodes": 7,
+          "acceptances": [
+            {
+              "acceptance": "h6g5",
+              "san": "hxg5",
+              "net": 210,
+              "checks": []
+            }
+          ]
+        },
+        "current": {
+          "status": "complete",
+          "nodes": 7,
+          "acceptances": [
+            {
+              "acceptance": "h6g5",
+              "san": "hxg5",
+              "net": 210,
+              "checks": []
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "key": "186064974534:21",
+    "san": "Nb5",
+    "origins": [
+      {
+        "priorPly": 17,
+        "priorSan": "Rxf5",
+        "victim": "f5",
+        "prior": {
+          "status": "complete",
+          "nodes": 20,
+          "acceptances": [
+            {
+              "acceptance": "e6f5",
+              "san": "exf5",
+              "net": 500,
+              "checks": [
+                {
+                  "uci": "c4f7",
+                  "san": "Bxf7+",
+                  "mate": false,
+                  "minPhysicalRecovery": 180,
+                  "evasions": [
+                    {
+                      "evasion": "Ke7",
+                      "capture": "dxc5",
+                      "physicalGain": 180
+                    },
+                    {
+                      "evasion": "Kd7",
+                      "capture": "dxc5+",
+                      "physicalGain": 180
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "current": {
+          "status": "complete",
+          "nodes": 14,
+          "acceptances": [
+            {
+              "acceptance": "e6f5",
+              "san": "exf5",
+              "net": 500,
+              "checks": [
+                {
+                  "uci": "b5c7",
+                  "san": "Nc7+",
+                  "mate": false,
+                  "minPhysicalRecovery": 500,
+                  "evasions": [
+                    {
+                      "evasion": "Kd8",
+                      "capture": "Nxa8",
+                      "physicalGain": 500
+                    },
+                    {
+                      "evasion": "Ke7",
+                      "capture": "Nxa8",
+                      "physicalGain": 500
+                    },
+                    {
+                      "evasion": "Kd7",
+                      "capture": "Nxa8",
+                      "physicalGain": 500
+                    }
+                  ]
+                },
+                {
+                  "uci": "c4f7",
+                  "san": "Bxf7+",
+                  "mate": false,
+                  "minPhysicalRecovery": 180,
+                  "evasions": [
+                    {
+                      "evasion": "Kd8",
+                      "capture": "Nxh7",
+                      "physicalGain": 180
+                    },
+                    {
+                      "evasion": "Ke7",
+                      "capture": "Nxh7",
+                      "physicalGain": 180
+                    },
+                    {
+                      "evasion": "Kd7",
+                      "capture": "Nxh7",
+                      "physicalGain": 180
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "key": "186065215864:21",
+    "san": "Nb5",
+    "origins": [
+      {
+        "priorPly": 17,
+        "priorSan": "Rxf5",
+        "victim": "f5",
+        "prior": {
+          "status": "complete",
+          "nodes": 20,
+          "acceptances": [
+            {
+              "acceptance": "e6f5",
+              "san": "exf5",
+              "net": 500,
+              "checks": [
+                {
+                  "uci": "c4f7",
+                  "san": "Bxf7+",
+                  "mate": false,
+                  "minPhysicalRecovery": 180,
+                  "evasions": [
+                    {
+                      "evasion": "Ke7",
+                      "capture": "dxc5",
+                      "physicalGain": 180
+                    },
+                    {
+                      "evasion": "Kd7",
+                      "capture": "dxc5+",
+                      "physicalGain": 180
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "current": {
+          "status": "complete",
+          "nodes": 14,
+          "acceptances": [
+            {
+              "acceptance": "e6f5",
+              "san": "exf5",
+              "net": 500,
+              "checks": [
+                {
+                  "uci": "b5c7",
+                  "san": "Nc7+",
+                  "mate": false,
+                  "minPhysicalRecovery": 500,
+                  "evasions": [
+                    {
+                      "evasion": "Kd8",
+                      "capture": "Nxa8",
+                      "physicalGain": 500
+                    },
+                    {
+                      "evasion": "Ke7",
+                      "capture": "Nxa8",
+                      "physicalGain": 500
+                    },
+                    {
+                      "evasion": "Kd7",
+                      "capture": "Nxa8",
+                      "physicalGain": 500
+                    }
+                  ]
+                },
+                {
+                  "uci": "c4f7",
+                  "san": "Bxf7+",
+                  "mate": false,
+                  "minPhysicalRecovery": 180,
+                  "evasions": [
+                    {
+                      "evasion": "Kd8",
+                      "capture": "Nxh7",
+                      "physicalGain": 180
+                    },
+                    {
+                      "evasion": "Ke7",
+                      "capture": "Nxh7",
+                      "physicalGain": 180
+                    },
+                    {
+                      "evasion": "Kd7",
+                      "capture": "Nxh7",
+                      "physicalGain": 180
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "key": "187780685807:52",
+    "san": "Qh4",
+    "origins": [
+      {
+        "priorPly": 50,
+        "priorSan": "Rxf3",
+        "victim": "f3",
+        "prior": {
+          "status": "complete",
+          "nodes": 20,
+          "acceptances": [
+            {
+              "acceptance": "g2f3",
+              "san": "gxf3",
+              "net": 410,
+              "checks": [
+                {
+                  "uci": "d4f3",
+                  "san": "Nxf3+",
+                  "mate": false,
+                  "minPhysicalRecovery": 1090,
+                  "evasions": [
+                    {
+                      "evasion": "Kg2",
+                      "capture": "Nxd2",
+                      "physicalGain": 1090
+                    },
+                    {
+                      "evasion": "Kf2",
+                      "capture": "Nxd2",
+                      "physicalGain": 1090
+                    },
+                    {
+                      "evasion": "Kh1",
+                      "capture": "Nxd2",
+                      "physicalGain": 1090
+                    },
+                    {
+                      "evasion": "Kf1",
+                      "capture": "Nxd2+",
+                      "physicalGain": 1090
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "current": {
+          "status": "complete",
+          "nodes": 40,
+          "acceptances": [
+            {
+              "acceptance": "g2f3",
+              "san": "gxf3",
+              "net": 410,
+              "checks": [
+                {
+                  "uci": "d4f3",
+                  "san": "Nxf3+",
+                  "mate": false,
+                  "minPhysicalRecovery": 1090,
+                  "evasions": [
+                    {
+                      "evasion": "Kg2",
+                      "capture": "Nxd2",
+                      "physicalGain": 1090
+                    },
+                    {
+                      "evasion": "Kh1",
+                      "capture": "Nxd2",
+                      "physicalGain": 1090
+                    },
+                    {
+                      "evasion": "Kf1",
+                      "capture": "Nxd2+",
+                      "physicalGain": 1090
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "key": "178708072359:59",
+    "san": "Qd2",
+    "origins": [
+      {
+        "priorPly": 57,
+        "priorSan": "Rxb2",
+        "victim": "b2",
+        "prior": {
+          "status": "complete",
+          "nodes": 4,
+          "acceptances": [
+            {
+              "acceptance": "a3b2",
+              "san": "Qxb2",
+              "net": 500,
+              "checks": [
+                {
+                  "uci": "c2h7",
+                  "san": "Bh7+",
+                  "mate": false,
+                  "minPhysicalRecovery": 700,
+                  "evasions": [
+                    {
+                      "evasion": "Kh8",
+                      "capture": "Qxb2",
+                      "physicalGain": 1000
+                    },
+                    {
+                      "evasion": "Kxh7",
+                      "capture": "Qxb2",
+                      "physicalGain": 700
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "current": {
+          "status": "complete",
+          "nodes": 4,
+          "acceptances": [
+            {
+              "acceptance": "a3b2",
+              "san": "Qxb2",
+              "net": 500,
+              "checks": [
+                {
+                  "uci": "c2h7",
+                  "san": "Bh7+",
+                  "mate": false,
+                  "minPhysicalRecovery": 700,
+                  "evasions": [
+                    {
+                      "evasion": "Kh8",
+                      "capture": "Qxb2",
+                      "physicalGain": 1000
+                    },
+                    {
+                      "evasion": "Kxh7",
+                      "capture": "Qxb2",
+                      "physicalGain": 700
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "key": "184420224234:79",
+    "san": "f7",
+    "origins": [
+      {
+        "priorPly": 77,
+        "priorSan": "g6",
+        "victim": "g1",
+        "prior": {
+          "status": "complete",
+          "nodes": 1,
+          "acceptances": [
+            {
+              "acceptance": "g2g1",
+              "san": "Rxg1",
+              "net": 300,
+              "checks": []
+            }
+          ]
+        },
+        "current": {
+          "status": "complete",
+          "nodes": 1,
+          "acceptances": [
+            {
+              "acceptance": "g2g1",
+              "san": "Rxg1",
+              "net": 300,
+              "checks": []
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "key": "184485503840:27",
+    "san": "Kb1",
+    "origins": [
+      {
+        "priorPly": 25,
+        "priorSan": "h4",
+        "victim": "g5",
+        "prior": {
+          "status": "complete",
+          "nodes": 3,
+          "acceptances": [
+            {
+              "acceptance": "h6g5",
+              "san": "hxg5",
+              "net": 210,
+              "checks": []
+            }
+          ]
+        },
+        "current": {
+          "status": "complete",
+          "nodes": 14,
+          "acceptances": [
+            {
+              "acceptance": "h6g5",
+              "san": "hxg5",
+              "net": 210,
+              "checks": []
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "key": "185769255732:61",
+    "san": "Qh6",
+    "origins": [
+      {
+        "priorPly": 59,
+        "priorSan": "Rxh5+",
+        "victim": "h5",
+        "prior": {
+          "status": "complete",
+          "nodes": 23,
+          "acceptances": [
+            {
+              "acceptance": "g6h5",
+              "san": "gxh5",
+              "net": 500,
+              "checks": [
+                {
+                  "uci": "g5g7",
+                  "san": "Qg7#",
+                  "mate": true
+                }
+              ]
+            }
+          ]
+        },
+        "current": {
+          "status": "complete",
+          "nodes": 41,
+          "acceptances": [
+            {
+              "acceptance": "c5h5",
+              "san": "Qxh5",
+              "net": 500,
+              "checks": [
+                {
+                  "uci": "h6g7",
+                  "san": "Qg7#",
+                  "mate": true
+                }
+              ]
+            },
+            {
+              "acceptance": "g6h5",
+              "san": "gxh5",
+              "net": 500,
+              "checks": [
+                {
+                  "uci": "h6g7",
+                  "san": "Qg7#",
+                  "mate": true
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "key": "169827191694:67",
+    "san": "Rh1",
+    "origins": [
+      {
+        "priorPly": 65,
+        "priorSan": "h6",
+        "victim": "d3",
+        "prior": {
+          "status": "complete",
+          "nodes": 15,
+          "acceptances": [
+            {
+              "acceptance": "e4d3",
+              "san": "exd3",
+              "net": 210,
+              "checks": [
+                {
+                  "uci": "f7f8",
+                  "san": "Qf8+",
+                  "mate": false,
+                  "minPhysicalRecovery": 410,
+                  "evasions": [
+                    {
+                      "evasion": "Kh7",
+                      "capture": "Qxe8",
+                      "physicalGain": 500
+                    },
+                    {
+                      "evasion": "Rxf8",
+                      "capture": "exf8=Q+",
+                      "physicalGain": 410
+                    }
+                  ]
+                },
+                {
+                  "uci": "f7g7",
+                  "san": "Qxg7#",
+                  "mate": true
+                },
+                {
+                  "uci": "h6g7",
+                  "san": "hxg7+",
+                  "mate": false,
+                  "minPhysicalRecovery": 590,
+                  "evasions": [
+                    {
+                      "evasion": "Kh7",
+                      "capture": "Qxe8",
+                      "physicalGain": 590
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "current": {
+          "status": "complete",
+          "nodes": 16,
+          "acceptances": [
+            {
+              "acceptance": "e4d3",
+              "san": "exd3",
+              "net": 210,
+              "checks": [
+                {
+                  "uci": "f7e8",
+                  "san": "Qxe8+",
+                  "mate": false,
+                  "minPhysicalRecovery": 500,
+                  "evasions": [
+                    {
+                      "evasion": "Kh7",
+                      "capture": "Rxh6+",
+                      "physicalGain": 1500
+                    },
+                    {
+                      "evasion": "Rxe8",
+                      "capture": "Rxh6+",
+                      "physicalGain": 500
+                    }
+                  ]
+                },
+                {
+                  "uci": "f7f8",
+                  "san": "Qf8+",
+                  "mate": false,
+                  "minPhysicalRecovery": 410,
+                  "evasions": [
+                    {
+                      "evasion": "Kh7",
+                      "capture": "Rxh6+",
+                      "physicalGain": 1000
+                    },
+                    {
+                      "evasion": "Rxf8",
+                      "capture": "exf8=Q+",
+                      "physicalGain": 410
+                    }
+                  ]
+                },
+                {
+                  "uci": "h1h6",
+                  "san": "Rxh6+",
+                  "mate": false,
+                  "minPhysicalRecovery": 1000,
+                  "evasions": [
+                    {
+                      "evasion": "gxh6",
+                      "capture": "Qxe8+",
+                      "physicalGain": 1000
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "key": "173084454389:59",
+    "san": "Bc5",
+    "origins": [
+      {
+        "priorPly": 57,
+        "priorSan": "Nxf6+",
+        "victim": "f6",
+        "prior": {
+          "status": "complete",
+          "nodes": 11,
+          "acceptances": [
+            {
+              "acceptance": "g7f6",
+              "san": "Bxf6",
+              "net": 300,
+              "checks": [
+                {
+                  "uci": "b1b8",
+                  "san": "Rb8#",
+                  "mate": true
+                }
+              ]
+            }
+          ]
+        },
+        "current": {
+          "status": "complete",
+          "nodes": 39,
+          "acceptances": [
+            {
+              "acceptance": "g7f6",
+              "san": "Bxf6",
+              "net": 300,
+              "checks": [
+                {
+                  "uci": "b1b8",
+                  "san": "Rb8#",
+                  "mate": true
+                },
+                {
+                  "uci": "e7e6",
+                  "san": "Rxe6+",
+                  "mate": false,
+                  "minPhysicalRecovery": 390,
+                  "evasions": [
+                    {
+                      "evasion": "Kg8",
+                      "capture": "Rxf6",
+                      "physicalGain": 390
+                    },
+                    {
+                      "evasion": "Kg7",
+                      "capture": "Rxf6",
+                      "physicalGain": 390
+                    },
+                    {
+                      "evasion": "Kf7",
+                      "capture": "Rxf6+",
+                      "physicalGain": 390
+                    },
+                    {
+                      "evasion": "Be7",
+                      "capture": "Rxe7",
+                      "physicalGain": 390
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "key": "184514610842:73",
+    "san": "Re1",
+    "origins": [
+      {
+        "priorPly": 69,
+        "priorSan": "Ng5",
+        "victim": "h6",
+        "prior": {
+          "status": "complete",
+          "nodes": 4,
+          "acceptances": [
+            {
+              "acceptance": "f8h6",
+              "san": "Qxh6",
+              "net": 300,
+              "checks": [
+                {
+                  "uci": "g5f7",
+                  "san": "Nxf7+",
+                  "mate": false,
+                  "minPhysicalRecovery": 1090,
+                  "evasions": [
+                    {
+                      "evasion": "Kg8",
+                      "capture": "Qxh6",
+                      "physicalGain": 1090
+                    },
+                    {
+                      "evasion": "Kh7",
+                      "capture": "Qxh6+",
+                      "physicalGain": 1090
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "current": {
+          "status": "complete",
+          "nodes": 5,
+          "acceptances": [
+            {
+              "acceptance": "f8h6",
+              "san": "Qxh6",
+              "net": 300,
+              "checks": [
+                {
+                  "uci": "g5f7",
+                  "san": "Nxf7+",
+                  "mate": false,
+                  "minPhysicalRecovery": 790,
+                  "evasions": [
+                    {
+                      "evasion": "Kg8",
+                      "capture": "Qxh6",
+                      "physicalGain": 1090
+                    },
+                    {
+                      "evasion": "Kh7",
+                      "capture": "Qxh6+",
+                      "physicalGain": 1090
+                    },
+                    {
+                      "evasion": "Rxf7",
+                      "capture": "Qxh6+",
+                      "physicalGain": 790
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

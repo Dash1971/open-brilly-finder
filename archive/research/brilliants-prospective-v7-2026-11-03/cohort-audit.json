@@ -1,0 +1,72 @@
+{
+  "exported_at": "2026-11-03T12:59:38.481522+00:00",
+  "primary_game_moves": 0,
+  "authoritative_gallery_selection_files": {
+    "gothamchess-gallery-selected.json": "da433f4837a999924cdd28391d255d5b780eabb0c2b4891c0d0a2e9fbac73d03",
+    "hansen-gallery-selected.json": "6bac6d995bca96e411a06ffc163d1f9e0150e62d74bf4927b0bb86f1aa109909",
+    "hikaru-gallery-selected.json": "9321e40d01c109dff8c629116d5d7290afdf3c8f15a583592a05c4889a0f0b7d",
+    "knvb-gallery-selected.json": "b5a4a04a789f3a4f5dda10342a5b363c4a116e8857138fa64551e8479e40cfc0",
+    "nelsi-gallery-selected.json": "b8da39f7c4796678b89c7c328e5e1aff20c2c20ebe7c8f102df57b9a651be485"
+  },
+  "primary_games": 0,
+  "per_account": {
+    "nelsi": {
+      "fresh_brilliant": 0,
+      "fresh_non_brilliant": 0
+    },
+    "hansen": {
+      "fresh_brilliant": 0,
+      "fresh_non_brilliant": 0
+    },
+    "KNVB": {
+      "fresh_brilliant": 0,
+      "fresh_non_brilliant": 0
+    },
+    "GothamChess": {
+      "fresh_brilliant": 0,
+      "fresh_non_brilliant": 0
+    },
+    "Hikaru": {
+      "fresh_brilliant": 0,
+      "fresh_non_brilliant": 0
+    }
+  },
+  "primary_fresh_capture_rows": 0,
+  "fresh_metadata_present": {
+    "observed_san": 0,
+    "displayed_evaluation": 0,
+    "coach_explanation": 0,
+    "white_rating": 0,
+    "black_rating": 0,
+    "date": 0,
+    "time_control": 0,
+    "clock_seconds": 0
+  },
+  "fresh_metadata_missing": {
+    "observed_san": 0,
+    "displayed_evaluation": 0,
+    "coach_explanation": 0,
+    "white_rating": 0,
+    "black_rating": 0,
+    "date": 0,
+    "time_control": 0,
+    "clock_seconds": 0
+  },
+  "coach_text_quality": {
+    "text_present": 0,
+    "ends_with_sentence_punctuation": 0,
+    "has_explicit_capture_status": 0,
+    "explicitly_recorded_visible_complete": 0,
+    "note": "Nonempty text and terminal punctuation do not prove completeness. Legacy typewriter-animation captures may be partial; raw text and capture timestamps are unchanged.",
+    "per_move": []
+  },
+  "primary_moves_with_captured_board_identity": 0,
+  "primary_moves_with_board_missing": 0,
+  "primary_exact_before_position_duplicate_groups": [],
+  "repeated_before_or_after_positions": [],
+  "cross_partition_position_overlap": [],
+  "known_regression_fen_matches": [],
+  "gallery_fresh_disagreements": [],
+  "fresh_binary_label_conflicts": [],
+  "note": "Counts describe current validated primary game-moves; raw secondary observations and metadata enrichment revisions remain separate audit evidence. Repeated positions across distinct games remain visible; they are not independent positions."
+}

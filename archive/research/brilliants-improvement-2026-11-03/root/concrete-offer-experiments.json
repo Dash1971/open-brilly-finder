@@ -1,0 +1,2934 @@
+{
+  "generated_at": "2026-11-03T06:51:26.533Z",
+  "scope": "Exploratory development-only tests; three prespecified chess mechanisms and their fixed combination. No source deployment or new validation.",
+  "n": 618,
+  "baseline_parity": {
+    "tested": 618,
+    "full_symbol_or_withheld_differences": []
+  },
+  "variants": {
+    "phase_only": {
+      "metrics": {
+        "TP": 235,
+        "FN": 74,
+        "FP": 16,
+        "TN": 293,
+        "withheld_positive": 2,
+        "withheld_negative": 0,
+        "positive_n": 309,
+        "negative_n": 309,
+        "agreement": 0.8543689320388349,
+        "detection": 0.7605177993527508,
+        "false_award_rate": 0.05177993527508091
+      },
+      "changes": [
+        {
+          "key": "169827573530:105",
+          "game_id": "169827573530",
+          "ply": 105,
+          "san": "Qxg7+",
+          "account": "hansen",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 82.06825985575416,
+            "cpLoss": 214,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 82.06825985575416,
+            "cpLoss": 214,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 4.656285858771156,
+            "after_cp_mover": 631,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "f5e6",
+                "cp_mover": 845,
+                "piece_offer": false
+              },
+              {
+                "move": "b7d7",
+                "cp_mover": 703,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "f5e6",
+                "cp_mover": 845,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "171711505152:69",
+          "game_id": "171711505152",
+          "ply": 69,
+          "san": "Nxd8",
+          "account": "hansen",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 95.87041224619905,
+            "cpLoss": 35,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 95.87041224619905,
+            "cpLoss": 35,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 1.1713126423552467,
+            "after_cp_mover": 576,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "d5f3",
+                "cp_mover": 611,
+                "piece_offer": false
+              },
+              {
+                "move": "f5g6",
+                "cp_mover": 590,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "d5f3",
+                "cp_mover": 611,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "173235911852:53",
+          "game_id": "173235911852",
+          "ply": 53,
+          "san": "Qxh6+",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!",
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "f4h4",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "f4h4",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "183988710985:95",
+          "game_id": "183988710985",
+          "ply": 95,
+          "san": "Rh8+",
+          "account": "hansen",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "d5e6",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "d5e6",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "184752512081:53",
+          "game_id": "184752512081",
+          "ply": 53,
+          "san": "Qf8+",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "e6c7",
+                "cp_mover": 866,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "e6c7",
+                "cp_mover": 866,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "185363189653:79",
+          "game_id": "185363189653",
+          "ply": 79,
+          "san": "Qxc8",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "f5e6",
+                "cp_mover": 740,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "f5e6",
+                "cp_mover": 740,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "185758898568:49",
+          "game_id": "185758898568",
+          "ply": 49,
+          "san": "Rxf6",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 2,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 2,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0.055606928860783,
+            "after_cp_mover": 654,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "b2a3",
+                "cp_mover": 639,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "b2a3",
+                "cp_mover": 639,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "185811812218:57",
+          "game_id": "185811812218",
+          "ply": 57,
+          "san": "Bg6",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "a1e1",
+                "cp_mover": 846,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "a1e1",
+                "cp_mover": 846,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "186063842654:49",
+          "game_id": "186063842654",
+          "ply": 49,
+          "san": "Rh8+",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "e5f6",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "e5f6",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "178708672901:43",
+          "game_id": "178708672901",
+          "ply": 43,
+          "san": "Rxc6",
+          "account": "hansen",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -0.6806664828504836,
+            "after_cp_mover": 766,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "e1e8",
+                "cp_mover": 733,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "e1e8",
+                "cp_mover": 733,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "181379301473:54",
+          "game_id": "181379301473",
+          "ply": 54,
+          "san": "Nd4",
+          "account": "hansen",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 83.29766024762698,
+            "cpLoss": 130,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 83.29766024762698,
+            "cpLoss": 130,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 4.323502661385774,
+            "after_cp_mover": 532,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "c6e5",
+                "cp_mover": 662,
+                "piece_offer": false
+              },
+              {
+                "move": "a6d3",
+                "cp_mover": 499,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "c6e5",
+                "cp_mover": 662,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "184623800724:84",
+          "game_id": "184623800724",
+          "ply": 84,
+          "san": "Qxf6",
+          "account": "KNVB",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 82.60997526529866,
+            "cpLoss": 296,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 82.60997526529866,
+            "cpLoss": 296,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 4.509055755553845,
+            "after_cp_mover": 704,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "f2g2",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "f2g2",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "184973393950:49",
+          "game_id": "184973393950",
+          "ply": 49,
+          "san": "Rxh7+",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "b2h2",
+                "cp_mover": 769,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "b2h2",
+                "cp_mover": 769,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "185392726850:61",
+          "game_id": "185392726850",
+          "ply": 61,
+          "san": "Rxg7",
+          "account": "GothamChess",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -0.5810571210174089,
+            "after_cp_mover": 833,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "h4g6",
+                "cp_mover": 761,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "h4g6",
+                "cp_mover": 761,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "186569189511:90",
+          "game_id": "186569189511",
+          "ply": 90,
+          "san": "Nxf4+",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "g6h4",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "g6h4",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        }
+      ],
+      "known_regression_evidence": "Outside618freshlabels; evaluated separately if available.",
+      "delta": {
+        "recovered_observed_brilliants": 15,
+        "lost_observed_brilliants": 0,
+        "new_false_awards": 0,
+        "removed_false_awards": 0
+      }
+    },
+    "mate_only": {
+      "metrics": {
+        "TP": 231,
+        "FN": 78,
+        "FP": 18,
+        "TN": 291,
+        "withheld_positive": 2,
+        "withheld_negative": 0,
+        "positive_n": 309,
+        "negative_n": 309,
+        "agreement": 0.8446601941747572,
+        "detection": 0.7475728155339806,
+        "false_award_rate": 0.05825242718446602
+      },
+      "changes": [
+        {
+          "key": "185741429132:55",
+          "game_id": "185741429132",
+          "ply": 55,
+          "san": "Ng6+",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!",
+            "provisional": "!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -3.2544125482771022,
+            "after_cp_mover": 332,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "e3e4",
+                "cp_mover": 24,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "185774962202:35",
+          "game_id": "185774962202",
+          "ply": 35,
+          "san": "Qh5",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 91.67984514948488,
+            "cpLoss": 24,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 91.67984514948488,
+            "cpLoss": 24,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 2.1746443464331406,
+            "after_cp_mover": 56,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "d3h7",
+                "cp_mover": 80,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "186312822844:27",
+          "game_id": "186312822844",
+          "ply": 27,
+          "san": "Qh5",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -1.1042759109301414,
+            "after_cp_mover": -3,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "d3f1",
+                "cp_mover": -95,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "186371637568:13",
+          "game_id": "186371637568",
+          "ply": 13,
+          "san": "Ne5",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!",
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 1,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 1,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0.08454948279687358,
+            "after_cp_mover": 159,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "c4f7",
+                "cp_mover": 160,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "186371786706:13",
+          "game_id": "186371786706",
+          "ply": 13,
+          "san": "Ne5",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!",
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 1,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 1,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0.08454948279687358,
+            "after_cp_mover": 159,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "c4f7",
+                "cp_mover": 160,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "186389789789:54",
+          "game_id": "186389789789",
+          "ply": 54,
+          "san": "Qb2",
+          "account": "Hikaru",
+          "label": "non_brilliant",
+          "observed_labels": [
+            "best",
+            "best"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -2.210580777866312,
+            "after_cp_mover": 314,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "a2b2",
+                "cp_mover": 251,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "186398168792:48",
+          "game_id": "186398168792",
+          "ply": 48,
+          "san": "Qh4",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 95.39095065503516,
+            "cpLoss": 14,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 95.39095065503516,
+            "cpLoss": 14,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 1.2839125807069465,
+            "after_cp_mover": 26,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "c8c4",
+                "cp_mover": -9,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "187171096043:52",
+          "game_id": "187171096043",
+          "ply": 52,
+          "san": "Qxb3",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -1.5732034674622213,
+            "after_cp_mover": 834,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "b6a5",
+                "cp_mover": 475,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "187173495367:42",
+          "game_id": "187173495367",
+          "ply": 42,
+          "san": "Qf6",
+          "account": "Hikaru",
+          "label": "non_brilliant",
+          "observed_labels": [
+            "!",
+            "!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -0.21978682967420582,
+            "after_cp_mover": 266,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "d5f4",
+                "cp_mover": 128,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "174493825156:47",
+          "game_id": "174493825156",
+          "ply": 47,
+          "san": "Qg2",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 95.00032291670674,
+            "cpLoss": 15,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 95.00032291670674,
+            "cpLoss": 15,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 1.3760600380459778,
+            "after_cp_mover": 24,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "a3a4",
+                "cp_mover": -17,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "174563499026:14",
+          "game_id": "174563499026",
+          "ply": 14,
+          "san": "Ng4",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -0.43118589126481766,
+            "after_cp_mover": 142,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "e8g8",
+                "cp_mover": 63,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "185214494356:53",
+          "game_id": "185214494356",
+          "ply": 53,
+          "san": "Rf8",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!",
+            "provisional": "!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -2.926095603894737,
+            "after_cp_mover": 823,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "g4h5",
+                "cp_mover": 381,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "185571816650:57",
+          "game_id": "185571816650",
+          "ply": 57,
+          "san": "Qh4",
+          "account": "GothamChess",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 96.15697953234685,
+            "cpLoss": 12,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 96.15697953234685,
+            "cpLoss": 12,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 1.1042759109301485,
+            "after_cp_mover": 3,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "a2b3",
+                "cp_mover": -5,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        }
+      ],
+      "known_regression_evidence": "Outside618freshlabels; evaluated separately if available.",
+      "delta": {
+        "recovered_observed_brilliants": 11,
+        "lost_observed_brilliants": 0,
+        "new_false_awards": 2,
+        "removed_false_awards": 0
+      }
+    },
+    "check_continuation_only": {
+      "metrics": {
+        "TP": 220,
+        "FN": 89,
+        "FP": 13,
+        "TN": 296,
+        "withheld_positive": 2,
+        "withheld_negative": 0,
+        "positive_n": 309,
+        "negative_n": 309,
+        "agreement": 0.8349514563106796,
+        "detection": 0.7119741100323624,
+        "false_award_rate": 0.042071197411003236
+      },
+      "changes": [
+        {
+          "key": "185741429132:59",
+          "game_id": "185741429132",
+          "ply": 59,
+          "san": "Kh1",
+          "account": "Hikaru",
+          "label": "non_brilliant",
+          "observed_labels": [
+            "best"
+          ],
+          "baseline": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -0.7747507209092248,
+            "after_cp_mover": 467,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "h2g1",
+                "cp_mover": 120,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "184405419484:29",
+          "game_id": "184405419484",
+          "ply": 29,
+          "san": "Ke2",
+          "account": "GothamChess",
+          "label": "non_brilliant",
+          "observed_labels": [
+            "best"
+          ],
+          "baseline": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 99.77047868616894,
+            "cpLoss": 3,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 99.77047868616894,
+            "cpLoss": 3,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0.27534234181879924,
+            "after_cp_mover": -31,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "e1f1",
+                "cp_mover": -43,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "185392726850:63",
+          "game_id": "185392726850",
+          "ply": 63,
+          "san": "Kh1",
+          "account": "GothamChess",
+          "label": "non_brilliant",
+          "observed_labels": [
+            "best"
+          ],
+          "baseline": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "f1f2",
+                "cp_mover": -1000,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        }
+      ],
+      "known_regression_evidence": "Outside618freshlabels; evaluated separately if available.",
+      "delta": {
+        "recovered_observed_brilliants": 0,
+        "lost_observed_brilliants": 0,
+        "new_false_awards": 0,
+        "removed_false_awards": 3
+      }
+    },
+    "combined": {
+      "metrics": {
+        "TP": 246,
+        "FN": 63,
+        "FP": 15,
+        "TN": 294,
+        "withheld_positive": 2,
+        "withheld_negative": 0,
+        "positive_n": 309,
+        "negative_n": 309,
+        "agreement": 0.8737864077669902,
+        "detection": 0.7961165048543689,
+        "false_award_rate": 0.04854368932038835
+      },
+      "changes": [
+        {
+          "key": "169827573530:105",
+          "game_id": "169827573530",
+          "ply": 105,
+          "san": "Qxg7+",
+          "account": "hansen",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 82.06825985575416,
+            "cpLoss": 214,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 82.06825985575416,
+            "cpLoss": 214,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 4.656285858771156,
+            "after_cp_mover": 631,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "f5e6",
+                "cp_mover": 845,
+                "piece_offer": false
+              },
+              {
+                "move": "b7d7",
+                "cp_mover": 703,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "f5e6",
+                "cp_mover": 845,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "171711505152:69",
+          "game_id": "171711505152",
+          "ply": 69,
+          "san": "Nxd8",
+          "account": "hansen",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 95.87041224619905,
+            "cpLoss": 35,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 95.87041224619905,
+            "cpLoss": 35,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 1.1713126423552467,
+            "after_cp_mover": 576,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "d5f3",
+                "cp_mover": 611,
+                "piece_offer": false
+              },
+              {
+                "move": "f5g6",
+                "cp_mover": 590,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "d5f3",
+                "cp_mover": 611,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "173235911852:53",
+          "game_id": "173235911852",
+          "ply": 53,
+          "san": "Qxh6+",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!",
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "f4h4",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "f4h4",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "183988710985:95",
+          "game_id": "183988710985",
+          "ply": 95,
+          "san": "Rh8+",
+          "account": "hansen",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "d5e6",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "d5e6",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "184752512081:53",
+          "game_id": "184752512081",
+          "ply": 53,
+          "san": "Qf8+",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "e6c7",
+                "cp_mover": 866,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "e6c7",
+                "cp_mover": 866,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "185363189653:79",
+          "game_id": "185363189653",
+          "ply": 79,
+          "san": "Qxc8",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "f5e6",
+                "cp_mover": 740,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "f5e6",
+                "cp_mover": 740,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "185741429132:55",
+          "game_id": "185741429132",
+          "ply": 55,
+          "san": "Ng6+",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!",
+            "provisional": "!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -3.2544125482771022,
+            "after_cp_mover": 332,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "e3e4",
+                "cp_mover": 24,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "185741429132:59",
+          "game_id": "185741429132",
+          "ply": 59,
+          "san": "Kh1",
+          "account": "Hikaru",
+          "label": "non_brilliant",
+          "observed_labels": [
+            "best"
+          ],
+          "baseline": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -0.7747507209092248,
+            "after_cp_mover": 467,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "h2g1",
+                "cp_mover": 120,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "185758898568:49",
+          "game_id": "185758898568",
+          "ply": 49,
+          "san": "Rxf6",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 2,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 2,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0.055606928860783,
+            "after_cp_mover": 654,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "b2a3",
+                "cp_mover": 639,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "b2a3",
+                "cp_mover": 639,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "185774962202:35",
+          "game_id": "185774962202",
+          "ply": 35,
+          "san": "Qh5",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 91.67984514948488,
+            "cpLoss": 24,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 91.67984514948488,
+            "cpLoss": 24,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 2.1746443464331406,
+            "after_cp_mover": 56,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "d3h7",
+                "cp_mover": 80,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "185811812218:57",
+          "game_id": "185811812218",
+          "ply": 57,
+          "san": "Bg6",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "a1e1",
+                "cp_mover": 846,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "a1e1",
+                "cp_mover": 846,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "186063842654:49",
+          "game_id": "186063842654",
+          "ply": 49,
+          "san": "Rh8+",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "e5f6",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "e5f6",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "186312822844:27",
+          "game_id": "186312822844",
+          "ply": 27,
+          "san": "Qh5",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -1.1042759109301414,
+            "after_cp_mover": -3,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "d3f1",
+                "cp_mover": -95,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "186371637568:13",
+          "game_id": "186371637568",
+          "ply": 13,
+          "san": "Ne5",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!",
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 1,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 1,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0.08454948279687358,
+            "after_cp_mover": 159,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "c4f7",
+                "cp_mover": 160,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "186371786706:13",
+          "game_id": "186371786706",
+          "ply": 13,
+          "san": "Ne5",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!",
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 1,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 1,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0.08454948279687358,
+            "after_cp_mover": 159,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "c4f7",
+                "cp_mover": 160,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "186389789789:54",
+          "game_id": "186389789789",
+          "ply": 54,
+          "san": "Qb2",
+          "account": "Hikaru",
+          "label": "non_brilliant",
+          "observed_labels": [
+            "best",
+            "best"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -2.210580777866312,
+            "after_cp_mover": 314,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "a2b2",
+                "cp_mover": 251,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "186398168792:48",
+          "game_id": "186398168792",
+          "ply": 48,
+          "san": "Qh4",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 95.39095065503516,
+            "cpLoss": 14,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 95.39095065503516,
+            "cpLoss": 14,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 1.2839125807069465,
+            "after_cp_mover": 26,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "c8c4",
+                "cp_mover": -9,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "187171096043:52",
+          "game_id": "187171096043",
+          "ply": 52,
+          "san": "Qxb3",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -1.5732034674622213,
+            "after_cp_mover": 834,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "b6a5",
+                "cp_mover": 475,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "187173495367:42",
+          "game_id": "187173495367",
+          "ply": 42,
+          "san": "Qf6",
+          "account": "Hikaru",
+          "label": "non_brilliant",
+          "observed_labels": [
+            "!",
+            "!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -0.21978682967420582,
+            "after_cp_mover": 266,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "d5f4",
+                "cp_mover": 128,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "174493825156:47",
+          "game_id": "174493825156",
+          "ply": 47,
+          "san": "Qg2",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 95.00032291670674,
+            "cpLoss": 15,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 95.00032291670674,
+            "cpLoss": 15,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 1.3760600380459778,
+            "after_cp_mover": 24,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "a3a4",
+                "cp_mover": -17,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "174563499026:14",
+          "game_id": "174563499026",
+          "ply": 14,
+          "san": "Ng4",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -0.43118589126481766,
+            "after_cp_mover": 142,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "e8g8",
+                "cp_mover": 63,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "178708672901:43",
+          "game_id": "178708672901",
+          "ply": 43,
+          "san": "Rxc6",
+          "account": "hansen",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -0.6806664828504836,
+            "after_cp_mover": 766,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "e1e8",
+                "cp_mover": 733,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "e1e8",
+                "cp_mover": 733,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "181379301473:54",
+          "game_id": "181379301473",
+          "ply": 54,
+          "san": "Nd4",
+          "account": "hansen",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 83.29766024762698,
+            "cpLoss": 130,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 83.29766024762698,
+            "cpLoss": 130,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 4.323502661385774,
+            "after_cp_mover": 532,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "c6e5",
+                "cp_mover": 662,
+                "piece_offer": false
+              },
+              {
+                "move": "a6d3",
+                "cp_mover": 499,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "c6e5",
+                "cp_mover": 662,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "184405419484:29",
+          "game_id": "184405419484",
+          "ply": 29,
+          "san": "Ke2",
+          "account": "GothamChess",
+          "label": "non_brilliant",
+          "observed_labels": [
+            "best"
+          ],
+          "baseline": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 99.77047868616894,
+            "cpLoss": 3,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 99.77047868616894,
+            "cpLoss": 3,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0.27534234181879924,
+            "after_cp_mover": -31,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "e1f1",
+                "cp_mover": -43,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "184623800724:84",
+          "game_id": "184623800724",
+          "ply": 84,
+          "san": "Qxf6",
+          "account": "KNVB",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 82.60997526529866,
+            "cpLoss": 296,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 82.60997526529866,
+            "cpLoss": 296,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 4.509055755553845,
+            "after_cp_mover": 704,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "f2g2",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "f2g2",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "184973393950:49",
+          "game_id": "184973393950",
+          "ply": 49,
+          "san": "Rxh7+",
+          "account": "nelsi",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "b2h2",
+                "cp_mover": 769,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "b2h2",
+                "cp_mover": 769,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "185214494356:53",
+          "game_id": "185214494356",
+          "ply": 53,
+          "san": "Rf8",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!",
+            "provisional": "!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -2.926095603894737,
+            "after_cp_mover": 823,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "g4h5",
+                "cp_mover": 381,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "185392726850:61",
+          "game_id": "185392726850",
+          "ply": 61,
+          "san": "Rxg7",
+          "account": "GothamChess",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": -0.5810571210174089,
+            "after_cp_mover": 833,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "h4g6",
+                "cp_mover": 761,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "h4g6",
+                "cp_mover": 761,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        },
+        {
+          "key": "185392726850:63",
+          "game_id": "185392726850",
+          "ply": 63,
+          "san": "Kh1",
+          "account": "GothamChess",
+          "label": "non_brilliant",
+          "observed_labels": [
+            "best"
+          ],
+          "baseline": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "f1f2",
+                "cp_mover": -1000,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "185571816650:57",
+          "game_id": "185571816650",
+          "ply": 57,
+          "san": "Qh4",
+          "account": "GothamChess",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "",
+            "provisional": "",
+            "withheld": false,
+            "accuracy": 96.15697953234685,
+            "cpLoss": 12,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 96.15697953234685,
+            "cpLoss": 12,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 1.1042759109301485,
+            "after_cp_mover": 3,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "a2b3",
+                "cp_mover": -5,
+                "piece_offer": true
+              }
+            ],
+            "routine_winning_safe_alternatives": []
+          },
+          "ec_sacrifice": false,
+          "piece_offer": true
+        },
+        {
+          "key": "186569189511:90",
+          "game_id": "186569189511",
+          "ply": 90,
+          "san": "Nxf4+",
+          "account": "Hikaru",
+          "label": "brilliant",
+          "observed_labels": [
+            "!!"
+          ],
+          "baseline": {
+            "symbol": "!?",
+            "provisional": "!?",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "experimental": {
+            "symbol": "!!",
+            "provisional": "!!",
+            "withheld": false,
+            "accuracy": 100,
+            "cpLoss": 0,
+            "version": "mute-chess-brilliant-v3"
+          },
+          "current_gates": {
+            "mapped_loss_pp": 0,
+            "after_cp_mover": 1000,
+            "played_piece_offer": true,
+            "evaluated_alternatives": [
+              {
+                "move": "g6h4",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ],
+            "routine_winning_safe_alternatives": [
+              {
+                "move": "g6h4",
+                "cp_mover": 1000,
+                "piece_offer": false
+              }
+            ]
+          },
+          "ec_sacrifice": true,
+          "piece_offer": true
+        }
+      ],
+      "known_regression_evidence": "Outside618freshlabels; evaluated separately if available.",
+      "delta": {
+        "recovered_observed_brilliants": 26,
+        "lost_observed_brilliants": 0,
+        "new_false_awards": 2,
+        "removed_false_awards": 3
+      }
+    }
+  },
+  "elapsed_ms": 5655,
+  "rss_bytes": 138117120,
+  "max_rss_kib": 134880
+}

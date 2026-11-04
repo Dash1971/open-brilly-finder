@@ -1,0 +1,100 @@
+{
+  "status": "pass",
+  "verified_rows": 3724,
+  "group_components": 972,
+  "feature_flips": 67,
+  "eligible_feature_flips": 64,
+  "original_eligible_misses": 429,
+  "checks": [
+    "frozen sources/evaluator/features",
+    "all baseline scores and awards",
+    "all6arm row decisions and pooled/fold metrics",
+    "original group hash mapping/game/alias/position isolation",
+    "all inner selected cutoffs obey reference count/fraction constraints",
+    "all paired changed-key sets",
+    "same feature in bothwindows and exact original masked parity"
+  ],
+  "effects_by_feature_change": {
+    "custom_corrected_vs_retuned": {
+      "feature_unchanged": {
+        "lost_correct": 4,
+        "gained_correct": 1
+      },
+      "feature_changed": {
+        "lost_correct": 1,
+        "gained_correct": 1
+      }
+    },
+    "standard_rf_corrected_vs_original": {
+      "feature_unchanged": {
+        "lost_correct": 12,
+        "gained_wrong": 1,
+        "gained_correct": 1,
+        "lost_wrong": 1
+      },
+      "feature_changed": {}
+    },
+    "corrected_fixed_vs_original_fixed": {
+      "feature_unchanged": {
+        "lost_correct": 4,
+        "gained_correct": 3
+      },
+      "feature_changed": {
+        "gained_correct": 1
+      }
+    }
+  },
+  "direct_changed_feature_cases": [
+    {
+      "group": "original22misses",
+      "n": 22,
+      "awards": {
+        "custom_fixed": 0,
+        "custom_retuned": 0,
+        "custom_corrected": 1,
+        "custom_corrected_fixed": 1,
+        "standard_rf": 1,
+        "standard_rf_corrected": 1
+      }
+    },
+    {
+      "group": "original31found",
+      "n": 31,
+      "awards": {
+        "custom_fixed": 30,
+        "custom_retuned": 31,
+        "custom_corrected": 30,
+        "custom_corrected_fixed": 30,
+        "standard_rf": 30,
+        "standard_rf_corrected": 30
+      }
+    },
+    {
+      "group": "ordinary11",
+      "n": 11,
+      "awards": {
+        "custom_fixed": 0,
+        "custom_retuned": 0,
+        "custom_corrected": 0,
+        "custom_corrected_fixed": 0,
+        "standard_rf": 0,
+        "standard_rf_corrected": 0
+      }
+    }
+  ],
+  "protocol_prose_erratum": "EVAL-PROTOCOL custom learner says raw weighted leaf probabilities. Exact unchanged Tree uses raw bootstrap-window class fractions; class cost5 affects splits. No implementation change.",
+  "script_sha256": "a9528f021b1a77658e7d0730b9b19c599a3b03d1a101a2022be878294c12d80c",
+  "artifact_sha256": {
+    "extract.mts": "e4999a2af04665ee5de068ac9044f3132d3d8b55c2100628e41dda1bb2816764",
+    "FEATURES.json": "f26d2aae7c4d1a5bd8b7eb0ea0bbf2082b914eacddfa7e65292d2f685346a0a7",
+    "RESULTS.json": "19d1bddaf25f9dd115f93786202572a83a43380e06216f020340bcb5b31f552d",
+    "FEATURE-VERIFICATION.json": "7f09c7025ca52cecf30d3b351ce5c9bcb89787d9af687fb97f6152582f5ab588",
+    "evaluate.py": "5ff24ce92fa9471b0ce17f0deeb70ecfd629464070cc303c8e9713ed5a058555",
+    "EXTRACTION.json": "0502ed2628899b77b85d2e14984fb4d79c1281125112dbb8ef1dbb6ae2058775",
+    "verify.py": "a9528f021b1a77658e7d0730b9b19c599a3b03d1a101a2022be878294c12d80c",
+    "PREDICTIONS.json": "a8b4c99925b3a86026c02818181cbf343ebfb55a7aab7ac2fa3d5c37cea4b6f5",
+    "EXTRACTION-PROTOCOL.json": "de36bab19235df3d37bbda1bd9a242a060cd6003c59e1516df3170b309314a2c",
+    "EVAL-PROTOCOL.json": "ae96e9cdcc9b599430ad0efcee7fe77a8e32ca05af56bd5b8ab5fba561eb1042",
+    "REPORT.txt": "65b91c45d494a0dfcdb52cbbf4e795ffb5c32a2b8a97e72ad12faf353d974cb3"
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "key": "171488501692:36",
+    "san": "hxg6",
+    "truth": false,
+    "scope": "Old training case; regression diagnostic only, not independent test evidence.",
+    "baseline": {
+      "award": false,
+      "window_scores": {
+        "current": 0.6798492846630605,
+        "previous": 0.6998746843109603
+      },
+      "threshold": 0.8333333333333334,
+      "physical_unknown": false
+    },
+    "candidate": {
+      "award": false,
+      "window_scores": {
+        "current": 0.6006202577262499,
+        "previous": 0.5864874416350283
+      },
+      "threshold": 0.8333333333333334,
+      "physical_unknown": false
+    }
+  },
+  {
+    "key": "173517772799:30",
+    "san": "hxg5",
+    "truth": false,
+    "scope": "Old training case; regression diagnostic only, not independent test evidence.",
+    "baseline": {
+      "award": false,
+      "window_scores": {
+        "current": 0.794755669154259,
+        "previous": 0.7864145037407252
+      },
+      "threshold": 0.8333333333333334,
+      "physical_unknown": false
+    },
+    "candidate": {
+      "award": false,
+      "window_scores": {
+        "current": 0.5081994522903694,
+        "previous": 0.5104090482499654
+      },
+      "threshold": 0.8333333333333334,
+      "physical_unknown": false
+    }
+  }
+]

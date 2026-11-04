@@ -1,0 +1,1081 @@
+{
+  "scope": "One parent-authorized fixed completion of all label-independently structurally relevant repeat-award origins across848cases; no baseline replacement; no automatic increase beyond120.",
+  "started_at": "2026-11-03T09:30:10.677902+00:00",
+  "status": "complete",
+  "fixed_snapshot_ids": [
+    "184420224234:75",
+    "184420224234:76",
+    "185789456944:17",
+    "185789456944:18",
+    "186032403160:53",
+    "186032403160:54",
+    "186073124334:16",
+    "186073124334:17",
+    "186073124334:18",
+    "186073124334:19"
+  ],
+  "nodes_per_position": 300000,
+  "threads": 1,
+  "hash_mb": 64,
+  "full_pgn_history": true,
+  "hash_session_policy": "ClearHash and new game session per game; increasing ply order; no baseline replacement.",
+  "plan_sha256": "1e3c4127fac2533765f5359921699ad96cc1b19928983ddc17524231e1e49fec",
+  "collector_source_sha256": "4249766f0b63a9a32054be40b862c740faaa06f5e38cb854ca2017f9ff15594e",
+  "runner_sha256": "d7875251f2baa1feac86df1a9237c92fcd975db4ba386f3043c7f9da5f3d2986",
+  "engine_path": "/opt/homebrew/bin/stockfish",
+  "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+  "snapshots": {
+    "184420224234:75": {
+      "current": {
+        "depth": 16,
+        "lines": [
+          {
+            "cp": 384,
+            "moves": [
+              "g2g1",
+              "b4b5",
+              "g1h1",
+              "b5b3",
+              "b7c6",
+              "b3f3",
+              "c6d7",
+              "g5g6",
+              "f7g6",
+              "h6g6"
+            ]
+          },
+          {
+            "cp": 448,
+            "moves": [
+              "c5b4",
+              "g5g6",
+              "f7g6",
+              "f6f7",
+              "g2g1",
+              "f7f8q",
+              "g6h5",
+              "f8e7",
+              "b7a6",
+              "e7e6",
+              "g1e1",
+              "e6d5",
+              "a6a7",
+              "e5e6",
+              "h5h4",
+              "d5d7",
+              "a7a6",
+              "d7c8",
+              "a6a7",
+              "c8c7",
+              "a7a6",
+              "e6e7",
+              "e1e6",
+              "h6g5"
+            ]
+          }
+        ],
+        "reported_nodes": 300260
+      },
+      "previous": {
+        "depth": 15,
+        "lines": [
+          {
+            "cp": 384,
+            "moves": [
+              "g2g1",
+              "b4b5",
+              "g1h1",
+              "b5b3",
+              "b7c6",
+              "b3f3",
+              "c6d7",
+              "g5g6",
+              "f7g6",
+              "h6g6"
+            ]
+          },
+          {
+            "cp": 448,
+            "moves": [
+              "c5b4",
+              "g5g6",
+              "f7g6",
+              "f6f7",
+              "g2g1",
+              "f7f8q",
+              "g6h5",
+              "f8e7",
+              "b7a6",
+              "e7e6",
+              "g1e1",
+              "e6d5",
+              "a6a7",
+              "e5e6",
+              "h5h4",
+              "d5d7",
+              "a7a6",
+              "d7c8",
+              "a6a7",
+              "c8c7",
+              "a7a6",
+              "e6e7",
+              "e1e6",
+              "h6g5"
+            ]
+          }
+        ],
+        "reported_nodes": 296060
+      },
+      "terminal": false,
+      "quality": "repeat-award-sf18-300000",
+      "elapsed_seconds": 0.189382,
+      "game_id": "184420224234",
+      "position_ply": 75,
+      "fen": "8/1k3p2/1p2pP1K/1pp1P1PP/1R6/8/6r1/6B1 b - - 0 38",
+      "pgn_sha256": "a1eaa7a66a4476def6ae96b58facd82900c24d2a3ba555fcc7affc9ba496e9ff",
+      "ec_material": 290
+    },
+    "184420224234:76": {
+      "current": {
+        "depth": 16,
+        "lines": [
+          {
+            "cp": 450,
+            "moves": [
+              "g5g6",
+              "f7g6",
+              "f6f7",
+              "g6h5",
+              "f7f8q",
+              "g2g1",
+              "f8e7",
+              "b7a6",
+              "e7e8",
+              "a6b7",
+              "e8d7",
+              "b7a6",
+              "d7c8",
+              "a6a7",
+              "c8c7",
+              "a7a8",
+              "c7b6",
+              "g1d1"
+            ]
+          },
+          {
+            "cp": 153,
+            "moves": [
+              "g1d4",
+              "g2d2",
+              "d4e3",
+              "d2h2",
+              "h6g7",
+              "h2h5",
+              "g7f7",
+              "b4b3",
+              "e3c1",
+              "h5h1",
+              "c1b2"
+            ]
+          }
+        ],
+        "reported_nodes": 300115
+      },
+      "previous": {
+        "depth": 15,
+        "lines": [
+          {
+            "cp": 450,
+            "moves": [
+              "g5g6",
+              "f7g6",
+              "f6f7",
+              "g6h5",
+              "f7f8q",
+              "g2g1",
+              "f8e7",
+              "b7a6",
+              "e7e8",
+              "a6b7",
+              "e8d7",
+              "b7a6",
+              "d7c8",
+              "a6a7",
+              "c8c7",
+              "a7a8",
+              "c7b6",
+              "g1d1"
+            ]
+          },
+          {
+            "cp": 153,
+            "moves": [
+              "g1d4",
+              "g2d2",
+              "d4e3",
+              "d2h2",
+              "h6g7",
+              "h2h5",
+              "g7f7",
+              "b4b3",
+              "e3c1",
+              "h5h1",
+              "c1b2"
+            ]
+          }
+        ],
+        "reported_nodes": 280144
+      },
+      "terminal": false,
+      "quality": "repeat-award-sf18-300000",
+      "elapsed_seconds": 0.141979,
+      "game_id": "184420224234",
+      "position_ply": 76,
+      "fen": "8/1k3p2/1p2pP1K/1p2P1PP/1p6/8/6r1/6B1 w - - 0 39",
+      "pgn_sha256": "a1eaa7a66a4476def6ae96b58facd82900c24d2a3ba555fcc7affc9ba496e9ff",
+      "ec_material": -290
+    },
+    "185789456944:17": {
+      "current": {
+        "depth": 15,
+        "lines": [
+          {
+            "cp": 25,
+            "moves": [
+              "f6e8",
+              "g1f3",
+              "f7f6",
+              "g5h4",
+              "c8d7",
+              "d1c2",
+              "f6f5",
+              "h4e7",
+              "d8e7",
+              "h2h3"
+            ]
+          },
+          {
+            "cp": 27,
+            "moves": [
+              "c8d7",
+              "g1f3",
+              "f6e8",
+              "e1g1",
+              "f7f6",
+              "g5h4",
+              "a8c8",
+              "d1c2",
+              "g7g6",
+              "f1e1",
+              "g8h8"
+            ]
+          }
+        ],
+        "reported_nodes": 189589
+      },
+      "previous": {
+        "depth": 14,
+        "lines": [
+          {
+            "cp": 26,
+            "moves": [
+              "c8d7",
+              "d1c2",
+              "f6e4",
+              "g5e7",
+              "c6e7",
+              "c3e4",
+              "d5e4",
+              "d3e4",
+              "e7f5",
+              "e1f2",
+              "a8c8",
+              "c2d2"
+            ]
+          },
+          {
+            "cp": 29,
+            "moves": [
+              "f6e8",
+              "g1f3",
+              "f7f6",
+              "g5h4",
+              "c8d7",
+              "e1g1",
+              "a8c8",
+              "d1c2",
+              "g7g6",
+              "f1e1",
+              "c6a5",
+              "e3e4",
+              "d5e4",
+              "d3e4"
+            ]
+          }
+        ],
+        "reported_nodes": 109281
+      },
+      "terminal": false,
+      "quality": "repeat-award-sf18-300000",
+      "elapsed_seconds": 0.369113,
+      "game_id": "185789456944",
+      "position_ply": 17,
+      "fen": "r1bq1rk1/pp2bppp/2n1pn2/3p2B1/3P1P2/P1NBP3/1P4PP/R2QK1NR b KQ - 0 9",
+      "pgn_sha256": "e6c9da1178258afdd895a5210cf0e47938600f92f0608dc02436d1acf5949735",
+      "ec_material": 0
+    },
+    "185789456944:18": {
+      "current": {
+        "depth": 15,
+        "lines": [
+          {
+            "cp": 69,
+            "moves": [
+              "h2h4",
+              "b7b5",
+              "d3b5",
+              "c8d7",
+              "g5f6",
+              "e7f6",
+              "g1f3",
+              "c6a5",
+              "b5d3",
+              "a5c4",
+              "d1e2",
+              "a8b8",
+              "d3c4",
+              "d5c4",
+              "b2b4"
+            ]
+          },
+          {
+            "cp": 65,
+            "moves": [
+              "g5f6",
+              "e7f6",
+              "g1f3",
+              "f6h4",
+              "g2g3",
+              "h4e7",
+              "e1g1",
+              "g7g6",
+              "g3g4",
+              "g8g7",
+              "f1f2"
+            ]
+          }
+        ],
+        "reported_nodes": 272800
+      },
+      "previous": {
+        "depth": 14,
+        "lines": [
+          {
+            "cp": 65,
+            "moves": [
+              "h2h4",
+              "c8d7",
+              "g5f6",
+              "e7f6",
+              "g1f3",
+              "f8e8",
+              "h4h5",
+              "a8c8"
+            ]
+          },
+          {
+            "cp": 59,
+            "moves": [
+              "g5f6",
+              "e7f6",
+              "g1f3",
+              "g7g6",
+              "d1e2",
+              "f6e7",
+              "g2g4",
+              "c8d7",
+              "h2h4",
+              "a8c8",
+              "h4h5",
+              "g6g5",
+              "d3c2"
+            ]
+          }
+        ],
+        "reported_nodes": 161867
+      },
+      "terminal": false,
+      "quality": "repeat-award-sf18-300000",
+      "elapsed_seconds": 0.386265,
+      "game_id": "185789456944",
+      "position_ply": 18,
+      "fen": "r1bq1rk1/pp2bpp1/2n1pn1p/3p2B1/3P1P2/P1NBP3/1P4PP/R2QK1NR w KQ - 0 10",
+      "pgn_sha256": "e6c9da1178258afdd895a5210cf0e47938600f92f0608dc02436d1acf5949735",
+      "ec_material": 0
+    },
+    "186032403160:53": {
+      "current": {
+        "depth": 15,
+        "lines": [
+          {
+            "cp": 0,
+            "moves": [
+              "e7e8",
+              "b7c6",
+              "e8e7",
+              "c6b7",
+              "e7e8"
+            ]
+          },
+          {
+            "cp": 27,
+            "moves": [
+              "e5c7",
+              "b7e4",
+              "c7e5",
+              "a1e1",
+              "e5e4",
+              "e1e4",
+              "e7d6",
+              "f1g2",
+              "f8f5",
+              "g2g3",
+              "b6d5",
+              "e4g4",
+              "d5f6",
+              "g4g6",
+              "a8g8",
+              "g3g2",
+              "d6e6",
+              "d2h6",
+              "e6f7",
+              "g6g8",
+              "f7g8",
+              "h6e3",
+              "f6h5",
+              "h1a1",
+              "g8f7",
+              "a1a6",
+              "h5f6",
+              "a6a5",
+              "f5e5",
+              "a5c5",
+              "e5e3"
+            ]
+          }
+        ],
+        "reported_nodes": 250134
+      },
+      "previous": {
+        "depth": 14,
+        "lines": [
+          {
+            "cp": 0,
+            "moves": [
+              "e7e8",
+              "b7c6",
+              "e8e7",
+              "c6b7"
+            ]
+          },
+          {
+            "cp": 30,
+            "moves": [
+              "e5c7",
+              "b7e4",
+              "c7e5",
+              "a1e1",
+              "e5e4",
+              "e1e4",
+              "e7d6",
+              "f1g2",
+              "f8f5",
+              "g2g3",
+              "b6d5",
+              "e4g4",
+              "d5f6",
+              "g4g6",
+              "a8g8",
+              "h1a1"
+            ]
+          }
+        ],
+        "reported_nodes": 136474
+      },
+      "terminal": false,
+      "quality": "repeat-award-sf18-300000",
+      "elapsed_seconds": 0.264463,
+      "game_id": "186032403160",
+      "position_ply": 53,
+      "fen": "r4r2/1Q2k3/pn5p/2p1qB1P/8/1P4b1/2PB4/R4K1R b - - 2 27",
+      "pgn_sha256": "68c2d72029ec8ca9c8fc9ada95a322a82a82ccc542b1885f210e69f2e38a0daf",
+      "ec_material": 0
+    },
+    "186032403160:54": {
+      "current": {
+        "depth": 14,
+        "lines": [
+          {
+            "cp": 45,
+            "moves": [
+              "a1e1",
+              "e7d8",
+              "b7e4",
+              "c7f7",
+              "f1g2",
+              "g3e1",
+              "d2e1",
+              "f7d5",
+              "e1h4",
+              "d8c7",
+              "h4g3",
+              "c7d8",
+              "e4d5",
+              "b6d5",
+              "f5e4",
+              "d5e3",
+              "g2h3",
+              "a8a7",
+              "g3d6",
+              "f8e8",
+              "e4g6",
+              "e8e6",
+              "d6f4",
+              "a7d7",
+              "h1g1",
+              "d7d5",
+              "c2c4",
+              "d5f5",
+              "g6f5",
+              "e3f5",
+              "g1d1",
+              "d8e7"
+            ]
+          },
+          {
+            "cp": 27,
+            "moves": [
+              "b7e4",
+              "c7e5",
+              "a1e1",
+              "e5e4",
+              "e1e4",
+              "e7d6",
+              "f1g2",
+              "f8f5",
+              "g2g3",
+              "b6d5",
+              "e4g4",
+              "d5f6",
+              "g4g6",
+              "a8g8",
+              "g3g2",
+              "g8e8",
+              "d2h6",
+              "e8e2",
+              "g2g3",
+              "d6e5",
+              "h6g5"
+            ]
+          }
+        ],
+        "reported_nodes": 259404
+      },
+      "previous": {
+        "depth": 13,
+        "lines": [
+          {
+            "cp": 39,
+            "moves": [
+              "a1e1",
+              "e7d8",
+              "b7e4",
+              "c7f7",
+              "f1g2",
+              "g3e1",
+              "d2e1",
+              "f7d5",
+              "e1h4",
+              "d8c7",
+              "h4g3",
+              "c7d8",
+              "f5g6",
+              "d5e4",
+              "g6e4"
+            ]
+          },
+          {
+            "cp": 27,
+            "moves": [
+              "b7e4",
+              "c7e5",
+              "a1e1",
+              "e5e4",
+              "e1e4",
+              "e7d6",
+              "f1g2",
+              "f8f5",
+              "g2g3",
+              "b6d5",
+              "e4g4",
+              "d5f6",
+              "g4g6",
+              "a8g8",
+              "g3g2",
+              "g8e8",
+              "d2h6",
+              "e8e2",
+              "g2g3"
+            ]
+          }
+        ],
+        "reported_nodes": 189353
+      },
+      "terminal": false,
+      "quality": "repeat-award-sf18-300000",
+      "elapsed_seconds": 0.227393,
+      "game_id": "186032403160",
+      "position_ply": 54,
+      "fen": "r4r2/1Qq1k3/pn5p/2p2B1P/8/1P4b1/2PB4/R4K1R w - - 3 28",
+      "pgn_sha256": "68c2d72029ec8ca9c8fc9ada95a322a82a82ccc542b1885f210e69f2e38a0daf",
+      "ec_material": 0
+    },
+    "186073124334:16": {
+      "current": {
+        "depth": 14,
+        "lines": [
+          {
+            "cp": 30,
+            "moves": [
+              "e1g1",
+              "g4f3",
+              "e2f3",
+              "h5h4",
+              "c1e3",
+              "c6e5",
+              "b1c3",
+              "e5f3",
+              "d1f3",
+              "h4c4",
+              "f1d1",
+              "e6d5",
+              "a1c1",
+              "d5d4",
+              "c3e4",
+              "c4e6",
+              "e4g5",
+              "e6d5",
+              "d1d4",
+              "d5f3"
+            ]
+          },
+          {
+            "cp": -88,
+            "moves": [
+              "b1c3",
+              "e6d5",
+              "e1g1",
+              "d5c4",
+              "d1a4",
+              "f8d6",
+              "f1d1",
+              "d6c5",
+              "h3g4",
+              "f6g4"
+            ]
+          }
+        ],
+        "reported_nodes": 117806
+      },
+      "previous": {
+        "depth": 13,
+        "lines": [
+          {
+            "cp": 30,
+            "moves": [
+              "e1g1",
+              "g4f3",
+              "e2f3",
+              "h5h4",
+              "c1e3",
+              "c6e5",
+              "b1c3",
+              "e5f3",
+              "d1f3",
+              "h4c4",
+              "f1d1",
+              "e6d5",
+              "a1c1",
+              "d5d4",
+              "c3e4",
+              "c4e6",
+              "e4g5",
+              "e6d5"
+            ]
+          },
+          {
+            "cp": -77,
+            "moves": [
+              "b1c3",
+              "e6d5",
+              "e1g1",
+              "d5c4",
+              "h3g4",
+              "f6g4",
+              "d1a4",
+              "f8d6",
+              "f1d1",
+              "d6h2",
+              "g1f1",
+              "h2e5",
+              "d1d8",
+              "h8d8",
+              "a4c4",
+              "e5c3",
+              "c4c3"
+            ]
+          }
+        ],
+        "reported_nodes": 88663
+      },
+      "terminal": false,
+      "quality": "repeat-award-sf18-300000",
+      "elapsed_seconds": 0.347445,
+      "game_id": "186073124334",
+      "position_ply": 16,
+      "fen": "2kr1b1r/ppp2ppp/2n1pn2/3P3q/2P3b1/5N1P/PP2BPP1/RNBQK2R w KQ - 0 9",
+      "pgn_sha256": "8a2689d57b91ca0a9f2804622c8aa5d2706808becb880b06be9d2fbe6eecc56e",
+      "ec_material": 0
+    },
+    "186073124334:17": {
+      "current": {
+        "depth": 14,
+        "lines": [
+          {
+            "cp": 13,
+            "moves": [
+              "g4f3",
+              "e2f3",
+              "h5h4",
+              "c1e3",
+              "c6e5",
+              "b1c3",
+              "e6d5",
+              "f3d5",
+              "c7c6",
+              "a1c1",
+              "c6d5",
+              "d1a4"
+            ]
+          },
+          {
+            "cp": 112,
+            "moves": [
+              "g4h3",
+              "g2h3",
+              "h5h3",
+              "f3g5",
+              "h3h4",
+              "g1g2",
+              "f6d5",
+              "c4d5",
+              "d8d5",
+              "d1b3",
+              "f8d6",
+              "b3h3",
+              "d5g5",
+              "c1g5",
+              "h4g5",
+              "g2h1",
+              "c6d4",
+              "b1c3",
+              "g5f4",
+              "h1g2",
+              "h7h5",
+              "a1d1"
+            ]
+          }
+        ],
+        "reported_nodes": 163554
+      },
+      "previous": {
+        "depth": 13,
+        "lines": [
+          {
+            "cp": 23,
+            "moves": [
+              "g4f3",
+              "e2f3",
+              "h5h4",
+              "c1e3",
+              "c6e5",
+              "b1c3",
+              "e5f3",
+              "d1f3",
+              "e6d5",
+              "f1d1",
+              "h4c4",
+              "e3d4",
+              "c4a6",
+              "a2a4",
+              "c7c5"
+            ]
+          },
+          {
+            "cp": 111,
+            "moves": [
+              "g4h3",
+              "g2h3",
+              "h5h3",
+              "f3g5",
+              "h3h4",
+              "g1g2",
+              "f8c5",
+              "b1c3",
+              "d8d7",
+              "d1e1",
+              "e6d5",
+              "f1h1",
+              "h4d4",
+              "c1e3"
+            ]
+          }
+        ],
+        "reported_nodes": 100807
+      },
+      "terminal": false,
+      "quality": "repeat-award-sf18-300000",
+      "elapsed_seconds": 0.309121,
+      "game_id": "186073124334",
+      "position_ply": 17,
+      "fen": "2kr1b1r/ppp2ppp/2n1pn2/3P3q/2P3b1/5N1P/PP2BPP1/RNBQ1RK1 b - - 1 9",
+      "pgn_sha256": "8a2689d57b91ca0a9f2804622c8aa5d2706808becb880b06be9d2fbe6eecc56e",
+      "ec_material": 0
+    },
+    "186073124334:18": {
+      "current": {
+        "depth": 16,
+        "lines": [
+          {
+            "cp": 111,
+            "moves": [
+              "g2h3",
+              "h5h3",
+              "f3g5",
+              "h3h4",
+              "g1g2",
+              "f6d5",
+              "c4d5",
+              "d8d5",
+              "d1b3",
+              "c6d4",
+              "b3g3",
+              "h4g3",
+              "f2g3",
+              "d4e2",
+              "g5f7",
+              "h8g8",
+              "c1e3",
+              "f8c5",
+              "e3c5",
+              "d5c5",
+              "f1f2",
+              "e2d4",
+              "b1c3",
+              "c5f5",
+              "a1f1"
+            ]
+          },
+          {
+            "cp": -116,
+            "moves": [
+              "d1b3",
+              "e6d5",
+              "g2h3",
+              "d5d4",
+              "e2d1",
+              "h5g6",
+              "g1h1",
+              "f8c5",
+              "f3d2",
+              "d4d3",
+              "d1f3",
+              "h8e8",
+              "f3g2",
+              "e8e2",
+              "b1c3",
+              "e2f2",
+              "f1f2",
+              "c5f2"
+            ]
+          }
+        ],
+        "reported_nodes": 182298
+      },
+      "previous": {
+        "depth": 15,
+        "lines": [
+          {
+            "cp": 115,
+            "moves": [
+              "g2h3",
+              "h5h3",
+              "f3g5",
+              "h3h4",
+              "g1g2",
+              "f6d5",
+              "c4d5",
+              "d8d5",
+              "d1b3",
+              "f8d6",
+              "b3h3",
+              "d5g5",
+              "c1g5",
+              "h4g5",
+              "g2h1",
+              "c6d4",
+              "b1c3",
+              "d4e2"
+            ]
+          },
+          {
+            "cp": -129,
+            "moves": [
+              "d1b3",
+              "e6d5",
+              "g2h3",
+              "d5d4",
+              "e2d1",
+              "d4d3",
+              "b3b5",
+              "h5h3",
+              "b5g5",
+              "h8g8",
+              "c1e3",
+              "f6g4",
+              "g5h4",
+              "h3h4",
+              "f3h4",
+              "g4e3",
+              "f2e3",
+              "f8c5"
+            ]
+          }
+        ],
+        "reported_nodes": 122212
+      },
+      "terminal": false,
+      "quality": "repeat-award-sf18-300000",
+      "elapsed_seconds": 0.338441,
+      "game_id": "186073124334",
+      "position_ply": 18,
+      "fen": "2kr1b1r/ppp2ppp/2n1pn2/3P3q/2P5/5N1b/PP2BPP1/RNBQ1RK1 w - - 0 10",
+      "pgn_sha256": "8a2689d57b91ca0a9f2804622c8aa5d2706808becb880b06be9d2fbe6eecc56e",
+      "ec_material": 120
+    },
+    "186073124334:19": {
+      "current": {
+        "depth": 13,
+        "lines": [
+          {
+            "cp": 109,
+            "moves": [
+              "h5h3",
+              "f3g5",
+              "h3h4",
+              "g1g2",
+              "f6d5",
+              "c4d5",
+              "d8d5",
+              "d1b3",
+              "c6d4",
+              "b3g3",
+              "h4g3",
+              "f2g3",
+              "d4e2",
+              "g5f7",
+              "h8g8",
+              "c1e3"
+            ]
+          },
+          {
+            "cp": 135,
+            "moves": [
+              "h5g6",
+              "f3g5",
+              "c6e5",
+              "f2f4",
+              "h7h6",
+              "f4e5",
+              "h6g5",
+              "e5f6",
+              "h8h3",
+              "e2g4",
+              "f8c5",
+              "g1g2",
+              "h3h4",
+              "d1f3",
+              "g6c2",
+              "c1d2"
+            ]
+          }
+        ],
+        "reported_nodes": 239737
+      },
+      "previous": {
+        "depth": 12,
+        "lines": [
+          {
+            "cp": 109,
+            "moves": [
+              "h5h3",
+              "f3g5",
+              "h3h4",
+              "g1g2",
+              "f6d5",
+              "c4d5",
+              "d8d5",
+              "d1b3",
+              "c6d4",
+              "b3g3",
+              "h4g3",
+              "f2g3",
+              "d4e2"
+            ]
+          },
+          {
+            "cp": 162,
+            "moves": [
+              "g7g5",
+              "f3d4",
+              "h5h3",
+              "d1b3",
+              "h3b3",
+              "d4b3",
+              "e6d5",
+              "c4d5",
+              "f6d5",
+              "b1c3",
+              "d5c3",
+              "b2c3"
+            ]
+          }
+        ],
+        "reported_nodes": 175129
+      },
+      "terminal": false,
+      "quality": "repeat-award-sf18-300000",
+      "elapsed_seconds": 0.301358,
+      "game_id": "186073124334",
+      "position_ply": 19,
+      "fen": "2kr1b1r/ppp2ppp/2n1pn2/3P3q/2P5/5N1P/PP2BP2/RNBQ1RK1 b - - 0 10",
+      "pgn_sha256": "8a2689d57b91ca0a9f2804622c8aa5d2706808becb880b06be9d2fbe6eecc56e",
+      "ec_material": -120
+    }
+  },
+  "engine_id": {
+    "name": "Stockfish 18",
+    "author": "the Stockfish developers (see AUTHORS file)"
+  },
+  "completed_at": "2026-11-03T09:30:14.130549+00:00"
+}

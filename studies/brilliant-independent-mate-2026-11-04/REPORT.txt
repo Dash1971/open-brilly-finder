@@ -1,0 +1,150 @@
+Independent acceptance-mate feature experiment
+November 4, 2026
+
+RESULT
+
+Removing the En Croissant prerequisite from the mating feature did not find
+more Brilliants without increasing wrong awards. Do not promote this change
+on the evidence from this experiment. No deployed model or classifier changed.
+
+Same grouped held-out evaluation, all917 saved Brilliants and2,807 negatives:
+
+Method                              Correct   Recall   Wrong   Wrong/awards
+Custom forest, original              452      49.29%     6       1.31%
+Custom forest, corrected feature     449      48.96%     6       1.32%
+Standard RF, original                473      51.58%     7       1.46%
+Standard RF, corrected feature       462      50.38%     7       1.49%
+
+The primary custom comparison gains2 correct awards and loses5, for3 fewer.
+Its six wrong awards are exactly unchanged. The secondary standard forest
+gains1 correct and loses12; it replaces one wrong award with a different one.
+Thus unchanged total wrong awards does not mean every wrong decision is the
+same for the standard forest.
+
+The predeclared custom fixed5/6 control has the same totals before and after:
+436 correct and6 wrong. It gains4 correct awards and loses4. This control also
+shows no net benefit; we did not select a favorable cutoff after seeing results.
+
+WHAT CHANGED
+
+Old feature:
+    mating_acceptance = !ec_sacrifice && hasMatingAcceptance(before, after)
+Corrected feature:
+    mating_acceptance = hasMatingAcceptance(before, after)
+
+The existing helper is unchanged: it seeks a literal legal immediate checkmate
+after accepting a qualifying nonpawn offer, with the same512-position proof
+budget and false-on-exhaustion behavior. This is not an expanded search for
+longer forced mates, a new unknown-status feature, or an automatic award rule.
+
+We invoked it for all3,724 saved positions without label, score, or eligibility
+selection. Original masked values reproduced exactly for every case. The
+correction changes67 cases from false to true (134 window rows); none change
+from true to false. Among64 fully eligible changed cases:
+    22 were missed Brilliants under the original custom selected cutoffs;
+    31 were already awarded Brilliants;
+    11 were ordinary moves.
+The remaining three changed cases were ineligible: one positive and two negatives.
+All64 eligible changes also have independently replayed, legally valid immediate
+mate witnesses in the saved acceptance evidence. No engine searches were needed.
+
+Only the existing mating_acceptance column was replaced. The other74 feature
+values, all75 missing indicators, column order, original eligibility/quality
+checks, row weights, two-window confirmation, confidence and physical-unknown
+guards stayed identical. The earlier evaluation-consistency gate proposal was
+not incorporated. This isolates the mating-feature correction.
+
+DID IT HELP THE CASES THAT MOTIVATED IT?
+
+Of the22 original misses whose feature was corrected, the custom forest now
+awards one. Among the31 previously found Brilliants with corrected features,
+it loses one. None of the11 changed ordinary cases receives an award.
+
+Outside the feature-flipped cases, refitting and inner threshold selection
+gain one correct award and lose four. These indirect effects explain the
+remaining regression. A changed training feature can alter tree splits and
+cutoffs even for test examples whose own feature did not change.
+
+Across all429 original eligible custom misses, the corrected custom finds two,
+but it loses five previously correct awards elsewhere. This subgroup is
+descriptive, selected from the same original held-out labels and decisions;
+it is not an independent validation set.
+
+The original difficult EC-false subgroup remains7/191 found with the custom
+forest. Correcting the mask directly affects EC-true cases; it does not supply
+a different representation of the EC-false sacrifice mechanisms. The eligible
+EC-true custom results decline from445 correct to442, with six wrong unchanged.
+
+EVALUATION DESIGN
+
+Same3,724 cases,917 positives,972 whole-game/canonical-position group components,
+five outer folds and three inner folds as the prior learner comparisons. Aliases,
+repeated positions, games and both windows remain grouped.
+
+For this input experiment, both original and corrected versions were refit
+under identical settings and seeds. Custom:64 trees, depth6, minimum8 distinct
+moves per leaf,12 candidate columns, group bootstrap, class-cost5 splits and
+raw bootstrap-window leaf proportions. Standard RF:128 trees, depth6,
+minimum16 rows per leaf,12 candidate columns, one thread, original weights.
+The total input width remains150. No learner parameters or feature definition
+were adjusted after outcomes.
+
+Each selected cutoff uses only the outer training partition's inner held-out
+predictions. The unchanged selection rule maximizes correct awards subject to
+BOTH no higher wrong count AND no worse wrong-award fraction than the original
+custom fixed5/6 reference on those inner predictions. That training constraint
+does not guarantee it will hold on outer held-out games. All outer outcomes,
+including regressions, are reported.
+
+Primary: corrected custom versus original retuned custom.
+Secondary: corrected standard RF versus original standard RF.
+Secondary control: corrected versus original custom at fixed5/6.
+No learner-selection procedure, final full fit, already-seen benchmark replay,
+fresh label collection, deployment, or outcome-driven rerun was performed.
+
+80 fits completed in51.2 seconds, peak resident memory approximately300 MB.
+Both original learner score vectors reproduced exactly (maximum difference0),
+and every original baseline award reproduced on all3,724 rows.
+
+UNCERTAINTY AND INTERPRETATION
+
+The paired group-bootstrap95% interval for the primary net correct count is
+[-8,+2], approximately[-0.88,+0.22] recall percentage points. Wrong-count
+difference is[0,0] because every original negative decision is unchanged here;
+this does not guarantee unchanged errors on new data. The standard RF net
+correct interval is[-19,-5], and its wrong-count interval is[-3,+3]. These
+intervals condition on fitted predictions and omit refitting and accumulated
+research-selection uncertainty.
+
+The corrected feature states the chess fact more faithfully, but that fact
+occurs in both classes and is not by itself a useful award distinction in this
+test. We have no evidence here for more recall from unmasking it alone. The
+experiment does not prove that all mating information is useless, that richer
+conditional structure cannot help, or that the entire matching ceiling has
+been reached. It does narrow the proposed simple encoding fix: under the
+tested learners and evaluation, it fails the desired improvement criterion.
+
+This corpus is enriched and repeatedly studied. These are grouped development
+results, not live-site performance estimates or fresh prospective confirmation.
+The experiment refits research learners; it is not a reevaluation of the deployed
+848-example model on its training data. Ratings were not used.
+
+VERIFICATION AND ARTIFACTS
+
+Parent verification independently recomputed every arm's award from its saved
+score, original guards and fold-selected cutoff; checked pooled and fold counts,
+changed-key sets, all original scores/awards, group/alias/position isolation,
+feature parity and frozen hashes. Inner selected cutoffs satisfy the recorded
+reference count/fraction constraints. All checks passed.
+
+EXTRACTION-PROTOCOL.json / extract.mts / FEATURES.json / EXTRACTION.json:
+single-feature definition, extraction and hashes.
+FEATURE-VERIFICATION.json: independent legal-witness checks.
+EVAL-PROTOCOL.json / evaluate.py / PREDICTIONS.json / RESULTS.json:
+frozen fitting protocol, all held-out scores, cutoffs, counts and uncertainty.
+verify.py / VERIFICATION.json: independent artifact and decision checks.
+
+Protocol wording erratum only: EVAL-PROTOCOL describes custom leaf probabilities
+as "raw weighted". The imported original Tree and actual experiment use raw
+bootstrap-window proportions; class weighting affects split selection. Frozen
+protocol/code bytes were retained, and this clarification changes no result.

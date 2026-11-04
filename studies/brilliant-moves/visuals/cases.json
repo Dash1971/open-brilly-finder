@@ -1,0 +1,78 @@
+[
+  {
+    "id": "quiet-offer-bg2",
+    "title": "A quiet move can be brilliant",
+    "subtitle": "Hikaru \u00b7 Chess.com labels 27.Bg2 Brilliant",
+    "fen_before": "k3r3/1pq2p1p/p2r2b1/2b1n3/3N3Q/2P1B1PB/P4P1P/RR4K1 w - - 4 27",
+    "moves": [
+      "Bg2",
+      "Bxb1",
+      "Rxb1"
+    ],
+    "orientation": "white",
+    "captions": [
+      "27.Bg2 leaves the rook on b1 available to Black\u2019s bishop.",
+      "If Black plays ...Bxb1, the bishop takes that rook.",
+      "28.Rxb1 recaptures the bishop: White trades a rook for a bishop."
+    ],
+    "line_label": "After 27.Bg2, ...Bxb1 Rxb1 is a conditional illustration.",
+    "source": "https://www.chess.com/analysis/game/live/186567991235/review?move=52",
+    "initial_caption": "Position before 27.Bg2."
+  },
+  {
+    "id": "pawn-win-excellent",
+    "title": "An offer that finishes a pawn up",
+    "label": "Excellent",
+    "game_id": "186311900336",
+    "ply": 28,
+    "fen_before": "r2r2k1/pp1nppbp/1qn3p1/4P3/5Pb1/P2B1N2/1P4PP/RNB1QR1K b - - 4 14",
+    "moves": [
+      "Ndxe5",
+      "Nxe5",
+      "Nxe5",
+      "fxe5",
+      "Rxd3"
+    ],
+    "captions": [
+      "Black takes a pawn and offers a knight.",
+      "White takes that knight.",
+      "Black\u2019s second knight recaptures.",
+      "A pawn takes the second knight.",
+      "The rook takes a bishop on another square."
+    ],
+    "conclusion": "Two knights for a knight and bishop. Black gains one pawn.",
+    "source": "https://www.chess.com/analysis/game/live/186311900336/review?move=27",
+    "subtitle": "Chess.com: Excellent \u00b7 material comparison",
+    "orientation": "black",
+    "line_label": "Conditional capture sequence; these replies are not forced.",
+    "outside_benchmark": true
+  },
+  {
+    "id": "pawn-win-brilliant",
+    "title": "A similar exchange receives Brilliant",
+    "label": "Brilliant",
+    "game_id": "186305472636",
+    "ply": 18,
+    "fen_before": "r2qk2r/pb1nbppp/1p1p1n2/2pPp1B1/2P1P3/2NB1P2/PP2N1PP/R2QK2R b KQkq - 4 9",
+    "moves": [
+      "Nxd5",
+      "Nxd5",
+      "Bxd5",
+      "cxd5",
+      "Bxg5"
+    ],
+    "captions": [
+      "Black takes a pawn and offers a knight.",
+      "White takes that knight.",
+      "A bishop recaptures the white knight.",
+      "A pawn takes that bishop.",
+      "The other bishop takes a bishop elsewhere."
+    ],
+    "conclusion": "A knight and bishop for a knight and bishop. One pawn gained.",
+    "source": "https://www.chess.com/analysis/game/live/186305472636/review?move=17",
+    "subtitle": "Chess.com: Brilliant \u00b7 material comparison",
+    "orientation": "black",
+    "line_label": "Conditional capture sequence; these replies are not forced.",
+    "outside_benchmark": true
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "started_at": "2026-11-03T00:02:02+00:00",
+    "collection_deadline": "2026-11-03T00:47:02+00:00",
+    "accounts": [
+      "nelsi",
+      "hansen",
+      "KNVB",
+      "GothamChess",
+      "Hikaru"
+    ],
+    "target": {
+      "fresh_negatives": 20,
+      "gallery_positives": 20
+    },
+    "split_policy": "Hikaru games -> player_holdout; other SHA256(game_id)%5==0 -> game_holdout; rest development. Never split positions from a game.",
+    "split_frozen_before_tuning": true,
+    "tuning_authorized": false,
+    "official_pgn_documentation": [
+      "https://www.chess.com/news/view/published-data-api",
+      "https://support.chess.com/en/articles/8705305-how-do-i-get-a-pgn-of-my-game"
+    ],
+    "label_absence_means": "unknown"
+  },
+  "exported_at": "2026-11-03T00:31:12.863757+00:00",
+  "validation": {
+    "games": 19,
+    "positions": 1924,
+    "observations": 60,
+    "indexing_mismatches": [],
+    "gallery_board_placements_checked": 20,
+    "source_move_indices_checked": 60,
+    "observations_waiting_for_pgn": [],
+    "gallery_fresh_disagreements": [
+      {
+        "game_id": "184403311373",
+        "ply": 59,
+        "statuses": "gallery_brilliant,fresh_confirmed_non_brilliant"
+      }
+    ],
+    "label_counts": [
+      {
+        "label_status": "fresh_confirmed_brilliant",
+        "n": 19
+      },
+      {
+        "label_status": "fresh_confirmed_non_brilliant",
+        "n": 21
+      },
+      {
+        "label_status": "gallery_brilliant",
+        "n": 20
+      }
+    ],
+    "split_counts": [
+      {
+        "split": "development",
+        "n": 12
+      },
+      {
+        "split": "game_holdout",
+        "n": 3
+      },
+      {
+        "split": "player_holdout",
+        "n": 4
+      }
+    ]
+  }
+}

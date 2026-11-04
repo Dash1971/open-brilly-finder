@@ -1,0 +1,7 @@
+{
+  "at_utc": "2026-11-03T07:49:42.477003+00:00",
+  "reason": "Owner explicitly asks to use available resources without memory pressure; normal pressure level1 with fresh-tab collectors.",
+  "allow": "One Stockfish process,one thread,64MB hash may overlap last browser captures; no other engine/render job.",
+  "classifier_selection_labels_node_budgets_unchanged": true,
+  "monitor": "Check memory pressure/swap; stop scheduling collection if elevated, close own tabs, avoid broad recovery/tooling."
+}

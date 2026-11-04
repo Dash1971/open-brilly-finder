@@ -1,0 +1,16 @@
+{
+  "before_final_utc": "2026-11-03T19:22:25.795915+00:00",
+  "reason": "Automatic heartbeat requires a final; check root-owned process survival across primary-turn final rather than assuming subagent cleanup behavior is identical.",
+  "importer_pid": 52372,
+  "importer_session": 38764,
+  "memory_pid": 63756,
+  "memory_session": 33737,
+  "temporary_cadence_minutes": 1,
+  "restore_cadence_minutes_if_alive": 10,
+  "until_utc": "2026-11-04T00:06:00Z",
+  "no_duplicate_processes": true,
+  "checked_at_utc": "2026-11-03T19:24:12.237880+00:00",
+  "root_processes_survived_primary_final": true,
+  "evidence": "ps after final shows52372/63756 both Ss with same PPID67649; MEMORY-STATE advanced to19:23:16 after19:22:25 final; importer process alive and last import19:22:24 with no new restart.",
+  "restored_cadence_minutes": 10
+}

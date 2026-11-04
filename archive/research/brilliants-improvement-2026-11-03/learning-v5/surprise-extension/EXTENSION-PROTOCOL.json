@@ -1,0 +1,40 @@
+{
+  "scope": "One authorized feature extension on all848unblindeddevelopment cases; grouped CV diagnostic only, no new independent validation.",
+  "frozen_at_utc": "2026-11-03T08:55:00.103975+00:00",
+  "base_feature_sha256": "d1e97b2c3346994fbc4d73b289c6b6763ea454bdbc8d8935370c643aeceaaa3a",
+  "shallow_analysis_sha256": "8a7b9c72675c1de4506fe55893582710374df7b99d8b53d5515919a91f32b907",
+  "base_cart_source_sha256": "5fd6bb9d20c8fa28ab2bf7ca0d36b20172075983f138fdf6d6781375d0133db4",
+  "model": {
+    "maximum_depth": 4,
+    "minimum_leaf_distinct_cases": 15,
+    "negative_cost": 5,
+    "operating_points": [
+      "weighted_cost5_default",
+      "RAW_unweighted_leaf_fraction>=0.98"
+    ]
+  },
+  "new_predictors": [
+    "weak_mapped_loss_pp",
+    "weak_played_root_present",
+    "weak_played_root_rank",
+    "weak_same_root_gap_pp",
+    "weak_after_cp",
+    "strong_minus_weak_after_cp",
+    "weak_minus_strong_loss_pp",
+    "weak_best_differs_from_strong",
+    "strong_minus_weak_before_depth",
+    "weak_window_missing"
+  ],
+  "group_folds": "Exactly the original434connected groups/fivefolds; no regrouping or outcome-based resampling.",
+  "hard_guards": "Unchanged both-windowAND plus raw-offer/two-root/quality/after-floor/confidence masks.",
+  "window_mapping": "Current shallow before.current/after.current; prior shallow before.previous/after.previous (terminal after uses current), matched to exact same strong baseline case and FENs. Missing roots never invented.",
+  "limits": "One feature-set extension; no depth/threshold grid, model selection, new engine calls, browser calls or further expansion.",
+  "rank_AUC": "Descriptive current-window weak_minus_strong_loss_pp among cases passing both hard eligibility masks; expected direction larger=>Brilliant, no threshold fitting.",
+  "inspiration": {
+    "paper": "Predicting User Perception of Move Brilliance in Chess",
+    "authors": "Kamron Zaidi and Michael Guerzhoy",
+    "year": 2024,
+    "url": "https://arxiv.org/abs/2406.11895",
+    "interpretation": "Weaker-engine disagreement was associated with perceived human brilliance in that study, not proof of Chess.com classification criteria or this node-budget proxy."
+  }
+}

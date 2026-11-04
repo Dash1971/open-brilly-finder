@@ -1,0 +1,90 @@
+{
+  "frozen_at_utc": "2026-11-04T04:47:25.289234+00:00",
+  "scope": "One prespecified paired feature ablation on repeatedly used development data. Replace only mating_acceptance with exact same saved-state predicate called without EC prerequisite. No app/model changes, engine queries, new labels, full fit, model selection procedure, tuning or sweep.",
+  "source_sha256": {
+    "mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/fit.py": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f",
+    "research/brilliant-standard-learners-2026-11-04/PREDICTIONS.json": "ae845d2fd687262f2c41cbdaa2054d85c1f3eb48120a602d30a8a4b8a4dc4a82",
+    "research/brilliant-independent-mate-2026-11-04/EXTRACTION-PROTOCOL.json": "de36bab19235df3d37bbda1bd9a242a060cd6003c59e1516df3170b309314a2c",
+    "research/brilliant-independent-mate-2026-11-04/extract.mts": "e4999a2af04665ee5de068ac9044f3132d3d8b55c2100628e41dda1bb2816764"
+  },
+  "script_sha256": "5ff24ce92fa9471b0ce17f0deeb70ecfd629464070cc303c8e9713ed5a058555",
+  "feature_sha256": "f26d2aae7c4d1a5bd8b7eb0ea0bbf2082b914eacddfa7e65292d2f685346a0a7",
+  "extraction_sha256": "0502ed2628899b77b85d2e14984fb4d79c1281125112dbb8ef1dbb6ae2058775",
+  "control": "150 columns in identical order (75 feature values plus75 missing indicators); only mating_acceptance value replaced in both windows. No missingness, eligibility, confidence, physical gates, row selection or weight changes. Both window scores minimized per case.",
+  "counts": {
+    "cases": 3724,
+    "positive": 917,
+    "groups": 972
+  },
+  "learners": {
+    "custom": "Original Tree AST;64 trees, max depth6, >=8 distinct moves per leaf, mtry=isqrt(150)=12; whole-group bootstrap; raw weighted leaf probabilities; negative split cost5; exact original seed streams",
+    "standard_rf": {
+      "implementation": "sklearn1.7.2 RandomForestClassifier",
+      "n_estimators": 128,
+      "max_depth": 6,
+      "min_samples_leaf": 16,
+      "max_features": 12,
+      "bootstrap": true,
+      "class_weight": null,
+      "n_jobs": 1,
+      "sample_weight": "Same per-move initial equal total eligible-window weight; unweighted classes"
+    }
+  },
+  "kinds": [
+    "custom",
+    "custom_corrected",
+    "standard_rf",
+    "standard_rf_corrected"
+  ],
+  "arms": [
+    "custom_fixed",
+    "custom_retuned",
+    "custom_corrected",
+    "custom_corrected_fixed",
+    "standard_rf",
+    "standard_rf_corrected"
+  ],
+  "primary": "custom_corrected versus custom_retuned: more true positives without extra false positives on pooled outer OOF; report negative outcome equally. Corrected custom fixed5/6 is secondary control.",
+  "secondary": "standard_rf_corrected versus standard_rf; no pooled outer-label cutoff selection or winner selection.",
+  "folds": {
+    "outer": 5,
+    "inner": 3,
+    "outer_salt": "mute-optimization-v1-outer",
+    "inner_salt": "mute-optimization-v1-inner-{outer_fold}",
+    "mapping": "Sorted unique groups by(sha256(salt+colon+group),group), index modulo fold count",
+    "seed_prefix": 20261103,
+    "inner_seed": [
+      10,
+      "outer_fold",
+      "inner_fold"
+    ],
+    "outer_seed": [
+      20,
+      "outer_fold"
+    ],
+    "custom_tree_seed": "SeedSequence([20261103,*seed,tree_number])",
+    "rf_seed": "SeedSequence([20261103,*seed]).generate_state(1)[0]"
+  },
+  "threshold_selection": "Each arm chooses cutoff independently using only inner OOF labels. Reference is original custom at5/6. Maximize true positives subject BOTH to FPcount<=reference FPcount and wrong fraction<=reference wrong fraction (cross product). Exact unique observed min-window scores; keep ties together. Tie: fewerFP, then higher cutoff. Empty awards if no feasible nonempty point. No outer labels used. Fixed corrected control uses5/6.",
+  "verification": "All group/alias/canonical-position integrity assertions; no train/test group overlap. Unchanged149columns and all missingness exact. Original custom and RF outer scores match saved standard-learners <=1e-12 on all3724 cases, original custom_fixed/custom_retuned/RF awards exact; finite scores. Inputs, extractor artifacts and evaluator hash verified before first fit.",
+  "reporting": "All3724 outer OOF scores+awards, five fold inner cutoffs and metrics, pooled and fold metrics, gained/lost correct/wrong keys, eligibleEC true/false strata, original429 eligible positive misses from originalcustom_retuned, feature flip counts. EC/miss breakdowns are descriptive and selected on same outer labels, not independent validation.",
+  "uncertainty": {
+    "method": "Paired whole-group bootstrap conditional on fixed outer OOF predictions",
+    "draws": 2000,
+    "seed": 20261104,
+    "groups_per_draw": 972,
+    "interval": "2.5%,97.5% percentile for TP,recall,FP differences",
+    "caveat": "Excludes refitting uncertainty and repeated-research selection bias"
+  },
+  "limits": {
+    "wall_seconds": 600,
+    "rss_bytes": 536870912,
+    "threads": 1,
+    "fits": 80,
+    "fit_formula": "5outer*(3inner+1outer)*4kinds",
+    "automatic_retry": false
+  },
+  "environment": "/private/tmp/brilliant-learner-2026-11-04-venv/bin/python",
+  "reproduce": "/private/tmp/brilliant-learner-2026-11-04-venv/bin/python -u research/brilliant-independent-mate-2026-11-04/evaluate.py"
+}

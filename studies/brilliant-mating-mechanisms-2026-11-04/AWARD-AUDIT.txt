@@ -1,0 +1,55 @@
+AWARD AUDIT — bounded chess comparison of correct_award (4) and wrong_award (8)
+2026-11-04. No classifier, tuning, new engine searches, browser work, or source/case changes.
+Evidence: saved current-window roots and acceptance roots in the two JSON files, board replay with python-chess. Scores below are mover-relative centipawns from saved roots, not new analysis. A second saved root is evidence about that alternative, not an exhaustive assertion about all alternatives. All additional short recapture lines quoted below were replayed legally. Confidence describes chess mechanism, not knowledge of Chess.com's private labeling procedure.
+
+FINDING
+A mating punishment for taking material is real in all twelve examples; it is not sufficient to separate these labels. There is a useful qualitative distinction between a genuinely unrecoverable offered piece and a defended/forked piece that is merely tactically immune. Five Great examples have an immediate legal recapture and several are urgent defensive resources. But neither distinction is a reliable separator: Great Ba6 offers an undefended moved bishop with no recapture, just as Brilliant Rd8 offers an undefended moved rook. Brilliant Bxg3 is also an urgent answer to a rook attack. These are direct counterexamples to turning the qualitative tendency into a rule.
+
+The two Best examples have a plausible already-favorable/materially-winning explanation, but this is not demonstrated as a common sufficient rule: Brilliant Qh5 has a saved +273 alternative and Brilliant Qxg4 a +136 alternative. Exact numerical thresholds would be speculative and should not be inferred from twelve selected cases.
+
+FOUR BRILLIANTS
+
+166826414194:56, 28...Bxg3 (high mechanism confidence)
+The bishop d6 captures White's knight g3, which was attacking Black's rook f5. Vacating d6 newly opens White Qd3's route to Black Qd7. The offered queen is undefended: 29.Qxd7 Rxf1#; there is no queen recapture. The bishop g3 controls h2 and supports the back-rank net. This is a real queen offer combined with removal of an attacker, not a move that loses material on the best reply: White should play Qxg3+ and the saved best line continues ...Rg5. Saved best/second before: +154/-463; after best defense +133. It is a unique favorable defensive resource among the saved top two, so a blanket 'defensive or only move means Great' would incorrectly exclude it. The accepted offer is the stationary queen, not the bishop that moved.
+
+173510361166:31, 16.Qh5 (high mechanism confidence)
+Offers White Bg5 to ...Bxg5 while creating a decisive mating attack: ...Bxg5 Qxf7#. Bg5 appears defended by Qh5, but Qxg5 is not a safe way to recover it: Qh5 Bxg5 Qxg5 Qxg5, because Black Qd8's diagonal to g5 opens when Be7 vacates e7. The saved acceptance's mate is genuine and the apparent queen defense does not cancel the material offer. Saved best is mate in 3; saved second Nxf7 is +273. Thus Brilliant is possible here even with another favorable continuation. Best defense ...Kg8 Bh7+ Kh8 Nxf7# shows a broader mating net rather than a trap relying on acceptance. The offered bishop was already attacked before Qh5; merely asking whether a piece was already attacked cannot explain the label.
+
+169151816360:29, 15.Qxg4 (high mechanism confidence)
+White's queen captures a pawn and deliberately lands undefended in Be6's diagonal. ...Bxg4 has no queen recapture; instead Ne7# or Nxf6# moves Nd5 and opens Ba2's diagonal to Kg8. Both knight moves also check Kg8, giving double-check mating mechanisms after Be6 has left e6. Black can refuse the queen (saved ...Kf7 or ...Re8); this is not a forced mate under best defense. Saved best/second +309/+136, after +314. A bona fide queen offer for positional/tactical control can therefore be Brilliant without forced mate or a uniquely nonlosing move.
+
+174182921870:70, 35...Rd8 (high mechanism confidence)
+Rf8 moves to d8, attacks Qd5 along the file, and offers itself undefended. Qxd8 removes White's queen from the d5-e4-f3-g2 diagonal, so ...Qxg2# follows. There is no recapture on d8. White should decline: saved Re2 Qxe2 Qf3 Qxf3 gxf3 leads to a winning Black endgame. Saved best/second +600/+67; after +593. This is an actual new rook offer with queen deflection from mating-square defense.
+
+SIX GREATS
+
+173487499542:32, 16...Bh3 (high mechanism confidence)
+White Nc7 already forks Ra8 and Re8. Bh3 sets ...Qxg2# and tells White to answer the threat instead of cashing the fork: Nxa8 or Nxe8 Qxg2#. The rooks are defended and immediately recapturable: Nxa8 Rxa8; Nxe8 Rxe8 or Nxe8. Acceptance gives White an exchange rather than a completely free rook if Black recaptures. Saved best defense g3 ...Red8 then Nxa8 ...Rxd1 illustrates why the material is a temporary tactical issue. Saved best/second +152/-96; after +148. This resembles a forcing answer to an existing fork more than a new investment. Nonetheless Brilliant Bxg3 also answers an existing attack, so that distinction is suggestive only.
+
+167315486838:54, 27...Qe6 (high mechanism confidence)
+Rg7 is already threatened by White Rg4 and pinned by Qf6 against Kh8. Qe6 counters that threat and offers a queen exchange: best Qxe6 fxe6, approximately equal. Rxg7 vacates g4 and opens Qe6-f5-g4-h3, permitting ...Qxh3#. Rg7 has a legal defender, Rg8, but routine recapture loses: Qe6 Rxg7 Rxg7 Qxg7#. This is tactical immunity from a clearance mate, not an undefended-rook investment. Saved best/second +43/-699; after +34. A dramatic only-saving move is consistent with Great, but the chess evidence does not prove that drawing rather than winning is the label's cause.
+
+184007310619:65, 33.Rxf2 (high mechanism confidence)
+White is in check from Nf2. Legal replies are Kg2, Kg1, Qxf2, Rxf2; Rxf2 is therefore a required defensive capture, not an optional attack-building investment. It takes a knight, and the rook is defended by Qf7. ...Rxf2 permits Qxg7#. If White mechanically recaptures instead, Rxf2 Rxf2 Qxf2 Qxf2, Black's queen c2 wins the white queen along the second rank. Saved best line ...Rxe5 Rxe2 Qxe2 yields about equality (+63 before/+69 after); saved second Kg1 is mate against White. This is the strongest mandatory-defense example. Compare Brilliant Bxg3: also a capture removing a threat, but not an actual check evasion and it exposes a different queen.
+
+171360742446:77, 39.Qf7 (high mechanism confidence)
+Creates forced mate: ...Rxg2+ Rxg2 Bxg2 Qxh7#. The superficial mate-in-one witness ...Bxg2 Qg7#/Qxh7# omits Black's important checking resource ...Rxg2+. Bg2 was already attacked and is defended by Rg1 and Kh2; immediate recapture is possible but not a complete material recovery, because the second Black attacker follows. This is a real mating attack with a multi-piece transaction, not merely an empty threat. Saved best mate in 3; second Qxc2 -323. It strongly supports 'only winning move' as an explanation of Great, but forced mate plus sacrifice also occurs in Brilliant Qh5, so those properties do not distinguish the awards.
+
+171609570218:62, 31...Qf6 (high mechanism confidence)
+Nf5 attacks Black Qe7 and Rg7. Qf6 moves the queen out of the fork, protects g7, and makes the knight's departure from f5 open the queen's route to f2: Nxg7 Qxf2#. Immediate Qxg7 or Kxg7 is legal, so this is initially an exchange concession rather than an undefended rook. Saved best/second +437/+20; after +453. The mate is a clearance punishment for cashing a fork. Defensive-fork resolution and legal recapture are meaningful differences from Rd8/Qxg4, but not universal label explanations.
+
+173700284016:22, 11...Ba6 (high mechanism confidence; decisive counterexample)
+Bc8 moves to a6, newly offers itself undefended to Qe2, and pins Qe2 to Kf1 along a6-b5-c4-d3-e2-f1. White Be4 was already attacking undefended Ra8; the pin means that after Bxa8, Qe2 cannot answer ...Qd1#. White can also break the pin by taking the bishop, Qxa6, but vacating e2 again removes the defender of d1: ...Qd1#. Neither offered piece has a recapture on its square. Saved best Bd3 ...Rd8; best/second +266/-91, after +271. This is voluntary placement of the moved piece en prise with mate as compensation, exactly the broad mechanism attributed to Brilliant Rd8. Therefore 'new hanging moved piece/no recapture/deflection mate' cannot be the entire Brilliant criterion. The bishop pin is concrete; explaining the Great label requires additional evidence beyond this geometry.
+
+TWO BESTS
+
+179135871509:66, 33...Qf6 (high mechanism confidence; medium label-explanation confidence)
+White's Rg2 already attacks Bg5. Qf6 threatens ...Qxb2# and leaves Bg5 apparently defended by the queen, but Rxg5 Qxg5 Rxg5 shows that Qf6 cannot safely recapture because White Rg1 remains on the g-file. Thus the bishop offer is a genuine material concession if Black forgoes mate. Saved best/second +420/+165, after +379; Black has queen plus rook against two rooks, with equal minor-piece and pawn counts (the local raw material score is +500). Already favorable alternatives/material are a plausible reason the move stays Best, but not enough to establish Chess.com's internal rule. The feature named converted_material_or_endgame is true here, but that is a local heuristic, not evidence of Chess.com's reasoning.
+
+147424650238:25, 13.Qh5 (high mechanism confidence; medium label-explanation confidence)
+Leaves Ne4 undefended to ...dxe4 and threatens Qf7#/Qg6#. Acceptance is an actual free knight, with no recapture; ...dxe4 Qf7# or Qg6#. The knight was already attacked before Qh5. Saved best mate in 4; second Bxf4 +402; best defense ...Qe8 Qxe8 Rg8 Qg6+ Kh8 Nf7#. This is the closest forced-mate comparison with Brilliant Qh5: both leave an attacked minor piece while finding mate; one has a +402 saved alternative, the other +273. A difference in how comfortable the alternatives are is plausible, but numerical cutoff or rating speculation would go beyond these records.
+
+WHAT THE EVIDENCE DOES AND DOES NOT SUPPORT
+High confidence: piece values and attack geometry alone, presence/absence of recapture alone, mate-in-one acceptance alone, forced mate alone, moved/stationary offer alone, and only-winning/only-saving alone each fail as universal separators in this set. Great Ba6 is the key unrecapturable-voluntary-offer counterexample. Best Qh5 is the key forced-mate/free-minor counterexample. Brilliant Bxg3 is the key defensive-only-resource counterexample; Brilliant Qh5 and Qxg4 are counterexamples to requiring all alternatives to be bad.
+Moderate confidence: five of six Greats arise as urgent management of previously attacked pieces, a fork, or check; many have defended victims and simple-looking material alternatives. This makes the group look more like precise tactical resourcefulness than a uniform new material investment. But Ba6 and the Brilliant cases prevent this tendency from becoming a decision rule.
+Low confidence: any claim to have reverse-engineered a hidden Chess.com award test. The sample is selected, small, and its local engine roots are not guaranteed to equal Chess.com's search state. No classifier change is warranted solely from this comparison.

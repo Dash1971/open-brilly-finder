@@ -1,0 +1,54 @@
+{
+  "frozen_at_utc": "2026-11-03T13:01:08.976419+00:00",
+  "source_freeze_sha256": "0f52334e2b730acf58a44785aa09b4bc8dbd3c8fd68ca57b4206a4efb300e9a8",
+  "adapter_freeze_sha256": "348be630ab83301a263dbd50cc1808b2c07acca158c13f196fb4be17d19308a1",
+  "files": {
+    "adapter/sf18-collect.py": {
+      "sha256": "c3b923604b99481100d6da620cdf11689494b579520e7f8186235bc856cfc1bd",
+      "bytes": 8503
+    },
+    "adapter/prepare-supplement.mts": {
+      "sha256": "c04788037674af649e503c77b69a1c0651a071378d504547870d20b0d9564a12",
+      "bytes": 3151
+    },
+    "adapter/discover-panel.mts": {
+      "sha256": "505648e444069244a228294e260538fbb8350f070682d9e089d3ce5de08b06ed",
+      "bytes": 4196
+    },
+    "adapter/freeze-panel-activations.mts": {
+      "sha256": "e195a9bae63e96bc7b69513c7dcb8a09031b0be757809805535137e19d9ab04f",
+      "bytes": 2682
+    },
+    "COLLECTION-CONTRACT.md": {
+      "sha256": "2a8b9f0c08cd2df0908881fe3cb17f5b4308469a834ad34229eb3665a4c33143",
+      "bytes": 5181
+    }
+  },
+  "inherited_packed_search_byte_equal": true,
+  "engine_configuration": {
+    "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+    "nodes": 300000,
+    "threads": 1,
+    "hash_mb": 64,
+    "history": "full PGN",
+    "session": "clean pergame; chronological requested positions"
+  },
+  "caps": {
+    "core_snapshots": 600,
+    "supplement_snapshots": 1200,
+    "panel_candidates": 300,
+    "panel_snapshots": 900,
+    "recorded_engine_seconds_per_stream": 600,
+    "wall_seconds_per_stream": 600,
+    "panel_games": 500,
+    "distinct_game_activations": 30
+  },
+  "fresh_engine_runs": 0,
+  "panel_discovery_runs": 0,
+  "syntax_checks": "Python AST and Node --check passed; no fresh input execution",
+  "finalized_at_utc": "2026-11-03T13:02:06.011526+00:00",
+  "initial_manifest_preserved": "COLLECTION-FREEZE.initial.json",
+  "finalization": "Wire approved before+after known-position exclusions from pilot frozen500 pool before any discovery/engine run; no predictor change.",
+  "panel_pool_freeze_sha256": "4886ec8d28327dc9ec373738b06c7fc0e7b398cbe5a848344c0ea39ad0986e24",
+  "known_position_exclusions_sha256": "18433ffb7bb17143cd00e7491c00d776ea93bcda606f894b5cb8852689467d0c"
+}

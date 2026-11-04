@@ -1,0 +1,266 @@
+{
+  "scope": "Capacity diagnostic only: all848 are unblinded development. Grouped outer-fold estimates are not a new independent validation or production-model approval.",
+  "protocol_sha256": "8073938391ac975e6957e5b98ea3aafb8c139c16cb2238cbbab21c32e1df82bd",
+  "script_sha256": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f",
+  "input_sha256": "d1e97b2c3346994fbc4d73b289c6b6763ea454bdbc8d8935370c643aeceaaa3a",
+  "presets": {
+    "frozen_at_utc": "2026-11-03T09:24:00.658442+00:00",
+    "scope": "Fixed higher-capacity diagnostic, not prospective validation or production approval. All848 cases unblinded development. No post-result tuning.",
+    "input_sha256": "d1e97b2c3346994fbc4d73b289c6b6763ea454bdbc8d8935370c643aeceaaa3a",
+    "existing_cart_sha256": "5fd6bb9d20c8fa28ab2bf7ca0d36b20172075983f138fdf6d6781375d0133db4",
+    "seed": 20261103,
+    "trees": 64,
+    "maximum_depth": 6,
+    "minimum_leaf_distinct_original_moves": 8,
+    "negative_class_cost": 5,
+    "base_predictors": 75,
+    "design_features": 150,
+    "representation": "Exactly existing CART:75 numeric/Boolean predictors plus75 missing indicators, NaN routes left. No identity/account/rating/labels/coach fields.",
+    "features_per_split": 12,
+    "feature_sampling": "Uniform without replacement independently at every split.",
+    "bootstrap": "Sample whole training game/normalized-before-position union components with replacement, count=number of training components. Include all groups in population. Apply sampled multiplicity to all eligible window rows of that group; never resample windows independently.",
+    "training_window_weight": "(5 if negative else1)/number of eligible windows for the original move, as existing CART. Bootstrap rows are replicated by group multiplicity.",
+    "raw_leaf_probability": "Raw positive bootstrap window rows / all bootstrap window rows in the leaf. No class-cost weighting in p; minleaf counts unique original moves, not replicated rows. Forest window p is arithmetic mean of64 leaf RAW p. Not calibrated.",
+    "outer_evaluation": "Exactly existing five grouped outer folds in features.json. Each test fold is excluded as whole unions. Separate descriptive full-data forest.",
+    "operating_points": [
+      {
+        "name": "cost5",
+        "threshold": 0.8333333333333334
+      },
+      {
+        "name": "strict98",
+        "threshold": 0.98
+      }
+    ],
+    "final_award": "Both window mean RAW p >=threshold AND original eligibility in both windows AND original confidence_sufficient.",
+    "case_score_for_AUC": "min(current_mean_p,previous_mean_p), reported both raw and with ineligible/insufficient cases set to0. Case-level AUC, not independent-window performance.",
+    "importance": "Mean per-tree normalized weighted-Gini gain, with expanded-feature and collapsed missing-indicator views. Descriptive, not causal.",
+    "resource_caps": {
+      "wall_seconds": 180,
+      "peak_RSS_bytes": 268435456,
+      "python_workers": 1,
+      "engines": 0
+    },
+    "outputs": [
+      "predictions.json",
+      "RESULTS.json",
+      "feature-importance.json",
+      "forest-full.json",
+      "MODEL-AUDIT.json",
+      "bootstrap-groups.json"
+    ],
+    "no_tuning_after_results": true
+  },
+  "baseline_v4_descriptive": {
+    "n": 848,
+    "TP": 322,
+    "FN": 91,
+    "FP": 28,
+    "TN": 407,
+    "agreement": 0.8596698113207547,
+    "recall": 0.7796610169491526,
+    "false_award_rate": 0.06436781609195402,
+    "sample_precision": 0.92,
+    "FN_plus5FP": 231
+  },
+  "hard_eligibility_ceiling": {
+    "n": 848,
+    "TP": 394,
+    "FN": 19,
+    "FP": 134,
+    "TN": 301,
+    "agreement": 0.8195754716981132,
+    "recall": 0.9539951573849879,
+    "false_award_rate": 0.3080459770114943,
+    "sample_precision": 0.7462121212121212,
+    "FN_plus5FP": 689
+  },
+  "results": {
+    "cost5": {
+      "threshold": 0.8333333333333334,
+      "grouped_outer_cv": {
+        "n": 848,
+        "TP": 223,
+        "FN": 190,
+        "FP": 2,
+        "TN": 433,
+        "agreement": 0.7735849056603774,
+        "recall": 0.5399515738498789,
+        "false_award_rate": 0.004597701149425287,
+        "sample_precision": 0.9911111111111112,
+        "FN_plus5FP": 200
+      },
+      "folds": {
+        "0": {
+          "n": 178,
+          "TP": 43,
+          "FN": 44,
+          "FP": 1,
+          "TN": 90,
+          "agreement": 0.7471910112359551,
+          "recall": 0.4942528735632184,
+          "false_award_rate": 0.01098901098901099,
+          "sample_precision": 0.9772727272727273,
+          "FN_plus5FP": 49
+        },
+        "1": {
+          "n": 186,
+          "TP": 43,
+          "FN": 46,
+          "FP": 0,
+          "TN": 97,
+          "agreement": 0.7526881720430108,
+          "recall": 0.48314606741573035,
+          "false_award_rate": 0.0,
+          "sample_precision": 1.0,
+          "FN_plus5FP": 46
+        },
+        "2": {
+          "n": 198,
+          "TP": 56,
+          "FN": 43,
+          "FP": 0,
+          "TN": 99,
+          "agreement": 0.7828282828282829,
+          "recall": 0.5656565656565656,
+          "false_award_rate": 0.0,
+          "sample_precision": 1.0,
+          "FN_plus5FP": 43
+        },
+        "3": {
+          "n": 136,
+          "TP": 42,
+          "FN": 25,
+          "FP": 0,
+          "TN": 69,
+          "agreement": 0.8161764705882353,
+          "recall": 0.6268656716417911,
+          "false_award_rate": 0.0,
+          "sample_precision": 1.0,
+          "FN_plus5FP": 25
+        },
+        "4": {
+          "n": 150,
+          "TP": 39,
+          "FN": 32,
+          "FP": 1,
+          "TN": 78,
+          "agreement": 0.78,
+          "recall": 0.5492957746478874,
+          "false_award_rate": 0.012658227848101266,
+          "sample_precision": 0.975,
+          "FN_plus5FP": 37
+        }
+      },
+      "full_fit_resubstitution_NOT_validation": {
+        "n": 848,
+        "TP": 247,
+        "FN": 166,
+        "FP": 0,
+        "TN": 435,
+        "agreement": 0.8042452830188679,
+        "recall": 0.5980629539951574,
+        "false_award_rate": 0.0,
+        "sample_precision": 1.0,
+        "FN_plus5FP": 166
+      }
+    },
+    "strict98": {
+      "threshold": 0.98,
+      "grouped_outer_cv": {
+        "n": 848,
+        "TP": 16,
+        "FN": 397,
+        "FP": 0,
+        "TN": 435,
+        "agreement": 0.5318396226415094,
+        "recall": 0.0387409200968523,
+        "false_award_rate": 0.0,
+        "sample_precision": 1.0,
+        "FN_plus5FP": 397
+      },
+      "folds": {
+        "0": {
+          "n": 178,
+          "TP": 3,
+          "FN": 84,
+          "FP": 0,
+          "TN": 91,
+          "agreement": 0.5280898876404494,
+          "recall": 0.034482758620689655,
+          "false_award_rate": 0.0,
+          "sample_precision": 1.0,
+          "FN_plus5FP": 84
+        },
+        "1": {
+          "n": 186,
+          "TP": 3,
+          "FN": 86,
+          "FP": 0,
+          "TN": 97,
+          "agreement": 0.5376344086021505,
+          "recall": 0.033707865168539325,
+          "false_award_rate": 0.0,
+          "sample_precision": 1.0,
+          "FN_plus5FP": 86
+        },
+        "2": {
+          "n": 198,
+          "TP": 3,
+          "FN": 96,
+          "FP": 0,
+          "TN": 99,
+          "agreement": 0.5151515151515151,
+          "recall": 0.030303030303030304,
+          "false_award_rate": 0.0,
+          "sample_precision": 1.0,
+          "FN_plus5FP": 96
+        },
+        "3": {
+          "n": 136,
+          "TP": 4,
+          "FN": 63,
+          "FP": 0,
+          "TN": 69,
+          "agreement": 0.5367647058823529,
+          "recall": 0.05970149253731343,
+          "false_award_rate": 0.0,
+          "sample_precision": 1.0,
+          "FN_plus5FP": 63
+        },
+        "4": {
+          "n": 150,
+          "TP": 3,
+          "FN": 68,
+          "FP": 0,
+          "TN": 79,
+          "agreement": 0.5466666666666666,
+          "recall": 0.04225352112676056,
+          "false_award_rate": 0.0,
+          "sample_precision": 1.0,
+          "FN_plus5FP": 68
+        }
+      },
+      "full_fit_resubstitution_NOT_validation": {
+        "n": 848,
+        "TP": 20,
+        "FN": 393,
+        "FP": 0,
+        "TN": 435,
+        "agreement": 0.5365566037735849,
+        "recall": 0.048426150121065374,
+        "false_award_rate": 0.0,
+        "sample_precision": 1.0,
+        "FN_plus5FP": 393
+      }
+    }
+  },
+  "AUC": {
+    "grouped_outer_cv_guarded": 0.9440789290584732,
+    "grouped_outer_cv_raw_min_windows": 0.9065319640421919,
+    "full_fit_guarded_NOT_validation": 0.9622192535693412,
+    "full_fit_raw_NOT_validation": 0.9417717291475328
+  },
+  "elapsed_seconds": 4.804,
+  "peak_rss_bytes": 89718784
+}

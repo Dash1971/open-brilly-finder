@@ -1,0 +1,104 @@
+{
+  "finished_at_utc": "2026-11-03T22:44:28.696348+00:00",
+  "status": "bounded_research_complete_no_model_promotion",
+  "significantly_improved_model_achieved": false,
+  "collection": {
+    "games": 422,
+    "accounts": 5,
+    "verified_brilliant": 390,
+    "hard_ordinary": 2351,
+    "easy_errors": 7669,
+    "other_explicit_nonbrilliant": 46,
+    "unique_game_ply_labels": 10456,
+    "observations": 12709,
+    "repeated_position_move_labels": 63,
+    "conflicts": 0,
+    "quarantines": 0,
+    "unannotated_unknown_not_negative": 24508,
+    "incomplete_game_excluded": "166869638970",
+    "limited_by_memory": true,
+    "split_games": {
+      "training": 333,
+      "reserved": 89
+    }
+  },
+  "training": {
+    "original_training_examples_included": 848,
+    "former_assessment_examples_now_training": 400,
+    "new_training_examples": 2500,
+    "raw_examples": 3748,
+    "deduplicated_moves": 3724,
+    "duplicate_examples_removed": 24,
+    "brilliant": 917,
+    "group_components": 972,
+    "representative_game_ids": 986,
+    "game_ids_including_aliases": 987
+  },
+  "independent_assessment": {
+    "games": 89,
+    "brilliant": 71,
+    "hard_ordinary": 494,
+    "supplemental_easy_errors": 89,
+    "exclusions": {
+      "old_known_position": 55,
+      "training_overlap": 6,
+      "training_position": 8,
+      "canonical_duplicate": 1,
+      "unsampled_easy_or_other": 1450
+    },
+    "results": {
+      "current_mute": {
+        "brilliant_recognized": 42,
+        "wrong_awards": 2
+      },
+      "frozen_expanded_forest": {
+        "brilliant_recognized": 37,
+        "wrong_awards": 0
+      },
+      "en_croissant_direct": {
+        "brilliant_recognized": 18,
+        "wrong_awards": 3
+      }
+    },
+    "easy_error_wrong_awards_all_methods": 0
+  },
+  "development_only": {
+    "reweighted_candidate_reused_assessment": {
+      "brilliant_recognized": 38,
+      "wrong_awards": 0,
+      "independent": false
+    },
+    "capacity_nested": {
+      "candidate_true": 444,
+      "candidate_wrong": 9,
+      "reference_true": 436,
+      "reference_wrong": 6,
+      "new_model_selected": false
+    },
+    "boosting_nested": {
+      "candidate_true": 436,
+      "candidate_wrong": 6,
+      "reference_true": 436,
+      "reference_wrong": 6,
+      "new_model_selected": false
+    },
+    "pv_features_nested": {
+      "candidate_procedure_true": 444,
+      "candidate_procedure_wrong": 6,
+      "reference_true": 436,
+      "reference_wrong": 6,
+      "new_model_selected": false,
+      "final_model_sha256": "e153a3d151a8803d13fc85ba857c9297541a5d45b627f776ea56f1a249002332",
+      "features_added": 17
+    }
+  },
+  "recommendation": "Keep current Mute unchanged. No significant upgrade established. Next bounded research hypothesis is accepted-offer counterfactual evidence absent from saved top2engine lines; test matched genuine/ordinary cases before any further model claim. More unselected labels or same-feature sweeps are not the supported next step.",
+  "experimental_branch": "codex/brilliant-training-overnight-2026-11-03",
+  "repository": "https://github.com/Dash1971/mute-chess-research",
+  "study_path": "studies/brilliant-training-2026-11-03",
+  "live_app_pr_merge_deploy": "unchanged/out_of_scope",
+  "automation": "deleted; do not recreate",
+  "chrome_saved_group_cleanup": "canceled by user; not claimed complete",
+  "artifact_publication": "experimental branch only; not main or live app",
+  "temporary_research_processes_stopped": true
+}

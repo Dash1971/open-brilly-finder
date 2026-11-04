@@ -1,0 +1,44 @@
+{
+  "core_class_ratios_balanced_within_every_account": true,
+  "panel_imbalance_retained_and_separately_reported": true,
+  "rating_comes_from_actual_mover_PGN_side": true,
+  "unknown_rating_imputation": "None; unknown stays null, no account average",
+  "missing_rating_cases": 0,
+  "rating_same_in_both_completed_windows": true,
+  "all_group_train_test_overlaps_zero": true,
+  "all_new_tree_leaves_at_least15_distinct_moves": true,
+  "all_final_awards_preserve_both_window_quality_masks": true,
+  "rating_prediction_changes": 0,
+  "rating_splits_by_scheme": {},
+  "full_descriptive_fit_uses_rating": false,
+  "prespecified_new_training_runs": 16,
+  "grouped_original75_reused": true,
+  "eligibility_conditioned_training_class_counts": {
+    "nelsi": {
+      "eligible_core_window_rows": 263,
+      "Brilliant_window_rows": 212,
+      "non_Brilliant_window_rows": 51
+    },
+    "hansen": {
+      "eligible_core_window_rows": 213,
+      "Brilliant_window_rows": 154,
+      "non_Brilliant_window_rows": 59
+    },
+    "KNVB": {
+      "eligible_core_window_rows": 128,
+      "Brilliant_window_rows": 96,
+      "non_Brilliant_window_rows": 32
+    },
+    "GothamChess": {
+      "eligible_core_window_rows": 143,
+      "Brilliant_window_rows": 111,
+      "non_Brilliant_window_rows": 32
+    },
+    "Hikaru": {
+      "eligible_core_window_rows": 272,
+      "Brilliant_window_rows": 210,
+      "non_Brilliant_window_rows": 62
+    }
+  },
+  "balance_caveat": "Unconditional core class balance does not imply account-balanced class priors after raw-offer/quality conditioning; LOAO was prespecified to examine this proxy/generalization risk."
+}

@@ -1,0 +1,52 @@
+Accepting-piece fork and reply-check experiment — 2026-11-04
+
+Conclusion: the tested features do not recover more Brilliants without increasing wrong awards. Do not promote this candidate.
+
+Protocol
+Same 3,724 cases (917 Brilliant, 2,807 ordinary), 972 groups, five outer folds and three inner folds. Games, canonical positions, aliases and both windows stay grouped. Thresholds are selected using inner predictions only, maximizing correct awards subject to the original fixed-forest wrong-award count and wrong-award fraction constraints. Existing features, gates, training weights, learner settings and seeds are preserved. No rating features.
+Baseline custom and standard RF scores and awards reproduced exactly for all 3,724 cases. The custom forest is retrained with additional inputs for this research comparison; the deployed classifier is unchanged.
+
+Inputs
+For each original window, select the opponent-best acceptance by saved mover outcome, then inspect its best saved first reply. Fork is true when the replying piece attacks at least two enemy nonpawn targets (king included), one of which is the still-living accepting piece. Check records whether that reply gives check. Geometric attacks include pinned attackers; this is not proof of forced material recovery.
+Features were available for all 1,320 cases with any eligible training window (2,640 case-windows). The remaining 2,404 cases have explicit missing values. No new engine analysis. Exact parity with the prior relational investigation in its 2,604 covered case-windows.
+Check-only and fork-plus-check have identical 154-column layouts and missing indicators; check-only holds the fork value false wherever known. Original models use the unchanged 150-column representation. Earlier independent-mate and evaluation-gate experiments are excluded.
+
+Pooled outer-test results
+Arm | Correct awards | Wrong awards | Recall | Wrong fraction of awards
+custom_fixed | 436 | 6 | 47.55% | 1.36%
+custom_retuned | 452 | 6 | 49.29% | 1.31%
+custom_check | 448 | 6 | 48.85% | 1.32%
+custom_fork_check | 413 | 6 | 45.04% | 1.43%
+custom_fork_check_fixed | 430 | 4 | 46.89% | 0.92%
+standard_rf | 473 | 7 | 51.58% | 1.46%
+standard_rf_check | 462 | 7 | 50.38% | 1.49%
+standard_rf_fork_check | 465 | 8 | 50.71% | 1.69%
+
+Paired changes
+custom_bundle_vs_original: gained_correct=18, lost_correct=57, gained_wrong=3, removed_wrong=3
+custom_bundle_vs_check_only: gained_correct=1, lost_correct=36, gained_wrong=1, removed_wrong=1
+standard_rf_bundle_vs_original: gained_correct=22, lost_correct=30, gained_wrong=4, removed_wrong=3
+standard_rf_bundle_vs_check_only: gained_correct=14, lost_correct=11, gained_wrong=1, removed_wrong=0
+bundle_fixed_vs_original_fixed: gained_correct=24, lost_correct=30, gained_wrong=1, removed_wrong=3
+
+Interpretation
+The primary custom comparison falls from 452 correct / 6 wrong to 413 / 6: 18 previously missed Brilliants are recovered, but 57 previously correct awards are lost. Wrong awards change identity: three new errors replace three removed errors. The fork addition alone loses 35 correct awards versus the check-only control (448 / 6).
+Much of the custom loss comes from cutoff sensitivity. In outer fold 2 (zero-based), the inner-selected cutoff rises from 0.82418 for check-only to 0.88218 for fork plus check; outer correct awards fall from 101 to 70, with zero wrong awards in both. The feature changes the fitted trees and score ordering, not merely the decisions on fork cases.
+At the unchanged 5/6 cutoff, custom fork plus check gives 430 correct / 4 wrong versus the original 436 / 6. Its observed 0.92% wrong-award fraction is a tradeoff with lower recall, not the requested improvement or evidence of a population error rate below 1%. The small number of errors makes that estimate uncertain.
+The standard RF independently fails the target: 473 / 7 becomes 465 / 8. Relative to its check-only control, the fork adds three net correct awards and one wrong award.
+Even among the 127 cases with a fork in either window, custom correct awards fall 69 to 64 and wrong awards rise 1 to 2. Thus this is not a hidden success on the intended subgroup offset solely by unrelated cases. This subgroup is descriptive, not a separately calibrated test.
+The earlier matched-example association did not translate into useful additional predictive information in this experiment. This does not establish that all sacrifice-compensation relationships are useless, or that Chess.com cannot be matched. It rejects this specific geometric first-reply representation under the frozen evaluation.
+
+Uncertainty and hypothesis reuse
+Paired 2,000-sample group bootstrap, conditional on the fitted out-of-fold predictions: custom bundle-minus-original recall difference 95% interval is -6.17 to -2.47 percentage points; bundle-minus-check is -5.16 to -2.54 points. These intervals do not incorporate repeated hypothesis search or refitting variability.
+Excluding all 24 hypothesis-panel groups from outer reporting leaves original custom 443 / 6, check-only 437 / 6, and bundle 402 / 6. This is descriptive only: those groups remain in the fixed training procedure. The data have been reused for investigation; this is not fresh prospective validation and is not an estimate of site-wide award precision.
+
+Bounded next direction
+Keep the current classifier. Before another feature trial, inspect whether the fork is actually enforceable and materially meaningful in the overlapping Brilliant/ordinary cases: can the acceptor or the other target escape, is a target defended, and what material is recovered under best resistance? A geometric fork may be a useful description of a tactic without distinguishing a Brilliant. This is a proposed diagnostic direction, not a new experiment executed here.
+
+Validation and artifacts
+VERIFICATION.json: pass. Independently reconstructed group isolation, baseline scores/awards, all eight arms and fold/pooled decisions, inner cutoff constraints, paired change sets, panel exclusion and input/script hashes.
+Exactly 120 fits; no retries, extra sweeps, full-data fit, model promotion or deployment. Elapsed fitting/evaluation 78.73 seconds, peak RSS approximately 282 MB.
+Extraction protocol: EXTRACTION-PROTOCOL.json; evidence: FEATURE-EVIDENCE.json; features: FEATURES.json.
+Evaluation protocol: EVAL-PROTOCOL.json; full metrics: RESULTS.json; per-case scores and awards: PREDICTIONS.json.
+Reproduce verification with python3 research/brilliant-acceptor-fork-2026-11-04/verify.py.

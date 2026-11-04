@@ -1,0 +1,21 @@
+{
+  "created_at_utc": "2026-11-03T19:15:28.253465+00:00",
+  "scope": "Root-selected historical direct EC contract;400 former assessment cases now training; no reserved input or outputs accessed",
+  "contract": "En Croissant v0.15 direct current-window, original contract",
+  "cases": 400,
+  "mismatches": [],
+  "direct_awards": 56,
+  "peer_csv_sha256": "3b0c759ca7cd8be26e8f73e4d6320177bd115f36a13192d2f960a572b2bb512e",
+  "source_sha256": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301",
+  "context_sha256": "fb3dfb6cb4da23d39fe1acbe7a12d77d6861a6b2357a53f9bb420dcb043e050a",
+  "saved_features_sha256": {
+    "research/brilliants-improvement-2026-11-03/future-validation-v5/engine-core/forest-predictions.json": "b7b8b071a48f2e3adc5c3dbeb87704e44114719ea4e8ef0a01b4dff219523336",
+    "research/brilliants-prospective-v7-2026-11-03/selective-replay/predictions.json": "d5d94e466317201b2c8359165dee47863e0c6b5a7b13f9df4a34d788d2d286ce"
+  },
+  "evaluator_before_sha256": "8b58d096e1614a0797cf892dd436fea2e0a1af0c8c471b449129504252ed430a",
+  "evaluator_after_sha256": "b3e4f8659933ca940328bcf4150ce6ecca0376bf9a7ca3772d5ffa9cd53f17b9",
+  "source_equivalence": "Loss<=5; at least2 before roots; best-second mapped gap>10; played move is bestroot; ECmaterial sacrifice. Known complete fields required. No prior-window confidence or physicalUnknown gate in original annotation.",
+  "rejected_alternative": "Both-window stable EC differed on2/400:167252269040:40 Nxg3 and173264572533:51 Rxe6, current!! but previous not!!. Not substituted for direct EC.",
+  "forest_policy_unchanged": true,
+  "syntax_passed": true
+}

@@ -1,0 +1,39 @@
+{
+  "chart_visual_check": "Requested polish passed: Mute selective/history labels, separate0\u2013100 and0\u201310axes, explicitdifferent-scale note withoutoverlap, unchangedcounts55/78/26and1/5/2.",
+  "illustration_visual_check": "Passed: native Moss/Cburnett artwork, bishop onh7 in frame8, blackking onh7 after capture in frame16; correct legal PGN positions, stable pieces and highlights.",
+  "gif_frames": 17,
+  "durations_ms": [
+    1100,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    880,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    1330
+  ],
+  "inspected_frame_indices": [
+    0,
+    8,
+    16
+  ],
+  "duplicate_stable_frames_merged_by_Pillow": true,
+  "board_colors": [
+    "#C7CFBA",
+    "#668478"
+  ],
+  "target": "167741829524:33",
+  "only_target_is_classified": true,
+  "actual_vs_forced": "Bxh7+ Kxh7 are actualPGNmoves; acceptance not claimed forced.",
+  "figure_inputs_sha256": "6bfe2daa741d22c85f106d90ef8abd39f309e5bbec1a3ef4376b3a7ea34a37b7",
+  "current_reader_chart": "Passed: Mute Selective versus En Croissant on 400 fixed-model test moves,112/200 versus53/200recognized and3/200wrong each; separate200comparison57/100and2/100wrong versus27and1. Correct denominators, no clipping, no training-fit pooling."
+}

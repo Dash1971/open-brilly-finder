@@ -1,0 +1,3163 @@
+{
+  "created_at_utc": "2026-11-03T22:29:22.409243+00:00",
+  "scope": "Posthoc bounded10case TRAINING-only chess-context diagnosis; no654, no engine/browser/model fitting. SavedPV trajectories only, not new tactical proof.",
+  "selection": "Fixed first optimizer final5fold OOF cost1; five highest-scored non-easy falseawards; five lowest-scored eligible missedpositives with bothmappedloss<=1 and finite aftercp>=0.",
+  "source_sha256": {
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/optimization/FINAL-OOF.json": "b2f5ed7eea3c96ec46f76f25a3f1886cdf5359a60aac844742060a3bdcd9931f"
+  },
+  "cases": [
+    {
+      "key": "171307825549:48",
+      "san": "Rxc1+",
+      "truth": false,
+      "observed_label": "great",
+      "oof_min_score": 0.9234189984867149,
+      "cohort": "batch-08",
+      "label_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-08/analysis.json",
+      "snapshot_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-08/analysis.json",
+      "fen_before": "2r3k1/1p3pP1/pq2pn2/3p4/1brN2p1/1Q3B2/PP3P2/1KBR3R b - - 0 24",
+      "fen_after": "2r3k1/1p3pP1/pq2pn2/3p4/1b1N2p1/1Q3B2/PP3P2/1KrR3R w - - 0 25",
+      "preceding_opponent_move": [
+        "Nxd4"
+      ],
+      "saved_lines": [
+        {
+          "position_ply": 46,
+          "fen": "2r3k1/1p3pP1/pq2pn2/3p4/1brn2p1/1Q3B2/PP2NP2/1KBR3R w - - 0 24",
+          "lines": [
+            {
+              "cp": 369,
+              "mate": null,
+              "san": [
+                "Qe3",
+                "Nf5",
+                "Qxb6",
+                "gxf3",
+                "Rh8+",
+                "Kxg7",
+                "Rxc8",
+                "fxe2",
+                "Rg1+",
+                "Rg4"
+              ],
+              "uci": [
+                "b3e3",
+                "d4f5",
+                "e3b6",
+                "g4f3",
+                "h1h8",
+                "g8g7",
+                "h8c8",
+                "f3e2",
+                "d1g1",
+                "c4g4"
+              ]
+            },
+            {
+              "cp": 38,
+              "mate": null,
+              "san": [
+                "Rxd4",
+                "Rxc1+",
+                "Rxc1",
+                "Rxc1+",
+                "Kxc1",
+                "Bc5",
+                "Qxb6",
+                "Bxb6",
+                "Bg2",
+                "Bxd4"
+              ],
+              "uci": [
+                "d1d4",
+                "c4c1",
+                "h1c1",
+                "c8c1",
+                "b1c1",
+                "b4c5",
+                "b3b6",
+                "c5b6",
+                "f3g2",
+                "b6d4"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 47,
+          "fen": "2r3k1/1p3pP1/pq2pn2/3p4/1brN2p1/1Q3B2/PP3P2/1KBR3R b - - 0 24",
+          "lines": [
+            {
+              "cp": -220,
+              "mate": null,
+              "san": [
+                "Rxc1+",
+                "Rxc1",
+                "Rxc1+",
+                "Rxc1",
+                "Qxd4",
+                "Be2",
+                "Bd6",
+                "Qxb7",
+                "Qxf2",
+                "Qxa6"
+              ],
+              "uci": [
+                "c4c1",
+                "d1c1",
+                "c8c1",
+                "h1c1",
+                "b6d4",
+                "f3e2",
+                "b4d6",
+                "b3b7",
+                "d4f2",
+                "b7a6"
+              ]
+            },
+            {
+              "cp": 353,
+              "mate": null,
+              "san": [
+                "Kxg7",
+                "Bh6+",
+                "Kh7",
+                "Be2",
+                "Kg8",
+                "Bxc4",
+                "Rxc4",
+                "Ne2",
+                "Qxf2"
+              ],
+              "uci": [
+                "g8g7",
+                "c1h6",
+                "g7h7",
+                "f3e2",
+                "h7g8",
+                "e2c4",
+                "c8c4",
+                "d4e2",
+                "b6f2"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 48,
+          "fen": "2r3k1/1p3pP1/pq2pn2/3p4/1b1N2p1/1Q3B2/PP3P2/1KrR3R w - - 0 25",
+          "lines": [
+            {
+              "cp": -236,
+              "mate": null,
+              "san": [
+                "Rxc1",
+                "Rxc1+",
+                "Rxc1",
+                "Qxd4",
+                "Bh1",
+                "Kxg7",
+                "Qg3",
+                "Bd2",
+                "Rd1",
+                "Qf4"
+              ],
+              "uci": [
+                "d1c1",
+                "c8c1",
+                "h1c1",
+                "b6d4",
+                "f3h1",
+                "g8g7",
+                "b3g3",
+                "b4d2",
+                "c1d1",
+                "d4f4"
+              ]
+            }
+          ]
+        }
+      ],
+      "best_line_material_trajectory": [
+        {
+          "move": "Rxc1+",
+          "material_delta": 300
+        },
+        {
+          "move": "Rxc1",
+          "material_delta": -200
+        },
+        {
+          "move": "Rxc1+",
+          "material_delta": 300
+        },
+        {
+          "move": "Rxc1",
+          "material_delta": -200
+        },
+        {
+          "move": "Qxd4",
+          "material_delta": 100
+        },
+        {
+          "move": "Bh1",
+          "material_delta": 100
+        },
+        {
+          "move": "Kxg7",
+          "material_delta": 190
+        },
+        {
+          "move": "Qg3",
+          "material_delta": 190
+        },
+        {
+          "move": "Bd2",
+          "material_delta": 190
+        }
+      ],
+      "current_features": {
+        "raw_offer": true,
+        "ec_sacrifice": true,
+        "mating_acceptance": false,
+        "checked_continuation": false,
+        "converted_material_or_endgame": false,
+        "move_capture": true,
+        "move_check": true,
+        "move_in_check": false,
+        "move_castling": false,
+        "move_en_passant": false,
+        "move_promotion": false,
+        "raw_material_before": -120,
+        "raw_material_after": 180,
+        "immediate_material_gain": 300,
+        "capture_promotion_credit": 300,
+        "phase": 21,
+        "ec_material_before": 180,
+        "ec_material_after": 20,
+        "ec_material_margin": 100,
+        "physical_unknown": false,
+        "physical_checked_horizon": true,
+        "physical_mate_leaf": false,
+        "physical_debt3_max": -100,
+        "physical_debt3_min": -100,
+        "offer_exchange_gain_max": 500,
+        "offer_exchange_gain_min": 500,
+        "avoidability": true,
+        "avoidability_unknown": false,
+        "direct_stalemate_acceptance": false,
+        "stalemate_probe_unknown": false,
+        "attribution_unknown": false,
+        "prior_history_missing": false,
+        "offered_piece_moved": true,
+        "offered_piece_count": 1,
+        "already_vulnerable_same_square_count": 0,
+        "prior_offer_gain_same_square_max": 0,
+        "prior_offer_gain_original_square_max": 0,
+        "offered_role_p": false,
+        "offered_role_n": false,
+        "offered_role_b": false,
+        "offered_role_r": true,
+        "offered_role_q": false,
+        "offered_role_k": false,
+        "moved_role_p": false,
+        "moved_role_n": false,
+        "moved_role_b": false,
+        "moved_role_r": true,
+        "moved_role_q": false,
+        "moved_role_k": false,
+        "window_complete": true,
+        "before_depth": 16,
+        "after_depth": 18,
+        "prior_depth": 16,
+        "before_roots": 2,
+        "best_cp": 220,
+        "best_mate": null,
+        "best_mapped_score": 220,
+        "after_cp": 236,
+        "after_mate": null,
+        "after_mapped_score": 236,
+        "prior_cp": -369,
+        "prior_mate": null,
+        "prior_mapped_score": -369,
+        "played_root_cp": 220,
+        "played_root_mate": null,
+        "played_root_mapped_score": 220,
+        "mapped_loss_pp": -1.2409736044578352,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "played_root_missing": false,
+        "best_second_gap_pp": 47.791876392924216,
+        "after_minus_prior_cp": 605,
+        "best_minus_prior_cp": 589,
+        "winning_safe_alternatives": 0,
+        "safe_alternative_best_cp": null
+      },
+      "diagnosis": "Routine liquidation supported by saved best line: Rxc1+ Rxc1 Rxc1+ Rxc1 Qxd4. The rooks are exchanged and the knight on d4 supplies the delayed payout. Physical debt3=-100 already signals recovery; sequential trajectory/victim identity is not retained in75 scalars.",
+      "signal_classification": "Available negative-debt signal underused; omitted exact cross-square recoup sequence."
+    },
+    {
+      "key": "166524903834:81",
+      "san": "Qh4",
+      "truth": false,
+      "observed_label": "best",
+      "oof_min_score": 0.8813437745427438,
+      "cohort": "batch-03",
+      "label_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-03/analysis.json",
+      "snapshot_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-03/analysis.json",
+      "fen_before": "4r3/p4qk1/1p3r2/2p4R/P4BP1/2PP4/2P2QPK/8 w - - 3 41",
+      "fen_after": "4r3/p4qk1/1p3r2/2p4R/P4BPQ/2PP4/2P3PK/8 b - - 4 41",
+      "preceding_opponent_move": [
+        "Rf6"
+      ],
+      "saved_lines": [
+        {
+          "position_ply": 79,
+          "fen": "4r3/p4qk1/1p2r3/2p4R/P4BP1/2PP4/2P2QPK/8 b - - 2 40",
+          "lines": [
+            {
+              "cp": 213,
+              "mate": null,
+              "san": [
+                "Qe7",
+                "Kg3",
+                "Rf6",
+                "Qd2",
+                "Rg6",
+                "Be5+",
+                "Qxe5+",
+                "Rxe5",
+                "Rxe5",
+                "Qf4"
+              ],
+              "uci": [
+                "f7e7",
+                "h2g3",
+                "e6f6",
+                "f2d2",
+                "f6g6",
+                "f4e5",
+                "e7e5",
+                "h5e5",
+                "e8e5",
+                "d2f4"
+              ]
+            },
+            {
+              "cp": 229,
+              "mate": null,
+              "san": [
+                "Kg8",
+                "Qg3",
+                "Qg7",
+                "d4",
+                "cxd4",
+                "Qd3",
+                "Kf8",
+                "Qf5+",
+                "Qf6",
+                "cxd4"
+              ],
+              "uci": [
+                "g7g8",
+                "f2g3",
+                "f7g7",
+                "d3d4",
+                "c5d4",
+                "g3d3",
+                "g8f8",
+                "d3f5",
+                "g7f6",
+                "c3d4"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 80,
+          "fen": "4r3/p4qk1/1p3r2/2p4R/P4BP1/2PP4/2P2QPK/8 w - - 3 41",
+          "lines": [
+            {
+              "cp": 459,
+              "mate": null,
+              "san": [
+                "Qh4",
+                "Qg8",
+                "Be5",
+                "Rxe5",
+                "Rxe5",
+                "Qf8",
+                "Qg5+",
+                "Kh7",
+                "Re3",
+                "Qg7"
+              ],
+              "uci": [
+                "f2h4",
+                "f7g8",
+                "f4e5",
+                "e8e5",
+                "h5e5",
+                "g8f8",
+                "h4g5",
+                "g7h7",
+                "e5e3",
+                "f8g7"
+              ]
+            },
+            {
+              "cp": 261,
+              "mate": null,
+              "san": [
+                "Rg5+",
+                "Kf8",
+                "Qh4",
+                "Rxf4",
+                "Qh6+",
+                "Ke7",
+                "Rg7",
+                "Kd7",
+                "d4",
+                "Re6"
+              ],
+              "uci": [
+                "h5g5",
+                "g7f8",
+                "f2h4",
+                "f6f4",
+                "h4h6",
+                "f8e7",
+                "g5g7",
+                "e7d7",
+                "d3d4",
+                "e8e6"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 81,
+          "fen": "4r3/p4qk1/1p3r2/2p4R/P4BPQ/2PP4/2P3PK/8 b - - 4 41",
+          "lines": [
+            {
+              "cp": 509,
+              "mate": null,
+              "san": [
+                "Qg8",
+                "d4",
+                "cxd4",
+                "cxd4",
+                "a5",
+                "Be5",
+                "Rxe5",
+                "dxe5",
+                "Re6",
+                "c4"
+              ],
+              "uci": [
+                "f7g8",
+                "d3d4",
+                "c5d4",
+                "c3d4",
+                "a7a5",
+                "f4e5",
+                "e8e5",
+                "d4e5",
+                "f6e6",
+                "c2c4"
+              ]
+            },
+            {
+              "cp": 634,
+              "mate": null,
+              "san": [
+                "Kf8",
+                "Bg5",
+                "Qg6",
+                "Bxf6",
+                "a5",
+                "Rf5",
+                "Re6",
+                "d4",
+                "Kf7"
+              ],
+              "uci": [
+                "g7f8",
+                "f4g5",
+                "f7g6",
+                "g5f6",
+                "a7a5",
+                "h5f5",
+                "e8e6",
+                "d3d4",
+                "f8f7"
+              ]
+            }
+          ]
+        }
+      ],
+      "best_line_material_trajectory": [
+        {
+          "move": "Qh4",
+          "material_delta": 0
+        },
+        {
+          "move": "Qg8",
+          "material_delta": 0
+        },
+        {
+          "move": "d4",
+          "material_delta": 0
+        },
+        {
+          "move": "cxd4",
+          "material_delta": -90
+        },
+        {
+          "move": "cxd4",
+          "material_delta": 0
+        },
+        {
+          "move": "a5",
+          "material_delta": 0
+        },
+        {
+          "move": "Be5",
+          "material_delta": 0
+        },
+        {
+          "move": "Rxe5",
+          "material_delta": -300
+        },
+        {
+          "move": "dxe5",
+          "material_delta": 200
+        }
+      ],
+      "current_features": {
+        "raw_offer": true,
+        "ec_sacrifice": true,
+        "mating_acceptance": false,
+        "checked_continuation": false,
+        "converted_material_or_endgame": false,
+        "move_capture": false,
+        "move_check": false,
+        "move_in_check": false,
+        "move_castling": false,
+        "move_en_passant": false,
+        "move_promotion": false,
+        "raw_material_before": 70,
+        "raw_material_after": 70,
+        "immediate_material_gain": 0,
+        "capture_promotion_credit": 0,
+        "phase": 15,
+        "ec_material_before": 70,
+        "ec_material_after": 230,
+        "ec_material_margin": 200,
+        "physical_unknown": false,
+        "physical_checked_horizon": true,
+        "physical_mate_leaf": false,
+        "physical_debt3_max": 300,
+        "physical_debt3_min": 300,
+        "offer_exchange_gain_max": 300,
+        "offer_exchange_gain_min": 300,
+        "avoidability": true,
+        "avoidability_unknown": false,
+        "direct_stalemate_acceptance": false,
+        "stalemate_probe_unknown": false,
+        "attribution_unknown": false,
+        "prior_history_missing": false,
+        "offered_piece_moved": false,
+        "offered_piece_count": 1,
+        "already_vulnerable_same_square_count": 0,
+        "prior_offer_gain_same_square_max": 0,
+        "prior_offer_gain_original_square_max": 0,
+        "offered_role_p": false,
+        "offered_role_n": false,
+        "offered_role_b": true,
+        "offered_role_r": false,
+        "offered_role_q": false,
+        "offered_role_k": false,
+        "moved_role_p": false,
+        "moved_role_n": false,
+        "moved_role_b": false,
+        "moved_role_r": false,
+        "moved_role_q": true,
+        "moved_role_k": false,
+        "window_complete": true,
+        "before_depth": 18,
+        "after_depth": 16,
+        "prior_depth": 17,
+        "before_roots": 2,
+        "best_cp": 459,
+        "best_mate": null,
+        "best_mapped_score": 459,
+        "after_cp": 509,
+        "after_mate": null,
+        "after_mapped_score": 509,
+        "prior_cp": 213,
+        "prior_mate": null,
+        "prior_mapped_score": 213,
+        "played_root_cp": 459,
+        "played_root_mate": null,
+        "played_root_mapped_score": 459,
+        "mapped_loss_pp": -2.2707064167617688,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "played_root_missing": false,
+        "best_second_gap_pp": 12.090743003621725,
+        "after_minus_prior_cp": 296,
+        "best_minus_prior_cp": 246,
+        "winning_safe_alternatives": 0,
+        "safe_alternative_best_cp": null
+      },
+      "diagnosis": "Qh4 leaves bishopf4 available to Rxf4 after preceding Rf6; saved best defense is Qg8, declining it. This is a genuine-looking quiet attacking offer labeled Best, counterexample to automatically awarding new unmoved-piece offers.",
+      "signal_classification": "Counterexample: same broad quiet-offer signature as genuine misses; do not force label corruption or easy veto."
+    },
+    {
+      "key": "183800911053:48",
+      "san": "Rxe4",
+      "truth": false,
+      "observed_label": "?!",
+      "oof_min_score": 0.8560565356812408,
+      "cohort": "former848",
+      "label_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-final-2026-11-03/primary-moves.json",
+      "snapshot_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-final-2026-11-03/analysis-baseline.json",
+      "fen_before": "r3r1k1/1p1q1pbp/6p1/1p6/4B3/2pPP1PP/5PK1/1QR1R3 b - - 0 24",
+      "fen_after": "r5k1/1p1q1pbp/6p1/1p6/4r3/2pPP1PP/5PK1/1QR1R3 w - - 0 25",
+      "preceding_opponent_move": [
+        "e3"
+      ],
+      "saved_lines": [
+        {
+          "position_ply": 46,
+          "fen": "r3r1k1/1p1q1pbp/6p1/1p6/4B3/2pP2PP/4PPK1/1QR1R3 w - - 0 24",
+          "lines": [
+            {
+              "cp": -173,
+              "mate": null,
+              "san": [
+                "Qb3",
+                "Ra6",
+                "h4",
+                "h5",
+                "Rxc3",
+                "Bxc3",
+                "Qxc3",
+                "Rc8",
+                "Qe5",
+                "Rb6"
+              ],
+              "uci": [
+                "b1b3",
+                "a8a6",
+                "h3h4",
+                "h7h5",
+                "c1c3",
+                "g7c3",
+                "b3c3",
+                "e8c8",
+                "c3e5",
+                "a6b6"
+              ]
+            },
+            {
+              "cp": -201,
+              "mate": null,
+              "san": [
+                "h4",
+                "Ra4",
+                "e3",
+                "b4",
+                "d4",
+                "Bf8",
+                "h5",
+                "Rea8",
+                "Rh1",
+                "Ra1"
+              ],
+              "uci": [
+                "h3h4",
+                "a8a4",
+                "e2e3",
+                "b5b4",
+                "d3d4",
+                "g7f8",
+                "h4h5",
+                "e8a8",
+                "e1h1",
+                "a4a1"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 47,
+          "fen": "r3r1k1/1p1q1pbp/6p1/1p6/4B3/2pPP1PP/5PK1/1QR1R3 b - - 0 24",
+          "lines": [
+            {
+              "cp": -233,
+              "mate": null,
+              "san": [
+                "Ra3",
+                "h4",
+                "h5",
+                "d4",
+                "Bf8",
+                "Bc2",
+                "Qc6+",
+                "Kg1",
+                "b4",
+                "Bb3"
+              ],
+              "uci": [
+                "a8a3",
+                "h3h4",
+                "h7h5",
+                "d3d4",
+                "g7f8",
+                "e4c2",
+                "d7c6",
+                "g2g1",
+                "b5b4",
+                "c2b3"
+              ]
+            },
+            {
+              "cp": -201,
+              "mate": null,
+              "san": [
+                "Ra4",
+                "d4",
+                "b4",
+                "Bc2",
+                "Qc6+",
+                "Kg1",
+                "Rea8",
+                "Bxa4",
+                "Qxa4",
+                "Qd3"
+              ],
+              "uci": [
+                "a8a4",
+                "d3d4",
+                "b5b4",
+                "e4c2",
+                "d7c6",
+                "g2g1",
+                "e8a8",
+                "c2a4",
+                "c6a4",
+                "b1d3"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 48,
+          "fen": "r5k1/1p1q1pbp/6p1/1p6/4r3/2pPP1PP/5PK1/1QR1R3 w - - 0 25",
+          "lines": [
+            {
+              "cp": -173,
+              "mate": null,
+              "san": [
+                "dxe4",
+                "Qc6",
+                "Red1",
+                "Bf8",
+                "Rd4",
+                "b4",
+                "Rxb4",
+                "Bxb4",
+                "Qxb4",
+                "Rc8"
+              ],
+              "uci": [
+                "d3e4",
+                "d7c6",
+                "e1d1",
+                "g7f8",
+                "d1d4",
+                "b5b4",
+                "d4b4",
+                "f8b4",
+                "b1b4",
+                "a8c8"
+              ]
+            },
+            {
+              "cp": -566,
+              "mate": null,
+              "san": [
+                "Kg1",
+                "Rea4",
+                "Red1",
+                "Qc6",
+                "d4",
+                "Rc4",
+                "Qc2",
+                "h5"
+              ],
+              "uci": [
+                "g2g1",
+                "e4a4",
+                "e1d1",
+                "d7c6",
+                "d3d4",
+                "a4c4",
+                "b1c2",
+                "h7h5"
+              ]
+            }
+          ]
+        }
+      ],
+      "best_line_material_trajectory": [
+        {
+          "move": "Rxe4",
+          "material_delta": 300
+        },
+        {
+          "move": "dxe4",
+          "material_delta": -200
+        },
+        {
+          "move": "Qc6",
+          "material_delta": -200
+        },
+        {
+          "move": "Red1",
+          "material_delta": -200
+        },
+        {
+          "move": "Bf8",
+          "material_delta": -200
+        },
+        {
+          "move": "Rd4",
+          "material_delta": -200
+        },
+        {
+          "move": "b4",
+          "material_delta": -200
+        },
+        {
+          "move": "Rxb4",
+          "material_delta": -290
+        },
+        {
+          "move": "Bxb4",
+          "material_delta": 210
+        }
+      ],
+      "current_features": {
+        "raw_offer": true,
+        "ec_sacrifice": true,
+        "mating_acceptance": false,
+        "checked_continuation": false,
+        "converted_material_or_endgame": false,
+        "move_capture": true,
+        "move_check": false,
+        "move_in_check": false,
+        "move_castling": false,
+        "move_en_passant": false,
+        "move_promotion": false,
+        "raw_material_before": 90,
+        "raw_material_after": 390,
+        "immediate_material_gain": 300,
+        "capture_promotion_credit": 300,
+        "phase": 18,
+        "ec_material_before": 90,
+        "ec_material_after": 110,
+        "ec_material_margin": 100,
+        "physical_unknown": false,
+        "physical_checked_horizon": true,
+        "physical_mate_leaf": false,
+        "physical_debt3_max": 200,
+        "physical_debt3_min": 200,
+        "offer_exchange_gain_max": 500,
+        "offer_exchange_gain_min": 500,
+        "avoidability": true,
+        "avoidability_unknown": false,
+        "direct_stalemate_acceptance": false,
+        "stalemate_probe_unknown": false,
+        "attribution_unknown": false,
+        "prior_history_missing": false,
+        "offered_piece_moved": true,
+        "offered_piece_count": 1,
+        "already_vulnerable_same_square_count": 0,
+        "prior_offer_gain_same_square_max": 0,
+        "prior_offer_gain_original_square_max": 0,
+        "offered_role_p": false,
+        "offered_role_n": false,
+        "offered_role_b": false,
+        "offered_role_r": true,
+        "offered_role_q": false,
+        "offered_role_k": false,
+        "moved_role_p": false,
+        "moved_role_n": false,
+        "moved_role_b": false,
+        "moved_role_r": true,
+        "moved_role_q": false,
+        "moved_role_k": false,
+        "window_complete": true,
+        "before_depth": 18,
+        "after_depth": 19,
+        "prior_depth": 16,
+        "before_roots": 2,
+        "best_cp": 233,
+        "best_mate": null,
+        "best_mapped_score": 233,
+        "after_cp": 173,
+        "after_mate": null,
+        "after_mapped_score": 173,
+        "prior_cp": 173,
+        "prior_mate": null,
+        "prior_mapped_score": 173,
+        "played_root_cp": null,
+        "played_root_mate": null,
+        "played_root_mapped_score": null,
+        "mapped_loss_pp": 4.815191404318966,
+        "same_root_loss_pp": null,
+        "same_root_rank": null,
+        "played_root_missing": true,
+        "best_second_gap_pp": 2.5209566609502474,
+        "after_minus_prior_cp": 0,
+        "best_minus_prior_cp": 60,
+        "winning_safe_alternatives": 0,
+        "safe_alternative_best_cp": null
+      },
+      "diagnosis": "Rxe4 trades a rook for bishop after dxe4; saved before top2 prefer Ra3/Ra4. Current mapped loss4.815 is just inside qualitygate5, while current Chess.com label is Inaccuracy. Raw physical sacrifice200 is real, so sacrifice semantics alone cannot settle quality-label disagreement.",
+      "signal_classification": "Available played_root_missing and near-boundary quality signal; engine/label judgment mismatch."
+    },
+    {
+      "key": "174838537627:25",
+      "san": "Bxf6",
+      "truth": false,
+      "observed_label": "best",
+      "oof_min_score": 0.85207876921916,
+      "cohort": "former_new200",
+      "label_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-prospective-v7-2026-11-03/root-frozen-final200queue.json",
+      "snapshot_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-prospective-v7-2026-11-03/sf18-core.json",
+      "fen_before": "r2qk2r/2p1b1pp/p2p1n2/1p3bB1/3P4/1n3N2/PP3PPP/RN1QR1K1 w kq - 0 13",
+      "fen_after": "r2qk2r/2p1b1pp/p2p1B2/1p3b2/3P4/1n3N2/PP3PPP/RN1QR1K1 b kq - 0 13",
+      "preceding_opponent_move": [
+        "Nxb3"
+      ],
+      "saved_lines": [
+        {
+          "position_ply": 23,
+          "fen": "r2qk2r/2p1b1pp/p2p1n2/np3bB1/3P4/1B3N2/PP3PPP/RN1QR1K1 b kq - 2 12",
+          "lines": [
+            {
+              "cp": 198,
+              "mate": null,
+              "san": [
+                "Nxb3",
+                "Qxb3",
+                "Bg6",
+                "Bxf6",
+                "gxf6",
+                "a4",
+                "bxa4",
+                "Qe3",
+                "Kf7"
+              ],
+              "uci": [
+                "a5b3",
+                "d1b3",
+                "f5g6",
+                "g5f6",
+                "g7f6",
+                "a2a4",
+                "b5a4",
+                "b3e3",
+                "e8f7"
+              ]
+            },
+            {
+              "cp": 214,
+              "mate": null,
+              "san": [
+                "d5",
+                "Bxf6",
+                "gxf6",
+                "Nh4",
+                "Bg6",
+                "Bc2",
+                "Bxc2",
+                "Qxc2",
+                "O-O",
+                "Qf5"
+              ],
+              "uci": [
+                "d6d5",
+                "g5f6",
+                "g7f6",
+                "f3h4",
+                "f5g6",
+                "b3c2",
+                "g6c2",
+                "d1c2",
+                "e8g8",
+                "c2f5"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 24,
+          "fen": "r2qk2r/2p1b1pp/p2p1n2/1p3bB1/3P4/1n3N2/PP3PPP/RN1QR1K1 w kq - 0 13",
+          "lines": [
+            {
+              "cp": 219,
+              "mate": null,
+              "san": [
+                "Bxf6",
+                "gxf6",
+                "Nh4",
+                "Bg6",
+                "Qxb3",
+                "d5",
+                "Qh3",
+                "O-O",
+                "Nc3",
+                "Rf7"
+              ],
+              "uci": [
+                "g5f6",
+                "g7f6",
+                "f3h4",
+                "f5g6",
+                "d1b3",
+                "d6d5",
+                "b3h3",
+                "e8g8",
+                "b1c3",
+                "f8f7"
+              ]
+            },
+            {
+              "cp": 215,
+              "mate": null,
+              "san": [
+                "Qxb3",
+                "d5",
+                "Nh4",
+                "Qd7",
+                "Nxf5",
+                "Qxf5",
+                "Re5",
+                "Qg4",
+                "Nc3",
+                "O-O-O"
+              ],
+              "uci": [
+                "d1b3",
+                "d6d5",
+                "f3h4",
+                "d8d7",
+                "h4f5",
+                "d7f5",
+                "e1e5",
+                "f5g4",
+                "b1c3",
+                "e8c8"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 25,
+          "fen": "r2qk2r/2p1b1pp/p2p1B2/1p3b2/3P4/1n3N2/PP3PPP/RN1QR1K1 b kq - 0 13",
+          "lines": [
+            {
+              "cp": 212,
+              "mate": null,
+              "san": [
+                "gxf6",
+                "Nh4",
+                "Bg6",
+                "Qxb3",
+                "d5",
+                "Qh3",
+                "O-O",
+                "Nc3",
+                "Rf7",
+                "Re6"
+              ],
+              "uci": [
+                "g7f6",
+                "f3h4",
+                "f5g6",
+                "d1b3",
+                "d6d5",
+                "b3h3",
+                "e8g8",
+                "b1c3",
+                "f8f7",
+                "e1e6"
+              ]
+            },
+            {
+              "cp": 352,
+              "mate": null,
+              "san": [
+                "Nxa1",
+                "Bxe7",
+                "Qd7",
+                "Bxd6+",
+                "Be6",
+                "d5",
+                "O-O-O",
+                "Rxe6",
+                "cxd6",
+                "Nc3"
+              ],
+              "uci": [
+                "b3a1",
+                "f6e7",
+                "d8d7",
+                "e7d6",
+                "f5e6",
+                "d4d5",
+                "e8c8",
+                "e1e6",
+                "c7d6",
+                "b1c3"
+              ]
+            }
+          ]
+        }
+      ],
+      "best_line_material_trajectory": [
+        {
+          "move": "Bxf6",
+          "material_delta": 300
+        },
+        {
+          "move": "gxf6",
+          "material_delta": 0
+        },
+        {
+          "move": "Nh4",
+          "material_delta": 0
+        },
+        {
+          "move": "Bg6",
+          "material_delta": 0
+        },
+        {
+          "move": "Qxb3",
+          "material_delta": 300
+        },
+        {
+          "move": "d5",
+          "material_delta": 300
+        },
+        {
+          "move": "Qh3",
+          "material_delta": 300
+        },
+        {
+          "move": "O-O",
+          "material_delta": 300
+        },
+        {
+          "move": "Nc3",
+          "material_delta": 300
+        }
+      ],
+      "current_features": {
+        "raw_offer": true,
+        "ec_sacrifice": true,
+        "mating_acceptance": false,
+        "checked_continuation": false,
+        "converted_material_or_endgame": false,
+        "move_capture": true,
+        "move_check": false,
+        "move_in_check": false,
+        "move_castling": false,
+        "move_en_passant": false,
+        "move_promotion": false,
+        "raw_material_before": -300,
+        "raw_material_after": 0,
+        "immediate_material_gain": 300,
+        "capture_promotion_credit": 300,
+        "phase": 23,
+        "ec_material_before": 0,
+        "ec_material_after": 200,
+        "ec_material_margin": 100,
+        "physical_unknown": false,
+        "physical_checked_horizon": true,
+        "physical_mate_leaf": false,
+        "physical_debt3_max": -190,
+        "physical_debt3_min": -190,
+        "offer_exchange_gain_max": 500,
+        "offer_exchange_gain_min": 500,
+        "avoidability": true,
+        "avoidability_unknown": false,
+        "direct_stalemate_acceptance": false,
+        "stalemate_probe_unknown": false,
+        "attribution_unknown": false,
+        "prior_history_missing": false,
+        "offered_piece_moved": false,
+        "offered_piece_count": 1,
+        "already_vulnerable_same_square_count": 0,
+        "prior_offer_gain_same_square_max": 0,
+        "prior_offer_gain_original_square_max": 0,
+        "offered_role_p": false,
+        "offered_role_n": false,
+        "offered_role_b": false,
+        "offered_role_r": true,
+        "offered_role_q": false,
+        "offered_role_k": false,
+        "moved_role_p": false,
+        "moved_role_n": false,
+        "moved_role_b": true,
+        "moved_role_r": false,
+        "moved_role_q": false,
+        "moved_role_k": false,
+        "window_complete": true,
+        "before_depth": 17,
+        "after_depth": 16,
+        "prior_depth": 16,
+        "before_roots": 2,
+        "best_cp": 219,
+        "best_mate": null,
+        "best_mapped_score": 219,
+        "after_cp": 212,
+        "after_mate": null,
+        "after_mapped_score": 212,
+        "prior_cp": 198,
+        "prior_mate": null,
+        "prior_mapped_score": 198,
+        "played_root_cp": 219,
+        "played_root_mate": null,
+        "played_root_mapped_score": 219,
+        "mapped_loss_pp": 0.5526992145368297,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "played_root_missing": false,
+        "best_second_gap_pp": 0.3151705378606806,
+        "after_minus_prior_cp": 14,
+        "best_minus_prior_cp": 21,
+        "winning_safe_alternatives": 0,
+        "safe_alternative_best_cp": null
+      },
+      "diagnosis": "Bxf6 captures a knight while rook a1 is attacked after Nxb3. Best defense gxf6 exchanges the bishop, then saved line Nh4 Bg6 Qxb3 collects the other knight. Optional Nxa1 is inferior in saved secondPV, followed by Bxe7 and Bxd6+. A routine capture is conflated with an incidental offered rook.",
+      "signal_classification": "Physicaldebt3=-190 already available; opponentbest-root acceptance identity and separate victim-specific trajectory omitted."
+    },
+    {
+      "key": "172662051055:73",
+      "san": "Rxd7+",
+      "truth": false,
+      "observed_label": "excellent",
+      "oof_min_score": 0.8390156564153567,
+      "cohort": "former200",
+      "label_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/future-validation-v5/primary-moves.json",
+      "snapshot_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/future-validation-v5/engine-core/analysis-core.json",
+      "fen_before": "8/1k1b1r2/p6p/Q1P3r1/5q1n/4R2P/PP3Pp1/3R2K1 w - - 0 37",
+      "fen_after": "8/1k1R1r2/p6p/Q1P3r1/5q1n/4R2P/PP3Pp1/6K1 b - - 0 37",
+      "preceding_opponent_move": [
+        "Kxb7"
+      ],
+      "saved_lines": [
+        {
+          "position_ply": 71,
+          "fen": "2k5/1B1b1r2/p6p/Q1P3r1/5q1n/4R2P/PP3Pp1/3R2K1 b - - 0 36",
+          "lines": [
+            {
+              "cp": null,
+              "mate": 4,
+              "san": [
+                "Kb8",
+                "Re8+",
+                "Bc8",
+                "Rxc8+",
+                "Kxb7",
+                "Qb6+",
+                "Kxc8",
+                "Rd8#"
+              ],
+              "uci": [
+                "c8b8",
+                "e3e8",
+                "d7c8",
+                "e8c8",
+                "b8b7",
+                "a5b6",
+                "b7c8",
+                "d1d8"
+              ]
+            },
+            {
+              "cp": null,
+              "mate": 4,
+              "san": [
+                "Kxb7",
+                "Qb6+",
+                "Ka8",
+                "Re8+",
+                "Bxe8",
+                "Rd8+",
+                "Qb8",
+                "Qxb8#"
+              ],
+              "uci": [
+                "c8b7",
+                "a5b6",
+                "b7a8",
+                "e3e8",
+                "d7e8",
+                "d1d8",
+                "f4b8",
+                "b6b8"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 72,
+          "fen": "8/1k1b1r2/p6p/Q1P3r1/5q1n/4R2P/PP3Pp1/3R2K1 w - - 0 37",
+          "lines": [
+            {
+              "cp": null,
+              "mate": 4,
+              "san": [
+                "Qb6+",
+                "Ka8",
+                "Re8+",
+                "Bxe8",
+                "Rd8+",
+                "Qb8",
+                "Qxb8#"
+              ],
+              "uci": [
+                "a5b6",
+                "b7a8",
+                "e3e8",
+                "d7e8",
+                "d1d8",
+                "f4b8",
+                "b6b8"
+              ]
+            },
+            {
+              "cp": null,
+              "mate": 6,
+              "san": [
+                "Rxd7+",
+                "Kc6",
+                "Rd6+",
+                "Qxd6",
+                "Qb6+",
+                "Kd7",
+                "Qxd6+",
+                "Kc8",
+                "Re8+",
+                "Kb7"
+              ],
+              "uci": [
+                "d1d7",
+                "b7c6",
+                "d7d6",
+                "f4d6",
+                "a5b6",
+                "c6d7",
+                "b6d6",
+                "d7c8",
+                "e3e8",
+                "c8b7"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 73,
+          "fen": "8/1k1R1r2/p6p/Q1P3r1/5q1n/4R2P/PP3Pp1/6K1 b - - 0 37",
+          "lines": [
+            {
+              "cp": null,
+              "mate": 5,
+              "san": [
+                "Kc6",
+                "Rd6+",
+                "Qxd6",
+                "Qb6+",
+                "Kd7",
+                "Qxd6+",
+                "Kc8",
+                "Re8+",
+                "Kb7",
+                "Qb6#"
+              ],
+              "uci": [
+                "b7c6",
+                "d7d6",
+                "f4d6",
+                "a5b6",
+                "c6d7",
+                "b6d6",
+                "d7c8",
+                "e3e8",
+                "c8b7",
+                "d6b6"
+              ]
+            },
+            {
+              "cp": null,
+              "mate": 4,
+              "san": [
+                "Rxd7",
+                "Qb6+",
+                "Ka8",
+                "Re8+",
+                "Rd8",
+                "Rxd8+",
+                "Qb8",
+                "Rxb8#"
+              ],
+              "uci": [
+                "f7d7",
+                "a5b6",
+                "b7a8",
+                "e3e8",
+                "d7d8",
+                "e8d8",
+                "f4b8",
+                "d8b8"
+              ]
+            }
+          ]
+        }
+      ],
+      "best_line_material_trajectory": [
+        {
+          "move": "Rxd7+",
+          "material_delta": 300
+        },
+        {
+          "move": "Kc6",
+          "material_delta": 300
+        },
+        {
+          "move": "Rd6+",
+          "material_delta": 300
+        },
+        {
+          "move": "Qxd6",
+          "material_delta": -200
+        },
+        {
+          "move": "Qb6+",
+          "material_delta": -200
+        },
+        {
+          "move": "Kd7",
+          "material_delta": -200
+        },
+        {
+          "move": "Qxd6+",
+          "material_delta": 800
+        },
+        {
+          "move": "Kc8",
+          "material_delta": 800
+        },
+        {
+          "move": "Re8+",
+          "material_delta": 800
+        }
+      ],
+      "current_features": {
+        "raw_offer": true,
+        "ec_sacrifice": true,
+        "mating_acceptance": false,
+        "checked_continuation": false,
+        "converted_material_or_endgame": false,
+        "move_capture": true,
+        "move_check": true,
+        "move_in_check": false,
+        "move_castling": false,
+        "move_en_passant": false,
+        "move_promotion": false,
+        "raw_material_before": -420,
+        "raw_material_after": -120,
+        "immediate_material_gain": 300,
+        "capture_promotion_credit": 300,
+        "phase": 18,
+        "ec_material_before": -420,
+        "ec_material_after": 620,
+        "ec_material_margin": 100,
+        "physical_unknown": false,
+        "physical_checked_horizon": false,
+        "physical_mate_leaf": false,
+        "physical_debt3_max": 200,
+        "physical_debt3_min": 200,
+        "offer_exchange_gain_max": 500,
+        "offer_exchange_gain_min": 500,
+        "avoidability": true,
+        "avoidability_unknown": false,
+        "direct_stalemate_acceptance": false,
+        "stalemate_probe_unknown": false,
+        "attribution_unknown": false,
+        "prior_history_missing": false,
+        "offered_piece_moved": true,
+        "offered_piece_count": 1,
+        "already_vulnerable_same_square_count": 0,
+        "prior_offer_gain_same_square_max": 0,
+        "prior_offer_gain_original_square_max": 0,
+        "offered_role_p": false,
+        "offered_role_n": false,
+        "offered_role_b": false,
+        "offered_role_r": true,
+        "offered_role_q": false,
+        "offered_role_k": false,
+        "moved_role_p": false,
+        "moved_role_n": false,
+        "moved_role_b": false,
+        "moved_role_r": true,
+        "moved_role_q": false,
+        "moved_role_k": false,
+        "window_complete": true,
+        "before_depth": 45,
+        "after_depth": 55,
+        "prior_depth": 55,
+        "before_roots": 2,
+        "best_cp": null,
+        "best_mate": 4,
+        "best_mapped_score": 1000,
+        "after_cp": null,
+        "after_mate": 5,
+        "after_mapped_score": 1000,
+        "prior_cp": null,
+        "prior_mate": 4,
+        "prior_mapped_score": 1000,
+        "played_root_cp": null,
+        "played_root_mate": 6,
+        "played_root_mapped_score": 1000,
+        "mapped_loss_pp": 0,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 2,
+        "played_root_missing": false,
+        "best_second_gap_pp": 0.0,
+        "after_minus_prior_cp": 0,
+        "best_minus_prior_cp": 0,
+        "winning_safe_alternatives": 1,
+        "safe_alternative_best_cp": 1000
+      },
+      "diagnosis": "Rxd7+ is labeled Excellent. Saved prior and before best show mate4; played root has mate6 and after mate5. The move preserves an existing forced win and slows its shortest route. Mate values, rank2 and safealternative already exist in75features.",
+      "signal_classification": "Available mate-distance/prior-winning context underused, not an absent-feature finding."
+    },
+    {
+      "key": "184618926746:49",
+      "san": "Kg2",
+      "truth": true,
+      "observed_label": "!!",
+      "oof_min_score": 0.3189859093889228,
+      "cohort": "former_new200",
+      "label_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-prospective-v7-2026-11-03/root-frozen-final200queue.json",
+      "snapshot_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-prospective-v7-2026-11-03/sf18-core.json",
+      "fen_before": "3r4/ppN1rp1k/2n3pb/3P4/5Pp1/2B1P3/PP3P2/R4K1R w - - 1 25",
+      "fen_after": "3r4/ppN1rp1k/2n3pb/3P4/5Pp1/2B1P3/PP3PK1/R6R b - - 2 25",
+      "preceding_opponent_move": [
+        "Kh7"
+      ],
+      "saved_lines": [
+        {
+          "position_ply": 47,
+          "fen": "3r4/ppN1rpk1/2n3pb/3P4/5Pp1/2B1P3/PP3P2/R4K1R b - - 0 24",
+          "lines": [
+            {
+              "cp": 501,
+              "mate": null,
+              "san": [
+                "f6",
+                "Ne6+",
+                "Rxe6",
+                "dxe6",
+                "b5",
+                "a3",
+                "Ne7",
+                "Rc1",
+                "Nd5",
+                "Ba5"
+              ],
+              "uci": [
+                "f7f6",
+                "c7e6",
+                "e7e6",
+                "d5e6",
+                "b7b5",
+                "a2a3",
+                "c6e7",
+                "a1c1",
+                "e7d5",
+                "c3a5"
+              ]
+            },
+            {
+              "cp": 529,
+              "mate": null,
+              "san": [
+                "Kf8",
+                "Rxh6",
+                "Rxc7",
+                "Bf6",
+                "Ne7",
+                "Rh8+",
+                "Ng8",
+                "Bxd8",
+                "Rc8",
+                "Bg5"
+              ],
+              "uci": [
+                "g7f8",
+                "h1h6",
+                "e7c7",
+                "c3f6",
+                "c6e7",
+                "h6h8",
+                "e7g8",
+                "f6d8",
+                "c7c8",
+                "d8g5"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 48,
+          "fen": "3r4/ppN1rp1k/2n3pb/3P4/5Pp1/2B1P3/PP3P2/R4K1R w - - 1 25",
+          "lines": [
+            {
+              "cp": 614,
+              "mate": null,
+              "san": [
+                "Kg2",
+                "g5",
+                "fxg5",
+                "Rd6",
+                "Nb5",
+                "Rg6",
+                "Rxh6+",
+                "Rxh6",
+                "gxh6",
+                "Nb8"
+              ],
+              "uci": [
+                "f1g2",
+                "g6g5",
+                "f4g5",
+                "d8d6",
+                "c7b5",
+                "d6g6",
+                "h1h6",
+                "g6h6",
+                "g5h6",
+                "c6b8"
+              ]
+            },
+            {
+              "cp": 431,
+              "mate": null,
+              "san": [
+                "Rxh6+",
+                "Kxh6",
+                "Kg2",
+                "g5",
+                "f5",
+                "Ne5",
+                "Rh1+",
+                "Kg7",
+                "Ne6+",
+                "Kf6"
+              ],
+              "uci": [
+                "h1h6",
+                "h7h6",
+                "f1g2",
+                "g6g5",
+                "f4f5",
+                "c6e5",
+                "a1h1",
+                "h6g7",
+                "c7e6",
+                "g7f6"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 49,
+          "fen": "3r4/ppN1rp1k/2n3pb/3P4/5Pp1/2B1P3/PP3PK1/R6R b - - 2 25",
+          "lines": [
+            {
+              "cp": 625,
+              "mate": null,
+              "san": [
+                "g5",
+                "fxg5",
+                "Rd6",
+                "Nb5",
+                "Rg6",
+                "Rxh6+",
+                "Rxh6",
+                "gxh6",
+                "Nb8",
+                "Nd6"
+              ],
+              "uci": [
+                "g6g5",
+                "f4g5",
+                "d8d6",
+                "c7b5",
+                "d6g6",
+                "h1h6",
+                "g6h6",
+                "g5h6",
+                "c6b8",
+                "b5d6"
+              ]
+            },
+            {
+              "cp": 711,
+              "mate": null,
+              "san": [
+                "Ne5",
+                "Bxe5",
+                "Rxe5",
+                "fxe5",
+                "g5",
+                "Rad1",
+                "Kg6",
+                "d6",
+                "Bg7",
+                "e6"
+              ],
+              "uci": [
+                "c6e5",
+                "c3e5",
+                "e7e5",
+                "f4e5",
+                "g6g5",
+                "a1d1",
+                "h7g6",
+                "d5d6",
+                "h6g7",
+                "e5e6"
+              ]
+            }
+          ]
+        }
+      ],
+      "best_line_material_trajectory": [
+        {
+          "move": "Kg2",
+          "material_delta": 0
+        },
+        {
+          "move": "g5",
+          "material_delta": 0
+        },
+        {
+          "move": "fxg5",
+          "material_delta": 90
+        },
+        {
+          "move": "Rd6",
+          "material_delta": 90
+        },
+        {
+          "move": "Nb5",
+          "material_delta": 90
+        },
+        {
+          "move": "Rg6",
+          "material_delta": 90
+        },
+        {
+          "move": "Rxh6+",
+          "material_delta": 390
+        },
+        {
+          "move": "Rxh6",
+          "material_delta": -110
+        },
+        {
+          "move": "gxh6",
+          "material_delta": 390
+        }
+      ],
+      "current_features": {
+        "raw_offer": true,
+        "ec_sacrifice": false,
+        "mating_acceptance": false,
+        "checked_continuation": false,
+        "converted_material_or_endgame": false,
+        "move_capture": false,
+        "move_check": false,
+        "move_in_check": false,
+        "move_castling": false,
+        "move_en_passant": false,
+        "move_promotion": false,
+        "raw_material_before": 90,
+        "raw_material_after": 90,
+        "immediate_material_gain": 0,
+        "capture_promotion_credit": 0,
+        "phase": 12,
+        "ec_material_before": 90,
+        "ec_material_after": 0,
+        "ec_material_margin": -10,
+        "physical_unknown": false,
+        "physical_checked_horizon": true,
+        "physical_mate_leaf": false,
+        "physical_debt3_max": 0,
+        "physical_debt3_min": 0,
+        "offer_exchange_gain_max": 300,
+        "offer_exchange_gain_min": 300,
+        "avoidability": true,
+        "avoidability_unknown": false,
+        "direct_stalemate_acceptance": false,
+        "stalemate_probe_unknown": false,
+        "attribution_unknown": false,
+        "prior_history_missing": false,
+        "offered_piece_moved": false,
+        "offered_piece_count": 1,
+        "already_vulnerable_same_square_count": 0,
+        "prior_offer_gain_same_square_max": 0,
+        "prior_offer_gain_original_square_max": 0,
+        "offered_role_p": false,
+        "offered_role_n": true,
+        "offered_role_b": false,
+        "offered_role_r": false,
+        "offered_role_q": false,
+        "offered_role_k": false,
+        "moved_role_p": false,
+        "moved_role_n": false,
+        "moved_role_b": false,
+        "moved_role_r": false,
+        "moved_role_q": false,
+        "moved_role_k": true,
+        "window_complete": true,
+        "before_depth": 15,
+        "after_depth": 17,
+        "prior_depth": 14,
+        "before_roots": 2,
+        "best_cp": 614,
+        "best_mate": null,
+        "best_mapped_score": 614,
+        "after_cp": 625,
+        "after_mate": null,
+        "after_mapped_score": 625,
+        "prior_cp": 501,
+        "prior_mate": null,
+        "prior_mapped_score": 501,
+        "played_root_cp": 614,
+        "played_root_mate": null,
+        "played_root_mapped_score": 614,
+        "mapped_loss_pp": -0.34068350686835913,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "played_root_missing": false,
+        "best_second_gap_pp": 7.53875224797649,
+        "after_minus_prior_cp": 124,
+        "best_minus_prior_cp": 113,
+        "winning_safe_alternatives": 0,
+        "safe_alternative_best_cp": null
+      },
+      "diagnosis": "Quiet Kg2 keeps knightc7 capturable by Rxc7 after Kh7, but saved best defense is g5 and the tactical game continues. Board/material scalar has debt0 and ECfalse despite recorded Brilliant. No conditional acceptance PV saved; do not assert unproven mate/deflection mechanism.",
+      "signal_classification": "Quiet useful move plus nonaccepted sacrifice; omitted conditional tactical reason is unresolved."
+    },
+    {
+      "key": "185033501800:57",
+      "san": "Nb4",
+      "truth": true,
+      "observed_label": "!!",
+      "oof_min_score": 0.34517487050547163,
+      "cohort": "former200",
+      "label_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/future-validation-v5/primary-moves.json",
+      "snapshot_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/future-validation-v5/engine-core/analysis-core.json",
+      "fen_before": "2r3k1/1p2rb1p/p5p1/b4p2/3Np3/1RPNP1PP/P2KB3/7R w - - 0 29",
+      "fen_after": "2r3k1/1p2rb1p/p5p1/b4p2/1N1Np3/1RP1P1PP/P2KB3/7R b - - 1 29",
+      "preceding_opponent_move": [
+        "dxe4"
+      ],
+      "saved_lines": [
+        {
+          "position_ply": 55,
+          "fen": "2r3k1/1p2rb1p/p5p1/b2p1p2/3NP3/1RPNP1PP/P2KB3/7R b - - 0 28",
+          "lines": [
+            {
+              "cp": 131,
+              "mate": null,
+              "san": [
+                "dxe4",
+                "Nb4",
+                "Bxb3",
+                "axb3",
+                "Kg7",
+                "Ra1",
+                "Re5",
+                "g4",
+                "Bxb4",
+                "cxb4"
+              ],
+              "uci": [
+                "d5e4",
+                "d3b4",
+                "f7b3",
+                "a2b3",
+                "g8g7",
+                "h1a1",
+                "e7e5",
+                "g3g4",
+                "a5b4",
+                "c3b4"
+              ]
+            },
+            {
+              "cp": 341,
+              "mate": null,
+              "san": [
+                "Rec7",
+                "exf5",
+                "Rxc3",
+                "Kd1",
+                "Be8",
+                "Rxc3",
+                "Rxc3",
+                "Nb3",
+                "Ba4",
+                "Rf1"
+              ],
+              "uci": [
+                "e7c7",
+                "e4f5",
+                "c7c3",
+                "d2d1",
+                "f7e8",
+                "b3c3",
+                "c8c3",
+                "d4b3",
+                "e8a4",
+                "h1f1"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 56,
+          "fen": "2r3k1/1p2rb1p/p5p1/b4p2/3Np3/1RPNP1PP/P2KB3/7R w - - 0 29",
+          "lines": [
+            {
+              "cp": 124,
+              "mate": null,
+              "san": [
+                "Nb4",
+                "Bxb3",
+                "axb3",
+                "Kg7",
+                "Ra1",
+                "Re5",
+                "g4",
+                "Bxb4",
+                "cxb4",
+                "Rd8"
+              ],
+              "uci": [
+                "d3b4",
+                "f7b3",
+                "a2b3",
+                "g8g7",
+                "h1a1",
+                "e7e5",
+                "g3g4",
+                "a5b4",
+                "c3b4",
+                "c8d8"
+              ]
+            },
+            {
+              "cp": -125,
+              "mate": null,
+              "san": [
+                "Ra3",
+                "exd3",
+                "Rxa5",
+                "dxe2",
+                "Re1",
+                "Bc4",
+                "Nxe2",
+                "b6",
+                "Ra4",
+                "a5"
+              ],
+              "uci": [
+                "b3a3",
+                "e4d3",
+                "a3a5",
+                "d3e2",
+                "h1e1",
+                "f7c4",
+                "d4e2",
+                "b7b6",
+                "a5a4",
+                "a6a5"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 57,
+          "fen": "2r3k1/1p2rb1p/p5p1/b4p2/1N1Np3/1RP1P1PP/P2KB3/7R b - - 1 29",
+          "lines": [
+            {
+              "cp": 119,
+              "mate": null,
+              "san": [
+                "Bxb3",
+                "axb3",
+                "Kg7",
+                "Ra1",
+                "Re5",
+                "Bc4",
+                "Rd8",
+                "Nc2",
+                "h5",
+                "b4"
+              ],
+              "uci": [
+                "f7b3",
+                "a2b3",
+                "g8g7",
+                "h1a1",
+                "e7e5",
+                "e2c4",
+                "c8d8",
+                "b4c2",
+                "h7h5",
+                "b3b4"
+              ]
+            },
+            {
+              "cp": 159,
+              "mate": null,
+              "san": [
+                "Bc7",
+                "Rg1",
+                "a5",
+                "Nbc2",
+                "Bxb3",
+                "axb3",
+                "Kg7",
+                "Bc4",
+                "Be5",
+                "Ne2"
+              ],
+              "uci": [
+                "a5c7",
+                "h1g1",
+                "a6a5",
+                "b4c2",
+                "f7b3",
+                "a2b3",
+                "g8g7",
+                "e2c4",
+                "c7e5",
+                "d4e2"
+              ]
+            }
+          ]
+        }
+      ],
+      "best_line_material_trajectory": [
+        {
+          "move": "Nb4",
+          "material_delta": 0
+        },
+        {
+          "move": "Bxb3",
+          "material_delta": -500
+        },
+        {
+          "move": "axb3",
+          "material_delta": -200
+        },
+        {
+          "move": "Kg7",
+          "material_delta": -200
+        },
+        {
+          "move": "Ra1",
+          "material_delta": -200
+        },
+        {
+          "move": "Re5",
+          "material_delta": -200
+        },
+        {
+          "move": "Bc4",
+          "material_delta": -200
+        },
+        {
+          "move": "Rd8",
+          "material_delta": -200
+        },
+        {
+          "move": "Nc2",
+          "material_delta": -200
+        }
+      ],
+      "current_features": {
+        "raw_offer": true,
+        "ec_sacrifice": false,
+        "mating_acceptance": false,
+        "checked_continuation": false,
+        "converted_material_or_endgame": false,
+        "move_capture": false,
+        "move_check": false,
+        "move_in_check": false,
+        "move_castling": false,
+        "move_en_passant": false,
+        "move_promotion": false,
+        "raw_material_before": 210,
+        "raw_material_after": 210,
+        "immediate_material_gain": 0,
+        "capture_promotion_credit": 0,
+        "phase": 13,
+        "ec_material_before": 10,
+        "ec_material_after": -10,
+        "ec_material_margin": -100,
+        "physical_unknown": false,
+        "physical_checked_horizon": true,
+        "physical_mate_leaf": false,
+        "physical_debt3_max": 200,
+        "physical_debt3_min": 200,
+        "offer_exchange_gain_max": 200,
+        "offer_exchange_gain_min": 200,
+        "avoidability": false,
+        "avoidability_unknown": false,
+        "direct_stalemate_acceptance": false,
+        "stalemate_probe_unknown": false,
+        "attribution_unknown": false,
+        "prior_history_missing": false,
+        "offered_piece_moved": false,
+        "offered_piece_count": 1,
+        "already_vulnerable_same_square_count": 0,
+        "prior_offer_gain_same_square_max": 0,
+        "prior_offer_gain_original_square_max": 0,
+        "offered_role_p": false,
+        "offered_role_n": false,
+        "offered_role_b": false,
+        "offered_role_r": true,
+        "offered_role_q": false,
+        "offered_role_k": false,
+        "moved_role_p": false,
+        "moved_role_n": true,
+        "moved_role_b": false,
+        "moved_role_r": false,
+        "moved_role_q": false,
+        "moved_role_k": false,
+        "window_complete": true,
+        "before_depth": 16,
+        "after_depth": 15,
+        "prior_depth": 17,
+        "before_roots": 2,
+        "best_cp": 124,
+        "best_mate": null,
+        "best_mapped_score": 124,
+        "after_cp": 119,
+        "after_mate": null,
+        "after_mapped_score": 119,
+        "prior_cp": 131,
+        "prior_mate": null,
+        "prior_mapped_score": 131,
+        "played_root_cp": 124,
+        "played_root_mate": null,
+        "played_root_mapped_score": 124,
+        "mapped_loss_pp": 0.43797494240858725,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "played_root_missing": false,
+        "best_second_gap_pp": 22.52779039049949,
+        "after_minus_prior_cp": -12,
+        "best_minus_prior_cp": -7,
+        "winning_safe_alternatives": 0,
+        "safe_alternative_best_cp": null
+      },
+      "diagnosis": "After dxe4 opens bishopf7 diagonal to rookb3, Nb4 moves the attacked knightd3 while leaving the exchange. Best line Bxb3 axb3 retains a genuine200 material deficit and evaluation+119cp. ECfalse contradicts a simple physical-investment interpretation.",
+      "signal_classification": "Sustained physical exchange investment present in features but ECfalse learned pattern suppresses it; bestacceptance/debt persistence omitted."
+    },
+    {
+      "key": "185758528940:38",
+      "san": "Nh5",
+      "truth": true,
+      "observed_label": "!!",
+      "oof_min_score": 0.3504398489344811,
+      "cohort": "former848",
+      "label_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-final-2026-11-03/primary-moves.json",
+      "snapshot_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-final-2026-11-03/analysis-baseline.json",
+      "fen_before": "r2k1r2/ppp3pp/5n2/2b1p3/8/1B5P/PPPPK1Pn/RNB4R b - - 6 19",
+      "fen_after": "r2k1r2/ppp3pp/8/2b1p2n/8/1B5P/PPPPK1Pn/RNB4R w - - 7 20",
+      "preceding_opponent_move": [
+        "Rh1"
+      ],
+      "saved_lines": [
+        {
+          "position_ply": 36,
+          "fen": "r2k1r2/ppp3pp/5n2/2b1p3/8/1B5P/PPPPK1Pn/RNBR4 w - - 5 19",
+          "lines": [
+            {
+              "cp": 6,
+              "mate": null,
+              "san": [
+                "d4",
+                "exd4",
+                "Kd3",
+                "Nh5",
+                "c3",
+                "Rf2",
+                "cxd4",
+                "Bd6",
+                "Rg1",
+                "Nf1"
+              ],
+              "uci": [
+                "d2d4",
+                "e5d4",
+                "e2d3",
+                "f6h5",
+                "c2c3",
+                "f8f2",
+                "c3d4",
+                "c5d6",
+                "d1g1",
+                "h2f1"
+              ]
+            },
+            {
+              "cp": -29,
+              "mate": null,
+              "san": [
+                "Nc3",
+                "Nh5",
+                "d4",
+                "Bxd4",
+                "Ne4",
+                "Nf4+",
+                "Bxf4",
+                "Rxf4",
+                "Kd3",
+                "Bb6"
+              ],
+              "uci": [
+                "b1c3",
+                "f6h5",
+                "d2d4",
+                "c5d4",
+                "c3e4",
+                "h5f4",
+                "c1f4",
+                "f8f4",
+                "e2d3",
+                "d4b6"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 37,
+          "fen": "r2k1r2/ppp3pp/5n2/2b1p3/8/1B5P/PPPPK1Pn/RNB4R b - - 6 19",
+          "lines": [
+            {
+              "cp": -247,
+              "mate": null,
+              "san": [
+                "Ne4",
+                "d4",
+                "Ng3+",
+                "Kd3",
+                "Nxh1",
+                "dxc5",
+                "Kd7",
+                "Nc3",
+                "c6",
+                "a4"
+              ],
+              "uci": [
+                "f6e4",
+                "d2d4",
+                "e4g3",
+                "e2d3",
+                "g3h1",
+                "d4c5",
+                "d8d7",
+                "b1c3",
+                "c7c6",
+                "a2a4"
+              ]
+            },
+            {
+              "cp": -232,
+              "mate": null,
+              "san": [
+                "Nh5",
+                "d4",
+                "Ng3+",
+                "Kd3",
+                "Nxh1",
+                "dxc5",
+                "Ke8",
+                "Nc3",
+                "Rf1",
+                "Bd5"
+              ],
+              "uci": [
+                "f6h5",
+                "d2d4",
+                "h5g3",
+                "e2d3",
+                "g3h1",
+                "d4c5",
+                "d8e8",
+                "b1c3",
+                "f8f1",
+                "b3d5"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 38,
+          "fen": "r2k1r2/ppp3pp/8/2b1p2n/8/1B5P/PPPPK1Pn/RNB4R w - - 7 20",
+          "lines": [
+            {
+              "cp": -251,
+              "mate": null,
+              "san": [
+                "d4",
+                "Ng3+",
+                "Kd3",
+                "Nxh1",
+                "dxc5",
+                "Kd7",
+                "Nc3",
+                "Rf1",
+                "c6+",
+                "bxc6"
+              ],
+              "uci": [
+                "d2d4",
+                "h5g3",
+                "e2d3",
+                "g3h1",
+                "d4c5",
+                "d8d7",
+                "b1c3",
+                "f8f1",
+                "c5c6",
+                "b7c6"
+              ]
+            },
+            {
+              "cp": -282,
+              "mate": null,
+              "san": [
+                "Kd1",
+                "Nf1",
+                "Bc4",
+                "Nhg3",
+                "b4",
+                "Bd4",
+                "Rxf1",
+                "Rxf1+",
+                "Bxf1",
+                "Bxa1"
+              ],
+              "uci": [
+                "e2d1",
+                "h2f1",
+                "b3c4",
+                "h5g3",
+                "b2b4",
+                "c5d4",
+                "h1f1",
+                "f8f1",
+                "c4f1",
+                "d4a1"
+              ]
+            }
+          ]
+        }
+      ],
+      "best_line_material_trajectory": [
+        {
+          "move": "Nh5",
+          "material_delta": 0
+        },
+        {
+          "move": "d4",
+          "material_delta": 0
+        },
+        {
+          "move": "Ng3+",
+          "material_delta": 0
+        },
+        {
+          "move": "Kd3",
+          "material_delta": 0
+        },
+        {
+          "move": "Nxh1",
+          "material_delta": 500
+        },
+        {
+          "move": "dxc5",
+          "material_delta": 200
+        },
+        {
+          "move": "Kd7",
+          "material_delta": 200
+        },
+        {
+          "move": "Nc3",
+          "material_delta": 200
+        },
+        {
+          "move": "Rf1",
+          "material_delta": 200
+        }
+      ],
+      "current_features": {
+        "raw_offer": true,
+        "ec_sacrifice": false,
+        "mating_acceptance": false,
+        "checked_continuation": false,
+        "converted_material_or_endgame": false,
+        "move_capture": false,
+        "move_check": false,
+        "move_in_check": false,
+        "move_castling": false,
+        "move_en_passant": false,
+        "move_promotion": false,
+        "raw_material_before": 0,
+        "raw_material_after": 0,
+        "immediate_material_gain": 0,
+        "capture_promotion_credit": 0,
+        "phase": 14,
+        "ec_material_before": -300,
+        "ec_material_after": 300,
+        "ec_material_margin": -100,
+        "physical_unknown": false,
+        "physical_checked_horizon": false,
+        "physical_mate_leaf": false,
+        "physical_debt3_max": 300,
+        "physical_debt3_min": 300,
+        "offer_exchange_gain_max": 300,
+        "offer_exchange_gain_min": 300,
+        "avoidability": false,
+        "avoidability_unknown": false,
+        "direct_stalemate_acceptance": false,
+        "stalemate_probe_unknown": false,
+        "attribution_unknown": false,
+        "prior_history_missing": false,
+        "offered_piece_moved": false,
+        "offered_piece_count": 1,
+        "already_vulnerable_same_square_count": 0,
+        "prior_offer_gain_same_square_max": 0,
+        "prior_offer_gain_original_square_max": 0,
+        "offered_role_p": false,
+        "offered_role_n": true,
+        "offered_role_b": false,
+        "offered_role_r": false,
+        "offered_role_q": false,
+        "offered_role_k": false,
+        "moved_role_p": false,
+        "moved_role_n": true,
+        "moved_role_b": false,
+        "moved_role_r": false,
+        "moved_role_q": false,
+        "moved_role_k": false,
+        "window_complete": true,
+        "before_depth": 16,
+        "after_depth": 17,
+        "prior_depth": 14,
+        "before_roots": 2,
+        "best_cp": 247,
+        "best_mate": null,
+        "best_mapped_score": 247,
+        "after_cp": 251,
+        "after_mate": null,
+        "after_mapped_score": 251,
+        "prior_cp": -6,
+        "prior_mate": null,
+        "prior_mapped_score": -6,
+        "played_root_cp": 232,
+        "played_root_mate": null,
+        "played_root_mapped_score": 232,
+        "mapped_loss_pp": -0.30050685182706616,
+        "same_root_loss_pp": 1.1436107430795772,
+        "same_root_rank": 2,
+        "played_root_missing": false,
+        "best_second_gap_pp": 1.1436107430795772,
+        "after_minus_prior_cp": 257,
+        "best_minus_prior_cp": 253,
+        "winning_safe_alternatives": 0,
+        "safe_alternative_best_cp": null
+      },
+      "diagnosis": "Nh5 leaves knight h2 available to Rxh2 and renews an attack: saved best line d4 Ng3+ Kd3 Nxh1. Existing feature move_check=false misses the next-move checkingfork motif. No saved Rxh2 conditional PV, so cannot prove that acceptance is refuted by this exact fork.",
+      "signal_classification": "Omitted threatened next-move forcing action; movedpiece versus sacrificedpiece are different."
+    },
+    {
+      "key": "173851185684:34",
+      "san": "Nxe5",
+      "truth": true,
+      "observed_label": "brilliant",
+      "oof_min_score": 0.38347192011890463,
+      "cohort": "batch-11",
+      "label_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-11/analysis.json",
+      "snapshot_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-11/analysis.json",
+      "fen_before": "3q1knr/p1p1ppbp/1rnp2p1/3NP3/Q1P2B2/6P1/PP3P1P/R4RK1 b - - 1 17",
+      "fen_after": "3q1knr/p1p1ppbp/1r1p2p1/3Nn3/Q1P2B2/6P1/PP3P1P/R4RK1 w - - 0 18",
+      "preceding_opponent_move": [
+        "Nd5"
+      ],
+      "saved_lines": [
+        {
+          "position_ply": 32,
+          "fen": "3q1knr/p1p1ppbp/1rnp2p1/4P3/Q1P2B2/2N3P1/PP3P1P/R4RK1 w - - 0 17",
+          "lines": [
+            {
+              "cp": -281,
+              "mate": null,
+              "san": [
+                "c5",
+                "dxc5",
+                "Rad1",
+                "Nd4",
+                "b4",
+                "Rxb4",
+                "Qa5",
+                "Rc4",
+                "Ne4",
+                "Qc8"
+              ],
+              "uci": [
+                "c4c5",
+                "d6c5",
+                "a1d1",
+                "c6d4",
+                "b2b4",
+                "b6b4",
+                "a4a5",
+                "b4c4",
+                "c3e4",
+                "d8c8"
+              ]
+            },
+            {
+              "cp": -292,
+              "mate": null,
+              "san": [
+                "exd6",
+                "cxd6",
+                "Nd5",
+                "Qc8",
+                "Rac1",
+                "Ra6",
+                "Qd1",
+                "Bxb2",
+                "c5",
+                "Bxc1"
+              ],
+              "uci": [
+                "e5d6",
+                "c7d6",
+                "c3d5",
+                "d8c8",
+                "a1c1",
+                "b6a6",
+                "a4d1",
+                "g7b2",
+                "c4c5",
+                "b2c1"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 33,
+          "fen": "3q1knr/p1p1ppbp/1rnp2p1/3NP3/Q1P2B2/6P1/PP3P1P/R4RK1 b - - 1 17",
+          "lines": [
+            {
+              "cp": -290,
+              "mate": null,
+              "san": [
+                "Nxe5",
+                "Qxa7",
+                "Rb8",
+                "Qxc7",
+                "Qxc7",
+                "Nxc7",
+                "Rc8",
+                "a4",
+                "Rxc7",
+                "a5"
+              ],
+              "uci": [
+                "c6e5",
+                "a4a7",
+                "b6b8",
+                "a7c7",
+                "d8c7",
+                "d5c7",
+                "b8c8",
+                "a2a4",
+                "c8c7",
+                "a4a5"
+              ]
+            },
+            {
+              "cp": -255,
+              "mate": null,
+              "san": [
+                "dxe5",
+                "Nxb6",
+                "axb6",
+                "Rfd1",
+                "Nd4",
+                "Rxd4",
+                "exd4",
+                "Bxc7",
+                "Qc8",
+                "Qa7"
+              ],
+              "uci": [
+                "d6e5",
+                "d5b6",
+                "a7b6",
+                "f1d1",
+                "c6d4",
+                "d1d4",
+                "e5d4",
+                "f4c7",
+                "d8c8",
+                "a4a7"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 34,
+          "fen": "3q1knr/p1p1ppbp/1r1p2p1/3Nn3/Q1P2B2/6P1/PP3P1P/R4RK1 w - - 0 18",
+          "lines": [
+            {
+              "cp": -315,
+              "mate": null,
+              "san": [
+                "c5",
+                "Rb8",
+                "Rad1",
+                "Ra8",
+                "cxd6",
+                "cxd6",
+                "Rc1",
+                "h5",
+                "Qa3",
+                "Rb8"
+              ],
+              "uci": [
+                "c4c5",
+                "b6b8",
+                "a1d1",
+                "b8a8",
+                "c5d6",
+                "c7d6",
+                "d1c1",
+                "h7h5",
+                "a4a3",
+                "a8b8"
+              ]
+            },
+            {
+              "cp": -334,
+              "mate": null,
+              "san": [
+                "Qxa7",
+                "Nc6",
+                "Qa4",
+                "Nd4",
+                "Nxb6",
+                "cxb6",
+                "Be3",
+                "Nh6",
+                "g4",
+                "Nxg4"
+              ],
+              "uci": [
+                "a4a7",
+                "e5c6",
+                "a7a4",
+                "c6d4",
+                "d5b6",
+                "c7b6",
+                "f4e3",
+                "g8h6",
+                "g3g4",
+                "h6g4"
+              ]
+            }
+          ]
+        }
+      ],
+      "best_line_material_trajectory": [
+        {
+          "move": "Nxe5",
+          "material_delta": 90
+        },
+        {
+          "move": "c5",
+          "material_delta": 90
+        },
+        {
+          "move": "Rb8",
+          "material_delta": 90
+        },
+        {
+          "move": "Rad1",
+          "material_delta": 90
+        },
+        {
+          "move": "Ra8",
+          "material_delta": 90
+        },
+        {
+          "move": "cxd6",
+          "material_delta": 0
+        },
+        {
+          "move": "cxd6",
+          "material_delta": 90
+        },
+        {
+          "move": "Rc1",
+          "material_delta": 90
+        },
+        {
+          "move": "h5",
+          "material_delta": 90
+        }
+      ],
+      "current_features": {
+        "raw_offer": true,
+        "ec_sacrifice": false,
+        "mating_acceptance": false,
+        "checked_continuation": false,
+        "converted_material_or_endgame": true,
+        "move_capture": true,
+        "move_check": false,
+        "move_in_check": false,
+        "move_castling": false,
+        "move_en_passant": false,
+        "move_promotion": false,
+        "raw_material_before": 300,
+        "raw_material_after": 390,
+        "immediate_material_gain": 90,
+        "capture_promotion_credit": 90,
+        "phase": 21,
+        "ec_material_before": 190,
+        "ec_material_after": -190,
+        "ec_material_margin": -100,
+        "physical_unknown": false,
+        "physical_checked_horizon": false,
+        "physical_mate_leaf": false,
+        "physical_debt3_max": 110,
+        "physical_debt3_min": 110,
+        "offer_exchange_gain_max": 200,
+        "offer_exchange_gain_min": 200,
+        "avoidability": false,
+        "avoidability_unknown": false,
+        "direct_stalemate_acceptance": false,
+        "stalemate_probe_unknown": false,
+        "attribution_unknown": false,
+        "prior_history_missing": false,
+        "offered_piece_moved": false,
+        "offered_piece_count": 1,
+        "already_vulnerable_same_square_count": 0,
+        "prior_offer_gain_same_square_max": 0,
+        "prior_offer_gain_original_square_max": 0,
+        "offered_role_p": false,
+        "offered_role_n": false,
+        "offered_role_b": false,
+        "offered_role_r": true,
+        "offered_role_q": false,
+        "offered_role_k": false,
+        "moved_role_p": false,
+        "moved_role_n": true,
+        "moved_role_b": false,
+        "moved_role_r": false,
+        "moved_role_q": false,
+        "moved_role_k": false,
+        "window_complete": true,
+        "before_depth": 18,
+        "after_depth": 16,
+        "prior_depth": 15,
+        "before_roots": 2,
+        "best_cp": 290,
+        "best_mate": null,
+        "best_mapped_score": 290,
+        "after_cp": 315,
+        "after_mate": null,
+        "after_mapped_score": 315,
+        "prior_cp": 281,
+        "prior_mate": null,
+        "prior_mapped_score": 281,
+        "played_root_cp": 290,
+        "played_root_mate": null,
+        "played_root_mapped_score": 290,
+        "mapped_loss_pp": -1.7127482154254494,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "played_root_missing": false,
+        "best_second_gap_pp": 2.529536820107083,
+        "after_minus_prior_cp": 34,
+        "best_minus_prior_cp": 9,
+        "winning_safe_alternatives": 0,
+        "safe_alternative_best_cp": null
+      },
+      "diagnosis": "Nxe5 captures a pawn while leaving rookb6 available to Nxb6 after Nd5. Saved best defense declines it (c5 or Qxa7), while alternative dxe5 before move also permits Nxb6 axb6. ECfalse despite physical investment110.",
+      "signal_classification": "Counterexample to requiring opponent bestroot to accept every genuine offer; acceptance desirability is a feature, not a blanketgate."
+    },
+    {
+      "key": "184071979124:33",
+      "san": "cxd4",
+      "truth": true,
+      "observed_label": "brilliant",
+      "oof_min_score": 0.38426975508094585,
+      "cohort": "batch-13",
+      "label_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-13/analysis.json",
+      "snapshot_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-training-overnight-2026-11-03/engine-batches/batch-13/analysis.json",
+      "fen_before": "3rr1k1/pp2qpbp/4bnp1/8/P2p4/1RP1P2P/1P2BPPB/1N1Q1RK1 w - - 0 17",
+      "fen_after": "3rr1k1/pp2qpbp/4bnp1/8/P2P4/1R2P2P/1P2BPPB/1N1Q1RK1 b - - 0 17",
+      "preceding_opponent_move": [
+        "cxd4"
+      ],
+      "saved_lines": [
+        {
+          "position_ply": 31,
+          "fen": "3rr1k1/pp2qpbp/4bnp1/2p5/P2N4/1RP1P2P/1P2BPPB/1N1Q1RK1 b - - 0 16",
+          "lines": [
+            {
+              "cp": 147,
+              "mate": null,
+              "san": [
+                "cxd4",
+                "cxd4",
+                "Bxb3",
+                "Qxb3",
+                "Ne4",
+                "Bb5",
+                "Qe6",
+                "Qxe6",
+                "Rxe6",
+                "Nc3"
+              ],
+              "uci": [
+                "c5d4",
+                "c3d4",
+                "e6b3",
+                "d1b3",
+                "f6e4",
+                "e2b5",
+                "e7e6",
+                "b3e6",
+                "e8e6",
+                "b1c3"
+              ]
+            },
+            {
+              "cp": 149,
+              "mate": null,
+              "san": [
+                "Bxb3",
+                "Qxb3",
+                "cxd4",
+                "cxd4",
+                "Ne4",
+                "Bb5",
+                "Qe6",
+                "Qxe6",
+                "Rxe6",
+                "Nc3"
+              ],
+              "uci": [
+                "e6b3",
+                "d1b3",
+                "c5d4",
+                "c3d4",
+                "f6e4",
+                "e2b5",
+                "e7e6",
+                "b3e6",
+                "e8e6",
+                "b1c3"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 32,
+          "fen": "3rr1k1/pp2qpbp/4bnp1/8/P2p4/1RP1P2P/1P2BPPB/1N1Q1RK1 w - - 0 17",
+          "lines": [
+            {
+              "cp": 132,
+              "mate": null,
+              "san": [
+                "cxd4",
+                "Bxb3",
+                "Qxb3",
+                "Ne4",
+                "Bb5",
+                "Rf8",
+                "Qc2",
+                "a6",
+                "Be2",
+                "Rfe8"
+              ],
+              "uci": [
+                "c3d4",
+                "e6b3",
+                "d1b3",
+                "f6e4",
+                "e2b5",
+                "e8f8",
+                "b3c2",
+                "a7a6",
+                "b5e2",
+                "f8e8"
+              ]
+            },
+            {
+              "cp": -248,
+              "mate": null,
+              "san": [
+                "Rb4",
+                "dxe3",
+                "Qc1",
+                "Nd5",
+                "Rc4",
+                "Bf5",
+                "Na3",
+                "Bh6",
+                "f3",
+                "Nb6"
+              ],
+              "uci": [
+                "b3b4",
+                "d4e3",
+                "d1c1",
+                "f6d5",
+                "b4c4",
+                "e6f5",
+                "b1a3",
+                "g7h6",
+                "f2f3",
+                "d5b6"
+              ]
+            }
+          ]
+        },
+        {
+          "position_ply": 33,
+          "fen": "3rr1k1/pp2qpbp/4bnp1/8/P2P4/1R2P2P/1P2BPPB/1N1Q1RK1 b - - 0 17",
+          "lines": [
+            {
+              "cp": 129,
+              "mate": null,
+              "san": [
+                "Bxb3",
+                "Qxb3",
+                "Ne4",
+                "Bb5",
+                "Rf8",
+                "Qc2",
+                "a6",
+                "Be2",
+                "Rfe8",
+                "Bf3"
+              ],
+              "uci": [
+                "e6b3",
+                "d1b3",
+                "f6e4",
+                "e2b5",
+                "e8f8",
+                "b3c2",
+                "a7a6",
+                "b5e2",
+                "f8e8",
+                "e2f3"
+              ]
+            },
+            {
+              "cp": 169,
+              "mate": null,
+              "san": [
+                "Rxd4",
+                "exd4",
+                "Bxb3",
+                "Qxb3",
+                "Qxe2",
+                "Qxb7",
+                "Ne4",
+                "Qd7",
+                "Nf6",
+                "Qxa7"
+              ],
+              "uci": [
+                "d8d4",
+                "e3d4",
+                "e6b3",
+                "d1b3",
+                "e7e2",
+                "b3b7",
+                "f6e4",
+                "b7d7",
+                "e4f6",
+                "d7a7"
+              ]
+            }
+          ]
+        }
+      ],
+      "best_line_material_trajectory": [
+        {
+          "move": "cxd4",
+          "material_delta": 90
+        },
+        {
+          "move": "Bxb3",
+          "material_delta": -410
+        },
+        {
+          "move": "Qxb3",
+          "material_delta": -110
+        },
+        {
+          "move": "Ne4",
+          "material_delta": -110
+        },
+        {
+          "move": "Bb5",
+          "material_delta": -110
+        },
+        {
+          "move": "Rf8",
+          "material_delta": -110
+        },
+        {
+          "move": "Qc2",
+          "material_delta": -110
+        },
+        {
+          "move": "a6",
+          "material_delta": -110
+        },
+        {
+          "move": "Be2",
+          "material_delta": -110
+        }
+      ],
+      "current_features": {
+        "raw_offer": true,
+        "ec_sacrifice": false,
+        "mating_acceptance": false,
+        "checked_continuation": false,
+        "converted_material_or_endgame": false,
+        "move_capture": true,
+        "move_check": false,
+        "move_in_check": false,
+        "move_castling": false,
+        "move_en_passant": false,
+        "move_promotion": false,
+        "raw_material_before": 90,
+        "raw_material_after": 180,
+        "immediate_material_gain": 90,
+        "capture_promotion_credit": 90,
+        "phase": 22,
+        "ec_material_before": 0,
+        "ec_material_after": 20,
+        "ec_material_margin": -80,
+        "physical_unknown": false,
+        "physical_checked_horizon": true,
+        "physical_mate_leaf": false,
+        "physical_debt3_max": 110,
+        "physical_debt3_min": 110,
+        "offer_exchange_gain_max": 200,
+        "offer_exchange_gain_min": 200,
+        "avoidability": true,
+        "avoidability_unknown": false,
+        "direct_stalemate_acceptance": false,
+        "stalemate_probe_unknown": false,
+        "attribution_unknown": false,
+        "prior_history_missing": false,
+        "offered_piece_moved": false,
+        "offered_piece_count": 1,
+        "already_vulnerable_same_square_count": 1,
+        "prior_offer_gain_same_square_max": 200,
+        "prior_offer_gain_original_square_max": 200,
+        "offered_role_p": false,
+        "offered_role_n": false,
+        "offered_role_b": false,
+        "offered_role_r": true,
+        "offered_role_q": false,
+        "offered_role_k": false,
+        "moved_role_p": true,
+        "moved_role_n": false,
+        "moved_role_b": false,
+        "moved_role_r": false,
+        "moved_role_q": false,
+        "moved_role_k": false,
+        "window_complete": true,
+        "before_depth": 16,
+        "after_depth": 17,
+        "prior_depth": 17,
+        "before_roots": 2,
+        "best_cp": 132,
+        "best_mate": null,
+        "best_mapped_score": 132,
+        "after_cp": 129,
+        "after_mate": null,
+        "after_mapped_score": 129,
+        "prior_cp": 147,
+        "prior_mate": null,
+        "prior_mapped_score": 147,
+        "played_root_cp": 132,
+        "played_root_mate": null,
+        "played_root_mapped_score": 132,
+        "mapped_loss_pp": 0.2608088891895761,
+        "same_root_loss_pp": 0.0,
+        "same_root_rank": 1,
+        "played_root_missing": false,
+        "best_second_gap_pp": 33.28173430078638,
+        "after_minus_prior_cp": -18,
+        "best_minus_prior_cp": -15,
+        "winning_safe_alternatives": 0,
+        "safe_alternative_best_cp": null
+      },
+      "diagnosis": "cxd4 captures a pawn and leaves rookb3 on bishope6 diagonal. Best defense Bxb3 Qxb3 yields sustained net110 investment. Prior own position already allowed Bxb3, so blanket novelty would reject this recorded Brilliant.",
+      "signal_classification": "Available priorliability200 and physicaldebt110; newdecision contextual proof rather than novelty alone."
+    }
+  ],
+  "recommendation": "Prioritize victim-specific offer context: whether current/prior best opponent roots actually accept the qualifying victim, and material deficit/payout trajectory along saved acceptance lines including cross-square recovery. Treat as additional causal features/diagnostic evidence, not a hardgate: Nxe5/Nh5/Kg2 are genuine offers declined by best defense. New engine evidence for unsaved acceptance branches would require separate authorization.",
+  "other_findings": [
+    "Negative physicaldebt already marks two high-scored falseawards; model ignores some available signal.",
+    "Mate-distance/priorwinning and marginal quality already explain two more falseawards without a new feature.",
+    "Quiet-offer structural overlap remains: Qh4Best versus quiet realBrilliants. Ten cases cannot establish label corruption or a separator.",
+    "No rating/settings causality inferred; reviewer settings not consistently evidenced.",
+    "Cannot promise recognition gain without falseaward cost; do not launch another same-feature sweep from this diagnosis."
+  ]
+}

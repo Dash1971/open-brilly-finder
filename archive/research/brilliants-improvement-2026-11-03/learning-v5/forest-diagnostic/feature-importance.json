@@ -1,0 +1,1669 @@
+{
+  "definition": "Mean per-tree normalized weighted-Gini gain, with expanded-feature and collapsed missing-indicator views. Descriptive, not causal.",
+  "full_fit_expanded": [
+    {
+      "feature": "ec_material_margin",
+      "importance": 0.11467139995364715
+    },
+    {
+      "feature": "ec_material_after",
+      "importance": 0.08557803836954984
+    },
+    {
+      "feature": "ec_sacrifice",
+      "importance": 0.07560723925172638
+    },
+    {
+      "feature": "offered_piece_moved",
+      "importance": 0.07544874258578108
+    },
+    {
+      "feature": "best_minus_prior_cp",
+      "importance": 0.0529803309574804
+    },
+    {
+      "feature": "after_minus_prior_cp",
+      "importance": 0.04782746501872513
+    },
+    {
+      "feature": "capture_promotion_credit",
+      "importance": 0.027590500508396707
+    },
+    {
+      "feature": "physical_debt3_min",
+      "importance": 0.02750005564156674
+    },
+    {
+      "feature": "phase",
+      "importance": 0.024766098076543397
+    },
+    {
+      "feature": "prior_offer_gain_original_square_max",
+      "importance": 0.02311610643977409
+    },
+    {
+      "feature": "already_vulnerable_same_square_count",
+      "importance": 0.022927032450362254
+    },
+    {
+      "feature": "prior_offer_gain_same_square_max",
+      "importance": 0.022164935491690248
+    },
+    {
+      "feature": "prior_cp",
+      "importance": 0.02202908252574747
+    },
+    {
+      "feature": "prior_mapped_score",
+      "importance": 0.02192152384231728
+    },
+    {
+      "feature": "best_mapped_score",
+      "importance": 0.020291342260739094
+    },
+    {
+      "feature": "immediate_material_gain",
+      "importance": 0.019589325890063063
+    },
+    {
+      "feature": "ec_material_before",
+      "importance": 0.01924019984247584
+    },
+    {
+      "feature": "raw_material_before",
+      "importance": 0.019136246102024506
+    },
+    {
+      "feature": "best_second_gap_pp",
+      "importance": 0.0187357527289705
+    },
+    {
+      "feature": "move_capture",
+      "importance": 0.017897405608429978
+    },
+    {
+      "feature": "played_root_cp",
+      "importance": 0.017224966170482234
+    },
+    {
+      "feature": "raw_material_after",
+      "importance": 0.017123840837183997
+    },
+    {
+      "feature": "played_root_mapped_score",
+      "importance": 0.016714556568865162
+    },
+    {
+      "feature": "physical_debt3_max",
+      "importance": 0.01554387956800294
+    },
+    {
+      "feature": "after_cp",
+      "importance": 0.015512791648975538
+    },
+    {
+      "feature": "after_mapped_score",
+      "importance": 0.015443533428307125
+    },
+    {
+      "feature": "best_cp",
+      "importance": 0.013369209226173172
+    },
+    {
+      "feature": "avoidability",
+      "importance": 0.011229013677911171
+    },
+    {
+      "feature": "converted_material_or_endgame",
+      "importance": 0.009363485989230234
+    },
+    {
+      "feature": "offer_exchange_gain_min",
+      "importance": 0.008939615238155663
+    },
+    {
+      "feature": "move_in_check",
+      "importance": 0.0077175025117583096
+    },
+    {
+      "feature": "before_depth",
+      "importance": 0.007257847584875954
+    },
+    {
+      "feature": "after_depth",
+      "importance": 0.006436909185593312
+    },
+    {
+      "feature": "same_root_loss_pp",
+      "importance": 0.006067421178160278
+    },
+    {
+      "feature": "mating_acceptance",
+      "importance": 0.005995238850994691
+    },
+    {
+      "feature": "safe_alternative_best_cp__missing",
+      "importance": 0.0057367013283143265
+    },
+    {
+      "feature": "offer_exchange_gain_max",
+      "importance": 0.00536793720214102
+    },
+    {
+      "feature": "moved_role_q",
+      "importance": 0.005083841083485207
+    },
+    {
+      "feature": "prior_depth",
+      "importance": 0.004854781684986519
+    },
+    {
+      "feature": "mapped_loss_pp",
+      "importance": 0.004670870335314005
+    },
+    {
+      "feature": "moved_role_r",
+      "importance": 0.0043898124434081105
+    },
+    {
+      "feature": "moved_role_k",
+      "importance": 0.003922792485582225
+    },
+    {
+      "feature": "moved_role_n",
+      "importance": 0.0034760182179097584
+    },
+    {
+      "feature": "move_check",
+      "importance": 0.003287957068435383
+    },
+    {
+      "feature": "offered_role_r",
+      "importance": 0.003279246966392182
+    },
+    {
+      "feature": "safe_alternative_best_cp",
+      "importance": 0.002642102955205818
+    },
+    {
+      "feature": "winning_safe_alternatives",
+      "importance": 0.002412274322551273
+    },
+    {
+      "feature": "physical_checked_horizon",
+      "importance": 0.00233327982364206
+    },
+    {
+      "feature": "best_mate__missing",
+      "importance": 0.0020978604722939756
+    },
+    {
+      "feature": "played_root_mapped_score__missing",
+      "importance": 0.002079603886719083
+    },
+    {
+      "feature": "offered_role_q",
+      "importance": 0.001872474395823776
+    },
+    {
+      "feature": "checked_continuation",
+      "importance": 0.0017702729496205428
+    },
+    {
+      "feature": "same_root_loss_pp__missing",
+      "importance": 0.001169999981227971
+    },
+    {
+      "feature": "offered_role_n",
+      "importance": 0.0009720643574204016
+    },
+    {
+      "feature": "offered_role_b",
+      "importance": 0.0007444089076299794
+    },
+    {
+      "feature": "after_cp__missing",
+      "importance": 0.0006730159840771385
+    },
+    {
+      "feature": "moved_role_b",
+      "importance": 0.0005538657855219542
+    },
+    {
+      "feature": "best_cp__missing",
+      "importance": 0.0005390850803359344
+    },
+    {
+      "feature": "same_root_rank",
+      "importance": 0.0005093748892047521
+    },
+    {
+      "feature": "played_root_mate",
+      "importance": 0.0004504021558612073
+    },
+    {
+      "feature": "played_root_cp__missing",
+      "importance": 0.00040219940943172887
+    },
+    {
+      "feature": "prior_mate__missing",
+      "importance": 0.0003834183235491032
+    },
+    {
+      "feature": "prior_cp__missing",
+      "importance": 0.00038230716920074724
+    },
+    {
+      "feature": "same_root_rank__missing",
+      "importance": 0.00034379332722858256
+    },
+    {
+      "feature": "moved_role_p",
+      "importance": 0.0002876097739056042
+    },
+    {
+      "feature": "physical_mate_leaf",
+      "importance": 0.00025203469524551203
+    },
+    {
+      "feature": "after_mate",
+      "importance": 5.026915170196187e-05
+    },
+    {
+      "feature": "played_root_missing",
+      "importance": 4.968817595125159e-05
+    },
+    {
+      "feature": "attribution_unknown",
+      "importance": 0.0
+    },
+    {
+      "feature": "avoidability_unknown",
+      "importance": 0.0
+    },
+    {
+      "feature": "before_roots",
+      "importance": 0.0
+    },
+    {
+      "feature": "best_mate",
+      "importance": 0.0
+    },
+    {
+      "feature": "direct_stalemate_acceptance",
+      "importance": 0.0
+    },
+    {
+      "feature": "move_castling",
+      "importance": 0.0
+    },
+    {
+      "feature": "move_en_passant",
+      "importance": 0.0
+    },
+    {
+      "feature": "move_promotion",
+      "importance": 0.0
+    },
+    {
+      "feature": "offered_piece_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "offered_role_k",
+      "importance": 0.0
+    },
+    {
+      "feature": "offered_role_p",
+      "importance": 0.0
+    },
+    {
+      "feature": "physical_unknown",
+      "importance": 0.0
+    },
+    {
+      "feature": "prior_history_missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "prior_mate",
+      "importance": 0.0
+    },
+    {
+      "feature": "raw_offer",
+      "importance": 0.0
+    },
+    {
+      "feature": "stalemate_probe_unknown",
+      "importance": 0.0
+    },
+    {
+      "feature": "window_complete",
+      "importance": 0.0
+    },
+    {
+      "feature": "after_depth__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "after_mapped_score__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "after_mate__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "after_minus_prior_cp__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "already_vulnerable_same_square_count__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "attribution_unknown__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "avoidability__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "avoidability_unknown__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "before_depth__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "before_roots__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "best_mapped_score__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "best_minus_prior_cp__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "best_second_gap_pp__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "capture_promotion_credit__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "checked_continuation__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "converted_material_or_endgame__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "direct_stalemate_acceptance__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "ec_material_after__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "ec_material_before__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "ec_material_margin__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "ec_sacrifice__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "immediate_material_gain__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "mapped_loss_pp__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "mating_acceptance__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "move_capture__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "move_castling__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "move_check__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "move_en_passant__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "move_in_check__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "move_promotion__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "moved_role_b__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "moved_role_k__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "moved_role_n__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "moved_role_p__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "moved_role_q__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "moved_role_r__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "offer_exchange_gain_max__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "offer_exchange_gain_min__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "offered_piece_count__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "offered_piece_moved__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "offered_role_b__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "offered_role_k__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "offered_role_n__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "offered_role_p__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "offered_role_q__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "offered_role_r__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "phase__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "physical_checked_horizon__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "physical_debt3_max__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "physical_debt3_min__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "physical_mate_leaf__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "physical_unknown__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "played_root_mate__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "played_root_missing__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "prior_depth__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "prior_history_missing__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "prior_mapped_score__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "prior_offer_gain_original_square_max__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "prior_offer_gain_same_square_max__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "raw_material_after__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "raw_material_before__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "raw_offer__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "stalemate_probe_unknown__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "window_complete__missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "winning_safe_alternatives__missing",
+      "importance": 0.0
+    }
+  ],
+  "full_fit_collapsed": [
+    {
+      "feature": "ec_material_margin",
+      "importance": 0.11467139995364715
+    },
+    {
+      "feature": "ec_material_after",
+      "importance": 0.08557803836954984
+    },
+    {
+      "feature": "ec_sacrifice",
+      "importance": 0.07560723925172638
+    },
+    {
+      "feature": "offered_piece_moved",
+      "importance": 0.07544874258578108
+    },
+    {
+      "feature": "best_minus_prior_cp",
+      "importance": 0.0529803309574804
+    },
+    {
+      "feature": "after_minus_prior_cp",
+      "importance": 0.04782746501872513
+    },
+    {
+      "feature": "capture_promotion_credit",
+      "importance": 0.027590500508396707
+    },
+    {
+      "feature": "physical_debt3_min",
+      "importance": 0.02750005564156674
+    },
+    {
+      "feature": "phase",
+      "importance": 0.024766098076543397
+    },
+    {
+      "feature": "prior_offer_gain_original_square_max",
+      "importance": 0.02311610643977409
+    },
+    {
+      "feature": "already_vulnerable_same_square_count",
+      "importance": 0.022927032450362254
+    },
+    {
+      "feature": "prior_cp",
+      "importance": 0.022411389694948214
+    },
+    {
+      "feature": "prior_offer_gain_same_square_max",
+      "importance": 0.022164935491690248
+    },
+    {
+      "feature": "prior_mapped_score",
+      "importance": 0.02192152384231728
+    },
+    {
+      "feature": "best_mapped_score",
+      "importance": 0.020291342260739094
+    },
+    {
+      "feature": "immediate_material_gain",
+      "importance": 0.019589325890063063
+    },
+    {
+      "feature": "ec_material_before",
+      "importance": 0.01924019984247584
+    },
+    {
+      "feature": "raw_material_before",
+      "importance": 0.019136246102024506
+    },
+    {
+      "feature": "played_root_mapped_score",
+      "importance": 0.018794160455584245
+    },
+    {
+      "feature": "best_second_gap_pp",
+      "importance": 0.0187357527289705
+    },
+    {
+      "feature": "move_capture",
+      "importance": 0.017897405608429978
+    },
+    {
+      "feature": "played_root_cp",
+      "importance": 0.017627165579913964
+    },
+    {
+      "feature": "raw_material_after",
+      "importance": 0.017123840837183997
+    },
+    {
+      "feature": "after_cp",
+      "importance": 0.016185807633052676
+    },
+    {
+      "feature": "physical_debt3_max",
+      "importance": 0.01554387956800294
+    },
+    {
+      "feature": "after_mapped_score",
+      "importance": 0.015443533428307125
+    },
+    {
+      "feature": "best_cp",
+      "importance": 0.013908294306509106
+    },
+    {
+      "feature": "avoidability",
+      "importance": 0.011229013677911171
+    },
+    {
+      "feature": "converted_material_or_endgame",
+      "importance": 0.009363485989230234
+    },
+    {
+      "feature": "offer_exchange_gain_min",
+      "importance": 0.008939615238155663
+    },
+    {
+      "feature": "safe_alternative_best_cp",
+      "importance": 0.008378804283520145
+    },
+    {
+      "feature": "move_in_check",
+      "importance": 0.0077175025117583096
+    },
+    {
+      "feature": "before_depth",
+      "importance": 0.007257847584875954
+    },
+    {
+      "feature": "same_root_loss_pp",
+      "importance": 0.007237421159388249
+    },
+    {
+      "feature": "after_depth",
+      "importance": 0.006436909185593312
+    },
+    {
+      "feature": "mating_acceptance",
+      "importance": 0.005995238850994691
+    },
+    {
+      "feature": "offer_exchange_gain_max",
+      "importance": 0.00536793720214102
+    },
+    {
+      "feature": "moved_role_q",
+      "importance": 0.005083841083485207
+    },
+    {
+      "feature": "prior_depth",
+      "importance": 0.004854781684986519
+    },
+    {
+      "feature": "mapped_loss_pp",
+      "importance": 0.004670870335314005
+    },
+    {
+      "feature": "moved_role_r",
+      "importance": 0.0043898124434081105
+    },
+    {
+      "feature": "moved_role_k",
+      "importance": 0.003922792485582225
+    },
+    {
+      "feature": "moved_role_n",
+      "importance": 0.0034760182179097584
+    },
+    {
+      "feature": "move_check",
+      "importance": 0.003287957068435383
+    },
+    {
+      "feature": "offered_role_r",
+      "importance": 0.003279246966392182
+    },
+    {
+      "feature": "winning_safe_alternatives",
+      "importance": 0.002412274322551273
+    },
+    {
+      "feature": "physical_checked_horizon",
+      "importance": 0.00233327982364206
+    },
+    {
+      "feature": "best_mate",
+      "importance": 0.0020978604722939756
+    },
+    {
+      "feature": "offered_role_q",
+      "importance": 0.001872474395823776
+    },
+    {
+      "feature": "checked_continuation",
+      "importance": 0.0017702729496205428
+    },
+    {
+      "feature": "offered_role_n",
+      "importance": 0.0009720643574204016
+    },
+    {
+      "feature": "same_root_rank",
+      "importance": 0.0008531682164333346
+    },
+    {
+      "feature": "offered_role_b",
+      "importance": 0.0007444089076299794
+    },
+    {
+      "feature": "moved_role_b",
+      "importance": 0.0005538657855219542
+    },
+    {
+      "feature": "played_root_mate",
+      "importance": 0.0004504021558612073
+    },
+    {
+      "feature": "prior_mate",
+      "importance": 0.0003834183235491032
+    },
+    {
+      "feature": "moved_role_p",
+      "importance": 0.0002876097739056042
+    },
+    {
+      "feature": "physical_mate_leaf",
+      "importance": 0.00025203469524551203
+    },
+    {
+      "feature": "after_mate",
+      "importance": 5.026915170196187e-05
+    },
+    {
+      "feature": "played_root_missing",
+      "importance": 4.968817595125159e-05
+    },
+    {
+      "feature": "attribution_unknown",
+      "importance": 0.0
+    },
+    {
+      "feature": "avoidability_unknown",
+      "importance": 0.0
+    },
+    {
+      "feature": "before_roots",
+      "importance": 0.0
+    },
+    {
+      "feature": "direct_stalemate_acceptance",
+      "importance": 0.0
+    },
+    {
+      "feature": "move_castling",
+      "importance": 0.0
+    },
+    {
+      "feature": "move_en_passant",
+      "importance": 0.0
+    },
+    {
+      "feature": "move_promotion",
+      "importance": 0.0
+    },
+    {
+      "feature": "offered_piece_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "offered_role_k",
+      "importance": 0.0
+    },
+    {
+      "feature": "offered_role_p",
+      "importance": 0.0
+    },
+    {
+      "feature": "physical_unknown",
+      "importance": 0.0
+    },
+    {
+      "feature": "prior_history_missing",
+      "importance": 0.0
+    },
+    {
+      "feature": "raw_offer",
+      "importance": 0.0
+    },
+    {
+      "feature": "stalemate_probe_unknown",
+      "importance": 0.0
+    },
+    {
+      "feature": "window_complete",
+      "importance": 0.0
+    }
+  ],
+  "outer_fold_expanded": {
+    "0": [
+      0.011483655706761473,
+      0.01471165432629536,
+      0.011974386355403228,
+      0.0,
+      0.04166307208935958,
+      0.019017928532189164,
+      0.0,
+      0.01326008085241405,
+      0.0,
+      0.0048404610867729654,
+      0.0,
+      0.012766119835312896,
+      0.011923659425413471,
+      0.0,
+      0.03377030788618193,
+      0.013390463652757884,
+      0.0258795419692538,
+      0.005698310264188367,
+      0.01592016069487471,
+      0.0,
+      0.06521494238222328,
+      0.01802129722675429,
+      0.10208022594552274,
+      0.09514617200109943,
+      0.01348612401320006,
+      0.00942004766582356,
+      0.0033125568404949682,
+      0.0325427951450962,
+      0.0,
+      0.0006949003973058819,
+      0.0,
+      0.003791955647100729,
+      0.0,
+      0.0030339497590208702,
+      0.003363080355971264,
+      0.0026417814646894247,
+      0.0006350108361626324,
+      0.0016877489387314847,
+      0.0007966467708722474,
+      0.008216139494609512,
+      0.011171767489641224,
+      0.0,
+      0.11051602837983707,
+      0.00020971062154942732,
+      0.0,
+      0.0020987994636790697,
+      0.0,
+      0.0022024527715682205,
+      0.0037973775006223997,
+      0.023427271455736046,
+      0.0010505640450083412,
+      0.020370942766606753,
+      0.03749929341995058,
+      0.002814754789880005,
+      0.0,
+      0.011968769696312345,
+      0.027216411082898132,
+      0.0,
+      0.000291631290531056,
+      0.007978403150902072,
+      0.0018803771033308343,
+      0.0,
+      0.020593378750615964,
+      0.0,
+      0.01928518165117985,
+      0.025583561612219675,
+      0.01806245919631845,
+      0.030784120054062426,
+      0.0,
+      0.0004780084805163772,
+      0.006950837918475632,
+      0.005809039481536675,
+      0.0,
+      0.0,
+      0.0003065190655594763,
+      0.000799971286541948,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0009461464946028176,
+      0.0,
+      7.605924293882829e-07,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.00019675543094011493,
+      0.0004652675132579172,
+      0.0008538366725753949,
+      0.0,
+      6.792072394743614e-05,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0027198377790889363,
+      0.0,
+      0.001216664706220508,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "1": [
+      0.011785175445967407,
+      0.004089543983539397,
+      0.02551525007840003,
+      0.0,
+      0.05101160716041977,
+      0.011159141133279654,
+      0.0,
+      0.022265159676377072,
+      0.0,
+      0.0067390442697532115,
+      0.0,
+      0.014001792593979157,
+      0.01920739987872909,
+      0.0,
+      0.07729659520453643,
+      0.018987339883458482,
+      0.017784000749360762,
+      0.0,
+      0.014438527073437752,
+      0.0,
+      0.11539002026391038,
+      0.01872985163495071,
+      0.08386681096962424,
+      0.03909942057021238,
+      0.015274913141372887,
+      0.01858359914260692,
+      0.0007980454997380238,
+      0.01669432080383773,
+      0.0,
+      0.0017290463878227526,
+      0.0,
+      0.0022676224995611194,
+      0.0,
+      2.5803176085415222e-08,
+      0.0032188325065120134,
+      0.0015004217689960472,
+      0.00300627469318286,
+      0.001721073058492012,
+      1.608275757052752e-05,
+      0.004770200047867067,
+      0.007675086232552277,
+      0.0,
+      0.1179773645117564,
+      0.0009664095431003207,
+      0.0,
+      0.0048915123214084205,
+      0.0,
+      0.0012978301795977631,
+      0.002526120329160536,
+      0.016017956409003022,
+      0.001503990816744772,
+      0.0345332565932196,
+      0.02197363221819806,
+      3.4950545714640674e-05,
+      0.0,
+      0.01067358660964502,
+      0.016280182214693604,
+      0.0,
+      0.0008376379923056689,
+      0.018381705159500706,
+      0.0029687088307774243,
+      0.0,
+      0.015035129785562446,
+      0.0,
+      0.012492489546772546,
+      0.01506546958915798,
+      0.019013394424687625,
+      0.04553197337355705,
+      0.0,
+      0.0007941257821643473,
+      0.0012443548097048588,
+      0.0009774933491166575,
+      0.0,
+      0.0,
+      0.0032349372531743797,
+      0.0004803996231026156,
+      0.0,
+      0.0,
+      0.0006303385459236315,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.00024908557390510683,
+      0.0014251620443598572,
+      0.00023255862070795347,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0032027544730273243,
+      0.0007253363541978662,
+      0.00017792766282758408,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "2": [
+      0.015284604612785876,
+      0.006702071839143737,
+      0.012561731936721388,
+      0.0,
+      0.06718943733170107,
+      0.020425163399761425,
+      0.0,
+      0.01271461405541062,
+      0.0,
+      0.007408957505438273,
+      0.0,
+      0.009784946510002968,
+      0.01239586999175831,
+      0.0006997191149859403,
+      0.051403042847042155,
+      0.016455255201755736,
+      0.02459098551983663,
+      0.00032953880626707116,
+      0.01670648986732955,
+      0.0,
+      0.08926308636358005,
+      0.01079080984897973,
+      0.11336945385514227,
+      0.05730670897766828,
+      0.025193508451116738,
+      0.01207725831465189,
+      0.005662125729241595,
+      0.023667131306593793,
+      0.0,
+      0.004737087089133602,
+      0.0,
+      0.0030129381053111285,
+      0.0,
+      0.0008221471433467813,
+      0.006982624098693126,
+      0.000788018851136349,
+      0.0,
+      0.0008620697450492386,
+      0.006145302041395757,
+      0.0051204915736584545,
+      0.01050889626618067,
+      0.0,
+      0.07875872926716194,
+      0.0011856959784335797,
+      0.0,
+      0.001979992470529288,
+      0.0,
+      0.003743925517714088,
+      0.002759286277318002,
+      0.025530408849316576,
+      0.005433402467390838,
+      0.0191054996173929,
+      0.01581623163052584,
+      0.0002548985438857584,
+      0.0,
+      0.013185644513683419,
+      0.013847859989217597,
+      0.0,
+      0.0009489118565916719,
+      0.022970612505419107,
+      0.004852778122863942,
+      0.0,
+      0.016299292905433516,
+      0.00022070184574647658,
+      0.016145402967467637,
+      0.012842517195168858,
+      0.023006788939402296,
+      0.041320273602428445,
+      0.0,
+      0.0007530388574684612,
+      0.005505728381250869,
+      0.0008138791581927804,
+      0.0,
+      0.0,
+      0.011187475916415996,
+      0.0007407497610217537,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.9520505470600346e-05,
+      0.0,
+      0.0015854070857297315,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0007308250819053619,
+      0.001383499504438726,
+      0.0,
+      0.0,
+      0.00048523416852127004,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0055837002156724986,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "3": [
+      0.01714588387899197,
+      0.015213585869803356,
+      0.017700565855961314,
+      0.0,
+      0.03753711488365828,
+      0.016988840580143164,
+      0.0,
+      0.01753452149481794,
+      0.0,
+      0.005182955854462039,
+      0.0,
+      0.016330976283831698,
+      0.015789020868194753,
+      0.0,
+      0.05063928215839404,
+      0.014554473244212269,
+      0.026131278342360238,
+      0.0,
+      0.01857730465401911,
+      0.0,
+      0.0932134745825363,
+      0.015035176598084656,
+      0.06761070013451256,
+      0.11768629666150385,
+      0.018145709090291066,
+      0.010522612374219956,
+      0.0027923428453924238,
+      0.017213142326958884,
+      0.0,
+      0.00147576088676513,
+      0.0,
+      0.004307144222535582,
+      0.0,
+      0.0029469948139179787,
+      0.004224076936658449,
+      0.0022045584902165654,
+      0.0037503019513229346,
+      0.0009148326711739339,
+      0.0011929697807711798,
+      0.008439242887080693,
+      0.0036411541273593125,
+      0.0,
+      0.0647404503438407,
+      0.0016554384657113974,
+      0.0,
+      0.0006790886626161001,
+      0.0,
+      0.0,
+      0.003394100717938833,
+      0.022992903155143803,
+      0.0036434200447598513,
+      0.024815979182812788,
+      0.03314265967930007,
+      0.0005576601255257021,
+      0.0,
+      0.013497829974582475,
+      0.01796013457004631,
+      7.318121201729962e-06,
+      0.0014711307758140356,
+      0.022820006098975762,
+      0.00486275378754824,
+      0.0,
+      0.02045452748894869,
+      0.0,
+      0.029407948018964947,
+      0.010022541271285615,
+      0.0223187473244234,
+      0.03263903162326501,
+      0.0,
+      0.0040241502755297785,
+      0.0,
+      0.00012367193401188346,
+      0.0,
+      0.0,
+      0.007523372981333149,
+      0.00014667448098491987,
+      0.0,
+      0.0,
+      0.0004935202516634389,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0001125561001425919,
+      0.0,
+      0.0007591510065775564,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.00028005484644248415,
+      0.0006983527762080311,
+      0.004465797816784346,
+      0.0,
+      0.0031405669984691338,
+      0.0,
+      0.0,
+      0.0,
+      0.0006949693530297559,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0016974061223040437,
+      0.00011379027366177174,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "4": [
+      0.010802063957158428,
+      0.01103580390905882,
+      0.01914759338253392,
+      0.0,
+      0.03651649749854536,
+      0.017423681786467082,
+      0.0,
+      0.020216569086962934,
+      0.0,
+      0.0029896796526174053,
+      0.0,
+      0.011242425452468447,
+      0.015164242746070082,
+      0.0,
+      0.023320501447276938,
+      0.019841964166137007,
+      0.0290160561161032,
+      0.0,
+      0.02018173902224058,
+      0.0,
+      0.06835925193175699,
+      0.012597653037737896,
+      0.1273252387647111,
+      0.057366430420664874,
+      0.03526641904885137,
+      0.01785413089988885,
+      0.001897098515742792,
+      0.037366247803019,
+      0.0,
+      0.004214020832538148,
+      0.0,
+      0.003901441773154836,
+      0.0,
+      0.0017139128862198282,
+      0.004696511909088959,
+      0.004243060676910444,
+      0.0007200123169323374,
+      0.0021024766999874446,
+      0.0028217669638790632,
+      0.02620365867789957,
+      0.01100622349510582,
+      0.0,
+      0.04795796081341409,
+      0.0022204678029286795,
+      0.0,
+      0.002729328083631199,
+      0.0,
+      0.0035961093735926326,
+      0.002068081675525347,
+      0.04585738402905116,
+      0.0025150010356171705,
+      0.018345267456730114,
+      0.023100738727967488,
+      0.0002811412203490417,
+      0.0,
+      0.007937351611914554,
+      0.025133436912851848,
+      0.0,
+      0.0012371416108831667,
+      0.02850971294244918,
+      0.0074074347630436,
+      0.0,
+      0.01821093322735451,
+      0.0005093123678944958,
+      0.012080300131263206,
+      0.027431913942909527,
+      0.015644115213563337,
+      0.028812784740077625,
+      0.0,
+      0.0003171203877333734,
+      0.0026135935853902046,
+      0.0038014442349873752,
+      0.0,
+      0.0,
+      0.001537476456316465,
+      0.0,
+      0.0,
+      0.0,
+      0.0018882284056678856,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.00020840242680095976,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.002317549306724688,
+      0.0028314217609754287,
+      0.0,
+      0.0,
+      0.00024830514604377857,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.004532888316891531,
+      0.0010997406951093484,
+      0.0004635367166174963,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

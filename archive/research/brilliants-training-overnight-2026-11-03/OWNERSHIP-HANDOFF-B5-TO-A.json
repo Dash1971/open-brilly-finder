@@ -1,0 +1,13 @@
+{
+  "recorded_at_utc": "2026-11-03T16:04:50.913174+00:00",
+  "source_queue": "queue-B-wave5.json",
+  "source_queue_sha256": "bf4688fcbbb7e7e739cfa35d49c8755e80d60b562cb12afda1786bb35e2a5f21",
+  "identical_A_queue": "queue-A-wave5-handoff.json",
+  "identical_A_queue_sha256": "bf4688fcbbb7e7e739cfa35d49c8755e80d60b562cb12afda1786bb35e2a5f21",
+  "games": 22,
+  "new_exclusive_owner": "overnight_collector_a",
+  "former_owner": "pilot_corpus",
+  "instruction": "Collector B must skip the entire original B wave5. Collector A processes the byte-identical handoff queue.",
+  "sampling": "Ownership only; source order, game IDs, splits, PGNs and every target unchanged.",
+  "prior_labels": "No game in this wave reviewed before the handoff."
+}

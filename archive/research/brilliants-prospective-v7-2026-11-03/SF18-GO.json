@@ -1,0 +1,33 @@
+{
+  "streams": {
+    "core": {
+      "authorized": true,
+      "authorized_at_utc": "2026-11-03T13:55:42.976718+00:00",
+      "source_sha256": "13e6575c245acbdbf8260486315cf79bd920b8fe7e66df08bbff1263294dea7e",
+      "queue_sha256": "aeec043aa16b97000b4a8bc4d2f32b092e49c28a243f3b12f09bdfbf1054ca94",
+      "collector_sha256": "c3b923604b99481100d6da620cdf11689494b579520e7f8186235bc856cfc1bd"
+    },
+    "panel": {
+      "authorized": true,
+      "authorized_at_utc": "2026-11-03T13:57:59.153010+00:00",
+      "source_sha256": "2b6d9f078324a324e21a54509bcddd5c5f46a1bb9e845a81ddf548d08f3c8ed6",
+      "queue_sha256": "018798f6735adef7e77dc73d44450566a862e61772f5dbbdf352b3b92c07b355",
+      "collector_sha256": "c3b923604b99481100d6da620cdf11689494b579520e7f8186235bc856cfc1bd"
+    },
+    "supplement": {
+      "authorized": true,
+      "authorized_at_utc": "2026-11-03T14:06:06.075978+00:00",
+      "source_sha256": "13e6575c245acbdbf8260486315cf79bd920b8fe7e66df08bbff1263294dea7e",
+      "queue_sha256": "f12d5e3923ca3f44bcd2b4a642da9b67f27fe75a2dd225e7587e159252d0258d",
+      "collector_sha256": "c3b923604b99481100d6da620cdf11689494b579520e7f8186235bc856cfc1bd"
+    }
+  },
+  "authorized_at_utc": "2026-11-03T13:53:28.124710+00:00",
+  "browsers_closed": true,
+  "panel_discovery": true,
+  "panel_pool_sha256": "2b6d9f078324a324e21a54509bcddd5c5f46a1bb9e845a81ddf548d08f3c8ed6",
+  "panel_discovery_sha256": "505648e444069244a228294e260538fbb8350f070682d9e089d3ce5de08b06ed",
+  "discovery_is_board_only_no_engine": true,
+  "source_changes_or_retuning_authorized": false,
+  "resource_note": "Normal memory pressure1,10logicalCPU; atmost2independentengineprocesses, Threads1each, no browsercollection. Fixed native timed profile and reference node settings unchanged."
+}

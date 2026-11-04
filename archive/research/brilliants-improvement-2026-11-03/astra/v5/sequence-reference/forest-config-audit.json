@@ -1,0 +1,22 @@
+{
+  "reviewed_at_utc": "2026-11-03T09:49:18.679772+00:00",
+  "scope": "Read-only artifact/configuration audit; no fitting or inference experiment. Prospective extractor still requires parity for new games.",
+  "hashes": {
+    "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/forest-full.json": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+    "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/PROTOCOL.json": "8073938391ac975e6957e5b98ea3aafb8c139c16cb2238cbbab21c32e1df82bd",
+    "research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/fit.py": "005050c4c2f9d90178464e007de7112fc77a9f4c2b8bd10c4a8058655c73c18f",
+    "research/brilliants-improvement-2026-11-03/learning-v5/features.py": "db2225019d2c9dd48cd07ad285971f6d73f04fe8c2eac9d6d78d4adbee9b514a",
+    "research/brilliants-improvement-2026-11-03/learning-v5/physical_kernel.py": "ec877d176ff59972992ef29569a338c5ab39fa9fb03bb679503e0721a13d1918",
+    "research/brilliants-improvement-2026-11-03/learning-v5/features.json": "d1e97b2c3346994fbc4d73b289c6b6763ea454bdbc8d8935370c643aeceaaa3a"
+  },
+  "protocol_hash_matches_model": true,
+  "ordered_features_match": true,
+  "trees": 64,
+  "predictors": 75,
+  "design_features": 150,
+  "threshold": 0.8333333333333334,
+  "current_and_previous_required": true,
+  "missing_routes": "NaN left; explicit75 missing indicators retained",
+  "guard_requirement": "Both original eligibility windows and original confidence_sufficient",
+  "production_domain_warning": "Existing artifacts use SF18/300k, not SF19/variable budget"
+}

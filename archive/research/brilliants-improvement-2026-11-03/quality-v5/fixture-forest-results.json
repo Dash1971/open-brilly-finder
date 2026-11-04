@@ -1,0 +1,1128 @@
+{
+  "plan": {
+    "scope": "Exactly two already-known outside-benchmark pawn-combination fixtures; not fresh or included in benchmark totals.",
+    "frozen_before_search_at": "2026-11-03T10:11:19.444375+00:00",
+    "script_sha256": "fd91f2cc9659badcc2bc8a1664f1b9381e2b18904154b3232f62a6c9de8f3e54",
+    "engine_sha256": "ae4c93fa9676ca7750d0714342fd8a5b1d018000fc6e0f6cedf112067b5ef374",
+    "nodes": 300000,
+    "Threads": 1,
+    "Hash_MB": 64,
+    "maximum_positions": 6,
+    "forest_sha256": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+    "cases": [
+      {
+        "definition": {
+          "id": "pawn-win-excellent",
+          "title": "An offer that finishes a pawn up",
+          "label": "Excellent",
+          "game_id": "186311900336",
+          "ply": 28,
+          "fen_before": "r2r2k1/pp1nppbp/1qn3p1/4P3/5Pb1/P2B1N2/1P4PP/RNB1QR1K b - - 4 14",
+          "moves": [
+            "Ndxe5",
+            "Nxe5",
+            "Nxe5",
+            "fxe5",
+            "Rxd3"
+          ],
+          "captions": [
+            "Black takes a pawn and offers a knight.",
+            "White takes that knight.",
+            "Black\u2019s second knight recaptures.",
+            "A pawn takes the second knight.",
+            "The rook takes a bishop on another square."
+          ],
+          "conclusion": "Two knights for a knight and bishop. Black gains one pawn.",
+          "source": "https://www.chess.com/analysis/game/live/186311900336/review?move=27",
+          "outside_primary_600": true
+        },
+        "pgn_sha256": "7201c1ab8d22009fee0c604abea6ef739c553825e3901a764e504179f274d6b0",
+        "pgn_source": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-600-2026-11-03/original-pgn/nelsi-2026-10.pgn"
+      },
+      {
+        "definition": {
+          "id": "pawn-win-brilliant",
+          "title": "A similar exchange receives Brilliant",
+          "label": "Brilliant",
+          "game_id": "186305472636",
+          "ply": 18,
+          "fen_before": "r2qk2r/pb1nbppp/1p1p1n2/2pPp1B1/2P1P3/2NB1P2/PP2N1PP/R2QK2R b KQkq - 4 9",
+          "moves": [
+            "Nxd5",
+            "Nxd5",
+            "Bxd5",
+            "cxd5",
+            "Bxg5"
+          ],
+          "captions": [
+            "Black takes a pawn and offers a knight.",
+            "White takes that knight.",
+            "A bishop recaptures the white knight.",
+            "A pawn takes that bishop.",
+            "The other bishop takes a bishop elsewhere."
+          ],
+          "conclusion": "A knight and bishop for a knight and bishop. One pawn gained.",
+          "source": "https://www.chess.com/analysis/game/live/186305472636/review?move=17",
+          "outside_primary_600": true
+        },
+        "pgn_sha256": "45776303e209d2339d4b26e4ca7fbd9f49bbfc987755b4a275948aee81c824df",
+        "pgn_source": "pilot corpus game 186305472636"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "game_id": "186311900336",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.11.01\"]\n[Round \"-\"]\n[White \"L1lChap\"]\n[Black \"nelsi\"]\n[Result \"0-1\"]\n[CurrentPosition \"6k1/pp3pbp/4p1p1/8/7P/P1P5/3r2P1/B3R2K b - h3 0 27\"]\n[Timezone \"UTC\"]\n[ECO \"A45\"]\n[ECOUrl \"https://www.chess.com/openings/Indian-Game...4.f4-d6-5.Nf3-O-O\"]\n[UTCDate \"2026.11.01\"]\n[UTCTime \"00:47:41\"]\n[WhiteElo \"2134\"]\n[BlackElo \"2507\"]\n[TimeControl \"600\"]\n[Termination \"nelsi won by resignation\"]\n[StartTime \"00:47:41\"]\n[EndDate \"2026.11.01\"]\n[EndTime \"00:57:42\"]\n[Link \"https://www.chess.com/game/live/186311900336\"]\n\n1. d4 {[%clk 0:09:59.6]} 1... Nf6 {[%clk 0:09:56.4]} 2. e3 {[%clk 0:09:58.3]} 2... g6 {[%clk 0:09:54]} 3. Bd3 {[%clk 0:09:57.2]} 3... Bg7 {[%clk 0:09:51.9]} 4. f4 {[%clk 0:09:56.4]} 4... d6 {[%clk 0:09:45.9]} 5. Nf3 {[%clk 0:09:54.4]} 5... O-O {[%clk 0:09:43.9]} 6. e4 {[%clk 0:09:53.7]} 6... Bg4 {[%clk 0:09:12]} 7. e5 {[%clk 0:09:50.2]} 7... Nfd7 {[%clk 0:09:00.4]} 8. O-O {[%clk 0:09:46.8]} 8... c5 {[%clk 0:08:56.2]} 9. c3 {[%clk 0:09:43.8]} 9... cxd4 {[%clk 0:08:46.6]} 10. cxd4 {[%clk 0:09:40.1]} 10... dxe5 {[%clk 0:08:44]} 11. dxe5 {[%clk 0:09:36.1]} 11... Nc6 {[%clk 0:08:05.1]} 12. a3 {[%clk 0:09:28.5]} 12... Qb6+ {[%clk 0:07:59.5]} 13. Kh1 {[%clk 0:09:23.6]} 13... Rfd8 {[%clk 0:07:43.5]} 14. Qe1 {[%clk 0:09:15.6]} 14... Ndxe5 {[%clk 0:07:02.8]} 15. Nxe5 {[%clk 0:09:14.4]} 15... Nxe5 {[%clk 0:06:59.8]} 16. fxe5 {[%clk 0:08:58.2]} 16... Rxd3 {[%clk 0:06:56.7]} 17. Qe4 {[%clk 0:08:55.3]} 17... Bf5 {[%clk 0:06:08.9]} 18. Qe2 {[%clk 0:08:52.4]} 18... Rad8 {[%clk 0:05:45]} 19. Nc3 {[%clk 0:08:47.3]} 19... Rxc3 {[%clk 0:04:43.3]} 20. bxc3 {[%clk 0:08:40.3]} 20... Bd3 {[%clk 0:04:38.1]} 21. Qf2 {[%clk 0:08:16.7]} 21... Bxf1 {[%clk 0:04:32.7]} 22. Qxf1 {[%clk 0:08:16.6]} 22... Qb5 {[%clk 0:03:38.4]} 23. Qe1 {[%clk 0:07:47]} 23... Qxe5 {[%clk 0:03:27.5]} 24. Bb2 {[%clk 0:07:38.8]} 24... Qxe1+ {[%clk 0:03:07.8]} 25. Rxe1 {[%clk 0:07:33.1]} 25... Rd2 {[%clk 0:03:07.7]} 26. Ba1 {[%clk 0:07:27.3]} 26... e6 {[%clk 0:03:01.9]} 27. h4 {[%clk 0:07:15.6]} 0-1\n\n",
+      "pgn_sha256": "7201c1ab8d22009fee0c604abea6ef739c553825e3901a764e504179f274d6b0",
+      "snapshots": [
+        {
+          "current": {
+            "depth": 17,
+            "lines": [
+              {
+                "cp": -245,
+                "moves": [
+                  "d1e2",
+                  "c6d4",
+                  "c1e3",
+                  "d7c5",
+                  "e3d4",
+                  "d8d4",
+                  "d3c4",
+                  "d4f4",
+                  "b1d2",
+                  "g7h6",
+                  "b2b3",
+                  "g4f5",
+                  "e2f2",
+                  "a8d8",
+                  "g2g3",
+                  "f4g4",
+                  "h2h3",
+                  "c5e4",
+                  "f2b6",
+                  "e4g3",
+                  "h1g2",
+                  "d8d2",
+                  "f3d2"
+                ]
+              },
+              {
+                "cp": -262,
+                "moves": [
+                  "h2h3",
+                  "d7e5",
+                  "f4e5",
+                  "g4f5",
+                  "e5e6",
+                  "f5d3",
+                  "e6f7",
+                  "g8h8",
+                  "f1e1",
+                  "d3b1",
+                  "d1a4",
+                  "b1f5",
+                  "a4h4",
+                  "b6b3",
+                  "f3g5",
+                  "h7h6",
+                  "g5e6",
+                  "f5e6"
+                ]
+              }
+            ],
+            "reported_nodes": 300327
+          },
+          "previous": {
+            "depth": 16,
+            "lines": [
+              {
+                "cp": -245,
+                "moves": [
+                  "d1e2",
+                  "c6d4",
+                  "c1e3",
+                  "d7c5",
+                  "e3d4",
+                  "d8d4",
+                  "d3c4",
+                  "d4f4",
+                  "b1d2",
+                  "g7h6",
+                  "b2b3",
+                  "g4f5",
+                  "e2f2",
+                  "a8d8",
+                  "g2g3",
+                  "f4g4",
+                  "h2h3",
+                  "c5e4",
+                  "f2b6",
+                  "e4g3",
+                  "h1g2",
+                  "d8d2",
+                  "f3d2"
+                ]
+              },
+              {
+                "cp": -262,
+                "moves": [
+                  "h2h3",
+                  "d7e5",
+                  "f4e5",
+                  "g4f5",
+                  "e5e6",
+                  "f5d3",
+                  "e6f7",
+                  "g8h8",
+                  "f1e1",
+                  "d3b1",
+                  "d1a4",
+                  "b1f5",
+                  "a4h4",
+                  "b6b3",
+                  "f3g5",
+                  "h7h6",
+                  "g5e6",
+                  "f5e6"
+                ]
+              }
+            ],
+            "reported_nodes": 243298
+          },
+          "terminal": false,
+          "quality": "final-mechanism-panel-sf18-300000",
+          "elapsed_seconds": 0.351798,
+          "fen": "r2r2k1/pp1nppbp/1qn3p1/4P3/5Pb1/P2B1N2/1P4PP/RNBQ1R1K w - - 3 14",
+          "position_ply": 26,
+          "ec_material": 0,
+          "pgn_sha256": "7201c1ab8d22009fee0c604abea6ef739c553825e3901a764e504179f274d6b0"
+        },
+        {
+          "current": {
+            "depth": 16,
+            "lines": [
+              {
+                "cp": -301,
+                "moves": [
+                  "d7e5",
+                  "f3e5",
+                  "c6e5",
+                  "f4e5",
+                  "d8d3",
+                  "b1c3",
+                  "g4f5",
+                  "e1h4",
+                  "g7e5",
+                  "h4e7",
+                  "e5g7",
+                  "f1e1",
+                  "h7h6",
+                  "e7e2",
+                  "b6c6",
+                  "e2f2",
+                  "a8e8",
+                  "e1e8",
+                  "c6e8",
+                  "c1f4"
+                ]
+              },
+              {
+                "cp": -265,
+                "moves": [
+                  "g4f3",
+                  "f1f3",
+                  "c6d4",
+                  "f3f1",
+                  "d4b3",
+                  "c1e3",
+                  "d7c5",
+                  "d3e4",
+                  "b3a1",
+                  "b2b4",
+                  "a1b3",
+                  "b1c3",
+                  "a8c8",
+                  "f4f5",
+                  "g7e5",
+                  "b4c5",
+                  "b3c5",
+                  "f5g6",
+                  "h7g6"
+                ]
+              }
+            ],
+            "reported_nodes": 300279
+          },
+          "previous": {
+            "depth": 15,
+            "lines": [
+              {
+                "cp": -301,
+                "moves": [
+                  "d7e5",
+                  "f3e5",
+                  "c6e5",
+                  "f4e5",
+                  "d8d3",
+                  "b1c3",
+                  "g4f5",
+                  "e1h4",
+                  "g7e5",
+                  "h4e7",
+                  "e5g7",
+                  "f1e1",
+                  "h7h6",
+                  "e7e2",
+                  "b6c6",
+                  "e2f2",
+                  "a8e8",
+                  "e1e8",
+                  "c6e8",
+                  "c1f4"
+                ]
+              },
+              {
+                "cp": -265,
+                "moves": [
+                  "g4f3",
+                  "f1f3",
+                  "c6d4",
+                  "f3f1",
+                  "d4b3",
+                  "c1e3",
+                  "d7c5",
+                  "d3e4",
+                  "b3a1",
+                  "b2b4",
+                  "a1b3",
+                  "b1c3",
+                  "a8c8",
+                  "f4f5",
+                  "g7e5",
+                  "b4c5",
+                  "b3c5",
+                  "f5g6",
+                  "h7g6"
+                ]
+              }
+            ],
+            "reported_nodes": 229773
+          },
+          "terminal": false,
+          "quality": "final-mechanism-panel-sf18-300000",
+          "elapsed_seconds": 0.341459,
+          "fen": "r2r2k1/pp1nppbp/1qn3p1/4P3/5Pb1/P2B1N2/1P4PP/RNB1QR1K b - - 4 14",
+          "position_ply": 27,
+          "ec_material": 90,
+          "pgn_sha256": "7201c1ab8d22009fee0c604abea6ef739c553825e3901a764e504179f274d6b0"
+        },
+        {
+          "current": {
+            "depth": 14,
+            "lines": [
+              {
+                "cp": -298,
+                "moves": [
+                  "f3e5",
+                  "c6e5",
+                  "f4e5",
+                  "d8d3",
+                  "e1h4",
+                  "g4f5",
+                  "b1c3",
+                  "b6e6",
+                  "c1f4",
+                  "g7e5",
+                  "f4e5",
+                  "e6e5",
+                  "a1e1",
+                  "e5f6",
+                  "h4b4",
+                  "d3d7",
+                  "b4f4",
+                  "a8d8"
+                ]
+              },
+              {
+                "cp": -327,
+                "moves": [
+                  "f4e5",
+                  "d8d3",
+                  "e1e4",
+                  "g4f5",
+                  "e4e2",
+                  "d3d7",
+                  "f1e1",
+                  "c6d4",
+                  "f3d4",
+                  "b6d4",
+                  "b1c3",
+                  "f5d3",
+                  "e2f3"
+                ]
+              }
+            ],
+            "reported_nodes": 137563
+          },
+          "previous": {
+            "depth": 13,
+            "lines": [
+              {
+                "cp": -296,
+                "moves": [
+                  "f3e5",
+                  "c6e5",
+                  "f4e5",
+                  "d8d3",
+                  "e1h4",
+                  "g4f5",
+                  "b1c3",
+                  "b6c7",
+                  "c1h6",
+                  "g7e5",
+                  "f1f5",
+                  "g6f5",
+                  "c3d5",
+                  "d3d5"
+                ]
+              },
+              {
+                "cp": -331,
+                "moves": [
+                  "f4e5",
+                  "d8d3",
+                  "b1d2",
+                  "b6b5",
+                  "e1h4",
+                  "g4f3",
+                  "d2f3",
+                  "c6e5",
+                  "c1h6",
+                  "g7h6",
+                  "h4h6",
+                  "e5f3",
+                  "a1c1",
+                  "f3e5"
+                ]
+              }
+            ],
+            "reported_nodes": 68191
+          },
+          "terminal": false,
+          "quality": "final-mechanism-panel-sf18-300000",
+          "elapsed_seconds": 0.341841,
+          "fen": "r2r2k1/pp2ppbp/1qn3p1/4n3/5Pb1/P2B1N2/1P4PP/RNB1QR1K w - - 0 15",
+          "position_ply": 28,
+          "ec_material": -90,
+          "pgn_sha256": "7201c1ab8d22009fee0c604abea6ef739c553825e3901a764e504179f274d6b0"
+        }
+      ]
+    },
+    {
+      "game_id": "186305472636",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.10.31\"]\n[Round \"-\"]\n[White \"Unkreativ3\"]\n[Black \"GothamChess\"]\n[Result \"0-1\"]\n[CurrentPosition \"r2qk2r/p4p2/1p1p2p1/2pPp1Pp/2PnN3/3B1n2/PP1Q1R1P/R5K1 w kq - 0 20\"]\n[Timezone \"UTC\"]\n[ECO \"A10\"]\n[ECOUrl \"https://www.chess.com/openings/English-Opening-1...b6-2.d4-Bb7\"]\n[UTCDate \"2026.10.31\"]\n[UTCTime \"21:38:04\"]\n[WhiteElo \"2865\"]\n[BlackElo \"2945\"]\n[TimeControl \"60\"]\n[Termination \"GothamChess won by resignation\"]\n[StartTime \"21:38:04\"]\n[EndDate \"2026.10.31\"]\n[EndTime \"21:38:44\"]\n[Link \"https://www.chess.com/game/live/186305472636\"]\n\n1. d4 {[%clk 0:00:59.5]} 1... b6 {[%clk 0:00:59.9]} 2. c4 {[%clk 0:00:58.7]} 2... Bb7 {[%clk 0:00:59.8]} 3. Bg5 {[%clk 0:00:58.2]} 3... Nf6 {[%clk 0:00:59.7]} 4. f3 {[%clk 0:00:57.3]} 4... c5 {[%clk 0:00:58.4]} 5. d5 {[%clk 0:00:56.5]} 5... e5 {[%clk 0:00:57.9]} 6. Nc3 {[%clk 0:00:55.6]} 6... d6 {[%clk 0:00:57.4]} 7. e4 {[%clk 0:00:55.1]} 7... Nbd7 {[%clk 0:00:56.2]} 8. Bd3 {[%clk 0:00:53.6]} 8... Be7 {[%clk 0:00:55.8]} 9. Nge2 {[%clk 0:00:53.1]} 9... Nxd5 {[%clk 0:00:55.3]} 10. Bxe7 {[%clk 0:00:50.8]} 10... Nxe7 {[%clk 0:00:54.6]} 11. O-O {[%clk 0:00:50.1]} 11... Nf8 {[%clk 0:00:54.1]} 12. Nd5 {[%clk 0:00:49.4]} 12... Ne6 {[%clk 0:00:53.2]} 13. Ng3 {[%clk 0:00:48.9]} 13... g6 {[%clk 0:00:52.3]} 14. Qd2 {[%clk 0:00:47.4]} 14... h5 {[%clk 0:00:50.9]} 15. Rf2 {[%clk 0:00:46.5]} 15... Bxd5 {[%clk 0:00:49.7]} 16. exd5 {[%clk 0:00:45.6]} 16... Nd4 {[%clk 0:00:49.1]} 17. Ne4 {[%clk 0:00:44.7]} 17... Nef5 {[%clk 0:00:48.1]} 18. g4 {[%clk 0:00:42.3]} 18... Nh4 {[%clk 0:00:47.2]} 19. g5 {[%clk 0:00:40.8]} 19... Nhxf3+ {[%clk 0:00:46.2]} 0-1\n",
+      "pgn_sha256": "45776303e209d2339d4b26e4ca7fbd9f49bbfc987755b4a275948aee81c824df",
+      "snapshots": [
+        {
+          "current": {
+            "depth": 18,
+            "lines": [
+              {
+                "cp": 139,
+                "moves": [
+                  "g5d2",
+                  "b7c8",
+                  "d1e2",
+                  "f6h5",
+                  "g2g3",
+                  "a7a6",
+                  "g1h3",
+                  "g7g6",
+                  "e1g1",
+                  "d7f8",
+                  "h3f2",
+                  "f8d7",
+                  "f3f4",
+                  "e5f4",
+                  "g3f4",
+                  "e8g8"
+                ]
+              },
+              {
+                "cp": 123,
+                "moves": [
+                  "g5e3",
+                  "f6h5",
+                  "d1d2",
+                  "h7h6",
+                  "g2g3",
+                  "e7g5",
+                  "c3b5",
+                  "g5e7",
+                  "a2a3",
+                  "a7a6",
+                  "b5c3",
+                  "e7g5",
+                  "f3f4",
+                  "e5f4",
+                  "g3f4",
+                  "g5h4",
+                  "e1d1",
+                  "g7g5",
+                  "g1f3",
+                  "g5f4"
+                ]
+              }
+            ],
+            "reported_nodes": 300308
+          },
+          "previous": {
+            "depth": 17,
+            "lines": [
+              {
+                "cp": 139,
+                "moves": [
+                  "g5d2",
+                  "b7c8",
+                  "d1e2",
+                  "f6h5",
+                  "g2g3",
+                  "a7a6",
+                  "g1h3",
+                  "g7g6",
+                  "e1g1",
+                  "d7f8",
+                  "h3f2",
+                  "f8d7",
+                  "f3f4",
+                  "e5f4",
+                  "g3f4",
+                  "e8g8"
+                ]
+              },
+              {
+                "cp": 123,
+                "moves": [
+                  "g5e3",
+                  "f6h5",
+                  "d1d2",
+                  "h7h6",
+                  "g2g3",
+                  "e7g5",
+                  "c3b5",
+                  "g5e7",
+                  "a2a3",
+                  "a7a6",
+                  "b5c3",
+                  "e7g5",
+                  "f3f4",
+                  "e5f4",
+                  "g3f4",
+                  "g5h4",
+                  "e1d1",
+                  "g7g5",
+                  "g1f3",
+                  "g5f4"
+                ]
+              }
+            ],
+            "reported_nodes": 298631
+          },
+          "terminal": false,
+          "quality": "final-mechanism-panel-sf18-300000",
+          "elapsed_seconds": 0.415931,
+          "fen": "r2qk2r/pb1nbppp/1p1p1n2/2pPp1B1/2P1P3/2NB1P2/PP4PP/R2QK1NR w KQkq - 3 9",
+          "position_ply": 16,
+          "ec_material": 0,
+          "pgn_sha256": "45776303e209d2339d4b26e4ca7fbd9f49bbfc987755b4a275948aee81c824df"
+        },
+        {
+          "current": {
+            "depth": 17,
+            "lines": [
+              {
+                "cp": -88,
+                "moves": [
+                  "f6d5",
+                  "g5e7",
+                  "d5e7",
+                  "d3c2",
+                  "d7b8",
+                  "c2a4",
+                  "b8c6",
+                  "c3b5",
+                  "e7c8",
+                  "b5c3",
+                  "e8g8",
+                  "a4c6",
+                  "b7c6",
+                  "d1d3",
+                  "d8h4",
+                  "e2g3",
+                  "a8b8"
+                ]
+              },
+              {
+                "cp": 84,
+                "moves": [
+                  "b6b5",
+                  "g5f6",
+                  "e7f6",
+                  "c4b5",
+                  "f6h4",
+                  "g2g3",
+                  "h4g5",
+                  "e1f2",
+                  "c5c4",
+                  "d3c4",
+                  "h7h5",
+                  "f2g2",
+                  "g5e3",
+                  "h2h4"
+                ]
+              }
+            ],
+            "reported_nodes": 199391
+          },
+          "previous": {
+            "depth": 16,
+            "lines": [
+              {
+                "cp": -93,
+                "moves": [
+                  "f6d5",
+                  "g5e7",
+                  "d5e7",
+                  "d3c2",
+                  "d7b8",
+                  "c2a4",
+                  "b8c6",
+                  "c3b5",
+                  "e7c8",
+                  "b5c3",
+                  "e8g8",
+                  "a4c6",
+                  "b7c6",
+                  "e2g3"
+                ]
+              },
+              {
+                "cp": 98,
+                "moves": [
+                  "b6b5",
+                  "g5f6",
+                  "e7f6",
+                  "c4b5",
+                  "f6h4",
+                  "g2g3",
+                  "h4g5",
+                  "a2a4",
+                  "d8a5",
+                  "h2h4",
+                  "g5e3",
+                  "d3c4"
+                ]
+              }
+            ],
+            "reported_nodes": 151861
+          },
+          "terminal": false,
+          "quality": "final-mechanism-panel-sf18-300000",
+          "elapsed_seconds": 0.395046,
+          "fen": "r2qk2r/pb1nbppp/1p1p1n2/2pPp1B1/2P1P3/2NB1P2/PP2N1PP/R2QK2R b KQkq - 4 9",
+          "position_ply": 17,
+          "ec_material": 90,
+          "pgn_sha256": "45776303e209d2339d4b26e4ca7fbd9f49bbfc987755b4a275948aee81c824df"
+        },
+        {
+          "current": {
+            "depth": 15,
+            "lines": [
+              {
+                "cp": -85,
+                "moves": [
+                  "g5e7",
+                  "d5e7",
+                  "d3c2",
+                  "d7b8",
+                  "c2a4",
+                  "b8c6",
+                  "c3b5",
+                  "e7c8",
+                  "b5c3",
+                  "e8g8",
+                  "a4c6",
+                  "b7c6",
+                  "e2g3",
+                  "c8e7",
+                  "d1d3",
+                  "d8d7",
+                  "a1d1",
+                  "a8d8",
+                  "e1g1",
+                  "g7g6",
+                  "f1f2",
+                  "f7f5",
+                  "g3f1"
+                ]
+              },
+              {
+                "cp": -103,
+                "moves": [
+                  "c3b5",
+                  "d7b8",
+                  "h2h4",
+                  "d5c7",
+                  "b5c7",
+                  "d8c7",
+                  "d3c2",
+                  "b8c6",
+                  "c2a4",
+                  "e8g8",
+                  "a4c6",
+                  "b7c6",
+                  "g5e7",
+                  "c7e7",
+                  "g2g4",
+                  "h7h5",
+                  "e2g3",
+                  "h5g4"
+                ]
+              }
+            ],
+            "reported_nodes": 293492
+          },
+          "previous": {
+            "depth": 14,
+            "lines": [
+              {
+                "cp": -87,
+                "moves": [
+                  "g5e7",
+                  "d5e7",
+                  "d3c2",
+                  "d7b8",
+                  "c2a4",
+                  "b8c6",
+                  "c3b5",
+                  "e7c8",
+                  "b5c3",
+                  "e8g8",
+                  "a4c6",
+                  "b7c6",
+                  "e2g3",
+                  "c8e7",
+                  "d1d3",
+                  "f7f5",
+                  "e4f5",
+                  "d8d7",
+                  "e1c1",
+                  "a8d8"
+                ]
+              },
+              {
+                "cp": -101,
+                "moves": [
+                  "c3b5",
+                  "d7b8",
+                  "h2h4",
+                  "d5c7",
+                  "b5c7",
+                  "d8c7",
+                  "d3c2",
+                  "e8g8",
+                  "e2c3",
+                  "c7d8",
+                  "g5e7",
+                  "d8e7",
+                  "c2a4",
+                  "b8a6",
+                  "d1d2",
+                  "a8d8",
+                  "e1c1"
+                ]
+              }
+            ],
+            "reported_nodes": 155517
+          },
+          "terminal": false,
+          "quality": "final-mechanism-panel-sf18-300000",
+          "elapsed_seconds": 0.365048,
+          "fen": "r2qk2r/pb1nbppp/1p1p4/2pnp1B1/2P1P3/2NB1P2/PP2N1PP/R2QK2R w KQkq - 0 10",
+          "position_ply": 18,
+          "ec_material": -90,
+          "pgn_sha256": "45776303e209d2339d4b26e4ca7fbd9f49bbfc987755b4a275948aee81c824df"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "game_id": "186311900336",
+      "san": "Ndxe5",
+      "known_label": "Excellent",
+      "forest": {
+        "award": false,
+        "window_scores": {
+          "current": 0.5342333185420108,
+          "previous": 0.5265517212512083
+        },
+        "threshold": 0.8333333333333334
+      },
+      "features": {
+        "windows": {
+          "current": {
+            "features": {
+              "raw_offer": true,
+              "ec_sacrifice": false,
+              "mating_acceptance": false,
+              "checked_continuation": false,
+              "converted_material_or_endgame": false,
+              "move_capture": true,
+              "move_check": false,
+              "move_in_check": false,
+              "move_castling": false,
+              "move_en_passant": false,
+              "move_promotion": false,
+              "raw_material_before": 0,
+              "raw_material_after": 90,
+              "immediate_material_gain": 90,
+              "capture_promotion_credit": 90,
+              "phase": 24,
+              "ec_material_before": 90,
+              "ec_material_after": -90,
+              "ec_material_margin": -100,
+              "physical_unknown": false,
+              "physical_checked_horizon": true,
+              "physical_mate_leaf": false,
+              "physical_debt3_max": -90,
+              "physical_debt3_min": -90,
+              "offer_exchange_gain_max": 300,
+              "offer_exchange_gain_min": 300,
+              "avoidability": true,
+              "avoidability_unknown": false,
+              "direct_stalemate_acceptance": false,
+              "stalemate_probe_unknown": false,
+              "attribution_unknown": false,
+              "prior_history_missing": false,
+              "offered_piece_moved": true,
+              "offered_piece_count": 1,
+              "already_vulnerable_same_square_count": 0,
+              "prior_offer_gain_same_square_max": 0,
+              "prior_offer_gain_original_square_max": 0,
+              "offered_role_p": false,
+              "offered_role_n": true,
+              "offered_role_b": false,
+              "offered_role_r": false,
+              "offered_role_q": false,
+              "offered_role_k": false,
+              "moved_role_p": false,
+              "moved_role_n": true,
+              "moved_role_b": false,
+              "moved_role_r": false,
+              "moved_role_q": false,
+              "moved_role_k": false,
+              "window_complete": true,
+              "before_depth": 16,
+              "after_depth": 14,
+              "prior_depth": 17,
+              "before_roots": 2,
+              "best_cp": 301,
+              "best_mate": null,
+              "best_mapped_score": 301,
+              "after_cp": 298,
+              "after_mate": null,
+              "after_mapped_score": 298,
+              "prior_cp": 245,
+              "prior_mate": null,
+              "prior_mapped_score": 245,
+              "played_root_cp": 301,
+              "played_root_mate": null,
+              "played_root_mapped_score": 301,
+              "mapped_loss_pp": 0.20668473904237317,
+              "same_root_loss_pp": 0.0,
+              "same_root_rank": 1,
+              "played_root_missing": false,
+              "best_second_gap_pp": 2.5548828994507886,
+              "after_minus_prior_cp": 53,
+              "best_minus_prior_cp": 56,
+              "winning_safe_alternatives": 0,
+              "safe_alternative_best_cp": null
+            },
+            "eligible": true
+          },
+          "previous": {
+            "features": {
+              "raw_offer": true,
+              "ec_sacrifice": false,
+              "mating_acceptance": false,
+              "checked_continuation": false,
+              "converted_material_or_endgame": false,
+              "move_capture": true,
+              "move_check": false,
+              "move_in_check": false,
+              "move_castling": false,
+              "move_en_passant": false,
+              "move_promotion": false,
+              "raw_material_before": 0,
+              "raw_material_after": 90,
+              "immediate_material_gain": 90,
+              "capture_promotion_credit": 90,
+              "phase": 24,
+              "ec_material_before": 90,
+              "ec_material_after": -90,
+              "ec_material_margin": -100,
+              "physical_unknown": false,
+              "physical_checked_horizon": true,
+              "physical_mate_leaf": false,
+              "physical_debt3_max": -90,
+              "physical_debt3_min": -90,
+              "offer_exchange_gain_max": 300,
+              "offer_exchange_gain_min": 300,
+              "avoidability": true,
+              "avoidability_unknown": false,
+              "direct_stalemate_acceptance": false,
+              "stalemate_probe_unknown": false,
+              "attribution_unknown": false,
+              "prior_history_missing": false,
+              "offered_piece_moved": true,
+              "offered_piece_count": 1,
+              "already_vulnerable_same_square_count": 0,
+              "prior_offer_gain_same_square_max": 0,
+              "prior_offer_gain_original_square_max": 0,
+              "offered_role_p": false,
+              "offered_role_n": true,
+              "offered_role_b": false,
+              "offered_role_r": false,
+              "offered_role_q": false,
+              "offered_role_k": false,
+              "moved_role_p": false,
+              "moved_role_n": true,
+              "moved_role_b": false,
+              "moved_role_r": false,
+              "moved_role_q": false,
+              "moved_role_k": false,
+              "window_complete": true,
+              "before_depth": 15,
+              "after_depth": 13,
+              "prior_depth": 16,
+              "before_roots": 2,
+              "best_cp": 301,
+              "best_mate": null,
+              "best_mapped_score": 301,
+              "after_cp": 296,
+              "after_mate": null,
+              "after_mapped_score": 296,
+              "prior_cp": 245,
+              "prior_mate": null,
+              "prior_mapped_score": 245,
+              "played_root_cp": 301,
+              "played_root_mate": null,
+              "played_root_mapped_score": 301,
+              "mapped_loss_pp": 0.3451100573093697,
+              "same_root_loss_pp": 0.0,
+              "same_root_rank": 1,
+              "played_root_missing": false,
+              "best_second_gap_pp": 2.5548828994507886,
+              "after_minus_prior_cp": 51,
+              "best_minus_prior_cp": 56,
+              "winning_safe_alternatives": 0,
+              "safe_alternative_best_cp": null
+            },
+            "eligible": true
+          }
+        },
+        "confidence_sufficient": true,
+        "diagnostics": {
+          "physical_unknown": false,
+          "physical_nodes": 79
+        }
+      }
+    },
+    {
+      "game_id": "186305472636",
+      "san": "Nxd5",
+      "known_label": "Brilliant",
+      "forest": {
+        "award": false,
+        "window_scores": {
+          "current": 0.7420247869938165,
+          "previous": 0.7477945794814712
+        },
+        "threshold": 0.8333333333333334
+      },
+      "features": {
+        "windows": {
+          "current": {
+            "features": {
+              "raw_offer": true,
+              "ec_sacrifice": false,
+              "mating_acceptance": false,
+              "checked_continuation": false,
+              "converted_material_or_endgame": false,
+              "move_capture": true,
+              "move_check": false,
+              "move_in_check": false,
+              "move_castling": false,
+              "move_en_passant": false,
+              "move_promotion": false,
+              "raw_material_before": 0,
+              "raw_material_after": 90,
+              "immediate_material_gain": 90,
+              "capture_promotion_credit": 90,
+              "phase": 24,
+              "ec_material_before": 90,
+              "ec_material_after": -90,
+              "ec_material_margin": -100,
+              "physical_unknown": false,
+              "physical_checked_horizon": false,
+              "physical_mate_leaf": false,
+              "physical_debt3_max": -90,
+              "physical_debt3_min": -90,
+              "offer_exchange_gain_max": 300,
+              "offer_exchange_gain_min": 300,
+              "avoidability": true,
+              "avoidability_unknown": false,
+              "direct_stalemate_acceptance": false,
+              "stalemate_probe_unknown": false,
+              "attribution_unknown": false,
+              "prior_history_missing": false,
+              "offered_piece_moved": true,
+              "offered_piece_count": 1,
+              "already_vulnerable_same_square_count": 0,
+              "prior_offer_gain_same_square_max": 0,
+              "prior_offer_gain_original_square_max": 0,
+              "offered_role_p": false,
+              "offered_role_n": true,
+              "offered_role_b": false,
+              "offered_role_r": false,
+              "offered_role_q": false,
+              "offered_role_k": false,
+              "moved_role_p": false,
+              "moved_role_n": true,
+              "moved_role_b": false,
+              "moved_role_r": false,
+              "moved_role_q": false,
+              "moved_role_k": false,
+              "window_complete": true,
+              "before_depth": 17,
+              "after_depth": 15,
+              "prior_depth": 18,
+              "before_roots": 2,
+              "best_cp": 88,
+              "best_mate": null,
+              "best_mapped_score": 88,
+              "after_cp": 85,
+              "after_mate": null,
+              "after_mapped_score": 85,
+              "prior_cp": -139,
+              "prior_mate": null,
+              "prior_mapped_score": -139,
+              "played_root_cp": 88,
+              "played_root_mate": null,
+              "played_root_mapped_score": 88,
+              "mapped_loss_pp": 0.26926862716395306,
+              "same_root_loss_pp": 0.0,
+              "same_root_rank": 1,
+              "played_root_missing": false,
+              "best_second_gap_pp": 15.70174846752618,
+              "after_minus_prior_cp": 224,
+              "best_minus_prior_cp": 227,
+              "winning_safe_alternatives": 0,
+              "safe_alternative_best_cp": null
+            },
+            "eligible": true
+          },
+          "previous": {
+            "features": {
+              "raw_offer": true,
+              "ec_sacrifice": false,
+              "mating_acceptance": false,
+              "checked_continuation": false,
+              "converted_material_or_endgame": false,
+              "move_capture": true,
+              "move_check": false,
+              "move_in_check": false,
+              "move_castling": false,
+              "move_en_passant": false,
+              "move_promotion": false,
+              "raw_material_before": 0,
+              "raw_material_after": 90,
+              "immediate_material_gain": 90,
+              "capture_promotion_credit": 90,
+              "phase": 24,
+              "ec_material_before": 90,
+              "ec_material_after": -90,
+              "ec_material_margin": -100,
+              "physical_unknown": false,
+              "physical_checked_horizon": false,
+              "physical_mate_leaf": false,
+              "physical_debt3_max": -90,
+              "physical_debt3_min": -90,
+              "offer_exchange_gain_max": 300,
+              "offer_exchange_gain_min": 300,
+              "avoidability": true,
+              "avoidability_unknown": false,
+              "direct_stalemate_acceptance": false,
+              "stalemate_probe_unknown": false,
+              "attribution_unknown": false,
+              "prior_history_missing": false,
+              "offered_piece_moved": true,
+              "offered_piece_count": 1,
+              "already_vulnerable_same_square_count": 0,
+              "prior_offer_gain_same_square_max": 0,
+              "prior_offer_gain_original_square_max": 0,
+              "offered_role_p": false,
+              "offered_role_n": true,
+              "offered_role_b": false,
+              "offered_role_r": false,
+              "offered_role_q": false,
+              "offered_role_k": false,
+              "moved_role_p": false,
+              "moved_role_n": true,
+              "moved_role_b": false,
+              "moved_role_r": false,
+              "moved_role_q": false,
+              "moved_role_k": false,
+              "window_complete": true,
+              "before_depth": 16,
+              "after_depth": 14,
+              "prior_depth": 17,
+              "before_roots": 2,
+              "best_cp": 93,
+              "best_mate": null,
+              "best_mapped_score": 93,
+              "after_cp": 87,
+              "after_mate": null,
+              "after_mapped_score": 87,
+              "prior_cp": -139,
+              "prior_mate": null,
+              "prior_mapped_score": -139,
+              "played_root_cp": 93,
+              "played_root_mate": null,
+              "played_root_mapped_score": 93,
+              "mapped_loss_pp": 0.5374168770518821,
+              "same_root_loss_pp": 0.0,
+              "same_root_rank": 1,
+              "played_root_missing": false,
+              "best_second_gap_pp": 17.402620180424414,
+              "after_minus_prior_cp": 226,
+              "best_minus_prior_cp": 232,
+              "winning_safe_alternatives": 0,
+              "safe_alternative_best_cp": null
+            },
+            "eligible": true
+          }
+        },
+        "confidence_sufficient": true,
+        "diagnostics": {
+          "physical_unknown": false,
+          "physical_nodes": 32
+        }
+      }
+    }
+  ],
+  "completed_at": "2026-11-03T10:11:22.368630+00:00"
+}

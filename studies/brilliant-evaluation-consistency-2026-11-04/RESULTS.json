@@ -1,0 +1,394 @@
+{
+  "scope": "Audit every saved miss and test one consistent-quality gate substitution with exact frozen grouped OOF forest scores and original thresholds. No forest fitting, new features, model selection, engine queries or deployment.",
+  "protocol_sha256": "8ffcab4e49b55a963c33d7ee2789280b6d317f9c7c98d45fd9020c9cb9fb5186",
+  "script_sha256": "84117cbf99404b8f575d975dcb2dc30c28d1c12fc449dd2480346ff5c06ceaac",
+  "input_sha256": {
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research-overnight-2026-11-03/studies/brilliant-training-2026-11-03/data/training.json": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-standard-learners-2026-11-04/PREDICTIONS.json": "ae845d2fd687262f2c41cbdaa2054d85c1f3eb48120a602d30a8a4b8a4dc4a82",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-standard-learners-2026-11-04/RESULTS.json": "6857dfa78361ccd260d53e60878deb7366cf296f52ad6f02dca3b240eaff65f0",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-standard-learners-2026-11-04/selected-model.json": "e153a3d151a8803d13fc85ba857c9297541a5d45b627f776ea56f1a249002332",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliant-standard-learners-2026-11-04/experiment.py": "0c9b361880d65d43a11443a84d438917866084c77b6edd7af021fbc4b76e3814",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/feature_kernel.py": "8d77d2f482b57f492a4f307c447df1b96befb74e81a0accb7d5f33a886446d14",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/context.mts": "fb3dfb6cb4da23d39fe1acbe7a12d77d6861a6b2357a53f9bb420dcb043e050a"
+  },
+  "counts": {
+    "cases": 3724,
+    "positive": 917,
+    "negative": 2807,
+    "groups": 972
+  },
+  "fixed_forest": "Exact saved group-held-out custom scores; no fitting, rescoring, feature edits, or threshold selection.",
+  "comparisons": {
+    "retuned": {
+      "baseline": {
+        "TP": 452,
+        "FP": 6,
+        "FN": 465,
+        "TN": 2801,
+        "recall": 0.49291166848418755,
+        "wrong_fraction_of_awards": 0.013100436681222707
+      },
+      "consistent": {
+        "TP": 454,
+        "FP": 8,
+        "FN": 463,
+        "TN": 2799,
+        "recall": 0.495092693565976,
+        "wrong_fraction_of_awards": 0.017316017316017316
+      },
+      "gained_true": [
+        "184634890030:37",
+        "173264572533:51",
+        "167742451240:61",
+        "185897727454:25"
+      ],
+      "lost_true": [
+        "172376177350:53",
+        "167306626524:24"
+      ],
+      "gained_wrong": [
+        "186398857750:45",
+        "168663718338:51"
+      ],
+      "removed_wrong": [],
+      "observed_success": false
+    },
+    "fixed": {
+      "baseline": {
+        "TP": 436,
+        "FP": 6,
+        "FN": 481,
+        "TN": 2801,
+        "recall": 0.47546346782988,
+        "wrong_fraction_of_awards": 0.013574660633484163
+      },
+      "consistent": {
+        "TP": 438,
+        "FP": 7,
+        "FN": 479,
+        "TN": 2800,
+        "recall": 0.4776444929116685,
+        "wrong_fraction_of_awards": 0.015730337078651686
+      },
+      "gained_true": [
+        "184634890030:37",
+        "173264572533:51",
+        "167742451240:61",
+        "185897727454:25"
+      ],
+      "lost_true": [
+        "172376177350:53",
+        "167306626524:24"
+      ],
+      "gained_wrong": [
+        "168663718338:51"
+      ],
+      "removed_wrong": [],
+      "observed_success": false
+    }
+  },
+  "miss_audits": {
+    "retuned": {
+      "misses": 465,
+      "exclusive_blockers": {
+        "score_only": 429,
+        "gates_and_score": 26,
+        "gates_only": 10
+      },
+      "overlapping_failed_gates": {
+        "quality": 31,
+        "no_raw_offer": 5
+      },
+      "failed_gate_combinations": {
+        "quality": 31,
+        "no_raw_offer": 5
+      },
+      "score_shortfall_buckets": {
+        "(0,.025]": 41,
+        ">.10": 288,
+        "(.05,.10]": 77,
+        "(.025,.05]": 49
+      }
+    },
+    "fixed": {
+      "misses": 481,
+      "exclusive_blockers": {
+        "score_only": 445,
+        "gates_and_score": 26,
+        "gates_only": 10
+      },
+      "overlapping_failed_gates": {
+        "quality": 31,
+        "no_raw_offer": 5
+      },
+      "failed_gate_combinations": {
+        "quality": 31,
+        "no_raw_offer": 5
+      },
+      "score_shortfall_buckets": {
+        "(.025,.05]": 46,
+        ">.10": 302,
+        "(.05,.10]": 81,
+        "(0,.025]": 42
+      }
+    }
+  },
+  "gate_audit": {
+    "positives": {
+      "total": 917,
+      "same_root_pair_available": 836,
+      "transitions": {
+        "pass->pass": 875,
+        "fail->pass": 7,
+        "fail->fail": 29,
+        "pass->fail": 6
+      },
+      "overlapping_original_failures": {
+        "quality": 31,
+        "no_raw_offer": 5
+      }
+    },
+    "negatives": {
+      "total": 2807,
+      "same_root_pair_available": 2206,
+      "transitions": {
+        "pass->pass": 419,
+        "fail->fail": 2379,
+        "pass->fail": 2,
+        "fail->pass": 7
+      },
+      "overlapping_original_failures": {
+        "after_floor": 607,
+        "no_raw_offer": 1988,
+        "quality": 418,
+        "fewer_than_two_roots": 3
+      }
+    }
+  },
+  "outer_folds": [
+    {
+      "fold": 0,
+      "groups": 195,
+      "metrics": {
+        "retuned_baseline": {
+          "TP": 87,
+          "FP": 2,
+          "FN": 109,
+          "TN": 533,
+          "recall": 0.44387755102040816,
+          "wrong_fraction_of_awards": 0.02247191011235955
+        },
+        "retuned_consistent": {
+          "TP": 88,
+          "FP": 3,
+          "FN": 108,
+          "TN": 532,
+          "recall": 0.4489795918367347,
+          "wrong_fraction_of_awards": 0.03296703296703297
+        },
+        "fixed_baseline": {
+          "TP": 83,
+          "FP": 2,
+          "FN": 113,
+          "TN": 533,
+          "recall": 0.42346938775510207,
+          "wrong_fraction_of_awards": 0.023529411764705882
+        },
+        "fixed_consistent": {
+          "TP": 84,
+          "FP": 2,
+          "FN": 112,
+          "TN": 533,
+          "recall": 0.42857142857142855,
+          "wrong_fraction_of_awards": 0.023255813953488372
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "groups": 195,
+      "metrics": {
+        "retuned_baseline": {
+          "TP": 96,
+          "FP": 2,
+          "FN": 92,
+          "TN": 601,
+          "recall": 0.5106382978723404,
+          "wrong_fraction_of_awards": 0.02040816326530612
+        },
+        "retuned_consistent": {
+          "TP": 97,
+          "FP": 2,
+          "FN": 91,
+          "TN": 601,
+          "recall": 0.5159574468085106,
+          "wrong_fraction_of_awards": 0.020202020202020204
+        },
+        "fixed_baseline": {
+          "TP": 95,
+          "FP": 2,
+          "FN": 93,
+          "TN": 601,
+          "recall": 0.5053191489361702,
+          "wrong_fraction_of_awards": 0.020618556701030927
+        },
+        "fixed_consistent": {
+          "TP": 96,
+          "FP": 2,
+          "FN": 92,
+          "TN": 601,
+          "recall": 0.5106382978723404,
+          "wrong_fraction_of_awards": 0.02040816326530612
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "groups": 194,
+      "metrics": {
+        "retuned_baseline": {
+          "TP": 95,
+          "FP": 2,
+          "FN": 81,
+          "TN": 577,
+          "recall": 0.5397727272727273,
+          "wrong_fraction_of_awards": 0.020618556701030927
+        },
+        "retuned_consistent": {
+          "TP": 96,
+          "FP": 2,
+          "FN": 80,
+          "TN": 577,
+          "recall": 0.5454545454545454,
+          "wrong_fraction_of_awards": 0.02040816326530612
+        },
+        "fixed_baseline": {
+          "TP": 95,
+          "FP": 2,
+          "FN": 81,
+          "TN": 577,
+          "recall": 0.5397727272727273,
+          "wrong_fraction_of_awards": 0.020618556701030927
+        },
+        "fixed_consistent": {
+          "TP": 96,
+          "FP": 2,
+          "FN": 80,
+          "TN": 577,
+          "recall": 0.5454545454545454,
+          "wrong_fraction_of_awards": 0.02040816326530612
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "groups": 194,
+      "metrics": {
+        "retuned_baseline": {
+          "TP": 95,
+          "FP": 0,
+          "FN": 86,
+          "TN": 558,
+          "recall": 0.5248618784530387,
+          "wrong_fraction_of_awards": 0.0
+        },
+        "retuned_consistent": {
+          "TP": 94,
+          "FP": 0,
+          "FN": 87,
+          "TN": 558,
+          "recall": 0.5193370165745856,
+          "wrong_fraction_of_awards": 0.0
+        },
+        "fixed_baseline": {
+          "TP": 95,
+          "FP": 0,
+          "FN": 86,
+          "TN": 558,
+          "recall": 0.5248618784530387,
+          "wrong_fraction_of_awards": 0.0
+        },
+        "fixed_consistent": {
+          "TP": 94,
+          "FP": 0,
+          "FN": 87,
+          "TN": 558,
+          "recall": 0.5193370165745856,
+          "wrong_fraction_of_awards": 0.0
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "groups": 194,
+      "metrics": {
+        "retuned_baseline": {
+          "TP": 79,
+          "FP": 0,
+          "FN": 97,
+          "TN": 532,
+          "recall": 0.44886363636363635,
+          "wrong_fraction_of_awards": 0.0
+        },
+        "retuned_consistent": {
+          "TP": 79,
+          "FP": 1,
+          "FN": 97,
+          "TN": 531,
+          "recall": 0.44886363636363635,
+          "wrong_fraction_of_awards": 0.0125
+        },
+        "fixed_baseline": {
+          "TP": 68,
+          "FP": 0,
+          "FN": 108,
+          "TN": 532,
+          "recall": 0.38636363636363635,
+          "wrong_fraction_of_awards": 0.0
+        },
+        "fixed_consistent": {
+          "TP": 68,
+          "FP": 1,
+          "FN": 108,
+          "TN": 531,
+          "recall": 0.38636363636363635,
+          "wrong_fraction_of_awards": 0.014492753623188406
+        }
+      }
+    }
+  ],
+  "fits": 0,
+  "engine_queries": 0,
+  "conditional_group_bootstrap_95_percentile": {
+    "retuned": {
+      "recall_delta_percentage_points": [
+        -0.32293657900597605,
+        0.7717750826901875
+      ],
+      "wrong_award_count_delta": [
+        0.0,
+        5.0
+      ]
+    },
+    "fixed": {
+      "recall_delta_percentage_points": [
+        -0.3253972932189003,
+        0.7650482476593606
+      ],
+      "wrong_award_count_delta": [
+        0.0,
+        3.0
+      ]
+    }
+  },
+  "limits": [
+    "Reused development data and hypotheses; grouped OOF isolation does not restore an untouched research test.",
+    "Newly eligible examples were excluded by the original training eligibility policy; fixed-score results probe this selection shift.",
+    "Forest inputs retain original measurements, including mapped_loss_pp and same_root_loss_pp. Only the external quality gate changes.",
+    "Original after_floor, raw_offer, two_roots, confidence and physical-unknown policies remain; this is not a replacement of every evaluation-based condition.",
+    "Both root scores are required in both windows. Missing pairs use the entire original gate policy, not a favorable mixed comparison.",
+    "Same-search values can still be shallow or inaccurate. No deeper search or engine calibration has been tested.",
+    "Bootstrap conditions on frozen predictions and omits model fitting and repeated research uncertainty; zero observed error change is no future guarantee.",
+    "Sample is enriched; no representative live-site precision or recall claim. No fresh prospective confirmation or deployment."
+  ]
+}

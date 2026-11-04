@@ -1,0 +1,92 @@
+6.Ne5 queen-sacrifice diagnosis — 2026-11-04
+
+Game: https://mutechess.org/game/tjxdTRho
+Dash vs Indigo Flint, White, rated15+10 rapid.
+1.e4 c6 2.Nf3 d5 3.Nc3 dxe4 4.Nxe4 Bg4 5.Bc4 Nf6
+6.Ne5 Bxd1 7.Bxf7# (1-0).
+
+Observed live Mute result:6.Ne5 is Good(!); White Brilliant count0. The
+review also calls5...Nf6 a blunder and6...Bxd1 a mistake. It gives6...Qd4
+as best defense. Thus the mate is forced after acceptance, not against
+Black's best defense. Declining leaves White substantially better; this
+does not negate the queen offer.
+
+Diagnosis
+The deployed classifier detects the offer and the immediate mating answer.
+It does not lack the tactical pattern. The learned forest does not score
+this combination highly enough to award Brilliant. The result is consistent
+with the broader weakness already observed on EC-negative sacrifice cases.
+
+The source modules and model used here are byte-identical to the PR231
+release archive. Two fixed local SF18 runs (300k and3Mnodes per position,
+MultiPV2, Threads1,Hash64, complete current/previous iterations, full legal
+PGN history) reproduce Good(!) without withheld corroboration:
+-300k: current0.6064957803, previous0.6201545011.
+-3M: current0.6213736222, previous0.6213736222.
+-Brilliant requires both scores>=0.8333333333.
+These are model scores, not calibrated probabilities or percentages of
+human judges. These engine inputs are a local reproduction, not captured
+browser SF19 internal windows. Do not report them as the exact live score.
+
+At both budgets:
+-raw_offer=true, offered_role_q=true.
+-mating_acceptance=true; Bxd1 Bxf7# independently verified legal mate.
+-ec_sacrifice=false.
+-current/previous eligible=true, confidenceSufficient=true.
+-physicalUnknown=false; physical probe used66nodes.
+-Ne5 is best root; loss is within the5pp limit; resulting position clears
+ the-100cp floor; no winning safe alternative is present in the two roots.
+-No rating input, in-check continuation veto, missing evidence, or timeout
+ explains this reproduction's rejected Brilliant.
+
+Why the old sacrifice feature says false
+The EC-derived test compares capture-search material estimates. Its code
+also recognizes checkmate: material(checkmate)=-10000. A queen capture that
+permits Bxf7# is therefore not a profitable capture for Black. The probe
+returns0 before and0 afterNe5, failing its material-loss test. A diagnostic
+Python reproduction agrees; artificially disabling mate recognition changes
+the after estimate to+910 for Black. That artificial switch is explanatory
+only, not a proposed change: detecting mate is correct.
+This exposes the conceptual difference between losing material against good
+play and offering material that cannot safely be accepted. Humans can call
+the latter a sacrifice; the inherited EC indicator misses it here.
+
+How the forest uses the information
+The newer forest has separate legal-offer and mating-acceptance features,
+so it can override the old EC conclusion, but these are learned inputs, not
+an automatic mate-sacrifice rule. In this position it sees a noncapturing
+knight move exposing an unmoved queen (and also a knight offer), and mixed
+short-horizon material outcomes. Those inputs lead to leaves below the
+conservative award cutoff.
+An artificial one-feature sensitivity check at3M decreases the score from
+0.6214 to0.5981 when only mating_acceptance is set false. Setting only
+EC-sacrifice true raises it to0.7017, still below cutoff. Therefore no single
+boolean alone explains the rejection; the existing mate signal has limited
+influence in this feature context. These synthetic feature vectors are not
+legal alternative positions and do not justify changing a flag or threshold.
+
+The Good fallback is expected: inherited annotation() sees a best move well
+separated from second best, an improvement over the preceding own position,
+and ec_sacrifice=false. The forest fails to promote it, so Good remains.
+
+Implication
+This is a concrete false negative relative to the desired Mute behavior of
+recognizing this classic sound queen offer. It is not a verified Chess.com
+label; this game was not reviewed there. More search alone did not cure the
+local rejection. A focused future experiment should test a narrowly defined
+sound, newly created mating offer with matched ordinary examples, or a model
+that better distinguishes this subtype, under the existing grouped controls.
+Do not globally award every accepted-piece-mate motif: earlier matched cases
+showed such motifs on both sides of the Chess.com label boundary. No rule,
+threshold, model, or deployed application was changed for this investigation.
+
+Relevant source:
+mute-chess-research/studies/brilliant-moves/reference/v5/native/noSweatClassify.ts
+ material/qsearch/isSacrifice around61-106; hasMatingAcceptance around163;
+ forestCandidate around329; predicate/fallback around361; corroboration388.
+mute-chess-research/studies/brilliant-moves/reference/v5/native/noSweatBrilliantForest.ts
+ board features around253; eligibility418; learned scores around450.
+
+Artifacts: game.pgn, SNAPSHOTS.json, DIAGNOSTICS.json, MATERIAL-CHECK.json,
+MODEL-SENSITIVITY.json, VERIFICATION.json and the one-game diagnostic scripts.
+Six searches completed in12.96seconds; no training or general tooling changes.

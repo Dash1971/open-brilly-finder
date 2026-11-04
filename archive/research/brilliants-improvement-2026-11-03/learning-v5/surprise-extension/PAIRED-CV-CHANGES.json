@@ -1,0 +1,152 @@
+{
+  "default_cost5": {
+    "counts": {
+      "true_award_recovered": 8,
+      "true_award_lost": 3
+    },
+    "rows": [
+      {
+        "key": "167357653844:42",
+        "san": "Qh1+",
+        "truth": true,
+        "base_cv": false,
+        "surprise_cv": true,
+        "kind": "true_award_recovered",
+        "fold": 2
+      },
+      {
+        "key": "169827573530:105",
+        "san": "Qxg7+",
+        "truth": true,
+        "base_cv": true,
+        "surprise_cv": false,
+        "kind": "true_award_lost",
+        "fold": 1
+      },
+      {
+        "key": "183801511095:81",
+        "san": "Rxe4",
+        "truth": true,
+        "base_cv": true,
+        "surprise_cv": false,
+        "kind": "true_award_lost",
+        "fold": 1
+      },
+      {
+        "key": "186367356936:21",
+        "san": "Qxg6+",
+        "truth": true,
+        "base_cv": false,
+        "surprise_cv": true,
+        "kind": "true_award_recovered",
+        "fold": 2
+      },
+      {
+        "key": "186389789789:80",
+        "san": "Qxh3+",
+        "truth": true,
+        "base_cv": false,
+        "surprise_cv": true,
+        "kind": "true_award_recovered",
+        "fold": 0
+      },
+      {
+        "key": "178708672901:43",
+        "san": "Rxc6",
+        "truth": true,
+        "base_cv": true,
+        "surprise_cv": false,
+        "kind": "true_award_lost",
+        "fold": 1
+      },
+      {
+        "key": "183199101763:59",
+        "san": "Bxd5",
+        "truth": true,
+        "base_cv": false,
+        "surprise_cv": true,
+        "kind": "true_award_recovered",
+        "fold": 0
+      },
+      {
+        "key": "185746476468:35",
+        "san": "Qxe5",
+        "truth": true,
+        "base_cv": false,
+        "surprise_cv": true,
+        "kind": "true_award_recovered",
+        "fold": 2
+      },
+      {
+        "key": "186221189079:60",
+        "san": "Nc3",
+        "truth": true,
+        "base_cv": false,
+        "surprise_cv": true,
+        "kind": "true_award_recovered",
+        "fold": 2
+      },
+      {
+        "key": "184923543936:70",
+        "san": "Nxa6",
+        "truth": true,
+        "base_cv": false,
+        "surprise_cv": true,
+        "kind": "true_award_recovered",
+        "fold": 1
+      },
+      {
+        "key": "186394589423:64",
+        "san": "Nxf2",
+        "truth": true,
+        "base_cv": false,
+        "surprise_cv": true,
+        "kind": "true_award_recovered",
+        "fold": 2
+      }
+    ]
+  },
+  "strict98": {
+    "counts": {
+      "true_award_recovered": 4
+    },
+    "rows": [
+      {
+        "key": "186389789789:80",
+        "san": "Qxh3+",
+        "truth": true,
+        "base_cv": false,
+        "surprise_cv": true,
+        "kind": "true_award_recovered",
+        "fold": 0
+      },
+      {
+        "key": "174488798608:56",
+        "san": "Qxf2+",
+        "truth": true,
+        "base_cv": false,
+        "surprise_cv": true,
+        "kind": "true_award_recovered",
+        "fold": 0
+      },
+      {
+        "key": "183199101763:59",
+        "san": "Bxd5",
+        "truth": true,
+        "base_cv": false,
+        "surprise_cv": true,
+        "kind": "true_award_recovered",
+        "fold": 0
+      },
+      {
+        "key": "185962589629:63",
+        "san": "Rxa6+",
+        "truth": true,
+        "base_cv": false,
+        "surprise_cv": true,
+        "kind": "true_award_recovered",
+        "fold": 0
+      }
+    ]
+  }
+}

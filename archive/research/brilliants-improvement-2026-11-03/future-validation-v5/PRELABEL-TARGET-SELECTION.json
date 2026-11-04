@@ -1,0 +1,57 @@
+{
+  "accounts": {
+    "nelsi": {
+      "targets": 20,
+      "positive_reserves": 10,
+      "minimum_available_control_moves": 12,
+      "categories": {
+        "All Types": 17,
+        "Bishop Sacrifice": 3
+      }
+    },
+    "hansen": {
+      "targets": 20,
+      "positive_reserves": 4,
+      "minimum_available_control_moves": 17,
+      "categories": {
+        "Bishop Sacrifice": 9,
+        "Knight Sacrifice": 8,
+        "Queen Sacrifice": 3
+      }
+    },
+    "KNVB": {
+      "targets": 20,
+      "positive_reserves": 28,
+      "minimum_available_control_moves": 11,
+      "categories": {
+        "Queen Sacrifice": 4,
+        "Rook Sacrifice": 6,
+        "Bishop Sacrifice": 5,
+        "Knight Sacrifice": 5
+      }
+    },
+    "GothamChess": {
+      "targets": 20,
+      "positive_reserves": 16,
+      "minimum_available_control_moves": 14,
+      "categories": {
+        "Rook Sacrifice": 2,
+        "Knight Sacrifice": 11,
+        "Queen Sacrifice": 7
+      }
+    },
+    "Hikaru": {
+      "targets": 20,
+      "positive_reserves": 8,
+      "minimum_available_control_moves": 9,
+      "categories": {
+        "All Types": 19,
+        "Queen Sacrifice": 1
+      }
+    }
+  },
+  "initial_draft_replacements_for_identity_or_controlavailability_only": [],
+  "all_current_labels_unknown": true,
+  "one_target_per_game_global": true,
+  "before_position_move_identities_unique": true
+}

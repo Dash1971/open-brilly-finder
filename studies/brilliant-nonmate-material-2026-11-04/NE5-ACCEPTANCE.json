@@ -1,0 +1,176 @@
+{
+  "scope": "Ne5 only, independent diagnostic; all existing-qualifier accepting captures, SF18Hash64Threads1MultiPV2 nodes300000 with current/previous completewindows and fullgamehistory. Max4searches90seconds. No classifier fitting or data insertion. No outcome-driven retries.",
+  "key": "ne5-diagnostic-only",
+  "pgn_sha256": "7a16343c6cf6e324262e7600d02ef921111b3eef82a970966aebbf36fae6f331",
+  "fen_before": "rn1qkb1r/pp2pppp/2p2n2/8/2B1N1b1/5N2/PPPP1PPP/R1BQK2R w KQkq - 3 6",
+  "fen_after": "rn1qkb1r/pp2pppp/2p2n2/4N3/2B1N1b1/8/PPPP1PPP/R1BQK2R b KQkq - 4 6",
+  "offers": [
+    {
+      "uci": "f6e4",
+      "accepted_fen": "rn1qkb1r/pp2pppp/2p5/4N3/2B1n1b1/8/PPPP1PPP/R1BQK2R w KQkq - 0 7",
+      "snapshot": {
+        "current": {
+          "depth": 19,
+          "lines": [
+            {
+              "mate": 1,
+              "moves": [
+                "c4f7"
+              ]
+            },
+            {
+              "cp": 132,
+              "moves": [
+                "d1f3",
+                "d8d4",
+                "f3f7",
+                "e8d8",
+                "f7f4",
+                "g4h5",
+                "d2d3",
+                "d4f2",
+                "f4f2",
+                "e4f2",
+                "e1f2",
+                "b8d7",
+                "h1e1",
+                "e7e6",
+                "c4e6",
+                "d7e5",
+                "e1e5",
+                "h5g6",
+                "e5e3"
+              ]
+            }
+          ],
+          "reported_nodes": 260760
+        },
+        "previous": {
+          "depth": 18,
+          "lines": [
+            {
+              "mate": 1,
+              "moves": [
+                "c4f7"
+              ]
+            },
+            {
+              "cp": 117,
+              "moves": [
+                "d1f3",
+                "d8d4",
+                "f3f7",
+                "e8d8",
+                "f7f4",
+                "g4h5",
+                "d2d3",
+                "d4f2",
+                "f4f2",
+                "e4f2",
+                "e1f2",
+                "b8d7",
+                "h1e1",
+                "d7e5",
+                "e1e5",
+                "g7g6",
+                "c4e6",
+                "f8g7",
+                "e5e4",
+                "h8f8",
+                "f2g1"
+              ]
+            }
+          ],
+          "reported_nodes": 137077
+        },
+        "terminal": false,
+        "quality": "frozen-test-sf18-300000",
+        "elapsed_seconds": 0.429006
+      },
+      "source": "new_ne5_diagnostic_only"
+    },
+    {
+      "uci": "g4d1",
+      "accepted_fen": "rn1qkb1r/pp2pppp/2p2n2/4N3/2B1N3/8/PPPP1PPP/R1BbK2R w KQkq - 0 7",
+      "snapshot": {
+        "current": {
+          "depth": 17,
+          "lines": [
+            {
+              "mate": 1,
+              "moves": [
+                "c4f7"
+              ]
+            },
+            {
+              "cp": -269,
+              "moves": [
+                "e1d1",
+                "e7e6",
+                "e4g5",
+                "f6g4",
+                "e5f7",
+                "d8d4",
+                "d2d3",
+                "g4f2",
+                "d1e2",
+                "f2h1",
+                "c1e3",
+                "d4b2",
+                "a1c1",
+                "f8b4",
+                "f7h8",
+                "b8d7",
+                "h8f7",
+                "d7c5",
+                "f7d6",
+                "e8d7"
+              ]
+            }
+          ],
+          "reported_nodes": 241312
+        },
+        "previous": {
+          "depth": 16,
+          "lines": [
+            {
+              "mate": 1,
+              "moves": [
+                "c4f7"
+              ]
+            },
+            {
+              "cp": -250,
+              "moves": [
+                "e1d1",
+                "e7e6",
+                "e4g5",
+                "f6g4",
+                "e5f7",
+                "d8d4",
+                "h1f1",
+                "d4c4",
+                "d2d3",
+                "c4d5",
+                "f2f3",
+                "g4e3",
+                "c1e3",
+                "h8g8",
+                "e3f4",
+                "b8a6"
+              ]
+            }
+          ],
+          "reported_nodes": 98100
+        },
+        "terminal": false,
+        "quality": "frozen-test-sf18-300000",
+        "elapsed_seconds": 0.189005
+      },
+      "source": "new_ne5_diagnostic_only"
+    }
+  ],
+  "searches": 2,
+  "elapsed_seconds": 1.0326573331840336,
+  "protocol_sha256": "92a4d14ea0e19dd38c8007b4f675377fb5b5f09724d25c5ac2e594061dfef251"
+}

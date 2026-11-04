@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "input_hashes_unchanged": true,
+    "script_frozen": true,
+    "protocol_frozen": true,
+    "all3724_rows": true,
+    "no_fits_or_engine_queries": true,
+    "primary_fails": true,
+    "control_fails": true
+  },
+  "independent_recomputation": {
+    "method": "Read-only subagent independently recomputed from original training.json and saved OOF predictions without importing evaluate.py.",
+    "verified_rows": 3724,
+    "checks": [
+      "original scores and per-fold cutoffs",
+      "original and revised window gates and awards",
+      "hash-salted outer folds",
+      "alias/game/canonical-position group isolation",
+      "input and script hashes",
+      "miss partitions and all8 changed primary decisions"
+    ],
+    "result": "No discrepancy found."
+  },
+  "artifact_sha256": {
+    "PROTOCOL.json": "8ffcab4e49b55a963c33d7ee2789280b6d317f9c7c98d45fd9020c9cb9fb5186",
+    "evaluate.py": "84117cbf99404b8f575d975dcb2dc30c28d1c12fc449dd2480346ff5c06ceaac",
+    "RESULTS.json": "023df2688357629805b74d48a2893275bf9235f8c620877d5a25eba62d339ca2",
+    "PREDICTIONS.json": "49d8cf084bddede17ca86cf170fbae26e9074eff323cf4d5898671e99bec0c8f",
+    "REPORT.txt": "a5f391e1273045c5681440956ae9e93970c10fe88dbc0e15ad7e7323e06c546c"
+  }
+}

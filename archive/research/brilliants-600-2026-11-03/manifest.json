@@ -1,0 +1,232 @@
+{
+  "metadata": {
+    "started_at": "2026-11-03T00:58:30+00:00",
+    "collection_deadline": null,
+    "quantity_completion_authorized": true,
+    "accounts": [
+      "nelsi",
+      "hansen",
+      "KNVB",
+      "GothamChess",
+      "Hikaru"
+    ],
+    "target": {
+      "fresh_brilliant": 300,
+      "fresh_non_brilliant": 300,
+      "per_account_per_class": 60,
+      "preferred_positive_per_sacrifice_category": 15,
+      "reserve_unique_moves": 60
+    },
+    "split_policy": "Hikaru games -> player_holdout; other SHA256(game_id)%5==0 -> game_holdout; rest development. Never split positions from a game.",
+    "split_frozen_before_tuning": true,
+    "tuning_authorized": false,
+    "official_pgn_documentation": [
+      "https://www.chess.com/news/view/published-data-api",
+      "https://support.chess.com/en/articles/8705305-how-do-i-get-a-pgn-of-my-game"
+    ],
+    "label_absence_means": "unknown",
+    "excluded_game_ids": [
+      "119215241095",
+      "172016241890",
+      "183990510823",
+      "184007910437",
+      "184403311373",
+      "184407510567",
+      "184408711263",
+      "186059216760",
+      "186059865466",
+      "186066219416",
+      "186066291740",
+      "186066679548",
+      "186298545248",
+      "186305472636",
+      "186305620178",
+      "186311900336",
+      "186336144138",
+      "186383126550",
+      "186399008010",
+      "186405804254",
+      "186409700648",
+      "186423523498",
+      "187780087431",
+      "187784287701",
+      "187784887471"
+    ],
+    "pilot_source_immutable": "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-pilot-2026-11-03",
+    "exclusion_amendment": {
+      "amended_at": "2026-11-03T01:04:35.505809+00:00",
+      "amendment_authorization": "Owner/parent explicitly approved extending exclusions to ALL original-nine investigation IDs before new sample collection.",
+      "game_ids": [
+        "119215241095",
+        "172016241890",
+        "183990510823",
+        "184007910437",
+        "184403311373",
+        "184407510567",
+        "184408711263",
+        "186059216760",
+        "186059865466",
+        "186066219416",
+        "186066291740",
+        "186066679548",
+        "186298545248",
+        "186305472636",
+        "186305620178",
+        "186311900336",
+        "186336144138",
+        "186383126550",
+        "186399008010",
+        "186405804254",
+        "186409700648",
+        "186423523498",
+        "187780087431",
+        "187784287701",
+        "187784887471"
+      ],
+      "original_nine_game_ids": [
+        "119215241095",
+        "172016241890",
+        "183990510823",
+        "184007910437",
+        "186066291740",
+        "186399008010"
+      ],
+      "reason": "Known previous development/regression games:19 feasibility pilot games, all original nine-example investigation games, and owner-reported186311900336. Not part of new600."
+    }
+  },
+  "exported_at": "2026-11-03T02:09:20.112062+00:00",
+  "validation": {
+    "games": 292,
+    "positions": 25879,
+    "observations": 644,
+    "indexing_mismatches": [],
+    "raw_evidence_versions": 671,
+    "metadata_enrichment_revisions": 27,
+    "gallery_board_placements_checked": 164,
+    "fresh_review_board_placements_checked": 327,
+    "unique_moves_with_board_identity": 395,
+    "source_move_indices_checked": 644,
+    "known_regression_fen_positions": 102,
+    "known_regression_fen_matches": [
+      {
+        "game_id": "186405562696",
+        "ply": 15,
+        "san": "Bh6",
+        "matching_positions": [
+          "fen_before",
+          "fen_after"
+        ],
+        "currently_selected": false
+      },
+      {
+        "game_id": "186405183098",
+        "ply": 15,
+        "san": "Bh6",
+        "matching_positions": [
+          "fen_before",
+          "fen_after"
+        ],
+        "currently_selected": false
+      }
+    ],
+    "observations_waiting_for_pgn": [],
+    "gallery_fresh_disagreements": [
+      {
+        "game_id": "184010310819",
+        "ply": 113,
+        "statuses": "gallery_brilliant,fresh_confirmed_non_brilliant"
+      },
+      {
+        "game_id": "185705414306",
+        "ply": 38,
+        "statuses": "gallery_brilliant,fresh_confirmed_non_brilliant"
+      },
+      {
+        "game_id": "186038944608",
+        "ply": 29,
+        "statuses": "gallery_brilliant,fresh_confirmed_non_brilliant"
+      },
+      {
+        "game_id": "186042909376",
+        "ply": 21,
+        "statuses": "gallery_brilliant,fresh_confirmed_non_brilliant"
+      },
+      {
+        "game_id": "186090364840",
+        "ply": 15,
+        "statuses": "gallery_brilliant,fresh_confirmed_non_brilliant"
+      },
+      {
+        "game_id": "186116217808",
+        "ply": 64,
+        "statuses": "gallery_brilliant,fresh_confirmed_non_brilliant"
+      },
+      {
+        "game_id": "186567989873",
+        "ply": 17,
+        "statuses": "gallery_brilliant,fresh_confirmed_non_brilliant"
+      }
+    ],
+    "fresh_binary_label_conflicts": [],
+    "label_counts": [
+      {
+        "label_status": "fresh_confirmed_brilliant",
+        "n": 168
+      },
+      {
+        "label_status": "fresh_confirmed_non_brilliant",
+        "n": 167
+      },
+      {
+        "label_status": "gallery_brilliant",
+        "n": 309
+      }
+    ],
+    "split_counts": [
+      {
+        "split": "development",
+        "n": 181
+      },
+      {
+        "split": "game_holdout",
+        "n": 52
+      },
+      {
+        "split": "player_holdout",
+        "n": 59
+      }
+    ]
+  },
+  "progress": {
+    "per_account": {
+      "nelsi": {
+        "fresh_brilliant": 60,
+        "fresh_non_brilliant": 60
+      },
+      "hansen": {
+        "fresh_brilliant": 29,
+        "fresh_non_brilliant": 29
+      },
+      "KNVB": {
+        "fresh_brilliant": 0,
+        "fresh_non_brilliant": 0
+      },
+      "GothamChess": {
+        "fresh_brilliant": 10,
+        "fresh_non_brilliant": 10
+      },
+      "Hikaru": {
+        "fresh_brilliant": 60,
+        "fresh_non_brilliant": 60
+      }
+    },
+    "primary_unique_moves": 318,
+    "primary_fresh_brilliant": 159,
+    "primary_fresh_non_brilliant": 159,
+    "primary_moves_with_captured_board_identity": 311,
+    "primary_moves_with_board_missing": 7,
+    "pending_identity_or_pgn": [],
+    "reserve_or_conflicting_moves": [],
+    "target_complete": false
+  }
+}

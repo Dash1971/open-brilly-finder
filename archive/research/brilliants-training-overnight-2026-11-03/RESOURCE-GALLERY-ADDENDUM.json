@@ -1,0 +1,11 @@
+{
+  "authorizing_message": "Root explicitly authorized one additional lightweight gallery tab while two completed-review collectors are active.",
+  "maximum_tabs": {
+    "review": 2,
+    "metadata_gallery": 1
+  },
+  "conditions": "Only while memory pressure is1(normal); pause gallery first at pressure2or4. At most100rendered cards per gallery tab; close/reopen afterward. No review collection by this agent.",
+  "purpose": "Prevent queue starvation using visible public gallery metadata.",
+  "source": "Root owner-authorized resource adjustment; no engine/fitting expansion.",
+  "recorded_at_utc": "2026-11-03T15:36:49.677180+00:00"
+}

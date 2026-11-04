@@ -1,0 +1,17 @@
+Correction to earlier tactical prose, November 4, 2026
+
+The earlier forest-miss diagnosis PANEL-AUDIT.txt pair7 and REPORT.txt described
+ordinary ...Nxe4 Nxe4 Qe7 followed by ...d5 as a pawn fork of two knights.
+
+Board-based replay shows:
+  Nc3xe4 is the accepting knight.
+  Qd8-e7 pins Ne4 to Ke1 along the e-file.
+  Pd6-d5 attacks Ne4 on e4, not Nd4: a pawn on d5 attacks c4 and e4.
+  The separate black Nc6 already attacks Nd4.
+
+The correct mechanism is a pin followed by a pawn attack on the accepting
+knight, alongside an existing attack on the other knight. The new geometric
+extractor correctly records the pin and does not report a two-knight pawn fork.
+This correction affects explanatory prose only. Old numeric features, labels,
+forests, evaluation results, and matching selections are unchanged. Original
+study artifacts remain preserved; this file records the correction explicitly.

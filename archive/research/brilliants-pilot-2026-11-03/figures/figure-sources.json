@@ -1,0 +1,34 @@
+{
+  "games": 19,
+  "gallery_entries": 20,
+  "fresh_positive": 19,
+  "fresh_negative": 21,
+  "comparison_rows": 40,
+  "summaries": {
+    "ec": {
+      "TP": 6,
+      "FN": 13,
+      "FP": 0,
+      "TN": 21,
+      "withheld_positive": 0,
+      "withheld_negative": 1,
+      "positive_n": 19,
+      "negative_n": 21,
+      "brilliant_detection_rate": 0.3157894736842105,
+      "false_positive_rate": 0
+    },
+    "mute_v2": {
+      "TP": 17,
+      "FN": 2,
+      "FP": 1,
+      "TN": 20,
+      "withheld_positive": 0,
+      "withheld_negative": 1,
+      "positive_n": 19,
+      "negative_n": 21,
+      "brilliant_detection_rate": 0.8947368421052632,
+      "false_positive_rate": 0.047619047619047616
+    }
+  },
+  "notes": "Read from corpus.sqlite3 and comparison-rules.json; no collection, tuning or model inference. Board panels show the recorded played move."
+}

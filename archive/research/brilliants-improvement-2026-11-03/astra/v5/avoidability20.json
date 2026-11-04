@@ -1,0 +1,599 @@
+{
+  "selection": "Ten fresh v4 false awards; ten distinct v4 true awards matched by offered role, mover role, physical debt, material balance and phase; Qh4/h6 pair fixed by request. All are development. Roots sorted by UCI.",
+  "rows": [
+    {
+      "key": "169827191694:67",
+      "san": "Rh1",
+      "truth": false,
+      "matched_pair_false_key": "169827191694:67",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "d3e2",
+          "san": "Be2",
+          "has_offer": false
+        },
+        "nodes": 98,
+        "roots_checked": 17
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "d3e2",
+          "san": "Be2",
+          "has_offer": false
+        },
+        "nodes": 98,
+        "roots_checked": 17
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 5
+      }
+    },
+    {
+      "key": "185032708726:33",
+      "san": "Bxd5",
+      "truth": true,
+      "matched_pair_false_key": "169827191694:67",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "a3a4",
+          "san": "a4",
+          "has_offer": false
+        },
+        "nodes": 7,
+        "roots_checked": 1
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "a3a4",
+          "san": "a4",
+          "has_offer": false
+        },
+        "nodes": 7,
+        "roots_checked": 1
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 2
+      }
+    },
+    {
+      "key": "173084454389:59",
+      "san": "Bc5",
+      "truth": false,
+      "matched_pair_false_key": "173084454389:59",
+      "avoidability128": {
+        "avoidable": null,
+        "nodes": 128,
+        "roots_checked": 30,
+        "reason": "shared budget exhausted"
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "e7e8",
+          "san": "Re8+",
+          "has_offer": false
+        },
+        "nodes": 134,
+        "roots_checked": 31
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 1
+      }
+    },
+    {
+      "key": "174490497572:26",
+      "san": "Nxb4",
+      "truth": true,
+      "matched_pair_false_key": "173084454389:59",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "c5b6",
+          "san": "Bb6",
+          "has_offer": false
+        },
+        "nodes": 55,
+        "roots_checked": 6
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "c5b6",
+          "san": "Bb6",
+          "has_offer": false
+        },
+        "nodes": 55,
+        "roots_checked": 6
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 5
+      }
+    },
+    {
+      "key": "174425603426:123",
+      "san": "Rxh2",
+      "truth": false,
+      "matched_pair_false_key": "174425603426:123",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "c3c4",
+          "san": "c4",
+          "has_offer": false
+        },
+        "nodes": 2,
+        "roots_checked": 1
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "c3c4",
+          "san": "c4",
+          "has_offer": false
+        },
+        "nodes": 2,
+        "roots_checked": 1
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 1
+      }
+    },
+    {
+      "key": "171487603906:78",
+      "san": "Rxf2+",
+      "truth": true,
+      "matched_pair_false_key": "174425603426:123",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "c8a8",
+          "san": "Ra8",
+          "has_offer": false
+        },
+        "nodes": 97,
+        "roots_checked": 24
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "c8a8",
+          "san": "Ra8",
+          "has_offer": false
+        },
+        "nodes": 97,
+        "roots_checked": 24
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 3
+      }
+    },
+    {
+      "key": "175936156661:48",
+      "san": "gxf4",
+      "truth": false,
+      "matched_pair_false_key": "175936156661:48",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "d8a8",
+          "san": "Ra8",
+          "has_offer": false
+        },
+        "nodes": 34,
+        "roots_checked": 11
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "d8a8",
+          "san": "Ra8",
+          "has_offer": false
+        },
+        "nodes": 34,
+        "roots_checked": 11
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 1
+      }
+    },
+    {
+      "key": "184777814198:66",
+      "san": "b3",
+      "truth": true,
+      "matched_pair_false_key": "175936156661:48",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "f8a8",
+          "san": "Ra8",
+          "has_offer": false
+        },
+        "nodes": 39,
+        "roots_checked": 10
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "f8a8",
+          "san": "Ra8",
+          "has_offer": false
+        },
+        "nodes": 39,
+        "roots_checked": 10
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 2
+      }
+    },
+    {
+      "key": "178360672165:63",
+      "san": "Nxh6+",
+      "truth": false,
+      "matched_pair_false_key": "178360672165:63",
+      "avoidability128": {
+        "avoidable": null,
+        "nodes": 128,
+        "roots_checked": 23,
+        "reason": "shared budget exhausted"
+      },
+      "avoidability512": {
+        "avoidable": false,
+        "nodes": 219,
+        "roots_checked": 42
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 2
+      }
+    },
+    {
+      "key": "184512046868:24",
+      "san": "Nd4",
+      "truth": true,
+      "matched_pair_false_key": "178360672165:63",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "a7a5",
+          "san": "a5",
+          "has_offer": false
+        },
+        "nodes": 7,
+        "roots_checked": 1
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "a7a5",
+          "san": "a5",
+          "has_offer": false
+        },
+        "nodes": 7,
+        "roots_checked": 1
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 39
+      }
+    },
+    {
+      "key": "184481267900:67",
+      "san": "Qb5",
+      "truth": false,
+      "matched_pair_false_key": "184481267900:67",
+      "avoidability128": {
+        "avoidable": null,
+        "nodes": 128,
+        "roots_checked": 22,
+        "reason": "shared budget exhausted"
+      },
+      "avoidability512": {
+        "avoidable": false,
+        "nodes": 207,
+        "roots_checked": 39
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 2
+      }
+    },
+    {
+      "key": "172590636870:45",
+      "san": "Bf6",
+      "truth": true,
+      "matched_pair_false_key": "184481267900:67",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "f2f3",
+          "san": "f3",
+          "has_offer": false
+        },
+        "nodes": 117,
+        "roots_checked": 17
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "f2f3",
+          "san": "f3",
+          "has_offer": false
+        },
+        "nodes": 117,
+        "roots_checked": 17
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 2
+      }
+    },
+    {
+      "key": "184514610842:73",
+      "san": "Re1",
+      "truth": false,
+      "matched_pair_false_key": "184514610842:73",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "g5f7",
+          "san": "Ngxf7+",
+          "has_offer": false
+        },
+        "nodes": 125,
+        "roots_checked": 36
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "g5f7",
+          "san": "Ngxf7+",
+          "has_offer": false
+        },
+        "nodes": 125,
+        "roots_checked": 36
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 1
+      }
+    },
+    {
+      "key": "184131911424:66",
+      "san": "Raf8",
+      "truth": true,
+      "matched_pair_false_key": "184514610842:73",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "b4a6",
+          "san": "Na6",
+          "has_offer": false
+        },
+        "nodes": 53,
+        "roots_checked": 11
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "b4a6",
+          "san": "Na6",
+          "has_offer": false
+        },
+        "nodes": 53,
+        "roots_checked": 11
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 1
+      }
+    },
+    {
+      "key": "185228493400:24",
+      "san": "dxc4",
+      "truth": false,
+      "matched_pair_false_key": "185228493400:24",
+      "avoidability128": {
+        "avoidable": null,
+        "nodes": 128,
+        "roots_checked": 10,
+        "reason": "shared budget exhausted"
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "g5e4",
+          "san": "Ne4",
+          "has_offer": false
+        },
+        "nodes": 333,
+        "roots_checked": 29
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 6
+      }
+    },
+    {
+      "key": "184623232028:38",
+      "san": "hxg4",
+      "truth": true,
+      "matched_pair_false_key": "185228493400:24",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "a8c8",
+          "san": "Rc8",
+          "has_offer": false
+        },
+        "nodes": 29,
+        "roots_checked": 4
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "a8c8",
+          "san": "Rc8",
+          "has_offer": false
+        },
+        "nodes": 29,
+        "roots_checked": 4
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 4
+      }
+    },
+    {
+      "key": "186393990159:71",
+      "san": "Qg6+",
+      "truth": false,
+      "matched_pair_false_key": "186393990159:71",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "e4d4",
+          "san": "Qxd4+",
+          "has_offer": false
+        },
+        "nodes": 29,
+        "roots_checked": 8
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "e4d4",
+          "san": "Qxd4+",
+          "has_offer": false
+        },
+        "nodes": 29,
+        "roots_checked": 8
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 1
+      }
+    },
+    {
+      "key": "184430392420:37",
+      "san": "Rxh7+",
+      "truth": true,
+      "matched_pair_false_key": "186393990159:71",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "c4e2",
+          "san": "Be2",
+          "has_offer": false
+        },
+        "nodes": 66,
+        "roots_checked": 15
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "c4e2",
+          "san": "Be2",
+          "has_offer": false
+        },
+        "nodes": 66,
+        "roots_checked": 15
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 1
+      }
+    },
+    {
+      "key": "187780686673:36",
+      "san": "Qh4",
+      "truth": false,
+      "matched_pair_false_key": "187780686673:36",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "a8b8",
+          "san": "Rb8",
+          "has_offer": false
+        },
+        "nodes": 38,
+        "roots_checked": 3
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "a8b8",
+          "san": "Rb8",
+          "has_offer": false
+        },
+        "nodes": 38,
+        "roots_checked": 3
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 18
+      }
+    },
+    {
+      "key": "169827191694:65",
+      "san": "h6",
+      "truth": true,
+      "matched_pair_false_key": "187780686673:36",
+      "avoidability128": {
+        "avoidable": true,
+        "witness": {
+          "uci": "d3e2",
+          "san": "Be2",
+          "has_offer": false
+        },
+        "nodes": 66,
+        "roots_checked": 11
+      },
+      "avoidability512": {
+        "avoidable": true,
+        "witness": {
+          "uci": "d3e2",
+          "san": "Be2",
+          "has_offer": false
+        },
+        "nodes": 66,
+        "roots_checked": 11
+      },
+      "direct_stalemate_after_acceptance": {
+        "proofs": [],
+        "complete": true,
+        "nodes": 6
+      }
+    }
+  ]
+}

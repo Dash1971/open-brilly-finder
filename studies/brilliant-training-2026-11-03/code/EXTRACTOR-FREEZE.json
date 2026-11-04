@@ -1,0 +1,34 @@
+{
+  "frozen_at_utc": "2026-11-03T09:57:01.081170+00:00",
+  "scope": "Study-local fresh fixed-forest extractor. No retraining/new dependencies/native port. Frozen after848parity and two unlabeled unseen-position pipeline tests, before prospective labels.",
+  "sha256": {
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/extractor.py": "3a37512d8faa97250d2408c01463f515cb6737568d4620b2faa69b267c85b6c4",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/feature_kernel.py": "8d77d2f482b57f492a4f307c447df1b96befb74e81a0accb7d5f33a886446d14",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/avoidability_kernel.py": "d5b4101f989e26c8d1e958fbcf6049b0ea750217cdd9d3f171af12bbd4aa726e",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/astra/v5/fresh-extractor/context.mts": "fb3dfb6cb4da23d39fe1acbe7a12d77d6861a6b2357a53f9bb420dcb043e050a",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/learning-v5/physical_kernel.py": "ec877d176ff59972992ef29569a338c5ab39fa9fb03bb679503e0721a13d1918",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/forest-full.json": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/learning-v5/forest-diagnostic/PROTOCOL.json": "8073938391ac975e6957e5b98ea3aafb8c139c16cb2238cbbab21c32e1df82bd",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/root/frozen-v4/noSweatClassify.ts": "3b8344b048290caea028cc586486910b2bdbc534e221ccdf45481dac438f4301",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/root/frozen-v4/noSweatCore.ts": "3fa48e3c50e7361a244c0ebb58543315b6a5f208c0c0e1979ae18fca40366a40",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/research/brilliants-improvement-2026-11-03/root/frozen-v4/core.ts": "583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a",
+    "/Users/da/Documents/ChatGPT/No Sweat Chess/mute-chess-research/studies/brilliant-moves-2026-11-03/material-features.py": "82c3b23efddadf69d8b68ea123abdec7fd2a7d2902080620ff785719aa61f9be"
+  },
+  "python_chess_version": "1.11.2",
+  "node": "24.22.1",
+  "threshold": 0.8333333333333334,
+  "feature_count": 75,
+  "missing_indicator_count": 75,
+  "trees": 64,
+  "engine_domain": "SF18 fixed300k/Threads1/Hash64, same completed current+previous windows and fullPGN provenance; otherdomainsnotvalidated",
+  "proof_caps": {
+    "attribution_see_nodes": 512,
+    "avoidability_nodes": 512,
+    "stalemate_nodes": 512,
+    "physical_search_nodes": 10000,
+    "physical_search_wall_seconds": 0.25,
+    "per_acceptance_see_calls": 100000,
+    "per_acceptance_see_wall_seconds": 1.0
+  },
+  "wall_clock_limit": "Physical/acceptance SEE timing is load-dependent. Exact observed parity is not a guarantee of deterministic unknownness under load. No cap raised and no lookup fallback."
+}

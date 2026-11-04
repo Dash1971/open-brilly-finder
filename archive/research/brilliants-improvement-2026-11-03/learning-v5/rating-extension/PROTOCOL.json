@@ -1,0 +1,31 @@
+{
+  "scope": "One mover-rating feature experiment; all848already-unblindeddevelopment. No independent test or beginner-curve claim.",
+  "frozen_at_utc": "2026-11-03T09:05:53.280922+00:00",
+  "base_feature_sha256": "d1e97b2c3346994fbc4d73b289c6b6763ea454bdbc8d8935370c643aeceaaa3a",
+  "base_cart_sha256": "5fd6bb9d20c8fa28ab2bf7ca0d36b20172075983f138fdf6d6781375d0133db4",
+  "baseline_group_predictions_sha256": "daace1799ce179183f8bd9d5f6781a515bd2a1c3f7630eca79a4c803bc727387",
+  "feature_sets": {
+    "original75": "Original75semantic predictors and their explicit missing indicators.",
+    "plus_rating": "Add only actual mover PGN rating as one continuous field and its explicit missing indicator. No opponent rating, account feature, date, time control or extra interactions."
+  },
+  "model": {
+    "maximum_depth": 4,
+    "minimum_leaf_distinct_cases": 15,
+    "negative_cost": 5,
+    "operating_points": [
+      "weighted_cost5_default",
+      "RAW_unweighted_positive_leaf_fraction>=0.98"
+    ]
+  },
+  "evaluation": {
+    "group_cv": "Reuse original five game/identical-before-position connected-component folds. Original75results/predictions reused without refitting.",
+    "leave_one_account_out": "Five prespecified held-out accounts in order nelsi,hansen,KNVB,GothamChess,Hikaru. Purge all training cases in connected groups touching that account; account is fold metadata only, never a predictor.",
+    "reporting": "For every feature set, scheme, operating point and held-out account, report all848/core818/panel30 metrics and rating-range coverage. No account/fold selection."
+  },
+  "training_runs": "Five grouped rating fits; five LOAO original fits; five LOAO rating fits; one full-data descriptive rating fit. No baseline grouped/full refits and no other configuration.",
+  "eligibility": "Unchanged eligible current/prior window training, final both-windowAND plus raw offer/two roots/quality<=5/after-floor>=-100/confidence guards.",
+  "rating": "PGN WhiteElo/BlackElo for the actual mover identified by before-position turn. Null stays null; never use account averages.",
+  "conditioning_source": "https://support.chess.com/en/articles/8572705-how-are-moves-classified-what-is-a-blunder-or-brilliant-etc",
+  "published_claim": "Chess.com describes more generous sacrifice criteria for newer players. This does not identify its exact rating source or private formula.",
+  "stop": "No capacity/threshold grid, added predictors, engine/browser jobs, app/public changes or automatic followup."
+}

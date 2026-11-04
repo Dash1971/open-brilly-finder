@@ -1,0 +1,38 @@
+{
+  "scope": "Saved SF18 inputs only; native SF19 domain remains unvalidated. No cached predictor substitution.",
+  "cases": 200,
+  "hashes": {
+    "driver": "12c41a8f80874f00f77d2dccb3884f9cdfb937a5c542cd21f0440b036d17e675",
+    "core": "b4a062c9ac2bc1657cf9d1901f3540932d1b6076217ef3de82147c120ab81b56",
+    "database": "13e6575c245acbdbf8260486315cf79bd920b8fe7e66df08bbff1263294dea7e",
+    "predictions": "d5d94e466317201b2c8359165dee47863e0c6b5a7b13f9df4a34d788d2d286ce",
+    "module": "10ac40a04d29492e85d09ddfbd0ac5c8ab32f64a8dce28cb6d78cd1cecbfb499",
+    "classifier": "be222880d7158a6ae3604bd482cb1e218d69c59ee815ea0a0c6ad34e4f1b18c9",
+    "model": "44704ac06378d3f671a4eed959e21959f759c0437c71af1f9119d1081293c0b7"
+  },
+  "modelByteEqual": true,
+  "featureMismatchCases": 0,
+  "scoreMismatchCases": 0,
+  "integrationMismatchCases": 0,
+  "ecFullObjectMismatchCases": 0,
+  "physicalUnknownCases": [],
+  "maxFloatingDifference": 2.842170943040401e-14,
+  "elapsed_ms": 2816,
+  "maxRSS": 149232,
+  "optionalUnknowns": {
+    "avoidability_unknown": [
+      {
+        "key": "174345053230:46",
+        "window": "current"
+      },
+      {
+        "key": "174345053230:46",
+        "window": "previous"
+      }
+    ]
+  },
+  "execution_notes": [
+    "Used existing adapter/tsconfig.json for module resolution; archived lib/nosweat/core.ts and restored native core.ts are byte-identical SHA583c1584a01b080a21877df697443d522fdd245c28dcbd163fd878b7ebedb55a.",
+    "Two initial loader invocations failed before case execution; dependency mapping corrected using existing configuration, no source/predictor changes."
+  ]
+}
