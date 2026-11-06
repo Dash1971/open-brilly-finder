@@ -8,7 +8,7 @@ python3 tools/reproduce_results.py --verify-forest
 python3 tools/infer_saved_features.py --case-key 183200302081:135
 ```
 
-The first command recomputes the latest comparison from saved decisions and verifies the original five game/position groups of folds. Expected primary results:
+The first command recomputes the historical external comparison from saved decisions and verifies the original five game/position groups of folds. Expected primary results:
 
 | Method | Correct awards | Wrong awards | Unresolved cases |
 |---|---:|---:|---:|
@@ -49,3 +49,12 @@ This interface accepts **precomputed feature windows**, not a bare FEN or PGN. F
 - **Rerun external classifiers:** the archived adapter notes and pinned source revisions describe their exact APIs, dependencies and acquisition settings. The latest run used Node 24.22.1, Stockfish 18, two root candidates and two saved engine windows. Historical adapters retain original temporary runtime paths. Replaying their saved results offline does not require those runtimes.
 
 The original 848-case model, the expanded experimental full model, and the five held-out models have different roles. Keep those roles separate when building new experiments. The source code for the traverser/gates is derived from the archived Mute Chess research/native classifier and is distributed under the repository's AGPL terms. Upstream components retain their own licenses; see repository attribution and licensing records.
+
+## Updated selective model (November 6)
+
+```sh
+python3 studies/brilliant-selective-2026-11-06/reproduce.py
+python3 tools/infer_saved_features.py --model selective20261106 --case-key 1006812690:48
+```
+
+The first command recounts every saved development and Witty test move. The second evaluates the frozen 128-tree model at 0.83 using one of the 6,293 saved feature cases. It remains saved-feature inference, not a new independent test or an engine run. All earlier model options and commands retain their original behavior.

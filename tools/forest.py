@@ -4,6 +4,7 @@
 The tree traversal and gates follow the archived native forest and grouped
 learner experiment. This module does not extract features or analyze a FEN.
 """
+import gzip
 import hashlib
 import json
 import math
@@ -17,7 +18,8 @@ ORIGINAL = ROOT / 'studies/brilliant-moves/reference/v5/native/noSweatBrilliantF
 
 
 def read(path):
-    with Path(path).open(encoding='utf-8') as stream:
+    opener = gzip.open if str(path).endswith('.gz') else open
+    with opener(path, 'rt', encoding='utf-8') as stream:
         return json.load(stream)
 
 

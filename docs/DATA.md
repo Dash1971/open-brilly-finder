@@ -1,3 +1,11 @@
+# Current seven-account collection
+
+[Download full PGN](../studies/brilliant-selective-2026-11-06/data/seven-accounts-last-12-months-chesscom-brilliants.pgn): 7,019 games, 8,298 Brilliant annotations, 522,053 mainline plies. [Labels and verification grades](../studies/brilliant-selective-2026-11-06/data/seven-account-labels.csv) · [Counts and provenance](../studies/brilliant-selective-2026-11-06/data/seven-account-source-counts.json). Full history and clocks are preserved. This complete gallery collection is larger than the fresh 1,000-game test.
+
+Complete scientific inputs, models, recipes, outputs, and original PGN/gallery sources for the current study are in its [numbered archives and source manifest](../studies/brilliant-selective-2026-11-06/SOURCE-MANIFEST.json). Original and published hashes distinguish portable path normalization from unchanged scientific values. Authentication metadata and operational runtime packages are excluded.
+
+The following documentation describes earlier datasets; their counts should not be substituted for the current collection.
+
 # Data, labels and evaluation boundaries
 
 This repository contains curated research evidence, code, model artifacts and study reports. It is not a dump of authenticated browser sessions or the original workstation. Source hashes and study freezes preserve provenance; any import omissions or transformations should be read alongside the repository import manifest.

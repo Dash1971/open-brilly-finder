@@ -1,0 +1,1848 @@
+{
+  "complete": true,
+  "at": "2026-11-06T10:51:05.840230+00:00",
+  "games_done": 3475,
+  "games_expected": 3475,
+  "missing_games": [],
+  "partial_json_games": [],
+  "expected_counts": {
+    "games": 3475,
+    "all_moves": 298376,
+    "own_moves": 150045,
+    "positives": 3857,
+    "negatives": 146188
+  },
+  "checked_counts": {
+    "games": 3475,
+    "all_moves": 298376,
+    "fresh_engine_searches": 645,
+    "variant_budget_checks": 24325,
+    "own_moves": 150045,
+    "positives": 3857
+  },
+  "workers": [
+    {
+      "root": "replay",
+      "batch": 0,
+      "preserved_paused_partition": true,
+      "complete_for_partition": true,
+      "state": null
+    },
+    {
+      "root": "replay",
+      "batch": 1,
+      "preserved_paused_partition": true,
+      "complete_for_partition": true,
+      "state": null
+    },
+    {
+      "root": "replay",
+      "batch": 2,
+      "preserved_paused_partition": true,
+      "complete_for_partition": true,
+      "state": null
+    },
+    {
+      "root": "replay",
+      "batch": 3,
+      "preserved_paused_partition": true,
+      "complete_for_partition": true,
+      "state": null
+    },
+    {
+      "root": "replay",
+      "batch": 4,
+      "preserved_paused_partition": true,
+      "complete_for_partition": true,
+      "state": null
+    },
+    {
+      "root": "replay",
+      "batch": 5,
+      "preserved_paused_partition": true,
+      "complete_for_partition": true,
+      "state": null
+    },
+    {
+      "root": "replay",
+      "batch": 6,
+      "preserved_paused_partition": true,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 2,
+        "total": 2,
+        "searches": 0,
+        "elapsed_ms": 668,
+        "finished": "2026-11-06T08:56:38.814Z"
+      }
+    },
+    {
+      "root": "replay-cont-1",
+      "batch": 0,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 200,
+        "total": 200,
+        "searches": 36,
+        "elapsed_ms": 489874,
+        "finished": "2026-11-06T10:30:18.312Z"
+      }
+    },
+    {
+      "root": "replay-cont-1",
+      "batch": 1,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 200,
+        "total": 200,
+        "searches": 27,
+        "elapsed_ms": 1001763,
+        "finished": "2026-11-06T10:39:45.608Z"
+      }
+    },
+    {
+      "root": "replay-cont-1",
+      "batch": 2,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 200,
+        "total": 200,
+        "searches": 33,
+        "elapsed_ms": 819742,
+        "finished": "2026-11-06T10:36:45.372Z"
+      }
+    },
+    {
+      "root": "replay-cont-1",
+      "batch": 3,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 200,
+        "total": 200,
+        "searches": 48,
+        "elapsed_ms": 483904,
+        "finished": "2026-11-06T10:30:12.623Z"
+      }
+    },
+    {
+      "root": "replay-cont-1",
+      "batch": 4,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 200,
+        "total": 200,
+        "searches": 33,
+        "elapsed_ms": 764497,
+        "finished": "2026-11-06T10:35:49.283Z"
+      }
+    },
+    {
+      "root": "replay-cont-1",
+      "batch": 5,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 200,
+        "total": 200,
+        "searches": 51,
+        "elapsed_ms": 421534,
+        "finished": "2026-11-06T10:29:10.324Z"
+      }
+    },
+    {
+      "root": "replay-cont-2",
+      "batch": 0,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 42,
+        "total": 42,
+        "searches": 3,
+        "elapsed_ms": 175027,
+        "finished": "2026-11-06T10:40:30.918Z"
+      }
+    },
+    {
+      "root": "replay-cont-2",
+      "batch": 1,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 200,
+        "total": 200,
+        "searches": 42,
+        "elapsed_ms": 482768,
+        "finished": "2026-11-06T10:40:18.617Z"
+      }
+    },
+    {
+      "root": "replay-cont-2",
+      "batch": 2,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 200,
+        "total": 200,
+        "searches": 39,
+        "elapsed_ms": 497290,
+        "finished": "2026-11-06T10:40:32.428Z"
+      }
+    },
+    {
+      "root": "replay-cont-2",
+      "batch": 3,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 43,
+        "total": 43,
+        "searches": 12,
+        "elapsed_ms": 143304,
+        "finished": "2026-11-06T10:42:54.979Z"
+      }
+    },
+    {
+      "root": "replay-cont-2",
+      "batch": 4,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 200,
+        "total": 200,
+        "searches": 27,
+        "elapsed_ms": 753237,
+        "finished": "2026-11-06T10:50:09.420Z"
+      }
+    },
+    {
+      "root": "replay-cont-2",
+      "batch": 5,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 200,
+        "total": 200,
+        "searches": 45,
+        "elapsed_ms": 450589,
+        "finished": "2026-11-06T10:38:37.510Z"
+      }
+    },
+    {
+      "root": "replay-cont-3",
+      "batch": 1,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 12,
+        "total": 12,
+        "searches": 6,
+        "elapsed_ms": 36188,
+        "finished": "2026-11-06T10:40:21.265Z"
+      }
+    },
+    {
+      "root": "replay-cont-3",
+      "batch": 2,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 19,
+        "total": 19,
+        "searches": 6,
+        "elapsed_ms": 31869,
+        "finished": "2026-11-06T10:41:08.189Z"
+      }
+    },
+    {
+      "root": "replay-cont-3",
+      "batch": 4,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 33,
+        "total": 33,
+        "searches": 6,
+        "elapsed_ms": 59445,
+        "finished": "2026-11-06T10:41:36.675Z"
+      }
+    },
+    {
+      "root": "replay-cont-3",
+      "batch": 5,
+      "preserved_paused_partition": false,
+      "complete_for_partition": true,
+      "state": {
+        "complete": true,
+        "done": 7,
+        "total": 7,
+        "searches": 3,
+        "elapsed_ms": 14924,
+        "finished": "2026-11-06T10:41:06.390Z"
+      }
+    }
+  ],
+  "games_by_fold": {
+    "0": 1149,
+    "1": 1159,
+    "2": 1165,
+    "fullfit": 2
+  },
+  "games_by_cohort": {
+    "five_account_development": 3161,
+    "magnus_development": 312,
+    "user_examples": 2
+  },
+  "aggregate": {
+    "production": {
+      "TP": 2071,
+      "FN": 1786,
+      "FP": 93,
+      "TN": 146095,
+      "positives": 3857,
+      "negatives": 146188,
+      "brilliant_recognition_percent": 53.69458128078818,
+      "false_positive_percent": 0.06361671272607874
+    },
+    "pr285": {
+      "TP": 2086,
+      "FN": 1771,
+      "FP": 97,
+      "TN": 146091,
+      "positives": 3857,
+      "negatives": 146188,
+      "brilliant_recognition_percent": 54.08348457350272,
+      "false_positive_percent": 0.0663529154239746
+    },
+    "reference_a": {
+      "TP": 2227,
+      "FN": 1630,
+      "FP": 93,
+      "TN": 146095,
+      "positives": 3857,
+      "negatives": 146188,
+      "brilliant_recognition_percent": 57.73917552501945,
+      "false_positive_percent": 0.06361671272607874
+    },
+    "reference_b": {
+      "TP": 2247,
+      "FN": 1610,
+      "FP": 94,
+      "TN": 146094,
+      "positives": 3857,
+      "negatives": 146188,
+      "brilliant_recognition_percent": 58.25771324863884,
+      "false_positive_percent": 0.06430076340055271
+    },
+    "finalist_a": {
+      "TP": 2292,
+      "FN": 1565,
+      "FP": 89,
+      "TN": 146099,
+      "positives": 3857,
+      "negatives": 146188,
+      "brilliant_recognition_percent": 59.42442312678247,
+      "false_positive_percent": 0.060880510028182885
+    },
+    "finalist_b": {
+      "TP": 2713,
+      "FN": 1144,
+      "FP": 180,
+      "TN": 146008,
+      "positives": 3857,
+      "negatives": 146188,
+      "brilliant_recognition_percent": 70.3396422089707,
+      "false_positive_percent": 0.12312912140531371
+    },
+    "finalist_c": {
+      "TP": 2478,
+      "FN": 1379,
+      "FP": 124,
+      "TN": 146064,
+      "positives": 3857,
+      "negatives": 146188,
+      "brilliant_recognition_percent": 64.24682395644282,
+      "false_positive_percent": 0.08482228363477166
+    }
+  },
+  "per_fold": {
+    "0": {
+      "production": {
+        "TP": 683,
+        "FN": 594,
+        "FP": 37,
+        "TN": 48571,
+        "positives": 1277,
+        "negatives": 48608,
+        "brilliant_recognition_percent": 53.48472983555207,
+        "false_positive_percent": 0.0761191573403555
+      },
+      "pr285": {
+        "TP": 685,
+        "FN": 592,
+        "FP": 38,
+        "TN": 48570,
+        "positives": 1277,
+        "negatives": 48608,
+        "brilliant_recognition_percent": 53.64134690681284,
+        "false_positive_percent": 0.0781764318630678
+      },
+      "reference_a": {
+        "TP": 746,
+        "FN": 531,
+        "FP": 36,
+        "TN": 48572,
+        "positives": 1277,
+        "negatives": 48608,
+        "brilliant_recognition_percent": 58.41816758026625,
+        "false_positive_percent": 0.07406188281764318
+      },
+      "reference_b": {
+        "TP": 756,
+        "FN": 521,
+        "FP": 39,
+        "TN": 48569,
+        "positives": 1277,
+        "negatives": 48608,
+        "brilliant_recognition_percent": 59.201252936570086,
+        "false_positive_percent": 0.08023370638578012
+      },
+      "finalist_a": {
+        "TP": 767,
+        "FN": 510,
+        "FP": 35,
+        "TN": 48573,
+        "positives": 1277,
+        "negatives": 48608,
+        "brilliant_recognition_percent": 60.062646828504306,
+        "false_positive_percent": 0.07200460829493087
+      },
+      "finalist_b": {
+        "TP": 905,
+        "FN": 372,
+        "FP": 62,
+        "TN": 48546,
+        "positives": 1277,
+        "negatives": 48608,
+        "brilliant_recognition_percent": 70.86922474549726,
+        "false_positive_percent": 0.12755102040816327
+      },
+      "finalist_c": {
+        "TP": 829,
+        "FN": 448,
+        "FP": 47,
+        "TN": 48561,
+        "positives": 1277,
+        "negatives": 48608,
+        "brilliant_recognition_percent": 64.9177760375881,
+        "false_positive_percent": 0.0966919025674786
+      }
+    },
+    "1": {
+      "production": {
+        "TP": 687,
+        "FN": 616,
+        "FP": 27,
+        "TN": 48539,
+        "positives": 1303,
+        "negatives": 48566,
+        "brilliant_recognition_percent": 52.72448196469686,
+        "false_positive_percent": 0.0555944487913355
+      },
+      "pr285": {
+        "TP": 694,
+        "FN": 609,
+        "FP": 29,
+        "TN": 48537,
+        "positives": 1303,
+        "negatives": 48566,
+        "brilliant_recognition_percent": 53.26170376055257,
+        "false_positive_percent": 0.05971255610921221
+      },
+      "reference_a": {
+        "TP": 744,
+        "FN": 559,
+        "FP": 31,
+        "TN": 48535,
+        "positives": 1303,
+        "negatives": 48566,
+        "brilliant_recognition_percent": 57.09900230237913,
+        "false_positive_percent": 0.06383066342708892
+      },
+      "reference_b": {
+        "TP": 741,
+        "FN": 562,
+        "FP": 28,
+        "TN": 48538,
+        "positives": 1303,
+        "negatives": 48566,
+        "brilliant_recognition_percent": 56.86876438986953,
+        "false_positive_percent": 0.057653502450273855
+      },
+      "finalist_a": {
+        "TP": 762,
+        "FN": 541,
+        "FP": 23,
+        "TN": 48543,
+        "positives": 1303,
+        "negatives": 48566,
+        "brilliant_recognition_percent": 58.48042977743668,
+        "false_positive_percent": 0.047358234155582095
+      },
+      "finalist_b": {
+        "TP": 892,
+        "FN": 411,
+        "FP": 56,
+        "TN": 48510,
+        "positives": 1303,
+        "negatives": 48566,
+        "brilliant_recognition_percent": 68.45740598618572,
+        "false_positive_percent": 0.11530700490054771
+      },
+      "finalist_c": {
+        "TP": 820,
+        "FN": 483,
+        "FP": 33,
+        "TN": 48533,
+        "positives": 1303,
+        "negatives": 48566,
+        "brilliant_recognition_percent": 62.93169608595549,
+        "false_positive_percent": 0.06794877074496561
+      }
+    },
+    "2": {
+      "production": {
+        "TP": 701,
+        "FN": 576,
+        "FP": 29,
+        "TN": 48985,
+        "positives": 1277,
+        "negatives": 49014,
+        "brilliant_recognition_percent": 54.894283476898984,
+        "false_positive_percent": 0.059166768678336805
+      },
+      "pr285": {
+        "TP": 707,
+        "FN": 570,
+        "FP": 30,
+        "TN": 48984,
+        "positives": 1277,
+        "negatives": 49014,
+        "brilliant_recognition_percent": 55.36413469068128,
+        "false_positive_percent": 0.06120700208103807
+      },
+      "reference_a": {
+        "TP": 737,
+        "FN": 540,
+        "FP": 26,
+        "TN": 48988,
+        "positives": 1277,
+        "negatives": 49014,
+        "brilliant_recognition_percent": 57.7133907595928,
+        "false_positive_percent": 0.05304606847023299
+      },
+      "reference_b": {
+        "TP": 750,
+        "FN": 527,
+        "FP": 27,
+        "TN": 48987,
+        "positives": 1277,
+        "negatives": 49014,
+        "brilliant_recognition_percent": 58.73140172278779,
+        "false_positive_percent": 0.055086301872934264
+      },
+      "finalist_a": {
+        "TP": 763,
+        "FN": 514,
+        "FP": 31,
+        "TN": 48983,
+        "positives": 1277,
+        "negatives": 49014,
+        "brilliant_recognition_percent": 59.74941268598277,
+        "false_positive_percent": 0.06324723548373934
+      },
+      "finalist_b": {
+        "TP": 916,
+        "FN": 361,
+        "FP": 62,
+        "TN": 48952,
+        "positives": 1277,
+        "negatives": 49014,
+        "brilliant_recognition_percent": 71.73061863743148,
+        "false_positive_percent": 0.12649447096747868
+      },
+      "finalist_c": {
+        "TP": 829,
+        "FN": 448,
+        "FP": 44,
+        "TN": 48970,
+        "positives": 1277,
+        "negatives": 49014,
+        "brilliant_recognition_percent": 64.9177760375881,
+        "false_positive_percent": 0.08977026971885584
+      }
+    }
+  },
+  "per_account": {
+    "gothamchess": {
+      "production": {
+        "TP": 276,
+        "FN": 204,
+        "FP": 9,
+        "TN": 18011,
+        "positives": 480,
+        "negatives": 18020,
+        "brilliant_recognition_percent": 57.5,
+        "false_positive_percent": 0.049944506104328525
+      },
+      "pr285": {
+        "TP": 277,
+        "FN": 203,
+        "FP": 9,
+        "TN": 18011,
+        "positives": 480,
+        "negatives": 18020,
+        "brilliant_recognition_percent": 57.708333333333336,
+        "false_positive_percent": 0.049944506104328525
+      },
+      "reference_a": {
+        "TP": 288,
+        "FN": 192,
+        "FP": 9,
+        "TN": 18011,
+        "positives": 480,
+        "negatives": 18020,
+        "brilliant_recognition_percent": 60.0,
+        "false_positive_percent": 0.049944506104328525
+      },
+      "reference_b": {
+        "TP": 291,
+        "FN": 189,
+        "FP": 10,
+        "TN": 18010,
+        "positives": 480,
+        "negatives": 18020,
+        "brilliant_recognition_percent": 60.625,
+        "false_positive_percent": 0.05549389567147614
+      },
+      "finalist_a": {
+        "TP": 296,
+        "FN": 184,
+        "FP": 12,
+        "TN": 18008,
+        "positives": 480,
+        "negatives": 18020,
+        "brilliant_recognition_percent": 61.666666666666664,
+        "false_positive_percent": 0.06659267480577137
+      },
+      "finalist_b": {
+        "TP": 343,
+        "FN": 137,
+        "FP": 22,
+        "TN": 17998,
+        "positives": 480,
+        "negatives": 18020,
+        "brilliant_recognition_percent": 71.45833333333333,
+        "false_positive_percent": 0.1220865704772475
+      },
+      "finalist_c": {
+        "TP": 317,
+        "FN": 163,
+        "FP": 14,
+        "TN": 18006,
+        "positives": 480,
+        "negatives": 18020,
+        "brilliant_recognition_percent": 66.04166666666667,
+        "false_positive_percent": 0.07769145394006659
+      }
+    },
+    "hansen": {
+      "production": {
+        "TP": 304,
+        "FN": 229,
+        "FP": 15,
+        "TN": 20066,
+        "positives": 533,
+        "negatives": 20081,
+        "brilliant_recognition_percent": 57.03564727954972,
+        "false_positive_percent": 0.07469747522533739
+      },
+      "pr285": {
+        "TP": 307,
+        "FN": 226,
+        "FP": 15,
+        "TN": 20066,
+        "positives": 533,
+        "negatives": 20081,
+        "brilliant_recognition_percent": 57.5984990619137,
+        "false_positive_percent": 0.07469747522533739
+      },
+      "reference_a": {
+        "TP": 328,
+        "FN": 205,
+        "FP": 14,
+        "TN": 20067,
+        "positives": 533,
+        "negatives": 20081,
+        "brilliant_recognition_percent": 61.53846153846154,
+        "false_positive_percent": 0.06971764354364822
+      },
+      "reference_b": {
+        "TP": 331,
+        "FN": 202,
+        "FP": 16,
+        "TN": 20065,
+        "positives": 533,
+        "negatives": 20081,
+        "brilliant_recognition_percent": 62.10131332082552,
+        "false_positive_percent": 0.07967730690702654
+      },
+      "finalist_a": {
+        "TP": 340,
+        "FN": 193,
+        "FP": 15,
+        "TN": 20066,
+        "positives": 533,
+        "negatives": 20081,
+        "brilliant_recognition_percent": 63.789868667917446,
+        "false_positive_percent": 0.07469747522533739
+      },
+      "finalist_b": {
+        "TP": 388,
+        "FN": 145,
+        "FP": 31,
+        "TN": 20050,
+        "positives": 533,
+        "negatives": 20081,
+        "brilliant_recognition_percent": 72.79549718574108,
+        "false_positive_percent": 0.1543747821323639
+      },
+      "finalist_c": {
+        "TP": 365,
+        "FN": 168,
+        "FP": 22,
+        "TN": 20059,
+        "positives": 533,
+        "negatives": 20081,
+        "brilliant_recognition_percent": 68.48030018761726,
+        "false_positive_percent": 0.10955629699716149
+      }
+    },
+    "hikaru": {
+      "production": {
+        "TP": 528,
+        "FN": 450,
+        "FP": 24,
+        "TN": 34621,
+        "positives": 978,
+        "negatives": 34645,
+        "brilliant_recognition_percent": 53.987730061349694,
+        "false_positive_percent": 0.0692740655217203
+      },
+      "pr285": {
+        "TP": 531,
+        "FN": 447,
+        "FP": 26,
+        "TN": 34619,
+        "positives": 978,
+        "negatives": 34645,
+        "brilliant_recognition_percent": 54.29447852760736,
+        "false_positive_percent": 0.075046904315197
+      },
+      "reference_a": {
+        "TP": 572,
+        "FN": 406,
+        "FP": 26,
+        "TN": 34619,
+        "positives": 978,
+        "negatives": 34645,
+        "brilliant_recognition_percent": 58.486707566462165,
+        "false_positive_percent": 0.075046904315197
+      },
+      "reference_b": {
+        "TP": 568,
+        "FN": 410,
+        "FP": 28,
+        "TN": 34617,
+        "positives": 978,
+        "negatives": 34645,
+        "brilliant_recognition_percent": 58.077709611451944,
+        "false_positive_percent": 0.0808197431086737
+      },
+      "finalist_a": {
+        "TP": 598,
+        "FN": 380,
+        "FP": 21,
+        "TN": 34624,
+        "positives": 978,
+        "negatives": 34645,
+        "brilliant_recognition_percent": 61.14519427402863,
+        "false_positive_percent": 0.06061480733150527
+      },
+      "finalist_b": {
+        "TP": 698,
+        "FN": 280,
+        "FP": 48,
+        "TN": 34597,
+        "positives": 978,
+        "negatives": 34645,
+        "brilliant_recognition_percent": 71.37014314928426,
+        "false_positive_percent": 0.1385481310434406
+      },
+      "finalist_c": {
+        "TP": 638,
+        "FN": 340,
+        "FP": 27,
+        "TN": 34618,
+        "positives": 978,
+        "negatives": 34645,
+        "brilliant_recognition_percent": 65.23517382413088,
+        "false_positive_percent": 0.07793332371193534
+      }
+    },
+    "knvb": {
+      "production": {
+        "TP": 441,
+        "FN": 481,
+        "FP": 20,
+        "TN": 42300,
+        "positives": 922,
+        "negatives": 42320,
+        "brilliant_recognition_percent": 47.83080260303688,
+        "false_positive_percent": 0.04725897920604915
+      },
+      "pr285": {
+        "TP": 444,
+        "FN": 478,
+        "FP": 20,
+        "TN": 42300,
+        "positives": 922,
+        "negatives": 42320,
+        "brilliant_recognition_percent": 48.15618221258134,
+        "false_positive_percent": 0.04725897920604915
+      },
+      "reference_a": {
+        "TP": 483,
+        "FN": 439,
+        "FP": 24,
+        "TN": 42296,
+        "positives": 922,
+        "negatives": 42320,
+        "brilliant_recognition_percent": 52.386117136659436,
+        "false_positive_percent": 0.05671077504725898
+      },
+      "reference_b": {
+        "TP": 507,
+        "FN": 415,
+        "FP": 21,
+        "TN": 42299,
+        "positives": 922,
+        "negatives": 42320,
+        "brilliant_recognition_percent": 54.98915401301518,
+        "false_positive_percent": 0.04962192816635161
+      },
+      "finalist_a": {
+        "TP": 492,
+        "FN": 430,
+        "FP": 20,
+        "TN": 42300,
+        "positives": 922,
+        "negatives": 42320,
+        "brilliant_recognition_percent": 53.36225596529284,
+        "false_positive_percent": 0.04725897920604915
+      },
+      "finalist_b": {
+        "TP": 611,
+        "FN": 311,
+        "FP": 40,
+        "TN": 42280,
+        "positives": 922,
+        "negatives": 42320,
+        "brilliant_recognition_percent": 66.26898047722342,
+        "false_positive_percent": 0.0945179584120983
+      },
+      "finalist_c": {
+        "TP": 549,
+        "FN": 373,
+        "FP": 31,
+        "TN": 42289,
+        "positives": 922,
+        "negatives": 42320,
+        "brilliant_recognition_percent": 59.544468546637745,
+        "false_positive_percent": 0.07325141776937619
+      }
+    },
+    "magnuscarlsen": {
+      "production": {
+        "TP": 177,
+        "FN": 187,
+        "FP": 11,
+        "TN": 12056,
+        "positives": 364,
+        "negatives": 12067,
+        "brilliant_recognition_percent": 48.62637362637363,
+        "false_positive_percent": 0.09115770282588878
+      },
+      "pr285": {
+        "TP": 178,
+        "FN": 186,
+        "FP": 13,
+        "TN": 12054,
+        "positives": 364,
+        "negatives": 12067,
+        "brilliant_recognition_percent": 48.9010989010989,
+        "false_positive_percent": 0.10773183061241402
+      },
+      "reference_a": {
+        "TP": 194,
+        "FN": 170,
+        "FP": 10,
+        "TN": 12057,
+        "positives": 364,
+        "negatives": 12067,
+        "brilliant_recognition_percent": 53.2967032967033,
+        "false_positive_percent": 0.08287063893262617
+      },
+      "reference_b": {
+        "TP": 191,
+        "FN": 173,
+        "FP": 9,
+        "TN": 12058,
+        "positives": 364,
+        "negatives": 12067,
+        "brilliant_recognition_percent": 52.472527472527474,
+        "false_positive_percent": 0.07458357503936355
+      },
+      "finalist_a": {
+        "TP": 199,
+        "FN": 165,
+        "FP": 10,
+        "TN": 12057,
+        "positives": 364,
+        "negatives": 12067,
+        "brilliant_recognition_percent": 54.67032967032967,
+        "false_positive_percent": 0.08287063893262617
+      },
+      "finalist_b": {
+        "TP": 248,
+        "FN": 116,
+        "FP": 21,
+        "TN": 12046,
+        "positives": 364,
+        "negatives": 12067,
+        "brilliant_recognition_percent": 68.13186813186813,
+        "false_positive_percent": 0.17402834175851495
+      },
+      "finalist_c": {
+        "TP": 215,
+        "FN": 149,
+        "FP": 15,
+        "TN": 12052,
+        "positives": 364,
+        "negatives": 12067,
+        "brilliant_recognition_percent": 59.065934065934066,
+        "false_positive_percent": 0.12430595839893925
+      }
+    },
+    "nelsi": {
+      "production": {
+        "TP": 345,
+        "FN": 235,
+        "FP": 14,
+        "TN": 19041,
+        "positives": 580,
+        "negatives": 19055,
+        "brilliant_recognition_percent": 59.48275862068966,
+        "false_positive_percent": 0.07347152978220939
+      },
+      "pr285": {
+        "TP": 349,
+        "FN": 231,
+        "FP": 14,
+        "TN": 19041,
+        "positives": 580,
+        "negatives": 19055,
+        "brilliant_recognition_percent": 60.172413793103445,
+        "false_positive_percent": 0.07347152978220939
+      },
+      "reference_a": {
+        "TP": 362,
+        "FN": 218,
+        "FP": 10,
+        "TN": 19045,
+        "positives": 580,
+        "negatives": 19055,
+        "brilliant_recognition_percent": 62.41379310344828,
+        "false_positive_percent": 0.05247966413014957
+      },
+      "reference_b": {
+        "TP": 359,
+        "FN": 221,
+        "FP": 10,
+        "TN": 19045,
+        "positives": 580,
+        "negatives": 19055,
+        "brilliant_recognition_percent": 61.89655172413793,
+        "false_positive_percent": 0.05247966413014957
+      },
+      "finalist_a": {
+        "TP": 367,
+        "FN": 213,
+        "FP": 11,
+        "TN": 19044,
+        "positives": 580,
+        "negatives": 19055,
+        "brilliant_recognition_percent": 63.275862068965516,
+        "false_positive_percent": 0.05772763054316452
+      },
+      "finalist_b": {
+        "TP": 425,
+        "FN": 155,
+        "FP": 18,
+        "TN": 19037,
+        "positives": 580,
+        "negatives": 19055,
+        "brilliant_recognition_percent": 73.27586206896552,
+        "false_positive_percent": 0.09446339543426922
+      },
+      "finalist_c": {
+        "TP": 394,
+        "FN": 186,
+        "FP": 15,
+        "TN": 19040,
+        "positives": 580,
+        "negatives": 19055,
+        "brilliant_recognition_percent": 67.93103448275862,
+        "false_positive_percent": 0.07871949619522435
+      }
+    }
+  },
+  "per_cohort": {
+    "five_account_development": {
+      "production": {
+        "TP": 1895,
+        "FN": 1600,
+        "FP": 82,
+        "TN": 134089,
+        "positives": 3495,
+        "negatives": 134171,
+        "brilliant_recognition_percent": 54.220314735336196,
+        "false_positive_percent": 0.061116038488197896
+      },
+      "pr285": {
+        "TP": 1909,
+        "FN": 1586,
+        "FP": 84,
+        "TN": 134087,
+        "positives": 3495,
+        "negatives": 134171,
+        "brilliant_recognition_percent": 54.620886981402,
+        "false_positive_percent": 0.0626066735732759
+      },
+      "reference_a": {
+        "TP": 2034,
+        "FN": 1461,
+        "FP": 84,
+        "TN": 134087,
+        "positives": 3495,
+        "negatives": 134171,
+        "brilliant_recognition_percent": 58.197424892703864,
+        "false_positive_percent": 0.0626066735732759
+      },
+      "reference_b": {
+        "TP": 2057,
+        "FN": 1438,
+        "FP": 85,
+        "TN": 134086,
+        "positives": 3495,
+        "negatives": 134171,
+        "brilliant_recognition_percent": 58.855507868383405,
+        "false_positive_percent": 0.0633519911158149
+      },
+      "finalist_a": {
+        "TP": 2094,
+        "FN": 1401,
+        "FP": 79,
+        "TN": 134092,
+        "positives": 3495,
+        "negatives": 134171,
+        "brilliant_recognition_percent": 59.91416309012875,
+        "false_positive_percent": 0.058880085860580904
+      },
+      "finalist_b": {
+        "TP": 2466,
+        "FN": 1029,
+        "FP": 159,
+        "TN": 134012,
+        "positives": 3495,
+        "negatives": 134171,
+        "brilliant_recognition_percent": 70.55793991416309,
+        "false_positive_percent": 0.1185054892637008
+      },
+      "finalist_c": {
+        "TP": 2264,
+        "FN": 1231,
+        "FP": 109,
+        "TN": 134062,
+        "positives": 3495,
+        "negatives": 134171,
+        "brilliant_recognition_percent": 64.77825464949929,
+        "false_positive_percent": 0.08123961213675086
+      }
+    },
+    "magnus_development": {
+      "production": {
+        "TP": 176,
+        "FN": 186,
+        "FP": 11,
+        "TN": 12006,
+        "positives": 362,
+        "negatives": 12017,
+        "brilliant_recognition_percent": 48.61878453038674,
+        "false_positive_percent": 0.09153698926520762
+      },
+      "pr285": {
+        "TP": 177,
+        "FN": 185,
+        "FP": 13,
+        "TN": 12004,
+        "positives": 362,
+        "negatives": 12017,
+        "brilliant_recognition_percent": 48.89502762430939,
+        "false_positive_percent": 0.1081800782225181
+      },
+      "reference_a": {
+        "TP": 193,
+        "FN": 169,
+        "FP": 9,
+        "TN": 12008,
+        "positives": 362,
+        "negatives": 12017,
+        "brilliant_recognition_percent": 53.31491712707182,
+        "false_positive_percent": 0.07489390030789715
+      },
+      "reference_b": {
+        "TP": 190,
+        "FN": 172,
+        "FP": 9,
+        "TN": 12008,
+        "positives": 362,
+        "negatives": 12017,
+        "brilliant_recognition_percent": 52.48618784530387,
+        "false_positive_percent": 0.07489390030789715
+      },
+      "finalist_a": {
+        "TP": 198,
+        "FN": 164,
+        "FP": 10,
+        "TN": 12007,
+        "positives": 362,
+        "negatives": 12017,
+        "brilliant_recognition_percent": 54.69613259668508,
+        "false_positive_percent": 0.08321544478655238
+      },
+      "finalist_b": {
+        "TP": 247,
+        "FN": 115,
+        "FP": 21,
+        "TN": 11996,
+        "positives": 362,
+        "negatives": 12017,
+        "brilliant_recognition_percent": 68.23204419889503,
+        "false_positive_percent": 0.17475243405176
+      },
+      "finalist_c": {
+        "TP": 214,
+        "FN": 148,
+        "FP": 15,
+        "TN": 12002,
+        "positives": 362,
+        "negatives": 12017,
+        "brilliant_recognition_percent": 59.11602209944751,
+        "false_positive_percent": 0.12482316717982858
+      }
+    }
+  },
+  "paired_changes": {
+    "finalist_a": {
+      "reference_a": {
+        "genuine_gained": 143,
+        "genuine_lost": 78,
+        "false_awards_added": 18,
+        "false_awards_removed": 22,
+        "net_TP": 65,
+        "net_FP": -4,
+        "net_additional_TP_per_net_additional_FP": null,
+        "reference_scope": "same-fold development CV"
+      },
+      "reference_b": {
+        "genuine_gained": 117,
+        "genuine_lost": 72,
+        "false_awards_added": 14,
+        "false_awards_removed": 19,
+        "net_TP": 45,
+        "net_FP": -5,
+        "net_additional_TP_per_net_additional_FP": null,
+        "reference_scope": "same-fold development CV"
+      },
+      "production": {
+        "genuine_gained": 345,
+        "genuine_lost": 124,
+        "false_awards_added": 39,
+        "false_awards_removed": 43,
+        "net_TP": 221,
+        "net_FP": -4,
+        "net_additional_TP_per_net_additional_FP": null,
+        "reference_scope": "fixed full-fit production, descriptive training-overlap bias"
+      },
+      "pr285": {
+        "genuine_gained": 336,
+        "genuine_lost": 130,
+        "false_awards_added": 37,
+        "false_awards_removed": 45,
+        "net_TP": 206,
+        "net_FP": -8,
+        "net_additional_TP_per_net_additional_FP": null,
+        "reference_scope": "fixed full-fit production, descriptive training-overlap bias"
+      }
+    },
+    "finalist_b": {
+      "reference_a": {
+        "genuine_gained": 492,
+        "genuine_lost": 6,
+        "false_awards_added": 90,
+        "false_awards_removed": 3,
+        "net_TP": 486,
+        "net_FP": 87,
+        "net_additional_TP_per_net_additional_FP": 5.586206896551724,
+        "reference_scope": "same-fold development CV"
+      },
+      "reference_b": {
+        "genuine_gained": 468,
+        "genuine_lost": 2,
+        "false_awards_added": 88,
+        "false_awards_removed": 2,
+        "net_TP": 466,
+        "net_FP": 86,
+        "net_additional_TP_per_net_additional_FP": 5.4186046511627906,
+        "reference_scope": "same-fold development CV"
+      },
+      "production": {
+        "genuine_gained": 679,
+        "genuine_lost": 37,
+        "false_awards_added": 108,
+        "false_awards_removed": 21,
+        "net_TP": 642,
+        "net_FP": 87,
+        "net_additional_TP_per_net_additional_FP": 7.379310344827586,
+        "reference_scope": "fixed full-fit production, descriptive training-overlap bias"
+      },
+      "pr285": {
+        "genuine_gained": 667,
+        "genuine_lost": 40,
+        "false_awards_added": 105,
+        "false_awards_removed": 22,
+        "net_TP": 627,
+        "net_FP": 83,
+        "net_additional_TP_per_net_additional_FP": 7.554216867469879,
+        "reference_scope": "fixed full-fit production, descriptive training-overlap bias"
+      }
+    },
+    "finalist_c": {
+      "reference_a": {
+        "genuine_gained": 276,
+        "genuine_lost": 25,
+        "false_awards_added": 47,
+        "false_awards_removed": 16,
+        "net_TP": 251,
+        "net_FP": 31,
+        "net_additional_TP_per_net_additional_FP": 8.096774193548388,
+        "reference_scope": "same-fold development CV"
+      },
+      "reference_b": {
+        "genuine_gained": 249,
+        "genuine_lost": 18,
+        "false_awards_added": 42,
+        "false_awards_removed": 12,
+        "net_TP": 231,
+        "net_FP": 30,
+        "net_additional_TP_per_net_additional_FP": 7.7,
+        "reference_scope": "same-fold development CV"
+      },
+      "production": {
+        "genuine_gained": 481,
+        "genuine_lost": 74,
+        "false_awards_added": 65,
+        "false_awards_removed": 34,
+        "net_TP": 407,
+        "net_FP": 31,
+        "net_additional_TP_per_net_additional_FP": 13.129032258064516,
+        "reference_scope": "fixed full-fit production, descriptive training-overlap bias"
+      },
+      "pr285": {
+        "genuine_gained": 470,
+        "genuine_lost": 78,
+        "false_awards_added": 63,
+        "false_awards_removed": 36,
+        "net_TP": 392,
+        "net_FP": 27,
+        "net_additional_TP_per_net_additional_FP": 14.518518518518519,
+        "reference_scope": "fixed full-fit production, descriptive training-overlap bias"
+      }
+    }
+  },
+  "owner_examples": [
+    {
+      "game_id": "bJPg3bse",
+      "target": {
+        "ply": 24,
+        "san": "Bxh2+",
+        "uci": "d6h2",
+        "description": "Greek Gift bishop offer: 12...Bxh2+; user-nominated desired Brilliant, not a confirmed saved Chess.com label; excluded from benchmark.",
+        "reference_label": null
+      },
+      "final_symbols": {
+        "production": "!?",
+        "pr285": "!?",
+        "reference_a": "!?",
+        "reference_b": "!?",
+        "finalist_a": "!?",
+        "finalist_b": "!?",
+        "finalist_c": "!?"
+      },
+      "classifications": {
+        "production": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 95.09422863827437,
+          "cpLoss": 38,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "pr285": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 95.09422863827437,
+          "cpLoss": 38,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "reference_a": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 95.09422863827437,
+          "cpLoss": 38,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "reference_b": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 95.09422863827437,
+          "cpLoss": 38,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "finalist_a": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 95.09422863827437,
+          "cpLoss": 38,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "finalist_b": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 95.09422863827437,
+          "cpLoss": 38,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "finalist_c": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 95.09422863827437,
+          "cpLoss": 38,
+          "version": "mute-chess-brilliant-v5"
+        }
+      },
+      "scope": "Full-fit owner diagnostic; excluded from every benchmark count"
+    },
+    {
+      "game_id": "tjxdTRho",
+      "target": {
+        "ply": 11,
+        "san": "Ne5",
+        "uci": "f3e5",
+        "description": "Legal's Mate queen offer: 6.Ne5 Bxd1 7.Bxf7#; user example, excluded from statistical benchmark.",
+        "reference_label": {
+          "symbol": "!!",
+          "source_path": "research/brilliant-nonmate-material-2026-11-04/CHESSCOM-NE5.json",
+          "source_sha256": "28be4d6410b2fa6b7f3d12d8ed893888d10384c54b8a83b77d21d6aa5086ccc4",
+          "basis": "Ne5 is brilliant",
+          "verified_at_utc": "2026-11-04T02:47:04.706419+00:00",
+          "scope_note": "Imported exact PGN, Torch Human Fast, no Elo headers; diagnostic only."
+        }
+      },
+      "final_symbols": {
+        "production": "!",
+        "pr285": "!",
+        "reference_a": "!",
+        "reference_b": "!",
+        "finalist_a": "!",
+        "finalist_b": "!",
+        "finalist_c": "!"
+      },
+      "classifications": {
+        "production": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 95.40345827255875,
+          "cpLoss": 21,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "pr285": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 95.40345827255875,
+          "cpLoss": 21,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "reference_a": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 95.40345827255875,
+          "cpLoss": 21,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "reference_b": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 95.40345827255875,
+          "cpLoss": 21,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "finalist_a": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 95.40345827255875,
+          "cpLoss": 21,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "finalist_b": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 95.40345827255875,
+          "cpLoss": 21,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "finalist_c": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 95.40345827255875,
+          "cpLoss": 21,
+          "version": "mute-chess-brilliant-v5"
+        }
+      },
+      "scope": "Full-fit owner diagnostic; excluded from every benchmark count"
+    }
+  ],
+  "primary_exclusions": [
+    {
+      "game_id": "166526239276",
+      "key": "166526239276:54",
+      "ply": 54,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "167254288368",
+      "key": "167254288368:45",
+      "ply": 45,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "172221939078",
+      "key": "172221939078:76",
+      "ply": 76,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "174427902942",
+      "key": "174427902942:72",
+      "ply": 72,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "182336901093",
+      "key": "182336901093:40",
+      "ply": 40,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "166709288230",
+      "key": "166709288230:31",
+      "ply": 31,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "170850210658",
+      "key": "170850210658:32",
+      "ply": 32,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "170850210658",
+      "key": "170850210658:56",
+      "ply": 56,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "173625605676",
+      "key": "173625605676:45",
+      "ply": 45,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "173628147512",
+      "key": "173628147512:35",
+      "ply": 35,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "167243211406",
+      "key": "167243211406:70",
+      "ply": 70,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "172540796502",
+      "key": "172540796502:136",
+      "ply": 136,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "148448882950",
+      "ply": 24,
+      "key": "148448882950:24",
+      "reason": "before_position_matches_other_fold_training_case"
+    },
+    {
+      "game_id": "166508077994",
+      "key": "166508077994:53",
+      "ply": 53,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "166524903834",
+      "key": "166524903834:81",
+      "ply": 81,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "167242343518",
+      "key": "167242343518:45",
+      "ply": 45,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "167742352864",
+      "key": "167742352864:41",
+      "ply": 41,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "168702264620",
+      "key": "168702264620:105",
+      "ply": 105,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "172356982392",
+      "key": "172356982392:62",
+      "ply": 62,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "173816784196",
+      "key": "173816784196:77",
+      "ply": 77,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "179916472769",
+      "key": "179916472769:68",
+      "ply": 68,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "182681902441",
+      "key": "182681902441:84",
+      "ply": 84,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "184020954806",
+      "key": "184020954806:81",
+      "ply": 81,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "185277493730",
+      "key": "185277493730:47",
+      "ply": 47,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "167741309078",
+      "key": "167741309078:45",
+      "ply": 45,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "168624399436",
+      "ply": 12,
+      "key": "168624399436:12",
+      "reason": "before_position_matches_other_fold_training_case"
+    },
+    {
+      "game_id": "172345573486",
+      "key": "172345573486:34",
+      "ply": 34,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "173241941302",
+      "key": "173241941302:57",
+      "ply": 57,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "173322237906",
+      "key": "173322237906:172",
+      "ply": 172,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "173391055464",
+      "key": "173391055464:66",
+      "ply": 66,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "173806851620",
+      "key": "173806851620:31",
+      "ply": 31,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "174522353548",
+      "key": "174522353548:71",
+      "ply": 71,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "179920071805",
+      "key": "179920071805:55",
+      "ply": 55,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "181732102017",
+      "key": "181732102017:44",
+      "ply": 44,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "182333901823",
+      "key": "182333901823:53",
+      "ply": 53,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "183544110425",
+      "key": "183544110425:39",
+      "ply": 39,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "183544110425",
+      "key": "183544110425:63",
+      "ply": 63,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "184153711213",
+      "key": "184153711213:52",
+      "ply": 52,
+      "reason": "known_conflicting_saved_reference_labels"
+    },
+    {
+      "game_id": "184300109262",
+      "key": "184300109262:14",
+      "ply": 14,
+      "reason": "known_conflicting_saved_reference_labels"
+    }
+  ],
+  "models": {
+    "refs": [
+      {
+        "id": "reference_a",
+        "role": "same_fold_reference",
+        "cutoff": 0.8,
+        "recipe": "reference_a",
+        "folds": {
+          "0": {
+            "model_sha256": "28e6c98661a2dfd0c127d23e72bebebda7a77241bdf9f37e168c56baea7492c5"
+          },
+          "1": {
+            "model_sha256": "6a936abdef50df2c734ca621a81a6b377380830135cb249623a3ea09701ac1ba"
+          },
+          "2": {
+            "model_sha256": "fb92277e76e2f5c9006b7fabdef1856f2819b1d483ec16ac214e98b0b0dbc2cd"
+          }
+        },
+        "fullfit": {
+          "model_sha256": "ec9cd9d2d0a118ac5bf3c42963177d019e3705e1f9800c200bcd0533677a6138"
+        }
+      },
+      {
+        "id": "reference_b",
+        "role": "same_fold_reference",
+        "cutoff": 0.8,
+        "recipe": "reference_b",
+        "folds": {
+          "0": {
+            "model_sha256": "77f562fee6e905e75fcb4a24b8d2326e06cf181c95780e080e87a4f6c57a2ebf"
+          },
+          "1": {
+            "model_sha256": "2ee3c1707a5d814ccf838e861d65b16c1cd4241a658638824d9f2d31242f9299"
+          },
+          "2": {
+            "model_sha256": "3a911333a006e9ab6dc82e136f3c082aad50142aa957346a3df7fc0fbf5b167d"
+          }
+        },
+        "fullfit": {
+          "model_sha256": "21d912db8f19f4005117c1c3aa7c619e4316ea4f8c37eec167d0dd76266df915"
+        }
+      }
+    ],
+    "finalists": [
+      {
+        "id": "finalist_a",
+        "role": "low_error",
+        "cutoff": 0.83,
+        "recipe": "r009",
+        "folds": {
+          "0": {
+            "model_sha256": "e57c1ec7dc00f56c27506b7f2357292ae606c21962655c7cf77e94bd72e34bb7"
+          },
+          "1": {
+            "model_sha256": "cd0c033af795a8f42cb746200435db077ee6af8241f230baf28e6d8b5a04b331"
+          },
+          "2": {
+            "model_sha256": "8c58fb2db007aeb2cd1b8778f694ff01530045dca4005776ab263b9d5e8bf071"
+          }
+        },
+        "fullfit": {
+          "model_sha256": "1a7150fbe52f440922d94d3ae2af337383d63f370b52d0379aeee22d581d056c"
+        }
+      },
+      {
+        "id": "finalist_b",
+        "role": "more_brilliants",
+        "cutoff": 0.73,
+        "recipe": "r009",
+        "folds": {
+          "0": {
+            "model_sha256": "e57c1ec7dc00f56c27506b7f2357292ae606c21962655c7cf77e94bd72e34bb7"
+          },
+          "1": {
+            "model_sha256": "cd0c033af795a8f42cb746200435db077ee6af8241f230baf28e6d8b5a04b331"
+          },
+          "2": {
+            "model_sha256": "8c58fb2db007aeb2cd1b8778f694ff01530045dca4005776ab263b9d5e8bf071"
+          }
+        },
+        "fullfit": {
+          "model_sha256": "1a7150fbe52f440922d94d3ae2af337383d63f370b52d0379aeee22d581d056c"
+        }
+      },
+      {
+        "id": "finalist_c",
+        "role": "middle",
+        "cutoff": 0.79,
+        "recipe": "r009",
+        "folds": {
+          "0": {
+            "model_sha256": "e57c1ec7dc00f56c27506b7f2357292ae606c21962655c7cf77e94bd72e34bb7"
+          },
+          "1": {
+            "model_sha256": "cd0c033af795a8f42cb746200435db077ee6af8241f230baf28e6d8b5a04b331"
+          },
+          "2": {
+            "model_sha256": "8c58fb2db007aeb2cd1b8778f694ff01530045dca4005776ab263b9d5e8bf071"
+          }
+        },
+        "fullfit": {
+          "model_sha256": "1a7150fbe52f440922d94d3ae2af337383d63f370b52d0379aeee22d581d056c"
+        }
+      }
+    ],
+    "selection_sha256": "b7991d66855ec25f4a1ab2878bb4096003f9460910cbca4e9b19a87fdc36c278",
+    "method": "ExactOOFfoldmodelsforbenchmarks;fullfitmodelsforownerdiagnostics. Allparametersfrozenbeforereplay. DevelopmentCVnotindependentvalidation."
+  },
+  "continuation": {
+    "original_preserved_games": 1319,
+    "remaining_games": 2156,
+    "roots": [
+      "replay-cont-1",
+      "replay-cont-2",
+      "replay-cont-3"
+    ],
+    "full_master_cohort_preserved": true
+  },
+  "source_hashes": {
+    "build_pins": "9f97d8065a25f4464c9d78e401a71858625ef31c668f11be02d578904f438aaa",
+    "finalists_pin": "ee9c71cde769cf75a2d2d129551830b5a81342a0095e4409a45af1f610087de4",
+    "continuation_plan": "60de7869c9f0552dfcadcb72d73b127d4c05bf84111e3dd09364d61fcfaa4d62",
+    "completed_manifest": "3c14acb8b4ad2370d3315e6a359fff878e8b52fa74e936ab52616100d040372c",
+    "pause_checkpoint": "81c78b7960fa8276a4a6b5455959fba6601330fb9823aee7b72acd3264720ff9",
+    "summarizer": "80055e70685ee0f1abca4d04faf2bd626085fcffec32501f3288d94ddbbe9273"
+  },
+  "limitations": [
+    "Recipes and cutoffs selected on OOF labels: native OOF replay remains selection-biased development CV, not independent validation.",
+    "Reference A/B and finalists use the same held-out game folds; fixed production/PR285 weights have training overlap and are descriptive only.",
+    "False-positive percentages use all scored own non-Brilliant moves in gallery-represented games, not selected feature controls.",
+    "Owner games use full-fit models and are excluded from fold/account/aggregate metrics.",
+    "No automatic winner or numeric owner-acceptance threshold is inferred from TP/FP tradeoffs."
+  ]
+}

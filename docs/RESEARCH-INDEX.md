@@ -1,3 +1,9 @@
+# Current research
+
+[Updated Mute Selective: full search and fresh 1,000-game test](../studies/brilliant-selective-2026-11-06/REPORT.md) · [Complete seven-account PGN](../studies/brilliant-selective-2026-11-06/data/seven-accounts-last-12-months-chesscom-brilliants.pgn) · [Source archive manifest](../studies/brilliant-selective-2026-11-06/SOURCE-MANIFEST.json)
+
+The current frozen candidate is the 128-tree model at 0.83. Earlier studies below remain historical evidence, including unsuccessful alternatives. The [neural study](../studies/brilliant-neural-2026-11-05/REPORT.md) is also retained.
+
 # Research index
 
 The goal is an open, rating-independent Brilliant-move classifier that agrees with Chess.com more often while keeping wrong awards low. The desired long-term target is 90% recall with fewer than 1% of awarded Brilliants wrong. The evidence below does not establish that this target has been reached or that it is attainable.

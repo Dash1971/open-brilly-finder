@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "scope": "Read-only final verification; no retraining/threshold changes/assessment replay",
+  "checks": [
+    "source/protocol/input and complete-output hashes",
+    "78fits of200epochs with decreasingloss",
+    "3724unique casekeys",
+    "all76true/3false awards reconstruct from savedseedprobs+innerthresholds+gates",
+    "three11777parameter networks",
+    "cachedreferencecase/group/fold/metric checks and synthetic/real inference parity passed duringrun"
+  ],
+  "median_first_training_loss": 0.6300392453201902,
+  "median_last_training_loss": 0.012496161803808893,
+  "source_sha256": "5f2813a54bce0df63ab3cc59f6c9ce93aeabdc4a01d244c9878bc00b255e2a4e",
+  "results_sha256": "d5bebe9f1b8c371110d43041a37ddc8b0c60fea2f6309eb7084a7db60c47c1bc",
+  "model_sha256": "9ec233a7a55032d4abbcbb5a6416d905cb935eee0d9b5cedcaf8e28e6b3a7066",
+  "independent_read_only_review": "No class/sign, optimizer-state, preprocessing, grouping, or aggregation bug found. Saturation affects bothclasses; not a proof againstallneuralnetworks."
+}

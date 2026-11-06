@@ -1,0 +1,197 @@
+{
+  "accounts": {
+    "nelsi": {
+      "gallery_displayed": 580,
+      "labels": 580,
+      "board_matches": 580,
+      "games": 506,
+      "source_categories": {
+        "Bishop Sacrifice": 158,
+        "Queen Sacrifice": 47,
+        "Rook Sacrifice": 191,
+        "Knight Sacrifice": 171,
+        "Underpromotion": 0,
+        "Brilliant Moves": 580
+      },
+      "categories": {
+        "Rook Sacrifice": 191,
+        "Knight Sacrifice": 171,
+        "Queen Sacrifice": 47,
+        "Bishop Sacrifice": 158,
+        "Uncategorized": 13
+      },
+      "evidence_grades": {
+        "rendered_board_and_arrow_exact": 580
+      }
+    },
+    "KNVB": {
+      "gallery_displayed": 929,
+      "labels": 929,
+      "board_matches": 929,
+      "games": 849,
+      "source_categories": {
+        "Brilliant Moves": 929,
+        "Queen Sacrifice": 90,
+        "Rook Sacrifice": 365,
+        "Bishop Sacrifice": 174,
+        "Knight Sacrifice": 271,
+        "Underpromotion": 0
+      },
+      "categories": {
+        "Rook Sacrifice": 365,
+        "Knight Sacrifice": 271,
+        "Bishop Sacrifice": 174,
+        "Queen Sacrifice": 90,
+        "Uncategorized": 29
+      },
+      "evidence_grades": {
+        "rendered_board_and_arrow_exact": 929
+      }
+    },
+    "hansen": {
+      "gallery_displayed": 541,
+      "labels": 541,
+      "board_matches": 541,
+      "games": 479,
+      "source_categories": {
+        "Brilliant Moves": 541,
+        "Queen Sacrifice": 63,
+        "Rook Sacrifice": 250,
+        "Bishop Sacrifice": 107,
+        "Knight Sacrifice": 121,
+        "Underpromotion": 0
+      },
+      "categories": {
+        "Rook Sacrifice": 250,
+        "Bishop Sacrifice": 107,
+        "Queen Sacrifice": 63,
+        "Knight Sacrifice": 121
+      },
+      "evidence_grades": {
+        "rendered_board_and_arrow_exact": 541
+      }
+    },
+    "GothamChess": {
+      "gallery_displayed": 486,
+      "labels": 486,
+      "board_matches": 486,
+      "games": 446,
+      "source_categories": {
+        "Brilliant Moves": 486,
+        "Queen Sacrifice": 56,
+        "Rook Sacrifice": 211,
+        "Bishop Sacrifice": 93,
+        "Knight Sacrifice": 117,
+        "Underpromotion": 0
+      },
+      "categories": {
+        "Rook Sacrifice": 211,
+        "Knight Sacrifice": 117,
+        "Bishop Sacrifice": 93,
+        "Queen Sacrifice": 56,
+        "Uncategorized": 9
+      },
+      "evidence_grades": {
+        "rendered_board_and_arrow_exact": 486
+      }
+    },
+    "Hikaru": {
+      "gallery_displayed": 987,
+      "labels": 987,
+      "board_matches": 987,
+      "games": 881,
+      "source_categories": {
+        "Brilliant Moves": 987,
+        "Queen Sacrifice": 104,
+        "Rook Sacrifice": 369,
+        "Bishop Sacrifice": 188,
+        "Knight Sacrifice": 294,
+        "Underpromotion": 0
+      },
+      "categories": {
+        "Rook Sacrifice": 369,
+        "Knight Sacrifice": 294,
+        "Bishop Sacrifice": 188,
+        "Queen Sacrifice": 104,
+        "Uncategorized": 32
+      },
+      "evidence_grades": {
+        "rendered_board_and_arrow_exact": 987
+      }
+    },
+    "MagnusCarlsen": {
+      "gallery_displayed": 364,
+      "labels": 364,
+      "board_matches": 364,
+      "games": 313,
+      "source_categories": {
+        "Brilliant Moves": 364,
+        "Queen Sacrifice": 43,
+        "Rook Sacrifice": 115,
+        "Bishop Sacrifice": 88,
+        "Knight Sacrifice": 112,
+        "Underpromotion": 0
+      },
+      "categories": {
+        "Rook Sacrifice": 115,
+        "Queen Sacrifice": 43,
+        "Knight Sacrifice": 112,
+        "Bishop Sacrifice": 88,
+        "Uncategorized": 6
+      },
+      "evidence_grades": {
+        "rendered_board_exact": 364
+      }
+    },
+    "Witty_Alien": {
+      "gallery_displayed": 4411,
+      "labels": 4411,
+      "board_matches": 1308,
+      "games": 3546,
+      "source_categories": {
+        "Brilliant Moves": 4411
+      },
+      "categories": {
+        "Uncategorized": 4411
+      },
+      "evidence_grades": {
+        "gallery_link_uuid_ply_mover_legal_pgn": 3103,
+        "rendered_board_and_arrow_exact": 1308
+      }
+    }
+  },
+  "source_counts": {
+    "five_accounts": {
+      "games": 3161,
+      "labels": 3523,
+      "moves": 273702
+    },
+    "MagnusCarlsen": {
+      "games": 313,
+      "labels": 364,
+      "moves": 24731
+    },
+    "Witty_Alien": {
+      "games": 3546,
+      "labels": 4411,
+      "moves": 223724
+    }
+  },
+  "deduplicated_shared_games": [
+    {
+      "game_id": "158576248417",
+      "sources": [
+        "five_accounts",
+        "MagnusCarlsen"
+      ],
+      "accounts": [
+        "Hikaru",
+        "MagnusCarlsen"
+      ],
+      "labels_preserved": 3,
+      "moves": 104,
+      "clock_tokens_deduplicated": 104,
+      "noncritical_header_differences_existing_preserved": {}
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "finalists": [
+    {
+      "id": "finalist_a",
+      "role": "low_error",
+      "point": {
+        "recipe": "r009",
+        "trees": 128,
+        "cutoff": 0.83,
+        "TP": 2213,
+        "FP": 81,
+        "FN": 1644,
+        "TN": 2355,
+        "pareto_layer": 0,
+        "crowding": 0.03237277133075452
+      },
+      "config": {
+        "id": "r009",
+        "kind": "compiled",
+        "depth": 12,
+        "minleaf": 2,
+        "mtry": 24,
+        "cost": 1.0,
+        "fraction": 1.0,
+        "criterion": "gini",
+        "splitter": "best",
+        "row_min": 1,
+        "max_leaves": null
+      }
+    },
+    {
+      "id": "finalist_b",
+      "role": "more_brilliants",
+      "point": {
+        "recipe": "r009",
+        "trees": 128,
+        "cutoff": 0.73,
+        "TP": 2638,
+        "FP": 175,
+        "FN": 1219,
+        "TN": 2261,
+        "pareto_layer": 0,
+        "crowding": 0.03456920545996176
+      },
+      "config": {
+        "id": "r009",
+        "kind": "compiled",
+        "depth": 12,
+        "minleaf": 2,
+        "mtry": 24,
+        "cost": 1.0,
+        "fraction": 1.0,
+        "criterion": "gini",
+        "splitter": "best",
+        "row_min": 1,
+        "max_leaves": null
+      }
+    },
+    {
+      "id": "finalist_c",
+      "role": "middle",
+      "point": {
+        "recipe": "r009",
+        "trees": 128,
+        "cutoff": 0.79,
+        "TP": 2412,
+        "FP": 118,
+        "FN": 1445,
+        "TN": 2318,
+        "pareto_layer": 0,
+        "crowding": 0.01990538437597261
+      },
+      "config": {
+        "id": "r009",
+        "kind": "compiled",
+        "depth": 12,
+        "minleaf": 2,
+        "mtry": 24,
+        "cost": 1.0,
+        "fraction": 1.0,
+        "criterion": "gini",
+        "splitter": "best",
+        "row_min": 1,
+        "max_leaves": null
+      }
+    }
+  ],
+  "model_jobs": [
+    {
+      "config": {
+        "id": "reference_a",
+        "kind": "custom",
+        "depth": 10,
+        "minleaf": 4,
+        "mtry": 12,
+        "cost": 1.0,
+        "fraction": 1.0,
+        "trees": 64
+      },
+      "trees": 64
+    },
+    {
+      "config": {
+        "id": "reference_b",
+        "kind": "custom",
+        "depth": 12,
+        "minleaf": 4,
+        "mtry": 12,
+        "cost": 1.0,
+        "fraction": 1.0,
+        "trees": 64
+      },
+      "trees": 64
+    },
+    {
+      "config": {
+        "id": "r009",
+        "kind": "compiled",
+        "depth": 12,
+        "minleaf": 2,
+        "mtry": 24,
+        "cost": 1.0,
+        "fraction": 1.0,
+        "criterion": "gini",
+        "splitter": "best",
+        "row_min": 1,
+        "max_leaves": null
+      },
+      "trees": 128
+    }
+  ],
+  "reference_points": {
+    "reference_a": {
+      "recipe": "reference_a",
+      "trees": 64,
+      "cutoff": 0.8,
+      "TP": 2159,
+      "FP": 88,
+      "FN": 1698,
+      "TN": 2348
+    },
+    "reference_b": {
+      "recipe": "reference_b",
+      "trees": 64,
+      "cutoff": 0.8,
+      "TP": 2172,
+      "FP": 93,
+      "FN": 1685,
+      "TN": 2343
+    }
+  },
+  "reference_fp_budget": 88,
+  "search_region_max_fp": 176,
+  "search_region_is_not_owner_acceptance_rule": true,
+  "all_points_sha256": "c64472e3cdb8d3c9f319fd3b200598fe196a0a5140048f82e5e0a37dcaebd5dc",
+  "native_feedback_used": false,
+  "training_and_cutoffs_frozen_before_native": true
+}

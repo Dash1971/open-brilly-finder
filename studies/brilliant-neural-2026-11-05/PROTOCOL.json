@@ -1,0 +1,63 @@
+{
+  "created_at_utc": "2026-11-05T07:16:57.589655+00:00",
+  "scope": "One user-authorized small neural-network comparison on existing saved features. Development evidence only; no new collection/engine/app/deploy or seen654 replay.",
+  "input_sha256": "7466345d039e8850a79aa8b4bc6d8f596d3586b6c5a8d3c85abcb8feefd1cb09",
+  "script_sha256": "5f2813a54bce0df63ab3cc59f6c9ce93aeabdc4a01d244c9878bc00b255e2a4e",
+  "reference_hashes": {
+    "RESULTS.json": "6857dfa78361ccd260d53e60878deb7366cf296f52ad6f02dca3b240eaff65f0",
+    "PREDICTIONS.json": "ae845d2fd687262f2c41cbdaa2054d85c1f3eb48120a602d30a8a4b8a4dc4a82",
+    "PROTOCOL.json": "fdba522d996fa023fa1c2633f72ee300f367c00c3b4ed22e7228c1719726878e",
+    "experiment.py": "0c9b361880d65d43a11443a84d438917866084c77b6edd7af021fbc4b76e3814"
+  },
+  "versions": [
+    "2.5.4",
+    "1.18.1",
+    "1.7.2"
+  ],
+  "environment": "<temporary-dependencies>/brilliant-learner-2026-11-04-venv/bin/python (Python3.12.13)",
+  "network": {
+    "inputs": 150,
+    "chess_features": 75,
+    "missing_indicators": 75,
+    "hidden_layers": [
+      64,
+      32
+    ],
+    "activation": "relu",
+    "output": "sigmoid",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "alpha_L2": 0.01,
+    "batch_size": 128,
+    "epochs": 200,
+    "starting_seeds": [
+      0,
+      1,
+      2
+    ],
+    "parameters_per_seed": 11777,
+    "early_stopping": false,
+    "training": "200incremental partial_fit epochs; optimizerstate and RandomState persist. No internalrandomrow validation. No architecture/schedule/classcost sweep."
+  },
+  "preprocessing": "Fit medianimputer(keep_empty_features=True) and case-weighted StandardScaler on eligible TRAININGwindow rows only, separatelypertrainingfold. All150columns preserved; allmissing columns imputed0. Missingflags retained.",
+  "weights": "Each eligible move totalweight1 divided overitseligiblewindows; no negativeclasscost. Samefitwindowmaskasreference.",
+  "splits": "Identical deterministic5outer/3inner whole-game+canonical-before+alias groups to archivedreference; bothenginewindows linked. Separatefinal5foldtrainingcalibration. No outerlabels selectthreshold,epochs,architecture,orstartingseed.",
+  "threshold": "Exact attainable innerOOF ensemblemean-per-window THEN min-window scores, tieskept together. MaxTP subject FP(allnegatives includingeasy)<=cachedfixed-referenceFP AND wrong_fraction_of_awards<=fixedreference (crossmultiply). TiesfewerFP/higherthreshold. Nofeasiblepoint=>abstainall.",
+  "primary": "Fixed3-seed neuralensemble; NOT a learner-selected fallback thatcouldhideNNfailure. Report allouterpredictions, allreferencearms, actualwrongawards and samplewrongfraction.",
+  "seed_diagnostics": "Eachstartingseed usesowninnerselectedthreshold andouterpredictions; reportallthree. Neverpickbestseed orreplaceprimaryensembleposthoc.",
+  "cached_reference": "Reuse archived identicalinput/foldbaseline innerreferencecounts andouterpredictions; bindhashes andverifykeys/truth/groups/gates/folds/testkeylists/cachedmetrics. No redundanttreefit.",
+  "final_fit": "ChooseensemblethresholdusingseparatefinaltrainingOOF ONLY, freezechoice;fitalltrainingone3seedensemble andexportJSONwithimputation/scaling/weights. Verify againstsklearn. No 89gamereplay.",
+  "interpretation": "AnyNNgainremainsdevelopment evidence becausecorpuswasrepeatedlystudied. Moretrueawards atsameorlowerfalseawards isinteresting,notproof. Freshgamevalidationneededbeforeproductionrecommendation. Wrongawardfractiondependsselectedclassmix; no sitewideprecision or90%promise.",
+  "limits": {
+    "wall_seconds": 1800,
+    "peak_rss_bytes": 1073741824,
+    "threads": 1,
+    "processes": 1,
+    "max_network_fits": 78,
+    "epochs_per_fit": 200,
+    "memory_pressure_required": 1,
+    "guard": "RSS/elapsed/STOP checked every epoch and between fits. OS pressure queried at epoch boundaries when at least1second since lastquery; strictnormal1. SIGALRM1800secondwalllimit. No backgroundmonitor/automaticretry/partialwinner."
+  },
+  "checks": "Syntheticpartialfitstate/weightedAPI/lossexportparity/train-onlypreprocessing/emptycolumns/thresholdties/ensembleorder;realdataidentitygroupmask/referenceverificationbeforefit;JSONversussklearnparityonfullfit;finiteoutputs.",
+  "authorization": "User: ok can you go ahead and run that. BoundedsaveddataCPUexperiment only."
+}

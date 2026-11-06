@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "scope": "Synthetic only; no real labels or fits",
+  "checks": [
+    "150-column all-missing imputation preserved",
+    "training-only scaling",
+    "persistent Adam optimizer and exact epoch/sample counters",
+    "finite decreasing synthetic loss",
+    "JSON inference matches sklearn within1e-12",
+    "threshold ties cannot leak labels",
+    "seed mean precedes window minimum"
+  ],
+  "script_sha256": "5f2813a54bce0df63ab3cc59f6c9ce93aeabdc4a01d244c9878bc00b255e2a4e"
+}

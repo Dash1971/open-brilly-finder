@@ -1,0 +1,104 @@
+{
+  "PASS": true,
+  "scientific_source_files": 23284,
+  "archives": 75,
+  "archive_bytes": 379061861,
+  "regular_members": 14037,
+  "relative_links": 9275,
+  "original_directory_aliases": 28,
+  "all_recorded_published_hashes_verified": true,
+  "all_link_targets_internal_and_resolvable": true,
+  "new_text_private_path_and_auth_field_scan": "PASS",
+  "deduplication": "Only identical published hashes; original source hashes retained.",
+  "raw_PGN_clocks": "Copied unchanged; direct seven-account PGN SHA 0089e8896924a5a370d7213f3336dd1a72f7d6ec9e1449ff8117917d3d2442df.",
+  "recount": {
+    "PASS": true,
+    "development": {
+      "production": {
+        "TP": 2071,
+        "FN": 1786,
+        "FP": 93,
+        "TN": 146095
+      },
+      "pr285": {
+        "TP": 2086,
+        "FN": 1771,
+        "FP": 97,
+        "TN": 146091
+      },
+      "reference_a": {
+        "TP": 2227,
+        "FN": 1630,
+        "FP": 93,
+        "TN": 146095
+      },
+      "reference_b": {
+        "TP": 2247,
+        "FN": 1610,
+        "FP": 94,
+        "TN": 146094
+      },
+      "finalist_a": {
+        "TP": 2292,
+        "FN": 1565,
+        "FP": 89,
+        "TN": 146099
+      },
+      "finalist_b": {
+        "TP": 2713,
+        "FN": 1144,
+        "FP": 180,
+        "TN": 146008
+      },
+      "finalist_c": {
+        "TP": 2478,
+        "FN": 1379,
+        "FP": 124,
+        "TN": 146064
+      }
+    },
+    "fresh": {
+      "production": {
+        "TP": 721,
+        "FN": 513,
+        "FP": 57,
+        "TN": 30366
+      },
+      "pr285": {
+        "TP": 725,
+        "FN": 509,
+        "FP": 58,
+        "TN": 30365
+      },
+      "selective": {
+        "TP": 774,
+        "FN": 460,
+        "FP": 38,
+        "TN": 30385
+      }
+    }
+  },
+  "saved_feature_inference": {
+    "window_scores": {
+      "current": 0.9756529876989339,
+      "previous": 0.9713738104196646
+    },
+    "minimum_window_score": 0.9713738104196646,
+    "threshold": 0.83,
+    "gates": {
+      "both_windows_eligible": true,
+      "confidence_sufficient": true,
+      "physical_evidence_known": true
+    },
+    "award": true,
+    "model": "selective20261106",
+    "model_sha256": "1a7150fbe52f440922d94d3ae2af337383d63f370b52d0379aeee22d581d056c",
+    "scope": "Frozen updated Mute Selective full-fit model; saved-feature inference, not fresh-game validation",
+    "case_key": "1006812690:48",
+    "caveat": "Requires precomputed features and eligibility/confidence gates. This is not a FEN-to-Brilliant classifier."
+  },
+  "historical_quickstart": "Existing saved-decision recount and original-model inference pass.",
+  "historical_readme_goal_source": "Existing origin/main README at52da554 explicitly defines a target of fewer than1% wrong awards; current statement preserves that target.",
+  "local_document_links": "PASS",
+  "largest_archive_bytes": 11923786
+}

@@ -1,0 +1,593 @@
+{
+  "complete": true,
+  "at": "2026-11-06T12:36:15.376637+00:00",
+  "games_done": 1000,
+  "games_expected": 1000,
+  "missing_games": [],
+  "expected_totals": {
+    "games": 1000,
+    "all_moves": 62992,
+    "own_moves": 31658,
+    "primary_moves": 31657,
+    "primary_positives": 1234,
+    "unmasked_positives": 1235,
+    "excluded_moves": 1
+  },
+  "checked_totals": {
+    "variant_budget_checks": 3000,
+    "games": 1000,
+    "fresh_engine_searches": 64790,
+    "all_moves": 62992,
+    "own_moves": 31658,
+    "primary_moves": 31657,
+    "excluded_moves": 1
+  },
+  "counts": {
+    "primary": {
+      "production": {
+        "TP": 721,
+        "FN": 513,
+        "FP": 57,
+        "TN": 30366,
+        "positives": 1234,
+        "negatives": 30423,
+        "recognition_percent": 58.427876823338735,
+        "false_positive_rate_percent": 0.18735824869342274
+      },
+      "pr285": {
+        "TP": 725,
+        "FN": 509,
+        "FP": 58,
+        "TN": 30365,
+        "positives": 1234,
+        "negatives": 30423,
+        "recognition_percent": 58.752025931928685,
+        "false_positive_rate_percent": 0.1906452355126056
+      },
+      "selective": {
+        "TP": 774,
+        "FN": 460,
+        "FP": 38,
+        "TN": 30385,
+        "positives": 1234,
+        "negatives": 30423,
+        "recognition_percent": 62.72285251215559,
+        "false_positive_rate_percent": 0.1249054991289485
+      }
+    },
+    "unmasked": {
+      "production": {
+        "TP": 722,
+        "FN": 513,
+        "FP": 57,
+        "TN": 30366,
+        "positives": 1235,
+        "negatives": 30423,
+        "recognition_percent": 58.46153846153846,
+        "false_positive_rate_percent": 0.18735824869342274
+      },
+      "pr285": {
+        "TP": 726,
+        "FN": 509,
+        "FP": 58,
+        "TN": 30365,
+        "positives": 1235,
+        "negatives": 30423,
+        "recognition_percent": 58.78542510121458,
+        "false_positive_rate_percent": 0.1906452355126056
+      },
+      "selective": {
+        "TP": 775,
+        "FN": 460,
+        "FP": 38,
+        "TN": 30385,
+        "positives": 1235,
+        "negatives": 30423,
+        "recognition_percent": 62.75303643724696,
+        "false_positive_rate_percent": 0.1249054991289485
+      }
+    },
+    "excluded": {
+      "production": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 0,
+        "TN": 0,
+        "positives": 1,
+        "negatives": 0,
+        "recognition_percent": 100.0,
+        "false_positive_rate_percent": null
+      },
+      "pr285": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 0,
+        "TN": 0,
+        "positives": 1,
+        "negatives": 0,
+        "recognition_percent": 100.0,
+        "false_positive_rate_percent": null
+      },
+      "selective": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 0,
+        "TN": 0,
+        "positives": 1,
+        "negatives": 0,
+        "recognition_percent": 100.0,
+        "false_positive_rate_percent": null
+      }
+    }
+  },
+  "paired_changes": {
+    "primary": {
+      "production": {
+        "genuine_gained": 98,
+        "genuine_lost": 45,
+        "false_awards_added": 8,
+        "false_awards_removed": 27,
+        "net_TP": 53,
+        "net_FP": -19
+      },
+      "pr285": {
+        "genuine_gained": 95,
+        "genuine_lost": 46,
+        "false_awards_added": 7,
+        "false_awards_removed": 27,
+        "net_TP": 49,
+        "net_FP": -20
+      }
+    },
+    "unmasked": {
+      "production": {
+        "genuine_gained": 98,
+        "genuine_lost": 45,
+        "false_awards_added": 8,
+        "false_awards_removed": 27,
+        "net_TP": 53,
+        "net_FP": -19
+      },
+      "pr285": {
+        "genuine_gained": 95,
+        "genuine_lost": 46,
+        "false_awards_added": 7,
+        "false_awards_removed": 27,
+        "net_TP": 49,
+        "net_FP": -20
+      }
+    },
+    "excluded": {
+      "production": {
+        "genuine_gained": 0,
+        "genuine_lost": 0,
+        "false_awards_added": 0,
+        "false_awards_removed": 0,
+        "net_TP": 0,
+        "net_FP": 0
+      },
+      "pr285": {
+        "genuine_gained": 0,
+        "genuine_lost": 0,
+        "false_awards_added": 0,
+        "false_awards_removed": 0,
+        "net_TP": 0,
+        "net_FP": 0
+      }
+    }
+  },
+  "per_account": {
+    "Witty_Alien": {
+      "primary": {
+        "production": {
+          "TP": 721,
+          "FN": 513,
+          "FP": 57,
+          "TN": 30366,
+          "positives": 1234,
+          "negatives": 30423,
+          "recognition_percent": 58.427876823338735,
+          "false_positive_rate_percent": 0.18735824869342274
+        },
+        "pr285": {
+          "TP": 725,
+          "FN": 509,
+          "FP": 58,
+          "TN": 30365,
+          "positives": 1234,
+          "negatives": 30423,
+          "recognition_percent": 58.752025931928685,
+          "false_positive_rate_percent": 0.1906452355126056
+        },
+        "selective": {
+          "TP": 774,
+          "FN": 460,
+          "FP": 38,
+          "TN": 30385,
+          "positives": 1234,
+          "negatives": 30423,
+          "recognition_percent": 62.72285251215559,
+          "false_positive_rate_percent": 0.1249054991289485
+        }
+      },
+      "unmasked": {
+        "production": {
+          "TP": 722,
+          "FN": 513,
+          "FP": 57,
+          "TN": 30366,
+          "positives": 1235,
+          "negatives": 30423,
+          "recognition_percent": 58.46153846153846,
+          "false_positive_rate_percent": 0.18735824869342274
+        },
+        "pr285": {
+          "TP": 726,
+          "FN": 509,
+          "FP": 58,
+          "TN": 30365,
+          "positives": 1235,
+          "negatives": 30423,
+          "recognition_percent": 58.78542510121458,
+          "false_positive_rate_percent": 0.1906452355126056
+        },
+        "selective": {
+          "TP": 775,
+          "FN": 460,
+          "FP": 38,
+          "TN": 30385,
+          "positives": 1235,
+          "negatives": 30423,
+          "recognition_percent": 62.75303643724696,
+          "false_positive_rate_percent": 0.1249054991289485
+        }
+      },
+      "excluded": {
+        "production": {
+          "TP": 1,
+          "FN": 0,
+          "FP": 0,
+          "TN": 0,
+          "positives": 1,
+          "negatives": 0,
+          "recognition_percent": 100.0,
+          "false_positive_rate_percent": null
+        },
+        "pr285": {
+          "TP": 1,
+          "FN": 0,
+          "FP": 0,
+          "TN": 0,
+          "positives": 1,
+          "negatives": 0,
+          "recognition_percent": 100.0,
+          "false_positive_rate_percent": null
+        },
+        "selective": {
+          "TP": 1,
+          "FN": 0,
+          "FP": 0,
+          "TN": 0,
+          "positives": 1,
+          "negatives": 0,
+          "recognition_percent": 100.0,
+          "false_positive_rate_percent": null
+        }
+      }
+    }
+  },
+  "workers": [
+    {
+      "root": ".",
+      "batch": 0,
+      "state": {
+        "complete": true,
+        "done": 25,
+        "total": 25,
+        "searches": 1631,
+        "elapsed_ms": 88086,
+        "finished": "2026-11-06T12:05:22.581Z"
+      }
+    },
+    {
+      "root": ".",
+      "batch": 1,
+      "state": {
+        "complete": true,
+        "done": 25,
+        "total": 25,
+        "searches": 1625,
+        "elapsed_ms": 85791,
+        "finished": "2026-11-06T12:05:21.107Z"
+      }
+    },
+    {
+      "root": ".",
+      "batch": 2,
+      "state": {
+        "complete": true,
+        "done": 25,
+        "total": 25,
+        "searches": 1625,
+        "elapsed_ms": 84902,
+        "finished": "2026-11-06T12:07:02.992Z"
+      }
+    },
+    {
+      "root": ".",
+      "batch": 3,
+      "state": {
+        "complete": true,
+        "done": 25,
+        "total": 25,
+        "searches": 1635,
+        "elapsed_ms": 80682,
+        "finished": "2026-11-06T12:06:59.323Z"
+      }
+    },
+    {
+      "root": ".",
+      "batch": 4,
+      "state": {
+        "complete": true,
+        "done": 25,
+        "total": 25,
+        "searches": 1657,
+        "elapsed_ms": 200337,
+        "finished": "2026-11-06T12:08:01.706Z"
+      }
+    },
+    {
+      "root": ".",
+      "batch": 5,
+      "state": {
+        "complete": true,
+        "done": 25,
+        "total": 25,
+        "searches": 1644,
+        "elapsed_ms": 198530,
+        "finished": "2026-11-06T12:07:58.800Z"
+      }
+    },
+    {
+      "root": ".",
+      "batch": 6,
+      "state": {
+        "complete": true,
+        "done": 25,
+        "total": 25,
+        "searches": 1621,
+        "elapsed_ms": 264972,
+        "finished": "2026-11-06T12:09:04.796Z"
+      }
+    },
+    {
+      "root": ".",
+      "batch": 7,
+      "state": {
+        "complete": true,
+        "done": 25,
+        "total": 25,
+        "searches": 1620,
+        "elapsed_ms": 275924,
+        "finished": "2026-11-06T12:09:16.781Z"
+      }
+    },
+    {
+      "root": "full/segment-00",
+      "batch": 0,
+      "state": {
+        "complete": true,
+        "done": 80,
+        "total": 80,
+        "searches": 4751,
+        "elapsed_ms": 327574,
+        "finished": "2026-11-06T12:24:30.163Z"
+      }
+    },
+    {
+      "root": "full/segment-00",
+      "batch": 1,
+      "state": {
+        "complete": true,
+        "done": 80,
+        "total": 80,
+        "searches": 4978,
+        "elapsed_ms": 362302,
+        "finished": "2026-11-06T12:25:04.637Z"
+      }
+    },
+    {
+      "root": "full/segment-00",
+      "batch": 2,
+      "state": {
+        "complete": true,
+        "done": 80,
+        "total": 80,
+        "searches": 5261,
+        "elapsed_ms": 373121,
+        "finished": "2026-11-06T12:25:14.534Z"
+      }
+    },
+    {
+      "root": "full/segment-00",
+      "batch": 3,
+      "state": {
+        "complete": true,
+        "done": 80,
+        "total": 80,
+        "searches": 5418,
+        "elapsed_ms": 368779,
+        "finished": "2026-11-06T12:25:11.123Z"
+      }
+    },
+    {
+      "root": "full/segment-00",
+      "batch": 4,
+      "state": {
+        "complete": true,
+        "done": 35,
+        "total": 35,
+        "searches": 2486,
+        "elapsed_ms": 274782,
+        "finished": "2026-11-06T12:24:11.308Z"
+      }
+    },
+    {
+      "root": "full/segment-00",
+      "batch": 5,
+      "state": {
+        "complete": true,
+        "done": 35,
+        "total": 35,
+        "searches": 2146,
+        "elapsed_ms": 250602,
+        "finished": "2026-11-06T12:23:47.213Z"
+      }
+    },
+    {
+      "root": "full/segment-00",
+      "batch": 6,
+      "state": {
+        "complete": true,
+        "done": 25,
+        "total": 25,
+        "searches": 1775,
+        "elapsed_ms": 263337,
+        "finished": "2026-11-06T12:23:59.760Z"
+      }
+    },
+    {
+      "root": "full/segment-00",
+      "batch": 7,
+      "state": {
+        "complete": true,
+        "done": 25,
+        "total": 25,
+        "searches": 1738,
+        "elapsed_ms": 283985,
+        "finished": "2026-11-06T12:24:20.545Z"
+      }
+    },
+    {
+      "root": "full/segment-01",
+      "batch": 0,
+      "state": {
+        "complete": true,
+        "done": 66,
+        "total": 66,
+        "searches": 4554,
+        "elapsed_ms": 334660,
+        "finished": "2026-11-06T12:30:57.621Z"
+      }
+    },
+    {
+      "root": "full/segment-01",
+      "batch": 1,
+      "state": {
+        "complete": true,
+        "done": 66,
+        "total": 66,
+        "searches": 4417,
+        "elapsed_ms": 338126,
+        "finished": "2026-11-06T12:31:44.359Z"
+      }
+    },
+    {
+      "root": "full/segment-01",
+      "batch": 2,
+      "state": {
+        "complete": true,
+        "done": 65,
+        "total": 65,
+        "searches": 4262,
+        "elapsed_ms": 302827,
+        "finished": "2026-11-06T12:31:04.892Z"
+      }
+    },
+    {
+      "root": "full/segment-01",
+      "batch": 3,
+      "state": {
+        "complete": true,
+        "done": 65,
+        "total": 65,
+        "searches": 3674,
+        "elapsed_ms": 278105,
+        "finished": "2026-11-06T12:30:44.733Z"
+      }
+    },
+    {
+      "root": "full/segment-01",
+      "batch": 4,
+      "state": {
+        "complete": true,
+        "done": 29,
+        "total": 29,
+        "searches": 1920,
+        "elapsed_ms": 226219,
+        "finished": "2026-11-06T12:29:12.001Z"
+      }
+    },
+    {
+      "root": "full/segment-01",
+      "batch": 5,
+      "state": {
+        "complete": true,
+        "done": 29,
+        "total": 29,
+        "searches": 1859,
+        "elapsed_ms": 221656,
+        "finished": "2026-11-06T12:28:28.609Z"
+      }
+    },
+    {
+      "root": "full/segment-01",
+      "batch": 6,
+      "state": {
+        "complete": true,
+        "done": 20,
+        "total": 20,
+        "searches": 1313,
+        "elapsed_ms": 203026,
+        "finished": "2026-11-06T12:28:16.594Z"
+      }
+    },
+    {
+      "root": "full/segment-01",
+      "batch": 7,
+      "state": {
+        "complete": true,
+        "done": 20,
+        "total": 20,
+        "searches": 1180,
+        "elapsed_ms": 200533,
+        "finished": "2026-11-06T12:28:47.146Z"
+      }
+    }
+  ],
+  "worker_failures": [],
+  "candidate_model_sha256": "1a7150fbe52f440922d94d3ae2af337383d63f370b52d0379aeee22d581d056c",
+  "candidate_cutoff": 0.83,
+  "evidence_grade_counts": {
+    "gallery_link_uuid_ply_mover_legal_pgn": 739,
+    "rendered_board_and_arrow_exact": 496
+  },
+  "original_200_preserved": true,
+  "additional_games": 800,
+  "source_hashes": {
+    "MASTER.json": "29148ad23d8446a7e688e3cf20473bf83a14387700e612c8a009fbcc2ec6957c",
+    "CONTINUATION-PLAN.json": "92c098bb7ae571a78243a1cb8c2af35ed4454eb736f47a1198ed95fc8963d94b",
+    "CONTINUATION-FREEZE.json": "cc3141711c339de7d52d96142740132f1792f9cc161071d2178944a68342fa7b",
+    "summarize.py": "80291c0bc12c6ccd3b423917a0f41aa3a981aa363131d4c8b8a892aeb03d8d40"
+  },
+  "notes": [
+    "Frozen fresh-account models; no tuning or automatic winner selection.",
+    "User expanded the same fixed SHA-ranked sample from200 to1000 after partial200 outcomes were seen, before complete200 totals; this was not a fully outcome-blind stopping decision.",
+    "All1000 use the same frozen full-fit model/cutoff; the original200 results are reused without recomputation.",
+    "Of1235 gallery labels,496 have exact rendered-board/arrow evidence;739 have gallery-link/UUID/ply/mover/legal-PGN identity evidence only. One positive overlap is excluded from primary counts.",
+    "Primary counts exclude canonical before-position overlap; unmasked and excluded counts are separate.",
+    "Only Witty_Alien own moves scored. Gallery absence is the authorized negative convention within gallery-represented games.",
+    "FPR is FP/(FP+TN); this is not an estimate for all Chess.com games."
+  ]
+}

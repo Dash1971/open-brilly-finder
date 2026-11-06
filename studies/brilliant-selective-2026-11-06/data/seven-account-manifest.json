@@ -1,0 +1,791 @@
+{
+  "complete": true,
+  "scope": "Seven complete Chess.com time=365 Brilliant galleries captured 2026-11-06; full games represented by those galleries. All labels are copied Chess.com source labels, never model awards. Unlabeled moves are unknown.",
+  "accounts": {
+    "nelsi": {
+      "gallery_displayed": 580,
+      "labels": 580,
+      "board_matches": 580,
+      "games": 506,
+      "source_categories": {
+        "Bishop Sacrifice": 158,
+        "Queen Sacrifice": 47,
+        "Rook Sacrifice": 191,
+        "Knight Sacrifice": 171,
+        "Underpromotion": 0,
+        "Brilliant Moves": 580
+      },
+      "categories": {
+        "Rook Sacrifice": 191,
+        "Knight Sacrifice": 171,
+        "Queen Sacrifice": 47,
+        "Bishop Sacrifice": 158,
+        "Uncategorized": 13
+      },
+      "evidence_grades": {
+        "rendered_board_and_arrow_exact": 580
+      }
+    },
+    "KNVB": {
+      "gallery_displayed": 929,
+      "labels": 929,
+      "board_matches": 929,
+      "games": 849,
+      "source_categories": {
+        "Brilliant Moves": 929,
+        "Queen Sacrifice": 90,
+        "Rook Sacrifice": 365,
+        "Bishop Sacrifice": 174,
+        "Knight Sacrifice": 271,
+        "Underpromotion": 0
+      },
+      "categories": {
+        "Rook Sacrifice": 365,
+        "Knight Sacrifice": 271,
+        "Bishop Sacrifice": 174,
+        "Queen Sacrifice": 90,
+        "Uncategorized": 29
+      },
+      "evidence_grades": {
+        "rendered_board_and_arrow_exact": 929
+      }
+    },
+    "hansen": {
+      "gallery_displayed": 541,
+      "labels": 541,
+      "board_matches": 541,
+      "games": 479,
+      "source_categories": {
+        "Brilliant Moves": 541,
+        "Queen Sacrifice": 63,
+        "Rook Sacrifice": 250,
+        "Bishop Sacrifice": 107,
+        "Knight Sacrifice": 121,
+        "Underpromotion": 0
+      },
+      "categories": {
+        "Rook Sacrifice": 250,
+        "Bishop Sacrifice": 107,
+        "Queen Sacrifice": 63,
+        "Knight Sacrifice": 121
+      },
+      "evidence_grades": {
+        "rendered_board_and_arrow_exact": 541
+      }
+    },
+    "GothamChess": {
+      "gallery_displayed": 486,
+      "labels": 486,
+      "board_matches": 486,
+      "games": 446,
+      "source_categories": {
+        "Brilliant Moves": 486,
+        "Queen Sacrifice": 56,
+        "Rook Sacrifice": 211,
+        "Bishop Sacrifice": 93,
+        "Knight Sacrifice": 117,
+        "Underpromotion": 0
+      },
+      "categories": {
+        "Rook Sacrifice": 211,
+        "Knight Sacrifice": 117,
+        "Bishop Sacrifice": 93,
+        "Queen Sacrifice": 56,
+        "Uncategorized": 9
+      },
+      "evidence_grades": {
+        "rendered_board_and_arrow_exact": 486
+      }
+    },
+    "Hikaru": {
+      "gallery_displayed": 987,
+      "labels": 987,
+      "board_matches": 987,
+      "games": 881,
+      "source_categories": {
+        "Brilliant Moves": 987,
+        "Queen Sacrifice": 104,
+        "Rook Sacrifice": 369,
+        "Bishop Sacrifice": 188,
+        "Knight Sacrifice": 294,
+        "Underpromotion": 0
+      },
+      "categories": {
+        "Rook Sacrifice": 369,
+        "Knight Sacrifice": 294,
+        "Bishop Sacrifice": 188,
+        "Queen Sacrifice": 104,
+        "Uncategorized": 32
+      },
+      "evidence_grades": {
+        "rendered_board_and_arrow_exact": 987
+      }
+    },
+    "MagnusCarlsen": {
+      "gallery_displayed": 364,
+      "labels": 364,
+      "board_matches": 364,
+      "games": 313,
+      "source_categories": {
+        "Brilliant Moves": 364,
+        "Queen Sacrifice": 43,
+        "Rook Sacrifice": 115,
+        "Bishop Sacrifice": 88,
+        "Knight Sacrifice": 112,
+        "Underpromotion": 0
+      },
+      "categories": {
+        "Rook Sacrifice": 115,
+        "Queen Sacrifice": 43,
+        "Knight Sacrifice": 112,
+        "Bishop Sacrifice": 88,
+        "Uncategorized": 6
+      },
+      "evidence_grades": {
+        "rendered_board_exact": 364
+      }
+    },
+    "Witty_Alien": {
+      "gallery_displayed": 4411,
+      "labels": 4411,
+      "board_matches": 1308,
+      "games": 3546,
+      "source_categories": {
+        "Brilliant Moves": 4411
+      },
+      "categories": {
+        "Uncategorized": 4411
+      },
+      "evidence_grades": {
+        "gallery_link_uuid_ply_mover_legal_pgn": 3103,
+        "rendered_board_and_arrow_exact": 1308
+      }
+    }
+  },
+  "games": 7019,
+  "labels": 8298,
+  "unique_annotated_plies": 8298,
+  "input_game_records": 7020,
+  "deduplicated_shared_games": [
+    {
+      "game_id": "158576248417",
+      "sources": [
+        "five_accounts",
+        "MagnusCarlsen"
+      ],
+      "accounts": [
+        "Hikaru",
+        "MagnusCarlsen"
+      ],
+      "labels_preserved": 3,
+      "moves": 104,
+      "clock_tokens_deduplicated": 104,
+      "noncritical_header_differences_existing_preserved": {}
+    }
+  ],
+  "source_counts": {
+    "five_accounts": {
+      "games": 3161,
+      "labels": 3523,
+      "moves": 273702
+    },
+    "MagnusCarlsen": {
+      "games": 313,
+      "labels": 364,
+      "moves": 24731
+    },
+    "Witty_Alien": {
+      "games": 3546,
+      "labels": 4411,
+      "moves": 223724
+    }
+  },
+  "evidence_grades": {
+    "rendered_board_and_arrow_exact": 4831,
+    "rendered_board_exact": 364,
+    "gallery_link_uuid_ply_mover_legal_pgn": 3103
+  },
+  "available_board_views_checked": 5252,
+  "available_arrow_views_checked": 4888,
+  "roundtrip_game_checks": 7019,
+  "roundtrip_annotation_checks": 8298,
+  "roundtrip_move_checks": 522053,
+  "exact_clock_tokens_preserved": 522053,
+  "source_export_files": [
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/five-accounts-last-12-months-chesscom-brilliants.pgn",
+      "sha256": "a6979c8937bd586bd0e436948189d18918daad0423c6ff83e6af66d86d820811",
+      "bytes": 11234864
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/brilliant-moves.json",
+      "sha256": "4b7a8672470c22e0ed2a79ba42f1848d1a977e354fc7afdf1aceb483d51158ca",
+      "bytes": 2928416
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/EXPORT-SUMMARY.json",
+      "sha256": "f4da733e7fc1863fadb81891668cd8e5f518ab4b0b93c3dbe84d6ae219de5f0e",
+      "bytes": 20292
+    },
+    {
+      "file": "research/nelsi-gallery-pgn-2026-11-06/gallery.json",
+      "sha256": "ebdd9ae61ee6b3b3b88094474d2ea61d196f6947e28b5b94cde5ed977e9570a4",
+      "bytes": 891645
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/KNVB/gallery.json",
+      "sha256": "539f3e21562c62aed38951afb16f539ce1c999a57560cdf5a3123ee6aa9fbe05",
+      "bytes": 1293343
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/hansen/gallery.json",
+      "sha256": "3fc9ef60ff2125b9fb71c51139d17d5570eb21bf8ff89430ff01cc2506da0a77",
+      "bytes": 761392
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/GothamChess/gallery.json",
+      "sha256": "8bc998b3d187e94da6ecbac1bd26fa04b03be02a63dcd2e15a85b7ebe6b3509d",
+      "bytes": 694371
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/Hikaru/gallery.json",
+      "sha256": "cf03bb71bf142604027f3b640cd30588b203515857134cde8122186357208502",
+      "bytes": 1378651
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/magnus-last-12-months-chesscom-brilliants.pgn",
+      "sha256": "3679e1f54eb95a4dbd454acc2379b3287de56406edf825b5600f57bf2e08f4fb",
+      "bytes": 1061334
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/brilliant-moves.json",
+      "sha256": "3d53f332a30f3655e9e003d045d1e037efbbb58577b18ac8878c0aefa2231ff5",
+      "bytes": 315539
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/EXPORT-SUMMARY.json",
+      "sha256": "48989c6e5ced6b3b9adeeed91293b46081f29c37ee216b50275457fae33776e8",
+      "bytes": 5715
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/MagnusCarlsen/gallery.json",
+      "sha256": "3a5564b1cde21dbe460e100fdde955f01be88c532cff6ca61ce618f1b3c33f75",
+      "bytes": 493096
+    },
+    {
+      "file": "research/seven-account-gallery-pgn-2026-11-06/witty/witty-alien-last-12-months-chesscom-brilliants.pgn",
+      "sha256": "1a22a7ae8d193b713bea20b35e50acf9ab59f19c7a0e1a4ab0c4454b5bcd257e",
+      "bytes": 10531797
+    },
+    {
+      "file": "research/seven-account-gallery-pgn-2026-11-06/witty/brilliant-moves.json",
+      "sha256": "699d38fb703076879b9a7492767e83d685e243a3c0fa5c1b5a0e525b6ab4ba70",
+      "bytes": 5803279
+    },
+    {
+      "file": "research/seven-account-gallery-pgn-2026-11-06/witty/EXPORT-SUMMARY.json",
+      "sha256": "0d114a6fd36b785ae45dd59c534beebf58f1bb73f0c3a2e58c1f756c1528ccf7",
+      "bytes": 6428
+    }
+  ],
+  "original_monthly_source_files": [
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/knvb-2025-11.pgn",
+      "sha256": "9b3b3f705c2cd4edca58330a948851dfc76221055ae38b48e838c972b2d019b0",
+      "bytes": 688564
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/knvb-2025-12.pgn",
+      "sha256": "f71dfd3ca7e6289660f527063814f7ea828f56471fbe8557473d7a70cedcf425",
+      "bytes": 4293587
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/knvb-2026-01.pgn",
+      "sha256": "6732bbe38c5a7e5efa15234e5546b1a792c90cc4fa7029d5c56f05ff6c133b6c",
+      "bytes": 4583719
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/knvb-2026-02.pgn",
+      "sha256": "9db3634723b7d63888245550cdb716a90f15c00c11fdd91a652f0df06cd39002",
+      "bytes": 3144493
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/knvb-2026-03.pgn",
+      "sha256": "9dc3701ed42a946af4ca35c7b8029a80ef503fe6cf2ab7ee6eec733721d0db33",
+      "bytes": 2695207
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/knvb-2026-04.pgn",
+      "sha256": "5e54c8fa5f6fb691f174accc8cf5c7f1cd36be8439f71f57536a047371b20f0a",
+      "bytes": 3864210
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/knvb-2026-05.pgn",
+      "sha256": "b11b89607e1a7e68d4497f95bac43eb6c2002799ef8dfb4e3d029ab439471865",
+      "bytes": 3137097
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/knvb-2026-06.pgn",
+      "sha256": "7ffa05d62910959a1f42e7847da034538a923e15a22b9e715c5ec5241c2c8306",
+      "bytes": 4439786
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/knvb-2026-07.pgn",
+      "sha256": "52d897dc3d3a3d426b928209a7addb7f2e8ded0f796dc1d4f6235d142378af46",
+      "bytes": 1897676
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/knvb-2026-08.pgn",
+      "sha256": "be2beaf90f186cafe44098d5f1c336e00a0e053cd4afc2406372e54ad278c20d",
+      "bytes": 4216044
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/knvb-2026-09.pgn",
+      "sha256": "cb5e26123d70a7ce91c3537bd23fec9de2e1fc64e2cf08e411103c3e09f21303",
+      "bytes": 4659497
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/knvb-2026-10.pgn",
+      "sha256": "9ca2a71bc72cf8901de846ccac86f0eff8963fdaa4e94cc19dbbd1021a6fe647",
+      "bytes": 3485250
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/knvb-2026-11.pgn",
+      "sha256": "0b81498e1b53062a1edc40e933e581198008cb78efcda3d7e2470c3e1b18d39f",
+      "bytes": 1184588
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hansen-2025-11.pgn",
+      "sha256": "0b60fb9394136f9c0175256c7eff54751339aed1408faa2456e0104bbe3f6e42",
+      "bytes": 478236
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hansen-2025-12.pgn",
+      "sha256": "f348b85a9d975f0cdc4cff92bcbff072262d1ed6907ac9e0a3904b401a48bca4",
+      "bytes": 1746878
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hansen-2026-01.pgn",
+      "sha256": "bde98745b88118b4ac90977fa1bd98c7abb6f9f214c56c898a5692c07a81d532",
+      "bytes": 2483907
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hansen-2026-02.pgn",
+      "sha256": "38c39f42ae6fda636ff9df99a2615b5fa3d0e978155f8ce6e4b60d9a7f208804",
+      "bytes": 524451
+    },
+    {
+      "file": "research/brilliants-training-overnight-2026-11-03/original-pgn/hansen-2026-03.pgn",
+      "sha256": "3d3cdb32c2d957a360eca9389799b44f758b50a1ec3eff94bd65d93870e619b1",
+      "bytes": 898978
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/hansen-2026-04.pgn",
+      "sha256": "09ae1652c4024b9c61cee3d9fcffaee798969f03dca3dd6e58b4c84559b0cca1",
+      "bytes": 935161
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/hansen-2026-05.pgn",
+      "sha256": "1e36551e75e6a32d0555bdd5f5086b1312f5c427e44eb90a388b622126d2c7ce",
+      "bytes": 1019984
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/hansen-2026-06.pgn",
+      "sha256": "9f6435361503cee6e4b7eb3f931c71dad40ea77886d4c989dd1d39c8482d6948",
+      "bytes": 651381
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/hansen-2026-07.pgn",
+      "sha256": "0cdf8785b0ad9848edf9df402055a10430021d6c021b936fe2d9584e673ab234",
+      "bytes": 945020
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/hansen-2026-08.pgn",
+      "sha256": "8cd1b3118220ffa1233c788eb41b9aaa53c6440eda6111766f05113c2b577cbd",
+      "bytes": 163102
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/hansen-2026-09.pgn",
+      "sha256": "df8c94c399e9550e374672f82169e1d0749973ec7efb30f6d6f2f3a0c0649b37",
+      "bytes": 191521
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hansen-2026-10.pgn",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hansen-2026-11.pgn",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/gothamchess-2025-11.pgn",
+      "sha256": "2390384004e6bf0e48f388530ce2e82247a9b339375b176d58f68eed7dffb660",
+      "bytes": 562318
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/gothamchess-2025-12.pgn",
+      "sha256": "2fc83b584bcf30de3063ee9cc82f2b52d2575dcbf1438ae77aa46c5a66e8565b",
+      "bytes": 430718
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/gothamchess-2026-01.pgn",
+      "sha256": "cdc9d722fc807869d540ecf8bad91fafe0e1e6428f774c7cb8c174d0b023c9e0",
+      "bytes": 645956
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/gothamchess-2026-02.pgn",
+      "sha256": "a1773264f8e360e6e455e7743128c72c8930c970123c4aba3b630686f21165f8",
+      "bytes": 169221
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/gothamchess-2026-03.pgn",
+      "sha256": "0aae2cf3c339980cd478279b33f3a0a914e6f254336b66c0a54c69118d621f36",
+      "bytes": 1079432
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/gothamchess-2026-04.pgn",
+      "sha256": "fae4439786a4183f83e83fdcedb6138628792fd539298bdf6177af68f4fac93b",
+      "bytes": 551278
+    },
+    {
+      "file": "research/brilliants-training-overnight-2026-11-03/original-pgn/gothamchess-2026-05.pgn",
+      "sha256": "39acdf967ee7d2454091cdb25330cd1a3ba13b21489d307eeb0aea17a65c7ec6",
+      "bytes": 1774929
+    },
+    {
+      "file": "research/brilliants-training-overnight-2026-11-03/original-pgn/gothamchess-2026-06.pgn",
+      "sha256": "5663fa5cd6a16b9344230879bcbe51a5bbd4393c75c3bfab6b868f44e180fc1c",
+      "bytes": 1067473
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/gothamchess-2026-07.pgn",
+      "sha256": "e6ecd1bcf7a16ff3c374b1e35ba4d808cd19a1f1cc286e1bcbdddb2baa1ede88",
+      "bytes": 1641330
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/gothamchess-2026-08.pgn",
+      "sha256": "5a089db3f34c43d9ac36129da1d80aa70f653a139d4edab1caba50006ec62ec2",
+      "bytes": 1597543
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/gothamchess-2026-09.pgn",
+      "sha256": "7591e98217bd60b311f8cc74cba5c881edfffcfd99ccd2fc8295c4c0c73890fd",
+      "bytes": 1287427
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/gothamchess-2026-10.pgn",
+      "sha256": "3c44dee7a40942371c851968ec0f31d796784177a129108ce338948bba4434c7",
+      "bytes": 1107281
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/gothamchess-2026-11.pgn",
+      "sha256": "5d193853532d12bc1e832fb544a3553e5110c71ea69bb9e87df9b2eb2a68efc6",
+      "bytes": 91242
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hikaru-2025-11.pgn",
+      "sha256": "841dab42389dba9d42e1192fa73da33f3b436f2ce1e635e8f74244335601022c",
+      "bytes": 1973583
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hikaru-2025-12.pgn",
+      "sha256": "aa4f5064c77c7474c8b97e75294683b583abefcd474f3612849d142bbf525fb5",
+      "bytes": 1021416
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hikaru-2026-01.pgn",
+      "sha256": "3244999d3fe0bfcc5ca7abfa8f8f401254504fad5e054757a013d0707176e2a3",
+      "bytes": 2532524
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hikaru-2026-02.pgn",
+      "sha256": "29227f716eefd8868cd7a7ae690d03feec877f0b5b41fcc93040d72e43f663a8",
+      "bytes": 1227213
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hikaru-2026-03.pgn",
+      "sha256": "932d57b8a419f2039b76e106645dce407cd472ea758a2a3517ad9292f788d7f1",
+      "bytes": 935788
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hikaru-2026-04.pgn",
+      "sha256": "6baa0f2a92304df3c1506432c8993534b12c18b6883533e10a07a703b722aa35",
+      "bytes": 527889
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hikaru-2026-05.pgn",
+      "sha256": "6dd51a1a05865029bcf2f4dbb6a6489cae58f116c1ebe876538e9b22361dc881",
+      "bytes": 1472782
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hikaru-2026-06.pgn",
+      "sha256": "b57504b7981315d8e1c61d70bd0414c060686d400a7f90d19e89832554623295",
+      "bytes": 2158314
+    },
+    {
+      "file": "research/brilliants-training-overnight-2026-11-03/original-pgn/hikaru-2026-07.pgn",
+      "sha256": "a708225a925cbc48f4d35371ccde29c865e3f6d814a8779eff30554f156cc796",
+      "bytes": 1855111
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/hikaru-2026-08.pgn",
+      "sha256": "2cba263e8a0f13c43063496056a0ddf2e57685d9a07b62f0a7fca3dbcaea8278",
+      "bytes": 1514297
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/hikaru-2026-09.pgn",
+      "sha256": "074cee0ea1b083f7fcda77523217ff207c5a10c72edab0f321746203c4f5530a",
+      "bytes": 1571958
+    },
+    {
+      "file": "research/brilliants-prospective-v7-2026-11-03/original-pgn/hikaru-2026-10.pgn",
+      "sha256": "3bf21bf9e755199b24eb0ed26e22f2824fdbbac9e53308c07f9ce01890098f8a",
+      "bytes": 1776596
+    },
+    {
+      "file": "research/five-account-gallery-pgn-2026-11-06/raw-pgn/hikaru-2026-11.pgn",
+      "sha256": "21b7fb6fd7d7ba497375d1b75ca572b357f9d85cdb8e38610ba8794eddc16325",
+      "bytes": 221038
+    },
+    {
+      "file": "research/brilliants-600-2026-11-03/original-pgn/nelsi-2025-11.pgn",
+      "sha256": "4b19a47112c56763d77571c0f02b814d7600bc65f63a7ba55f6a593b613e3665",
+      "bytes": 3075254
+    },
+    {
+      "file": "research/brilliants-600-2026-11-03/original-pgn/nelsi-2025-12.pgn",
+      "sha256": "561e9153f15e8c1a2b2a344898aa0448562d4173b66b4798fd667ec7d5d7756d",
+      "bytes": 721981
+    },
+    {
+      "file": "research/brilliants-600-2026-11-03/original-pgn/nelsi-2026-01.pgn",
+      "sha256": "cb4b80bdae5fa8ce0f432d32fa528b60e430ca791c88a73e64189079700202a4",
+      "bytes": 946283
+    },
+    {
+      "file": "research/brilliants-600-2026-11-03/original-pgn/nelsi-2026-02.pgn",
+      "sha256": "478adc2876931699589b83bb6da7ab2e293d539e582ea86f70367ea8f76f4ad2",
+      "bytes": 854531
+    },
+    {
+      "file": "research/brilliants-600-2026-11-03/original-pgn/nelsi-2026-03.pgn",
+      "sha256": "27eab921331298e0907673afd43ff8e42bcefd3904a6a4bdfe8cadc697bc7526",
+      "bytes": 1654559
+    },
+    {
+      "file": "research/brilliants-600-2026-11-03/original-pgn/nelsi-2026-04.pgn",
+      "sha256": "aa279b7a521f17bb30735508cd13d279b7cc46ee99be6cc158e9be4bb37b20b2",
+      "bytes": 2570398
+    },
+    {
+      "file": "research/brilliants-600-2026-11-03/original-pgn/nelsi-2026-05.pgn",
+      "sha256": "b7118c939503ca1480b38f95321f84deeef61ff441e236e4d77444c123c45f13",
+      "bytes": 134244
+    },
+    {
+      "file": "research/brilliants-600-2026-11-03/original-pgn/nelsi-2026-06.pgn",
+      "sha256": "95d16abb2d57de20bb46acd932d90c5e9e82ba14c1a43f6031ec5bb9233975b1",
+      "bytes": 161049
+    },
+    {
+      "file": "research/brilliants-600-2026-11-03/original-pgn/nelsi-2026-07.pgn",
+      "sha256": "9cda540f3e358d5fe16ecc1d83c5824e5bfda1d1aab80c508ea95325ec309539",
+      "bytes": 320815
+    },
+    {
+      "file": "research/brilliants-600-2026-11-03/original-pgn/nelsi-2026-08.pgn",
+      "sha256": "cf1b9d61309b53d1f486efc9b2fe98ccd97df83b4894e3ead08012aecdb49398",
+      "bytes": 100619
+    },
+    {
+      "file": "research/brilliants-600-2026-11-03/original-pgn/nelsi-2026-09.pgn",
+      "sha256": "e7574af98c7c6714cd1e15f88bdf521eeecf4792a0cfeecac08e5df3ac3f1494",
+      "bytes": 191875
+    },
+    {
+      "file": "research/brilliants-600-2026-11-03/original-pgn/nelsi-2026-10.pgn",
+      "sha256": "9b5a5f2c5c556575a2a1762b0085dcdd0df935f9e3e7d6d327710fd0dd7687f4",
+      "bytes": 1550916
+    },
+    {
+      "file": "research/brilliants-600-2026-11-03/original-pgn/nelsi-2026-11.pgn",
+      "sha256": "4b68cc53dd6ad753b80eb9b95fc66ddda01af68fb452f02ce63036bed2e39aa6",
+      "bytes": 407800
+    },
+    {
+      "file": "research/nelsi-gallery-pgn-2026-11-06/raw-pgn/nelsi-2026-11.pgn",
+      "sha256": "b5d93a0a16516d55bbb7417304faf28680dde14a09b036d058e3ba834fbcf250",
+      "bytes": 637989
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/raw-pgn/magnuscarlsen-2025-11.pgn",
+      "sha256": "bbccd93d9958a8a32765b2b3e236b90b12155bfdd9bd1c46828c6dffc129a725",
+      "bytes": 899501
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/raw-pgn/magnuscarlsen-2025-12.pgn",
+      "sha256": "726fc49edc03b3682d2f777bffa617383c19bc7666d5c20c53f1f3ef43ccd826",
+      "bytes": 638965
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/raw-pgn/magnuscarlsen-2026-01.pgn",
+      "sha256": "ce7584ef70d6a3ea626dab10c75afdd336f107b35dfb37070d0b7d90f763b27f",
+      "bytes": 835634
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/raw-pgn/magnuscarlsen-2026-02.pgn",
+      "sha256": "e9684508b14518ad9d946f934f9635922b3421525b46cc07fc610c67ca47d1c8",
+      "bytes": 467496
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/raw-pgn/magnuscarlsen-2026-03.pgn",
+      "sha256": "bbf80f7a4e9871d4b7b7199cd7d9129ef9c5eed82c6f9c65d656c1f387b714c1",
+      "bytes": 360900
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/raw-pgn/magnuscarlsen-2026-04.pgn",
+      "sha256": "65bddac90eeebd09191ace2d054a83341f96b4ec4112446f32f1ae9606f4c445",
+      "bytes": 122693
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/raw-pgn/magnuscarlsen-2026-05.pgn",
+      "sha256": "0f7ec2ea1cb1014726189b3664dbcfc890544536c8f41fc55f5e80abf6804168",
+      "bytes": 111412
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/raw-pgn/magnuscarlsen-2026-06.pgn",
+      "sha256": "c22509cb6cc8e6cf84711c0029f5ce3c4d8f9449e12b2d052d04cd6350cdc05d",
+      "bytes": 419034
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/raw-pgn/magnuscarlsen-2026-07.pgn",
+      "sha256": "8430018edc3c501308cb5a2c934d216d3db8766bbe6010b9a1675126da3eb0a9",
+      "bytes": 322157
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/raw-pgn/magnuscarlsen-2026-08.pgn",
+      "sha256": "a82031645d54502d3b6b97a1541e84510cdfabb03ce3c6ad121eeedfe6535b91",
+      "bytes": 343534
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/raw-pgn/magnuscarlsen-2026-09.pgn",
+      "sha256": "b5e85068a50a1512e2851f5ae223033c15f967ec7096dfa2905e22fa022566a9",
+      "bytes": 600865
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/raw-pgn/magnuscarlsen-2026-10.pgn",
+      "sha256": "e49ee2b06f1418b4eeb7e527da4fbe19d88967f2d17f06850c7dc31b1201a38f",
+      "bytes": 387970
+    },
+    {
+      "file": "research/brilliant-fast-candidate-2026-11-06/external/raw-pgn/magnuscarlsen-2026-11.pgn",
+      "sha256": "6ccd0195e8471f351dd2807d2be139020151ff0c58710762293ea827935b01d8",
+      "bytes": 70153
+    },
+    {
+      "file": "research/brilliant-fresh-witty-2026-11-06/raw-pgn/witty_alien-2025-11.pgn",
+      "sha256": "c075f80c97e606288ea9a0c4d5b161d3209ce14b998907f5f4d1d99c1e28146e",
+      "bytes": 6124288
+    },
+    {
+      "file": "research/brilliant-fresh-witty-2026-11-06/raw-pgn/witty_alien-2025-12.pgn",
+      "sha256": "c2193e0fd6a68e986212ea458034c2225069cd22346fb323f5615decf1b9acfc",
+      "bytes": 3470657
+    },
+    {
+      "file": "research/brilliant-fresh-witty-2026-11-06/raw-pgn/witty_alien-2026-01.pgn",
+      "sha256": "ac0d1ace52d2ba7d01804a3e2edbc5240025773f132d73be3b2e87304ffd2b51",
+      "bytes": 5308263
+    },
+    {
+      "file": "research/brilliant-fresh-witty-2026-11-06/raw-pgn/witty_alien-2026-02.pgn",
+      "sha256": "28fd8b2edefd62ed06fce9bcde1fe121d8dec594ee7f547c159050990147330e",
+      "bytes": 3977449
+    },
+    {
+      "file": "research/brilliant-fresh-witty-2026-11-06/raw-pgn/witty_alien-2026-03.pgn",
+      "sha256": "440747d9ac0168e8859f8e028665b13997d9c00586fc44e26e77c2b476711b36",
+      "bytes": 5325761
+    },
+    {
+      "file": "research/brilliant-fresh-witty-2026-11-06/raw-pgn/witty_alien-2026-04.pgn",
+      "sha256": "1fe2277893493ada91742b274c34b7b935e95650b9cffccdd0e5fd7d17f8ecbc",
+      "bytes": 4853038
+    },
+    {
+      "file": "research/brilliant-fresh-witty-2026-11-06/raw-pgn/witty_alien-2026-05.pgn",
+      "sha256": "952eab4316e70ae36ef9dc177685e30583095c9c71a9009e9ee1a4dbcb81b585",
+      "bytes": 6892767
+    },
+    {
+      "file": "research/brilliant-fresh-witty-2026-11-06/raw-pgn/witty_alien-2026-06.pgn",
+      "sha256": "2f42d7129a79d3b80e2e3e985b63151d5dfeca53b06a68922e5e1b5ed26c0383",
+      "bytes": 7970445
+    },
+    {
+      "file": "research/brilliant-fresh-witty-2026-11-06/raw-pgn/witty_alien-2026-07.pgn",
+      "sha256": "8eedbc608e2dc4dcd49c0ded4b77a4076b68c2cda50502967db7e333674fcbb3",
+      "bytes": 6848584
+    },
+    {
+      "file": "research/brilliant-fresh-witty-2026-11-06/raw-pgn/witty_alien-2026-08.pgn",
+      "sha256": "2a809b5c03ca080a39e333aea5eae30431b01f56b7f6d3fee44ae9573126a68b",
+      "bytes": 5305130
+    },
+    {
+      "file": "research/brilliant-fresh-witty-2026-11-06/raw-pgn/witty_alien-2026-09.pgn",
+      "sha256": "0c5fdd4598af0779e0c813c586622114c6015901c6a90c809e918aab19a623f7",
+      "bytes": 4994555
+    },
+    {
+      "file": "research/brilliant-fresh-witty-2026-11-06/raw-pgn/witty_alien-2026-10.pgn",
+      "sha256": "486ab836784e1f15429f5a367dd8482bf589015de88aefd9c348206a3ef26aa1",
+      "bytes": 4666225
+    },
+    {
+      "file": "research/brilliant-fresh-witty-2026-11-06/raw-pgn/witty_alien-2026-11.pgn",
+      "sha256": "118944ec268ff60fd47d90f82682e3b649ddde83bfe8c0ce4c92e77908694f47",
+      "bytes": 1113897
+    }
+  ],
+  "outputs": [
+    {
+      "file": "research/seven-account-gallery-pgn-2026-11-06/seven-accounts-last-12-months-chesscom-brilliants.pgn",
+      "sha256": "0089e8896924a5a370d7213f3336dd1a72f7d6ec9e1449ff8117917d3d2442df",
+      "bytes": 22824066
+    },
+    {
+      "file": "research/seven-account-gallery-pgn-2026-11-06/brilliant-moves.json",
+      "sha256": "219ef42c4fa2115ab2f799a7a9f49feb73600d7042c172a99d2d095ebcf37c6a",
+      "bytes": 11051504
+    },
+    {
+      "file": "research/seven-account-gallery-pgn-2026-11-06/brilliant-moves.csv",
+      "sha256": "94e432be4ff1a3b387f93812b7ad6df972427c0674693b2db028c61cb3d71ce0",
+      "bytes": 6649299
+    },
+    {
+      "file": "research/seven-account-gallery-pgn-2026-11-06/witty/witty-alien-last-12-months-chesscom-brilliants.pgn",
+      "sha256": "1a22a7ae8d193b713bea20b35e50acf9ab59f19c7a0e1a4ab0c4454b5bcd257e",
+      "bytes": 10531797
+    }
+  ],
+  "date_min": "2025.11.05",
+  "date_max": "2026.11.05",
+  "label_capture_date": "2026-11-06",
+  "limitations": [
+    "Chess.com gallery labels are source observations, not independent objective move judgments.",
+    "Witty has 1308 exact rendered-board labels; 3103 have explicit gallery link/UUID/ply/mover/legal-PGN evidence and no fabricated rendered-board claim.",
+    "Witty named sacrifice categories were not captured in its complete metadata; its 4411 labels retain Uncategorized rather than inferred categories.",
+    "The inherited five-account time=365 gallery includes PGN game-start dates as early as 2025-11-05; existing source labels were retained without changing the gallery window semantics."
+  ],
+  "no_engines_no_fitting_no_model_awards": true,
+  "elapsed_seconds": 51.928,
+  "merge_script": {
+    "file": "research/seven-account-gallery-pgn-2026-11-06/merge.py",
+    "sha256": "4ca028f1f87d1aae23b7ac66fd1f18973ded7d1c440c08313a9fdacea2039e7c",
+    "bytes": 16753
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "status": "complete_independently_verified",
+  "completed_at": "2026-11-06T10:51:35.603443+00:00",
+  "scope": "Full native site-style Fast replay of the frozen forest candidates; no PR, public documentation, production model or deployment changes.",
+  "benchmark_games": 3473,
+  "accounts": [
+    "gothamchess",
+    "hansen",
+    "hikaru",
+    "knvb",
+    "magnuscarlsen",
+    "nelsi"
+  ],
+  "scored_player_moves": 150045,
+  "chesscom_brilliants": 3857,
+  "other_player_moves": 146188,
+  "aggregate": {
+    "production": {
+      "TP": 2071,
+      "FN": 1786,
+      "FP": 93,
+      "TN": 146095,
+      "positives": 3857,
+      "negatives": 146188,
+      "brilliant_recognition_percent": 53.69458128078818,
+      "false_positive_percent": 0.06361671272607874
+    },
+    "pr285": {
+      "TP": 2086,
+      "FN": 1771,
+      "FP": 97,
+      "TN": 146091,
+      "positives": 3857,
+      "negatives": 146188,
+      "brilliant_recognition_percent": 54.08348457350272,
+      "false_positive_percent": 0.0663529154239746
+    },
+    "reference_a": {
+      "TP": 2227,
+      "FN": 1630,
+      "FP": 93,
+      "TN": 146095,
+      "positives": 3857,
+      "negatives": 146188,
+      "brilliant_recognition_percent": 57.73917552501945,
+      "false_positive_percent": 0.06361671272607874
+    },
+    "reference_b": {
+      "TP": 2247,
+      "FN": 1610,
+      "FP": 94,
+      "TN": 146094,
+      "positives": 3857,
+      "negatives": 146188,
+      "brilliant_recognition_percent": 58.25771324863884,
+      "false_positive_percent": 0.06430076340055271
+    },
+    "finalist_a": {
+      "TP": 2292,
+      "FN": 1565,
+      "FP": 89,
+      "TN": 146099,
+      "positives": 3857,
+      "negatives": 146188,
+      "brilliant_recognition_percent": 59.42442312678247,
+      "false_positive_percent": 0.060880510028182885
+    },
+    "finalist_b": {
+      "TP": 2713,
+      "FN": 1144,
+      "FP": 180,
+      "TN": 146008,
+      "positives": 3857,
+      "negatives": 146188,
+      "brilliant_recognition_percent": 70.3396422089707,
+      "false_positive_percent": 0.12312912140531371
+    },
+    "finalist_c": {
+      "TP": 2478,
+      "FN": 1379,
+      "FP": 124,
+      "TN": 146064,
+      "positives": 3857,
+      "negatives": 146188,
+      "brilliant_recognition_percent": 64.24682395644282,
+      "false_positive_percent": 0.08482228363477166
+    }
+  },
+  "recommendation": {
+    "candidate": "finalist_a",
+    "cutoff": 0.83,
+    "reason": "Highest-priority low-error choice: 2292 genuine Brilliants and 89 false awards. Same-data depth-10 reference: 2227 and93; depth-12 reference:2247 and94. These are net improvements; some individual former true awards are lost and some new errors appear.",
+    "middle_tradeoff_against_selective": {
+      "extra_genuine": 186,
+      "extra_wrong": 35
+    },
+    "generous_tradeoff_against_selective": {
+      "extra_genuine": 421,
+      "extra_wrong": 91
+    }
+  },
+  "validation_limitations": [
+    "Recipes and cutoffs selected on OOF labels: native OOF replay remains selection-biased development CV, not independent validation.",
+    "Reference A/B and finalists use the same held-out game folds; fixed production/PR285 weights have training overlap and are descriptive only.",
+    "False-positive percentages use all scored own non-Brilliant moves in gallery-represented games, not selected feature controls.",
+    "Owner games use full-fit models and are excluded from fold/account/aggregate metrics.",
+    "No automatic winner or numeric owner-acceptance threshold is inferred from TP/FP tradeoffs."
+  ],
+  "source_result": "replay/RESULTS.json",
+  "source_result_sha256": "91560cfe42274b80d19886e916770c2bf2c0bb441b3821b33c8e9672ba240ad4",
+  "model_sha256": "1a7150fbe52f440922d94d3ae2af337383d63f370b52d0379aeee22d581d056c",
+  "pr_unchanged": true,
+  "public_docs_unchanged": true,
+  "further_training_or_tuning": false,
+  "personal_game_count": 2,
+  "personal_examples": [
+    {
+      "game_id": "bJPg3bse",
+      "target": {
+        "ply": 24,
+        "san": "Bxh2+",
+        "uci": "d6h2",
+        "description": "Greek Gift bishop offer: 12...Bxh2+; user-nominated desired Brilliant, not a confirmed saved Chess.com label; excluded from benchmark.",
+        "reference_label": null
+      },
+      "final_symbols": {
+        "production": "!?",
+        "pr285": "!?",
+        "reference_a": "!?",
+        "reference_b": "!?",
+        "finalist_a": "!?",
+        "finalist_b": "!?",
+        "finalist_c": "!?"
+      },
+      "classifications": {
+        "production": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 95.09422863827437,
+          "cpLoss": 38,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "pr285": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 95.09422863827437,
+          "cpLoss": 38,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "reference_a": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 95.09422863827437,
+          "cpLoss": 38,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "reference_b": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 95.09422863827437,
+          "cpLoss": 38,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "finalist_a": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 95.09422863827437,
+          "cpLoss": 38,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "finalist_b": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 95.09422863827437,
+          "cpLoss": 38,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "finalist_c": {
+          "symbol": "!?",
+          "provisional": "!?",
+          "withheld": false,
+          "accuracy": 95.09422863827437,
+          "cpLoss": 38,
+          "version": "mute-chess-brilliant-v5"
+        }
+      },
+      "scope": "Full-fit owner diagnostic; excluded from every benchmark count"
+    },
+    {
+      "game_id": "tjxdTRho",
+      "target": {
+        "ply": 11,
+        "san": "Ne5",
+        "uci": "f3e5",
+        "description": "Legal's Mate queen offer: 6.Ne5 Bxd1 7.Bxf7#; user example, excluded from statistical benchmark.",
+        "reference_label": {
+          "symbol": "!!",
+          "source_path": "research/brilliant-nonmate-material-2026-11-04/CHESSCOM-NE5.json",
+          "source_sha256": "28be4d6410b2fa6b7f3d12d8ed893888d10384c54b8a83b77d21d6aa5086ccc4",
+          "basis": "Ne5 is brilliant",
+          "verified_at_utc": "2026-11-04T02:47:04.706419+00:00",
+          "scope_note": "Imported exact PGN, Torch Human Fast, no Elo headers; diagnostic only."
+        }
+      },
+      "final_symbols": {
+        "production": "!",
+        "pr285": "!",
+        "reference_a": "!",
+        "reference_b": "!",
+        "finalist_a": "!",
+        "finalist_b": "!",
+        "finalist_c": "!"
+      },
+      "classifications": {
+        "production": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 95.40345827255875,
+          "cpLoss": 21,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "pr285": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 95.40345827255875,
+          "cpLoss": 21,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "reference_a": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 95.40345827255875,
+          "cpLoss": 21,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "reference_b": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 95.40345827255875,
+          "cpLoss": 21,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "finalist_a": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 95.40345827255875,
+          "cpLoss": 21,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "finalist_b": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 95.40345827255875,
+          "cpLoss": 21,
+          "version": "mute-chess-brilliant-v5"
+        },
+        "finalist_c": {
+          "symbol": "!",
+          "provisional": "!",
+          "withheld": false,
+          "accuracy": 95.40345827255875,
+          "cpLoss": 21,
+          "version": "mute-chess-brilliant-v5"
+        }
+      },
+      "scope": "Full-fit owner diagnostic; excluded from every benchmark count"
+    }
+  ],
+  "personal_games": 2,
+  "independent_audit": {
+    "path": "replay/INDEPENDENT-FINAL-AUDIT.json",
+    "sha256": "2d863de53d50cc7da9e31971627ef92b93b0e6f0eaed0227d514b8850f71dfe9",
+    "outcome": "PASS: exact all-variant and per-fold totals; complete unique cohort, preserved hashes and native confirmation budgets."
+  }
+}
