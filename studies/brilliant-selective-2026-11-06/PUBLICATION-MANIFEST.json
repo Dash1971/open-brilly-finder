@@ -1,10 +1,20 @@
 {
-  "scope": "Current publication files; frozen source scientific identity and normalization are documented separately in SOURCE-MANIFEST.json. No deployment is performed.",
+  "scope": "Current publication file hashes. Reader documentation presents the selected model as one unified study. Frozen scientific source identities remain in SOURCE-MANIFEST.json; model, data and results are unchanged.",
   "files": [
     {
-      "path": "README.md",
+      "path": "AGENTS.md",
+      "bytes": 1197,
+      "sha256": "3e32c1debc4765b81ddef1062e103377aae44a885c93e05df7d851f43e32c36e"
+    },
+    {
+      "path": "HISTORICAL-README.md",
       "bytes": 7647,
       "sha256": "b751947292f820689cb5609aadae30a7449d9db028a5d341128c56fcd23b8ce3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4196,
+      "sha256": "c29ff0020865052b1663e3d43f20004c6b53a2d9fda40a3a303f993b377a1747"
     },
     {
       "path": "SOURCE-MANIFEST.json",
@@ -13,13 +23,43 @@
     },
     {
       "path": "docs/DATA.md",
+      "bytes": 2282,
+      "sha256": "86eaa06254f9908284c7a4cd7a7e545251a01cfeaa6f921059e5dca4fba684d6"
+    },
+    {
+      "path": "docs/HISTORICAL-DATA.md",
       "bytes": 9106,
       "sha256": "bbc353b9f2343c52fb258a86cb1e1205780942444aadac161342266edd99fa44"
     },
     {
-      "path": "docs/RESEARCH-INDEX.md",
+      "path": "docs/HISTORICAL-RESEARCH-INDEX.md",
       "bytes": 10306,
       "sha256": "cb8cf5f5fc2c8f8b748a7538af6427a6c174cdd1e429866d6ebffdae951af018"
+    },
+    {
+      "path": "docs/RESEARCH-INDEX.md",
+      "bytes": 1588,
+      "sha256": "be9c2a063febfd62b2fb1366c91ceeb510ce0b21f811ca8474ab2f7d27b0a2b8"
+    },
+    {
+      "path": "studies/brilliant-moves/HISTORICAL-ALGORITHM.md",
+      "bytes": 19619,
+      "sha256": "55dbf1322830c621e1fd5415c67a7ca747edeafab64ed8b1a6553ed7708153ea"
+    },
+    {
+      "path": "studies/brilliant-moves/HISTORICAL-REPORT.md",
+      "bytes": 4656,
+      "sha256": "5cdb93a936b53e1a98e1fba964d280416aaa4b9a42456e16ab300b1d538fa07c"
+    },
+    {
+      "path": "studies/brilliant-moves/README.md",
+      "bytes": 443,
+      "sha256": "6598c6276fe30d7a9744c9bbdb4ae5c5afd686beeca2e0738780131be814e57c"
+    },
+    {
+      "path": "studies/brilliant-moves/REPORT.md",
+      "bytes": 636,
+      "sha256": "588f5f8349133ef38352b695f237792b3cae198b3edd9de577c9b404d1d611f4"
     },
     {
       "path": "studies/brilliant-neural-2026-11-05/COMPLETE.json",
@@ -92,24 +132,29 @@
       "sha256": "9ec233a7a55032d4abbcbb5a6416d905cb935eee0d9b5cedcaf8e28e6b3a7066"
     },
     {
+      "path": "studies/brilliant-selective-2026-11-06/COMPARISONS.md",
+      "bytes": 3227,
+      "sha256": "9396d2c662a42629dee3c507edfec884cee3279037fd6202808f4d7017d5afa8"
+    },
+    {
       "path": "studies/brilliant-selective-2026-11-06/METHODS.md",
       "bytes": 7200,
       "sha256": "e2529e45f19cef9acefe3d7b2fc43730f2f401186f7441f1c5b32e259d869be3"
     },
     {
       "path": "studies/brilliant-selective-2026-11-06/PUBLICATION-CHECKS.json",
-      "bytes": 2841,
-      "sha256": "c60618f78278f8c09eff831971277d56af3843bef471251572f3a7bf08fc6196"
+      "bytes": 3340,
+      "sha256": "90a6bd0cad4e177d2dd44730f16a5dc6bdbcdf9d7a7054bae806a06185832fba"
     },
     {
       "path": "studies/brilliant-selective-2026-11-06/README.md",
-      "bytes": 5670,
-      "sha256": "2d475457820fdd7f8244833aeb7d312baeb1a48993ccfa6ee042a7bf860c81e9"
+      "bytes": 5680,
+      "sha256": "d3d8a24ab5645297cb78ff18233f0191f0871ef5456e17da7f6578effff52c6c"
     },
     {
       "path": "studies/brilliant-selective-2026-11-06/REPORT.md",
-      "bytes": 4007,
-      "sha256": "99f2f9ff81fc60a746fcc365f0678daf1ae860731e803ac7e5fd8571c34f1693"
+      "bytes": 5189,
+      "sha256": "87f7487300411ac43a5edbe5eafbc1035802f834e6b0402c79495884b61a84fe"
     },
     {
       "path": "studies/brilliant-selective-2026-11-06/SOURCE-MANIFEST.json",
@@ -558,18 +603,18 @@
     },
     {
       "path": "studies/brilliant-selective-2026-11-06/figures/fresh-results.png",
-      "bytes": 84854,
-      "sha256": "0ea43bfb14c601bf795129ddf5c647ee0bfd4e13cf61b4fc226cfa85bba35416"
+      "bytes": 76310,
+      "sha256": "5d3db994d9c46d125e260700344cbec8fe740aefa130696cb4e80fd562f62a19"
     },
     {
       "path": "studies/brilliant-selective-2026-11-06/figures/fresh-results.svg",
-      "bytes": 74942,
-      "sha256": "48202d2f514cd764409552d4480a2ff261eb6d2ee1a6336ebfd1ce462103a34f"
+      "bytes": 4417,
+      "sha256": "b29fc7069403e984950e74e0e89bd498fe8b6b5d621307d25c23d500398074fc"
     },
     {
       "path": "studies/brilliant-selective-2026-11-06/figures/render.py",
-      "bytes": 1774,
-      "sha256": "61fd465f234b9dc17a78174b7a2f17e4e7578f7f4ec3d1bb6e5ef69b6b4eabde"
+      "bytes": 2320,
+      "sha256": "2519dfe3251e04f48803fb1d4d8b9147a600835dde658673174d165e7743ec4e"
     },
     {
       "path": "studies/brilliant-selective-2026-11-06/reference/native/package.json",

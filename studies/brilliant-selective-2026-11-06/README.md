@@ -1,8 +1,8 @@
-# Updated Mute Selective: exact algorithm and reproduction
+# Mute Selective: exact algorithm and reproduction
 
 [Read the report](REPORT.md) · [Methods](METHODS.md) · [Download all seven accounts](data/seven-accounts-last-12-months-chesscom-brilliants.pgn)
 
-This is the frozen 128-tree selective forest, recipe `r009`, cutoff **0.83**. Model SHA-256: `1a7150fbe52f440922d94d3ae2af337383d63f370b52d0379aeee22d581d056c`. [Native source and weights](reference/native/ui/analyse/src/) are published unchanged. The active complete-confirmation scheduler is `noSweatFullReview285.ts` in the archived native reference, not the unused older `selective-native/noSweatFullReview.ts` copy.
+Mute Selective uses a trained 128-tree forest with a **0.83** cutoff in each completed engine window. Model SHA-256: `1a7150fbe52f440922d94d3ae2af337383d63f370b52d0379aeee22d581d056c`. [Native source and weights](reference/native/ui/analyse/src/) are published unchanged. Full-game confirmation preserves the preceding, before-move and after-move positions when available. The source mapping is documented in [Methods](METHODS.md).
 
 ## Award rule
 
@@ -44,6 +44,6 @@ Archives contain the complete search recipes/scout/promoted results, every fold 
 
 Saved-feature reproduction needs no dependencies. Retraining uses the archived `prepare.py`, `fit_worker.py`, `choose.py`, `MANIFEST.json`, `CASES.json`, `DATA.npz`, and pinned `capacity-tree.py`; original NumPy/scikit-learn/threadpoolctl versions and seeds are recorded. Full native replay additionally needs the pinned chessops/badrap sources, build tools, engine assets, and the original Node 24 environment. Original inputs and outcomes are included so the evidence can be audited without rerunning thousands of engine searches. Publication path changes are recorded separately from unchanged scientific values; original freeze hashes identify original source bytes.
 
-## Engine domain and release status
+## Engine settings
 
-The fresh test used **Stockfish 19 smallnet (1 MB), native Fast: depth 12 / 500 ms initial searches, depth 14 / 500 ms confirmation, one thread, 16 MB hash, at most six confirmation searches per variant per game**. Full PGN history and both colors’ positions are preserved. Results establish behavior under these settings, not every browser, engine, budget, or player. Mute Dev controls release; this research publication does not deploy the model.
+The fresh test used **Stockfish 19 smallnet (1 MB), native Fast: depth 12 / 500 ms initial searches, depth 14 / 500 ms confirmation, one thread, 16 MB hash, at most six confirmation searches per variant per game**. Full PGN history and both colors’ positions are preserved. Results establish behavior under these settings, not every browser, engine, budget, or player. App release information belongs in the [Mute Chess repository](https://github.com/Dash1971/mute-chess).

@@ -1,77 +1,47 @@
 # Open Brilly Finder
 
-Open research, code, models, and labeled chess data for **Chess.com-style Brilliant move classification**, from [Mute Chess](https://github.com/Dash1971/mute-chess).
+**An open classifier that recognizes more than 60% of Chess.com’s Brilliant moves in our test on unseen games.**
 
-**Recommendation: the updated Mute Selective model, with complete confirmation.** A small model trained on 6,293 labeled moves runs locally in the browser as ordinary JavaScript, alongside chess rules. It stays fixed during play; no neural network or remote AI service is needed. Mute Dev controls release—publication here does not deploy it.
+Brilliant badges make finding a great chess idea more fun. We studied Chess.com’s labeled moves, started from En Croissant’s open-source rules, and developed **Mute Selective**: a small trained model combined with checks for move quality and a real piece offer.
 
-## New-account test: 1,000 games
+## Results at a glance
 
-On the same 1,234 Chess.com Brilliants and 30,423 other Witty_Alien moves:
+![Mute Selective: 62.7% of reference Brilliants recognized; 95.3% of awarded badges match Chess.com.](studies/brilliant-selective-2026-11-06/figures/fresh-results.png)
 
-| Version | Brilliants recognized | Extra awards |
-|---|---:|---:|
-| Older Mute Selective | 721 / 1,234 | 57 / 30,423 |
-| Older forest + complete confirmation | 725 / 1,234 | 58 / 30,423 |
-| **Updated Mute Selective** | **774 / 1,234** | **38 / 30,423** |
+In **1,000 Witty_Alien games excluded from training**, Mute Selective recognized **774 of 1,234 Chess.com Brilliants (62.7%)**. It awarded 812 Brilliant badges; **774 matched Chess.com (95.3%)**, and 38 were extra awards across 30,423 other moves.
 
-The update finds **49 more genuine Brilliants and gives 20 fewer extra badges overall** than the older forest with complete confirmation. It recognizes **62.7%** of Chess.com’s Brilliants; **95.3% of its own badges match**. The remaining **4.7% wrong share** still exceeds our goal of fewer than 1% wrong awards. More generous settings found more Brilliants but produced too many wrong badges to choose them.
+The reference is Chess.com’s complete Brilliant gallery for that player. These results cover the player’s own moves in gallery-listed games, using Mute Chess’s default Stockfish 19 Fast analysis. They are a measured result on this sample, rather than a promise for every player or setting.
 
-![Fixed-model test results](studies/brilliant-selective-2026-11-06/figures/fresh-results.png)
+**[Read the illustrated research report →](studies/brilliant-selective-2026-11-06/REPORT.md)**
 
-[Readable report](studies/brilliant-selective-2026-11-06/REPORT.md) · [Exact algorithm and frozen model](studies/brilliant-selective-2026-11-06/README.md) · [Methods and limitations](studies/brilliant-selective-2026-11-06/METHODS.md)
+## How it works
 
-These are gallery-represented games from one held-out account, not a site-wide error estimate. Development covers 3,473 games from six other accounts, plus two separate owner examples. Model and cutoff were fixed before this account’s results. All recipes, failures, inputs, raw decisions, PGNs, labels, and evidence are retained in [the complete study archive](studies/brilliant-selective-2026-11-06/SOURCE-MANIFEST.json).
+Stockfish checks whether a move is sound. Legal chess analysis checks for a genuine piece offer. A small decision-tree forest, trained on **6,293 labeled moves**, then recognizes patterns involving material, attacks, recovery and alternatives. Two completed engine checks must support the award.
 
-## Download the seven-account games
+The model runs **locally in the browser as ordinary JavaScript**. Training happens ahead of time; it does not learn during play or call a remote AI service. The code and trained weights are open.
 
-**7,019 games · 8,298 Brilliant annotations · 522,053 mainline plies**, with clocks and full history. Verification grades and source memberships remain explicit.
+<a id="comparison-wintrchess-knights-eye-and-our-experimental-code"></a>
 
-[Download PGN](studies/brilliant-selective-2026-11-06/data/seven-accounts-last-12-months-chesscom-brilliants.pgn) · [Move labels CSV](studies/brilliant-selective-2026-11-06/data/seven-account-labels.csv) · [Source counts](studies/brilliant-selective-2026-11-06/data/seven-account-source-counts.json)
+En Croissant, WintrChess and Knight’s Eye provide rule-based approaches to sacrifice classification. Mute Selective combines chess checks with patterns learned from Chess.com’s examples. [Our report explains the comparison](studies/brilliant-selective-2026-11-06/REPORT.md#how-this-compares-with-other-projects).
 
-## Recount or use the saved model
+## Get the data and code
 
-Python 3 standard library is sufficient:
+The annotated collection contains **7,019 games and 8,298 Brilliants across seven accounts**, including Witty_Alien and MagnusCarlsen. It preserves full games, clocks, source links and captured categories. Witty’s uncaptured categories remain marked uncategorized.
 
-```sh
-python3 studies/brilliant-selective-2026-11-06/reproduce.py
-python3 tools/infer_saved_features.py --model selective20261106 --case-key 1006812690:48
-```
+- **[Download the combined PGN](https://raw.githubusercontent.com/Dash1971/open-brilly-finder/main/studies/brilliant-selective-2026-11-06/data/seven-accounts-last-12-months-chesscom-brilliants.pgn)**
+- [Move labels (CSV)](studies/brilliant-selective-2026-11-06/data/seven-account-labels.csv) and [account totals](studies/brilliant-selective-2026-11-06/data/seven-account-source-counts.json)
+- [Exact algorithm, model and reproduction commands](studies/brilliant-selective-2026-11-06/README.md)
+- [Methods, test boundaries and limitations](studies/brilliant-selective-2026-11-06/METHODS.md)
+- [Complete research evidence](docs/RESEARCH-INDEX.md)
 
-This recounts saved decisions and runs saved-feature inference. It is not a FEN-only classifier: fresh classification also needs legal-board and engine evidence. The native test used **SF19 smallnet 1 MB, Fast depth 12 / 500 ms, depth-14 / 500-ms confirmation, one thread, 16 MB hash**, with a six-search confirmation cap per version per game.
+## What comes next
 
-## Historical comparisons
+Recognize more genuine Brilliants while keeping false awards low: improve examples and position features, cover more sacrifice types, and test on more players and unseen games. More permissive methods found additional Brilliants but produced too many wrong badges to choose them.
 
-Earlier explicit-label tests compared the older selective model with En Croissant: 112 of 200 Brilliants versus 53 of 200, both with three extra awards across 400 selected moves. That is a different model and sample. **En Croissant was not measured in the new Witty comparison.** [Historical report](studies/brilliant-moves/REPORT.md) · [Expanded-data studies](studies/brilliant-training-2026-11-03/README.md) · [Neural experiment](studies/brilliant-neural-2026-11-05/REPORT.md) · [Full research index](docs/RESEARCH-INDEX.md)
+This repository publishes the research and implementation used to inform [Mute Chess](https://github.com/Dash1971/mute-chess). App releases are managed there.
 
-## Historical offline quickstart
+## Credits
 
-Python 3.10+ and its standard library are sufficient:
+We build on and credit [En Croissant](https://github.com/franciscoBSalgueiro/en-croissant), [WintrChess](https://github.com/WintrCat/wintrchess-lib), [Knight’s Eye](https://github.com/knights-eye-chess/move-classifier) and the other projects in our [comparison notes](studies/brilliant-selective-2026-11-06/COMPARISONS.md). This project is independent of Chess.com and those projects; Chess.com’s full classification formula is private.
 
-```sh
-git clone https://github.com/Dash1971/open-brilly-finder.git
-cd open-brilly-finder
-python3 tools/reproduce_results.py
-python3 tools/reproduce_results.py --verify-forest
-python3 tools/infer_saved_features.py --case-key 183200302081:135
-```
-
-The first command recomputes the external comparison from saved decisions. The second **actually runs the five archived held-out forests on all 3,724 saved feature cases**, checking every score against the recorded predictions. The third runs the original 848-case fitted forest on one saved feature example. It is inference, not a new accuracy test. [Commands, model roles and dependencies](tools/README.md) · [Recorded reproduction check](docs/REPRODUCTION-CHECK.json)
-
-This is a research codebase, not a finished FEN-only library. Classification uses engine evidence, legal-board analysis and move history. The [portable original feature extractor](studies/brilliant-moves/reference/v5/README.md) and [native TypeScript implementation](studies/brilliant-moves/reference/v5/native/noSweatBrilliantForest.ts) are included. New engine collection requires compatible Stockfish and the documented budgets. Historical experimental scripts retain original machine paths; their presence is not a claim that every archival script runs unchanged after cloning.
-
-## Repository map
-
-- [`studies/brilliant-moves/`](studies/brilliant-moves/): production-model family, readable/native code, frozen model, historical independent tests and original En Croissant comparisons.
-- [`studies/brilliant-training-2026-11-03/`](studies/brilliant-training-2026-11-03/): expanded corpus, PGNs, 3,724-case feature dataset, saved engine evidence, training experiments and reserved-game evaluation.
-- [`studies/`](studies/): all subsequent bounded studies, their code, inputs, protocols, predictions and failed candidates, including the Ne5 queen-offer investigation.
-- [`archive/research/`](archive/research/): earlier working research, including additional experiments, source snapshots and data. It preserves historical paths and superseded interpretations; use the index and current summary to distinguish final conclusions.
-- [`tools/`](tools/): small portable offline reproduction and inference entry points.
-- [`SOURCE-MANIFEST.json`](SOURCE-MANIFEST.json): original relative paths, byte hashes, file sizes and explicit exclusions. Scientific results are copied without rewriting their original freeze hashes.
-
-[Data provenance and limits](docs/DATA.md) · [Research index](docs/RESEARCH-INDEX.md) · [Attribution](THIRD_PARTY.md)
-
-## Related work and attribution
-
-We studied and credit [En Croissant](https://github.com/franciscoBSalgueiro/en-croissant), [WintrChess](https://github.com/WintrCat/wintrchess-lib), [Knight's Eye](https://github.com/knights-eye-chess/move-classifier), [Chess-Review](https://github.com/T-Julsgaard/Chess-Review), [Brilliant-Chess](https://github.com/wdeloo/Brilliant-Chess), and [Felix's chess-game-review](https://github.com/FelixYUFENGSU/chess-game-review). Their policies and test suites provided useful comparisons, not proof that Chess.com's private algorithm has been reverse engineered. The [source review](studies/brilliant-external-repos-2026-11-04/REPORT.txt) records specific mechanisms, limitations and pinned versions.
-
-The original work comes from [Mute Chess](https://github.com/Dash1971/mute-chess) and [Mute Chess Research](https://github.com/Dash1971/mute-chess-research). Code and research retain **AGPL-3.0-only** terms where applicable; third-party code, images and game/evidence material retain their own provenance and notices. See [LICENSE](LICENSE), [THIRD_PARTY.md](THIRD_PARTY.md) and each study's attribution. This project is independent of Chess.com, Lichess and the compared projects. Research and repository preparation used OpenAI Codex assistance.
+[License](LICENSE) · [Third-party attribution](THIRD_PARTY.md) · [Mute Chess Research](https://github.com/Dash1971/mute-chess-research). Research and documentation used OpenAI Codex assistance.
