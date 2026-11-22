@@ -1,3 +1,5 @@
+> **Archived.** The selected model is now Mute Exchange: see the [research index](RESEARCH-INDEX.md). The text below is preserved as written when Mute Selective was current.
+
 # Current research
 
 [Updated Mute Selective: full search and fresh 1,000-game test](../studies/brilliant-selective-2026-11-06/REPORT.md) · [Complete seven-account PGN](../studies/brilliant-selective-2026-11-06/data/seven-accounts-last-12-months-chesscom-brilliants.pgn) · [Source archive manifest](../studies/brilliant-selective-2026-11-06/SOURCE-MANIFEST.json)
