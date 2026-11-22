@@ -31,29 +31,41 @@ R={(r['game_id'],r['ply']):r for r in pickle.load(open('moves.pkl','rb'))}; Ro={
 cc,_=ccjoin.build('moves.pkl'); ccp,_=ccjoin.build('opp/moves.pkl')
 P=pickle.load(open('v6-preds.pkl','rb')); score=dict(zip(P['index'],P['ps'])); cut=P['ths']['medium']
 W={(w['game_id'],int(w['ply'])):w for w in csv.DictReader(gzip.open(D+'witty-all-own-move-outcomes.csv.gz','rt')) if w['primary']=='True'}
+test_games={k[0] for k in score}
+test_keys={' '.join(R[k]['fen_before'].split()[:4])+R[k]['uci'] for k in score}
+nat=pd.read_pickle('native_df.pkl').set_index(['game_id','ply']); dev6=pickle.load(open('native_dev6_scores.pkl','rb')); cuts1000=json.load(open('native_results_1000.json'))
 with gzip.open(OUT+'data/candidates.csv.gz','wt',newline='') as f:
-    w=csv.writer(f); w.writerow(['game_id','ply','side','account','san','uci','fen_before','gallery_brilliant','chesscom_review_class','role','exchange_score']+cols)
+    w=csv.writer(f); w.writerow(['game_id','ply','side','account','san','uci','fen_before','gallery_brilliant','chesscom_review_class','role','training_label','exchange_score_research_evidence']+cols)
     for X,RR,C,side in ((Xo,R,cc,'gallery account'),(Xp,Ro,ccp,'opponent')):
         for k,row in zip(X.index,X.values):
             r=RR[k]; rc=C.cls.get(k,'') if k in C.index else ''
             if side=='opponent' and not rc: continue
-            role='held-out test' if k in score else 'training'
-            w.writerow([k[0],k[1],side,r['account'] if side=='gallery account' else '',r['san'],r['uci'],r['fen_before'],int(r['label']) if side=='gallery account' else '',rc,role,f"{score[k]:.6f}" if k in score else '']+[('%g'%v) for v in row])
-# 3. held-out outcomes
+            pk=' '.join(r['fen_before'].split()[:4])+r['uci']
+            if side=='gallery account':
+                role='held-out test' if k in score else ('excluded: test game' if k[0] in test_games else ('excluded: position also in test' if pk in test_keys else 'training'))
+                tl=(1 if rc=='brilliant' else 0) if rc else int(r['label'])
+            else:
+                role='excluded: test game' if k[0] in test_games else 'training'; tl=1 if rc=='brilliant' else 0
+            w.writerow([k[0],k[1],side,r['account'] if side=='gallery account' else '',r['san'],r['uci'],r['fen_before'],int(r['label']) if side=='gallery account' else '',rc,role,tl if role=='training' else '',f"{score[k]:.6f}" if k in score else '']+[('%g'%v) for v in row])
+# 3. held-out outcomes: decisions on native Stockfish 19 Fast evidence, with the research-evidence score alongside
 with open(OUT+'data/heldout-outcomes.csv','w',newline='') as f:
-    w=csv.writer(f); w.writerow(['game_id','ply','san','uci','gallery_brilliant','chesscom_review_today','mute_selective','exchange_score','exchange_brilliant'])
-    for k,p,g,rv,pu in zip(P['index'],P['ps'],P['gal'],P['rev'],P['pub']):
-        w.writerow([k[0],k[1],R[k]['san'],R[k]['uci'],int(g),cc.cls.get(k,''),int(pu),f"{p:.6f}",int(p>=cut)])
-    # gallery Brilliants in these games that are not candidates count as misses
-    tg={k[0] for k in P['index']}; have=set(P['index'])
-    for k,wr in W.items():
-        if k[0] in tg and k not in have and (wr['truth']=='True' or wr['selective']=='!!'):
-            w.writerow([k[0],k[1],wr['san'],wr['uci'],int(wr['truth']=='True'),cc.cls.get(k,'') if k in cc.index else '',int(wr['selective']=='!!'),'',0])
+    w=csv.writer(f); w.writerow(['game_id','ply','san','uci','gallery_brilliant','chesscom_review_today','mute_selective','exchange_score','exchange_brilliant','exchange_score_research_evidence','exchange_brilliant_research_evidence'])
+    for k,r in nat[nat.index.get_level_values(0).isin(test_games)].iterrows():
+        if not (r.s_cur>0 or r.gallery or r.selective or k in score): continue
+        ps=score.get(k)
+        w.writerow([k[0],k[1],r.san,r.uci,int(r.gallery),cc.cls.get(k,'') if k in cc.index else '',int(r.selective),f"{r.s_cur:.6f}" if r.s_cur>0 else '',int(r.s_cur>=cut),f"{ps:.6f}" if ps is not None else '',int(ps>=cut) if ps is not None else 0])
+# 3b. the whole 1,000-game sample on native evidence, with the model trained on the six development accounts only
+with gzip.open(OUT+'data/native-1000-outcomes.csv.gz','wt',newline='') as f:
+    w=csv.writer(f); w.writerow(['game_id','ply','san','uci','gallery_brilliant','mute_selective','in_heldout_337','exchange_score_six_account_model','exchange_score_published_model'])
+    for k,r in nat.iterrows():
+        d=dev6.get(k,0.0)
+        if not (d>0 or r.s_cur>0 or r.gallery or r.selective): continue
+        w.writerow([k[0],k[1],r.san,r.uci,int(r.gallery),int(r.selective),int(k[0] in test_games),f"{d:.6f}" if d>0 else '',f"{r.s_cur:.6f}" if r.s_cur>0 else ''])
 # 4. model, fixtures, reference code
 m=json.load(open('v6-model.json')); m['name']='mute-brilliant-v8'; json.dump(m,open(OUT+'model/mute-exchange-model.json','w'),separators=(',',':'))
-shutil.copy('ts/v6-fixtures.json',OUT+'model/parity-fixtures.json')
+shutil.copy('ts/v6-fixtures-full.json',OUT+'model/parity-fixtures.json')
 shutil.copy('lila/ui/analyse/src/noSweatBrilliantExchange.ts',OUT+'model/noSweatBrilliantExchange.ts')
-for s in ('extract_moves.py','engine_pass.py','features.py','features2.py','features4.py','features5.py','features6.py','lines.py','v6ref.py','v6build.py','v6train.py','retrain.py','pb.py','ccparse.py','ccjoin.py','deep.py','m2.py','study_stats.py','study_export.py','recv.py'):
+for s in ('extract_moves.py','engine_pass.py','features.py','features2.py','features4.py','features5.py','features6.py','lines.py','v6ref.py','v6build.py','v6train.py','retrain.py','pb.py','ccparse.py','ccjoin.py','deep.py','m2.py','study_stats.py','study_export.py','recv.py','native_replay.py','native_eval.py','native_dev6.py','nativeReplay.ts','study_figures.py','v6fixtures_full.py'):
     shutil.copy(s,OUT+'code/'+s)
 st=json.load(open('study_stats.json')); st.pop('curve',None); json.dump(st,open(OUT+'data/study-stats.json','w'),indent=1)
 print('sha',hashlib.sha256(open(OUT+'model/mute-exchange-model.json','rb').read()).hexdigest())

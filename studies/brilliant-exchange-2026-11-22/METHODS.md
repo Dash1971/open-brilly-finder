@@ -46,21 +46,40 @@ scikit-learn `HistGradientBoostingClassifier`: 400 iterations, learning rate 0.0
 
 ## Test
 
-337 Witty_Alien games from the previous study's fixed 1,000-game sample: the ones for which we obtained a review. Positives are the 416 gallery Brilliants on the account's own moves, using that study's primary mask. Mute Selective's decisions on the same moves are that study's published native Stockfish 19 Fast replay outcomes.
+337 Witty_Alien games from the previous study's fixed 1,000-game sample: the ones for which we obtained a review. Positives are the 416 gallery Brilliants on the account's own moves, using that study's primary mask.
+
+**Test evidence is native.** The previous study archived, for every position in all 1,000 games, the review snapshot Mute Chess's engine produced: Stockfish 19 small network, depth 12, 500 ms, two root lines, plus the previous completed iteration. Our reader reproduces that study's 774 / 38 for Mute Selective from the archive exactly. We computed Mute Exchange's features from those snapshots and applied the published model and cutoff unchanged. We also ran the app's actual `classify()` with the new policy over all 31,657 scored moves: no errors, and every Brilliant decision equal to the Python reference.
+
+This is a replay of saved engine output, not fresh searches and not a browser session. The model was fitted on Stockfish 18 research evidence and never saw Stockfish 19 evidence.
 
 | | Awards | Found | Not in gallery | Also not Brilliant in today's review |
 | --- | ---: | ---: | ---: | ---: |
 | Mute Selective | 274 | 259 | 15 | 12 |
-| Mute Exchange, cutoff 0.8193 | 316 | 298 | 18 | 11 |
-| Mute Exchange, cutoff 0.8841 (97% training precision) | 277 | 265 | 12 | 6 |
-| Mute Exchange, cutoff 0.7207 (93%) | 363 | 331 | 32 | 19 |
-| Mute Exchange, cutoff 0.9495 (98.5%) | 182 | 181 | 1 | 0 |
+| **Mute Exchange, cutoff 0.8193** | **319** | **300** | **19** | **12** |
+| Mute Exchange, cutoff 0.8841 (97% training precision) | 271 | 261 | 10 | 5 |
+| Mute Exchange, cutoff 0.7207 (93%) | 354 | 324 | 30 | 19 |
+| Mute Exchange, cutoff 0.9495 (98.5%) | 183 | 180 | 3 | 1 |
 
-The comparison is not like for like on the engine: Mute Selective's column comes from the site's engine, Mute Exchange's from research Stockfish 18 evidence.
+Requiring the previous completed iteration to agree as well gives 312 / 295 / 17 / 10 at the published cutoff.
+
+On the Stockfish 18 research evidence the same model and cutoff give 316 / 298 / 18 / 11. 289 awards are common to both; the two sets of scores correlate at 0.975.
+
+### The previous study's full protocol
+
+To match the earlier test exactly we also fitted a model on the six development accounts alone: 17,575 candidates, 3,918 Brilliant, no Witty_Alien move of any kind, same learner and settings. Its cutoff for 95.3% grouped cross-validation precision is 0.8549. Scored on all 1,000 games with the native evidence:
+
+| 1,000 games, 1,234 gallery Brilliants | Awards | Found | Not in gallery |
+| --- | ---: | ---: | ---: |
+| Mute Selective | 812 | 774 | 38 |
+| Mute Exchange, six-account model, cutoff 0.8549 | 934 | 876 | 58 |
+| Mute Exchange, six-account model, cutoff 0.9104 (97%) | 800 | 771 | 29 |
+| Mute Exchange, six-account model, read at 38 false | | 820 | 38 |
+
+The last row reads the cutoff from the test and is a ranking comparison, not a frozen result. Its precision at the frozen medium cutoff is 93.8% against a 95.3% target: this account is harder than the development accounts.
 
 ### Variants we measured
 
-Same test, same training rows, different evidence. Each cell is found / not in gallery / also rejected today.
+Same test, same training rows, different evidence, all on Stockfish 18 research searches. Each cell is found / not in gallery / also rejected today.
 
 | Evidence | Strict | Medium |
 | --- | --- | --- |
@@ -91,7 +110,7 @@ Chess.com's evaluations against Stockfish 18's on 4,251 candidates: correlation 
 
 ## Limits
 
-- No replay on Mute Chess's own engine (Stockfish 19 small network, depth 12, 500 ms) has been run.
+- Training evidence is Stockfish 18; test evidence is saved Stockfish 19 Fast output. No model has been trained on native evidence, no fresh native searches were run, and nothing was tested in a browser.
 - All seven accounts are titled players. Chess.com states that it is more generous to lower-rated players.
 - Feature design used aggregate statistics from all seven accounts, including the test account, and other Witty_Alien games are in the training set. The earlier study's test was independent of its model in a way this one is not.
 - The test is 337 games from one account. Moves within a game are correlated.

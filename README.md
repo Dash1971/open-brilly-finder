@@ -6,13 +6,13 @@ Brilliant badges make finding a great chess idea more fun. We collected Chess.co
 
 ## Results at a glance
 
-![Mute Exchange finds 298 of 416 Brilliants against 259 for Mute Selective, with 18 and 15 badges outside the gallery.](studies/brilliant-exchange-2026-11-22/figures/results.png)
+![Mute Exchange finds 300 of 416 Brilliants against 259 for Mute Selective, with 19 and 15 badges outside the gallery.](studies/brilliant-exchange-2026-11-22/figures/results.png)
 
-In **337 Witty_Alien games held out from training**, Mute Exchange recognized **298 of 416 Chess.com Brilliants (71.6%)**. It awarded 316 badges; **298 matched Chess.com's gallery (94.3%)**. Our previous classifier, Mute Selective, recognized 259 (62.3%) in the same games.
+In **337 Witty_Alien games held out from training**, Mute Exchange recognized **300 of 416 Chess.com Brilliants (72.1%)**. It awarded 319 badges; **300 matched Chess.com's gallery (94.0%)**. Our previous classifier, Mute Selective, recognized 259 (62.3%) in the same games.
 
-Of the 18 badges outside the gallery, 7 are Brilliants when Chess.com reviews those games today.
+Of the 19 badges outside the gallery, 7 are Brilliants when Chess.com reviews those games today.
 
-These results use research engine settings close to Mute Chess's Fast analysis, for one titled player's games. They are a measured result on this sample, not a promise for every player or setting.
+Both classifiers were scored on Mute Chess's own Stockfish 19 Fast review output for these games. This is a measured result for one titled player's games, not a promise for every player or setting.
 
 **[Read the illustrated research report →](studies/brilliant-exchange-2026-11-22/REPORT.md)**
 
@@ -41,7 +41,7 @@ The model is a set of small decision trees. It runs **locally in the browser as 
 
 ## What comes next
 
-Learn from lower-rated players, where Chess.com is more generous and we have no data yet. Find a cheap way to predict Chess.com's preferred move. Replay the test on Mute Chess's own engine.
+Learn from lower-rated players, where Chess.com is more generous and we have no data yet. Find a cheap way to predict Chess.com's preferred move. Train on Mute Chess's own engine output as well as testing on it.
 
 This repository publishes the research and implementation used to inform [Mute Chess](https://github.com/Dash1971/mute-chess). App releases are managed there.
 

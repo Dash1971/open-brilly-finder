@@ -183,6 +183,162 @@
    {
     "name": "v6 loose (training precision 93.0%)",
     "cutoff": 0.7206616707791499,
+    "awards": 354,
+    "found_gallery": 324,
+    "false_gallery": 30,
+    "found_review": 330,
+    "false_review": 24,
+    "false_both": 19
+   },
+   {
+    "name": "v6 medium (training precision 95.3%)",
+    "cutoff": 0.8193002847777424,
+    "awards": 319,
+    "found_gallery": 300,
+    "false_gallery": 19,
+    "found_review": 304,
+    "false_review": 15,
+    "false_both": 12
+   },
+   {
+    "name": "v6 strict (training precision 97.0%)",
+    "cutoff": 0.884087894158697,
+    "awards": 271,
+    "found_gallery": 261,
+    "false_gallery": 10,
+    "found_review": 264,
+    "false_review": 7,
+    "false_both": 5
+   },
+   {
+    "name": "v6 very strict (training precision 98.5%)",
+    "cutoff": 0.949471678024081,
+    "awards": 183,
+    "found_gallery": 180,
+    "false_gallery": 3,
+    "found_review": 181,
+    "false_review": 2,
+    "false_both": 1
+   }
+  ],
+  "dash": [
+   {
+    "game": "4Qh1Qi9C",
+    "ply": 46,
+    "san": "Rxd2+",
+    "score": 0.004434159990844952,
+    "medium": false
+   },
+   {
+    "game": "DEFZuyyq",
+    "ply": 27,
+    "san": "Bxh6",
+    "score": 0.9482999838615015,
+    "medium": true
+   },
+   {
+    "game": "EKJK1jEv",
+    "ply": 33,
+    "san": "Bxh6",
+    "score": 0.0012552056629222754,
+    "medium": false
+   },
+   {
+    "game": "bJPg3bse",
+    "ply": 24,
+    "san": "Bxh2+",
+    "score": 0.5945286115028077,
+    "medium": false
+   },
+   {
+    "game": "l2M7NFx8",
+    "ply": 24,
+    "san": "Bxh3",
+    "score": 0.004863692363546384,
+    "medium": false
+   },
+   {
+    "game": "tjxdTRho",
+    "ply": 11,
+    "san": "Ne5",
+    "score": 0.916006072483956,
+    "medium": true
+   }
+  ],
+  "cutoffs": {
+   "loose": 0.7206616707791499,
+   "medium": 0.8193002847777424,
+   "strict": 0.884087894158697,
+   "very strict": 0.949471678024081
+  },
+  "evidence": "native Stockfish 19 Fast review output (archived)"
+ },
+ "ladder_witty1000_at_38_false": {
+  "Mute Selective (published)": 774,
+  "Independent rebuild: simple sacrifice test + engine evidence": 774,
+  "+ what happens if the piece is taken": 835,
+  "+ whether the offer was already standing": 854,
+  "+ what the opponent just did": 869
+ },
+ "variants_heldout337": {
+  "full evidence (accept/decline searches, 3 lines), deep search": {
+   "strict": [
+    283,
+    13,
+    6
+   ],
+   "medium": [
+    324,
+    17,
+    9
+   ]
+  },
+  "full evidence, depth 12": {
+   "strict": [
+    265,
+    9,
+    5
+   ],
+   "medium": [
+    311,
+    18,
+    10
+   ]
+  },
+  "app-compatible evidence, depth 12 (shipped)": {
+   "strict": [
+    265,
+    12,
+    6
+   ],
+   "medium": [
+    298,
+    18,
+    11
+   ]
+  }
+ },
+ "model_research_evidence": {
+  "depth": "12",
+  "test_games": 337,
+  "gallery_positives": 416,
+  "review_positives": 440,
+  "train_rows": 33037,
+  "train_positives": 7806,
+  "rows": [
+   {
+    "name": "published Mute Selective",
+    "cutoff": null,
+    "awards": 274,
+    "found_gallery": 259,
+    "false_gallery": 15,
+    "found_review": 260,
+    "false_review": 14,
+    "false_both": 12
+   },
+   {
+    "name": "v6 loose (training precision 93.0%)",
+    "cutoff": 0.7206616707791499,
     "awards": 363,
     "found_gallery": 331,
     "false_gallery": 32,
@@ -272,49 +428,71 @@
    "very strict": 0.949471678024081
   }
  },
- "ladder_witty1000_at_38_false": {
-  "Mute Selective (published)": 774,
-  "Independent rebuild: simple sacrifice test + engine evidence": 774,
-  "+ what happens if the piece is taken": 835,
-  "+ whether the offer was already standing": 854,
-  "+ what the opponent just did": 869
+ "native_337": {
+  "Mute Selective (native)": {
+   "awards": 274,
+   "found": 259,
+   "false_vs_gallery": 15,
+   "false_by_both": 12,
+   "gallery": 416
+  },
+  "Mute Exchange, shipped model + cutoff, native evidence": {
+   "awards": 319,
+   "found": 300,
+   "false_vs_gallery": 19,
+   "false_by_both": 12,
+   "gallery": 416
+  },
+  "  ... also requiring the previous iteration to agree": {
+   "awards": 312,
+   "found": 295,
+   "false_vs_gallery": 17,
+   "false_by_both": 10,
+   "gallery": 416
+  },
+  "Mute Exchange on the SF18 research evidence (as published)": {
+   "awards": 316,
+   "found": 298,
+   "false_vs_gallery": 18,
+   "false_by_both": 11,
+   "gallery": 416
+  }
  },
- "variants_heldout337": {
-  "full evidence (accept/decline searches, 3 lines), deep search": {
-   "strict": [
-    283,
-    13,
-    6
-   ],
-   "medium": [
-    324,
-    17,
-    9
-   ]
-  },
-  "full evidence, depth 12": {
-   "strict": [
-    265,
-    9,
-    5
-   ],
-   "medium": [
-    311,
-    18,
-    10
-   ]
-  },
-  "app-compatible evidence, depth 12 (shipped)": {
-   "strict": [
-    265,
-    12,
-    6
-   ],
-   "medium": [
-    298,
-    18,
-    11
-   ]
+ "native_1000_dev6_only": {
+  "train_rows": 17575,
+  "train_brilliants": 3918,
+  "gallery": 1234,
+  "cut_medium": 0.8549045486915725,
+  "cut_strict": 0.9104123129470945,
+  "results": {
+   "Mute Selective (native, published)": {
+    "awards": 812,
+    "found": 774,
+    "false": 38
+   },
+   "Mute Exchange, frozen medium cutoff 0.855": {
+    "awards": 934,
+    "found": 876,
+    "false": 58
+   },
+   "Mute Exchange, frozen strict cutoff 0.910": {
+    "awards": 800,
+    "found": 771,
+    "false": 29
+   },
+   "at_20_false": 692,
+   "at_38_false": 820,
+   "at_57_false": 866
+  }
+ },
+ "native_typescript_replay": {
+  "moves": 31657,
+  "errors": 0,
+  "mismatch_vs_python": 0,
+  "heldout337": {
+   "awards": 319,
+   "found": 300,
+   "false": 19
   }
  }
 }

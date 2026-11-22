@@ -23,8 +23,9 @@ The score is a model output, not a calibrated probability.
 | [model/noSweatBrilliantExchange.ts](model/noSweatBrilliantExchange.ts) | The browser implementation (chessops), identical to the one proposed for Mute Chess |
 | [code/v6ref.py](code/v6ref.py) | Python reference for the same features (python-chess) |
 | [model/parity-fixtures.json](model/parity-fixtures.json) | 360 candidates: inputs, all 91 features, score |
-| [data/heldout-outcomes.csv](data/heldout-outcomes.csv) | Every scored move in the 337 test games, with both references and both classifiers |
-| [data/candidates.csv.gz](data/candidates.csv.gz) | 36,543 candidates with labels, role (training or held-out) and features |
+| [data/heldout-outcomes.csv](data/heldout-outcomes.csv) | Scored moves in the 337 test games: both references, Mute Selective, and Mute Exchange on native and on research evidence |
+| [data/native-1000-outcomes.csv.gz](data/native-1000-outcomes.csv.gz) | All 1,000 test games on native evidence, with the six-account model's score |
+| [data/candidates.csv.gz](data/candidates.csv.gz) | 36,543 candidates with labels, features and `role`: training, held-out test, or excluded |
 | [data/chesscom-review-moves.csv.gz](data/chesscom-review-moves.csv.gz) | Chess.com's class, evaluation and preferred move for 77,696 moves in 1,005 games |
 | [data/study-stats.json](data/study-stats.json) | Every count quoted in the report and methods |
 | [code/](code/) | The scripts that produced all of the above |
@@ -39,7 +40,9 @@ Python 3 standard library only, from the repository root:
 python3 studies/brilliant-exchange-2026-11-22/reproduce.py
 ```
 
-It checks the model hash, recounts the held-out table from `heldout-outcomes.csv`, and rescores all 360 parity cases from their saved features.
+It checks the model hash, the published split (33,037 training rows with 7,806 Brilliants, no game or position shared with the 337 held-out games), the held-out and 1,000-game tables, and rescores all 360 parity cases from their saved features.
+
+In `candidates.csv.gz`, only rows with role `training` were used to fit the model, with `training_label` as the target. `excluded: test game` rows are moves from the 337 held-out games (mostly opponents' moves); `excluded: position also in test` rows repeat a held-out position and move. `exchange_score_research_evidence` is filled for held-out rows only.
 
 ## Check the browser implementation
 
@@ -56,10 +59,14 @@ python v6build.py              # the 91 features at depth 12                    
 python v6train.py              # train, choose the cutoff, test, export the model
 ```
 
-`v6train.py` also needs the per-move review labels. The scripts read them from saved review captures, which are not published; [chesscom-review-moves.csv.gz](data/chesscom-review-moves.csv.gz) holds the same information. `candidates.csv.gz` already contains the finished feature table with labels and roles, so the model can be refitted from it directly without running an engine.
+`v6train.py` also needs the per-move review labels. The scripts read them from saved review captures, which are not published; [chesscom-review-moves.csv.gz](data/chesscom-review-moves.csv.gz) holds the same information. `candidates.csv.gz` already contains the finished feature table, so the model can be refitted from its `training` rows without running an engine.
+
+The native-evidence test is `native_replay.py`, `native_eval.py` and `native_dev6.py`, run after extracting archives 062 to 069 of the [previous study](../brilliant-selective-2026-11-06/README.md). `nativeReplay.ts` runs the app's own `classify()` over the same windows.
 
 Collecting reviews required a signed-in Chess.com account; `code/recv.py`, `pb.py` and `ccparse.py` are the receiver and decoder we used. Scripts are published as run, with their original relative paths.
 
 ## Engine settings
 
-Stockfish 18, one thread, 64 MB hash, hash cleared between positions, 200,000 nodes per search, read back at depth 12 with two root lines. These are research settings chosen to approximate Mute Chess's Fast review (Stockfish 19, depth 12, 500 ms). They are not that engine.
+**Training evidence:** Stockfish 18, one thread, 64 MB hash, hash cleared between positions, 200,000 nodes per search, read back at depth 12 with two root lines.
+
+**Test evidence:** Mute Chess's archived Fast review output for the 1,000 test games: Stockfish 19 small network, depth 12, 500 ms, two root lines.

@@ -47,7 +47,7 @@ sel, exc = rows["published Mute Selective"], rows["v6 medium (training precision
 total = S["model"]["gallery_positives"]
 fig, (a, b) = plt.subplots(1, 2, figsize=(11, 3.7), gridspec_kw={"width_ratios": [1.5, 1], "wspace": 0.3})
 title(fig, "Mute Exchange finds more Brilliants, with about the same number of wrong badges",
-      f"{S['model']['test_games']} Witty_Alien games held out from training. {total} Brilliants in Chess.com's gallery.", y=1.06)
+      f"{S['model']['test_games']} Witty_Alien games held out from training, scored on Mute Chess's own Stockfish 19 Fast review output. {total} gallery Brilliants.", y=1.06)
 a.set_xlim(0, total); a.set_ylim(-0.7, 1.7)
 for y, r, col, name in ((1, exc, BLUE, "Mute Exchange (new)"), (0, sel, ORANGE, "Mute Selective (current)")):
     bar(a, y, 0, total, 0.42, TRACK); bar(a, y, 0, r["found_gallery"], 0.42, col)
@@ -128,7 +128,7 @@ save(fig, "engine-depth.png")
 # 6. trade-off curve ----------------------------------------------------------------------------------
 cv = S["curve"]; cut = S["model"]["cutoffs"]
 fig, ax = plt.subplots(figsize=(8.5, 4.4))
-title(fig, "Choosing the cutoff", "Each point on the line is a possible cutoff for Mute Exchange on the 337 held-out games.", y=1.05)
+title(fig, "Choosing the cutoff", "Each point on the line is a possible cutoff for Mute Exchange on the 337 held-out games (native Stockfish 19 Fast evidence).", y=1.05)
 xs, ys = [0], [0]
 for f_, fa in zip(cv["found"], cv["false_gallery"]):
     xs.append(fa); ys.append(f_)

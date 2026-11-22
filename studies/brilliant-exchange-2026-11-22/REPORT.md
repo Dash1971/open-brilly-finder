@@ -2,11 +2,11 @@
 
 ## Abstract
 
-**Mute Exchange recognizes 71.6% of Chess.com's Brilliant moves in games it never trained on, up from 62.3% for our previous classifier on the same games. 94.3% of the badges it awards match Chess.com's gallery.**
+**Mute Exchange recognizes 72.1% of Chess.com's Brilliant moves in games it never trained on, up from 62.3% for our previous classifier on the same games. 94.0% of the badges it awards match Chess.com's gallery.** Both classifiers were scored on the same engine output: Mute Chess's own Stockfish 19 Fast review.
 
 We got there by changing what we learn from. Earlier work started from another program's idea of a sacrifice and tuned it. This time we started from Chess.com's own Game Review: every move's label, Chess.com's evaluation and Chess.com's preferred move, for 1,005 games. That showed what the badge actually requires, and where an open classifier can and cannot follow.
 
-![Mute Exchange finds 298 of 416 Brilliants against 259 for Mute Selective, with 18 and 15 badges outside the gallery.](figures/results.png)
+![Mute Exchange finds 300 of 416 Brilliants against 259 for Mute Selective, with 19 and 15 badges outside the gallery.](figures/results.png)
 
 ## What we achieved
 
@@ -14,15 +14,15 @@ We tested on **337 games by Witty_Alien** that were held out from training. Ches
 
 | | Mute Exchange | Mute Selective (previous) |
 | --- | ---: | ---: |
-| Chess.com Brilliants found | **298 of 416 (71.6%)** | 259 of 416 (62.3%) |
-| Badges awarded | 316 | 274 |
-| Badges matching the gallery | **298 (94.3%)** | 259 (94.5%) |
-| Badges not in the gallery | 18 | 15 |
-| ...that Chess.com also rejects when it reviews the game today | 11 | 12 |
+| Chess.com Brilliants found | **300 of 416 (72.1%)** | 259 of 416 (62.3%) |
+| Badges awarded | 319 | 274 |
+| Badges matching the gallery | **300 (94.0%)** | 259 (94.5%) |
+| Badges not in the gallery | 19 | 15 |
+| ...that Chess.com also rejects when it reviews the game today | 12 | 12 |
 
-The last row matters. The gallery is a snapshot. When Chess.com reviews these same games today it awards 28 Brilliants that are not in the gallery. Seven of Mute Exchange's 18 "wrong" badges are among them.
+The last row matters. The gallery is a snapshot. When Chess.com reviews these same games today it awards 28 Brilliants that are not in the gallery. Seven of Mute Exchange's 19 "wrong" badges are among them.
 
-These numbers use research engine settings close to Mute Chess's Fast review, for one titled player. They are a measured result on this sample, not a promise for every player or setting.
+Both columns come from the same saved Stockfish 19 Fast review output that Mute Chess produced for these games, run through the classifier code that ships in the app. They are a measured result for one titled player's games, not a promise for every player or setting, and not a test in a live browser.
 
 ## What Chess.com's review taught us
 
@@ -83,9 +83,21 @@ The model is a set of 400 small decision trees. It is trained ahead of time and 
 
 It was trained on **33,037 candidate moves, 7,806 of them Brilliant**: the gallery accounts' moves, plus their opponents' moves in the re-reviewed games. Where we had Chess.com's fresh review of a game we used that label; otherwise the gallery's.
 
-![Found versus false badges for each possible cutoff, with the selected cutoff at 298 found and 18 false.](figures/cutoff.png)
+![Found versus false badges for each possible cutoff, with the selected cutoff at 300 found and 19 false.](figures/cutoff.png)
 
-We chose the medium cutoff. A stricter one beats the previous classifier on both counts (265 found, 12 false) but leaves 33 Brilliants on the table.
+We chose the medium cutoff. A stricter one beats the previous classifier on both counts (261 found, 10 false) but leaves 39 Brilliants on the table.
+
+### The same test the previous classifier faced
+
+Mute Selective was trained on six accounts and tested on 1,000 Witty_Alien games it had never seen. We repeated that exactly: a Mute Exchange model trained only on those six accounts, scored on the same 1,000 games with the same Stockfish 19 Fast output.
+
+| 1,000 games, 1,234 gallery Brilliants | Found | Not in gallery |
+| --- | ---: | ---: |
+| Mute Selective | 774 (62.7%) | 38 |
+| Mute Exchange, medium cutoff | 876 (71.0%) | 58 |
+| Mute Exchange, held to 38 | 820 (66.5%) | 38 |
+
+At equal false badges it finds 46 more Brilliants. At the medium cutoff it finds 102 more and awards 20 more that are not in the gallery.
 
 ### What moved the needle
 
@@ -122,7 +134,7 @@ Only Mute Selective and Mute Exchange were measured on these 337 games. Earlier 
 
 ## Limits
 
-- **Engine.** Training and testing used Stockfish 18 with fixed-size searches read back at depth 12. Mute Chess runs Stockfish 19 with a time limit. The model has not yet been replayed on that engine.
+- **Engine.** The model learned from Stockfish 18 research searches and was tested on Mute Chess's saved Stockfish 19 Fast output. It has never seen Stockfish 19 evidence in training, and it has not been tried in a live browser.
 - **One kind of player.** Every account is a titled player. Chess.com is more generous to lower-rated players and we have no data on how.
 - **Not a clean-room test.** The 337 games were held out of training, but we studied statistics that included this account while designing the features, and other games by the same account are in the training set.
 - **The gallery moves.** In the 1,005 re-reviewed games, 60 of 1,170 gallery Brilliants are not Brilliant in Chess.com's review today, and 84 of today's 1,194 are not in the gallery.
@@ -132,6 +144,6 @@ Only Mute Selective and Mute Exchange were measured on these 337 games. Earlier 
 - **Lower-rated players.** Collect reviews from accounts rated 1000 to 1800. This is the clearest gap and the one the Greek Gift exposes.
 - **Chess.com's engine.** Its top move is the gate, and ours agrees only about four times in five. A cheap way to predict its choice would raise the ceiling for everything else.
 - **The last tenth of the rule.** Even with Chess.com's own numbers, about one award in ten remains unexplained.
-- **Native validation.** Replay the test with Mute Chess's own engine and settings.
+- **Train on the site's engine.** The test now uses Mute Chess's own engine output; the training data should too.
 
 [Methods and limits](METHODS.md) · [Exact algorithm, data and reproduction](README.md) · [Research index](../../docs/RESEARCH-INDEX.md)
