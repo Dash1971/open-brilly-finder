@@ -8,7 +8,15 @@ The accounts are **nelsi, hansen, KNVB, GothamChess, Hikaru, MagnusCarlsen and W
 
 [Per-account counts](../studies/brilliant-selective-2026-11-06/data/seven-account-source-counts.json) · [Move labels](../studies/brilliant-selective-2026-11-06/data/seven-account-labels.csv) · [PGN validation and evidence grades](../studies/brilliant-selective-2026-11-06/data/seven-account-manifest.json)
 
+## Chess.com Game Review labels
+
+For 1,005 of these games we also recorded Chess.com's own review: **77,696 moves** with their class (Book, Brilliant, Great, Best, Excellent, Good, Inaccuracy, Mistake, Miss, Blunder, Forced), evaluation, search depth and Chess.com's preferred move. The table is [chesscom-review-moves.csv.gz](../studies/brilliant-exchange-2026-11-22/data/chesscom-review-moves.csv.gz). Reviews were run on November 22, 2026 from one member account; another account or day can give different labels.
+
 ## Training and evaluation
+
+Mute Exchange was trained on **33,037 candidate moves** and tested on **337 Witty_Alien games** held out from training. [Methods](../studies/brilliant-exchange-2026-11-22/METHODS.md) give the split, the two label references and the limits. The paragraphs below describe the previous study, whose games and gallery labels this one reuses.
+
+## Training and evaluation of the previous study
 
 Mute Selective was trained on **6,293 labeled moves**, including Brilliant examples and ordinary controls. Its independent-account evaluation uses **1,000 Witty_Alien games** outside training and model selection. Only the account’s own moves are scored. The complete captured gallery defines positive labels and the other own moves define negatives within those represented games; missing PGN annotations alone do not define negatives.
 

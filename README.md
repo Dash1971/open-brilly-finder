@@ -1,47 +1,52 @@
 # Open Brilly Finder
 
-**An open classifier that recognizes more than 60% of Chess.com’s Brilliant moves in our test on unseen games.**
+**An open classifier that recognizes more than 70% of Chess.com's Brilliant moves in games it never trained on.**
 
-Brilliant badges make finding a great chess idea more fun. We studied Chess.com’s labeled moves, started from En Croissant’s open-source rules, and developed **Mute Selective**: a small trained model combined with checks for move quality and a real piece offer.
+Brilliant badges make finding a great chess idea more fun. We collected Chess.com's own Game Review of a thousand games, worked out what the badge requires, and built **Mute Exchange**: one simple test for a real piece offer, then a small trained model that decides which offers earn the badge.
 
 ## Results at a glance
 
-![Mute Selective: 62.7% of reference Brilliants recognized; 95.3% of awarded badges match Chess.com.](studies/brilliant-selective-2026-11-06/figures/fresh-results.png)
+![Mute Exchange finds 298 of 416 Brilliants against 259 for Mute Selective, with 18 and 15 badges outside the gallery.](studies/brilliant-exchange-2026-11-22/figures/results.png)
 
-In **1,000 Witty_Alien games excluded from training**, Mute Selective recognized **774 of 1,234 Chess.com Brilliants (62.7%)**. It awarded 812 Brilliant badges; **774 matched Chess.com (95.3%)**, and 38 were extra awards across 30,423 other moves.
+In **337 Witty_Alien games held out from training**, Mute Exchange recognized **298 of 416 Chess.com Brilliants (71.6%)**. It awarded 316 badges; **298 matched Chess.com's gallery (94.3%)**. Our previous classifier, Mute Selective, recognized 259 (62.3%) in the same games.
 
-The reference is Chess.com’s complete Brilliant gallery for that player. These results cover the player’s own moves in gallery-listed games, using Mute Chess’s default Stockfish 19 Fast analysis. They are a measured result on this sample, rather than a promise for every player or setting.
+Of the 18 badges outside the gallery, 7 are Brilliants when Chess.com reviews those games today.
 
-**[Read the illustrated research report →](studies/brilliant-selective-2026-11-06/REPORT.md)**
+These results use research engine settings close to Mute Chess's Fast analysis, for one titled player's games. They are a measured result on this sample, not a promise for every player or setting.
+
+**[Read the illustrated research report →](studies/brilliant-exchange-2026-11-22/REPORT.md)**
 
 ## How it works
 
-Stockfish checks whether a move is sound. Legal chess analysis checks for a genuine piece offer. A small decision-tree forest, trained on **6,293 labeled moves**, then recognizes patterns involving material, attacks, recovery and alternatives. Two completed engine checks must support the award.
+First, a chess test: after the move, can the opponent capture a knight, bishop, rook or queen and come out at least two points ahead on that square? That covers 8,290 of the 8,295 Brilliants we collected.
 
-The model runs **locally in the browser as ordinary JavaScript**. Training happens ahead of time; it does not learn during play or call a remote AI service. The code and trained weights are open.
+Then a model trained on **33,037 labeled moves** scores the offer. It looks at what happens if the piece is taken, whether the offer was already standing, what the opponent just did, and what Stockfish thinks of the move.
 
-<a id="comparison-wintrchess-knights-eye-and-our-experimental-code"></a>
+The model is a set of small decision trees. It runs **locally in the browser as ordinary JavaScript**. Training happens ahead of time; it does not learn during play or call a remote service. The code and trained weights are open.
 
-En Croissant, WintrChess and Knight’s Eye provide rule-based approaches to sacrifice classification. Mute Selective combines chess checks with patterns learned from Chess.com’s examples. [Our report explains the comparison](studies/brilliant-selective-2026-11-06/REPORT.md#how-this-compares-with-other-projects).
+## What we learned about Chess.com's badge
+
+- A Brilliant is always the move Chess.com's engine liked best. Nearly best never counts.
+- It always offers a piece, and almost never leaves the mover worse off.
+- A piece moved into danger that cannot be won straight back is Brilliant 93% of the time. A piece merely left hanging behind a bigger threat almost never is.
+- Chess.com's engine and Stockfish often prefer different moves. That, more than anything, limits how closely an open classifier can follow.
 
 ## Get the data and code
 
-The annotated collection contains **7,019 games and 8,298 Brilliants across seven accounts**, including Witty_Alien and MagnusCarlsen. It preserves full games, clocks, source links and captured categories. Witty’s uncaptured categories remain marked uncategorized.
-
-- **[Download the combined PGN](https://raw.githubusercontent.com/Dash1971/open-brilly-finder/main/studies/brilliant-selective-2026-11-06/data/seven-accounts-last-12-months-chesscom-brilliants.pgn)**
-- [Move labels (CSV)](studies/brilliant-selective-2026-11-06/data/seven-account-labels.csv) and [account totals](studies/brilliant-selective-2026-11-06/data/seven-account-source-counts.json)
-- [Exact algorithm, model and reproduction commands](studies/brilliant-selective-2026-11-06/README.md)
-- [Methods, test boundaries and limitations](studies/brilliant-selective-2026-11-06/METHODS.md)
+- **[Chess.com review labels for 77,696 moves](studies/brilliant-exchange-2026-11-22/data/chesscom-review-moves.csv.gz)**: class, evaluation and preferred move
+- **[Annotated PGN](https://raw.githubusercontent.com/Dash1971/open-brilly-finder/main/studies/brilliant-selective-2026-11-06/data/seven-accounts-last-12-months-chesscom-brilliants.pgn)**: 7,019 games and 8,298 gallery Brilliants across seven accounts
+- [Trained model, browser code and Python reference](studies/brilliant-exchange-2026-11-22/README.md)
+- [Methods, test boundaries and limits](studies/brilliant-exchange-2026-11-22/METHODS.md)
 - [Complete research evidence](docs/RESEARCH-INDEX.md)
 
 ## What comes next
 
-Recognize more genuine Brilliants while keeping false awards low: improve examples and position features, cover more sacrifice types, and test on more players and unseen games. More permissive methods found additional Brilliants but produced too many wrong badges to choose them.
+Learn from lower-rated players, where Chess.com is more generous and we have no data yet. Find a cheap way to predict Chess.com's preferred move. Replay the test on Mute Chess's own engine.
 
 This repository publishes the research and implementation used to inform [Mute Chess](https://github.com/Dash1971/mute-chess). App releases are managed there.
 
 ## Credits
 
-We build on and credit [En Croissant](https://github.com/franciscoBSalgueiro/en-croissant), [WintrChess](https://github.com/WintrCat/wintrchess-lib), [Knight’s Eye](https://github.com/knights-eye-chess/move-classifier) and the other projects in our [comparison notes](studies/brilliant-selective-2026-11-06/COMPARISONS.md). This project is independent of Chess.com and those projects; Chess.com’s full classification formula is private.
+We build on and credit [En Croissant](https://github.com/franciscoBSalgueiro/en-croissant), [WintrChess](https://github.com/WintrCat/wintrchess-lib), [Knight's Eye](https://github.com/knights-eye-chess/move-classifier) and the other projects in our [comparison notes](studies/brilliant-selective-2026-11-06/COMPARISONS.md). This project is independent of Chess.com and those projects; Chess.com's full classification formula is private.
 
-[License](LICENSE) · [Third-party attribution](THIRD_PARTY.md) · [Mute Chess Research](https://github.com/Dash1971/mute-chess-research). Research and documentation used OpenAI Codex assistance.
+[License](LICENSE) · [Third-party attribution](THIRD_PARTY.md) · [Mute Chess Research](https://github.com/Dash1971/mute-chess-research). Research and documentation used OpenAI Codex and Anthropic Claude assistance.
